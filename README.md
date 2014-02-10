@@ -23,12 +23,17 @@ $ python setup.py install
 **FAQ**
 
 Q. What data interchange file formats have been used?
+
 A. Data conversion from XML to JSON as well as representation in XML itself.
 
+
 Q. What are the Data sources? 
+
 A. Dataset currently taken from DBLP, arXiv
 
+
 Q. How is the Data dealt with?
+
 A. Use ElasticSearch to store data; possible integration with MongoDB
 
 ***
