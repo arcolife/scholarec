@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <link href="http://arxiv.org/api/query?search_query%3Dall%3Acern%26id_list%3D%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
-  <title type="html">ArXiv Query: search_query=all:cern&amp;id_list=&amp;start=0&amp;max_results=10</title>
-  <id>http://arxiv.org/api/VSTTiKU8dpQhV2h97NzN30WH8nw</id>
+  <link href="http://arxiv.org/api/query?search_query%3Dall%3Acern%26id_list%3D%26start%3D0%26max_results%3D15" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=all:cern&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <id>http://arxiv.org/api/SrUSrzsGJkxse06uCqT4LSKCP40</id>
   <updated>2014-02-10T00:00:00-05:00</updated>
   <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10854</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
-  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">15</opensearch:itemsPerPage>
   <entry>
     <id>http://arxiv.org/abs/1108.1115v1</id>
     <updated>2011-08-04T15:26:39Z</updated>
@@ -277,5 +277,121 @@ http://www.cern.ch/CERN/Announcements/2000/NewStateMatter/ .
     <link title="pdf" href="http://arxiv.org/pdf/nucl-th/0002042v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="nucl-th" scheme="http://arxiv.org/schemas/atom"/>
     <category term="nucl-th" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1010.2330v2</id>
+    <updated>2010-10-18T16:03:10Z</updated>
+    <published>2010-10-12T09:38:41Z</published>
+    <title>Quantum ChromoDynamics</title>
+    <summary>  These lectures on QCD stress the theoretical elements that underlie a wide
+range of phenomenological studies, particularly gauge invariance,
+renormalization, factorization and infrared safety. The three parts cover the
+basics of QCD, QCD at tree level, and higher order corrections.
+</summary>
+    <author>
+      <name>M. H. Seymour</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Manchester U., CERN</arxiv:affiliation>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">These lectures, given at the 5th CERN-Latin-American School of
+  High-Energy Physics, Recinto Quirama, Colombia, 15 - 28 Mar 2009, have been
+  withdrawn since they contain only minor modifications to arXiv:hep-ph/0505192
+  which has been updated</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2010-001, pp. 97-144</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/1010.2330v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1010.2330v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1308.0116v1</id>
+    <updated>2013-08-01T08:04:27Z</updated>
+    <published>2013-08-01T08:04:27Z</published>
+    <title>Proceedings of the CAS - CERN Accelerator School: Course on High Power
+  Hadron Machines, Bilbao, Spain, 24 May - 2 Jun 2011</title>
+    <summary>  These proceedings collate lectures given at the twenty-fifth specialized
+course organised by the CERN Accelerator School (CAS). The course was held in
+Bilbao, Spain from 24 May to 2 June 2011, in collaboration with ESS Bilbao. The
+course covered the background accelerator physics, different types of particle
+accelerators and the underlying accelerator systems and technologies, all from
+the perspective of high beam power. The participants pursued one of six case
+studies in order to get "hands-on" experience of the issues connected with high
+power machines.
+</summary>
+    <author>
+      <name>R. Bailey</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">ed.</arxiv:affiliation>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">21 lectures, 504 pages, published as CERN Yellow Report
+  https://cds.cern.ch/record/1312630</arxiv:comment>
+    <link href="http://arxiv.org/abs/1308.0116v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1308.0116v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1108.1655v1</id>
+    <updated>2011-08-08T09:44:02Z</updated>
+    <published>2011-08-08T09:44:02Z</published>
+    <title>Using LHC as injector and possible uses of HERA magnets/coils</title>
+    <summary>  This workshop discusses the various aspects of a high energy version of the
+LHC in the LHC tunnel, the basic assumption being that the LHC will be
+decommissioned. The possibilities to recycle LHC and the already stopped HERA
+are discussed in this paper.
+</summary>
+    <author>
+      <name>K. H. Mess</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages, contribution to the EuCARD-AccNet-EuroLumi Workshop: The
+  High-Energy Large Hadron Collider, Malta, 14 -- 16 Oct 2010; CERN Yellow
+  Report CERN-2011-003, pp. 116-123</arxiv:comment>
+    <link href="http://arxiv.org/abs/1108.1655v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1108.1655v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1201.2598v1</id>
+    <updated>2012-01-12T15:42:39Z</updated>
+    <published>2012-01-12T15:42:39Z</published>
+    <title>Superconducting elliptical cavities</title>
+    <summary>  We give a brief overview of the history, state of the art, and future for
+elliptical superconducting cavities. Principles of the cell shape optimization,
+criteria for multi-cell structures design, HOM damping schemes and other
+features are discussed along with examples of superconducting structures for
+various applications.
+</summary>
+    <author>
+      <name>J. K. Sekutowicz</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">DESY</arxiv:affiliation>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">25 pages, contribution to the CAS - CERN Accelerator School:
+  Specialised Course on RF for Accelerators; 8 - 17 Jun 2010, Ebeltoft, Denmark</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2011-007, pp. 369-393</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/1201.2598v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1201.2598v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1201.2600v1</id>
+    <updated>2012-01-12T15:46:58Z</updated>
+    <published>2012-01-12T15:46:58Z</published>
+    <title>Transverse deflecting cavities</title>
+    <summary>  Transverse deflecting cavities are used for a number of applications in
+modern accelerators. In this paper we discuss the fields of these cavities,
+some of their applications, and some important aspects of their design.
+</summary>
+    <author>
+      <name>G. Burt</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Lancaster University</arxiv:affiliation>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">11 pages, contribution to the CAS - CERN Accelerator School:
+  Specialised Course on RF for Accelerators; 8 - 17 Jun 2010, Ebeltoft, Denmark</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2011-007, pp. 395-405</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/1201.2600v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1201.2600v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
