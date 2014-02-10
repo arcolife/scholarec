@@ -1,0 +1,120 @@
+#!/usr/bin/env python
+"""
+scholarec: A recommendation engine for scholarly works
+Copyright (C) 2014  Archit Sharma <archit.py@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>."""
+
+# Import global dependencies
+import os, sys
+from urllib2 import urlopen
+
+# Import local dependencies
+SOURCE_PATH = os.path.dirname(os.path.abspath(__file__)) + '/../scholarec'
+sys.path.insert(0, SOURCE_PATH)
+import xml_parser as xp
+
+# GPL commandline interfce requirements 
+print """scholarec  Copyright (C) 2014  Archit Sharma
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details."""
+
+q_license = raw_input("Enter choice (or simply press enter to continue): ")
+if q_license == 'show w':
+    print """THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+    APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+    HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
+    OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+    THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+    PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+    IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+    ALL NECESSARY SERVICING, REPAIR OR CORRECTION."""
+    #more
+    print """\nIN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+    WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+    THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+    GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+    USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+    DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+    PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+    EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+    SUCH DAMAGES."""
+elif q_license == 'show c':
+    f = open(os.path.dirname(os.path.abspath(__file__)) + '/../LICENSE','r')
+    print f.read()
+    f.close()
+else:
+    pass
+
+'''
+# Open saved XML file
+file = open(SOURCE_PATH + '/output/query.xml','r').read()
+file.close()
+'''
+
+class ParseQuery:
+    ''' mathods to parse query '''    
+    def __init__(self, query_xml):
+        self.query_xml = query_xml
+
+    def parse_data(self):
+        self.data_xml, self.data_dict = xp.extract_data(self.query_xml)        
+
+    def print_data(self):
+        '''                                                                 
+        To print entries '''
+        entry_count = len(self.data_xml)
+        for i in xrange(entry_count):
+            print "Entry %d: "%(i+1),"\n"
+            print self.data_xml[i].toxml()
+            print "\n-----------------\n"
+        print "Total Entries: ", entry_count
+
+    def store_data(self):
+        '''                                                                 
+        write response to enternal file '''
+        
+        file = open( SOURCE_PATH + '/output/query_results.xml','w')
+        file.write(self.query_xml)
+        file.close()
+
+
+if __name__ == '__main__':
+    try:
+        kwarg = '+'.join(raw_input("\nEnter keyword to search arXiv: ").split())
+        query_xml = urlopen( \
+                             "http://export.arxiv.org/api/query?search_query=all:" \
+                             + kwarg + "&start=0&max_results=" \
+                             + str(int(raw_input("Enter maximum result limit: "))) \
+                         ).read()
+        Pq = ParseQuery(query_xml)
+        Pq.parse_data()
+        Pq.store_data()
+        print "\n\t\tSuccess!"
+        choice = raw_input("\nPrint entries? (y/n): ")
+        if choice.lower() == 'y': Pq.print_data()
+    except IOError as e:
+        print "I/O error({0}): {1}".format(e.errno, e.strerror)
+    except KeyboardInterrupt:
+        print "\n\n\t\tYou've aborted the program! \n"
+    except ValueError as e:
+        print "\nERROR: ",e,"\nCheck your input type."
+    except IndexError as e:
+        print "\nERROR: ",e,"\nResponse attributes not satisfied in data_dict."
+    except:
+        # >>sys.exc_info()<< gives whole exception
+        print "Unexpected error:", sys.exc_info()[0]  
+        # system call to raise the exception out loud
+        raise
