@@ -1,0 +1,8 @@
+- handle data_dict atribute error on response dissatisfaction
+- handle query response strictness (exact match)
+- ETL DBLP,CERN,arXiv data onto ES instance
+- Find option to run script and download all data on arXiv (if dump not found). Check API rate limits.
+- Refactor public/index.html
+- Integrate ES with MongoDB and write API script
+- Select tools for data visualization and infographics
+- 

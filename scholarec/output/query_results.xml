@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3Dall%3Acern%26id_list%3D%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=all:cern&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/VSTTiKU8dpQhV2h97NzN30WH8nw</id>
+  <updated>2014-02-10T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10854</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/1108.1115v1</id>
+    <updated>2011-08-04T15:26:39Z</updated>
+    <published>2011-08-04T15:26:39Z</published>
+    <title>CERN Accelerator Strategy</title>
+    <summary>  The CERN strategy for future accelerator projects is outlined and the role of
+the HE-LHC inside this strategy is described.
+</summary>
+    <author>
+      <name>M. Myers</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">1 page, Contribution given to the EuCARD-AccNet-EuroLumi Workshop:
+  The High-Energy Large Hadron Collider, Malta, Republic of Malta, 14 - 16 Oct
+  2010</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2011-003, pp. 6</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/1108.1115v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1108.1115v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1401.3927v1</id>
+    <updated>2014-01-16T08:25:14Z</updated>
+    <published>2014-01-16T08:25:14Z</published>
+    <title>Magnet Quench 101</title>
+    <summary>  This paper gives a broad summary of the physical phenomena associated with
+the quench of a superconducting magnet.
+</summary>
+    <author>
+      <name>L. Bottura</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.5170/CERN-2013-006.1</arxiv:doi>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">9 pages, Contribution to WAMSDO 2013: Workshop on Accelerator Magnet,
+  Superconductor, Design and Optimization; 15 - 16 Jan 2013, CERN, Geneva,
+  Switzerland</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2013-006, pp.1-9</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/1401.3927v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1401.3927v1" rel="related" type="application/pdf"/>
+    <link title="doi" href="http://dx.doi.org/10.5170/CERN-2013-006.1" rel="related"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1303.6519v1</id>
+    <updated>2013-03-26T15:05:55Z</updated>
+    <published>2013-03-26T15:05:55Z</published>
+    <title>Radiation protection at CERN</title>
+    <summary>  This paper gives a brief overview of the general principles of radiation
+protection legislation; explains radiological quantities and units, including
+some basic facts about radioactivity and the biological effects of radiation;
+and gives an overview of the classification of radiological areas at CERN,
+radiation fields at high-energy accelerators, and the radiation monitoring
+system used at CERN. A short section addresses the ALARA approach used at CERN.
+</summary>
+    <author>
+      <name>Doris Forkel-Wirth</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Stefan Roesler</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Marco Silari</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Marilena Streit-Bianchi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Christian Theis</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Heinz Vincke</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Helmut Vincke</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.5170/CERN-2013-001.415</arxiv:doi>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">22 pages, contribution to the CAS - CERN Accelerator School: Course
+  on High Power Hadron Machines; 24 May - 2 Jun 2011, Bilbao, Spain</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2013-001, pp.415-436</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/1303.6519v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1303.6519v1" rel="related" type="application/pdf"/>
+    <link title="doi" href="http://dx.doi.org/10.5170/CERN-2013-001.415" rel="related"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.ins-det" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1401.4858v1</id>
+    <updated>2014-01-20T10:44:11Z</updated>
+    <published>2014-01-20T10:44:11Z</published>
+    <title>Proceedings of the WAMSDO 2013 Workshop on Accelerator Magnet,
+  Superconductor, Design and Optimization, CERN Geneva, Switzerland, 15 - 16
+  Jan 2013</title>
+    <summary>  This report contains the proceedings of the Workshop on Accelerator Magnet
+Superconductor, Design and Optimization (WAMSDO) held at CERN from 15 to 16
+January 2013. This fourth edition of the WAMSDO workshop is focussed on aspects
+related to quench protection.
+</summary>
+    <author>
+      <name>E. Todesco</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">ed.</arxiv:affiliation>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.5170/CERN-2013-006</arxiv:doi>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">12 lectures, 82 pages, published as CERN Yellow Report
+  https://cds.cern.ch/record/1481283</arxiv:comment>
+    <link href="http://arxiv.org/abs/1401.4858v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1401.4858v1" rel="related" type="application/pdf"/>
+    <link title="doi" href="http://dx.doi.org/10.5170/CERN-2013-006" rel="related"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1206.4876v1</id>
+    <updated>2012-06-21T13:42:05Z</updated>
+    <published>2012-06-21T13:42:05Z</published>
+    <title>40th Anniversary of the First Proton-Proton Collisions in the CERN
+  Intersecting Storage Rings (ISR)</title>
+    <summary>  No Abstract of this Colloquium
+</summary>
+    <author>
+      <name>U. Amaldi</name>
+    </author>
+    <author>
+      <name>P. J. Bryant</name>
+    </author>
+    <author>
+      <name>P. Darriulat</name>
+    </author>
+    <author>
+      <name>K. Hubner</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">4 contributions, 80 pages, published as CERN Yellow Report
+  https://cdsweb.cern.ch/record/1456765?ln=en</arxiv:comment>
+    <link href="http://arxiv.org/abs/1206.4876v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1206.4876v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1108.1663v1</id>
+    <updated>2011-08-08T10:07:10Z</updated>
+    <published>2011-08-08T10:07:10Z</published>
+    <title>Intensity issues and machine protection of the HE-LHC</title>
+    <summary>  The HE-LHC study investigates the possibilities for upgrading the beam energy
+of the Large Hadron Collider CERN from 7 TeV to 16.5 TeV. This paper presents a
+preliminary investigation of intensity issues and machine protection for the
+HE-LHC.
+</summary>
+    <author>
+      <name>R. Assmann</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">4 pages, contribution to the EuCARD-AccNet-EuroLumi Workshop: The
+  High-Energy Large Hadron Collider, Malta, 14 -- 16 Oct 2010; CERN Yellow
+  Report CERN-2011-003, pp. 124-127</arxiv:comment>
+    <link href="http://arxiv.org/abs/1108.1663v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1108.1663v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1206.3954v1</id>
+    <updated>2012-06-18T14:41:57Z</updated>
+    <published>2012-06-18T14:41:57Z</published>
+    <title>Small-angle physics at the intersecting storage rings forty years later</title>
+    <summary>  No abstract: Hadron-hadron cross-sections at the beginning of the 1970s
+</summary>
+    <author>
+      <name>Ugo Amaldi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Milan Bicocca U. and TERA Foundation</arxiv:affiliation>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">30 pages, contribution to the CERN Yellow report: 40th Anniversary of
+  the First Proton-Proton Collisions in the CERN Intersecting Storage Rings
+  (ISR)</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2012-004, pp.33</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/1206.3954v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1206.3954v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="nucl-ex" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1010.3164v1</id>
+    <updated>2010-10-15T13:40:57Z</updated>
+    <published>2010-10-15T13:40:57Z</published>
+    <title>Relativistic heavy-ion physics</title>
+    <summary>  The study of relativistic heavy-ion collisions is an important part of the
+LHC research programme at CERN. This emerging field of research focuses on the
+study of matter under extreme conditions of temperature, density, and pressure.
+Here we present an introduction to the general aspects of relativistic
+heavy-ion physics. Afterwards we give an overview of the accelerator facility
+at CERN and then a quick look at the ALICE project as a dedicated experiment
+for heavy-ion collisions.
+</summary>
+    <author>
+      <name>G. Herrera Corral</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">23 pages, Lectures given at the 5th CERN-Latin-American School of
+  High-Energy Physics, Recinto Quirama, Colombia, 15 - 28 Mar 2009</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2010-001, pp. 393-416</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/1010.3164v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1010.3164v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="nucl-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="nucl-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="nucl-ex" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/astro-ph/0206054v1</id>
+    <updated>2002-06-04T15:07:29Z</updated>
+    <published>2002-06-04T15:07:29Z</published>
+    <title>Future Perspectives at CERN</title>
+    <summary>  Current and future experiments at CERN are reviewed,with emphasis on those
+relevant to astrophysics and cosmology. These include experiments related to
+nuclear astrophysics, matter-antimatter asymmetry, dark matter, axions,
+gravitational waves, cosmic rays, neutrino oscillations, inflation, neutron
+stars and the quark-gluon plasma. The centrepiece of CERN's future programme is
+the LHC, but some ideas for perspectives after the LHC are also presented.
+</summary>
+    <author>
+      <name>John Ellis</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1007/10857580_32</arxiv:doi>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">16 pages, 11 figures, Talk given at the CERN-ESA-ESO Symposium,
+  Munich, April 2002</arxiv:comment>
+    <link href="http://arxiv.org/abs/astro-ph/0206054v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/astro-ph/0206054v1" rel="related" type="application/pdf"/>
+    <link title="doi" href="http://dx.doi.org/10.1007/10857580_32" rel="related"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/nucl-th/0002042v1</id>
+    <updated>2000-02-16T15:13:04Z</updated>
+    <published>2000-02-16T15:13:04Z</published>
+    <title>Evidence for a New State of Matter: An Assessment of the Results from
+  the CERN Lead Beam Programme</title>
+    <summary>  This "position paper" collects the scientific arguments behind the CERN Press
+Release of February 10, 2000, which announced evidence for the creation of a
+new state of matter in Pb-Pb collisions at the CERN SPS. The data on which this
+paper is based were presented in a special seminar at CERN on the same day, a
+recording of which can be accessed at
+http://www.cern.ch/CERN/Announcements/2000/NewStateMatter/ .
+</summary>
+    <author>
+      <name>Ulrich Heinz</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Maurice Jacob</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">7 pages LaTeX, no figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/nucl-th/0002042v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/nucl-th/0002042v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="nucl-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="nucl-th" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

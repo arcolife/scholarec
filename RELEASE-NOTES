@@ -1,0 +1,12 @@
+- Python 2.7.5+
+- Python libraries: xml, urllib2, xmltodict, sys
+- Data sources: DBLP, CERN, arXiv
+- OS details:
+  Distributor ID:	Ubuntu
+  	      Description:	Ubuntu 13.10
+  	      Release:      	13.10
+  	      Codename:     	saucy
+- Others:
+  - ElasticSearch
+  - MongoDB
+  - 
