@@ -1,0 +1,16 @@
+scholarec INSTALLATION
+======================
+
+About
+=====
+This document specifies how to build, customize, and install scholarec
+v0.1 for the first time.  See RELEASE-NOTES if you are upgrading
+from a previous scholarec release.
+
+Contents
+========
+
+0. Prerequisites
+1. Quick instructions for the impatient scholarec admin
+2. Detailed instructions for the patient scholarec admin
+

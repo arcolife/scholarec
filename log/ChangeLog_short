@@ -1,17 +1,17 @@
-arcolife (15):
-      initial commit
-      adds README; executable xml_parser; query count script
-      arrange dumps; add xmltodict to lib
-      doc changes. adds basic idea file
-      doc update
-      data_flow reference filetype change
-      a more pythonic way of scripts
-      enhances Exception handling
-      adds to doc
-      adds to doc
-      repo clean-up; adding corpus
+Archit Sharma (1):
+      Initial commit
+
+arcolife (12):
+      initial github commit
+      README cleanup; adds LICENSE to reference frontend code
+      README cleanup
+      license requirements update and query script test
+      modifies gitignore; adds bin
+      modifies gitignore; adds lib
       repo cleanup
-      adding package skeleton; adds python exec to bin
-      query_parse print option mod
-      TODO, xml result update
+      http -> https in url of setup.py
+      README cleanup
+      README cleanup
+      adding output files, generated from xml-to-json
+      adds converted json data file; TODO update
 

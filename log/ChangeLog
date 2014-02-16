@@ -1,89 +1,77 @@
-commit 38d05e90dad937a20a7f642e328dd2f0b7a4e7d8
+commit e0171987798f69c90a25a12c45885cb4fd5f77e3
 Author: arcolife <arcshams@gmail.com>
-Date:   Mon Feb 10 17:14:20 2014 +0530
+Date:   Mon Feb 17 00:27:51 2014 +0530
 
-    TODO, xml result update
+    adds converted json data file; TODO update
 
-commit 742273696df0dac0da7a97b9efd6e5430f68eba6
+commit 7427da39fc7070a4a2a0298e39b59d16dbaee77f
 Author: arcolife <arcshams@gmail.com>
-Date:   Mon Feb 10 16:54:59 2014 +0530
+Date:   Wed Feb 12 03:48:49 2014 +0530
 
-    query_parse print option mod
+    adding output files, generated from xml-to-json
 
-commit 0e44d0998343016bda3410d6a24c034c1ec88832
+commit 2fefa584b8800059c386e82af5bd00bc151d37c8
 Author: arcolife <arcshams@gmail.com>
-Date:   Mon Feb 10 16:43:54 2014 +0530
+Date:   Mon Feb 10 19:10:47 2014 +0530
 
-    adding package skeleton; adds python exec to bin
+    README cleanup
 
-commit d70618057e17db63a4b64cc9b6ce18abe5a0dfbd
+commit 6d1e4f3871679e205315d30bb394ec24f9b43c89
 Author: arcolife <arcshams@gmail.com>
-Date:   Mon Feb 10 16:15:30 2014 +0530
+Date:   Mon Feb 10 19:08:18 2014 +0530
+
+    README cleanup
+
+commit e584f5609904c72e07897f10c89ca40dfb09a724
+Author: arcolife <arcshams@gmail.com>
+Date:   Mon Feb 10 19:00:55 2014 +0530
+
+    http -> https in url of setup.py
+
+commit 28339f84431c7631cb95b2d961a70664949cbe5f
+Author: arcolife <arcshams@gmail.com>
+Date:   Mon Feb 10 18:57:54 2014 +0530
 
     repo cleanup
 
-commit 86b3322e7f7c8e2d0b4c68cdaae0530fc5e4c6fc
+commit 4f1d7183969f4dc27df5cb6bba25e21fdb14d192
 Author: arcolife <arcshams@gmail.com>
-Date:   Mon Feb 10 15:50:58 2014 +0530
+Date:   Mon Feb 10 18:55:26 2014 +0530
 
-    repo clean-up; adding corpus
+    modifies gitignore; adds lib
 
-commit 6d28a6d4b613e60dcaf560a2d1dab04b1df2d8d1
+commit ff8ab5c9ac5061fb32cb23fbc399c868c5d9d1d1
 Author: arcolife <arcshams@gmail.com>
-Date:   Fri Feb 7 06:59:02 2014 +0530
+Date:   Mon Feb 10 18:53:25 2014 +0530
 
-    adds to doc
+    modifies gitignore; adds bin
 
-commit 25f3f4ebf74d37226ca140a3e1f3ffe3db2b2dde
+commit 58fa5a741ac67225376939128f12ef900faee45d
 Author: arcolife <arcshams@gmail.com>
-Date:   Fri Feb 7 06:58:34 2014 +0530
+Date:   Mon Feb 10 18:50:41 2014 +0530
 
-    adds to doc
+    license requirements update and query script test
 
-commit 8574c9e2ea82156e278d40501f000c3bd05d2662
+commit 0c4c834f938f025f9c40c124ba22b4f6113eadc0
 Author: arcolife <arcshams@gmail.com>
-Date:   Fri Feb 7 06:50:45 2014 +0530
+Date:   Mon Feb 10 18:28:55 2014 +0530
 
-    enhances Exception handling
+    README cleanup
 
-commit e8dead1a719bd6ee9e24f1b8eb0ca45f8e5aa913
+commit ad666153bc227aae392b48850a25fedd5615e14a
 Author: arcolife <arcshams@gmail.com>
-Date:   Fri Feb 7 06:38:52 2014 +0530
+Date:   Mon Feb 10 18:26:02 2014 +0530
 
-    a more pythonic way of scripts
+    README cleanup; adds LICENSE to reference frontend code
 
-commit 3c6c4d05a2cbb096f4b321e3b3b38ae84055efaa
+commit 71bc8ec0deabff1f57f7198ae18412a411c53902
 Author: arcolife <arcshams@gmail.com>
-Date:   Fri Feb 7 05:43:34 2014 +0530
+Date:   Mon Feb 10 18:14:18 2014 +0530
 
-    data_flow reference filetype change
+    initial github commit
 
-commit c2701571e65d7d448ee90f2aad1a4d8f007cac33
-Author: arcolife <arcshams@gmail.com>
-Date:   Fri Feb 7 05:41:39 2014 +0530
+commit a80daea681208cb203e83c02c45e3ac2702ff065
+Author: Archit Sharma <arcshams@gmail.com>
+Date:   Mon Feb 10 04:37:07 2014 -0800
 
-    doc update
-
-commit e9b4e0eac7ca628782583f54d23c3285ee25f202
-Author: arcolife <arcshams@gmail.com>
-Date:   Thu Feb 6 16:37:53 2014 +0530
-
-    doc changes. adds basic idea file
-
-commit 1c7202937c21ccce1608ae7ed3b184e8870e8cd7
-Author: arcolife <arcshams@gmail.com>
-Date:   Thu Feb 6 16:09:03 2014 +0530
-
-    arrange dumps; add xmltodict to lib
-
-commit 4a1d4ed003546a1423e0c6e50374c9028282d10c
-Author: arcolife <arcshams@gmail.com>
-Date:   Thu Feb 6 16:04:42 2014 +0530
-
-    adds README; executable xml_parser; query count script
-
-commit ce69a34ea461ed82365b49c401a6e465cc5e6adf
-Author: arcolife <arcshams@gmail.com>
-Date:   Thu Feb 6 15:20:57 2014 +0530
-
-    initial commit
+    Initial commit
