@@ -1,8 +1,14 @@
 - handle data_dict atribute error on response dissatisfaction
 - handle query response strictness (exact match)
-- ETL DBLP,CERN,arXiv data onto ES instance
-- Find option to run script and download all data on arXiv (if dump not found). Check API rate limits.
+- Finalize DataSet - Comp. Sc. / Physics / 
+- ETL .. DBLP / CERN / arXiv .. data onto ES instance
+- Run scripts to extract related data from arXiv (if no dump found). Check rate limits.
 - Refactor public/index.html
-- Integrate ES with MongoDB and write API script
-- Select tools for data visualization and infographics
+- Integrate ES with MongoDB and write API script;
+- Select tools for data visualization and infographics (Google Chart API / D3 / GraphViz / Processing / etc.. )
+- Unit testing methods integrations, Use Jenkins to keep track
+- Develop aggregation methodologies for ES instance
+- Implement current algorithms used in say mrec library for Python
+- Pursue the recommendation system MOOC's (refer to Batra's / Denzil's links)
+- Use construct_call_graph.py and graphViz library to construct call graph of main.py
 - 
