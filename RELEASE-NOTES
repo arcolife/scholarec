@@ -1,12 +1,46 @@
-- Python 2.7.5+
-- Python libraries: xml, urllib2, xmltodict, sys, xml-to-json [https://github.com/sinelaw/xml-to-json]
-- Data sources: DBLP, CERN, arXiv
-- OS details:
-  Distributor ID:	Ubuntu
-  	      Description:	Ubuntu 13.10
-  	      Release:      	13.10
-  	      Codename:     	saucy
-- Others:
+--------------------------------------------------------------------
+Scholarec v0.1 is released
+Feb 21, 2014
+http://arcolife.github.io/scholarec
+--------------------------------------------------------------------
+
+Scholarec v0.1 was released on February 21, 2014.
+
+This initial release contains a basic skeleton of minor enhancements 
+and fixes. It is recommended that all previous downloads be stashed 
+and this one to be used as promary source.
+
+What's new:
+-----------
+
+*) New scripts using Python 2.7.5+
+
+*) Python libraries: xml, urllib2, xmltodict, sys, xml-to-json 
+  [https://github.com/sinelaw/xml-to-json]
+
+*) Data sources: DBLP, arXiv
+   - OS details:
+     	Distributor ID:	Ubuntu
+     	Description:	Ubuntu 13.10
+  	Release:      	13.10
+  	Codename:     	saucy
+
+Future Plans:
+-------------
+*) To integrate:
   - ElasticSearch
   - MongoDB
-  - 
+
+*) Add DB source:
+   - CERN
+   - Google Scholar  
+
+Download:
+---------
+tarball <https://github.com/arcolife/scholarec/tarball/master>
+zipball <https://github.com/arcolife/scholarec/zipball/master>
+
+Installation notes:
+-------------------
+
+Please follow the INSTALL file bundled in the distribution tarball.
