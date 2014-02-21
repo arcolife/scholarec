@@ -23,7 +23,7 @@ def extract_data(query_xml):
     except AssertionError:
         print "Data entries different or some other anomaly found\n \
         **On comparing data in OrderedDict type & in XML-dom type\n"
-    return entries, parsed_dict_results
+    return entries, parsed_dict_results #list of OrderedDicts
         
 '''
 # This fragment of code takes certain tags out of the XML 
