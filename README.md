@@ -13,12 +13,22 @@ This software has been built due to a need felt for a proper recommendation syst
 
 **Installation**
 
-$ python setup.py install
+> It is under heavy development currently, so instead of 'install', use 'develop' with setup.py for now 
+> Keep doing 'git pull' on the repo clone. Thanks for your kind attention.
+
+$ python setup.py develop
+
 
 **Usage**
 
-1.	Use ./bin/query_parse to query the source and parse results
-2.	Use ./bin/saved_entries_count to count existing DB entries
+To use the module in a Python script, simply import:
+import scholarec
+
+To go for a sample run (Later, have a look at the following script to see how the module works.)
+$ ./tests/query_parse
+
+To see if the scripts runs without error
+$ ./tests/run-tests.sh
 
 ***
 
@@ -36,7 +46,7 @@ A. Dataset currently taken from DBLP, arXiv
 
 Q. How is the Data dealt with?
 
-A. Use ElasticSearch to store data; possible integration with MongoDB
+A. We hope to use ElasticSearch/MongoDB for search and storage
 
 ***
 
