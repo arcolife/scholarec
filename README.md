@@ -25,9 +25,11 @@ To use the module in a Python script, simply import:
 import scholarec
 
 To go for a sample run (Later, have a look at the following script to see how the module works.)
+
 $ ./tests/query_parse
 
 To see if the scripts runs without error
+
 $ ./tests/run-tests.sh
 
 ***
