@@ -21,56 +21,24 @@ import os, sys
 from urllib2 import urlopen
 
 # Import local dependencies
-SOURCE_PATH = os.path.dirname(os.path.abspath(__file__)) + '/../scholarec'
+SOURCE_PATH = os.path.dirname(os.path.abspath(__file__)) + '/../'
 sys.path.insert(0, SOURCE_PATH)
-import xml_parser as xp
 
-# GPL commandline interfce requirements 
-print """scholarec  Copyright (C) 2014  Archit Sharma
-    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
-    This is free software, and you are welcome to redistribute it
-    under certain conditions; type `show c' for details."""
-
-q_license = raw_input("Enter choice (or simply press enter to continue): ")
-if q_license == 'show w':
-    print """THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
-    APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
-    HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
-    OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
-    THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
-    PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
-    IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
-    ALL NECESSARY SERVICING, REPAIR OR CORRECTION."""
-    #more
-    print """\nIN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
-    WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
-    THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
-    GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
-    USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
-    DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
-    PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
-    EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
-    SUCH DAMAGES."""
-elif q_license == 'show c':
-    f = open(os.path.dirname(os.path.abspath(__file__)) + '/../LICENSE','r')
-    print f.read()
-    f.close()
-else:
-    pass
-
+from scholarec import Document
 '''
 # Open saved XML file
-file = open(SOURCE_PATH + '/output/query.xml','r').read()
+file = open(SOURCE_PATH + 'log/output/query.xml','r').read()
 file.close()
 '''
 
-class ParseQuery:
+class QueryParse:
     ''' mathods to parse query '''    
     def __init__(self, query_xml):
         self.query_xml = query_xml
 
     def parse_data(self):
-        self.data_xml, self.data_dict = xp.extract_data(self.query_xml)        
+        Doc = Document(self.query_xml)
+        self.data_xml, self.data_dict = Doc.extract_data()
 
     def print_data(self):
         '''                                                                 
@@ -86,10 +54,9 @@ class ParseQuery:
         '''                                                                 
         write response to enternal file '''
         
-        file = open( SOURCE_PATH + '/output/query_results.xml','w')
+        file = open( SOURCE_PATH + 'log/output/query_results.xml','w')
         file.write(self.query_xml)
         file.close()
-
 
 if __name__ == '__main__':
     try:
@@ -99,12 +66,13 @@ if __name__ == '__main__':
                              + kwarg + "&start=0&max_results=" \
                              + str(int(raw_input("Enter maximum result limit: "))) \
                          ).read()
-        Pq = ParseQuery(query_xml)
-        Pq.parse_data()
-        Pq.store_data()
+        Qp = QueryParse(query_xml)
+        Qp.parse_data()
         print "\n\t\tSuccess!"
-        choice = raw_input("\nPrint entries? (y/n): ")
-        if choice.lower() == 'y': Pq.print_data()
+        # store data
+        if raw_input("Store Data to log/output?(y/n): ").lower() == 'y': Qp.store_data()
+        # print data
+        if raw_input("\nPrint entries? (y/n): ").lower() == 'y': Qp.print_data()
     except IOError as e:
         print "I/O error({0}): {1}".format(e.errno, e.strerror)
     except KeyboardInterrupt:

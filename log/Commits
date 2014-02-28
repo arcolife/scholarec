@@ -1,3 +1,39 @@
+commit 9b6444ec707e19406e03de2f3932b739de8e89c7
+Author: arcolife <arcshams@gmail.com>
+Date:   Fri Feb 28 22:18:07 2014 +0530
+
+    output -> log/output; adds enables package_find setup.py;
+
+commit ae64bd4ba3c0136e95c3c6b2c98b8e7853123dcd
+Author: arcolife <arcshams@gmail.com>
+Date:   Fri Feb 21 16:22:28 2014 +0530
+
+    adds comment to xml_parser.extract_data return type
+
+commit a9ee2ea8992aad7f82f0a533f6cae4e636d71515
+Author: arcolife <arcshams@gmail.com>
+Date:   Fri Feb 21 16:09:12 2014 +0530
+
+    updates README
+
+commit b22e1b06b217556dd26ce7df49ba2e9068fbf2f2
+Author: arcolife <arcshams@gmail.com>
+Date:   Fri Feb 21 16:07:46 2014 +0530
+
+    refines RELEASE-NOTES
+
+commit 717e9e42e66ae161a19559f651a8ac0463649db1
+Author: arcolife <arcshams@gmail.com>
+Date:   Mon Feb 17 01:41:55 2014 +0530
+
+    INSTALL, THANKS update
+
+commit 38de6ad1a96620a0d32f699e636ab2cede4b0a5a
+Author: arcolife <arcshams@gmail.com>
+Date:   Mon Feb 17 01:34:22 2014 +0530
+
+    yet another cleanup #lib
+
 commit e0171987798f69c90a25a12c45885cb4fd5f77e3
 Author: arcolife <arcshams@gmail.com>
 Date:   Mon Feb 17 00:27:51 2014 +0530

@@ -1,9 +1,10 @@
-- handle data_dict atribute error on response dissatisfaction
+- Try the Beautiful Soup Module
+- handle data_dict atribute error on response dissatisfaction #done
 - handle query response strictness (exact match)
 - Finalize DataSet - Comp. Sc. / Physics / 
 - ETL .. DBLP / CERN / arXiv .. data onto ES instance
 - Run scripts to extract related data from arXiv (if no dump found). Check rate limits.
-- Refactor public/index.html
+- Refactor public/index.html #done
 - Integrate ES with MongoDB and write API script;
 - Select tools for data visualization and infographics (Google Chart API / D3 / GraphViz / Processing / etc.. )
 - Unit testing methods integrations, Use Jenkins to keep track

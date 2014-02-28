@@ -1,5 +1,0 @@
-#!/bin/bash
-
-HERE=`pwd`
-
-cat $HERE/../scholarec/output/query_results.xml  | grep '<entry>' | wc -l
