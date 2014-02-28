@@ -7,22 +7,25 @@ Recommendation of Scholarly Works
 
 This software has been built due to a need felt for a proper recommendation system for publicly available scholarly/research works. It classifies documents and uses personalization features to suggest/recommend similar ones, possibly of interest to the user.
 
-> *Inspired from an older project* [researchlei](http://cs.stanford.edu/people/karpathy/researchlei/ "BSD Licensed") to get an idea of data representation and basic architecture.
+> *Inspired from an older project* [researchlei](http://cs.stanford.edu/people/karpathy/researchlei/ "BSD Licensed")
 
 ***
 
 **Installation**
 
-> It is under heavy development currently, so instead of 'install', use 'develop' with setup.py for now 
-> Keep doing 'git pull' on the repo clone. Thanks for your kind attention.
+> It is under heavy development currently, so instead of 'install', 
+> use 'develop' with setup.py for now. Keep doing 'git pull' on the repo clone. 
 
-$ python setup.py develop
-
+$ sudo python setup.py develop
 
 **Usage**
 
 To use the module in a Python script, simply import:
-import scholarec
+
+from scholarec import Document
+
+['Document', '__builtins__', '__doc__', '__file__', '__name__', 
+'__package__', 'parseString', 'xmltodict']
 
 To go for a sample run (Later, have a look at the following script to see how the module works.)
 
