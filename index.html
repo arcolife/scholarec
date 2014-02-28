@@ -27,51 +27,68 @@
             </section>
         </header>
     </div>
-
+    
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="scholarec" class="anchor" href="#scholarec"><span class="octicon octicon-link"></span></a>scholarec</h1>
-
-<h2>
-<a name="recommendation-of-scholarly-works-" class="anchor" href="#recommendation-of-scholarly-works-"><span class="octicon octicon-link"></span></a>Recommendation of Scholarly Works </h2>
-
-<p>This software has been built due to a need felt for a proper recommendation system for publicly available scholarly/research works. It classifies documents and uses personalization features to suggest/recommend similar ones, possibly of interest to the user.</p>
-
-<blockquote>
-<p><em>Inspired from an older project</em> <a href="http://cs.stanford.edu/people/karpathy/researchlei/" title="BSD Licensed">researchlei</a> to get an idea of data representation and basic architecture.</p>
-</blockquote>
-
-<hr><p><strong>Installation</strong></p>
-
-<p>$ python setup.py install</p>
-
-<p><strong>Usage</strong></p>
-
-<ol>
-<li> Use ./bin/query_parse to query the source and parse results</li>
-<li> Use ./bin/saved_entries_count to count existing DB entries</li>
-</ol><hr><p><strong>FAQ</strong></p>
-
-<p>Q. What data interchange file formats have been used?</p>
-
-<p>A. Data conversion from XML to JSON as well as representation in XML itself.</p>
-
-<p>Q. What are the Data sources? </p>
-
-<p>A. Dataset currently taken from DBLP, arXiv</p>
-
-<p>Q. How is the Data dealt with?</p>
-
-<p>A. Use ElasticSearch to store data; possible integration with MongoDB</p>
-
-<hr><p><strong>LICENSE</strong></p>
-
-<p>GPL v3</p>
+	  <a name="scholarec" class="anchor" href="#scholarec"><span class="octicon octicon-link"></span></a>scholarec</h1>
+	
+	<h2>
+	  <a name="recommendation-of-scholarly-works-" class="anchor" href="#recommendation-of-scholarly-works-"><span class="octicon octicon-link"></span></a>Recommendation of Scholarly Works </h2>
+	
+	<br>
+	[![Build Status](https://travis-ci.org/arcolife/scholarec.png?branch=master)](https://travis-ci.org/arcolife/scholarec)
+	<br>
+	
+	<p>This software has been built due to a need felt for a proper recommendation system for publicly available scholarly/research works. It classifies documents and uses personalization features to suggest/recommend similar ones, possibly of interest to the user.</p>
+	
+	<blockquote>
+	  <p><em>Inspired from an older project</em> <a href="http://cs.stanford.edu/people/karpathy/researchlei/" title="BSD Licensed">researchlei</a> </p>
+	</blockquote>
+	
+	<hr><p><strong>Installation</strong></p>
+	
+	<p>
+	  > It is under heavy development currently, so instead of 'install', 
+	  <br>
+	  > use 'develop' with setup.py for now. Keep doing 'git pull' on the repo clone. 
+	  <br>
+	  $ sudo python setup.py develop
+	</p>
+	
+	<p><strong>Usage</strong></p>
+	
+	<ol>
+	  <li>To use the module in a Python script, simply import:<br>
+	    from scholarec import Document</li>
+	  <li> To go for a sample run (Later, have a look at the following script to see how the module works.)<br>
+	    $ ./tests/query_parse</li>
+	  <li> To see if the scripts runs without error<br>
+	    $ ./tests/run-tests.sh</li>
+	</ol>
+	
+	<hr><p><strong>FAQ</strong></p>
+	
+	<p>Q. What data interchange file formats have been used?</p>
+	
+	<p>A. Data conversion from XML to JSON as well as representation in XML itself.</p>
+	
+	<p>Q. What are the Data sources? </p>
+	
+	<p>A. Dataset currently taken from DBLP, arXiv</p>
+	
+	<p>Q. How is the Data dealt with?</p>
+	
+	<p>A. We hope to use ElasticSearch/MongoDB for search and storage</p>
+	
+	
+	<hr><p><strong>LICENSE</strong></p>
+	
+	<p>GPL v3</p>
       </section>
     </div>
-
+    
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
@@ -79,8 +96,6 @@
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
 
   </body>
 </html>
