@@ -24,9 +24,6 @@ To use the module in a Python script, simply import:
 
 from scholarec import Document
 
-['Document', '__builtins__', '__doc__', '__file__', '__name__', 
-'__package__', 'parseString', 'xmltodict']
-
 To go for a sample run (Later, have a look at the following script to see how the module works.)
 
 $ ./tests/query_parse
