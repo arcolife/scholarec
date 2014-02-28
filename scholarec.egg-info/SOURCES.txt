@@ -1,9 +1,0 @@
-setup.py
-scholarec/__init__.py
-scholarec.egg-info/PKG-INFO
-scholarec.egg-info/SOURCES.txt
-scholarec.egg-info/dependency_links.txt
-scholarec.egg-info/not-zip-safe
-scholarec.egg-info/top_level.txt
-scholarec/Base/DocumentClass.py
-scholarec/Base/__init__.py
