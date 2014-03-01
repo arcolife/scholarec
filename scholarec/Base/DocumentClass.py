@@ -1,58 +1,72 @@
 '''
 This script parses the XML structure 
-passed to the object of Document Class in it.
-'''
+passed to the object of Document Class in it.'''
+
+# import dependencies
 from xml.dom.minidom import parseString #,parse 
 import xmltodict
+from BeautifulSoup import BeautifulStoneSoup as Soup
+from urlparse import urlparse
+#import requests
 
-class Document(object):
-    '''
-    A class representing the xml documents relevant information
-    To parse XML dataset (arXiv: using search API) 
-    and store the results as: 
-    - XML-dom
-    - OrderedDict
-    '''
+class Document_arXiv(object):
+    """
+    ETL: extract, transform, load
+    To parse XML dataset (on arXiv: using search API) 
+    and return: 
+        - XML-dom
+        - OrderedDict """
+
     def __init__(self, query_xml):
         self.query_xml = query_xml
         self.parsed_to_dict = None
         self.parsed_dict_results = None
         self.set_dom = None
         self.entries = None
+        self.find_authors = lambda x: x.find('name').string
 
-    def extract_data(self):
-        ''' 
-        persistant data creation
-        ETL: extract, transform, load
-        - type XML
-        - type OrderedDict 
-        '''    
+    def extract_data_soup(self):
+        """
+        Using: BeatifulSoup's XML parser
+        Returns XML data in dict format 
+        """
+        soup = Soup(self.query_xml) # XML as a string
+        self.entries = soup.findAll('entry') # list of <entry>'s
+        self.data = {} # keys: id & values: metadata
+        for entry in entries:
+            # strip down id in url to (say) -> 'abs/math/0507289v1'
+            id = urlparse(entry.find('id').string).path.lstrip('/') 
+            title = entry.find('title').string
+            summary = entry.find('summary').string
+            # findAll() for multiple entries 
+            authors = entry.findAll('author') 
+            # returns list of data-type: BeautifulSoup.Tag
+            authors = map(self.find_authors, authors)
+            published = entry.find('published').string
+            meta = { 'title': title, 'summary': summary, \
+                  'authors': authors, 'published': published }
+            self.data[id] = meta
+
+        return self.data # python dict
+
+    def extract_data_xmltodict(self):
+        """
+        WARNING: this method is now Obsolete, but still included; 
+        USE > Document.extract_data_soup < instead.
+        This method uses: xmltodict
+        """
+        # form a DOM structure
         self.set_dom = parseString(self.query_xml) 
         self.parsed_to_dict =  xmltodict.parse(self.query_xml, process_namespaces=True)
+        #list of OrderedDicts
         self.parsed_dict_results = self.parsed_to_dict.values()[0].values()[7]
-        self.entries = self.set_dom.getElementsByTagName('entry')
-        
+        # Relevant XML entries
+        self.entries = self.set_dom.getElementsByTagName('entry')        
         try:
             # check/compare both type entries    
             assert len(self.entries) == len(self.parsed_dict_results)
         except AssertionError:
             print "Data entries different or some other anomaly found\n \
             **On comparing data in OrderedDict type & in XML-dom type\n"
-        return self.entries, self.parsed_dict_results #list of OrderedDicts
 
-"""
-# This fragment of code takes certain tags out of the XML 
-# and stores them in certain variables.
-
-for entry in entries:
-    #1 element list
-    doc_id = entry.getElementsByTagName('id')[0]
-    #possibly multiple list elements
-    doc_authors = entry.getElementsByTagName('author')
-    #1 element list
-    doc_summ = entry.getElementsByTagName('summary')[0]
-    #1 element list
-    doc_title = entry.getElementsByTagName('title')[0]
-    #possibly multiple list elements
-    doc_pdf_link = entry.getElementsByTagName('link')
-"""
+        return self.entries, self.parsed_dict_results

@@ -3,7 +3,7 @@
    - Use construct_call_graph.py and graphViz library to construct 
      call graph of main.py
    - Write useful sample cases. #partial
-   - Try the BeautifulSoup XML parser
+   - Try the BeautifulSoup XML parser #done
    - Try xmltodict XML parser #done
    - Try xml XML parser #done
    - Add Webhooks for Travis CI #done
@@ -13,6 +13,10 @@
    - Connect Web Interface
 
 *) ISSUES
+   - A generic extract_data() function; specifying tags as args
+     OR
+     Different Document classes to extract data from different sources
+   - Represent the structure modulewise
    - improve run-tests.sh
    - handle data_dict atribute error on response dissatisfaction #done
    - handle query response strictness (exact match)
