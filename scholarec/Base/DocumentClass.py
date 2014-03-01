@@ -9,7 +9,7 @@ from BeautifulSoup import BeautifulStoneSoup as Soup
 from urlparse import urlparse
 #import requests
 
-class Document_arXiv(object):
+class DocumentArXiv(object):
     """
     ETL: extract, transform, load
     To parse XML dataset (on arXiv: using search API) 
@@ -25,7 +25,7 @@ class Document_arXiv(object):
         self.entries = None
         self.find_authors = lambda x: x.find('name').string
 
-    def extract_data_soup(self):
+    def extract_tags(self):
         """
         Using: BeatifulSoup's XML parser
         Returns XML data in dict format 
@@ -49,7 +49,7 @@ class Document_arXiv(object):
 
         return self.data # python dict
 
-    def extract_data_xmltodict(self):
+    def extract_tags_xmltodict(self):
         """
         WARNING: this method is now Obsolete, but still included; 
         USE > Document.extract_data_soup < instead.

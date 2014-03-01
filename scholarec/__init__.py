@@ -1,3 +1,3 @@
-from Base import Document
+from Base import DocumentArXiv
 
-__all__ = ['Document',]
+__all__ = ['DocumentArXiv',]
