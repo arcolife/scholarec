@@ -1,200 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <link href="http://arxiv.org/api/query?search_query%3Dall%3Acern%26id_list%3D%26start%3D0%26max_results%3D7" rel="self" type="application/atom+xml"/>
-  <title type="html">ArXiv Query: search_query=all:cern&amp;id_list=&amp;start=0&amp;max_results=7</title>
-  <id>http://arxiv.org/api/rUYykArHCMq87l0kFZaQEkddw1g</id>
-  <updated>2014-02-28T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10897</opensearch:totalResults>
+  <link href="http://arxiv.org/api/query?search_query%3Dall%3Aeinstein%26id_list%3D%26start%3D0%26max_results%3D9" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=all:einstein&amp;id_list=&amp;start=0&amp;max_results=9</title>
+  <id>http://arxiv.org/api/yU+y8TWa/wSMw09n7ixeGjwHjIs</id>
+  <updated>2014-03-01T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">21531</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
-  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">7</opensearch:itemsPerPage>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">9</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/1108.1115v1</id>
-    <updated>2011-08-04T15:26:39Z</updated>
-    <published>2011-08-04T15:26:39Z</published>
-    <title>CERN Accelerator Strategy</title>
-    <summary>  The CERN strategy for future accelerator projects is outlined and the role of
-the HE-LHC inside this strategy is described.
+    <id>http://arxiv.org/abs/0802.2137v3</id>
+    <updated>2008-04-01T04:36:21Z</updated>
+    <published>2008-02-15T04:40:56Z</published>
+    <title>Einstein solvmanifolds and the pre-Einstein derivation</title>
+    <summary>  An Einstein nilradical is a nilpotent Lie algebra, which can be the
+nilradical of a metric Einstein solvable Lie algebra. The classification of
+Riemannian Einstein solvmanifolds (possibly, of all noncompact homogeneous
+Einstein spaces) can be reduced to determining, which nilpotent Lie algebras
+are Einstein nilradicals and to finding, for every Einstein nilradical, its
+Einstein metric solvable extension. For every nilpotent Lie algebra, we
+construct an (essentially unique) derivation, the pre-Einstein derivation, the
+solvable extension by which may carry an Einstein inner product. Using the
+pre-Einstein derivation, we then give a variational characterization of
+Einstein nilradicals. As an application, we prove an easy-to-check convex
+geometry condition for a nilpotent Lie algebra with a nice basis to be an
+Einstein nilradical and also show that a typical two-step nilpotent Lie algebra
+is an Einstein nilradical.
 </summary>
     <author>
-      <name>M. Myers</name>
+      <name>Y. Nikolayevsky</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">1 page, Contribution given to the EuCARD-AccNet-EuroLumi Workshop:
-  The High-Energy Large Hadron Collider, Malta, Republic of Malta, 14 - 16 Oct
-  2010</arxiv:comment>
-    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2011-003, pp. 6</arxiv:journal_ref>
-    <link href="http://arxiv.org/abs/1108.1115v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1108.1115v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 pages, added Theorem 5</arxiv:comment>
+    <link href="http://arxiv.org/abs/0802.2137v3" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/0802.2137v3" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="53C30; 53C25" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/1401.3927v1</id>
-    <updated>2014-01-16T08:25:14Z</updated>
-    <published>2014-01-16T08:25:14Z</published>
-    <title>Magnet Quench 101</title>
-    <summary>  This paper gives a broad summary of the physical phenomena associated with
-the quench of a superconducting magnet.
+    <id>http://arxiv.org/abs/1209.5181v1</id>
+    <updated>2012-09-24T07:59:17Z</updated>
+    <published>2012-09-24T07:59:17Z</published>
+    <title>Albert Einstein's Methodology</title>
+    <summary>  This paper discusses Einstein's methodology. 1. Einstein characterized his
+work as a theory of principle and reasoned that beyond kinematics, the 1905
+heuristic relativity principle could offer new connections between
+non-kinematical concepts. 2. Einstein's creativity and inventiveness and
+process of thinking; invention or discovery. 3. Einstein considered his best
+friend Michele Besso as a sounding board and his class-mate from the
+Polytechnic Marcel Grossman, as his active partner. Yet, Einstein wrote to
+Arnold Sommerfeld that Grossman will never claim to be considered a
+co-discoverer of the Einstein-Grossmann theory. He only helped in guiding
+Einstein through the mathematical literature, but contributed nothing of
+substance to the results of the theory. Hence, Einstein neither considered
+Besso or Grossmann as co-discoverers of the relativity theory which he
+invented.
 </summary>
     <author>
-      <name>L. Bottura</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+      <name>Galina Weinstein</name>
     </author>
-    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.5170/CERN-2013-006.1</arxiv:doi>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">9 pages, Contribution to WAMSDO 2013: Workshop on Accelerator Magnet,
-  Superconductor, Design and Optimization; 15 - 16 Jan 2013, CERN, Geneva,
-  Switzerland</arxiv:comment>
-    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2013-006, pp.1-9</arxiv:journal_ref>
-    <link href="http://arxiv.org/abs/1401.3927v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1401.3927v1" rel="related" type="application/pdf"/>
-    <link title="doi" href="http://dx.doi.org/10.5170/CERN-2013-006.1" rel="related"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/1209.5181v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1209.5181v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/1303.6519v1</id>
-    <updated>2013-03-26T15:05:55Z</updated>
-    <published>2013-03-26T15:05:55Z</published>
-    <title>Radiation protection at CERN</title>
-    <summary>  This paper gives a brief overview of the general principles of radiation
-protection legislation; explains radiological quantities and units, including
-some basic facts about radioactivity and the biological effects of radiation;
-and gives an overview of the classification of radiological areas at CERN,
-radiation fields at high-energy accelerators, and the radiation monitoring
-system used at CERN. A short section addresses the ALARA approach used at CERN.
+    <id>http://arxiv.org/abs/math/0502287v1</id>
+    <updated>2005-02-14T15:36:34Z</updated>
+    <published>2005-02-14T15:36:34Z</published>
+    <title>On pseudo-Hermitian Einstein spaces</title>
+    <summary>  We describe and construct here pseudo-Hermitian structures $\theta$ without
+torsion (i.e. with transversal symmetry) whose Webster-Ricci curvature tensor
+is a constant multiple of the exterior differential $d\theta$. We call these
+structures pseudo-Hermitian Einstein and our result states that they all can be
+derived locally from K{\"a}hler-Einstein metrics. Moreover, we discuss the
+corresponding Fefferman metrics of the pseudo-Hermitian Einstein structures.
+These Fefferman metrics are never Einstein, but they are locally always
+conformally Einstein.
 </summary>
     <author>
-      <name>Doris Forkel-Wirth</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+      <name>Felipe Leitner</name>
     </author>
-    <author>
-      <name>Stefan Roesler</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Marco Silari</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Marilena Streit-Bianchi</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Christian Theis</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Heinz Vincke</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Helmut Vincke</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
-    </author>
-    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.5170/CERN-2013-001.415</arxiv:doi>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">22 pages, contribution to the CAS - CERN Accelerator School: Course
-  on High Power Hadron Machines; 24 May - 2 Jun 2011, Bilbao, Spain</arxiv:comment>
-    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2013-001, pp.415-436</arxiv:journal_ref>
-    <link href="http://arxiv.org/abs/1303.6519v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1303.6519v1" rel="related" type="application/pdf"/>
-    <link title="doi" href="http://dx.doi.org/10.5170/CERN-2013-001.415" rel="related"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.ins-det" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">16 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/math/0502287v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/math/0502287v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="32V05, 53A30, 53B30, 53C15" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/1401.4858v1</id>
-    <updated>2014-01-20T10:44:11Z</updated>
-    <published>2014-01-20T10:44:11Z</published>
-    <title>Proceedings of the WAMSDO 2013 Workshop on Accelerator Magnet,
-  Superconductor, Design and Optimization, CERN Geneva, Switzerland, 15 - 16
-  Jan 2013</title>
-    <summary>  This report contains the proceedings of the Workshop on Accelerator Magnet
-Superconductor, Design and Optimization (WAMSDO) held at CERN from 15 to 16
-January 2013. This fourth edition of the WAMSDO workshop is focussed on aspects
-related to quench protection.
+    <id>http://arxiv.org/abs/0707.4595v1</id>
+    <updated>2007-07-31T12:10:53Z</updated>
+    <published>2007-07-31T12:10:53Z</published>
+    <title>Einstein solvmanifolds with a simple Einstein derivation</title>
+    <summary>  The structure of a solvable Lie groups admitting an Einstein left-invariant
+metric is, in a sense, completely determined by the nilradical of its Lie
+algebra. We give an easy-to-check necessary and sufficient condition for a
+nilpotent algebra to be an Einstein nilradical whose Einstein derivation has
+simple eigenvalues. As an application, we classify filiform Einstein
+nilradicals (modulo known classification results on filiform graded Lie
+algebras).
 </summary>
     <author>
-      <name>E. Todesco</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">ed.</arxiv:affiliation>
+      <name>Y. Nikolayevsky</name>
     </author>
-    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.5170/CERN-2013-006</arxiv:doi>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">12 lectures, 82 pages, published as CERN Yellow Report
-  https://cds.cern.ch/record/1481283</arxiv:comment>
-    <link href="http://arxiv.org/abs/1401.4858v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1401.4858v1" rel="related" type="application/pdf"/>
-    <link title="doi" href="http://dx.doi.org/10.5170/CERN-2013-006" rel="related"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">11 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/0707.4595v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/0707.4595v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="53C30, 53C25" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/1206.4876v1</id>
-    <updated>2012-06-21T13:42:05Z</updated>
-    <published>2012-06-21T13:42:05Z</published>
-    <title>40th Anniversary of the First Proton-Proton Collisions in the CERN
-  Intersecting Storage Rings (ISR)</title>
-    <summary>  No Abstract of this Colloquium
+    <id>http://arxiv.org/abs/physics/0611117v1</id>
+    <updated>2006-11-12T19:02:48Z</updated>
+    <published>2006-11-12T19:02:48Z</published>
+    <title>The anti-Einstein equations</title>
+    <summary>  As we know, from the Einstein equations the vanishing of the four-divergence
+of the energy-momentum tensor follows. This is the case because the
+four-divergence of the Einstein tensor vanishes identically. Inversely, we find
+that from the vanishing of the four-divergence of the energy-momentum tensor
+not only the Einstein equations follow. Besides, the so-named anti-Einstein
+equations follow. These equations must be considered as complementary to the
+Einstein equations. And while from the Einstein equations the energy density
+(or the pressure) can be found, from the anti-Einstein equations the pressure
+(or the energy density) can be also found, without having to use an additional
+(but arbitrary) equation of state.
 </summary>
     <author>
-      <name>U. Amaldi</name>
+      <name>Evangelos Chaliasos</name>
     </author>
-    <author>
-      <name>P. J. Bryant</name>
-    </author>
-    <author>
-      <name>P. Darriulat</name>
-    </author>
-    <author>
-      <name>K. Hubner</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">4 contributions, 80 pages, published as CERN Yellow Report
-  https://cdsweb.cern.ch/record/1456765?ln=en</arxiv:comment>
-    <link href="http://arxiv.org/abs/1206.4876v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1206.4876v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">5 pages with no figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/physics/0611117v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/physics/0611117v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/1108.1663v1</id>
-    <updated>2011-08-08T10:07:10Z</updated>
-    <published>2011-08-08T10:07:10Z</published>
-    <title>Intensity issues and machine protection of the HE-LHC</title>
-    <summary>  The HE-LHC study investigates the possibilities for upgrading the beam energy
-of the Large Hadron Collider CERN from 7 TeV to 16.5 TeV. This paper presents a
-preliminary investigation of intensity issues and machine protection for the
-HE-LHC.
+    <id>http://arxiv.org/abs/1207.1944v1</id>
+    <updated>2012-07-09T04:35:23Z</updated>
+    <published>2012-07-09T04:35:23Z</published>
+    <title>On Einstein Kropina metrics</title>
+    <summary>  In this paper, a characteristic condition of Einstein Kropina metrics is
+given. By the characteristic condition, we prove that a non-Riemannian Kropina
+metric $F=\frac{\alpha^2}{\beta}$ with constant Killing form $\beta$ on an
+n-dimensional manifold $M$, $n\geq 2$, is an Einstein metric if and only if
+$\alpha$ is also an Einstein metric. By using the navigation data $(h,W)$, it
+is proved that an n-dimensional ($n\geq2$) Kropina metric
+$F=\frac{\alpha^2}{\beta}$ is Einstein if and only if the Riemannian metric $h$
+is Einstein and $W$ is a unit Killing vector field with respect to $h$.
+Moreover, we show that every Einstein Kropina metric must have vanishing
+S-curvature, and any conformal map between Einstein Kropina metrics must be
+homothetic.
 </summary>
     <author>
-      <name>R. Assmann</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
+      <name>Xiaoling Zhang</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">4 pages, contribution to the EuCARD-AccNet-EuroLumi Workshop: The
-  High-Energy Large Hadron Collider, Malta, 14 -- 16 Oct 2010; CERN Yellow
-  Report CERN-2011-003, pp. 124-127</arxiv:comment>
-    <link href="http://arxiv.org/abs/1108.1663v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1108.1663v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Yi-Bing Shen</name>
+    </author>
+    <link href="http://arxiv.org/abs/1207.1944v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1207.1944v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/1206.3954v1</id>
-    <updated>2012-06-18T14:41:57Z</updated>
-    <published>2012-06-18T14:41:57Z</published>
-    <title>Small-angle physics at the intersecting storage rings forty years later</title>
-    <summary>  No abstract: Hadron-hadron cross-sections at the beginning of the 1970s
+    <id>http://arxiv.org/abs/1309.2766v1</id>
+    <updated>2013-09-11T09:04:59Z</updated>
+    <published>2013-09-11T09:04:59Z</published>
+    <title>Renormalized Chern-Gauss-Bonnet formula for complete Kahler-Einstein
+  metrics</title>
+    <summary>  We present a renormalized Gauss-Bonnet formula for approximate
+Kahler-Einstein metrics on compact complex manifolds with pseudo-Einstein CR
+boundaries. The boundary integral is given explicitly, and it is proved that it
+gives a pseudo-Einstein invariant, which generalizes the Burns-Epstein
+invariant.
 </summary>
     <author>
-      <name>Ugo Amaldi</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Milan Bicocca U. and TERA Foundation</arxiv:affiliation>
+      <name>Taiji Marugame</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">30 pages, contribution to the CERN Yellow report: 40th Anniversary of
-  the First Proton-Proton Collisions in the CERN Intersecting Storage Rings
-  (ISR)</arxiv:comment>
-    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2012-004, pp.33</arxiv:journal_ref>
-    <link href="http://arxiv.org/abs/1206.3954v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1206.3954v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="nucl-ex" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">23 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/1309.2766v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1309.2766v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="Complex Variables (math.CV)" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0808.2097v1</id>
+    <updated>2008-08-15T06:46:57Z</updated>
+    <published>2008-08-15T06:46:57Z</published>
+    <title>A class of compact Poincare-Einstein manifolds: properties and
+  construction</title>
+    <summary>  We develop a geometric and explicit construction principle that generates
+classes of Poincare-Einstein manifolds, and more generally almost Einstein
+manifolds. Almost Einstein manifolds satisfy a generalisation of the Einstein
+condition; they are Einstein on an open dense subspace and, in general, have a
+conformal scale singularity set that is a conformal infinity for the Einstein
+metric. In particular, the construction may be applied to yield families of
+compact Poincare-Einstein manifolds, as well as classes of almost Einstein
+manifolds that are compact without boundary. We obtain classification results
+which show that the construction essentially exhausts a class of almost
+Einstein (and Poincare-Einstein) manifold. We develop the general theory of
+fixed conformal structures admitting multiple compatible almost Einstein
+structures. We also show that, in a class of cases, these are canonically
+related to a family of constant mean curvature totally umbillic embedded
+hypersurfaces.
+</summary>
+    <author>
+      <name>A. Rod Gover</name>
+    </author>
+    <author>
+      <name>Felipe Leitner</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">28 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/0808.2097v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/0808.2097v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.MP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="53C25, 53A30 (Primary); 53B20 (Secondary)" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1205.0922v1</id>
+    <updated>2012-05-04T11:16:59Z</updated>
+    <published>2012-05-04T11:16:59Z</published>
+    <title>Einstein's Clocks and Langevin's Twins</title>
+    <summary>  In 1905 Einstein presented the Clock Paradox and in 1911 Paul Langevin
+expanded Einstein's result to human observers, the "Twin Paradox." I will
+explain the crucial difference between Einstein and Langevin. Einstein did not
+present the so-called "Twin Paradox." Later Einstein continued to speak about
+the clock paradox. Einstein might not have been interested in the question:
+what happens to the observers themselves. The reason for this could be the
+following; Einstein dealt with measurement procedures, clocks and measuring
+rods. Einstein's observers were measuring time with these clocks and measuring
+rods. Einstein might not have been interested in so-called biology of the
+observers, whether these observers were getting older, younger, or whether they
+have gone any other changes; these changes appeared to be out of the scope of
+his "Principle of relativity" or kinematics. The processes and changes
+occurring within observers seemed to be good for philosophical discussions.
+Later writers criticized Einstein's clock paradox. Einstein quickly replied
+with witty, smart and clever retorts.
+</summary>
+    <author>
+      <name>Galina Weinstein</name>
+    </author>
+    <link href="http://arxiv.org/abs/1205.0922v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1205.0922v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>

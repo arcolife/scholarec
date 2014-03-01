@@ -19,16 +19,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # Import global dependencies
 import os, sys
 from urllib2 import urlopen
+import json
+from scholarec import DocumentArXiv
 
 # Import local dependencies
 SOURCE_PATH = os.path.dirname(os.path.abspath(__file__)) + '/../'
 sys.path.insert(0, SOURCE_PATH)
 
-from scholarec import Document
 '''
 # Open saved XML file
 file = open(SOURCE_PATH + 'log/output/query.xml','r').read()
-file.close()
+file.close() 
 '''
 
 class QueryParse:
@@ -37,26 +38,37 @@ class QueryParse:
         self.query_xml = query_xml
 
     def parse_data(self):
-        Doc = Document(self.query_xml)
-        self.data_xml, self.data_dict = Doc.extract_data()
-
+        """ parse extracted data into python dict format """
+        Doc = DocumentArXiv(self.query_xml)
+        #self.data_xml, self.data_dict = Doc.extract_data()
+        self.data_dict = Doc.extract_tags()
+        
     def print_data(self):
-        '''                                                                 
-        To print entries '''
-        entry_count = len(self.data_xml)
+        """ To print entries """
+        entry_count = len(self.data_dict)
+        for entry_id in self.data_dict.keys():
+            print "ID: %s"%(entry_id)
+            print self.data_dict[entry_id]
+            print
+        '''
         for i in xrange(entry_count):
             print "Entry %d: "%(i+1),"\n"
             print self.data_xml[i].toxml()
             print "\n-----------------\n"
+        '''
         print "Total Entries: ", entry_count
 
     def store_data(self):
-        '''                                                                 
-        write response to enternal file '''
-        
-        file = open( SOURCE_PATH + 'log/output/query_results.xml','w')
-        file.write(self.query_xml)
-        file.close()
+        """ write response to enternal file """
+        # write to JSON
+        self.data_json = json.JSONEncoder().encode(self.data_dict)
+        f_json = open( SOURCE_PATH + 'log/output/query_results.json','wb')
+        f_json.write(self.data_json)
+        f_json.close()
+        # write to XML
+        f_xml = open( SOURCE_PATH + 'log/output/query_results.xml','wb')
+        f_xml.write(self.query_xml)
+        f_xml.close()
 
 if __name__ == '__main__':
     try:

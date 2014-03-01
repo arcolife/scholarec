@@ -33,9 +33,9 @@ class DocumentArXiv(object):
         soup = Soup(self.query_xml) # XML as a string
         self.entries = soup.findAll('entry') # list of <entry>'s
         self.data = {} # keys: id & values: metadata
-        for entry in entries:
-            # strip down id in url to (say) -> 'abs/math/0507289v1'
-            id = urlparse(entry.find('id').string).path.lstrip('/') 
+        for entry in self.entries:
+            # strip down entry ID in url to (say) -> 'abs/math/0507289v1'
+            entry_id = urlparse(entry.find('id').string).path.lstrip('/') 
             title = entry.find('title').string
             summary = entry.find('summary').string
             # findAll() for multiple entries 
@@ -45,7 +45,7 @@ class DocumentArXiv(object):
             published = entry.find('published').string
             meta = { 'title': title, 'summary': summary, \
                   'authors': authors, 'published': published }
-            self.data[id] = meta
+            self.data[entry_id] = meta
 
         return self.data # python dict
 
