@@ -24,6 +24,7 @@ class DocumentArXiv(object):
         self.set_dom = None
         self.entries = None
         self.find_authors = lambda x: x.find('name').string
+        self.data = {} # keys: id & values: metadata
 
     def extract_tags(self):
         """
@@ -32,7 +33,6 @@ class DocumentArXiv(object):
         """
         soup = Soup(self.query_xml) # XML as a string
         self.entries = soup.findAll('entry') # list of <entry>'s
-        self.data = {} # keys: id & values: metadata
         for entry in self.entries:
             # strip down entry ID in url to (say) -> 'abs/math/0507289v1'
             entry_id = urlparse(entry.find('id').string).path.lstrip('/') 
@@ -57,7 +57,8 @@ class DocumentArXiv(object):
         """
         # form a DOM structure
         self.set_dom = parseString(self.query_xml) 
-        self.parsed_to_dict =  xmltodict.parse(self.query_xml, process_namespaces=True)
+        self.parsed_to_dict =  xmltodict.parse(self.query_xml, \
+                                               process_namespaces=True)
         #list of OrderedDicts
         self.parsed_dict_results = self.parsed_to_dict.values()[0].values()[7]
         # Relevant XML entries
