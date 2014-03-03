@@ -1,29 +1,36 @@
 #!/usr/bin/env python
-"""
-scholarec: A recommendation engine for scholarly works
-Copyright (C) 2014  Archit Sharma <archit.py@gmail.com>
+# -*- coding: utf-8 -*- 
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+## This file is part of ScholaRec.
+## A recommendation engine for Scholarly works.
+## Copyright (C) 2014  Archit Sharma <archit.py@gmail.com>
+##
+## ScholaRec is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+##
+## ScholaRec is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see <http://www.gnu.org/licenses/>
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+""" This module tests the scholarec modules by
+implementing requests to query arXiv API."""
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>."""
-
-# Import global dependencies
-import os, sys
-from urllib2 import urlopen
+## import general modules
+import os
+import sys
+from urllib2 import \
+    urlopen, quote
 import json
-from scholarec import DocumentArXiv
 from pprint import pprint
 
-# Import local dependencies
+## Import dependencies specific to scholarec
+from scholarec import DocumentArXiv
 SOURCE_PATH = os.path.dirname(os.path.abspath(__file__)) + '/../'
 sys.path.insert(0, SOURCE_PATH)
 
@@ -37,27 +44,32 @@ class QueryParse:
     ''' mathods to parse query '''    
     def __init__(self, query_xml):
         self.query_xml = query_xml
+        self.entry_count = 0
 
     def parse_data(self):
         """ parse extracted data into python dict format """
         Doc = DocumentArXiv(self.query_xml)
         #self.data_xml, self.data_dict = Doc.extract_data()
         self.data_dict = Doc.extract_tags()
+        self.entry_count = len(self.data_dict)
+        if self.entry_count:
+            print "Total Entries: ", self.entry_count
+        else:
+            sys.exit("\nNo matching entries found!")
         
     def print_data(self):
         """ To print entries """
-        entry_count = len(self.data_dict)
         for entry_id in self.data_dict.keys():
             print "ID: %s"%(entry_id)
             pprint(self.data_dict[entry_id])
             print
         '''
+        # if data type were XML
         for i in xrange(entry_count):
             print "Entry %d: "%(i+1),"\n"
             print self.data_xml[i].toxml()
             print "\n-----------------\n"
         '''
-        print "Total Entries: ", entry_count
 
     def store_data(self):
         """ write response to enternal file """
@@ -73,29 +85,39 @@ class QueryParse:
 
 if __name__ == '__main__':
     try:
-        kwarg = '+'.join(raw_input("\nEnter keyword to search arXiv: ").split())
-        query_xml = urlopen( \
-                             "http://export.arxiv.org/api/query?search_query=all:" \
-                             + kwarg + "&start=0&max_results=" \
-                             + str(int(raw_input("Enter maximum result limit: "))) \
-                         ).read()
+        kwarg = '+'.join(raw_input("\nEnter keywords, to query arXiv: ").split())
+        search = "http://export.arxiv.org/api/query?search_query=all:" \
+                 + kwarg + "&start=0&max_results=" \
+                 + str(int(raw_input("Enter maximum result count: ")))
+
+        print "\n\t\tPlease wait for query response.."
+        search_response = urlopen(search)
+        assert search_response.msg.upper() == 'OK'        
+        print "\t\tResponse: OK\n"
+        query_xml = search_response.read()
         Qp = QueryParse(query_xml)
         Qp.parse_data()
-        print "\n\t\tSuccess!"
-        # store data
-        if raw_input("Store Data to log/output?(y/n): ").lower() == 'y': Qp.store_data()
-        # print data
-        if raw_input("\nPrint entries? (y/n): ").lower() == 'y': Qp.print_data()
+
+        if raw_input("\nPrint entries? (y/n): ").lower() == 'y':
+            # print data
+            Qp.print_data()
+        if raw_input("\nStore Data to log/output?(y/n): ").lower() == 'y':
+            # store data        
+            Qp.store_data()
+
     except IOError as e:
-        print "I/O error({0}): {1}".format(e.errno, e.strerror)
+        print "\nI/O error({0}): {1}".format(e.errno, e.strerror)
+        print "Maybe you're disconnect from the Internet.."
     except KeyboardInterrupt:
         print "\n\n\t\tYou've aborted the program! \n"
     except ValueError as e:
         print "\nERROR: ",e,"\nCheck your input type."
     except IndexError as e:
         print "\nERROR: ",e,"\nResponse attributes not satisfied in data_dict."
+    except AssertionError as e:
+        print "\nERROR: Response: not OK! Maybe a site error"
     except:
         # >>sys.exc_info()<< gives whole exception
-        print "Unexpected error:", sys.exc_info()[0]  
+        print "Error: ", sys.exc_info()[0]  
         # system call to raise the exception out loud
         raise
