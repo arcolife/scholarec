@@ -21,6 +21,7 @@ import os, sys
 from urllib2 import urlopen
 import json
 from scholarec import DocumentArXiv
+from pprint import pprint
 
 # Import local dependencies
 SOURCE_PATH = os.path.dirname(os.path.abspath(__file__)) + '/../'
@@ -48,7 +49,7 @@ class QueryParse:
         entry_count = len(self.data_dict)
         for entry_id in self.data_dict.keys():
             print "ID: %s"%(entry_id)
-            print self.data_dict[entry_id]
+            pprint(self.data_dict[entry_id])
             print
         '''
         for i in xrange(entry_count):
