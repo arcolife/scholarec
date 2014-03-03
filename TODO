@@ -13,6 +13,11 @@
    - Connect Web Interface
 
 *) ISSUES
+			~~ In addition to github issue list ~~
+   - Add paper.py:
+     Extract the ID's. segregate, and make a list by ID's.
+     Then make shell / python script to batch process adding 
+     of these papers to the database
    - A generic extract_data() function; specifying tags as args
      OR
      Different Document classes to extract data from different sources
