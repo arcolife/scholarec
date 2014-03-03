@@ -22,7 +22,7 @@ $ sudo python setup.py develop
 
 To use the module in a Python script, simply import:
 
-from scholarec import Document
+import scholarec
 
 To go for a sample run (Later, have a look at the following script to see how the module works.)
 
