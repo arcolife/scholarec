@@ -14,10 +14,12 @@
 
 *) ISSUES
 			~~ In addition to github issue list ~~
-   - Add paper.py:
+   - Add paper.py (multithreaded batch processing jobs):
      Extract the ID's. segregate, and make a list by ID's.
      Then make shell / python script to batch process adding 
      of these papers to the database
+   - topwords / citations count display. fulltext link and pdf downloader #partial
+   - 
    - A generic extract_data() function; specifying tags as args
      OR
      Different Document classes to extract data from different sources
