@@ -23,6 +23,13 @@
      - Select tools for data visualization and infographics 
        (Google Chart API / D3 / GraphViz / Processing / etc.. )     
 
+   - Explore Search Engine / Indexing options: 
+     - Lucene/Solr
+     - lupyne
+     - solrpy
+     - ES
+     - sunburnt
+     - 
    - Add to DocumentData.py for processing plain text docs to extract topwords
    - Add One more module, in addition to Base, for main recommendation engine
    - Add default 'arXiv_parsing_example.py' to DocumentClass
