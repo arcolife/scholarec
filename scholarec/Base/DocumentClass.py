@@ -17,14 +17,20 @@
 ## You should have received a copy of the GNU General Public License
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>
 
-""" This script parses the XML structure 
+""" This script parses the respective data structures, 
 passed to the object of Document Class."""
 
 ## import general modules
-from urlparse \
-    import urlparse
+import os
+from urlparse import \
+    urlparse
+from urllib import \
+    urlretrieve, urlopen
 from xml.dom.minidom import \
     parseString #,parse
+from subprocess import \
+    call
+import feedparser
 
 ## import dependencies
 import xmltodict
@@ -48,8 +54,21 @@ class DocumentArXiv(object):
         self.entries = None
         self.find_authors = lambda x: x.find('name').string
         self.data = {} # keys: id & values: metadata
+        self.url_path = 'http://arxiv.org/pdf/'
+        self.pdf_path = None
+        self.feed = None
 
     def extract_tags(self):
+        self.feed = feedparser.parse(self.query_xml)
+        for entry in self.feed.entries:
+            meta = { 'title': entry.title, 'summary': entry.summary, \
+                     'author': entry.author, 'authors' : entry.authors, \
+                     'published': entry.published, 'links' : entry.links }
+            self.data[entry.id] = meta
+        
+        return self.data
+        
+    def extract_tags_bs4(self):
         """
         Using: BeatifulSoup's XML parser
         Returns XML data in dict format 
@@ -71,7 +90,7 @@ class DocumentArXiv(object):
             self.data[entry_id] = meta
 
         return self.data # python dict
-
+    
     def extract_tags_xmltodict(self):
         """
         WARNING: this method is now Obsolete, but still included; 
@@ -94,3 +113,47 @@ class DocumentArXiv(object):
             **On comparing data in OrderedDict type & in XML-dom type\n"
 
         return self.entries, self.parsed_dict_results
+
+    def extract_pdfs(self):
+        """
+        Downloads a document's pdf and dumps 
+        the output, for analysis. 
+        """
+        try:
+            if os.path.exists('db'):
+                pass
+            else:
+                os.mkdir('db')
+            for entry in self.feed.entries:
+                doc_id = entry['id'].split('http://arxiv.org/')[-1]
+                dir_path = os.path.join('db', doc_id )
+                if os.path.exists(dir_path):
+                    pass
+                else:
+                    os.makedirs(dir_path)
+                # download pdf
+                self.pdf_path = os.path.join( 'db', \
+                                              doc_id, \
+                                              doc_id.split('/')[-1] + '.pdf' )
+                if os.path.exists(self.pdf_path):
+                    continue
+                else:
+                    print "\nExtracting: %s" % (self.pdf_path)
+                    for link in entry.links:
+                        try:
+                            if link.title == 'pdf':
+                                print 'pdf link: %s' % link.href
+                                urlretrieve(link.href, self.pdf_path)
+                        except:
+                            continue
+                    print "Done:"
+                    print "Converting: .pdf to .txt .."
+                    cmd = ['pdftotext', \
+                           self.pdf_path, \
+                           os.path.join( \
+                                         dir_path, \
+                                         doc_id.split('/')[-1] + '.txt' ) ]
+                    # execute shell
+                    call(cmd)
+        except:
+            raise

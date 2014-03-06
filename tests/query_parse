@@ -44,14 +44,16 @@ class QueryParse:
     ''' mathods to parse query '''    
     def __init__(self, query_xml):
         self.query_xml = query_xml
-        self.entry_count = 0
-
+        self.entry_count = None
+        self.data_dict = None
+        self.Doc = None
+        
     def parse_data(self):
         """ parse extracted data into python dict format """
-        Doc = DocumentArXiv(self.query_xml)
+        self.Doc = DocumentArXiv(self.query_xml)
         #self.data_xml, self.data_dict = Doc.extract_data()
-        self.data_dict = Doc.extract_tags()
-        self.entry_count = len(self.data_dict)
+        self.data_dict = self.Doc.extract_tags()
+        self.entry_count = len(self.data_dict.keys())
         if self.entry_count:
             print "Total Entries: ", self.entry_count
         else:
@@ -82,6 +84,11 @@ class QueryParse:
         f_xml = open( SOURCE_PATH + 'log/output/query_results.xml','wb')
         f_xml.write(self.query_xml)
         f_xml.close()
+        
+    def store_pdfs(self):
+        # retrieve and extract pdfs
+        print "Now downloading all pdf's .. "
+        self.Doc.extract_pdfs()
 
 if __name__ == '__main__':
     try:
@@ -101,9 +108,12 @@ if __name__ == '__main__':
         if raw_input("\nPrint entries? (y/n): ").lower() == 'y':
             # print data
             Qp.print_data()
-        if raw_input("\nStore Data to log/output?(y/n): ").lower() == 'y':
+        if raw_input("\nStore query response to ./log/output? (y/n): ").lower() == 'y':
             # store data        
             Qp.store_data()
+        if raw_input("\nExtract PDF's & plain texts? (y/n): ").lower() == 'y':
+            # retrieve pdfs & store them
+            Qp.store_pdfs()
 
     except IOError as e:
         print "\nI/O error({0}): {1}".format(e.errno, e.strerror)
