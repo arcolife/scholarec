@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>ScholaRec| Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+    <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>	
+  </head>
+  <body>
+    <div class="header" id="home">
+      <div class="header_top">
+	<div class="wrap">
+	  <div class="logo">
+	    <a href="index.html"></a>
+	  </div>	
+	  <div class="menu">
+	    <ul>
+	      <li><a href="#home" class="scroll">Home</a></li>
+	      <li><a href="#features" class="scroll">Articles</a></li>
+	      <li><a href="#dashboard" class="scroll">Sample</a></li>
+	      <li><a href="#customers" class="scroll">Search</a></li>
+	      <li class="login" >
+		<div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
+		  <div id="loginBox">                
+		    <form id="loginForm">
+		      <fieldset id="body">
+			<fieldset>
+			  <label for="email">Email Address</label>
+			  <input type="text" name="email" id="email">
+			</fieldset>
+			<fieldset>
+			  <label for="password">Password</label>
+			  <input type="password" name="password" id="password">
+			</fieldset>
+			<input type="submit" id="login" value="Sign in">
+			<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+		      </fieldset>
+		      <span><a href="#">Forgot your password?</a></span>
+		    </form>
+		  </div>
+		</div>
+	      </li>
+	      <div class="clear"></div>
+	    </ul>
+	  </div>							
+	  <div class="clear"></div>
+	</div>
+      </div>
+    </div>			      	
+    <div class="main">
+      <div class="content">	
+	<div class="content_top">  
+	  <div class="wrap">                                  		
+            <div class="banner_desc">
+              <h1>Recommender System for <span>Scientific Documents</span></h1>  
+              <h3>ScholaRec provides everything you need to research<br /> Start searching here</h3>
+            </div>  
+            <!--<div class="ipad">
+            	<img src="images/ipad.png" alt="" />
+            </div>-->
+            <div class="clear"></div>
+          </div>
+	</div>
+        <div class="features" id="features">
+          <div class="wrap">                             	
+            <h2>Access articles, reports and documents<span> here</span></h2>
+            <h4>Search thousands of scientific documents within minutes</h4>
+            <div class="features_grids">
+	      <div class="section group">
+		<div class="grid_1_of_4 images_1_of_4">
+		  
+		  <h3>Articles & Preprints</h3>
+		  <p>Published Articles (344,601) Preprints (697,608) Thesis (19,451) Reports (5,843) CERN Notes (42,499) Committee Documents (24,836)</p>
+		</div>
+		<div class="grid_1_of_4 images_1_of_4">
+		  <h3>Categories</h3>
+		  <p>Architecture (131) Arts (208) Astronomy (73) Biology (419) Business (1136) Chemistry (169) Computers (461) Computer Science (9234)</p>
+		</div>
+		<div class="grid_1_of_4 images_1_of_4">
+		  <h3>Series</h3>
+		  <p>Annual Reports (116)  Yellow Reports (1,155)  Theory (13,745) Academic Training Lectures (745) Summer Student Lectures (1,067) General Talks (3,748)</p>
+		</div>
+		<div class="grid_1_of_4 images_1_of_4">
+		  <h3>Top Authors</h3>
+		  <p></p>
+		</div>
+	      </div>
+	      
+	      <script>
+		$(document).ready(function() {
+		$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		
+		fixedContentPos: false,
+		fixedBgPos: true,
+		
+		overflowY: 'auto',
+		
+		closeBtnInside: true,
+		preloader: false,
+		
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+		});
+		
+		});
+	      </script>
+	      
+	    </div>
+	  </div>
+	</div>
+      </div>
+      
+      <div class="dashborder_img" id="dashboard">
+        <div class="wrap">                             	
+          <h2>Powerful <span>Search</span></h2>
+          <h4>Recommender Systems for Scientific Documents</h4>
+	  <br><br>
+	  <p>
+	    <ul>
+	      <li><a href="Results/results.html" title="Click Here">
+		  Click to view sample Results from query</a>
+	      </li>
+	      <li>
+		<br>
+		<a href="Results/authors.html" title="Click Here">
+		  Click to view sample Author graph visualization</a>
+	      </li>
+	      <li>
+		<br>
+		<a href="Results/citations.html" title="Click Here">
+		  Click to view sample Citations graph visualization</a>
+	      </li>
+	      <li>
+		<br>
+		<a href="Results/references.html" title="Click Here">
+		  Click to view sample References graph visualization</a>
+	      </li>
+	    </ul>
+	  </p>
+        </div>
+      </div>
+      
+      <div class="content_bottom" id="customers">
+        <div class="wrap">  
+	  
+          <div id='top_menu_box' class='pg_block'>
+  	    <div id='top_menu'>
+    	      <form method='get' action="http://export.arxiv.org/api/query?search_query=all:electron&start=0&max_results=10">
+    		<input class="search" name="search_query=all:" type="text" value="for now, press enter to continue" size='80'><input class="button" type="button" onclick="document.location='http://export.arxiv.org/api/query?search_query=all:electron&start=0&max_results=10'" value='Search'>
+              </form>
+	      
+	      
+              <div id='search_stats'>
+		894 thesis, 
+		11892 authors, 
+		15745 papers, 
+		18250 articles 
+              </div>          
+              <h2><span></span></h2>
+              <h4>Our success is measured through the success of our recommendation system.</h4>
+              
+	      <div class="footer">
+   		<div class="wrap">
+   		  <div class="section group example">
+		    <div class="col_1_of_4 span_1_of_4 list">
+		      <h3>Overview</h3>
+		      <ul>
+			<li><a href="http://arcolife.github.io/scholarec">About Us</a></li>
+			
+		      </ul>				   
+ 		    </div>
+ 		    <div class="col_1_of_4 span_1_of_4 list">
+		      <h3>Latest papers</h3>
+		      <ul>
+			<li><a href="#">Research Publications</a></li>
+			<li><a href="#">Periodicals</a></li>
+			<li><a href="#">Reports</a></li>
+			
+ 		    </div>
+		    <div class="col_1_of_4 span_1_of_4 list">
+		      <h3>Topics</h3>
+		      <ul>
+			<li><a href="#">Computing</a></li>
+			<li><a href="#">Physics</a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>				   
+		      </ul>				   
+ 		    </div>
+		    <div class="col_1_of_4 span_1_of_4 list">
+		      
+		      <h3>Stay in touch</h3>
+		      <ul>
+			<li class="googleplus"><a href="https://plus.google.com/+ArchitSharma1337/" target="_blank">
+			    <img src="images/googleplus.png" alt="" /> Google+</a>
+			</li>
+			<li class="twitter"><a href="http://twitter.com/arcolife" target="_blank"> 
+			    <img src="images/twitter.png" alt="" /> Twitter</a>
+			</li>
+			<li><a href="#" target="_blank"> <img src="images/facebook.png" alt="" /> Facebook</a></li>
+			<div class="clear"></div>
+		      </ul>
+   	 	    </div>			   
+ 		  </div>
+		  <div class="clear"></div>
+		</div>
+	      </div> 
+	    </div> 
+	    <div class="copy_right">
+	      <div class="wrap">
+		<p>© 2014 Design by Abhishek Bhowmik - Archit Sharma</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>

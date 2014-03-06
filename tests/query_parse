@@ -27,7 +27,8 @@ import sys
 from urllib2 import \
     urlopen, quote
 import json
-from pprint import pprint
+from pprint import \
+    pprint, pformat
 import wikipedia
 
 ## Import dependencies specific to scholarec
@@ -43,10 +44,11 @@ file.close()
 
 class QueryParse:
     ''' mathods to parse query '''    
-    def __init__(self, query_xml):
+    def __init__(self, query_xml, keywords):
         self.query_xml = query_xml
         self.entry_count = None
         self.data_dict = None
+        self.keywords = keywords
         self.Doc = None
         
     def parse_data(self):
@@ -85,7 +87,26 @@ class QueryParse:
         f_xml = open( SOURCE_PATH + 'log/output/query_results.xml','wb')
         f_xml.write(self.query_xml)
         f_xml.close()
-        
+
+    def generate_html(self):
+        # generates an html to read results in browser in raw form
+        html_code = """<html>
+        <head>
+        <title>ScholaRec produced the following search response</title>
+        <h1>Results for keywords: %s</h1>
+        </head>
+        <body> """ % (self.keywords)
+        html_code += '<pre>' + pformat(self.data_dict) + '</pre>'
+        html_code += """</body></html>"""        
+        # write HTML
+        f = open( SOURCE_PATH + 'public/Results/results_simple.html', 'wb')
+        f.write(html_code)
+        f.close()
+        # write results as a text file
+        f = open( SOURCE_PATH + 'public/Results/results.txt', 'wb')
+        f.write( str(self.data_dict) )
+        f.close()
+
     def store_pdfs(self):
         # retrieve and extract pdfs
         print "Now downloading all pdf's .. "
@@ -105,7 +126,7 @@ if __name__ == '__main__':
         assert search_response.msg.upper() == 'OK'        
         print "\t\tResponse: OK\n"
         query_xml = search_response.read()
-        Qp = QueryParse(query_xml)
+        Qp = QueryParse(query_xml, keywords)
         Qp.parse_data()
 
         if raw_input("\nPrint entries? (y/n): ").lower() == 'y':
@@ -117,6 +138,9 @@ if __name__ == '__main__':
         if raw_input("\nExtract PDF's & plain texts? (y/n): ").lower() == 'y':
             # retrieve pdfs & store them
             Qp.store_pdfs()
+        if raw_input("\nGenerate HTML in public/Results/results.html? (y/n): ").lower() == 'y':
+            # retrieve pdfs & store them
+            Qp.generate_html()
 
         print "\nYou've searched for : %s \n" %(keywords)
         print "\nWikipedia says: \n %s \n" % (wikipedia.summary(keywords))
