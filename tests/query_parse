@@ -93,9 +93,10 @@ class QueryParse:
 if __name__ == '__main__':
     try:
         kwarg = '+'.join(raw_input("\nEnter keywords, to query arXiv: ").split())
+        start = str(int(raw_input("Enter pagination start (0,1,..): ")))
         search = "http://export.arxiv.org/api/query?search_query=all:" \
-                 + kwarg + "&start=0&max_results=" \
-                 + str(int(raw_input("Enter maximum result count: ")))
+                 + kwarg + "&start=" + start + "&max_results=" \
+                + str(int(raw_input("Enter maximum result count: ")))
 
         print "\n\t\tPlease wait for query response.."
         search_response = urlopen(search)
@@ -114,6 +115,8 @@ if __name__ == '__main__':
         if raw_input("\nExtract PDF's & plain texts? (y/n): ").lower() == 'y':
             # retrieve pdfs & store them
             Qp.store_pdfs()
+        
+        print "\nEnter following URL in browser, for GUI mode: \n %s \n" % (search) 
 
     except IOError as e:
         print "\nI/O error({0}): {1}".format(e.errno, e.strerror)
