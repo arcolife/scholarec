@@ -28,6 +28,7 @@ from urllib2 import \
     urlopen, quote
 import json
 from pprint import pprint
+import wikipedia
 
 ## Import dependencies specific to scholarec
 from scholarec import DocumentArXiv
@@ -92,10 +93,11 @@ class QueryParse:
 
 if __name__ == '__main__':
     try:
-        kwarg = '+'.join(raw_input("\nEnter keywords, to query arXiv: ").split())
+
+        keywords = raw_input("\nEnter keywords, to query arXiv: ")
         start = str(int(raw_input("Enter pagination start (0,1,..): ")))
         search = "http://export.arxiv.org/api/query?search_query=all:" \
-                 + kwarg + "&start=" + start + "&max_results=" \
+                 + '+'.join(keywords.split()) + "&start=" + start + "&max_results=" \
                 + str(int(raw_input("Enter maximum result count: ")))
 
         print "\n\t\tPlease wait for query response.."
@@ -115,8 +117,11 @@ if __name__ == '__main__':
         if raw_input("\nExtract PDF's & plain texts? (y/n): ").lower() == 'y':
             # retrieve pdfs & store them
             Qp.store_pdfs()
-        
+
+        print "\nYou've searched for : %s \n" %(keywords)
+        print "\nWikipedia says: \n %s \n" % (wikipedia.summary(keywords))
         print "\nEnter following URL in browser, for GUI mode: \n %s \n" % (search) 
+        print "\n\t\tThanks for using ScholaRec!\n"
 
     except IOError as e:
         print "\nI/O error({0}): {1}".format(e.errno, e.strerror)
