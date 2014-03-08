@@ -47,7 +47,7 @@ class DocumentUpload(object):
         pass
 
 
-class DocumentModify(object):
+class DocumentQuery(object):
     """
     Run different queries on the data 
     already present on ElasticSearch instance."""
