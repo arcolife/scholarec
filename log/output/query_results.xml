@@ -1,296 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <link href="http://arxiv.org/api/query?search_query%3Dall%3Atheory%20of%20relativity%26id_list%3D%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
-  <title type="html">ArXiv Query: search_query=all:theory of relativity&amp;id_list=&amp;start=0&amp;max_results=10</title>
-  <id>http://arxiv.org/api/XZsqNQiiRa+bAiXj7/6H1LQGVoE</id>
-  <updated>2014-03-06T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">911893</opensearch:totalResults>
+  <link href="http://arxiv.org/api/query?search_query%3Dall%3Acern%26id_list%3D%26start%3D0%26max_results%3D2" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=all:cern&amp;id_list=&amp;start=0&amp;max_results=2</title>
+  <id>http://arxiv.org/api/SUKDtQ/W8+y3sbQMfD0Ccx5jREg</id>
+  <updated>2014-03-07T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10905</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
-  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">2</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/1301.1933v1</id>
-    <updated>2013-01-09T17:49:21Z</updated>
-    <published>2013-01-09T17:49:21Z</published>
-    <title>Shape Dynamics</title>
-    <summary>  Barbour's formulation of Mach's principle requires a theory of gravity to
-implement local relativity of clocks, local relativity of rods and spatial
-covariance. It turns out that relativity of clocks and rods are mutually
-exclusive. General Relativity implements local relativity of clocks and spatial
-covariance, but not local relativity of rods. It is the purpose of this
-contribution to show how Shape Dynamics, a theory that is locally equivalent to
-General Relativity, implements local relativity of rods and spatial covariance
-and how a BRST formulation, which I call Doubly General Relativity, implements
-all of Barbour's principles.
+    <id>http://arxiv.org/abs/1108.1115v1</id>
+    <updated>2011-08-04T15:26:39Z</updated>
+    <published>2011-08-04T15:26:39Z</published>
+    <title>CERN Accelerator Strategy</title>
+    <summary>  The CERN strategy for future accelerator projects is outlined and the role of
+the HE-LHC inside this strategy is described.
 </summary>
     <author>
-      <name>Tim Koslowski</name>
+      <name>M. Myers</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages, LaTeX, based on a talk given at Relativity and Gravitation
-  100 years after Einstein in Prague, June 2012</arxiv:comment>
-    <link href="http://arxiv.org/abs/1301.1933v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1301.1933v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">1 page, Contribution given to the EuCARD-AccNet-EuroLumi Workshop:
+  The High-Energy Large Hadron Collider, Malta, Republic of Malta, 14 - 16 Oct
+  2010</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2011-003, pp. 6</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/1108.1115v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1108.1115v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/1107.0939v1</id>
-    <updated>2011-07-05T18:43:06Z</updated>
-    <published>2011-07-05T18:43:06Z</published>
-    <title>About Locality and the Relativity Principle Beyond Special Relativity</title>
-    <summary>  Locality of interactions is an essential ingredient of Special Relativity.
-Recently, a new framework under the name of relative locality
-\cite{AmelinoCamelia:2011bm} has been proposed as a way to consider Planckian
-modifications of the relativistic dynamics of particles. We note in this paper
-that the loss of absolute locality is a general feature of theories beyond
-Special Relativity with an implementation of a relativity principle. We give an
-explicit construction of such an implementation and compare it both with the
-previously mentioned framework of relative locality and the so-called Doubly
-Special Relativity theories.
+    <id>http://arxiv.org/abs/1401.3927v1</id>
+    <updated>2014-01-16T08:25:14Z</updated>
+    <published>2014-01-16T08:25:14Z</published>
+    <title>Magnet Quench 101</title>
+    <summary>  This paper gives a broad summary of the physical phenomena associated with
+the quench of a superconducting magnet.
 </summary>
     <author>
-      <name>J. M. Carmona</name>
+      <name>L. Bottura</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CERN</arxiv:affiliation>
     </author>
-    <author>
-      <name>J. L. Cortes</name>
-    </author>
-    <author>
-      <name>D. Mazon</name>
-    </author>
-    <author>
-      <name>F. Mercati</name>
-    </author>
-    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1103/PhysRevD.84.085010</arxiv:doi>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">10 pages, no figures</arxiv:comment>
-    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Phys. Rev. D 84, 085010 (2011)</arxiv:journal_ref>
-    <link href="http://arxiv.org/abs/1107.0939v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1107.0939v1" rel="related" type="application/pdf"/>
-    <link title="doi" href="http://dx.doi.org/10.1103/PhysRevD.84.085010" rel="related"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/1104.0682v1</id>
-    <updated>2011-03-29T09:41:58Z</updated>
-    <published>2011-03-29T09:41:58Z</published>
-    <title>Ternary relative velocity; astonishing conflict of the Lorentz group
-  with relativity</title>
-    <summary>  We are proving that the Lorentz boost entails the relative velocity to be
-ternary: ternary relative velocity is a velocity of a body with respect to an
-interior observer as seen by a preferred exterior-observer. The Lorentz boosts
-imply non-associative addition of ternary relative velocities. Within
-Einstein's special relativity theory, each preferred observer (fixed stars,
-aether, etc), determine the unique relative velocity among each pair of massive
-bodies. Therefore, the special relativity founded on Minkowski's axiom, that
-each pair of reference systems must be related by Lorentz isometry, needs a
-preferred reference system in order to have the unique Einstein's relative
-velocity among each pair of massive bodies. This choice-dependence of relative
-velocity violate the Relativity Principle that all reference systems must be
-equivalent. This astonishing conflict of the Lorentz relativity group, with the
-Relativity Principle, can be resolved in two alternative ways. Either, abandon
-the Relativity Principle in favor of a preferred reference system [de Abreu
-2004; de Abreu and Guerra 2005, 2006]. Or, within the Relativity Principle,
-replace the Lorentz relativity group by the relativity groupoid, with the
-choice-free binary relative velocities introduced by Minkowski in 1908. Binary
-- means that the relative velocity is a function of a pair of reference
-systems. Following Minkowski [1908], we consider the binary relative velocity
-to be the Minkowski space-like vector (and not the Minkowski bivector as it is
-in the Hestenes theory [Hestenes 1974]).
-</summary>
-    <author>
-      <name>Zbigniew Oziewicz</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">UNAM</arxiv:affiliation>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">LaTeX, 19 pages; Vladimir Gladyshev, Editor, Physical Interpretations
-  of Relativity Theory, Moscow 2007, pages 292-303, ISBN 978-5-7038-3178-6</arxiv:comment>
-    <link href="http://arxiv.org/abs/1104.0682v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1104.0682v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="51B20, 53A35, 53B30, 83A05" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/gr-qc/0602075v1</id>
-    <updated>2006-02-20T13:29:46Z</updated>
-    <published>2006-02-20T13:29:46Z</published>
-    <title>Doubly Special Relativity: A New Relativity or Not?</title>
-    <summary>  Double Special Relativity theories are the relativistic theories in which the
-transformations between inertial observers are characterized by two
-observer-independent scales of the light speed and the Planck length. We study
-two main examples of these theories and want to show that these theories are
-not the new theories of relativity, but only are re-descriptions of Einstein's
-special relativity in the non-conventional coordinates.
-</summary>
-    <author>
-      <name>Nosratollah Jafari</name>
-    </author>
-    <author>
-      <name>Ahmad Shariati</name>
-    </author>
-    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1063/1.2218214</arxiv:doi>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">5 pages, 1 figures, to appear in proceedings of ERE2005, the XXVIII
-  Spanish Relativity Meeting, Oviedo, Spain</arxiv:comment>
-    <link href="http://arxiv.org/abs/gr-qc/0602075v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/gr-qc/0602075v1" rel="related" type="application/pdf"/>
-    <link title="doi" href="http://dx.doi.org/10.1063/1.2218214" rel="related"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.MP" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/1104.0684v1</id>
-    <updated>2011-03-30T17:01:08Z</updated>
-    <published>2011-03-30T17:01:08Z</published>
-    <title>Concepts of relative velocity</title>
-    <summary>  The central concept of the theory of relativity is the relativity of
-velocity. The velocity of a material body is not an intrinsic property of the
-body; it depends on a free choice of reference system. Relative velocity is
-thus reference-dependent, it is not an absolute concept. We stress that even
-zero-velocity must be relative. Every reference system possesses its own
-zero-velocity relative only to that particular reference system. Does the
-theory of relativity formulated in terms of relative velocities, with many
-zero-velocities, imply the Lorentz isometry group? We discuss the many relative
-spaces of Galileo and Poincare, as quotient spaces.
-</summary>
-    <author>
-      <name>Zbigniew Oziewicz</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">UNAM</arxiv:affiliation>
-    </author>
-    <author>
-      <name>William S. Page</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 pages, LaTeX</arxiv:comment>
-    <link href="http://arxiv.org/abs/1104.0684v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1104.0684v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="51B20, 53A17, 53A35, 53B30, 83A05" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/gr-qc/9712070v1</id>
-    <updated>1997-12-16T20:38:29Z</updated>
-    <published>1997-12-16T20:38:29Z</published>
-    <title>Perturbative dynamics of quantum general relativity</title>
-    <summary>  The quantum theory of General Relativity at low energy exists and is of the
-form called "effective field theory". In this talk I describe the ideas of
-effective field theory and its application to General Relativity.
-</summary>
-    <author>
-      <name>John F. Donoghue</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Univ. of Massachusetts</arxiv:affiliation>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Invited plenary talk at the 8th Marcel Grossmann Conference on
-  General Relativity</arxiv:comment>
-    <link href="http://arxiv.org/abs/gr-qc/9712070v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/gr-qc/9712070v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/0707.1742v2</id>
-    <updated>2008-05-21T08:23:02Z</updated>
-    <published>2007-07-12T06:47:31Z</published>
-    <title>Relative log convergent cohomology and relative rigid cohomology I</title>
-    <summary>  In this paper, we develop the theory of relative log convergent cohomology.
-We prove the coherence of relative log convergent cohomology in certain case by
-using the comparison theorem between relative log convergent cohomlogy and
-relative log crystalline cohomology, and we relates relative log convergent
-cohomology to relative rigid cohomology to show the validity of Berthelot's
-conjecture on the coherence and the overconvergence of relative rigid
-cohomology for proper smooth families when they admit nice proper log smooth
-compactification to which the coefficient extends logarithmically.
-</summary>
-    <author>
-      <name>Atsushi Shiho</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">69 pages. Errors and typos fixed</arxiv:comment>
-    <link href="http://arxiv.org/abs/0707.1742v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/0707.1742v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="14F30" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/gr-qc/9610073v1</id>
-    <updated>1996-10-31T14:18:34Z</updated>
-    <published>1996-10-31T14:18:34Z</published>
-    <title>Toposes in General Theory of Relativity</title>
-    <summary>  We study in this paper different topos-theoretical approaches to the problem
-of construction of General Theory of Relativity. In general case the resulting
-space-time theory will be non-classical, different from that of the usual
-Einstein theory of space-time. This is a new theory of space-time, created in a
-purely logical manner. Four possibitities are investigated: axiomatic approach
-to causal theory of space-time, the smooth toposes as a models of Theory of
-Relativity, Synthetic Theory of Relativity, and space-time as Grothendieck
-topos.
-</summary>
-    <author>
-      <name>Alexandr K. Guts</name>
-    </author>
-    <author>
-      <name>Egor B. Grinkevich</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">13 pages, LATEX, email guts@univer.omsk.su, grinkev@univer.omsk.su</arxiv:comment>
-    <link href="http://arxiv.org/abs/gr-qc/9610073v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/gr-qc/9610073v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/1205.0221v1</id>
-    <updated>2012-05-01T17:25:53Z</updated>
-    <published>2012-05-01T17:25:53Z</published>
-    <title>A Discussion of Special Relativity</title>
-    <summary>  Five topics: A rigid body does not exist in the special theory of relativity;
-distant simultaneity defined with respect to a given frame of reference without
-any reference to synchronized clocks; challenges on Einstein's connection of
-synchronization and contraction; a theory of relativity without light,
-composition of relative velocities and space of relative velocities.
-</summary>
-    <author>
-      <name>Galina Weinstein</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">This paper is based on conversations with John Stachel and primary
-  sources</arxiv:comment>
-    <link href="http://arxiv.org/abs/1205.0221v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1205.0221v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/0801.4596v3</id>
-    <updated>2010-07-01T00:39:19Z</updated>
-    <published>2008-01-30T05:40:13Z</published>
-    <title>Relative hyperbolicity and relative quasiconvexity for countable groups</title>
-    <summary>  We lay the foundations for the study of relatively quasiconvex subgroups of
-relatively hyperbolic groups. These foundations require that we first work out
-a coherent theory of countable relatively hyperbolic groups (not necessarily
-finitely generated). We prove the equivalence of Gromov, Osin, and Bowditch's
-definitions of relative hyperbolicity for countable groups.
-  We then give several equivalent definitions of relatively quasiconvex
-subgroups in terms of various natural geometries on a relatively hyperbolic
-group. We show that each relatively quasiconvex subgroup is itself relatively
-hyperbolic, and that the intersection of two relatively quasiconvex subgroups
-is again relatively quasiconvex. In the finitely generated case, we prove that
-every undistorted subgroup is relatively quasiconvex, and we compute the
-distortion of a finitely generated relatively quasiconvex subgroup.
-</summary>
-    <author>
-      <name>G. Christopher Hruska</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">University of Wisconsin--Milwaukee</arxiv:affiliation>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">44 pages, 2 figures. Version 3 addresses some minor concerns of the
-  referee regarding the exposition. To appear in AGT</arxiv:comment>
-    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Algebr. Geom. Topol. 10 (2010), no. 3, 1807-1856</arxiv:journal_ref>
-    <link href="http://arxiv.org/abs/0801.4596v3" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/0801.4596v3" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.GR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.GR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.MG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="20F65, 20F67" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.5170/CERN-2013-006.1</arxiv:doi>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">9 pages, Contribution to WAMSDO 2013: Workshop on Accelerator Magnet,
+  Superconductor, Design and Optimization; 15 - 16 Jan 2013, CERN, Geneva,
+  Switzerland</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">CERN Yellow Report CERN-2013-006, pp.1-9</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/1401.3927v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1401.3927v1" rel="related" type="application/pdf"/>
+    <link title="doi" href="http://dx.doi.org/10.5170/CERN-2013-006.1" rel="related"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.acc-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>

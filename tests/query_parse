@@ -99,11 +99,11 @@ class QueryParse:
         html_code += '<pre>' + pformat(self.data_dict) + '</pre>'
         html_code += """</body></html>"""        
         # write HTML
-        f = open( SOURCE_PATH + 'public/Results/results_simple.html', 'wb')
+        f = open( SOURCE_PATH + 'public/results_simple.html', 'wb')
         f.write(html_code)
         f.close()
         # write results as a text file
-        f = open( SOURCE_PATH + 'public/Results/results.txt', 'wb')
+        f = open( SOURCE_PATH + 'public/results.txt', 'wb')
         f.write( str(self.data_dict) )
         f.close()
 
@@ -138,7 +138,7 @@ if __name__ == '__main__':
         if raw_input("\nExtract PDF's & plain texts? (y/n): ").lower() == 'y':
             # retrieve pdfs & store them
             Qp.store_pdfs()
-        if raw_input("\nGenerate HTML in public/Results/results.html? (y/n): ").lower() == 'y':
+        if raw_input("\nGenerate HTML in public/results.html? (y/n): ").lower() == 'y':
             # retrieve pdfs & store them
             Qp.generate_html()
 

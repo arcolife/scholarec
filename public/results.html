@@ -81,7 +81,7 @@
     </style>
     
     <link href="css/bootstrap-responsive.css" rel="stylesheet">  
-    <script type="text/javascript" src="js/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
   </head>
 
   <body>
@@ -117,7 +117,7 @@
 	      </p>
 	      <p>
 		<script type="text/javascript">
-		  $.getJSON( "test.json", function( data ) {
+		  $.getJSON( "json/test.json", function( data ) {
 		  var items = [];
 		  $.each( data, function( key, val ) {
 		  items.push( "<li id='" + key + "'>" + val + "</li>" );
