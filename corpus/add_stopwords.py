@@ -1,63 +1,75 @@
+#!/usr/bin/python
+
+"""
+This module helps a user add new words to the dicitonary of stopwords.
+"""
+
 import os
 import pickle
 
-def load_new_data(data):
+def load_new(data):
     '''
     Read file object. And then,
     Safely evaluate an expression node or 
     a string containing a Python expression.
     '''    
     print "New input types allowed:"
-    print "1) .txt (text) 2) .p (pickle)\n 3) .lst (list)\n"
+    print "1) .txt (text) \n2) .p (WARNING: Use trusted pickled object-source)"
+    print "3) .lst (list) \n4) 'abc xyz 123' (space-separated)"
+    choices = [1, 2, 3, 4]
     try:
-        choice = int(raw_input("Enter Choice (1/2/3): "))
-        assert choice in [1,2,3]
+        choice = int(raw_input("\nEnter Choice {}: ".format(choices)))
+        assert choice in choices
     except:
         quit("\nError: No such option! *Terminating execution*")
 
     try:
-        f = open(raw_input("\nEnter filename (with extension): "), 'rb')
-        if choice == 1:
-            input_data = f.read().split('\n')
-        elif choice ==2:
-            input_data = pickle.load(f)
+        if choice == 4:
+            loaded = raw_input("\nEnter space-separated words: " ).split()
         else:
-            import ast
-            input_data = ast.literal_eval(f.read())
-        f.close()
+            fi = open(raw_input("\nEnter filename (with extension): "), 'rb')
+            if choice == 1:
+                loaded = fi.read().split('\n')
+            elif choice == 2:
+                loaded = pickle.load(fi)
+            elif choice == 3:
+                import ast
+                loaded = ast.literal_eval(fi.read())
+            fi.close()
     except:
         raise
 
     print "length of {} = %d".format('data')%(len(data))
-    print "length of {} = %d".format('input_data')%(len(input_data))
+    print "length of {} = %d".format('input_data')%(len(loaded))
 
-    new_data = list(set(input_data) - set(data))
-    data.extend(new_data)
+    data = list(set(data))
+    loaded = list(set(loaded) - set(data))
+    data.extend(loaded)
     print "length of {} = %d".format('extended data')%(len(data))
     return data
 
 if __name__ == '__main__':
     # Deal with pickle dumps / text formats.
-    filename = 'stopwords_combined.p'
-    print "This script outputs data in pickle file object\n"
-    print "Searching for file named 'stopwords_combined.p' ..\n"
-    if os.path.exists(filename):
+    F_NAME = 'stopwords_combined.p'
+    print "\n## This script outputs data in pickle file object\n"
+    print "> Searching for file named 'stopwords_combined.p'"
+    if os.path.exists(F_NAME):
         # Load previously saved object
-        file = open(filename,'rb')
-        data_old = pickle.load(file)
-        print 'File load successful: {} \n'.format(filename)
-        file.close()
-        if bool(data_old):
+        f = open(F_NAME,'rb')
+        previous = pickle.load(f)
+        print '> File loaded successfully: {} \n'.format(F_NAME)
+        f.close()
+        if bool(previous):
             pass
         else:
-            data_old = []
+            previous = []
     else:
-        print "File Not Found: {} \n".format(filename)
-        data_old = []
+        print "> File Not Found: {} \n".format(F_NAME)
+        previous = []
     
     # append new object
-    data = load_new_data(data_old)
+    modified = load_new(previous)
     # dump new object
-    file = open(filename,'wb')        
-    pickle.dump(data, file)
-    file.close()        
+    fo = open(F_NAME,'wb')        
+    pickle.dump(modified, fo)
+    fo.close()
