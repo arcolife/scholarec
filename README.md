@@ -32,6 +32,8 @@ To see if the scripts runs without error
 
 $ ./tests/run-tests.sh
 
+Note: For developing a small database from arXiv, you need to run the query_parse script and accept "Extract PDF" option for extracting related pdf's, converting them to plain text and extracting interesting words that would later be used for recommendations and suggestions.
+
 ***
 
 **FAQ**
