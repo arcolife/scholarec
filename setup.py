@@ -7,6 +7,7 @@ setup(name='scholarec',
       packages = find_packages(),
       author='Archit Sharma',
       author_email='archit.py@gmail.com',
+      test_suite="tests",
       license='GPL v3',
       #packages=['scholarec'],
       zip_safe=False)
