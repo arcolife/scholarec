@@ -1,8 +1,7 @@
 #!/usr/bin/python
 
 """
-This module helps a user add new words to the dicitonary of stopwords.
-"""
+This module helps a user add new words to the dicitonary of stopwords."""
 
 import os
 import pickle
@@ -12,7 +11,7 @@ def load_new(data):
     Read file object. And then,
     Safely evaluate an expression node or 
     a string containing a Python expression.
-    '''    
+    '''
     print "New input types allowed:"
     print "1) .txt (text) \n2) .p (WARNING: Use trusted pickled object-source)"
     print "3) .lst (list) \n4) 'abc xyz 123' (space-separated)"
@@ -22,7 +21,6 @@ def load_new(data):
         assert choice in choices
     except:
         quit("\nError: No such option! *Terminating execution*")
-
     try:
         if choice == 4:
             loaded = raw_input("\nEnter space-separated words: " ).split()
@@ -38,21 +36,20 @@ def load_new(data):
             fi.close()
     except:
         raise
-
     print "length of {} = %d".format('data')%(len(data))
     print "length of {} = %d".format('input_data')%(len(loaded))
-
     data = list(set(data))
     loaded = list(set(loaded) - set(data))
     data.extend(loaded)
     print "length of {} = %d".format('extended data')%(len(data))
+  
     return data
 
 if __name__ == '__main__':
     # Deal with pickle dumps / text formats.
     F_NAME = 'stopwords_combined.p'
     print "\n## This script outputs data in pickle file object\n"
-    print "> Searching for file named 'stopwords_combined.p'"
+    print "> Searching for file named '{}'".format(F_NAME)
     if os.path.exists(F_NAME):
         # Load previously saved object
         f = open(F_NAME,'rb')
@@ -65,8 +62,8 @@ if __name__ == '__main__':
             previous = []
     else:
         print "> File Not Found: {} \n".format(F_NAME)
-        previous = []
-    
+        previous = []    
+
     # append new object
     modified = load_new(previous)
     # dump new object
