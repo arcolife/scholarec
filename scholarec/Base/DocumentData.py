@@ -20,3 +20,18 @@
 """ This script processes the respective data structures, 
 passed to the object of Document Class and returns new information
 such as topwords."""
+
+class DocumentOperations(object):
+    """
+    Perform all kinds of operations on the 
+    plain text documents in the db."""
+    
+    def __init__(self, db_path, keywords, stopwords):
+        self.path = db_path
+        self.corpus = stopwords
+        
+    def search(self):
+        pass
+
+    def foo(self):
+        pass

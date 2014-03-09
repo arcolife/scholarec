@@ -1,7 +1,8 @@
 '''
-Relative package import structure
+Package import structure
 '''
 
-from scholarec.Base.DocumentClass import DocumentArXiv
+from scholarec.Base import DocumentClass 
+from scholarec.Base import DocumentData
 
-__all__ = ['DocumentArXiv',]
+__all__ = ['DocumentClass','DocumentData']

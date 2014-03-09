@@ -1,7 +1,10 @@
 '''
-Relative package import structure 
+Package import structure 
 '''
 
-from scholarec.Base import DocumentArXiv
+from scholarec import Base
 
-__all__ = ['DocumentArXiv',] #represents all modules in scholarec
+#from scholarec.Base import DocumentClass, DocumentData
+#from package.subpackage.module import attribute1
+
+# __all__ = ['DocumentArXiv',] #represents all modules in scholarec
