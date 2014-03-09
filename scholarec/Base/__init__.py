@@ -2,6 +2,6 @@
 Relative package import structure
 '''
 
-from DocumentClass import DocumentArXiv
+from scholarec.Base.DocumentClass import DocumentArXiv
 
 __all__ = ['DocumentArXiv',]
