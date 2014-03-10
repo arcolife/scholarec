@@ -18,16 +18,11 @@
 ## You should have received a copy of the GNU General Public License
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>
 
-""" This module tests the scholarec modules by
-implementing requests to query arXiv API."""
+""" This module tests the installed package
+by executing statements on sample XML set"""
 
 ## import general modules
 import sys
-from urllib2 import \
-    urlopen
-from pprint import \
-    pprint
-import wikipedia
 
 ## Import dependencies specific to scholarec
 from scholarec.Base.DocumentClass import DocumentArXiv

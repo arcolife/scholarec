@@ -24,13 +24,16 @@ To use the module in a Python script, simply import:
 
 import scholarec
 
-To go for a sample run (Later, have a look at the following script to see how the module works.)
-
-$ ./tests/query_parse
 
 To see if the scripts runs without error
 
 $ ./tests/run-tests.sh
+$ ./tests/test.py
+
+
+To go for a sample run (Later, have a look at the following script to see how the module works.)
+
+$ ./tests/query_parse
 
 Note: For developing a small database from arXiv, you need to run the query_parse script and accept "Extract PDF" option for extracting related pdf's, converting them to plain text and extracting interesting words that would later be used for recommendations and suggestions.
 
