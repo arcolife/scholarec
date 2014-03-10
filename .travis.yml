@@ -9,9 +9,9 @@ install:
 
 script:
 # install scholarec
-- sudo /usr/bin/python setup.py install
+- python setup.py install
 # test setup.py
-- sudo /usr/bin/python setup.py test
+- python setup.py test
 # run tests
 - ./tests/run-tests.sh
 
