@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages, tests
 
 setup(name='scholarec',
       version='0.1',
@@ -7,7 +7,7 @@ setup(name='scholarec',
       packages = find_packages(),
       author='Archit Sharma',
       author_email='archit.py@gmail.com',
-      test_suite="tests",
+      #test_suite="tests",
       license='GPL v3',
       #packages=['scholarec'],
       zip_safe=False)
