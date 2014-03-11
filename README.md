@@ -13,10 +13,7 @@ This software has been built due to a need felt for a proper recommendation syst
 
 **Installation**
 
-> It is under heavy development currently, so instead of 'install', 
-> use 'develop' with setup.py for now. Keep doing 'git pull' on the repo clone. 
-
-$ sudo python setup.py develop
+See INSTALL for instructions on installing this package.
 
 **Usage**
 
@@ -24,12 +21,11 @@ To use the module in a Python script, simply import:
 
 import scholarec
 
-
 To see if the scripts runs without error
 
 $ ./tests/run-tests.sh
-$ ./tests/test.py
 
+$ ./tests/test.py
 
 To go for a sample run (Later, have a look at the following script to see how the module works.)
 
