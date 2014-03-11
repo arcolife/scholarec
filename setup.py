@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages, tests
 
 setup(name='scholarec',
-      version='0.1',
+      version='0.5',
       description='Recommendation engine for scholarly works',
       url='https://github.com/arcolife/scholarec.git',
       packages = find_packages(),
