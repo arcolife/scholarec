@@ -1,16 +1,52 @@
-scholarec INSTALLATION
+ScholaRec INSTALLATION
 ======================
 
 About
 =====
-This document specifies how to build, customize, and install scholarec
-v0.1 for the first time.  See RELEASE-NOTES if you are upgrading
-from a previous scholarec release.
+This document specifies how to build, customize, and install 
+ScholaRec v0.5 for the first time. See RELEASE-NOTES if you 
+are upgrading from a previous scholarec release.
 
 Contents
 ========
 
 0. Prerequisites
-1. Quick instructions for the impatient scholarec admin
-2. Detailed instructions for the patient scholarec admin
+1. Quick instructions for the impatient scholarec users
+2. Detailed instructions for the patient scholarec users/developers
 
+--------------------------------------------------------------------
+
+0. Prerequisites:
+
+   Install the prerequisites through the following command:
+
+   $ pip install -r requirements.txt --use-mirrors
+
+--------------------------------------------------------------------
+
+1. Quick instructions for the impatient scholarec users:
+
+   $ sudo python setup.py install
+
+--------------------------------------------------------------------
+
+2. Detailed instructions for the patient scholarec users/developers:
+   
+   A) If you're a developer
+      
+      - Run the following on console:
+
+      	$ git clone https://github.com/arcolife/scholarec.git
+      	$ sudo python setup.py develop
+     	$ ./tests/run-tests.sh
+	$ ./tests/query_parse
+
+   B) If you're a user
+
+      - Run the following on console:
+      	
+	$ sudo python setup.py install
+     	$ ./tests/run-tests.sh
+	$ ./tests/query_parse
+
+--------------------------------------------------------------------
