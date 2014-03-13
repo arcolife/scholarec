@@ -1,5 +1,4 @@
 xmltodict==0.8.6
 BeautifulSoup==3.2.1
-requests==2.2.1
 wikipedia==1.1
 feedparser==5.1.3
