@@ -29,9 +29,9 @@ from urllib2 import \
 import json
 from pprint import \
     pprint, pformat
-import wikipedia
 
 ## Import dependencies specific to scholarec
+import wikipedia
 from scholarec.Base.DocumentClass import DocumentArXiv
 SOURCE_PATH = os.path.dirname(os.path.abspath(__file__)) + '/../'
 sys.path.insert(0, SOURCE_PATH)
@@ -118,20 +118,24 @@ if __name__ == '__main__':
                  }
         for i, prefix in enumerate(prefixes.values()):
             print i+1, prefix
-        choice = int(raw_input("Enter choice: ")) - 1
-        assert 0 <= choice <= len(prefixes)
+        CHOICE = int(raw_input("Enter choice: ")) - 1
+        assert 0 <= CHOICE <= len(prefixes)
         KEYWORDS = raw_input("\nEnter keywords, to query arXiv: ")
-        START = str(int(raw_input("Enter pagination start (0,1,..): ")))
-        SEARCH = "http://export.arxiv.org/api/query?search_query=" \
-                + prefixes.items()[choice][0] + ":%22" \
-                + '%20'.join(KEYWORDS.split()) + "%22&start=" + START \
-                + "&max_results=" \
-                + str(int(raw_input("Enter maximum result count: ")))
-
+        START = int(raw_input("Enter pagination start (0,1,..): "))
+        BASE_URL = "http://export.arxiv.org/api/query?"
+        SEARCH_QUERY = prefixes.items()[CHOICE][0] + ":%22" \
+                       + '%20'.join(KEYWORDS.split()) + "%22"
+        MAX_RESULTS = int(raw_input("Enter maximum result count: "))
+        SEARCH = BASE_URL + \
+                 'search_query=%s&start=%i&max_results=%i' % \
+                 (SEARCH_QUERY,
+                  START,
+                  MAX_RESULTS)        
         print "\n\t\tPlease wait for query response.."
         RESPONSE = urlopen(SEARCH)
         assert RESPONSE.msg.upper() == 'OK'        
         print "\t\tResponse: OK\n"
+
         XML_RESPONSE = RESPONSE.read()
         QP = QueryParse(XML_RESPONSE, KEYWORDS)
         QP.parse_data()
@@ -164,9 +168,9 @@ if __name__ == '__main__':
             print "{} may refer to: ".format(KEYWORDS)
             for i, topic in enumerate(topics[1:]):
                 print i+1, topic
-            choice = int(raw_input("Enter a choice: "))
-            assert choice in xrange(1,len(topics))
-            print wikipedia.summary(topics[choice])
+            CHOICE = int(raw_input("Enter a choice: "))
+            assert CHOICE in xrange(1,len(topics))
+            print wikipedia.summary(topics[CHOICE])
         print "\nYou've searched for : %s \n" % (KEYWORDS)
         print "\nEnter this URL in browser, for GUI mode: \n %s \n" % (SEARCH) 
         print "\n\t\tThanks for using ScholaRec!\n"
