@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3Dabs%3A%22recommendation%20engine%22%26id_list%3D%26start%3D0%26max_results%3D1" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=abs:"recommendation engine"&amp;id_list=&amp;start=0&amp;max_results=1</title>
+  <id>http://arxiv.org/api/qLaOoqr3+LcIMGmJ7Ne2vy2z9TA</id>
+  <updated>2014-03-14T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">7</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/0712.1111v1</id>
+    <updated>2007-12-07T10:45:24Z</updated>
+    <published>2007-12-07T10:45:24Z</published>
+    <title>The pigeonhole bootstrap</title>
+    <summary>  Recently there has been much interest in data that, in statistical language,
+may be described as having a large crossed and severely unbalanced random
+effects structure. Such data sets arise for recommender engines and information
+retrieval problems. Many large bipartite weighted graphs have this structure
+too. We would like to assess the stability of algorithms fit to such data. Even
+for linear statistics, a naive form of bootstrap sampling can be seriously
+misleading and McCullagh [Bernoulli 6 (2000) 285--301] has shown that no
+bootstrap method is exact. We show that an alternative bootstrap separately
+resampling rows and columns of the data matrix satisfies a mean consistency
+property even in heteroscedastic crossed unbalanced random effects models. This
+alternative does not require the user to fit a crossed random effects model to
+the data.
+</summary>
+    <author>
+      <name>Art B. Owen</name>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1214/07-AOAS122</arxiv:doi>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Published in at http://dx.doi.org/10.1214/07-AOAS122 the Annals of
+  Applied Statistics (http://www.imstat.org/aoas/) by the Institute of
+  Mathematical Statistics (http://www.imstat.org)</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Annals of Applied Statistics 2007, Vol. 1, No. 2, 386-411</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/0712.1111v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/0712.1111v1" rel="related" type="application/pdf"/>
+    <link title="doi" href="http://dx.doi.org/10.1214/07-AOAS122" rel="related"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

@@ -155,8 +155,6 @@ if __name__ == '__main__':
         if CHOICE.lower() == 'y':
             # retrieve pdfs & store them
             QP.generate_html()
-
-        print "\nYou've searched for : %s \n" % (KEYWORDS)
         print "\nWikipedia says:"
         print "---------------\n"
         try:
@@ -169,6 +167,7 @@ if __name__ == '__main__':
             choice = int(raw_input("Enter a choice: "))
             assert choice in xrange(1,len(topics))
             print wikipedia.summary(topics[choice])
+        print "\nYou've searched for : %s \n" % (KEYWORDS)
         print "\nEnter this URL in browser, for GUI mode: \n %s \n" % (SEARCH) 
         print "\n\t\tThanks for using ScholaRec!\n"
         
