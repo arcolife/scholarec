@@ -95,11 +95,11 @@ class QueryParse:
         html_code += '<pre>' + pformat(self.data_dict) + '</pre>'
         html_code += """</body></html>"""        
         # write HTML
-        fo = open( SOURCE_PATH + 'public/Results/results_simple.html', 'wb')
+        fo = open( SOURCE_PATH + 'log/output/results_simple.html', 'wb')
         fo.write(html_code)
         fo.close()
         # write results as a text file
-        fo = open( SOURCE_PATH + 'public/Results/results.txt', 'wb')
+        fo = open( SOURCE_PATH + 'output/log/results.txt', 'wb')
         fo.write( str(self.data_dict) )
         fo.close()
 
@@ -141,7 +141,7 @@ if __name__ == '__main__':
             # print data
             QP.print_data()
             
-        CHOICE = raw_input("\nStore query response to ./log/output? (y/n): ")
+        CHOICE = raw_input("\nStore response to log/output? (y/n): ")
         if CHOICE.lower() == 'y':
             # store data        
             QP.store_data()
@@ -151,7 +151,7 @@ if __name__ == '__main__':
             # retrieve pdfs & store them
             QP.store_pdfs()
 
-        CHOICE = raw_input("\nGenerate HTML in public/results.html? (y/n): ")
+        CHOICE = raw_input("\nGenerate HTML in log/output/? (y/n): ")
         if CHOICE.lower() == 'y':
             # retrieve pdfs & store them
             QP.generate_html()
