@@ -110,11 +110,21 @@ class QueryParse:
 
 if __name__ == '__main__':
     try:
-
+        prefixes = { "ti" : "Title",
+                     "au" : "Author",
+                     "abs" : "Abstract",
+                     "cat" : "Subject Category",
+                     "all" : "All of the above"
+                 }
+        for i, prefix in enumerate(prefixes.values()):
+            print i+1, prefix
+        choice = int(raw_input("Enter choice: ")) - 1
+        assert 0 <= choice <= len(prefixes)
         KEYWORDS = raw_input("\nEnter keywords, to query arXiv: ")
         START = str(int(raw_input("Enter pagination start (0,1,..): ")))
-        SEARCH = "http://export.arxiv.org/api/query?search_query=all:" \
-                + '+'.join(KEYWORDS.split()) + "&start=" + START \
+        SEARCH = "http://export.arxiv.org/api/query?search_query=" \
+                + prefixes.items()[choice][0] + ":%22" \
+                + '%20'.join(KEYWORDS.split()) + "%22&start=" + START \
                 + "&max_results=" \
                 + str(int(raw_input("Enter maximum result count: ")))
 
