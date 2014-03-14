@@ -147,10 +147,21 @@ if __name__ == '__main__':
             QP.generate_html()
 
         print "\nYou've searched for : %s \n" % (KEYWORDS)
-        print "\nWikipedia says: \n %s \n" % (wikipedia.summary(KEYWORDS))
+        print "\nWikipedia says:"
+        print "---------------\n"
+        try:
+            print wikipedia.summary(KEYWORDS)
+        except:
+            topics = wikipedia.search(KEYWORDS)
+            print "{} may refer to: ".format(KEYWORDS)
+            for i, topic in enumerate(topics[1:]):
+                print i+1, topic
+            choice = int(raw_input("Enter a choice: "))
+            assert choice in xrange(1,len(topics))
+            print wikipedia.summary(topics[choice])
         print "\nEnter this URL in browser, for GUI mode: \n %s \n" % (SEARCH) 
         print "\n\t\tThanks for using ScholaRec!\n"
-
+        
     except IOError as err:
         print "\nI/O error({0}): {1}".format(err.errno, err.strerror)
         print "Maybe you're disconnect from the Internet.."

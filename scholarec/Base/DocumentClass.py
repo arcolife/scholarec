@@ -127,6 +127,7 @@ class DocumentArXiv(object):
                 pass
             else:
                 os.mkdir('db')
+            count = 1
             for entry in self.feed.entries:
                 doc_id = entry['id'].split('http://arxiv.org/')[-1]
                 dir_path = os.path.join('db', doc_id )
@@ -141,7 +142,8 @@ class DocumentArXiv(object):
                 if os.path.exists(pdf_path):
                     continue
                 else:
-                    print "\nExtracting: %s" % (pdf_path)
+                    print "\nExtracting entry #{}: %s".format(count) \
+                        % (pdf_path)
                     for link in entry.links:
                         try:
                             if link.title == 'pdf':
@@ -161,6 +163,7 @@ class DocumentArXiv(object):
                                          doc_id.split('/')[-1] + '.txt' ) ]
                     # execute shell
                     call(cmd)
+                count += 1
         except OSError as err:
             print "\nERROR: ", err
         except KeyboardInterrupt:
