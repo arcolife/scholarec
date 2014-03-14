@@ -1,0 +1,38 @@
+1 Subject Category
+2 Abstract
+3 Author
+4 All of the above
+5 Title
+Enter choice: 2 
+
+Enter keywords, to query arXiv: recommendation engine
+Enter pagination start (0,1,..): 0
+Enter maximum result count: 1
+
+      	      Please wait for query response..
+	      	     Response: OK
+
+Total Entries:  1
+
+Print entries? (y/n): n
+
+Store response to log/output? (y/n): n
+
+Extract PDF's & plain texts? (y/n): n
+
+Generate HTML in log/output/? (y/n): n
+
+Wikipedia says:
+---------------
+
+Recommender systems or recommendation systems (sometimes replacing "system" with a synonym such as platform or engine) are a subclass of information filtering system that seek to predict the 'rating' or 'preference' that user would give to an item.
+Recommender systems have become extremely common in recent years, and are applied in a variety of applications. The most popular ones are probably movies, music, news, books, research articles, search queries, social tags, and products in general. However, there are also recommender systems for experts, jokes, restaurants, financial services, live insurances, persons (online dating), and twitter followers .
+
+You've searched for : recommendation engine 
+
+
+Enter this URL in browser, for GUI mode: 
+ http://export.arxiv.org/api/query?search_query=abs:%22recommendation%20engine%22&start=0&max_results=1 
+
+
+ 													Thanks for using ScholaRec!

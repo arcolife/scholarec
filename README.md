@@ -18,17 +18,19 @@ See INSTALL for instructions on installing this package.
 
 **Usage**
 
-To use the module in a Python script, simply import:
+* To use the module in a Python script, simply import:
 
 import scholarec
 
-To see if the scripts runs without error
+* To see if the scripts runs without error
 
 $ ./tests/run-tests.sh
 
 $ ./tests/test.py
 
-To go for a sample run (Later, have a look at the following script to see how the module works.)
+* To check a sample run output, open log/sample_run.txt
+
+* To go for a sample run (Later, have a look at the following script to see how the module works.)
 
 $ ./tests/query_parse
 
