@@ -99,7 +99,7 @@ class QueryParse:
         fo.write(html_code)
         fo.close()
         # write results as a text file
-        fo = open( SOURCE_PATH + 'output/log/results.txt', 'wb')
+        fo = open( SOURCE_PATH + 'log/output/results.txt', 'wb')
         fo.write( str(self.data_dict) )
         fo.close()
 
@@ -174,7 +174,7 @@ if __name__ == '__main__':
         
     except IOError as err:
         print "\nI/O error({0}): {1}".format(err.errno, err.strerror)
-        print "Maybe you're disconnect from the Internet.."
+        print "OR 'Maybe' you're disconnect from the Internet.."
     except KeyboardInterrupt:
         print "\n\n\t\tYou've aborted the program! \n"
     except ValueError as err:
