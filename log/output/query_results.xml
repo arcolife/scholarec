@@ -1,296 +1,318 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <link href="http://arxiv.org/api/query?search_query%3Dall%3Atheory%20of%20relativity%26id_list%3D%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
-  <title type="html">ArXiv Query: search_query=all:theory of relativity&amp;id_list=&amp;start=0&amp;max_results=10</title>
-  <id>http://arxiv.org/api/XZsqNQiiRa+bAiXj7/6H1LQGVoE</id>
-  <updated>2014-03-06T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">911893</opensearch:totalResults>
+  <link href="http://arxiv.org/api/query?search_query%3Dabs%3A%22recommendation%20engine%22%26id_list%3D%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=abs:"recommendation engine"&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/lCTAPG8M0jSJlosr0u74q4TZht8</id>
+  <updated>2014-03-14T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">7</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/1301.1933v1</id>
-    <updated>2013-01-09T17:49:21Z</updated>
-    <published>2013-01-09T17:49:21Z</published>
-    <title>Shape Dynamics</title>
-    <summary>  Barbour's formulation of Mach's principle requires a theory of gravity to
-implement local relativity of clocks, local relativity of rods and spatial
-covariance. It turns out that relativity of clocks and rods are mutually
-exclusive. General Relativity implements local relativity of clocks and spatial
-covariance, but not local relativity of rods. It is the purpose of this
-contribution to show how Shape Dynamics, a theory that is locally equivalent to
-General Relativity, implements local relativity of rods and spatial covariance
-and how a BRST formulation, which I call Doubly General Relativity, implements
-all of Barbour's principles.
+    <id>http://arxiv.org/abs/0712.1111v1</id>
+    <updated>2007-12-07T10:45:24Z</updated>
+    <published>2007-12-07T10:45:24Z</published>
+    <title>The pigeonhole bootstrap</title>
+    <summary>  Recently there has been much interest in data that, in statistical language,
+may be described as having a large crossed and severely unbalanced random
+effects structure. Such data sets arise for recommender engines and information
+retrieval problems. Many large bipartite weighted graphs have this structure
+too. We would like to assess the stability of algorithms fit to such data. Even
+for linear statistics, a naive form of bootstrap sampling can be seriously
+misleading and McCullagh [Bernoulli 6 (2000) 285--301] has shown that no
+bootstrap method is exact. We show that an alternative bootstrap separately
+resampling rows and columns of the data matrix satisfies a mean consistency
+property even in heteroscedastic crossed unbalanced random effects models. This
+alternative does not require the user to fit a crossed random effects model to
+the data.
 </summary>
     <author>
-      <name>Tim Koslowski</name>
+      <name>Art B. Owen</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages, LaTeX, based on a talk given at Relativity and Gravitation
-  100 years after Einstein in Prague, June 2012</arxiv:comment>
-    <link href="http://arxiv.org/abs/1301.1933v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1301.1933v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1214/07-AOAS122</arxiv:doi>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Published in at http://dx.doi.org/10.1214/07-AOAS122 the Annals of
+  Applied Statistics (http://www.imstat.org/aoas/) by the Institute of
+  Mathematical Statistics (http://www.imstat.org)</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Annals of Applied Statistics 2007, Vol. 1, No. 2, 386-411</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/0712.1111v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/0712.1111v1" rel="related" type="application/pdf"/>
+    <link title="doi" href="http://dx.doi.org/10.1214/07-AOAS122" rel="related"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/1107.0939v1</id>
-    <updated>2011-07-05T18:43:06Z</updated>
-    <published>2011-07-05T18:43:06Z</published>
-    <title>About Locality and the Relativity Principle Beyond Special Relativity</title>
-    <summary>  Locality of interactions is an essential ingredient of Special Relativity.
-Recently, a new framework under the name of relative locality
-\cite{AmelinoCamelia:2011bm} has been proposed as a way to consider Planckian
-modifications of the relativistic dynamics of particles. We note in this paper
-that the loss of absolute locality is a general feature of theories beyond
-Special Relativity with an implementation of a relativity principle. We give an
-explicit construction of such an implementation and compare it both with the
-previously mentioned framework of relative locality and the so-called Doubly
-Special Relativity theories.
+    <id>http://arxiv.org/abs/1110.4655v1</id>
+    <updated>2011-10-20T22:48:30Z</updated>
+    <published>2011-10-20T22:48:30Z</published>
+    <title>Towards an Automated Classification of Transient Events in Synoptic Sky
+  Surveys</title>
+    <summary>  We describe the development of a system for an automated, iterative,
+real-time classification of transient events discovered in synoptic sky
+surveys. The system under development incorporates a number of Machine Learning
+techniques, mostly using Bayesian approaches, due to the sparse nature,
+heterogeneity, and variable incompleteness of the available data. The
+classifications are improved iteratively as the new measurements are obtained.
+One novel feature is the development of an automated follow-up recommendation
+engine, that suggest those measurements that would be the most advantageous in
+terms of resolving classification ambiguities and/or characterization of the
+astrophysically most interesting objects, given a set of available follow-up
+assets and their cost functions. This illustrates the symbiotic relationship of
+astronomy and applied computer science through the emerging discipline of
+AstroInformatics.
 </summary>
     <author>
-      <name>J. M. Carmona</name>
+      <name>S. G. Djorgovski</name>
     </author>
     <author>
-      <name>J. L. Cortes</name>
+      <name>C. Donalek</name>
     </author>
     <author>
-      <name>D. Mazon</name>
+      <name>A. Mahabal</name>
     </author>
     <author>
-      <name>F. Mercati</name>
+      <name>B. Moghaddam</name>
     </author>
-    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1103/PhysRevD.84.085010</arxiv:doi>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">10 pages, no figures</arxiv:comment>
-    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Phys. Rev. D 84, 085010 (2011)</arxiv:journal_ref>
-    <link href="http://arxiv.org/abs/1107.0939v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1107.0939v1" rel="related" type="application/pdf"/>
-    <link title="doi" href="http://dx.doi.org/10.1103/PhysRevD.84.085010" rel="related"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>M. Turmon</name>
+    </author>
+    <author>
+      <name>M. Graham</name>
+    </author>
+    <author>
+      <name>A. Drake</name>
+    </author>
+    <author>
+      <name>N. Sharma</name>
+    </author>
+    <author>
+      <name>Y. Chen</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Invited paper, 15 pages, to appear in Statistical Analysis and Data
+  Mining (ASA journal), ref. proc. CIDU 2011 conf., eds. A. Srivasatva &amp; N.
+  Chawla, in press (2011)</arxiv:comment>
+    <link href="http://arxiv.org/abs/1110.4655v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1110.4655v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/1104.0682v1</id>
-    <updated>2011-03-29T09:41:58Z</updated>
-    <published>2011-03-29T09:41:58Z</published>
-    <title>Ternary relative velocity; astonishing conflict of the Lorentz group
-  with relativity</title>
-    <summary>  We are proving that the Lorentz boost entails the relative velocity to be
-ternary: ternary relative velocity is a velocity of a body with respect to an
-interior observer as seen by a preferred exterior-observer. The Lorentz boosts
-imply non-associative addition of ternary relative velocities. Within
-Einstein's special relativity theory, each preferred observer (fixed stars,
-aether, etc), determine the unique relative velocity among each pair of massive
-bodies. Therefore, the special relativity founded on Minkowski's axiom, that
-each pair of reference systems must be related by Lorentz isometry, needs a
-preferred reference system in order to have the unique Einstein's relative
-velocity among each pair of massive bodies. This choice-dependence of relative
-velocity violate the Relativity Principle that all reference systems must be
-equivalent. This astonishing conflict of the Lorentz relativity group, with the
-Relativity Principle, can be resolved in two alternative ways. Either, abandon
-the Relativity Principle in favor of a preferred reference system [de Abreu
-2004; de Abreu and Guerra 2005, 2006]. Or, within the Relativity Principle,
-replace the Lorentz relativity group by the relativity groupoid, with the
-choice-free binary relative velocities introduced by Minkowski in 1908. Binary
-- means that the relative velocity is a function of a pair of reference
-systems. Following Minkowski [1908], we consider the binary relative velocity
-to be the Minkowski space-like vector (and not the Minkowski bivector as it is
-in the Hestenes theory [Hestenes 1974]).
+    <id>http://arxiv.org/abs/1203.4487v2</id>
+    <updated>2012-05-14T10:00:22Z</updated>
+    <published>2012-03-20T16:14:42Z</published>
+    <title>Recommender systems in industrial contexts</title>
+    <summary>  This thesis consists of four parts: - An analysis of the core functions and
+the prerequisites for recommender systems in an industrial context: we identify
+four core functions for recommendation systems: Help do Decide, Help to
+Compare, Help to Explore, Help to Discover. The implementation of these
+functions has implications for the choices at the heart of algorithmic
+recommender systems. - A state of the art, which deals with the main techniques
+used in automated recommendation system: the two most commonly used algorithmic
+methods, the K-Nearest-Neighbor methods (KNN) and the fast factorization
+methods are detailed. The state of the art presents also purely content-based
+methods, hybridization techniques, and the classical performance metrics used
+to evaluate the recommender systems. This state of the art then gives an
+overview of several systems, both from academia and industry (Amazon, Google
+...). - An analysis of the performances and implications of a recommendation
+system developed during this thesis: this system, Reperio, is a hybrid
+recommender engine using KNN methods. We study the performance of the KNN
+methods, including the impact of similarity functions used. Then we study the
+performance of the KNN method in critical uses cases in cold start situation. -
+A methodology for analyzing the performance of recommender systems in
+industrial context: this methodology assesses the added value of algorithmic
+strategies and recommendation systems according to its core functions.
 </summary>
     <author>
-      <name>Zbigniew Oziewicz</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">UNAM</arxiv:affiliation>
+      <name>Frank Meyer</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">LaTeX, 19 pages; Vladimir Gladyshev, Editor, Physical Interpretations
-  of Relativity Theory, Moscow 2007, pages 292-303, ISBN 978-5-7038-3178-6</arxiv:comment>
-    <link href="http://arxiv.org/abs/1104.0682v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1104.0682v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="51B20, 53A35, 53B30, 83A05" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">version 3.30, May 2012</arxiv:comment>
+    <link href="http://arxiv.org/abs/1203.4487v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1203.4487v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/gr-qc/0602075v1</id>
-    <updated>2006-02-20T13:29:46Z</updated>
-    <published>2006-02-20T13:29:46Z</published>
-    <title>Doubly Special Relativity: A New Relativity or Not?</title>
-    <summary>  Double Special Relativity theories are the relativistic theories in which the
-transformations between inertial observers are characterized by two
-observer-independent scales of the light speed and the Planck length. We study
-two main examples of these theories and want to show that these theories are
-not the new theories of relativity, but only are re-descriptions of Einstein's
-special relativity in the non-conventional coordinates.
+    <id>http://arxiv.org/abs/1207.3269v1</id>
+    <updated>2012-07-13T14:56:38Z</updated>
+    <published>2012-07-13T14:56:38Z</published>
+    <title>The Price of Privacy in Untrusted Recommendation Engines</title>
+    <summary>  Recent increase in online privacy concerns prompts the following question:
+can a recommendation engine be accurate if end-users do not entrust it with
+their private data? To provide an answer, we study the problem of learning user
+ratings for items under local or `user-end' differential privacy, a powerful,
+formal notion of data privacy.
+  We develop a systematic approach for lower bounds on the complexity of
+learning item structure from privatized user inputs, based on mutual
+information. Our results identify a sample complexity separation between
+learning in the scarce information regime and the rich information regime,
+thereby highlighting the role of the amount of ratings (information) available
+to each user.
+  In the information-rich regime (where each user rates at least a constant
+fraction of items), a spectral clustering approach is shown to achieve optimal
+sample complexity. However, the information-scarce regime (where each user
+rates only a vanishing fraction of the total item set) is found to require a
+fundamentally different approach. We propose a new algorithm, MaxSense, and
+show that it achieves optimal sample complexity in this setting.
+  The techniques we develop for bounding mutual information may be of broader
+interest. To illustrate this, we show their applicability to (i) learning based
+on 1-bit sketches (in contrast to differentially private sketches), and (ii)
+adaptive learning, where queries can be adapted based on answers to past
+queries.
 </summary>
     <author>
-      <name>Nosratollah Jafari</name>
+      <name>Siddhartha Banerjee</name>
     </author>
     <author>
-      <name>Ahmad Shariati</name>
+      <name>Nidhi Hegde</name>
     </author>
-    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1063/1.2218214</arxiv:doi>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">5 pages, 1 figures, to appear in proceedings of ERE2005, the XXVIII
-  Spanish Relativity Meeting, Oviedo, Spain</arxiv:comment>
-    <link href="http://arxiv.org/abs/gr-qc/0602075v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/gr-qc/0602075v1" rel="related" type="application/pdf"/>
-    <link title="doi" href="http://dx.doi.org/10.1063/1.2218214" rel="related"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.MP" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Laurent Massoulié</name>
+    </author>
+    <link href="http://arxiv.org/abs/1207.3269v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1207.3269v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.IT" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/1104.0684v1</id>
-    <updated>2011-03-30T17:01:08Z</updated>
-    <published>2011-03-30T17:01:08Z</published>
-    <title>Concepts of relative velocity</title>
-    <summary>  The central concept of the theory of relativity is the relativity of
-velocity. The velocity of a material body is not an intrinsic property of the
-body; it depends on a free choice of reference system. Relative velocity is
-thus reference-dependent, it is not an absolute concept. We stress that even
-zero-velocity must be relative. Every reference system possesses its own
-zero-velocity relative only to that particular reference system. Does the
-theory of relativity formulated in terms of relative velocities, with many
-zero-velocities, imply the Lorentz isometry group? We discuss the many relative
-spaces of Galileo and Poincare, as quotient spaces.
+    <id>http://arxiv.org/abs/1209.2905v1</id>
+    <updated>2012-09-13T14:24:45Z</updated>
+    <published>2012-09-13T14:24:45Z</published>
+    <title>Surveying the Social, Smart and Converged TV Landscape: Where is
+  Television Research Headed?</title>
+    <summary>  The TV is dead motto of just a few years ago has been replaced by the
+prospect of Internet Protocol (IP) television experiences over converged
+networks to become one of the great technology opportunities in the next few
+years. As an introduction to the Special Issue on Smart, Social and Converged
+Television, this extended editorial intends to review the current IP television
+landscape in its many realizations: operator-based, over-the-top, and user
+generated. We will address new services like social TV and recommendation
+engines, dissemination including new paradigms built on peer to peer and
+content centric networks, as well as the all important quality of experience
+that challenges services and networks alike. But we intend to go further than
+just review the existing work by proposing areas for the future of television
+research. These include strategies to provide services that are more efficient
+in network and energy usage while being socially engaging, novel services that
+will provide consumers with a broader choice of content and devices, and
+metrics that will enable operators and users alike to define the level of
+service they require or that they are ready to provide. These topics are
+addressed in this survey paper that attempts to create a unifying framework to
+link them all together. Not only is television not dead, it is well alive,
+thriving and fostering innovation and this paper will hopefully prove it.
 </summary>
     <author>
-      <name>Zbigniew Oziewicz</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">UNAM</arxiv:affiliation>
+      <name>Marie-Jose Montpetit</name>
     </author>
     <author>
-      <name>William S. Page</name>
+      <name>Pablo Cesar</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 pages, LaTeX</arxiv:comment>
-    <link href="http://arxiv.org/abs/1104.0684v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1104.0684v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="51B20, 53A17, 53A35, 53B30, 83A05" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Maja Matijasevic</name>
+    </author>
+    <author>
+      <name>Zhu Liu</name>
+    </author>
+    <author>
+      <name>John Crowcroft</name>
+    </author>
+    <author>
+      <name>Oscar Martinez-Bonastre</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 pages, 1 figure</arxiv:comment>
+    <link href="http://arxiv.org/abs/1209.2905v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1209.2905v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/gr-qc/9712070v1</id>
-    <updated>1997-12-16T20:38:29Z</updated>
-    <published>1997-12-16T20:38:29Z</published>
-    <title>Perturbative dynamics of quantum general relativity</title>
-    <summary>  The quantum theory of General Relativity at low energy exists and is of the
-form called "effective field theory". In this talk I describe the ideas of
-effective field theory and its application to General Relativity.
+    <id>http://arxiv.org/abs/1311.2103v1</id>
+    <updated>2013-11-08T23:17:47Z</updated>
+    <published>2013-11-08T23:17:47Z</published>
+    <title>Idea of a new Personality-Type based Recommendation Engine</title>
+    <summary>  Myers-Briggs Type Indicator (MBTI) types depict the psychological preferences
+by which a person perceives the world and make decisions. There are 4 principal
+functions through which the people see the world: sensation, intuition,
+feeling, and thinking. These functions along with the Introverted\Extroverted
+nature of the person, there are 16 personalities types, the humans are divided
+into. Here an idea is presented where a user can get recommendations for books,
+web media content, music and movies on the basis of the users' MBTI type. Only
+things like books and other media content has been chosen because the
+preferences in such things are mostly subjective. Apart from the recommended
+content that is generally generated on the basis of the previous purchases,
+searches can be enhanced by using the MBTI. A minimalist survey was designed
+for collecting the data. This has a more than 100 features that show the
+preference of a personality type. Those include preferences in book genres,
+music genres, movie genres and even video games genres. After analyzing the
+data that is collected from the survey, some inferences were drawn from it
+which can be used to design a new recommendation engine for recommending the
+content that coincides with the personality of the user.
 </summary>
     <author>
-      <name>John F. Donoghue</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Univ. of Massachusetts</arxiv:affiliation>
+      <name>Animesh Pandey</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Invited plenary talk at the 8th Marcel Grossmann Conference on
-  General Relativity</arxiv:comment>
-    <link href="http://arxiv.org/abs/gr-qc/9712070v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/gr-qc/9712070v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">7 Pages, 13 Figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/1311.2103v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1311.2103v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/0707.1742v2</id>
-    <updated>2008-05-21T08:23:02Z</updated>
-    <published>2007-07-12T06:47:31Z</published>
-    <title>Relative log convergent cohomology and relative rigid cohomology I</title>
-    <summary>  In this paper, we develop the theory of relative log convergent cohomology.
-We prove the coherence of relative log convergent cohomology in certain case by
-using the comparison theorem between relative log convergent cohomlogy and
-relative log crystalline cohomology, and we relates relative log convergent
-cohomology to relative rigid cohomology to show the validity of Berthelot's
-conjecture on the coherence and the overconvergence of relative rigid
-cohomology for proper smooth families when they admit nice proper log smooth
-compactification to which the coefficient extends logarithmically.
+    <id>http://arxiv.org/abs/1401.5710v1</id>
+    <updated>2014-01-22T15:57:40Z</updated>
+    <published>2014-01-22T15:57:40Z</published>
+    <title>Who is Dating Whom: Characterizing User Behaviors of a Large Online
+  Dating Site</title>
+    <summary>  Online dating sites have become popular platforms for people to look for
+potential romantic partners. It is important to understand users' dating
+preferences in order to make better recommendations on potential dates. The
+message sending and replying actions of a user are strong indicators for what
+he/she is looking for in a potential date and reflect the user's actual dating
+preferences. We study how users' online dating behaviors correlate with various
+user attributes using a large real-world dateset from a major online dating
+site in China. Many of our results on user messaging behavior align with
+notions in social and evolutionary psychology: males tend to look for younger
+females while females put more emphasis on the socioeconomic status (e.g.,
+income, education level) of a potential date. In addition, we observe that the
+geographic distance between two users and the photo count of users play an
+important role in their dating behaviors. Our results show that it is important
+to differentiate between users' true preferences and random selection. Some
+user behaviors in choosing attributes in a potential date may largely be a
+result of random selection. We also find that both males and females are more
+likely to reply to users whose attributes come closest to the stated
+preferences of the receivers, and there is significant discrepancy between a
+user's stated dating preference and his/her actual online dating behavior.
+These results can provide valuable guidelines to the design of a recommendation
+engine for potential dates.
 </summary>
     <author>
-      <name>Atsushi Shiho</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">69 pages. Errors and typos fixed</arxiv:comment>
-    <link href="http://arxiv.org/abs/0707.1742v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/0707.1742v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="14F30" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/gr-qc/9610073v1</id>
-    <updated>1996-10-31T14:18:34Z</updated>
-    <published>1996-10-31T14:18:34Z</published>
-    <title>Toposes in General Theory of Relativity</title>
-    <summary>  We study in this paper different topos-theoretical approaches to the problem
-of construction of General Theory of Relativity. In general case the resulting
-space-time theory will be non-classical, different from that of the usual
-Einstein theory of space-time. This is a new theory of space-time, created in a
-purely logical manner. Four possibitities are investigated: axiomatic approach
-to causal theory of space-time, the smooth toposes as a models of Theory of
-Relativity, Synthetic Theory of Relativity, and space-time as Grothendieck
-topos.
-</summary>
-    <author>
-      <name>Alexandr K. Guts</name>
+      <name>Peng Xia</name>
     </author>
     <author>
-      <name>Egor B. Grinkevich</name>
+      <name>Kun Tu</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">13 pages, LATEX, email guts@univer.omsk.su, grinkev@univer.omsk.su</arxiv:comment>
-    <link href="http://arxiv.org/abs/gr-qc/9610073v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/gr-qc/9610073v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/1205.0221v1</id>
-    <updated>2012-05-01T17:25:53Z</updated>
-    <published>2012-05-01T17:25:53Z</published>
-    <title>A Discussion of Special Relativity</title>
-    <summary>  Five topics: A rigid body does not exist in the special theory of relativity;
-distant simultaneity defined with respect to a given frame of reference without
-any reference to synchronized clocks; challenges on Einstein's connection of
-synchronization and contraction; a theory of relativity without light,
-composition of relative velocities and space of relative velocities.
-</summary>
     <author>
-      <name>Galina Weinstein</name>
+      <name>Bruno Ribeiro</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">This paper is based on conversations with John Stachel and primary
-  sources</arxiv:comment>
-    <link href="http://arxiv.org/abs/1205.0221v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1205.0221v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/0801.4596v3</id>
-    <updated>2010-07-01T00:39:19Z</updated>
-    <published>2008-01-30T05:40:13Z</published>
-    <title>Relative hyperbolicity and relative quasiconvexity for countable groups</title>
-    <summary>  We lay the foundations for the study of relatively quasiconvex subgroups of
-relatively hyperbolic groups. These foundations require that we first work out
-a coherent theory of countable relatively hyperbolic groups (not necessarily
-finitely generated). We prove the equivalence of Gromov, Osin, and Bowditch's
-definitions of relative hyperbolicity for countable groups.
-  We then give several equivalent definitions of relatively quasiconvex
-subgroups in terms of various natural geometries on a relatively hyperbolic
-group. We show that each relatively quasiconvex subgroup is itself relatively
-hyperbolic, and that the intersection of two relatively quasiconvex subgroups
-is again relatively quasiconvex. In the finitely generated case, we prove that
-every undistorted subgroup is relatively quasiconvex, and we compute the
-distortion of a finitely generated relatively quasiconvex subgroup.
-</summary>
     <author>
-      <name>G. Christopher Hruska</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">University of Wisconsin--Milwaukee</arxiv:affiliation>
+      <name>Hua Jiang</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">44 pages, 2 figures. Version 3 addresses some minor concerns of the
-  referee regarding the exposition. To appear in AGT</arxiv:comment>
-    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Algebr. Geom. Topol. 10 (2010), no. 3, 1807-1856</arxiv:journal_ref>
-    <link href="http://arxiv.org/abs/0801.4596v3" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/0801.4596v3" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.GR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.GR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.MG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="20F65, 20F67" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Xiaodong Wang</name>
+    </author>
+    <author>
+      <name>Cindy Chen</name>
+    </author>
+    <author>
+      <name>Benyuan Liu</name>
+    </author>
+    <author>
+      <name>Don Towsley</name>
+    </author>
+    <link href="http://arxiv.org/abs/1401.5710v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1401.5710v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.soc-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
