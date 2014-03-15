@@ -37,6 +37,7 @@ Contents
       - Run the following on console:
 
       	$ git clone https://github.com/arcolife/scholarec.git
+	$ cd scholarec/
       	$ sudo python setup.py develop
      	$ ./tests/run-tests.sh
 	$ ./tests/query_parse

@@ -14,7 +14,13 @@ This software has been built due to a need felt for a proper recommendation syst
 
 **Installation**
 
-See INSTALL for instructions on installing this package.
+```
+    $ git clone https://github.com/arcolife/scholarec.git
+    $ cd scholarec/
+    $ sudo python setup.py install
+```
+
+* See INSTALL for detailed instructions.
 
 **Usage**
 
