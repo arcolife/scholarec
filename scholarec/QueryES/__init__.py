@@ -1,7 +1,7 @@
 '''
-Relative package import structure
+Package import structure
 '''
 
-from DocumentOperations import DocumentUpload, DocumentQuery
+import DocumentOperations
 
-__all__ = ['DocumentUpload', 'DocumentQuery',]
+#__all__ = ['DocumentUpload', 'DocumentQuery',]

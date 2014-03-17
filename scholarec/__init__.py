@@ -3,7 +3,7 @@ Relative package import structure
 '''
 
 import Base
-# from QueryES import DocumentUpload, DocumentQuery
+import QueryES
 
 #from Base import DocumentClass, DocumentData
 #from scholarec.Base import DocumentClass, DocumentData
