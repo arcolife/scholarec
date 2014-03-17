@@ -25,37 +25,32 @@ implementing requests to query arXiv API."""
 import os
 import sys
 from urllib2 import \
-    urlopen, quote
+    urlopen
 import json
 from pprint import \
     pprint, pformat
-import wikipedia
 
 ## Import dependencies specific to scholarec
-from scholarec import DocumentArXiv
+import wikipedia
+from scholarec.Base.DocumentClass import DocumentArXiv
 SOURCE_PATH = os.path.dirname(os.path.abspath(__file__)) + '/../'
 sys.path.insert(0, SOURCE_PATH)
 
-'''
-# Open saved XML file
-file = open(SOURCE_PATH + 'log/output/query.xml','r').read()
-file.close() 
-'''
-
 class QueryParse:
     ''' mathods to parse query '''    
-    def __init__(self, query_xml, keywords):
+    def __init__(self, query_xml, keyword_list):
         self.query_xml = query_xml
         self.entry_count = None
         self.data_dict = None
-        self.keywords = keywords
-        self.Doc = None
+        self.keywords = keyword_list
+        self.doc = None
+        self.data_json = None
         
     def parse_data(self):
         """ parse extracted data into python dict format """
-        self.Doc = DocumentArXiv(self.query_xml)
+        self.doc = DocumentArXiv(self.query_xml)
         #self.data_xml, self.data_dict = Doc.extract_data()
-        self.data_dict = self.Doc.extract_tags()
+        self.data_dict = self.doc.extract_tags()
         self.entry_count = len(self.data_dict.keys())
         if self.entry_count:
             print "Total Entries: ", self.entry_count
@@ -65,7 +60,7 @@ class QueryParse:
     def print_data(self):
         """ To print entries """
         for entry_id in self.data_dict.keys():
-            print "ID: %s"%(entry_id)
+            print "ID: %s" % (entry_id)
             pprint(self.data_dict[entry_id])
             print
         '''
@@ -89,7 +84,8 @@ class QueryParse:
         f_xml.close()
 
     def generate_html(self):
-        # generates an html to read results in browser in raw form
+        """ generates an html to read results 
+        in the browser, in raw form."""
         html_code = """<html>
         <head>
         <title>ScholaRec produced the following search response</title>
@@ -99,64 +95,96 @@ class QueryParse:
         html_code += '<pre>' + pformat(self.data_dict) + '</pre>'
         html_code += """</body></html>"""        
         # write HTML
-        f = open( SOURCE_PATH + 'public/results_simple.html', 'wb')
-        f.write(html_code)
-        f.close()
+        fo = open( SOURCE_PATH + 'log/output/results_simple.html', 'wb')
+        fo.write(html_code)
+        fo.close()
         # write results as a text file
-        f = open( SOURCE_PATH + 'public/results.txt', 'wb')
-        f.write( str(self.data_dict) )
-        f.close()
+        fo = open( SOURCE_PATH + 'log/output/results.txt', 'wb')
+        fo.write( str(self.data_dict) )
+        fo.close()
 
     def store_pdfs(self):
-        # retrieve and extract pdfs
+        """ retrieve and extract pdfs."""
         print "Now downloading all pdf's .. "
-        self.Doc.extract_pdfs()
+        self.doc.extract_pdfs()
 
 if __name__ == '__main__':
     try:
-
-        keywords = raw_input("\nEnter keywords, to query arXiv: ")
-        start = str(int(raw_input("Enter pagination start (0,1,..): ")))
-        search = "http://export.arxiv.org/api/query?search_query=all:" \
-                 + '+'.join(keywords.split()) + "&start=" + start + "&max_results=" \
-                + str(int(raw_input("Enter maximum result count: ")))
-
+        prefixes = { "ti" : "Title",
+                     "au" : "Author",
+                     "abs" : "Abstract",
+                     "cat" : "Subject Category",
+                     "all" : "All of the above"
+                 }
+        for i, prefix in enumerate(prefixes.values()):
+            print i+1, prefix
+        CHOICE = int(raw_input("Enter choice: ")) - 1
+        assert 0 <= CHOICE <= len(prefixes)
+        KEYWORDS = raw_input("\nEnter keywords, to query arXiv: ")
+        START = int(raw_input("Enter pagination start (0,1,..): "))
+        BASE_URL = "http://export.arxiv.org/api/query?"
+        SEARCH_QUERY = prefixes.items()[CHOICE][0] + ":%22" \
+                       + '%20'.join(KEYWORDS.split()) + "%22"
+        MAX_RESULTS = int(raw_input("Enter maximum result count: "))
+        SEARCH = BASE_URL + \
+                 'search_query=%s&start=%i&max_results=%i' % \
+                 (SEARCH_QUERY,
+                  START,
+                  MAX_RESULTS)        
         print "\n\t\tPlease wait for query response.."
-        search_response = urlopen(search)
-        assert search_response.msg.upper() == 'OK'        
+        RESPONSE = urlopen(SEARCH)
+        assert RESPONSE.msg.upper() == 'OK'        
         print "\t\tResponse: OK\n"
-        query_xml = search_response.read()
-        Qp = QueryParse(query_xml, keywords)
-        Qp.parse_data()
 
-        if raw_input("\nPrint entries? (y/n): ").lower() == 'y':
+        XML_RESPONSE = RESPONSE.read()
+        QP = QueryParse(XML_RESPONSE, KEYWORDS)
+        QP.parse_data()
+
+        CHOICE = raw_input("\nPrint entries? (y/n): ")
+        if CHOICE.lower() == 'y':
             # print data
-            Qp.print_data()
-        if raw_input("\nStore query response to ./log/output? (y/n): ").lower() == 'y':
+            QP.print_data()
+            
+        CHOICE = raw_input("\nStore response to log/output? (y/n): ")
+        if CHOICE.lower() == 'y':
             # store data        
-            Qp.store_data()
-        if raw_input("\nExtract PDF's & plain texts? (y/n): ").lower() == 'y':
-            # retrieve pdfs & store them
-            Qp.store_pdfs()
-        if raw_input("\nGenerate HTML in public/results.html? (y/n): ").lower() == 'y':
-            # retrieve pdfs & store them
-            Qp.generate_html()
+            QP.store_data()
 
-        print "\nYou've searched for : %s \n" %(keywords)
-        print "\nWikipedia says: \n %s \n" % (wikipedia.summary(keywords))
-        print "\nEnter following URL in browser, for GUI mode: \n %s \n" % (search) 
+        CHOICE = raw_input("\nExtract PDF's & plain texts? (y/n): ")
+        if CHOICE.lower() == 'y':
+            # retrieve pdfs & store them
+            QP.store_pdfs()
+
+        CHOICE = raw_input("\nGenerate HTML in log/output/? (y/n): ")
+        if CHOICE.lower() == 'y':
+            # retrieve pdfs & store them
+            QP.generate_html()
+        print "\nWikipedia says:"
+        print "---------------\n"
+        try:
+            print wikipedia.summary(KEYWORDS)
+        except:
+            topics = wikipedia.search(KEYWORDS)
+            print "{} may refer to: ".format(KEYWORDS)
+            for i, topic in enumerate(topics[1:]):
+                print i+1, topic
+            CHOICE = int(raw_input("Enter a choice: "))
+            assert CHOICE in xrange(1,len(topics))
+            print wikipedia.summary(topics[CHOICE])
+        print "\nYou've searched for : %s \n" % (KEYWORDS)
+        print "\nEnter this URL in browser, for GUI mode: \n %s \n" % (SEARCH) 
         print "\n\t\tThanks for using ScholaRec!\n"
-
-    except IOError as e:
-        print "\nI/O error({0}): {1}".format(e.errno, e.strerror)
-        print "Maybe you're disconnect from the Internet.."
+        
+    except IOError as err:
+        print "\nI/O error({0}): {1}".format(err.errno, err.strerror)
+        print "OR 'Maybe' you're disconnect from the Internet.."
     except KeyboardInterrupt:
         print "\n\n\t\tYou've aborted the program! \n"
-    except ValueError as e:
-        print "\nERROR: ",e,"\nCheck your input type."
-    except IndexError as e:
-        print "\nERROR: ",e,"\nResponse attributes not satisfied in data_dict."
-    except AssertionError as e:
+    except ValueError as err:
+        print "\nERROR: ", err, "\nCheck your input type."
+    except IndexError as err:
+        print "\nERROR: ", err, "\nResponse attributes not satisfied."
+    except AssertionError as err:
         print "\nERROR: Response: not OK! Maybe a site error"
     except:
         # >>sys.exc_info()<< gives whole exception

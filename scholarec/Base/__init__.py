@@ -1,7 +1,8 @@
 '''
-Relative package import structure
+Package import structure
 '''
 
-from DocumentClass import DocumentArXiv
+import DocumentClass 
+import DocumentData
 
-__all__ = ['DocumentArXiv',]
+#__all__ = ['DocumentArXiv','DocumentOperations']

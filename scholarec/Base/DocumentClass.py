@@ -25,7 +25,7 @@ import os
 from urlparse import \
     urlparse
 from urllib import \
-    urlretrieve, urlopen
+    urlretrieve #, urlopen
 from xml.dom.minidom import \
     parseString #,parse
 from subprocess import \
@@ -48,17 +48,16 @@ class DocumentArXiv(object):
 
     def __init__(self, query_xml):
         self.query_xml = query_xml
-        self.parsed_to_dict = None
         self.parsed_dict_results = None
         self.set_dom = None
         self.entries = None
-        self.find_authors = lambda x: x.find('name').string
         self.data = {} # keys: id & values: metadata
         self.url_path = 'http://arxiv.org/pdf/'
-        self.pdf_path = None
         self.feed = None
 
     def extract_tags(self):
+        ''' Use feedparser to directly parse 
+        response (type: XML feed) from arxiv.'''
         self.feed = feedparser.parse(self.query_xml)
         for entry in self.feed.entries:
             meta = { 'title': entry.title, 'summary': entry.summary, \
@@ -75,6 +74,7 @@ class DocumentArXiv(object):
         """
         soup = Soup(self.query_xml) # XML as a string
         self.entries = soup.findAll('entry') # list of <entry>'s
+        find_authors = lambda x: x.find('name').string
         for entry in self.entries:
             # strip down entry ID in url to (say) -> 'abs/math/0507289v1'
             entry_id = urlparse(entry.find('id').string).path.lstrip('/') 
@@ -83,7 +83,10 @@ class DocumentArXiv(object):
             # findAll() for multiple entries 
             authors = entry.findAll('author') 
             # returns list of data-type: BeautifulSoup.Tag
-            authors = map(self.find_authors, authors)
+            # PYLINT chatters: authors = map(self.find_authors, authors)
+            # using list comprehension instead
+            authors = [find_authors(i) for i in authors]
+
             published = entry.find('published').string
             meta = { 'title': title, 'summary': summary, \
                   'authors': authors, 'published': published }
@@ -99,10 +102,10 @@ class DocumentArXiv(object):
         """
         # form a DOM structure
         self.set_dom = parseString(self.query_xml) 
-        self.parsed_to_dict =  xmltodict.parse(self.query_xml, \
-                                               process_namespaces=True)
+        parsed_to_dict =  xmltodict.parse(self.query_xml, \
+                                          process_namespaces=True)
         #list of OrderedDicts
-        self.parsed_dict_results = self.parsed_to_dict.values()[0].values()[7]
+        self.parsed_dict_results = parsed_to_dict.values()[0].values()[7]
         # Relevant XML entries
         self.entries = self.set_dom.getElementsByTagName('entry')        
         try:
@@ -124,6 +127,7 @@ class DocumentArXiv(object):
                 pass
             else:
                 os.mkdir('db')
+            count = 1
             for entry in self.feed.entries:
                 doc_id = entry['id'].split('http://arxiv.org/')[-1]
                 dir_path = os.path.join('db', doc_id )
@@ -132,28 +136,37 @@ class DocumentArXiv(object):
                 else:
                     os.makedirs(dir_path)
                 # download pdf
-                self.pdf_path = os.path.join( 'db', \
-                                              doc_id, \
-                                              doc_id.split('/')[-1] + '.pdf' )
-                if os.path.exists(self.pdf_path):
+                pdf_path = os.path.join( 'db', \
+                                         doc_id, \
+                                         doc_id.split('/')[-1] + '.pdf' )
+                if os.path.exists(pdf_path):
                     continue
                 else:
-                    print "\nExtracting: %s" % (self.pdf_path)
+                    print "\nExtracting entry #{}: %s".format(count) \
+                        % (pdf_path)
                     for link in entry.links:
                         try:
                             if link.title == 'pdf':
                                 print 'pdf link: %s' % link.href
-                                urlretrieve(link.href, self.pdf_path)
+                                urlretrieve(link.href, pdf_path)
+                        except IOError as err:
+                            print "\nI/O error({0}): {1}".\
+                                format(err.errno, err.strerror)
                         except:
                             continue
                     print "Done:"
                     print "Converting: .pdf to .txt .."
                     cmd = ['pdftotext', \
-                           self.pdf_path, \
+                           pdf_path, \
                            os.path.join( \
                                          dir_path, \
                                          doc_id.split('/')[-1] + '.txt' ) ]
                     # execute shell
                     call(cmd)
+                count += 1
+        except OSError as err:
+            print "\nERROR: ", err
+        except KeyboardInterrupt:
+            print "\n\n\t\tYou've aborted the program! \n"
         except:
             raise

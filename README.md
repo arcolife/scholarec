@@ -1,9 +1,10 @@
-scholarec v0.1
+scholarec v0.5
 ==============
 Recommendation of Scholarly Works 
 ---------------------------------
 
 [![Build Status](https://travis-ci.org/arcolife/scholarec.png?branch=master)](https://travis-ci.org/arcolife/scholarec)
+[![Dependency Status](https://gemnasium.com/arcolife/scholarec.png)](https://gemnasium.com/arcolife/scholarec)
 
 This software has been built due to a need felt for a proper recommendation system for publicly available scholarly/research works. It classifies documents and uses personalization features to suggest/recommend similar ones, possibly of interest to the user.
 
@@ -13,24 +14,35 @@ This software has been built due to a need felt for a proper recommendation syst
 
 **Installation**
 
-> It is under heavy development currently, so instead of 'install', 
-> use 'develop' with setup.py for now. Keep doing 'git pull' on the repo clone. 
+```
+    $ git clone https://github.com/arcolife/scholarec.git
+    $ cd scholarec/
+    $ sudo python setup.py install
+```
 
-$ sudo python setup.py develop
+* See INSTALL for detailed instructions.
 
 **Usage**
 
-To use the module in a Python script, simply import:
+* To use the module in a Python script, simply import:
+```python
+    import scholarec
+```
+* To see if the scripts runs without error
 
-import scholarec
+```
+    $ ./tests/run-tests.sh
 
-To go for a sample run (Later, have a look at the following script to see how the module works.)
+    $ ./tests/test.py
+```
 
-$ ./tests/query_parse
+* To check a sample run output, open log/sample_run.txt
 
-To see if the scripts runs without error
+* To go for a sample run (Later, have a look at the following script to see how the module works.)
 
-$ ./tests/run-tests.sh
+```
+    $ ./tests/query_parse
+```
 
 Note: For developing a small database from arXiv, you need to run the query_parse script and accept "Extract PDF" option for extracting related pdf's, converting them to plain text and extracting interesting words that would later be used for recommendations and suggestions.
 

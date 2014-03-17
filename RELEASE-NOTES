@@ -1,44 +1,51 @@
 --------------------------------------------------------------------
-Scholarec v0.1 is released
-Feb 21, 2014
+Scholarec v0.5 is released
+March 11, 2014
 http://arcolife.github.io/scholarec
 --------------------------------------------------------------------
 
-Scholarec v0.1 was released on February 21, 2014.
+Scholarec v0.5 was released on March 11, 2014.
 
-This initial release contains a basic skeleton of minor enhancements 
-and fixes. It is recommended that all previous downloads be stashed 
-and this one to be used as promary source.
+This initial release contains a basic skeleton of the package. 
+It is recommended that all previous downloads be uninstalled 
+and this one to be installed from scratch.
 
 What's new:
 -----------
+~~Initial Release~~
 
-*) New scripts using Python 2.7.5+
+*) New scripts: support Python 2.6 and 2.7
 
-*) Python libraries: xml, urllib2, xmltodict, sys, xml-to-json 
-  [https://github.com/sinelaw/xml-to-json]
+*) Python external libraries: xmltodict, BeautifulSoup, feedparser, wikipedia
 
-*) Data sources: DBLP, arXiv
-   - OS details:
-     	Distributor ID:	Ubuntu
-     	Description:	Ubuntu 13.10
-  	Release:      	13.10
-  	Codename:     	saucy
+*) Data sources: arXiv
+
+*) Corpus: stopwords and a script to add them
+
+*) Continuous Integration testing with Travis CI Webhooks
+
+*) Supporting OS platforms: GNU/Linux / Debian flavors (Preferred: Ubuntu)
+
+*) Data Representations: XML/JSON
+
+*) Testing scripts and Commandline Interface
 
 Future Plans:
 -------------
 *) To integrate:
-  - ElasticSearch
-  - MongoDB
+  -> ElasticSearch
+    OR
+  -> MongoDB
 
 *) Add DB source:
    - CERN
    - Google Scholar  
+   - DBLP   
 
 Download:
 ---------
-tarball <https://github.com/arcolife/scholarec/tarball/master>
-zipball <https://github.com/arcolife/scholarec/zipball/master>
+tarball <https://github.com/arcolife/scholarec/archive/v0.5-alpha.tar.gz>
+zipball <https://github.com/arcolife/scholarec/archive/v0.5-alpha.zip>
 
 Installation notes:
 -------------------

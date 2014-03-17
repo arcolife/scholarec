@@ -2,7 +2,11 @@
 Relative package import structure 
 '''
 
-from Base import DocumentArXiv
-from QueryES import DocumentUpload, DocumentQuery
+import Base
+# from QueryES import DocumentUpload, DocumentQuery
 
-__all__ = ['DocumentArXiv','DocumentUpload', 'DocumentQuery',] #represents all modules in scholarec
+#from Base import DocumentClass, DocumentData
+#from scholarec.Base import DocumentClass, DocumentData
+#from package.subpackage.module import attribute1
+
+#__all__ = ['DocumentArXiv',] #represents all modules in scholarec
