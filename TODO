@@ -1,6 +1,6 @@
 *) IMMEDIATE
    - Implement current algorithms used in 
-     mrec/recsys library for Python #partial
+     mrec.crab/recsys library for Python #partial
    - Use construct_call_graph.py and graphViz library 
      to construct call graph of main.py #partial
    - Write useful sample cases. #done
@@ -12,7 +12,7 @@
    - Refactor public/index.html #done
    - Add public/mockups #done
    - Connect Web Interface #done
-
+   
 *) ISSUES
 			~~ In addition to github issue list ~~
    - Web Interface:
