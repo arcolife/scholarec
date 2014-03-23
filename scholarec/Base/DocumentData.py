@@ -21,17 +21,34 @@
 passed to the object of Document Class and returns new information
 such as topwords."""
 
+from nltk import \
+    word_tokenize,\
+    PorterStemmer
+    #LancasterStemmer
+
 class DocumentOperations(object):
     """
     Perform all kinds of operations on the 
     plain text documents in the db."""
     
-    def __init__(self, db_path, keywords, stopwords):
+    def __init__(self, db_path):
         self.path = db_path
-        self.corpus = stopwords
         
-    def search(self):
+    def search(self, stopwords, keywords):
+        """
+        Search for keywords among 
+        plain text files.
+        """
         pass
 
-    def foo(self):
-        pass
+    def stemmer(self, raw):
+        """
+        Use porter stemmer from nltk library 
+        to stem tokens in raw text.
+        """
+        tokens = word_tokenize(raw)
+        porter = PorterStemmer()
+        # lancaster = LancasterStemmer()
+        # stem_lancaster = [lancaster.stem(t) for t in tokens]
+        stem_porter = [porter.stem(t) for t in tokens]
+        return stem_porter
