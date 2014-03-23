@@ -67,6 +67,7 @@
      of these papers to the database
    - Explore new data source options 
      - process dtd in XML from dblp
+       - Try untangle module
      - ~1000 queries on Google Scholar (after that, IP is blacklisted)
      - 
 
