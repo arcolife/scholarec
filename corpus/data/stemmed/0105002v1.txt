@@ -1,0 +1,1078 @@
+imsc200124
+may 2001
+arxivmathph0105002v1 2 may 2001
+some introductori note on quantum group
+quantum algebra and their applic
+r jaganathan
+the institut of mathemat scienc
+4th cross road central institut of technolog campu tharamani
+chennai 600 113 india
+email jaganimscernetin
+abstract
+some veri elementari idea about quantum group and quantum
+algebra are introduc and a few exampl of their physic applic are mention
+concept of quantum group and algebra emerg from two direct
+studi on quantum integr model use the quantum invers scatter method 14 led to certain deform or quantiz of
+classic matrix group and the correspond lie algebra the abstract mathemat concept underli these deform group structur were understood in the languag of hopf algebra 5 the quantum analogu or the qanalogu of classic lie algebra were also
+obtain from a slightli differ approach 6
+theori of quantum group wa recogn to be part of the program
+of noncommut geometri 7 differenti calculu on noncommut space 813 led to the same quantiz algebra structur
+encount in the theori of quantum invers scatter
+to appear in the proceed of the the institut and instruct programm
+on quantum group and their applic the ramanujan institut for advanc
+studi in mathemat univers of madra chennai march 2001
+the main reason for the great signific of these quantum algebra is that
+they are relat to the so call quantum yangbaxt equat which play a
+major role in quantum integr system solvabl lattic model conform
+field theori knot theori etc also the represent theori of quantum
+algebra led to a deform 1417 of the algebra of one of the most
+fundament object of physic name the harmon oscil and thi
+open up mani direct of research on qdeform physic system
+let us consid a two dimension classic vector space whose element
+can be written as
+x
+1
+y
+where the coordin x and y are real variabl and commut with each
+other ie
+xy yx
+2
+in the space of function f x y defin in the abov vector space the
+partial deriv oper x
+and y
+and the oper of multipl
+by x and y satisfi the differenti calculu
+x y 0
+x y
+x
+x
+y
+x
+y
+y
+0
+1
+0
+x
+y
+0
+1
+3
+where the commut bracket is defin by
+a b ab ba
+let us make a linear transform of the vector
+x
+y
+m
+x
+y
+a b
+c d
+4
+x
+y
+as
+x
+y
+5
+where the entri of the matrix m are real and satisfi the condit
+ad bc det m 1
+6
+or in other word the transform 5 is an element of the group sl2 r
+then the new coordin x and y and partial deriv with respect to
+2
+them name x and
+check by note
+x
+y
+y
+also satisfi the same relat as 3 thi is easili
+d
+b
+c
+a
+x
+y
+m 1
+x
+y
+7
+where a mean the transpos of the matrix a we say that the differenti
+calculu on the two dimension x yplane is covari under the group
+sl2 r
+in natur all physic system are quantum mechan but the quantum
+mechan behaviour is gener reveal onli at the microscop molecular
+and deeper level at the macroscop level of everyday experi quantum
+physic becom classic physic as an approxim so onli classic
+physic wa discov first and observ of failur of classic physic at
+the atom level led to the discoveri of quantum physic in the 20th centuri
+thi passag from classic physic to quantum physic can be mathemat describ as a process of deform of the classic physic wherein
+the commut classic observ of a physic system are replac by
+noncommut hermitian oper thi process is character by a veri
+small deform paramet known as the planck constant h
+and roughli
+speak in the limit h
+0 classic physic is recov from the structur
+of quantum physic
+in analog with the process of quantiz the classic physic let us
+now quantiz the classic vector space to get a quantum vector space by
+assum that the coordin do not commut with each other at ani point
+let us model the noncommut of the coordin x and y of a two
+dimension quantum plane by
+xy qy x
+8
+where q is the deform paramet which we shall consid in gener
+to be ani nonzero complex number note that in the limit q 1 the
+noncommut quantum coordin x and y becom commut classic
+coordin to be specif let us choos
+q ei
+9
+it is easi to find an exampl of such noncommut variabl let t and
+g be oper act on function of a singl real variabl x such that
+t x x
+g x eix x
+3
+10
+then for ani x
+t g x eix x ei g t x
+11
+for a given fix valu of thu with the variat of t and g
+becom noncommut variabl obey the relat
+t g ei g t
+12
+with fix valu for
+now the interest question are
+is it possibl to defin a differenti calculu on the two dimension
+x y plane
+if so will it be covari under some gener of the classic
+group sl2
+the answer are ye ye first let us understand how one can give a mean
+to partial deriv with respect to x and y these have to oper on
+the space of function f x y which we shall consid to be polynomi
+in x and y we can write f x y mn fmn x m y n sinc ani polynomi
+in x and y with coeffici commut with x and y can be brought to
+thi form use the commut relat 8 then if we take formal
+m
+x mx m1
+x
+n
+y ny n1
+y
+13
+we would have a differenti calculu in the x y plane as desir onc we
+prescrib consist the remain commut relat between x y
+and y
+x
+without go into ani further detail let me state the complet set of
+commut relat defin the differenti calculu in the x y plane
+with q ei
+q 1
+x y
+y x
+y qy
+x qx
+x
+x
+y
+y
+x q2x
+1 q 2 1y
+x
+x
+y
+y q2i
+1
+y
+y
+xy qy x
+4
+14
+thi noncommut differenti calculu on the twodimension quantum
+plane is seen to be covari under the transform
+x
+y
+x
+y
+t
+x
+y
+t 1
+x
+y
+a b
+c d
+x
+y
+d
+qc
+q 1 b
+a
+x
+y
+15
+provid
+a b c and d commut with x and y
+ab qba cd qdc ac qca
+bc cb ad da q q 1 bc
+16
+bd qdb
+17
+and
+ad qbc detq t 1
+18
+in other word x y x
+and y defin by 15 satisfi the relat obtain from 14 by just replac x and y by x and y respect note
+that detq t defin in 17 commut with all the matrix element of t verifi
+that
+d q 1 b
+t 1
+19
+qc
+a
+is such that
+t t 1 t 1 t 1l
+1 0
+0 1
+20
+a b
+is call a 2 2 quantum matrix if it matrix
+c d
+element a b c d satisfi the commut relat in 17 in the limit
+q 1 a quantum matrix t becom a classic matrix with commut
+1 0
+element note that the ident matrix 1l
+is a quantum matrix
+0 1
+entri of a quantum matrix t are noncommut variabl satisfi the
+a1 b1
+a2 b2
+commut relat 17 let t1
+and t2
+be
+c 1 d1
+c 2 d2
+ani two quantum matric ie a1 b1 c1 d1 obey the relat 17 and
+a2 b2 c2 d2 also obey the relat 17 the matrix element of t1 and
+a matrix t
+5
+t2 may be ordinari classic matric satisfi the requir relat 17
+defin the product
+2
+12 t t1 t
+a1 b1
+c 1 d1
+a2 b2
+c 2 d2
+a1 a2 b1 c2 a1 b2 b1 d2
+c1 a2 d1 c2 c1 b2 d1 d2
+12 a 12 b
+12 c 12 d
+21
+where denot the direct product with the properti p rq s
+p q rs then one find that the matrix element of 12 t name
+12 a a1 a2 b1 c2
+12 c c1 a2 d1 c2
+12 b a1 b2 b1 d2
+12 d c1 b2 d1 d2 22
+also satisfi the commut relat 17 in other word 12 t is also a
+2 is call the coproduct or
+quantum matrix thi product 12 t t1 t
+comultipl note that there is no invers for thi coproduct under thi
+a b
+form a pseudomacoproduct the 2 2 quantum matric t
+c d
+trix group commonli call a quantum group denot by slq 2 the algebra of function over slq 2 or the algebra of polynomi in a b c d
+is denot by f unq sl2 the coproduct oper defin by 22
+is symbol written as
+a a a b c
+c c a d c
+b a b b d
+d c b d d
+23
+for ani f a b c d f unq sl2 the definit of is extend as
+f a b c d f a b c d the algebra f unq sl2
+is technic a hopf algebra to complet thi algebra structur two more
+oper call the coinvers or antipod denot by s and the counit
+denot by are defin and these oper s and are requir
+to satisfi certain axiom we shall not consid these detail of the hopf
+algebra structur from the point of view physic applic quantum
+group provid a gener of symmetri concept and involv mainli two
+fundament new idea deform and noncommut comultipl
+6
+a b
+correspond to the fundament irreduc
+c d
+represent of slq 2 higher dimension represent are defin as
+follow an n n matrix
+the matrix t
+t tij
+t11 t12
+t21 t22
+tn1 tn2
+t1n
+t2n
+tnn
+24
+is said to be an ndimension represent of slq 2 if it matrix element tij are polynomi in a b c d or in other word element of
+f unq sl2 and satisfi the properti
+n
+t t
+ij
+l1
+til tlj tij
+tij a b c d
+i j 1 2 n 25
+now for exampl look at
+t 1
+2
+2
+2 ab
+a
+1
+q
+b
+1
+1 q 2 bd
+q
+bc
+1 q 2 ac ad
+2
+2
+2
+1 q cd
+c
+d
+26
+it can be verifi that t 1 is the 3dimension represent of slq 2 for
+instanc see that
+3
+1
+t 1 t
+11
+l1
+1
+1
+t1l tl1
+a2 a2 1 q 2 ab ac b 2 c 2
+a2 a2 ab ac ba ca b 2 c 2
+1
+27
+a a b c2 a2 t11
+as requir similarli for other matrix element of t 1 one can verifi the
+properti 25 name
+t t
+tij
+28
+ij
+7
+in the theori of classic lie group we know that an element of a lie
+group g say g can be written as
+g e1 l1 e2 l2 en ln
+29
+where the paramet i character the group element g and li are
+constant gener of the group g satisfi a lie algebra
+n
+cijk lk
+li lj
+i j 1 2 n
+30
+k1
+with cijk as the structur constant when the group element g is close to
+the ident element i of the group the paramet i are infinitesim
+and one can write
+n
+gi
+i li
+31
+i1
+now the interest question is
+is there an analogu of the lie algebra in the case of a quantum group
+the answer is ye to thi end first we have to recal some basic notion of
+the theori of qseri
+one defin the qshift factori by
+x qn
+1
+n 0
+2
+n1
+1 x1 xq1 xq 1 xq n 1 2
+32
+then with the notat
+x1 x2 xm qn x1 qn x2 qn xm qn
+33
+an r s basic hypergeometr seri or a gener qhypergeometr seri is
+given by
+r s
+a1 a2 ar b1 b2 bs q z
+1sr n
+a1 a2 ar qn
+1n q nn12
+z
+n0 b1 b2 bs qn q qn
+r s 0 1 2
+8
+34
+consid
+1 0 0 q 1
+qz
+ezq
+zn
+n0 nq
+35
+where
+1 qn
+1q
+nq nq n 1q n 2q 2q 1q
+nq
+n 1 2 0q 1 36
+the qnumber nq or the socal basic number wa defin by hein
+1846 much of ramanujan work is relat to these qseri note that
+q1
+q1
+ezq ez
+nq n
+37
+thu ezq defin by 35 is a qgener of the exponenti function
+call a qexponenti function note that there can be sever gener
+of the exponenti function satisfi the condit that in the limit q 1 it
+should becom the standard exponenti function in the theori of quantum
+group a new definit of the qnumber is often use it is
+nq
+q n q n
+q q 1
+38
+note that nq also becom n in the limit q 1 and nq is symmetr with
+respect to the interchang of q and q 1 unlik hein nq
+now consid the 2dimension t matrix parametr as
+t
+a b
+c d
+e
+e
+e e e
+39
+which requir the variabl paramet to satisfi a lie algebra
+log q
+log q
+0
+40
+so that a b c d obey the algebra 17 then one can write
+x
+12
+t eq2
+12
+e2x0
+x
+12
+eq2
+41
+with
+12
+x0
+1
+2
+1
+0
+0 1
+12
+x
+0 0
+1 0
+9
+12
+x
+0 1
+0 0
+42
+x
+12
+x
+12
+and eq2
+of cours in thi case eq2
+12
+are trivial the same as ex
+12 2
+12
+and ex respect sinc x
+0
+actual equat 41 is the special case of a univers formula for the
+represent of the t matric of slq 2 and correspond to the fundament represent the gener form of the t matrix is given by
+x
+x
+t eq2 e2x0 eq2
+43
+call the univers t matrix where x0 x x obey the algebra
+x0 x x
+x x
+q 2x0 q 2x0
+2x0 q
+q q 1
+44
+call the quantum algebra slq 2 in the limit q 1 x x which
+gener sl2
+x0 x x
+x x 2x0
+12
+12
+45
+12
+in 42 provid
+the lie algebra of sl2 the matric x0 x x
+the fundament 2dimension irreduc represent of the algebra 44
+actual they also provid the fundament represent of the gener
+of sl2 algebra 45 when a higher dimension represent of 44 is
+plug in the formula 43 t becom a higher dimension represent
+of the t matrix for exampl the three dimension represent 26 is
+obtain by substitut in 43
+1
+x0
+1
+x
+1
+x
+1 0
+0
+0
+0 0
+0 0 1
+0
+0
+0
+2q q
+0
+0
+0 1 q 0
+0 1 q 0
+q
+0
+2q 0
+0
+0
+0
+46
+which provid the three dimension irreduc represent of the slq 2
+algebra 44 and use the parametr of a b c d in term of
+10
+as given by 39 note that in the limit q 1 these matric 46
+obey the sl2 algebra 45 as seen from 39 43 and 44 one can say
+that for a quantum group the groupparamet space is noncommut
+the algebra slq 2 is also often call a quantum group actual the
+relat in 44 defin the gener of the qdeform of the univers envelop algebra of sl2 henc the relat 44 are also refer
+to more properli as uq sl2 the qdeform univers envelop algebra
+of sl2 the algebra uq sl2 gener by polynomi in x0 x x
+obey the relat 44 is also a hopf algebra we shall consid onli the
+coproduct for uq sl2 a coproduct for slq 2 is
+q x0 x0 1l 1l x0
+q x x q x0 q x0 x
+47
+it can be easili verifi that thi comultipl rule is an algebra isomorph for slq 2
+q x0 q x q x
+q x q x 2q x0 q 48
+the most import properti of thi coproduct is it noncommut
+note that the algebra 44 is invari under the interchang q q 1 sinc
+2x0 q 2x0 q1 howev the comultipl 47 is not invari under
+such an interchang thi mean that the comultipl obtain from 47
+by an interchang q q 1 should also be an equal good comultipl
+it can be verifi that the coproduct so obtain name
+q1 x0 x0 1l 1l x0
+q1 x x q x0 q x0 x 49
+is inde an algebra isomorph for slq 2 thi coproduct 49 q1 is
+call the opposit coproduct in view of the relat
+q1 x q x where u v v u
+50
+sinc
+q1 q
+or
+51
+the comultipl q and q1 of slq 2 are noncommut in the
+limit q 1 the classic sl2 ha onli a singl comultipl x
+x 1l 1l x which is commut ie
+one can show that the two comultipl of sl2 q name q and
+1
+q are relat to each other by an equival relat such that there
+11
+exist an r uq sl2 uq sl2 call the univers rmatrix satisfi
+the relat
+52
+q1 x rq x r1
+thi univers rmatrix is the central object of the quantum group theori
+in thi case it can be shown that
+n
+r q 2x0 x0
+1 q 2 nn12 x0
+q x q x0 x
+q
+n
+q
+n0
+n
+53
+if we insert the matrix represent of x in thi express for r we get
+numer rmatric for exampl substitut in 53 the 2 2 represent of x given in 42 we get the fundament 4dimension rmatrix
+q
+0
+0
+0
+1
+r
+q
+0
+0
+1 q q 1
+0
+1
+0
+0
+0
+0
+0
+q
+54
+let us now write ani r in the form
+r
+i
+ai ui vi
+55
+it is clear from 53 that thi can be done now defin
+r12 r 1l
+r13
+i
+ai ui 1l vi
+r23 1l r
+56
+then these satisfi the remark relat
+r12 r13 r23 r23 r13 r12
+57
+known as the quantum yangbaxt equat or simpli the yangbaxt
+equat ybe
+we have consid onli the simplest exampl of a quantum group
+name slq 2 associ with the classic group sl2 there exist a
+systemat theori of deform of ani classic group it is also possibl
+in certain case to obtain deform with sever qparamet actual
+the studi of quantum group shed more light on the structur of the classic group theori i shall not go further into the detail of the formal of
+quantum group theori
+12
+now i am in a posit to mention a few applic of quantum group
+and algebra first let us see how these thing start defin
+t1 t 1l
+a b
+c d
+t2 1l t
+1 0
+0 1
+1 0
+0 1
+a b
+c d
+58
+note that
+ab
+ad
+cb
+cd
+a2
+ba b 2
+bc bd
+ca
+t2 t1
+ac
+da db
+2
+c2
+dc d
+ab b 2
+cb db
+t1 t2
+ad bd
+cd d2
+59
+becaus a b c d ae noncommut the relat between t1 t2 and
+t2 t1 turn out to be
+rt1 t2 t2 t1 r
+60
+a2
+ac
+ca
+c2
+ba
+da
+bc
+dc
+thi type of relat is commonli encount in the quantum invers scatter method approach to integr model in quantum field theori and statist mechan substitut in 60 r from 54 and t1 and t2 from 58
+it is found that equat 60 is a compact way of state the commut
+relat 17 defin the fundament t matrix of slq 2 what about the
+commut relat 44 defin slq 2 defin
+q x0 q q q 1 x
+l
+0
+q x0
+l
+l1
+q
+12
+q x0
+0
+q q 1 x q x0
+l 1l
+l2
+1l l
+61
+then the commut relat 44 defin the gener of slq 2 can
+be state elegantli as
+r1 l1 l2
+l2 l1 r1
+r1 l1 l2
+l2 l1 r1
+62
+note that the l matric are special realiz of the t matric ie
+the element of l matric obey the commut relat requir of the
+t matrix element
+13
+if we defin for the rmatrix in 54
+1l
+s1 r
+where
+pr
+r
+then it is found that
+s2 1l r
+p
+1
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+0
+s1 s2 s1 s2 s1 s2
+0
+0
+0
+1
+63
+64
+65
+which is an altern form of the ybe 57 for ani gener rmatrix
+the ybe 57 can be put in thi form 65 thi relat 65 repres a
+properti of the gener of a braid group which is a gener of the
+well known symmetr group sn the symmetr group sn is the group of
+all permut of n given object an element of the braid group bn can
+be depict as a system of n string join two set of n point each set
+locat on a line the two line say top and bottom be parallel with
+overcross or undercross of the string the overcross and the
+undercross of the string make bn an infinit group which will otherwis
+reduc to sn if i and i 1 are two consecut point on the top and bottom
+line the string start at i on the top line can reach i 1 on the bottom
+line by either undercross or overcross the string start at i 1 on
+the top line and reach i on the bottom line the correspond element
+of the braid group are usual denot by i and i1 respect the
+element i i 1 2 n 1 gener the braid group bn satisfi two
+relat
+i j j i for i j 1
+66
+and
+i i1 i i1 i i1
+67
+now compar the relat 65 and 67 it is obviou that the solut
+of the ybe rmatric or the quantum algebra should play a central
+role in the theori of represent of braid group braid group have
+mani applic in mathemat they are use in the studi of complex
+function of hypergeometr type have sever variabl in physic they
+appear in knot theori statist mechan twodimension conform field
+theori and so on
+14
+in quantum mechan the notion of continu spacetim with commut coordin is taken over from classic mechan thi is an assumpt what will happen if at some deeper microscop level the spacetim
+coordin themselv are noncommut it is clear that to deal with
+such a situat one will have to use a noncommut differenti calculu
+and the theori of quantum group provid the necessari framework as we
+have seen abov for exampl consid the motion of a quantum particl in a
+two dimension noncommut plane with x and y as the coordin if
+we take the correspond conjug momenta to be proport to x
+and
+respect
+then
+the
+relat
+14
+indic
+how
+the
+twodimension
+y
+quantum mechan phasespac would be deform at that level thu
+the theori of quantum group would provid the mathemat framework
+for the futur of quantum physic if it turn out that at some deeper microscop level spacetim manifold is noncommut henc there ha been
+a lot of interest in studi the fundament modif that would occur
+in the framework quantum mechan rel theori poincar group
+etc if the spacetim manifold happen to be noncommut
+apart from applic of fundament natur such as those mention
+abov there have been mani phenomenolog applic of quantum algebra in nuclear physic condens matter physic molecular physic quantum optic and elementari particl physic in these applic either an
+exist model is identifi with a quantum algebra structur or a standard model is deform to have an underli quantum algebra structur
+and studi to reveal the new featur emerg to give an idea of such
+applic let me mention as the final exampl the qdeform of the
+quantum mechan harmon oscil algebra also known as the boson
+algebra the algebra treatment of the quantum mechan harmon oscil involv a creation oper a an annihil oper a and
+a number oper n obey the commut relat
+n a a
+a a 1
+68
+where n is a hermitian oper and a is the hermitian conjug of a the
+energi spectrum of the harmon oscil is given by the eigenvalu of the
+hamiltonian oper
+1
+h
+aa a a
+69
+2
+in the appropri unit take two such set of oscil oper
+a1 a1 n1 and a2 a2 n2 which are assum to commut with each other
+15
+and defin
+j0
+it is found that
+1
+n1 n2
+2
+j a1 a2
+j0 j0
+j a2 a1
+j j
+70
+71
+and
+j0 j j
+j j 2j0
+72
+thi lie algebra 72 is seen to be the same as the sl2 algebra 45 subject
+to the hermit condit 71 and is known as su2 algebra the lie
+algebra of the group su2 the su2 algebra is the algebra of three dimension rotat or the rigid rotat with j0 j repres the angular
+momentum oper the coproduct rule
+j0 j0 1l 1l j0
+j j 1l 1l j
+73
+for the algebra 72 obtain by set q 1 in 47 or 49 repres
+the rule for addit of angular momenta correspondingli the relat 44
+rewritten as
+j0 j j j j 2j0 q
+74
+with the hermit condit
+j0 j0
+j j
+75
+repres the suq 2 or uq su2 algebra or the qdeform version of the
+su2 algebra 72 one can say that suq 2 is the algebra of the qrotat
+for the qangular momentum oper there are two possibl addit rule
+q1 j0 j0 1l 1l j0
+q1 j j q j0 q j0 j 76
+as seen from 47 and 49 now the interest fact is that one ha a realiz of suq 2 gener given by
+j0
+1
+n1 n2
+2
+j a1 a2
+j a2 a1
+77
+exactli analog to the su2 case 70 where the two set of oper
+a1 a1 n1 and a2 a2 n2 commut with each other and obey within
+each set the algebra
+aa qa a q n
+16
+n a a
+78
+further n is hermitian and a a is a hermitian conjug pair the
+qdeform oscil algebra 78 is known as the qoscil or the qboson
+algebra when q 1 the qoscil algebra 78 reduc to the canon
+oscil algebra 68 as is easi to guess phenomenolog applic of
+quantum algebra in nuclear and molecular spectroscopi involv the substitut of harmon oscil model by the qoscil model and the rigid
+rotat model by the qrotat model such applic lead to impress
+result show that the actual vibrationalrot spectra of nuclei and
+molecul can be fit into scheme in which the number of phenomenolog
+qparamet requir are veri much fewer than the number of tradit
+phenomenolog paramet requir to fit the same spectral data somehow such qdeform model seem to take into account more effici the
+anharmon of vibrat and the nonrigid of rotat in nuclear and
+molecular system
+befor close i should also mention that besid f unq sl2 and it
+dual quantum algebra uq sl2 there exist one more and onli one more
+deform of the hopf algebra pair f unsl2usl2 call the
+jordanian deform or the hdeform 1821 the correspond
+commut relat are for f unh sl2
+a b ha2 h a c hc 2 a d hac hdc
+b c hac hcd b d h hd2 c d hc 2
+ad bc 1 hac
+79
+and for uh sl2
+sinhhx
+h
+1
+x0 x x coshhx coshhx x
+2
+x x 2x0
+x0 x
+80
+the coproduct map are
+a a a b c
+c c a d c
+b a b b d
+d c b d d
+same as in the case of f unq sl2 and
+x x 1l 1l x
+17
+81
+x x ehx ehx x
+x0 x0 ehx ehx x0
+82
+sinc it is imposs even to mention all the mathemat and physic
+aspect of quantum group and algebra within a short articl such as thi
+i shall list a collect of book review and paper 2272 which should
+be consult for more detail and further refer to the origin work
+obvious my list of refer is neither exhaust nor up to date for
+recent literatur one should refer to the eprint archiv mathqa
+final the follow may also be note in the algebra 79 the basic
+commut are seen to be not linear combin of the gener as
+should be for a lie algebra but quadrat function of the gener such
+deform of lie algebra without ani further structur like coproduct
+map are in gener known in physic literatur as polynomi deform
+of lie algebra such algebra had been discov in the studi of physic
+system even earlier 7374 and are also of current interest see eg 75
+and refer therein
+i am thank to prof s parvathi for give me the opportun to
+particip in thi institut and instruct programm on quantum
+group and their applic at the ramanujan institut for advanc
+studi in mathemat univers of madra
+refer
+1 p p kulish and n yu reshetikhin j sov math 23 1983 2435
+2 e k sklyanin funct anal appl 16 1982 263 17 1983 273
+3 l d faddeev and l a takhtajan springer lect note in phi 246
+1986 166
+4 l d faddeev n yu reshetikhin and l a takhtajan alg anal 1
+1987 178
+5 v g drinfeld proceed of the intern congress of mathematician berkeley 1986 amer math soc provid ri 1987 798
+6 m jimbo lett math phi 10 1985 63 247
+18
+7 a conn publ math ihe 62 1985 257
+8 s l woronowicz commun math phi 111 1987613
+9 s l woronowicz commun math phi 122 1989 35
+10 w pusz and s l woronowicz rep math phi 27 1989 231
+11 yu i manin quantum group and noncommut geometri
+preprint crm1561 montreal univ 1988
+12 yu i manin topic in noncommut geometri princeton univ
+press princeton new jersey 1991
+13 j wess and b zumino nucl phi proc suppl 18b 1990 307
+14 a j macfarlan j phi a math gen 22 1989 4581
+15 l c biedenharn j phi a math gen 22 1989 l873
+16 cp sun and hc fu j phi a math gen 22 1989 l983
+17 t hayashi commun math phi 127 1990 129
+18 e e demidov yu i manin e e mukhin and d v zhdanovich prog
+theor phi suppl 102 1990 203
+19 s zakrzewski lett math phi 22 1991 287
+20 b a kuperschmidt j phi a math gen 25 1992 l1239
+21 ch ohn lett math phi 25 1992 85
+22 c n yang and m l ge ed braid group knot theori and
+statist mechan world scientif singapor 1989
+23 kulish p p ed quantum group springer lect note in math
+1510 1990
+24 h d doebner and j d hennig ed quantum group springer
+lect note in phi 370 1990
+25 t curtright d fairli and c zacho ed quantum group
+world scientif singapor 1991
+19
+26 j fuch affin lie algebra and quantum group an introduct
+with applic in conform field theori cambridg univ press
+cambridg 1992
+27 m l ge ed quantum group and quantum integr system
+world scientif singapor 1992
+28 m gerstenhab and j stasheff ed deform theori and
+quantum group with applic to mathemat physic amer
+math soc provid ri 1992
+29 m r kibler introduct to quantum algebra in symmetri and
+structur properti of condens matter ed w florek d lipinski and t lulek world scientif singapor 1993 eprint
+arxivhepth9409012
+30 z q ma yangbaxt equat and quantum envelop algebra
+world scientif singapor 1993
+31 v k dobrev j geom phi 11 1993 367
+32 k srinivasa rao and v rajeswari quantum theori of angular momentum select topic narosa publish hous new delhi 1993
+33 v chari and a pressley a guid to quantum group cambridg
+univ press cambridg 1994
+34 r barbier and m r kibler on the use of quantum algebra in
+rotationvibr spectroscopi in modern group theoret method in physic ed j bertrand et al kluwer academ dordrecht
+1995 eprint arxivatomph9511001
+35 l c biedenharn and m a lohe quantum group symmetri and
+qtensor algebra world scientif singapor 1995
+36 z chang physrep 262 1995 137
+37 c kassel quantum group springerverlag new york 1995
+38 j lukierski z popowicz z and j sobczyk ed quantum group
+formal and applic polish scientif publ warszawa 1995
+20
+39 s majid foundat of quantum group theori cambridg univ
+press cambridg 1995
+40 l castellani and j wess ed quantum group and their applic in physic io press amsterdam 1996
+41 m chaichian and a demichev introduct to quantum group
+world scientif singapor 1996
+42 c gomez m ruizaltaba and g sierra g quantum group in
+twodimension physic cambridg univ press cambridg 1996
+43 a kundu quantum integr system construct solut algebra aspect eprint arxivhepth9612046
+44 c quesn and n vansteenkist helv phi acta 69 1996 60
+45 a klimyk and k schm
+udgen quantum group and their represent springer verlag berlin 1997
+46 h d doebner and v k dobrev ed quantum group proc
+symposium at the 21st intern colloquium on group theoret
+method in physic goslar germani heron press sofia bulgaria
+1997
+47 d bonatso d and c daskaloyanni prog part nucl phi 43
+1999 537
+48 j mador an introduct to noncommut differenti geometri and it physic applic cambridg univ press 2nd edn
+cambridg 1999
+49 v rajeswari and k srinivasa rao j phi a math gen 24 1991
+3761
+50 s chaturvedi and v srinivasan phi rev a 44 1991 8020
+51 r parthasarathi and k s viswanathan j phi a math gen 24
+1991 613
+52 e celeghini m rasetti and g vitiello phi rev lett 66 1991 2056
+21
+53 r chakrabarti and r jagannathan j phi a math gen 24 1991
+l711
+54 a jannussi g brodima and l mignani j phi a math gen 24
+1991 l775
+55 m arik e demircan t turgut l ekinci and m mungan z phi
+c particl and field 55 1992 89
+56 r jagannathan r sridhar r vasudevan s chaturvedi m krishnakumari p shanta and v srinivasan j phi a math gen 25
+1992 6429
+57 j van der jeugt j phi a math gen 26 1993 l405
+58 r k gupta and i l cooper j chem phi 102 1995 3123
+59 c fronsdal and a galindo lett math phi 27 1993 59
+60 r j finkelstein lett math phi 29 1993 75
+61 f bonechi e celeghini r giachetti c m perena e sorac and m
+tarlini j phi a math gen 27 1994 1307
+62 r jagannathan and j van der jeugt j phi a math gen 28 1995
+2819
+63 a k mishra and g rajasekaran j math phi 38 1997 466
+64 v i manko g marmo e c g sudarshan and f zaccaria physica
+scripta 55 1997 528
+65 r jagannathan special function and differenti equat ed
+k srinivasa rao r jagannathan g vanden bergh and j van
+der jeugt alli publish new delhi 1998 158 eprint
+arxivmathqa98031422
+66 t d palev and p parashar lett math phi 43 1998 7
+67 b basumallick and a kundu nucl phi b509 1998 705
+68 a shariati a aghamohammadi and m khorrami mod phi lett a
+11 1996 187
+22
+69 a ballestero and f j herranz j phi a math gen 29 1996 l
+311
+70 v k dobrev proc 10th int conf problem of quantum field theori
+alushta crimea ukrain 1996 ed d shirkov d kazakov and a
+vladimirov jinr e296369 dubna 1996 104
+71 b abdesselam a chakrabarti and r chakrabarti mod phi lett
+a 11 1996 2883
+72 r chakrabarti and c quesn int j mod phi a 14 1999 2511
+73 m lakshmanan and k eswaran j phi a math gen 8 1975 1658
+74 p w higg j phi a math gen 12 1979 309
+75 v sunil kumar b a bambah r jagannathan p k panigrahi and
+v srinivasan quantum semiclass opt 1 2000 126
+23

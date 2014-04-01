@@ -1,0 +1,1076 @@
+lax pair for elast dna
+1
+shi mcclain and hearst
+a lax pair for the dynam of dna
+model as a shearabl and extens elast rod
+yaom shia wm mcclainb and john e hearsta
+adepart of chemistri univers of california berkeley ca 947201460
+bdepart of chemistri wayn state univers detroit mi 48202
+contact jehearstcchemberkeleyedu
+juli 28 2001
+lax pair for elast dna
+2
+shi mcclain and hearst
+abstract
+we introduc a spectral paramet into the geometr exact hamiltonian
+equat for the elast rod in a way that creat a lax pair thi assur
+integr and permit applic of the invers scatter transform solut
+method if the method can be carri through the solut of the origin problem
+is recov by set the spectral paramet to zero
+i introduct
+consid a famili of curv that are bendabl and twistabl but not
+shearabl or extend parametr by arc length s and time t and govern
+by a set of partial differenti equat it ha been recent shown by doliwa and
+santini1 that that the equat are integr provid that three condit hold
+i
+the curv lie on or in the surfac of an ndimension sphere
+ii
+the total arclength of the curv is fix and
+iii
+the dynam doe not depend explicitli upon the radiu of the sphere
+in thi veri gener formul there is no specif physic caus for the motion
+of the curv it move in ani way that might be specifi by it differenti
+equat
+a systemat solut procedur is suggest by these result consid a
+kinemat problem in n1 dimens that is nonintegr in the sens that no
+invers scatter procedur can be found that lead to it solut increas it
+parametr by introduc a new independ variabl the invers of an ndimension sphere radiu plu new equat term that requir the curv to lie
+on the surfac of thi sphere the expand equat are now guarante
+integr and they lead to an invers scatter procedur that will integr them
+lax pair for elast dna
+3
+shi mcclain and hearst
+if it can be carri through now let go to zero flatten the sphere surfac
+back to a euclidian space of n1 dimens solut in the infinitesim
+neighborhood of ani point on the sphere now becom solut to the origin
+equat which may not have been integr may not have been suscept to
+an invers scatter solut on their own
+in thi paper we extend these power idea to the case of a curv that
+move as a result of it own elast known as the elast rod in the
+geometr exact hamiltonian formul the dynam behavior of the elast
+rod2 is govern by four vector equat two are pure kinemat equat that
+relat bend and twist to local frame rotat and shear and extens to local
+frame translat the other two vector equat are dynam equat that
+relat elast forc torqu and inertia term to local frame rotat and
+translat we show how these equat may be treat in an expand scheme
+similar to that of doliwa and santini except that constant arc length is no longer
+requir the origin problem of question integr consist of twelv
+scalar hamiltonian equat twelv scalar constitut equat and 24
+depend variabl each one a function of s and t we use the gener
+matric of the special orthogon lie rotat group so4 under which the 4dimension sphere is fulli symmetr togeth with a real spectral paramet
+to construct two complex 4by4 quantiti u and v which form a lax pair in
+the sens that they obey the zakharovshabat form of the lax equat
+tu sv u v 0
+11
+thi form insur integr and also specifi a solut procedur via the
+invers scatter transform3 if a solut can be actual construct the limit
+0 give the solut of the geometr exact elast rod problem
+lax pair for elast dna
+4
+shi mcclain and hearst
+thi procedur includ as special case the solut procedur for
+special reduct of the geometr exact equat for instanc the
+inextens and unshear kirchhoff rod is includ as is the heavi top problem
+and the problem of rigid bodi motion in an ideal fluid
+at the end we also present a connect between our system of pde with
+myzakulov recent unit spin descript of soliton equat in 11
+dimension4
+ii the configur space of the elast rod in 3d
+we treat duplex dna as a bendabl twistabl extens and shearabl
+thin elast rod here and elsewher in thi paper the term elast rod and
+dna have the same mean so do the centerlin of the rod and the axi of
+dna
+at a given time t and at each point s on the centerlin r s t of the rod a
+local cartesian coordin frame or director frame
+d st d st d st
+1
+2
+3
+is affix with the unit vector d 1 s t and d 2 s t in the direct of the princip
+axe of inertia tensor of the rod cross section the third unit vector d 3 s t is in
+the normal direct of the cross section becaus the shear is includ the unit
+vector d 3 s t doe not necessarili coincid with the tangent vector st of the
+centerlin of the elast rod r s t
+unit vector d i s t in the director frame or bodyfix frame are relat
+to the unit vector a i in the lab frame via an euler rotat matrix accord to
+d i s t s t s t s t a i
+sinc
+r r3
+configur space of the elast rod is e 3 r 3 so3
+and
+so3
+the
+lax pair for elast dna
+5
+shi mcclain and hearst
+the orient of the local frame at s s is obtain by an infinitesim
+rotat of the coordin frame at s the veloc of the rotat is the darboux
+vector with local compon i d i here and after doubl occurr of
+an index mean summat over it rang vector d i chang with s by move
+perpendicular to themselv and to the rotat axi accord to s d i d i
+at ani time t the rel posit of the origin of the local rod frame at
+s s is obtain by an infinitesim translat r of the origin of the local
+frame at s the veloc of the translat is the tangent vector sr i di the
+paramet s usual chosen as the arclength paramet for the undeform or
+relax elast rod is no longer the current arclength paramet for the deform
+rod s s t sinc there are deform of shear and extens the current
+arclength of the deform rod s s t is then given by s st
+t d
+s
+the orient of the local frame at time t t is obtain by an
+infinitesim rotat of the coordin frame at time t
+the veloc of the
+rotat is the angular veloc vector with local frame compon i d i
+obey t d i d i the rel posit of the origin of the local rod
+frame at t t is obtain by an infinitesim translat of the origin of the
+local frame at t the veloc of the translat is the vector t r i d i
+three depend variabl are use for describ strain or deform
+of bending1 1 bending2 2 and twist 3 anoth three are use for
+describ the strain or deform of shear1 1 shear 2 2 and extens
+3 still anoth three are use for describ the linear velocity1 1 linear
+velocity2 2 and linear velocity3 3 for the translat of the centroid of the
+elast rod cross section at posit s the last three are use for describ the
+lax pair for elast dna
+6
+shi mcclain and hearst
+angular velocity1 1 angular velocity2 2 and angular velocity3 3 for the
+rotat of the elast rod cross section at posit s
+at ani time t and a given posit say s s1 along the centerlin there is
+a cross section of the elast rod upon which the intern forc are exert one
+side of the cross section s s1 act on the other side s s1 and vice versa the
+intern forc are resolv into a forc ps1 t and a torqu m s1 t at each
+cross section such a forc and a torqu may be found give rise to function
+p s t and m s t describ system of stress on the elast rod
+sinc each cross section ha it mass and moment of inertia tensor an
+angular momentum ms t of the cross section and linear veloc ps t of the
+center of the cross section can be natur introduc
+from thi point on the letter m p m p without subscript will be
+understood as vector whether bold or not the simomarsdenkrishnaprasad
+smk equations5 govern these quantiti base on a geometr exact
+hamiltonian formul of the problem are
+t 1 s 1
+2
+2
+21a
+t s
+21b
+t p p s p p
+21c
+t m m p s m m p
+21d
+the constitut relat are given by
+pi
+e s
+i
+mi
+pi
+e s
+i
+h t
+i
+21e
+21f
+21g
+lax pair for elast dna
+mi
+7
+shi mcclain and hearst
+h t
+i
+21h
+where i 123 and e s is the elast energi function and h t is the
+kinet energi function
+we remark that the term p is not present in the origin form of the smk
+equat
+thi is becaus the kinet energi h t is chosen such that
+pi i and p 0
+we explicitli add thi term here to show that smk
+equat in 21 have the follow exchang symmetri
+s t i i i i m i mi pi pi and e h
+after the equat have been solv for these depend variabl one may
+construct the centerlin r s t and vector d i s t by the follow procedure6
+1 solv s s t s t s t and t s t s t s t for euler matrix
+s t where j k st i st i j k and j k st i st i j k
+2 calcul d i s t use d i s t s t a i
+3 calcul r st
+s
+0
+i xt d i xt dx or r st
+t
+0
+i s x d i s x dx
+even when these oper cannot be carri out analyt numer
+procedur give a veri accur pictur of the dynam
+iii lax pair for the smk equat
+let j i and k i i 123 be the gener matric of lie group so4 given
+by
+0
+0
+j1
+0
+0
+0
+0
+0 1 0
+0
+j
+2
+1
+1 0 0
+0
+0 0 0
+0
+0
+0 1 0
+0 1
+0 0 0
+1 0
+j
+3
+0 0
+0 0 0
+0 0
+0 0 0
+0 0
+0 0
+0 0
+0 0
+31a
+lax pair for elast dna
+0
+0
+k1
+0
+1
+8
+0 0 1
+0 0
+0 0 0
+0 0
+k2
+0 0 0
+0 0
+0 0 0
+0 1
+shi mcclain and hearst
+0 0
+0 0
+0 1
+0 0
+k3
+0 0
+0 0
+0 0
+0 0
+0
+0
+0 1
+1 0
+0
+0
+31b
+these gener satisfi the relat
+j j
+i
+j
+j
+i j k k
+j k
+i
+j
+kk
+i j k
+k k
+i
+j
+j
+i j k k
+31c
+where i j k is the levicivita symbol now consid the linear system
+s st u st st
+32a
+t s t v s t s t
+32b
+where u and v are defin as
+u a 1 b
+33a
+v c 1 d
+33b
+and where ast bst c st and dst are given by
+a i j i 2 i ki
+b
+p
+i
+j i 2 mi ki
+33c
+33d
+c i j i 2 i k i
+33e
+d pi j i 2 mi k i
+33f
+in system 33cf all symbol are real function of s and t except the real
+spectral paramet the integr condit for system 32 t s s t
+then lead to the lax equat
+tu sv u v 0
+34
+a defin properti of a lax pair note that u and v are 4by4 matric leftmultipli or rightmultipli 34 by j i and k i i 123 respect use
+31c to simplifi the result and separ the real part from the imaginari part
+we obtain a system of pde in vector form
+lax pair for elast dna
+9
+shi mcclain and hearst
+t 12 s 12 2 p p 2 4 m m
+35a
+2
+t s m p p m
+35b
+4
+t p p s p p m m
+35c
+t m m p s m m p
+35d
+sinc the system 35ad contain 12 scalar equat for 24 real depend
+variabl i i i i m i pi mi pi i 123 we have the freedom to pick
+twelv real constitut relat in elast work one use the twelv scalar
+equat impli by the four vector equat 21eh but in other problem one
+might use other relat which we write symbol as
+e a m p m p s t 0
+a 12 12
+35e
+system 35ae can describ a veri larg class of pde 24 depend variabl in
+11 dimens some member of thi class will be discuss in detail in
+section iv below
+in appendix a we give a more gener formul in which the 24
+variabl i i i i m i pi mi pi i 123 are taken complex and the lax
+pair compris two 8by8 matric
+the system of pde in 35ad and it associ lax pair of 3233 or
+a1a2 are the major result of thi paper
+what is new about thi lax pair and the result system of 12 pde the
+pure kinemat approach7 for recast a the nonlinear pde of a gener curv
+into lax represent focus onli on what we call the strainveloc
+compat integr relat for equat like
+s q s t
+t r s t
+where and are strain and and are veloc but we treat strainveloc
+and stressmomentum on an equal foot so our equat are
+lax pair for elast dna
+10
+s u p m s t
+shi mcclain and hearst
+t v p m s t
+where the new variabl p and m are stress forc and torqu respect and
+p and m are momenta linear and angular respect the lax equat for
+the two case look ident
+t q sr qr 0 versu tu sv u v 0
+and quantiti q r u and v are all 4by4 array but q and r are real wherea
+our u and v are complex and contain twice as mani depend variabl
+we emphas that the stressmomenta appear as natur as the strainveloc and the result nonlinear pde are dynam elast equat rather
+than just kinemat equat
+expand the depend variabl x x st and the constitut
+relat e a m pm pst in taylor seri in
+n 0
+n 0
+x i st n x i n st and e a st n e a
+n
+i
+st
+36
+and take the limit 0 the lead term in the expans 35 are the smk
+equat 21ad
+iv special of the smk equat
+case 1 the static elast rod
+set veloc and momenta m p 000 t in 21 and assum that
+everyth els is a function of independ variabl s onli the smk equat
+21 reduc to
+s p p 0
+41a
+lax pair for elast dna
+11
+shi mcclain and hearst
+s m m p 0
+41b
+e s
+i
+41c
+pi
+mi
+e s
+i
+41d
+system 41 describ the equilibrium configur of an elast rod with
+elast energi function e s
+subcas 11 static elast rod with linear constitut relat
+let e s of 41c and 41d be given by
+e s 12 ai j i intrins
+j intrins
+12 ci j i iintrins j intrins
+i
+j
+j
+1
+2
+bi
+j
+i
+intrins
+i
+j
+intrins
+i iintrins j intrins
+j
+j
+42
+where ai j s is the bendingtwist modulu ci j s is the shearextens
+modulu and bi j s is coupl modulu between bendingtwist and
+shearextens the quantiti iintrins s are the intrins bend and twist
+of the unstress rod and the iintrins s are the intrins shear and extens
+then system 41 reduc to
+s p p 0
+43a
+s m m p 0
+43b
+m i ai j j intrins
+bi
+j
+pi ci j j j
+intrins
+j
+b
+i j
+i
+intrins
+j
+j
+intrins
+j
+43c
+43d
+lax pair for elast dna
+12
+shi mcclain and hearst
+further when
+1 bi j 0 and
+2 ai j is a constant diagon matrix with a1 a2 and
+3 ci j is a constant diagon matrix with c1 c 2 and
+4 intrins 000t intrins 001t
+then system 43ab may be solv exactli in term of ellipt functions8
+subcas 12 static kirchhoff elast rod and the heavi top
+in 43 let i iintrins bi j 0 and ci j i j pi no sum in i
+then e s becom
+e s 12 ai j i intrins
+j intrins
+1pi pi
+i
+j
+44a
+take the limit 0 and absorb the last infinit term into the elast energi
+e s then the elast energi becom
+e s 12 ai
+j
+i
+intrins
+i
+j
+intrins
+j
+44b
+and the system 43 reduc to
+s p p 0
+45a
+s m m p 0
+45b
+m i ai j j intrins
+j
+45c
+if s is arc length as assum earlier then system 45 describ the equilibrium
+configur of the unshear inextens kirchhoff elast rod but if s is
+understood as time thi system describ the dynam of the heavi top
+there are two known integr case for the heavi top system 45 with
+intrins 000t 001 t
+a lagrang top9 ai j is a constant diagon matrix with a1 a2
+lax pair for elast dna
+13
+shi mcclain and hearst
+b kowalewski top10 the same but with a3 a1 2a2
+case 2 rigid bodi motion in ideal fluid
+set m p 000 t in 21 and assum that everyth els
+is function of time t onli then the smk equat 21 reduc to
+t p p 0
+51a
+t m m p 0
+51b
+i
+h m p t
+pi
+51c
+i
+h m p t
+mi
+51d
+let h m p t of 51c and 51d be given by
+h m pt 12 ai
+1
+2
+bi
+j
+m m m
+m m p
+0
+i
+i
+j
+0
+i
+i
+j
+j
+0
+1
+m0
+j 2 ci j pi pi
+0
+p0
+j mj mj
+p
+i
+p j p0
+j
+p0
+i
+52
+where a b c m0 p 0 are constant then system 51 reduc to the
+kirchhoff equat which describ a finit rigid bodi move in an ideal
+incompress fluid
+t p p 0
+53a
+t m m p 0
+53b
+0
+i ci j p j p0
+j bi j m j m j
+53c
+i ai j m j m0
+j bi
+53d
+j
+p
+j
+p0
+j
+there exist three known nontrivi integr case
+lax pair for elast dna
+1 clebsch case
+14
+11
+shi mcclain and hearst
+mi0 pi0 0 ai j ai i j bi j 0 ci j ci i j and ai ci are
+1
+constant satisfi a11 c 2 c 3 a1
+2 c 3 c1 a3 c1 c 2 0
+2 steklov case 12 mi0 pi0 0 ai j ai i j bi j 0 ci j ci i j and ai ci are
+constant
+satisfi
+bi
+a1 a2 a3 a1
+i
+c1 2 a1 a2 a3
+2
+c 2 2 a2 a3 a1 c 3 2 a3 a1 a2 and and are constant
+2
+2
+3 chaplygin case13
+case 3 kirchhoff elast rod motion
+in thi case there is no shear or extens so 001t eq 21a and
+21b are deriv from the integr condit
+s t d i t s d i
+61a
+st r t s r
+61b
+sinc 001t we have s r d 3 thu we can differenti both side of
+61b with respect to s and obtain
+s t d 3 t s d 3
+61c
+the result equat 61c is actual the third compon part of 61a
+smk equat in 21 reduc to
+t 1 s 1
+2
+2
+62a
+t p p s p p
+62c
+t m m p s m m p
+62d
+system 62 describ the dynam of kirchhoff elast rod if we pick
+m i ai j j intrins
+j
+62e
+lax pair for elast dna
+15
+shi mcclain and hearst
+mi ai j j
+62f
+pi i
+62g
+where ai j is the moment of inertia tensor for the cross section of the elast rod
+and is the linear densiti of mass
+case 4 elast rod move in a plane
+set 1 2 m1 m2 3 p3 0 and 1 2 m 1 m 2 3 p3 0 in
+21 then smk equat 21 reduc to
+t 3 s 3 0
+71a
+t p1 s p1 p 2 3 3 p2 0
+71b
+t p 2 s p2 p1 3 3 p1 0
+71c
+t 1 s 1 2 3 3 2 0
+71d
+t 2 s p 2 1 3 3 1 0
+71e
+t m3 s m 3 p1 2 1 p 2 1 p2 p1 2 0
+71f
+system 71a 71f contain six scalar equat for twelv depend
+variabl the six constitut relat can be express as
+p1
+e 3 1 2 s
+1
+71g
+p2
+e 3 1 2 s
+2
+71h
+m3
+e 3 1 2 s
+3
+71i
+p1
+h 3 1 2 t
+1
+71j
+p2
+h 3 1 2 t
+2
+71k
+lax pair for elast dna
+m3
+16
+shi mcclain and hearst
+h 3 1 2 t
+3
+71l
+in system 71 depend variabl 3 is use for describ bend 1 for shear
+2 for extens 1 for linear veloc 1 2 for linear veloc 2 and 3 for angular
+veloc e 3 1 2 s stand for the elast energi and h 3 1 2 t for the kinet
+energi
+case 5 move space curv 3d
+doliwa and santini14 have shown that for a space curv move on a real 3dimension spheric surfac s 3 with radiu 2 the serretfrenet frame
+n st b st t st r st
+b 0
+n 0
+s
+t 0
+r 0 0
+0
+0
+2
+0
+0
+2
+0
+satisfi the relat
+b
+n
+t
+r
+where s is the arclength the unit radiu vector is
+81a
+r
+s t 2 r
+s t the
+curvatur is s t and the geometr torsion is s t
+the chang of the serretfrenet frame with respect to time is assum to be
+b 0
+3
+n 3
+0
+t
+t 2
+1
+2
+2
+r 1 2
+2
+1
+0
+2
+3
+2 1 b
+2 2 n
+2 3 t
+0 r
+where t is time and x x s t with x i and i respect
+81b
+lax pair for elast dna
+17
+shi mcclain and hearst
+the first two kinemat vector equat 21ab in the smk equat 21
+are deriv from the follow serretfrenet equat for an elast rod move
+on the 3dimension surfac of a 4dimension sphere with radiu 2 name
+d 1 0
+3
+d 3
+0
+s 2
+d
+1
+3 2
+r 2 2
+1
+2
+d 1 0
+3
+d 3
+0
+t 2
+1
+d3 2
+r 2
+2
+1 2
+2
+1
+0
+2 3
+2
+1
+0
+2
+3
+2 1 d 1
+2 2 d 2
+2 3 d 3
+r
+0
+82a
+2 1 d 1
+2 2 d 2
+2 3 d 3
+0 r
+82b
+if we assum zero elast energi e s and zero kinet energi
+h t in the constitut relat 21eh then
+p m p m 0 0 0
+t
+consequ the last two dynam vector equat 21cd in the smk equat
+21 for forc balanc and torqu balanc becom zero ident
+s
+compar 82ab with 81ab and identifi s s t 3 x t dx
+s 3 1 s d 3 t d 2 n d 1 b we realiz that a space curv is an elast rod
+special in the follow way
+1 3 3 3
+83a
+2 1 2 0
+83b
+lax pair for elast dna
+18
+shi mcclain and hearst
+thu a space curv is a special case of elast rod with no shear deform
+1 2 0 no bend deform in d 2 n direct 2 0 zero elast
+energi function e s and zero kinet energi function h t
+thi is the key link connect the smk equat 21 via the move
+curv problem 81ab with most wellknown integr system in dimens
+11
+kdv
+mkdv
+sinegordon
+nonlinear
+schroeding
+heisenberg
+ferromagnet 15
+there also exist anoth tetrad frame e1 st e 2 st e 3 st e 4 st
+which satisfi the follow relat
+e 1 0
+p3
+0
+e p3
+s 2
+e 3
+p1
+p2
+e 2
+2
+4 m1 m2
+e 1 0
+p3
+0
+e p3
+t 2
+e
+p1
+3 p2
+e 2
+2
+4 m1 m 2
+p2
+p1
+0
+2 m3
+p2
+p1
+0
+2
+m3
+2 m1 e 1
+2 m2 e 2
+2 m3 e 3
+e 4
+0
+84a
+2 m 1 e 1
+2 m 2 e 2
+2 m 3 e 3
+e 4
+0
+84b
+sinc the element in 4by4 matric in 82ab are relat to the element
+of the 4by4 matric in 84ab via the constitut relat like 21eh we
+may say that the frame e1 e 2 e 3 e 4 is dual to the serretfrenet frame b n t r
+lax pair for elast dna
+19
+shi mcclain and hearst
+v relat to spin descript of soliton equat
+we may rewrit the first compon equat in 82b as
+4
+t s bj d j
+s d 1
+91
+j2
+thi is a basic equat in myrzakulov unit spin descript of the integr and
+nonintegr pde 16
+eqs82ab tell us that it is better to consid the motion of not just unit
+vector s d 1 but all unit vector d j j 1234 togeth in 11 dimens we
+conjectur that ani system of integr or nonintegr pde in 11 dimens
+deriv from eq91 might also be deriv from a system of pde in 35 with a
+lax pair of 3334 or a2a3
+if we use the 8by8 lax pair as shown in appendix a and choos the
+normal factor properli for in a1 then we can rewrit a1 as
+s fi x i j fj
+i 128
+92a
+t fi yi j fj
+i 128
+92b
+t
+where f1 f2 f8 t fi f j i j and x and y are the 8by8 matric defin
+in a2a and a2b respect
+matric x and y have the follow symmetri properti
+lax pair for elast dna
+20
+shi mcclain and hearst
+x i j x j i yi j y j i
+if ij 4 1 2 3 4 or i 4 j 1234 93a
+x i j x j i yi j yj i
+if i j 1234 or i j 5678
+93b
+sinc matrix x is not antisymmetr eq92a cannot be consid as the
+serretfrenet equat for an elast rod move on 7sphere s 7 with radiu
+2
+2 imbed in r 8
+becaus the diagon matrix element of y are all zero we may rewrit the
+first compon equat in 92b as
+8
+t s aj fj
+j2
+a j y1 j
+s f1
+thi is the analog of eq91 in 8d
+17
+94
+again eqs86ab tell us that it is
+better to consid the motion of not just unit vector s f1 but all unit vector f j
+j 1278 togeth in 11 dimens
+vi conclus
+1 we have found a lax pair with a correspond spectral paramet for a
+system of 12 scalar pde and 12 scalar constitut relat govern
+24 depend variabl in 11 dimens
+2 when the spectral paramet goe to zero thi system of pde reduc
+to the smk equat that describ the dynam of dna model as a
+shearabl and extens elast rod
+lax pair for elast dna
+21
+shi mcclain and hearst
+3 when three depend variabl are set to be constant the smk
+equat reduc to a system of 9 scalar pde with 9 scalar constitut
+relat in 18 depend variabl thi system describ the dynam
+of dna model as an unshear and inextens elast rod
+kirchhoff elast rod
+4 when the smk equat are assum to be independ of t or s they
+reduc to a set of 6 ode and 3 constitut relat for 9 depend
+variabl describ the motion of a heavi top or the motion of a rigid
+bodi in an ideal fluid
+it is beyond the scope of thi paper to show in a mathemat rigor
+fashion that each step in the reduct will or will not preserv the integr
+properti of the pde in the sens of liouvil painlev lax or invers
+scatter transform ist
+aknowledg
+ys would like to thank zixiang zhou of fudan univers shanghai pr
+china for help discuss
+lax pair for elast dna
+22
+shi mcclain and hearst
+appendix a
+if we assum that 24 depend variabl i i i i m i pi mi pi
+i 123 are complex and the paramet is also complex then we may consid
+the follow linear system
+s st x st st
+a1a
+t st y st st
+a1b
+where x and y in the lax pair x y are defin as
+a b
+x
+b a
+a2a
+c d
+y
+d c
+a2b
+and where ast bst c st and dst are given by
+a i j i 2 i k i
+b
+p
+i
+j i 2 mi k i
+a2c
+c i j i 2 i ki
+d
+p j
+i
+i
+2 m i ki
+a2d
+a2e
+a2f
+the integr condit for system a1 t s s t lead to
+t x s y x y 0
+a3
+lax pair for elast dna
+23
+shi mcclain and hearst
+take each 4by4 block in a3 and left or rightmultipli it by j i and
+k i i 123 respect use 31 to simplifi the result we obtain a set of
+pde in vector form
+t 12 s 12
+2 p p 2 4 m m
+t s
+2 m p p m
+t p p s p p
+4 m m
+t m m p s m m p
+a4a
+a4b
+a4c
+a4d
+assum that is pure imaginari system a4 reduc to system 35
+lax pair for elast dna
+24
+shi mcclain and hearst
+refer
+1
+doliwa a and santini p m an elementari geometr character of the
+integr motion of a curv phi lett a 185 373384 1994
+2
+simo j c marsden j e and krishnaprasad p s the hamiltonian structur
+of nonlinear elast the materi and convect represent of solid
+rod and plate arch ration mech anal 104 125183 1988
+3
+see for exampl ablowitz m j and clarkson p a solit nonlinear
+evolut equat and invers scatter london mathemat societi
+lectur note seri 149 cambridg univers press 1991
+4
+myrzakulov r on some integr and nonintegr soliton equat of
+magnet preprint
+5
+simo j c marsden j e and krishnaprasad p s eq624
+6
+mcclain wm shi yaom bishop tc and hearst je visual of
+elast rod motion under exact hamiltonian dynam j chem phi submit
+7
+ref 1
+lax pair for elast dna
+8
+25
+shi mcclain and hearst
+shiyaom borovik ae and hearst j e elast rod model incorpor
+shear and extens gener nonlinear schrdinger equat and novel
+closedform solut for supercoil dna j chem phi 103 31661995
+9
+a lagrang j l mecaniqu analytiqu pari chez la veuv desaint 1788
+b whittak e t a treatis on the analyt dynam of particl and rigid
+bodi 4th ed cambridg london 1965
+c macmillan w d dynam of rigid bodi mcgrawhil new york
+1936 see 102112
+10
+a kowalewski s sur le problem de la rotat dun corp solid autour dun
+point fix acta math 12 1772321889
+b kotter f sur le ca trait par mme kowalewski de rotat dun corp solid
+autour dun point fix acta math 17 2092641893
+c bobenko a i reyman a g and semenovtianshanski m a the
+kowalewski top 99 year later a lax pair generalizatin and explicit
+solut commun math phi 122 321354 1989
+11
+a clebsch a math ann 3 2382621871
+b perelomov a m some remark on the integr of the equat of
+motion of a rigid bodi in an adeal fluid inst theo exp phi 15 8385 1981
+lax pair for elast dna
+12
+26
+shi mcclain and hearst
+a steklov v math ann 42 2732941893
+b perelomov a m some remark on the integr of the equat of
+motion of a rigid bodi in an adeal fluid inst theo exp phi 15 8385 1981
+13
+a chaplygin s a a new particular solut of the problem on motion of a
+rigid bodi in fluid in complet work v 1 theoret mechan
+mathemat ogiz 1948 p337346
+b orel o e and ryabov p e bifurc set in a problem on motion of a
+rigid bodi in fluid and in the gener of thi problem regular and chaotic
+dynam 3 8292 1998
+c ryabov p e bifurc set in an integr problem on motion of a rigid
+bodi in flui regular and chaotic dynam 4 5976 1999
+b perelomov a m some remark on the integr of the equat of
+motion of a rigid bodi in an ideal fluid inst theo exp phi 15 8385 1981
+14
+15
+ref 1
+a ref 1
+b hasimoto j fluid mech 51 477 1972
+lax pair for elast dna
+27
+shi mcclain and hearst
+c lamb g l j math phi 18 1654 1977
+d lakshmanan m ruijgrok th w and thompson c j physica a 84 577
+1976 lakshmanan m phi lett a 64 353 1978 lakshmanan m j
+math phi 20 1667 1979
+e sasaki r nuc phi b 154 343 1979
+f chern s s and tenenblat k j diff geom 16 347 1981
+g zakharov ve and shabat a b jetph 61 118 1971
+h ablowitz m j kaup d j newel a c and segur h stud appl math
+53 249 1974
+isym a soliton theori is surfac theori ift uw 1181 warsaw univers
+sym a soliton surfac and their applic in lectur note in physic
+vol 239 p154 springer berlin 1985
+j bobenko a i math ann 290 207 1990
+k langer j and perlin r j nonlinear sci 1 71 1991
+l goldstein r e and petrich d m phi rev lett 67 3203 1991
+m nakayama k segur h and wadati m phi rev lett 69 2603 1992
+lax pair for elast dna
+28
+shi mcclain and hearst
+o tenenblat k and terng c l ann of math 111 477 1980 terng c l
+ann of math 111 491 1980
+p konopelchenko p g induc surfac and their integr dynam
+budker inp 93114
+16
+ref 4
+17
+ref 4

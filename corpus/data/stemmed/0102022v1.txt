@@ -1,0 +1,1443 @@
+a mathemat model account for the organis
+in multiplet of the genet code
+arxivmathph0102022v1 21 feb 2001
+a sciarrino
+dipartimento di scienz fisich universita di napoli federico ii
+and infn sezion di napoli
+complesso di mont s angelo via cintia i80126 napoli itali
+abstract
+requir stabil of genet code against translat error modelis by suitabl
+mathemat oper in the crystal basi model of the genet code the main featur
+of the organis in multiplet of the mitochondri and of the standard genet code
+are explain
+pac number 8710e 0220uw
+email sciarrinonainfnit
+dsfth3800
+mathphysxxx
+februari 2001
+1
+introduct
+as it is well known the dna macromolecul is constitut by two linear chain of nucleotid in
+a doubl helix shape there are four differ nucleotid character by their base adenin
+a and guanin g deriv from purin and cytosin c and thymin t come from
+pyrimidin t be replac by uracil u in rna the genet inform is transmit
+via the messeng ribonucl acid or mrna dure thi oper call transcript the
+a g c t base in the dna are associ respect to the u c g a base through a
+complic biochem process a tripl of nucleotid or codon will be relat to an aminoacid more precis a codon is defin as an order sequenc of three nucleotid therefor
+there are 43 64 differ codon onli 20 differ aminoacid appear in the peptid chain
+which form the protein we list them with the standard abbrevi alanin ala arginin
+arg asparagin asn aspart acid asp cystein cy glutamin glnglutam acid
+glu glycin gli histidin hi isoleucin ile leucin leu lysin ly methionin
+met phenylalanin phe prolin pro serin ser threonin thr tryptophan trp
+tyrosin tyr valin val it follow that the genet code ie the associ between
+codon and aminoacid is degener in the vertebr mitochondri code vmc see tabl
+1 60 of such tripl are connect to 20 the aminoacid the remain 4 codon call nonsens or stopcodon and denot by the symbol ter play the role to stop the biosynthesi
+sinc the discoveri of the genet code 1 a coupl of veri puzzl question have arisen whi
+onli twenti amino acid aa are use in natur to build up protein whi the genet code
+ha a peculiar structur in multiplet rang from sextet to singlet in particular for vmc
+2 sextet 7 quartet and 12 doublet for the eukaryot or standard genet code 3 sextet 5
+quartet 2 triplet 9 doublet and 2 singlet an attempt to explain the exist of onli 20
+amino acid is given by the hypothesi that origin the quantum of code inform wa
+transmit by a pair of nucleotid instead that by the present tripl of nucleotid codon
+and 4x4 16 is a number close to 20 howev thi explan is in contradict with other
+hypothesi on the structur of the primordi code quadrupl of nucleotid or a subset of the
+present 64 tripl other explan are base on correspond between the properti of
+the amino acid and the structur of the correspond codon although it seem now clear
+that a correspond of thi kind exist and it can explain whi some amino acid are encod
+by more codon than other it is not evid how the interplay between aa and codon lead
+to the exist multiplet structur a strong and probabl correct argument make appeal to
+stabil consider ie to state that the the genet code ha remain unchang over
+a vast time period becaus it ha adopt the most appropri organis to oppos the
+most frequent and lethal chang howev no consist model at my knowledg ha been
+propos to explain the actual multiplet structur in the light of the abov statement it is
+known that the translat error are the main sourc of devast effect in the construct
+of the polypetid chain error in read the nucleotid in 3rd posit are more frequent
+than error in read the nucleotid in 1st posit and the latter are more frequent than those
+1
+the literatur on the genet code is extrem larg for a recent review with a wide select of refer
+to the origin paper see 1
+1
+in 2nd or central posit clearli a protect against the translat error repres by
+transit ie the replac by a pyrimidin purin by the other pyrimidin purin
+which are the most common mutat is obtain by encod the same aa by codon of
+the form xzi or xzr in the follow the standard notat is use
+x z n c u g a
+y c u
+r g a
+1
+codon encod the same aa ie belong to the same multiplet are call synonym
+similarli aa encod by codon of the form xzn are in some way protect by the effect
+of the translat error repres by tranvers pyrimidin into purin or viceversa but
+whi there are onli six or five quartet whi do onli two or three sextet appear whi
+the quartet and sextet have the structur they have for the first two nucleotid xz the
+complet stabil against read error is in obvio conflict with the advantag to encod
+mani aa so to allow a veri larg varieti of byosynthesi product it is the aim of thi paper
+to propos a mathemat model which may explain both the number of the natur amino
+acid and the structur in multiplet the framework in which the model is propos is the
+crystal basi model of the genet code 2 in which the 4 nucleotid are assign to the 4dim irreduc fundament represent irrep 12 12 of uq0 sl2 sl2 with the
+follow assign for the valu of the third compon of j for the two sl2 which in the
+follow will be denot as slh 2 and slv 2
+1 1
+c
+2 2
+1 1
+tu
+2 2
+1 1
+g
+2 2
+1 1
+a
+2 2
+2
+and the codon tripl of nucleotid to the 3fold tensor product of 12 12 we report
+in tabl 1 the assign of the codon to the differ irrep and the correspond with
+the encod aa in the vertebr mitochondri vmc and in the standard univers genet
+code suc let us emphas that the assign of the codon to the differ irrep is
+a straightforward consequ of the assum behaviour of the nucleotid eq2 and of the
+theorem on the tensor product of irrep in the crystal basi 3 the idea of thi work is to
+mathemat repres the effect of translat error by suitabl crystal tensor oper
+4 impos stabil of the genet code with respect to these error ie that codon which
+are most sensit to be read in a wrong way correspond to synonym codon in the encod
+process we find the main featur of the multiplet structur of the vmc which is believ to
+repres a primordi form of the code and of suc the paper is organis as it follow in
+sec 2 the gener idea of modelis of misread of codon are introduc in sec 3 a
+detail discuss of the consequ of the mathemat modelis is given inde in
+order to studi the depend of the result from the assumpt of the oper mimick
+the translat error two mathemat scheme are analys discuss which result are
+model depend in sec 4 a critic discuss of the obtain result as well as some direct
+for further develop are present
+2
+2
+modelis of misread of codon
+we assum on phenomenog ground that there is a hierarchi in the occurr of translat error and in order of decreas intens we consid
+1 the transit in particular c u or g a concern nucleotid in the 3rd posit
+2 the tranvers in particular c g u a and c a in the nucleotid in 3rd
+posit
+3 the transit resp tranvers concern nucleotid in 1st posit
+4 the transit resp tranvers concern nucleotid in 2nd posit
+5 the mutat induc by the transit resp tranvers on the first two nucleotid
+transit tranvers of the nucleotid in the middl posit will be consid far weaker
+than transit tranvers in other posit both on phenomenog ground and on
+the argument that in the spirit of the hierarch structur of the intens of mutat
+the chang of the other nucleotid is prefer inde there are phenomenog argument
+confirm also by our model that these chang can be neglect howev we prefer to discuss
+the translat error in the abov order as it allow the most natur introduct of the
+mathemat structur of the oper modelis the error the hierarchi in the translat
+error mechan mean that a multiplet form in a level is frozen in the subsequ level
+the merg of two whole multiplet in a larger structur is possibl if it is induc by the
+relev tensor oper if the transit is allow onli for some member of a multiplet
+there is conflict between the choic of merg the multiplet in a larger one so decreas the
+varieti of encod aa but increas the protect or preserv the multiplet decreas
+the level of protect in thi case the format of larger structur will gener take place
+or not accord to the rule to protect the weakest codon ie the codon more inclin to
+be misread we assum that misread of nucleotid c or a is the most common howev
+in the follow we shall discuss in some detail each of these case let us emphas that we
+want to build the most simpl model in which the codon which are most subject to read
+error are synonym in thi spirit the explicitli analys transit c u g a
+or transvers c g u a c a have not to be consid as the onli possibl
+chang but as the repres which allow the most simpl modelis in other word
+transit and transvers in the revers direct happen but the protect against their
+effect is assur onc the concern codon belong to the same multiplet we consid onli
+the transvers decreas or leav unchang the valu of jh3 the tranvers u g
+impli the increas of one uniti of jh3 therefor it is not explicitli consid thi is an
+essenti irrelev simplif becaus it is possibl to show that a suitabl modelis
+of thi transvers leav the obtain result unmodifi
+in the follow we recal briefli the main properti of the q 0tensor oper or
+crystal tensor oper 4 for a gener uq0 sl2 they transform as
+j
+j
+j m
+m1
+j
+j
+j3 m
+mm
+3
+3
+j
+clearli if m j then m
+ha to be consid vanish the state j1 m1 will be connect
+j
+by the q 0tensor oper m
+to the state jm by the q 0wignereckart theorem if
+jm j1 m1 jm
+4
+a peculiar featur of the wignereckart theorem in the limit q 0 is that the select
+rule do depend not onli on the rank of the tensor oper and on the initi state but in a
+crucial way from the specif compon of the tensor in consider the state jm can
+be explicitli comput up to irrelev numer factor by perform the tensor product
+accord to the rule given in 3 of irrep j1 and j the tensor product of two irreduc
+represent in the crystal basi is not commut therefor one ha to specifi which
+is the first represent in the product a final import remark it is clear from the
+tabl 1 that there are gener more than one irrep label by the same valu of jh jv
+whose content in the constitu nucleotid is differ the transform properti of
+a crystal tensor oper determin which state is relat to an initi one onli accord
+to the irrep to which the initi state belong therefor the mathemat modelis by
+mean of an uniqu tensor oper is expect to be too simpl and inadequ inde the
+nucleotid are molecul with veri differ physicalchem properti while in the crystal
+basi model they all are handl on the same basi as vector of an irreduc modul moreov
+it can be expect that some read error of a nucleotid depend also from the natur of the
+neighbour nucleotid in the follow we shall take in some way into account thi fact by
+a suitabl choic of the natur of the tensor oper notwithstand these simplif of
+the mathemat modelis it is quit amaz how mani featur of the organis of
+the genet code can be obtain note that in order not to overload the notat we do not
+explicitli specifi the action of the oper on the nucleotid but onli their transform
+properti under uq0 slh 2 slv 2 hope it will be clear from the context which kind
+of process we are consid
+3
+mathemat scheme
+we model the transit and the transvers by the follow crystal tensor oper the
+valu of the compon be determin by the label of the nucleotid see eq2
+cu
+or
+ga
+1
+a
+h1
+v0
+5
+cg
+or
+u a
+1
+b
+v1
+h0
+6
+ca
+c
+d
+h1
+v1
+7
+where the valu of a b c and d depend on the posit insid the codon of the misread
+nucleotid and on the irrep to which the codon belong see below the abov choic for
+the horizont resp vertic part of the crystal vector oper in eq5 rep eq6 is
+inde the most simpl choic accord to the chang in the label of the state of codon
+for transit resp transvers the choic of the rank of the vertic resp horizont
+part of the crystal oper in eq5 resp eq6 as well as the tensor oper modelis
+4
+the tranvsers c a is someway arbitrari it is inde a way of take into account in
+mathemat languag the chemic differ between the nucleotid and the differ in
+the mechan respons for misread nucleotid in differ posit insid the codon
+the valu of the rank of the oper modelis the translat error in 2nd posit will
+be gener assum larger than the one describ error in 1st posit and the latter one
+will be gener assum larger than the one describ error in 3rd posit so to model
+the less frequent misread in particular in the scheme we shall discuu more in detail for
+a
+the transit the rank a of the vertic tensor oper v0
+will be assum to be 0 1 2
+respect for transit in 3rd 1st and 2nd posit in the tensor product with the state
+the crystal oper h v will be consid in the second posit a codon eg
+xzn will be consid subject to a translat error eg to be read as xzn if the crystal
+oper modelis the relev translat error will connect in the sens abov explain
+the state xzn with the state xzn where xzn is the state in the irrep of
+uq0 slh 2 slv 2 see tabl 1 specifi the codon xzn
+31
+substitut of 3rd nucleotid
+to studi the transit in 3rd posit in the codon xzc and xzg where x and z are
+ani nucleotid we consid the action of the oper given by eq5 with a 0 on the
+correspond state in the follow the equat have to be read by the western rule from
+left to right
+1
+0
+xzc h1
+v0
+xzu
+8
+1
+0
+xzg h1
+v0
+xza
+9
+we impos the codon xzc resp xzg and xzu resp xza to be synonym if the
+1
+0
+state are connect by the h1
+v0
+accord to the q 0wignereckart theorem we
+get the split of the 64 codon in 32 doublet of the form xzr and xzi remark that the
+0
+1
+final pattern is unchang if in eq8 we replac v0
+by v0
+to studi the tranvers in 3rd
+posit in the codon xzc and xzu we consid the action of the crystal oper given by
+eq6 and eq7 on the correspond state
+b
+1
+xzc h0
+v1
+xzg
+10
+b1
+1
+xzu h0
+v1
+xza
+11
+b
+1
+xzc h1
+v1
+xza
+12
+where in eqs101112 b 2 if the dinucleotid xz ie the state form by the first
+two nucleotid in the initi codon belong to an irrep with jv 0 or is a state with
+lowest weight for slv 2 or for slh 2 if jh 0 2 see tabl 2 ie when the first two
+nucleotid are ca ga cg ug ua uu au aa gg ag and b 1 otherwis we
+have previous given argument to motiv the introduct of differ tensor oper to
+describ the misread of the same nucleotid in differ codon it is just a simpl way of
+mathemat mimick the depend of the translat error or misread from the
+5
+neighbour nucleotid for the transit which impli error in the translat betwen
+member of the same chemic famili the tensor oper depend onli from the posit in
+the codon of the misread nucleotid let us comment more on the mathemat mean of
+our assumpt due to the peculiar properti of the crystal basi the tensor oper can
+be assum to consist of a part let us say with definit transform properti with
+respect to the gener of uq0 sl2 sl2 act on the first two nucleotid and of
+a part let us say with definit transform properti with respect to the gener of
+uq0 sl2 sl2 act on the whole codon under the action of the state of initi codon
+chang into a virtual state transform by into a final state if the label of the final
+state correspond to the label of the state describ the codon the transvers is induc
+otherwis it is not allow ie there is no misread thi kind of reason is appli in the
+b
+case of substitut of two nucleotid see subsect 34 the choic of a differ rank of h0
+in eq 10 11 12 is a simpl way to take into account thi complex mechan one may
+reformul the abov condit as it follow in eqs1011 b 2 if the codon and the one
+obtain by transvers belong to the same irrep or if the initi codon belong to an irrep
+with jh 23 and b 1 otherwis in eq12 b 2 if the codon xzc and xzu belong to the
+same irrepand b 1 otherwis these condit are simpler but the depend of the rank
+of the oper also from the irrep of the final codon may sound unsatisfactori it turn out
+that
+eq10 forbid transvers uuc uug auc aug aac aag uac uag
+gac gag and cac cag
+eq11 forbid transvers uuu uua auu aua aau aaa uau uaa
+agu aga gau gaa ugu uga and cau caa
+eq12 forbid transvers uuc uua auc aua aac aaa uac uaa
+agc aga gac gaa ugc uga and cac caa
+therefor we obtain the merg of 16 doublet in 8 quartet the quartet be the codon
+whose the first two nucleotid are cc cu cg uc gg gc gu and ac let us note
+that the transit agc agg and ugc ugg are allow a way of insur protect
+without decreas the number of amino acid encod is to make an appropri choic for
+the codon agg and ugg in the encod process ind in vmc the first is a stop codon
+while the second encod for a a veri rare amino acid trp at thi stage the assign of the
+codon differ for the 3rd nucleotid to differ multiplet is decid the next step can
+produc the join of doublet and quartet in quartet or sextet or in a priori octet
+let us studi what it is obtain if we chang the mathemat modelis of the direct
+transvers c g u a in 3rd posit use the follow oper
+1
+xzc ho
+v1
+xzu
+h0
+1
+v1
+where
+6
+xzg
+13
+xza
+14
+2 if the state xz of the dinucleotid xz is a lowest weight state for slh 2 in an
+irrep with jh 0 ie from tabl 2 xz uu au aa and 1 otherwis
+1
+0 if the dinucleotid is a state unmodifi by the action of a vector oper vo
+act on it in the sens that the label of the state
+1
+xz xz vo
+15
+are the same than the state xz and 1 otherwis ie from tabl 2 xz cu
+gu cc uc uu gc ac au
+in the spirit of the hierarch strength of misread error a quartet will be form sure
+if both the codon xzr are transform in xzi it turn out the merg of 16 doublet
+in 8 quartet the quartet be the codon whose the first two nucleotid are cc cu cg
+uc gg gc gu and ac it turn out also that
+in agc urc cac and gac the nucleotid c in 3rd posit can be transform in g
+while in agu and ugu the nucleotid u in 3rd posit cannot be transform in a
+in uuu and auu the u in the end posit can be transform in a while in uuc and
+auc the c cannot be transform in u
+let us analys more in detail the function and physicalchem properti of the doublet
+in which onli one state is subjetc to misread we remark that uay and agi encod
+in vmc the stop codon moreov the the physicalchem properti of hi encod vy
+cay asp gay cy ugi and asn aay are respect close to the properti pf gln
+car glu gar trp ugr and ly aar 2 moreov in suc there is a break
+of the doublet auy aua merg with the doublet auy in a triplet encod for ile it is
+tempt to draw the conclus that when the push to form a larger multiplet act onli on
+some codon the natur seem to choos to have a larger varieti of aa choos the codon
+subject to misread or as stop or to encod affin aa as a final remark modelis the
+1
+1
+transvers simpli by the vector oper ho
+v1
+in eqs1314 we obtain the clear
+merg of eight doublet in four quartet ccn cgn gcn ggn which are inde the
+strongest quartet involv a tripl hydrogen bond
+32
+substitut of 1st nucleotid
+we studi first the transit use the crystal vector oper introduc in eq5 with b 1
+act on the first nucleotid so we studi the transit
+1
+1
+v0
+cxn h1
+uxn
+1
+1
+v0
+gxn h1
+axn
+16
+one comput that onli the follow transit are allow
+2
+for an explan of thi affin which is inde observ in the framework of the crystal basi model
+see 5
+7
+1 in the quartet cun and ccn for the state with n u a
+2 in the quartet cgn ggn gcn and gun and in the doublet cay and gay for the
+state with n u y u
+accord to the strategi of protect of the weakest codon abov outlin a fusion of a
+doublet with a quartet in a sextet or with anoth doublet in a quartet resp of two quartet
+into an octet happen if at least the transit of the codon with c or a in 3rd posit resp
+of the codon with c and a in 3rd posit is allow in the light of the abov criterion onli
+the merg of the doublet uur and the quartet cun in a sextet is expect and inde we
+obtain the sextet encod leu then let us analys the tranvers in first posit
+1
+1
+cxz h0
+v1
+uxz
+cxz
+2
+h0
+c
+h1
+gxz
+17
+1
+v1
+axz
+18
+1
+v1
+axz
+19
+where c 1 if the codon cxz and uxz belong to the same irrep and c 2 otherwis it
+turn out
+eq17 allow onli the transvers ccg gcg cca gca cga gga cag
+gag and cgg ggg
+eq18 allow onli the transvers ucg acg and ugg agg
+eq19 allow onli the tranvers cca acacga aga cug aug and
+cag aag
+as a consequ the doublet agr merg into the quartet cgn form anoth sextet encod for arg remark that the establish pattern remain unchang if the rank of h in
+both eqs1718 is fix 1 or 2 so at thi stage the multiplet structur of the 64 codon is
+2 sextet 6 quartet and 14 doublet 2 of which are split in singlet we get almost the
+structur of the vmc or of suc the ser sextet be miss
+an altern mathemat scheme to modelis the transit is
+1
+0
+cxn h1
+v0
+uxn
+0
+1
+v0
+gxn h1
+axn
+20
+one comput that the follow transit happen
+1 in the quartet ccn cgn cun ggn gcn and gun for the state with n u a
+2 in the doublet car cay gar and gay for the state with r a y u
+accord to the strategi abov outlin we expect
+1 the fusion of the doublet car and uar and gar and aar respect in two quartet
+8
+2 the fusion of the doublet uur resp ugr aur agr and the quartet cun resp
+cgn gun ggn in sextet
+a way to satisfi the stabil condit without decreas the number of aa synthet is to
+make an appropri choic for the stop codon as alreadi remark in fact the decreas of
+an encod aa is avoid choos uar as stop codon moreov the doublet uur merg
+with the quartet cun in the sextet encod leu while in vmc ugr encod a rare aa
+trp and in suc the doublet is split in two singlet ugg encod trp and uga state
+subject to mutat encod ter the fusion of agr with ggn doe not happen but in
+vmc thi doublet encod for stop codon and in suc merg in anoth sextet as we shall
+see below while the quartet gar and aar is not found howev it is worth to note that
+some physicalchem properti of the two encod aa glu and ly are veri close see 5
+and that the two codon are form onli by purin with prevail nucleotid a may be also
+that the requir of the merg of two doublet into a quartet when onli the codon with
+a a nucleotid in the final posit is subject to error is a too strong condit so we have
+found further argument in favour of uay and agi be stop codon then let us analys
+the tranvers c a which can be read as the result of c g a due to the tensor
+oper
+1
+1
+h1
+v1
+21
+it turn out that onli the transvers cxa axa is allow as a consequ we expect
+the merg of the doublet agr with the quartet cgn of the doublet aur with the quartet
+cun and eventu of the two doublet aar and car onli the first sextet is observ
+but the doublet aur encod the start codon in vmc and is split out in suc
+33
+substitut of central nucleotid
+the translat error in the 2nd nucleotid occur veri rare so we consid it as weak intens
+effect assum that it cannot modifi the alreadi establish pattern in doublet and quartet
+but onli to possibl caus the merg of whole multiplet we modelis the transit as
+1
+2
+xcn h1
+v0
+xun
+1
+2
+xgn h1
+v0
+xan
+22
+from the result of previou subsect we know that the codon with c or g in first posit
+and c or u in the central posit are organis in quartet therefor onli an octet is the
+possibl larger multiplet accord to the gener strategi follow the fusion of two quartet
+is possibl if at least the follow transit vck vuk v c g k c a are allow
+for the codon with u or a in first posit and c in second posit the fusion of a quartet
+wck w u a and a doublet wur resp wuy in a sextet is possibl if at least the
+transit wca wua resp wcc wuc is possibl the fusion in sextet of a quartet
+vgn v c g with a doublet var resp vay is possibl if at least the transit vga
+vaa resp vgc vac final the fusion of two doublet wgr and war w u a
+resp wgi and way should take place if at least the transit wga waa resp wgc
+9
+wac is allow it turn out that all the abov list transit are forbidden inde
+onli the transit ccc cuc and gcc guc are allow
+let us analys the tranvers in second posit
+1
+2
+xcz h0
+v1
+xgz
+23
+2
+2
+xuz h0
+v1
+xaz
+24
+c
+2
+xcz h1
+v1
+xaz
+25
+where c 1 if the codon xcz and xuz belong to the same irrep and c 2 otherwis it
+turn out
+eq23 allow the transvers mcc mgc m c
+eq24 doe not allow ani transvers
+eq25 allow onli the tranvers ccc cac ucu uau and acu aau
+it turn out that one should expect the fusion in a sextet of the quartet ucn and of the doublet
+ugi as the transit ucc ugc is allowedthi sextet doe not appear in the genet code
+but as we shall see in the follow subsect inde the quartet ucn merg with the doublet
+agr one should also expect the fusion in a sextet of the quartet ccn and the doublet cay
+which inde doe not happen both these result suggest that the misread of the central
+nucleotid is a veri weak effect if not enhanc by the simultan misread of the first
+2
+nucleotid see the follow subsect remark that in eq23 we might write h0
+which
+leav the final result unchang with thi choic also the transit ccc cgc is allow
+34
+substitut of two nucleotid
+the read error in a coupl of nucleotid is an event occur less frequent than the
+translat error of one nucleotid in last or initi posit therefor we gener expect a
+weaker effect than the previous consid one nucleotid chang consequ we assum
+that they cannot modifi the alreadi establish pattern in doublet and quartet so we
+consid onli the possibl action on the two initi nucleotid the transit and tranvers
+of the first second nucleotid is modelis by the same oper use for the translat or
+transvers on the first nucleotid see eqs16171819 see eqs222324 25 in
+the follow we denot with a lower label the posit of the nucleotid where the oper
+act the action of the twonucleotid oper ha to be comput in the follow way as
+first step one ha to comput the action of the oper label by i give rise to a virtual
+state with the label assign by the action of the relev oper on the initi state of the
+codon then one consid the action of the oper label by ii on the virtual state and
+get the label of the final state if these label are the one denot in tabl 1 the state
+correspond to the codon the transit is allow for exampl to analys the transit
+ccn in uun one should comput
+1
+1
+ccn h1
+v0
+i ucnv
+1
+1
+ucnv h1
+v0
+ii ucn
+10
+26
+where the label of the state ucnv are comput by
+1
+1
+ucnv ccn h1
+v0
+i
+27
+it follow that one can get an allow transit andor transvers to a final state even if the
+action of the oper label by i doe not induc it the same kind of comput ha to
+be perform in the case of transit tranvers or viceversa or doubl tranvers let
+us analys
+the doubl transit
+ccn uun ggn aan cgn uan gcn aun
+1
+1
+1
+2
+h1
+v0
+i h1
+v0
+ii
+28
+onli the transit ccu uuu and gcu auu are allow note that obtain
+pattern is unmodifi if we modelis the doubl transit by
+0
+2
+0
+1
+ii
+v0
+i h1
+v0
+h1
+29
+the transit tranvers
+ccn ugn cun uan gcn agn gun aan
+1
+1
+b
+2
+h1
+v0
+i h0
+v1
+ii
+30
+where here and in the follow b 1 b 2 for transvers c g u a onli the
+transit cuc uac is allow
+ccn uan gcn aan
+2
+2
+1
+1
+ii
+v1
+i h1
+v0
+h1
+31
+onli the transit ccu uac and gcu aau are allow
+transvers transit
+ccn gun cgn gan ucn aun ugn aan
+b
+1
+1
+2
+h0
+v1
+i h1
+v0
+ii
+32
+onli the transversiontransit cci guy are allow
+ccn aun cgn aan
+1
+1
+1
+2
+h1
+v1
+i h1
+v0
+ii
+onli the transversiontransit ccu auu is allow
+11
+33
+doubl transvers
+ccn ggn cun gan uun aan ucn agn
+b
+1
+b
+2
+ho
+v1
+i h0
+v1
+ii
+34
+onli the transvers ucc agc and ccc ggc are allow
+ccn agn cun aan
+1
+1
+b
+2
+h1
+v1
+i h0
+v1
+ii
+35
+no transvers is induc
+ccn gan ucn aan
+b
+1
+2
+2
+ho
+v1
+i h1
+v1
+ii
+36
+onli the transvers ccg gag is allow
+ccn aan
+2
+2
+1
+1
+ii
+v1
+i h1
+v1
+h1
+37
+onli the transvers ccg aag is allow
+it turn out use also the result and the discuss of the previou subsect that the
+action of the abov oper doe not modifi the establish pattern except the one given by
+eq34 which induc the mutat uca aga so urg the doublet agr to merg with
+the quartet ucn give rise to the third sextet encod for ser
+4
+conclus
+befor discuss what we have obtain let us summar what we have done the start
+point is the observ pattern in multiplet of the genet code from it invari in time
+and from it almost univers charact we infer that such a pattern ha to ensur an effici
+and stabl translat in the build of polypeptid chain ie it is error proof against the
+most frequent read error to give a quantit and precis mean to thi statement
+we need to build a mathemat model both for the genet code and for the misread
+mechan in the crystal basi model each codon is repres as a state jh jv jh3jv3 in
+the modul space of uq0 sl2 sl2 the 64 state are separ in nine differ invari
+subspac label by a coupl of halfinteg jh jv the mechan impli translat
+error are modelis by suitabl tensor oper with definit transform properti under
+uq0 sl2 sl2 which may or may not relat two state of such state if the state are
+connect we infer that they can be mistaken in the translat process and therefor in
+order to ensur in case of misread the synthesi of the same aa the correspond codon
+have to be synonim by studi the action of the oper we obtain the split of
+the 64 state in a set of multiplet repres almost faith the degeneraci of the genet
+code the simpl propos mathemat modelis is abl in an amaz way to account
+12
+almost for the exist af onli 20 aa and almost for the structur of the vmc and suc
+whi the natur use the 20 particular aa enumer in the begin of thi paper in the
+practic unlimit varieti of these molecul is still to be understood and of cours is far
+beyond the aim of thi work the structur of the mathemat oper use to model
+transit and tranvers is simpl but arbitrari therefor it is worth to discuss in a more
+quantit way the extent of the obtain result let us use as start point the pattern of
+the 64 codon group in 32 doublet even if thi result is less obviou that one can naiv
+think of inde from tabl 1 one realiz that 8 of the 16 doublet of the form xzi resp
+xzr belong to differ irrep therefor the vector oper given in eqs8 9 oper
+in half the case as a gener and in half case as an intertwin oper the transvers
+oper induc the merg of 16 doublet in 8 quartet in full agreement with the observ
+pattern of the genet code the format of onli 8 quartet with the correct content in the
+first two nucleotid induc by the action of oper eqs10 11 12 is a good result
+especi consid that the number of differ choic of 8 quartet in 16 doublet is 12870
+onc form the quartet the oper eq16 induc the format of 2 sextet which are the
+correct one between the 420 possibl final the oper eq34 induc the format
+of the correct 3rd sextet betwwen 24 possibl in conclus it is extremeki surpris that
+such an arbitrari choic explain whi and in which pattern of multiplet with a probabl
+to find the correct pattern of about 7 7 109 the remain 60 codon encod onli 20 amino
+acid we have invenstig the depend of the pattern obtain from the structur of the
+tensor oper use to modelis the misread process differ do appear in the differ
+modelis studi but most of the pattern of the genet code is obtain show that
+there is a bulk of it organis littl sensit to the detail of the oper modelis
+the misread process thi featur appear also in other modelis not discuss in the
+paper eg modelis the transit and transvers as a two step process delet of a
+nucleotid and subsequ creation of a differ one a veri few differ depend also
+from the choosen scheme exist between the theoret pattern of organis in multiplet
+and the observ one in particular some minor chang in the eukaryot code do not find an
+explan in the model even if for some of them the model give hint in the correct direct
+further refin or more probabl the presenc of some other mechan whose action
+is not modelis by crystal tensor oper may account for these chang and for the not
+appear of an expect 4th sextet in the second mathemat scheme howev it should
+remark that thi sextet is form by ccn and cay where cc resp ca is the highest
+weight resp the lowest weight in the dinucleotid set
+in our model the strategi follow by the genet code seem to be adress to keep the
+most varieti of encod amino acid consist with a reason level of protect of the
+codon against the most common translat error a fundament problem not all face
+in thi paper is the reason for the observ correspond between multiplet and amino
+acid in other word onc obtain the organis in differ multiplet of the genet code
+there is a mechan impos which particular amino acid have to be encod by sextet
+quartet and so on or it is just a random event stereochem hypothesi 6 7 suggest
+that the physicalchem properti of the amino acid play a crucial role to determin the
+13
+correspondennc between multiplet and amino acid a clear shortcom of the model is
+the fact that the analysi of the format of the differ multiplet is peform in a static
+manner while it is believ although no unambig model doe exist that an evolut of the
+genet code and of the correspond encod amino acid ha happen it is inde in the
+evolut that rule and properti of the system which are necessari to the exist of live
+organ are fix and select the select which domin biolog ha not at all taken
+into account in the present oversimplifi model howev hope thi kind of reason can
+be appli to model describ the evolut process one may argu that in a more refin
+model differ oper should be use to modelis differ mutagen effect whose role
+and intens depend on the in time chang environ we point out also that the one
+may conjectur to modelis spontan and induc mutat of the genet code by suitabl
+tensor oper a first analysi of thi type ha been given in 8 in conclus the model
+present in thi paper state that the genet code is what it is becaus it is optim at
+least for the environ in which it wa form and not for a freez random event of
+cours the word optim should be taken in a loos sens as we have not quantit
+describ the gain of the differ choic we believ that in thi context method of game
+theori can be appropri use to a better descript
+acknowledg i thank m di giulio for discuss and veri help suggest
+refer
+1 bk davi evolut of the genet code progbiophysmolbiol 72 1999 157
+2 l frappat a sciarrino p sorba a crystal base for the genet code phi lett a 250
+1998 214 physics9801027
+3 m kashiwara crystal the qanalogu of univers envelop algebra commun
+math phi 133 1990 249
+4 v marotta a sciarrino tensor oper and wignereckart theorem for uq0 sl2j
+math phi 41 2000 5735 mathqa9811143
+5 l frappat a sciarrino p sorba predict of physicalchem properti of amino
+acid from genet code physics0007034
+6 cr woes the genet code harper and row new york 1967
+7 m shimizu molecular basi for the genet code origin jmolevol 18 1982 297
+8 l frappat a sciarrino p sorba crystal the genet code physics0003037
+14
+tabl 1 the vertebr mitochondri code the upper label denot differ irreduc
+represent in bold charact the amino acid which are encod dfferent in the eukariot
+or standard code uga aua agi encod respect for ter ile and arg
+codon
+aa
+jh
+jv
+j3h
+j3v
+ccc
+pro
+3
+2
+ccu
+pro
+ccg
+pro
+cca
+pro
+3
+2
+21
+23
+21
+3 1
+2
+1 1
+2
+1 1
+2
+3
+2
+1
+2
+3
+2
+1
+2
+3
+2
+3
+2
+1
+2
+1
+2
+cuc
+leu
+21
+cuu
+leu
+12
+cug
+leu
+cua
+leu
+12
+12
+3 2
+2
+3 2
+2
+1 3
+2
+1 3
+2
+1
+2
+12
+1
+2
+12
+3
+2
+3
+2
+1
+2
+1
+2
+cgc
+arg
+23
+cgu
+arg
+cgg
+arg
+cga
+arg
+12
+23
+12
+1 2
+2
+1 2
+2
+1 2
+2
+1 2
+2
+3
+2
+1
+2
+3
+2
+1
+2
+1
+2
+1
+2
+12
+12
+21
+21
+12
+12
+1 4
+2
+1 4
+2
+1 4
+2
+1 4
+2
+1
+2
+12
+1
+2
+12
+1
+2
+1
+2
+12
+12
+3
+2
+12
+23
+12
+3
+2
+3 1
+2
+1 1
+2
+1 1
+2
+3
+2
+1
+2
+3
+2
+1
+2
+1
+2
+1
+2
+12
+12
+21
+21
+21
+21
+3 2
+2
+3 2
+2
+1 3
+2
+1 3
+2
+1
+2
+12
+1
+2
+12
+1
+2
+1
+2
+12
+12
+3
+2
+3 1
+2
+3
+2
+3 1
+2
+3
+2
+1
+2
+3
+2
+1
+2
+3 2
+2
+3 2
+2
+3 2
+2
+3 2
+2
+1
+2
+12
+1
+2
+12
+cac
+hi
+cau
+hi
+cag
+gln
+caa
+gln
+gcc
+ala
+gcu
+ala
+gcg
+ala
+gca
+ala
+guc
+val
+guu
+val
+gug
+val
+gua
+val
+ggc
+gli
+ggu
+gli
+ggg
+gli
+gga
+gli
+3
+2
+12
+3
+2
+12
+gac
+asp
+21
+gau
+asp
+21
+gag
+glu
+gaa
+glu
+21
+21
+codon
+aa
+jh
+jv
+j3h
+j3v
+ucc
+ser
+3
+2
+ucu
+ser
+ucg
+ser
+uca
+ser
+3
+2
+21
+23
+21
+1
+2
+12
+1
+2
+12
+3
+2
+3
+2
+1
+2
+1
+2
+uuc
+phe
+12
+uuu
+phe
+3
+2
+3
+2
+1 1
+2
+1 1
+2
+12
+32
+3
+2
+3
+2
+1
+2
+1
+2
+1 2
+2
+1 2
+2
+1 2
+2
+1 2
+2
+1
+2
+12
+1
+2
+12
+1
+2
+1
+2
+12
+12
+1 2
+2
+1 2
+2
+1 2
+2
+1 2
+2
+12
+32
+1
+2
+1
+2
+12
+12
+3
+2
+1
+2
+12
+1
+2
+12
+1
+2
+1
+2
+12
+12
+3
+2
+3
+2
+12
+1 1
+2
+1 1
+2
+12
+1
+2
+1
+2
+12
+12
+3
+2
+1
+2
+12
+1
+2
+12
+12
+12
+12
+32
+12
+12
+32
+32
+uug
+leu
+uua
+leu
+3
+2
+3
+2
+23
+32
+ugc
+cy
+23
+ugu
+cy
+ugg
+trp
+uga
+trp
+21
+32
+21
+uac
+tyr
+23
+uau
+tyr
+23
+uag
+ter
+23
+uaa
+ter
+32
+acc
+thr
+acu
+thr
+acg
+thr
+aca
+thr
+3
+2
+21
+23
+21
+auc
+ile
+auu
+ile
+aug
+met
+aua
+met
+12
+agc
+ser
+12
+agu
+ser
+32
+agg
+ter
+32
+aga
+ter
+12
+aac
+asn
+12
+aau
+asn
+32
+32
+15
+aag
+ly
+aaa
+ly
+3
+2
+3
+2
+23
+32
+3 1
+2
+1 1
+2
+1 1
+2
+3 1
+2
+1 1
+2
+1 1
+2
+3
+2
+21
+3
+2
+21
+3 1
+2
+3
+2
+3 1
+2
+3
+2
+3
+2
+3
+2
+3
+2
+3
+2
+3
+2
+3
+2
+3
+2
+32
+32
+12
+32
+32
+12
+32
+32
+32
+tabl 2 irreduc represent of the dinucleotid state dinucl
+dinucl
+cc
+cg
+cu
+ca
+gc
+gg
+gu
+ga
+jh
+1
+1
+0
+0
+1
+1
+0
+0
+jv
+1
+0
+1
+0
+1
+1
+1
+1
+j3h
+1
+1
+0
+0
+1
+1
+0
+0
+dinucl
+uc
+ug
+uu
+ua
+ac
+ag
+au
+aa
+j3v
+1
+0
+1
+0
+0
+1
+0
+1
+16
+jh
+1
+1
+1
+1
+1
+1
+1
+1
+jv
+1
+0
+1
+0
+1
+1
+1
+1
+j3h
+0
+0
+1
+1
+0
+0
+1
+1
+j3v
+1
+0
+1
+0
+0
+1
+0
+1

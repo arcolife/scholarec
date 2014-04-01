@@ -1,0 +1,253 @@
+arxivhepex0105062v1 22 may 2001
+search for nonsm higgs at lep
+aura rosca
+institut f
+ur physik invalidenstr 110
+d10115 berlin germani
+the four lep experi aleph delphi l3 and opal have search for higg boson
+predict by a larg number of extens of the standard model flavor independ search
+are present for the h0 z0 process in which the h0 decay hadron search result are
+also present for fermiophob higg boson invis decay higg boson charg higg
+boson and the neutral higg boson in the mssm
+1
+introduct
+sinc we have no experiment evid for the standard model sm higg particl we must
+test more complic scenario beyond the sm sever extens of the sm introduc addit higg doublet and singlet 1 in thi work we present result on the 2hdm higgs the
+2hdm is a minim extens of the sm in the sens that onli one addit doublet is introduc in the theori after the symmetri is broken the higg spectrum consist of five particl
+two cpeven neutral scalar h0 and h0 a cpodd neutral scalar a0 and a charg pair h
+the properti of the higg boson are defin by six free paramet four higg mass the
+ratio of the vacuum expect valu of the two field tan and the mix angl in the
+neutral cpeven sector the higg coupl with the boson and fermion control higg
+product and decay particularli the higg coupl with the fermion must be limit
+in order to suppress fcnc flavor chang neutral current at the tree level there are
+exactli two possibl for the higg boson to coupl to the fermion onli one doublet coupl
+with fermion and the other doe not coupl to quark or lepton and thi determin the
+structur of the 2hdm of type i or one doublet coupl to downtyp fermion and the second
+doublet coupl with the uptyp fermion and thi determin the structur of the 2hdm of
+type ii
+2
+search for the higg boson beyond the sm
+aleph preliminari
+0
+opal preliminari
+95 cl exclud
+05
+1
+88209 gev 211 pb y2k
+10
+1
+br
+06
+bic
+07
+ho
+08
+op
+mi
+09
+1
+fer
+upper limit on bh
+2
+1
+exclud region
+ed
+a expect
+2 sigm
+median
+04
+10
+a
+2
+2 sigm
+03
+limit 1055 gev
+02
+01
+0
+60
+70
+80
+90
+100
+110 2
+mh gevc
+figur 1 the expect dash line and observ
+hatch 95 cl exclud 2 as a function of the
+higg boson mass
+21
+10
+3
+20
+40
+60
+80
+100
+120
+mh0 gev
+figur 2 the expect dash line and observ
+shade 95 cl upper limit on the brh
+assum sm product cross section
+flavor independ search
+quark can
+for certain region of the paramet space the higg boson decay into a pair of bb
+be suppress with respect to the sm valu while decay to charm quark or gluon pair are
+enhanc therefor flavor independ search have been perform the experi have
+updat their search for a scalar boson which is produc in associ with the z0 and which
+decay hadron with a br 1 these analys use the same topolog as for the sm higg
+boson search but do not make use of the btag in the absenc of a signal the result are usual
+given in term of exclud region in the plane mh versu a sm cross section scale factor 2
+as an exampl we show in fig 1 the result obtain by the aleph collabor combin
+energi up to 209 gev 2 a higg boson produc with the sm cross section and decay
+hadron with a br 1 is rule out by aleph up to the mass of 1094 gev similar result
+have been obtain by the opal collabor 3
+22
+fermiophob decay
+fermiophob decay due to suppress coupl between the higg boson and the fermion
+can appear in sever nonminim model as for exampl 2hdm of type i at mass below
+90 gev the higg boson decay dominantli into while at higher mass it decay mostli
+into ww and zz the four lep experi search for a photon decay higg
+boson produc in associ with a z0 and lead to the follow final state q
+q
+sinc no indic for a signal wa found in the data the neg search result is given
+in term of upper limit of the brh0 assum a sm product cross section for the
+higg boson the limit are shown in fig 2 for the opal collabor 3 in the fermiophob
+model the observ mass limit is 1055 gev similar result have been obtain by the other
+collabor 4
+23
+invis decay
+invis higg boson decay can appear in differ model as mssm majoron model model
+with extradimens etc at lep energi it can be produc via the higgsstrahlung mechan e e h0 z0 follow by the decay of h0 into undetect final state the signatur
+for such process are either 2 jet and miss energi in the event or a lepton pair and miss
+energi the analys make use of the kinemat constraint mff mz no excess with respect
+tan
+brh
+lep 189209 gev
+observ limit
+expect median
+10
+1
+09
+08
+lep 88209 gev preliminari
+mhmax
+07
+06
+exclud
+by lep
+05
+04
+03
+1
+02
+theoret
+inaccess
+01
+0
+60
+65
+70
+75
+80
+85
+90
+95
+2
+mh gevc
+figur 3 the expect dash line and observ
+full 95 cl bound on mh as a function of the
+branch ratio brh the shade area
+is exclud at 95 cl
+0
+20
+40
+60
+80
+100 120 140
+mh gevc2
+figur 4 the mssm 95 cl exclus for the
+mh max scenario the exclud hatch and theoret forbidden shade region as a function
+of the mssm paramet are shown the expect
+dash line bound is also present
+to the sm is observ in the data the result are express as exclud region in the plane
+mh versu 2 with 2 defin as the ratio of the higg boson product cross section time the
+branch fraction for the invis higg decay normal to the sm cross section for 2 1
+the lower limit on the mass of an invis decay higg boson is set by aleph at 1141 gev 5
+similar result have been obtain by the other collabor 36
+24
+charg higg boson
+charg higg boson are predict in 2hdm at lep energi they are produc in pair
+with a cross section which depend onli on the higg boson mass the branch ratio are not
+predict by the model possibl decay mode are q
+q and w a0 in 2hdm of type ii it
+is assum that the first two fermion decay mode are the onli possibl one the search
+cover all the possibl final state four jet final state the semilepton and fulli lepton final
+state the mass limit are express as a function of brh the main background
+is from the process e e w w which set the scale for the limit in the hadron and
+semilepton search neg search result are shown in fig 3 combin the data from
+the four lep experi at energi up to 209 gev 7 the lowest mass limit obtain at
+brh 04 is 785 gev with a median expect of 789 gev a small exclud
+island appear in fig 3 for brh 0 where the search sensit abov the w w
+background peak becom suffici to exclud thi small region in 2hdm of type i at high
+tan the decay mode h w a0 can becom domin with a branch ratio which
+depend on tan and the mass differ between the charg higg and the cpodd neutral
+higg the opal collabor carri out such a search by consid new decay mode 3
+result are express as exclud region in the mh ma plane 3
+25
+neutral higg boson in the mssm
+the mssm is a 2hdm of type ii the higg boson product cross section and the branch
+ratio depend on the model paramet we use a constrain model with onli seven paramet
+the mass scale of the sfermion msusi the gaugino mass paramet m2 the supersymmetr
+higg mass paramet the triliniar coupl of the higg boson to the squark a the ratio
+of the vacuum expect valu of the two field the mass of the cpodd neutral scalar ma
+tabl 1 limit on mh max and nomix scenario
+scenario
+mh max
+nomix
+mh limit gev
+910
+915
+ma limit gev
+919
+922
+exclud tan
+05 tan 24
+08 tan 96
+and the gluino mass mg these paramet are further set to specif valu which defin three
+benchmark scan in the nomix scenario the paramet which control the mix in the
+stop sector xt a co is chosen to be zero the other paramet are chosen to be
+msusi 1 tev m2 200 gev 200 gev and mg 800 gev and the scan is done over
+04 tan 50 and 4 gev ma 1 tev for the case of the maxim mix in the stop
+sector xt 2msusi and the other paramet take the same valu as befor the maximum
+mass valu of the h0 is a function of tan in the third scenario call the larg scenario
+the paramet are chosen such as to emphas point in the paramet space where the higg
+pair is not domin these valu are msusi 400 gev m2 400
+decay mode into a bb
+gev 1 tev and mg 200 gev
+the two higg product mechan the higgsstrahlung process and the h0 a0 associ
+product vari in rel import as a function of tan the h0 z0 product is domin
+at low tan and the mssm phenomenolog reduc to the sm one while the h0 a0 product
+becom domin at high tan the domin decay of the h0 and a0 higg boson are into
+a pair of bquark and a pair of tau lepton howev for sever choic of paramet the
+decay h0 a0 a0 h0 cc h0 gg and h0 w w can becom import
+no evid for a signal wa found in the data the neg result are present as
+exclud region in the plane mh tan ma tan mh ma or mh tan the 95 cl
+exclud region for the mh max scenario is shown in fig 4 combin the data from the four
+lep experi at energi up to 209 gev 8 the lower limit on the higg mass and the
+exclud tan rang for the mh max and nomix scenario are summar in tab 1
+acknowledg
+i would like to thank the member of the four lep collabor and the lep higg work
+group for provid me plot and their help in prepar thi talk i am grate to thoma
+hebbek for read care thi paper
+refer
+1 s dawson et al the physic of the higg boson higg hunter guid addison
+wesley 1989
+2 aleph 2001021 conf 2001018
+3 opal note pn472
+4 aleph 2001015 conf 2001012 l3 note 2652
+5 aleph 2001008 conf 2001005
+6 delphi 2001025 conf 466 l3 note 2593
+7 lep higg work group lhwg note 20011 aleph 2001029 conf 2001023
+delphi 2001031 conf 472 l3 note 2653 opal note tn680
+8 lhwg note 20012 aleph 2001032 conf 2001024 delphi 2001032 conf 473
+l3 note 2656 opal note tn682

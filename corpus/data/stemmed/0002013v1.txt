@@ -1,0 +1,632 @@
+minim escap veloc
+w hunzik
+institut f
+ur theoretisch physik eth z
+urich
+hunzikeritpphysethzch
+im sigal
+depart of mathemat univers of toronto
+sigalmathtorontoedu
+a soffer
+depart of mathemat rutger univers
+soffermathrutgersedu
+arxivmathph0002013v1 5 feb 2000
+march 1997
+abstract we give a new deriv of the minim veloc estim siso1 for unitari evolut
+let h and a be selfadjoint oper on a hilbert space h the start point is mourr inequ
+ih a 0 which is suppos to hold in form sens on the spectral subspac h of h for
+k
+some interv r the second assumpt is that the multipl commut ada h are wellbehav for k 1 n n 2 then we show that for a dens set of s in h and all m n1
+t expiht is contain in the spectral subspac a t as t up to an error of order
+tm in norm we appli thi gener result to the case where h is a schroding oper on
+rn
+and a the dilat gener prove that t x is asymptot support in the set x t
+up to an error of order tm in norm
+1
+introduct
+befor pose the problem in abstract form we describ it in it origin concret set consid the
+schroding equat
+1 2
+p v x on l2 rn
+11
+2
+for a particl in rn under the influenc of a potenti v x we are interest in the longtim behavior of
+it t ht
+h
+orbit t t in the continu spectral subspac hc of h under mild condit on v h is selfadjoint
+and
+p2
+for some constant c r here
+const h c
+12
+denot the expect valu of an observ in the state
+by ruell theorem rue see also cfk husi1 ani orbit t in hc is escap in a mean ergod
+sens
+lim
+t
+1
+t
+t
+dt
+xr
+0
+dx t x2 0
+13
+for ani finit r the question is how fast the answer will of cours depend on the initi state the
+simplest exampl is the free particl v 0 if the fourier transform of is smooth and support
+outsid some ball of radiu v 0 then a standard asymptot expans give the result
+xvt
+dx t x2 otm t
+14
+for ani m in thi sens the orbit t of the given type are said to have a minim escap veloc v given by
+the support of to obtain a similar result for v 0 we studi the longtim behavior of the expect
+valu a
+t
+t at for suitabl observ a which evolv accord to
+t a
+t
+ih a
+1
+t
+15
+mourr veri fruit idea mou wa to find observ a such that the commut in 15 is condit
+posit in the sens that
+e ih a e e
+0
+16
+for some interv r where e is the correspond spectral project of h thi impli that
+a
+t
+t o1
+t
+17
+for orbit t in the spectral subspac h ran e evid a must be unbound so that domain
+question aris also h must be a subspac of hc sinc a
+t
+is constant and ih a
+0 for ani
+eigenvector of h 16 is a special case of a more gener inequ due to mourr which wa first proven
+for schroding oper includ n bodi system where a wa taken as the dilat gener
+a
+1
+p x x p
+2
+ih a p2 x v x
+18
+mou pss see also cfk husi1 in thi case the interv for which 16 hold fill the contin
+spectrum of h in the sens that the correspond subspac h span hc moreov sinc
+1
+a i h x2
+2
+is itself a commut 15 can be written as t 2 x2
+x2
+t
+t
+19
+2 for orbit t in h which impli that
+t2 ot
+t
+110
+thi is of cours weaker than 14 it onli say that the mean valu of x2 for the probabl distribut
+t x2 diverg like t2 wherea we want to prove that the support of thi distribut is asymptot
+contain in x t as t the first step is to deriv a correspond result for the spectral support
+of t with respect to a we state thi result in abstract form for a pair h a of selfdjoint oper on a
+hilbert space h
+k
+theorem 11 suppos that ada f h is bound for ani f c0 r and k 1 n n 2 and that
+the mourr inequ 16 hold for some open interv r let be the characterist function of
+r then
+a a teiht gh a a const tm
+111
+for ani g c0 ani in 0 and ani m n 1 uniformli in a r
+sinc g c0 and a r are arbitrari the vector of the form
+gh a a
+h
+112
+are dens in h 111 say that for ani such t expiht ha spectral support in t with
+respect to a up to a remaind of order tm in norm
+2
+remark
+k
+k
+commut the hypothesi ada f h lh may be replac by condit on ada h which are
+more subtl to formul sinc the oper a and h are gener unbound see eg abg jmp for
+the special case 18 thi is further discuss below
+resolv smooth and local decay we indic briefli how minim veloc estim are relat to
+resolv smooth jmp and to local decay pss let a 1 a2 12 set a t2 and use
+that
+a a a ct ot
+we obtain from 111
+a eiht gha const 1 t minm
+for m 1 thi is integr over t which by fourier transform lead to the resolv
+estim
+sup a z h1 gha
+113
+z r
+similar estim for the deriv with respect to z higher power of the resolv z h1 are obtain
+use correspondingli higher valu of m resolv smooth replac g by g 2 in 113 it also follow
+that the oper a is hsmooth for 1 and therefor rsiv theorem xiii25 and corollari
+dt a eiht
+2
+const
+2
+h
+114
+where is ani fix compact subset of local decay by an independ argument of mourr given in
+pss the estim 113 and therefor 114 can be improv from 1 to 12
+our second result is an applic of theorem 11 to the schroding equat 11 here a is given by
+18 and
+k
+ik ada h 2k1 p2 x k v x
+115
+a simpl way to satisfi the hypothesi of theorem 11 in thi case is to assum that v ha rel bound
+less than 1 with respect to 21 p2 and that the distribut x k v x are local l2 and as multipl
+oper bound rel to p2 for k 1 n then the oper 115 are bound rel to h and it
+k
+is straightforward to comput and to estim the the norm of ada z h1 for imz 0 repres
+f h by the resolv z h1 eg use the helffersjostrand formula hesj dav it then follow
+k
+that ada f h is bound for k 1 n the result is that fast decay larg m in 111 must be paid
+for by high smooth of v x for all x thi is unnatur and in fact there is a better way to construct a
+which requir onli smooth of v x for arbitray larg x the idea is to replac x2 in 19 by a smooth
+convex function gx which is equal to x2 for larg x but constant in some abitrari larg ball x r
+then a chang to
+a
+1
+gx p p gx
+2
+3
+k
+and the mourr inequ can be establish as befor then the oper ada p2 remain second order
+in p with bound coeffici while
+k
+ik ada v gx k v x
+requir onli deriv of v x in the region x r a more car construct of gx due to graf
+gra1 is special adapt to the n bodi case requir onli smooth of the pair potenti for larg
+separ see skib gri the follow result can also be proven in thi more gener set
+theorem 12 let h and a be given by 11 and 18 then under the hypothesi of theorem 11
+x2 2at t2 eiht gh a a const tm
+116
+for ani in 0 ani m n 1 and ani a r
+we remark that for initi state of the form 113 thi is equival to
+dx t x
+2
+xv t
+for ani v
+const t2m
+117
+the proof of these result are given in section 2 the main tool is the method of commut expans
+summar in section 3
+we conclud the introduct with some not exhaust bibliograph note minim veloc estim
+were first given by sigal and soffer siso1 and then extend by skibst ski and by gerard and sigal gesi
+with applic to scatter theori siso2 sig hesk and to the theori of reson gesi sow
+nier our deriv is similar in spirit to ski and incorpor remark by froes and loss frlo the
+relat subject of resolv smooth and local decay is more fulli treat by timeindepend method
+eg in pss jmp and gi where further refer can be found the gener of mourr
+theorem use the construct of graf gra1 first appear in ski a simpler proof due to graf gra2 is
+given in gri for other applic of mourr inequ to wave equat and spectral geometri see
+eg dh dbipr fhp
+2
+proof
+the follow lemma give the basic estim for a proof by bootstrap of theorem 11 a smooth function
+f on r is said to be of order p if for each k
+f k x const xpk
+lemma 21 suppos that a h and g satisfi the hypothesi of theorem 11 let f be a posit c function on r of order 4 with f 0 and f x 0 for x 0 let 1 s a r as s1 a a
+and 1 then
+ghih f as gh s1 ghf as gh
+s1 ghf1 as gh
+const s2n1 g 2 h
+4
+21
+uniformli in a r where f1 is a function on r which again satisfi the hypothesi state for f
+proof in the commut ih f as occur in 21 we can replac h by a bound oper
+hb h bh
+22
+where b c0 r b 1 on suppg then the commut
+k
+bk i ada hb
+k 1n
+are bound by hypothesi as a first step we show that
+ihb f as s1 f as 12 b1 f as 12 remaind
+23
+here and in the rest of the proof a remaind is defin as a quadrat form rem with an estim
+rem s1 f1 as const s2n1
+24
+uniformli in a where f1 is a function on r satisfi the hypothesi for f ani such remaind clearli
+fit into 21 and need no further consider to prove 23 we factor f f 2 and then expand the
+commut
+ihb f ihb f f f ihb f
+n1
+k1
+n
+s
+1 k k
+s f bk f f bk f k
+k
+25
+rf f r
+use 31 sinc n 2 and sinc f is of order 2 it follow from 32 that r is bound uniformli in
+s and a now we observ that all the term in the expans 25 except the lead term k 1 are
+remaind in particular
+f k bk f bk
+f k
+f const f1
+26
+where f1 is a common upper bound for f 2 f and f k 2 which satisfi the hypothesi for f the last
+term in 25 is estim use the oper inequ
+p q q p p p q q
+1
+1
+for q s 2 1 f p sn 2 1 r with the result
+sn rf f r s1 f s2n1 r
+2
+27
+therefor it remain to consid the lead term k 1 in 25 which is rewritten as
+s1 f b1 f f b1 f s1 v 2 b1 u2 u2 b1 v 2
+by factor f u2 f v 2 sinc u is of order 1 it follow from 32 that b1 u const s1
+uniformli in a and similarli for b1 v as in 26 thi lead to the form estim
+s1 v 2 b1 u2 uvb1 uv s1 vb1 uuv vv b1 u2
+const s2 v 2 u2 v 2 u4 const s2 f1 as
+5
+where f1 share the properti of f u4 note that v is of lower order than u sinc the same estim
+hold with u and v interchang we conclud that
+s1 f b1 f f b1 f 2s1 uv b1 uv
+plu a remaind 23 now follow sinc f 2f f 2uv2
+to complet the proof of lemma 21 we multipli 23 from both side with gh ghgh where
+g c0 is real and g 1 on suppg we also adjust the function b in 22 such that b 1 on suppg
+multipli 16 by gh from both side we obtain the mourr inequ
+ghb1 gh ghih agh g2 h
+28
+abbrevi gh g and f as 12 j we show that
+s1 gjbjg s1 jgbgj s1 jgbj g g jbgj g jbj g
+29
+is a remaind for ani bound b b use for g j the expans
+n1
+g j
+k1
+1 k k
+k
+s j a ada g sn r
+k
+k
+and it adjoint for j g sinc ada g is bound for k n the right hand side of 29 then becom a
+sum of term of the follow type
+a
+skl1 j k c j l j l c j k
+0 k l n 1 k l 1
+b
+skn1 j k c c j k
+0 k n 1
+c
+s2n1 c
+where in each case c stand for some oper which is bound uniformli in a and s by the same argument
+as in 26 and 27 these term have correspond upper and lower bound
+a
+s2 2 c
+b
+s2 j k2 s2n c
+c
+j k2 j l2
+2
+s2n1 c
+for ani bound b b we therefor obtain
+s1 gjbjg
+s1 jgbgj
+210
+mean that the differ of the two expresss is a remaind 24 for b b1 ihb a we use
+mourr inequ 28 to obtain from 23
+g ih f g
+s1 gj b1 jg
+s1 jg b1 gj
+s1 jg2 j
+s1 gj 2 g
+s1 gf g
+6
+with remaind aris from 23 and twice from 210 multipli from both side with gh remov
+gh and lead directli to 21
+proof of theorem 11 we prove a slightli stronger version of 111 which will serv later in the proof
+of theorem 12 let
+at s1 a a t
+and suppos that f is a posit c function of order 12 on r with f 0 and f x 0 for x 0
+instead of 111 we show under the same hypothesi that
+f at eiht gh a a const sm
+211
+for m n 1 uniformli in 0 t s and in a r 111 then follow by set t s and by observ
+that sinc s1 a a f s1 a a for some f of the requir type to prove 211
+we consid the oper
+s t ghf at gh f f 2
+and the evolut
+t eiht a a h
+212
+then the estim 211 to be prove read
+s t
+t
+t s tt const 2 s2m
+213
+uniformli in 1 s 0 t s and in a r we comput
+t s t
+t
+t dt s tt
+214
+dt s t ih s t t s t
+ghih f at gh s1 ghf at gh
+215
+first we conclud that
+dt s t const
+216
+uniformli in s t a sinc f is of order 1 cf the remark after 34 secondli by 38
+s 0
+0
+2
+f s1 a agh a a
+const s2n
+2
+2
+217
+integr 214 over t and use 216 and 217 we find the crude estim
+s t
+t
+const 2 s2n s
+for 0 t s which prove 213 for m 12 now we bootstrap thi estim first we note that by
+215 and lemma 21
+dt s t s1 ghf1 ast gh const s2n1 g 2 h
+7
+218
+as an induct assumpt suppos that 213 hold for some m n 1 sinc f1 also satisfi the
+hypothesi for f it then follow from 218 that
+2
+dt s t t const
+s1 s2m s2n1
+and again by integr over t
+s t
+t
+const
+s2n s2m s2n1
+2
+uniformli in 0 t s and in a r recal that 1 the best decay for s is obtain by set
+min 1 n 1 m
+which boost the expon m in 213 to m m 2 therefor 213 hold for ani m n 1
+proof of theorem 12 it suffic to prove that
+t2 x2 2t1 a eiht gh a a const tm
+219
+if is a smooth characterist function of for some 0 x 1 for larg neg x 0
+and x 0 for x follow the line of the previou proof we consid the oper
+s t f x2t f 2 x2t
+1 2
+x 2at t2
+s2
+220
+and the evolut
+t eiht gh a a h
+221
+for 0 t s the desir inequ 219 then read
+s s
+s
+const s2m
+222
+write x2 2at 2 x a2 a2 t2 we see that
+s t 0
+for
+and therefor
+ts
+s
+a2
+s
+s s
+s
+dt dt s t
+s
+s
+to find dt s t we first comput
+i 2
+p s t s2 af x2t f x2t a
+2
+2s2 ux2t aux2t
+ih s t
+where we have factor f u2 and use that a uu 0 ad the term
+t s t 2s2 a tu2 x2t
+8
+223
+we arriv at
+dt s t 2ts2 ux2t t1 a a ux2t
+224
+now we use to estim
+t1 a a t1 a a t1 a a
+f t1 a a
+2
+by some smooth function f of order 12 support in r and with f 0 set at t1 a a we
+find
+dt s t
+t
+2ts2 f at ux2t eiht gh a a
+2
+225
+on the other hand it follow from 211 by set t s that
+f at eiht gx a a const tm
+226
+befor we can use thi estim in 225 we must commut the factor ux2t to the left the requir
+commut can be expand to ani order n
+n1
+ux2t f at
+k1
+1 k k
+t ada u f k at tn r
+k
+n
+k
+where r const ada u sinc u c0 r the commut ada u are easili bound
+1
+iada u x ux2t 2s2 x2 u x2t
+2x2t u x2t 2s2 2at t2 u x2t
+k
+and so forth with the result that ada u const uniformli in 1 s and 0 t s sinc 226
+also hold if f is replac by a deriv f k we find the estim
+n1
+dt s t
+s
+const ts2 tm
+const s
+tkm tn 2
+k1
+2 2m1
+t
+for 1 s 0 t s uniformli in a therefor by 223
+s
+s s
+3
+s
+const s
+2
+s
+dt t2m1 const s2m
+commut expans
+let h and a be selfadjoint oper on a hilbert space h and suppos that h is bound to say that
+the commutor ih a is bound mean that the quadrat form
+ih a a h
+9
+on da is bound and thu defin a bound symmetr oper call ih a in the same sens we
+assum that the higher commut
+k
+k1
+ada h ada
+h a
+are bound for k 2 n let f be a real c function on r then under a further condit given
+below the commut h f a ha an expans
+n1
+h f a
+k1
+1 k
+k
+f aada h rn
+k
+31
+with a remaind estim
+n2
+n
+rn cn ada h
+k0
+dx1 xkn1 f k x
+32
+the further condit on f is that the integr 32 exist the number cn is a numer constant depend
+on n but not on f a or h in particular the expans 31 hold if
+f k x oxnk
+x
+33
+for k 1 n 2 ie if the function f x grow not faster than xn with correspond slower growth
+of the success deriv we will refer to 33 by say that f is of order n in that case 31 is
+defin in form sens on the domain of f 1 a take the adjoint of 31 and note that
+k
+k
+ada h 1k ada h
+we also obtain
+n1
+h f a
+k1
+1
+k
+1k1 ada hf k a rn
+k
+34
+thi defin h f a as an oper on the domain of f 1 a f a in particular if f is of order 1
+and n 2 then h f a is bound in the gener case where h is not bound we will work with
+oper gh g c0 r assum that
+k
+ada gh is bound for k 1 n
+35
+then if f is of order n
+n1
+gh f a
+k1
+1 k
+k
+f aada gh rn
+k
+rn const
+n
+ada gh
+36
+with a constant depend on f and n and similarli for the adjoint expans all these formula are
+particularli use if the role of a is play by a scale oper say s1 a 0 s then the commutor
+expans are expans in power of s1 eg
+n1
+gh f s1 a
+k1
+1 k k
+k
+s f aada gh sn rn
+k
+10
+37
+a simpl but use observ is the follow suppos that f x 0 for x r and let be the
+characterist function of r then
+aghf s1 a const sn
+38
+proof sinc af s1 a 0 we have
+aghf s1 a agh f s1 a
+insert the expans 37 we notic that onli the remaind sn rn contribut sinc
+af k a 0
+commut expans of thi type were introduc in siso1 and have sinc becom an import tool
+of oper analysi there are sever version siso1 ski ivsi abg which differ in the form of
+the remaind estim the result abov are deriv in husi2 and are base on the helffersjostrand
+function calculu hesj dav
+acknowledg thi work wa support by the swiss nation fund wh by nserc under grant
+na 7901 im and by nsf as
+refer
+abg wo amrein a boulet de monvel and v georgescu c0 group commut method and
+spectral theori for n bodi hamiltonian progress in mathemat physic vol 135 birkhaus
+verlag 1996
+cfk h cycon r froes w kirsch and b simon schroding oper text and monograph in
+physic springer verlag 1987
+dav eb davi spectral theori and differenti oper cambridg univers press 1995
+dh s debievr p hislop and im sigal scatter theori for the wave equat on noncompact
+manifold rev math phi 4 1992 575618
+dbipr s debievr and dw pravica spectral analysi for optic fibr and stratifi fluid i ii j funct
+anal 98 1991 and comm pde 17 1992 6997
+fhp r froes p hislop and p perri a mourr estim and relat bound for hyperbol manifold
+with cusp of nonmaxim rank j funct anal 98 1991 292310
+frlo r froes and m loss unpublish note
+ger c gerard sharp propag estim for nparticl system duke math j 67 1992 483515
+gi c gerard h isozaki and e skibst nbodi resolv estim j math soc japan 48 1996
+135160
+gesi c gerard and im sigal spacetim pictur of semiclass reson comm math phi 145
+1992 281328
+gra1 gm graf asymptot complet for n bodi shortrang quantum system a new proof
+comm math phi 132 1990 73101
+gra2 gm graf privat commun
+gri m griesem n bodi quantum system with singular interact ann inst h poincar 1998
+to appear
+11
+hesj b helffer and j sj
+ostrand equat de schroding avec champ magnetiqu et equat de harper
+in schroding oper h holden a jensen ed lectur note in physic vol 345 springer
+verlag 1989
+hesk i herbst and e skibst free channel fourier transform in the longrang n bodi problem j
+danalys math 65 1995 297332
+husi1 w hunzik and im sigal the gener theori of nbodi quantum system in mathemat
+quantum theori ii schroding oper j feldman et al ed crm proc and lectur note
+vol 8 amer math soc 1995
+husi2 w hunzik and im sigal time depend scatter theori for n bodi quantum system
+preprint eth z
+urich 1997
+ivsi v ivrii and im sigal asymptot of the ground state energi of larg coulomb system annal
+of math 138 1993 243335
+jmp a jensen e mourr and p perri multipl commut estim and resolv smooth in
+quantum scatter theori ann inst hpoincar 41 1984 207225
+mou e mourr absenc of singular continu spectrum for certain seladjoint oper commun
+math phi 78 1981 391408
+nie f nier the dynam of some open quantum system with shortrang nonlinear preprint
+ecol polytechniqu pari 1997
+pss p perri im sigal and b simon spectral analysi of n bodi shcr
+oding oper ann math
+144 1981 519567
+rsiv m reed and b simon method of modern mathemat physic iv analysi of oper
+academ press 1978
+rue d ruell a remark on bound state in potenti scatter theori nuovo cimento a61 1969
+655662
+sig im sigal on long rang scatter duke math j 60 1990 473496
+siso1 im sigal and a soffer local decay and veloc bound preprint princeton univers 1988
+siso2 im sigal and a soffer longrang manybodi scatter invent math 99 1990 115143
+ski e skibst propag estim for n bodi schroding oper comm math phi 142
+1992 6798
+sow a soffer and m weinstein timedepend reson theori preprint ann arbor 1997
+12

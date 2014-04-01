@@ -1,0 +1,820 @@
+arxivphysics0003068v1 physicschemph 24 mar 2000
+phase chang in 38 atom lennardjon cluster i a parallel
+temper studi in the canon ensembl
+j p neirotti
+depart of chemistri univers of rhode island
+51 lower colleg road kingston ri 028810809
+f calvo
+depart de recherch sur la matier condense
+servic de ion atom et agregat
+cea grenobl
+f38054 grenobl cedex franc
+david l freeman
+depart of chemistri univers of rhode island
+51 lower colleg road kingston ri 028810809
+and
+j d doll
+depart of chemistri brown univers
+provid ri 02912
+januari 14 2014
+abstract
+the heat capac and isom distribut of the 38 atom lennardjon
+cluster have been calcul in the canon ensembl use parallel temper mont carlo method a distinct region of temperatur is identifi that
+correspond to equilibrium between the global minimum structur and the
+icosahedr basin of structur thi region of temperatur occur below the
+melt peak of the heat capac and is accompani by a peak in the deriv of the heat capac with temperatur parallel temper is shown to
+introduc correl between result at differ temperatur a discuss
+is given that compar parallel temper with other relat approach that
+ensur ergod simul
+typeset use revtex
+i introduct
+becaus the properti of molecular aggreg impact divers area rang from nucleat and condensation1 to heterogen catalysi the studi of cluster ha continu
+to be an import part of modern condens matter scienc cluster can be view as
+an intermedi phase of matter and cluster can provid inform about the transform from finit to bulk behavior furthermor the potenti surfac of cluster can be
+complex and mani cluster are use prototyp for studi other system have complex
+phenomenolog
+the properti of small cluster can be unusu owe to the domin of surfac rather
+than bulk atom a particularli import and well studi exampl of a properti that
+owe it behavior to the presenc of larg number of surfac atom is cluster structure24
+the structur of cluster can differ significantli from the structur of the correspond
+bulk materi and these differ in structur have implic about the properti of
+the cluster for exampl most small lennardjon lj cluster have global potenti
+surfac minima that are base on icosahedr growth pattern the fivefold symmetri
+of these cluster differ substanti from the closestpack arrang observ in bulk
+materi
+while most small lennardjon cluster have geometri base on icosahedr core
+structur there can be exceptions257 a notabl exampl is the 38atom lennardjon
+cluster lj38 thi cluster is particularli interest owe to it complex potenti surfac
+and associ phenomenolog the potenti surfac for lj38 ha been describ in detail
+by doy miller and wales5 who have care construct the disconnect graph89 for
+the system use inform garner from basin hop and eigenvector follow studi
+of the low energi potenti minima along with examin of the transit state barrier
+the gener structur of thi potenti surfac can be imagin to be two basin of similar
+energi separ by a larg energi barrier with the lowest energi basin be significantli
+narrow than the second basin strike is the global minimum energi structur for lj38
+which unlik the case for most small lennardjon cluster is not base on an icosahedr
+core but rather is a symmetr truncat octahedron the vertic defin by the surfac
+atom of lj38 have a morpholog ident to the first brillouin zone of a face center
+cubic lattice10 and the high symmetri of the cluster may account for it stabil it is
+interest to note that recent experiment studies11 of nickel cluster use nitrogen uptak
+measur have found the global minimum of ni38 to be a truncat octahedron as well
+the basin of energi minima about the global minimum of lj38 is narrow compar to
+the basin about the next highest energi isom which doe have an icosahedr core the
+differ in energi between the global minimum and the lowest minimum in the icosahedr
+basin is onli 038 of the energi of the global minimum5
+characterist of some thermodynam properti of small cluster are rang of temperatur over which these properti chang rapidli in a fashion reminisc of the diverg
+behavior known to occur in bulk phase transit at a singl temperatur the rapid
+chang in such thermodynam properti for cluster are not diverg and occur over a
+rang of temperatur owe to the finit size of the system in accord with the usag
+introduc by berri beck davi and jellinek12 we refer to the temperatur rang where
+rapid chang occur as phase chang region rather than use the term phase transit that is reserv for system at the thermodynam limit as an exampl lj55 display
+a heat capac anomali over a rang in temperatur often associ with what ha been
+term cluster melting13 molecular dynam and microcanon simul perform
+at kinet temperatur in the melt region of lj55 exhibit van der waal type loop in
+the calor curv and coexist between solidlik and liquidlik form
+in recent studi doy wale and miller14 and miller doy and wales15 have examin
+the phase chang behavior of lj38 these author have calcul the heat capac and
+isom distribut as a function of temperatur use the superposit method1617 in the
+superposit method the microcanon densiti of state is calcul for each potenti
+minimum and the total densiti of state is then construct by summat with respect
+to each local densiti of state becaus it is not possibl to find all potenti minima for
+a system as complex as lj38 the summat is augment with factor that repres the
+effect weight of the potenti minima that are includ in the sum the superposit
+method ha also been improv to account for anharmon and stationari points17 for
+lj38 doy et al14 have identifi two phase chang region the first accompani by a heat
+capac maximum is associ with a solidtosolid phase chang between the truncat
+octahedr basin and the icosahedr basin a higher temperatur heat capac anomali
+repres the solidliquid coexist region similar to that found in other cluster system
+the heat capac anomali associ with the melt transit in lj38 is steeper and more
+pronounc than the heat capac peak that doy et al14 have associ with the solidsolid transit becaus the weight that enter in the sum to construct the microcanon
+densiti of state are estim it is import to confirm the find of doy et al14 by
+detail numer simul such simul are a goal of the current work and it
+companion paper as is found in section iii the simul provid a heat capac curv
+for lj38 that ha some qualit differ with the curv report by doy et al14
+owe to the complex structur of the potenti surfac of lj38 the system repres
+a particularli challeng case for simul it is well known that simul of system
+have more than one import region of space separ by signific energi barrier can
+be difficult the difficulti are particularli sever if ani of the region are either narrow
+or reachabl onli via narrow channel the narrow basin about the global minimum make
+simul of lj38 especi difficult there are sever method that have been develop
+that can prove to be use in overcom such ergod difficulti in simul mani of
+these method use inform about the underli potenti surfac gener from simul on the system use paramet where the variou region of configur space are
+wellconnect one of the earliest of these method is jwalking18 where inform about
+the potenti surfac is obtain from simul at high temperatur and the inform
+is pass to low temperatur walk by jump period to the high temperatur walk
+close alli with jwalk is the parallel temper method1923 where configur are
+exchang between walker run at two differ temperatur a relat approach24
+similar in spirit to jwalk use tsalli distribut that are suffici broad to cover
+much of configur space anoth recent addition25 to these method is the use of multicanon distributions26 in the jump process multicanon walk are perform use
+the entropi of the system and multicanon distribut are nearli independ of the
+energi therebi allow easi transit between energi basin as we discuss in the current work we have found the parallel temper method to be most use in the context
+of simul of lj38 a compar discuss of some of the method outlin abov is
+given later in thi paper
+in the current work we appli parallel temper to the calcul of the thermodynam
+properti of lj38 in the canon ensembl in the paper that follows27 we again use parallel
+temper to studi lj38 but use molecular dynam method along with microcanon
+mont carlo simul our goal are to understand better thi complex system and to
+determin the best simul method for system of compar complex the content
+of the remaind of thi first paper are as follow in section ii we discuss the method
+use with particular emphasi on the parallel temper approach and it relat to the
+jwalk method in section iii we present the result includ the heat capac as a
+function of temperatur and identifi the phase chang behavior of lj38 in section iv we
+present our conclus and describ our experi with altern to parallel temper
+for insur ergod
+ii method
+for canon simul we model a cluster with n atom by the standard lennardjon potenti augment by a constrain potenti uc use to defin the cluster
+n
+ur 4
+rij
+ij
+12
+rij
+6
+uc
+1
+where and are respect the standard lennardjon length and energi paramet
+and rij is the distanc between particl i and j the constrain potenti is necessari
+becaus cluster at defin temperatur have finit vapor pressur and the evapor
+event can make the associ of ani atom with the cluster ambigu for classic mont
+carlo simul a perfectli reflect constrain potenti is most conveni
+n
+uc
+uri
+2
+i1
+with
+ur
+r rcm rc
+0
+3
+r rcm rc
+where rcm is the center of mass of the cluster and we call rc the constrain radiu
+thermodynam properti of the system are calcul with mont carlo method use
+the parallel temper technique1923 to understand the applic of the parallel temper method and to understand the comparison of parallel temper with other relat
+method it is use to review the basic principl of mont carlo simul
+in the canon ensembl the goal is the calcul of canon expect valu for
+exampl the averag potenti energi is express
+d3n r ureu r
+d3n r eu r
+u
+4
+where 1kb t with t the temperatur and kb the boltzmann constant in mont
+carlo simul such canon averag are determin by execut a random walk in
+configur space so that the walker visit point in space with a probabl proport
+to the canon densiti r z 1 expur where z is the configur integr
+that normal the densiti after gener m such configur in a random walk the
+expect valu of the potenti energi is approxim by
+u
+m
+the approxim expect valu u
+1
+m
+m
+m
+uri
+5
+i1
+becom exact in the limit that m
+a suffici condit for the random walk to visit configur space with a probabl
+proport to the densiti r is the detail balanc condition2829
+ro kro rn rn krn ro
+6
+where ro and rn repres two configur of the system and kro rn is the condit
+probabl that if the system is at configur ro it make a transit to rn in mani
+mont carlo approach the condit probabl is not known and is replac by the
+express
+kro rn t ro rn accro rn
+7
+where t ro rn is call the trial probabl and accro rn is an accept probabl construct to ensur kro rn satisfi the detail balanc condit the trial
+probabl can be ani normal densiti function chosen for conveni a common
+choic for the accept probabl is given by2829
+accro rn min 1
+rn t rn ro
+ro t ro rn
+8
+the metropoli method30 obtain from eq8 by choos t ro rn to be a uniform
+distribut of point of width center about ro is arguabl the most wide use mont
+carlo method and the basi for all the approach discuss in the current work the
+metropoli method rigor guarante a random walk visit configur space proport to a given densiti function asymptot in the limit of an infinit number of step
+in practic when configur space is divid into import region separ by signific energi barrier a low temperatur finit metropoli walk can have prohibit long
+equilibr time
+such problem in attain ergod in the walk do not occur at temperatur suffici high that the system ha signific probabl of find itself in the barrier region
+in both the jwalk and parallel temper method inform obtain from an ergod
+metropoli walk at high temperatur is pass to a low temperatur walker period to
+enabl the low temperatur walker to overcom the barrier between separ region in
+the jwalk method18 the trial probabl at invers temperatur is taken to be a high
+temperatur boltzmann distribut
+t ro rn z 1 ej u rn
+9
+where j repres the jump temperatur that is suffici high that a metropoli walk
+can be assum to be ergod introduct of eq9 into eq8 result in the accept
+probabl
+accro rn min 1 exp j urn uro
+10
+in practic at invers temperatur the trial move are taken from the metropoli distribut about 90 of the time with jump attempt use eq9 about 10 of the time
+the jump configur are gener with a metropoli walk at invers temperatur
+j and jump attempt are accept use eq10 the accept express eq10
+is correct provid the configur chosen for jump are a random represent of
+the distribut ej u r the metropoli walk that is use to gener the configur
+at invers temperatur j is correlated28 and eq10 is inappropri unless jump are
+attempt suffici infrequ to break the correl in practic metropoli walk
+are still correl after 10 step and it is not possibl to use eq10 correctli if jump
+are attempt 10 of the time in jwalk the difficulti with correl is overcom in
+two way in the first method often call serial jwalking18 a larg set of configur is
+store to an extern distribut with the configur gener with a metropoli walk
+at invers temperatur j and configur store onli after suffici step to break the
+correl in the metropoli walk addit the configur are chosen from the
+extern distribut at random thi extern distribut is made suffici larg that
+the probabl of ever choos the same configur more than onc is small in thi
+method detail balanc is strictli satisfi onli in the limit that the extern distribut
+is of infinit size in the second method often call parallel jwalking3132 the walk at
+each temperatur are made in tandem on a parallel machin mani processor randomli
+initi are assign to the jump temperatur and each processor at the jump
+temperatur is use to donat a high temperatur configur to the low temperatur
+walk suffici infrequ that the correl in the metropoli walk at invers temperatur j are broken in thi parallel method configur are never reus but the
+accept criterion eq10 is strictli valid onli in the limit of an infinit set of processor
+at invers temperatur j in practic both serial and parallel jwalk work well for mani
+applic with finit extern distribut or with a finit set of processors183138
+in parallel tempering1923 configur from a high temperatur walk are also use
+to make a low temperatur walk ergod in contrast to jwalk rather than the high
+temperatur walk feed configur to the low temperatur walk the high and low
+temperatur walker exchang configur by exchang configur detail balanc
+is satisfi onc the metropoli walk at the two temperatur are suffici long to be
+in the asymptot region to verifi detail balanc is satisfi by the parallel temper
+procedur we let
+2 r r z 1 eu r ej u r
+11
+be the joint densiti that the low temperatur walker is at configur r and the high
+temperatur walker is at configur r when configur between the two walker are
+exchang the detail balanc condit is
+2 r rkr r r r 2 r rkr r r r
+12
+by solv for the ratio of the condit transit probabl
+kr r r r
+exp j ur ur
+kr r r r
+13
+it is evid that if exchang are accept with the same probabl as the accept
+criterion use in jwalk see eq10 detail balanc is satisfi
+although the basic notion use by both jwalk and parallel temper are similar
+the organ of a parallel temper calcul can be significantli simpler than the
+organ of a jwalk calcul in parallel temper no extern distribut are
+requir nor are multipl processor requir at ani temperatur parallel temper can
+be organ in the same simpl way that serial tandem jwalk is organ as discuss
+in the origin jwalk reference18 unlik serial tandem jwalk where detail balanc
+can be attain onli asymptot parallel temper satisfi detail balanc directli
+for a problem as difficult as lj38 where veri long simul are requir the huge extern distribut need in serial jwalk or the larg set of jump processor need
+in parallel jwalk make the method prohibit as discuss in section iii parallel
+temper can be execut for arbitrarili long simul make the method suitabl at
+least for lj38
+in the current calcul parallel temper is use not just to simul the system at
+some low temperatur use high temperatur inform but simul are perform
+for a seri of temperatur as is the case for jwalking18 and as discuss elsewher for
+parallel tempering22 the gap between adjac temperatur cannot be chosen arbitrarili
+temperatur gap must be chosen so that exchang are accept with suffici frequenc
+if the temperatur gap is too larg the configur import at the two exchang
+temperatur can be suffici dissimilar that no exchang are ever accept preliminari
+calcul must be perform to explor the temperatur differ need for accept
+exchang probabl in practic we have found at least 10 of attempt exchang need
+to be accept for the parallel temper procedur to be use in gener the temperatur
+gap must be decreas near phase chang region or when the temperatur becom low
+by exchang configur between temperatur correl are introduc at differ temperatur point for exampl the averag heat capac at two temperatur
+may rise or fall togeth as each valu fluctuat statist in some case the valu of
+the heat capac or other properti at two temperatur can be anticorrel the
+magnitud of these correl between temperatur are measur and discuss in section iii as discuss in section iii the correl between differ temperatur impli
+that the statist fluctuat must be suffici low to ensur ani featur observ in
+a calcul as a function of temperatur are meaning
+iii result
+forti distinct temperatur have been use in the parallel temper simul of lj38
+rang from t 00143kb to t 0337kb the simul have been initi
+from random configur of the 38 atom within a constrain sphere of radiu 225
+we have chosen rc 225 becaus we have had difficulti attain ergod with
+larger constrain radii with larg constrain radii the system ha a signific boil region at temperatur not far from the melt region and it is difficult to execut
+an ergod walk with ani method when there is coexist between liquidlik and vapor
+region constrain radii smaller than 225 can induc signific chang in thermodynam properti below the temperatur of the melt peak use the randomli initi
+configur the initi time to reach the asymptot region in the mont carlo walk
+ha been found to be long with about 95 million metropoli mont carlo point follow
+by 190 million parallel temper mont carlo point includ in the walk prior to data
+accumul thi long initi period can be made significantli shorter by initi
+each temperatur with the structur of the global minimum we have chosen to initi
+the system with random configur to verifi the parallel temper method is abl to
+equilibr thi system with no prior knowledg about the structur of the potenti surfac
+follow thi initi period 13 1010 point have been includ with data accumul parallel temper exchang have been attempt everi 10 mont carlo pass over
+the 38 atom in the cluster
+in an attempt to minim the correl in the data at differ temperatur an
+exchang strategi ha been use that includ exchang between sever temperatur to
+understand thi strategi we let the set of temperatur be put into an array onehalf of
+the exchang have been attempt between adjac temperatur in the array onefourth
+have been attempt between next near neighbor temperatur oneeighth between everi
+third temperatur onesixteenth between everi fourth temperatur and onethirti second
+between everi fifth temperatur in the array we have truncat thi procedur at fifth near
+neighbor temperatur becaus exchang between temperatur differ by more than
+fifth neighbor are accept with frequenc of less than ten per cent the data present
+in thi work have been gener use the procedur outlin abov in retrospect we have
+found exchang are onli requir between adjac temperatur we have also perform
+the calcul where exchang are includ onli between adjac temperatur and
+we have seen no signific differ either in the final result or in the correl
+between differ temperatur use the random initi of the cluster after the
+initi period the lowest temperatur walk are domin by configur well
+repres by small amplitud oscil about the global minimum structur
+for all data display in thi work the error bar repres two standard deviat of
+the mean the heat capac calcul from the standard fluctuat express of the
+energi
+cv kb 2 e 2 e 2
+14
+is display in the upper panel of fig 1 in agreement with the heat capac for lj38
+report by doy et al14 the heat capac display in fig 1 ha a melt maximum
+center at about t 0166kb in contrast to the result of doy et al14 we find no
+maximum associ with the solidsolid transit between the two basin in the potenti
+surfac rather we see a small chang in slope at about t 01kb to character
+thi region have a chang in slope in the lower panel of fig 1 we present a graph of
+cv t v calcul from the fluctuat express
+cv
+t
+2
+v
+cv
+1
+2 4 e3 2 e
+t
+kb t
+3
+3 e2 e
+15
+the small low temperatur maximum in cv t v occur within the slope chang region
+to interpret the configur associ with the variou region of the heat capac we
+use an order paramet nearli ident to the order paramet introduc by steinhardt
+nelson and ronchetti39 to distinguish face center cubic from icosahedr structur in
+liquid and glass the order paramet ha been use by doy et al5 to monitor phase
+chang in lj38 the order paramet q4 is defin by the equat
+12
+where
+4 4
+q 2
+q4
+9 m4 4m
+q4m
+1
+nb
+16
+y4m ij ij
+17
+rij rb
+to understand the paramet use in eq17 it is help to explain how q4m is evalu
+the center of mass of the full 38 atom cluster is locat and the atom closest to the center of
+mass is then identifi the atom closest to the center of mass plu the 12 nearest neighbor
+of that atom defin a core cluster of the 38 atom cluster the center of mass of the core
+cluster is then calcul the summat in eq17 is perform over all vector that point
+from the center of mass of the core cluster to all nb bond form from the 13 atom of
+the core cluster a bond is assum to be form between two atom of the core cluster if
+their internuclear separ rij is less than a cutoff paramet rb taken to be rb 139
+in thi work in eq17 ij and ij are respect the polar and azimuth angl of the
+vector that point from the center of mass of the core cluster to the center of each bond
+and y4m is a spheric harmon to verifi that the optim valu of q4 is obtain
+the procedur is repeat by choos the second closest atom to the center of mass of the
+whole cluster to defin the core cluster the valu of q4 obtain from thi second core
+cluster is compar with that obtain from the first core cluster and the smallest result
+valu of q4 is taken to be the valu of q4 for the entir cluster
+in the work of steinhardt et al39 fewer bond are includ in the summat appear
+in eq17 than in the current work in the definit use by steinhardt et al39 the onli
+bond that contribut to the sum in eq17 are those involv the central atom of the
+core cluster in the definit use in thi work at low temperatur the sum includ all
+the bond includ by steinhardt et al39 in addit to vector that connect the center
+of mass of the core cluster with the center of bond that connect atom at the surfac
+of the core cluster with each other for a perfect and undistort icosahedr or truncat
+octahedr cluster the current definit and the definit of steinhardt et al39 are ident
+numer owe to the rotat symmetri of the spheric harmon howev for
+distort cluster the two definit differ numer for perfect undistort icosahedr
+cluster q4 0 wherea for perfect undistort truncat octahedr cluster q4
+019
+and both definit of the order paramet are abl to distinguish configur from the
+truncat octahedr basin and other basin at finit temperatur howev we have found
+the definit introduc by steinhardt et al39 is unabl to distinguish structur in the
+icosahedr basin from liquidlik structur thi same issu ha been discuss previous
+by lyndenbel and wales40 in contrast we have found that liquidlik structur have
+larger valu of q4 than icosahedr structur when the present definit of q4 ie the
+definit that includ addit bond in eq17 is use consequ as discuss
+shortli the current definit of q4 enabl an associ of each configur with either
+the icosahedr basin the truncat octahedr basin or structur that can be identifi
+as liquidlik
+the averag of q4 as a function of temperatur is plot in the upper panel of fig 2
+again the error bar repres two standard deviat of the mean at the lowest calcul
+temperatur q4 is characterist of the global truncat octahedr minimum as the
+temperatur is rais to the point where the slope chang begin in the heat capac q4
+begin to drop rapidli signifi the onset of transit between the structur associ
+with the global minimum and icosahedr structur we then have the first hint that the
+slope chang in cv is associ with a analogu of a solidsolid transit from the truncat
+octahedron to icosahedr structur
+to clarifi the transit further the data plot in the lower panel of fig 2 repres
+the probabl of observ particular valu of q4 as a function of temperatur the
+probabl have been calcul by tabul the frequenc of observ particular valu
+of q4 for each configur gener in the simul differ valu of q4 are then
+assign to either icosahedr structur label ic in the graph truncat octahedr
+structur label fcc or liquidlik structur label liq below by compar the
+lower panel of fig 2 with the deriv of the heat capac plot in the lower panel of
+fig 1 it is evid that icosahedr structur begin to be occupi and the probabl
+of find truncat octahedr structur begin to fall when the deriv in the heat
+capac begin to rise equilibrium between the truncat octahedr structur and the
+icosahedr structur continu into the melt region and truncat octahedr structur
+onli disappear on the high temperatur side of the melt peak of the heat capac doy
+et al14 and miller et al15 have gener data analog to that depict in the lower
+panel of fig 2 use the superposit method and the data of miller et al15 are in
+qualit agreement with the present data a more direct comparison with the data of
+these author can be made by perform period quench along the parallel temper
+trajectori we then use an energi criterion similar to that of doy et al14 to distinguish
+the three categori of geometri and to gener the respect probabl p for a
+given total cluster energi e a truncat octahedron is associ with e 17326
+icosahedralbas structur with 17326 e 1716 and liquidlik structur with
+e 1716 the quench have been perform everi 104 mc step for each temperatur
+and the result of these quench are plot in fig 3 use the energi criterion the
+behavior we observ is qualit similar to the data of doy et al14 howev the largest
+probabl of observ icosahedr structur is found here to be substanti lower than
+doy et al14 the data accumul more recent by miller et al15 use the superposit
+method includ contribut from more stationari point than in the previou work of doy
+et al14 but no reweight ha been perform as a result the distribut of isom
+look quit differ especi at high temperatures14
+the assign of a particular valu of q4 to a structur as display in fig 2 is made
+by an analysi of the probabl distribut pq t q4 of the order paramet display in
+fig 4 and 5 figur 4 is a represent of the threedimension surfac of pq t q4
+as a function of temperatur and order paramet a project of thi surfac onto two
+dimens is given in fig 5 the probabl densiti in fig 5 is repres by the shade
+so that the brighter the area the greater the probabl the horizont white line in fig
+5 defin the region of the heat capac curv the lowest temperatur horizont line
+repres the temperatur at which the slope of the heat capac first chang rapidli the
+middl temperatur horizont line repres the lowest temperatur of the melt peak
+and the highest temperatur horizont line repres the end of the melt region an
+addit represent of the data is given in fig 6 where the probabl of observ
+particular valu of q4 is given as a function of q4 at a fix temperatur of 014kb in
+fig 6 three region are evid for pq t 014kb q4 with q4 rang from 013 to
+019 although the presenc of three region seem to indic three distinct structur all
+three region correspond to the truncat octahedr global minimum we have verifi thi
+assign by quench the structur with q4 rang from 013 to 019 to their nearest
+local minima and we have found all such structur quench to the truncat octahedron
+to explain the three region we have found that there are small distort of lj38 about
+the truncat octahedr structur where both the energi and q4 increas togeth these
+region where both the energi and q4 increas abov q4
+013 have low probabl and
+account for the oscil observ in fig 46 in the lower panel of fig 2 all structur
+have q4 013 have been identifi as truncat octahedra quench studi of the broad
+region visibl in fig 5 at the lowest valu of q4 or equival in the first low q4 peak in
+fig 6 find all examin structur to belong to the icosahedr basin to determin if a given
+configur is associ with the icosahedr basin onedimension cross section plot
+are made from fig 4 at each temperatur use in the calcul figur 6 is a particular
+exampl of such a cross section plot the maximum present at low q4 repres the
+center for structur in the icosahedr basin the next two maxima at higher q4 repres
+the midpoint of the liquid region consequ in gener the lower panel of fig 2 all
+configur with q4 between q4 0 and the first minimum in fig 6 have been identifi
+as icosahedr structur all other valu of q4 repres by the broad intermedi
+band in fig 5 or the region about the second two maxima in fig 6 have been identifi
+as liquidlik structur to make these identif separ cross section of fig 4 must
+be made at each temperatur of cours it is imposs to verifi that the identif of
+all valu of q4 with a particular structur as discuss abov would agre with the result of
+quench the structur to it nearest potenti minimum the differ found by defin
+icosahedr truncat octahedr or liquidlik structur use either an energi criterion
+or q4 is clarifi by compar fig 3 and the lower panel of fig 2 both definit are
+arbitrari and the inform carri by the two classif method complement each
+other
+figur 5 also provid addit evid that the peak in cv t v is associ with
+the equilibrium between the truncat octahedr structur and the icosahedr structur
+there is signific densiti for both kind of structur in the region between the lowest two
+parallel line that defin the region with the slope chang addit both icosahedr
+structur and truncat octahedr structur begin to be in equilibrium with each other at
+the begin of the slope chang region thi equilibrium continu to temperatur abov
+the melt region
+anoth identif of the slope chang region with a transit between truncat
+octahedr and icosahedr form can be made by defin pr t rdr to be the probabl
+that an atom in the cluster is found at locat r to r dr from the center of mass of the
+cluster at temperatur t a project of pr t r onto the r and t plane is depict in
+fig 7 the solid vertic line repres the locat of atom from the center of mass of
+the truncat octahedr structur the lower set of vertic line and the lowest energi
+icosahedr structur the upper set of vertic line as in fig 5 increas probabl
+is repres by the lighter shade at the lowest temperatur pr t r is domin
+by contribut from the truncat octahedron as is evid by compar the shade
+region with the lowest set of vertic line as the temperatur is increas contribut
+to pr t r begin to appear from the icosahedr structur the shade region at r 045
+doe not match ani of the vertic line shown but correspond to atom in the third lowest
+energi isom which like the second lowest energi isom come from the icosahedr basin
+the equilibrium between the icosahedr and truncat octahedr structur observ in
+fig 7 match the region of temperatur observ in fig 5
+we have mention previous that parallel temper introduc correl in the data
+accumul at differ temperatur and it is import to ensur the statist error
+are suffici small that observ featur are real and not artifact of the correl
+to measur these correl we defin a cross temperatur correl function for some
+temperatur depend properti g by
+t1 t2
+gt1 gt1 gt2 gt2
+gt1 gt1 2 gt2 gt2 2 12
+18
+a project of t1 t2 when g cv is given in fig 8 in fig 8 white repres
+1 and black repres 1 with other shade repres valu of between
+these two extrem the white diagon line from the lower left hand corner to the upper
+right hand corner repres the case that t1 t2 so that 1 the light shade area
+near thi diagon repres case where t1 and t2 are adjac temperatur in the parallel
+temper simul and we find to be onli slightli less than uniti more strike are
+the black region off the diagon where is nearli 1 these black region correspond to
+anticorrel between result at temperatur near the heat capac maximum in the
+melt peak and temperatur near the center of the slope chang region associ with
+the transit between icosahedr and truncat octahedr structur these correl
+impli the import of perform suffici long simul to ensur that statist
+fluctuat of the data are small compar to import featur in the data as a function
+of temperatur
+iv conclus
+use parallel temper method we have success perform ergod simul of
+the equilibrium thermodynam properti of lj38 in the canon ensembl as discuss
+by doy et al5 the potenti surfac of thi system is complex with two signific basin a
+narrow basin about the global minimum truncat octahedr structur and a wide icosahedr basin these two basin are separ both by structur and a larg energi barrier
+make simul difficult in agreement with the result of doy et al14 we find clear
+evid of equilibria between structur at the basin of the global minimum and the icosahedr basin at temperatur below the melt region unlik previou work we find no
+heat capac maximum associ with thi transit but rather a region with a chang
+in the slope of the heat capac as a function of temperatur
+we have found parallel temper to be success with thi system and have note
+correl in our data at differ temperatur when the parallel temper method is
+use these correl impli the need to perform long simul so that the statist
+error are suffici small that the correl do not introduc artifici conclus
+we believ that the method use in thi work could be appli to a varieti of other
+system includ cluster of complex compar to lj38 for instanc the 75atom
+lennardjon cluster is known to share mani featur with the 38atom cluster investig here lj75 is also character by a doubl funnel energi landscap one funnel be
+associ with icosahedr structur and the other funnel be associ with the decahedr global minimum the landscap of lj75 ha been recent investig by doy
+miller and wales6 who have use q6 as the order paramet in anoth paper2 wale and
+doy have predict that the temperatur where the decahedralicosahedr equilibrium
+take place should be close to 009kb thi predict is made by use the superposit method but no calor curv have yet been report for lj75 the parallel temper
+mont carlo method can be expect to work well for lj75 and such a parallel temper
+studi would be anoth good test case for theoret method discuss in thi work
+a use enhanc of parallel temper mont carlo is the use of multipl histogram
+methods1341 that enabl the calcul of thermodynam function in both the canon
+and microcanon ensembl by the calcul of the microcanon entropi in practic
+the multipl histogram method requir the gener of histogram of the potenti energi
+at a set of temperatur such that there is appreci overlap of the potenti energi
+distribut at adjac temperatur thi overlap requir is ident to the choic
+of temperatur need in parallel temper
+in perform simul on lj38 we have tri other method to reduc ergod
+error and we close thi section by summar the difficulti we have encount with
+these altern method it is import to recogn that the parallel temper simul
+includ in excess of 1010 mont carlo point and most of our experi with these altern
+method have come from significantli shorter simul our abil to includ thi larg
+number of mont carlo point with parallel temper is an import reason whi we feel
+parallel temper is so use
+from experi with other smaller and simpler cluster for a jwalk simul
+to includ 1010 point an extern distribut contain at least 109 point is requir
+to prevent oversampl of the distribut such a larg distribut is prohibit with
+current comput technolog our jwalk simul contain about 107 mont carlo
+point have result in data that have not been intern reproduc and data that are not
+in good agreement with the parallel temper data mani long jwalk simul with
+configur initi at random onli have icosahedr structur at the lowest calcul
+temperatur to stabil the jwalk method with respect to the inclus of truncat
+octahedr structur at low temperatur we have attempt to gener distribut use
+the modifi potenti energi function um r ur q4 in thi modifi potenti
+is a paramet chosen to deepen the octahedr basin without significantli distort the
+cluster while thi modifi potenti ha led to more stabl result than jwalk use
+the bare potenti the result with 108 mont carlo point have not been reproduc in
+detail the applic of tsalli distributions24 ha not improv thi situat
+we have also tri to appli the multicanon jwalk approach recent introduc
+by xu and berne25 while thi multicanon approach ha been shown to improv the
+origin jwalk strategi for other cluster system in the case of lj38 the iter need
+to produc the extern multicanon distribut have not produc truncat octahedr
+structur the iter have produc extern distribut have either liquidlik
+structur or structur from the icosahedr basin the multicanon distribut is known
+to have defici at low energi and thi low energi difficulti appear to be problemat
+for lj38 we have attempt to solv these defici by includ prior inform about
+the thermodynam of the system in thi attempt we have chosen the multicanon weight
+to be wmu u expspt u where spt u is the microcanon entropi extract from
+a multihistogram analysis1341 of a parallel temper mont carlo simul in sever
+attempt use thi approach we have not observ either the truncat octahedr structur
+nor structur from the icosahedr basin with signific probabl the multicanon
+distribut so gener is domin by liquidlik structur and the distribut appear
+to be incap of captur the solidtosolid transit that lead to the low temperatur
+peak in cv t v whether there are other approach to gener a multicanon
+distribut that are more success in captur low temperatur behavior is unknown to
+us
+much insight about phase chang behavior can be obtain from simul in the
+microcanon ensembl or use molecular dynam method for exampl the van der
+waal loop observ in lj55 13 complement the interpret of the canon calor curv
+in the next paper27 we present parallel temper result for lj38 use both molecular
+dynam and microcanon mont carlo method
+acknowledg
+some of thi work ha been motiv by the attend of two of us dlf and fc
+at a recent cecam meet on overcom broken ergod in simul of condens
+matter system we would like to thank cecam je straub and b smit who organ
+the meet and those who attend the workshop for stimul discuss particularli
+on the connect between jwalk and parallel temper two of us dlf and jpn
+would also like to thank professor mp nightingal for help discuss concern the
+parallel temper method thi work ha been support in part by the nation scienc
+foundat under grant number che9714970 and cda9724347 thi research ha been
+support in part by the phillip laboratori air forc materi command usaf through
+the use of the mhpcc under cooper agreement number f29601930001 the view
+and conclus contain in thi document are those of the author and should not be
+interpret as necessarili repres the offici polici or endors either express
+or impli of phillip laboratori or the us govern
+refer
+1
+ff abraham homogen nucleat theori academ new york 1974
+2
+dj wale and jpk doy j phi chem a 101 5111 1997
+3
+dl freeman and jd doll ann rev phi chem 47 43 1980
+4
+j xie ja northbi dl freeman and jd doll j chem phi 91 612 1989
+5
+jpk doy ma miller and dj wale j chem phi 110 6896 1999
+6
+jpk doy ma miller and dj wale j chem phi 111 8417 1999
+7
+rh leari and jpk doy phi rev e 60 r6320 1999
+8
+r czerminski and r elber j chem phi 92 5580 1990
+9
+om becker and m karplu j chem phi 106 1495 1997
+10
+c kittel introduct to solid state physic 4th edit john wiley new york 1971
+11
+ek park gc nieman kp kern and sj riley j chem phi 107 1861 1997
+12
+rs berri tl beck hl david and j jellinek adv chem phi 70b 75 1988
+13
+p labasti and rl whetten phi rev lett 65 1567 1990
+14
+jpk doy dj wale and ma miller j chem phi 109 8143 1998
+15
+ma miller jpk doy and dj wale phi rev e 60 3701 1999
+16
+dj wale mol phi 78 151 1993
+17
+jpk doy and dj wale j chem phi 102 9659 1995
+18
+dd frantz dl freeman and jd doll j chem phi 93 2769 1990
+19
+e marinari and g parisi europhi lett 19 451 1992
+20
+cj geyer and ea thompson j am stat assoc 90 909 1995
+21
+mc tesi ej jans van rensburg e orlandini and sg whittington j stat phi
+82 155 1996
+22
+m falcioni and mw deem j chem phi 110 1754 1999
+23
+q yan and jj de pablo j chem phi 111 9509 1999
+24
+i andricioaei and je straub j chem phi 107 9117 1997
+25
+h xu and bj bern j chem phi 110 10299 1999
+26
+b berg and t neuhau phi rev lett 68 9 1991
+27
+f calvo jp neirotti dl freeman and jd doll j chem phi follow articl
+28
+ma kalo and pa whitlock mont carlo method john wiley new york 1986
+29
+d frenkel and b smit understand molecular simul academ san diego
+1996
+30
+n metropoli aw rosenbluth mn rosenbluth ah teller and e teller j chem
+phi 21 1087 1953
+31
+a matro dl freeman and rq topper j chem phi 104 8690 1996
+32
+a dullweb mp hodg and dj wale j chem phi 106 1530 1997
+33
+dd frantz dl freeman and jd doll j chem phi 97 5713 1992
+34
+ma strozak ge lopez and dl freeman j chem phi 97 4445 1992
+35
+ge lopez and dl freeman j chem phi 98 1428 1993
+36
+e curotto dl freeman b chen and jd doll chem phi lett 295 366 1998
+37
+cj tsai and kd jordan j chem phi 99 6957 1993
+38
+aj acevedo lm caballero and ge lopez j chem phi 106 7257 1997
+39
+pj steinhardt dr nelson and m ronchetti phi rev b 28 784 1983
+40
+rm lyndenbel and dj wale j chem phi 101 1460 1994
+41
+am ferrenberg and rh swendsen phi rev lett 61 2635 1988
+figur
+fig 1 the heat capac cv per particl of lj38 in unit of kb upper panel and cv t v
+per particl lower panel as a function of reduc temperatur the small low temperatur maximum in the deriv associ with a chang in slope of the heat capac identifi the transit
+region between the truncat octahedr basin and the icosahedr basin the larg heat capac
+peak identifi the melt region
+fig 2 the expect valu of the order paramet upper panel and the order paramet
+probabl distribut lower panel as a function of reduc temperatur in the lower panel
+fcc label the truncat octahedron ic label structur from the icosahedr basin and liq
+label structur from the liquid region the transit between fcc and ic occur at the same
+temperatur as the low temperatur peak in cv t v in fig 1
+fig 3 the probabl distribut of observ differ structur as a function of temperatur use the energi criterion the label are the same as those defin in the lower panel of
+fig 2 and the data complement the interpret of the lower panel of fig 2
+fig 4 the probabl of observ configur with particular valu of q4 with q4 display along one axi and the reduc temperatur display along the other axi the larg peak
+at low temperatur come from the truncat octahedr structur and the broad region with
+small q4 at intermedi temperatur repres structur in the icosahedr basin
+fig 5 a project of fig 4 onto the t q4 plane the probabl is measur by the shade
+with increas probabl repres by lighter shade the lowest temperatur horizont white
+line repres the temperatur at which transit between the icosahedr and lowest energi
+basin begin the second lowest temperatur horizont white line repres the begin of the
+melt region and the highest temperatur horizont white line repres the end of the melt
+peak of the heat capac the coexist of icosahedr and octahedr structur continu into
+the melt region
+fig 6 the probabl of observ configur with particular valu of q4 as a function
+of q4 at t 014kb the region from q4 0 through the first maximum to the first minimum
+defin the icosahedr basin at t 014kb the region from the first minimum to the third
+defin liquidlik structur and the region about the three maxima have the highest valu of
+q4 defin the truncat octahedr basin the oscil in the truncat octahedr basin aris
+from distort structur of low probabl where both the energi and q4 rise togeth
+fig 7 the project probabl of observ particl a distanc r from the center of mass of
+lj38 as a function of r and reduc temperatur as in fig 5 increas probabl is repres
+by the lightest shade the lower vertic line repres the locat of atom in the fulli relax
+truncat octahedron and the upper vertic line repres the locat of atom in the fulli
+relax icosahedr structur that is lowest in energi equilibrium between the icosahedr and
+octahedr form are observ in the same temperatur rang as found in fig 2 and 5
+fig 8 t1 t2 for the heat capac as defin in eq18 with g cv as a function of
+reduc temperatur along two axe white shade repres 1 and black repres 1
+the white diagon line connect the lower left hand corner with the upper right hand corner
+indic t1 t2 so that 1 the black area show anticorrel from parallel temper
+between the heat capac calcul at the maximum of the heat capac and the center of the
+chang in slope region
+60
+cv nkb
+50
+40
+30
+1nkb cv t v
+100
+50
+0
+50
+100
+00
+01
+kbt
+02
+03
+020
+q4
+015
+010
+005
+10
+ic
+liq
+fcc
+08
+pq
+4
+06
+04
+02
+00
+00
+01
+kbt
+02
+03
+10
+ic
+liq
+fcc
+08
+p
+06
+04
+02
+00
+00
+01
+02
+kbt
+03
+0337
+0273
+k bt
+021
+014
+0071
+0002
+0
+045
+09
+135
+q4
+18
+225
+90
+pq t 014 kb q4
+70
+50
+30
+10
+000
+005
+010
+q4
+015
+020
+0337
+0282
+k bt
+0227
+0171
+012
+0061
+0061 012 0171 0227 0282 0337
+k bt

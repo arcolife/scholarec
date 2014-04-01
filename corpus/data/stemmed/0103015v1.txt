@@ -1,0 +1,99 @@
+arxivphysics0103015v1 physicsedph 6 mar 2001
+a bubbl theorem
+oscar bolina
+univers of california
+davi ca 956168633
+bolinamathucdavisedu
+j rodrigo parreira
+cluster consult
+torr mapfr pl 38
+barcelona 080050 spain
+introduct it is alway a good practic to provid the physic content of an
+analyt result the follow algebra inequ lend itself well to thi purpos
+for ani finit sequenc of real number r1 r2 rn we have
+3 2
+2 3
+r13 r23 rn
+r12 r22 rn
+1
+a standard proof is given in 1 an altern proof follow from the isoperimetr
+inequ
+a3 36v 2
+where a is the surfac area and v the volum of ani threedimension bodi set
+n
+2
+3
+the area a n
+i1 4r and the volum v
+i1 43r yield 1
+a bubbl proof we give yet anoth proof now use element of surfac tension
+theori and ideal ga law to the format and coalesc of bubbl thi proof
+found in 2 run as follow
+accord to a wellknown result in surfac tension theori when a spheric bubbl
+of radiu r is form in the air there is a differ of pressur between the insid
+and the outsid of the surfac film given by
+p p0
+2t
+r
+2
+where p0 is the extern atmospher pressur on the surfac film of the bubbl p
+is the intern pressur and t is the surfac tension that maintain the bubbl 3
+2
+author
+suppos initi that n spheric bubbl of radii r1 r2 rn float in the air
+under the same surfac tension t and intern pressur p1 p2 pn accord to
+2
+2t
+pk p0
+k 1 2 n
+3
+rk
+now suppos that all n bubbl come close enough to be drawn togeth by surfac
+tension and combin to form a singl spheric bubbl of radiu r and intern
+pressur p also obey eq 2 when thi happen the product of the intern
+pressur p and the volum v of the result bubbl form by the coalesc of
+the initi bubbl is accord to the ideal ga law 3 given by
+pv p1 v1 pn vn
+4
+where vk k12 n are the volum of the individu bubbl befor the coalesc took place for spheric bubbl 4 becom
+3
+pr3 p1 r13 pn rn
+5
+substitut the valu of p and pk given in 2 and 3 into 5 we obtain
+3
+r3 r13 r23 rn
+2t 2
+2
+r r22 rn
+r2
+p0 1
+6
+now if the total amount of air in the bubbl doe not chang the surfac area of
+the result bubbl form by the coalesc of the bubbl is alway smaller than
+the sum of the surfac area of the individu bubbl befor coalesc thu
+2
+r12 r22 rn
+r2
+7
+sinc the potenti energi of a bubbl is proport to it surfac area 7 is
+a physic condit that the surfac energi of the system is minim after the
+coalesc
+it follow from 7 and the fact that p0 and t are posit constant that the
+left hand side of equat 6 satisfi
+3
+r13 r23 rn
+r3
+8
+the equal which impli conserv of volum hold when the excess pressur
+in the bubbl film is much less the atmospher pressur combin 7 and 8
+yield the inequ 1 which is also valid for neg number
+acknowledg ob would like to thank dr joel hass for point out the isoperimetr proof of 1 and fapesp for support under grant 97144302
+author
+3
+refer
+1 g h hardi j e littlewood and g polya inequ second edit
+cambridg mathemat librari cambridg uk 1988 p4
+2 h bouass capillarit et phenomen superficiel librairi delagrav pari
+1924 p48
+3 a hudson and r nelson univers physic harcourt brace jovanovich inc
+ny 1982 p 371 and p 418

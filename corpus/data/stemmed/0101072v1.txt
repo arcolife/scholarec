@@ -1,0 +1,3136 @@
+remark on quantum transmut
+arxivmath0101072v1 mathqa 9 jan 2001
+robert carrol
+univers of illinoi urbana il 61801
+abstract it is shown how formula of the author for gener oper transmut
+can be adapt to a quantum group context
+1 introduct
+we want to sketch here a program and a framework along with a few idea about implement it first we indic briefli some result of koelink and rosengren 40 involv
+tramsmut kernel for littl qjacobi function thi is model in part on earlier work
+of koornwind 45 and other on classic fourierjacobi abel and weyl transform plu
+formula in qhypergeometr function see eg 39 41 43 here transmut refer to
+intertwin of oper ie qb bp and the develop give a qanalysi version
+of some transform and intertwin whose classic version were embed as exampl
+in a gener theori of transmut of oper by the author and collabor in
+3 7 8 9 10 see also the refer in these book and paper it is clear that mani
+of the formula from the extens gener theori will have a qanalysi version as in 40
+and the more interest problem here would seem to be that of phrase matter entir
+in the languag of quantum group and ultim connect the theori to tau function in
+the spirit indic below in thi direct we sketch some of the canon develop
+of the author in 7
+we mention also a quantum group notion of transmut
+t ransmut
+11
+braid stuf f
+boson
+quantum stuf f
+cf 5 50 52 53 in a differ context here one ha a wonder theori develop
+primarili by s majid cf 50 and refer there basic the idea here is that everi
+quasitriangular hopf algebra h ha a braid group analogu h of envelop algebra type
+given by the same algebra unit and counit as h but with a covariant coproduct
+which is braid cocommut the procedur h h is call transmut on the
+other hand ani braid hopf algebra b in the braid categori of left h modul for a
+quasitriangular h give rise to an ordinari hopf algebra b h call the boson
+of b the modul of b in the braid categori correspond to ordinari modul of b h
+in view of some theorem in 50 about boson of the braid line uq s2 etc one
+expect perhap to find relat to other form of transmuat as intertwin cf 5 for
+date januari 2001 email rcarrollmathuiucedu
+1
+2
+robert carrol
+univers of illinoi urbana il 61801
+more on thi in ani event we recal that the rmatrix arriv histor in quantum
+invers scatter theori give rise to quasitriangular hopf algebra ie quantum group
+and thenc to braid braid with it connect to knot etc seem to be what is
+it all about in connect classic and quantum mathemat
+the idea of intertwin oper play a classic import role in the theori of
+group represent and in particular there are connect between intertwin oper hirota bilinear equat and tau function which have some noncommut and
+quantum version see eg 27 28 34 35 36 56 57 58 59 71 75 the idea here is that
+a gener tau function can be defin as a gener of all the matrix element of g g in a
+given highest weight represent of a univers envelop type algebra the classic kp
+and toda tau function aris when g is a kacmoodi algebra of level k 1 cf also 10
+in the case of quantum group such tau function are not number valu but take their
+valu in noncommut algebra of function on the quantum group g the gener tau
+function also satisfi bilinear hirota type qdiffer equat aris from manipul
+with intertwin oper we will not tri to deal with thi fascin topic here but
+will pick it up in 5 it doe provid a sourc of natur qdiffer equat relat to
+intertwin in a quantum group context there are also connect to boson idea
+in a quantum mechan spirit
+final we will sketch some idea about qcalculu follow wess and zumino 72 73 for
+exampl there is an extens literatur on differenti calculi go back at least to manin
+and woronowicz cf 38 54 74 and we do not tri to review thi here see howev 5 for
+some of thi there seem to be too mani differenti calculi and the wesszumino approach
+develop matter directli with the action of quantum deriv act on a quantum plane
+and direct connect to the heisenberg algebra thi should set the stage for begin a
+construct of quantum transmut follow the classic pattern use partial differenti equat and spectral coupl of the author further develop is plan for
+5
+let us make a few remark about discret refer to 5 6 20 22 29 32 for
+some background it ha long been known that standard calculu of the continuum is not
+accur or even reason at the quantum level see eg 6 20 the languag of quantum group for exampl provid natur discret some of which are discuss in
+1 2 5 6 26 60 in connect with standard discret and gener noncommut and discret physic have a natur compat cf 32 it seem to me howev
+that there should be a natur discret impos via the principl that time is a
+secondari concept gener by the transfer of energi into inform cf 6 29 51
+it also seem to be weird that time ha been so success employ as a dimens as in
+minkowski space for exampl when it clearli ha no relat to dimens at all cf 6 15
+and refer there for other remark on time in ani event as a function of energi we
+could have t te in mani form in particular think of a clock for exampl time
+should often appear most natur as a discret quantiti continu transfer of energi
+into time as inform doe not seem to be exclud and may be macroscopi avail
+howev we conjectur that at the quantum level the transfer must be discret then we
+remark on quantum transmut
+3
+could take here t te e te or for simplic in argument say t f ee
+now consid kinet energi correspond to say e 12x 2 12p2 and write
+12
+e
+1
+2
+x
+t
+2
+1
+2
+x
+e
+2
+e
+t
+2
+1
+2
+2
+x
+e
+f 2 e
+if now f is a constant t so that t t e uniform time measur then 12 becom
+13
+1
+t
+t
+2
+x
+t
+x2
+2
+t
+e
+2
+t 2
+2
+t3 x
+t
+1
+2
+x
+t
+2
+2
+t32
+t
+henc if one is discret some standard differenti equat involv time with grid
+space x and t it appear natur to work with z1 2t 12 32 we
+note that there are mani discret correspond to a given pde for exampl so there
+should be a choic mechan perhap the altern is to deriv quantum pde directli
+from a quantum group context for exampl which is undoubtedli the best recours thi
+will be discuss later
+we do not know of ani calcul in thi spirit by numer analyst but thi is not
+an area of person expertis note howev that if one take 1 and then
+z2 2t 12 which give a measur of the energi convers thu if some
+discret process requir a certain valu of for implement then a signific for
+aris which would then reveal the valu of t for exampl in 2 60 one work separ
+with discret space and discret time quantiz of the schr
+oding equat s lead
+to quantum hopf symmetri algebra u s and u s thi involv nonstandard quantum
+deform of s2r jordan or hdeform and some twist map which relat the
+two pictur these algebra also come as limit object in a joint discret when
+or tend to zero howev a combin qgroup pictur for joint discret is not yet
+clear
+exampl 11 note for q exph one ha for t ht depend on t
+14
+f qt f eh t f 1 ht f t t f q 2 t f e2h t f t 2t
+so thi suggest a depend t f ee for a correspond standard discret
+f f t f t to repres approxim a qderiv numer f qt f t
+if te were to be differenti with still discret transfer of energi one could write approxim te t e to get t t ee then if t ht one would need
+ht t ee which could be realiz via say e c and ct ht or t exphc actual it seem increasingli attract to simpli look at the q or h discret aris natur in a quantum mechan context with eg qderiv q f t f qtf tqtt
+and q exph as the basic discret involv t q 1t exph 1t cf also
+68 70
+4
+robert carrol
+univers of illinoi urbana il 61801
+2 some quantum transmut
+in order to prepar matter for further discuss we record a few formula from 40
+cf also 23 to illustr what ha alreadi been done in relat direct and to give an
+exposur to qanalysi for more detail on qcalculu see eg 5 33 41 43 we use the
+notat
+21
+r s a1 a2 ar b1 b2 bs q z
+0
+nn1
+a1 qn a2 qn ar qn
+1n q 2
+q qn b1 qn bs qn
+1sr
+zn
+for gener hypergeometr function and write littl qjacobi function via
+22
+1
+x a b q 2 1 a a ab q bxa 1
+2
+one ha a gener hypergeometr qdiffer oper tq f x f qx
+23
+l lab a2 1
+1
+x
+tq id 1
+aq
+tq1 id
+bx
+and the littl qjacobi function satisfi z3 l a b q 1 a2 2a a b q
+it is use also to note that the littl qjacobi function are eigenvalu for eigenvalu of
+the oper
+24
+lab
+a
+2
+1
+x
+1
+tq
+1
+aq
+q
+a
+id
+1
+t 1
+2x 2bx
+2a
+bx q
+ie lab 12alab 12a a1 for simplic one can assum a b 0 ab
+1 y 0 but the result hold for a more gener rang of paramet cf 40 the oper
+l is an unbound symmetr oper on the hilbert space ha b y of squar integr
+sequenc u uk for k z weight via
+25
+uk 2 abk
+byq k a q
+yq k q
+where the oper l is initi defin on sequenc with finit mani nonzero term
+note that 25 can be written as a qintegr by associ to u a function f of yq z by
+f yq k uk and set
+y
+26
+f yq k q k
+f xdq x y
+0
+then for a q 121 and b q 121 the sum in 25 can be written as
+27
+y
+y 1
+0
+f x2 x
+xq q
+dq x 1
+x q
+remark on quantum transmut
+5
+note ba q and ab q 1 the spectral analysi of l or equival of lab can
+be carri out and lead to the transform
+u fabi u
+uk yq k a b qabk
+u
+k
+28
+byq k a q
+y 1
+yq k q
+y
+f xx x a b qdq x
+0
+fabi u yq k a b qd a b y q
+uk
+r
+where the measur is obtain from the cfunction for expans in littl qjacobi function
+cf 40 41 42 the formula in 42 seem to differ but for structur purpos it doesnt
+matter the goal in 40 is to establish a number of link between two littl qjacobi function transform for differ paramet valu a b y and revolv around transmut
+kernel p satisfi
+29
+fcdi upt d a b y q
+fcdi t u
+r
+where t uk tk uk for an extra paramet t pt poisson kernel for a b c d
+similarli one studi the transmuat kernel for the invers transform
+210
+f1
+cdi f
+k
+f1
+cdi f k pk ab
+k
+byq k a q
+yq k q
+and one ha the result
+211
+pk a b y r s f1
+abi yq s ar bs qk
+yq s ar bs q yq k a b qd a b y q
+r
+anoth result involv the second order qdiffer oper lab as in 24 and thi use
+the abel transform cf 7 45 which ha some nice transmut properti cf section
+3 thu let a b c0 and c with q ba 1 then defin the oper
+212
+w a bf x
+f xq p q p
+p0
+x q 2
+q
+xq q
+b
+a
+x
+q q
+p
+q 1 abx q 1p q 1 x q q 1 ba
+3 2 q q
+q q
+for ani function f with f xq p oq p for some 0 then w a b lab
+laq bq w a b on the space of compactli support function and for the
+asympotot free solut of l a b q 1 a2 2a a b q on yq z
+12 1 one ha
+213
+w a b a b qyq k y
+a b q
+yq k aq bq q
+aq bq q
+6
+robert carrol
+univers of illinoi urbana il 61801
+note a b q a q b q further for a b 0 ab 1 0 and cz0 one
+defin the oper
+214
+f xq k abk
+k0
+q xq qk
+k
+q bxq a q 1k xq q q
+3 2 q
+q bxq a qk
+for ani bound function f then laq
+support function and
+215
+bxq a q
+bxq a q
+a a bf x
+bq
+a a b a a b lab on compactli
+a a b a b qx
+abq q
+x aq bq q
+ab q
+the oper w a b and a a b are refer to as qanalogu of the gener
+abel transform one use also the oper w for c act on function over 0
+via
+216
+w f x xp
+f xq q
+0
+q q
+q q
+for x 0 where one assum that the infinit sum is absolut converg if
+z0 for thi one want f suffici decreas on a qgrid tend to infin eg
+f xq oq for some 0 note that for z0 the sum in 216 is finit
+and w0 id with w1 bq 1x1 tq1 thi oper w is a qanalogu of
+the weyl fraction integr oper for the abel transform cf section 3 use the
+k q k for the qintegr one see that for n n
+notat z6 a f tdq t a
+0 f xq
+the oper wn is an iter qintegr
+217
+wn f x
+x
+x1
+xn1
+f xn dq xn dq xn1 dq x1
+there are mani other interest formula and result in 40 which we omit here note
+howev for f f 0 c f xq oq x q 1 one ha
+w preserv the space of compactli support function
+w f f for 0
+w w w on f for re 0
+w bq bq w w1 on f for 1 0 and bqn wn id for n n on
+f for n
+laq b w w lab for compactli support function
+3 classic transmut
+there are two classic approach to transmut of oper which should have
+counterpart first cf 7 8 9 10 11 21 48 for detail hypothes and exampl
+take a special situat if one ha uniqu solut to the partial differenti equat
+remark on quantum transmut
+7
+pde z7 p dx qdi with x 0 f x and eg dy x 0 0 for suitabl
+f then we can defin
+31
+bf y 0 y qbf bp f
+note that the boundari condit can be gener consider to see thi set
+p dx so p dx qdi 0 and x 0 p f with y x 0 0 so one can say that
+0 y bp f while 0 y p dx x yx0 qdi x yx0 q0 y qbf
+there should be some version of thi for quantum oper
+secondli use the abov background we got a lot of mileag from explicitli construct
+transmut oper via eigenfunct of p and q with a spectral pair cf 3 7 8
+suppos for exampl that p and q both have the same continu spectrum with
+32
+q
+p dx p x p qdx q
+q
+p
+where eg z8 p 0 q
+0 1 and d 0 d 0 0 again thi can be
+gener let the relat spectral measur be dp and dq with fourier type recoveri
+formula for suitabl f
+33
+fp
+fq
+f xp xdx f x
+f xq
+xdx f x
+fp p xdp
+fq q
+xdq
+here for second order differenti oper z9 au a qu u q real aris in the
+treatment of mani special function one ha gener p x ap x and dp is usual
+absolut continu we note that for suitabl f g and p as in z9 one ha formal
+z10 p df gdx af a qf g af ga qf g f ga a qg
+so p dg aga qg in particular we have z11 p dp p now one can
+defin
+34
+p xq
+yfp dp
+x y
+and check that formal p dx qdi with x 0 p xfp dp f x
+and y x 0 0 consequ as in 31 one can write z12 0 y bf y
+q
+yfp dp
+we write down now a few more gener featur for complet and in order to exhibit
+some group and perhap quantum group theoret content in particular one can defin a
+gener translat oper tx f u x via
+35
+u x
+fp p xp dp
+so p dx u p d u with u x u x and then one set bf y y x f x
+36
+y x p x q
+y p
+p xq
+ydp x y y u x
+8
+robert carrol
+univers of illinoi urbana il 61801
+to see that thi is formal the same as 34 we write from 33 the relat z13 fp
+p x fp p xdp dx fp dp p xp xdx which impli that
+dp p xp xdx d darbouxchristoffel argument can also be use here
+while z14 f x p x f p d dp f p xp dp d impli p xp dp x then 36 becom
+y u x
+37
+p
+p
+p xq
+ydp f x dd
+p xq
+yf dp dp
+p xq
+yf dp
+p p d
+p xq
+yf dp
+anoth use observ from 36 is recal from z11 p dp p impli that
+p d y p dy y
+38
+p dx y p dx u x
+y p d u x p d y u x p dy
+with x 0 0 u x and 0 y y u 0 but from z15
+0 p 1 p dp and from 35 and 33 it follow that
+u 0 fp p dp f so x 0 u x 0 f x and 0 y
+y f bf y as desir
+now for the canon develop of the author in 7 we write eg ax p x in
+p d of z9 and set
+39
+p du
+q u
+p u
+pu qdu
+qu
+p
+q
+and from 3233 we repeat with gener condit p 0 1 and dp 0 0
+310
+p dp x p x p dp x p p df p
+f
+p
+pf
+where p x p xp x the follow transform are then relev where we write
+f f xxdx over some rang and f f d over some rang
+the rang may be discret or contain discret section we also note that mani measur
+pair involv d are better express via distribut pair with a gener
+spectral function distribut as in 7 55 note also that transmut doe not requir
+that p and q have the same spectrum cf 3 7 thu we write for suitabl f f and d
+the spectral measur associ with q
+a
+b
+c
+d
+e
+pf f x p x qf f x q
+x
+q
+p
+pf f x x qf f x x
+x f q x p
+p1
+x f p qf
+pf
+x f q p p 1
+x f p x qf
+pf
+pf x f p x qf x f q
+x
+q1
+q
+q1
+q
+remark on quantum transmut
+9
+one note the mix of eigenfunct and measur in e and thi give rise to the transmut kernel b b 1
+311
+q
+p
+kerb y x p x q
+y kerb x y x y
+lead to
+312
+b q p b p q
+thi is a veri neat pictur and it appli in a larg number of interest situat cf
+7 8 9 10 we indic some further featur now compris a classic develop on
+which the exampl of 40 discuss briefli in section 2 and much more can be predic
+the proof in the classic situat involv a heavi dose of paleywien theori and fourier
+idea thu from 7 exampl 93 we take z16 q ex ex 21 ex ex 21
+with 1 then for 1 2 one ha
+313
+2
+q
+x x f 12 i 12 i 1 sh x
+where sh sinh and f 2 f1 is the standard hypergeometr function extend to 2 1 in
+21 for the qtheori the relat jost function are
+1
+1
+1 i 1 i 1 i sh2 x
+2
+2
+x
+x i
+314 q
+f
+x e e
+q
+for i 2i here q
+expi x as x and one can write z17
+q
+q
+cq cq for 0 i 2i here cq is the harishchandra cfunction which also
+gener the measur dq ccq 2 d see 40 for the discret version of thi for the
+abel and weyl transform we recal from 7 that the fourierjacobi transform for
+f c0 is defin via
+2
+2
+315
+qf
+f t t tdt
+f
+1 0
+1
+then use some ident for hypergeometr function one can show that
+316
+2
+f
+f f cossd
+0
+0 f ta tdt
+where f f is the abel transform z18 f f x
+explicit form in term of a particular 2 f1
+and as t ha an
+remark 31 note that 316 is a special case of a gener formula in 7 it also ha
+a version in the theori of lie group and symmetr space where expsf f s can
+be interpret as a radon transform of a radial function f and one can write in standard
+lie theori notat
+317
+ff a eloga
+f aailoga da
+f andn f
+a
+n
+f
+f x xdx
+g
+10
+robert carrol
+univers of illinoi urbana il 61801
+then f ff f in 316 the transmut version of thi ha the form
+pf
+c
+q f qf inde follow 7 we can write for the fourierjacobi situat
+2 c 1
+318
+i
+1
+g t
+2
+g
+i
+t
+d
+c
+for suitabl paramet valu then one exploit known relat for the cosin transform
+correspond to 12 12 to arriv eventu at a formula
+g f f g
+319
+2
+f
+12
+f f scossd
+0
+q
+correspond to pfq f qf transform base on z19 q
+x xcq
+are import in the theori of the marchenko equat and are discuss below cf 7 for
+an extens treatment
+one can also use the weyl fraction integr oper of the form z20 w gy
+1 y gxx y1 dx for 0 and g c0 then thi can be extend as an
+entir function in c with z21 w w w where w gy c0 w0 id and
+w1 g g for f c0 and re 0 one also defin now for the spheric function
+situat of
+ch cosh
+320
+w f s 1
+s
+f tcht chs1 dcht
+which can be extend to c as an entir function with w 1 w further one
+ha cf 7
+321
+1
+1
+2332 w212 w
+f f 2332 w1 w212 f f
+we mention now formal a few addit formula for suitabl f g if one write
+bf y y x f x cf 36 and bgx x y gy b b 1 then
+set b gx x y gx and b f x y x f y there result
+322
+pb f qf qb g pg
+q
+p
+note z22 y x p x q
+y and x y x y there are also
+parsev formula of the form
+323
+12
+r qf qg q
+12
+f q
+12
+12
+g r qf qg q f q g
+where r is a spectral function distribut associ to dq cf 7 for detail
+1 qp1
+evid one ha z23 bp q
+and from cf 312 b p q b
+1 we get
+pq
+324
+q1 ppq p1 qqp
+one goe next to the gelfandlevitan gl and marchenko m equat which are of
+fundament import in invers scatter theori for exampl cf 7 9 8 10 12 24
+remark on quantum transmut
+11
+one determin an adjoint oper b b by the rule
+325
+q yvi buy vy q y y x1
+p xp x ux
+p xux x y vy p xux bvx
+where ker b is given via
+326
+q
+p
+x y q y1
+p xy x x y
+where
+we write also b b
+p xux bvx u p x y1
+q q v q vy y x ux
+327
+x 1 yp xx y p x q y
+y
+q
+can also be character via a cauchi problem as in section 1 thu if t x
+one show that b
+is the gener translat associ with p cf 35 ie tx f fp p xp
+t x f and after some calcul
+with fp pf then set x y y
+one get p dx qdi x 0 af x and y x 0 0 where z24 af x
+ax f with ax p p x sinc a commut with p d one can ap y
+pli the pde method of section 1 cf 7 one result of thi now is that z25 bf
+q
+y pf qpf
+y in a similar manner one can character b via a cauchi prob
+lem as x 0 bgx where p dx qdi with dx 0 y 0 and 0 y agi
+q
+q
+g with ay
+y use such operaher z26 agi
+ay
+tor one arriv at a gener gl equat in the form
+x
+y t at x y
+328
+bab
+which can be reformul as
+329
+p
+p
+p
+p t q
+y x t dt x y
+we recal also that the kernel satisfi triangular theorem aris classic via paley x 0 for y x and y x
+wiener type theorem and in particular one prove that y
+p
+0 for x y we note also that for d d and d
+d one ha formal z27 b
+w q
+where
+w
+the
+triangular
+lead
+to
+the
+classic
+appear
+of
+the
+gl
+theori
+in the form y x x y ky x with ky x 0 for x y and 328 take the
+well known form for x y
+330
+y
+x ay x
+y
+ky a xd 0
+0
+there are mani variat and exampl given in 7 for instanc cf also 12 for 8 or 9
+deriv of gl equat
+the marchenko equat is also use in invers scatter theori and we have cast thi in
+a form also give a gener set for kontorovichlebedev kl theori cf 7 13 14 for
+exampl the marchenko equat is somewhat more complic from an oper point
+of view and we onli suppli here a few oper formula see eg 12 for a more relax
+12
+robert carrol
+univers of illinoi urbana il 61801
+present with a more classic touch first cf z27 one note that for dp p d
+and dq
+q d one can write for pq
+pq cpq the formula
+331
+y x
+p x
+2
+p x
+p xq
+yd y x
+2
+p
+q
+y xd
+indic nice the role revers between x and y in particular one can show that under
+x 12 p xq yd
+p xy q y and y
+suitabl hypothes z28 b
+and b q f p bf
+for certain
+as well as cf 322 z29 b p f q bf
+p q one can also gener transmut act on suitabl function via kernel of
+x 12 q yp xcp d which can be put in the
+the form z30 y
+q
+p
+xd for a full line theori here we note
+form z31 y x 12
+without discuss that for suitabl oper z32 cp cp p x p x
+p x p x while p p ap and p p ap see 7 for detail
+and discuss the kl type invers ha the form f qf here
+f x
+332
+1
+2
+fq
+xd
+there is more discuss of kl type invers in 7 12 13 14 we note also that an
+is obtain via the kernel
+invers b to b
+1
+x y
+333
+p xq
+yd
+2
+now the kernel for the marchenko equat will involv term sq cq cq
+334
+st x
+jt x t x
+here z33 jt x 12
+335
+1
+2
+1
+2
+sq p tp xd
+ap tp xd x t m t x
+p tp xd
+1
+y
+2
+now one can defin
+1
+p q yd
+cq
+0 for y here b
+bh where
+and y
+336
+hx s
+1
+2
+cp p
+sp xd
+cq
+the ingredi are now in place but not motiv see 7 12 13 14 for motiv
+exampl and further develop abstractli now the idea of the marchenko equat
+via b
+one obtain first b
+bh
+and then the gener extend
+is to relat b and b
+where from 328 b
+ah
+marchenko equat is z34 b bh b ah bh
+1
+1
+a
+a and h x s hs x note also z35 at
+x
+a
+ba b ba
+b
+p
+p
+1
+1
+1
+ha
+x tw where w
+further z36 b b hah
+remark on quantum transmut
+13
+x 0
+kernel s j and we note that the classic scatter theori result emerg from y
+for x y in the form
+337
+t st x jt x y
+x
+0 y
+tst x m t xdt
+y
+y
+cf 7 12 for more on relat to scatter theori one can discuss here also upperlow
+oper factor and a parallel structur for gl and marchenko equat cf 7
+and refer there in fact for suitabl oper one can think of w
+as
+gl data and w 1 as marchenko data
+we conjectur that much of thi machineri can be rephras in a qanalysi form and
+in thi direct we go next to some basic materi concern the quantum plane slq 2
+andor glq 2 plu differenti calculu a la wesszumino eventu one then would
+look for a complet qgroup formul and connect to quantum tau function etc
+as mention in section 1 we will onli make preliminari remark toward implement
+in thi paper but will tri to give enough of the appropri quantum group framework to
+make further develop natur
+4 some qcalculu
+for our purpos the most attract approach to qcalculu follow 17 18 61 67
+72 73 start with a quantum object the heisenberg algebra and build a differenti
+calculu around it subsequ construct the associ quantum group quantum
+plane integr etc we will sketch some of thi here follow the superb exposit in
+73 to which we refer for detail and a more thorough treatment cf also 5
+41 the heisenberg algebra the qdeform heisenberg algebra hq ha relat
+41
+q 12 xp q 12 px i p qp x q 1 x q 1 q r
+where x and p posit and momentum are selfadjoint as oper give real eigenvalu
+and a complet set of eigenfunct thu we want a algebra and an antilinear involut
+aa
+in the algebra correspond to in an oper represent for thi one need
+1
+to extend the algebra 41 by conjug element x
+x p p q q and
+1
+m
+n
+is unitari plu x then order monomi z37 x m n z form a basi of the
+algebra and p i1 x1 q 12 q 12 1 where q q 1 q 1 note from 41
+there result
+42
+xp i1 q 12 q 12
+px i1 q 12 q 12
+then the algebra can be repres as z38 hq the associ algebra freeli gener
+by p x x1 1 and their conjug modulo the ideal gener by the relat 41
+1
+x
+x p p and
+at the algebra level a field is an element of the subalgebra gener by x and x1
+complet by formal seri ie z39 f x x x1 ax then one ha pf x
+14
+robert carrol
+univers of illinoi urbana il 61801
+gxp iq 12 hx from the algebra where g and h can be comput from 41 now defin
+the deriv z40 ax ax by f x hx sinc the monomi xm m z and
+43
+q m q m
+q m1 q m3 q m1
+q q 1
+xm mxm1 m
+we see that x1 is not in the rang of and ker constant similarli one can defin
+map l l1 ax ax onto as follow algebra one can write z41 f x
+jx and 1 f x kx1 so defin
+44
+lf x jx l1 f x kx lxm q m xm l1 xm q m xm
+now the element x x1 ax also defin map ax ax in the obviou manner and
+therebi form an algebra
+45
+lx q 1 xl l ql q 12 x q 12 x q 12 l
+homomorph to the algebra 41 with the identif z42 l x x iq 12
+p without ani bar oper be defin on l or one verifi directli from the
+definit of l l1 and that
+1
+1 x1 l1 l xm q m q m xm1 mxm1
+46
+m
+which agre with x from 43
+next one determin a leibnitz rule for depend on the action of l and l1 on
+the product of field thu it is easili check that z43 lxn xm lxm lxn and
+l1 xn xm l1 xm l1 xn lead to lf g lf lg and l1 f g l1 f l1 g
+for map x x1 one ha evid z44 xf g xf g f xg and x1 f g f x1 g
+think of formal power seri and one obtain a leibnitz rule for name via the two
+calcul
+47
+f g 1 x1 l1 lf g 1 x1 l1 f l1 g lf lg
+f g 1 x1 l1 lf l1 g 1 x1 lf l1 g
+lf 1 x1 l1 lg 1 lf x1 l1 g
+sinc f and g commut there result
+48
+f g f l1 g lf g f lg l1 f g
+further for a green theorem one comput
+f l1 g 2 f g l1 f l1 g l1 f g l1 f l1 g f 2 g
+49
+2 f g f 2 g f l1 g l1 f g
+an indefinit integr is defin as the invers of first note recal x1 is not in the
+rang of and c 0
+x
+410
+xn
+1
+xn1 c
+n 1
+remark on quantum transmut
+15
+use 46 one ha now formal 1 l1 l1 not defin on x1 and a simpl
+check show agreement with 410 on xn with c 0 lead to
+1 f x
+411
+0
+l2 lxf x
+l2 l1 xf x
+0
+one use the first or second seri depend on which converg again thi check on
+x
+f f c and combin thi with 48 give
+f xn thu by definit z45
+integr by part in the form
+x
+x
+f g f g c
+412
+f l1 g
+x
+x
+f g f g c
+x
+lf g or
+x
+f lg
+l1 f g
+at thi point in 73 a time variabl for field is introduc in the algebra with t t
+to produc an algebra axt in which schr
+oding and kleingordon equat are defin
+along with other field equat lead to gaug theori in a pure algebra context
+with covari deriv exterior form differenti connect curvatur etc we
+postpon thi momentarili in order to describ qfourier transform integr and the
+correspond natur hilbert space of l2 type
+one is look for good represent space for ax where x and p can be diagon
+and with explicit formula between x and p base a natur choic is eg the sinq and
+cosq function or other special qfunction and fourier transform or correspond eigenfunct transform from which one can hope produc transmut
+kernel in the spirit of section 2 and 3 in thi respect we will natur be look for the
+natur distribut like gener as we go along in order to achiev suitabl pair
+of qeigenfunct etc we sketch first some of the qfourier theori from 73 cf also
+44 defin
+413
+x2k q k
+sinq x
+1
+2k 2k
+1k
+k
+cosq x
+0
+q 1
+0
+x2k1 q k1
+2k 1 2k1
+q 2k2k1
+q
+these function satisfi note 1
+qq 2k 2k 1
+1
+1
+414
+sinq x sinq q 2 x cosq x
+cosq x cosq q 2 x q 2 sinq q 2 x
+x
+x
+and 414 in fact determin sinq x and cosq x up to an overal normal note
+that 414 correspond to the usual deriv formula for sine and cosin now sinq x
+and cosq x each form a complet and orthogon set in the follow sens one defin a
+qfourier transform for suitabl function gq 2n defin on lattic point q 2n n z via
+415
+q 2n cosq q 2n gq 2n
+gc q 2 nq
+q 2 cosq q 2n
+gc q 2
+gq 2n nq
+16
+robert carrol
+univers of illinoi urbana il 61801
+with q 1
+416
+q 2n gq 2n 2
+q 2
+gc q 2 2 nq
+0
+1 q 221
+1 q 41
+similarli
+q 2n sinq q 2n gq 2n
+gs q 2 nq
+417
+q 2 sinq q 2n
+gs q 2
+gq 2n nq
+q 2n gq 2n 2
+q 2
+gs q 2 2
+note x q 2n 0 further
+418
+q 2
+nq2
+cosq
+sinq
+q 2n
+cosq
+sinq
+q 2m q 2n nm
+and one ha relat z46 cosq xcosq qx q 1 sinq xsinq q 1 x 1 cf 73 for detail from 418 we see that cosq q 2n and sinq q 2n must tend to zero for n
+howev one note that cosq q 2n1 and sinq q 2n1 diverg for n and thu although
+cosq x and sinq x diverg for x the point x q 2n are close to the zero of cosq x
+and sinq x and for n tend to these zero such that the sum in 418 is converg
+one can also consid these function as a field ie as element of ax and appli in the
+form 46 to get
+419
+cosq kx
+11
+cosq qkx cosq q 1 kx
+x
+and set y qkx in 414 thi lead to z47 cosq kx k1qsinq q 1 kx
+similarli sinq kx kqcosq qkx thi show that
+420
+2 cosq kx
+k2 q
+k2
+2
+co
+kx
+sin
+kx
+sinq kx
+q
+q
+q2
+2
+and one note also cf 17
+421
+cosq x
+1
+q
+lsinq x sinq x l1 cosq x
+q
+in order to produc an analogu of distribut pair which were use extens in
+develop the oper theori of section 3 one should now think of fourier transform
+such as 415 but defin on a specif class of function g correspond to d c0 or
+the schwartz space s of rapidli decreas function and then extend matter by dualiti
+as in distribut theori the basic here have alreadi been develop in 62 and are use
+below cf section 5 we omit here discus of represent and l2 space from 73
+which becom quit complic thi will be examin in 5
+remark on quantum transmut
+17
+42 heisenberg in higher dimens now for quantum group and the r matrix we
+follow 73 cf also 5 17 18 50 54 65 66 69 72 and we will expound at more length
+in 5 as a 2dimension model consid matric
+422 t
+a b
+c d
+ab qba ac qca ad da bc bc cb bd qdb cd qdc
+where q c q 0 and q q 1 note detq t ad qbc is central ie commut
+with a b c d one consid the free associ algebra gener by 1 a b c d modulo
+the ideal of relat 422 and in thi algebra a formal power seri are also allow if
+detq t 0 one say t glq 2 and if detq t 1 then t slq 2 thi is equival to
+other author with q q 1 the relat have veri nontrivi consequ in particular
+they allow an order of the element a b c d one could decid to order monomi of
+degre n via a choic ak b cm dp for exampl with n kmp then it turn out that the
+monomi of a given degre with such order are a basi for polynomi of fix degre
+poincar birkhoffwitt pbw that the algebra a ha the pbw properti follow from
+the fact that it can be formul with the help of an r matrix thu the relat 422
+ij k
+k where the indic take valu
+can be written in the form z48
+rk
+tr ts
+tki tj rr
+1 and 2 r can be written in the form
+q 0 0 0
+0 1 0
+r
+423
+0 1 0 0
+0 0 0 q
+the row and column are label by 11 12 21 and 22 as an exampl consid
+424
+12 i j
+rij
+t2 t2
+ij
+ti1 tj2 r22
+t21 t22 t22 t21 qt21 t22
+which is bddb qbd bd qdb the relat z48 are call rtt relat there are
+16 of these reduc to the 6 relat of 422 sinc r matric are a defin properti of
+quasitriangular hopf algebra or quantum group lead to braid etc the pbw properti
+seem to be anoth way to character thi in ani case there are far reach consequ
+eg from the rtt relat follow cf 73 for detail z49 tj
+trj tr which is
+ij
+k further for
+tki tj rr
+compat with the rtt relat z50
+rk
+trk ts
+an antipod s one enlarg the algebra by the invers of detq t to obtain st t 1 cf
+5 69
+425
+t 1
+1
+detq t
+d q 1 b
+qc
+a
+for the counit one take t id and we have a quasitriangular hopf algebra for more
+detail in thi particular instanc note the characterist equat z51 rqrq 1 0
+where q q 1 are the eigenvalu for r the projector onto the respect eigenspac are
+426
+a
+q
+1
+r q b
+r q 1
+2
+1q
+1 q2
+18
+robert carrol
+univers of illinoi urbana il 61801
+a is a deform of an antisymmetr and b of a symmetr the normal is
+such that
+427
+a2 a b 2 b ab ba 0 1 a b r qb q 1 a
+exampl 41 thi approach can be gener to n dimens with an n2 n2 matrix
+for glq n of the form
+428
+ji
+rk
+ki j 1 q 1ij q q 1 i jkj i
+where i j 1 for i j and zero otherwis the rtt relat z48 now refer to an
+n n matrix t and there are n4 relat for the n2 entri of t it can be shown that the
+t matrix so defin ha the pbw properti comultipl is defin as in z49 and
+the r matrix satisfi the same characterist equat z51 these r matric 423
+ab rcd and in such a situat the transpos matrix
+and 428 are symmetr z52 rcd
+ab
+b
+a
+t tb ta also satisfi the rtt relat z48 cf 73 for a calcul further for
+t glq n one ha t glq n but for q 1 t 1 t 1
+given now some quantum group one look at their comodul which are refer to as
+quantum plane cf also 50 we give result here onli for two dimension situat
+and refer to 5 73 for the gener situat for glq n with a r q cf 426
+ij k
+one ha z56 xi xj 1q rk
+x x and in two dimens thi reduc to the condit
+z57 x1 x2 qx2 x1 the relat z56 can be gener to the situat of two or
+more copi of quantum plane eg x1 x2 and y 1 y 2 and the relat z58 xi y j
+ij k
+q rk
+y x are consist ie they have the pbw properti for arbitrari 0 and
+they are covari for n 2 z58 becom
+429
+x1 y 1 y 1 x1 x1 y 2
+2 1 1 2 2 1 1 2 2 2
+y x
+y x x y y x x y y 2 x1
+q
+q
+q
+consist can be check directli cf 73 one can also conclud that 429 doe not
+gener new relat and therefor the pbw properti hold thi can be done more
+systemat by start from a gener r matrix and consid three copi of quantum
+plane x y z the covari relat are z59 xy ryx yz rzi xz rzx indic
+as in z58 one demand that a reorder of xyz to zyx should give the same result
+independ of the way in which thi reorder is achiev there are two independ
+way to do thi and their equival lead to the quantum yang baxter equat qybe
+i
+i
+which can be formul by introduc n3 n3 matric z60 r12j
+rji11ij22 ji33 and r23j
+i1 i2 i3
+6
+j1 rj2 j3 and the qybe is then z61 r12 r23 r12 r23 r12 r23 there are n equat
+for n4 independ entri of the r matrix it can be check that the matric 423 and
+428 satisfi the qybe
+anoth algebra structur on comodul is obtain by gener the leibnitz rule
+z65 xi xj ij xj xi one demand that the algebra gener by the element
+of the quantum plane algebra xi and the deriv i modulo proper ideal have the
+pbw properti in addit one show that there is an exterior dc base on these quantum
+jk
+properti begin with an ansatz z66 i xj ij ci
+xk and use qybe and
+remark on quantum transmut
+19
+covari idea one arriv at deriv rule consist with the quantum plane relat
+for slq 2 one ha z75 r qb q 1 a and r1 q 1 b qa cf 427 which impli
+c qr or c 1 q 1 r1 there are then two solut with the desir properti and
+one conclud that
+430
+r1 jk x k
+i xj j
+qrjk x k or i xj j q 1
+i
+i
+i
+i
+are two possibl to defin a covari deriv on a quantum plane consist with the
+defin relat of slq n quantum plane in summari one ha for the algebra base on
+the r matrix 423 for slq 2
+ij k
+3 xi xj q 1 rk
+x x x1 x2 qx2 x1
+j
+jk
+j
+4 i x i qri x k 1 x1 1q 2 x1 1 qx2 2 1 x2 qx2 1 2 x1 qx1 2 2 x2
+1 q 2 x2 2
+dc q 1
+5 a b q 1 c d rba
+1 2
+2 1
+j
+jk k
+j
+1
+1
+1
+6 i x i q
+r i x 1 x 1q 2 x1 1 1 x2 q 2 x2 1 2 x1 q 1 x1 2
+1 q 2 x2 2 q 1 x1 1 2 x2
+dc
+1 2 q 1 2 1 a b q rcd d c 1 1 q 2 1 1 1 2
+7 a b q 1 c d rba
+ba
+q2 1 2 1 q1 2 q2 1 2 2 q 2 2 2
+there is also an exterior dc base on these quantum deriv involv
+431
+d2 0 df g df g f dg ddxi dxi d
+we can now deal with the entir algebra gener by xi dxj and modulo the respect ideal for thi purpos the dx j relat have to be specifi and we provid he
+xdx relat for slq 2 via
+432
+dx1 x1 q 2 x1 dx1 dx1 x2 qx2 dx1 q 2 1x1 dx2
+dx2 x1 qx1 dx2 dx2 x2 q 2 x2 dx2
+i and xi xj x
+j x
+i the lower index is for
+next one add a conjug via w1 xi x
+conveni and for n 2 the explicit x
+y relat are take 1
+433
+x1 y1 y1 x1 q
+y2 x2 x1 y2 q y2 x1 x2 y1 q y1 x2 x2 y2 y2 x2
+the yx
+relat follow from 429 by conjug for the entri of t and t as defin
+by 422 and it conjug the relat are
+a
+a
+aa
+a q
+cc ab q 1ba dc
+434
+c q
+ca ad da
+q
+b
+a q 1 a
+b
+cd bb bb q
+aa dd
+cc b
+c cb
+2
+bd q db q ca c
+a q
+ac cb bc c
+c cc cd q 1 dc
+q
+d
+aa
+d db qbd q 2 ca d
+c q 1 cd dd dd
+cc
+it is possibl to identifi t with t 1 and we get the quantum group uq n or for detq t 1
+the quantum group suq n for n 2 again
+435
+t
+a b
+c d
+t 1
+d
+q 1 b
+qc
+a
+20
+robert carrol
+univers of illinoi urbana il 61801
+and one find w9 a
+d b qc d a and c q 1 b it can be verifi directli that
+w9 is consist with 434
+43 qdeform heisenberg algebra the canon commut relat here are
+w12
+x p i with self adjoint x
+and p and a physic system is defin via a represent of thi algebra in a hilbert space in l2 like space one ha x
+x and p ix
+now w12 will be chang in accord with quantum group consider it is natur
+to assum that x
+is an element of a quantum plane and p should be a deriv in thi
+plane the simplest exampl is suggest by equat in 37 in section 4 abov and one
+is led to consid the algebra involv w13 x 1 qx more precis one look at
+the algebra gener by the element x and modulo the relat w13 if one assum
+q 1 q 1 x
+x
+x then i cannot be selfadjoint sinc from w13 one ha w14 x
+and in gener will be relat to rather than to cf 37 again thu one could
+studi the algebra gener by x and modulo w13 w14 and an ideal gener by relat these can be found by an argument as befor cf z81 and use
+thi is consist but if we tri to defin
+w13 w14 one arriv at w15 q
+the x p relat do not close howev can be relat to
+an oper p i2
+and x in a nonlinear way via the scale oper and one ha
+436
+q 12 1 q 1x x qx q 1
+the scale properti follow from w13 we now defin w16 q 12 1 and
+1 is defin by an expans in q 1 lead to
+437
+q 1 q 1 x
+q
+x
+compar thi with w14 and w15 it follow from w16 and 437 that conjug
+conjug
+in the x algebra can be defin by w17 x
+x q 12 1
+1
+and use w17 show that w18 so is unitari which justifi the factor
+q 12 in the definit of the exist of a scale oper and the definit of
+conjug via w17 seem to be veri specif for the x algebra w13 it is howev
+gener in the sens that a scale oper and a definit of conjug base on it can
+be found for all the quantum plane defin by soq n and soq 1 n the definit of
+the qdeform heisenberg algebra will now be base on the definit of the momentum
+which is selfadjoint there result then
+given by p i2
+438
+1
+q 12 xp q 12 px i1 x qx p q 1 p p p x
+x
+these algebra relat can be verifi in the x represent where the order x
+monomi form a basi one take 438 as the defin relat for the qdeform
+heisenberg algebra without make further refer to it x represent
+a nice continu of the wesszumino calculu 72 is develop in 61 assum the
+ij k
+quadrat commut relat for the coordin are given by w19
+pk
+x x 0
+where r p r with p a project cf 63 72 then the action of the deriv is
+given by
+439
+i xj ij 1
+jk
+ri
+x k
+remark on quantum transmut
+21
+one check that thi formula is covari under the correspond quantum group eg
+glq 2 and consist with the relat z3 the isomorph to follow now are
+base on the decomposit of the ring of qdifferenti oper into the tensor product
+of ring dif fq2 1 where dif fq2 1 is the ring gener by x and q obey the relat
+w20 q x 1 q 2 x q an isomorph of dif fq2 1 with the ring of usual differenti
+oper in one variabl can be attain via
+440
+q
+1 e2hx 1
+q eh
+x q2 1
+x
+note here exp2hxf x f x2hx f 12hx f q 2 x sinc q 2 exp2h 12h
+but 440 is not the same as w21 dq2 f x f q 2 xf xxq 2 1 and w21 will
+seem to be a more natur isomorph later in the gl case the commut relat
+for the coordin are w22 xi xj qxj xi i j and the scheme abov give then
+441
+i xj qxj i i j i xi 1 q 2 xi i q
+xj j
+ji
+where q q 1 now introduc the quantiti w23 k 1 q jk xj j and
+then one can rewrit 441 in the form w24 i xi i xi i if i were a number one
+could remov it by renorm the deriv but sinc it is an oper one can use the
+follow simpl commut relat
+442
+i xj xj i i j i xj q 2 xj i i j
+i j j i i j i j q 2 j i i j
+thi impli that w25 i j j i note that in the one dimension exampl one
+could write 1 qx q for the oper satisfi w20 and then x q 2 x with
+q q 2 q in term of classic variabl one would have exp2hx which explain
+the multipl natur of now one can defin w26 x i i 12 xi and di
+qi 12 i use the multipl properti 442 one can rewrit w24 in the new
+variabl w26 now in a form which doe not contain i actual the transform
+w26 give even more name
+443
+x i x j x j x i di dj dj di di x j x j di i j dj x j 1 q 2 x j dj
+thu the relat 441 are complet untangl by the transform w26 and the
+whole ring of qdifferenti oper becom just the tensor product of ring dif fq2 1
+lead to the result that dif fglq n dif f n which is the ring of classic differenti
+oper in n variabl note also dif fq2 1 dif fq2 1 via q q12 q and y
+12 x lead to q y 1 q 2 yq
+5 fourier transform and distribut
+we go here to 62 64 cf also 33 43 44 67 where a fourier theori is develop along
+the line of classic distribut theori cf 8 16 one deal here with a q 2 theori
+which in view of construct in 73 cf section 4 should be easier to control a rather
+22
+robert carrol
+univers of illinoi urbana il 61801
+full exposit is given here from 62 in view of the import of thi subject thu
+defin cf 621624
+n
+m
+51
+q2
+and for z 1
+eq2 z
+52
+0
+53
+cosq2 z
+q 2 q 2 n
+a qn
+q 2 q 2 m q 2 q 2 nm
+zn
+1
+eq2 z
+2
+2
+q q n
+z q 2
+1
+n1
+1
+0
+0
+n0
+aq j n 1
+q nn1 z n
+z q 2
+q 2 q 2 n
+1
+1
+eq2 iz eq2 iz sinq2 z eq2 iz eq2 iz
+2
+2i
+1
+1
+cosq2 z eq2 iz eq2 iz sinq2 z eq2 iz eq2 iz
+2
+2i
+2nn1 z n q 2 q 2
+there is also a basic hypergeometr seri w27 0 1 0 q 2 z
+n
+0 q
+and one show that
+1
+eq2 z 2 2
+q q
+54
+0
+1k q kk1
+q 2 q 2 k 1 zq 2k
+lead to
+55
+cosq2 z
+sinq2 z
+1
+2
+q q 2
+z
+2
+q q 2
+0
+0
+1k q kk1
+q 2 q 2 k 1 z 2 q 4k
+1k q kk3
+q 2 q 2 k 1 z 2 q 4k
+it follow that for z q real
+cosq2 z
+56
+q 2 q 2
+zq 2 q 2
+sin
+2 z
+q
+1 z 2 q 2 q 2
+1 z 2 q 2 q 2
+further w28 cosq2 z 1 and sinq2 z z and one ha use for the function
+57
+2
+qz q 1 q
+1
+sinq2 1 q 2 q 2m z
+z 1 q 2
+2m
+zq z 1 q 2m
+satisfi q 2k z z for z 0 and z q1 q 2 z q in thi respect one ha
+58
+z
+1 q2
+q 2 q 2
+1 q2
+q 2 q 2
+k0
+k0
+1k q kk3
+q 2 q 2 k
+1k q kk1
+q 2 q 2 k
+1 q 2 zq 2m
+1 1 q 2 2 z 2 q 4mk
+m
+1 q 2 zq 2m
+q1 q 2 z q
+1 1 q 2 2 z 2 q 4m
+remark on quantum transmut
+23
+note also w29 0 1 q1 q 2 q then for an arbitrari integ m 0 one ha
+2
+59
+1 q z
+mm
+q 2m cosq2 1 q 2 q 2m z sinq2 1 q 2 q 2m z
+1 q 2 z
+mm
+q 2m sinq2 1 q 2 q 2m z 1 cosq2 1 q 2 q 2m z
+one defin now for f a cz z 1 formal laurent seri z f z z 1 1
+q 2 f z f q 2 z lead to
+zk z n
+510
+q 2 q 2 n
+z nk
+q 2 q 2 nk 1q 2 k
+0
+zk z n1 1k q k2nk1
+0kn
+kn
+q 2 q 2 nk
+z nk1
+q 2 q 2 n 1 q 2 k
+now the q 2 jackson integr is defin as cf section 6 for some background
+511
+iq2 f
+dq2 zf z 1 q 2
+q 2m f q 2m f q 2m
+definit 51 the function f z is local q 2 integr if the q 2 integr
+b
+512
+a
+2
+dq2 zf z 1 q
+0
+q 2m bf bq 2m af aq 2m
+exist for ani finit a b ie the seri in 512 converg f z is absolut q 2 inter
+2m f q 2m f q 2m converg
+if the seri
+q
+let now b be the algebra analog to a but gener by s s1 with zs q 2 sz defin
+differenti in b via w30 s s s q 2 ss1 1 q 2 one denot by ab
+the algebra with gener z z 1 s s1 and the q 2 differenti w31 zs q 2 sz z s
+q 2 sz s z q 2 zs and z s q 2 s z one consid ab as a left modul under the left
+action of a by multipl and a right modul under the action of b in order to defin
+a q 2 integr on ab one order the gener of the integrand so that z stay on the left
+while s stay on the right for exampl if f z ar z r then w32 f zs ar zsr
+ar q rr1 z r sr for conveni one write w33 gz ar z r sr if gz
+ar z r
+then for exampl one will have w34 eq2 i1 q 2 zs eq2 i1 q 2 zs one can now
+calcul
+q2
+w35
+w36
+dq2 zz 1 eq2 i1 q 2 zs 2i see w29
+dq2 zzeq2 i1 q 2 zs 2i0 s1 use 59 and 56
+let sq2 x be the space of infinit q 2 differenti rapidli decreas function
+w37 xk x x ck q for k 0 0 let s be the space of c function in the
+24
+robert carrol
+univers of illinoi urbana il 61801
+classic sens so w38 xk x ck for k 0 then s sq2 to see thi let
+x1 x2 xk be the separ differ of order k so for an arbitrari integ 0
+q 2 x q 22 x x
+513
+q 2 q 2
+x
+1 q 2 x
+on the other hand if x is time differenti in the classic sens one ha
+q 2 x q 22 x x
+514
+1
+q 2 x x
+it follow that
+x x
+515
+1 q 2
+q 2 q 2
+and therefor from w38
+xk x x
+516
+1 q 2
+ck
+q 2 q 2
+definit 52 the skeleton z
+of z s2 is the set of evalu of z on
+q 2n n 0 1 the
+the lattic gener by the power of q ie w39 z
+space of skeleton is denot by sq2 and a basi in thi space is gener by
+1 z q 2n
+n z
+0 z q 2n
+n z
+517
+so that z
+by that in sq2
+an n z
+1 z q 2n
+0 z q 2n
+bn
+n z for ani sq 2 the topolog in sq 2 is induc
+let lq2 be the linear map from sq2 to sq2 defin by the evalu of function at
+the vertic of the lattic then w40 sq2 sq2 kerlq2 let z q 2 z and
+then w41 z q 2 z with z q 2 z the oper and z are well defin on
+sq2 sinc w42 lq2 lq2 and z lq2 lq2 z moreov the q 2 integr vanish on
+the function from kerlq2 and is therefor well defin on the quotient in w40 one
+will now occasion write in the q 2 integr an element from sq2 assum that it is a
+2 one ha w43 dq2 zz z
+0
+repres from the quotient then if z
+sq
+which follow from w30 w37 and 511 via
+518
+dq2 zz z
+2m
+2m2
+2m q
+2m2 q
+q
+q
+2m
+2m q
+limm q
+0
+from thi follow now a q 2 integr by part formula for k 0
+519
+k z
+dq2 z
+1k q kk1
+z
+q
+2k z
+dq2 zzk z
+remark on quantum transmut
+25
+definit 53 a q 2 distribut f over sq2 is a continu linear function f
+sq2 c and the space of such distribut is denot by sq 2 a sequenc fn f sq2 if
+for ani sequenc sq2 one ha fn f distribut determin by
+520 f
+dq2 z fzz 1 q 2
+q 2m fq 2m 2m fq 2m q 2m
+are call regular from 519 and n18 one can introduc q 2 differenti in sq 2 via
+w44 z f q 2 f z
+exampl 51 some exampl of q 2 distribut are as follow
+q2
+521
+q2
+0
+1 q 2
+dq2 z z
+q 2m q 2m
+0
+1 q 2
+dq2 z z
+q 2m q 2m
+thu q2 and q2 correspond to function w45 q2 z
+z
+and q2
+n
+522
+n z
+q2 0 limm
+q 2m q 2m
+2
+one can also show easili that w46 z q2 z q2 z 2q2 z
+for arbitrari k 0
+523
+z k1 1k q kk1
+1 q 2 k
+q 2 q 2 k
+1 q 2 k
+zk z 1 z
+q 2 q 2 k
+zk zzq2m zk zzq2m
+for arbitrari 1
+524
+z
+0
+1 q 2
+dq2 za z
+q 2m1 q 2m
+and sinc for ani k 0 one ha w47 zk z 1k q k2k1 q 2 q 2 k 1
+q 2 k z k one defin
+525
+k
+z
+1 q 2 k1
+q 2 q 2 k
+q 2m1 zk zzq2m
+26
+robert carrol
+univers of illinoi urbana il 61801
+similarli for an arbitrari 1
+0
+z
+526
+1 q 2
+dq2 zz z
+and for arbitrari k 0
+527
+k
+z
+q 2 k1
+1
+q 2 q 2 k
+k 1
+q 2m1 q 2m
+q 2m1 zk zzq2m
+q2
+let s s gener by a similar class of function to those in sq2 with s z relat
+as the gener in ab introduc the same kind of topolog via w48 sk s s
+ck q for k 0 and defin the map
+528
+l
+f
+2
+q2
+q2
+sq2 sq2 s q fq2 z
+dq2 zz0 1 0 q 2 i1 q 2 q 2 zs
+cf w27 thi is the q 2 fourier transform and in the follow one sometim discard
+2
+the lq2 notat for the invers and continu look at the dual space of skeleton sq and
+the map
+1
+529
+eq2 i1 q 2 zssdq2 s
+f1
+s
+q2
+20
+2
+where f1
+sq sq2 consid the diagram
+q2
+l
+q2
+sq2 sq2
+f
+f1
+2
+q
+q2
+l
+where it is shown that
+530
+2
+2
+q2
+sq s q
+2
+2
+l s q sq2
+fq2 lq2 sq2 s q f1
+q2 q2
+are topolog isomorph similarli the map
+531
+l 2 f 2 sq2 sq2
+lq2 f1
+q2 q q
+and lq2 fq2 lq2 f1
+are ident map to see thi one write
+q2
+532
+dq2 zeq2 i1 q 2 z0 1 0 q 2 i1 q 2 q 2 zs
+2
+1q 2 0
+0
+s1
+s1
+in accord with the definit of q 2 integr the integrand must be order and it follow
+from 52 w27 and w31 that w49 0 1 0 q 2 i1q 2 q 2 sz eq2 i1q 2 zs
+lead to w50 dq2 zeq2 i1 q 2 z eq2 i1 q 2 q 2 zs use then 52 one obtain
+533
+z eq2 i1 q 2 z eq2 i1 q 2 zs
+ieq2 i1 q 2 z eq2 i1 q 2 q 2 zs 1 s
+remark on quantum transmut
+27
+henc if s 1
+dq2 zeq2 i1 q 2 z eq2 i1 q 2 q 2 zs
+534
+i1 s1
+dq2 zx eq2 i1 q 2 z eq2 i1 q 2 zs
+use 53 56 and w28 one show that thi vanish while if s 1 one get the valu
+21 q 2 1 0 cf 57 and w29 next one prove that
+eq2 i1 q 2 zseq2 i1 q 2 q 2 sda2 s
+535
+2
+1q 2
+z1
+z1
+0
+further
+536
+fq2 q 2 1 fq2 fq2 z isfq2 fq2 z iq 2 1 s fq2
+s iz f1
+f1
+i1 zf1
+f1
+q 2 1 f1
+f1
+q2
+q2
+q2
+q2 s
+q2
+q2
+thi is straightforward use
+537
+0 1 0 q
+2
+i1 q 2 q 2 zs
+eq2 i1 q 2 q 2 zs eq2 i1 q 2 zs eq2 i1 q 2 zs
+z eq2 1 q 2 az a eq2 1 q 2 aq 2 zs s
+538
+s eq2 1 q 2 az az eq2 1 q 2 aq 2 zs
+z eq2 1 q 2 az a eq2 1 q 2 az s
+s eq2 1 q 2 az az eq2 1 q 2 az
+final one can prove 530531 first from 536 one ha
+fq2 z k z z ik q 2k 1 s k s fq2 z
+539
+and on the other hand
+k
+540
+1j q jj1
+sk s 1k q k2k1
+j0
+q 2 q 2 j
+1 q 2 kj
+k
+j
+q2
+skj sj
+henc if z satisfi w37 then it imag fq2 z satisfi w48 thi mean that the
+2
+is
+imag of converg sequenc in sq2 converg in sq and a similar statement for f1
+q2
+prove in the same manner use 536 next consid the action of the fourier oper
+on the basi
+541
+x n s f1
+fq2
+fq2 f1
+n z n z
+q2 n
+q2
+take eg
+fq2 f1
+s
+q2 n
+1
+20
+dq2 z
+eq2 i1 q 2 zn dq2
+0 1 0 q
+2
+i1 q 2 zs
+28
+robert carrol
+542
+1 q 2 2n
+q
+20
+univers of illinoi urbana il 61801
+dq2 zeq2 i1 q 2 q 2n z0 1 0 q 2 i1 q 2 q 2 zs
+1 q2
+dq2 zeq2 i1 q 2 z0 1 0 q 2 i1 q 2 q 2n2 zs
+20
+it follow from 532 that
+fq2 fq1
+2 n s
+543
+1 s q 2n
+0 x q 2n
+and one arriv at 541 use 535 for the second equat
+definit 54 the q 2 fourier transform of a q 2 distribut f sq 2 is the q 2 dis2
+2
+tribut g sq defin via g f where sq2 is arbitrari and sq
+is it q 2 fourier transform
+suppos that zf z is absolut q 2 integr for the q 2 distribut f and let z
+then
+s
+f1
+q2
+544
+f
+1
+20
+1
+20
+dq2 z fz
+eq2 i1 q 2 zssdq2 s
+dq2 zf zeq2 i1 q 2 zssdq2 s g
+thi mean that the q 2 distribut g gs 120 dq2 zf zeq2 i1 q 2 zs similar
+calcul lead to the follow relat in the space of q 2 distribut
+545
+fq2 q 2 1 fq2 fq2 z i1 sfq2 fq2 z is fq2
+fq2 1 q 2 1 fq2 1 fq2 1 s izfq2 1 fq2 1 s iq 2 1 z fq2 1
+exampl 52 as exampl consid
+from w35 follow
+fq2 z 1 i sgn iq2 q2
+546
+from 545 546 and w46 one obtain
+547
+fq2 1 fq2 zz 1 is fq2 z 1 s q2 q2 2q2
+548
+fq2 q2
+q2
+i1 q 2
+0
+q 2m sinq2 91 q 2 q 2m s
+from w46 545 and 548 result
+549
+fq2
+is1
+0
+i
+1
+1
+f 2 z q2 q2 1 sfq2 q2 q2
+2 q
+2
+20
+remark on quantum transmut
+29
+from 521 and 548 one obtain
+is1
+1
+q2
+fq2 q2 fq2 q2 q2 1
+2
+20
+550
+is1
+1
+q2
+fq2 q2 fq2 q2 q2 1
+2
+20
+further for n 0 arbitrari
+fq2 z n 2in q nn1
+551
+fq2 z n1 in1
+and cf 62 for proof
+1
+fq2 z
+552
+q 2 q 2 n n
+s q2 s
+1 q 2 n
+q 2 q 2 n n
+s sgn
+1 q 2 n
+eq2 q 2 eq2 q 21
+c s
+c s
+20
+1
+fq2 z
+eq2 q 2 eq2 q 21
+s
+c s
+c
+20
+c
+q 2m q 2m i1 q 2
+1 q 2 1 q 2m 1 q 2 q 2m
+further exampl and calcul can be found in 62
+6 some preliminari calcul
+we go back now to section 3 and tri to construct counterpart for some of the classic
+idea there
+61 background machineri first howev we consid slq 2 with relat 37
+and 432
+x1 x2 qx2 x1 1 x1 1 q 2 x1 1 q 2 1x2 2 1 x2 qx2 1 2 x1 qx1 2
+2 x2 1 q 2 x2 2 1 2 q 1 2 1 dx1 x1 q 2 x1 dx1
+61
+dx1 x2 qx2 dx1 q 2 1x1 dx2 dx2 x1 qx1 dx2 dx2 x2 q 2 x2 dx2
+here x1 and x2 gener a quantum plane v or h slq 2 comodul where slq 2 is
+describ via the r matrix 423 and relat 422 with detq t 1 we will use h
+and a oslq 2 interchang at time see below for more on thi the coaction is
+given by z53 in the form xi tki xk v xi h v note the i transform
+covariantli via i si with s t 1 where tba tab here t1 t 1 sinc for
+slq 2 one ha
+t 1
+d
+q 1 b
+a
+qc
+t
+a c
+b d
+t 1
+d q 1 c
+qb
+a
+30
+62
+robert carrol
+t 1
+univers of illinoi urbana il 61801
+d
+qc
+q 1 b a
+t1
+d
+qb
+q 1 c a
+we could think of the i also gener an h comodul w with w i i h w
+recal also from z49 that tj trj tr and follow 38 p 97 one expect
+a a a b c b a b b d
+63
+c c a d c d c b d d
+eg t21 b so b t11 t21 t21 t12 a b b d as indic we note also the
+agreement of 61 or more gener 35 with the construct in 38 pp 468469 for
+a oslq n for n 2 thi is the hopf algebra a gener by 1 a b c d modulo the
+relat 422 and detq t 1 and we refer to it as the quantum algebra slq n more
+correctli it is the coordin algebra of slq n we recal t id and st t 1 which
+translat into
+64
+sa d sb q 1 b sc qc sd a
+as a left comodul the quantum plane v oc2q obey xi v xi l xi
+tki xk which can be written out as
+65
+l x1 a x1 b x2 l x2 c x1 d x2
+v is also a right comodul of a h via
+66
+r x1 x1 a x2 c r x2 x1 b x2 d
+for complet we specifi the w i abov via
+67
+w 1 s11 i s12 2 d 1 qb 2
+w 2 s21 1 s22 2 q 1 c 1 a 2
+we go next to 38 pp 468469 where particular covari fodc on ocnq are
+discuss the algebra ocnq is defin as in 61 with describ via
+68
+xi dxj qdxj xi q 2 1dxi xj i j xi dxi q 2 dxi xi
+xj dxi qdxi xj i j dxi dxj q 1 dxj dxi i j dxi dxi 0
+69
+xi xj qxj xi i j i j q 1 j i i j i xj qxj i i j
+i xi q 2 xi i 1 q 2 1
+q 1
+xj j
+ji
+and aris by replac q by
+and i j by j i in the formula 6869 note for
+q 1 and are not isomorph and for q 1 they both give the ordinari differenti
+calculu on the correpond polynomi algebra cx1 xn let us summar some
+fact about in
+remark on quantum transmut
+31
+exampl 61 there are two distinguish fodc on oc2q for both calculi the
+set of differenti dx dy is a basi for the right and the left oc2q modul of first
+order form henc for ani z ocq2 there exist uniqu determin element x z and
+y z call partial deriv such that w51 dz dx x z dy y z the bimodul
+structur of are given via
+610 xdi qdi x q 2 1dx y ydx qdx y xdx q 2 dx x ydi q 2 dy y
+ydx q 1 dx y q 2 1di x xdi q 1 dy x xdx q 2 dx x ydi q 2 dy y
+from thi one see that y 2 xdx and x2 ydi are nonzero central element of the
+bimodul and respect recal central mean z z for all z one note also
+that the relat for go into those for if we interchang the coordin x and y and
+q q 1 the partial deriv x and y consid as linear map of ocq2 and
+the coordin function x y act on oc2q by left multipl satisfi the relat
+611 x y qyx y x qxi x x q 2 xx 1 q 2 1yy y y q 2 yy 1
+x y q 2 yx y x q 1 xy x q 2 xx 1 y y q 2 yy 1 q 2 1xx
+from these formula one deriv by induct the express for the action of x and y
+on gener element of oc2q and for polynomi g and h one ha
+612
+x gyhx gqydq2 hx y gyhx dq2 gyhx
+x gxhi dq2 gxhi y gxhi gq 1 xdq2 hy
+we note here that in 67 one point out that rule for i or 61 actual can be regard
+as qdeform leibnitz rule and also in part as qdeform heisenberg relat thu
+consid in for exampl x x q 2 xx 1 and replac q 2 by q for thi illustr
+then x x qxx 1 and with p ix thi becom w52 px qxp i then for
+p i
+p one requir x
+p qp
+x i or x
+p 1qp
+x 1q which involv the introduct
+of a new element x
+into the algebra cf here 436 where wa introduc note as a
+leibnitz rule x x qxx 1 can be relat to 630631 for exampl let us work from
+now and then x q 2 xx 1 q 2 1yy first to deriv x xn nq2 xn1 we have
+x x 1 x x2 q 2 xx x x q 2 1x x x3 q 2 xx x2 x2
+613
+q6 1 2
+x
+q2 1
+n
+n
+0 an x one ha
+q 4 q 2 1x2
+consequ for a polynomi f x
+n
+614
+x f x
+0
+an nq2 xn1 fq 2 x dq2 f x
+as in 640 for leibnitz a simpl calcul give for polynomi f g
+x f g dq2 f g
+615
+f gx f gq 2 x
+1 q 2 x
+gxf x f q 2 x f q 2 xgx gq 2 x
+gxx f x f q 2 xx gx
+1 q 2 x
+32
+robert carrol
+univers of illinoi urbana il 61801
+definit 61 the qweyl algebra aq n is the unit algebra with 2n gener
+x1 xn 1 n determin by the relat 69 d is the unit algebra gener
+by 1 n with i j q 1 j i for i j one can consid a ocnq and d as
+subalgebra of aq n and the set of monomi xk11 xknn im1 nmn as a basi the
+element d xi i aq n is call the euler deriv
+befor go further we want to clarifi the role of uq s2 in term of differenti oper
+cf 25 31 73
+definit 62 follow 38 uq s2 is defin as the unit associ algebra over
+c with gener e f k k 1 satisfi
+616
+kk 1 k 1 k 1 kek 1 q 2 e kf k 1 q 2 f e f
+k k 1
+q q 1
+one can take f k m e n m z n n0 or e n k m f m z n n0 as a vector
+space basi of uq s2 the quantum casimir element
+617
+cq ef
+kq k 1 q 1
+kq 1 k 1 q
+f
+e
+q q 1 2
+q q 1 2
+lie in the center of uq s2 and if q is not a root of uniti cq gener the center
+there is a uniqu hopf algebra structur on uq s2 built upon
+e e k 1 e f f 1 k 1 f k k k sk k 1
+618
+se ek 1 sf kf k 1 e f 0
+one recal that u s2 u g is the tensor algebra t g modulo the two side ideal
+gener by x y y x x y for x y g and here u s2 is gener by element x
+and y with
+619
+y x 2x y x 2x x x y
+x x 1 1 x x 0 sx x
+note that for q exph and k exphh in the limit h 0 616 impli w53 h e
+2e h f 2f e f h correspond to e x f x y h howev thi
+q s2 with
+is not quit adequ for compar uq s2 to u s2 one consid instead u
+1
+1
+1
+1
+gener e f k k and w54 g q q k k satisfi
+620
+g e eqk q 1 k 1 g f qk q 1 k 1 e f g
+q s2 is isomorph to uq s2 via e e f f k k and
+then or q 2 1 u
+1
+g q q k k 1 note g g k k 1 g g 0 and sg g
+q which is exclud for uq and u
+1 s2 is
+further these formula hold at q 1 for u
+consid as the classic limit of uq s2 in fact w55 u1 s2 u s2 cz2 see
+38 for more detail
+it will be use to recal here some relat involv qspecial function and their origin
+remark on quantum transmut
+33
+base on qgroup and qalgebra see especi 26 39 40 43 we will illustr matter
+use sq 2 and slq 2 and onli deal with simpl situat first recal
+621
+a q
+a q
+a q
+aq q
+where a qn 1 a1 aq 1
+622
+aq n1
+0
+1 aq k q 1
+there are ident
+q 12nn1 a1 q 1n qn a1 n a qn
+0
+a qn n az q
+z
+q qn
+z q
+where z 1 and q 1 note also that the binomi symbol in 634 can be written as
+n
+m
+623
+q qn
+q qm q qnm
+q
+there are two qexponenti function name
+624
+eq z
+0
+zn
+1
+eq z
+q qn
+z q
+0
+q 12nn1 z n
+z q
+q qn
+1
+one note that eq zeq z 1 and as q
+eq z1 q expz and eq z1
+q expz defin w56 tq f z f qz and dz z 1 1 tq with dz z 1 1
+tq1 then 1q1 dz and 1q 1 1 dz ddz q 1 while w57 d eq z eq z
+and dz eq z q 1 eq z the basic hypergeometr function is defin via 21 in section 2
+now there are two point of view one can work directli with represent of uq s2
+uq g or with represent of the coordin algebra aslq 2 agq which can be
+consid as a subalgebra of uq g there are represent in term of first or second
+order qdiffer oper involv function of a complex variabl z and we mention first
+cf 26 that sq 2 is gener by
+625
+j j q 1 j j
+1 q 2j3
+j3 j j
+1q
+and redefin w58 j q 12j3 12 j3 j3 thi can be written as
+626
+q 2j3 q 2j3
+j j
+j3 j j
+q q 1
+then eg the represent dq u m0 is character by two complex constant u and
+m0 such that neither m0 u nor m0 u is an integ and m0 1 on the space h of
+finit linear combin of z n n z the gener are realiz as
+627
+j q 12m0 u1
+j q 12mo u1
+z2
+1 q um0 z
+dz
+1q
+1q
+1
+d
+1 q um0
+dz
+tq j3 m0 z
+1q
+1 qz
+dz
+34
+robert carrol
+univers of illinoi urbana il 61801
+the basi vector fm in h are still defin by fm z n for m m0 n and all integ n
+and
+1 q mu
+628
+fm1
+j fm q 12um0 1
+1q
+j fm q 12m0 u1
+1 q mu
+fm1 j3 fm mfm
+1q
+62 qdiffer equat a number of qdiffer equat have been treat in
+the context of symmetri see eg 1 2 13 26 46 47 60 and we mention a few result
+note first that we are primarili concern with wave equat in term of determin
+transmut oper and the wave equat ha a number of peculiar cf 26
+thu recal w56 and note
+629
+dz eq z eq z dz eq z eq z
+dz eq z q 1 eq q 1 z dz eq z q 1 eq z
+set also w59 dq z 1 1 tq2 and dq z 1 1 tq2 so 11 q 2 dz ddz as
+q 1 now consid a wave equat in light cone coordin w60 1 2 0 thi
+0 xm and w0 xm
+ha an infinit dimension symmetri algebra gener by vm
+m
+2 2
+1 1
+k1
+k
+m
+and
+for m z in fact the whole w1 w1 algebra gener by vm x1 1
+k xm k1 for k z map solut of w60 into solut definit of a symwm
+2 2
+metri and w1 without center correspond to u e2 for the qdiffer version
+k1
+k xm d k1 map
+and wm
+w61 d1 d2 x1 x2 0 the element vmk xm
+2
+1 d1
+2
+k gener a qdeform of w
+solut into solut and each set vmk or wm
+1 howev for the equat w62 dt 2 dx 2 t x 0 the situat is quit differ
+there is still an infinit set of symmetri oper involv polynomi or arbitrari degre in t and x time power of dt and dx but a gener express seem elus thi is
+in contrast to solv wave equat t2 x2 0 where there is conform invari in
+t x and t x one note that t x t x t x doe not preserv the exponenti 2dimension lattic and light cone coordin seem more appropri for qdiffer wave
+equat
+in ani event go back to definit 51 if fn a ocnq and gn d are homogen of degre n then
+630
+dfn nq2 fn q 2n fn d gn d nq2 gn q 2n dgn
+where nq2 q 2 11 q 2n 1 the partial deriv i of act on a by the rule
+631
+i fn xn f1 x1 fn qxn fi1 qxi1 dq2 fi xi fi1 xi1 f1 x1
+where the fi are polynomi in one variabl and dq2 is the q 2 deriv
+f x f q 2 x
+f q 2 x f x
+x q2 x
+q 2 1x
+thi would seem to be enough now for make calcul we will look first at possibl
+quantum analogu of the wave equat x2 y2 0 and quantum version of solut
+f x y gx y altern xy yx 0 with solut x y
+632
+dq2 f x
+remark on quantum transmut
+35
+now the rule 631 is appar say that when calcul the action of i on
+function in a one will drop express with j on the right sinc eg j 1 0 then eg
+use 61 1 x2 qx2 1 0 and 1 x1 1 q 2 x1 1 1 while accord to eg 38
+one ha 1 xk1 kq2 x1k1 q 2 11 q 2k 1x1k1 note here also
+q 2k 1 k1
+xk1 q 2k xk1
+2
+x
+kq2 x1k1
+2
+1 q x1
+q 1 1
+dq2 xki
+633
+and thi is consist with x1 1 xk1 kq2 xk1 from 630 in order to comput deriv
+of function like x1 x2 n we recal the qbinomi theorem
+n
+v w
+634
+0
+n
+m
+n
+n
+m
+n
+m nm
+w v
+q2
+0
+n
+m
+v m wnm
+q 2
+q a q a
+nq q nmm
+aq 1q 2q aq aq
+mq n mq
+q q 1
+q2
+from 631 one ha eg 1 xp2 xk1 qx2 p dq2 xk1 qx2 p kq2 x1k1 and we consid
+n
+n
+m
+1 x1 x2 n 1
+635
+0
+n
+n
+m
+0
+n1
+0
+q2
+n
+m
+x2 m x1 nm
+q2
+qx2 m nm n mq2 xnm1
+i
+qx2 m nm
+q2
+q 2nm 1 nm1
+x
+q2 1
+now from 634 one ha
+n
+m
+636
+nq n 1q q nm1m q m
+mq n mq n m 1q
+q2
+and
+n1
+637
+x1 x2 n1
+0
+n1
+m
+n1
+x2 m x1 nm1
+q2
+nm
+0
+consequ
+n1
+638
+1 x1 x2 n
+nm
+0
+q n q n
+q2 1
+n1
+nq q 2m q 2nm 1
+n mq
+q2 1
+q nm q mn
+q n q n
+nm q q nm
+q
+q nm
+q2 1
+n1
+m n
+0
+nq2 x1 qx2 n1
+nmq m q n
+0
+36
+robert carrol
+univers of illinoi urbana il 61801
+similarli
+n
+n
+2 x1 x2 2
+639
+0
+n
+n
+m
+1
+n1
+0
+n
+m
+x2 m x1 nm
+q2
+q 2m
+q2
+q2
+1
+x2 m1 x1 nm
+1
+nq n 1q nmm q 2m 1
+q
+x2 k x1 nk1
+k 1q kq
+q2 1
+2
+q 1
+n1
+nm
+0
+q 2n
+q n q n
+q nk1 q 2k1 1
+q k1 q k1
+1
+x1 x2 n1 nq2 x1 x2 n1
+q2 1
+from thi one conclud we will state proposit in a somewhat formal manner
+proposit 61 let f z
+n
+0
+an z n and dq2 f z fq 2 z
+640
+1 f x1 x2
+an dq2 z n then
+n 1
+n
+fq 2 z
+n
+0
+an nq2 z
+1
+fq2 x1
+n1
+bm z m
+0
+qx2 2 f x1 x2 fq 2 x1 x2
+from thi one comput set gz
+n 1
+bm z m
+0
+in 640
+n 1
+641
+12 f x1
+x2
+q 2 x1
+qx2
+gq 2 z
+bm mq2 z m1
+1
+and consequ
+corollari 61 for a solut of the qwave equat 12 22 0 is given
+by
+642
+x1 x2 f x1 x2 gx1 x2
+next come question of uniqu and boundari condit of cauchi type and surprisingli littl seem to have been done in creat a gener theori of exist and uniqu for qdiffer equat or more gener creat a genuin algebra theori of
+noncommut differ equat see howev 26 37 for some start and cf also
+30 49 befor look at these we want to suggest anoth approach base on 61 cf
+439443 and surround text work with two variabl we have relat 61
+and one write from w23 the relat w63 1 1 q 2 1x1 1 x2 2 and
+2 1 q 2 1x2 2 lead to w24 and w25 then one get 443 and it seem
+possibl to transport result about equat in x i di to correspond result in xi i
+recal dif fgln dif fq2 1 and mean isomorph recal also 440 or better
+w21 to have an isomorph dif f 1 dif fq2 1 thi seem overli complic
+howev and one might better go to anoth isomorph between the ring of classic
+remark on quantum transmut
+37
+and qdifferenti oper due to zumino describ in 61 thu let xic be classic commut variabl and choos some order of the xi noncommut variabl ani
+polynomi p xi is then written in order form and subsequ replac xi by xic
+give give a polynomi p xic determin a symbol map w64 cxi cxci
+which is a noncanon isomorph between the ring of polynomi thi provid a
+d 1 from the ring of qdiffer oper to the ring of clasmap w65 d
+1d
+2 the express for x
+sical differenti oper and w66 d1 d2 d
+i and i will
+determin the rest
+x2 y2 0
+now suppos one ha a solut of a classic wave equat w67 d
+d 1 and we work onli on polynomi here with a fix orthi mean 1 d
+i
+dere for the x while anticip a possibl extens to suitabl formal power seri
+let i denot classic deriv with iq the correspond qdeform deriv so
+643
+y
+2 2 xc yc q 2 q 2 x
+d
+x
+y
+x
+y
+where 1 x y we can use here again 440 or better w21 as the definit
+of iq and thi lead immedi to
+proposit 62 given a fix order of the xi and the correspond isomor 0 with
+phism of w64 if xc yc is the uniqu solut of the cauchi problem d
+y 1 x y is the
+polynomi data xc 0 f xc and yc xc 0 0 then x
+q 2
+q 2
+0 0
+uniqu solut of d x y 0 with x 0 f x and yq x
+the construct of transmut from such cauchi problem is howev not immedi
+becaus of possibl noncommut problem for exampl go back to 31 one
+requir p dx qdi p dx p dx p dx qdi 0 but p q qp in
+gener for a noncommut situat where eg xi xj qxj xi i j q 1 j i for i j
+as in cf 69 and note that w66 doe not stipul d1 d2 d2 d1 let us think of
+i dq2 f as in exampl 51 and use an order y x anm y n xm then 631 appli
+for x1 x and x2 y with xy qyx y x qx y x y qyx y x qxi x x
+q 2 xx 1 q 2 1yy and y y 1 q 2 yy one get
+644
+y
+x
+x y
+anm dq2 y n xm
+anm nq2 y n1 xm
+anm qyn mq2 xm1
+anm qyn dq2 xm
+anm nq2 mq2 qyn1 xm1 y x
+anm nq2 mq2 q n y n1 xm1
+which mean w68 y x qx y as could be anticip from the rule consequ for p q with constant coeffici at least one ha
+645
+p x qy
+qy p x
+pn xn
+bm pn ym xn
+bm ym
+bm pn xn qy m p x qqi
+thu for p q with constant coeffici and
+646
+pn bm xn ym
+anm y n xm order one can write
+p x qy y x 0 0 x f x q 1 y 0 bf q 1 y
+38
+robert carrol
+univers of illinoi urbana il 61801
+set then y x p x q 1 y x so for y qz
+647
+p x qy p x p x qqi q 1 y x
+p x p x qz z x 0
+henc z 0 b0 x bp f x qz z 0 qz bf z qqi bf q 1 y
+thi lead to
+corollari 62 it is natur now to uniqu defin a transmut oper b for
+thi fix order and power seri f as bf y 0 y as in 31 with bp f z
+qbf z
+one can extend the reason abov to ani well pose prolem for a classic pde ie
+well pose mean there exist a uniqu solut aris from the construct w65
+with suitabl boundari condit perhap on vertic andor horizont line and assert
+heurist
+0 with polynomi
+proposit 63 given a well pose classic problem for d
+i
+data and solut and a fix order of noncommut x one obtain a well pose
+qdifferenti problem for d 1 0 from w65 and the isomorph
+in 26 one consid wave equat w69 dt 2 d1 d2 0 where dt t1 1
+tq and dx1 x1 1 tq2 correspond to the classic equat t2 41 2 0 when
+t 1 qt and xi 1 q 1 xi 2 with q 1 solut to w69 in qexponenti
+have the form q 2
+648
+t x1 x2 eq teq x1 eq x2
+from which one can determin symmetri oper cf 26 on the other hand for
+w70 dt d1 d2 0 one ha solut eq teq x1 eq x2 with q
+0 we recal here from w57 or 629 that dz eq z eq z and dz eq z
+q 1 eq z with similar formula for eq for the helmholz equat w71 d1 d2
+2 x1 x2 0 solut can be written in term of littl qexponenti via 2
+649
+x1 x2 eq x1 eq x2
+for the heat equat in x t of the form w72 dt dx 2 0 one ha solut
+w73 t x eq2 teq x with q 2 2 0 c one arriv at solut
+to all these equat be separ variabl accord to symmetri oper and their
+eigenfunct and thi lead for the heat equat also to solut
+650
+n t x q nn32 tn2 hn
+x
+q
+q t
+where hn discret qhermit polynomi
+exampl 62 at thi point we want to mention some work of klimek 37 involv
+differ equat and conserv law more on thi will appear in 5 thi seem to
+be the onli total partial differenti equat type materi avail in a quantum context
+and the techniqu seem to be natur and power
+remark on quantum transmut
+39
+63 kernel and qspecial function to spell out the natur of the transmut
+kernel in 40 we go to 311312 and the preced tabl ae one see that
+311 could be written as
+651
+p
+q
+y x p x q
+y q x p y
+q
+p
+x y p x q
+y p y q x
+and it is in these form that kernel such as pk in 211 are display some of the other
+formula in section 2 involv abel and weyl transform also stem from formula for the
+calssic situat such as those indic in section 3 we do not tri here to deal with gl
+or marchenko idea in the qtheori but suggest that the framework in section 3 seem rich
+enough to produc analogu in thi direct
+we make a few further comment here about connect qcalculu with special function
+first as an exampl consid l lab and lab of 2324 in deriv notat note
+tq1 tq1 and write
+652
+l
+tq 1
+x
+a
+2
+q
+2b
+tq1 1
+x
+1
+2
+1
+atq tq1
+a
+then recal tq f x f qx with
+653
+dz f z
+1 tq1 f z
+1 tq f z
+dz f z
+z
+z
+dq f x
+tq 1f x
+q f x dq2 f x
+q 1x
+the last equat for the quantum plane then one could write eg tq 1 zdz and
+tq1 1 zdz with
+654
+q
+q
+x
+l dx dx
+2
+2b
+2
+1
+adx dx
+a
+a a1
+a
+1 q x
+dx a a1
+1 xdx
+2
+2 b a
+one recal also l where x a b q 2 1 a a ab q bxz with
+12 1 cf 22 concern a pde framework in the quantum plane for the
+eigenfunct pair indic in section 3 we fix first a suitabl integr for xq yq
+oper in 61 69 or of exampl 61 sinc from 614 one ha x f x dq2 f x
+we should requir an integr dq2 x the necessari result are given alreadi in section 5
+y
+but we note here for background that if f y 0 f xdq2 x we want dq2 f y f y or
+655
+f q 2 y f y
+f y f y f q 2 y 1 q 2 yf y
+q 2 1y
+n
+f q 2n y f q 2n2 y1q 2 y 2n f q 2n y f y f q 2n2 y1q 2 y
+q 2j f q 2j y
+0
+40
+robert carrol
+univers of illinoi urbana il 61801
+then for q 1 with f 0 0 we have f q 2n2 y f 0 0 and there result
+q 2j f q 2j y
+f y 1 q 2 y
+656
+thi give us a jackson type integr
+4 19 33 43
+0
+dq2 x for integr on infinit interv one ha cf
+y
+657
+f xdq x 1 q
+0
+y
+y
+f q k yq k y
+f xdq x 1 q
+f q k y f q k yq k y
+dq2 x as in 656
+with obviou counterpart for
+now we have a nice q 2 distribut theori in section 5 so take here cosq2 x or cosq2 x
+from 5355 from 510 q2 z n zq 2 z n dq22 z n q 2 q 2 n z n2 q 2 q 2 n2 1 q 2 2
+and thi is the same as nq2 n 1q2 z n2 q 2n 1q 2n2 1q 2 12 z n2 note
+from 5253 or 38
+658
+cosq2 x
+0
+1k x2k
+q 2 q 2 2k
+2
+q 2m m q 2 q 2 2m q 2 12m
+and 2m
+indic a discrep with 413 and as
+signal earlier in fact 413 and correspond to
+659
+cosq2 z
+0
+1n z 2n q 2n2n1
+q 2 q 2 2n
+we will use 658 and comput
+660
+xq 2 cosq2 x
+xq 2
+0
+1
+1k 2k x2k2 2kq2 2k
+q 2 q 2 2k
+1q2
+2
+q 2 12
+1k x2k
+q 2 q 2 2k
+0
+1m x2m
+2
+cosq2 x
+q 2 q 2 2m
+q 2 12
+2j
+sinc mq2 q 2m 1q 2 11 1 q 2m 1 q 2 1 and q 2 q 2 m m
+1 1 q
+q
+we will see below that y need to be modifi for certain situat in the form eg dq2
+as in w83 below now take some second order differ oper qyq involv q 2
+q q
+2
+2
+2 q
+differ with eigenfunct q
+y such that qy y q 1 y here
+q
+y could involv q 2 in variou manner thi is fairli gener sinc if eg qyq y
+q
+q y then set q 2 12 and renam q
+y q 2 12 y we requir now
+further that the classic correspond qy be of say ellipt symmetr type so that
+the cauchi problem the classic equat x2 qy will have uniqu solut then
+as indic in corollari 62 we should be abl to defin a q 2 transmut xq 2 qyq
+remark on quantum transmut
+41
+and the kernel should be express in the form of a pair q
+y t rig x where
+2
+t rig denot the appropri item from the q cosin theori note the eigenvalu may
+have to be chang from 660 evid if we have transmut b1 xq 2 qyq
+and b2 xq 2 p yq then a transmut from p xq qyq can be obtain by the
+composit b1 b21
+thu let us go to section 5 again and determin the q 2 version of the cosin transform
+and invers formula thu from 528529 one ha
+661
+dq2 zz0 1 0 q 2 i1 q 2 q 2 zs
+fq 2
+1
+eq2 i1 q 2 zsdq2 ss
+20
+where w80 0 1 eq2 i1 q 2 q q zs then recal 651 where w81 y x
+1 f p x sinc co z
+q
+p x q
+q2
+y p y and p p
+12eq2 iz eq2 iz one see that
+f1
+q2
+662
+fco
+q2
+1
+2
+dq2 zzeq2 i1 q 2 q 2 zs eq2 i1 q 2 q 2 zs
+dq2 zz cosq2 1 q 2 q q zs
+dq2 zz
+0
+q 2n2n1 1n 1 q 2 2n q 4n z 2n s2n
+q 2 q 2 2n
+the invers should accordingli be
+1
+fco
+q2
+663
+1
+20
+1
+20
+dq2 ss cos1 q 2 zs
+dq2 ss
+0
+1n q 2n2n1 1 q 2 2n z 2n s2n
+q 2 q 2 2n
+the fact that thi is true follow from 535 note that one could also develop a fourier
+cosin theori follow 413415 but the approach in section 5 from 62 seem much
+better in particular it is more complet with use formula like 536 for exampl as well
+as the distribut format in ani event we could possibl think here of p as the cosq2
+transform fq2 with p cosq2 1 q 2 q 2 zs thi ha to be slightli modifi howev
+sinc cf 660 w82 z2 z 2n 2nq2 2n 1q2 z 2n2 q 4n 1q 4n4 1q 2
+12 z 2n2 with
+664
+1
+s2 q 6
+0
+z2 cosq2 1 q 2 q 2 zs
+q 2n2n1 1n 1 q 2 2n q 4n z 2n2 s2n q 4n 1q 4n4 1
+q 2 q 2 2n q 2 12
+1m q 2m2m1 q 4m q 4 z2m s2m
+s2 q 6 cosq2 1 q 2 q 2 q 4 zs
+q 2 q 2 2m
+thi show that zq 2 is not the right oper to use when look for eigenfunct
+we would rather have an oper such that the argument of cosq2 1 q 2 q 2 zs can be
+42
+robert carrol
+univers of illinoi urbana il 61801
+maintain thu we need a power of q to offset the q 2n2n1 term or say q 8m q 8n1
+q 8n8 so defin w83 dq2 z n nq2 z n1 q 2 n with 2n 2n1 4n for ani
+constant then take eg n n so 2n 2n1 2n 2n 1 2 4n 2 1
+and one can remov the q 6 term as well if 24n 2 1 8n 8 6 8n 2 take
+0 one arriv at w84 dq2 z n nq2 z n1 q 2 n and henc
+d2q2 cosq2 1 q 2 q 2 zs
+665
+s
+2
+0
+1m 1 q 2 2m q 4m z 2m s2m
+s2 cosq2 1 q 2 q 2 zs
+q 2 q 2 2m
+proposit 64 take ps z cosq2 1 q 2 q 2 zs with p d2q2 and pz ps z
+s2 ps z while ps fco
+q 2 s the kernel in w81 will then take the form
+1
+1 q
+q y fco
+y z p
+q 2 s y
+20
+which is repres by a seri as in section 5
+666
+2
+dq2 sq
+s y cos1 q zs
+thi provid a begin for implement of the program indic in section 1
+there are a number of obviou matter to investig now besid look at exampl and
+converg question for exampl connect to integr system and tau function
+have quantum counterpart and the glm machineri is relat to thi relat between
+classic gener function and tau function should be further explor in the spirit mention in section 1 further devleop of quantum calculi with applic to differenti
+and difffer equat seem inevit gener the fundament combinatori materi aris via braid
+a la r matric or quantum group ha in fact defin the natur
+of quantum algebracalculi and probabl some divers in thi and relat physic scienc
+will persist we will return to thi in 5
+refer
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+a ballestero f herranz and p parashar jour phi a 30 1997 85878597
+a ballestero f herranz j negro and l nieto mathqa 0007020
+a boumenir and r carrol applic anal 58 1995 303311 nonlin anal 26 1996 19231936
+g carnoval and t koornwind mathca 9909025
+r carrol some applic of quantum group and noncomut geometri book in prepar
+remark on quantum calculu in prepar more about transmut in prepar
+r carrol quantum theori deform and integr northholland 2000
+r carrol transmut theori and applic northholland 1985
+r carrol transmut scatter theori and special function northholland 1982
+r carrol mathemat physic northholland 1988
+r carrol topic in soliton theori northholland 1991
+r carrol transmut and oper differenti equat northholland 1979
+r carrol acta appl math 18 1990 99144
+r carrol math meth appl sci 6 1984 467495 appl anal 16 1983 8590 17 1983 5162
+18 1984 3954 diff eq northholland 1984 pp 87104
+r carrol and s dolzyzki appl anal 19 1985 189200 23 1986 185208
+r carrol canad jour phi 77 1999 319325
+r carrol abstract method in partial differenti equat harperrow 1969
+remark on quantum transmut
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+43
+b cerchiai r hinterd j mador and j wess mathqa 9807123 and 9809160
+b cerchiai g fior and j mador mathqa 0002007 0002215 and 0007044
+c chryssomalako qalg 9601014
+a conn nomcommut geometri academ press 1994
+j delsart and j lion comm math helvet 32 1957 113128 and 33 1959 5969
+a dimaka and c tzanaki mathph 9912016
+v dobrev hepth 9405150
+l faddeev and l takhtajan hamiltonian method in the theori of soliton springer 1987
+g fior hepth 9403033 qalg 9506028
+r floreanini and l vinet lett math phi 27 1993 179190 32 1994 3744 hepth 9111023
+crm proc 9 1996 pp 113123 ann phi 221 1993 5370 jour math phi 36 1995 31343156
+a gersimov s kharchev a marshakov a mironov a morozov and m olshanetski hepth
+9601161
+a gerasimov s khoroshkin d lebedev a mironov and a morozov hepth 9311142
+s hitchcock quantph 0012017
+u iyer and t mccune mathqa 0010041
+c kassel quantum group springer 1995
+l kaufmann qalg 9709012
+a kempf and s magid jour math phi 35 1994 68026837
+s kharchev a mironov and a morozov qalg 9501013
+s kharchev s khoroshkin and d lebedev qalg 9506022
+s khoroshkin d lebedev and s pakuliak qalg 9605039
+m klimek jour phi a 26 1993 955967 and 29 1996 17471758 comm math phi 192
+1998 2945 jour math phi 40 1999 41654176 czech jour phi 44 1994 10491057 47
+997 11991206 50 2000 105112 from field theori to quantum group world scientif 1996 pp
+2940 mathph 0011030
+a klimyk and k schm
+udgen quantum group and their represent springer 1997
+e koelink qalg 9608018
+e koelink and h rosengren mathca 0011002 mathqa 0001093
+e koelink j stokman and m rahman mathqa 9911163
+e koelink and j stokman mathca 9904111 and 9912140
+t koornwind special function qseri and relat topic field inst comm amer math soc
+14 1997 pp 131166 hepth 9401114 mathca 9403216 qalg 9608008
+t koornwind and r swarttouw tran amer math soc 333 1992 445461
+t koornwind ark mat 13 1975 145159 special function qseri and relat topic field
+inst comm amer math soc 14 1997 pp 131166
+d levi and o ragnisco editor side iii crm proc 25 2000
+d levi l vinet and p winternitz editor side i crm proc 9 1996
+j lion equat differentiel et operationnel springer 1961
+v lunt and a rosenberg selecta math ns 3 1997 335359 ns 5 1999 123159
+s majid foundat of quantum group theori cambridg univ press 1995
+s majid mathqa 0006150 0006151 hepth 0006166 0006167
+s majid jour math phi 32 1991 32463253 34 1993 11761196
+s majid quantum group integr statist model and knot theori world scientif 1993 pp
+231282
+yu manin quantum group and noncommut geometri crm montreal 1988 ann inst fourier
+37 1987 191205
+v marchenko sturmliouvil oper and their applic kiev 1977
+a mironov a morozov and l vinet hepth 9312213
+a mironov in 47 pp 219237 hepth 9409190 qalg 9711006
+a morozov hepth 9311142
+44
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+robert carrol
+univers of illinoi urbana il 61801
+a morozov and l vinet hepth 9309026
+l nieto j negro f herranz and a ballestero in 46 pp 329338
+o ogievetski lett math phi 24 1992 245255
+m olshanetski and v rogov qalg 9509013 9604016 and 9712055
+n reshetikhin l takhtadzhyan and l faddeev lenin math jour 1 1990 193225
+v rogov mathqa 0010094
+k schm
+udgen and a sch
+uler comm math phi 167 1995 635670 170 1995 315335 jour
+geom phi 20 1996 87105
+k schm
+udgen mathqa 0005225
+j schwenk quantum group world scientif 1991 pp 5361 gruppi quantici e loro applicazioni in
+fisica io press 1996 pp 525540 hepth 9406168
+y smirnov and a turbin functan 9501001
+a sudberi jour alg 158 1993 375399 math proc cambridg phil soc 114 1993 111130
+phi lett b 284 1992 6165 quantum group world scientif 1991 pp 3352
+a turbin hepth 0004175
+l vaksman qalg 9511007
+j wess and b zumino nucl phi b suppl 18b 1990 302312
+j wess mathph 9910013
+s woronowicz comm math phi 122 1989 125170 111 1987 613665 rev math phi 12
+2000 873920 lett math phi 23 1991 251263
+a zabrodin hepth 9704074 solvint 9810003

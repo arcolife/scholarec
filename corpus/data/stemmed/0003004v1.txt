@@ -1,0 +1,1561 @@
+period and almost period potenti in the invers
+problem
+arxivmathph0003004v1 6 mar 2000
+ikrichev
+spnovikov
+februari 1999
+columbia univers 2990 broadway new york ny 10027 usa and landau institut for theoret
+physic kosygina str 2 117940 moscow russia email krichevmathcolumbiaedu research support
+in part by nation scienc foundat under the grant dms9802577
+univers of maryland colledg park and landau institut for theoret physic kosygina str 2
+117940 moscow russia email novikovipstumdedu
+1
+1
+introduct
+to begin with we are go to consid the invers spectral problem for onedimension
+schroding oper with period potenti in the late 60 the famou discoveri of the
+invers scatter transform for the kdv equat wa done a period analog of thi
+transform wa found in 1974 it is base on the solut of the follow invers spectral
+problem
+to describ effect the isospectr manifold of all the potenti with a given spectrum
+on the line ie the spectrum of schroding oper act in the hilbert space of squar
+integr complexvalu function on the line r
+as everybodi work in the quantum solid state physic know thi spectrum gener is a union of infinit number of interv allow band on the energi line the
+complementari part on the energi line is also a union of infinit number of interv gap
+or forbidden band whose length tend to zero for
+the period problem wa solv in 197475 for the socal finitegap potenti that
+have onli a finit number of gap ani period potenti can be approxim by the
+finitegap one thi solut involv combin of the theori of riemann surfac and
+their function hamiltonian dynam of special complet integr system and the
+spectral theori of schroding oper the mathemat techniqu use wa and still is
+unusu for the commun of physicist later the necess to use thi kind of mathemat
+appear also in other branch of mathemat and theoret physic for exampl in the
+string theori matrix model and supersymmetr yangmil theori 1 2 3 4 5 6 7 8
+9 10 11 12 13 14 15 it seem to the author thi techniqu in futur will be need to
+the broad commun of theoret physicist
+integr of the famou kdv equat ut 6uux uxxx wa discov in 196568 see
+16 17 18 for the rapidli decreas initi data on the line x exact solut for the kdv
+equat express ux t through the invers scatter data of the schroding oper
+l x2 ux 0 were found thi procedur ha been call the invers scatter
+transform ist it wa extend later for some other highli nontrivi 1 1system
+includ such famou system as nonlinear schroding ns it xx 2 and
+sinesinhgordon equat sg uxt sin u or uxt sinh u note that for the sg equat
+a larg famili of exact solut wa alreadi construct in xix centuri by bianchi lie and
+backlund see in 19 20 21 begin with 1974 sever 2 1dimension physic
+interest system have been discov as integr by the ist procedur the most
+famou of them is the kp system see 22 23
+it is necessari to emphas that the ist procedur in it origin form can not be
+appli to the solut of the period problem ie ux t is period in the variabl x
+thi problem wa solv on the base of the new approach propos in 24 in the work
+25 26 27 29 28 30 31see the survey 32 35 37 an extens of thi method to
+2 1system wa found in 33 34 35 new develop of thi approach associ with
+twodimension schroding oper wa start in 1976 see 36 37 39 38 41 42 43
+complet detail descript of the solut of the period problem can be found in the
+2
+survey encyclopedia articl 40 and in the book 44 we are go to present here basic
+idea of thi theori in the simplest form possibl let us point out that kdv as well as other
+nontrivi complet integr by ist pde system are inde complet integr in ani
+reason sens for rapidli decreas or period quasiperiod boundari condit
+onli in fact even that is well establish for few of them for exampl for the kdv ani
+period solut can be approxim by the finitegap solut thi statement easili
+follow from the theori of finitegap potenti if we do not tri to preserv the period ie
+in the class of all quasiperiod finitegap potenti the approxim of ani period
+potenti by the finitegap potenti with exactli the same period wa construct on the
+base of other approach develop in 46 the extens of the theori of riemann surfac
+and function to the specif class of surfac of the infinit genu associ with period
+schroding oper wa done in 47 thi theori is a beauti descript of the infinit
+limit howev it seem that all fundament properti of function associ with the
+complex continu of variabl are lost in thi limit it is interest to point out that
+analog but more complic theori of riemann surfac of the infinit genu wa
+develop later in 41 for the period 2d schroding oper
+outsid these function class almost no effect inform is known beauti
+method have been develop also for the studi of the special selfsimilar and stringtyp solut but in most case they lead to the veri hard analyt problem associ
+with the famou painlev equat and their gener 48 49 50 51 53 52 54 55
+2
+rapidli decreas potenti and ggkm procedur b
+acklund transform
+let us recal the basic inform about the ist method for kdv we start from the socal
+lax represent for kdv see 18 the heisenberg type equat for the schroding
+oper l
+lt l a la al
+21
+l x2 u a 4x3 3ux x u
+22
+is equival to the ident kdv equat
+ut 6uux uxxx
+23
+for thi reason ani kdv type equat admit some analog of the lax represent is
+call isospectr deform the exist of such deform indic the possibl
+of effect solut of the invers scatter problem for the oper l
+for the rapidli enough decreas function ux t 0 x we defin two base of
+solut t is fix
+x t k expikx
+x t k expikx
+x l
+x l k 2
+3
+24
+25
+by definit monodromi matrix t connect these two base t for the column vector
+t
+a b
+c d
+a b c d
+26
+a conserv of the wronskian impli that det t ad bc 1 for the real valu of
+c b therefor a2 b2 1 the whole set of the socal
+k or 0 we have a d
+invers scatter data can be extract from the monodromi matrix t if it is welldefin
+for all complex valu of k the socal scatter matrix is construct from t for the
+real k it entri are the transmiss coeffici 1a and the reflect coeffici ba the
+properti b 0 for all real valu of k character reflexionless or multisoliton potenti
+for all rapidli decreas potenti the matrix element ak is welldefin for complex k
+such that im k 0 and a 1 for k im k 0 there is onli a finit number of
+pure imaginari zero akn 0 in thi domain they correspond to the discret spectrum
+n kn2 0
+the famou result of 17 ggkm procedur easili follow from the lax represent
+which impli the equat
+4ik 0
+0
+4ik
+tt t
+27
+thi result wa formul as a set of the follow ggkm formula
+at 0 bt 8ik3 ct dt 0
+28
+the latter equat give a full descript of kdv dynam in these variabl becaus ani
+rapidli decreas potenti can be reconstruct from the invers scatter data a special
+famili of the reflexionless potenti where b 0 for real valu of k lead to the socal
+multisoliton solut for kdv equat see 44
+the multisoliton solut can be also directli obtain with the help of the elementari
+substitut baclund transform transform ani solut of the kdv into anoth
+solut let u be a solut of the kdv equat and v be a solut of the ricatti equat
+u vx v 2 with the initi valu independ of time the new function u vx v 2
+satisfi the kdv equat start from the trivial solut u u0 0 we construct
+a sequenc of potenti un1 un n 0 given by the backlund transform we
+choos paramet n 1 2 n and take the real nonzero function
+fn x fnxx un1fn n fn which defin vn log fn x everi such
+sequenc lead to the multisoliton reflexionless potenti
+u0 0 u1
+ch2
+2
+x x0 t
+29
+in term of the schroding oper thi transform invent by leuler in 1742 is
+call darboux transform the oper l can be factor
+l 2 u v v
+4
+use the noncommut of these factor we defin the darboux transform for the
+oper and it eigenfunct in the follow way
+2 u v v v
+l
+210
+these transform can be consid as some kind of discret spectral symmetri for
+schroding oper they preserv a spectrum of the oper l mayb except for one
+eigenfunct
+3
+kdv hierarchi integr of motion hamiltonian
+formal
+the local integr for the kdv equat can be construct with the help of the schroding
+oper consid the associ riccati equat vx v 2 u k 2 and find the solut
+for it as a formal seri in the variabl k
+vn xikn
+vx k ik
+31
+n1
+where all vn are polynomi in the variabl u ux the integr along the line x is a
+kdepend constant of motion for the kdv equat
+t
+vx kdx 0 ut 6uux uxxx
+32
+for the real potenti ux t and real k we can see that the imaginari part of vx k ik
+is a total deriv the remain quantiti in the expans
+vn xikn dx
+33
+v2n3 xdx n 1 0 1 2
+34
+vx k ikdx
+n1
+defin local integr of motion
+in cn
+where cn are constant after the proper choic of the constant cn we have
+i1
+udx i0
+u2 dx i1
+u2x 2 u3 dx
+int 0 ut 6uux uxxx
+35
+36
+let us introduc a gzf poisson bracket 56 57 on the space of function
+ux uy x y
+37
+then ani function h hamiltonian defin the correspond hamiltonian system
+h
+ux
+ut x
+5
+38
+for the case h i1 we get a trivial flow ie thi integr is a casimir for the gzf
+bracket for h i0 we are come to the xtranslat ut ux let us call thi equat
+kdv0 for the case h i1 we have the ordinari kdv kdv1 higher integr give us
+the equat kdvn of the order 2n 1 admit the lax represent with the same
+schroding oper l but with the differenti oper an constx2n1
+utn x
+in
+ux
+l an
+39
+in particular a0 x a1 a nice formula for all oper an can be extract from
+58
+let l l2 where l x k1 ak u ux xk here all ak are polynomi in the
+variabl u ux and x1 a n0 1n an xn1 for the composit of the oper 1
+and multipl oper by a by definit
+an l2n1 l2n12
+310
+where the sign mean omit of all strictli neg power of x
+all higher kdvn system can be integr by the same ist procedur for the class of
+rapidli decreas function in particular ggkm equat for the scatter data or
+monodromi matrix have the form
+ttn t n n const
+ik2n1
+0
+0
+ik2n1
+311
+the latter result also impli that all these flow commut with each other henc we get
+the follow conclus without ani calcul
+integr in have zero poisson bracket
+in im
+in
+im
+x
+dx 0
+ux ux
+312
+a gener of the gzf poisson bracket for the isospectr deform of the higher
+order scalar lax oper l wa found in 59
+it should be emphas that there exist a famili of local fieldtheoret poisson bracket lmbracket 60 describ the kdv theori
+b b x x3 4ux 2ux b0 b1
+313
+ux uy bx y
+314
+in im 0
+315
+these bracket were gener for the higher order oper l in 61
+the recurr oper b1 b01 c gener all the righthand side of all higher kdv
+system
+in1
+316
+c0 ux c 2 0 6uux uxxx c n 0 x
+ux
+6
+it give also a simpl proof of a veri use ident 62
+in
+dx constin1
+ux
+317
+all these ident are local and can be use for the class of period function as well
+howev we shall see in the next section that the direct analog of ggkm procedur doe
+not lead to the integr procedur we are go to use a differ approach
+4
+spectral theori of period schr
+oding oper
+finitegap potenti
+the spectral theori for the period potenti on the whole line x is base on the monodromi
+matrix as in case of the scatter theori howev in the period case with a period
+t we have noth like the select point x for the definit of the monodromi
+matrix as it wa for the rapidli decreas case t see section 2 abov ani
+point x0 can be use let us fix initi point x0 and choos a special basi of the solut
+cx x0 sx x0 for the spectral equat lc c ls s such that for x x0 we
+have
+c s
+c x sx
+1 0
+0 1
+41
+the shift oper t x x t in the basi c s defin the monodromi matrix
+a b
+c d
+t x0
+cx t a cx b sx sx t c cx d sx
+42
+43
+the key element of the period spectral theori is a notion of the socal bloch wave or
+blochfloquet eigenfunct we present here some essenti properti of these function
+without ani proof an exposit of thi theori may be found in the encyclopedia articl
+40 where the main idea of the proof are clearli present for the differ schroding
+oper it is much simplier
+by definit the blochfloquet function are solut of the schroding equat that
+are at the same time eigenfunct of the shift oper ie
+l t x x t expipt x
+44
+we uniqu normal by the condit xx0 1
+for ani complex number the eigenvalu w exppt of the shift oper
+are defin by the characterist equat for the monodromi matrix from the wronskian
+properti it follow that det t 1 therefor the characterist equat ha the form
+w 2 tr t w 1 0
+7
+45
+figur 1
+the multivalu function p is call quasimomentum
+the spectrum of the schroding oper on the whole line is a union of spectral zone
+which are segment of the real line of the variabl where the quasimomentum is real the
+latter condit is equival to the inequ
+tr t 2 cospt 2
+46
+the typic graph of the function f cospt is present on the fig 1 in particular it
+extrem point f 0 gener are locat insid of the gap ie for the open and
+everywher dens set of period potenti we have f 1 at the extrem point and there
+is onli one extrem point in each gap for some special case we may have f 1 at
+the extrem point such point lie insid the spectral zone howev gener perturb
+creat new small gap nearbi thi point see fig 2 thi point is a doubl point of period
+or antiperiod spectrum with the boundari condit x x t
+1
+0
+2
+3 4
+5
+figur 2
+8
+6
+the riemann surfac of the blochfloquet function is defin by the equat
+z 2 cospt
+47
+but thi surfac is nonsingular onli for the gener case when there are no doubl point of
+the period or antiperiod problem for the schroding oper for the larg
+the follow asymptot is valid for the gap see fig 3
+1 the length of gap tend to zero with it rate depend on the smooth of the
+potenti thi rate is exponenti for the analyt potenti
+2 all gap are locat nearbi the point m 4 2 m2 t 2 and the distanc of gap from
+thi point tend to zero
+a nonsingular riemann surfac of the blochfloquet solut is defin with the help
+of the equat
+z 2 0 1 n
+48
+where 0 1 are simpl eigenvalu of the period and antiperiod spectral problem
+1
+cospt
+0m1
+0m
+1
+figur 3 for the gener t period potenti the gap are locat near the
+point m 4m2 t 2 for here m are the integ number
+as it follow from the lax represent for all higher kdvn system 39 these boundari spectral point for the period oper l in the hilbert space l2 r of the squar
+integr complexvalu function on xline are integr of motion for the kdv hierarchi
+we can say that the riemann surfac of the blochfloquet solut as a whole is an
+integr of motion for the kdv hierarchi how mani potenti correspond to the same
+riemann surfac ie have the same spectrum in l2 r
+the origin idea to introduc a special class of potenti for which thi problem can
+be solv effect wa propos in 24 and is base on the kdv hierarchi thi idea
+natur combin two differ way to describ the correspond isospectr manifold of
+potenti both are in fact close relat to each other
+9
+the first approach use of the kdv hierarchi and hamiltonian dynam
+let us consid a stationari equat for some linear combin of higher kdvn flow
+39 it is an ordinari differenti equat that can be written in the form
+in c1 in1 cn i0 cn1 i1 0
+49
+thi is a finitedimension hamiltonian system with n degre of freedom depend on
+n 1 paramet c1 cn1 it is a complet integr hamiltonian system becaus
+there is a pencil of the commut flow thi pencil coincid with the restrict of all
+higher kdvm on thi stationari subset of function given by the equat 49 therefor
+it gener nonsingular solut is expect to be a period or quasiperiod function of x
+in the next section we shall construct for 49 some kind of the lax represent
+n1
+x qx x n
+ck k
+410
+k1
+use 2 2 traceless matric depend on the paramet and u ux polynomi in
+the today terminolog some peopl call them loop group note that in all soliton system thi
+loop have veri specif depend polynomi ration and in some exot exampl
+ellipt function
+lax represent 410 impli that an algebra riemann surfac defin by characterist equat
+det zi p z 0
+411
+doe not depend on x and therefor is an integr of 49 the same riemann surfac can be
+extract from the commut equat l a 0 which accord to 39 is equival
+to 49
+it should be emphas that the latter form of 49 ie the commut condit
+for two ordinari differenti oper
+l an
+ck ank l a 0 l x2 u
+412
+wa consid formal ie local in the variabl x without ani period assumpt
+as a pure algebra problem in 1920 see 63 64 even the formal algebra riemann
+surfac 411 appear as a relat p l a 0
+accord to our logic howev the correspond system of equat in the variabl x is
+hamiltonian and complet integr therefor it gener solut is quasiperiod in x
+contain a dens famili of period solut we may ask about the spectrum of the correspond oper l in l2 r and boundari of gap remark they exactli coincid
+with the branch point of the riemann surfac defin by equat 411 therefor for
+the period potenti which satisfi equat 49 the nonsingular spectral riemann surfac
+of the blochfloquet solut is an algebra riemann surfac of genu g n the spectrum
+of such an oper contain onli a finit number of gap 2j1 2j j 1 n
+thi key step unifi the first approach with the second one below so the solut of
+the invers spectral problem can be identifi with the process of solut of some special
+famili of complet integr system use riemann surfac
+10
+a1
+0
+1
+1
+a2
+2
+3
+2
+a3
+4
+5
+3
+6
+figur 4 the endpoint of gap j are the branch point of the 2sheet
+riemann surfac the pole j are locat in the gap on one branch onli here
+n 3
+the second approach period spectral theori in the hilbert space l2 r
+for ani period schroding oper l 2 ux t0 t1 we have alreadi
+defin the riemann surfac of blochfloquet solut with the help of the monodromi
+matrix t for the finitegap potenti a graph of the function f cospt 12tr t is
+highli degener see fig2 and compar with fig1 for all real and larg enough we have
+f 1
+onc again we ask how to describ all the potenti with the same finitegap spectrum
+and what are addit variabl which uniqu defin a finitegap potenti it turn out
+that these addit spectral data are the pole of the blochfloquet function it can by
+shown that the blochfloquet solut defin by 44 and normal by the condit
+xx0 1 have exactli one simpl pole j x0 insid each gap or on it boundari a
+point of the hyperellipt surfac 48 can be repres as the complex number and
+a sign or a branch of the radic z 0 1 the branch of the radic
+coincid at the boundari of gap therefor each gap should be consid as a close
+cycl aj j 1 2 n see fig 4 ani pole of should be consid as a point j on the
+cycl aj the abovement statement that there is onli one pole in a gap mean in
+particular that ha no pole at the point j if it alreadi ha pole at j and vice
+versa geometr the total set of pole 1 n repres a point on the real toru
+t g a1 an as we shall see later thi set of pole complet determin the origin
+potenti differ point of the real toru lead to the differ potenti if normal
+point x0 is fix
+5
+period analog of ggkm zero curvatur represent for the kdv hierarchi and corollari
+as it wa emphas abov the definit of the monodromi matrix in the period case
+depend on a choic of initi point x0 for differ choic of the initi point the correspond monodromi matric are conjug becaus they repres the same linear
+transform in differ base therefor a depend of the monodromi matrix with
+respect to the choic of the initi point x0 can be describ by the equat
+tx0 q x0 t q
+11
+0
+1
+ux0 0
+51
+in the same way for the isospectr deform correspond to the kdv hierarchi ie
+all higher kdvn system we can establish the follow equat the period analog of
+ggkm
+ttj j t 0 q t0 x0
+52
+a compat condit of equat 52 for ani pair of variabl ti tj impli the follow
+zero curvatur represent for the kdv hierarchi where period boundari condit are
+alreadi inessenti
+ti i tj j 0
+53
+use the lax represent 39 for all higher kdvn we can express all the matric j as
+polynomi in the variabl and variabl ux0 ux0 x0 for exampl for the ordinari
+kdv we have replac x0 by x
+1
+ux
+2u 4
+2
+4 2u 2u uxx
+ux
+2
+54
+the matric k can be complet reconstruct from equat 53 and from the follow
+properti of matrix element
+k const
+ak bk
+ck d k
+55
+dk ak trk 0 bk k u2k1
+56
+det k a2 bc constr2k1 const2k1
+57
+2ak bkx r2k1 x bk
+58
+for i 0 equat 53 where t0 x give the zerocurvatur represent for the kdvn
+system
+59
+x n tn q q n
+from thi represent and from the period analog of ggkm we are come to the
+follow result for the stationari higher kdvn system 410
+1 the monodromi matrix t commut with
+t 0
+510
+therefor they have common eigenvector it impli in particular that the blochfloquet
+function is singlevalu on the algebra riemann surfac associ with the matrix
+2 the stationari higher kdv admit an parametr laxtyp represent in the
+variabl x 410
+x q n
+ck k
+511
+therefor we have a full set of conserv law organ in form of the riemann surfac
+ie all coeffici of the polynomi p are xindepend
+det zi p z 0
+12
+512
+p z z 2 r2n1 const 0 2n
+513
+these point j are exactli the boundari of gap for period potenti becaus the riemann surfac of the matric t and coincid the matrix element b12 for the matrix
+determin anoth set of point
+b12 const 1 n
+514
+these point coincid with project of the zero of bloch wave as the function of
+the variabl x or pole as the function of x0 see the next section
+an origin approach to the solut of the invers spectral problem wa base on the
+use of the follow trace type formula for the potenti
+ux2 const 1 x n x
+515
+from 511 and 514 dubrovin equat defin dynam in x of the point j can
+be deriv they have the form
+r2n1 j
+516
+jx
+kj j k
+these equat see 27 32 can be linear by the socal abel transform
+consid the first kind differenti on the riemann surfac ie holomorph 1form
+without pole anywher even at the infin the basic first kind form are
+j
+j1 d
+r2n1
+j 1 n
+it it is conveni to choos a normal basi take linear combin s
+such that
+s sj
+517
+j
+vsj j
+aj
+for all the gap aj
+fix a set of path j from the point p0 to the point pj on the riemann surfac
+abel transform is defin by the formula
+ap p1 pn
+j
+j
+p
+518
+equat 516 after the abel transform becom linear
+apx uq
+1
+2
+bq
+dp
+519
+here the close path bq are canon conjug to the path aj see fig 5 it mean
+that the intersect number are aj bq jq the differenti dp is equal to p d where p
+is a multivalu quasimomentum it is a second kind differenti ie meromorph 1form
+13
+b3
+b2
+b1
+0
+1
+a1
+2
+3
+a2
+4
+5
+a3
+6
+figur 5 the canon basi of cycl ai bj on the riemann surfac with
+branch point 0 2n here n 3
+on the surfac with a pole of order 2 at the point with neg part dk dww 2
+in the local coordin w k 1 near and therefor ha the form
+dp
+n1
+j0
+vj n1j d
+r2n1
+520
+all the coeffici vj can be found from the normal condit
+aj
+dp 0 j 1 n
+521
+follow the classic xix centuri theori of riemann surfac formula 515521 lead
+to some express of the potenti through the function avoid the calcul of the
+eigenfunct see 25 27 29 31 the most beauti function formula for the
+potenti wa obtain in the work 29
+howev in the next section we shall not follow thi approach for solv the invers
+problem which ha been outlin abov but use anoth approach propos for the first
+time in the articl 32 see appendix base on the idea of ait it is possibl to calcul
+all the famili of the blochfloquet function the origin approach ha been use later in
+the problem where the effect calcul of eigenfunct is imposs like in the case
+of higher rank commut od linear oper see for exampl 37
+6
+solut of the period and quasiperiod invers
+spectral problem bakerakhiez function
+we are go to solv the invers spectral problem for the finitegap potenti follow the
+scheme propos in 33 34 35 and base on the concept of the bakerakhiez function
+these function are uniqu defin by their analyt properti on the spectral riemann
+surfac as we shall see later thi scheme is evenli applic to the solut of invers
+problem in twodimension case where the correspond analyt properti natur
+gener the analyt properti of the blochfloquet solut for finitegap schroding
+oper
+let us start with the follow real invers spectral data
+14
+1 riemann surfac given in the form
+z 2 0 2n
+where all number j are real
+2 a set of n real point j such that there is exactli one point j on the cycl aj
+below we shall for breviti identifi the point j as a point on with it project on
+complex plane the condit that there is onli one point on each cycl mean that
+project of the point satisfi the restrict
+2j1 j 2j j 1 n
+61
+by definit the complex invers spectral data are the same data where the riemann surfac
+ie it branch point k and the point j are arbitrari complex point
+as we shall see below a gener set of algebraicgeometr spectral data lead to the
+explicit solut of the invers spectral problem in term of the riemann thetafunct the
+correspond potenti are complex meromorph quasiperiod function of the variabl x
+for the real data describ abov we are come to the smooth even analyt quasiperiod
+potenti with their period express through the hyperellipt integr see below it is
+necessari to mention that there is no way to find simpl and effect criteria for the potenti
+to be period in term of these data the period depend on the riemann surfac onli
+of cours we may write the condit that all the correspond hyperellipt integr are
+commensur howev thi condit in transcendent recent base on the result of
+7 65 the effect numer approach ha been develop for the solut of thi problem
+it is base on the discoveri of some specif dynam system on the set of potenti which
+preserv all the period but chang spectrum follow 65 we start from one period
+potenti and creat all other use these dynam system
+in the last section we shall present some exampl of finitegap potenti written in term
+of ellipt function they are period in the variabl x even doubleperiod as function
+of the complex variabl x the first nontrivi exampl differ from the classic lame
+potenti ux nn 1x were found in 25 thi subject wa develop in the work
+66 67 68 69 70
+we defin the bakerakhiez function x t1 tn p for the paramet x tj and
+the point p by it analyt properti on with respect to the variabl p
+for the case t1 t2 0 these analyt properti are just the same as the analyt
+properti of the blochfloquet solut of the period finitegap oper
+from pure algebraicgeometr argument it follow that there exist a uniqu function
+such that
+1 it is meromorph on outsid the infin and ha at most simpl pole at the point
+j j 1 n
+2 in a neighborhood of the infin the function ha the form
+expxk t1 k 3 k 2n1 tn 1 1 x tk 1
+15
+where k 2 and therefor k 1 is a local coordin on the riemann surfac near infin
+a proof of thi statement is ident to the proof of the exist and uniqu of gener bakerakhiez function that were introduc in 33 for construct of exact solut
+of twodimension kp equat and all associ zakharovshabat hierarchi
+gener bakerakhiez function is defin with the help of an arbitrari riemann surfac
+of finit genu n instead of special hyperellipt ie twosheet surfac we fix an
+arbitrari infin point p0 on it local coordin k 1 w where wp0 0 gener set of
+point 1 n and number x 1 2 k the correspond bakerakhiez
+function ha the same analyt properti as abov but 2 is replac by the follow
+expxk 1 k 2 2 k 3 1 1 x k 1
+62
+for the kdv hierarchi we have a hyperellipt riemann surfac k 2 and 2k 0 2j1
+tj
+the use of such type of function depend onli on a singl paramet x ha been
+propos by baker in hi note 71 for the common eigenfunct of two commut od
+linear oper he expect that thi construct will improv the result of 63 64 he
+made also veri interest conjectur that thi approach may serious improv the classic
+theori of function unfortun thi program wa not realiz and wa forgotten the
+soliton theori appear mani decad later absolut independ in the 70 it start
+to use such kind of function on riemann surfac in the process of solut of a period
+problem for the kdv type system and invers spectral period problem in the classic
+spectral theori akhiez 72 wa the first to use some special case of thi function for the
+construct of some exampl of oper on the halflin x 0 with interest spectral
+properti no one of the author befor the 70 had associ anyth like that with
+period problem inde thi type of function construct on the riemann surfac wa
+extract in 1974 from the work 72
+we shall prove the exist and uniqu of the bakerakhiez function and present
+it exact express through the function later at thi moment we would like to show
+how the uniqu of thi function lead to the proof that is an eigenfunct for the
+schroding oper for our special case appli twice the oper x to thi function
+and use analyt properti after elementari calcul we are come to the formula
+k expkx 1x k 1
+2 k 2 21x ok 1 expkx
+63
+from the latter equat we get the equal
+2 k 2 21x ok 1 expkx
+the lefthand side is global welldefin function on the same riemann surfac becaus
+k 2 it ha the same pole independ of paramet up to the same exponenti factor
+it is of the order ok 1 at the infin therefor it is equal to zero due to the uniqu
+of the bakerakhiez function
+16
+so we are come to the conclus that
+l l 2 u u 21x
+64
+we can appli the oper j tj to the function
+j k 2j1 expkx 1j k 1 2j k 2
+65
+as in the previou case we can easili construct a linear oper aj x2j1 with the
+coeffici independ of k such that j an ok 1 expkx use global
+analyt properti on the riemann surfac we deduc from thi that the lefthand side is
+equal to zero as befor the compat condit of these pair of equat is exactli a
+kdvn system for the potenti ux t1 tm
+follow the work 33 34 35 we can prove in the same way that for the gener
+bakerakhiez function x p associ with arbitrari riemann surfac with fix
+local coordin near a punctur the follow equat are valid
+k lk 0 k 2 3
+66
+here lk xk are linear od oper act on the variabl x with coeffici depend on paramet these coeffici are differenti polynomi in the coeffici of
+the expans of the regular factor of the bakerakhiez function at the punctur infin
+they are uniqu defin by the condit that the expans of the lefthand side of 66
+at the punctur ha the form ok 1
+the compat condit
+j lj k lk 0
+67
+are equival to nonlinear partial differenti equat for the coeffici of the oper
+lk for the case j 2 k 3 2 y 3 z the oper l2 and l3 have the form
+3
+l2 x2 ux y t l3 x3 ux wx y t
+2
+68
+where we consid the depend of the coeffici with respect to the first three variabl
+1 x 2 y 3 t onli the coeffici ux y t is equal to u 21x x y t where 1 is
+the first coeffici of the expans 62
+from 67 we get a system of two equat for two coeffici ux y t and wx y t
+which can be reduc for an equat for ux y t the reduc equat is the famou kp
+equat
+3uyi 4ut 6uux uxxx x
+69
+it appear in physic literatur for the investig of the transvers stabil of the kdv
+soliton see 73 and is one of the most natur physic twodimension analog of kdv
+lax represent for it wa found in 22 23 we call the whole set of higher system 67
+the kp hierarchi we shall discuss the period problem for thi equat at greater length
+in the next section
+17
+for the special choic of the hyperellipt riemann surfac and k we have k 2s s
+where the function is welldefin global as a meromorph function on the riemann
+surfac therefor we may repres global the correspond bakerakhiez function
+in the form
+exp2 k 2 4 k 4
+610
+where doe not depend on the paramet 2j so in thi case all the kp hierarchi reduc
+to the kdv hierarchi
+the relationship of thi construct with commut od linear oper is as follow
+let f p be a meromorph function on the riemann surfac with one pole at the punctur
+p0 it neg part written in the paramet k is some polynomi qk q1l q2 k l1
+ql k appli the oper af q1 ll q2 ll1 q1 x to the function by the
+definit of the oper lk we can see that
+af f ok 1
+611
+we conclud as befor that the differ af f p 0
+for ani pair of function f and g on the riemann surfac with pole at the point
+we get a pair of the commut od scalar linear oper af ag such that af ag ag af
+in a special case of the hyperellipt riemann surfac z 2 0 2n we have pair
+of function f g z lead to the schroding oper l x2 u commut with
+the second oper of order 2n 1 becaus z k 2n1
+now we return back to the problem of exist and uniqu of the bakerakhiez
+function the simplest way to prove thi exist is to defin thi function by exact formula in term of the function and meromorph differenti let us recal first necessari
+inform
+as in the previous discuss case of hyperellipt curv we introduc a basi of cycl
+aj bj j 1 g on a riemann surfac of genu g with canon matrix of intersect
+ai bj ij and a basi i of holomorph differenti normal by the condit
+ai
+j ij
+612
+the matrix b bij of bperiod of these differenti
+bij
+bi
+j
+613
+is symmetr and ha posit defin imaginari part the riemann function is a function
+defin with the help of thi matrix by the formula
+e2izmbmm
+zb
+614
+mz g
+where z z1 zg is a complex gdimension vector m z stand for a standard scalar
+product and summat is taken over all integ vector m m1 mg thetafunct
+18
+is an entir period function of g variabl zj and ha the follow monodromi properti
+with respect to the shift defin by vector bk which are column of the matrix of bperiod
+z bk e2izk ibkk z
+615
+the basic vector ek and the vector bk defin a lattic l in c g which determin gdimension complex toru j c g l call jacobian of the curv the abel map
+a j is defin by the formula
+ak p
+p
+p0
+k
+616
+note that the vector ap with coordin ak p depend on the choic of path of integr but it ambigu just coincid with shift by vector of the lattic l
+from the monodromi properti of function it follow that zero of the multivalu
+function ap z consid as a function on are welldefin for a gener vector
+z thi function ha exactli g zero 1 g the vector z can be express in term of
+abel transform of these point by the formula
+g
+z
+aj k
+617
+j1
+where k is a vector of the riemann constant
+let us introduc a set of meromorph differenti di that are holomorph on outsid
+the punctur where they have pole of the form
+di dk i 1 ok i1
+618
+and normal in a usual way by the condit
+ai
+dj 0
+the abelian integr
+i p
+p
+619
+di
+620
+dj
+621
+are multivalu function on
+let uj be a vector with the coordin
+ujk
+1
+2i
+bk
+then from the statement present abov it follow directli that the formula
+i i p
+p exp
+i
+ap i ui i zz
+ap z i ui i z
+622
+correctli defin a function on which satisfi all the properti of the bakerakhiez
+function
+19
+suppos now that there exist anoth bakerakhiez function 1 from the definit
+the bakerakhiez function it follow that the ratio 1 is a meromorph function on
+which is equal to 1 at the punctur and with onli possibl pole at the zero of the function
+accord to 622 the zero of are zero of the function ap i ui i z
+therefor ha g zero the simplest form of the riemannroch theorem which can be
+consid as gener of the liouvil theorem for riemann surfac impli that a
+function on with at most g pole at a gener set of point is a constant therefor 1
+and the exist and uniqu of the bakerakhiez function is prove
+now accord to the previous establish formula u 2x 1 in order to get an exact
+formula for a solut of the kp hierarchi it is enough to take the first coeffici 1 of
+the expans of the preexponenti factor in 62 at the punctur final we obtain the
+express
+623
+u 2x2 log ui i z const
+i
+for the finit gap solut of the whole kp hierarchi
+if we consid onli the kp equat we get the formula
+ux y t 2x2 log ux v y w t z const
+624
+where we redenot x 1 y 2 t 3 and u u1 v u2 w u3
+for the case of the hyperellipt curv the vector v 0 and we get the itsmatveev
+formula for the finitegap solut of the kdv equat
+the formula 624 deriv in 34 35 ha led to one of the most import pure mathemat applic of the theori of nonlinear integr system thi is the solut of
+the famou riemannshottki problem
+accord to the torrelli theorem the matrix of bperiod of normal holomorph differenti uniqu defin the correspond algebra curv the riemannshottki problem
+is to describ symmetr matric with the posit imaginari part which are the matric
+of bperiod of normal holomorph differenti on algebra curv one of the author
+conject that the function ux y t given by 624 is a solut of the kpequat iff the
+matrix b that defin the thetafunct is the matrix of bperiod of normal holomorph
+differenti on an algebra curv and u v w are vector of bperiod of correspond normal meromorph differenti with the onli pole at a point of thi curv thi conjectur
+wa prove in 74
+7
+spectral theori of twodimension period oper kp hierarchi
+a gener algebraicgeometr construct of the finitegap potenti for the schroding
+oper and for solut of the kp hierarchi that wa present in the previou section
+ha been develop extens in year it is applic for all soliton system which are
+20
+equival to variou type of compat condit for overdetermin system of auxiliari linear problem in it algebra form it is in some sens local and is a sort of invers
+transform from a set of algebraicgeometr data to solut of the integr nonlinear
+partial differenti equat
+algebra geometr data solut of nlp de
+71
+in a gener case the space of algebraicgeometr data is a union for all g of the space
+gn g p k1 q 1 g 1 n
+m
+72
+where g is an algebra curv of genu g with fix local coordin k1 q k1 p 0
+in neighborhood of n punctur p and 1 g are point of g in a gener posit
+gn are univers data for the given nonlinear integr
+it is to be mention that m
+equat the correspond subset of data ha to be specifi
+aposteriori it can be shown that these solut can be express in term of the correspond riemann thetafunct and are quasiperiod function of all variabl whithin
+thi approach it is absolut imposs to give an answer to the basic question how
+mani algebraicgeometr solut are there and what is their role in the solut of the
+period cauchi problem for twodimension equat of the kp type
+the answer of the correspond question in lower dimens is as follow for finit
+dimension 01 system a typic lax represent ha the form
+t ut ut v t
+73
+where ut and v t are matrix function that are ration or sometim ellipt
+function of the spectral paramet in that case all the gener solut are algebraicgeometr and can be repres in term of the riemann thetafunct
+for spatial onedimension evolut equat of the kdv type 11system the
+exist of direct and invers spectral transform allow one to prove though it is not
+alway the rigor mathemat statement that algebraicgeometr solut are dens
+in the space of all period in x solut
+it turn out that the situat for twodimension integr equat is much more
+complic for one of the real form of the kp equat that is call the kp2 equat
+and coincid within 69 the algebraicgeometr solut are dens in the space of all
+period in x and y solut 41 it seem that the same statement for the kp1 equat
+which can be obtain from 69 be replac y iy is wrong one of the most import
+problem in the theori of twodimension integr system which are still unsolv is in
+what sens the kp1 equat ahich ha the oper represent 67 and for which a
+wide class of period solut wa construct is an nonintegr system
+the proof of the integr of the period problem for the kp2 equat is base on
+the spectral floquet theori of the parabol oper
+m y x2 ux y
+21
+74
+with period potenti ux l1 y ux y l2 ux y we are go now to present
+the most essenti point of thi theori which wa develop in 41 it is the natur
+gener of the spectral theori of the period sturmliouvil oper we would
+like to mention that despit it applic to the theori of nonlinear equat and relat
+topic the structur of the riemann surfac of bloch solut of the correspond linear
+equat that wa found in 41 ha been use as a start point for an abstract definit
+of the riemann surfac of the infinit genu 75
+solut x y w1 w2 of the nonstationari shroding equat
+y x2 ux yx y w1 w2 0
+75
+with a period potenti ux y ux a1 y ux y a2 are call bloch solut if
+they are eigenfunct of the monodromi oper ie
+x a1 y w1 w2 w1 x y w1 w2
+76
+x y a2 w1 w2 w2 x y w1 w2
+77
+the bloch function will alway be assum to be normal so that 0 0 w1 w2 1
+the set of pair q w1 w2 for which there exist such a solut is call the floquet set
+and will be denot by the multivalu function pq and eq such that
+w1 eipa1 w2 eiea2
+are call quasimomentum and quasienergi respect
+the gaug transform ehi where y hy is a period function transfer the
+solut of 75 into solut of the same equat but with anoth potenti u uy h
+consequ the spectral set correspond to the potenti u and u are isomorph
+therefor in what follow we restrict ourselv to the case of period potenti such that
+a1
+0 ux ydx 0
+to begin with let us consid as a basic exampl the free oper m0 y x2 with
+zero potenti ux y 0 the floquet set of thi oper is parameter by the point
+1 2
+of the complex plane of the variabl k w10 eika1 w20 e k a2 and the bloch solut
+1 2
+1 2
+have the form x y k eikx k y the function x y k eikx k y are bloch
+solut of the formal adjoint oper y x2 0
+an imag of the map k c w10 w20 is the floquet set for the free oper m0 it
+is the riemann surfac with selfintersect the selfintersect correspond to the pair
+k k such that wi0k wi0k i 1 2 the latter condit impli the equat
+k k
+2n
+2im
+k 2 k 2
+a1
+a2
+78
+where n and m are integ henc all the reson point have the form
+k knm
+n
+ima1
+n 0 k knm
+a1
+na2
+22
+79
+the basic idea of the construct of the riemann surfac of bloch solut of the equat
+75 that wa propos in 41 is to consid 75 as a perturb of the free oper
+assum that the potenti ux y is formal small
+for ani k0 knm it is easi to construct a formal bloch solut it turn out that the
+correspond formal seri converg and defin a holomorph function of k0 for k0 m
+big enough and lie outsid small neighborhood of the reson point moreov it can be
+shown that thi function can be extend on the riemann surfac that can be thought as a
+surfac obtain from the complex plane by some kind of surgeri that creat gap in place
+of the reson point
+more precis if ux y is a smooth real potenti that ha analyt continu in
+some neighborhood of the real valu of x and y then the correspond riemann surfac
+of blochfloquet solut can be describ in the follow way
+let us fix some finit or infinit subset s of integ pair n 0 m the set of pair
+of complex number ps1 ps2 where s s would be call admiss if
+re psi
+n
+psi ks ok 1 i 1 2
+a1
+710
+and the interv ps1 ps2 do not intersect here ks s n m are reson point
+let us defin the riemann surfac for ani admiss set it is obtain from the
+complex plane of the variabl k by cut it along the interv ps1 ps2 and
+ps1
+ps2
+and by sew after that the left side of the first cut with the right side of the second cut
+and vice versa after thi surgeri for each cut ps1 ps2 correspond to a nontrivi cycl
+as on
+for ani real period potenti ux y which can be analyt extend into some
+neighborhood of the real valu x y the bloch solut of the equat 75 are parameter by point q of the riemann surfac correspond to some admiss set
+the function x y q which is normal by the condit 0 0 q 1 is meromorph
+on and ha a simpl pole s on each cycl as if the admiss set contain onli a
+finit number of pair then ha finit genu and is compactifi by onli one point p1
+k in the neighborhood of which the bloch function ha the form 62
+the potenti u for which ha finit genu are call finitegap they coincid with
+the algebraicgeometr potenti the direct spectral transform for period oper
+74 allow us to prove that like in the onedimension case the finitegap potenti are
+dens in the space of all period smooth function in two variabl 41
+8
+spectral theori of twodimension schr
+oding oper for fix energi level and twodimension
+toda lattic
+in thi section we discuss a spectral theori of twodimension period schoding oper
+unlik the onedimension case spectral data for 2d linear oper are overdetermin
+23
+and therefor for gener oper there are no nontrivi isospectr flow as it wa note
+in 77 deform that preserv spectral data for one fix energi level do exist an
+analog of lax represent for such system ha the form
+ht a h bh
+81
+where h a b are two dimension oper with coeffici depend on x y t equat
+81 is equival to the condit that oper h and t a commut on the space of
+solut of the equat h 0 therefor 81 describ deform preserv all the
+spectral data associ with the zero energi level of the oper h
+it should be mention that until the moment when equat 81 were propos in
+the framework of the soliton theori the spectral problem associ with one energi level of
+twodimension period oper had never been consid
+for the first time an invers algebraicgeometr spectral problem for twodimension
+schroding oper in magnet field
+h ix ax x y2 iy ay x y2 ux y
+82
+wa formul and solv in 36
+consid the bloch solut of the equat h which by definit are solut
+that at the same time are eigenfuct for the shift oper
+x t1 y eipx t1 x y x y t2 eipi t2 x y
+83
+here t1 t2 are period of the oper h ie period of the potenti ux y and period of
+the magnet field bx y which is defin by the vector potenti ax ay by the formula
+b y ax x ay
+multivalu quantiti px py are compon of the twodimension quasimomentum
+for fix valu of px py a spectrum of the oper h restrict on the space of function
+satisfi 83 is discret and defin differ branch of dispers relat j px py j
+1 level line j px py 0 in the space of variabl px py defin the socal fermi
+curv of cours in the solid state physic all the consider were restrict by real
+valu of quasimomentum
+in 36 it wa suggest to consid oper for which a complex fermi curv doe
+exist and is the riemann surfac of finit genu for some energi level 0 moreov it wa
+assum that thi curv is compactifi by two infin point p in neighborhood of which
+the correspond bloch solut have the form
+ek xiy
+s
+s x yk
+84
+s0
+1
+where k
+are local coordin in the neighborhood of the punctur p it wa also
+assum that outsid the punctur the function x y p consid as a function of the
+variabl p which is a point of the complex fermi curv is meromorph function with g
+pole independ of the variabl x and y
+24
+we present here a solut to thi invers spectral problem in a more gener form which
+is necessari for construct of exact solut to the twodimension toda lattic which
+ha deep connect with the theori of 2d schroding oper after that we return
+back to the spectral problem
+let be a smooth algebra curv of genu g with fix local coordin w p in
+neighborhood of the point p w p 0 then for each set of g point 1 g in
+gener posit there exist a uniqu function n t p t t
+i i 1 such that
+10 the function n of the variabl p is meromorph outsid the punctur and ha
+at most simpl pole at the point s if all of them are distinct
+20 in a neighborhood of the point p it ha the form
+s
+s n t w
+exp
+n
+n t p w
+s0
+i
+w
+ti
+w w p
+85
+i1
+0 x t j
+86
+the proof of thi statement as well as the explicit formula for n in term of riemann
+thetafunct is almost ident to the way of solut of the invers problem for finitegap schroding oper discuss in the previou section
+let dj be a uniqu meromorph differenti holomorph on outsid the point p
+which ha the form
+j
+dj dw
+ow
+87
+near the point p and normal by the condit ak di
+with coordin
+1
+ujk
+dj
+2i bk
+0 it defin a vector uj
+88
+further let us defin the normal differenti d0 which is holomorph outsid the
+point p where it ha simpl pole with residu 1 respect from riemann bilinear
+relat it follow that the vector of bperiod of thi differenti equal 2iu 0 where
+u 0 ap ap
+89
+as in the previou case one can directli check that the function n t p given by the
+formula
+n t p
+ap u 0 n
+ap
+ti
+ui
+zap
+zap z
+u 0 n
+ui ti
+i p
+p
+di
+z
+en
+0 p
+t
+i i
+p
+810
+811
+is welldefin and ha all the properti of the bakerakhiez function
+note that for n 0 and t
+1 x iy ti 0 i 1 the analyt properti of thi
+function coincid with the properti that were describ abov as analyt properti of
+the bloch solut for finitegap twodimension schroding oper
+25
+from the uniqu of the bakerakhiez function n t p it follow that they satisfi
+the linear equat
+t
+1
+812
+vn n t cn en t n1 t en 0 t
+813
+n n1 vn n n cn n1
+where
+and 0 t is a lead term of the expans of n at the punctur p from 810 we get
+the formula
+n log
+u 0 n 1
+u 0 n
+ti z0
+ui ti z0
+ui
+const z0 z ap
+814
+for algebraicgeometr solut of 2d toda lattic which wa obtain in 76
+note that 812 impli that 0 satisfi the equat
+0 v0 0 c1 v0 0
+815
+which is gaug equival to 82 and therefor we do get a solut of the invers problem
+that wa introduc abov
+the next import step wa done in 38 39 where algebraicgeometr spectral data
+correspond to potenti 2d schroding oper ie oper with zero magnet field
+were found
+1
+let be a smooth genu g algebra curv with fix local coordin k
+q
+0 in neighborhood of two punctur p let us assum that there exist a
+holomorph involut of the curv such that p are it onli fix point
+ie p p the local paramet are to be odd ie k q k q the
+factorcurv will be denot by 0 the project
+1
+k
+p
+0
+816
+repres as a twosheet cover of 0 with the two branch point p in thi realiz
+the involut is a permut of the sheet as there are onli two branch point
+g 2g0 where g0 is genu of 0 let us consid a meromorph differenti dq of the
+third kind on 0 with residu 1 at the point p the differenti d ha g zero that will
+be denot by i i 1 2g0 g let us choos for each i a point i on such that
+i i i 1 g
+817
+in 38 39 it wa shown that the bakerakhiez function correspond to algebraicgeometr data which have been just defin satisfi the equat
+ux yx y q 0
+818
+u 1 1
+819
+where
+26
+and 1 1 x x are the first coeffici in the expans 84
+it should emphas that though gener formula 810 in term of the riemann function is valid for the bakerakhiez function correspond to the potenti shroding
+oper h in 38 39 it wa found anoth more effect represent in term of the
+socal prim thetafunct
+a space of holomorph differenti on split into two g0 dimension subspac of
+even and odd with respect to the involut differenti a matrix of bperiod of odd
+differenti defin the function p r z by the same formula 614 then
+p r aod q u x u x zp r aod z ip qx p qx
+e
+p r aod q zp r u x u x z
+820
+here p q are abelian integr of the second kind normal differenti dp on that
+have pole of the second order at the point p respect vector 2u are the vector
+of bperiod of these differenti
+as it wa mention abov the invers algebraicgeometr spectral problem on one energi
+level for 2d schroding oper wa pose and solv at the time when no direct spectral
+theori wa known thi theori wa develop much later in 41 where it wa shown that
+the bloch solut for 818 with analyt period potenti are parameter by point
+of infinit genu riemann surfac it wa prove that if thi surfac ha finit genu then
+the bloch function have all the analyt properti suggest in the invers problem and
+therefor are just the bakerakhiezerfunct moreov it wa prove that algebraicgeometr finitegap potenti are dens in the space of all period potenti
+9
+spectral theori of oper with ellipt coeffici
+in thi section we are go to discuss a specif spectral problem for oper with ellipt
+coeffici ie with the coeffici that are meromorph function of a variabl x and
+have two period 2 2 im 0
+sinc hermit time it ha been known that onedimension schroding oper with
+potenti of the form nn 1x where x x is weierstrass function correspond to ellipt curv with period 2 2 and n is an integ ha onli n gap in the
+spectrum these lame potenti had been the onli known exampl with the finitegap
+properti befor the finitegap theori wa construct in the framework of the soliton theori
+see abov as we alreadi have shown a gener algebraicgeometr potenti can be express in term of higher genu riemann function sometim higher genu formula can
+be reduc to exact express in term of ellipt function
+the first exampl of thi type which is differ from the lame potenti wa propos
+in 25 later a theori of ellipt finitegap potenti attract the special interest due to
+remark observ made in 78 on their connect with the ellipt calogeromos
+model the most recent burst of interest is due to the unexpect connect of these
+system to seibergwitten solut of n 2 supersymmetr gaug theori 14 15 it
+27
+turn out that the low energi effect theori for sun model with matter in the adjoint
+represent identifi first in 1 with sun hitchin system is isomorph to the ellipt
+cm system use thi connect quantum order paramet were found in 79
+the ellipt calogeromos cm system 80 81 is a system of n ident particl
+on a line interact with each other via the potenti v x x it equat of motion
+have the form
+xi 4
+xi xj
+91
+ji
+the cm system is a complet integr hamiltonian system ie it ha n independ
+integr hk in involut 82 83 the second integr h2 is the hamiltonian of 91
+in 78 it wa shown that the ellipt solut of the kdv equat have the form
+n
+ux t 2
+i1
+x xi t
+92
+and the pole xi t of the solut satisfi the constraint ji xi xj 0 which is the
+locu of the stationari point of the cm system moreov it turn out that the depend
+of the pole with respect to t coincid with the hamiltonian flow correspond to the
+third integr h3 of the system in 84 85 it wa found that thi connect becom
+an isomorph in the case of the ellipt solut of the kadomtsevpetviashvilii equat
+moreov in 66 it wa reveal that the connect of the cm system with the kp equat
+is in some sens secondari and is a corollari of more fundament connect with spectral
+theori of linear oper with ellipt potenti the correspond approach ha been
+develop extens in 67 68 69
+let l be a linear differenti or differ oper in two variabl x t with coeffici
+which are scalar or matrix ellipt function of the variabl x we do not assum ani special
+depend of the coeffici with respect to the second variabl then it is natur to
+introduc a notion of doublebloch solut of the equat
+l 0
+93
+we call a meromorph vectorfunct f x which satisfi the follow monodromi properti
+f x 2 b f x 1 2
+94
+a doublebloch function the complex number b are call bloch multipli in other
+word f is a meromorph section of a vector bundl over the ellipt curv
+in the most gener form a problem that we are go to address is to classifi and to
+construct all the oper l such that equat 93 ha suffici enough doublebloch
+solut
+it turn out that exist of the doublebloch solut is so restrict that onli in
+except case such solut do exist a simpl and gener explan of that is due to
+the riemannroch theorem let d be a set of point xi i 1 m on the ellipt curv
+0 with multipl di and let v v d b1 b2 be a linear space of the doublebloch
+28
+function with the bloch multipli b that have pole at xi of order less or equal to di and
+holomorph outsid d then the dimens of d is equal to
+dim d deg d
+di
+i
+now let xi depend on the variabl t then for f dt the function lf is a doublebloch function with the same bloch multipli but in gener with higher order of pole
+becaus take deriv and multipl by the ellipt coeffici increas these order
+therefor the oper l defin a linear oper
+ld v dt b1 b2 v d t b1 b2 n deg d n deg d
+and 93 is alway equival to an overdetermin linear system of n equat for n
+unknown variabl which are the coeffici ci ci t of expans of v t with respect
+to a basi of function fi t v t with some exagger one may say that in the
+soliton theori the represent of a system in the form of the compat condit of
+an overdetermin system of the linear problem is consid equival to integr
+in all of the basic exampl n 2n and the overdetermin system of equat ha
+the form
+lc kc t c mc
+95
+where l and m are n n matrix function depend on a point z of the ellipt curv as
+on a paramet a compat condit of 95 ha the standard lax form t l m l
+and is equival to a finitedimension integr system
+the basi in the space of the doublebloch function can be written in term of the
+fundament function x z defin by the formula
+x z
+z x zx
+e
+zx
+96
+note that x z is a solut of the lame equat
+d2
+2x x z zx z
+dx2
+97
+from the monodromi properti it follow that consid as a function of z is doubleperiod
+x z 2 x z
+though it is not ellipt in the classic sens due to an essenti singular at z 0 for
+x 0
+as a function of x the function x z is doublebloch function ie
+x 2 z t zx z t z exp 2 z 2z
+in the fundament domain of the lattic defin by 2 the function x z ha a uniqu
+pole at the point x 0
+x z x1 ox
+98
+29
+the gaug transform f x fx f xeax where a is an arbitrari constant doe
+not chang pole of ani function and transform a doubl blochfunct into anoth doublebloch function if b are bloch multipli for f then bloch multipli for f are equal to
+1 b1 e2a1 b
+2 b2 e2a2
+b
+99
+the two pair of bloch multipli that are connect with each other through the relat
+99 for some a are call equival note that for all equival pair of bloch multipli
+the product b12 b21 is a constant depend on the equival class onli
+from 98 it follow that a doublebloch function f x with simpl pole xi in the
+fundament domain and with bloch multipli b such that at least one of them is not
+equal to 1 may be repres in the form
+n
+f x
+i1
+ci x xi zekx
+910
+where ci is a residu of f at xi and z k are paramet relat by b t ze2 k ani
+pair of bloch multipli may be repres in thi form with an appropri choic of the
+paramet z and k
+let us consid as an exampl the equat
+l t x2 ux t 0
+911
+where ux t is an ellipt function then as shown in 66 equat 911 ha n linear
+independ doublebloch solut with equival bloch multipli and n simpl pole at
+point xi t if and onli if ux t ha the form
+n
+ux t 2
+i1
+x xi t
+912
+and xi t satisfi the equat of motion of the ellipt cm system 91
+the assumpt that there exist n linear independ doublebloch solut with equival bloch multipli impli that they can be written in the form
+n
+i1
+2
+ci t k zx xi t zekxk t
+913
+with the same z but differ valu of the paramet k
+let us substitut 913 into 911 then 911 is satisfi if and onli if we get a function
+holomorph in the fundament domain first of all we conclud that u ha pole at xi
+onli the vanish of the tripl pole x xi 3 impli that ux t ha the form 912
+the vanish of the doubl pole x xi 2 give the equal that can be written as a
+matrix equat for the vector c ci
+lt z kic 0
+30
+914
+where i is the unit matrix and the lax matrix lt z is defin as follow
+1
+lij t z ij x i 1 ij xi xj z
+2
+915
+final the vanish of the simpl pole give the equat
+t mt zc 0
+where
+mij z 2
+ji
+916
+xi xj ij 21 ij xi xj z
+917
+the exist of n linear independ solut for 911 with equival bloch multipli
+impli that 914 and 916 have n independ solut correspond to differ valu
+of k henc as a compat condit we get the lax equat l m l which is
+equival to 91 note that the last system doe not depend on z therefor if 914
+and 916 are compat for some z then they are compat for all z as a result we
+conclud that if 911 ha n linear independ doublebloch solut with equival
+bloch multipli then it ha infinit mani of them all the doublebloch solut are
+parameter by point of an algebra curv defin by the characterist equat
+n
+rk z detki lz k n
+ri zk n i 0
+918
+i1
+equat 918 can be seen as a dispers relat between two bloch multipli and
+defin as nsheet cover of 0
+as wa shown in 66 expans of the characterist equat 914 at z 0 ha the
+form
+n
+rk z
+k i z 1 hi oz 1 1 n i 1 i 1
+919
+i1
+we call the sheet of at z 0 correspond to the branch k z 1 n 1 o1 an
+upper sheet and mark the point p1 on thi sheet among the preimag of z 0 from 919
+it follow that in gener posit when the curv is smooth it genu equal n
+further consider of analyt properti of the function given by 913 where
+ci are compon of the eigenvector to the matrix l show that thi function is just the
+bakerakhiez function introduc in section 6 combin with express 622 for in
+term of function thi result directli lead to the main statement of 66
+the coordin of the particl xi t are root of the equat
+ux v t z0 0
+920
+where b is the riemann thetafunct correspond to the matrix of bperiod
+of holomorph differenti on the vector u and v are the vector of bperiod of normal meromorph differenti on with pole of order 2 and 3 at the point p1
+31
+among other exampl of integr system that can be gener in the similar way
+are ruijesenaarsschneid system 86
+xi
+si
+x i x s v xi xs v xs xi v x x x
+921
+and nest beth ansatz equat 87
+xni xn1
+xni xnj xni xjn1
+j
+1
+n1
+n
+xni xnj xni xjn1
+ji xi xj
+922
+as shown in 68 69 they are gener by spectral problem for equat
+l t x t x t vx tx t 0
+923
+x m 1 x vx mx m
+924
+and
+respect here is a complex number and vx t is an ellipt function
+strang as it is the invers spectral problem which is discuss here is simplier for twodimension oper then for onedimension stationari oper for exampl a famili
+of spectral curv correspond to oper 911 that have doublebloch solut can be
+describ explicitli a nice formula wa found in 79
+rk z f k z z f k z
+1
+hk
+z
+z
+k
+925
+where hk is a polynomi note that 925 may be written as
+f k z
+1
+z
+n
+1 n
+z z
+k
+n1 n
+n
+hk
+the coeffici of the polynomi hk are free paramet of the spectral curv of the cm
+system
+the spectral curv correspond to the schroding oper with the same properti
+are special case of the curv 925 but their explicit descript is unknown in particular
+exact formula for branch point for lame potenti is unknown as it wa mention
+abov the first exampl of ellipt finitegap potenti differ from the lame potenti
+wa found in 25 a wide class of such potenti wa found in 70
+in 88 it wa note that the problem of classif of schroding oper with ellipt
+potenti that have two doublebloch solut for almost all energi level wa pose by
+picard though had not been solv until veri recent in 88 use floquet spectral theori
+for the schroding oper it wa prove that all such potenti are finitegap thi result
+is an essenti step in the picard problem though it complet and effect solut is still
+an open problem
+32
+refer
+1 rdonagi ewitten nucl phi b 460 1996 299334 hepth9610101
+2 mdougla sshenker nucl phi b 335 1990 635654
+3 bdubrovin nucl phi b 379 1992 627689
+4 bdubrovin ba comm math phi 145 1992 195207
+5 agorski ikrichev amarshakov amironov a morozov phi lett b 355 1995
+466474
+6 agorski nnekrasov ellipt calogeromos system from twodimension current
+algebra preprint itepng194 hepth9401021
+7 ikrichev comm pure appl math 47 1994 437475
+8 ikrichev dhphong j differenti geometri 45 1997 349389
+9 ikrichev dhphong symplect form in the theori of soliton preprint hepth9708170
+10 emartinec phi lett b 367 1996 9196 hepth9510204
+11 emartinec nwarner nucl phi b 459 1996 97112 hepth9609161
+12 amarshakov int j mod phi a 12 1997 16071650 hepth9610242
+13 amarshakov amironov and amorozov wdvvlike equat in n2 susi yangmil theori hepth9607109
+14 nseiberg ewitten nucl phi b 426 1994 1952 hepth9407087
+15 nseiberg ewitten nucl phi b 431 1994 484550 hepth9410167
+16 mkruskal nzabuski phi rev letter 15 1965 240243
+17 cgardner jgreen mkruskal jmiura phi rev letter 19 1967 10951098
+18 plax communicationa pure and appl math21 1968 467490
+19 vzakharov ashabat sov physjetp 34 1972 6269 english translat from
+jetp 61 1971 118134
+20 glamb rev modern physic 43 1971 99124
+21 mablowitz dkaup anewel hsegurphi rev letter 30 1973 12621264
+22 vzakharov ashabat function anal appl 8 1974 n 3 4553
+23 vdriuma jetp letter 19 1974 387388
+33
+24 snovikov function anal appl 8 1974 n 3 5466
+25 bdubrovin snovikov sov physicsjetp 40 1974 10581063 english translat
+from jetp 67 1974 21312144
+26 bdubrovin snovikov dan soviet math dokladi 219 1974 n 3 1922
+27 bdubrovin function anal appl 9 1975 n 3 4151
+28 ait vmatveev function anal appl 9 1975 n 1 6970
+29 ait vmatveev theor math phi 23 1975 n 1 5167
+30 plax commun pure appl math 28 1975 141188
+31 hmckean pvan moerbek invention math 30 1975 217274
+32 bdubrovin vmatveev snovikov uspekhi math nauk russian math survey 31
+1976 n 1 55136
+33 ikrichev dan soviet math dokladi 227 1976 291294
+34 ikrichev function anal appl 1977
+35 ikrichev uspekhi math nauk russian math survey 32 1977 n 6 185213
+36 bdubrovin ikrichev snovikov dan soviet math dokladi 229 1976 1518
+37 ikrichev snovikov uspekhi math nauk russian math survey 35 1980 n 6
+5379
+38 snovikov aveselov dan soviet math doklady279 1984 2024
+39 snovikov aveselov in the book soliton and coher structur edit by
+dcampbel anewel r schrieffer hsegur northholland dedic to the 60th
+birthday of mkruskal 1986 267273
+40 bdubrovin ikrichev snovikov encyclopedia math scienc springer vol 4
+edit by varnold and snovikov 173280
+41 ikrichev uspekhi mat nauk russian math survey 44 1989 n 2 121184
+42 ikrichev function anal appl v28 1994 n 1 2640
+43 ikrichev function anal appl 311997 n 1 3250
+44 snovikov smanakov lpitaevski vzakharov theori of soliton plenum press
+1984
+45 bdubrovin uspekhi math nauk russian math survey 36 1981 n 2 1180
+34
+46 vmarchenko i ostrovski see in the book vmarchenko sturmliouvil oper
+and applic nukova dumka 1977 in russian
+47 hmckean etrubovitz comm pure applmath 291976143226
+48 bmccoy ctraci twu journ math phi 18 19770 1058
+49 hflashka anewel commun math phi 76 1980 n 1 65116
+50 mjimbo tmiwa physica 2d 1981 407
+51 mjimbo publ rim kyoto univ 18 1982 1137
+52 akapaev differenti equat russian 24 1988 19841694
+53 ait vnovokshenov lectur note in math 1191 1986 1313
+54 pgrinevich snovikov stpetersburg math journ 6 1995 n 3 553574 english translat from algebra and analysi 6 1994 n 3
+55 bdubrovin yzhang compositio math 111 1988 167219
+56 cgardner journ math phi 12 1871 15481551
+57 vzakharov lfaddeev function anal appl 5 1971 n 4 1827
+58 igelfand ldikii function anal appl 10 1976 n 1 30
+59 igelfand ldikii function anal appl 13 1979 n 1 8
+60 fmagri journ math phi 19 1978 11561162
+61 madler invention math 50 1979 219248
+62 igelfand ldikii uspekhi math nauk russian math survey 30 1975 n 5 77113
+63 jburchnal tchaundi proc london math soc ser ii 21 1923 420440
+64 jburchnal tchaundi proc royal soc london ser a 118 1928 557583
+65 pgrinevich m schmidt period preserv nonisospectr flow and the moduli space of
+period solut to soliton eqaut preprint solvint 9412005
+66 imkrichev func anal app 14 1980 n 4 282290
+67 ikrichev obabelon ebilley and mtalon amermathtransl 170 1995 n 2
+83119
+68 imkrichev and avzabrodin uspekhi mat nauk 50 1995 n6 356
+69 ikrichev olipan pwiegmann and azabrodin commun math phi 188 1997
+267304
+35
+70 a trebish jl verdier soliton elliptiqu grothendieck festschrift ed pcartier et
+al progress in math 88 birkhaus boston 1990
+71 hbaker proc royal soc london ser a 118 1928 584593
+72 nakhiez dan in russian onli 141 1961 n 2 263266
+73 bkadomtsev vpetviashvili dan ssrphysic in russian 192 1970 n 4 753
+74 tshiota invent math 83 1986 333382
+75 jfelder hknorrer etrubowitz riemann surfac of the infinit genu preprint eth
+zurich
+76 ikrichev uspekhi mat nauk 36 1981 n 2 7277
+77 smanakov uspekhi mat nauk russian math survey 31 1976 n 5 245246
+78 hairault hmckean and jmoser comm pure and appl math 30 1977 95125
+79 edhok dhphong calogeromos system in sun seibergwitten theori
+preprint hepth 9709053
+80 fcalogero lettnuovo cimento 13 1975 411415
+81 jmoser advmath 16 1975 441416
+82 amperelomov lettmathphi 1 1977 531540
+83 maolshanetski and amperelomov phi rep 71 1981 313400
+84 imkrichev funct anal appl 12 1978 n 1 7678
+85 dvchudnovski and gvchudnovski nuovo cimento 40b 1977 339350
+86 snmruijsenaar and hschneider ann phi ny 170 1986 370405
+87 fnijhof oragnisco and vkuznetsov integr timediscret of the ruijsenaarsschneid model univ of amsterdam preprint 9427 hepth9412170 1994
+88 fgestezi r weinkard acta math 176 1996 73107
+36

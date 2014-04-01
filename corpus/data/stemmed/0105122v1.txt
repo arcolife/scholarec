@@ -1,0 +1,309 @@
+arxivhepph0105122v1 14 may 2001
+smallx physic and forward jet product
+at thera
+hann jung1 and leif lonnblad2
+februari 1 2008
+1
+2
+depart of physic lund univers sweden jungmaildesyd
+depart of theoret physic lund univers sweden leiftheplus
+abstract
+we discuss some aspect of forward jet product as a signatur
+for small x physic at thera energi
+1
+introduct
+the evolut of the parton densiti at small x is a veri rich but complic
+issu the steep rise of the structur function f2 at small x is explain by the
+presenc of a huge gluon number densiti the pure dglap 1 2 3 4 evolut
+equat meant to describ the evolut of the parton densiti as a function of
+q2 are abl to reproduc the rise of f2 provid the input start distribut
+are chosen properli
+figur 1 show the pattern of qcd initialst radiat in a smallx di
+event togeth with label for the kinemat the gluon split function pgg is
+given by
+1
+1
+1
+2 zi 1 zi
+1
+pgg zi k2
+s
+zi
+1 zi k2
+where
+s s ca and zi xi xi1 see fig 1 is the ratio of the energi fraction
+of success branch in the gluon chain and k2 is virtual of the tchannel
+gluon with k2 kt2 in dglap the k2 depend of all emiss in the gluon
+chain are simplifi by the observ that at not too small x the domin part
+to the cross section come from the region of phase space where k2 is veri small
+howev if x or z becom veri small the collinear small kt2 approxim of
+1
+y q2
+xn kn
+pn
+xn1 kn1
+pn1
+xn2 kn2
+pn2
+xn3 kn3
+pn3
+x0 k0
+p
+figur 1 kinemat variabl for multigluon emiss the tchannel gluon
+momenta are given by ki and the gluon emit in the initi state cascad
+have momenta pi the upper angl for ani emiss is obtain from the
+quark box as indic with
+dglap may be inadequ thi region is treat by the bfkl 5 6 7 evolut
+equat which keep the full kt2 integr but approxim the gluon split
+function with the asymptot form
+pgg
+1 1
+z kt2
+from a detail analysi of interfer effect in a gluon chain it wa found
+8 9 10 11 that the proper evolut variabl is the angl of the emit gluon
+and not the virtual k2 as in the dglap approxim nor z as in the bfkl
+approxim thi angular order result in the new and more complic
+ccfm evolut 8 9 10 11 which reproduc the bfkl and dglap approxim in the small and larg x limit respect the ccfm equat
+natur interpol between the two extrem howev in ccfm the gluon
+2
+split function contain onli the singular term in z
+pgg
+s
+1
+1
+ns
+z
+1z
+with ns be the nonsudakov form factor to regul the 1z singular the
+non singular term of the split function see eq1 are not obtain within
+the ccfm approxim
+wherea at hera energi s 300 gev the total cross section of deep
+inelast scatter can be reason well describ with the dglap evolut
+equat measur of specif featur of the hadron final state indic
+clear deviat from a pure dglap scenario
+the cross section at low x and larg q2 for a high et2 jet in the proton
+direct a forward jet ha been advoc as a particularli sensit measur of small x parton dynam 12 13 if the forward jet ha larg energi
+xjet ejet eproton x the evolut from xjet to small x can be studi
+when et2 q2 there is no room for q2 evolut left and the dglap formal
+predict a rather small cross section in contrast to the bfklccfm formal
+which describ the evolut also in x measur perform at hera 14 15
+show that the predict from the naiv dglap formal lie a factor 2 below
+the data wherea the data can be describ by ccfm evolut equat 16
+2
+initi state qcd cascad
+the effect of new small x parton dynam is most clearli seen if the contribut
+from typic dglap dynam is suppress the forward jet product in deep
+inelast scatter at small valu of x is one exampl of such a process howev
+the kinemat need to be investig further typic event select criteria at
+hera are
+q2 10 gev2
+et jet 5 gev
+jet 26
+xjet 0036
+05 et2 q2 2
+the rang in x is typic 103 x 102 the evolut take place from
+the larg xjet down to the small x with a typic rang at hera energi of
+x xxjet 01 001 in order to justifi the use of an evolut equat
+instead of a fix order calcul one would requir at least 2 or more gluon
+emiss dure the evolut to roughli estim the energi fraction zi of 3
+3
+ddz
+10
+1
+o
+fwd jet 7 30x920
+10
+1
+10
+2
+10
+1
+z
+figur 2 the valu of the split variabl z for event satisfi the forward jet criteria with 7 at hera energi
+gluon emiss between 103 x 101 one can assum that each gluon carri
+the same energi then the rang of x 001 result in z 02 which is far
+from be in the veri small z region where the bfkl or ccfm approxim
+treat onli the 1z term in the gluon split function are expect to be
+appropri in fig 2 we show the valu of the split variabl z in event
+satisfi the forward jet criteria at hera energi obtain from the mont carlo
+gener cascad 16 sinc the valu of the split variabl z are inde in
+the larg z region the major ha z 01 it is question whether the bfkl
+or ccfm evolut equat includ onli the 1z term of the gluon split
+function are alreadi applic wherea the measur at hera stop at
+x 103 the avail phase space at thera is enlarg by a factor of 10
+therefor the gluon along the chain will presum have smaller z valu and
+the usag of the small x evolut equat might be more justifi in fig 3 we
+show the z valu obtain from event satisfi the forward jet select criteria
+at thera energi s 959 gev compar with the one at hera energi
+s 332 gev the four plot correspond to differ cut on the minimum jet
+angl 1 3 5 7 one clearli can observ that the distribut of z valu
+becom flat at small z at thera energi and that the small z valu are no
+4
+ddz
+ddz
+10
+10
+o
+1
+o
+1
+fwd jet 1 250x920
+fwd jet 3 250x920
+o
+o
+fwd jet 1 30x920
+fwd jet 3 30x920
+1
+1
+10
+10
+10
+2
+10
+1
+1
+10
+2
+10
+1
+1
+z
+ddz
+ddz
+z
+10
+10
+1
+1
+o
+o
+fwd jet 5 250x920
+10
+1
+fwd jet 7 250x920
+o
+10
+fwd jet 5 30x920
+10
+2
+10
+1
+1
+1
+10
+z
+o
+fwd jet 7 30x920
+2
+10
+1
+1
+z
+figur 3 the valu of the split variabl z for event satisfi the forward jet criteria for differ cut on the minimum jet angl a 1 b
+3 c 5 d 7 the solid line correspond to the predict at
+thera energi the dash line correspond to hera energi
+longer suppress as in the hera kinemat region thi clearli show that the
+applic of small x evolut equat at thera energi are justifi and
+unavoid although the sensit to the treatment of larg z split doe
+not complet go away
+at hera the forward jet cross section could be reason well describ
+by includ a resolv virtual photon contribut becaus the phase space for
+small z emiss at hera energi wa rel small the situat chang at
+5
+thera energi the phase space for small z emiss is larger and effect from
+small x evolut becom more visibl in fig 4 the cross section for forward jet
+product is shown as a function of x for standard dglap predict dot includ in addit a contribut from resolv virtual photon dasheddot
+and the ccfm predict dash for comparison the predict from ariadn 171 is shown which implement a semiclass soft radiat model in
+a dipol cascad and which current give the best overal descript of smallx hera data sinc the the avail phase space at thera is enlarg by
+a factor of 10 the differ between the standard dglapbas calcul
+and the ccfm calcul is increas moreov at thera the ccfm approach predict a larger cross section than the model with resolv virtual photon
+contribut ad and smaller cross section than ariadn while all three
+model give compar result at hera thi give a uniqu opportun not
+onli to distinguish between the differ approach but also to studi detail of
+the qcd cascad in a regim where the new smallx evolut equat should
+be appropri
+ddx nb
+ddx nb
+10000
+14000
+12000
+10000
+8000
+6000
+8000
+4000
+6000
+4000
+2000
+2000
+0
+0
+10
+4
+10
+3
+10
+x
+10
+3
+x
+figur 4 forwardjet cross section as
+a function of x in differ model for
+05 p2t q2 2 and a minimum jet
+angl of 1
+1
+4
+figur 5 forwardjet cross section as
+a function of x obtain from ccfm
+for 05 p2t q2 2 for differ cut
+on the minimum jet angl
+use the tune paramet given by set2 in 18
+6
+in fig 5 the forward jet cross section is shown for differ minim jet angl
+cut on the experiment side thi requir complet accept both in the
+electron and proton direct down to the lowest possibl angl from the size of
+the cross section ddx one would like to reach at least 3 for the forward jet
+measur but there are other reason to ask even for 1 on the other
+hand the luminos need for such measur are moder so that thi
+question can be settl within one year of run at thera
+3
+conclus
+hera ha conclus shown the need to go beyond the standard dglap evolut equat in order to explain the data on smallx final state the reach
+in x is howev not quit enough to realli studi detail of the smallx evolut
+to be abl to distinguish between differ approach such as the ccfm evolut resolv virtual photon and the dipol cascad model with the increas
+kinemat region avail at thera thi will becom possibl the steepli
+rise cross section as x get smaller mean that such measur can be done
+even with moder luminos on the other hand the demand on the forward
+coverag of the detector is more critic ideal it should be possibl to measur
+jet down to an angl of 1
+onc a good understand of the smallx evolut is obtain it should be
+possibl to use the underli k factor theorem in bfklccfm where
+observ are describ in term of processdepend offshel matrix element
+and univers unintegr parton densiti to make firm predict of ani other
+smallx measur just as normal dglap parton densiti and matrix element
+are use today at larg q2 thera will be the onli place where these unintegr parton densiti can be measur
+refer
+1 v gribov l lipatov sov j nucl phi 15 1972 438 and 675
+2 l lipatov sov j nucl phi 20 1975 94
+3 g altarelli g parisi nucl phi b 126 1977 298
+4 y dokshits sov phi jetp 46 1977 641
+5 e kuraev l lipatov v fadin sov phi jetp 44 1976 443
+6 e kuraev l lipatov v fadin sov phi jetp 45 1977 199
+7
+7 y balitskii l lipatov sov j nucl phi 28 1978 822
+8 m ciafaloni nucl phi b 296 1988 49
+9 s catani f fiorani g marchesini phi lett b 234 1990 339
+10 s catani f fiorani g marchesini nucl phi b 336 1990 18
+11 g marchesini nucl phi b 445 1995 49
+12 a mueller nucl phi b proc suppl 18c 1990 125
+13 a mueller j phi g 17 1991 1443
+14 h1 collabor c adloff et al nucl phi b 538 1999 3
+15 zeu collabor j breitweg et al eur phi j c 6 1999 239
+16 h jung g salam eur phi j c doi 101007s100520100604 2001
+hepph0012143
+17 l l
+onnblad comp phi comm 71 1992 15
+18 n b et al a comparison of deepinelast mont carlo event gener in
+proceed of the workshop on mont carlo gener for hera physic
+edit by a doyl g grindhamm g ingelman h jung desi hamburg 1999 p 10
+8

@@ -1,0 +1,350 @@
+arxivphysics0112074v1 physicschemph 21 dec 2001
+enrich of nuclear spin isom by
+molecular coher control
+pavel chapovski
+institut of autom and electrometri russian academi of scienc
+630090 novosibirsk russia chapovskyiaensksu
+enrich of nuclear spin isom of molecul by infrar radiat reson to
+molecular rovibr transit is consid special attent is given to the
+enrich by lightinduc cross of far separ ortho and para state
+introduct
+nuclear spin isom were discov in the late 1920 when ortho and para h2 were
+separ by deep cool of hydrogen ga 1 thi techniqu wa success becaus of
+extrem larg gap between the ortho and para state in h2 investig of heavier
+isom were not possibl to perform until recent becaus of the lack of appropri
+enrich method first separ of heavi molecul ch3 f wa achiev use
+the lightinduc drift effect 2 later the isom of h2 o 3 h2 co 4 li2 5 and
+c2 h4 6 were enrich a few practic applic of spin isom are alreadi known
+for exampl isom can affect chemic reaction 7 8 can significantli enhanc nmr
+signal 9 10 or can be use as spin label in nmr base techniqu
+further investig of nuclear spin isom and progress in their applic need
+new enrich method thi is rather difficult and challeng task becaus physic
+and chemic properti of spin isom are almost ident recent new approach
+to the isom enrich base on molecular excit by strong electromagnet field
+wa propos 11 12 13 14 in thi paper we discuss the isom enrich base on
+the coher control by strong infrar radiat we make emphasi on the condit
+necessari for the experiment observ of the phenomenon
+2
+level scheme
+the level scheme is shown in fig 1 we assum that test molecul have onli two
+nuclear spin state ortho and para thi is veri often the case eg in ch3 f 15 16 each
+of the two vibrat state ground and excit ha one orthopara level pair mix
+by intramolecular perturb molecul are embed into a nonmagnet gaseou
+environ character by zero crosssect for collision orthopara transit the
+infrar radiat is reson to the rovibr transit m n of the ortho molecul
+the molecular hamiltonian in our problem consist of four term
+h
+0 h
+rad h
+h
+v
+h
+v h
+1
+rad describ
+0 ha the eigen ortho and para state shown in fig 1 h
+h
+the main part h
+the molecular interact with the extern radiat that will be taken in the form of
+monochromat travel wave
+rad 2g
+cosl t kr
+h
+h
+e0 d2
+g
+2
+where e0 l and k are the amplitud frequenc and wave vector of the electromagnet
+is the molecular electr dipol moment oper v and v are the
+wave respect d
+intramolecular perturb that mix the ortho and para state in excit and ground
+vibrat state respect these perturb origin from the nuclear spinspin
+and spinrot interact 17 18 19 20
+suppos that a test molecul is place initi in the ortho subspac of the ground
+vibrat state due to collis the molecul will undergo fast rotat and veloc
+relax insid the ortho subspac thi will proceed until the molecul jump to the
+state m which is mix with the para state k by the intramolecular perturb v see
+fig 1 or to the state n which is mix with the para state k by the combin action of
+the extern field and intramolecular perturb v admixtur of a para state impli
+that the next collis can move the molecul to anoth para state and thu local it
+insid the para subspac the spin convers occur
+the molecular centerofmass motion affect the process becaus of the doppler effect
+vibrat degre of freedom play an import role too after orthopara transit in
+3
+upper vibrat state the molecul relax to the ground vibrat state consequ
+back convers can onli occur through the unperturb m k channel it is essenti
+that convers through the mk channel can be substanti affect by electromagnet
+radiat
+quantit descript of the isom convers can be done use the perturb
+theori 21 the zerothord theori neglect the intramolecular orthopara state mix
+by v and v and thu contain no orthopara convers in thi approxim an
+extern field doe not affect the popul of para state the popul of ortho
+state in the model of strong collis read
+o e j v o pev wj f v p vet wj e jm
+o g j v o wj f v o pgv wj f v p vgt wj g jn
+3
+here o is the total concentr of ortho molecul e g design the excit and ground
+vibrat state respect j is the rotat quantum number wj is the boltzmann
+distribut f v is the maxwel distribut and v is the molecular centerofmass veloc the level popul in eq 3 are split into the term nonequilibrium in j and
+v nonequilibrium onli in v and equilibrium in j and v the magnitud of these term
+are proport to specif relax paramet s see ref 21 for more detail the
+function p v is the excit probabl of molecul with particular veloc v and
+p p vdv
+2b f vdv
+2b kv2
+y
+wn
+p
+1
+1 1 y 2 11
+y
+p v
+2b f v
+p
+y 2b kv2
+4
+here l and mk is the gap between the state m and k the function p is
+the foigt profil of the absorpt line have the homogen linewidth b 1
+where is the satur paramet 2g21 1 g e0 dmn 2
+h is the rabi
+frequenc is the collision linewidth of the absorb transit 1 et wm gt wn
+e g and 2 ev wm gv wn
+in addit to the level popul chang an extern radiat creat a coher
+4
+offdiagon densiti matrix element on the m n transit
+o nm v io
+p v
+i kveitkr
+2g
+5
+enrich
+the firstord theori take the intramolecular perturb v and v into account
+in thi approxim the spin convers appear and it can be affect by the radiat
+an extern radiat chang the concentr of ortho molecul from the equilibrium
+valu o 0 to the steadyst valu o becaus the total concentr of the test
+molecul is conserv one ha steadyst enrich of para molecul 21
+p
+f ree
+11
+p 0
+f ree n n coh
+6
+here an equal concentr of ortho and para molecul in equilibrium ga ha been
+assum that impli wm wk the convers rate ha four term of differ origin
+the first one
+f ree
+2v 2
+2
+wk wm
+2
+7
+is the convers rate without an extern electromagnet field m k is the gap
+between the state m and k one can see from eq 6 that the lightinduc enrich
+is enhanc by small f ree the second term is due to the lightinduc level depopul
+in the ground vibrat state
+n
+1
+2v 2
+pwm gv gt f ree pgv gt
+2
+2
+2
+8
+the last two term in is conveni to present in a form that can be easili obtain
+from 21 the noncoher contribut to the rate
+1 i1
+2v 2
+p 2v 2 re 1
+n 2
+2
+i
+1
+o o e m vdv
+1 i 1 kv
+9
+here ev wm et wm e the coher part coh origin from the lightinduc
+coher 5
+coh
+v 2 p v 2 1 i1
+re
+2 2
+i
+p vdv
+1 i 1 kv
+10
+5
+the new homogen width 1 and the orthopara level gap 1 are
+1 1
+g2
+2 2
+1 1
+g2
+2 2
+11
+one can see from eq 8 9 and 10 that the convers rate ha two peak the
+peak at the absorpt line center 0 appear becaus the excit probabl
+p and p v have maximum at 0 the homogen width of thi peak is equal
+to b that can be veri larg in molecular system due to the slow rotat veloc
+and vibrat relax the peak at 1 is due to the lightinduc cross
+of m and k state see ref 13 14 21 and appear formal becaus of the reson
+denomin in the integrand in eq 9 and 10 the homogen width of the peak
+at 1 is equal to 1
+coher control allow to achiev substanti enrich if the mix in ground
+and vibrat excit state ha the same order of magnitud 21 on the other
+hand close coincid between ortho and para state in molecul are rather rare
+consequ such close level pair in excit vibrat state may be absent or they
+cannot be access by the avail radiat below we estim the enrich in the
+case of larg orthopara gap in excit state kv0 where kv0 is the doppler
+paramet and v0 is the molecular thermal veloc v0
+2kb t m for moder
+radiat intens g the fielddepend term at the absorpt line center
+0 are
+n 0 05f ree p0gv gt
+n 0
+2v 2
+p0
+2
+coh 0
+v 2
+p0
+2
+12
+the term n 0 and coh 0 have the offreson natur which manifest itself by the
+larg orthopara gap in the denomin at larg the convers rate 0 is
+determin mainli by n 0 and the radiat deplet the para molecul
+0 05p0gv gt
+13
+thi is analog to the enrich by lightinduc popul chang 11 12 maximum of 0 is achiev at suffici strong field b kv0 in thi case y 0 1
+p0 wn 1 2 and enrich reach the valu
+max 0 wn
+gv gt
+1 2
+14
+6
+depend on the relax scheme and the origin of the relax bottl neck one
+can achiev differ level of enrich in the most favor situat of fast veloc
+and rotat relax the enrich reach 14
+larger enrich can be achiev at the levelcross reson the fielddepend
+rate at the 1 can be readili estim if b kv0 in thi case p1 v
+p1 f v and one ha
+n 1 05f ree p1 gv gt
+v 2
+2 v 2 g2
+n 1
+p
+p1 1
+1
+coh
+1
+kv0
+2
+kv0
+15
+the term n 1 and coh 1 are due to the lightinduc cross of the m and
+k state that ha an effici width equal kv0 compar with the level cross in
+molecul be at rest 14 the main contribut to 1 come from coh 1 if
+g
+the result 12 and 15 allow to determin which peak 0 or should
+be use for enrich at low radiat intens larger enrich is achiev at
+0 becaus p0 p1 if b if radiat intens is high b larger
+enrich is obtain at 1 the ratio of the two peak read
+coh 1
+2 v 2 1
+1
+gv gt 1
+0
+n 0
+f ree kv0
+16
+the amplitud of the enrich peak at 1 as a function of g and variou
+valu of are shown in fig 2 the calcul were done use the exact express
+for the convers rate 710 in thi numer exampl the follow paramet
+were use 21 v 3 khz v 5 khz 2 mhz 130 mhz kv0 30 mhz
+1 5 mhz1 2 1 mhz1 and all boltzmann factor equal wm wn wk wm
+wk 102
+discuss
+condit necessari for the experiment observ of the lightinduc enrich
+are not easi to fulfil first of all the field free convers rate f ree of the molecul
+7
+under consider should be low in order to enhanc the role of lightinduc chang
+in the total rate note that the rate f ree should combin all signific contribut
+eg caus by the molecular collis with the wall of the ga contain at present
+onli in a few rare case see the introduct the rate f ree are known
+next task is to determin the target orthopara level pair in the excit vibrat
+state for thi one ha to know rather accur the rel posit of ortho and para
+state and the intramolecular orthopara mix effici as well
+perhap the most difficult problem is to find power radiat have right frequenc
+the most promis sourc of such radiat are the power free electron laser
+acknowledg
+thi work wa made possibl by financi support from the russian foundat for
+basic research rfbr grant no 010332905 and from the institut of physic and
+chemic research riken japan
+1 a farka orthohydrogen parahydrogen and heavi hydrogen cambridg univers press
+london 1935 p 215
+2 l n krasnoperov v n panfilov v p strunin and p l chapovski pisma zh eksp
+teor fiz 39 122 1984 jetp lett 39 143146 1984
+3 v k konyukhov a m prokhorov v i tikhonov and v n faizulaev pisma zh eksp
+teor fiz 43 65 1986 jetp lett 43 8589 1986
+4 j kern h schwahn and b schramm chem phi lett 154 292 1989
+5 r a bernheim c he and g alzetta j chem phi 92 5959 1990
+6 p l chapovski j cosleou f herlemont m khelkhal and j legrand chem phi
+lett 322 414 2000
+7 m quack mol phi 34 477 1977
+8 d uy m cordonni and t oka phi rev lett 78 3844 1997
+8
+9 c r bower and d p weitekamp phi rev lett 57 2645 1986
+10 j bargon j kandel and k woelk z phi chem 180 65 1993
+11 l v ilichov l j f herman a m shalagin and p l chapovski chem phi lett
+297 439 1998
+12 a m shalagin and l v ilichov pisma zh eksp teor fiz 70 498 1999 jetp lett
+70 508513 1999
+13 p l chapovski phi rev a 63 063402 2001
+httparxivorgabsphysics0011012
+14 p l chapovski j phi b at mol opt phi 34 1123 2001
+httparxivorgabsphysics0011043
+15 l d landau and e m lifshitz quantum mechan 3rd ed pergamon press oxford
+1981
+16 p l chapovski and l j f herman annu rev phi chem 50 315 1999
+17 r f curl jr j v v kasper and k s pitzer j chem phi 46 3220 1967
+18 p l chapovski phi rev a 43 3624 1991
+19 k i guskov zh eksp teor fiz 107 704 1995 jetp 80 400414 1995
+20 e ilisca and k bahloul phi rev a 57 4296 1998
+21 p l chapovski mol phi 2001 submit for public
+httparxivorgabsphysics0109063
+9
+m
+vmk
+k
+v
+g
+v
+n
+m
+vmk
+k
+ortho
+para
+fig 1 level scheme vertic solid line indic infrar excit vibrat relax is
+shown by dash vertic line v and v indic the intramolecular orthopara state mix
+10
+100
+1
+enrich
+80
+60
+2
+40
+3
+4
+20
+5
+0
+0
+20
+40
+60
+rabi frequenc g mhz
+80
+100
+fig 2 enrich of para molecul as a function of rabi frequenc g and variou orthopara level gap in excit vibrat state 1 100 mhz 2 500 mhz 3 1000 mhz 4
+1500 mhz 5 2000 mhz

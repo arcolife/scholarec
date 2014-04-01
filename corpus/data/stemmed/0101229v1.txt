@@ -1,0 +1,1035 @@
+discret and moyal bracket
+arxivmath0101229v1 mathqa 29 jan 2001
+robert carrol
+univers of illinoi urbana il 61801
+abstract we give a qanalysi version of a discretizaton procedur of kemmoku and
+saito lead to an appar new qmoyal type bracket
+1 introduct
+we are pursu further some of the direct spell out in 2 relat moyalweylwign theori hirota formula integr system and discret with addit
+connect involv quantum group cf 1 3 in thi note we indic an appar
+new qmoyal type bracket formula aris in thi context in particular we follow here
+framework from 2 16 17 for deform quantiz and integr system and refer
+to 1 3 and refer cite there for qanalysi and quantum group one object
+will be to examin variou formula aris in the deform of integr system and
+see if there are quantum group version further we are look for qanalysi version
+of deform quantiz formula in order to compar qcalculu and quantum group
+theori with deform quantiz thu for background one recal for wave function
+there are wigner function wf given via
+11
+f x p
+1
+2
+dy x y expiyp x y
+2
+2
+then defin f g via
+12
+f g f exp
+i
+x p p x g
+2
+i
+i
+p p
+x gx p
+2
+2
+time depend of wf is given by h hamiltonian
+1
+t f x p t h f x p t f x p t h h f m
+13
+i
+where f gm moyal bracket as 0 thi reduc to t f h f 0 standard
+poisson bracket one can gener and write out 12 in variou way for exampl
+replac i 2 by one obtain as in 13
+f x p gx p f
+14
+f g
+0
+s
+s
+x
+s
+s
+xj psj f xsj pj g
+j
+1j
+j0
+date januari 2001 email rcarrollmathuiucedu
+1
+2
+robert carrol
+univers of illinoi urbana il 61801
+lead to f g f g g f 2
+f g
+15
+0
+2s1
+2s
+2s 1
+2s 1
+xj p2s1j f x2s1j pj g
+j
+1j
+j0
+cf also 25 which will also be util in the form
+16
+f g f e x p p x g ex1 p2 x2 p1 f x1 p1 gx2 p2 xp
+0
+1r rs rs f rs g
+rs
+xr ps pr xs
+0
+n
+n
+0
+n 1n ns s
+x p f
+sn s
+xs pn g
+n
+1r xr pnr f
+xnr pr g
+0
+note there are typo on p 169 in 2 and eg one ha
+17
+g f gx p p x f f x p p x g
+the moyal bracket can then be defin via
+1
+1
+18
+f g g f
+f gm f sin x p p x g
+2
+0
+1s 2s
+2s 1
+2s1
+1j
+0
+2s 1
+j
+xj p2s1j f x2s1j pj g
+correspond to i in 15
+we emphas also that mani formula in classic integr system alreadi have a
+quantum mechan qm flavor for exampl in 2 13 25 one show how there is a
+moyal deform kp m of dkp which for a particular valu of 12 in 2 13
+creat an equival kp m kp sato actual qm featur in integr sysem
+seem inevit becaus of lax oper formul and the combinator inher in
+hirota equat and tau function also earli work by the kyoto school provid mani
+connect between kp and quantum field theori qft cf 4 such connect have
+sinc prolifer in topolog field theori tft seibergwitten sw theori etc where
+eg effect action can correspond to tau function of integr sysem and somewhat
+paradox effect slow dynam or whitham dynam obtain by averag out
+fast fluctuat of angl variabl seem to correspond to a quantiz cf 2 chapter
+5 or 5 for discuss on the other hand the so call quantum invers scatter method
+involv spin chain etc for quantum integr system cf 2 10 ha a definit
+quantum group natur where the rmatrix provid quasitriangular the connect
+between r and r matric lead one back to classic dynam but the theori for two
+type of integr system classic and quantum have develop along differ path
+it seem that variou discret involv classic integr system survey in 2
+should have a qanalysi foundat and thu there may be other form of connect glue
+between classic and quantum integr system via discret inde one almost
+seem to expect a discret formul to automat have quantum featur
+discret and moyal bracket
+3
+2 discret and moyal
+in 2 we expound as some length on a seri of paper by kemmoku s saito and
+collabor cf 2 for refer and we now want to organ some of thi in a better
+manner and develop matter somewhat further thu we sketch first some fundament
+idea one defin
+21
+1
+1
+e e
+sinh a sinh
+2
+ai i
+where ai i and x evid a1 f x 12f x f x and
+a f x 12f x a f x a note that a is not a vector set then the ai
+correspond to unspecifi local coordin xi gener a lattic with vector a in say rn
+where n would requir some converg stipul
+xd
+22
+dav x aa
+next a differ one form is defin via a2 d
+b a and a a
+23
+d x d
+da
+dai
+da
+daw x aa where b a
+db w x bb v x aa
+daw x av x a
+note also a can be realiz via a b a b
+24
+2
+a
+cscha
+ea ea
+e2n1a
+2
+0
+in thi connect we recal the q 2 differ oper a3 q2 f x f q 2 xf xq 2
+y
+2n 2n
+1x with dual a jackson integr a4 0 dq2 xf x y1 q 2
+0 f yq q accord to 16 there should be an unspecifi qanalysi version of 24 relat to pseudodifferenti oper we can develop an interest qanalysi counterpart to 24 as
+follow note first that for y x one can write a5 12f x f x
+f y 2 f y2 and for q 2 y y 2 one ha 2 q 2 1y then consid
+exp2 12 with
+a6
+25
+2
+y f y 2 f y f q y f y q2 f y
+f
+2
+q 2 1y
+f qz f q 1 z
+q f z
+qy z
+9q q 1 z
+where q2 involv now a variabl q qy if is to be regard as constant altern
+one could regard as variabl in y and q as constant or dispens with altogeth for
+constant 24 would becom formal a y depend invers note q 2 1ni 2n
+26
+1 21 e2 1 2
+eq
+e2n 1 q 2 y
+0
+0
+2 1ni
+4
+robert carrol
+univers of illinoi urbana il 61801
+lead to
+27
+2 1
+21 e
+gy 2n
+gy gy 2
+0
+gy q 2 1ni
+1 q 2 y
+0
+evid a7 gy
+gy so we can state note a constant of integr in 27 would
+y
+vanish for 0 g gy
+proposit 21 if we regard q as y depend via 2 q 2 1y with constant
+then the invers 27 ha a modifi jackson type integr form
+y
+28
+2 1
+gy gxdq2 x 21 e
+gy q 2 1ni
+2
+gy 1 q y
+0
+0
+remark 21 note y is fix throughout so the calcul make sens and thi
+reveal also a properti of jackson integr a4 name they do not seem to use the
+integr variabl x at all although chang of variabl techniqu should work we
+emphas that care is need in use 25 in the form q2 when comput q2 gy gy
+in 25 is not the same as q2 unless provis is made for c
+thu q2 defin via
+if we tri to comput q2 gy without keep constant there aris an awkward term
+2
+2
+2
+1 q 2 q 2 y
+0 gq y q 1nq y and q 2 gy gy the point is that 2 is constant
+and 1q 2 y 2 1q 2 q 2 y nor doe y 2n y 1q 2 ny go to y 1q 2 nq 2 y
+y 2nq 2 rather eg y 2n q 2 y 2n y 2n 1 y 1 q 2 n 1y thu for
+q2 gy one must write 12gi 2 gy 1 q 2 y1 gq 2 y gy q2 gy
+as desir if we regard thi as a gener viabl procedur of transfer standard
+differenc techniqu in to qanalysi then constant step for ani y correspond to
+constant step 1 q 2 y which mean for larg y q 1 so if g is continu for exampl
+then
+gy 2 gy
+gq 2 y gy
+29
+g
+q2 gy
+2
+q 1y
+2
+for y y 2 q 2 y and for t larg y 2 y correspond to q 2 1 there seem
+to be no reason not to use the q correspond in gener as long as comput
+consist is maintain
+remark 22 we will eventu dispens with altogeth in rephras matter
+entir in q so that q2 or q will not aris
+continu now from 2 one can defin differ 2form d
+2 an exterior differ
+oper and a lie differ oper via standard product
+210
+d
+2
+d
+2
+da
+da
+dbw x a ba b
+db
+dca w x a bc a b
+discret and moyal bracket
+5
+sinc a b 0 one ha 0 and final for x d as in 22
+ic a b c ab c ba lx d ix d ix d
+211
+now consid a phase space x x x p and in place of a8 xf g fp x fx p g
+one write a9 xfd da1 da2 v f x p a1 a2 a where cf 22
+212
+2
+v f x p a1 a2
+2
+db1 db2 expia1 b2 a2 b1 f x b1 p b2
+which should correspond to a xfd cf section 3 note a1 b2 a2 b1 can be written
+as a b and 1a b is the area in unit of the parallelogram form by a b is
+essenti a scale factor here and not a fourier variabl the symplect structur of
+a8 is retain via an interchang of a and b we note that a9 can be written in the
+form the detail are in 2
+213 xfd
+i
+22
+da1 da2
+db1 db2 sina1 b2 a2 b1 f x b1 p b2 ea1 x a2 p
+lead to
+xfd g
+214
+i
+22
+da1 da2
+db1 db2
+sina1 b2 a2 b1 f x b1 p b2 expa1 x a2 p gx p
+i
+da dbsina1 b2 a2 b1 f x b1 p b2 gx a1 p a2
+22
+subsequ calcul give use x a1 1 and p a2 2 cf 2
+215
+dbeia1 b2 a2 b1 f x b1 p b2 gx a1 p a2
+da
+1
+2
+f x i2 p i1
+2
+eib2 1 xb1 2 p db g1 2 d
+2
+f x ip p ix gx p
+2
+2
+gf
+lead final to
+i
+sinx1 p2 p1 x2 f p1 x1 gp2 x2 px f gm
+in addit from the jacobi ident for the moyal bracket one ha
+216
+xfd g
+xfd xgd h xfd g h xgd f h f g h g f h
+217
+d
+f g h xfg
+h
+a symplect form can also be given via
+1
+da1 da2
+218
+2
+db1 db2 eia1 b2 a2 b1 a b
+6
+robert carrol
+univers of illinoi urbana il 61801
+and thi satisfi ix d f analog to ixf d for a symplect form our
+f
+formula differ at time by i from 16 17 but everyth seem consist and correct here
+the philosophi of run ai over r is crucial in the calcul altern
+could repres a sum over a discret symmetr set eg n n with n infinit or not
+we note also a somewhat quasi fourier theoret version of the formula a9 212
+213 etc develop in 2 thu consid
+219
+v f x a
+2
+2
+dbeiab eb f
+henc use b b
+2
+v f x a
+220
+2
+2
+dbeiab eb f
+2
+dbeiab eb f
+and sinc a a one get
+221 xfd
+dav f x aa
+dav f x aa
+dav f x aa
+consequ
+xfd
+222
+3
+4 2
+da
+1
+2
+dbeiab
+da v f x a v f x a a
+eb eb
+2
+f a
+3
+4 2
+da
+dbeiab b f a
+thi formula provid anoth represent for xfd via
+223
+xfd
+v f x aa v f x a
+da
+3
+4 2
+dbeiab b f
+the abov give a direct discret of phase space and the natur differ analogu
+q
+d
+of lie bracket lead to the moyal bracket thu one take 2 and defin xa
+xa
+for function ax p and there is a heisenberg equat h hamiltonian a10
+q
+q
+q
+i t xa
+xa
+xh
+where both a and h may contain thi is compat with
+a11 t a a hm cf 216 217 to see how thi work we recal the standard
+quantum mechan qm idea of wigner distribut function fw with fw dx 1 and
+a fw adx for he expect valu of an oper a associ to the observ
+function a weyl order is to be invok when order is need and detail are in 2
+the correspond discret version is given via a differ 1form
+224
+pfw
+4
+da1 da2
+db1 db2 ei
+a1 b2 a2 b1 2
+fw x b1 p b2 a
+2
+2
+q
+so a12 pfw xa
+dxdp fw x pax p a in the heisenberg pictur the
+q
+q
+t which in the schr
+oding
+pfw xa
+time depend is a13 t pfw xa
+discret and moyal bracket
+7
+q
+q
+pictur becom a14 t pfw xa
+pfw t xa
+here the solut of a10
+necessarili is
+it q
+q
+q
+xa
+exp
+xa
+t exp xh
+225
+it
+q
+xh
+q
+q
+q
+q
+simpli differenti xa
+expit xh
+xa
+texpit xh
+and note that in a10
+q
+q
+xa xa t thi correspond to a solut of a11 of the form a15 at
+q
+expit xh
+a and in the heisenberg pictur
+226
+i
+d
+q
+q
+q
+q
+pfw xa
+t pfw xa
+t xh
+pfw xath
+m
+dt
+q
+q
+where the right side is phfw tm xa
+upon defin a16 fw t expit xh
+fw
+so that a17 t pfw t phfw tm t fw t h fw tm
+3 qdiscret
+let us consid now a variat on section 2 base on a qlattic thi will constitut a
+differ approach from those in remark 21 and proposit 21 in that we keep q fix
+inde q can play the role of and we write
+31
+2m
+2n
+mn f x p f xq pq f x p
+q 2m 1xq 2n 1p
+32
+m
+n
+m
+n
+mn gx p gxq pq gxq pq
+q m q m q n q n xp
+emn1 2 emn1 2
+glogx logp q mn emn1 2
+mn g g
+m
+m
+n
+n
+q q q q xp
+so m n play the role of fourier variablesa1 a2 a we recal from 2 the devic
+a18 logq exp q f x flogx q 2mxx f x exp2mlogx flogx
+mn written
+flogx2mlogq flogq 2m x f xq 2m thi suggest an invers for
+via
+33
+2mn1 2 1
+mn f x p e
+flogx logp
+q 2m 1xq 2n 1p
+1 logx 2 logp in a form similar to a jackson integr thu first we
+can deriv a jackson integr as follow write
+34
+f x q2 f x
+e2xx 1
+f q 2 x f x
+f x gx
+q 2 1x
+q 2 1x
+with formal
+35
+q 2k xgq 2k x
+e2kxx xgx 1 q 2
+f x 1 q 2
+0
+0
+8
+robert carrol
+which is the jackson integr
+univers of illinoi urbana il 61801
+x
+0 dq 2 ygi
+similarli we can write now formal
+2m
+1
+1q 2n 1
+mn gx p q
+36
+e2kmn1 2 xpgx p
+0
+q 2mk xq 2nk pgq 2mk x q 2nk p gx p
+q 2m 1q 2n 1
+0
+thi can be check via
+gq 2m x q 2n p gx p
+gx p
+q 2m 1xq 2n 1p
+37
+q
+2mk1 2nk1
+q
+gq
+2mk1
+x q
+2nk1
+q 2mk q 2nk gq 2mk x q 2nk p
+p
+0
+0
+henc we have prove
+mn of 31 can be invert via 36 s a
+proposit 31 the differ oper
+kind of extend jackson integr similarli one ha
+mn 1
+1
+38
+mn gxq m pq n
+mn gx p q
+q
+mn
+q
+2m
+1q
+2n
+q 2mkm xq 2nkn pgq 2mkm x q 2nkn p
+1
+0
+q 2k1mn gq 2k1m x q 2k1n p
+q m q m q n q n xp
+0
+it should be possibl now to duplic most of the machineri in section 2 with q discret as abov we note that thi procedur and the result formula appear to be
+differ from ani of the phase space discret in 6 8 11 14 18 19 22 23 24 26 27
+we will consid an analogu of xfd in a9 or 223 via
+39
+d
+x
+f
+mn or x
+d
+vq f x p m n
+f
+mn
+vq f x p m n
+mn
+where we need then a formula for vq f which can perhap be model on 223 in a quasi
+mn
+1
+fourier spirit note that the stipul a b a b or
+mn as in 36mn
+d
+37 simpli provid a tautolog a19 vq f x p m n xf or as in 212
+the equat a20 a xfd a dbv f x p bb va f x p a thu one
+should realiz that v f is simpli select in an ad hoc manner so that xfd g f gm it
+mn and x
+d would not reproduc a suitabl symmetri for a
+turn out that the use of
+f
+d and
+mn
+quasi fourier approach so we will concentr on x
+f
+in 7 a quantum qmoyal bracket 0 is suggest in the form
+1
+pm xn pk x qm q nk pm xn pk x q m pk x pm xn
+310
+i
+discret and moyal bracket
+9
+where can refer to standard or antistandard order via logq and dz q
+311
+s
+0
+i r
+d rp exp p px x d rx
+r
+x xs
+a
+s
+r0
+s0
+i r q rr12
+d rx d rp p p s
+r
+here standard order involv xp product and antistandard ha px product see section
+5 the symbol map is ss x m p n sa p m x n pm xn weyl order is also consid
+but there are some complic we note also for 0 one ha classic star product
+base on logq cf 7 9
+312
+qs exp p px x qa exp x xp p
+here qw
+qw exp x xp p p px x
+2
+refer to weyl order these star product all satisfi
+q nk pm xn q pk x q m pk x q pm xn 0
+313
+4 calcul
+for complet we will give a number of calcul to show how our result are parallel
+to section 2 and can be reach through some quasi fourier type procedur first we recal
+some use formula cf 4 12 15 name
+z n
+41
+z 1 qw
+z w z 1
+w
+nz
+there are mani nice calcul avail use 41 we mention eg resz an z n a1
+and dz zddz
+w
+z n
+z n
+w z w1
+w1
+42
+z 1
+z w
+z
+w
+w
+z
+z
+resz f zz w f w f zaz
+f a1 az
+resz azbz resz azbz
+thi will provid a delta function correspond to expib2 1 x ib1 2 pdb now
+leav asid possibl multipl factor cf remark 41 consid 212 in the form
+43
+q msnr f q r x q s p
+vq f x p a cq
+rs
+lead to cf 213 214
+44
+xfd cq
+q msnr q msnr f q r x q s p q mn1 2
+mnr
+q msnr q msnr f q r x q s p gq m x q n p
+xfd g cq
+mnr
+10
+robert carrol
+univers of illinoi urbana il 61801
+while 215 can be written as x a1 1 and p a2 2
+45
+da
+1
+2
+ddbeib2 1 xb1 2 p f x b1 p b2 g1 2
+1
+2
+dbeia1 b2 a2 b1 f x b1 p b2 gx a1 p a2
+eib2 1 xb1 2 p db g1 2 d
+f x i2 p i1
+2
+2
+f x i2 p i1 1 x 2 p g1 2 d
+2 2
+2 2
+f x ip p ix gx p
+gf
+intuit one think of logq a m n and b r s so the substitut x a1
+1 correspond to 1 x q m similarli 2 p q n and the second and third line in 45
+correspond to
+46
+1 cq p x
+where
+1
+x
+rs
+s
+2
+p
+r
+f xq r pq s g1 2
+re 11 2 the first question is to ask if we can write someth like
+f xq r pq s
+47
+rs
+1
+x
+s
+r
+2
+p
+1 p
+f xq 1 pq 2
+x
+2
+in analog to line 3 and 4 of 45 we could imagin eg f x p
+xk p q kr q s
+rs
+1
+x
+s
+2
+p
+r
+rs
+xk p q k2 q 1
+48
+xk p q k2 q 1
+1
+x
+s
+ak xk p and look at
+2
+p
+1 p
+x
+2
+sinc q k2 2 pr q k 2 pr q kr 2 pr consequ for f
+we have
+49
+r
+ak xk p in 46
+ak xk p q kpp q xx gx p
+1 cq p x
+k
+1 xp
+sinc re 11 2
+2 g1 2 gx p and eg 1 in 1 becom 1 xx
+thi lead to
+410
+1 cq p x
+as a put g f cf 45 for g
+411
+ak xk p gxq pq k
+b x p thi correspond to
+ak b xk p q k g f
+1 f g c
+k
+discret and moyal bracket
+11
+the term of the form 215 correspond to expia1 b2 a2 b1 in 214 involv now
+in place of 47 a term
+412
+f xq r pq s
+rs
+1
+x
+s
+r
+2
+p
+f xq 1 pq 2
+x
+1
+2
+p
+henc we get for f and g as befor
+413 2 f g cq p x
+ak xk p b xq pq k c
+akl b xk p q k
+lead to
+proposit 41 for f x p
+an heurist manner
+414
+ak xk p and gx p
+b x p one obtain in
+f gm f xq pp pq xx gx p gxq pp pq xx f x p
+ak b xk p q k q k
+cq p x
+k
+where cq p x is to be stipul cf corollari 41 for an essenti equival formula
+note by inspect or construct f gm g f m
+if we use the formul of 219 223 a slightli differ formula emerg involv
+a multipl factor which is miss by the analog construct abov thu we check
+the passag 219 to 223 219 is the same as 212 correspond to 43 and 220
+correspond to
+415
+q msnr f q r x q s p
+vq f x p a c
+rs
+which would follow from 43 by send m n m n and r s r s thi
+make sens if the sum are and there seem to be no object to that then
+mn as in 32
+one would have take now a
+416
+xfd
+mn
+vq f x p m n
+dav f x aa c
+mn
+q msnr f q r x q s p
+c
+mn rs
+417
+xfd
+q mxx q npp q mxx q npp
+q m q m q n q n xp
+mn
+vq f x p m n
+dav f x aa xfd c
+mn
+q msnr f q r x q s p
+c
+mnr
+q mxx q npp q mxx q npp
+q m q m q n q n xp
+q msnr f q r x q s p
+c
+mnr
+q mxx q npp q mxx q npp
+q m q m q n q n xp
+12
+robert carrol
+univers of illinoi urbana il 61801
+exactli as in 221 note the minu sign appear in the last equat instead of at the
+begin henc
+xfd
+418
+1
+mn
+416 417 c
+q msnr f q r x q s p f q r x q s p
+2
+mnr
+rs f
+mn
+q msnr q r q r q s q s xp
+c
+mnr
+which is a differ version of 222 one see that factor of q r q r q s q s q m
+q m and q n q n have becom involv in place of power of and thi must be clarifi
+otherwis the pattern go over
+to clarifi we compar 44 and 418 and write 418 in the form
+d
+1 xf g
+419
+c
+q msnr f q r x q s p f q r x q s pgq m ngxq m pq n gxq m pq n
+xp
+where g1 q m n q m q m q n q n gq m n set f f q m x q n p so
+in an obviou notat
+c
+d
+420
+q msnr gq m nf g f g f g f g
+1 xf g
+xp
+now evid chang m n m n one obtain a formula q msnr gq m nf g
+emsnr gq m nf g etc so
+c
+d
+421
+q msnr f g f g f g f g
+1 xf g
+xp
+lead to
+d
+1 xf g
+422
+cxp
+gq m n
+q msnr q msnr f q r x q s p f q r x q s pgxq m pq n gxq m pq n
+thi is similar to 44 which ha the form
+e
+2 xf g
+423
+c
+c
+q msnr q msnr f g
+f g
+c
+f g
+c
+f g
+which impli
+424
+c
+d
+2 xf g
+q msnr q msnr f q r x q s p f q r x q s pgxq m pq n gxq m pq n
+thi is essenti the same as 1 xfd except for the gq m n factor for esthet reason
+one prefer the form 1 xfd g sinc it ha the more visibl meaning form 416 and play
+a consist role cf remark 41 below thu in summari
+discret and moyal bracket
+13
+proposit 42 the differ version of section 2 can be express via
+425
+mn vq f
+vq f x p m n
+xfd
+mn
+q msnr f q r s q s p
+rs
+m
+n
+m
+n
+mn g gxq pq gxq pq
+q m q m q n q n xp
+xfd g
+f q r x q s p f q r x q s pgq m x q n p gq m x q n p
+1
+q msnr
+2xp mnr
+q m q m q n q n
+the latter express is our put moyal bracket and one ha
+corollari 41 write out xdd g for monomi f xa pb and g xc pd yield
+426 xfd g f gm
+1
+2xp
+q msnr
+xac pbd q rab q rab q mcnd q mcnd
+q m q m q n q n
+further sinc as in 420 422 one ha mn q msnr gg
+rs q msnr f q msnr f there result
+427
+xfd g
+1
+2xp
+mn q
+msnr gg
+and
+q msnr q msnr
+f q r x q s pgq m x q n p
+q m q m q n q n
+thi is reminisc of 44 but with a gq m n factor so the calcul 414 appli
+with gq m n insert and consequ f gm g f m as befor although thi is
+not immedi visibl from 427 we note also from 425 or 427 that it doe no
+harm to use altern a form base on 223 in the form cf 418
+428
+rs f
+mn g
+q msnr
+xfd g c
+mnr
+which insert an addit factor gq r s into 425
+remark 41 the multipl factor involv term q m q m q n q n q r
+mn or
+rs instead of
+q r or q s q s all of which correspond to a aris from
+come out of the integr sign as in the continu version of section 2 they have to
+be sum note the correspond x a1 1 correspond to 1 x q m use
+in a differ manner so it is at first glanc surpris that 2 xfd even come close to 1 xfd
+the relat of our formula to the star product and moyal bracket of 310 313 will
+be examin later as well as the expans of materi in 2 relat to work of curtright
+fairli zacho and the saito school cf 2 for refer we note also that for a complex
+phase space z not clarifi an interest variat on the qmoyal bracket of 414
+or 425 is given in 17 for a kp situat cf also 2 where thi is expand thi is
+appli to a kp hierarchi context use complex variabl method and although power
+of q are insert in variou place it is not develop systemat in a qanalysi manner
+and no recours to qderiv is indic we will expand further the treatment of 2
+for thi situat in a subsequ paper
+14
+robert carrol
+univers of illinoi urbana il 61801
+refer
+1 r carrol some applic of quantum group and noncomut geometri book in prepar
+remark on quantum calculu in prepar more about transmut in prepar
+2 r carrol quantum theori deform and integr northholland 2000
+3 r carrol mathqa 0101072
+4 r carrol topic in soliton theori northholland 1991
+5 r carrol acta appl math 60 2000 225316
+6 m chaichian and a demichev introduct to quantum group world scientif 1996
+7 o dayi qalg 9609023
+8 a dimaki and c tzanaki mathph 9912016
+9 g dunn jour phi a 21 1988 23212335
+10 l faddeev and l takhtajan hamiltonian method in the theori of soliton springer 1987
+11 m fichtm
+uller a lorek and j wess heth 9511106
+12 i frenkel j lepowski and a meurman vertex oper algebra and the monster academ press
+1988
+13 j gawrylczyk jour phi a 28 1995 593605
+14 a hebeck s schreckenberg j schwenk w weich and j wess zeit phi c 64 1994 355359
+15 v kac vertex algebra for beginn amer math soc 1997
+16 r kemmoku and s saito hepth 9510007 jour phi a 29 1996 41414148 jour phi soc
+japan 65 1996 18811884 phi lett b 319 1993 471477
+17 r kemmoku jour phi soc japan 66 1997 5159
+18 m klimek jour phi a 26 1993 955967
+19 a lorek a ruf and j wess hepth 9605161
+20 a odzijewicz comm math phi 192 1998 183215
+21 m pillin comm math phi 180 1996 2338
+22 j schwenk hepth 9406168
+23 j schwenk and j wess phi lett b 291 1992 273277
+24 y smirnov and a turbin functan 9501001 and 9512002
+25 i strachan jour phi a 28 1995 19671975 jour geom phi 21 1997 255278 hepth
+9606101
+26 a turbin hepth 0004175
+27 j wess springer lect note physic 493 1999 pp 311382

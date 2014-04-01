@@ -1,0 +1,322 @@
+arxivmathph0112015v1 10 dec 2001
+theor math phi 101 12001204 1994
+on a problem pose by pauli
+bz moroz
+maxplanckinstitut f
+ur mathematik
+gottfriedclarenstrass 26
+d53225 bonn germani
+am perelomov
+institut of theoret and experiment physic
+b cheremushkinskaya 25
+117259 moscow russia
+abstract
+a problem pose in a remark by pauli is discuss is it possibl to
+recov the state vector of a quantum system from the distribut
+function of the physic observ of thi system
+dedic to the memori of mk polivanov
+is it possibl to recov the state vector of a quantummechan object
+from the distribut function of measur observ in thi state thi
+rather natur pose problem lead to complic mathemat problem
+that are not current amen to solut we restrict ourselv here to
+some simpl observ and a precis formul of the correspond
+mathemat problem
+the possibl state of a nonrelativist spinless particl are describ
+by onedimension subspac of complex hilbert space l2 r3 kinemat one can specifi measur the distribut function of the coordin oper x the momentum oper p the angular momentum oper l x p and the oper of one of it project l we denot by
+1
+ei a basi of common eigenfunct of the oper l2 l and expand
+the state vector j j 1 2 j l2 r3 with respect to thi basi
+j
+ij ei
+i1
+we assum that
+i1
+i2
+1 p 2 p
+1 x 2 x
+1
+for all i x p where
+p
+1
+232
+r3
+x expipt x dx
+doe it follow from the relat 1 that 14 1 2 c vari
+we can divid thi problem into the two follow problem
+first it is necessari to describ the set of solut
+l2 r3
+x w1 x
+p
+w2 p
+2
+for fix function w1 and w2 thi formul of the problem is due to
+pauli 5 p17
+second it is necessari to consid selfadjoint oper a 1 m
+in a finitedimension hilbert space h cn we assum that
+a ei i ei
+1 i n
+i c
+for base ei 1 i n of the space h
+let
+n
+x
+ai x ei
+i1
+ai x c
+x h
+1 i n
+1 m
+how can one describ the set
+ab x ai x bi
+for fix b bi in particular under what condit on a 1 m
+is the solut of these equat uniqu in pn1 c ie when x y
+ab y x c
+we do not know exhaust answer to these question and restrict
+ourselv to the follow remark we refer the interest reader to the
+2
+cite literatur in which the physic formul of the problem and other
+result are given
+we begin with the finitedimension problem in thi case the follow
+theorem hold 6
+proposit 1 in the case m 3 n 9 one of the set ab contain
+for some b at least two differ solut
+proof suppos otherwis then the solut is uniqu therefor the
+map
+x ai x
+1 i n
+1 3
+defin a continu embed of cpn1 in the sphere s 3n1 without
+loss of gener it can be assum that ni1 ai x2 1 for 1 3
+sinc 3n 1 322n 1 1 there exist a differenti embed
+of cpn1 in s 3n1 7 therefor by the wellknown theorem 8 p390
+3n 1 4n 1 2n 1
+3
+where k is the number of one in the binari expans of k for n 9
+the inequ 3 doe not hold
+in particular thi theorem show that the distribut of the three
+project of the spin do not uniqu determin the spin state of the
+system for suffici larg in absolut magnitud spin
+the second observ is as follow we choos an odd prime p and
+consid the space of function
+x f f zpz c
+it is clear that x cp we take two base
+n 0 n p 1
+xa 0 a p 1
+where
+n m
+0 n m
+1 n m
+let
+a m exp 2i
+xa m exp
+am2
+p
+0 a p 1
+it is clear that a x and therefor
+p1
+a
+p1
+baj j
+a
+j0
+caj xj
+j0
+3
+2iam
+p
+with
+baj c
+caj c
+0 a j p 1
+proposit 2 for 1 a p 1 we have caj 1 p baj 1 for
+ani j
+proof it is clear that baj a j and
+p1
+caj
+1
+a m xj m
+p m0
+therefor
+caj 2 p2
+a m xj ma n xj n
+0nmp1
+0nmp1
+xj n m exp 2i
+am2 n2
+p
+introduc a new variabl of summat we obtain
+caj 2 p2
+xj k xj k2n k
+0knp1
+xj k2 xj k
+xj 2kn p
+0np1
+0kp1
+we note the follow infinitedimension analog of proposit 2 we
+set
+f x expix2
+so that
+1
+ip2
+f p
+exp
+4
+2i
+it is clear that the distribut function f x f p do not depend on
+for r unfortun howev f l2 r thi exampl wa
+propos by aharonov 9 it wa note quit long ago 1 10 that if one
+set x x x x expix and defin the function 1 x
+by
+1 x x expix
+then
+1 p
+1
+2
+1
+2
+x expix ipx dx
+x expix ipx dx
+4
+and therefor 1 p p
+if x x
+thu choos in l2 r we find
+x x for x r x 1 x
+p 1 p for x p r
+despit the fact that except for thi exampl we have not obtain ani
+result in the case x l2 r one of us advanc the follow conjectur
+conjectur am perelomov let f l2 r suppos that
+x f x p
+fp for almost all x p r then f or
+f 1 for some c
+in the gener case x l2 rl the consid exampl show that
+p
+1 p
+x 1 x
+for almost all x p rl where
+x 0 x
+1 x x
+0 l2 r
+x
+x21 x2l
+therefor in gener it doe not follow from the relat 1 that 1 2
+for some c 1 sinc the angular momentum is zero for spheric
+symmetr state
+in conclus we describ the subset of the set 2 that consist of gaussian exponenti we begin with the follow simpl remark
+lemma let l2 r2 and c gll r set c x cx
+we have
+1 t
+c p det c1 c
+p
+and
+c detc12
+proof we have
+c p 2l2
+rl
+cx expipt x dx
+det c1 2l2
+rl
+y expipt c 1 y dy
+and in addit
+c
+2
+rl
+cx2 dx det c1 2
+5
+we now set
+1
+x a exp xt ax
+2
+a at
+a c
+a gll c
+assum that re a is a positivedefinit matrix let a a1 i a2 aj
+gll r ajt aj for j 1 2 sinc the matrix a1 is posit definit
+c t ac i diag 1 l
+for same c gll c therefor
+1
+p
+b exp pt b1 p
+2
+b1 diag 21 2l
+and 0 j 1 for 1 j l thu we set
+w1 x l2 exp
+1 t
+xx
+2
+w2 p l2 b exp
+1 t
+p b1 p
+2
+choos
+b lj1 j
+b1 diag 21 2l
+so that
+1
+p
+w2 p exp ipt b2 p
+2
+1
+x w1 x exp ixt a2 x
+2
+the real symmetr matric b1 a2 b2 satisfi the relat
+i ia2 b1 ib2 i
+ie
+b1 a2 b2 i
+a2 b1 b2 0
+thu it is suffici to find all in fact symmetr solut of the equat
+a22 c for c i b1 b11 or c diag 1 2j 2
+j it follow
+from thi that the gener solut for our problem ha the form
+a2 t d
+t 1
+d l
+b1 b1
+where the set
+l diag j 2j 1 2j 2
+j
+6
+1 j l
+contain precis 2l element in other word the set of solut decompos into 2l orbit of the group g ol b1 b1
+as a simpl exampl the idea is due to kontsevich 11 we consid
+the set of function
+x 0 x
+o3
+set
+0 x a exp1 x2 i 2 x21 x22 x23
+where
+1 0
+2 r 0
+x r3
+it is clear that
+p 0 p
+x 0 x
+and l2 r3 for ani o3 in particular it can be seen that the set
+2 can be infinit
+one of the author bz moroz had the possibl of discuss the
+question consid here with colleagu we take thi opportun of express our deep gratitud to them we are especi grate to yaharonov
+aconn ml gromov f hirzebruch and ml kontsevich who made
+some import remark
+refer
+1
+bz moroz zap lomi 39 189 1974
+2
+vya kreinovich teor mat fiz 28 56 1976
+3
+bz moroz int j theor phi 22 329 1983
+4
+hw wiesbrock int j theor phi 26 1175 1987
+5
+w pauli handbuch der physik vol 5 springerverlag 1958
+6
+bz moroz int j theor phi 23 497 1984
+7
+a haeflig bull am 67 109 1961
+8
+mf atiyah and f hirzebruch bull soc math franc 87 383 1959
+9
+y aharonov privat commun may 1977
+7
+10 jv corbett and ca hurst j austr math soc ser b 20 182
+1978
+11 ml kontsevich privat commun march 1993
+8

@@ -1,0 +1,241 @@
+octob 2001
+parlpth 01
+p
+coupl model w d3 their fix point
+arxivhepth0110210v1 23 oct 2001
+vladimir s dotsenko xuan son nguyen and raoul santachiara
+lpthe 1
+universit pierr et mari curi pari vi
+universit deni diderot pari vii
+bote 126 tour 16 1er etag
+4 place jussieu f75252 pari cedex 05 franc
+abstract
+p
+n conform theori model w d3
+coupl local by their energi oper
+are analyz by mean of a perturb renorm group new nontrivi
+fix point are found
+1
+unit mixt de recherch cnr umr 7589
+in the continuum limit the model w dn could be defin as
+n
+a
+d2 x
+n
+eia eia
+1
+a1
+a1
+1 2 n n 3 4 5
+2
+a are simpl root of the algebra dn
+in thi class of model find themselv
+toda model
+loop model still to be found
+correspond conform theori which is base on w dn chiral algebra ha been
+found by vfateev and slukyanov 1 the theori contain minim model
+mp w dnp
+3
+with the central charg
+2n 12n 2
+pp 1
+4
+p 2n 1 2n 2n 1
+5
+cp n1
+the most simpl model in thi class is w d3
+1 2 3
+6
+coulomb ga of a 3compon field
+minim model
+p
+w d3 p 5 6 7
+7
+with the geometri of screen oper in 1 given in fig1
+the model which is close in a sens to w d3 is the loop model of jacobsen and
+kondev 2 it 3compon coulomb ga ha the geometri of screen given in fig2
+p
+the energi oper of w d3
+the model contain the degener represent the oper
+v ei
+1
+8
+3
+1
+3
+2
+2
+1
+p
+figur 1 screen oper geometri for w d3
+with
+3
+n1 n1 n2 n2 n3 n3
+a1
+1 na
+1 na
+a
+2
+2
+a ea
+ea 1
+9
+10
+p
+for w d3
+2
+2
+a
+1p
+p
+ea b ab
+11
+12
+the conform dimens of these oper are given by the formula
+2
+n1 n1 n2 n2 n3 n3
+20
+where
+13
+3
+a
+20
+14
+a1
+with thi formula one find that the most relev oper in the neutral sector the
+oper 8 with belong to the plane 23 in fig1 correspond to 211111 it
+is natur to identifi it with an energi oper of the model
+v
+211111
+15
+one find
+5 2
+211111
+2
+2
+2
+16
+3
+1
+3
+2
+2
+1
+figur 2 screen oper geometri for the loop model of jacobsen and kondev
+2
+with
+pp 1 eq11
+1 5
+2 2
+17
+1
+p1
+18
+where we have defin a peramet
+the physic dimens of the oper conform dimens doubl is
+ph
+1 5
+p
+n coupl model w d3
+19
+p 1
+n
+n
+a0 g
+a
+2
+d x
+1
+a xb x
+20
+ab
+the interact term is slightli relev in the case of p 1
+1 eq19 the
+theori is access for the analysi by a perturb rg one find a phase diagramm
+which is fairli interest
+import observ
+xx
+1
+d
+x
+x x 2 x x 2
+2 b
+21
+22
+3
+b is a numer constant thi oper algebra impli that anoth slightli relev
+perturb will be gener by the rg the initi action eq20 is unstabl wrt
+rg evolut the gener action which is stabl renormaliz is
+n
+n
+a0 g
+a
+1
+2
+dx
+n
+a xb x
+2
+a x
+d x
+23
+a1
+ab
+model with disord n 0
+one find the follow rg flow initi condit g0 0 0 0 fix point
+g 0 0 fiq3
+g
+g
+0
+figur 3 rg flow for the model with disord
+check the valu of the central charg at the new fix point one find that thi
+flow correspond to
+p
+p1
+w d3 with disord w d3
+without disord
+24
+the detail could be found in the paper 3
+coupl model n 2
+with the rg equat for the gener action in eq23 one find the flow shown
+in fig4 3 there are 3 fix point in addit to the trivial one g 0 1
+4
+g
+figur 4 rg flow for the n coupl model
+0
+g 0
+2 1
+g1 0
+3 2
+g2 0
+p1
+point 1 n decoupl model w d3
+pont 2 and 3 the model are coupl the symmetri of the critic theori at these
+point is s3 the correspond conform theori is unknown
+pass in the vicin of the point 3
+when the initi valu of the coupl are chosen appropri the rg flow make
+first the coupl to approach the point 3 fig5 and then if the point is slightli miss
+to the right the flow take final the coupl to the point 1
+the evolut of the
+effect central charg c function of azamolodchikov along thi flow is shown in
+fig6 one observ three plateaux signal presenc of three fix point which are
+be visit success fig6 thi behaviour is reminisc of the starecas model
+studi by alb zamolodchikov 4
+5
+1
+3
+g
+figur 5 rg flow in the vicin of the new fix point
+refer
+1 sllukyanov and vafateev sov sci rev a phi 15 1990 1117
+2 j l jacobsen and j kondev nucl phi b 532 fs 635 1998
+3 vl s dotsenko x s nguyen and r santachiara hepth0104197 nuclphysb in print
+4 reson factor scatter and roam trajectori en lp 335 1991
+6
+c
+c0
+c3
+c1
+rg paramet
+figur 6 evolut of the central charg along the rg flow
+7

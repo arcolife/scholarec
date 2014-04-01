@@ -1,0 +1,188 @@
+arxivmath0102075v1 mathqa 9 feb 2001
+rieffel deform quantiz and
+isospectr deform
+andrzej sitarz
+abstract we demonstr the relat between the isospectr
+deform and rieffel deform quantiz by the action
+of rd
+1 introduct
+the isospectr deform ha been recent introduc by conn
+and landi 3 with the exampl of the noncommut 3 and 4
+sphere provid new exampl of noncommut spectral tripl
+2 howev the construct of similar exampl though in differ
+context can be found in earlier work by kulish and mudrov 5 as well
+as more recent in paschk phd thesi 6
+the properti of isospectr deform ha been recent a subject of much interest 4 in particular the symmetri of isospectr
+geometri seen as hopf algebra act on the deform algebra
+appear to be a twist by a cartan subalgebra of the univers envelop algebra of lie algebra which were symmetri of the undeform
+algebras12 and the construct spectral tripl are symmetr in the
+sens of 7
+the analysi of symmetri and the gener construct of the
+deform as well as the similar of the construct with the wellknown noncommut toru ha led to the connect between the
+isospectr deform and rieffel 8 deform quantiz by
+the action of rn in fact both the gener construct as well as the
+correspond symmetri were alreadi defin in a gener setup by
+rieffel see also 9 10 11
+in thi letter we show that the isospectr deform as defin
+in 3 are the special case of the rieffel construct 8
+2 the isospectr deform
+in the origin articl 3 one start with the algebra a of smooth
+function on a manifold with an isometri group of rank r 2 thi is
+support by mari curi fellowship
+1
+2
+andrzej sitarz
+equival to the statement that the toru t 2 is the isometri subgroup
+of the algebra now take the element t which are of c class with
+respect to the action of the toru group t s t one can obtain their
+decomposit as a norm converg sum of homogen element of
+a given bidegre then for ani homogen element one may defin
+a deform product by a left or right twist by linear thi extend
+to the linear combin of homogen element which are dens
+in the algebra we have start with
+to make correspond with the rieffel deform quantiz
+we shall use the dual pictur of isometri as use in 12
+remark 1 let a be an algebra and the toru t 2 be a subgroup of
+automorph of a then for everi oper t which is of class c
+rel to the isometri s the addit group r2 act as follow
+1
+x1 x2 t e2ix1 e2ix2 t
+use the gener of toru symmetri p1 p2 for instanc
+p1 t
+1
+2i
+d
+x1 x2 t
+dx1
+x0
+the relat 1 could be rewritten as
+x1 x2 t e2ix1 p1 x2 p2 t
+remark 2 with respect to the action of p1 p2 the oper which
+are homogen of degre n1 n2 behav like
+2
+p1 t n1 t p2 t n2 t
+remark 3 the product in the algebra a can be deform first on
+element of given degre and then extend the deform by linear
+3
+a b
+a b abn1 n2
+where is a complex number such that 1 thi give the right
+twist of 3 for futur refer we shall denot the deform algebra
+by a
+thi deform can be extend in the case of a differenti manifold and a lie algebra act on the differenti function to all c
+function 3
+it would be use to introduc a quantiz map
+a a a a
+rieffel deform quantiz and isospectr deform
+3
+so that the eq3 could be rewritten as
+a b
+a b abn1 n2
+4
+it will be use to rewrit the abov quantiz form in a more
+abstract form use the action of the gener pi 1
+remark 4 the quantiz map 3 could be written as a
+5
+m a b m 1 a b
+where m is the multipl map
+m a a a b ab a
+and m is similarli the multipl in deform algebra wherea
+is
+c p1p2
+6
+3 rieffel deform by the action of rn
+31 gener construct suppos we have an algebra a and the
+action of v rn on thi algebra and a linear map j from v the
+dual of v to v such that it is skewsymmetr j t j again
+one take a subalgebra of element which are c vector in a for the
+action of rn
+to make a direct correspond with the abov case of isospectr
+deform we restrict ourselv to n 2 in analog with poisson bracket on the function on a manifold we might defin a poisson
+bracket
+7
+p a b
+jri api b
+i
+where pi is the basi of r2 and ri of it dual clearli thi is independ of the choic of the basi see 8 9 and make the algebra a a
+strict poisson algebra
+then use the oscillatori integr one can defin a deform product
+8
+jy ax be2iyx
+a j b
+v
+v
+which could be recogn as a deform quantiz in the direct of the poisson structur as defin in 7
+1
+we use here a particular form of a more gener formula deriv in 12
+4
+andrzej sitarz
+32 equival with isospectr deform to obtain the
+deform as defin in 3 we have to modifi the express 8 by
+allow arbitrari not necessarili antisymmetr oper j
+let us calcul explicitli for homogen element a and b we
+parameter v coordin x basi pi and v coordin y basi
+ei and with a particular choic of the map j
+je1 0
+je2 p1
+then
+a
+b
+b
+d2 xd2 ye2iy2 n1 ae2ix1 n1 x2 n2 be2iy1 x1 y2 x2
+a j b
+v
+v
+calcul further use the standard properti of oscillatori integr we obtain
+a
+d2 x
+ab
+v
+b
+d2 ye2in1 y2 n2 x2 y2 x2
+v
+a b
+abe2in1 n2
+which agre with the definit for the right twist as defin in 3
+with e2i
+have shown the relat one might use the result valid for the
+deform quantiz to thi particular case for instanc to the
+noncommut fourspher on the other hand use similar argument as in 3 one will obtain a vast famili of noncommut
+spectral tripl and their symmetri by construct the deform
+quantiz as describ in 8 of for instanc spin manifold
+acknowledg while finish thi paper we have learn
+of a similar work by joseph varilli 13 more gener pictur shall be
+also present in a forthcom work 4
+the author would also like to thank michel duboisviolett jmgraciabonda gianni landi john mador mario pachk and harold steinack
+for help discuss on mani topic
+refer
+1 aconn noncommut geometri academ press 1994
+2 aconn noncommut geometri year 2000 arxivmathqa0011193
+3 aconn glandi noncommut manifold the instanton algebra and
+isospectr deform arxivmathqa0011194
+4 aconn m duboisviolett in prepar
+5 ppkulish aimudrov twistlik geometri on a quantum minkowski space
+on the occas of the 65th birthday of academician lyudvig dmitrievich
+faddeev tr mat inst steklova 226 1999 mat fiz probl kvantovoi teor
+polya 97111
+rieffel deform quantiz and isospectr deform
+5
+6 mpaschk uber
+nichtkommut geometrien ihr symmetrien und etwa
+hochenergiephysik phd thesi mainz 2001 to appear
+7 mpaschk asitarz the geometri of noncommut symmetri acta
+physpol b31 no 11 2000
+8 mrieffel deform quantiz for action of rd memoir am vol 506
+am provid 1993
+9 mrieffel quantiz and c aklgebra in c algebras19431993 contemporari mathemat 167 editorredolan am provid 1994
+10 mrieffel noncompact quantum group associ with abelian subgroup
+commmathphi 171 p 181 1995
+11 mrieffel deform quantiz for action of rd memoir am vol 506
+am provid 1993
+12 asitarz twist and spectral tripl for isospectr deform to appear
+13 jcv
+arilli quantum symmetri group of noncommut sphere
+arxivmathqa0102065
+email address andrzejsitarzthupsudfr
+laboratoir de physiqu theoriqu universit
+e parissud bat 210
+91405 orsay cedex franc
