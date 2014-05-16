@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Scholarec: A Recommendation System for Scholarly Articles</title>
+    
+    <meta name="description" content="Using MongoDB as your primary Django database">
+    <meta name="author" content="Andre Medeiros">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/iroquote.css" id="theme">
+    
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/monokai_sublime.css">
+    
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+  
+  <body>
+    
+    <div class="reveal">
+      <div class="background-texture"></div>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+	
+	<section>
+	  <img src="img/Amity-University-Logo.png" alt="Amity University Logo"><hr />
+	  <img height="120" width="350" src="img/scholarec_logo4.png" alt="ScholaRec Logo">
+	  <h3><br />A Recommendation Engine<br />for Scholarly Articles</h3>
+	  <hr>
+	  <table>
+	    <tbody>
+	      <tr>
+		<td style="padding-left: .6em; padding-right: 4em;">Submitted To: <br /><u>Asst. Prof. Swati Singal </u>
+		  <br />ssingal@amity.edu
+		</td>
+		<td style="padding-left: 2em">
+		  Submitted By: <br /><a href="http://about.me/arcolife">Archit Sharma</a><br />archit.py@gmail.com
+		</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	</section>
+	
+	<section>
+	  <h2>Who?</h2>
+	  <br />
+	  <p>
+	    Archit Sharma <br />(a.k.a <a href="http://twitter.com/arcolife">@arcolife</a> )<br />
+	  </p>
+	  <p>
+	    <small>Bachelors, Computer Science & Engineering</small><br />
+	    <hr>
+	    
+	    <a href="http://www.amity.edu/asetau">Amity University</a><br />
+	    Batch: 2010-14
+	  </p>
+	</section>
+	
+	<section data-state="mongodb-style">
+	  <img height="200" width="500" src="img/scholarec_logo4.png" alt="ScholaRec Logo">
+	  <div class="fragment roll-in">
+	    <p>It's just a Recommendation Engine.</p>
+	  </div>
+	  <div class="fragment roll-in">					
+	    <strong>..for Scholarly Articles</strong>
+	  </div>
+	  <div class="fragment roll-in">
+	    <h3>Document recommendation for real !</h3>
+	  </div>
+	  <!--pre><code data-trim class="javascript">
+	      fooman = {"name" : "Foo", "age" : 25};
+	      db.users.save(fooman);
+	      </code></pre-->
+	</section>
+		
+	<section>
+	  <h3>constrained dataset? A simple approach</h3>	  
+	  <div class="fragment roll-in">
+
+	    <img height="400" width="600" src="img/pres.png" alt="PRES architecture">	  
+	    <br />
+	    We have used only a small set of liked research papers as training data 
+	    and there is no other information about user preferences or other users 
+	    in the system. 
+	  </div>
+	</section>
+	
+	<section>
+
+	  <h3><u>Content-based Algorithm</u></h3>
+	  <strong>Generalization of the aggregation functions</strong>
+	  <br /><br />
+	  <img height="400" width="600" src="img/content_based.png" alt="content-based algo">	  
+	</section>
+
+	<section>
+	  <h2>NoSQL + Django</h2>
+	  <h3><strong>The &ldquo;pythonic database&rdquo;</strong></h3>
+	  <br />
+	  dict ~ JSON
+	  <pre><code data-trim class="python">
+	      # Python
+	      person = {
+	      'name': "Alex F.", 
+	      'skills': ["AngularJS", "CSS3", "HTML5"],
+	      'work': None
+	      }
+	  </code></pre>
+	  <pre><code data-trim class="javascript">
+	      // Javascript
+	      person = {
+	      "name" : "Alex F.", 
+	      "skills" : ["AngularJS", "CSS3", "HTML5"],
+	      "work" : null
+	      };
+	  </code></pre>
+	</section>
+	<section>
+	  <blockquote>
+	    Writing Python is fun, and keeping everything in Python limits the number of times your brain has to do a "context switch." It helps productivity if you keep yourself in a single programming environment/mentality for as long as possible.
+	  </blockquote>
+	  &mdash;<a href="http://www.djangobook.com/en/2.0/chapter05.html#defining-models-in-python">Djangobook.com</a>
+	</section>
+
+	<section data-state="django-style">
+	  <h2><img src="img/django.png" style="margin-bottom: -0.6em;">with MongoDB</h2>
+	  <br />
+	  <p>
+	    At the core of Django is its ORM
+	  </p>
+	  <br />
+	  <p>
+	    <strong><a style="font-size:150%;" href="http://mongoengine.org/">MongoEngine</a></strong><br /> is an Object-Document Mapper made for MongoDB, following Django's ORM style.
+	  </p>
+
+	</section>
+	
+	<section>
+	  <h2>Consider MongoDB when...</h2>
+	  <br />
+	  <ul style="font-size:110%; line-height:150%">
+	    <li>You are starting a project with design freedom</li>
+	    <li>Your app has an evolving data schema</li>
+	    <li>Your want auto-sharding on a simple schema</li>
+	    <li>Your app has plenty of geospatial data</li>
+	    <li>You have high-volume traffic</li>
+	    <li>Your app works around a RESTful JSON API</li>
+	  </ul>
+	</section>
+	
+	<section>
+	  <h2>Thank you</h2>
+	  <br />
+	  <strong>Questions?</strong>
+	  <br />
+	  <br />
+	  <br />
+	  <small>Share</small> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://arcolife.github.io/scholarec/present/" data-text="Check out ScholaRec: A Recommendation Engine for Research Papers" data-via="arcolife">Tweet</a>
+	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	</section>
+      </div>
+      
+    </div>
+    
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    
+    <script>
+      
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: false,
+      history: true,
+      center: true,
+      theme: 'iroquote', // available themes are in /css/theme
+      transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+      transitionSpeed: 'slow', // default/fast/slow
+      
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { 
+      hljs.initHighlightingOnLoad(); hljs.tabReplace = '    '; } },
+      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+      // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+      // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+      });
+      
+    </script>
+    
+  </body>
+</html>
