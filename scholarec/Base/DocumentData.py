@@ -23,8 +23,13 @@ such as topwords."""
 
 from nltk import \
     word_tokenize,\
-    PorterStemmer
+    PorterStemmer,\
+    word_tokenize
     #LancasterStemmer
+from nltk.corpus import stopwords
+
+import string
+from collections import Counter
 
 class DocumentOperations(object):
     """
@@ -52,3 +57,19 @@ class DocumentOperations(object):
         # stem_lancaster = [lancaster.stem(t) for t in tokens]
         stem_porter = [porter.stem(t) for t in tokens]
         return stem_porter
+    '''
+    def get_tokens(self):
+       with open(self.path, 'r') as shakes:
+        text = shakes.read()
+        lowers = text.lower()
+        #remove the punctuation using the character deletion step of translate
+        no_punctuation = lowers.translate(None, string.punctuation)
+        tokens = nltk.word_tokenize(no_punctuation)
+        return tokens
+    '''
+    '''
+    tokens = get_tokens()
+    filtered = [w for w in tokens if not w in stopwords.words('english')]
+    count = Counter(filtered)
+    print count.most_common(100)
+    '''

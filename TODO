@@ -1,20 +1,19 @@
 *) IMMEDIATE
    - Implement current algorithms used in 
      mrec.crab/recsys library for Python #partial
-   - Use construct_call_graph.py and graphViz library 
-     to construct call graph of main.py #partial
    - Write useful sample cases. #done
    - Try the BeautifulSoup XML parser #done
    - Try xmltodict XML parser #done
    - Try xml XML parser #done
    - Add Webhooks for Travis CI #done
-   - Asses requirements.txt #partial
+   - Asses requirements.txt #done
    - Refactor public/index.html #done
    - Add public/mockups #done
    - Connect Web Interface #done
    
 *) ISSUES
 			~~ In addition to github issue list ~~
+
    - Web Interface:
      - Add top citations / references column 
      - Integrate with Python script, 
@@ -25,7 +24,15 @@
      - fulltext link and pdf downloader #done
      - Select tools for data visualization and infographics
        (Google Chart API / D3 / GraphViz / Processing / etc.. )
-
+       
+   - Packaging (add to setup script):
+     - check if javacc installed
+     - install python-memcache
+     - add django secret key
+     - install curl
+     - install elasticsearch
+     - change setup file in django repo
+     
    Logic:
 	- tf-idf implementation #partial
    	- Stemming options:
