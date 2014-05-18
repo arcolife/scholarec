@@ -29,7 +29,7 @@ from nltk import \
 from nltk.corpus import stopwords
 
 import string
-from collections import Counter
+#from collections import Counter
 
 class DocumentOperations(object):
     """
