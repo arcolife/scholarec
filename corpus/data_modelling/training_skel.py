@@ -71,7 +71,9 @@ print "\nIndex: \n",rp.index
 print "\nColumns: \n",rp.columns
 print "\nValues: \n",rp.values
 
-#print rp.T.to_string() #['arcolife']
+#print rp.T.to_string() 
+
+#It's only possible to access by username through rp.T.['arcolife'] and not through rating / rating.T
 
 # rp.T.to_html('sample.html')
 # rp.T.to_json('sample.json')
