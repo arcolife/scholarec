@@ -1,22 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*- 
-
-## This file is part of ScholaRec.
-## A recommendation engine for Scholarly works.
-## Copyright (C) 2014  Archit Sharma <archit.py@gmail.com>
-##
-## ScholaRec is free software: you can redistribute it and/or modify
-## it under the terms of the GNU General Public License as published by
-## the Free Software Foundation, either version 3 of the License, or
-## (at your option) any later version.
-##
-## ScholaRec is distributed in the hope that it will be useful,
-## but WITHOUT ANY WARRANTY; without even the implied warranty of
-## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-## GNU General Public License for more details.
-##
-## You should have received a copy of the GNU General Public License
-## along with this program.  If not, see <http://www.gnu.org/licenses/>
+#!/usr/bin/python
 
 import os 
 import sys
@@ -63,7 +45,27 @@ def __write_es_upload_script(path_dest):
         #print CMD
     FILE.close()
 
+def __write_mongo_upload_script(path_dest):
+    '''
+    write content into bash script that
+    is supposed to upload chunks to mongodb instance
+    '''
+    #list of all json filenames
+    filenames = os.listdir(path_dest)
+    FILE = open('mongo_upload', 'wb')
+    # write shell commands
+    FILE.write('#!/bin/bash\n')
+    FILE.write('cd ' + path_dest + ' \n')
+    passw = os.environ.get('mongo_scholarec_p')
+    for filename in filenames:
+        # develop a command to upload files
+        FILE.write('mongoimport --db scholarec -u arco -p ' + passw + ' --collection docs --file '+ \
+                filename + "\n")
+               #+ filename.strip('.json') \
+    FILE.close()
+
 if __name__=='__main__':
+    '''
     try:
         # creat directory to dump individual json files
         os.mkdir(PATH_DEST)
@@ -76,11 +78,14 @@ if __name__=='__main__':
 
     except OSError:
         print "Error: ", sys.exc_info()[1][1]
-
     __write_es_upload_script(PATH_DEST)
+    '''
+    __write_mongo_upload_script(PATH_DEST)
+    '''
     # set executable permission to shell script: ./_User_sharded/post
     set_perm = ['chmod', '+x', 'es_upload']
     call(set_perm)
     # execute the script and upload json fiels to ES instance
     call_post = ['./es_upload']
     call(call_post)
+    '''
