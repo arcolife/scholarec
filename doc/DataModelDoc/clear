@@ -1,0 +1,9 @@
+#!/bin/bash
+rm *.lof
+rm *.aux
+rm *.toc
+rm *~
+rm *.log
+rm *.out
+rm *.pdf
+

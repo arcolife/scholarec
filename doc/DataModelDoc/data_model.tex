@@ -1,0 +1,196 @@
+\documentclass[a4 paper,11pt]{report}
+\usepackage{graphicx}
+\usepackage{underscore}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[left=1.25in,right=1in,bottom=0.75in,top=0.75in] {geometry}
+\linespread{1.5}
+\begin {document}
+
+\begin {center}
+\thispagestyle{empty}
+..\\[30pt]
+Documentation\\[10pt]
+On\\[20pt]\textbf {\LARGE ScholaRec \\Recommendation Framework for Scholarly Articles}\\[60pt]
+
+\begin {figure}[htb]
+  \begin {center}
+    \includegraphics[scale=0.5]{logo.png}
+    \label {The Process}
+  \end {center}
+\end {figure}
+
+(\url{http://arcolife.github.io/scholarec})\\[140pt]
+
+\begin {flushright}
+\textbf {Archit Sharma}\\
+(\url{work.arcolife.in})\\
+Email: \href{mailto:archit.py@gmail.com}{archit.py@gmail.com}\\[30pt]
+\end {flushright}
+
+2014\\[50pt]
+..\\
+\end{center}
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+
+\begin {center}
+\addcontentsline{toc}{chapter}{Project Description}
+\underline{\Large \textbf {Project Description}}\\
+(\url{http://arcolife.github.io/scholarec})\\
+\begin {figure}[h]
+\centering \includegraphics[scale=0.5]{scholarecLogo1}
+\end {figure}
+\textbf {A Recommender System for Scientific Documents}\\[50pt]
+\end {center}
+
+ScholaRec was brought to light, due to a need felt for a proper recommendation system for publicly available scholarly/research works. It classifies documents and uses personalization features to suggest/recommend similar ones. \\[10pt]
+
+\textbf {Features offered:}
+\begin {enumerate}
+\item The ability to search from a huge collection of Articles, Reports and other scholarly works.
+\item Seamless extension to current online archived repositories of Scholarly Articles
+\item A Robust Back-end search engine
+\item A clean and interactive User Interface with good User Experience
+\item Access to full text links and other related meta data
+\item Personalization through OpenID and OAuth integration 
+\item Recommendations based on user's interests.\\
+\end {enumerate}
+ScholaRec is the first recommendation engine ever made, for suggesting scientific documents. Other existing products in the market, like Google Scholar, Microsoft Virtual Academy (now deprecated), provide a way to search among the articles and rate them, but not recommend them. Moreover, its Open Sourced! and has been designed following the philosophy of Agile Software Development methodology. It is also hosted online and easy to use, and reduces the efforts of a scholar by multiple factors, by helping him/her search efficiently.
+
+
+\setcounter{page}{1}
+
+\pagenumbering{arabic}
+
+\chapter {Intro}
+
+\section {Problem statement}
+
+The recommendation problem in its most basic form is quite simple to define:
+
+\begin{verbatim}
+
+|-------------------+-----+-----+-----+-----+-----|
+| user_id, paper_id | p_1 | p_2 | p_3 | p_4 | p_5 |
+|-------------------+-----+-----+-----+-----+-----|
+| u_1               | ?   | ?   | 4   | ?   | 1   |
+|-------------------+-----+-----+-----+-----+-----|
+| u_2               | 3   | ?   | ?   | 2   | 2   |
+|-------------------+-----+-----+-----+-----+-----|
+| u_3               | 3   | ?   | ?   | ?   | ?   |
+|-------------------+-----+-----+-----+-----+-----|
+| u_4               | ?   | 1   | 2   | 1   | 1   |
+|-------------------+-----+-----+-----+-----+-----|
+| u_5               | ?   | ?   | ?   | ?   | ?   |
+|-------------------+-----+-----+-----+-----+-----|
+| u_6               | ?   | ?   | ?   | ?   | 2   |
+|-------------------+-----+-----+-----+-----+-----|
+
+\end{verbatim}
+
+*Given a partially filled matrix of ratings ($|U|x|I|$), estimate the missing values.*
+
+\section {Goal of a recommendation system}
+
+\begin{center}
+$$ 
+\newcommand{\argmax}{\mathop{\rm argmax}\nolimits}
+\forall{u \in U},\; i^* = \argmax_{i \in -I(u)} [S(u,i)] 
+$$
+\end{center}
+
+\section {Notation}
+\begin{enumerate}
+\item U is the set of users in our domain. Its size is $|U|$.
+\item I is the set of items in our domain. Its size is $|I|$.
+\item I(u) is the set of items that user u has rated.
+\item -I(u) is the complement of I(u) i.e., the set of items not yet seen by user u.
+\item U(i) is the set of users that have rated item i.
+\item -U(i) is the complement of U(i).
+\item S(u,i) $->$ a notion of utility liking; preference measure; measure the appeal of an item.
+\end{enumerate}
+
+\section {Procedure}
+\begin{enumerate}
+\item Content-based filtering tries to estimate ratings for the user based on user's history. 
+\item Grab every item that user has interacted with before and aggregate that to somehow estimate missing values. 
+\item Use some utility measures to put new recommendations to the user.
+\end{enumerate}
+
+\section {Content-based filtering}
+Generic expression (notice how this is kind of a 'row-based' approach):\cite{rec}
+
+\begin{center}
+$$ r_{u,i} = \bar r_u = \frac{\sum_{i' \in I(u)} r_{u,i'}}{|I(u)|} $$
+\end{center}
+
+\subsection {Content-based: simple ratings-based recommendations}
+
+Purely based on ratings information.
+
+\begin{center}
+$$ r_{u,i} = \bar r_u = \frac{\sum_{i' \in I(u)} r_{u,i'}}{|I(u)|} $$
+\end{center}
+
+\newpage
+\section {Challenges}
+
+\subsection {Availability of item metadata}
+
+Content-based techniques are limited by the amount of metadata that is available
+to describe an item. There are domains in which feature extraction methods are
+expensive or time consuming, e.g., processing multimedia data such as graphics,
+audio/video streams. In the context of grocery items for example, it's often the
+case that item information is only partial or completely missing. Examples
+include:\\[10pt]
+$\bullet$ Ingredients\\
+$\bullet$ Nutrition facts\\
+$\bullet$ Brand\\
+$\bullet$ Description\\
+$\bullet$ County of origin\\
+
+\subsection {New user problem}
+
+A user has to have rated a sufficient number of items before a recommender
+system can have a good idea of what their preferences are. In a content-based
+system, the aggregation function needs ratings to aggregate.
+
+\subsection {New item problem}
+
+Collaborative filters rely on an item being rated by many users to compute
+aggregates of those ratings. Think of this as the exact counterpart of the new
+user problem for content-based systems.
+
+\subsection {Data sparsity}
+
+When looking at the more general versions of content-based and collaborative
+systems, the success of the recommender system depends on the availability of a
+critical mass of user/item iteractions. We get a first glance at the data
+sparsity problem by quantifying the ratio of existing ratings vs $|U|x|I|$. A
+highly sparse matrix of interactions makes it difficult to compute similarities
+between users and items. As an example, for a user whose tastes are unusual
+compared to the rest of the population, there will not be any other users who
+are particularly similar, leading to poor recommendations.
+
+\newpage
+\section {Search Algorithms}
+The standard similarity algorithm used, is known as TF/IDF, or Term Frequency/Inverse Document Frequency, which takes the following factors into account:\cite{es}
+\subsection {Term frequency}
+How often does the term appear in the field? The more often, the more relevant. A field containing five mentions of the same term is more likely to be relevant than a field containing just one mention.
+\subsection {Inverse document frequency}
+How often does each term appear in the index? The more often, the less relevant. Terms that appear in many documents have a lower weight than more uncommon terms.
+\subsection {Field norm}
+How long is the field? The longer it is, the less likely it is that words in the field will be relevant. A term appearing in a short title field carries more weight than the same term appearing in a long content field.
+
+\begin{thebibliography}{10}
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibitem{rec} ipython nbviewer, ``Playing with Recommender Systems'' in \url{http://nbviewer.ipython.org/github/marcelcaraciolo/big-data-tutorial/blob/master/tutorial/1-Playing-with-Recommender-Systems.ipynb}, May 2014
+\bibitem{es} ElasticSearch, ``What is Relevance'' in \url{http://www.elasticsearch.org/guide/en/elasticsearch/guide/current/relevance-intro.html}, May 2014
+\end{thebibliography}
+
+\end{document}
