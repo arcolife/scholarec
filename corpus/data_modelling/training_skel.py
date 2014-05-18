@@ -2,6 +2,9 @@ import pandas as pd
 
 # steps to form a skeleton for sample training data of ratings
 '''
+# here fields used are: Physics, Probability & Mathematics (in order)
+# total entries ~43 (around 15 for each)
+ 
 id = ['1401.0828v1',
       '1010.5976v1',
       '0706.0750v2',
