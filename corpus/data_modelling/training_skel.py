@@ -73,8 +73,31 @@ print "\nValues: \n",rp.values
 
 #print rp.T.to_string() 
 
-#It's only possible to access by username through rp.T.['arcolife'] and not through rating / rating.T
+# Access through rp.T['arcolife'] 
+# or through rp.ix['arcolife']
+# or rating.user_id / rating.paper_id
 
 # rp.T.to_html('sample.html')
 # rp.T.to_json('sample.json')
 
+
+''' 
+# Collaborative filtering is done through the following:
+# provided there are required amount of ratings present 
+# in cells of the matrix, using Pearson correlation score
+rating_arcolife = rp.T['arcolife']
+sim_arcolife = rp.corrwith(rp.T['arcolife'])
+
+# To make recommendation for Toby, we calculate a rating 
+# of others weighted by the similarity. Note that we only 
+# need to calculate rating for movies Toby has not yet seen. 
+# The first line below filter out irrelevant data. It then 
+# assigns the similarity score and the weighted rating.
+
+papers = ((rating_arcolife[rating.paper_id].isnull()) & (rating.user_id != 'arcolife')).values
+rating_c = rating[papers]
+rating_c['similarity'] = rating_c['user_id'].map(sim_arcolife.get)
+rating_c['sim_rating'] = rating_c.similarity * rating_c.rating
+
+print rating_c
+'''
