@@ -20,7 +20,6 @@ id = ['1401.0828v1',
       '1304.1684v1',
       '1101.0426v1',
       '0911.4426v1',
-      'field',
       '0701121v1',
       '1402.5513v1',
       '0305165v1',
@@ -66,4 +65,14 @@ data.unstack().to_csv('sample.csv')
 rating  = pd.read_csv('sample.csv')
 rp = rating.pivot_table(cols=['paper_id'], rows=['user_id'], values='rating')
 
-print rp.T['arcolife']
+# print rating
+
+print "\nIndex: \n",rp.index
+print "\nColumns: \n",rp.columns
+print "\nValues: \n",rp.values
+
+#print rp.T.to_string() #['arcolife']
+
+# rp.T.to_html('sample.html')
+# rp.T.to_json('sample.json')
+
