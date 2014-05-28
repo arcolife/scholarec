@@ -3,3 +3,4 @@ BeautifulSoup==3.2.1
 wikipedia==1.1
 feedparser==5.1.3
 nltk==2.0.4
+pyes==0.90.1

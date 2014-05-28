@@ -90,6 +90,10 @@
      Check rate limits.
    - Integrate ES with MongoDB and write API script
 
+   - Change query_parse so as to split data into chunks;
+      then edit QueryES.DocumentOperations.DocumentUpload 
+      so as to upload those chunks to ES instance with proper mapping
+
 *) FUTURE
    - Unit testing methods integrations, Use Jenkins to keep track?
    - Develop aggregation methodologies for ES instance
