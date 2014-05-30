@@ -1,0 +1,1249 @@
+{
+   "hits" : {
+      "hits" : [
+         {
+            "_source" : {
+               "@timestamp" : "2014-03-07T20:10:10.853Z",
+               "transport" : {
+                  "tx_size_in_bytes" : 0,
+                  "tx_count" : 0,
+                  "server_open" : 0,
+                  "rx_size_in_bytes" : 0,
+                  "rx_count" : 0
+               },
+               "network" : {
+                  "tcp" : {
+                     "attempt_fails" : 184127,
+                     "active_opens" : 247233,
+                     "in_errs" : 1475,
+                     "in_segs" : 5001440,
+                     "out_rsts" : 15720,
+                     "curr_estab" : 43,
+                     "retrans_segs" : 387692,
+                     "out_segs" : 3988477,
+                     "estab_resets" : 9801,
+                     "passive_opens" : 2327
+                  }
+               },
+               "cluster_name" : "elasticsearch",
+               "node" : {
+                  "transport_address" : "inet[10.10.124.131/10.10.124.131:9300]",
+                  "ip" : "10.10.124.131",
+                  "name" : "Black Widow",
+                  "id" : "8iyV7fqyT-uMTzByEU5Dwg",
+                  "ip_port" : "10.10.124.131:9300",
+                  "host" : "10.10.124.131"
+               },
+               "process" : {
+                  "cpu" : {
+                     "user_in_millis" : 14245240,
+                     "sys_in_millis" : 1077310,
+                     "percent" : 7,
+                     "total_in_millis" : 15322550
+                  },
+                  "open_file_descriptors" : 192,
+                  "timestamp" : 1394223010855,
+                  "mem" : {
+                     "share_in_bytes" : 6635520,
+                     "resident_in_bytes" : 407449600,
+                     "total_virtual_in_bytes" : 1405919232
+                  }
+               },
+               "os" : {
+                  "load_average" : {
+                     "15m" : 0.91,
+                     "1m" : 1.3,
+                     "5m" : 0.96
+                  },
+                  "cpu" : {
+                     "usage" : 20,
+                     "stolen" : 0,
+                     "sys" : 4,
+                     "user" : 16,
+                     "idle" : 78
+                  },
+                  "timestamp" : 1394223010854,
+                  "swap" : {
+                     "used_in_bytes" : 280027136,
+                     "free_in_bytes" : 12732792832
+                  },
+                  "uptime_in_millis" : 359068,
+                  "mem" : {
+                     "actual_used_in_bytes" : 4208996352,
+                     "actual_free_in_bytes" : 4160167936,
+                     "free_percent" : 49,
+                     "used_in_bytes" : 7145066496,
+                     "used_percent" : 50,
+                     "free_in_bytes" : 1224097792
+                  }
+               },
+               "thread_pool" : {
+                  "search" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 12,
+                     "completed" : 123,
+                     "largest" : 12
+                  },
+                  "suggest" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 0,
+                     "completed" : 0,
+                     "largest" : 0
+                  },
+                  "warmer" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 2,
+                     "completed" : 54951,
+                     "largest" : 2
+                  },
+                  "bulk" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 4,
+                     "completed" : 167279,
+                     "largest" : 4
+                  },
+                  "generic" : {
+                     "rejected" : 0,
+                     "active" : 1,
+                     "queue" : 0,
+                     "threads" : 3,
+                     "completed" : 233083,
+                     "largest" : 5
+                  },
+                  "index" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 0,
+                     "completed" : 0,
+                     "largest" : 0
+                  },
+                  "refresh" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 1,
+                     "completed" : 46711,
+                     "largest" : 1
+                  },
+                  "flush" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 1,
+                     "completed" : 384,
+                     "largest" : 1
+                  },
+                  "merge" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 1,
+                     "completed" : 46843,
+                     "largest" : 1
+                  },
+                  "percolate" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 0,
+                     "completed" : 0,
+                     "largest" : 0
+                  },
+                  "get" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 0,
+                     "completed" : 0,
+                     "largest" : 0
+                  },
+                  "snapshot" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 1,
+                     "completed" : 42634,
+                     "largest" : 1
+                  },
+                  "optimize" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 0,
+                     "completed" : 0,
+                     "largest" : 0
+                  },
+                  "management" : {
+                     "rejected" : 0,
+                     "active" : 0,
+                     "queue" : 0,
+                     "threads" : 5,
+                     "completed" : 1281107,
+                     "largest" : 5
+                  }
+               },
+               "http" : {
+                  "current_open" : 7,
+                  "total_opened" : 2269
+               },
+               "indices" : {
+                  "indexing" : {
+                     "delete_total" : 0,
+                     "delete_time_in_millis" : 0,
+                     "delete_current" : 0,
+                     "index_current" : 0,
+                     "index_total" : 1905734,
+                     "index_time_in_millis" : 1581664
+                  },
+                  "search" : {
+                     "query_time_in_millis" : 4000,
+                     "fetch_total" : 78,
+                     "fetch_current" : 0,
+                     "open_contexts" : 0,
+                     "query_current" : 0,
+                     "query_total" : 122,
+                     "fetch_time_in_millis" : 143
+                  },
+                  "store" : {
+                     "size_in_bytes" : 66343,
+                     "throttle_time_in_millis" : 0
+                  },
+                  "fielddata" : {
+                     "evictions" : 0,
+                     "memory_size_in_bytes" : 0
+                  },
+                  "id_cache" : {
+                     "memory_size_in_bytes" : 0
+                  },
+                  "segments" : {
+                     "count" : 6,
+                     "memory_in_bytes" : 2259
+                  },
+                  "completion" : {
+                     "size_in_bytes" : 0
+                  },
+                  "warmer" : {
+                     "total_time_in_millis" : 71,
+                     "current" : 0,
+                     "total" : 27
+                  },
+                  "refresh" : {
+                     "total_time_in_millis" : 1897159,
+                     "total" : 46742
+                  },
+                  "flush" : {
+                     "total_time_in_millis" : 157054,
+                     "total" : 384
+                  },
+                  "filter_cache" : {
+                     "evictions" : 0,
+                     "memory_size_in_bytes" : 0
+                  },
+                  "get" : {
+                     "missing_total" : 0,
+                     "current" : 0,
+                     "time_in_millis" : 0,
+                     "exists_total" : 0,
+                     "missing_time_in_millis" : 0,
+                     "exists_time_in_millis" : 0,
+                     "total" : 0
+                  },
+                  "merges" : {
+                     "total_docs" : 3112081,
+                     "total_size_in_bytes" : 5490257204,
+                     "current_docs" : 0,
+                     "current_size_in_bytes" : 0,
+                     "total_time_in_millis" : 573668,
+                     "current" : 0,
+                     "total" : 1356
+                  },
+                  "docs" : {
+                     "count" : 8,
+                     "deleted" : 0
+                  }
+               },
+               "fs" : {
+                  "timestamp" : 1394223010856,
+                  "data" : [
+                     {
+                        "disk_reads" : 581047,
+                        "dev" : "/dev/sdb1",
+                        "disk_io_size_in_bytes" : 43712394240,
+                        "total_in_bytes" : 20534534144,
+                        "mount" : "/",
+                        "disk_read_size_in_bytes" : 10363085824,
+                        "path" : "/var/lib/elasticsearch/elasticsearch/nodes/0",
+                        "disk_service_time" : "4.3",
+                        "disk_io_op" : 1139894,
+                        "available_in_bytes" : 4103811072,
+                        "disk_queue" : "0",
+                        "disk_write_size_in_bytes" : 33349308416,
+                        "disk_writes" : 558847,
+                        "free_in_bytes" : 5170524160
+                     }
+                  ],
+                  "total" : {
+                     "disk_reads" : 581047,
+                     "disk_io_size_in_bytes" : 43712394240,
+                     "total_in_bytes" : 20534534144,
+                     "disk_read_size_in_bytes" : 10363085824,
+                     "disk_service_time" : "4.3",
+                     "available_in_bytes" : 4103811072,
+                     "disk_io_op" : 1139894,
+                     "disk_queue" : "0",
+                     "disk_writes" : 558847,
+                     "disk_write_size_in_bytes" : 33349308416,
+                     "free_in_bytes" : 5170524160
+                  }
+               },
+               "jvm" : {
+                  "buffer_pools" : {
+                     "direct" : {
+                        "total_capacity_in_bytes" : 17097852,
+                        "count" : 76,
+                        "used_in_bytes" : 17097852
+                     },
+                     "mapped" : {
+                        "total_capacity_in_bytes" : 0,
+                        "count" : 0,
+                        "used_in_bytes" : 0
+                     }
+                  },
+                  "timestamp" : 1394223010855,
+                  "uptime_in_millis" : 359044430,
+                  "gc" : {
+                     "collectors" : {
+                        "young" : {
+                           "collection_time_in_millis" : 336828,
+                           "collection_count" : 47522
+                        },
+                        "old" : {
+                           "collection_time_in_millis" : 9978,
+                           "collection_count" : 434
+                        }
+                     }
+                  },
+                  "mem" : {
+                     "heap_used_in_bytes" : 99231344,
+                     "non_heap_used_in_bytes" : 30878584,
+                     "heap_max_in_bytes" : 1046937600,
+                     "non_heap_committed_in_bytes" : 47030272,
+                     "pools" : {
+                        "survivor" : {
+                           "peak_max_in_bytes" : 26804224,
+                           "max_in_bytes" : 26804224,
+                           "used_in_bytes" : 5165880,
+                           "peak_used_in_bytes" : 8912896
+                        },
+                        "young" : {
+                           "peak_max_in_bytes" : 214827008,
+                           "max_in_bytes" : 214827008,
+                           "used_in_bytes" : 19637272,
+                           "peak_used_in_bytes" : 71630848
+                        },
+                        "old" : {
+                           "peak_max_in_bytes" : 805306368,
+                           "max_in_bytes" : 805306368,
+                           "used_in_bytes" : 74428192,
+                           "peak_used_in_bytes" : 205495712
+                        }
+                     },
+                     "heap_committed_in_bytes" : 349478912,
+                     "heap_used_percent" : 9
+                  },
+                  "threads" : {
+                     "count" : 72,
+                     "peak_count" : 73
+                  }
+               }
+            },
+            "_score" : 1,
+            "_index" : ".marvel-2014.03.07",
+            "_id" : "sJI7gojORvq1Qqx8-MXn3w",
+            "_type" : "node_stats"
+         },
+         {
+            "_source" : {
+               "search" : {
+                  "query_time_in_millis" : 0,
+                  "fetch_total" : 0,
+                  "fetch_current" : 0,
+                  "open_contexts" : 0,
+                  "query_current" : 0,
+                  "query_total" : 1,
+                  "fetch_time_in_millis" : 0
+               },
+               "primary" : true,
+               "shard_state" : "STARTED",
+               "segments" : {
+                  "count" : 0,
+                  "memory_in_bytes" : 0
+               },
+               "node" : {
+                  "transport_address" : "inet[10.10.124.131/10.10.124.131:9300]",
+                  "ip" : "10.10.124.131",
+                  "name" : "Black Widow",
+                  "id" : "8iyV7fqyT-uMTzByEU5Dwg",
+                  "ip_port" : "10.10.124.131:9300",
+                  "host" : "10.10.124.131"
+               },
+               "warmer" : {
+                  "total_time_in_millis" : 38,
+                  "current" : 0,
+                  "total" : 1
+               },
+               "refresh" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 1
+               },
+               "filter_cache" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "merges" : {
+                  "total_docs" : 0,
+                  "total_size_in_bytes" : 0,
+                  "current_docs" : 0,
+                  "current_size_in_bytes" : 0,
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 0
+               },
+               "get" : {
+                  "missing_total" : 0,
+                  "current" : 0,
+                  "time_in_millis" : 0,
+                  "exists_total" : 0,
+                  "missing_time_in_millis" : 0,
+                  "exists_time_in_millis" : 0,
+                  "total" : 0
+               },
+               "docs" : {
+                  "count" : 0,
+                  "deleted" : 0
+               },
+               "@timestamp" : "2014-03-07T20:10:10.991Z",
+               "indexing" : {
+                  "delete_total" : 0,
+                  "delete_time_in_millis" : 0,
+                  "delete_current" : 0,
+                  "index_current" : 0,
+                  "index_total" : 0,
+                  "index_time_in_millis" : 0
+               },
+               "store" : {
+                  "size_in_bytes" : 99,
+                  "throttle_time_in_millis" : 0
+               },
+               "fielddata" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "id_cache" : {
+                  "memory_size_in_bytes" : 0
+               },
+               "cluster_name" : "elasticsearch",
+               "completion" : {
+                  "size_in_bytes" : 0
+               },
+               "shard_id" : 0,
+               "index" : "kimchy",
+               "flush" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 0
+               }
+            },
+            "_score" : 1,
+            "_index" : ".marvel-2014.03.07",
+            "_id" : "4HjPJ4N5RkeEj4OEf-wStQ",
+            "_type" : "shard_stats"
+         },
+         {
+            "_source" : {
+               "search" : {
+                  "query_time_in_millis" : 0,
+                  "fetch_total" : 0,
+                  "fetch_current" : 0,
+                  "open_contexts" : 0,
+                  "query_current" : 0,
+                  "query_total" : 1,
+                  "fetch_time_in_millis" : 0
+               },
+               "primary" : true,
+               "shard_state" : "STARTED",
+               "segments" : {
+                  "count" : 0,
+                  "memory_in_bytes" : 0
+               },
+               "node" : {
+                  "transport_address" : "inet[10.10.124.131/10.10.124.131:9300]",
+                  "ip" : "10.10.124.131",
+                  "name" : "Black Widow",
+                  "id" : "8iyV7fqyT-uMTzByEU5Dwg",
+                  "ip_port" : "10.10.124.131:9300",
+                  "host" : "10.10.124.131"
+               },
+               "warmer" : {
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 1
+               },
+               "refresh" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 1
+               },
+               "filter_cache" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "merges" : {
+                  "total_docs" : 0,
+                  "total_size_in_bytes" : 0,
+                  "current_docs" : 0,
+                  "current_size_in_bytes" : 0,
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 0
+               },
+               "get" : {
+                  "missing_total" : 0,
+                  "current" : 0,
+                  "time_in_millis" : 0,
+                  "exists_total" : 0,
+                  "missing_time_in_millis" : 0,
+                  "exists_time_in_millis" : 0,
+                  "total" : 0
+               },
+               "docs" : {
+                  "count" : 0,
+                  "deleted" : 0
+               },
+               "@timestamp" : "2014-03-07T20:10:10.991Z",
+               "indexing" : {
+                  "delete_total" : 0,
+                  "delete_time_in_millis" : 0,
+                  "delete_current" : 0,
+                  "index_current" : 0,
+                  "index_total" : 0,
+                  "index_time_in_millis" : 0
+               },
+               "store" : {
+                  "size_in_bytes" : 99,
+                  "throttle_time_in_millis" : 0
+               },
+               "fielddata" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "id_cache" : {
+                  "memory_size_in_bytes" : 0
+               },
+               "cluster_name" : "elasticsearch",
+               "completion" : {
+                  "size_in_bytes" : 0
+               },
+               "shard_id" : 1,
+               "index" : "kimchy",
+               "flush" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 0
+               }
+            },
+            "_score" : 1,
+            "_index" : ".marvel-2014.03.07",
+            "_id" : "hzRzRJnURFi0TjooGdSO8w",
+            "_type" : "shard_stats"
+         },
+         {
+            "_source" : {
+               "search" : {
+                  "query_time_in_millis" : 0,
+                  "fetch_total" : 0,
+                  "fetch_current" : 0,
+                  "open_contexts" : 0,
+                  "query_current" : 0,
+                  "query_total" : 1,
+                  "fetch_time_in_millis" : 0
+               },
+               "primary" : true,
+               "shard_state" : "STARTED",
+               "segments" : {
+                  "count" : 1,
+                  "memory_in_bytes" : 333
+               },
+               "node" : {
+                  "transport_address" : "inet[10.10.124.131/10.10.124.131:9300]",
+                  "ip" : "10.10.124.131",
+                  "name" : "Black Widow",
+                  "id" : "8iyV7fqyT-uMTzByEU5Dwg",
+                  "ip_port" : "10.10.124.131:9300",
+                  "host" : "10.10.124.131"
+               },
+               "warmer" : {
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 2
+               },
+               "refresh" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 1
+               },
+               "filter_cache" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "merges" : {
+                  "total_docs" : 0,
+                  "total_size_in_bytes" : 0,
+                  "current_docs" : 0,
+                  "current_size_in_bytes" : 0,
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 0
+               },
+               "get" : {
+                  "missing_total" : 0,
+                  "current" : 0,
+                  "time_in_millis" : 0,
+                  "exists_total" : 0,
+                  "missing_time_in_millis" : 0,
+                  "exists_time_in_millis" : 0,
+                  "total" : 0
+               },
+               "docs" : {
+                  "count" : 2,
+                  "deleted" : 0
+               },
+               "@timestamp" : "2014-03-07T20:10:10.991Z",
+               "indexing" : {
+                  "delete_total" : 0,
+                  "delete_time_in_millis" : 0,
+                  "delete_current" : 0,
+                  "index_current" : 0,
+                  "index_total" : 0,
+                  "index_time_in_millis" : 0
+               },
+               "store" : {
+                  "size_in_bytes" : 2865,
+                  "throttle_time_in_millis" : 0
+               },
+               "fielddata" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "id_cache" : {
+                  "memory_size_in_bytes" : 0
+               },
+               "cluster_name" : "elasticsearch",
+               "completion" : {
+                  "size_in_bytes" : 0
+               },
+               "shard_id" : 2,
+               "index" : "kimchy",
+               "flush" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 0
+               }
+            },
+            "_score" : 1,
+            "_index" : ".marvel-2014.03.07",
+            "_id" : "RiaabV-RR3qVnInl_w8FKg",
+            "_type" : "shard_stats"
+         },
+         {
+            "_source" : {
+               "search" : {
+                  "query_time_in_millis" : 0,
+                  "fetch_total" : 0,
+                  "fetch_current" : 0,
+                  "open_contexts" : 0,
+                  "query_current" : 0,
+                  "query_total" : 1,
+                  "fetch_time_in_millis" : 0
+               },
+               "primary" : true,
+               "shard_state" : "STARTED",
+               "segments" : {
+                  "count" : 1,
+                  "memory_in_bytes" : 332
+               },
+               "node" : {
+                  "transport_address" : "inet[10.10.124.131/10.10.124.131:9300]",
+                  "ip" : "10.10.124.131",
+                  "name" : "Black Widow",
+                  "id" : "8iyV7fqyT-uMTzByEU5Dwg",
+                  "ip_port" : "10.10.124.131:9300",
+                  "host" : "10.10.124.131"
+               },
+               "warmer" : {
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 2
+               },
+               "refresh" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 1
+               },
+               "filter_cache" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "merges" : {
+                  "total_docs" : 0,
+                  "total_size_in_bytes" : 0,
+                  "current_docs" : 0,
+                  "current_size_in_bytes" : 0,
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 0
+               },
+               "get" : {
+                  "missing_total" : 0,
+                  "current" : 0,
+                  "time_in_millis" : 0,
+                  "exists_total" : 0,
+                  "missing_time_in_millis" : 0,
+                  "exists_time_in_millis" : 0,
+                  "total" : 0
+               },
+               "docs" : {
+                  "count" : 1,
+                  "deleted" : 0
+               },
+               "@timestamp" : "2014-03-07T20:10:10.991Z",
+               "indexing" : {
+                  "delete_total" : 0,
+                  "delete_time_in_millis" : 0,
+                  "delete_current" : 0,
+                  "index_current" : 0,
+                  "index_total" : 0,
+                  "index_time_in_millis" : 0
+               },
+               "store" : {
+                  "size_in_bytes" : 2537,
+                  "throttle_time_in_millis" : 0
+               },
+               "fielddata" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "id_cache" : {
+                  "memory_size_in_bytes" : 0
+               },
+               "cluster_name" : "elasticsearch",
+               "completion" : {
+                  "size_in_bytes" : 0
+               },
+               "shard_id" : 3,
+               "index" : "kimchy",
+               "flush" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 0
+               }
+            },
+            "_score" : 1,
+            "_index" : ".marvel-2014.03.07",
+            "_id" : "1yDhkA1PSnaEL3IQCbXeBQ",
+            "_type" : "shard_stats"
+         },
+         {
+            "_source" : {
+               "search" : {
+                  "query_time_in_millis" : 0,
+                  "fetch_total" : 0,
+                  "fetch_current" : 0,
+                  "open_contexts" : 0,
+                  "query_current" : 0,
+                  "query_total" : 1,
+                  "fetch_time_in_millis" : 0
+               },
+               "primary" : true,
+               "shard_state" : "STARTED",
+               "segments" : {
+                  "count" : 0,
+                  "memory_in_bytes" : 0
+               },
+               "node" : {
+                  "transport_address" : "inet[10.10.124.131/10.10.124.131:9300]",
+                  "ip" : "10.10.124.131",
+                  "name" : "Black Widow",
+                  "id" : "8iyV7fqyT-uMTzByEU5Dwg",
+                  "ip_port" : "10.10.124.131:9300",
+                  "host" : "10.10.124.131"
+               },
+               "warmer" : {
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 1
+               },
+               "refresh" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 1
+               },
+               "filter_cache" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "merges" : {
+                  "total_docs" : 0,
+                  "total_size_in_bytes" : 0,
+                  "current_docs" : 0,
+                  "current_size_in_bytes" : 0,
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 0
+               },
+               "get" : {
+                  "missing_total" : 0,
+                  "current" : 0,
+                  "time_in_millis" : 0,
+                  "exists_total" : 0,
+                  "missing_time_in_millis" : 0,
+                  "exists_time_in_millis" : 0,
+                  "total" : 0
+               },
+               "docs" : {
+                  "count" : 0,
+                  "deleted" : 0
+               },
+               "@timestamp" : "2014-03-07T20:10:10.991Z",
+               "indexing" : {
+                  "delete_total" : 0,
+                  "delete_time_in_millis" : 0,
+                  "delete_current" : 0,
+                  "index_current" : 0,
+                  "index_total" : 0,
+                  "index_time_in_millis" : 0
+               },
+               "store" : {
+                  "size_in_bytes" : 99,
+                  "throttle_time_in_millis" : 0
+               },
+               "fielddata" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "id_cache" : {
+                  "memory_size_in_bytes" : 0
+               },
+               "cluster_name" : "elasticsearch",
+               "completion" : {
+                  "size_in_bytes" : 0
+               },
+               "shard_id" : 4,
+               "index" : "kimchy",
+               "flush" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 0
+               }
+            },
+            "_score" : 1,
+            "_index" : ".marvel-2014.03.07",
+            "_id" : "Ty8rmX0tTACLX2QdnKY1Cg",
+            "_type" : "shard_stats"
+         },
+         {
+            "_source" : {
+               "search" : {
+                  "query_time_in_millis" : 0,
+                  "fetch_total" : 0,
+                  "fetch_current" : 0,
+                  "open_contexts" : 0,
+                  "query_current" : 0,
+                  "query_total" : 1,
+                  "fetch_time_in_millis" : 0
+               },
+               "primary" : true,
+               "shard_state" : "STARTED",
+               "segments" : {
+                  "count" : 1,
+                  "memory_in_bytes" : 346
+               },
+               "node" : {
+                  "transport_address" : "inet[10.10.124.131/10.10.124.131:9300]",
+                  "ip" : "10.10.124.131",
+                  "name" : "Black Widow",
+                  "id" : "8iyV7fqyT-uMTzByEU5Dwg",
+                  "ip_port" : "10.10.124.131:9300",
+                  "host" : "10.10.124.131"
+               },
+               "warmer" : {
+                  "total_time_in_millis" : 2,
+                  "current" : 0,
+                  "total" : 2
+               },
+               "refresh" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 1
+               },
+               "filter_cache" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "merges" : {
+                  "total_docs" : 0,
+                  "total_size_in_bytes" : 0,
+                  "current_docs" : 0,
+                  "current_size_in_bytes" : 0,
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 0
+               },
+               "get" : {
+                  "missing_total" : 0,
+                  "current" : 0,
+                  "time_in_millis" : 0,
+                  "exists_total" : 0,
+                  "missing_time_in_millis" : 0,
+                  "exists_time_in_millis" : 0,
+                  "total" : 0
+               },
+               "docs" : {
+                  "count" : 1,
+                  "deleted" : 0
+               },
+               "@timestamp" : "2014-03-07T20:10:10.991Z",
+               "indexing" : {
+                  "delete_total" : 0,
+                  "delete_time_in_millis" : 0,
+                  "delete_current" : 0,
+                  "index_current" : 0,
+                  "index_total" : 0,
+                  "index_time_in_millis" : 0
+               },
+               "store" : {
+                  "size_in_bytes" : 13894,
+                  "throttle_time_in_millis" : 0
+               },
+               "fielddata" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "id_cache" : {
+                  "memory_size_in_bytes" : 0
+               },
+               "cluster_name" : "elasticsearch",
+               "completion" : {
+                  "size_in_bytes" : 0
+               },
+               "shard_id" : 0,
+               "index" : ".marvel-kibana",
+               "flush" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 0
+               }
+            },
+            "_score" : 1,
+            "_index" : ".marvel-2014.03.07",
+            "_id" : "6-Gl5ZrKSVSm_rOjLQVs7Q",
+            "_type" : "shard_stats"
+         },
+         {
+            "_source" : {
+               "search" : {
+                  "query_time_in_millis" : 1,
+                  "fetch_total" : 0,
+                  "fetch_current" : 0,
+                  "open_contexts" : 0,
+                  "query_current" : 0,
+                  "query_total" : 1,
+                  "fetch_time_in_millis" : 0
+               },
+               "primary" : true,
+               "shard_state" : "STARTED",
+               "segments" : {
+                  "count" : 0,
+                  "memory_in_bytes" : 0
+               },
+               "node" : {
+                  "transport_address" : "inet[10.10.124.131/10.10.124.131:9300]",
+                  "ip" : "10.10.124.131",
+                  "name" : "Black Widow",
+                  "id" : "8iyV7fqyT-uMTzByEU5Dwg",
+                  "ip_port" : "10.10.124.131:9300",
+                  "host" : "10.10.124.131"
+               },
+               "warmer" : {
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 1
+               },
+               "refresh" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 1
+               },
+               "filter_cache" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "merges" : {
+                  "total_docs" : 0,
+                  "total_size_in_bytes" : 0,
+                  "current_docs" : 0,
+                  "current_size_in_bytes" : 0,
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 0
+               },
+               "get" : {
+                  "missing_total" : 0,
+                  "current" : 0,
+                  "time_in_millis" : 0,
+                  "exists_total" : 0,
+                  "missing_time_in_millis" : 0,
+                  "exists_time_in_millis" : 0,
+                  "total" : 0
+               },
+               "docs" : {
+                  "count" : 0,
+                  "deleted" : 0
+               },
+               "@timestamp" : "2014-03-07T20:10:10.991Z",
+               "indexing" : {
+                  "delete_total" : 0,
+                  "delete_time_in_millis" : 0,
+                  "delete_current" : 0,
+                  "index_current" : 0,
+                  "index_total" : 0,
+                  "index_time_in_millis" : 0
+               },
+               "store" : {
+                  "size_in_bytes" : 99,
+                  "throttle_time_in_millis" : 0
+               },
+               "fielddata" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "id_cache" : {
+                  "memory_size_in_bytes" : 0
+               },
+               "cluster_name" : "elasticsearch",
+               "completion" : {
+                  "size_in_bytes" : 0
+               },
+               "shard_id" : 0,
+               "index" : "twitter",
+               "flush" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 0
+               }
+            },
+            "_score" : 1,
+            "_index" : ".marvel-2014.03.07",
+            "_id" : "Lk8pKxMHSNaQWFHSQtGi2w",
+            "_type" : "shard_stats"
+         },
+         {
+            "_source" : {
+               "search" : {
+                  "query_time_in_millis" : 0,
+                  "fetch_total" : 0,
+                  "fetch_current" : 0,
+                  "open_contexts" : 0,
+                  "query_current" : 0,
+                  "query_total" : 1,
+                  "fetch_time_in_millis" : 0
+               },
+               "primary" : true,
+               "shard_state" : "STARTED",
+               "segments" : {
+                  "count" : 0,
+                  "memory_in_bytes" : 0
+               },
+               "node" : {
+                  "transport_address" : "inet[10.10.124.131/10.10.124.131:9300]",
+                  "ip" : "10.10.124.131",
+                  "name" : "Black Widow",
+                  "id" : "8iyV7fqyT-uMTzByEU5Dwg",
+                  "ip_port" : "10.10.124.131:9300",
+                  "host" : "10.10.124.131"
+               },
+               "warmer" : {
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 1
+               },
+               "refresh" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 1
+               },
+               "filter_cache" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "merges" : {
+                  "total_docs" : 0,
+                  "total_size_in_bytes" : 0,
+                  "current_docs" : 0,
+                  "current_size_in_bytes" : 0,
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 0
+               },
+               "get" : {
+                  "missing_total" : 0,
+                  "current" : 0,
+                  "time_in_millis" : 0,
+                  "exists_total" : 0,
+                  "missing_time_in_millis" : 0,
+                  "exists_time_in_millis" : 0,
+                  "total" : 0
+               },
+               "docs" : {
+                  "count" : 0,
+                  "deleted" : 0
+               },
+               "@timestamp" : "2014-03-07T20:10:10.991Z",
+               "indexing" : {
+                  "delete_total" : 0,
+                  "delete_time_in_millis" : 0,
+                  "delete_current" : 0,
+                  "index_current" : 0,
+                  "index_total" : 0,
+                  "index_time_in_millis" : 0
+               },
+               "store" : {
+                  "size_in_bytes" : 99,
+                  "throttle_time_in_millis" : 0
+               },
+               "fielddata" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "id_cache" : {
+                  "memory_size_in_bytes" : 0
+               },
+               "cluster_name" : "elasticsearch",
+               "completion" : {
+                  "size_in_bytes" : 0
+               },
+               "shard_id" : 1,
+               "index" : "twitter",
+               "flush" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 0
+               }
+            },
+            "_score" : 1,
+            "_index" : ".marvel-2014.03.07",
+            "_id" : "GjRCyu0GTWC7KCNaEcs_SQ",
+            "_type" : "shard_stats"
+         },
+         {
+            "_source" : {
+               "search" : {
+                  "query_time_in_millis" : 11,
+                  "fetch_total" : 0,
+                  "fetch_current" : 0,
+                  "open_contexts" : 0,
+                  "query_current" : 0,
+                  "query_total" : 1,
+                  "fetch_time_in_millis" : 0
+               },
+               "primary" : true,
+               "shard_state" : "STARTED",
+               "segments" : {
+                  "count" : 1,
+                  "memory_in_bytes" : 332
+               },
+               "node" : {
+                  "transport_address" : "inet[10.10.124.131/10.10.124.131:9300]",
+                  "ip" : "10.10.124.131",
+                  "name" : "Black Widow",
+                  "id" : "8iyV7fqyT-uMTzByEU5Dwg",
+                  "ip_port" : "10.10.124.131:9300",
+                  "host" : "10.10.124.131"
+               },
+               "warmer" : {
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 2
+               },
+               "refresh" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 1
+               },
+               "filter_cache" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "merges" : {
+                  "total_docs" : 0,
+                  "total_size_in_bytes" : 0,
+                  "current_docs" : 0,
+                  "current_size_in_bytes" : 0,
+                  "total_time_in_millis" : 0,
+                  "current" : 0,
+                  "total" : 0
+               },
+               "get" : {
+                  "missing_total" : 0,
+                  "current" : 0,
+                  "time_in_millis" : 0,
+                  "exists_total" : 0,
+                  "missing_time_in_millis" : 0,
+                  "exists_time_in_millis" : 0,
+                  "total" : 0
+               },
+               "docs" : {
+                  "count" : 1,
+                  "deleted" : 0
+               },
+               "@timestamp" : "2014-03-07T20:10:10.991Z",
+               "indexing" : {
+                  "delete_total" : 0,
+                  "delete_time_in_millis" : 0,
+                  "delete_current" : 0,
+                  "index_current" : 0,
+                  "index_total" : 0,
+                  "index_time_in_millis" : 0
+               },
+               "store" : {
+                  "size_in_bytes" : 2614,
+                  "throttle_time_in_millis" : 0
+               },
+               "fielddata" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0
+               },
+               "id_cache" : {
+                  "memory_size_in_bytes" : 0
+               },
+               "cluster_name" : "elasticsearch",
+               "completion" : {
+                  "size_in_bytes" : 0
+               },
+               "shard_id" : 2,
+               "index" : "twitter",
+               "flush" : {
+                  "total_time_in_millis" : 0,
+                  "total" : 0
+               }
+            },
+            "_score" : 1,
+            "_index" : ".marvel-2014.03.07",
+            "_id" : "MBVwlTzYRG6wJ18ilmqMXQ",
+            "_type" : "shard_stats"
+         }
+      ],
+      "max_score" : 1,
+      "total" : 11363
+   },
+   "timed_out" : false,
+   "_shards" : {
+      "failed" : 0,
+      "successful" : 21,
+      "total" : 21
+   },
+   "took" : 2
+}

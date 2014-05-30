@@ -1,0 +1,39 @@
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 3,
+    "max_score" : 1.0,
+    "hits" : [ {
+      "_index" : "twitter",
+      "_type" : "user",
+      "_id" : "kimchy",
+      "_score" : 1.0, "_source" : { "name" : "Shay Banon" }
+    }, {
+      "_index" : "twitter",
+      "_type" : "tweet",
+      "_id" : "2",
+      "_score" : 1.0, "_source" : 
+{ 
+    "user": "kimchy", 
+    "postDate": "2009-11-15T14:12:12", 
+    "message": "Another tweet, will it be indexed?" 
+}
+    }, {
+      "_index" : "twitter",
+      "_type" : "tweet",
+      "_id" : "1",
+      "_score" : 1.0, "_source" : 
+{ 
+    "user": "kimchy", 
+    "postDate": "2009-11-15T13:12:00", 
+    "message": "Trying out Elasticsearch, so far so good?" 
+}
+    } ]
+  }
+}

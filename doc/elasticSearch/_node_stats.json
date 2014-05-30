@@ -1,0 +1,56 @@
+{
+  "cluster_name" : "elasticsearch",
+  "nodes" : {
+    "8iyV7fqyT-uMTzByEU5Dwg" : {
+      "timestamp" : 1394254871074,
+      "name" : "Black Widow",
+      "transport_address" : "inet[10.10.124.131/10.10.124.131:9300]",
+      "hostname" : "4rc0lif3",
+      "indices" : {
+        "docs" : {
+          "count" : 58441,
+          "deleted" : 0
+        },
+        "store" : {
+          "size" : "65.5mb",
+          "size_in_bytes" : 68781460,
+          "throttle_time" : "1m",
+          "throttle_time_in_millis" : 62122
+        },
+        "indexing" : {
+          "index_total" : 2074674,
+          "index_time" : "29.5m",
+          "index_time_in_millis" : 1772470,
+          "index_current" : 0,
+          "delete_total" : 0,
+          "delete_time" : "0s",
+          "delete_time_in_millis" : 0,
+          "delete_current" : 0
+        },
+        "get" : {
+          "total" : 0,
+          "get_time" : "0s",
+          "time_in_millis" : 0,
+          "exists_total" : 0,
+          "exists_time" : "0s",
+          "exists_time_in_millis" : 0,
+          "missing_total" : 0,
+          "missing_time" : "0s",
+          "missing_time_in_millis" : 0,
+          "current" : 0
+        },
+        "search" : {
+          "open_contexts" : 0,
+          "query_total" : 8416,
+          "query_time" : "31.7s",
+          "query_time_in_millis" : 31722,
+          "query_current" : 0,
+          "fetch_total" : 6528,
+          "fetch_time" : "1.8s",
+          "fetch_time_in_millis" : 1800,
+          "fetch_current" : 0
+        }
+      }
+    }
+  }
+}

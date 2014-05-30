@@ -1,0 +1,51 @@
+#post json
+
+curl -XPOST 'http://localhost:9200/arxiv/query/0712.1111v1/' -d @query_results.json
+
+NOTE: This is a structure of json for each id. here the doc_id is 0712.1111v2
+----------------------------------------------------------
+
+# _service_up
+curl -X GET  localhost:9200?pretty=true
+----------------------------------------------------------
+
+# _status
+curl -X GET  localhost:9200/_status?pretty=true
+----------------------------------------------------------
+
+# _search
+curl localhost:9200/_search | json_pp  | less
+----------------------------------------------------------
+
+# twitter (index)
+curl -X GET  localhost:9200/twitter/_search
+----------------------------------------------------------
+
+# Query DSL
+curl -X GET  localhost:9200/twitter/_search -d '
+{
+   "sort" : [],
+   "from" : "0",
+   "query" : {
+      "bool" : {
+         "must" : [
+            {
+               "match_all" : {}
+            }
+         ],
+         "should" : [],
+         "must_not" : []
+      }
+   },
+   "facets" : {},
+   "size" : "50"
+}'
+----------------------------------------------------------
+
+# _cluster
+curl -X GET  localhost:9200/_cluster/state?pretty=true
+----------------------------------------------------------
+
+# _node_stats
+curl -X GET  localhost:9200/_cluster/nodes/stats?pretty=true
+----------------------------------------------------------

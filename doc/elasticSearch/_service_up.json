@@ -1,0 +1,13 @@
+{
+  "ok" : true,
+  "status" : 200,
+  "name" : "Black Widow",
+  "version" : {
+    "number" : "0.90.11",
+    "build_hash" : "11da1bacf39cec400fd97581668acb2c5450516c",
+    "build_timestamp" : "2014-02-03T15:27:39Z",
+    "build_snapshot" : false,
+    "lucene_version" : "4.6"
+  },
+  "tagline" : "You Know, for Search"
+}
