@@ -1,0 +1,1441 @@
+arxivhepph0110017v1 1 oct 2001
+b decay in the gener two higg doublet
+model includ the neutral higg boson effect
+g erkol and
+g turan
+abstract
+we investig the differenti branch ratio branch ratio differenti forwardbackward
+asymmetri the forwardbackward asymmetri of the lepton pair and the lepton polar asymmetri of the exclus b decay in the gener two higg doublet model includ
+the neutral higg boson effect we analys the depend of these quantiti on the model
+paramet and also on the neutral higg boson effect we found that they get consider enhanc from the two higg doublet model compar to the standard model and neutral higg
+boson effect are quit sizabl
+email address gurerknewtonphysicsmetuedutr
+email address gsevgurmetuedutr
+1 introduct
+rare bmeson decay are induc by the flavorchang neutral current fcnc and they occur
+onli through electroweak loop in the standard model sm thu on the one hand they provid
+fertil test ground for the sm and on the other hand they offer a complementari strategi for
+constrain new physic beyond the sm such as the two higg doublet model 2hdm minim
+supersymmetr extens of the sm 1 ect from the experiment point of view studi rare b
+meson decay can provid essenti inform about the poorli known paramet of the sm like
+the element of the cabibbokobayashimaskawa ckm matrix the lepton decay constant etc
+in thi work we studi the radi b decay in the gener twohigg doublet model
+2hdm it is induc by the purelepton decay b and in principl the latter can be use
+to determin the decay constant fb 2 as well as the fundament paramet of the sm howev
+it is well known that process b are helic suppress for light lepton mode have
+branch ratio of the order of 109 for and 1010 for e channel 3 although the
+b channel is free from thi suppress it observ is difficult due to low effici if a
+photon line is attach to ani of the charg line see fig1 the pure lepton process b
+chang into the correspond radi one b so helic suppress is overcom and
+larger branch ratio are expect depend on whether the photon is releas from the initi
+quark or final lepton line there exist two differ type of contribut name the socal the
+structur depend sd and the intern bremsstrahlung ib respect while contribut
+come from the releas of the free photon from ani charg intern line will be suppress by a
+2
+the sd contribut is govern by the vector and axial vector form factor and
+factor of m2b mw
+it is free from the helic suppress therefor it could enhanc the decay rate of the radi
+process b in comparison to the decay rate of the pure lepton one b as for
+the ib part of the contribut it is proport to the ratio m mb and therefor it is still helic
+suppress for the light charg lepton mode while it enhanc the amplitud consider for
+mode inde b decay have been investig in the framework of the sm for light and
+heavi lepton mode 35 as well as in the model beyond the sm 6 7 and it wa found that in the
+sm brb 235 109 3 190 109 4 954 109 5 for e respect
+with long distanc contribut brb 152 108 wa obtain 5 in 2hdm in
+contrast to the channel with light lepton the channel b receiv addit contribut
+from the neutral higg boson nhb exchang in addit to sd and ib one in 6 b
+decay is investig in model i and ii type of the 2hdm includ nhb effect and shown that
+these effect are sizabl when tan is larg our aim in thi work is to studi the sensit of the
+1
+physic measur quantiti such as branch ratio photon energi densiti forwardbackward
+asymmetri of the final lepton and lepton polar asymmetri to the nhb effect as well as to
+d
+d
+the model iii paramet like the yukawa coupl nbb
+and n
+the work is organ as follow in section 2 after a brief summari about the main point of the
+gener 2hdm we first present the lead order lo qcd correct effect hamiltonian for the
+process b s includ the nhb effect and then give the matrix element for the exclus
+b decay togeth with the explicit express for the doubl differenti decay width
+photon energi distribut forwardbackward asymmetri and the polar asymmetri of the final
+lepton section 3 is devot to the numer analysi of the depend of these observ
+on the model iii paramet and also on nhb effect final in the appendix we give the explicit
+form of the oper appear in the hamiltonian and the correspond wilson coeffici
+2 the b decay in the framework of the gener 2hdm
+the 2hdm is the minim extens of the sm which consist of ad a second doublet to the
+higg sector in thi model there are one charg higg scalar two neutral higg scalar and one
+neutral higg pseudoscalar the gener yukawa lagrangian which is respons for the interact
+of quark with gaug boson can be written as
+ly
+u
+d
+il 1 ujr d q
+iju q
+ij il 1 djr ij qil 2 ujr ij qil 2 djr hc
+1
+where i j are famili indic of quark l and r denot chiral project lr 121 5 m
+for m 1 2 are the two scalar doublet qil are quark doublet ujr djr are the correspond
+quark singlet ijud and ijud are the matric of the yukawa coupl the yukawa lagrangian in
+eq 1 open up the possibl that there appear treelevel fcnc in the sm and in model i and
+model ii type of the 2hdm such fcnc at tree level are forbidden by the gim mechan 8 and
+by an ad hoc discret symmetri 9 respect howev treelevel fcnc are permit in the
+gener 2hdm and thi type of 2hdm is refer to as model iii in the literatur
+in thi model it is possibl to choos 1 and 2 in the follow form
+1
+1
+0
+2
+2h
+1
+2
+0
+0
+vh
+i
+2
+2 h1 ih2
+2
+with the vacuum expect valu
+1
+1
+2
+0
+v
+2 0
+2
+3
+with thi choic the sm particl can be collect in the first doublet and the new particl in the
+second one further we take h1 h2 as the mass eigenst h0 a0 respect note that at tree
+level there is no mix among cp even neutral higg boson name the sm one h 0 and beyond
+h0
+the part which produc fcnc at tree level is
+d
+il 2 ujr d q
+lyf c iju q
+ij il 2 djr kl lkl 2 elr hc
+4
+in eq4 the coupl ud for the flavorchang charg interact are
+u
+ch
+neutral vckm
+d
+ch
+vckm neutral
+5
+ud
+where neutral
+is defin by the express
+u d
+n
+u d
+u d
+vrl 1 udvlr
+6
+ud
+ud
+and neutral
+is denot as n
+here the charg coupl are the linear combin of neutral
+coupl multipli by vckm matrix element see 10 for detail
+after thi brief summari about the gener 2hdm now we would like to present the calcul
+of the matrix element for the b decay for a gener investig of the b
+decay we start with the lo qcd correct effect hamiltonian which induc the correspond
+quark level process b s given by 11
+h
+4 gf
+vtb vt
+2
+10
+10
+ci oi
+i1
+cqi qi
+7
+i1
+where oi are currentcurr i 1 2 penguin i 1 6 magnet penguin i 7 8 and
+semilepton i 9 10 oper the addit oper qi i 1 10 are due to the nhb
+exchang diagram which give consider contribut in the case that the lepton pair is
+11 ci and cqi are wilson coeffici renorm at the scale all these oper and
+the wilson coeffici togeth with their initi valu calcul at mw in the sm and also
+the addit coeffici come from the new higg scalar are present in appendix a
+the short distanc contribut for b decay come from the box z and photon penguin
+diagram which are obtain from the diagram of fig 1 by attach an addit photon line
+either to the initi quark line that contribut to the sd part of the amplitud or to the final lepton
+line which give the socal ib part of the amplitud follow thi framework the gener form
+3
+of the gaug invari amplitud correspond to fig1 can be written as the sum of the sd and ib
+part
+mb msd mib
+8
+where
+msd
+gf
+e
+vtb vt 2
+mb
+2 2
+a1 q k i a2 kq qk
+5 b1 q k i b2 kq qk
+9
+and
+gf
+p
+pb
+vtb vt efb i f
+5
+b
+2p1 k
+2p2 k
+2 2
+pb
+1
+1
+pb
+2m
+f1
+2p1 k
+2p2 k
+2p1 k 2p2 k
+mib
+10
+where
+2
+mb c7ef f g1 c9ef f g
+q2
+2
+mb c7ef f f1 c9ef f f
+2
+q
+c10 g
+a1
+a2
+b1
+11
+b2 c10 f
+f 2m c10
+f1
+m2b
+cq 2
+m2b
+m2b
+cq 1
+m2b
+12
+in eq 9 and 10 and k are the four vector polar and four momentum of the photon
+respect q is the momentum transfer and pb is the momentum of the b meson the form factor
+g f g1 f1 and fb are defin as follow 4 12
+k
+s 1 5 b bpb
+si k 1 5 bb
+0
+s 5 bb
+e
+q k gq 2 i kq qk f q 2
+m2b
+e
+k q g1 p2 i kq kq f1 p2 13
+m2b
+ifb pb
+in obtain the express 9 and 10 we have also use
+0
+s 1 5 bb
+4
+0
+and conserv of the vector current note that in contrast to msd part of the amplitud it mib
+part receiv contribut from nhb exchang diagram which are repres by the factor f
+and f1 in eq 10 dure the calcul of these nhb contribut in model iii we encount
+logarithm diverg and use the onshel renorm scheme to overcom them for detail
+see 13
+we now examin the probabl of the process b as a function of the four momenta of
+the particl in the center of mass cm frame of the dilepton where we take z co and
+is the angl between the momentum of the bmeson and that of doubl differenti decay width
+is found to be
+1
+d
+x v mb m2
+3
+dx dz
+2 64
+14
+with
+m2 msd 2 mib 2 2remsd mib
+15
+4r
+1x
+with r m2 m2b after
+where x 2e mb is the dimensionless photon energi and v
+1
+some calcul we get for the differ part of the squar matrix element in eq 15
+msd 2
+2
+gf
+e
+vtb vt 2
+mb
+2 2
+8 re a2 b1 a1 b2 p2b p1 q p2 q p1 q p2 q
+4 b1 2 b2 2
+p2b 2m2
+p1 q2 p2 q2 4m2 p1 q p2 q
+4 a1 2 a2 2
+p2b 2m2
+p1 q2 p2 q2 4m2 p1 q p2 q
+16
+2
+2 re msd mib
+3
+gf
+p1 q p2 q
+e
+vtb vt
+fb 16 m rea1 f
+mb
+p1 q p2 q
+2 2
+2
+p1 q p2 q p1 q p2 q
+reb2 f
+p1 q p2 q
+p1 q p2 q2 p1 q p2 q
+p1 q p2 q3
+reb1 f1
+p1 q p2 q
+p1 q p2 q
+2
+p2 q
+m2 3p2 qp1 q 2m2 pb
+m2
+b rea2 f1
+mb
+p2 q
+p1 q
+rea2 f1
+2
+gf
+mib vtb vt efb
+2 2
+1
+1
+4f 2 f1 2
+3m2 p2b 2p2 q
+3m2 p2b 2p1 q 4
+p1 q
+p2 q
+2
+5
+17
+2m2
+2
+2
+pb
+2p2 q f1 2 p2b 2p2 q 4m2
+2 f
+p1 q
+2m2
+2
+2
+2p1 q 4m2
+2p1 q f1 2 pb
+f 2 pb
+p2 q2
+2
+f 2 p2b 2m2 p2b f1 2 p2b 2p2 q 4m2
+p1 q p2 q
+18
+there is a singular in mib 2 at the lower limit of the photon energi due to the soft photon
+emiss from charg lepton line while msd 2 and remsd mib term are free from thi singular it ha been shown that when process b and b are consid togeth
+the singular term in mib 2 exactli cancel the o virtual correct in b amplitud
+but instead of thi approach we prefer the one use in ref5 which amount to impos a cut on the
+photon energi ie we requir e 50 mev thi restrict mean that we onli consid the hard
+photon in the process b therefor the dalitz boundari for the dimensionless photon
+energi is taken as
+x1
+4m2
+m2b
+19
+with 001
+use eq 1418 we get the follow result for the doubl differenti decay width
+d
+dxdz
+2
+gf
+vtb vt
+mb x v
+2 2
+2 3 4
+m2b 2
+x 1 z 2 1 x 4ra1 2 a2 2 b1 2 b2 2 8ra1 2 a2 2
+32
+4z 1 x1 x 4rrea2 b1 a1 b2
+x 1
+vxzreb2 f b1 f1 1 4r z 2 1 x 4r
+1x 1 4rz 2
+1 x
+rea2 f1 xrea1 f fb2 2 2
+x z 1x 1 4rz 2 2
+fb m
+z 2
+f 2 2 4x 3x2 x3 8r1 xz 2 1 4rx2 z 2
+f1 2
+32r 2x 1 4r4 6x 2x2 2 4x 3x2 x3 z 2 1 x2 z 2
+20
+integr the angl variabl we find the photon energi distribut given by
+d
+dx
+gf
+vtb vt
+2 2
+6
+2
+mb dx
+2 3 4
+21
+where
+m2b 3
+x v a1 2 a2 2 1 2r x b1 2 b2 2 1 4r x
+12
+1v
+x 4rrea2 f1 xrea1 f
+fb m x 2v1 xrea2 f1 ln
+1v
+1 x
+2r 1 x
+1v
+2fb2 v
+f 2 1 4r f1 2 ln
+1
+f 2
+x
+1v
+x
+x 2
+2 1 6r 8r 2 x
+22
+f1 2
+1 4r
+x
+2
+dx
+we also give the forwardbackward asymmetri af b in b use the definit of differ
+ential af b
+af b x
+1
+0
+1
+0
+dz d
+dz
+d
+dz dz
+0
+d
+1 dz dz
+0
+d
+1 dz dz
+23
+we find
+af b
+dx ex
+dx dx
+24
+where
+ex 4 v x2 m2b x x 1x 1 4rrea1 a2 b1 b2
+4fb m v
+4r
+x1
+ln
+rea2 b2 f a1 b1 f1
+x 1 4r
+x1
+25
+and dx is given by eq22
+final we would like to discuss the lepton polar effect for the process b
+the longitudin polar asymmetri of the lepton is defin as
+pl x
+dsl dx dsl dx
+dsldx dsl dx
+26
+where sl is the orthogon unit vector for the polar of the lepton to the longitudin direct
+l and in the cm frame of the system it is defin as
+sl
+p1 e p1
+m m p1
+27
+here p1 and e are the three momentum and energi of the lepton in the cm frame respect
+calcul of pl lead to the follow result
+pl
+2 1
+m2b v 3 x2 1 x2 a1 2 a2 2 b1 2 b2 2
+3 vdx
+7
+1v
+1
+ref f1
+1 x2 4r1 x xv 2r xln
+2
+1 x
+1v
+1v
+1 x rea2 b2 f 1 x rea1 b1 f1
+6fb m vx 2rln
+1v
+1v
+1 x xv 2r xln
+rea2 b2 f1 a1 b1 f
+28
+1v
+12fb2
+in order to investig the depend of the lepton polar on the model iii paramet we elimin the other paramet name x by perform the xintegr over the allow
+kinemat region eq19 so as to obtain the averag lepton polar for the longitudin
+compon the averag lepton polar is defin as
+14m2 m2b
+dx
+pl d
+dx
+2
+2
+14m mb d
+dx
+dx
+pl
+for the process b the lepton polar ha in addit to the longitudin compo
+nent pl transvers and normal compon sinc these two orthogon compon are proport
+to the tau lepton mass they are expect to be signific for the channel we shall discuss their
+effect in a more detail paper
+3 numer analysi and discuss
+to calcul the decay width first of all we need the explicit form of the form factor g f g1 and
+f1 in ref 2 and 12 they are calcul in the framework of lightcon qcd sum rule and their
+q 2 depend to a veri good accuraci can be repres in the follow dipol form
+gq 2
+g0
+1
+g1 q 2
+q2
+m2g
+2
+1
+f 0
+1
+g1 0
+q2
+m2g1
+f q 2
+2
+f1 q 2
+2
+q2
+m2f
+f1 0
+1
+q2
+m2f
+2
+29
+1
+where
+g0 1 gev f 0 08 gev g1 0 374 gev 2 f1 0 068 gev 2
+mg 56 gev mf 65 gev mg1 64 gev mf1 55 gev
+in addit to these form factor the other input paramet which we have use in our numer
+calcul are given in tabl i
+8
+for the free paramet of the model iii name the mass of charg and neutral higg boson
+mh ma0 mh0 mh 0 and the yukawa coupl ijud we use the restrict come from b
+xs decay whose br is given by cleo measur 14 as
+brb xs 315 035 032 104
+30
+0 mix 10 paramet 15 and neutron electricdipol moment 16 that yield
+and b 0 b
+d
+d
+u
+nib
+0 and nij
+0 where the indic i j denot d and s quark and n tc n
+tt therefor
+u
+d
+d
+we take into account onli the yukawa coupl of b and t quark ntt
+and nbb
+and also n
+further in our numer calcul we adopt the restrict 0257 c7ef f 0439 due to the
+cleo measur eq30 see 10 for detail and the redefinit
+ud
+4gf ud
+2
+befor we present our result a small note about the calcul of the long distanc ld effect
+is in place we take into account five possibl reson for the ld effect come from the reaction
+b s i s where i 1 5 and divid the integr region into two part x
+1 m2 002mb 2 and 1 m2 002mb 2 x 1 2m mb 2 where m2 3686
+gev is the mass of the second reson see appendix for the detail of ld contribut
+in thi section we first studi the dimensionless photon energi depend of the differenti
+branch ratio dbrdx and the model iii paramet depend of the br and also the forwardbackward asymmetri af b the result of our calcul are present through the graph in
+d
+fig211 in fig2 we present dbrb dx as a function of x 2e mb for nbb
+u
+40 mb and d 10 m in case of the ratio rtb dntt 1 includ the long distanc contrin
+nbb
+bution here the differenti br lie in the region bound by dash solid curv for c7ef f 0
+c7ef f 0 we see from thi figur that there is an enhanc for the dbrb dx in
+model iii compar to the sm result for the c7ef f 0 case while for c7ef f 0 model iii predict
+almost coincid with the sm one small dash curv fig 3 is devot the same depend of
+d
+d
+differenti br but for nbb
+01 mb and n
+m in case of the ratio rtb 1 we see that
+model iii predict for the c7ef f 0 and c7ef f 0 almost coincid and they are one order larger
+compar to both rtb 1 case and the sm one
+d
+d
+fig 4 and 5 show nbb
+mb depend of br for n
+m in case of the ratio rtb 1
+and rtb 1 respect in fig4 br is restrict in the region between dash line solid curv
+for c7ef f 0 c7ef f 0 while the small dash straight line show the sm contribut in fig 5
+there is a singl curv sinc the contribut for both c7ef f 0 and c7ef f 0 fit onto each other we
+d
+see that br is quit sensit to the paramet nbb
+mb for both rtb 1 and rtb 1 howev the
+9
+behavior is opposit for these two case for rtb 1 br is decreas with the increas valu
+of d mb while for rtb 1 it is increas further br is 23 order larger compar to the sm
+nbb
+result for rtb 1 case for rtb 1 the enhanc with respect to the sm predict is rel
+moder nearli 30 40 for c7ef f 0 but for c7ef f 0 they almost coincid with the sm one
+the depend of the br on the yukawa coupl d is present in fig 6 7 for rtb 1
+n
+d
+d
+rtb 1 case with nbb
+40 mb nbb
+01 mb it is seen that br is increas with the increas
+valu of d and thi is the contribut due to nhb effect from fig 6 we see that the br
+n
+lie in the region bound by solid line for c7ef f 0 and it is sensit to the nhb effect while for
+c7ef f 0 it is almost the same as the sm result dash straight line note that the sm predict
+for the br is 789 109 and in model iii without nhb effect when rtb 1 it is in between
+783 797 109 for c7ef f 0 and 873 850 109 for c7ef f 0 when rtb 1 upper
+and lower limit of the br without nhb effect are 103 104 107 for both c7ef f 0 and
+c7ef f 0 thu contribut from nhb effect is seen to reach the valu that are two order of
+magnitud larger than the overal contribut for both rtb 1 and rtb 1 even for small valu
+of d
+n
+d
+d
+in fig 8 the differenti af b x is shown for nbb
+40 mb and n
+10 m in case of the
+ratio rtb 1 here af b x is restrict in the region between solid curv for c7ef f 0 it is seen
+that the valu of af b x stand less than the sm one the dash curv repres c7ef f 0 case
+and they almost coincid with the sm predict for af b x fig9 is the same as fig 8 but for
+rtb 1 with d 01 mb for thi case the sign of af b x is opposit to the sm predict and
+nbb
+af b x is one order of magnitud smaller than the sm one
+d
+d
+in fig 10 we plot the af b as a function of the yukawa coupl n
+for nbb 40 mb and
+rtb 1 af b lie in the region bound by dash solid line for c7ef f 0 c7ef f 0 as seen
+from fig 10 that af b vanish for the larg valu of d for c7ef f 0 while c7ef f 0 it doe
+n
+d
+not vanish in the given region of n
+contribut to af b from model iii stand less than the sm
+one fig11 is the same as fig 10 but for rtb 1 with d 01 mb here contribut for
+nbb
+c7ef f
+0 and
+c7ef f
+0 coincid and both are restrict by the solid curv
+we present our analysi on the longitudin compon of the lepton polar through the
+graph in figs1215 the depend of pl on x is present in fig 12 for rtb 1 case with
+d 10 m here pl is restrict in the region between dash solid curv for c7ef f 0
+n
+c7ef f
+0 while the small dash curv show the sm contribut from thi figur we see that
+the 2hdm contribut chang pl significantli compar to the sm case for c7ef f 0 especi
+for the small valu of x fig 13 is the same as fig 12 but rtb 1 with d 01 mb in thi
+nbb
+10
+figur two solid curv restrict the possibl valu of pl for both c7ef f 0 and c7ef f 0 and it is
+seen that both the magnitud and the sign of pl are chang for rtb 1
+d
+the depend of pl on the nhb paramet n
+is present in fig 14 15 for
+rtb 1 rtb 1 case with d 40 mb d 01 mb we see that for rtb 1 pl lie in
+nbb
+nbb
+the region bound by dash line solid curv for c7ef f 0 c7ef f 0 fig 14 while in case
+of rtb 1 the contribut for both c7ef f 0 and c7ef f 0 coincid and they are repres by the
+singl solid curv in fig15 it is obviou that pl is veri much sensit to the nhb effect for
+both rtb 1 and rtb 1 case we note that sm predict for pl is 036 and in model iii
+without nhb effect when rtb 1 it is about 031 for c7ef f 0 and 036 for c7ef f 0 when
+rtb 1 the valu of pl without nhb effect is about 036 for both c7ef f 0 and c7ef f 0
+thu the valu of pl without nhb effect reach at most the sm predict but nhb effect
+enhanc it between 5 100 even for small valu of d we would like to summar our
+n
+paramet
+m
+mc
+mb
+1
+em
+t
+mt
+mw
+mz
+mh 0
+mh0
+ma0
+mh
+qcd
+s mz
+sin2 w
+valu
+178 gev
+14 gev
+48 gev
+129
+004
+175 gev
+8026 gev
+9119 gev
+150 gev
+70 gev
+80 gev
+400 gev
+0225 gev
+0117
+02325
+tabl 1 the valu of the input paramet use in the numer calcul
+result
+we observ an enhanc in the differenti branch ratio and branch ratio for the exclus process b in the gener 2hdm compar to the sm predict for rtb 1
+case thi enhanc is much more detect for c7ef f 0 case compar to the c7ef f 0
+one for rtb 1 we see that contribut for c7ef f 0 and c7ef f 0 almost coincid with
+each other and the enhanc with respect to the sm is much more sizabl
+11
+br for b decay is at the order of magnitud 109 107 in the sm and in model iii
+without nhb effect for rtb 1 rtb 1 howev includ nhb exchang may enhanc
+it almost two order of magnitud compar to the sm predict even for the smaller valu
+of d
+n
+af b is at the order of magnitud 101 102 for rtb 1 rtb 1 case and smaller compar
+to the sm result which is 0181
+the 2hdm contribut chang pl and pl greatli compar to the sm case and these
+quantiti are veri sensit to the nhb effect
+in conclus we can say that experiment investig of br af b and pl may provid an essenti
+test for the effect of nhb exchang and new physic beyond the sm
+12
+a the oper basi
+the oper basi in the 2hdm model iii for our process is 11 17 18
+o1
+sl cl
+cl bl
+o2
+sl cl
+cl bl
+ql ql
+o3
+sl bl
+qudscb
+ql ql
+o4
+sl bl
+qudscb
+qr qr
+o5
+sl bl
+qudscb
+qr qr
+o6
+sl bl
+qudscb
+o7
+o8
+o9
+o10
+q1
+q2
+q3
+q4
+e
+s mb r ms lb f
+2
+16
+g
+a
+s t
+mb r ms lb g a
+16 2
+e
+sl bl
+16 2
+e
+sl bl
+5
+2
+16
+e2
+s b
+16 2 l r
+e2
+sl br
+5
+2
+16
+g2
+s b
+q q
+16 2 l r qudscb l r
+g2
+s b
+16 2 l r
+qr ql
+qudscb
+2
+q5
+g
+s b
+16 2 l r
+ql qr
+qudscb
+2
+q6
+g
+s b
+16 2 l r
+qr ql
+qudscb
+2
+q7
+g
+s br
+16 2 l
+2
+q8
+g
+s br
+16 2 l
+2
+q9
+g
+s br
+16 2 l
+2
+q10
+g
+s br
+16 2 l
+13
+ql qr
+qudscb
+qr ql
+qudscb
+ql qr
+qudscb
+qr ql
+qudscb
+31
+where and are su3 colour indic and f and g are the field strength tensor of the electromagnet and strong interact respect note that there are also flip chiral partner of
+these oper which can be obtain by interchang l and r in the basi given abov in model
+iii howev we do not present them here sinc correspond wilson coeffici are neglig
+b the initi valu of the wilson coeffici
+the initi valu of the wilson coeffici for the relev process in the sm are 17
+sm
+c136
+mw 0
+c2sm mw 1
+8x3t 5x2t 7xt
+3x3t 2x2t
+ln
+x
+c7sm mw
+t
+4xt 14
+24xt 13
+3x2t
+x3t 5x2t 2xt
+c8sm mw
+ln
+x
+t
+4xt 14
+8xt 13
+4
+1
+1 4 sin2 w
+cxt dxt
+c9sm mw 2 bxt
+2
+sin w
+9
+sin w
+1
+sm
+bxt cxt
+c10
+mw
+2
+sin w
+cqsm
+mw 0 i 1 10
+i
+32
+and for the addit part due to charg higg boson are
+h
+c16
+mw 0
+c7h mw y 2 f1 yt xy f2 yt
+c8h mw y 2 g1 yt xy g2 yt
+c9h mw y 2 h1 yt
+h
+c10
+mw y 2 l1 yt
+33
+where
+1
+mb
+1
+mt
+x
+y
+d
+d vt
+nbb
+nsb
+vtb
+v
+cs
+u
+u
+ntt
+ntc
+vt
+the nhb effect bring new oper and the correspond wilson coeffici read as
+d
+u 3
+n
+0
+ntt mb yt 5 yt za 1 za yt
+u
+cqa2 ntt
+3
+32 2 m2a0 mt 1 za yt5 yt
+14
+34
+0
+u
+cqa2 ntt
+2
+5 yt
+d
+u 2 d yt 1 za yt 5 yt xy za 21 za yt 5 yt ln zaz
+n
+ntt nbb
+1 a yt
+2
+32 2ma
+1 za yt 5 yt
+0
+d
+u
+g 2 n
+2
+xyxt 2za
+za 5 xt
+0
+ntt mb xt
+u
+cqa2 ntt
+2 ln
+2
+2
+64 ma0 mt
+5 xt
+1 za xt
+1 za xt
+xyt xt 1 yt za 2yt
+x 1xt yt za 1 1 xyt
+xyxt yt
+6 x yxt yt 3 za x yxt yt za
+6 3 za
+d
+cqa2 nbb
+0
+d
+d
+g 2n
+za 6
+xt2 yt 2yx 1xt yt za x2t 6 x2t 1 yt za
+nbb
+2 ln
+1
+2
+2
+64 ma0
+3 za
+6
+2 za x
+u
+g 2ntt
+2 mb m xt 1 2yyt 1 2 cos2 w 1 x yyt
+0
+u
+cqh1 ntt
+2
+64 2m2h 0 m2t
+5 yt
+cos2 w 4 yt
+zh 1 zh yt xyt cos2 w 2x2 1 xt yyt2 xxt yyt2 8 zh
+cos2 w 1 zh yt 7
+35
+u d
+g 2 ntt
+nbbm 1 2 cos2 w yt
+xt yt
+xt yt xy zh
+0
+u
+cqh1 ntt
+2
+2
+2
+64 mh 0 mt
+co w 4 yt
+5 yt
+1 zh yt
+2
+1 2 co w yt zh
+5 yt zh
+2x
+ln
+t
+cos2 w 7
+1 zh yt
+1 2xxt
+g 4 mb m xt
+2xt 1 2 xt y
+1
+2
+2
+2
+128 mh 0 mt
+5 xt y1 xt
+5 xt
+2
+4 co w 1 x y xt x y xt xxt y 2zh 4zh 2zh
+cos2 w 4 xt
+1 zh xt
+2
+yt 1 xxt zh co w 3x yzh xt 2yx 1 zh 2 3x y
+cos2 w 3 zh xxt yt zh
+xyt xt zh 3 zh
+5 xt zh
+ln
+2 xt ln
+1 zh xt
+5 xt y1 xt yt zh
+0
+cqh1 g 4
+u
+cqh01 ntt
+3
+d
+u 3
+n
+ntt mb yt
+1 zh yt 2y 1 5 yt 2x 1zh
+32 2 m2h0 mt 1 zh yt 5 yt
+d u 2 5 yt zh yt 1x y 1 1 zh yt 5 yt yt
+zh 5 yt
+u
+2 ln
+cqh01 ntt
+2 n 2 ntt
+2
+32 mh0
+1 zh 5 yt
+1 zh
+0
+u
+cqh 1 ntt
+d
+u
+g 2 n
+xt x 1yt zh
+zh 5 xt
+ntt mb xt 21 2 xt y
+2 ln
+2
+2
+64 mh0 mt
+5 xt
+2 zh
+1 zh xt
+1 xyt zh
+xxt y 2zh 4zh 2zh
+1 zh xt
+xyxt yt zh x yxt yt 6
+9 yt zh x yxt yt 6 2x 1 xyt zh xt zh yt 2yt zh
+zh 6 6 x yxt yt
+2 zh
+15
+0
+d
+cqh 1 nbb
+d
+2
+d
+g 2 n
+6
+xt yt zh
+nbb yxt yt xxt yt zh 6 zh x 2
+2 ln
+2 ln
+2
+2
+64 mh0
+zh 2 zh 6
+xt yt
+2 zh
+where
+1 1 y y xy
+2 xt y1 xt yt xxt yyt yt 1
+2 2 xt yt
+3 xt 1 y yyt xxt yyt 1 yt
+4 1 x x
+5 x 1 x
+6 xt y1 xt yt xxt 1 yt
+7 yyt 1 yt zh xyyt yt 1zh
+36
+8 yt 2x2 1 xt yt 1 xt y1 yt yt x21 y yt
+xt 1 2y1 yt 3yt
+9 x2t 1 x yyt x2yt 1yt zh xt yt zh x1 2x 2y
+yt2 xt x2 y1 x 1 xx yzh
+and
+xt
+m2t
+m2t
+m2t
+m2t
+m2t
+y
+z
+z
+z
+t
+h
+h
+a
+m2w
+mh
+m2h 0
+m2h0
+m2a0
+the explicit form of the function f12 yt g12 yt h1 yt and l1 yt in eq33 are given as
+f1 yt
+f2 yt
+g1 yt
+g2 yt
+h1 yt
+l1 yt
+yt 7 5yt 8yt2 yt2 3yt 2
+ln yt
+72yt 13
+12yt 14
+yt 5yt 3 yt 3yt 2
+ln yt
+12yt 12
+6yt 13
+yt yt2 5yt 2
+yt2
+ln yt
+24yt 13
+4yt 14
+yt
+yt yt 3
+ln yt
+4yt 12 2yt 13
+1 4sin2 w xyt
+1
+1
+ln yt
+2
+sin w
+8 yt 1 yt 12
+47yt2 79yt 38 3yt3 6yt 4
+ln yt
+yt
+108yt 13
+18yt 14
+1
+1
+1
+xyt
+ln yt
+2
+sin w 8
+yt 1 yt 12
+16
+37
+final the initi valu of the coeffici in the model iii are
+ci2hdm mw cism mw cih mw
+cq2hdm
+mw
+1
+1
+1x
+dx
+u
+u
+u
+dy cqh1 ntt
+2 cqh1 ntt
+cqh1 g 4 cqh 1 ntt
+3
+0
+0
+h0
+u
+cq1 ntt 2
+1
+1x
+0
+0
+0
+0
+0
+0
+u
+d
+cqh 1 ntt
+cqh 1 nbb
+0
+0
+0
+0
+u
+u
+u
+d
+dx
+2 cqa2 ntt
+cqa2 nbb
+dy cqa2 ntt
+3 cqa2 ntt
+0
+0
+mb
+c 2hdm mw cq2hdm
+mw
+cq2hdm
+mw
+2
+3
+m sin2 w q1
+mb
+c 2hdm mw cq2hdm
+mw
+cq2hdm
+mw
+2
+4
+m sin2 w q1
+cq2hdm
+mw 0 i 5 10
+38
+i
+cq2hdm
+mw
+2
+here we present cq1 and cq2 in term of the feynmann paramet x and y sinc the integr
+result are extrem larg use these initi valu we can calcul the coeffici ci2hdm
+and cq2hdm
+at ani lower scale in the effect theori with five quark name u c d s b similar
+i
+to the sm case 18 19 20 21
+the wilson coeffici play the essenti role in thi process are c72hdm c92hdm
+2hdm
+c10
+cq2hdm
+and cq2hdm
+for complet in the follow we give their explicit
+1
+2
+express
+c7ef f c72hdm qd c52hdm nc c62hdm
+where the lo qcd correct wilson coeffici c7lo2hdm is given by
+c7lo2hdm 1623 c72hdm mw 83 1423 1623 c82hdm mw
+8
+hi ai
+c22hdm mw
+39
+i1
+and s mw s hi and ai are the number which appear dure the evalu 21
+c9ef f contain a perturb part and a part come from ld effect due to convers of the
+real cc into lepton pair
+c9ef f c9pert yreson s
+40
+where
+c9pert c92hdm
+hz s 3c1 c2 3c3 c4 3c5 c6
+1
+h1 s 4c3 4c4 3c5 c6
+2
+1
+2
+h0 s c3 3c4 3c3 c4 3c5 c6
+2
+9
+17
+41
+and
+yreson s
+vi mvi
+3
+2
+2
+em
+vi i q mvi imvi vi
+3c1 c2 3c3 c4 3c5 c6
+42
+in eq40 the function hu s are given by
+8 mb 8
+8
+4
+hu s ln
+ln u
+x
+9
+9
+27 9
+ln 1x1
+i for x
+2
+12
+1x1
+2 x1 x
+1
+9
+for x
+2 arctan x1
+8
+8 mb 4
+4
+h0 s
+ln
+ln s i
+27 9
+9
+9
+with u
+mc
+mb
+43
+4u2
+s
+4u2
+s
+1
+1
+44
+the phenomenolog paramet in eq 42 is taken as 23 in eq 37 and 42
+the contribut of the coeffici c1 c6 are due to the oper mix
+final the wilson coeffici cq1 and cq2 are given by 11
+cqi 1223 cqi mw i 1 2
+18
+45
+refer
+1 j l hewett in proc of the 21st annual slac summer institut ed l de porcel and c dunwood slacpub6521 1994
+2 g buchalla and a j bura nucl phi b400 1993 225
+3 g eilam cd lu and dx zhang phi lett b 391 1997 461
+4 t m aliev a ozpineci
+and msavc phi rev d 55 1997 7059
+5 t m aliev n k pak and msavc phi lett b 424 1998 175
+6 e o iltan and g turan phi rev d61 2000 034010
+7 t m aliev a ozpineci m savci hepph0105279
+8 s l glashow j iliopoulo and l maiani phi rev d 2 1970 1285
+9 s l glashow and s weinberg phi rev d 15 1977 1958
+10 t m aliev e o iltan j phi g nucl part phi 25 1999 989
+11 y b dai c s huang and h w huang phi lett b390 1997 257 erratum b513 2001
+429 c s huang l wei q s yan and s h zhu phi rev d63 2001 114021
+12 g eilam i halperin and r r mendel phi lett b 361 1995 137
+13 e iltan and g turan phi rev d63 2001 115007
+14 cleo collabor m s alam in ichep98 confer 1998 aleph collabor r
+barat et all phi lett b429 1998 169
+15 d atwood l reina and a soni phi rev d55 1997 3156
+16 d bowserchao k cheung and wy keung phi rev d59 1999 115006
+17 b grinstein r springer and m wise nuc phi b339 1990 269 r grigjani pj
+odonnel m sutherland and h navelet phi lett b213 1988 355 phi lett b286 1992
+e 413 g cella g curci g ricciardi and a vicer phi lett b325 1994 227 nucl phi
+b431 1994 417
+18 m misiak nucl phi b393 1993 23 erratum b439 1995461
+19
+19 c s huang nuclphysprocsuppl 93 2001 73
+20 t m aliev and e iltan phi rev d58 1998 095014
+21 a j bura and m munz phi rev d52 1995 186
+20
+figur 1 feynman diagram for b s in the sm
+21
+d
+d
+figur 2 differenti br as a function of x for nbb
+40 mb and n
+10 m in case of the ratio
+rtb 1
+d
+d
+figur 3 the same as fig2 but for rtb 1 with nbb
+01 mb and n
+m
+22
+d
+d
+figur 4 br as a function of nbb
+mb for n
+m in case of the ratio rtb 1
+figur 5 the same as fig4 but for rtb 1
+23
+d
+d
+figur 6 br as a function of n
+for nbb 40 mb and rtb 1
+d
+figur 7 the same as fig 6 but for nbb
+01 mb and rtb 1
+24
+d
+d
+figur 8 differenti af b x as a function of x for n
+10 m nbb 40 mb and rtb 1
+d
+figur 9 the same as fig 8 but for nbb
+01 mb and rtb 1
+25
+d
+d
+figur 10 af b as a function of n
+for nbb 40 mb and rtb 1
+d
+figur 11 the same as fig 10 but for nbb
+01 mb and rtb 1
+26
+d
+d
+figur 12 pl as a function of x for nbb
+40 mb and n
+10 m in case of the ratio rtb 1
+d
+figur 13 the same as fig 12 but for nbb
+01 mb and rtb 1
+27
+d
+d
+figur 14 pl as a function of n
+for nbb 40 mb in case of the ratio rtb 1
+d
+figur 15 the same as fig 14 but for nbb
+01 mb and rtb 1
+28

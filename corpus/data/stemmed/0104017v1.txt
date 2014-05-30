@@ -1,0 +1,1603 @@
+field institut commun
+volum xx 2001
+arxivmathph0104017v1 12 apr 2001
+connesmoscovicikreim hopf algebra
+daniel kastler
+centr de physiqu th
+eoriqu
+cnr lumini case 907
+f13288
+marseil cedex 09 franc
+and
+universit
+e de la m
+editerrann
+ee
+dedic to sergio doplich and john robert
+abstract these note hope provid an aid to the comprehens
+of the connesmoscovici and conneskreim work by isol common mathemat featur of the connesmoscovici root tree and
+feynmangraph hopf algebra as a new special branch of the theori of
+hopf algebra expect to becom import we discuss in particular
+the dual milnormoor situat
+1 charact and infinitesim charact of hopf algebra
+in what follow k is a commut field of zero characterist eg k c r
+remind 11 the algebrac dual of hopf algebra let h m 1 e1 s
+be a hopf algebra over k consid the algebra dual h m 1 e 1
+mt et s s t of h endow with the topolog of simpl converg on h
+the valu of h for h h is denot by h then
+i as the dual of the coalgebra h h is a genuin algebra with the follow
+product and unit 1
+h h
+1 h h
+h h h
+11
+ii h is howev not a hopf algebra we do have s s t h h and
+et h c
+sh s h
+1
+h h h
+12
+the h htopolog
+we note thi product with a becaus it is the convolut product of endc h c cf
+definit 21 in 3 name denot the covalu h by h h mk h
+where we can omit mk owe to k k
+k
+c 2001 american mathemat societi
+1
+2
+daniel kastler
+but in gener mt h h h h h
+we now investig two subset of h which map into h h the
+charact and infinitesim charact of h
+definit 12 let hm e be a hopf kalgebra
+i a charact of h is a non vanish klinear map h k which is
+multipl
+hk h k
+h k h
+13
+note that as a consequ one ha
+1 1
+14
+inde 13 entail that 1 1 1 vanish whenc 14 if
+doe not vanish we denot by charh the set of charact of h note
+that the counit is a charact of h
+ii an infinitesim charact of h is a klinear map z h k fulfil
+z hk z h k h z k
+h k h
+15
+note that as a consequ one ha
+z 1 0
+16
+inde one ha
+z 1 z 1 1 z 1 1 1 z 1 2 z 1
+and that z vanish on the squar h2 of the augment ideal h
+ker note also that 15 is the infinitesim form of 13 written for
+z with z consid as small
+we denot by charh the set of infinitesim charact of h
+proposit 13 with the definit in 12 we have that
+i equip with the convolut product 11 the unit 1
+h h
+1 h h
+charh h h
+17
+the invers
+1 s
+x charh
+18
+and the h htopolog g charh is a topolog group the group of
+charact of h
+ia g is dualli defin as the group of grouplik element of h
+g h 0
+19
+15 defin z as a deriv of the hbimodul h consist of h with multipl by
+h h
+c h h
+a h from the left and from the right multipl by a
+h h
+in fact a subgroup of the group of invert of the algebra h with product
+grouplik element between quotat mark becaus h is not a hopf algebra cf ii
+3
+connesmoscovicikreim hopf algebra
+ii equip with the bracket
+z z z z z z
+z z charh
+110
+where is the convolut product 11
+z z z z h
+z z charh h h
+111
+l charh is a lie algebra the lie algebra of infinitesim charact
+of h
+iia l is dualli defin as the lie algebra of primit element of h
+l z h z z 1 1 z
+112
+proof the product first line 17 is known to be associ to assert that
+charh we need to check multipl now for h k h
+hk
+hk hk
+h k h k
+where we use the multipl of due to the commut of k inde
+one ha for x y x y
+x yx y
+xx yy xx yy
+x x y y
+x y x y
+x y x y
+check that 1 1 we have by the first line 17
+1 h
+1 h 1 h1 2
+1 h
+h
+1 h 1 h1 2
+h1 h2 h2 h1
+1 h1 h2
+h1 h2 h1 h2 h
+check of 18 we have
+s h
+s h sh1 h2 sh1 a2
+h1 h1 h
+sh
+sh h1 sh2 h1 sh2
+h1 h1 h
+the fact that product and invers are continu in the h htopolog is clear
+ia for the proof we write g charh and g h
+check of g g for g h h h we have
+h h
+h h h h
+mh h hh
+in fact a liesubalgebra of the lie algebra lieh associ with the algebra h
+primit element between quotat mark becaus h is not a hopf algebra cf ii
+4
+daniel kastler
+check of g g g impli
+mh h hh h h h h
+henc we have mh h h h with
+the lie algebra properti of l can be check directli from 15 but will
+immedi result from iia which we now check
+iia for the proof we write l charh and l z h z z 1
+1 z
+check of l l z l impli for h h h
+z h 1 h 1 h z h
+z 1 1 z h h
+z h h z hh z mh h z hh
+check of l l for z l h h h one ha
+z mh h
+z hh z h 1 h 1 h z h
+z 1 1 z h h
+henc we have z mh h z h h with z 1 1 z
+check of ii it is clear that l is a liesubalgebra of the lie algebra lieh
+definitionlemma 14 let h be the subalgebra of h gener by 1 and
+l
+o one ha h h 1 1 and vanish
+on l
+i one ha s h h s l l and
+s s s h h
+s 1 1
+113
+ii one ha h h h and is multipl
+m m m p12
+114
+and cocommut in the sens
+p12
+115
+proof o one ha 1 1 1 1 for z l z z 1 0
+for h one ha 1 1 1 1
+i we first notic the properti
+s s s p12
+transpos of the known properti sm mp12 ss
+check of s l l for z l one ha s z l inde one ha
+s z
+s s p12 z
+s s p12 z 1 1 z
+s z 1 1 s z
+116
+5
+connesmoscovicikreim hopf algebra
+it follow that s h h now s turn the unit 1 into 1 and for h
+and h h one ha use the known properti h s s sp12
+s h
+sh sh
+s sp12 h
+s s h s s h
+ii 114 read mt t t t p12 mt mt transpos of the axiom
+m m mp12
+check of the cocommut properti 115 hold obvious on the gener 1 and z l now 115 propag multipl if l fulfil
+p12 p12 p12 p12 p12
+p12 owe to multipl of p12 p12 aa p12 bb a ab b
+a a b b p12 a a b b
+proposit 15 h m 1 s is a cocommut hopf algebra
+the hopf algebra h and h are set in dualiti through the bilinear form
+proof h is a unit algebra with unit 1 by definit use the terminolog
+of appendix a we have that the coalgebra axiom c c for h result by
+transposit from the algebra axiom am resp ae for h bialgebra axiom
+for h we alreadi met bm in 114 be is the known fact that 1 g we
+have met b and be in definitionlemma 14o abov final the axiom
+h for h and h are transpos of each other
+2 grade hopf algebra
+notat 21 with h a cvector space direct sum of cvector subspac
+h nn hn
+21
+we let z zc resp y be the clinear map hh respect specifi by
+z hn enz
+yhn n
+zz zo z
+z z k
+z ezi
+d
+z t0
+dt
+22
+23
+and set for a h homogen
+y a n if a hn
+n n
+24
+definitionlemma 22 ngrade algebra coalgebra and bialgebra
+i the calgebra h hm 1 e1 nn hn is ngrade with algebra
+ngrade nn hn whenev one of the follow equival requir 25
+26 27 or 28 prevail
+hp hq hpq
+p q n
+25
+in the grade connect case isomorph to the envelop algebra ul of the lie algebra
+l of it primit element special case of the milnormoor theorem
+dualiti gener not separ h certainli not for h noncommut separ howev in the case of ckmhopf algebra cf 35
+ah is homogen whenev a nn hn a is an eigenvector of y then with
+eigenvalu y a
+6
+daniel kastler
+m z z z m
+ie z ab z az b a b h
+z c
+26
+say that z is a oneparamet automorph group of the algebra hm 1
+e1 and impli z 1 1 zc
+y m m y idh idh y
+ie y ab y ab ay b a b h
+27
+say that y is a deriv of the algebra hm 1 e1 and impli y 1
+0
+y ab y a y b
+28
+for a bh homogen which impli abh homogen
+ii the ccoalgebra h h nn hn is n grade with coalgebra
+n grade nn hn whenev one of the follow equival requir 29
+210 211 or 212 prevail
+hi hj
+hn
+n n
+29
+ijn
+z z z
+z c
+210
+say that z is a oneparamet automorph group of the coalgebra h
+and impli z a a a h
+y idh idh y y
+211
+say that y is a coalgebra coderiv and impli y a 0 ah
+y a y a1 y a2 if a a1 a2 a h a homogen
+212
+n
+iii the cbialgebra hm e nn h is ngrade with bialgebra
+ngrade nn hn whenev it is ngrade both as an algebra and as a coalgebra
+we say that h is ngrade connect whenev one ha in addit
+h0 c1
+213
+iv a hopf algebra hm e s is call ngrade whenev it is ngrade
+as a bialgebra cf definitionlemma 22i s then automat commut with
+z zc and with y
+z s z1 s
+y s sy
+214
+for the ngrade algebra resp coalgebra bialgebra h we refer to z as the
+automorph group to y as the deriv resp coderiv bideriv and to y as the degre of the n grade
+proof i 25 26 it suffic to take ahp and bhq then abhpq
+then
+z ab ezpq ab ezp aezq bb z az b
+p
+for ah and bhq
+z ab z az b ezp aezq bb ezpq ab
+thu abhpq
+note that 21 obvious impli h h
+ij
+hi hj
+connesmoscovicikreim hopf algebra
+7
+25 27 it suffic to take ahp and bhq then
+y ab p qab pab aqb y ab ay b
+for ahp and bhq
+y ab y ab ay b pab aqb p qab
+thu abhpq
+27 28 y ab y ababwhilst
+y ab ay b y aab ay bb y a y bab
+ii 29 210 it suffic to take ahp then
+z z a
+z z a1 a2
+z a1 z a2 ep1 z a1 ep2 z a2
+epz a epz a z a
+for ahp
+z z a
+z z a1 a2
+ep1 z a1 ep2 z a2
+ep1 p2 z a z a epz a
+impli p1 p2 p
+29 211 it suffic to take ahp then
+y idh idh y a
+y idh idh y a1 a2
+y a1 a2 a1 y a2
+p1 p2 a1 a2
+pa pa y a
+for ahp
+y idh idh y a
+y idh idh y a1 a2
+p1 a1 a2 a1 p2 a2
+p1 p2 a1 a2
+p1 p2 a y a pa
+impli p1 p2 p as abov
+211 212 y a y aa y aa whilst
+y idh idh y a
+y idh idh y a1 a2
+y a1 a2 a1 y a2
+y a1 a1 a2 a1 y a2 a2
+y a1 y a2 a
+we chose the sweedler basi a1 a2 such that a1 resp the a2 are linearli independ
+8
+daniel kastler
+iv check of the first line 214 we check that z s z1 is a convolut
+invers of e
+z s z1 idh
+mz s z1 idh
+mz s z1 idh z z z1
+mz idh s idh z1 idh z z z1
+mz idh s idh idh z z1
+mz idh idh z s idh z1
+mz z s idh z1 z1 ms idh
+z ez1 e
+where we use 210 26 z 1 1 and z
+check of the second line 214 equat the deriv at 0 of z s sz
+in practic recogn a bideriv often occur by first establish the
+deriv properti and afterward the coderiv properti use
+lemma 23 assum that one know that a bialgebra h is ngrade as an
+algebra for investig the possibl coderiv properti of y one need onli
+look at the restrict of y on a set of gener
+proof from
+y a y a1 y a2 if
+y b y b1 y b2 if
+a a1 a2
+a b h
+a a1 a2
+a b homogen we conclud for the product ab with coproduct ab a1 b3
+a2 b4 that y ab y a y b equal
+y a1 b3 y a2 b4 y a1 y b3 y a2 y b4
+it is instruct to check instead the properti 211 show that
+y idh idh y ab
+y idh idh y ab ay idh idh y b
+y ab ay b y ab ay b y ab
+we next show that the algebrac dual of a ngrade coalgebra is a ngrade
+algebra
+proposit 24 the dual ngrade with hm e h nn hn a
+n grade bialgebra let h be the algebrac dual of h endow with the algebrastructur dual of the coalgebrastructur of h thu with product
+h h
+h
+215
+the definit
+y h y h
+h h h
+z h z h
+216
+here the convolut product is that of endc h h and is the dualiti bilinear
+form cf 11
+9
+connesmoscovicikreim hopf algebra
+then yield a ngrade h nn hn of the dual algebra h where hn
+p
+one ha the inclus y p h p h and z gh
+pn h
+gh zc h thu becom a grade bialgebra
+proof we check that one ha y n for hn with idh nn pn the
+decomposit of the unit associ to the direct sum h nn hn we have
+y nn npn thu for hn and hh
+y h pn y h y pn h n pn h n h y h
+henc y n the fact that 27 and 211 are transpos of each other then
+impli that y is a deriv of the algebra h the proof of z enz for
+hn is analog check of the two last claim
+for p h
+y
+id y y id id y y id1 1
+1 y y 1
+for gh and z c
+z z z z z z z
+proposit 25 ngrade connect bialgebra let
+hm e nn hn
+be a ngrade connect bialgebra ie h0 c1 and let h ker call the
+augment ideal it is known that h c1h cf proposit a3 then
+i one ha
+h ker n1 hn
+217
+ii one ha the implic
+h h h homogen h h 1 1 h h h
+218
+with h h a sweedlertyp sum of term fulfil either and thu both of the
+equival requir
+a all y h y h are strictli smaller than y h
+b all y h y h are strictli posit
+equival of a and b sinc the bialgebra ngrade entail that one ha
+y h y h y h
+y h y h y h
+and
+y h y h y h
+are simultan strictli posit
+the consequ 218 of ngrade connected play a promin technic
+role both in the connesmoscovici index theori and in the conneskreim theori
+we defin p h h 1 1 gh h
+written with quotat mark becaus h is not a bonafid coalgebra thi notat becom
+bonafid in h cf section 1
+note that the properti y h y h y h of the hopf ngrade mere entail that
+y h y h y h whilst progress requir strict inequ note also that appli
+idh and idh to both side of 218 one prove h h 0 henc that all h and h
+belong to h
+10
+daniel kastler
+of renorm we therefor cast the special name of progress for thi
+properti 25ii abov then say that a ngrade connect bialgebra is progress
+proof i let hhn n1 by 212 we have
+h
+hn 1 i1 n1 k hnik hik 1hn
+first subscript indic the y grade
+henc
+h
+idh hn 1 i1 n1 k hnik hik hn
+whenc hn 0 and h hn
+id h hn i1 n1 k hni hik hn 1
+whenc h hn and hn 0
+impli h hn 0 we prove that n1 hn h ker in fact we
+found that
+h h 1 1 hn i1 n1 k hnik hik
+h hn
+219
+first subscript indic the y grade
+convers let hh ker with h 1 n1 hn hn hn by what
+preced we have 0 h henc h n1 hn prove that h n1 hn
+ii for hhn 219 impli 218 howev 218 is linear wrt h henc
+hold for hh by i
+remark 26 i progress at larg follow from progress for gener of h inde
+ii let h kh if 218 hold for h and k it hold for the product hk
+proof i follow from ii and the multipl of
+ii assum that h h 1 1 h h h with all y h y h strictli
+posit and k k 1 1 k k k with all y k y k strictli posit
+it follow that
+hk
+hk 1 1 hk h k k h hk k k hk
+h k h h h k k k k k k k h k h k
+where all the tensor product but the two first have both factor of strictli posit
+degre
+we now present two import consequ of progress the first is
+that it make automat the exist of a recurs defin antipod
+proposit 27 assum that the ngrade bialgebra hm e nn hn
+is ngrade connect thu progress then h is a hopf algebra
+proof the requir for the clinear sr resp sl hh
+sr 1 1
+sr h h h sr h h h ker
+say that idh sr midh sr e
+220
+in fact it alreadi play the role in the earli day of the theori of hopf algebra through
+the correspond induct definit of the antipod cf proposit 27
+11
+connesmoscovicikreim hopf algebra
+resp
+sl 1 1
+sl h h sl h h h h ker
+say that idh sl msl idh e
+221
+determin sr and sl by induct wrt the degre y as respect right and left
+convolut invers of idh for the convolut product of endc h h but these
+then coincid becaus sl idh sr e sr sr sl e sl thu s sr sr
+is a bilater convolut invers of idh thu the uniqu antipod
+the second consequ of progress of h is that given hh there is a
+drastic limit depend on h of nonvanish valu h h we
+recal that cf section 1
+the algebrac dual h of h becom a topolog algebra if equip with
+the h htopolog and the algebrastructur m 1 e 1 stem
+from the coalgebrastructur of h
+the subalgebra h gener in h by the unit 1 and the liealgebra l
+of infinitesim charact becom by transposit a hopf algebra h m
+1 e 1 s
+lemma 28 let the bialgebra hm e nn hn be ngrade connect
+thu progress and let p be the project on h parallel to c1 in h then
+i one ha for nn the implic
+y h n p n1 n h 0
+222
+ii one ha consequ for n n the implic
+y h n ie h pn hp z1 zn1 h 0
+for all z1 zn1 l
+223
+altern formul as
+z1 zn1 l z1 zn1 pn hp
+n n
+224
+where indic the annihil in the dual
+proof i sinc by 217 a gener element of h is of the form 1 h with
+hh and we have obvious p n1 n 1 0 it is no restrict for the
+proof of the implic 222 to assum that h belong to h the project
+p n1 appli to n h h1 h2 hn1 then suppress all the
+product h1 h2 hn1 contain at least one factor in h0 c1 the
+remain product h1 h2 hn1 stem from the success sweedlertyp
+summat h h in 218 thu have by progress all their factor hp such
+that y hp 1 observ as notic in footnot 6 that all h h belong to h
+the equal
+y h1 y h2 y hn1 y h
+requir n 1 y h n y h otherwis p n1 n h vanish whenc
+220 and 222 for hh the extens to hh be trivial
+henc a hopf algebra cf proposit 27
+one ha h c1 h cf 217 and p idh e cf proposit a3 correl
+p p project hp onto hp
+12
+daniel kastler
+ii the express of the nfold convolut product of h
+1 n h
+1 n n h
+1 n h1 h2 hn1 225
+yield for product of element of l vanish on 1
+z1 zn1 h
+z1 zn p n1 n h
+z1 zn1 l h h
+226
+223 thu follow from 222 note that 223 hold for n 0 obviou directli
+embodi thi into our proof would requir the convent 0 idh
+lemma 29 assum that the ngrade connect bialgebra hm e
+nn hn ha a countabl vector spacebasi xi in consist of homogen ele be the closur of h in h then
+ment of nondecreas degre and let h
+i h is metriz with the distanc
+d f
+h
+where f in 2i inf xi 1
+227
+is a close topolog subalgebra of h
+ii h
+is stabl under s act in h
+iii h
+h
+h
+and whether
+note that at thi point the question of whether h
+if so
+m 1 e 1 s
+h
+is a hopf algebra remain open
+proof i is the known devic for prove metriz of a topolog vectorspac whose topolog is specifi by a countabl set of seminorm one check all
+the properti state in footnot 9
+ii follow from the known fact that the closur of a topolog algebra is an
+algebra
+h let h
+limn n with n h we have for
+iii check of s h
+hh
+s n h sh s h
+n
+henc s n s henc s h
+n
+proposit 210 assum that the ngrade connect bialgebra
+hm e nn hn ha a countabl vector spacebasi xi in such that
+be the closur of h in h we have that
+xi for n let h
+i with z l and ai c in the sequenc n i1 n ai z i is a cauchi
+sequenc of h which converg for n toward an element h
+ia the same hold for multivari powerseri of element of l
+d is a translationinvari distanc one ha d 0 d d d d
+and d 0 h
+impli
+d and d d for all h
+these properti follow from the properti f f f f f for all h
+plu the implic f 0 xi 0 for all i n the equal of topolog aris as
+f 2i are a basi of neighbourhood of zero in the dtopolog
+follow the vi h
+xi 1 vi
+with ui h
+13
+connesmoscovicikreim hopf algebra
+ii in particular the maclaurin powerseri of ez zl yield an element
+which is a charact of h
+denot by ez of h
+note that at thi point the question of whether the ez zl gener the
+group g of charact of h remain open
+proof i we have from 227 with in infin y xi n
+dn np
+in 2i infnp n xi 1
+in 2i inf an z n anp z np xi 1
+iin 2i inf an z n anp z np xi 1
+iin 2i 2in1
+whenc our claim sinc in for n
+ia the proof is the same up to notat
+ii particular case of what preced now the exponenti of an infinitesim
+charact if it make sens is a charact
+3 connesmoscovicikreim hopf algebra
+we cast a special name for a type of hopf algebra play a preval role in
+index theori and in renorm quantum field theori in most of what follow c
+could be replac by ani commut field k of characterist 0
+definit 31 h is a connesmoscovicikreim hopf algebra for short a cmk hopf algebra whenev
+i hm 1 e1 is the calgebra of commut polynomi of countabl mani variabl xi in other word h is the symmetr algebra over the
+countablydimension cvector space v with a specifi basi x xi in
+h v pn vp
+v0 c
+31
+we shall write indiffer hh symmetr tensor product or hh product of
+polynomi for the product of element h h h
+the degre of monomi yield a ngrade of the algebra h call it polynomi grade we denot the correspond degre by deg degp
+v p thu
+degxi 1
+ii thi algebrastructur is part of a hopf structur hm 1 e1 s
+such that
+xi xi 1 1 xi h v
+in
+xi 0
+32
+the second line impli that ker h n1 v n
+iii in addit h is endow with a hopf ngrade
+h nn hn
+33
+the algebra h is also defin as the univers envelop uv of the liealgebra v with
+trivial bracket xi xj i jn
+an essenti featur for the sequel of the polynomi grade is that h is gener in degre
+p
+0 and 1 the upper index p of the pthgrade summand v rh of 31 indic a pfold power
+of the product of h
+14
+daniel kastler
+distinct from the not hopf polynomi grade for which all xi thu all monomi are homogen of strictli posit degre denot respect by y y
+and z zc the correspond bideriv
+y hn n
+n n
+34
+h hn n n
+35
+degre
+y h n
+and automorph group
+z hn enz
+n n
+36
+we thu have that
+y xi y xi xi with y xi 1
+n n
+yz
+henc y and z e zc leav stabl each of the subspac v
+grade is subordin to the polynomi grade
+37
+p
+pn the hopf
+as a consequ cf 217 in section 2 and use a previou remark we
+have
+n1 hn h ker n1 v n
+38
+iv the ngrade hopf algebra h is ngradedconnect
+h0 c1
+39
+thu progress ie such that use a sweedlerlik notat we have the implic
+h h h homogen h h 1 1 h h h
+310
+wherebi all y h y h are strictli posit and strictli smaller than y h
+remark 32 we could replac in ii hopf algebra by bialgebra sinc
+310 make the exist of the antipod automat cf proposit 27
+proposit 33 let h be a cmk hopf algebra the lie algebra l charh
+is in linear biject with the algebrac dual of v a zl is of the type
+0 on c1
+on v
+z
+a linear form on v
+311
+0 on n2 vn h2
+all element of l be obtain in thi way we then write z
+proof equal n1 vn h sinc n1 vn h cf 38 the inclus is obviou the inclus follow from the fact that the algebra h is
+gener in polynomi grade 0 and 1 the definit properti
+z l charh z hh z h h h z h
+h h h entail for h h 1 that z 1 0 and that z hh 0 for
+h h h ker convers for z as in 311 one ha z l charh inde
+z 11 z 1 0 whilst 1 z 1 z 1 1 0
+for h h1 z 1h z h h whilst 1 z h z 1
+h 1h h
+the hopf ngrade is such that y h y h y h entail mere y h
+y h y h note that we have that all h h h cf footnot 6 of section 2
+15
+connesmoscovicikreim hopf algebra
+for h h n1 hn h hh h2 henc z hh 0 whilst h
+z h z h h 0 sinc h and h both vanish
+the next result a partial nfold gener of proposit 33 is a tool for
+prove theorem 35
+corollari 34 i let h be a cmk hopf algebra with zi i l i 1 n
+and xip v p 1 n n1 we have that
+z1 zn xi1 xin 1 xil n xin
+312
+the sum is over the set n of permut of the n first integ consequ
+vn is separ by the nfold product l l one ha the implic
+h vn
+z1 zn h 0 for all z1 zn l h 0
+313
+ii we have for z1 zn n n n 1
+z1 zn x1 xm 0
+xip v p 1 m m n 1
+314
+in other term
+z1 zn hm 0
+m n 1
+315
+warn 314 with 1m n gener doe not hold for instanc for
+hh one ha z1 z2 h z1 h 2 h
+proof i befor prove 312 and 314 for gener n we look for orient
+at the case n 1 2 3 and 4
+case n 1 312 and 314 amount to the second resp third line 311
+case n 2 we first prove
+z1 z2 xi1 xi2
+z1 z2 xi1 xi2
+1 xi1 2 xi2 2 xi1 1 xi2 z1 1 z2 2 l 316
+in order to simultan prepar the next step we comput 1 2
+1 2 for gener 1 2 h comput indic by the tabl with
+the term of 1 in the first column the term of 2 in the first line and
+the product at the intersect of the other line and column
+16
+daniel kastler
+tabl t2 comput of 1 2
+1 1
+1 1
+1 1
+2 1
+1 2
+2 2
+1 2 1
+2 1
+1 2 1
+1 2
+1 1 2
+1 1 2
+1 2 2
+2 1 2
+1 2 1 2
+yield 9 tensor product
+the 4 42 1 indic by belong to hh2 thu vanish under
+z1 z2
+the 3 2 1 indic by belong to h2 h thu also vanish under
+z1 z2
+the remain 2 1 2 and 2 1 yield 316 upon make 1 xi1
+2 xi2
+we next prove
+z1 z2 xi1 xim
+0 if m 2
+z1 z2 xi1 xim
+317
+sinc xi1 xim m 2 is of the form 1 2 3 with 1 2 3 h we
+comput the relev part of 1 2 3 1 2 3 wherebi the term
+of 1 2 can be discard sinc multipl by 3 leav hh2 invari
+we thu have the tabl
+tabl t3 comput of 1 2 3
+1 2 1
+1 2
+1 2 2
+2 1
+1 2 1
+3 1
+1 3
+3 3
+1 2 3 1
+1 3 2
+1 2 3 2
+2 3 1
+1 2 3 1
+1 2 3
+1 2 3
+1 2 2 3
+2 1 3
+1 2 1 3
+1 2 3 3
+1 3 2 3
+1 2 3 2 3
+2 3 1 3
+1 2 3 1 3
+yield 15 tensor product all in h2 h or hh2 thu vanish under
+z1 z2
+case n 3 we first prove
+z1 z2 z3 xi1 xi2 xi3
+z1 z2 z3 idxi1 xi2 xi3
+1 xi1 2 xi2 3 xi3 zi i l i 1 2 3
+318
+we need to classifi the tensor product in tabl t3 they consist of
+the 8 43 1 indic by belong to hh2 thu vanish under
+z1 z2 z3 23
+the 4 3 1 indic by which belong to h3 h turn by id into
+h3 h whose first factor vanish under z1 z2
+the remain 3 1 2 3 in the set 03 of cyclic permut of
+1 2 3 whose sum is turn by id into 03 1 2 3 by tabl t2
+equal modulo h h2 h h2 h h to 03 1 2 2 1 3
+in other term 1 2 3 we prove 318
+in fact as we will see these can be discard for the whole sequel
+17
+connesmoscovicikreim hopf algebra
+we next prove
+z1 z2 z3 xi1 xim
+0 if m 3
+z1 z2 z3 idxi1 xim
+319
+sinc xi1 xim m 3 is of the form 1 2 3 4 with 1 2 3 4 h
+we comput the relev part of 1 2 3 4 1 2 3 4 wherebi the term of 1 2 3 can be discard sinc multipl by 4 leav h h2
+invari we thu have the tabl
+tabl t4 comput of 1 2 3 4
+1 2 3 1
+1 2 3
+1 2 3 3
+1 3 2
+1 2 3 2
+2 3 1
+1 2 3 1
+4 1
+1 4
+4 4
+1 2 3 4 1
+2 2 4 3
+1 2 3 4 3
+1 3 4 2
+1 2 3 4 2
+2 3 4 1
+1 2 3 4 1
+1 2 3 4
+1 2 3 4
+1 2 3 4 3
+1 3 2 4
+1 2 3 2 4
+2 3 1 4
+1 2 3 1 4
+1 2 3 4 4
+1 2 4 3 4
+1 2 3 4 3 4
+1 3 4 2 4
+1 2 3 4 2 4
+2 3 4 1 4
+1 2 3 4 1 4
+yield 21 tensor product all in h3 h or h2 h2 thu vanish under
+z1 z2 z3 becaus h3 vanish under z1 z2 by 317
+a more detail analysi of thi tabl registr amongst it tensor product
+2
+the 12 44 1 indic by which belong to hh turn by
+id id id into h h h h2 vanish under z1 z2 z3 z4 23
+the 5 4 1 indic by which belong to h4 h turn by id
+id id into idh4 h vanish under z1 z2 z3 z4 becaus
+idh4 vanish under z1 z2 z3 inde id act on the tensor
+product in t4 contain in h3 h and h3 vanish under z1 z2 by 317
+the remain 4 1 2 3 4 in the set 04 of cyclic permut of
+1 2 3 4
+we now reexamin 318 we have
+denot equal up to neglig term
+1 2 3 0
+3
+1
+2
+3
+henc id1 2 3
+03 1 2 3 henc
+z1 z2 z3 xi1 xi2 xi3
+z1 z2 z3 idxi1 xi2 xi3
+03 z1 z2 xi1 xi2 z3 xi3
+03 2 1 xi1 2 xi2 3 x3
+3 1 xi1 2 xi2 3 xi3
+3 1 xi1 2 xi2 3 xi3
+it should now be clear how thing propag recurs to yield a proof for
+gener n we assum that tabl tn is as follow it 32n 1 1 32n 1
+tensor product consist of
+the 4n 1 indic by vanish under z1 zn n1
+the n 1 indic by vanish under z1 zn n1
+the remain n with sum sn 0n 1 2 n1 n in the set
+0n of cyclic permut of 1 n with 318 hold for n xin v
+18
+daniel kastler
+from what preced it is clear that these featur propag from n to n 1
+in particular we have
+sn1
+sn n1 1 1 n 11 n1
+0n 1 2 n1 n1 n 1 n n1
+0n1 1 2 n n1
+and
+z1 zn1 xi1 xin1
+z1 zn1 idn2 xi1 xin1
+0n z1 zn n2 xi1 xin zn1 xin1
+0n n 1 xi1 n xin n1 xin1
+n1 1 xi1 1 xin
+n1 1 xi1 1 xin
+our final result elucid the structur of h by display it as in strict hopfalgebradu with the envelop hopf algebra ul of the lie algebra l the
+latter isomorph to the hopf algebra h by the milnormoor theorem
+theorem 35 let h be a cmk hopf algebra h is separ by h for hh
+h 0 for all h entail h 0
+proof each hh is of the form h 1h1 h2 hn with hk vk
+k 1 n nn we assum that h vanish under all element h and show
+that h 0 inde let zi i l i 1 n then
+sinc by 38 all the term of h but the first lie in h ker one ha
+1 h h the requir 1 h 0 thu entail the vanish of
+the first term 1
+next by corollari 34ii one ha zi h i h1 ask thi to vanish
+for all zi h thu entail the vanish of the second term h1
+assum that we have shown that hk vanish for kp n we have by
+corollari 34ii and iii
+z1 zp1 h
+z1 zp1 hp1 hn
+z1 zp1 hp1
+1 p1 hp1
+whose vanish under all 1 p1 entail hp1 0 we thu prove theorem
+35 induct
+4 loop of cmk hopf algebra
+in what follow hm 1 e1 s is a cmk hopf algebra cf section 1
+and 3 of which we adopt the notat
+definit 41 in what follow the ground field is c and we will handl algebra with and without unit sinc our gener practic wa to use the word algebra
+to mean unit algebra we shall write algebra quoteunquot to mean not
+necessarili unit algebra over c
+19
+connesmoscovicikreim hopf algebra
+i we consid the follow algebra of analyt function on the riemann
+sphere pc1 with north pole n and south pole s 0
+a f holomc 0 with 0 a pole of finit order
+a polynomi in 1z without constant term
+41
+a restrict to c 0 of function in holomc
+1
+a seri in z without constant term
+ii a loop is a map pc1 0 g charh the set of loop is
+denot by lh
+iii with b one of the algebra a a a or a
+a bloop is a map
+1
+pc 0 g such that the function pc1 0 zz h hh
+ker belong to b the set of bloop is denot by lb h
+we recal that a aloop ha a uniqu birkhoff decomposit
+1
+42
+where
+c 0 z z h
+c 0 z z h
+belong to a
+h h
+belong to a
+43
+lemma 42 i the bloop build a group under the oper
+product z z z z pc1
+invers 1 z z1 s z
+44
+with the unit the constant loop z1
+ii the bloop are onetoon with element homalg h b through
+the biject
+z h hz
+h h z c 0
+45
+a group isomorph with the follow correspond of group product
+46
+where the product on the left is that of the group g first line 17 whilst on
+the right is the convolut product of homalg h b
+h h1 h2
+1 h 1 h sh
+47
+notat use the chart of pc1 obtain by stereograph project from the north pole
+on the equat coordinat by z in phrase the definit 43 below thi chart is use to
+identifi pc1 0 with c 0
+definit impli that z 1 1 for all z
+homalg h b is the set of homomorph between algebra ie clinear multipl map hb
+20
+daniel kastler
+proof one ha for h h h
+z hh
+z h z h hzh z
+hh z hh z
+z 1
+hz
+1 1z 1b 1
+z h
+z z h z z h
+z z h1 h2 z h1 z h2
+h1 z h2 z h1 h2 z
+in the sequel we are concern with the special loop defin as follow
+definit 43 the bloop b a or a
+is special whenev it invers
+1
+is such that
+for all t
+1
+invers in the group g
+48
+t product in the group g t r ha a limit for 0
+1 t ft
+49
+0
+and moreov ft is differenti in t for t 0
+remark 44 in the case of a loop as soon as condit 49 is fulfil
+ft is differenti as shown by the follow comput continu of the limit
+need onli be examin for the valu on the kernel of sinc 1 t 1
+1 is constant now for hh with y h p
+1 t h
+1 t h
+s t 1 h h 1 h h
+1 t h sh 1 sh t h
+1 etp h sh 1 sh etp h
+1 etp h h sh 1
+sh etp h
+1
+1
+etp p
+p1
+etp p
+1
+p
+1
+thi make it clear that the limit ft is a polynomi in t if it exist
+lemma 45 let be a special loop as in definit 43 then
+ft in 49 is a flow one ha
+ft ft fs
+410
+ft et
+411
+thu
+to allevi write we write the complex variabl of the loop as an index note that the
+limit in 49 is taken in the topolog of g simpl converg on h
+21
+connesmoscovicikreim hopf algebra
+with the function the follow element of l
+et
+t
+412
+t0
+proof i let t sr first
+t 1 s fs
+0
+inde for hh of degre n first
+t 1 s h
+1 s t h
+eint 1 s h fs
+sinc eint 1 then
+ft
+lim 1 ts
+0
+lim 1 t s
+0
+lim 1 t 1 s
+0
+lim 1 t t 1 s
+0
+lim 1 t lim t 1 s
+ft fs
+0
+0
+lemma 46 let be a special a
+loop with
+dn
+with dn h ie dn 1 0 n 1
+n
+we set d1 re call the residu of
+one ha
+y d1 y re
+y dn1 dn n 1
+1 n1
+413
+414
+rewritten
+d1 y 1
+dn1 y 1 dn n 1
+y the inject restrict of y to h ker
+415
+explicitli
+s1 s2 sn ds1 dsn
+dn
+416
+s1 s2 sn 0
+use
+y 1
+s ds in restrict to h
+417
+0
+the moral of thi is that the loop is determin by it residu thu by
+with depend express explicitli by 416
+terminolog borrow from renorm theori
+22
+daniel kastler
+proof perform a licit exchang of limit in
+1 t h
+lim
+0
+et h
+t t0
+1 y h
+lim
+0
+t t0
+h h
+418
+h h
+419
+h
+we first show that we have
+h lim 1 y h
+0
+inde the horizont limit come from 49 with ft et the right vertic limit
+is 412 as for the left vertic limit we have that t
+t0 appli to
+1 t h
+s t h
+s ey t h
+sh1 ey t h2
+yield
+sh1 y h2
+s h1 y y h2
+e 1 y h
+1 y h
+next the function 1 y h is holomorph on the whole
+riemann sphere thu must be constant we have 1 y h h
+1 y 1 ie
+1
+y
+420
+feed 413 into thi yield
+n1
+1
+y dn
+n
+1
+1
+1
+n1
+n2
+dn
+n1
+dn1
+n
+equat coeffici of 1n then yield 414
+passag from 414 to 415 y a is inject in restrict to the augment
+ideal h n1 hn thu thu also re determin f the key to the
+explicit depend be formula 417 itself obtain as follow integr
+from 0 to
+eti
+s
+y eti y s
+t
+t
+yield idh y 0 s ds it suffic now to invers y in restrict to h
+appli 417 to yield 416 for n 1 induct iter then yield 416
+23
+connesmoscovicikreim hopf algebra
+assum it hold for n appli y 1 on both side yield
+dn1
+y 1 dn
+s1 s2
+s
+0
+s1 s2 sn 0
+sn ds1 dsn ds
+s1 s2 sn 0
+0
+ss1 ss2
+ssn ds1 dsn ds
+s s1 s2
+ss1 s2 sn 0
+sn dsds1 dsn
+up to number of variabl ident to 416
+extens of the lie algebra l by an addit element z0 enabl us now to
+give a compact express of the last result and as a byproduct a character
+of specialti for a
+loop
+is lcz0 with the liebracket of l plu
+definitionlemma 47 i l
+z0 z z z0 y z
+z l
+421
+is a lie algebra
+ii the so defin l
+proof we need onli check the addit case of the jacobi requir
+now for z z l we have
+z0 z0 z z0 z z0 z z0 z0 0
+and
+z0 z z z z z0 z z0 z y z z z y z z y z 0
+by the fact that the algebraderiv y of h is a lie algebraderiv of the
+lie algebra lieh for h we have y y y and y
+y y thu y y y
+as in definitionlemma 47 one ha for each a loop
+theorem 48 with l
+lim etz0 etz0
+t
+where y re
+422
+proof we appli the expansion formula
+eu0 a b eu1 a b eun a du1 dun
+eab
+nn
+ui 1ui 0
+423
+24
+daniel kastler
+to a tz0 b t t 0 yield
+etz0
+eu0 tz0 eu1 tz0
+nn
+ui 1ui 0
+eun1 tz0 eun tz0 tn du1 dun
+vi tui i 1 n
+ev0 z0 ev1 z0 evn z0 dv0 dv1 dvn
+nn
+vi tvi 0
+v0 t s1 v1 s1 s2 vn1 sn1 sn vn sn
+etz0
+1
+n
+nn
+1
+ets1 z0 es1 s2 z0
+ts1 s2 sn 0
+esn1 sn esn z0 dv0 dv1 dvn
+etz0
+nn
+1
+n
+s1 s2
+ts1 s2 sn 0
+sn dv0 dv1 dvn
+we thu have
+etz0 etz0
+1
+s1 s1
+n ts1 s2 sn 0
+nn
+sn dv0 dv1 dvn
+whenc 422
+lim etz0 etz0
+t
+nn
+nn
+1
+n
+s1 s1 sn dv0 dv1 dvn
+s1 s2 sn 0
+1
+dn
+n
+5 algebrac birkhoff decomposit
+definit 51 a birkhoff sum over k is a commut unit kalgebra
+a which is the direct sum a a a of two klinear multipl subspac a
+and a the project t aa parallel to a thu fulfil
+t ab t at b t t ab at b
+a b a
+51
+we do not say subalgebra becaus accord to our gener terminolog practic a subalgebra contain the unit note that definit 51 follow from the fact that both a and a
+are close under multipl
+25
+connesmoscovicikreim hopf algebra
+proposit 52 algebrac birkhoff decomposit with h a ngrade
+connect progress commut hopf algebra over k and a a a a
+birkhoff sum denot by homkalg h a the set of unit kalgebra homomorph ha consid as a kalgebra under the convolut product
+h ma h
+homkalg h a h h
+52
+let homkalg h a be given requir for a klinear h a
+1 1a
+53
+h t h h h
+54
+h h ker specifi induct a homkalg h a have it rang in
+a
+h t h
+55
+such that the product homkalg h a ha it rang in a
+h ida t h h h
+h hp
+56
+thi yield the algebrac birkhoff decomposit
+1
+57
+proof progress of h impli that 53 and 54 specifi induct a
+klinear map ha
+check of 55 obviou from 54 and t 2 t
+check of 56 we have by 52 and 5354 for hh omit parenthes
+h
+ma h
+ma h 1 1 h h h
+h h h h
+t h h t h h h h 0
+whenc 56 owe to t 2 t
+what is not obviou from 54 is that is multipl we prove thi by
+induct for xhp yhp we have still omit parenthes
+x
+y
+x
+y
+xy
+x 1 1 x x x
+y 1 1 y y y
+t x x x t a
+t y y y t b
+with
+with
+with
+with
+deg x deg x p
+deg y deg y q
+a x x x
+b y y y
+xy 1 1 xy x y y x x y x x x y xy y
+y xy x y x y
+ie h ha a ngrade commut with the hopf structur such that h0 c1 and moreov
+such that h h 1 1 h h h with maxdegh degh p h h p p 0
+the multipl of and impli that of owe to the commut of a
+the commut product h h rh is in a
+the product and the invers rh are taken wrt the convolut product 52
+26
+daniel kastler
+henc by the induct hypothesi
+xy
+t xy x y y x x y x x x y
+xy y y xy x y x y
+1
+2
+3
+4
+5
+t x y x y y x y x x y x x
+6
+7
+8
+x y y x y y x y x y
+on the other hand we have use 51 and the commut of a
+x y
+t a t b t at b bt a ab t a y b x ab
+t x x x y y y y x
+x x x y y y
+3
+4
+2
+6
+t y x y x x x y x y y
+1
+7
+5
+x y x y y y x x
+8
+x x x y
+the two express contain the same term
+appendix a algebra coalgebra bialgebra hopf algebra
+in what follow k is a commut field of characterist zero eg c r or
+q
+definit and notat a1 algebra coalgebra bialgebra hopf algebra let h be a kvector space with the follow notat for the map
+m e s
+notat
+m hhh hhh
+multipl
+comultipl
+a a1 a2
+ekh
+unit
+e1 1
+hk
+counit
+shh
+antipod
+the follow axiom success defin h as an algebra coalgebra bialgebra and
+hopf algebra
+axiom
+algebra
+am midh m mm idh
+ae
+midh e idh
+me idh
+h h h
+hk
+hh
+kh
+hh
+abc abc
+a1k ka
+1ka
+27
+connesmoscovicikreim hopf algebra
+coalgebra
+c
+c
+2 idh
+idh
+idh idh
+idh
+h h h
+a1 a23 a24
+a13 a14 a2
+hhk
+h
+hkh
+h
+a1 a2 a
+a1 a2 a
+bialgebra add to the previou axiom
+bm
+m m
+h h h h
+ab ab
+be
+e e e
+k k h h
+k
+k1 k1 1
+b
+m
+h h k
+k k
+ab ab
+be
+e idk
+k k
+ek k
+hopf algebra add to the previou axiom
+h p midh s ms idh
+e
+s id id s e
+h h a1 sa2 sa1 a2
+a1
+proposit a2 let h e s be a hopf algebra over k one ha the
+follow properti
+i
+ii
+hm
+sm mp12 s s
+ie
+h s s sp12
+ie
+he s1 1
+h s
+iii
+hp sp ps p
+sab sbsa a b h
+sa sa2 sa1 a h
+proof of proposit a2 i resp ii see below b3 resp b4 iii he
+by h be and be
+msidh 1 11 s1 e1 11 1
+hp for ah
+spa sa1 as1 a1 pa
+moreov by h h hm
+ps
+msidh s msidh ssp12
+mp12 ssidh s
+smidh s sp
+h by hp for ah
+psa sa1 pa a1
+henc sa a
+proposit a3 the short exact sequenc of
+i the short exact sequenc of is split with lift e
+0 h ker h
+k 0
+e
+a1
+28
+daniel kastler
+where h is a notat for ker correspond to the follow direct sum split
+into a vertic and a horizont part
+h h k1
+a2
+the split of short exact sequenc 11 can altern be specifi by
+the horizont project p e
+the vertic project p idh p idh e with imp h ker
+proof of proposit a3 i one ha e idk inde for k
+e11
+the other claim follow from known fact about split short exact sequenc
+appendix b convolut
+in what follow the ground field is k with possibl choic c r q we write
+hom and end for k homk and endk
+definitionproposit b1 with c a coalgebra am e an algebra
+and homc a the vector space of homomomorph ca as kvector space
+defin as follow homc a
+m
+homc a
+b1
+under thi product call convolut and with e as a unit homc a becom an algebra specif one ha
+m2 2
+homc a
+b2
+mn 1 n1 n
+1 n1 homc a n n
+b3
+more gener
+1 n1
+in sweedler notat
+a a1 a2
+homc a a a
+b4
+more gener
+1 n1 a
+mn 1 a1 n1 an1
+1 n1 homc a a a
+b5
+final
+e e
+homc a a a
+b6
+proof we have homc a becaus homc c c
+homc c c c m homc c c check of b2 we have
+mm
+mm id id
+m2 2
+m m
+whilst
+mid m id
+29
+connesmoscovicikreim hopf algebra
+check of b4 we have
+a
+m a m a1 a2
+ma1 a2
+a1 a2
+check of b6
+ea a1 a2 1 a1 a2 1 a1 a
+and
+e a a1 1a2 a1 a2 1 a1 a
+a a
+exampl b2 i result b1 appli in particular to the case where c
+am e is a bialgebra with unit element 1 homa a enda then
+possess an algebra structur with product for which p e act as p
+enda is the unit
+ii the further special c a h with hm e s a hopf algebra
+interpret the hopf axiom as the fact that h s idh idh s e thi
+immedi impli uniqu of the antipod s idh e and idh s e
+impli s idh s s s
+exampl b3 with hm e s a hopf algebra take for c the tensor product coalgebra h h and for a the algebra hm e we get for
+homh h h an algebrastructur with product and unit e for the latter sm is a left and mp12 s s is a right invers of m sm m e
+m mp12 s s they thu coincid thi prove properti hm
+exampl b4 with hm e s a hopf algebra take for c the coalgebra h and for a the tensor product algebra h hm we get for
+homh hh an algebra structur with product and unit e for the latter s
+is a left and s sp12 is a right invers of s e s sp12
+they thu coincid thi prove properti h
+appendix c primit and grouplik element
+definit c1 let h be a bialgebra over the field k
+i the element ah is call primit whenev
+a a 1 1 a
+c1
+the set of primit element of h is denot by p h
+ii the element ah is call grouplik whenev
+a0
+and
+a a a
+c2
+the set of grouplik element of h is denot by gh
+proposit c2 let h be a kbialgebra
+i p h is a klinear subspac of h moreov if a bp h then a b
+ab bap h consequ p h is a lie subalgebra of the lie algebra lieh
+ii one ha p h ker
+a p h a 0
+iii gh is multipl if a bgh then abgh
+c3
+30
+daniel kastler
+iv one ha
+a gh a 1
+c4
+if furthermor h is a hopf algebra with antipod s then
+a p h sa a
+a gh
+sa a
+1
+c5
+c6
+show that gh is then a group
+proof i let a bp h k then a b ap h furthermor
+a b
+ab ba ab ba
+a 1 1 ab 1 1 b b 1 1 ba 1 1 a
+ab 1 a b b a 1 ab ba 1 b a a b 1 ba
+ab ba 1 1 ab ba a b 1 1a b
+ii idid entail
+id a
+id a 1 1 a
+a 1 1 a
+a a1 a
+iii a bgh entail
+ab ab a ab b ab ab
+iv idid entail
+id a id a a a a aa a
+assum that h is a hopf algebra with antipod s
+check of c5 mid e entail
+0 midsa1 1a ma1 1sa a sa
+check of c6 mid e entail
+mid sa a ma sa asa 1
+whilst msid e entail
+msidaa msaa saa 1
+refer
+a conn and d kreimer renorm in quantum field theori and the riemannhilbert
+problem i the hopf algebra structur of graph and the main theorem hepth9912092 13
+dec 1999
+a conn and d kreimer renorm in quantum field theori and the riemannhilbert
+problem ii the function diffeomorph and the renorm group arxiv hepth0003 188 21 mar 2000
+n bourbaki alg
+ebr chapitr ii par 6

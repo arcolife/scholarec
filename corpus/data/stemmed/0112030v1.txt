@@ -1,0 +1,3094 @@
+arxivmathph0112030v1 14 dec 2001
+trigonometri of complex hermitian type
+homogen symmetr space
+ramon ortega and mariano santand
+departamento de fsica te
+orica facultad de ciencia
+universidad de valladolid e47011 valladolid spain
+abstract
+thi paper contain a thorough studi of the trigonometri of the homogen
+symmetr space in the cayleykleindickson famili of space of complex hermitian
+type and rankon the complex hermitian ellipt cp n su n 1u 1
+su n and hyperbol ch n su n 1u 1 su n space their analogu
+with indenit hermitian metric su p 1 qu 1 su p q and the noncompact
+symmetr space sln 1 rso1 1 sln r are the gener member in thi
+famili the remain space are some contract of the former
+the method encapsul trigonometri for thi whole famili of space into a singl
+basic trigonometr group equat and ha univers and selfdual as it
+distinct trait all previous known result on the trigonometri of cp n and
+ch n follow as particular case of our gener equat
+the follow topic are cover rather explicitli 0 descript of the complet
+cayleykleindickson famili of rankon space of complex type 1 deriv of
+the singl basic group trigonometr equat 2 translat to the basic complex
+hermitian cosin sine and dual cosin law 3 comprehens explor of the bestiarium of complex hermitian trigonometr equat 4 uncov of a cartan
+sector of hermitian trigonometri relat with triangl symplect area and coarea 5
+exist condit for a triangl in these space as inequ and 6 restrict
+to the two special case of complex collinear and pure real triangl
+the physic quantum space of state of ani quantum system belong as the
+complex hermitian space member to thi parametris famili henc it trigonometri
+appear as a rather particular case of the equat we obtain
+1
+1
+introduct
+in a previou paper 1 the trigonometri of the complet famili of symmetr space of rank
+one and real type wa studi these space are also call cayleyklein hereaft ck
+real space and were rst discuss by klein extend the cayley idea of project metric in two dimens there are nine real space with a real quadrat symmetr metric
+of ani posit zero neg constant curvatur and ani posit denit degener
+indenit signatur 2 further to thi the paper 1 had a long run aim toward open
+an avenu for explor the trigonometri of gener symmetr homogen space
+next to the space of real type there are space of complex type in complex
+dimens n there are 3n 1 such geometri 3 complex type mean here that these
+space are coordinatis by element of a onestep extens of r through a label
+cayleydickson procedur r r which adjoin a imaginari unit i with i2 to r
+produc either the complex dual or split complex number accord as 0 0 0
+we will term cayleykleindickson ckd these space they are hermitian sinc they
+are relat to a scalar product with complex valu and hermitianlik symmetri
+within thi famili onli the space coordinatis by ordinari complex number where
+0 which can be rescal to 1 and i2 1 are actual complex space after thi
+restrict there are onli 3n ck complex type geometri in complex dimens n 4
+for n 2 there are nine 2d complex hermitian ck space with constant holomorph
+curvatur either khol 0 0 0 and a hermitian metric of either denit degener
+or indenit signatur all these are hermitian symmetr space with a complex structur
+henc k
+ahlerian but onli the three space with a denit posit hermitian metric belong
+to the restrict famili of the socal twopoint homogen space 6 these are the
+ellipt hermitian space ie the complex project space cp 2 with the fubinistudi
+metric the hermitian hyperbol space ch 2 which can be realiz in the interior of a
+hermitian quadric in cp 2 like it real analogu and the hermitian euclidean space cr2
+a twodimension hilbert space as the common limit space
+if degener and indenit hermitian product are allow a ck famili of nine complex 2d space is obtain the complex ellipt euclidean and hyperbol hermitian plane
+with a denit posit metric the complex coeuclidean galilean and cominkowskian or
+anti newtonhook galilean and newtonhook hermitian plane with a degener
+metric and nalli the indenit metric complex cohyperbol minkowskian and doubli
+hyperbol or anti de sitter minkowskian and de sitter hermitian plane the last six
+space are the complex hermitian analogu of the three nonrelativist and three relativist spacetim in group theoret term all these nine hermitian space appear as
+four gener case and five nongener one within the complex ck famili the gener
+case are su 3u 1 su 2 su 2 1u 1 su 2 su 2 1u 1 su 1 1
+the last host two dierent space with time like and spacelik complex line interchang nongener case are contract of these four gener one with either
+curvatur vanish metric degener or both within the full complex ck famili of
+space of complex type result on trigonometri are onli avail as far as we know for
+the hermitian space with denit posit metric and constant either posit or neg holomorph curvatur 5 7 8 9 10 11 12 13 a review of these result is includ
+in section 2
+the space in the subfamili 0 are much less known they have not a complex struc
+2
+ture but it split complex analogu it gener member correspond to the symmetr
+homogen space sl3 rso1 1 sl2 r and the nongener one to some of
+it contract the trigonometri for such space ha appar not been studi the
+space with 0 appear as common contract from the space with 0 and 0
+in thi paper we set out the task of studi in full detail the trigonometri of the complet famili of space of complex type it clearli suce to consid the twodimension
+case as a triangl in ani ckd such complextyp space in complex dimens n is
+fulli contain in a total geodes subspac with complex dimens 2
+the approach distinct trait are first it cover at onc the trigonometri in the
+whole famili of 33 27 such geometri parametr by three real label 1 2 the
+studi of the trigonometri in the famili as a whole is in fact easier than it studi for just
+one space at a time second it give a clear view of sever dualiti relationship between
+the trigonometri of these dierent space in particular it explic display the selfdual
+of the hermitian ellipt space analog to the selfdual of the real sphere s 2 that is
+complet hidden in the trigonometr equat deriv for thi space in 9 10 11 13
+third it give more than previous known all previous known equat appear as a
+rather small subset of the equat to be deriv here fourth it deal uniformli with the
+contract nongener case which correspond to curvatur vanish 1 0 andor
+fubinistudi metric degener 2 0 or 0 hermitian analogu of the real
+angular and later excess vanish in these limit and are relat to triangl symplect
+area and it dual quantiti and fifth the presenc of the addit cayleydickson type
+label make it possibl the consider of a new type of contract encompass by
+the limit 0 whose physic mean is worth explor
+the paper is intend to be selfcontain but refer to 1 may be help special
+for motiv and gener background a condens review of alreadi known result on
+the trigonometri of both the hermitian ellipt and hyperbol space 7 8 9 10 11 12 13
+is given in section 2 here we display the basic equat which in some case were
+origin given in term of angular invari not consid in thi paper eg the fubinistudi angl and the holomorphi inclin at each vertex and will be rewriten here
+so they can be easili identi with the one we obtain the choic of basic invari
+adopt here aord the equat in a form which we believ simpler than use ani
+other choic
+inform on ckd space of complex type is given in section 3 and 4 section
+3 deal with the ordinari complex case and therefor refer to a much more familiar
+situat section 4 comment the main new trait appear when complex number are
+replac by their complex parabol and split hyperbol version
+in section 5 the approach to the trigonometri propos in 1 is develop in depth for
+the complet ckd famili the whole of trigonometri for all these space is encapsul
+in a singl basic trigonometr group equat involv side angl and later and
+angular phase and exhibit explicitli selfdual in the whole famili thi is mainli
+achiev due to a choic of triangl invari as the canon paramet of two pair
+of commut isometri a choic which should ring a bell to ani physicist educ in
+quantum mechan deal with mani space at onc thi equat give a perspect
+on some relationship go far beyond ani treatment devot to the studi of a singl
+space the behaviour of trigonometri when either the curvatur vanish or the metric
+degener is explicitli describ through the ckd constant 1 2 dualiti is the
+3
+main structur backbon in our approach and the requir to explicitli maintain
+dualiti in all express and at all stage act as a kind of method ngerprint cartan
+dualiti for symmetr space 14 appear here as the chang of sign in either 1 or 2
+the basic trigonometr group equat is an equat for the parameterdepend
+group of motion by write it in the fundament complex represent a set of nine
+complex equat follow with these equat as start point we will explor in
+section 6 the rather unknown territori of complex hermitian trigonometr equat
+the background provid by real trigonometri make thi explor easier by deliber pursu the analog while at the same time the relev dierenc stand out
+clearli the most interest dierenc with real trigonometri is the natur split of
+the equat into two sector the rst involv quantiti link to cartan gener
+of the motion group where two new triangl invari appear in a rather natur way
+they play a special import role sinc they are proport to the symplect area and
+coarea of the triangl for the hermitian ellipt space cp 2 these quantiti were rst
+found by blasckh and terheggen 7 8 the other sector is the complex analogu of the
+whole real trigonometr set of equat most result in the real case have sometim
+sever andor partli analog in thi complex trigonometri the famili form of all
+previous known equat is obtain here togeth with a larg number of new one
+in the cp 2 case 1 1 1 2 1 all trigonometr function of side angl later
+and angular phase are the ordinari circular one and at a rst look the whole paper can
+be read by restrict to thi case thi may help to grasp the key idea while not lose
+view of the increas scope aord by the possibl of zero or neg 1 or 2
+the basic trigonometr ident for the famili of complex hermitian space is also
+directli link to other product formula which we believ new they can be consid as
+a kind of complex hermitian gaussbonnet formula and contain the total of complex
+hermitian trigonometri in a nutshel as they are equival to the basic trigonometr
+ident the subject of such exponenti product formula appear as an step in our
+deriv section 51 but it can be further develop by itself and aord a number
+of new ident thi will be discuss elsewher
+there is actual a strong link between thi studi which superci seem like a work
+in geometri and physic the mathemat structur underli the quantum state space
+belong to the complex hermitian ckd famili so as a byproduct of thi work we obtain
+the basic equat of the trigonometri of the quantum state space 15 16 ani hilbert
+space appear in the ckd famili as a hermitian euclidean space thu with label
+1 1 0 2 3 1 and it project hilbert space which play in ani quantum
+theori the role of space of state appear as the hermitian ellipt space 1 1
+0 2 3 1 geometr phase are relat to trigonometr quantiti for the
+simplest triangl type loop in the quantum state space the anandanaharonov phase
+appear intriguingli as one of the triangl invari introduc by blaschk and terheggen
+sixti year ago the paper by sudarshan ananadan and govindarajan 17 give a group
+theoret deriv of the anandanaharonov phase equal to triangl symplect area
+for an innitesim triangl loop in cp n thi result appear as a particular case of our
+exact express link triangl element for ani finit triangl the role of symplect
+area for geodes triangl in connect with coher state and geometr phase ha
+also been recent discuss by berceanu 18 and boya perelomov and santand 19 a
+separ more physic orient paper 20 will be devot to the trigonometri of the
+quantum space of state in relat with geometr phase and in gener with the view
+4
+toward a more geometr formul of quantum mechan 21
+2
+a review on hermitian trigonometri of cp 2 and ch 2
+the hermitian ellipt space ie cp n endow with the natur fubinistudi fs metric
+induc by the real part of the hermitian canon at product in cn 1 is an homogen
+hermitian symmetr space it ha a natur complex structur and the fs metric is
+kahlerian and ha constant holomorph curvatur the k
+ahler form is induc by the
+imaginari part of the hermitian canon metric in cn 1 22 the standard choic of
+scale in the metric make the maximum distanc in cp n equal to 2 and the total
+length of ani close geodes equal to with thi choic the constant holomorph
+curvatur of cp n is khol 4 the ordinari section curvatur k of the fs metric in
+cp n seen as a riemannian space of real dimens 2n is not constant and lie in the
+interv 1 k 4 complex project geometri wa studi by cartan 23 build
+over the work by studi 24 and fubini 25
+for the real project space rp n trigonometri essenti reduc to spheric trigonometri 26 the homogen symmetr charact of cp n make also possibl an
+explicit studi of it trigonometri which is howev much more complic than for
+rp n a common trait in most of the previou work on hermitian trigonometri is to
+introduc a singl real invari for each side which seem natur as cp n is a rank one
+space but two real invari for each vertex which also seem natur due to presenc of
+two commut factor in the group theoret descript of the hermitian ellipt space
+as the homogen space su n 1u 1 su n
+for side invari the canon choic are the distanc in the fs metric a resp b c
+between vertic bc resp ca ab to avoid nongener special case all paper quot
+befor enforc the restrict a b c 2 thi mean that each pair of side doe not meet
+the cut locu of the common vertex in both the ellipt hermitian space cp n and the
+hermitian hyperbol space ch n identi with a suitabl bound domain of cp n with
+the hyperbol fs metric each point z is a ray in the linear ambient space cn 1 11 even
+if we assum normal the ambient posit vector z z 1 everi ray in cn 1 still
+contain innit mani normal vector dier onli by a phase factor z ei z
+let za zb zc denot arbitrarili chosen normal posit vector in cn 1 dene up
+to a phase factor for the three vertic a za b zb c zc then the length a
+of the side a bc can be obtain from the hermitian product of the two normal
+vector zb zc in the ambient linear space through co a expia zb zc the phase
+a is not a triangl invari as the vector repres the vertic can be still modi
+by arbitrari phase factor
+vertex invari are dene in term of the tangent space to the hermitian space
+which will be consid here as a real vector space with a complex structur at each
+point a vector tangent to a geodes g is dene onli up to a nonzero real factor the
+tangent space to a complex project line l at a point o is a real 2d subspac of
+the tangent space invari under the complex structur and can be thu identi to a
+complex 1d subspac thi subspac contain a oneparamet famili of real 1d subspac
+correspond to a oneparamet famili of fs geodes through o and contain in l
+for vertex invari sever real quantiti can be use in term of the tangent vector
+u v to two real onedimension fs geodes side at the vertex c these are 1 the
+5
+hermitian angl between the side seen as complex project line denot c 2 the
+ordinari or fs angl between u v comput as usual in the natur riemannian fs
+metric in cp n or ch n 27 g re 3 the fs angl between iu v denot
+here these are dene as
+c arcco
+u v
+u v
+re u v
+u v
+arcco
+im u v
+u v
+arcco
+21
+note 2 is the minimum valu of the riemannian fs angl between the tangent
+vector u and a total geodes rp 2 contain the geodes with tangent vector v
+in addit to yet not independ from these one can consid also 4 the holomorphi
+inclin of the real 2at tangent to the triangl at the vertex c also call k
+ahler
+angl inclin angl holomorphi angl slant angl etc between u and v 28 thi
+quantiti depend onli on the real 2at determin by u and v and not on u v separ
+thu the name holomorphi inclin or k
+ahler inclin seem more appropri in
+term of two vector u t which span the given 2plane and are furthermor fs orthogon
+the holomorphi inclin is given by
+arcco
+re iu t
+u t
+where t u v
+r
+re u t 0
+22
+the holomorphi inclin measur how thi real 2at separ from the uniqu real
+2at cu contain u and invari under the complex structur the fs angl between iu
+and t is a natur measur of the separ between these two 2plane sinc cu u iu
+and the given 2plane is span by u t both pair are fs orthogon final 5 anoth
+angular invari of the pair of tangent vector u v it pseudoangl or kasner angl
+28 is
+u v u v ei
+23
+thi angl ha not been explicitli use in previou work on trigonometri on cp n or
+ch n it is gener well dene for ani two vector in the tangent space at each point
+of cp n or ch n ie between two intersect fs geodes with tangent vector u v
+at the intersect point but becom indetermin when u v are fs orthogon the
+angular invari is obvious meaningless between complex line in these space
+to sum up there are sever dierent choic avail for two independ vertex
+invari see the review by scharnhorst 28 author studi trigonometri have made
+dierent choic and the follow relat will be use for compar the propos
+trigonometr equat there are of cours similar relat for the correspond angular
+invari at vertic a b
+2
+co c co c co c
+co c sin c co c sin c
+24
+sin c sin c sin c
+sin c sin c co c
+25
+2
+2
+2
+2
+co c co c sin c co c
+2
+2
+sin c sin c sin c
+26
+in choos symbol for these angular invari we have tri to conform to the
+major usag but nevertheless we have systemat chang to capit letter which
+allow a clear and systemat typograph render of the selfdual of the equat we
+will propos by mean of the chang upperlow case letter
+6
+21
+trigonometri in the hermitian space cp 2 and ch 2
+the oldest gener result is the coolidg 1921 sine theorem 5 the side a b c and
+angl a b c between the side seen as complex line are relat by
+sin b
+sin c
+sin a
+sin a
+sin b
+sin c
+27
+the paper by blaschk and terheggen 1939 7 8 hereaft bt contain the
+rst complet approach to trigonometri in the ellipt hermitian space identi with
+cp 2 unlik the phase a of zb zc which is meaningless as a quantiti in cp 2 the
+combin a b c is a triangl invari as can be clearli seen in the relat
+za zb zb zc zc za co a co b co c expi bt name thi quantiti but for
+the reason explain below we will chang thi notat to let us now consid the
+normal posit vector za zb zc of the pole za zb zc of the three side
+b
+c
+a b c dene by bt in the ambient space c3 through a vector product as za z sinza
+and cyclic where the vector product is dene exactli as in the real case without
+complex conjug in ani factor then the dual procedur co a expia zb zc
+and a b c appli to the pole of the three side produc four invari
+three angl a b c between side seen as complex line and anoth quantiti which
+wa call by bt these four quantiti are dual to a b c bt gave a complet set
+of equat for the hermitian ellipt space trigonometri one is the coolidg sine
+law 27 and there are two new equat which we will call blaschketerheggen cosin
+theorem for side and angl the need of four quantiti eg a b c to determin a
+triangl up to isometri in the ellipt hermitian space follow from these equat
+cos2 a
+cos2 a cos2 b cos2 c 2 co a co b co c co
+sin2 b sin2 c
+28
+cos2 a cos2 b cos2 c 2 co a co b co c co
+sin2 b sin2 c
+29
+cos2 a
+anoth approach wa put forward by shirokov in a paper publish posthum by
+rosenfeld shirokov took two angular invari at each vertex the riemannian fs angl
+c between the two side a b consid as real1d fs geodes and the holomorphi
+inclin c of the real 2at span at the vertex c by the real tangent vector to
+the two side a b the equat which we shall call shirokovrosenfeld sr form of
+sine theorem doubl sine theorem for side cosin theorem for side and doubl cosin
+theorem for side respect are
+sin a
+sin b
+sin c
+sin a sin a
+sin b sin b
+sin c sin c
+sin 2a
+sin 2b
+sin 2c
+sin a co a
+sin b co b
+sin c co c
+210
+211
+cos2 a co b co c sin b sin c co a 2 sin2 b sin2 c cos2 a sin2 a
+212
+co 2a co 2b co 2c sin 2b sin 2c co a 2 sin2 b sin2 c sin2 a sin2 a
+213
+as well as similar cosin and doubl cosin equat for the side b c among all these
+equat onli five are function independ for instanc 212 and 213 are equival note sr sine theorem 210 is equival to the coolidg sine law as consequ
+of 25
+7
+in 1989 wuyi hsiang 10 gave a new deriv valid simultan for the trigonometri of the twopoint homogen rankon space of real complex quaternion and
+cayley octonion type both ellipt and hyperbol at each vertex say c hsiang use
+the three invari c c c link by a relat 26 recal c 2 c in the
+elliptichiperbol case he obtain some equat which when translat to c c c
+are given below in 214 215 as well as a rather complic form of cosin theorem
+not reproduc here and that should not be consid as a basic equat
+in 1990 brehm 11 gave a fresh approach to trigonometri of both ellipt cp n and
+hyperbol ch n hermitian space in term of three angular invari c c c onli
+two of which are independ brehm deriv the follow equat
+sin 2a
+sin b
+sin c
+sin 2b
+sin 2c
+sin a
+sin a
+sin b
+sin c
+sin a
+sin b
+sin c
+co 2a co 2b co 2c sin 2b sin 2c co a 2 sin2 b sin2 c sin2 a
+sinh 2a
+sinh b
+sinh c
+sinh 2b
+sinh 2c
+sinh a
+sin a
+sin b
+sin c
+sin a
+sin b
+sin c
+cosh 2a cosh 2b cosh 2c sinh 2b sinh 2c co a 2 sinh2 b sinh2 c sin2 a
+214
+215
+the rst two equat are coolidg sine law and the hsiang form of doubl sine law the
+third one turn out to be simpli the shirokovrosenfeld cosin doubl theorem for side
+express in term of brehm angular variabl the need of four quantiti to determin
+a triangl up to isometri in cp n or ch n wa stress by brehm who introduc the shape
+invari of the triangl dene in the ellipt case as re za zb zb zc zc za
+co a co b co c co and as cosh a cosh b cosh c co in the hyperbol case brehm
+show a triangl is complet determin up to isometri by a b c recal in the ellipt
+case brehm assum a b c 2 and gave inequ that must be fulll in order
+the triangl to exist as well as a care discuss on congruenc theorem
+in 1994 hangan and masala 29 gave an interpret of in the complex project
+space cp 2 as equal to twice the symplect area enclos by the triangl symplect area
+come from the k
+ahler structur of cp 2 and is well dene by the triangl skelethon
+itself due to the close natur of the k
+ahler form which make the symplect area of ani
+surfac with given boundari to depend onli on the boundari
+the exist of two distinguish non gener type of triangl is clear in cp 2
+when a 0 then b c 0 follow and the trigonometri equat reduc to those
+of a spheric triangl in a sphere of curvatur k 4 thi is seen in 211 and 213 and
+correspond to a triangl complet contain in a complex line cp 1 when a 2
+then b c 2 the equat reduc local to those of a spheric triangl in
+curvatur k 1 thi can be seen in 210 and 212 and correspond to a triangl
+complet contain in a real project subplan rp 2 whose trigonometri come from
+the spheric one after antipod ident thi case correspond to real valu for
+expi and expi as impli by the blaschketerhegen equat 28 and 29
+in these two special case contain in a total geodes submanifold whose section
+curvatur attain the extrem valu 1 and 4 in all other situat the triangl is not
+contain in a total geodes submanifold the section curvatur of either cp 2 or ch 2
+along ani real 2direct depend onli on it holomorphi inclin and is
+k 4 cos2 sin2
+8
+216
+3
+31
+the famili of nine complex hermitian cayleyklein 2d
+geometri and their space
+the nine complex hermitian cayleyklein 2d geometri
+let us consid a complex hermitian form z w z w n
+ij zi ij wj in an ambient
+complex linear space cn 1 z 0 z 1 z n where the symmetr real matrix is a
+diagon matrix with entri 1 1 1 2 1 2 n depend on n real number
+i linear isometri in cn 1 for such a hermitian product close the special unitari
+ck famili of group su1 2 n n 1 with lie algebra su1 2n n 1 the
+structur of algebra in thi famili ani dimens as well as the associ unitari
+u1 2 n n 1 and u1 2 n n 1 ck famili is describ in 4
+when particularis for n 2 a twoparametr famili su1 2 3 of group is obtain these are the eightdimension linear isometri group of a complex hermitian form
+z w z w 3ij zi ij wj in an ambient linear space c3 z 0 z 1 z 2 with symmetr real matrix diag1 1 1 2 in the natur ck basi p1 p2 q1 q2 j m b i
+the ck algebra su1 2 3 ha the follow fundament or vectori 3d complex matrix
+represent where i stand for the pure imaginari complex unit
+0 1 0
+0 0 1 2
+0 0
+0
+j 0 0 2
+p1 1
+0
+0 p2 0 0
+0
+0
+0
+0
+1 0
+0
+0 1
+0
+0 i1 0
+0 0 i1 2
+0 0 0
+q1 i 0 0 q2 0 0
+0 m 0 0 i2
+31
+0 0 0
+i 0
+0
+0 i 0
+2i
+0 0
+0 0 0
+3
+i
+b 0 i 0
+i 0
+3 0
+i
+0 0 i
+0 0 3
+when 1 2 are dierent from zero su1 2 3 is simpl thi algebra is isomorph to
+su3 when both 1 2 are posit or to su2 1 when at least one is neg
+the gener b i span a twodimension cartan subalgebra regardless of the valu
+of i further refer to the cartan subalgebra will mean to thi ducial subalgebra
+let us introduc four new cartan gener
+1
+1
+1
+1
+t1 i b t2 i b h1 3i b h2 3i b
+32
+2
+2
+2
+2
+whose repres matric in the vector fundament represent are
+i
+i
+0
+0
+3 0
+3 0
+t2 0 2i
+t1 0 3i 0
+0
+3
+2i
+0
+0
+0
+0 3i
+3
+33
+i 0 0
+i 0 0
+h1 0 i 0
+h2 0 0 0
+0 0 0
+0 0 i
+the lie commut of all these gener are given in 41 for 1 the ck algebra
+su1 2 3 can be endow with a z2 z2 group of commut involut automorph
+9
+gener by
+1 p1 p2 q1 q2 j m b i p1 p2 q1 q2 j m b i
+2 p1 p2 q1 q2 j m b i p1 p2 q1 q2 j m b i
+34
+the two remain involut are the composit 02 1 2 and the ident
+each involut determin a subalgebra of su1 2 3 denot h whose element are invari under the subgroup gener h will be denot h all with suitabl subindic
+by direct check one can assur that the three lie subalgebra h1 h2 and h02 are
+of unitari ck type u 2 u1 su 2 with 2 1 1 2 respect name
+the subalgebra h1 is span by i j m b which close an u2 2 with i commut
+with j m b the group h1 they gener is isomorph to u 1 su2 2
+the subalgebra h2 is span by t1 p1 q1 h1 which close an u1 2 with t1 commut with p1 q1 h1 the group h2 they gener is isomorph to u 1 su1 2
+the subalgebra h02 is span by t2 p2 q2 h2 close an u1 2 2 with t2 commut
+with p2 q2 h2 the group h02 they gener is isomorph to u 1 su1 2 2
+all these gener can be repres in a pictori way in a block triangular diagram
+p1 q1
+t1 h1
+p2 q2
+t2 h2
+35
+jm
+ib
+where each block involv the four gener of the u 2 subalgebra list abov the
+gener in the u1 subalgebra insid the center of each unitari subalgebra u 2 appear
+at the leftlow corner in each block the global block pattern reproduc the pattern
+p1 p2
+made by the three gener p1 p2 j of a real type ck algebra so1 2 3 thi
+j
+diagram will be extrem help for visual of most properti discuss below
+there is a singl quadrat lie algebra casimir in su1 2 3 a good way of write
+it with each group of term correspond to one of the three su 2like subalgebra is
+c 2 p12 q21 1 h12 p22 q22 1 2 h22 1 j 2 m 2 2 b 2
+36
+the element dene a 2d ck complex hermitian geometri are analog to the one
+in the real case 1 30 by a twodimension complex ck geometri we will understand the
+set of three symmetr homogen space of point and line of rst and secondkind
+the plane as the set of point correspond to the symmetr homogen space
+2
+cs
+su1 2 3h1 su1 2 3u 1 su2 2
+1 2
+h1 i j m b 37
+whose dimens over c is 2 the gener i and j m b leav a point o the origin
+invari and so gener a direct product u 1 su2 2 of rotat about o the
+involut 1 is the reection around o and p1 q1 resp p2 q2 move o and gener
+translat along the complex basic direct l1 resp l2
+the set of rstkind complex line is identi to the symmetr homogen space
+cs21 2 su1 2 3h2 su1 2 3u 1 su1 2
+10
+h2 t1 p1 q1 h1
+38
+with dimens 2 over c the gener t1 and p1 q1 h1 should be interpret in
+cs21 2 as the gener of rotat about the origin line l1 which is left invari
+by them the point o is move along two complex basic direct by j m and p2 q2
+the reexion in l1 is 2 complex line obtain by group motion from the basic ducial
+line l1 will be call rstkind line
+there is anoth set of complex line the complex2d symmetr homogen space
+su1 2 3h02 su1 2 3u 1 su1 2 2
+h02 t2 p2 q2 h2
+39
+in thi space t2 and p2 q2 h2 leav invari an origin line l2 while j m and p1 q1
+move it the reexion in l2 is 02 these line will be call secondkind they are
+actual dierent from rstkind one onli when 2 0 sinc when 2 0 p1 q1 and
+p2 q2 are conjug within su1 2 3
+consider of the space of rst and second kind line can be bypass sinc line
+can be seen not as point in the space cs21 2 or su1 2 3h02 but altern as
+2
+1d complex submanifold of cs
+and all properti of the two space of line can be
+1 2
+transcrib in term of thi space in which l1 and l2 should be consid as two hermitian
+2
+orthogon complex line intersect at o see gure 41 for 1 thi space cs
+1 2
+ha a complex hermitian metric with an associ real fubinistudi metric fs given
+by the real part of the hermitian product thi fs metric can also be deriv directli
+from the casimir 36 at the origin o the hermitian product is given by the matrix
+diag1 2 and the fs metric by diag1 1 2 2 basi order p1 q1 p2 q2 at other
+point they are uniqu determin by invari thi fs metric is denit posit
+when 2 0 degener for 2 0 and indenit of real type 2 2 for 2 0 when
+2 1 it is the ordinari fs metric ellipt or hyperbol with holomorph curvatur
+41 the line l1 resp l2 contain two fs orthogon geodes through o the orbit of
+o by the oneparamet subgroup gener by p1 and q1 resp p2 and q2
+thu 1 is one fourth of the constant holomorph curvatur and 2 determin the
+signatur of both the hermitian metric and the fs metric hereaft denot as fs for ani
+2
+space in the ckd famili the canon conexion of cs
+as homogen symmetr
+1 2
+space 27 is compat with the fs metric a suitabl rescal of gener p1 j12
+allow to reduc 1 resp 2 to 1 thu nine 2dcomplex hermitian ck geometri are
+obtain their group of motion and isotopi subgroup are display in tabl 1
+a fundament properti of the whole scheme of ck geometri is the exist of
+an automorph of each famili call ordinari dualiti d it is well dene for ani
+dimens and for the 2d case it is given by the follow famili automorph
+p1 q1 p2 q2 j m h2 t2 j m p2 q2 p1 q1 h2 t2
+1 2 2 1
+310
+dualiti d leav the gener commut rule 41 invari while it interchang the
+correspond constant 1 2 and the space of point with the space of rstkind
+2
+line cs
+cs21 2 preserv the space of secondkind line it relat in gener
+1 2
+two dierent geometri place in symmetr posit rel to the main diagon in
+tabl 1 just like in the real case dualiti also underli the introduct of the cartan
+gener 32 b i form a natur basi for the ducial cartan subalgebra b is the
+uniqu cartan gener in the su2 2 part and i in the u 1 part of the isotopi
+d
+11
+tabl 1 the nine twodimension complex hermitian ck geometri at each entri the
+group g and the three subgroup h1 h2 h02 are display
+measur
+of angl
+ellipt
+2 1
+parabol
+2 0
+hyperbol
+2 1
+measur of distanc
+parabol
+1 0
+hermitian euclidean
+iu 2
+h1 u 1 su 2
+h2 u 1 iu 1
+h02 u 1 iu 1
+hermitian galilean
+ellipt
+1 1
+hermitian ellipt
+su 3
+h1 u 1 su 2
+h2 u 1 su 2
+h02 u 1 su 2
+hermitian coeuclidean
+hermitian oscil nh
+iu 2
+h1 u 1 iu 1
+h2 u 1 su 2
+h02 u 1 iu 1
+hermitian cohyperbol
+hermitian antid sitter
+su 2 1
+h1 u 1 su 1 1
+h2 u 1 su 2
+h02 u 1 su 1 1
+iiu 1
+h1 u 1 iu 1
+h2 u 1 iu 1
+h02 u 1 iu 1
+hermitian minkowskian
+iu 1 1
+h1 u 1 su 1 1
+h2 u 1 iu 1
+h02 u 1 iu 1
+hyperbol
+1 1
+hermitian hyperbol
+su 2 1
+h1 u 1 su 2
+h2 u 1 su 1 1
+h02 u 1 su 1 1
+hermitian cominkowskian
+hermitian expand nh
+isu 1 1
+h1 u 1 iu 1
+h2 u 1 su 1 1
+h02 u 1 iu 1
+hermitian doubli hyperbol
+hermitian de sitter
+su 2 1
+h1 u 1 su 1 1
+h2 u 1 su 1 1
+h02 u 1 su 2
+2
+subalgebra of a point in cs
+h1 t1 appear as their dual and h2 t2 have the
+1 2
+simplest behaviour under dualiti in term of the blocktriangular arrang 35
+dualiti correspond to a block reection along the secondari diagon and an eventu
+sign chang for cartan gener dualiti can be depict by gure 1 relat to the
+su3 root diagram more detail on the geometr interpret of the cartan subalgebra
+gener b i t1 t2 h1 h2 will be given later
+br
+t2 r t1 r h2 r
+r
+0
+i
+r r
+t2
+h1
+figur 1 fiduci cartan subalgebra gener and their behaviour under dualiti
+32
+realiz of the space of point in the complex hermitian cayley
+klein space
+exponenti of the matrix represent 31 and 33 of su1 2 3 produc a represent of su1 2 3 as a linear transform group in an ambient linear space
+c3 z 0 z 1 z 2 the oneparametr subgroup gener by p1 p2 q1 q2 j and m
+12
+are
+c1 x 1 s1 x 0
+ep1 x s1 x
+c1 x
+0
+0
+1
+0
+c1 x i1 s1 x 0
+0
+c1 x
+eq1 x is1 x
+0
+0
+1
+ejx
+1
+0
+0
+0 c2 x 2 s2 x
+c2 x
+0 s2 x
+c1 2 x 0 1 2 s1 2 x
+ep2 x
+0
+1
+0
+c1 2 x
+s1 2 x 0
+c1 2 x 0 i1 2 s1 2 x
+0
+1
+0
+eq2 x
+is1 2 x 0
+c1 2 x
+em x
+1
+0
+0
+0
+c2 x
+is2 x
+0
+i2 s2 x
+c2 x
+where the cosin c x and sine s x function with label are dene by
+1
+0
+co
+x
+sin x
+c x
+s x
+x
+0
+1
+1 sinh x
+0
+cosh x
+311
+312
+these function coincid with the circular and hyperbol trigonometr one for 1 and
+1 the case 0 provid the so call parabol or galilean function c0 x 1
+s0 x x gener properti of these function are given in the appendix in 1
+the exponenti of the cartan subalgebra gener b i t1 t2 h1 h2 are
+2ix
+1
+0
+0
+0
+0
+e 3
+ix
+ebx 0 eix 0
+eix 0
+e3
+0
+ix
+ix
+0
+0
+e
+0
+0 e3
+ix
+ix
+0
+0
+0
+0
+e 3
+e 3
+ix
+2ix
+313
+et1 x 0
+e 3
+e 3
+0 et2 x 0
+0
+ix
+2ix
+3
+3
+0
+0
+e
+0
+0
+e
+ix
+ix
+e
+0 0
+e
+0 0
+eh1 x 0
+eix 0
+eh2 x 0
+1 0
+0
+0 1
+0
+0 eix
+ani element u su1 2 3 satisfi u u det u 1 where u u t can be
+written as a product of matric 311 and two commut cartan transform in
+313 the action of su1 2 3 on c3 is linear but not transit sinc it conserv the
+hermitian form z 0 2 1 z 1 2 1 2 z 2 2 the isotopi subgroup of o 1 0 0 is the three
+paramet subgroup su2 2 gener by j m b while the u 1 subgroup gener
+2
+by i multipli o by a phase factor henc the homogen symmetr space cs
+1 2
+su1 2 3u 1 su2 2 can be identi to the orbit of the ray o of the vector o
+under the action of su1 2 3 thi orbit is the domain of cp 2 determin by z 0 2
+1 z 1 2 1 2 z 2 2 0 and when 1 0 2 0 it is the full complex project space cp 2
+the coordin z 0 z 1 z 2 can be call weierstrass coordin they are link by z 0 2
+1 z 1 2 1 2 z 2 2 1 and still are dene up to a common unimodular complex factor
+which can be use to make z 0 real and non neg these are the natur coordin
+in the vector model of the hermitian ck space sinc the motion group act linearli on
+them also in analog with the real case z 1 z 0 z 2 z 0 are call beltrami coordin
+the group act on these coordin by complex fraction linear transform
+13
+the nongener situat where 1 2 vanish correspond to an inon
+uwign contract 31 the limit 1 0 is a local contract around a point it carri the
+rst and third column of tabl 1 to the at middl one the limit 2 0 is an axial
+contract around a line carri geometri of rst and third row to the middl one
+4
+the complet famili of complex hermitian cayleyklein
+dickson 2d geometri and their space
+the previou section ha been written so it can be reread with minim mutati mutandi
+chang to suit the descript of the full famili of complex type space the new fact is
+the explicit cayleydickson cd label in the label cd doubl r r x xiy
+where i2 there are three dierent case 1 can be rescal to 1 and give
+the divis algebra of ordinari complex number 1 r c 0 give the dual or studi
+number 0 r c0 and 0 which can be rescal to 1 the split complex number
+1 r c1 also call doubl number hyperbol complex number lorentz number
+or perplex number these are three instanc of a oneparamet system r c
+the notat duplic stress either the complex natur of the numer system here
+obtain c or it charact as a cd extens of r r
+41
+the complex hermitian cayleykleindickson 2d geometri
+the group behind these geometri are the linear isometri group of a complex hermitian
+form z w z w ij zi ij wj in the n 1 dimension complex ambient linear
+1 rn 1 z 0 z 1 z n with the same as in the complex case for n 2
+space cn
+the ckd algebra denot su1 2 3 is eight dimension and it fundament or vectori
+3d complex represent is given by 3 3 matric 31 33 where now entri are in
+c and i stand for the pure imaginari complex unit in c thi form ha hermitian
+symmetri w z z w with complex conjug in c z a ib z a ib
+for real a b and the form z w im z w is still real and antisymmetr in z w and
+therefor is a symplect form in the real space r2n 1 underli to rn 1 rosenfeld
+13 use the word hermitian without qualifi but to prevent misunderstand we will
+keep the term hermitian for the truli complex case and we will put quot in complex
+and hermitian when refer to the gener complex number c with cayleydickson
+label a simpl scale chang may reduc simultan and 1 2 to either 1 0 1
+when 1 the ckd algebra su1 2 3 is isomorph to the ck lie algebra su1 2 3
+it is simpl when 1 2 are dierent from zero when 1 and for ani nonzero valu
+of 1 2 the ckd algebra su1 2 3 is also simpl and isomorph to the lie algebra
+sl3 r gener b i t1 t2 h1 h2 still belong to the ducial twodimension cartan
+subalgebra of su1 2 3
+for ani valu of the ckd algebra in the famili su1 2 3 can be endow with
+a z2 z2 group of commut involut automorph gener by 1 2 34
+denot everyth as in the former section the three lie subalgebra h1 h2 and
+h02 span by the gener with the same name as in the complex case the lie
+algebra element invari under the involut with the same indic turn out to be of
+ckd type u1 su 2 with 2 1 1 2 respect the group they gener
+are isomorph to u 1 su2 2 u 1 su1 2 and u 1 su1 2 2 in all
+14
+these express the lie algebra of ckd unitari type are u 2 u1 su 2
+and for the group of unimodular complex number u 1 we have two gener case
+u 1 u 1 so2 u 1 so1 1 and one limit case 0 u 1 iso1 r
+the lie algebra su1 2 3 is given by the follow lie conmut
+p1 p2 1 j
+p2 q1 1 m
+q1 q2 1 j
+p1 q1 21 h1 p2 q2 21 2 h2
+p1 q2 1 m
+p1 j p2
+p1 m q2
+p1 b q1
+p1 i q1
+p1 t1 0
+p1 t2 q1
+p1 h1 2q1
+p1 h2 q1
+p2 j 2 p1
+p2 m 2 q1
+p2 b q2
+p2 i q2
+p2 t1 q2
+p2 t2 0
+p2 h1 q2
+p2 h2 2q2
+q1 j q2
+q1 m p2
+q1 b p1
+q1 i p1
+q1 t1 0
+q1 t2 p1
+q1 h1 2p1
+q1 h2 p1
+q2 j 2 q1
+q2 m 2 p1
+q2 b p2
+q2 i p2
+q2 t1 p2
+q2 t2 0
+q2 h1 p2
+q2 h2 2p2
+j b 2m
+j t1 m
+j h1 m
+j i 0
+j t2 m
+j h2 m
+m b 2j
+m t1 j
+m h1 j
+m i 0
+m t2 j
+m h2 j
+j m 22 b
+41
+the element dene a 2d ck complex hermitian geometri can be now describ
+the plane as the set of point correspond to the symmetr homogen space
+2
+c s
+su1 2 3h1 su1 2 3 u 1 su2 2 h1 i j m b
+1 2
+42
+the set of rstkind complex line is identi to the symmetr homogen space
+c s21 2 su1 2 3h2 su1 2 3 u 1 su1 2 h2 t1 p1 q1 h1
+43
+both space have again dimens 2 over c and all comment made in the complex case
+can be easili rephras the denit of the space of second kind complex line can be
+also suitabl adapt
+p2 q2 t2 h2
+l2
+1 2 1 2
+j m b i
+2 2
+o
+q
+q1 t1 h1
+p1
+l1
+1 1
+figur 2 gener and their associ label in a complex hermitian2d ckd geometri line l1 and l2 are complex thu twodimension from a real point of view
+by a twodimension complex hermitian ckd geometri we will mean the set of three
+symmetr homogen space of point line of rstkind and line of secondkind the
+group su1 2 3 act transit on each of these space the fundament ordinari
+dualiti d 310 extend by simpli assum d to an automorph of the
+complet ckd famili and leav the gener commut rule 41 invari in gener
+15
+d relat two dierent complex hermitian ckd geometri with the same label but
+1 2 interchang figur 2 display the gener with their label as relat to the
+three ducial element o l1 l2
+the quadrat lie algebra casimir in su1 2 3 can be written group the term
+which correspond to the three su 2like subalgebra
+c p22 q22 1 2 h22 2 p12 q21 1 h12 1 j 2 m 2 2 b 2 44
+2
+from thi casimir we can easili deriv the invari fs metric in the space c s
+1 2
+which is given at the origin and in the basi p1 q1 p2 q2 by the matrix diag1 2 2
+come also as the real part of the hermitian product whose matrix at o is diag1 2
+we should mention that the ckd algebra in the famili su1 2 3 can actual be
+endow with a z2 z2 z2 group of commut involut automorph in addit to 1 2 given by 34 the extra involut 1 will not play ani explicit role in
+what follow but it is mention for complet the homogen space su 3so3
+su 2 1so2 1 and sl3 rso3 sl3 rso2 1 appear by mimick the former construct use thi involut
+1
+42
+p1 p2 q1 q2 j m b i p1 p2 q1 q2 j m b i
+45
+realiz of space of point in the complex hermitian cayley
+kleindickson space
+when is present the fundament 3d complex matrix represent 31 33 exponenti to a represent of su1 2 3 as a linear transform group in the
+ambient linear space c3 oneparametr subgroup correspond to the gener so
+far consid are given again by 311 313 where now the exponenti eix is relat to
+the sine and cosin with label by a eulerlik formula
+eix c x is x
+46
+again the action of su1 2 3 on c3 is linear but not transit sinc it conserv
+the hermitian form z 0 2 1 z 1 2 1 2 z 2 2 the isotopi subgroup of the point o
+whose posit vector is o 1 0 0 is easili seen to be the three paramet subgroup
+su2 2 gener by j m b while the u 1 subgroup gener by i multipli thi
+vector by a unimodular complex phase factor henc the homogen symmetr space
+2
+c s
+su1 2 3 u 1 su2 2 can be identi to the orbit of the ray o
+1 2
+under the action of the group su1 2 3
+the geometri behind the case 0 dier greatli from the one in the ordinari
+complex case for 0 2 0 the fs metric is alway indenit and of 2 2 real type
+no matter of the sign of 2 the four space of point with 0 1 0 2 0 are
+essenti the same though the choic of line and fs geodes of rst and secondkind
+are interchang thi is tantamount to what happen in the real case for the 11 antidesitt and desitt space these four space can be realiz as space of 0pair in
+rp 2 pair made from a point and an hyperplan here line in the real project plane
+rp 2 and the distanc between two 0pair x y is relat to the cross ratio of
+the four point x y z t where z t are the intersect of the line determin by x y
+with the hyperplan see rosenfeld book 13 theorem 239 and 421
+16
+the nongener situat where a coecient 1 2 vanish correspond to an
+inon
+uwign contract 31 the limit 1 0 is a localcontract around a point
+the limit 2 0 is a linecontract around a whole complex line final the limit
+0 correspond to a new kind of contract around a pure real submanifold the
+projectiv real 1 2 ck space contract are builtin in the express associ
+to the complex hermitian ck geometri and group simpli by make zero ani of the
+constant 1 2 determin the curvatur and signatur of the space
+5
+the compat condit for a triangular loop
+in thi section we discuss the approach to the trigonometri of the twenti seven complex
+hermitian type ckd space and we introduc the complex hermitian compat
+equat loop equat and the basic trigonometr ident some gener comment
+on thi approach are given in 1 and will not be repeat here special we refer to the
+choic of extern angl at the vertex a and the fact that the standard angular excess
+appear without the explicit presenc of the measur of twice a quadrant of angl which
+equal when 2 1
+a triangl in a complex hermitian ckd space can be seen either as a triangl point
+loop or dualli as a triangl line loop see gure 3 in the rst case a point c is consid
+to move to a dierent point b translat either along the geodes segment cb or along
+the two geodes segment ca and ab dualli the geodes c ab is consid to move
+to a dierent geodes b ca rotat either about the vertex a bc or about the
+vertic b ca and then c ab there exist though a veri import dierenc
+with the real 2d case the translat along a geodes are not uniqu dene by the
+geodes onli thu to make out sens of the idea of triangl loop a closer analysi of the
+geometri is requir ani geodes g through c determin a well dene complex line
+c g contain g thu for the two geodes a b intersect at the vertex c there are
+two uniqu determin complex line c a c b through c these two complex line
+will lie on a gener well dene linegeodes gc also call a linechain thi is
+dual to the determin of a gener well dene geodes ga through two dierent
+point c b thi subtleti is not neccesari in the real case as then the set of all line
+through a point c is onedimension while in the complex case the set of complex line
+through c is twodimension
+a
+r
+c
+b
+a
+cr
+rb
+a
+r
+q
+c
+b
+b
+c
+r
+r
+q
+a
+figur 3 a triangular point loop
+b triangular line loop
+to start with the studi of trigonometri we will take as side and angl the canon paramet of certain oneparamet subgroup element associ to some algebra
+gener to explain thi choic we rst select a real ag o g1 l1 g1 as follow o is the origin point o 1 0 0 g1 is the orbit of o under the onedimension
+subgroup gener by p1 thu the complex line l1 is the orbit of o under the subgroup
+gener by p1 q1 and the linegeodes g1 is the orbit of l1 under the subgroup gener by j thi ag is determin by singl out the gener p1 q1 j now move
+17
+the triangl to the canon posit where c coincid with o the side a is on g1 and
+the side b lie on a geodes in g1 thi canon posit guarante that the side b
+is obtain from a by mean of two commut rotat gener by j and i where
+the phase rotat gener i is the uniqu gener in the ducial cartan subalgebra
+commut with j as angular invari take the canon paramet c hermitian
+or pure angl between complex line and c angular phase between real1d geodes
+within a complex line of the two rotat whose product
+ecj ec i
+51
+carri the side a to coincid with b thi product will be call complet rotat about
+the vertex c
+sinc hermitian ckd space are rankon and therefor each pair of point have a singl invari it would seem enough to consid the fs distanc a between the point c b
+as the uniqu moduli of side thi is what wa done in the previou work on hermitian
+trigonometri 9 10 11 13 but the formal dualiti requir prompt the consider of translat partner to both j i and sinc dualiti map j i into p1 t1 thi
+suggest the use of the follow complet translat
+eap1 ea t1
+52
+as well as the dualiti requir there are geometr reason for the use of the extra
+translat ea t1 the pure translat eap1 carri the vertex c to b but thi alon
+doe not carri the uniqu complex linegeodes at the vertex c determin by c a c b
+to the complex linegeodes at b determin by c b c c an addit ea t1 is requir
+to bring them into each other
+if we now consid complet rotat at each vertex and complet translat along
+each side dualiti is manifestli restor at each vertex a complet rotat is requir
+to bring into coincid simultan the side seen both as complex line and as
+pointgeodes side and along each side a complet translat is requir to bring into
+coincid simultan both the vertic as point and the complex linegeodes
+determin at each vertex by the two side
+thi choic of two conmmut gener is veri natur from a quantum mechan wiewpoint and aord six vertex quantiti three hermitian or pure angl a b c
+and three angular phase a b c and six side quantiti three length a b c
+and three later phase a b c all these invari appear as canon paramet
+of pair of commut isometri respect gener by ja jb jc ia ib ic and
+pa pb pc ta tb tc at each side pa pb pc are pure translat gener that perform
+the canon parallel transport along their fs geodes axe and ta tb tc are the onli
+cartan gener in the isotopi subalgebra of the side a b c commut with pa pb pc
+respect
+cartan gener exponenti to somewhat hybrid transform the cartan
+subalgebra is contain in the isotopi subalgebra of o so it element gener rotat about o and conjug of them rotat about other point the phase rotat
+part ex t1 of the complet ducial translat exp1 ex t1 appar break the scheme
+symmetri between rotat and translat nevertheless sinc ani cartan transform as et1 leav pointwis invari the complex line l1 it should also be consid
+a translat along l1 thu cartan transform are both rotat about a point
+18
+s
+a a
+b b
+c c
+c c
+s
+s
+a a
+b
+b
+figur 4 a complex hermitian triangular loop as a singl curv
+and translat along a complex line thi could have been read from the diagram
+35 as the whole cartan subalgebra is contain in each of the three block the isotopi
+subalgebra of l1 l2 o respect
+from now on everyth follow the real pattern 1 and the commut between
+both compon of a complet transfom allow the extens of the basic real ident to complex one compat ident point loop and side loop equat and
+basic trigonometr ident
+the gener pa ta pb tb pc tc ja ia jb ib jc ic are not independ they
+are relat by sever compat condit
+pb
+tb
+pc
+tc
+pa
+ta
+ecjc ec ic
+pa
+ta
+pb
+tb
+eaja ea ia
+ebjb eb ib
+ec ic ecjc
+pc
+tc
+ea ia eaja
+eb ib ebjb
+jb
+ib
+jc
+ic
+ja
+ia
+ecpc ec tc
+ja
+ia
+eapa ea ta
+ebpb eb tb
+ec tc ecpc
+jb
+ib
+jc
+ic
+ea ta eapa
+eb tb ebpb
+53
+which can be consid as an implicit group theoret denit for the three side the
+three angl the three later phase and the three angular phase
+all the trigonometri of the complex ckd space is complet contain in these
+equat which have as a remark properti their explicit invari under the dualiti
+interchang a b c a b c and a b c a b c for triangl group theoret
+invari side angl later phase angular phase and p j t i for
+gener thi dualiti is a consequ of the fact that d 310 is an automorph of
+the famili of ckd algebra which interchang p1 j and t1 i these equat
+ressembl their real analogu the real rotat eaja or translat eapa are replac by
+the complet product eaja ea ia or eapa ea ta
+each equat in 53 is actual a pair relat both compon of each complet translat or rotat as in 1 we will refer to them as pb pa tb ta etc or
+pa pb ta tb when the equat is read invers by cyclic substitut in the three
+pair of equat pa pc ta tc pc pb tc tb and pb pa tb ta we nd the ident
+ebjb eb ib eaja ea ia ecjc ec ic
+pa
+ta
+ec ic ecjc ea ia eaja eb ib ebjb
+pa
+ta
+54
+pc tc are complet parallel process give
+eapa ea ta ecpc ec tc ebpb eb tb
+jc
+ic
+eb tb ebpb ec tc ecpc ea ta eapa
+19
+jc
+ic
+55
+equat 54 and 55 can be written altern as
+ebjb eb ib eaja ea ia ecjc ec ic must commut with pa and ta
+eapa ea ta ecpc ec tc ebpb eb tb must commut with jc and ic
+51
+56
+loop excess and loop equat
+had we not consid later phase the loop product eapa ecpc ebpb would have been
+b
+a natur object associ to the three pure translat along the triangl side c
+c
+a
+a b c thi transform is the ordinari holonomi associ to the triangl as
+each factor eapa is the ordinari parallel transport oper in the canon connect of
+2
+the hermitian space c s
+it move the base point c along the triangl and return it
+1 2
+back to it origin posit so it must be a rotat about c thi rotat is a product
+of an u 1 phase part and a su2 2 part but the explicit express for the su2 2
+part is rather involv
+the use of angular and later phase in thi selfdual approach aord some simpl and appar new result for certain similar loop oper the guidelin is
+the pattern establish in the real case replac everi traslat or rotat gener t j by it complet version p t j i we start with the equat which give
+pc
+pc
+ec tc ecpc and then
+by ecpc ec tc
+pc pb tc tb in the set 53 replac
+tc
+tc
+substitut pc pa tc ta from the compat equat to obtain
+eaja ea ia
+pb
+tb
+ea ia eaja ecpc ec tc ebjb eb ib
+pa
+ta
+eb ib ebjb ec tc ecpc
+57
+we introduc jb jc ib ic and trivial simplifi and rearrang now we use ja jc ia ic
+simplifi and nalli substitut pb pa tb ta thi give
+ebjc eb ic eapa ea ta ecpc ec tc ebpb eb tb eajc ea ic ecjc ec ic
+pa
+ta
+ec ic ecjc ea ic eajc eb tb ebpb ec tc ecpc ea ta eapa eb ic ebjc
+pa
+ta
+58
+the three complet translat along the triangl appear in the former relat in a singl
+piec eapa ea ta ecpc ec tc ebpb eb tb while the three complet rotat are all about the
+base point c now we can go a bit further 56 impli that eapa ea ta ecpc ec tc ebpb eb tb
+must commut with jc and with ic so it will commut with ani complet rotat
+ex ic exjc about c for ani valu of the complet angl x x then we can commut the whole complet translat piec eapa ea ta ecpc ec tc ebpb eb tb in 58 with
+the rotat about c and collect these altogeth as both compon of the complet
+rotat do commut we get
+eapa ea ta ecpc ec tc ebpb eb tb eabcjc ea b c ic must commut with pa and ta
+59
+we had alreadi deriv that eapa ea ta ecpc ec tc ebpb eb tb exjc ex ic must commut
+with jc and ic for ani complet angl x x see 56 sinc thi express also
+20
+commut with pa ta for the special valu x a b c x a b c
+we can conclud
+eapa ea ta ecpc ec tc ebpb eb tb eabcjc ea b c ic 1
+510
+becaus the ident is the onli element of su1 2 3 commut with two such pair of
+gener as pa ta and jc ic thi equat can be also written as
+eapa ea ta ecpc ec tc ebpb eb tb eabcjc ea b c ic
+511
+a similar procedur or direct use of 53 in 511 allow us to deriv two analog
+equat
+ebpb eb tb eapa ea ta ecpc ec tc eabcja ea b c ia
+ecpc ec tc ebpb eb tb eapa ea ta eabcjb ea b c ib
+512
+the quantiti dene as
+a b c
+a b c
+513
+will be call the hermitian angular excess and the angular phase excess of the triangl
+loop the complet angular excess ts into the view of the geodes line loop as a
+geodes start on a and success rotat by complet angl c c a a
+and b b about the three vertic of the triangl thu should be look as
+the orient total complet angl turn by the geodes line loop equat 511 or
+512 to be call the complex hermitian point loop equat express the product of
+the three complet translat along the orient side of the triangl loop as a complet
+rotat about the loop base point these equat are the closest complex hermitian
+analogu of the gaussbonnet triangl theorem see 1 but we have found no refer
+to such a simpl result in the literatur
+the explicit dualiti of the start equat 53 under the interchang a b c
+a b c and a b c a b c for side angl and phase and p j t i for
+gener immedi impli that the dual process lead to the dual partner of 511
+and 512
+eaja ea ia ecjc ec ic ebjb eb ib eabcpc ea b c tc
+ebjb eb ib eaja ea ia ecjc ec ic eabcpa ea b c ta
+ecjc ec ic ebjb eb ib eaja ea ia eabcpb ea b c tb
+514
+so that the two quantiti
+a b c
+a b c
+515
+play the role of later excess and later phase excess of the triangl loop later orient phase along 514 give the product of the three orient complet rotat about
+the three vertic of a triangl as a complet translat along the base line of the loop
+52
+the basic trigonometr ident
+each one of the equat 511 512 or 514 contain all the relationship between
+triangl side later phase angl and angular phase in ani ckd complex hermitian
+21
+space howev all twelv element appear in these equat not onli explicitli as
+canon paramet but also implicitli insid the complet translat and rotat
+gener thi prompt the search for anoth relat equival to the previou one
+but more suitabl to display the trigonometr equat thi new equat is inde the
+bridg between the former equat and the trigonometri of the space
+the idea is to express all the gener as suitabl conjug of one pair of a translat and a phase translat gener and one pair of a rotat gener and a phase
+rotat gener which we will take as primit independ gener a natur
+choic is to take the two pair pa ta and jc ic as basic independ gener next by
+use 53 we defin the remain triangl pair of gener pb tb ja ia pc tc jb ib
+in term of the previou one and side and angl later phase and angular phase as
+pb
+tb
+ja
+ia
+pc
+tc
+jb
+ib
+pa
+ta
+ecjc ec ic
+jc
+ic
+ebpb eb tb
+ec ic ecjc
+eaja ea ia
+eb tb ebpb
+pb
+tb
+ja
+ia
+ecpc ec tc
+516
+ea ia eaja
+ec tc ecpc
+which after full expans and simplic give
+pb
+tb
+ja
+ia
+pc
+tc
+jb
+ib
+ecjc ec ic
+pa
+ta
+ec ic ecjc
+ecjc ec ic ebpa eb ta
+jc
+ic
+eb ta ebpa ec ic ecjc
+ecjc ec ic ebpa eb ta eajc ea ic
+pa
+ta
+ea ic eajc eb ta ebpa ec ic ecjc
+jc
+ic
+ec ta ecpa ea ic eajc eb ta ebpa ec ic ecjc
+ecjc ec ic ebpa eb ta eajc ea ic ec ta ecpa
+517
+note the highli order pattern in these express by direct substitut in the
+equat 511 and after obviou cancel which due to the commut of each
+member in the pair of the complet transform fulli mimic the pattern found in the
+real case we nd
+eapa ea ta ecjc ec ic ebpa eb ta eajc ea ic ecpa ec ta ebjc eb ic 1
+518
+the same process start from ani equat in 512 or 514 lead again to the same
+equat thi justi to call 518 the basic trigonometr equat we sum up in
+theorem 1 side a b c later phase a b c angl a b c and angular phase
+2
+are link by a
+a b c of ani triangl loop in the complex ckd space c s
+1 2
+singl group ident call the basic complex hermitian trigonometr ident
+eap ea t ecj ec i ebp eb t eaj ea i ecp ec t ebj eb i 1
+519
+where p t are the gener of translat and phase translat along ani fix fiduci
+geodes g and j i are the gener of rotat and phase rotat about ani fix
+fiduci complex linegeodes g contain the complex line lg and about o
+22
+proof a group motion can be use to move the triangl to a canon posit describ
+befor 51 for the ag o g l lg then the theorem statement is simpli 518
+theorem 2 let us consid a triangl loop in the complex hermitian ckd space
+2
+c s
+and let pa pb pc ta tb tc be the gener of translat and phase trans1 2
+lation along the three triangl geodes side whose length and later phase are a b c
+and a b c let ja jb jc ia ib ic be the gener of rotat and phase rotat
+about the three geodes line vertic of the triangl whose angl and angular phase are
+a b c and a b c these quantiti are relat by two set of ident 511
+512 and 514 call the complex hermitian point loop and the complex hermitian
+line loop triangl equat each equat be equival to the ident in theorem 1
+sever point are worth highlight first each term in the basic ident is either
+a complet translat along a xed geodes g through the xed point o or a complet
+rotat along a xed linegeodes g about o the canon paramet of these
+translat or rotat are exactli the triangl side angl later and angular phase
+in the point loop or line loop equat the transform involv are the translat
+along the side or the rotat about the vertic
+second these equat are analogu to the one found in the real case with the
+consist replac of everi translat or rotat by it complet version made
+up of two commut factor the point loop equat follow from a point travel
+along the triangl accord to the obviou shorthand a b c see gure 3a the line loop
+equat follow from a line loop about the triangl like b a c it start in a base line
+say a and success rotat by an angl c then by an angl a and nalli by an
+angl b about the correspond vertic thu end up back on the start posit a
+see gure 3b the basic equat follow from the pattern a c b a c b which keep track
+of both side and vertic found when loop around the triangl
+third the three point loop equat and the three line loop equat are mutual
+dual set the singl basic equat is clearli selfdual and fourth these equat hold in
+the same explicit form for all the twenti seven 2d complex hermitian ckd geometri
+as neither an explicit cayleydickson label nor a cayleyklein one 1 2 ever appear
+in them
+6
+the basic equat of trigonometri for ani complex hermitian twodimension cayleykleindickson space
+to obtain the trigonometr equat for the complex hermitian ckd space we start
+with the basic trigonometr ident 519 for the triangl in it canon posit so
+pa ta and jc ic can be taken exactli as p1 t1 and j i for notat clariti we will
+omit even the subindex and will denot p1 t1 here simpli as p t we rst write 519
+in the equival form a c b b c a
+eaj ea i ecp ec t ebj eb i ebp eb t ecj ec i eap ea t
+61
+by consid thi ident in the fundament 3d vector represent of the motion
+group 311 and 313 we obtain an equal between 3 3 complex matric give rise
+23
+to nine complex ident
+c1 cei
+2a 2b c
+3
+c2 cei
+2a 2b c
+3
+s1 cs2 aei
+c1 ac1 bei
+c2 ac2 bei
+a 2b c
+3
+s1 cs2 bei
+s1 cc2 aei
+a 2b c
+3
+s2 cc1 aei
+s2 cc1 bei
+a 2b c
+3
+2a b c
+3
+2 s2 as2 bei
+s1 bs2 cei
+c1 bs1 aei
+a b 2c
+3
+a b 2c
+3
+c2 bs2 aei
+a b c
+3
+s1 ac1 bc2 cei
+s1 bc1 ac2 cei
+a b 2c
+3
+a b 2c
+3
+c2 ac2 bc1 cei
+2c
+i a b3
+1 s1 as1 be
+2 s2 as2 bc1 cei
+2a b c
+3
+c2 as2 bei
+a b 2c
+3
+a b c
+3
+a 2b c
+3
+c1 as1 bei
+2a b c
+3
+1 s1 as1 bc2 cei
+a b 2c
+3
+s1 as2 cei
+2a b c
+3
+s1 cc2 bei
+a b 2c
+3
+a b c
+3
+a b c
+3
+s2 ac2 bc1 cei
+s2 bc2 ac1 cei
+a b c
+3
+a b c
+3
+a b c
+3
+i a 3b c
+c1 ac1 bc2 ce
+62
+2
+which contain the trigonometri of the space c s
+su
+3
+u
+1
+su
+1 2
+2 2
+1 2
+each equat in thi set either is selfdual or appear in a mutual dual pair thi
+could have been expect due to the selfdual of the start equat we should
+recal again that all along thi section i denot the imaginari unit of the cayleydickson
+complex number c so that i2 the label sine and cosin with label are
+relat to the exponenti eix by 46
+the associ between side resp angl and the label 1 resp 2 found in
+2
+the equat of the real space s
+so1 2 3so2 2 extend to the hermi1 2
+tian complex analogu so length a b c are associ to 1 and angl a b c to 2
+the later a b c and angular phase a b c have as it label the element
+a a a a alway appear in the equat with a minu sign as compar with
+b b b b c c c c thi follow from the structur of the basic equat 61 in
+which the side a and vertex a are travers or rotat backward
+the set 62 is equival to two other similar set obtain by start with the basic
+ident split in the two equival form symbol denot as c b a c b a and
+b a c b a c in order to present all these equat in a concis way it prove adequ
+to introduc a compact notat follow the pattern explain in 1 the side and
+angl later phase and angular phase will be denot as xi xi i i i i 1 2 3
+accord to
+x1 a x2 b x3 c
+1 a 2 b 3 c
+x1 a x2 b x3 c
+1 a 2 b 3 c
+63
+the builtin minu sign in xi i xi i when i i 1 is natur when the triangl
+is consid as a point loop with the side a a travers backward or as a side loop
+with the angl a a rotat backward thi choic absorb the sign relat to a a and
+confer an uniform appear to the equat 62 in particular the angular and later
+excess appear in thi notat as xi xj xk and xi xj xk the basic
+24
+equat 519 now read
+exi p ei t exk j ek i exj p ej t exi j ei i exk p ek t exj j ej i 1
+64
+where i i j j k k are ani cyclic permut of 123 thi basic equat can be
+veri simpli recal replac in the shorthand ikjikj each letter by the associ complet translat or rotat from now on we will adopt thi convent which make all
+equat of trigonometri explicitli invari under cyclic permut of the orient
+complet side xi i and angl xi i capit indic will also help in distinguish
+between mutual dual pair xi xi and i i
+61
+the trigonometr equat in the cartan sector
+each equat in 62 is complex and phase both later and angular appear through
+unimodular complex factor ei ei while pure side and angl xi xi appear through
+their label sine or cosin which are alway real the equat in the third line split
+into an equat for the modulu and anoth for the argument thi last part is
+j 2k i j 2k i
+65
+write the same equat for the choic of indic i j k j k i and compar we get
+i i j j
+66
+these three equat onli two of which are independ are selfdual and hold for all
+the complex ckd space a consequ of these veri simpl linear relat is
+a b c a b c a b c
+67
+the common valu in thi formula turn out to be a quantiti rst introduc for the
+complex hermitian ellipt space by blaschketerheggen we will call thi
+i j k
+68
+in a similar dual way and start also from 66 we nd anoth linear relat between
+phase
+a b c a b c a b c
+69
+whose valu turn out to be the invari dual to and which for the complex hermitian
+ellipt case wa also introduc by blaschketerheggen
+i j k
+610
+anoth quantiti link to i i are the angular phase excess 513 and later
+phase excess 515 which appear in the hermitian analogu of gaussbonnet triangl
+theorem in term of the compact notat 63 they are
+i j k
+i j k
+611
+the invari resp are thu two kind of mix phase excess with domin
+of angular resp later phase the departur from the bt notat to our
+25
+conform to the typograph convent upperlow case in order to stress dualiti and
+to convey that each mix excess ha domin of either angular or later phase
+these invari and the two phase excess which appear in the point and line
+loop equat are relat by
+2
+2
+612
+thu there is a sector of hermitian trigonometri involv onli phase and complet
+decoupl from pure side xi and angl xi thi sector hold in exactli the same
+form in the twenti seven complex ckd space as no explicit label 1 2 appear
+sinc the triangl invari i i are relat to the cartan subalgebra we will call these
+equat the cartan sector of complex hermitian trigonometri thi cartan sector
+ha no analogu in the trigonometri of real space and their equat are pure linear
+wit the abelian charact of cartan subalgebra
+62
+the complet set of complex hermitian trigonometr equat
+now by exploit the cartan relat between phase 66 and introduc explicitli
+the invari it turn out possibl to simplifi the equat 62 by multipli
+each one of them by some suitabl chosen unimodular complex factor thi lead to the
+full set of trigonometr equat come from the basic trigonometr group ident as
+0ij 0ij
+1i
+1i
+2ij 2ij
+3ij
+3ij
+4ij 4ij
+i i j j
+i j k
+i j k
+c1 xi ei c1 xj c1 xk 1 s1 xj s1 xk c2 xi eii
+c2 xi ei c2 xj c2 xk 2 s2 xj s2 xk c1 xi eii
+s1 xj
+s1 xi
+s2 xi
+s2 xj
+s1 xi c2 xj eik c1 xj s1 xk eii s1 xj c1 xk c2 xi
+s2 xi c1 xj eik c2 xj s2 xk eii s2 xj c2 xk c1 xi
+1 s1 xi s1 xj c1 xi c1 xj c2 xk eik
+2 s2 xi s2 xj c2 xi c2 xj c1 xk eik
+613
+these equat will be refer to by a tag and are either selfdual for instanc
+2ij 2ij or appear in mutual dual pair as 1i 1i equat with tag 0 allow the
+introduct of the symmetr invari and and are in the cartan sector the
+remain tag are intent made to match the one use in 1 the equat with tag
+1 2 3 4 are in most respect the closest complex hermitian analogu to the equat
+found in the real case as far as their mutual relat depend or independ etc
+are concern therefor the trigonometri of real space provid a rough rst guid in
+the explor of the whole forest of complex hermitian trigonometr equat
+63
+the complex hermitian trigonometr bestiarium
+take the equat 613 as start point we now perform a fulli explicit studi of
+complex hermitian trigonometri includ some comment as the scheme enjoy selfdual those equat which are not selfdual will have a dual partner obtain by
+26
+exchang in capit of name and indic x x i i and in ck
+constant 1 2 in these case we will onli sketch the deriv of one member of the
+dual pair but we will write each pair togeth to emphas selfdual as the main trait
+of thi approach the label doe not chang under dualiti
+these equat will hold for all twenti seven complex ckd space with arbitrari
+1 2 in the degener case 1 0 at complex hermitian space andor
+0 or 2 0 degener complex hermitian metric some equat may collaps or
+even reduc to trivial ident these case will be discuss later but for the moment
+we will stay in the gener situat where 1 2 are assum to have ani valu all
+equat found in the literatur for the ellipt hyperbol complex hermitian space
+will follow from thi set after we special 1 1 1 1 1 2 1 in those case
+the equat we found will be alloc a suitabl name
+the cartan sector equat 0ij 0ij will be call the complex hermitian phase
+theorem they are selfdual and involv onli the triangl cartan invari they allow
+the introduct of two symmetr triangl invari and after 68 and 610
+0ij 0ij
+i i j j k k
+614
+there are two such independ equat thu four independ quantiti among the
+six later and angular phase thi number equal the number of essenti independ
+triangl invari thi is not accident see the comment at the end of sect 65
+the equat 2ij 2ji taken togeth will be call the hermitian sine theorem
+2ij 2ij
+s1 xj
+s1 xk
+s1 xi
+s2 xi
+s2 xj
+s2 xk
+615
+thi selfdual relat ha two independ equat link the six pure side and
+angl the hermitian phase theorem can be written in term of the phase factor eii eii
+and ha the same form as the sine theorem thi is so becaus phase theorem 614 and
+sine theorem 615 are the modulu and argument of the same complex equal
+each of the complex hermitian cosin theorem 1i and 1i is a complex equat by
+split the hermitian cosin theorem 1i into real and imaginari part we get
+1i
+c1 xi c c1 xj c1 xk 1 s1 xj s1 xk c2 xi c i
+c1 xi s 1 s1 xj s1 xk c2 xi s i
+616
+call real and imaginari hermitian cosin law for side their dual are the real and
+imaginari hermitian dual cosin law for angl
+1i
+c2 xi c c2 xj c2 xk 2 s2 xj s2 xk c1 xi c i
+c2 xi s 2 s2 xj s2 xk c1 xi s i
+617
+by equat the modulu of both side of the hermitian cosin theorem 1i we get
+c21 xi c1 xj c1 xk 1 s1 xj s1 xk c2 xi c i
+21 s21 xj s21 xk c22 xi s2 i
+2
+618
+for the complex ellipt case thi is the shirokovrosenfeld cosin theorem 212 9 yet
+express in term of the angular variabl xi and i instead of the one use in 9
+27
+in the gener case we will also call thi equat shirokovrosenfeld cosin theorem
+thi admit anoth form start from c1 2xi 1 2c21 xi substitut 618 and
+expand the squar sine of side
+c1 2xi c1 2xj c1 2xk 1 s1 2xj s1 2xk c2 xi c i
+2 21 2 s21 xj s21 xk s22 xi
+619
+to be call shirokovrosenfeld cosin doubl theorem becaus in the complex ellipt case
+it reduc to 213 the dual is the shirokovrosenfeld cosin theorem for angl
+c22 xi c2 xj c2 xk 2 s2 xj s2 xk c1 xi c i
+2
+22 s22 xj s22 xk c21 xi s2 i
+620
+and shirokovrosenfeld dual cosin doubl theorem for angl
+c2 2xi c2 2xj c2 2xk 2 s2 2xj s2 2xk c1 xi c j
+2 1 22 s22 xj s22 xk s21 xi
+621
+by build up the term 1 s1 2xj s1 2xk c2 xi c i in 616 and sustitut it
+into 619 expand and simplifi we obtain
+c21 xi c21 xj c21 xk 21 s21 xj s21 xk c22 xi 2c1 xi c1 xj c1 xk c
+622
+which will be call the blaschketerheggen cosin theorem for side 7 8 it dual is
+c21 xi c22 xj c22 xk 22 s22 xj s22 xk c21 xi 2c2 xi c2 xj c2 xk c
+623
+in the complex hermitian ellipt case 622 and 623 reduc directli to the blaschketerheggen cosin 28 and dual cosin theorem 29
+by multipli both side of 615 by 1s and use the second equat in 616
+we obtain
+s1 2xj
+s1 2xi
+624
+s i c2 xi
+s j c2 xj
+call shirokovrosenfeld doubl sine theorem becaus in the complex ellipt case reduc
+to the sr doubl sine law 211 after chang to the angular variabl use by sr it
+dual is
+s2 2xj
+s2 2xi
+625
+s i c1 xi
+s j c1 xj
+by multipli 624 and 625 we get the selfdual equat
+s xj s1 xj
+s1 xi s1 xi
+1
+s i s i
+s j s j
+626
+by take quotient between the doubl sine theorem 624 and the sine theorem 615
+we get
+c1 xi t2 xi
+c1 xj t2 xj
+627
+s i
+s j
+whose dual is
+c2 xi t1 xi
+c2 xj t1 xj
+s i
+s j
+28
+628
+anoth equat deriv from the equat with tag 3ij and 3ij in particular by
+split the equat 3ij into their real and imaginari part we obtain
+3ij
+s1 xi c2 xj c k c1 xj s1 xk c i s1 xj c1 xk c2 xi
+s1 xi c2 xj s k c1 xj s1 xk s i
+629
+whose dual are
+3ij
+s2 xi c1 xj c k c2 xj s2 xk c i s2 xj c2 xk c1 xi
+s2 xi c1 xj s k c2 xj s2 xk s i
+630
+the same split for the equat 4ij 4ij lead to the pair of selfdual equat
+4ij 4ij
+2 s2 xi s2 xj c2 xi c2 xj c1 xk c k
+1 s1 xi s1 xj c1 xi c1 xj c2 xk c k
+c2 xi c2 xj c1 xk s k c1 xi c1 xj c2 xk s k
+631
+start from the real and imaginari part of the complex hermitian cosin theorem
+616 expand the trigonometr function of i j k by consid it as a
+sum of two phase and elimin the term contain c i j we get
+c1 xj c1 xk
+c1 xj c1 xk
+c1 xi
+s i
+s j k
+s i
+632
+c2 xi
+c2 xj c2 xk
+c2 xj c2 xk
+s i
+s j k
+s i
+633
+it dual is
+where we have use the relat j k i i which follow from the
+equat in the cartan sector and the denit of and
+by divid the equat 627 by 632 we get
+t xk c1 xj
+t xk c1 xj
+t2 xi
+2
+2
+s i
+s i j
+s k
+634
+whose form for anoth suitabl choic of indic is
+t xj c1 xj
+t xj c1 xj
+t2 xk
+2
+2
+s k
+s k j
+s i
+635
+the dual of these equat are
+t1 xi
+t xk c2 xj
+t xk c2 xj
+1
+1
+s i
+s i j
+s k
+636
+t xj c2 xj
+t xj c2 xj
+t1 xk
+1
+1
+s k
+s k j
+s i
+637
+by elimin the angl xi xk between 634 and 635
+c21 xk
+s i s j
+s i k s j k
+s i s j
+s i s j
+29
+638
+whose dual is
+c22 xk
+s i s j
+s i k s j k
+s i s j
+s i s j
+639
+these equat give the cosin of each side angl in term of the angular later phase
+onli they somehow ressembl real trigonometri euler equat for the cosin of half the
+side angl in term of angl side in these hermitian eulerlik equat pure
+side angl are howev given in term of angular phase and later phase and
+by expans of sine of sum or dierenc and elementari manipul we nalli get
+the expres for the squar sine of the side
+s21 xk
+s k
+s
+1
+s i s j
+640
+whose dual equat is
+s22 xk
+s k
+s
+2
+s i s j
+641
+as we shall see shortli and in spite of the presenc of 1 2 in denomin these
+equat are still meaning when 1 0 or 2 0
+64
+symplect area and coarea
+for real ck space the angular excess share three properti goe to zero with 1 it
+is proport coecient 1 to triangl area and satis gaussbonnet type equat
+these three properti are split in the complex case in the hermitian point loop
+equat 511 and 512 the complet excess play a role partli analogu of
+the real angular excess yet it may not vanish with 1 there are two differ independ
+hermitian triangl quantiti which vanish with 1 one of them is the blaschketerheggen
+invari thi follow directli from the equat alreadi deriv the situat for
+the other vanish quantiti is not so obviou see howev the comment in the next
+section dualli while the real excess is proport to the coarea vanish with 2
+and satis dual gaussbonnet type equat the complet later excess appear
+in 514 and may not vanish with 2 while vanish with 2
+in the real case the three cosin equat 1i 1i turn into trivial ident when
+1 0 2 0 in the complex hermitian case the three complex independ equat 1i 1i which are independ when 1 0 2 0 collaps when 1 0 2 0
+into a singl real one in the cartan sector and as far as pure side and angl are concern becom trivial
+1i when 1 0
+ei c is 1 impli c 1 s 0 642
+1i when 2 0
+ei c is 1 impli c 1 s 0 643
+s
+the behaviour of the quotient 1 as 1 0 can be deriv both from the imaginari
+part of the hermitian cosin theorem 616 and from equat 640
+s i s j s21 xk
+s xj s1 xk c2 xi s i
+s
+1
+1
+c1 xi
+s k
+30
+644
+and sinc thi quotient remain finit as 1 0 behav like the real case angular
+excess a b c dualli behav as the real pure later excess a b c
+s i s j s22 xk
+s
+s xj s2 xk c1 xi s i
+2
+2
+c2 xi
+s k
+645
+the real excess are proport with coecient 1 and 2 to the triangl
+area and coarea respect in the ellipt hermitian space cp 2 hangan and masala 29
+found for the symplect triangl area s the relat s 2 the inessenti minu sign
+come form their denit of symplect form for ani member of the ckd famili of
+the complex hermitian space the definit for triangl symplect area and coarea
+s
+21
+s
+22
+646
+note the factor 2 are in full agreement with the standard denit of symplect area
+as the integr of the symplect form over ani surfac dress the triangl thi form is
+close so by the stoke theorem the integr depend onli on the boundari
+therefor all appear of or in trigonometr the equat could be rewritten
+in term of trigonometr function of the symplect area s with label 21 the symplect
+area goe like the product of length along the geodes gener by p1 and q1 whose
+label are 1 and 1 and symplect coarea s with label 22
+c21 2s c
+s21 2s
+s
+1
+c22 2s c s22 2s
+s
+647
+2
+when 1 0 vanish but s keep some nite valu a kind of residu of the gener
+non vanish mix phase excess dualli the same happen for and s as 2 0
+65
+depend and basic equat
+in the complex hermitian and hyperbol space a triangl is known to be determin
+by four independ quantiti sinc we have found eight gener independ relat
+between the twelv side angl and phase thi is still true in the gener ckd space
+2
+c s
+two such relat are the hermitian phase theorem 614 the other six
+1 2
+happen to be exactli twice as mani independ equat as in the real case due to
+their complex natur thi allow to split the depend disscus into the cartan
+sector and the equat with a real analogu
+the cartan sector includ six phase to which we will add symplect area and coarea
+for ani valu of the label 1 2 there are four independ equat between the eight
+quantiti i i s s
+i i j j k k
+i j k 1 2s
+i j k 2 2s
+648
+so in ani case there are alway four independ such cartan sector quantiti gener
+the triangl is almost determin by these quantiti see 640 641
+in order to discuss the depend of the remain equat let us consid
+g 1 c21 xi c21 xj c21 xk 2c1 xi c1 xj c1 xk c
+g 1 c22 xi c22 xj c22 xk 2c2 xi c2 xj c2 xk c
+31
+649
+the quantiti g is the determin of the gramm matrix whose element are the
+hermitian product of the vector correspond to the vertic in the linear ambient
+space and g it dual quantiti from 642 and 312 it follow that g vanish when
+1 0 dualli the same happen for g when 2 0 further the quotient g 21
+resp g 22 tend to a well dene nite limit when 1 0 resp 2 0 although
+still goe to zero when 2 0 resp when 1 0 to see thi simplifi 649 by use
+622 or 623 to obtain
+g 21 2 s21 xi s22 xj s21 xk
+g 1 22 s22 xi s21 xj s22 xk
+650
+thi suggest to introduc two new renorm quantiti in a way similar to 646
+g
+21
+g
+22
+651
+relat between and symplect area and coarea s s hold for ani 1 2 follow
+by express sine of side and angl in 651 by mean of 640 and 641
+2 2ss 2 2s
+s
+2
+2
+2
+2
+2
+1
+s1 xi s2 xj s1 xk
+2
+s i s j s k
+652
+2 2s
+s21 2ss
+2
+2
+2
+2
+2
+s1 xi s2 xj s1 xk
+1
+s i s j s k
+653
+by direct substitut use 652 and 653 we can also deriv the follow relat
+between and the pure side and angl
+2 2
+2
+1
+s1 xi s21 xj s21 xk
+1 2
+2
+2
+s2 xi s22 xj s22 xk
+654
+let us now discuss the depend issu in the gener case 1 0 2 0 where all the
+equat with tag 2 3 and 4 follow from 1 exactli alik in the real case thi mean that
+a triangl is complet determin by the three side a b c and or by the three angl
+a b c and the proof are also a verbatim translat of the real one with a singl
+hermitian caveat sometim the complex conjug of an equat 1i or 1i should be
+use for instanc let us deriv the hermitian sine theorem from the dual cosin theorem
+1i in the case 2 0 start from the ident s21 xi s22 xj s21 xi 1 c22 xj 2
+replac one factor c2 xj by it express taken from 1j and the other c2 xj by
+the complex conjug then expand
+1 c21 xi c21 xj c21 xk 2c1 xi c1 xj c1 xk c
+21 2 s21 xk
+655
+which by use 649 and 651 can be rewritten as
+s21 xi s22 xj
+s21 xi s22 xj s21 xk
+2
+656
+as 2 0 the rh of 656 is well dene and is clearli symmetr in the indic ijk thi
+wa also clear from 651 therefor s21 xi s22 xj s21 xk s21 xj s22 xk s21 xi
+lead to the sine theorem dualli when 1 0 the sine theorem follow also from the
+32
+three cosin theorem 1i by follow the real pattern the dual hermitian cosin theorem
+and equat with tag 3 and 4 can also be deriv
+therefor in the gener 1 0 2 0 case the three complex hermitian cosin
+theorem 1i seen as six idepend real equat are a set of basic equat by dualiti
+the same appli to the three dual cosin theorem 1i by ad to either choic the
+four independ cartan sector phase equat relat the six phase s s we get a
+complet set of ten equat relat fourteen quantiti a triangl in the hermitian
+space 1 0 2 0 is character by four independ quantiti for instanc either
+a b c or a b c which are a dual pair thi wa alreadi known for hermitian ellipt
+or hyperbol space but hold for the complet famili of complex ckd space as we
+shall see in the next section anoth choic are the six phase link by the two relat
+614
+651
+altern form of hermitian cosin equat when 1 0 or 2 0
+the collaps of the hermitian cosin equat 616 to 642 when 1 0 can be
+circumv by write 616 in an altern form the imaginari part can be rewritten
+in term of the symplect area s by use 647 for the real part the procedur
+mimick the real one 1 write all cosin of the side and of in term of vers sine
+v x 1 c x
+c1 xi 1 1 v1 xi
+c c21 2s 1 21 v21 2s
+657
+and then substitut in 1i expand cancel a common factor 1 and use the ident for
+the vers sine of a sum thu the pair of equat 616 can be rewritten as
+1i
+v1 xi v1 xj xk s1 xj s1 xk c2 xi c i 1 1 v21 2sc1 xi
+c1 xi s21 2s s1 xj s1 xk c2 xi s i
+658
+a form meaning for ani valu of 1 even if all other label are equal to zero when
+1 0 they reduc to
+x2i x2j x2k 2xj xk c2 xi c i
+2s xj xk c2 xi s i
+659
+the dual cosin equat 1i allow a similar reformul
+1i
+v2 xi v2 xj xk s2 xj s2 xk c1 xi c i 1 2 v22 2sc2 xi
+c2 xi s22 2s s2 xj s2 xk c1 xi s i
+660
+which is meaning for ani valu of 2
+the quantiti can be also given in term of side and symplect area angl
+and symplect coarea by express which are still meaning when 1 0 2 0
+2v1 xi v1 xj v1 xj v1 xk v1 xk v1 xi v21 xi v21 xj v21 xk
+2 c1 xi c1 xj c1 xk v21 2s 21 v1 xi v1 xj v1 xk
+2v2 xi v2 xj v2 xj v2 xk v2 xk v2 xi v22 xi v22 xj v22 xk
+2 c2 xi c2 xj c2 xk v22 2s 22 v2 xi v2 xj v2 xk
+661
+33
+thu when 1 0 but 2 0 the six real equat 1i are independ and all the
+remain equat follow from the cartan sector equat 648 and from the three
+pair 1i just as everyth follow from 1i in the case 1 0 dualli mutati mutandi
+from 1i when 2 0 but 1 0
+we nalli discuss the situat when 1 2 0 the later and angular phase
+are equal i i and thi provid three independ equat two further equat
+are the sine theorem which in thi case cannot be deriv from 1i or 1i thi make five
+independ equat
+xj
+xk
+xi
+662
+i i
+xi
+xj
+xk
+the remain detail depend on whether is zero or not if 0 the equat 1i 1i
+read
+re1i
+x2i x2j x2k 2xj xk c i
+re1i
+2 2x x c
+xi2 xj2 xk
+j k i
+im1i
+2s xj xk s i
+im1i
+2s xj xk s i
+663
+take into account 662 the group of three equat re1i and re1i are equival
+either of them can be taken as three further equat ani of these set impli the relat
+whose gener form is 627
+xj
+xk
+xi
+s i
+s j
+s k
+664
+which show that the three equat either im1i or im1i collaps to a singl equat
+taken altogeth these provid anoth five independ equat in 663 when 0
+ie in the most contract case the three equat re1i collaps to a singl equat
+better written as xi xj xk 0 and likewis re1i collaps to xi xj xk 0 these
+two equat are howev not independ in view of the sine theorem in thi case the
+most contract form of 627 cannot be deriv from previou equat and have to be
+ad as two further independ equat in either of the two form
+xj
+xk
+xi
+i
+j
+k
+or
+xi
+xj
+xk
+i
+j
+k
+665
+use these equat each group of three equat im1i or im1i collaps to a singl
+equat thi make again five independ addit equat altogeth in
+xi xj xk 0 xi xj xk 0
+xj
+xi
+xk
+2s xj xk i 2s xj xk i
+i
+j
+k
+666
+theorem 3 the full set of equat of complex hermitian trigonometri link the
+fourteen qantiti xi xi i i s s contain for ani valu of 1 2 exactli ten independ equat ani other equat in the set is a consequ of them when 1 or
+2 are differ from zero four such equat are the two phase equat 0ij 0ij
+and the two relat 1 2s 2 2s the remain six independ equat are
+when 1 0 and 2 0 ani either the equat 1i or 1i
+when 1 0 but 2 0 ani the equat 1i
+when 1 0 but 2 0 ani the equat 1i
+34
+when both 1 2 0 the independ equat are
+when 0 the ten independ equat in 662 and 663
+when 0 the ten independ equat in 662 and 666
+tabl 2 complex hermitian sine theorem and relat between symplect area s
+coarea s and mix phase excess for the twenti seven complex hermitian ch
+ckd space the tabl is arrang with column label by 1 1 0 1 and row
+by 2 1 0 1 1 2 are explicitli display at each entri all relat in thi
+tabl hold in the same form no matter of the valu of the group descript of the
+homogen space is given in the ckd type notat
+ch ellipt 1 1
+su 3 u 1 su 2
+ch euclidean 0 1
+iu 2 u 1su 2
+ch hyperbol 1 1
+su 2 1 u 1 su 2
+2s
+sin a
+sin b
+sin c
+sin a
+sin b
+sin c
+a a b b c c
+0
+a
+b
+c
+sin a
+sin b
+sin c
+a a b b c c
+2s
+sinh a
+sinh b
+sinh c
+sin a
+sin b
+sin c
+a a b b c c
+2s
+2s
+2s
+ch coeuclidean 1 0
+ch oscil nh
+iu 2 u 1 iu 1
+iiu 1 u 1 iu 1
+ch cominkowskian 1 0
+complex hermitian expand nh
+iu 1 1 u 1 iu 1
+2s
+sin a
+sin b
+sin c
+a
+b
+c
+a a b b c c
+0
+a
+b
+c
+a
+b
+c
+a a b b c c 0
+2s
+sinh a
+sinh b
+sinh c
+a
+b
+c
+a a b b c c
+0
+0
+0
+ch cohyperbol 1 1
+ch antid sitter
+ch galilean
+ch minkowskian
+0 0
+0 1
+ch doubli hyperbol 1 1
+complex hermitian de sitter
+su 2 1 u 1 su 1 1
+iu 1 1 u 1 su 1 1
+su 2 1 u 1 su 1 1
+2s
+sin b
+sin c
+sin a
+sinh a
+sinh b
+sinh c
+a a b b c c
+0
+a
+b
+c
+sinh a
+sinh b
+sinh c
+a a b b c c
+2s
+sinh a
+sinh b
+sinh c
+sinh a
+sinh b
+sinh c
+a a b b c c
+2s
+2s
+2s
+tabl 2 and 345 display the basic equat for the twenti seven ckd space written
+in convent notat as neither the cartan sector equat nor the sine theorem
+involv the cd label these equat are display in a singl tabl 2 accord to
+the valu of the ck constant 1 2 the remain basic equat ie hermitian
+cosin and dual cosin theorem which involv the cd label are given in an appendix
+threefold display tabl 345 one tabl for each valu of 1 0 1
+66
+symmetr invari and exist condit
+sever hermitian trigonometr equat are or can be rewritten as a relat belong
+to one of two type the rst type ha a structur similar to the sine theorem a oneel express involv onli one index vertex opposit side ha the same valu
+35
+for the two remain one
+i i
+s1 xi
+s2 xi
+s1 2xi
+s i c2 xi
+s2 2xi
+s i c1 xi
+667
+under dualiti 1 and other such oneel type equat have valu
+which can be express in term of the three triangl invari
+s1 xi s2 xi
+1
+s i s i
+4
+c1 xi t2 xi
+1
+s i
+2
+c2 xi t1 xi
+1
+s i
+2
+668
+the second type ha a structur like formula allow the introduct of a
+cyclic express invari under ani cyclic permut of the three indic it involv
+i j k 1 2s
+s2 xi s2 xj s1 xk
+i j k 2 2s
+s1 xi s1 xj s2 xk
+1
+2
+669
+there is no essenti dierenc between the oneel and cyclic type of equat and it turn out to be possibl to express the oneel invari in an explicitli
+cyclic form
+2
+s xi s1 xj s1 xk
+s1 xi
+1
+s2 xi
+2
+1
+1
+1
+s xi s2 xj s2 xk
+s2 xi
+2
+s1 xi
+1
+2
+s1 xi s1 xj s1 xk
+1
+2
+s1 2xi
+2
+2
+2
+s i c2 xi
+s21 2s
+1 s2 2s
+1
+1
+s2 2xi
+s2 xi s2 xj s2 xk
+1
+2
+2
+2
+s i c1 xi
+s22 2s
+2 s2 2s
+670
+2
+the two quantiti 2 and 1 must be real in order the triangl to exist
+therefor ani triangl must satisfi the inequ
+2 0
+1 0
+671
+which appli to ani member of the ckd famili of complex hermitian space notwithstand ani restrict for the side and angl brehm inequ under which a
+triangl with prescrib valu for side and shape invari exist in the ellipt and hyperbol complex hermitian space are simpli the transcript of the condit 2 0
+to the complex ck space with 1 1 0 2 1 thu 0 or equival
+g 21 0 by use 649 thi give
+g 1 c21 xi c21 xj c21 xk 2c1 xi c1 xj c1 xk co 0
+672
+which cover simultan the inequ given by brehm for the ellipt 1 0 and
+hyperbol 1 0 hermitian space remark brehm call our inequ fourth
+element
+it is also worth highlight the translat of the inequ 671 by use 638
+thi bring them in term of angular and later phase and symplect area and coarea
+s22 2s
+s i s j s k
+0
+36
+s21 2s
+s i s j s k
+0
+673
+the same translat can be done in the express 670 therebi express the
+valu in term of later and angular phase symplect area and coarea
+s1 xi
+s2 xi
+s i s j s k s21 2s
+s i s j s k s22 2s
+s1 2xi
+s i c2 xi
+4s i s j s k s21 2s
+s2 2xi
+s i c1 xi
+4s i s j s k s22 2s
+s2 i s2 j s2 k
+s2 i s2 j s2 k
+2
+2
+s22 2s
+s i s j s k
+s21 2s
+s i s j s k
+674
+in whose form the exist inequ 673 are evid
+the inequ 671 are analog to the exist condit e1 0 e2 0 for the
+halfexcess e 2 e 2 appear in the trigonometri of real space a way to
+deriv such real inequ altern to the one use in 1 is to introduc in the real
+case the determin g g of the gramm matric built up from the real symmetr
+scalar product of vector correspond to vertic or to pole of side these are given
+by 649 with 0 0 and also vanish when 1 2 0 if we introduc again
+by 651 in absenc of the factor c c the ident a30 in the appendix of 1
+allow a factor of translat the condit 2 0 1 0 into inequ
+for angular and later excess e1 0 e2 0 thi last step cannot be done in the
+hermitian case and the inequ stay in the form 671
+67
+the three special case collinear triangl concurr triangl and
+pure real triangl
+brows through the equat we have given we nd sever pair of equat which can
+be state in two similar variant form one involv side angl and the other involv
+twice the side angl exampl of such pair are 618 619 or 615 624 and their
+dual thi fact insinu the exist of two special nongener type of triangl for
+which the appropri gener equat reduc to a known simpler form
+671
+complex collinear triangl
+the rst special case correspond to a triangl determin by three complex collinear
+vertic henc collaps from the complex2d ck hermitian space su1 2 3 u 1
+su2 2 to a complex1d subspac which can be identi with a space su1 2 u 1
+depend on whether 1 0 0 0 thi space is the ellipt euclidean or hyperbol
+hermitian complex line side are all dierent from zero but angl xi xj xk must be
+zero or straight and thu satisfi s2 xi s2 xj s2 xk 0 henc 0
+for these valu the equat 1j reduc to ei 1 thu 0 and from 0ii we get
+0
+i i
+675
+the sr doubl cosin for side 619 and doubl sine for side 624 becom in thi case
+c1 2xj c1 2xi c1 2xk 1 s1 2xi s1 2xk c j
+37
+676
+s1 2xj
+s j
+677
+so all hermitian trigonometr equat reduc in thi case to the trigonometri of a
+triangl with side 2xi 2xj 2xk and angl i j k in a auxiliar real ck space with
+label 1 for side and for angl or equival for a triangl with side xi xj xk
+and angl i j k in a real ck space with label 41 for side and for angl for
+which 676 677 are the real cosin and sine theorem the lie algebra isomorph
+su1 2 so1 3 lie behind thi
+by use 612 and recal 0 the auxiliar triangl angular excess i j k
+turn out to be equal to 2 and thu play the role of the angular halfexcess denot
+e in the previou paper on real type trigonometri 1 it is worth remark that the area
+2
+a of thi auxiliar triangl is relat to it angular excess as a 4
+2
+thu coincid
+1
+1
+with the origin triangl symplect area s the later phase i turn out to coincid
+with the three auxiliar angl denot ei in 1 in term of the symmetr invari the
+collinear case correspond to
+0
+672
+2
+0
+0
+0
+ss
+s0
+0
+678
+concurr triangl
+the second special case dual to the previou one correspond to a triangl determin by
+three dierent concurr geodes side then sine of side are equal to zero s1 xi
+s1 xj s1 xk 0 here 0 and the the sr dual doubl cosin equat 621
+and sr dual doubl sine equat 625 becom the cosin and sine theorem for a triangl
+with side xi xj xk and angl i j k in a real ck space with label 42 for side
+and for angl for the angular excess of thi auxiliar triangl we have i j k 2
+and thu play the role of the angular halfexcess e in 1 in term of the symmetr
+invari thi case correspond to
+0
+673
+2
+0
+0
+0
+s0
+ss
+0
+0
+679
+pure real triangl
+the third special case correspond to a triangl for which the later and angular phase
+factor eii and eii are real and side and angl are dierent from zero thi pure
+real triangl is contain in a pure real total geodes submanifold isometr to
+so1 2 3o1so2 2 and local isometr as o1 z2 to so1 2 3so2 2
+for 1 1 2 1 thi is the real project space rp 2 sine of both set of phase vanish whenev the other doe see 630 thi correspond to the selfdual natur of thi
+case angular and later phase excess and and symplect area and coarea have
+vanish sine each individu phase i or i can thu have onli two valu either 0 or
+twice a quadrant of label which have opposit cosin 1 in term of the symmetr
+invari thi case correspond to the valu
+0
+0
+0
+0
+38
+s0
+s0
+680
+thi reduct also provid an approach to the trigonometri of real project plane
+requir as triangl element further to side and angl a set of discret phase enter
+the equat onli through their cosin i c i 1 i c i 1 thu
+hermitian trigonometri of the complex space simultan aord if we restrict phase
+to these two possibl discret valu the trigonometri of the real project ck space
+famili to which rp 2 belong the distinct between the trigonometri of the sphere
+and the real project plane is well known eg in coxet 26
+7
+overview and conclud remark
+the most direct physic applic of hermitian trigonometri is to the trigonometri
+of the quantum space of state which is the ellipt member 1 0 2 0 of the
+famili of complex 0 ckd hermitian space geometr phase appear directli as
+trigonometr invari from thi point of view thi will be discuss in the companion
+paper 20
+there are also other possibl interest applic of an explicit knowledg of the
+trigonometri of thi famili of space the real spacetim model with zero or constant
+spacetim curvatur minkowskian and de sitter spacetim are supersed by a variabl
+curvatur pseudoriemannian spacetim thi is the essenc of the einstenian interpret of gravit the possibl of a kind of riemannian quantum space of state
+whose curvatur might be not constant cannot be preclud a priori a good understand of the geometri of the hermitian constant curvatur case might be help to explor
+and gure out what consequ might follow from thi idea and familiar with their
+trigonometri is a rst order tool in thi aim
+anoth physic problem where the result we have obtain could appli lie on the
+use of pseudohilbert space with an indenit hermitian scalar product guptableul
+type these indenit quantum space of state are those correspond to 2 0 and
+it hermitian trigonometri should provid the basic elementari relat in the geometri
+of these space just as the correspond real relat are the basic spacetim relat
+in the de sitter and anti de sitter spacetim
+the ident of the quantum space of state as a member of thi complet ckd
+famili of space make it also natur to inquir about whether or not the label 1 2
+may have ani sensibl physic mean within the kinemat 2 0 interpret
+of the real ck space 1 is the curvatur of spacetim and 2 1c2 is relat to the
+relativist constant a natur queri is are the limit 0 1 0 and n
+somehow relat to a classic limit 0 within some sensibl quantum interpret
+of the complex hermitian space thi is worth explor
+real hyperbol trigonometri deepli involv in manifold classic problem knot
+theori etc is mere a particular case of real ck trigonometri it is not unreason
+to assum that some instanc at least of the gener hermitian trigonometri may be
+at least as relev in the similar complexi problem 32 the intrigu indic
+for an essenti complex natur of spacetim at some deep level make also worthi the
+studi of complex space in a way as explicit and visual as possibl
+asid the physic interest of particular result anoth potenti in the method propos in 1 and develop in the present paper lie on the possibl of open an
+39
+avenu for studi the trigonometri of other symmetr homogen space most of
+whose trigonometri are still unknown veri few result are known in thi area a gener
+sine theorem is deriv in leuzing 33 for noncompact space and the trigonometri
+of the ranktwo space su 3 and sl3 csu 3 is discuss in 34 35 heavili reli
+on the use of the weyl theorem on invari theori and character of invari by
+mean of trace of product of matric
+the trigonometri of the rankon quaternion hyperhermitian space sp3sp1
+sp2 sp2 1sp1 sp2 sp2 1sp1 sp1 1 or sp6 rso2 1
+sp4 r which correspond to further cayleydickson extens with a new cd label 2 and also of the octonion type analogu of the cayley plane with anoth
+cd label 3 altogeth reduc in some sens to the complex twodimension case
+sinc ani triangl in these space lie on a complex chain thu in a sens the studi of
+trigonometri in rank one space is essenti complet with the space of real quadrat
+and complex hermitian type thi reduct is not natur howev from a pure quaternion or octonion viewpoint perhap quaternion and also the except octonion
+trigonometri should be understood better in ani case thi kind of approach in a r c h
+spirit ts into the vi arnold idea of mathemat triniti hope it may provid a
+way to the quest 32 for the quaternion analogu of berri phase
+a next natur object along thi line is the studi of trigonometri of higher rank
+grassmannian either real or complex thi is still larg unknown see howev 36
+should the method outlin in thi paper be abl to produc in a direct form the equat
+of trigonometri for grassmannian which are also veri relev space in mani physic
+aplic thi would make a further step toward a gener approach to trigonometri
+of ani symmetr homogen space thi goal will requir rst to group all symmetr
+homogen space into ckd famili and then to studi trigonometri for each famili work in progress on thi line 37 3 38 open the possibl of realiz all simpl
+lie algebra even sln r sln c so 2n su 2n and the except one as
+unitari algebra leav invari an hermitian rel to some antiinvolut form
+over a tensor product of two pseudodivis algebra thi realiz should allow a
+test on whether or not some extens of the idea outlin here aord the equat of
+trigonometri for ani homogen space in an explicit and simpl enough way
+acknowledg
+we want to acknowledg f j herranz for hi collabor dure the initi stage of
+thi work as well as for hi continu interest and suggest thi work wa partial
+support by dgicyt spain project pb980370
+appendix
+tabl caption
+tabl 3 0 the tabl is arrang after the valu of the pair 1 2 and the three
+label 1 2 are explicitli display at each entri the group descript gh of the
+homogen space is shown onli when g ha a standard name thi is not the case for
+1 2 0 0 the two space of point at the two corner in the last row 2 1 are
+40
+the same but the correspond geometri dier by the interchang of rst and secondkind line gener by either p1 or p2 notic the sign dierenc in equat involv
+a a and involv b b c c and the relev comment in the main text
+tabl 4 0 the tabl is arrang after the valu of the pair 1 2 and the three
+label 1 2 are explicitli display at each entri the group descript gh of the
+homogen space is not shown as when 0 the ckd group are not simpl and have
+not a standard name the ducial role of the trigonometri for the space 0 1
+0 2 0 in the center of thi tabl is clear all the trigonometri in tabl 3 4 and 5
+are deform of thi pure linear one
+tabl 5 0 the tabl is arrang after the valu 1 2 and the label 1 2 are
+explicitli display at each entri the group descript gh of the homogen space
+is shown onli when g ha a standard name the space at the four corner are equal
+but the trigonometr equat in these geometri are dierent as they correspond to
+triangl with geodes side of the four not conjug dierent possibl type
+41
+tabl 3 complex hermitian cosin theorem and their dual for the nine complex hermitian ckd space 1
+complex hermitian ellipt 1 1 1
+su 3u 1su 2
+complex hermitian euclidean 1 0 1
+iu 2u 1su 2
+complex hermitian hyperbol 1 1 1
+su 2 1u 1su 2
+co a co co b co c sin b sin c co a co a
+co b co co a co c sin a sin c co b co b
+co c co co a co b sin a sin b co c co c
+co a sin 2s sin b sin c co a sin a
+co b sin 2s sin c sin a co b sin b
+co c sin 2s sin a sin b co c sin c
+co a sin 2s sin b sin c co a sin a
+co b sin 2s sin c sin a co b sin b
+co c sin 2s sin a sin b co c sin c
+co a co co b co c sin b sin c co a co a
+co b co co a co c sin a sin c co b co b
+co c co co a co b sin a sin b co c co c
+a2 b2 c2 2bc co a co a
+b2 a2 c2 2ac co b co b
+c2 a2 b2 2ab co c co c
+2s bc co a sin a
+2s ca co b sin b
+2s ab co c sin c
+co a sin 2s sin b sin c sin a
+co b sin 2s sin c sin a sin b
+co c sin 2s sin a sin b sin c
+co a co co b co c sin b sin c co a
+co b co co a co c sin a sin c co b
+co c co co a co b sin a sin b co c
+cosh a co cosh b cosh c sinh b sinh c co a co a
+cosh b co cosh a cosh c sinh a sinh c co b co b
+cosh c co cosh a cosh b sinh a sinh b co c co c
+cosh a sin 2s sinh b sinh c co a sin a
+cosh b sin 2s sinh c sinh a co b sin b
+cosh c sin 2s sinh a sinh b co c sin c
+co a sin 2s sin b sin c cosh a sin a
+co b sin 2s sin c sin a cosh b sin b
+co c sin 2s sin a sin b cosh c sin c
+co a co co b co c sin b sin c cosh a co a
+co b co co a co c sin a sin c cosh b co b
+co c co co a co b sin a sin b cosh c co c
+complex hermitian coeuclidean 1 1 0
+complex hermitian oscil newtonhook
+iu 2u 1iu 1
+42
+co a co co b co c sin b sin c co a
+co b co co a co c sin a sin c co b
+co c co co a co b sin a sin b co c
+co a sin 2s sin b sin c sin a
+co b sin 2s sin c sin a sin b
+co c sin 2s sin a sin b sin c
+2s bc co a sin a
+2s ca co b sin b
+2s ab co c sin c
+a2 b 2 c 2 2bc co a co a
+b 2 a2 c 2 2ac co b co b
+c 2 a2 b 2 2ab co c co c
+complex hermitian cohyperbol 1 1 1
+complex hermitian antid sitter
+su 2 1u 1su 1 1
+co a co co b co c sin b sin c cosh a co a
+co b co co a co c sin a sin c cosh b co b
+co c co co a co b sin a sin b cosh c co c
+co a sin 2s sin b sin c cosh a sin a
+co b sin 2s sin c sin a cosh b sin b
+co c sin 2s sin a sin b cosh c sin c
+cosh a sin 2s sinh b sinh c co a sin a
+cosh b sin 2s sinh c sinh a co b sin b
+cosh c sin 2s sinh a sinh b co c sin c
+cosh a co cosh b cosh c sinh b sinh c co a co a
+cosh b co cosh a cosh c sinh a sinh c co b co b
+cosh c co cosh a cosh b sinh a sinh b co c co c
+complex hermitian galilean
+1 0 0
+a2 b2 c2 2bc co a
+b2 a2 c2 2ac co b
+c2 a2 b2 2ab co c
+2s bc sin a
+2s ca sin b
+2s ab sin c
+2s bc sin a
+2s ca sin b
+2s ab sin c
+a2 b 2 c 2 2bc co a
+b 2 a2 c 2 2ac co b
+c 2 a2 b 2 2ab co c
+complex hermitian minkowskian
+1 0 1
+complex hermitian cominkowskian 1 1 0
+complex hermitian expand newtonhook
+iu 1 1u 1iu 1
+cosh a co cosh b cosh c sinh b sinh c co a
+cosh b co cosh a cosh c sinh a sinh c co b
+cosh c co cosh a cosh b sinh a sinh bcosc
+cosh a sin 2s sinh b sinh c sin a
+cosh b sin 2s sinh c sinh a sin b
+cosh c sin 2s sinh a sinh b sin c
+2s bc cosh a sin a
+2s ca cosh b sin b
+2s ab cosh c sin c
+a2 b 2 c 2 2bc cosh a co a
+b 2 a2 c 2 2ac cosh b co b
+c 2 a2 b 2 2ab cosh c co c
+iu 1 1u 1su 1 1
+complex hermitian doubli hyperbol 1 1 1
+complex hermitian de sitter
+su 2 1u 1su 1 1
+a2 b2 c2 2bc cosh a co a
+b2 a2 c2 2ac cosh b co b
+c2 a2 b2 2ab cosh c co c
+2s bc cosh a sin a
+2s ca cosh b sin b
+2s ab cosh c sin c
+cosh a sin 2s sinh b sinh c sin a
+cosh b sin 2s sinh c sinh a sin b
+cosh c sin 2s sinh a sinh b sin c
+cosh a co cosh b cosh c sinh b sinh c co a
+cosh b co cosh a cosh c sinh a sinh c co b
+cosh c co cosh a cosh b sinh a sinh b co c
+cosh a co cosh b cosh c sinh b sinh c cosh a co a
+cosh b co cosh a cosh c sinh a sinh c cosh b co b
+cosh c co cosh a cosh b sinh a sinh b cosh c co c
+cosh a sin 2s sinh b sinh c cosh a sin a
+cosh b sin 2s sinh c sinh a cosh b sin b
+cosh c sin 2s sinh a sinh b cosh c sin c
+cosh a sin 2s sinh b sinh c cosh a sin a
+cosh b sin 2s sinh c sinh a cosh b sin b
+cosh c sin 2s sinh a sinh b cosh c sin c
+cosh a co cosh b cosh c sinh b sinh c cosh a co a
+cosh b co cosh a cosh c sinh a sinh c cosh b co b
+cosh c co cosh a cosh b sinh a sinh b cosh c co c
+tabl 4 complex hermitian cosin theorem and their dual for the nine parabol complex dual hermitian ckd space 0
+parabol complex hermitian ellipt
+0 1 1
+co a co b co c sin b sin c co a
+co b co a co c sin a sin c co b
+co c co a co b sin a sin b co c
+co a 2s sin b sin c co a a
+co b 2s sin c sin a co b b
+co c 2s sin a sin b co c c
+co a 2s sin b sin c co a a
+co b 2s sin c sin a co b b
+co c 2s sin a sin b co c c
+co a co b co c sin b sin c co a
+co b co a co c sin a sin c co b
+co c co a co b sin a sin b co c
+parabol complex hermitian coeuclidean 0 1 0
+parabol complex hermitian oscil newtonhook
+43
+abc
+bac
+cab
+co a 2s sin b sin c a
+co b 2s sin c sin a b
+co c 2s sin a sin b c
+2s bc co a a
+2s ca co b b
+2s ab co c c
+a2 b 2 c 2 2bc co a
+b 2 a2 c 2 2ac co b
+c 2 a2 b 2 2ab co c
+parabol complex hermitian cohyperbol 0 1 1
+parabol complex hermitian antid sitter
+co a co b co c sin b sin c cosh a
+co b co a co c sin a sin c cosh b
+co c co a co b sin a sin b cosh c
+co a 2s sin b sin c cosh a a
+co b 2s sin c sin a cosh b b
+co c 2s sin a sin b cosh c c
+cosh a 2s sinh b sinh c co a a
+cosh b 2s sinh c sinh a co b b
+cosh c 2s sinh a sinh b co c c
+cosh a cosh b cosh c sinh b sinh c co a
+cosh b cosh a cosh c sinh a sinh c co b
+cosh c cosh a cosh b sinh a sinh b co c
+parabol complex hermitian euclidean
+0 0 1
+a2 b2 c2 2bc co a
+b2 a2 c2 2ac co b
+c2 a2 b2 2ab co c
+2s bc co a a
+2s ca co b b
+2s ab co c c
+co a 2s sin b sin c a
+co b 2s sin c sin a b
+co c 2s sin a sin b c
+abc
+b ac
+c ab
+parabol complex hermitian galilean
+a2 b2 c2 2bc cosh a
+b2 a2 c2 2ac cosh b
+c2 a2 b2 2ab cosh c
+2s bc cosh a a
+2s ca cosh b b
+2s ab cosh c c
+cosh a 2s sinh b sinh c a
+cosh b 2s sinh c sinh a b
+cosh c 2s sinh a sinh b c
+abc
+b ac
+c ab
+0 1 1
+cosh a cosh b cosh c sinh b sinh c co a
+cosh b cosh a cosh c sinh a sinh c co b
+cosh c cosh a cosh b sinh a sinh b co c
+cosh a 2s sinh b sinh c co a a
+cosh b 2s sinh c sinh a co b b
+cosh c 2s sinh a sinh b co c c
+co a 2s sin b sin c cosh a a
+co b 2s sin c sin a cosh b b
+co c 2s sin a sin b cosh c c
+co a co b co c sin b sin c cosh a
+co b co a co c sin a sin c cosh b
+co c co a co b sin a sin b cosh c
+0 0 0
+a bc
+b ac
+cab
+2s bc a
+2s ca b
+2s ab c
+2s bc a
+2s ca b
+2s ab c
+abc
+b ac
+c ab
+parabol complex hermitian minkowskian
+parabol complex hermitian hyperbol
+parabol complex hermitian cominkowskian 0 1 0
+parabol complex hermitian expand newtonhook
+abc
+b ac
+c ab
+cosh a 2s sinh b sinh c a
+cosh b 2s sinh c sinh a b
+cosh c 2s sinh a sinh b c
+2s bc cosh a a
+2s ca cosh b b
+2s ab cosh c c
+a2 b 2 c 2 2bc cosh a
+b 2 a2 c 2 2ac cosh b
+c 2 a2 b 2 2ab cosh c
+0 0 1
+parabol complex hermitian doubli hyperbol 0 1 1
+parabol complex hermitian de sitter
+cosh a cosh b cosh c sinh b sinh c cosh a
+cosh b cosh a cosh c sinh a sinh c cosh b
+cosh c cosh a cosh b sinh a sinh b cosh c
+cosh a 2s sinh b sinh c cosh a a
+cosh b 2s sinh c sinh a cosh b b
+cosh c 2s sinh a sinh b cosh c c
+cosh a 2s sinh b sinh c cosh a a
+cosh b 2s sinh c sinh a cosh b b
+cosh c 2s sinh a sinh b cosh c c
+cosh a cosh b cosh c sinh b sinh c cosh a
+cosh b cosh a cosh c sinh a sinh c cosh b
+cosh c cosh a cosh b sinh a sinh b cosh c
+tabl 5 complex hermitian cosin theorem and their dual for the nine split complex hermitian ckd space 1
+split complex hermitian ellipt 1 1 1
+sl3 rso1 1sl2 r
+split complex hermitian euclidean 1 0 1
+igl2 rso1 1sl2 r
+split complex hermitian hyperbol 1 1 1
+sl3 rso1 1sl2 r
+co a cosh co b co c sin b sin c co a cosh a
+co b cosh co a co c sin a sin c co b cosh b
+co c cosh co a co b sin a sin b co c cosh c
+co a sinh 2s sin b sin c co a sinh a
+co b sinh 2s sin c sin a co b sinh b
+co c sinh 2s sin a sin b co c sinh c
+co a sinh 2s sin b sin c co a sinh a
+co b sinh 2s sin c sin a co b sinh b
+co c sinh 2s sin a sin b co c sinh c
+co a co co b co c sin b sin c co a cosh a
+co b co co a co c sin a sin c co b cosh b
+co c co co a co b sin a sin b co c cosh c
+a2 b2 c2 2bc co a cosh a
+b2 a2 c2 2ac co b cosh b
+c2 a2 b2 2ab co c cosh c
+2s bc co a sinh a
+2s ca co b sinh b
+2s ab co c sinh c
+co a sinh 2s sin b sin c sinh a
+co b sinh 2s sin c sin a sinh b
+co c sinh 2s sin a sin b sinh c
+co a co co b co c sin b sin c cosh a
+co b co co a co c sin a sin c cosh b
+co c co co a co b sin a sin b cosh c
+cosh a cosh cosh b cosh c sinh b sinh c co a cosh a
+cosh b cosh cosh a cosh c sinh a sinh c co b cosh b
+cosh c cosh cosh a cosh b sinh a sinh b co c co c
+cosh a sinh 2s sinh b sinh c co a sinh a
+cosh b sinh 2s sinh c sinh a co b sinh b
+cosh c sinh 2s sinh a sinh b co c sinh c
+co a sinh 2s sin b sin c cosh a sinh a
+co b sinh 2s sin c sin a cosh b sinh b
+co c sinh 2s sin a sin b cosh c sinh c
+co a co co b co c sin b sin c cosh a cosh a
+co b co co a co c sin a sin c cosh b cosh b
+co c co co a co b sin a sin b cosh c cosh c
+split complex hermitian coeuclidean 1 1 0
+split complex hermitian oscil nh
+igl2 rso1 1igl1 r
+44
+co a cosh co b co c sin b sin c cosh a
+co b cosh co a co c sin a sin c cosh b
+co c cosh co a co b sin a sin b cosh c
+co a sinh 2s sin b sin c sinh a
+co b sinh 2s sin c sin a sinh b
+co c sinh 2s sin a sin b sinh c
+2s bc co a sinh a
+2s ca co b sinh b
+2s ab co c sinh c
+a2 b 2 c 2 2bc co a cosh a
+b 2 a2 c 2 2ac co b cosh b
+c 2 a2 b 2 2ab co c cosh c
+split complex hermitian cohyperbol 1 1 1
+split complex hermitian antid sitter
+sl3 rso1 1sl2 r
+co a cosh co b co c sin b sin c cosh a cosh a
+co b cosh co a co c sin a sin c cosh b cosh b
+co c cosh co a co b sin a sin b cosh c cosh c
+co a sinh 2s sin b sin c cosh a sinh a
+co b sinh 2s sin c sin a cosh b sinh b
+co c sinh 2s sin a sin b cosh c sinh c
+cosh a sinh 2s sinh b sinh c co a sinh a
+cosh b sinh 2s sinh c sinh a co b sinh b
+cosh c sinh 2s sinh a sinh b co c sinh c
+cosh a co cosh b cosh c sinh b sinh c co a cosh a
+cosh b co cosh a cosh c sinh a sinh c co b cosh b
+cosh c co cosh a cosh b sinh a sinh b co c cosh c
+split complex hermitian galilean
+1 0 0
+a2 b2 c2 2bc cosh a
+b2 a2 c2 2ac cosh b
+c2 a2 b2 2ab cosh c
+2s bc sinh a
+2s ca sinh b
+2s ab sinh c
+2s bc sinh a
+2s ca sinh b
+2s ab sinh c
+a2 b 2 c 2 2bc cosh a
+b 2 a2 c 2 2ac cosh b
+c 2 a2 b 2 2ab cosh c
+split complex hermitian minkowskian
+split complex hermitian cominkowskian 1 1 0
+split complex hermitian expand nh
+igl2 rso1 1igl1 r
+cosh a cosh cosh b cosh c sinh b sinh c cosh a
+cosh b cosh cosh a cosh c sinh a sinh c cosh b
+cosh c cosh cosh a cosh b sinh a sinh bcosc
+cosh a sinh 2s sinh b sinh c sinh a
+cosh b sinh 2s sinh c sinh a sinh b
+cosh c sinh 2s sinh a sinh b sinh c
+2s bc cosh a sinh a
+2s ca cosh b sinh b
+2s ab cosh c sinh c
+a2 b 2 c 2 2bc cosh a cosh a
+b 2 a2 c 2 2ac cosh b cosh b
+c 2 a2 b 2 2ab cosh c cosh c
+1 0 1
+igl2 rso1 1sl2 r
+split complex hermitian doubli hyperbol 1 1 1
+split complex hermitian de sitter
+sl3 rso1 1sl2 r
+a2 b2 c2 2bc cosh a cosh a
+b2 a2 c2 2ac cosh b cosh b
+c2 a2 b2 2ab cosh c cosh c
+2s bc cosh a sinh a
+2s ca cosh b sinh b
+2s ab cosh c sinh c
+cosh a sinh 2s sinh b sinh c sinh a
+cosh b sinh 2s sinh c sinh a sinh b
+cosh c sinh 2s sinh a sinh b sinh c
+cosh a co cosh b cosh c sinh b sinh c cosh a
+cosh b co cosh a cosh c sinh a sinh c cosh b
+cosh c co cosh a cosh b sinh a sinh b cosh c
+cosh a cosh cosh b cosh c sinh b sinh c cosh a cosh a
+cosh b cosh cosh a cosh c sinh a sinh c cosh b cosh b
+cosh c cosh cosh a cosh b sinh a sinh b cosh c co c
+cosh a sinh 2s sinh b sinh c cosh a sinh a
+cosh b sinh 2s sinh c sinh a cosh b sinh b
+cosh c sinh 2s sinh a sinh b cosh c sinh c
+cosh a sinh 2s sinh b sinh c cosh a sinh a
+cosh b sinh 2s sinh c sinh a cosh b sinh b
+cosh c sinh 2s sinh a sinh b cosh c sinh c
+cosh a co cosh b cosh c sinh b sinh c cosh a cosh a
+cosh b co cosh a cosh c sinh a sinh c cosh b cosh b
+cosh c co cosh a cosh b sinh a sinh b cosh c cosh c
+refer
+1 herranz f j ortega r and santand m 2000 j phi a math gen 33 45254551
+2 yaglom i m 1979 a simpl noneuclidean geometri and it physic basi new york
+springer
+3 santand m 1999 symmetr homogen space in classic and quantum mechan a viewpoint for classic symmetri in quantum mechan and quantum
+optic ed a ballestero et al burgo univers of burgo 335352
+4 herranz f j perez bueno j c and santand m 1998 j phi a math gen 31
+53275347
+5 coolidg j l 1921 ann of math 22 1128
+6 wang h c 1952 ann math 55 172191
+7 blaschk w and terheggen h 1939 rend sem mat univ roma 43 153161
+8 terheggen h 1940 jareshbericht deutschen math verein 50 2435
+9 sirokov p 1957 mat sb n s 4183 361372 in russian 1959 math rew 20
+2755 ab
+rozenfeld 1957 mat sb n s 4183 373380 in russian 1959 math rew 20
+2756 ab
+10 hsiang wy 1989 ann global anal geom 7 2945
+11 brehm u 1990 geom dedicata 33 5976
+12 rosenfeld b a 1995 russian mathemat iz vuz 395 17 1995
+13 rosenfeld b a 1997 geometri of lie group dordrecht kluwer
+14 helgason s 1978 differenti geometri lie group and symmetr space new york
+academ press
+15 ortega r and santand m 1999 geometr phase and trigonometri of the quantum space of state symmetri in quantum mechan and quantum optic ed a
+ballestero et al burgo univers of burgo 223233
+16 ortega r and santand m 1999 an outlin to quantum trigonometri quantum
+theori and symmetri ed h d doebner et al world scientic 442446
+17 ecg sudarshan j anandan tr govindarajan physic letter a 164 1992
+133
+18 berceanu s 2001 coher state phase and symplect area of geodes triangl
+coher state quantiz and graviti proc of the xvii workshop on geometr method in physic bialowieza poland 1998 edit by m schlichenmai
+a strasburg s twarequ ali a odjziewicz warsaw univers press warsaw
+2001 isbn 8323500665 129137
+45
+19 boya l j perelomov a and santand m berri phase for homogen k
+ahler manifold with linear hamiltonian j math phi to appear
+20 ortega r and santand m geometr phase and the trigonometri of quantum
+space of state in prepar
+21 j anandan ann inst henri poincar 49 1988 271
+22 klingenberg w 1982 riemannian geometri studi in mathemat de gruyter
+berlin new york
+23 cartan e 1931 lecon de geometri project complex pari gauthier villar
+reprint by edit
+j gabay 1992
+24 studi e math annalen 60 1905
+25 fubini g 1904 atti del real istituto veneto di scienz tomo lxiii 501513
+26 coxet d h s 1998 noneuclidean geometri reimpr dover
+27 kobayashi s and nomizu k 1963 foundat of differenti geometri vol 1 new
+york wileyintersci
+28 scharnhorst k angl in complex vector space mathmg9904077 to appear in acta
+applicanda mathematica
+29 th hangan g masala 1994 geometria dedicata 49 129134 1994
+30 santand m and herranz f j 1997 int j mod phi a 12 99107
+31 inon
+u e and wigner e p 1953 proc natl acad sci usa 39 510
+32 arnold v i 2000 polymathemat is mathemat a singl scienc or a set of art
+in mathemat frontier and perspect v arnold m atiyah p lax b mazur
+ed imu am
+33 leuzing 1992 coment math helv 67 252292
+34 aslaksen h 1990 tran of the amer math soc 317 127142
+35 aslaksen h and huynh hl 1997 law of trigonometri in symmetr space geometri from the pacif rim ed a j berrick et al berlin walter de gruyter 2326
+aslaksen h and huynh hl law of trigonometri in su 3 and sl3 csu 3
+preprint nat univ singapor
+36 hangan t 1992 rend sem mat univ pol torino 50 367380
+37 santand m and herranz f j 1997 a cayleyklein scheme for all quasisimpl real
+lie algebra and freudenth magic squar physic applic and mathemat
+aspect of geometri group and algebra vol 1 ed hd doebner et al singapor
+world scientic 151156
+38 santand m divis algebra and the classic of simpl lie algebra and of
+symmetr homogen space in prepar
+46

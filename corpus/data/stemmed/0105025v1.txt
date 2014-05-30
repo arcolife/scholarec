@@ -1,0 +1,748 @@
+arxivmathph0105025v1 19 may 2001
+weak asymptot method
+v g danilov
+moscow russia pmmiemeduru
+abstract
+we present a new method for construct solut to nonlinear evolutionari equat describ the propag and interact of nonlinear
+wave
+in the present paper with the help of some simpl exampl i demonstr
+a new approach to the construct of asymptot solut to differenti equat i choos veri simpl exampl the hopf equat and it multidimension analog and on purpos omit detail in the proof of estim which
+are obviou here
+usual by say that a function is an asymptot approxim solut
+of a differenti equat we mean that thi function satisfi the equat with
+a small discrep the small of the discrep is understood as the
+small in some uniform metric under the assumpt that a small paramet
+tend to zero
+a function is call a weak asymptot solut if after the substitut
+of thi function into the equat there is a discrep that is small in the
+weak sens as a small paramet tend to zero in thi case the function are
+assum to depend on time as on a paramet
+for exampl under thi approach the c approxim of a gener
+function turn out to be it weak asymptot and we can choos gener
+function to be the initi condit and use their approxim for construct the solut in thi case we obtain a small paramet which is either the
+paramet of approxim or the small paramet in the origin equat in
+the latter case thi origin small paramet is taken to be the paramet of
+approxim
+in fact thi approach is close to the idea propos by j f colombeau and
+other author who construct differ algebra of gener function the
+method itself wa first introduc in our paper with v m shelkovich initi
+by the work of j f colombeau and m oberguggenberg with coautor and by
+discuss with j a marti v v zharinov and s pilipovich the differ
+with the tradit approach is that in our approach the mollifi is chosen not
+thi work wa support by the russian foundat for basic research under grant
+no 990101074
+1
+from the consider of the algebra construct but from the consider
+of the origin differenti equat
+in some case shock wave the solut is independ of the choic of
+the mollifi while in other case soliton kink the solut depend on thi
+choic
+if the origin equat contain a small paramet then we in fact deal
+with regular by small viscos or small dispers in thi case to
+calcul a weak asymptot we need to calcul the zero viscos or zero
+dispers limit henc we arriv at the problem of construct a definit
+of a weak solut which admit thi passag to the limit
+it turn out that the approach develop here can be use for describ
+both the propag of nonlinear wave and which is the most import
+their interact it is well known that the problem of interact of nonlinear
+travel wave for instanc of two kink or two soliton in the case of a
+singl spatial variabl can be formul as a problem of construct the exact
+solut of a nonlinear equat with two spatial variabl correspond to the
+coordin of the wave front if the initi problem can be integr by the
+method of the invers scatter problem or in ani other way then one can
+write out the solut of the abovement equat explicitli which allow
+one to describ the interact analyt in our approach to describ the
+interact one need to solv an ordinari differenti equat or a system
+of such equat with a small paramet solut of such equat can
+be construct by use a wellknown techniqu in what follow we consid
+the main technic tool and some exampl which allow us to demonstr the
+abil of our approach
+1
+some weak asymptot formula
+a let z sr1 where s is the schwartz space we consid the function
+1
+1
+x a and calcul it weak asymptot treat x a as a
+gener function for ani function x c0 we have
+1 xa
+x
+1
+k
+k0
+xa
+x dx
+za z dz
+k
+1k k x a
+k
+0
+where the last relat is formal and mean that the lefthand side can be
+repres as the asymptot seri given on the righthand side
+k
+zz k dz
+we defin by od and element of d such that
+f x od f x x o
+2
+where the last oestim which must hold for ani function x c0 is
+understood in the usual sens then for ani n we can write
+1 xa
+n
+k
+k0
+k
+1k k x a od n 1
+k
+b let 1 z 2 z sr1 let us consid the weak asymptot of the
+product 1 x a1 2 x a2 we have
+1
+x a2
+x a1
+2
+x
+a
+x a1
+x a2
+2
+x dx
+a
+dz o2
+a1 1 z2 z
+a
+a2 1 z
+2 z dz o2
+a2 a1
+1
+final we obtain the follow formula that is uniform and symmetr in a1 a2
+1
+x a2
+x a1
+2
+1
+a
+od 2 1
+x a1 x a2 b
+2
+where
+b
+a
+1 z2 z
+a
+dz
+1 z
+a
+2 z dz
+1
+i
+c now let 1 z 2 z c d
+dz sr limz i 0 limz i
+1 i 1 2
+let us calcul the weak asymptot of the deriv
+x a1
+x a2
+d
+1
+2
+dx
+x a2
+x a2
+1
+x a1
+x a1
+1
+2
+1
+2
+1
+just as previous we have
+x a2
+x a2
+1
+1
+x a1
+x a1
+2
+1
+2
+1
+a
+a
+x a1 b1
+x a2 b2
+od
+where
+b1
+a
+1 z2 z
+a
+dz
+b2
+a
+1 z
+we have
+b1 0
+b1 1
+3
+b1 z b2 z 1
+a
+2 z dz
+calcul the primit we obtain
+1
+x a1
+x a2
+2
+xa1 b1
+a
+a
+xa2 b2
+od 2
+d under the assumpt of item b and the condit that i z dz
+1 the function i x ai are approxim weak asymptot of the
+function x ai
+i x ai i x ai
+henc we can rewrit 1 as
+1 x a1 2 x a2
+1
+x a1 x a2 ba od 2
+2
+in a similar way under the assumpt of item c i x a1 i x ai
+are approxim of the heavisid function henc we can rewrit 2 as
+1 x a1 2 x a2 x a1 b1 a x a2 b2 a od
+2
+nonlinear structur
+we show how the abov formula can be use to describ interact of nonlinear
+structur
+a interact of shock wave for the hopf equat let us consid the
+cauchi problem
+lu ut u2 x 0
+u
+t0
+u0 u1 x a1 u2 x a2
+where ui are posit constant a2 a1 we approxim the initi condit
+accord to the formula from item 1 c and seek the weak asymptot of the
+solut in the form
+u x t u0 u1 1 x 1 t u2 2 x 2 t
+1 0 a1
+2 0 a2
+calcul the weak asymptot of the express u 2 accord to the formula from item 1 c we obtain
+u 2
+u20 u12 2u0 u1 x 1 u20 u22 2u0 u2 x 2 3
+2u1 u2 x 1 b1
+x 2 b2
+od
+where
+b1
+1 z2 z dz
+b2
+1 z 2 z dz
+4
+2 1
+and in contrast to item 1 c we have b1 0 b1 1 but as befor
+b1 b2 1
+we substitut the approxim of u x t into the equat and requir
+that the relat lu od must be satisfi thi is the definit of the
+weak asymptot solut in thi case moreov the function lu must be
+weakli piecewis continu with respect to t for each fix we obtain
+2
+lu
+uk
+k1
+dk
+2u0 uk u2k 2u1 u2 bk
+dt
+x k od
+henc in view of the definit of the weak solut we have
+dk
+2u0 uk 2u3k bk
+dt
+k 1 2
+4
+for 0 befor the interact we have b1 0 and b2
+1 up to on and eq 4 describ the propag of noninteract shock
+wave we write
+10 2u0 u1 t a1
+20 2u0 u1 u2 t a2
+then 0 t 20 10 is the distanc between the front of noninteract
+wave at time t 0 t 0 the front merg to construct a formula that is
+uniform in t and repres a weak asymptot solut we shall seek the phase
+k t of shock wave in the form
+k t k0 t 0 k1
+5
+where 0 t and it is assum that
+k1
+k1
+d
+0
+o 1
+calcul the limit valu of k1
+k1 obtain formula that describ the
+coordin of the front of shock wave
+t
+after the interact substitut
+k
+express 5 into eq 4 we obtain
+d0 d
+dk0
+k1 2u0 u1 2u3k bk
+dt
+dt d
+k 1 2
+we calcul the differ of these equat
+d
+f
+d
+f 2b2 1
+the boundari condit for thi equat ha the form 1 the
+equat f 0 ha a singl root 0 and b2 0 b1 0 12 which
+impli that after the interact 0 0 0 the wave front
+move with the same veloc
+d
+k
+2u0 u1 u2
+dt
+5
+k 1 2
+figur 1
+from 4 for the function k1 we obtain
+k1 1k1
+2u3k
+u1 u2
+b2 1 d
+0
+the weak limit u0 x t of the weak asymptot solut u x t satisfi the
+classic definit of the gener solut in the form of integr ident
+and the stabil condit
+b interact of weak discontinu gener and decay of shock
+wave
+we again consid the hopf equat and pose the follow initi condit
+u
+t0
+u00 u01 a1 x u01 a2 x
+where a1 a2 z zz u0i const 0 see fig 1
+we shall seek the weak asymptot solut in the form
+u x t
+u0 u1 1 t x1 x 1 t
+u2 2 t x2 x 2 t
+in thi case the equat for the function ui ui t and i i t are
+deriv by use a somewhat differ techniqu than that use for studi
+shock wave substitut the approxim of u x t into the equat and
+take into account the definit we obtain
+u1 1 x
+t
+u2 2 x
+2 u0 u1 1 x
+t
+u21 1 x2
+2 u0 u2 2 x
+x
+6
+x
+x
+u22 2 x2
+x
+2 u1 u2 1 x2 x1 x x b1
+2 u1 u2 1 x2 x2 x x b2 0
+2 1
+let us consid the domain 2 x 1 we obtain
+u1t 1 x u1 1t 2 u0 u1 1 x
+x
+u21 1 x2
+x
+2u1 u2 1 xb1 2u1 u2 2 xb2 0
+we set x 1 sinc we have
+ui
+x
+0 in our exampl we obtain
+u1 1t 2u0 u1 2u1 u2 b1 0
+substitut thi relat into the last equat we arriv at the follow equat for the function u1
+u1t 2u21 4u1 u2 b1 0
+in a similar way consid the domain x 2 we obtain the other
+two equat
+2t 2u0 2u1 b2
+u2t
+2u22
+4u1 u2 b2
+0
+0
+2 1
+let 0 then up to on we have b1 0 b2 1 and
+obtain the follow system of equat describ the evolut of the broken
+line until it turn over
+10 t 2u0 0
+10 t
+2
+2u10 0
+20 t 2u0 2u10 20 10 0
+6
+u20 t 2u220 4u10 u20 0
+solut of thi system have the form
+u10 t u20 t u01 1 2tu01
+10 a1 2u0 t
+20 a2 2u01 a1 a2 u0 t
+we write 0 20 t 10 t at time t t such that 0 t 0 the weak
+discontinu merg and a shock wave is gener
+to construct formula that are uniform in t and describ the confluenc of
+weak discontinu and the gener of a shock wave we seek the solut
+of eq 6 in the form
+k t k0 t 0 k1
+0
+where the function k1 satisfi the same condit as in item 2 a
+we shall seek the function u t in the form
+uk t 0 0u01 0 gk
+7
+here we assum that the function gk behav in the same way as the function
+k1 and take into account the relat
+u10 u01 11 2tu01 0 00 t
+follow from the equat 0t 2u10 0 0 after simpl calcul we see
+that the function g g1 g2 satisfi the equat g 21 b2 0 and
+the function is a solut of the boundari problem
+1 2b1
+1
+as befor the equat 1 2b1 ha a singl root 0 such that b1 0
+b2 0 12 and 0 as thi allow us to calcul the solut
+for 0 0 ie after the interact or as
+g
+we introduc the function g g obvious g
+1 and we choos
+1 2b1 d 0
+g
+on the other hand we can express the function ui via the function g
+ui
+0 0u01 0 0u01
+g
+0
+we calcul the limit k
+t as of the veloc of the weak discontinu
+20 0u01 1
+0 2u0 a1 a2 u01
+0
+2
+20 0u01 1
+1
+0 2u0 a1 a2 u01
+t 2u0
+0
+2
+2
+t 2u0
+which coincid with the veloc of the shock wave
+u x t u0 a1 a2 u01 x t
+where
+2 t 1 t by use the explicit formula for the solut
+u x t we can easili show that
+w lim u x t u x t
+0
+t t
+to thi end we rewrit the aboveconstruct solut u x t in the form
+u x t u0 u1 1 2 1 1 x u1x 2 2 2 x 1 1 x
+consid the second term we have
+u1 1 2
+0 0u10
+def
+0 0u01 a1 a2 u01 u0
+g
+8
+figur 2
+sinc 1 tt the first two term pass into the shock wave u x t for
+t t consid the last term
+u1 x2 2 2 x1 1 x u1 x2
+2 2 x 1 1 x
+1 2
+as wa alreadi shown the coeffici of the express in brace is a constant
+the express in squar bracket is an approxim of the function at the
+point 2 henc the entir express in brace is small in a uniform metric
+as 0
+we studi the problem in which a shock wave is gener by a special piecewis linear initi condit the case of a gener smooth initi function can
+be treat similarli here we need to consid a famili of linear interpol of
+thi initi condit and to use the abov techniqu on segment of the broken
+line
+to studi thi problem in more detail we note that we have consid onli
+one possibl of evolut of the broken line name format of a step
+anoth mechan of evolut is as follow segment of the broken line are
+ad to the step that ha alreadi been form thi is the confluenc of a
+weak discontinu and a shock wave
+now we again consid the hopf equat in order to studi thi mechan
+the initi condit correspond to thi type of interact ha the form
+u
+t0
+u00 a01 x u01 a1 xa1 x u01 a2 xa2 x
+where u00 u01 are posit constant and a1 a2 see fig 2
+9
+just as befor we construct the approxim of the solut in the form
+u x t u0 1 1 x u1 1 x1 1 x u1 2 x2 2 x
+where ui ui t i i t substitut thi express into the hopf
+equat we obtain the system of equat cf abov
+1t u0 2u1 b1
+u1t 2u21 4u21 u2 b1
+0
+0
+2t 2u0 b2 2u1 b2
+u0t u0 u1 1 2b1
+0
+0
+7
+where bi bi are the function deriv abov 2 1 befor
+the interact we have 2 1 and b1 0 b2 1 with
+arbitrari accuraci in denot by 10 u10 20 u00 the solut of system
+7 with b1 0 b2 1 we obtain the follow system of equat for these
+function
+10t
+u10t
+u00
+2u210
+u00t
+u00 u10
+20t
+2u00 u10 0
+0 20 10
+it is easi to find the solut of thi system
+u01
+1 2u01 t
+u10
+20
+a2 2u t
+u00
+u00
+1 2u01 t12
+t
+10 a1
+u00 dt
+0
+0
+u
+1
+00 u01 u00 1 2u10 t u00
+u01
+1 2u10 t
+u00 u01 a1 a2
+one can easili see that the function 0 t vanish at the two point t1
+12u10 and t such that
+u0
+1 2u01 t 0
+u
+obvious t t1 and the free singular support x 10 and x 20
+merg at t t in thi case we have
+u00 t u00 u
+u10 t
+u2 0
+u
+u00 2 1
+thu in thi exampl the mechan of format of a new shock wave consist
+not in turn over the inclin segment of the broken line as in the preced
+10
+exampl but in the disappear of thi inclin segment due to increas
+vertic segment
+subtract the first equat from the third equat in 7 we obtain the
+follow equat for the function
+t u0 2u1 1 2b1
+or denot 0 0 1 0
+0 u0 2u1 1 2b1
+1
+note that we can use the formula for 0 and for the function u00 and u10
+onli for t 0 t where 0 is ani number such that t1 t
+to obtain formula that are global in t we need to choos a number and
+continu the function u00 u10 and 0 smoothli to the time t t so that
+the sign is preserv calcul the coeffici of u0 2u1 one can easili
+see that 0 for t t henc there exist a solut 0 where 0 is a
+root of the equat
+b1 12
+let us consid the system of equat for the function u0 and u1 by the
+chang u0 u00 u1 u01 thi system can be reduc to the singl equat for
+u1
+u1t 2u21 1 2b1 0
+it solut ha the form
+u1 t
+u10
+1 2u10
+t
+1
+0
+2b1 dt
+t
+clearli we have u1 t u10 t sinc 0 1 2b1 dt t on the other
+hand we have t t for 0 therefor 1 1 as and henc
+0 as ie for t t 0 thi impli that for t t we
+have
+u1 t u10 t o1
+0
+we repres the aboveconstruct solut in the form
+u x t
+u 1 1 x u0 u 2 2 x
+1 1 x 2 2 x2 xu1
+obvious for t t 0 the first term approxim the shock wave
+u u a1 u t x
+and in thi case the second term vanish sinc u0 u 0 and the third term
+vanish sinc 1 2 0 recal that 0t u00 20 u10 for t t
+in view of the equat we can continu the function 0t for t t in the
+11
+form 0t u in thi case the function u0 2u1 is continu uniformli in
+for t t and we can show that the function is a solut of boundari valu
+problem
+1 2b1
+1
+the system of equat determin the weak asymptot solut in thi case
+also split into separ equat
+now we briefli consid the problem of decay of nonstabl shock wave
+one can easili see that by set vt x t u x t t t t we obtain a
+t depend famili of weak asymptot solut of the equat vt v 2 x 0
+for t 0 the solut of thi famili are shock wave unstabl for thi new
+equat the weak limit of these solut for 0 t t t is a shock wave
+and for t t t is a broken line consist of two move weak discontinu
+into which the unstabl shock wave split at time t t t t which is not
+uniqu
+c interact of shock wave in the multidimension case let us consid
+the twodimension nonlinear equat aris in the reservoir problem
+lu
+u
+u2
+u2
+a2
+0
+a1
+t
+x1
+x2
+the abov approach can be easili gener to the case of an arbitrari
+dimens if the codimens of the front of the nonlinear wave is 1 we
+assum that a1 a2 are posit constant
+we choos the initi condit as
+u
+t0
+u0 u1 t 1 x u2 t 1 x
+where x x1 x2 ui are posit constant and i x are the desir function
+we write 0i x i x 0
+clearli the curv 0i are given initi posit of the front of two shock
+wave whose sum is just the initi condit in addit we assum that the
+curv 0i are transvers to the vector field a a a1 a2 and 02 is
+the crosssect of the trivial fibrat over 01 whose fiber are straight line
+parallel to the vector a in addit we assum that the motion from the point
+of 02 to the point of 01 is in the direct of the vector a in thi case the fact
+that u1 u2 are posit constant is a suffici condit of stabil
+if the function i x are known then the curv level surfac ti x t
+i x 0 determin the front of shock wave at time t
+act as befor see 2 a we substitut the approxim
+u x t u0 u1 1 t 1 x u2 2 t 2 x
+into the equat and calcul the weak asymptot of lu we obtain
+lu
+t1 1 a 1 u1 2u0 2u2 b1
+t2 1 a 2 2u0 u2 2u1 b2 od
+2 1
+12
+here the function b1 and b2 are the same as in item 2 a formula for the
+weak asymptot in the multidimension case are carri out in the same way
+as in the onedimension case
+roughli speak the twodimension integr becom an iter integr over the surfac ti and over the normal to thi surfac the asymptot
+of the integr along the normal is calcul in the same way as in the onedimension case see 1
+it follow from our assumpt that the inequ 0 hold for suffici small posit t henc we have and for small t we obtain
+the follow equat describ the system of noninteract front
+1 a 1 u1 2u0 0
+1 a 2 u2 2u1 2u0 0
+8
+clearli these equat determin the limit function k0 if the curv 0i
+on which they vanish are given
+divid these equat by i and take into account the fact that in
+view of our formula the wave travel in the direct of decreas function
+k0 x we can rewrit the last system as
+a n1 u1 2u0
+vn1
+1
+a n2 u2 2u1 2u0
+vn2
+2
+i
+where ni is the normal at a point to ti vni is the normal veloc of thi
+point clearli the veloc of the point of the curv t2 are larger than the
+veloc of the point of the curv t2 along the trajectori of the field a
+but the distanc between the curv ti along the trajectori depend in gener
+on the point
+therefor sinc the shape of these curv is rather arbitrari there may be
+no complet confluenc of these curv at their contact a new shock wave
+with summari amplitud u1 u2 is gener at the point of contact thi
+shock wave travel with it new veloc and the solut may be of a rather
+complic structur to describ thi wave uniformli in time we shall seek
+the solut of the system
+1 a 1 u1 2u0 2u2 b1 0
+9
+1 a 2 u2 2u0 2u1 b2 0
+in the form
+k x k0 x 0 xk1 0
+10
+where 0 20 x 10 x note that in view of our assumpt on the
+geometri instead of the coordin x1 x2 we can introduc the coordin
+s where s are the coordin on 02 and is a paramet on the trajectori
+of the vector field a
+henc we in fact calcul the distanc between the curv
+i ie the
+differ 0 along the trajectori of the field a
+13
+d
+preserv instead of d
+the notat a substitut 9 into 8 and
+take into account 10 we obtain
+d
+11 u0 2u2 b1 12 0 11
+d
+2u1 a 20 2 a 20 u1 b2
+d
+21 u0 2u1 b2 12 0
+a 0
+d
+here u0 u1 u2 2u0 0
+the further is similar to that in the onedimension case it first stage is to
+def
+obtain an equat for the function 0 1 21 11
+1 1 next we calcul the limit of the function bk as
+after the interact and find equat for the limit function k as well as
+equat for k1
+subtract the first equat in 10 form the second one and carri out
+sever calcul we obtain the desir equat for
+2 a 10 u2 b1 a 0
+1
+1 b2
+2u1 u1
+2u2 u2
+u1 u2 u0 2u2 b2 12 u1 2u1 b2 12
+1
+one can show that the righthand side of thi equat that differ as one
+can see from that in the similar equat in the onedimension case also ha
+a singl root 0 and b2 0 12 and henc b1 0 12
+henc it follow from eq 8 that for the same valu of s for which a point
+of the curv
+1 outrun the curv 1 we have
+1 a k u1 u2 2u0 0
+1
+k 1 2
+2
+thi impli
+and for a given s after the confluenc of the curv a
+wave with summari amplitud u1 u2 travel in the direct of a thu for
+a fix s the dynam of interact in the direct of a is similar to that in
+the onedimension case
+here we do not write out the equat for k1 they can be obtain in
+the same way as the similar equat in the onedimension case
+3
+conclus
+the problem of shock wave interact in the onedimension case is present
+in 2 3 5 not onli for the hopf equat but also for equat with suffici
+gener nonlinear the formula from sec 1 are deriv there in more detail
+similarli in the multidimension case one can easili gener our construct to the case of more gener nonlinear variabl coeffici and
+amplitud
+for reason of space here we do not consid the problem of construct
+definit of weak solut thi problem is discuss in 1 4 5 in particular
+in 5 a definit of a weak solut is construct for kdv type equat
+admit the zero dispers limit for soliton type solut
+14
+refer
+1 v g danilov g a omelyanov and e v radkevich hugoniottyp
+condit and weak solut to the phasefield system euro j appl
+math 10 1999 5577
+2 v g danilov and b m shelkovich propag and interact of nonlinear wave in proceed of eight intern confer on hyperbol
+problem theorynumericsappl univ magdeburg magdeburg
+2000 pp 326328
+3 v g danilov and b m shelkovich propag and interact of shock
+wave of quasilinear equat nonlinear studi 8 2001 no 1 211245
+httparxivorgabsmathph0012003
+4 v g danilov a new definit of weak solut of semilinear equat
+with a small paramet uspekhi mat nauk 515 1997 p 184 russian
+english transl in russian math survey
+5 v g danilov and b m shelkovich propag of infinit narrow soliton httparxivorgabsmathph0012002
+15

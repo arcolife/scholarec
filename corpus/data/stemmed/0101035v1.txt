@@ -1,0 +1,726 @@
+monopol
+arxivmathph0101035v1 31 jan 2001
+michael k murray
+1 introduct
+monopol are solut of a first order partial differenti equat the bogomolni equat they can be thought of as approxim by static magnet
+particl in r3 in these note we will consid what monopol are and some of
+the variou approach to understand them in particular we will discuss the
+spectral curv twistor theori nahm transform and ration map of a monopol a
+good start refer for all thi materi is the book by atiyah and hitchin 2 on
+monopol scatter in particular chapter 16 background materi from which
+these note have borrow notat see also the excel survey by sutcliff 22
+2 monopol in r3
+we start with a lie algebra which we will assum is su2 the lie algebra of all
+skewhermitian 2 by 2 matric let a be a oneform with valu in su2 so that
+3
+a i1 ai dxi and each ai is a function ai r3 su2 the higg field is a
+function r3 su2 the oneform a can be thought of as the connect oneform for a connect d a on a trivial su 2 bundl on r3 the curvatur
+of such a connect is the twoform
+3
+fa
+1
+fij dxi dxj
+2 ij1
+where
+fij i j i aj j ai ai aj
+the connect a can be use to covariantli differenti the higg field to obtain
+3
+a
+i ai dxi
+i1
+a monopol is a connect a and a higg field satisfi the bogomolni
+equat and some particular boundari condit the bogomolni equat
+are
+1
+fa a
+where is the hodg star or dualiti oper from oneform to twoform defin
+by
+dx1 dx2 dx3
+dx2 dx3 dx1
+dx3 dx1 dx2
+1
+2
+michael k murray
+if a and b are element of su2 let a b denot the invari form a b
+trab t then the energi densiti of a pair a is defin by
+1
+1
+2
+ea fa 2 a 2
+2
+2
+where
+fij fij
+fa 2
+ij
+and
+a 2
+1
+2
+i
+i i
+the yangmillshigg action of a pair a is the integr over three space of
+the energi densiti
+la
+3
+ea d3 x
+r3
+if br is a ball of radiu r integr by part show that
+1
+ea d3 x
+fa a 2 d3 x
+br 2
+br
+fa
+2
+sr
+2
+where sr
+is the sphere of radiu r if the limit of all these integr exist as
+r we obtain
+1
+fa a 2 d3 x lim
+la
+fa
+r s 2
+2
+3
+r
+r
+from thi we easili deduc that the minima of the yangmillshigg function
+are solut of the bogomolni equat 1 or the antibogomolni equat
+fa a as chang to chang a solut of the bogomolni equat
+to a solut of the antibogomolni equat we concentr our attent on the
+former
+the bogomolni equat are invari under gaug transform that is replac a by
+gag 1 gdg 1 gg 1
+where g r3 su 2 the energi densiti 2 is also invari under gaug transform when we talk about a monopol we are realli talk about an equival class of a under gaug transform
+the boundari condit impos on a monopol are primarili that the energi
+densiti 2 should have finit integr that is the action 3 is finit there
+are some addit technic condit that we will not be concern with it is
+believ in ani case that these can all be deduc from finit of the action and
+the bogomolni equat from these boundari condit we can deduc that
+after a suitabl gaug transform we can arrang for the higg field to have a
+limit valu at infin
+u lim tu
+t
+2
+where u s the boundari condit can be use to show that the eigenvalu
+of the higg field at infin are independ of the direct u s 2 in the case of
+su 2 thi is equival to the fact that u2 constant for all u
+it is easi to show that if c 0 and a solv the bogomolni equat then
+x
+caxc cxc
+ax
+monopol
+3
+also solv the bogomolni equat so we may as well normalis the higg field
+so that u2 1 for all direct u becaus the lie algebra su2 is three
+dimension the higg field at infin is a map
+s 2 s 2 su2
+the space of all continu map s 2 s 2 break up into connect compon
+label by a wind number k z just as for map s 1 s 1
+becaus of thi boundari condit we can arrang by a gaug transform
+for ani higg field to satisfi
+1
+i 0
+lim 0 0 t
+0
+i
+2
+we call such a higg field frame we defin the moduli space of all monopol
+of charg k mk to be the space of all a solv the bogomolni equat
+satisfi the appropri boundari condit with the higg field frame and
+modulo the action of gaug transform satisfi
+t
+4
+lim g0 0 t
+t
+1
+0
+0
+1
+if k 0 then mk otherwis mk is a manifold of dimens 4k
+notic that the bogomolni equat are translat invari moreov becaus of the way we have defin the frame the group of all diagon matric a
+copi of the circl group s 1 act by constant gaug transform on mk henc
+r3 s 1 act on mk
+if k 1 there is up to thi action of r3 s 1 a uniqu monopol the bogomolni
+prasad sommerfield bp monopol given by
+x
+ax
+1
+e
+1
+r tanh r r
+1 e de
+1
+sinh r
+r
+r
+3
+where r x and ex i1 xi ei for an orthonorm basi e1 e2 e3 of su2
+the other k 1 monopol are obtain by act by r3 s 1 so that m1
+3
+r s 1 it is easi to calcul the energi densiti of the bp monopol as follow
+for ani monopol there is a use formula
+3
+ea
+i1
+2
+xi 2
+which can be prove use the bogomolni equat and the bianchi ident from
+thi we find that for the bp monopol
+6
+8
+2
+8
+8
+ea
+4
+2 2 r4
+3 r tanh r
+tanh r tanh r
+r tanh r
+where r x clearli the energi densiti is spheric symmetr about the origin
+in r3 if we plot it along the xaxi we obtain figur 2 and we see that the energi
+is concentr around the origin we think of the monopol as a particl locat
+at the origin
+the bp monopol wa discov by prasad and sommerfield in 1975 21 for
+some time thi wa the onli monopol known and it wa unclear whether higher
+charg monopol exist in 1977 manton 15 show that to first order the forc
+4
+michael k murray
+06
+05
+04
+03
+02
+01
+4
+2
+0
+4
+2
+x
+figur 1 energi densiti for k 1 bp monopol
+between two monopol due the higg field and the connect cancel thi
+lead to the conjectur that stabl higher charg monopol would exist weinberg
+in 1979 23 calcul that the dimens of the moduli space of monopol would
+be 4k if it wa nonempti final in 1981 taub 12 show that the moduli
+space wa nonempti
+it is use to briefli discuss taub proof as it reveal some of the interest
+structur of the moduli space taub start with k point a long way apart in
+r3 surround by veri larg ball at the centr of each of these ball he place a
+bp monopol and join these all togeth smoothli the result is not of cours
+a solut to the bogomolni equat but it is close to one such an approxim
+solut can be use as the initi stage of an iter scheme which converg to
+a real solut
+the solut produc by taub are on the edg of the moduli space that
+is the moduli space mk ha a compact region outsid of which the monopol
+approxim a superposit bp monopol at k point in particular the energi
+densiti will be concentr at these k point one might also expect that the
+higg field ha a zero at each of these k point but thi ha not been prove note
+that think of the charg k monopol as k bp monopol give an explan
+of the dimens of the moduli space each constitu bp monopol contribut
+it posit three paramet and a phase which is a point on the circl make
+a total of four paramet
+it is import to note that when the charg is greater than one we cannot
+associ to everi monopol a a collect of k point which are the locat
+of the k particl we think of as it constitu we can howev associ sensibl
+to a k monopol a centr of mass or locat 8 which we defin below
+monopol
+5
+the analysi of monopol directli in term of the connect and higg field
+on r3 for exampl the definit of the locat of a monopol while possibl
+is difficult part of thi difficulti stem from the infinit dimension symmetri
+group of gaug transform research on monopol ha focus on variou
+transform which are design to construct some other mathemat data
+equival to the monopol studi of these data then hope shed light on
+the origin monopol thi process is particularli use if the object produc
+is an invari of the monopol someth which doe not chang under gaug
+transform the transform we will discuss below are
+the spectral curv which is an invari of the monopol
+hitchin adapt of the twistor transform which relat monopol to holomorph bundl on minitwistor space
+the nahm transform which relat monopol to solut of an ordinari
+differenti equat on the interv 1 1 and
+the ration map which is anoth invari of the monopol
+3 the spectral curv
+let t be an orient line in r3 thi can be put in the form
+t v tu
+with vector u and v determin uniqu by the requir that u 1 u v 0
+and u point in the direct of the orient along the line we have hitchin
+differenti equat 6
+3
+5
+d
+ui ai t it st 0
+dt i1
+thi is an ordinari differenti equat so it ha a twodimension space of solut e depend of cours on
+notic that by a gaug transform we can arrang for ani given line that
+3
+i
+i1 u ai 0 so we can essenti disregard thi term the boundari condit
+can be use to show that we can expand the higg field along ani line as
+t
+i
+0
+1
+0
+i
+2t
+ik
+0
+0
+o
+ik
+1
+t2
+where the k here is the monopol charg we want to consid the hitchin equat
+as a perturb of a modifi hitchin equat
+6
+d
+1
+1 0
+0 1
+dt
+2t
+k
+0
+0
+k
+s 0
+the modifi equat is the hitchin equat with the o1t2 term in the higg
+field expans set to zero we use thi to studi the behaviour of solut of the
+hitchin equat the solut of 6 are given by
+7
+s1 t
+tk2 et
+0
+8
+s2 t
+0
+tk2 et
+6
+michael k murray
+asymptot analysi of ordinari differenti equat show that for ani line there
+are solut s1 t and s2 t of the hitchin equat 5 which behav asymptot
+like the solut to the modifi hitchin equat that is they satisfi
+lim tk2 et s1 t
+1
+0
+lim tk2 et s2 t
+0
+1
+t
+t
+similarli there are solut that decay and blow up exponenti as t for
+the modifi hitchin equat a solut that blow up decay at one end of the
+line decay blow up at the other end in gener thi will not be true of solut
+of the hitchin equat in particular asymptot analysi tell us that there will
+be a ball in r3 of radiu r 0 with the properti that if a line lie outsid the ball
+then the solut s1 t and s2 t behav like the solut to the modifi hitchin
+equat that is s1 t decay as t and s2 t blow up as t
+we expect then that line which do not exhibit thi behaviour are somehow close
+to the monopol we call a line a spectral line if there is a solut to the hitchin
+equat which decay at both end we call the set of all spectral line the spectral
+curv of the monopol it is easi to see that be a spectral line for a monopol
+is independ of gaug transform so the spectral curv is an invari of the
+monopol
+it is not difficult to show that for the bp monopol locat at the point x r3
+the spectral line are exactli the line pass through x note that thi is a twodimension set inde a copi of s 2 thi is more gener true the spectral
+curv is alway a twodimension famili of line to say more about the structur
+of the spectral curv we need to consid the set of all orient line in r3
+the import of the spectral curv is the follow theorem of hitchin
+theorem 31 hitchin 6 if monopol a and a have spectral curv
+s and s and s s then a is an unfram gaug transform of a
+note that s s mean equal of the correspond set of orient line in r3
+and that an unfram gaug transform is one without the requir that
+limt g0 0 t 1 cf equat 4 theorem 31 tell us that the spectral
+curv determin the monopol up to the action of the circl on the moduli space
+it is possibl to also add a small amount of addit data to the spectral curv
+which captur thi phase we shall not concern ourselv with that here
+4 the twistor theori of monopol
+as we have discuss abov each orient line in r3 is determin uniqu by
+vector u and v satisfi u 1 u v 0 it follow that the set of all orient
+line is the tangent bundl to the twospher
+t s 2 u v u 1 u v 0
+thi is often call the minitwistor space of r3 minitwistor space is natur
+a complex manifold and we can introduc coordin on the open subset
+where u 0 0 1 by let
+9
+u1 iu2
+1 u3
+and v 1 iv 2 2v 3 v 1 iv 2 2
+monopol
+7
+the relationship between minitwistor space and r3 is summaris by the equat
+10
+x1 ix2 2x3 x1 ix2 2
+if we hold fix then the x1 x2 x3 satisfi 10 defin a line in r3 on
+the other hand if we hold x1 x2 x3 fix then the satisfi 10 parametris
+the set of all line through the point x x1 x2 x3 which is a copi of s 2 insid
+t s 2
+minitwistor space ha an involut t s 2 t s 2 which send each orient
+line to the same line with opposit orient in coordin thi is given by
+1
+2
+becaus is like a conjug it is call the real structur the set of all line
+through the point x is real in the sens that it is fix by the real structur
+we can now state the basic result concern the spectral curv it is a subset
+of t s 2 defin by an equat of the form
+11
+p k a1 k1 ak 0
+where each of the ai is a polynomi of degre 2i
+note that by no mean everi such curv is the spectral curv of a monopol
+one constraint is immedi from our definit if a line is a spectral line then
+so also is the line with the opposit orient so the spectral curv is real that
+is fix by the real structur but more is true the famili of real curv defin
+by equat of the form 11 is k 12 1 real dimension wherea the moduli
+space of monopol is 4k dimension so there have to be further constraint on
+the spectral curv in particular a certain holomorph line bundl must be trivial
+when restrict to the spectral curv it is possibl to say quit precis what the
+other constraint are and henc to say in principl which spectral curv give rise
+to monopol 7
+spectral curv can be use to deduc a number of use fact about monopol
+it is easi to show that the onli real curv of the type 11 for k 1 are those of
+the form 10 for some point x1 x2 x3 henc the bp monopol are the onli
+charg one monopol
+the coeffici a1 in 11 defin a real curv and henc ha the form
+a1 x1 ix2 2x3 x1 ix2 2
+for some point x1 x2 x3 in r3 thi point is call the centr of the monopol
+if u v1 u vk is a collect of k parallel line let us defin their averag to
+k
+be the line u 1k i1 vi notic from definit of 9 that if these line have
+complex coordin 1 k then their averag ha complex coordin
+k
+1k i1 i if we fix a particular direct in r3 that is fix a and look for
+all the spectral line in that direct we are find all the satisfi a degre
+k polynomi and henc there are gener k of them if we take the averag of
+all these line then it will pass through the monopol centr thi give us a way
+of defin the centr entir in r3 take the averag of the spectral line in each
+direct in r3 the result famili of line will nearli all intersect in a singl
+point that point is the centr of the monopol
+the definit of the spectral curv of a monopol clearli preserv the action of
+the rotat and translat of r3 and thi give us a way of look for monopol
+8
+michael k murray
+with particular symmetri we look first for spectral curv with these symmetri
+thi approach can be use to show that the onli spheric symmetr monopol
+is the bp monopol at the origin it wa use by hitchin 7 to classifi the axial symmetr monopol and more recent 8 to find monopol with symmetri
+group those of the regular solid
+the variou properti of the spectral curv such as the form of equat 11
+are prove by use hitchin twistor transform hitchin 6 introduc the vector
+space e of all solut to hi equat 5 thi is a twodimension space
+and the collect of them all defin a complex vector bundl e over the minitwistor space t s 2 hitchin show that the bogomolni equat impli that e is
+a holomorph vector bundl and moreov the monopol can be recov from
+know e the boundari condit of the monopol then enter by note that
+there are two distinguish holomorph subbundl e and e of solut to
+hitchin equat which decay at and infin the spectral curv is the set
+where these line bundl coincid algebra geometri can then be use to prove
+theorem 31 and that the spectral curv satisfi an equat of the form 11
+variou constraint on the spectral curv also follow from the twistor theori the
+precis constraint that a curv must satisfi to be the spectral curv are given in 7
+the proof that a spectral curv satisfi these constraint come from a monopol
+requir the nahm transform which we consid next
+5 the nahm transform and nahm equat
+an altern point of view on monopol come via nahm adapt of the
+atiyah drinfeld hitchin manin construct of instanton 20 nahm consid
+a dirac oper on r3 coupl to the monopol in more detail let i be an orthonorm basi for the lie algebra su2 thi particular su2 should be regard
+as differ to the monopol su2 in which the connect and higg field take valu it is in fact the lie algebra of the spin group of the group of rotat of r3
+the dirac oper dz is defin by
+3
+dz
+i1
+2
+i i iz
+2
+and act on c c valu function on r3 the first c2 is the spin space on which
+the i act and the second is the space on which the ai and act here z is ani
+real number we also defin an adjoint
+3
+dz
+i1
+i i iz
+if we comput the composit the bogomolni equat show us that
+3
+dz dz
+i1
+i i iz iz
+which is a posit oper and henc ha no l2 kernel from thi we conclud
+that dz ha no l2 kernel an l2 index theorem of callia show that dz ha index
+k if 1 z 1 and 0 otherwis henc it follow that dz ha a k dimension l2
+kernel nz if 1 z 1 the point of view we wish to adopt is that nz is a k
+dimension vector bundl over the interv 1 1
+monopol
+9
+we are interest in section of thi vector bundl that is function
+1 1 r3 c2 c2
+which satisfi dz z x 0 for everi z 1 1 choos k of these 1 k so
+that for each z they span nz moreov choos them so that they are orthonorm
+i j d3 x ij
+r3
+and satisfi
+i
+r3
+j
+z
+d3 x 0
+for all i j 1 k here of cours ij is the kroneck delta which is zero unless
+i j when it is one notic that there is no obstruct to satisfi these extra
+condit we can use grammschmidt orthogonalis for the first and the
+second is just solv an ordinari differenti equat on 1 1
+now we defin three k by k matrix function of z by
+taij z
+i xa j d3 x
+r3
+for i j 1 k and a 1 2 3 the remark thing about thi nahm transform is that these matrix valu function satisfi some simpl ordinari differenti equat call nahm equat
+dt1
+t2 t3
+dz
+dt2
+t3 t1
+dz
+dt3
+t1 t2
+dz
+it is possibl to cast nahm equat into lax form and solv them by the
+krichev method we will consid how to do thi as it connect us again with
+spectral curv
+defin
+a t1 it2 2t3 t1 it2 2
+and a it3 it1 t2 then nahm equat are equival to
+da
+a a
+dz
+which is in lax form now consid the curv sz in c c defin by
+12
+det a 0
+we have
+proposit 51 the curv sz is independ of z
+proof choos an eigenvector v of a with eigenvalu at some z z0 now
+evolv v with the differenti equat
+dv
+a v
+dz
+10
+michael k murray
+and consid
+dav
+a av aa v aa v
+dz
+a av
+it follow that
+d
+av v 0
+dz
+and becaus av v vanish at z0 it must vanish everywher we conclud that
+the eigenvalu of a are independ of z and henc that sz is independ of
+z
+if we identifi the in 12 with the coordin 9 on minitwistor space
+we realis sz as a curv in minitwistor space thi is in fact a natur thing to
+do it is a remark fact 9 that the curv s sz defin via nahm transform
+is the same as the spectral curv of the monopol defin in section 3
+standard method from integr system can be use to solv nahm equat use the curv s and some addit structur inde in 7 hitchin use
+thi approach to determin exactli which spectral curv correspond to monopol
+one of the import properti of nahm equat is that it is straightforward
+to defin a monopol from a solut of nahm equat plu some boundari
+condit given such a solut and a point x1 x2 x3 in r3 we defin
+3
+ti i
+t
+i1
+and
+3
+xi i
+x
+i1
+now defin ex to be the l2 kernel of the oper
+d
+t x
+dz
+it can be shown that thi is two dimension we defin the connect and higg
+field by choos an orthonorm basi v1 v2 for ex and let
+dx
+2
+1
+b1
+1
+va
+vb zva dz
+and
+2
+1
+ai va
+vb
+b1
+1
+dva
+dxi
+dz
+thi a defin a monopol if the ti satisfi nahm equat with the appropri boundari condit moreov if the solut of nahm equat came
+from a monopol thi construct return the same monopol for more detail
+see 20
+monopol
+11
+6 ration map
+although spectral curv are a use invari of monopol it is veri difficult
+given a spectral curv for exampl a polynomi as in 11 to determin if it is the
+spectral curv of a monopol anoth approach to monopol is the ration map
+of a monopol by a ration map we mean a meromorph function rz c c
+of the form
+pz
+rz
+qz
+where p and q are polynomi with no common divisor we will be interest first
+in base ration map that is those which send to 0 and have degre k for a
+degre k base ration map we requir that q is monic of degre k and that p ha
+degre strictli less than k let rbk be the set of all such map then we have
+theorem 61 donaldson 4 if we choos an orthogon split of r3 as cr
+then there is a diffeomorph
+mk rbk
+we shall indic in a moment how to construct a ration map from a monopol
+it is import to note that the invers construct from ration map to monopol
+is not known all that is known is that there is a map mk rbk which can be shown
+to be a diffeomorph thi is to be contrast with the case of spectral curv
+where although we have not discuss it an invers construct is known and
+with nahm construct where the invers construct is quit straightforward
+it seem that what we gain by know that everi ration map is the ration map
+of some monopol we lose by not know how to get back to a monopol given a
+ration map
+to defin the ration map we choos first the orthogon split thi amount
+to choos a direct in r3 and an orthogon plane now consid hitchin
+equat along each line parallel to that direct becaus of the frame we have
+1
+lim 0 0 t
+t
+2
+i 0
+0 i
+we choos a gaug so that
+1
+lim x y t
+2
+t
+i
+0
+0
+i
+for everi x y for each z x iy consid the onedimension subspac of c2 of
+solut decay along the line x y t as t up to scale thi line is span
+by a vector az bz it turn out that bz is a polynomi of degre k with
+root 1 k we choos the uniqu polynomi pzof degre k 1 such that
+p i a i for all i 1 k final we defin rz pzbz notic that
+as x2 y2 the solut which decay as t blow up as t and
+henc az 0 so that map rz is base note also that the spectral line of the
+form x y t have bx iy 0 so that they correspond to the pole of the ration
+map
+while an extrem use invari of the monopol as everi base ration
+correspond to exactli one monopol there are two signific problem one we
+have alreadi note the invers map from ration map to monopol is not known
+anoth is that the construct break symmetri by write r3 as cr and henc
+12
+michael k murray
+the construct doe not preserv the full group of rotat of r3 but instead the
+group of rotat around the axi which determin the split c r
+there is an altern approach to ration map due to jarvi 13 14 which
+avoid the problem of symmetri break the ration map is also simpler to
+defin for thi we pick a point in r3 and consid hitchin equat along each
+orient line through that point parametris the line through the point by
+and the distanc along the line by t then the solut that decay in the forward
+direct is given by
+s0 t
+s t 1
+s t
+the jarvi ration map is then defin by
+s0 0
+s1 0
+to obtain a gaug invari correspond we note that the ration map is onli
+determin up to the action of su 2 by fraction linear transform then
+jarvi prove
+r
+theorem 62 jarvi 13 14 if we choos a point in r3 there is a diffeomorph
+mk s 1 rk su 2
+here rk is the set of all ration map of degre k not just base and the space
+mk s 1 is the unfram moduli space that is the moduli space divid by the
+action of the circl act by constant gaug transform
+the precis relationship between the jarvi ration map and the donaldson
+ration map ha not yet been determin but it is believ that by move the
+point determin the jarvi map out to infin along a line and suitabl rescal
+the map that the donaldson map will be recov
+7 conclus
+we conclud by consid three signific omiss and generalis
+firstli the moduli space ha a natur hyperkaehl metric the physic interpret of thi is as follow consid the configur space c of all pair a
+satisfi the boundari condit of a monopol insid c we have the space c0
+of solut of the bogomolni equat and the monopol moduli space is the
+quotient of c0 by the group of all gaug transform a solut of the full
+yangmillshigg equat describ a curv at t in c where the t paramet is time monopol point on c0 are static solut of the full yangmillshigg
+equat and the minima of a potenti energi function on c if we start with
+a point a on c0 and give it a small push then by conserv of energi it
+should describ a path stay close to c0 and solv the full yangmillshigg
+equat in the limit as the size of the push becom zero these path determin
+geodes of the natur hyperkaehl metric
+it follow that the geodes on the monopol moduli space of thi metric should
+approxim the motion of slowli move monopol if we start with a monopol
+near the edg of the moduli space which can be interpret as a collect of k
+particl and follow it along a geodes until it emerg again into the region where
+it can be regard as k particl we will have describ a scatter process which
+should be an approxim to true kmonopol scatter thi idea is due to
+monopol
+13
+manton 16 and in 2 atiyah and hitchin describ the metric on the moduli space
+of charg two monopol and certain of it geodes and interpret the result in
+term of two particl monopol scatter
+secondli it is possibl to generalis all the present discuss to other compact
+simpl lie group although the nahm correspond onli work simpli for the
+classic lie group see for exampl 17 10 11 it is also possibl to generalis
+to the loop group and loop group monopol or caloron can be interpret as
+instanton on s 1 r3 5
+thirdli the underli space r3 can be replac by hyperbol three space and
+mani of the result here carri over thi idea is due to atiyah 1 and further
+develop in 3 18 and 19
+refer
+1 mf atiyah magnet monopol in hyperbol space in proceed of bombay colloquium
+1984 on vector bundl in algebra varieti oxford univers press pp 134 1987
+2 mf atiyah and nj hitchin the geometri and dynam of magnet monopol princeton
+univ press princeton nj 1988
+3 pj braam and dm austin boundari valu of hyperbol monopol nonlinear 3
+1990 no 3 809823
+4 sk donaldson nahm equat and the classif of monopol commun math phi
+96 1984 387407
+5 h garland and mk murray kacmoodi monopol and period instanton commun
+math phi 120 1988 335351
+6 nj hitchin on the construct of monopol commun math phi 89 1983 145190
+7 nj hitchin monopol and geodes commun math phi 83 1982 579602
+8 nj hitchin ns manton and mk murray symmetr monopol nonlinear 8 1995
+661692
+9 nj hitchin and mk murray spectral curv and the adhmn method commun math
+phi 114 1988 463474
+10 j hurtubis and mk murray on the construct of monopol for the classic group
+commun math phi 122 1989 3589
+11 jc hurtubis and mk murray monopol and their spectral data commun math phi
+133 1990 487508
+12 a jaff and c taub vortic and monopol birkh
+auser boston ma 1980
+13 s jarvi construct of euclidean monopol proc london math soc 3 77 1998
+193214
+14 s jarvi euclidean monopol and ration map proc london math soc 3 77 1998
+170192
+15 ns manton the forc between t hooftpolyakov monopol nucl phi b126 1977
+525541
+16 ns manton a remark on the scatter of bp monopol phi lett 110b 1982 5456
+17 mk murray nonabelian magnet monopol commun math phi 96 1984 539565
+18 mk murray and ma singer spectral curv of nonintegr hyperbol monopol nonlinear 9 1996 973997
+19 mk murray and ma singer on the complet integr of the discret nahm equat
+commun in mathemat physic 210 no 2 2000 497519
+20 w nahm the construct of all selfdual monopol by the adhm method in monopol
+in quantum field theori proceed of the monopol meet in triest 1981 world
+scientif singapor 1982
+21 mk prasad and cm sommerfield exact classic solut for the t hooft monopol and
+juliaze dyon phi rev lett 35 1975 760762
+22 p sutcliff bp monopol int j mod phi a12 1997 46634706
+23 e weinberg paramet count for multimonopol solut phi rev d20 1979 936
+944
+14
+michael k murray
+depart of pure mathemat univers of adelaid adelaid sa 5005 australia
+email address mmurraymathsadelaideeduau

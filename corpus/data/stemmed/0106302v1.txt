@@ -1,0 +1,877 @@
+arxivcondmat0106302v1 condmatstatmech 15 jun 2001
+the mathemat theori of molecular motor
+movement and chemomechan energi
+transduct
+hong qian
+depart of appli mathemat and bioengin
+univers of washington seattl wa 98195 usa
+februari 1 2008
+abstract
+the mathemat formul of the model for molecular movement of singl motor protein driven by cyclic biochem reaction
+in an aqueou environ lead to a drift brownian motion character by coupl diffus equat in thi articl we introduc
+the basic notion for the continu model and review some asymptot
+solut for the problem for the lattic model see 17 47 stochast nonequilibrium thermodynam interpret of the mathemat equat and their solut are present some relev mathemat mainli in the field of stochast process are discuss
+keyword augment huxley equat probabl circul entropi product macromolecular mechan markov process nanobiochemistri nonequilibrium steadyst protein singular perturb turn point
+1
+introduct
+one of the fascin aspect of protein molecul in the biolog world
+is their abil to perform variou almost magiclik task 16 a particular class of protein known as molecular motor can move linearli along
+it design track against an extern forc by util the biochem
+energi sourc adenosin triphosph atp in thi manner the motor
+protein act as miniatur engin convert chemic energi to mechan work movement of singl protein molecul insid a cell howev ha
+1
+to experi thermal agit from the aqueou environ in the cytosol the movement is therefor a brownian motion with drift convect
+diffus 6
+such movement provid the molecular basi for muscl contract and
+variou cellular transport process 24 25 motor protein kinesin is known
+to carri out intracellular vesicl transport along microtubul variou
+polymeras are move along their correspond templat all these process are essenti to a live cell in a muscl cell the motor protein is
+call myosin and it design track is call an actin filament the
+actin filament ha a period structur of 36nm therefor without loss
+of gener we assum that a myosin molecul move in a forc field with
+period potenti energi function u x u x l u x where l is 36nm
+for actin
+treat the center of mass of the motor protein as a brownian motion with the presenc of a period energi potenti it movement can be
+model by the smoluchowski equat 63
+2 p x t
+p x t
+jx t d
+2
+t
+x
+x
+x
+f x
+p x t
+1
+where d and are respect the diffus and friction coeffici
+f x du xdx is the forc of the potenti u repres the molecular interact between the motor protein and it track p x t is the
+probabl densiti function of the motor protein at posit x for time t
+the first equal in eqn 1 is a continu equat in which j is a probabl flux the first term on the righthandsid is associ with the
+diffus flux accord to fick law the second term is due to the convect associ with an overdamp newtonian motion x f x in
+fact eqn 1 is mathemat equival to an overdamp newtonian
+motion with a white random forc f t repres the incess collis
+between the motor protein and the water molecul x f x f t 63
+the probabl densiti p x t as the solut to eqn 1 give the
+mean posit of the motor
+xp x tdx
+x t
+2
+2
+moreov it veloc is relat to the flux jx t
+d
+x t
+dt
+p x t
+dx
+t
+jx t
+dx
+x
+x
+x
+jx tdx
+3
+when the motion of a motor protein becom steadi and if we are onli
+interest in the mean veloc we need onli consid the steadyst solut for x 0 l with period boundari condit with thi set
+the steadyst veloc of the motor protein movement is v lj therefor studi on the steadyst movement focu on the flux j to fix our
+terminolog we will refer to a stationari solut as a steadyst but a
+stationari solut with zero flux as an equilibrium
+a littl mathemat analysi immedi show that with u 0
+u l ie 0l f xdx 0 the stationari solut of 1 allow onli zero
+flux j 0 therefor in a onedimension period structur there is no
+drive forc to bia an inert brownian particl to move in either direct
+the simplest model given by eqn 1 fail to captur the essenc of motor
+protein movement
+the drive forc for a motor protein come from a veri import biochem reaction occur insid the protein call atp hydrolysi
+f
+atp h2 o adp pi
+g
+where h2 o is water adp is adenosin diphosph and pi is phosphat
+chemic reaction like thi are well character by a twostat markov
+process or more gener m discret state
+dpat p
+dt
+dpadp
+dt
+f pat p gpadp
+f pat p gpadp
+4
+where nonneg f and g are rate constant for the reaction 35 the
+deepli insight work of sir andrew huxley in 1957 wa to introduc intern conform state to the brownian particl and to coupl the
+biochem reaction in 4 with the motor protein movement in 1 25
+thi lead to the follow equat 3 43 46 26 known as a coupl diffus system in mathemat 53 for the movement of a brownian particl
+3
+with intern structur and dynam
+p x
+t
+p x
+t
+2 p x
+1
+x2
+x
+2 p x
+1
+d
+x2
+x
+d
+du
+p x f xp x gxp x
+dx
+du
+p x f xp x gxp x
+dx
+5
+where f x and gx are nonneg period function in term of thi
+augment huxley model the motor protein can be either attach to or
+detach from the filament with respect interact energi function
+u x and u x in the origin huxl model u x 0 d are
+the diffus friction coeffici of the motor protein in the attach and
+detach state respect the attachdetach transit is coupl to the
+atp hydrolysi therefor in 5 the biochem reaction is coupl to the
+movement of the motor protein more importantli note that in either the
+attach or detach state there is no bia for the motor protein movement
+howev the attachdetach transit driven by the atp hydrolysi lead to
+a bias motion of the motor protein j0 the chemic energi in atp
+is convert to the mechan motion of the motor protein thi we shall
+show
+at thi point it is fascin to read the now classic work of huxley
+on the theori of muscl contract which wa written decad befor the
+discoveri of the motor protein molecul in it individu form the huxley
+model work as follow p 281 of 25 initi the myosin m and actin
+filament a are detach m oscil fluctuat back and forth about
+it equilibrium posit o as a result of thermal agit with diffus
+coeffici d for the brownian motion if a happen to be within the
+rang of posit where f the rate of associ is not zero there is a
+chanc that combin will take place thi event happen with a probabl character by the markov rate process when thi ha happen
+the tension in the elast element f ie the molecular interact between
+m and a will be exert on the actin thread by m and convers the
+actin will exert the same forc with opposit sign on m as one can see
+eqn 5 is the mathemat formul of thi model describ in word
+reader who check huxley paper will find sever differ between hi
+origin equat and 5 these differ aris becaus we have formul a microscop model for singl motor protein while a model for muscl
+contract ha to deal with a larg number of myosin molecul it can be
+4
+shown that when string mani motor protein into a rigid chain huxley
+origin equat can be deriv from eqn 5 26
+sinc the work of huxley there have been mani investig follow
+and expand the basic notion of the huxley equat most notabl are
+the work of hill 22 23 who provid the huxley equat with a sound
+thermodynam basi and the work of astumian and bier and peskin et
+al who arriv at 5 from the langevin dynam stochast differenti
+equat point of view 2 43 there is also a bodi of literatur on brownian
+ratchet whose basic movement is character by equat ident to 5
+1 7 11 42 641 in a recent paper bentil 5 appli the huxley model in
+conjunct with langevin dynam to simul singl myosin experi
+qian 46 47 49 establish a relationship between coupl diffus like 5
+and the circul of a markov process and it entropi product 27 52
+eqn 5 is certainli an oversimplifi model for ani realist biolog system howev it captur the essenc of a theori which unifi
+microscop motor protein movement and macroscop muscl contract
+therebi it provid a concret model for chemomechan energi transduct in live organ henc it deserv further detail investig as
+a topic in biophys and physic chemistri the mathemat treatment
+of 5 ha been mainli in term of differenti equat howev the natur of brownian motion of the motor protein also call for a treatment of
+5 in term of stochast process we will review some of the pertin
+mathemat in section 4
+2
+mathemat analys of sever limit case
+of augment huxley equat
+while the augment huxley eqn 5 is difficult to solv in gener
+due to the nonloc nonequilibrium natur of the steadyst particular
+limit case can be analyz to gain insight into the theoret model
+in thi section we present some known and also some new result
+1
+it is import here to qualifi the term brownian ratchet which doe not involv
+ani temperatur gradienc 43 it is an isotherm devic in which use work is deriv
+from nonequilibrium fluctuat it violat the detail balanc due to activ pump
+45 46
+5
+21
+limit of rapid biochem cycl
+one particularli interest limit case is when the biochem reaction
+are rapid with respect to the diffus analysi of thi limit case clearli
+demonstr how the intern biochem reaction can give rise to a unidirect motor protein movement henc it demonstr the valid
+of mathemat model for motor protein in term of coupl diffus
+equat
+consid eqn 5 rapid biochem reaction mean we have condit
+probabilities2
+p x
+gx
+f x gx
+p x
+f x
+f x gx
+and thu p x p x p x satisfi
+p x
+2
+f xp x
+dxp x t
+2
+t
+x
+x
+6
+in which
+dx
+f xd gxd
+f x gx
+f x
+f xf x gxf x
+f x gx
+note that eqn 6 is similar to eqn 1 but with one crucial differ the
+mean forc function now satisfi 0l f xdx 0 even though both f x
+satisfi 0l f xdx 0 the potenti of the averag of forc of period
+l potenti is in gener not period thi indic that the biochem
+reaction 4 provid a drift for the motor protein movement in a period
+system final the transport flux can be obtain by solv 6
+1 eul
+l ux
+dx 0l eux dx
+0 e
+where ux
+x
+0 f xdx
+1 eul
+therefor if
+2
+l ux
+dx 0x eux dx
+0 e
+l
+0 f xdx
+7
+ul 0 0
+reader who are familiar with the method of singular perturb will identifi thi
+problem sinc we are seek a nontrivi solut for a homogen equat the
+solut is not uniqu the function f ha at least two zero at which boundari layer
+might be expect for more detail on thi type of equat see 39
+6
+22
+limit of rapid diffus
+anoth limit case which ha been nice analyz by peskin et al 43 is
+when the diffus is veri rapid in comparison to the markovian transit
+brownian ratchet there are rapid equilibria for p x and p x
+the mathemat problem is frame as follow let consid the stationari coupl diffus
+d
+d2 p x
+2
+dx
+dx
+2
+d p x
+d
+dx2
+dx
+du x
+p x f xp x gxp x 0
+dx
+du x
+p x f xp x gxp x 0
+dx
+8
+where f x gx u x are period function when the regular perturb paramet 0 thi system of uncoupl diffus ha zero transport
+flux for small we therefor have and the asymptot can
+be obtain by the method of regular perturb 4 at thi point it is
+import to notic the other flux the circular flux which move the motor protein forward in the state but move it backward in the state
+therefor doe not contribut to the net transport but onli gener
+heat thi type of flux is known as futil cycl in muscl biochemistri 45
+perturb calcul show that 43
+l
+l
+0 gx xdx 0 f x xdx
+l
+l
+0 gx xdx 0 f x xdx
+o2
+9
+and
+x
+l
+0
+dx x x
+where
+0
+dx f x x gx x o2
+10
+eu x
+l u x
+dx
+0 e
+eu x
+l u x
+dx
+0 e
+eu x
+l u x
+dx
+0 e
+eu x
+l u x
+dx
+0 e
+it is interest to note that if f x x gx x 0 x then the
+system is revers and the steadyst is in fact an thermal equilibrium
+in mathemat term the markov process is symmetr 62 in appli
+mathemat the symmetr lead to the grasmanmatkowski variat
+method 30 more recent progress can be found in 31
+7
+23
+limit of the origin huxley model
+in the origin huxley model the interact between the track and the
+motor in the detach state is assum to be zero henc u x 0 in eqn
+5 furthermor it is also gener accept that d d ie the
+brownian motion of the motor protein in the attach state is neglig
+the solut of 5 when d 0 is a problem of singular perturb
+30 36 note that becaus of the period u x f x ha zero on 0 l
+thu the singular perturb problem ha at least two linear turn point
+28 38 the reduc equat when d 0 is
+d2 p x
+f xp x gxp x 0
+dx2
+d
+f xp x f xp x gxp x 0
+dx
+11
+in which we have set d 1 for simplic we are particularli
+interest in find a condit for the exist of a solut correspond
+to unidirect motion in the steadyst the total transport flux of the
+system is a constant3
+f xp x
+dp x
+dx
+12
+use eqn 12 and elimin p x from eq 11 we then have
+f x
+dp x
+d2 p x
+f xf xp x gx
+gx
+2
+dx
+dx
+13
+where the inhomogen term on the rh is to be determin by the normal condit 0l p x p x dx 1 the boundari condit
+for eq 13 again are period
+eqn 13 ha singular point at the zero of f x a simpl local
+analysi show that for nonzero and a physic meaning p x 0
+the solut to eqn 13 ha to be nonanalyt at these singular thi
+nonanalyt behavior howev is expect to be obviat in an asymptot
+studi of the full equat 5 with small d
+3
+we use to denot the transport flux j j as will be shown below there is
+anoth type of flux circular and nontransport j j in these system 46
+8
+3
+entropi product in nonequilibrium steadyst
+we now give a brief discuss of the nonequilibrium thermodynam
+in term of eqn 5 hill 22 23 ha given an extens account of thi
+subject we onli discuss some recent develop in connect with the
+notion of entropi product 40 the concept of entropi product rate
+epr can be easili introduc mathemat in term of eqn 1
+the valid of thi novel thermodynam of nonequilibrium steadyst
+ness howev remain to be experiment test for more discuss
+see 46 47 54 56
+associ with 1 is a function ap x call the helmholtz free
+energi in thermal physic 58 which in unit kb t t is temperatur and
+kb is the boltzmann constant is defin as
+l
+ap x t
+l
+u xp x tdx
+0
+p x t log p x tdx
+14
+0
+when p x t chang with time accord to eqn 1 the product rate
+of total entropi is the rate of decreas in a of the system4 which can be
+comput
+epr
+da
+dt
+l
+l dp x
+dp x
+dx
+log p xdx
+dt
+dt
+0
+0
+l
+d
+u x log p x jxdx
+dx
+0
+l
+d
+f x
+log p x jxdx
+dx
+0
+1 l 2
+j xp 1 xdx 0
+15
+d 0
+u x
+the last step use the definit for j given in eq 1 thi is the secondlaw of thermodynam in term of smoluchowski equat which is the
+4
+from thermodynam stand point a macromolecul is an isotherm system in contact with a thermal environ ie aqueou solut with temperatur t there is
+energi chemic and heat but no materi exchang between the system and it environ clamp atp and adp concentr in the aqueou solut and heat bath the
+system and it environ as a whole is an isol system with a constant total energi
+and thi is approxim hold also for a suffici larg heat bath in mathemat
+term we have dadt dedt t dsdt where e is the intern energi of the system and
+s is the entropi of the system with respect to the system and the environ togeth
+as a whole da detot deenv t dstot dsenv t dstot t dsenv deenv
+t dstot for an isol system microcanon ensembl eenv senv t 58
+9
+nonequilibrium counterpart of a canon ensembl in statist mechan
+eqn 15 can be gener to calcul the entropi product rate
+epr as well as the heat dissip rate in a ness in which stot continu
+to increas 50 to see thi we note the entropi of the system is defin as
+l
+sp x t
+p x t log p x tdx
+16
+0
+therefor in ness
+l
+s
+f jdx epr 0
+17
+0
+where f dudx and the first term on the righthandsid is the heat
+dissip rate hdr therefor in a ness the epr is equal to the
+hdr
+recent work in mathemat physic on entropi product in nonequilibrium system 19 also focu on appropri set up the nonequilibrium
+steadyst with an extern forc and a thermostat simultan act
+on a hamiltonian system the forc suppli energi while the thermostat
+remov heat in order to keep the system in a steadyst with bound energi thi lead to a random dynam system in which entropi product
+is cogent defin 60 the smoluchowski approach we adopt ha a quit
+similar set a drive forc due to chemic reaction rather than mechan forc and an implicit thermostat the smoluchowski equat is a
+consequ of an overdamp newtonian system with maxwellian distribut for the veloc of the particl 63 in fact the diffus coeffici d
+and friction coeffici in 1 defin the temperatur of the thermostat
+t dkb the interest mathemat question are when these random dynam system becom diffus process and whether the entropi
+product propos in these studi is equival to eqn 15 for diffus
+process 54 the recent work by lebowitz and spohn 32 ha provid
+some insight on thi problem 52 in a differ approach to weak random
+perturb of hamiltonian system in a plane freidlin and wentzel map
+the system to a diffus process on a graph which consist of vertic correspond to the stationari state and edg correspond to energi basin
+18 howev thi approach remain to be gener to higher dimension
+hamiltonian system and it relationship to the kramer transitionst
+rate theori in theoret chemistri 21 also remain to be elucid
+it is interest to note that in a steadyst the flux j is a constant
+and all the entropi produc will becom the dissip heat henc epr
+10
+j 2 d 0l p 1 xdx j 2 l2 d which equal j 2 l2 due to the einstein
+relat in kb t unit d 1 the j 2 l2 term is the energi dissip
+due to a determinist motion with veloc v lj and friction coeffici
+in continu medium the inequ indic the addit dissip
+due to random motion it also indic that when p x constant the
+epr is at it minimum ie the chemomechan energi transduct is at
+it maxim effici
+to gener the concept of entropi product to eqn 5 is mathemat straightforward thi yield a novel thermodynam theori for
+ness which is particularli relev to motor protein the import of
+the theori is that it relat epr to the heat product of a work motor
+which is a quantiti that can be experiment measur with some simpl
+algebra we have
+l
+hdr
+0
+l
+epr
+0
+f xj x f xj x jx log
+2
+2
+j
+xp x j
+xp x jx log
+in which
+j x
+f x
+gx
+dx
+f xp x
+gxp x
+18
+dx
+19
+dp x
+f xp x
+dx
+and
+jx f xp x gxp x
+it is obviou that epr is nonneg and equal to zero if and onli if when
+detail balanc is hold 26 49 in ness without extern load hdr
+epr
+if there is an extern load fext then eqn 18 can be further broken
+down into
+kb t ln
+at p g0
+e at p
+adp p i
+l
+0
+jxdx fext j j l
+20
+henc the free energi from atp hydrolysi is equal to exactli the sum of
+the work done against the extern load fext v and posit heat dissip
+eqn 19
+11
+4
+some relev mathemat on coupl diffus
+while p x t in eqn 1 character a stochast process xt in term
+of probabl densiti at each time t p x tdx p robx xt x dx
+there is an altern view of a stochast process in term of it trajectori
+in thi approach all possibl trajectori xt t 0 form a function space
+and a probabl densiti a measur is defin thi natur lead to
+the notion of propag a semigroup which is formal defin as
+p x t p x 0elt
+21
+where the exponenti oper elt act on the distribut p x 0 as a row
+vector the oper l satisfi the backward kolmogorov equat
+p x t
+p x tl
+t
+22
+or it conjug l satisfi the forward kolmogorov or fokkerplanck
+equat
+p x t
+l p x t
+t
+23
+for symmetr oper l l the symbol relationship between the
+oper l and the propag elt ha been made rigor in term of linear oper in a banach space and is known now as hilleyosida theorem
+henc the modern theori of brownian motion ha brought sever mathemat disciplin to bear 15 29 partial differenti equat linear
+oper on function space and harmon analysi
+41
+feynmankac formula
+a major result in thi area is a relationship between the solut of a boundari valu problem bvp and the mean exit time first passag time of a
+diffus process thi relat also ha the potenti for devis numer
+method for solv bvp let now consid a brownian motion in a domain d with the diffus equat 23 and dirichlet boundari condit
+on d now differenti eq 23 with respect to t and then multipli a t
+and integr over t 0 we have
+t
+0
+2 p x t
+dt l
+t2
+12
+t
+0
+p x t
+dt
+t
+24
+if one interpret p x tx0 as the probabl of the brownian particl at x
+at time t start at x0 when t 0 then
+p x tx0
+dt
+t
+0
+d
+is the mean time of the particl start at x0 to exit d the lefthandsid
+of 24 can be simplifi into
+ux0
+t
+t
+dx
+p x t
+p x t
+t
+x x0
+0
+if now we multipli a function x which satisfi lx x with 24
+and then integr over x d we have
+x0
+p x t
+dt
+t
+0
+d
+p x t
+t
+dxlx
+dt
+t
+0
+d
+p x t
+dt
+t
+xdx
+t
+0
+d
+dxxl
+t
+d
+e x0
+0
+xs ds
+thi show that the rh in which xt is the probabilist brownian motion
+and e x0 is the averag along the path of xt start at x0 satisfi the
+inhomogen ode
+lux x
+25
+thi is the wellknown feynmankac formula 37 when x 1 ux is
+the mean exit time of the brownian motion xt
+42
+random evolut
+while a determinist dynam equat coupl to a white nois is call a
+stochast differenti equat and lead to brownian motion 37 a determinist dynam evolut equat coupl to a markov process is call
+random evolut 44 thi is a class of stochast model character by
+a system of equat like
+p x
+t
+p x
+t
+f xp x f xp x gxp x
+x
+f xp x f xp x gxp x
+x
+26
+13
+there is no diffus motion in the movement a particl follow determinist ode x f x and jump between and state equat
+like 26 have wide applic in chemistri and biolog for exampl the
+stochast averag problem in nuclear magnet reson spectroscopi is
+precis such a problem 41 51 for a recent work see 14
+xf xf x
+for larg f and g the motion is approxim x gxfgxf
+x
+for extrem larg f and g the markovian process approach a rapidli
+vari white nois and 26 again approach a diffus equat 51 in
+spectroscopi thi correspond to two distinct spectral line merg into a
+singl broad peak
+for small f and g if both f x and f x have zero then the motion
+of the particl is still qualit simpl the particl will stay at a fix
+point jump to relax to a fix point and stay there until jump
+to and relax back to the fix point or relax to anoth
+fix point if the two f s are arrang appropri the particl can be
+continu unidirect transport step by step as demonstr in
+2
+one insight from thi discuss is that though eqn 11 ha no appropri stationari solut the timedepend solut should be well behav
+thi point out that one should approach the timedepend version of 11
+rather than it stationari solut eqn 13
+43
+small diffus and the theori of larg deviat
+is the dynam of the degener equat 26 the limit behavior of
+eqn 5 when d 0 thi is clearli an import mathemat question
+which also ha signific relev to the model of muscl contract
+as we have state one way to address thi question is to develop a complet
+singular perturb theori for 5 there is howev also a stochast
+approach call theori of larg deviat 13 which in recent year ha
+thrown much light on the problem a combin of both approach
+is undoubtedli desir thi technic veri demand task ha been
+carri out in sever occas for exampl in 34 for a review see 61
+5
+determinist vs stochast motion of molecular motor
+while there is no doubt that the motor protein movement is a drift brwonian motion the extent of the random in the motion can be quantita14
+tive character accord to the mathemat model let now again
+consid eqn 5 in which there is no forc in the detach state as
+we have discuss abov in the limit of both d 0 the motion will be
+trap at the zero of f x thi indic the import of nonzero d
+for the motor movement in thi model as ha been repeatedli point out
+by peskin et al 42 43
+on the other hand when f x 0 a motor protein can move strictli
+in one direct in a random evolut model diffus play no role in
+thi mechan these two differ mode of movement correspond nice
+with brownian ratchet and power stroke in the biochem literatur
+whether a motor protein in fact move backandforth with a drift or almost unidirect consecut can be quantit analyz until now
+there ha no quantit mean to differenti these two type of motion
+the present theori offer a quantiti method to address thi issu take
+eqn 1 as an exampl we can introduc a function
+l
+d
+0
+dp x
+dx
+2
+f xp x
+2
+dx
+27
+as the total movement of the protein note that the first term is associ with the brownian motion and the second term is associ with the
+unidirect movement henc their ratio quantit character the
+mode of the motor movement thi integr is known as action in the theori
+of larg deviat 18
+6
+futur work
+while the detail mathemat analys remain to be carri out for
+model of singl motor movement the mathemat analysi of a chain of
+motor protein is larg unknown except for the complet rigid chain of
+motor huxley model the gener theori can be develop by connect
+n motor protein by spring such a beadandspr model ha been the
+theoret foundat of polym physic 12 48 the late professor pj
+flori wa award the nobel prize in chemistri in 1974 for hi contribut
+to thi theori the differ howev is that a polym is an equilibrium
+system while a chain of motor is a live creatur let denot the
+posit of n motor protein by x1 x2 xn and the correspond
+intern state by 1 2 n where k 0 1 for the detach and
+attach state of the kth motor we therefor have the dynam equat
+for probabl p x1 1 x2 2 xn n t
+15
+n
+2p
+p
+1 k d k d 2
+t
+x
+x
+k
+k
+k1
+1 k
+k
+k f xk 1 k f xk
+xk1 2xk xk1 p
+1 k f x k gxp k
+1 k gx k f xp 1 k
+28
+where is a spring constant a comput analysi of such a model
+can be found in 9 in a recent mathemat analysi a determinist
+counterpart of thi system a chain of beadandspr in a period forc
+field ha been shown to exhibit global phaselock motion 55 57 eqn
+28 is a nparticl system which can be subject to meanfield treatment as
+that for the nparticl sch
+ording equat as in the genesi of nonlinear
+schr
+oding equat 59 such treatment will lead to a nonlinear diffus
+equat 20 open a possibl new mathemat approach to the problem
+of muscl contract in connect to the theori of probabl thi is
+an interact particl system with a nonequilibrium gibbsian stationari
+state 33 and is a natur applic for the theori of larg deviat 10
+acknowledg
+i like to thank numer colleagu in biochemistri for mani help
+discuss i am grate to my mathemat colleagu professor zhenq chen randi levequ jim murray and bob omalley for comment
+on the manuscript
+refer
+1 rd astumian thermodynam and kinet of a brownian motor scienc
+276 1997 917922
+2 rd astumian and m bier fluctuat driven ratchet molecular motor
+phi rev lett 72 1994 17661769
+3 rd astumian and m bier mechanochem coupl of the motion of
+molecular motor to atp hydrolysi biophi j 70 1996 637653
+16
+4 cm bender and sa orszag advanc mathemat method for scientist
+and engin mcgrawhil new york 1978
+5 db bentil model and simul of motil in actomyosin system j
+comput biol 5 1998 7386
+6 hc berg random walk in biolog princeton univ press new jersey
+1983
+7 yd chen asymmetr cycl and bias movement of brownian particl
+in fluctuat symmetr potenti phi rev lett 79 1997 31173120
+8 r courant and d hilbert method of mathemat physic intersci
+new york 1953
+9 tl daniel ac trimbl and pb chase compliant realign of bind
+site in muscl transient behavior and mechan tune biophi j 74
+1998 16111621
+10 a dembo and o zeitouni larg deviat techniqu and applic
+2nd ed springer new york 1998
+11 cr doer w horsthemk and j riordan nonequilibrium fluctuationinduc transport phi rev lett 72 1994 29842987
+12 m doi and sf edward the theori of polym dynam clarendon press
+oxford 1986
+13 a eizenberg and mi freidlin larg deviat for markov process correspond to pde system ann probab 21 1993 10151044
+14 t elston and t kepler a linear twostat model with complex dynam
+preprint north carolina state univers raleigh 1999
+15 w feller an introduct to probabl theori and it applic vol 2
+wiley new york 1971
+16 a fersht enzym structur and mechan wh freeman new york 1985
+17 me fisher and ab kolomeiski molecular motor and the forc they exert
+physica a 274 1999 241266
+18 mi freidlin and ad wentzel random perturb of hamiltonian system memoi of am math soc 523 am provid ri 1994
+19 g gallavotti and egd cohen dynam ensembl in nonequilibrium
+statist mechan phi rev lett 74 1995 26492697
+17
+20 mz guo gc papanicola sr varadhan nonlinear diffus limit for
+a system with nearest neighbor interact comm math phi 118 1988
+3159
+21 p h
+anggi p talkner and m borkovec reactionr theori fifti year after
+kramer rev mod phi 62 1990 251341
+22 tl hill theoret formal for the slide filament model of contract
+of striat muscl part i prog biophi mol biol 28 1974 267340
+23 tl hill theoret formal for the slide filament model of contract
+of striat muscl part ii prog biophi mol biol 29 1975 105159
+24 j howard the movement of kinesin along microtubul ann rev physiol
+58 1996 703729
+25 af huxley muscl structur and theori of contract prog biophi
+biophi chem 7 1957 257318
+26 f j
+ulich a ajdari and j prost model molecular motor rev mod
+phi 69 1997 12691281
+27 sl kalpazid cycl represent of markov process springerverlag
+new york 1995
+28 s kamin on ellipt singular perturb problem with turn point
+siam j math anal 10 1979 447455
+29 i karatza and se shreve brownian motion and stochast calculu
+springerveralg new york 1991
+30 j kevorkian and jd cole multipl scale and singular perturb method
+springerverlag new york 1996
+31 mm klosek and rw cox steadyst current in sharp stochast ratchet
+phi rev e 60 1999 37273735
+32 jl lebowitz and h spohn a gallavotticohentyp symmetri in the larg
+deviat function for stochast dynam j stat phi 95 1999 333365
+33 tm liggett interact particl system springerverlag new york 1985
+34 rs maier and dl stein limit exit locat distribut in the stochast exit problem siam j appl math 57 1997 752790
+35 da mcquarri stochast approach to chemic kinet j appl prob 4
+1967 413478
+36 jd murray asymptot analysi springerverlag new york 1984
+18
+37 bk ksendal stochast differenti equat an introduct with applic 3rd ed springerverlag new york 1992
+38 re omalley jr singular perturb method for ordinari differenti
+equat springerverlag new york 1991
+39 re omalley jr and mj ward exponenti asymptot boundari layer
+reson and dynam metast in mathemat is for solv problem ed lp cook v roytburd and m tulin siam pa 1996 pp189
+203
+40 l onsag reciproc relat in irrevers process i phi rev 37
+1931 405426
+41 zy peng and c ho an exact evalu of nuclear spinlattic relax
+for a twosit jump model j magn reson 82 1989 318336
+42 cs peskin gm odel and gf oster cellular motion and thermal fluctuat the brownian ratchet biophi j 65 1993 316324
+43 cs peskin gb ermentrout and gf oster the correl ratchet a
+novel mechan for gener direct motion by atp hydrolysi in cell
+mechan and cellular engin ed vc mow f guilak r transontay and rm hochmuth springerverlag new york 1994 pp 479489
+44 ma pinski lectur on random evolut world scientif singapor
+1991
+45 h qian a simpl theori of motor protein kinet and energet biophi
+chem 67 1997 263267
+46 h qian vector field formal and analysi for a class of thermal ratchet
+phi rev lett 81 1998 30633066
+47 h qian a simpl theori of motor protein kinet and energet ii biophi
+chem 83 2000 3543
+48 h qian a mathemat analysi for the brownian dynam of dna tether
+j math biol 41 2000 331340
+49 h qian equat for stochast macromolecular mechan of singl protein
+equilibrium fluctuat transient kinet and nonequilibrium steadyst
+lanl eprint seri physics0007017
+50 h qian mathemat formal for isotherm linear irrevers proc
+r soc lond a 2001 in the press
+51 h qian on stochast averag in reson spectroscopi preprint univers of washington seattl 1999
+19
+52 h qian nonequilibrium steadyst circul and heat dissip function phi rev e 2001 in the press
+53 m qian and b zhang multidimension coupl diffus process acta
+math appl sinica 1 1984 168179
+54 m qian and zd wang the entropi product of diffus process on
+manifold and it circul decomposit comm math phi 206 1999
+429445
+55 m qian s zhu and wx qin dynam in a chain of overdamp pendula
+driven by constant torqu siam j appl math 57 1997 294305
+56 mp qian m qian and gl gong the revers and the entropi product of markov process contemp math 118 1991 255261
+57 mp qian and d wang on a system of hyperst frequenc lock persist under white nois ergod th dynam sy 20 2000 547555
+58 le reichl a modern cours in statist physic univ texa press
+austin tx 1980
+59 wp reinhardt soliton in the bose condens in tunnel in complex
+system proceed from the instutut for nuclear theori vol 5 ed s
+tomsov world scientif singapor 1998 pp 277326
+60 d ruell posit of entropi product in the presenc of a random thermostat j stat phi 86 1997 935951
+61 z schuss singular perturb method in stochast differenti equat
+of mathemat physic siam rev 22 1980 119155
+62 ml silverstein symmetr markov process lect note in math 426
+springerverlag new york 1974
+63 n wax select paper on nois and stochast process dover new york
+1954
+64 hx zhou and yd chen chemic driven motil of brownian particl
+phi rev lett 77 1996 194197
+20

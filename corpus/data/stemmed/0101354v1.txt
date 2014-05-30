@@ -1,0 +1,169 @@
+cernth2001025
+kekth743
+msuhep01130
+arxivhepph0101354v1 31 jan 2001
+singl product of charg higg
+boson at linear collid 1
+s kanemura a s moretti b and k odagiri c
+a
+physic and astronomi depart michigan state univers east lans mi 488241116
+usa
+b
+cern ch 1211 geneva 23 switzerland
+c
+theori group kek 11 oho tsukuba ibaraki 3050801 japan
+abstract we discuss singl charg higg boson product from e e annihil
+at next gener linear collid they can be import to studi the phenomenolog of charg higg boson especi when charg higg boson are too heavi to
+be produc by the pair product mechan cross section for variou singl product process are evalu at the lead order our analysi show that in some
+paramet region the phenomenolog of charg higg boson can be explor even
+beyond the kinemat limit for pair product by use singl product process
+introduct
+electroweak symmetri break sector which are compos of two scalar isospindoublet predict charg higg boson h their discoveri at futur collid will
+directli indic such a nonminim structur of the higg sector and it detail
+inform will give strong hint for the structr of physic beyond the standard
+model sm therefor their phenomenolog ha been evalu especi over
+the past few year as their discoveri potenti ha becom more clear
+at cern larg hadron collid charg higg boson below the top quark mass
+will be produc in the top quark decay process for heavier charg higg boson
+they will be produc mainli through the subprocess gb th gg tbh and
+their charg conjug and they may be probe for exampl use the decay
+mode h and it charg conjug especi for larg tan valu in
+spite of huge qcd background
+1
+talk given by s kanemura at the linear collid workshop 2000 octob 2428 2000
+fermilab usa
+on the other hand at futur electronpositron linear collid lc the domin product process should be the pair product 1 e e h h it
+cross section depend onli on the charg higg mass and thi process provid
+a hallmark channel through which we can studi h phenomenolog 2 as long
+as the chargedhigg boson mass mh is suffici
+smaller than it kinemat threshold s2 when mh is near or abov s2 the pair product is
+not avail in such a case the phenomenolog of charg higg boson may be
+explor through the kinematicallyallow singl product process
+in thi talk we discuss variou singl h product channel to complement
+the pair product channel we consid the follow process 3
+e e
+e e
+e e
+e e
+e e
+e e
+e e
+e e
+e e
+e e
+e e
+e e
+e e
+e e
+h h
+tbh tbh
+w h one loop
+e h e h one loop
+z 0w h
+h0 w h
+h 0w h
+a0 w h
+e e w h
+e e w h
+e e z 0 h e e z 0 h
+e e h0 h e e h0 h
+e e h 0 h e e h 0 h
+e e a0 h e e a0 h
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+the associ product mode 1 ha been studi in the literatur 4 the
+process 2 6 7 and 8 as well as 5 with z bb lead to the same final
+state bbw h 5 the oneloop induc process e e h w have also been
+studi in ref 67 the oneloop induc hw z and hw vertic which enter
+into 4 have been calcul in ref 8
+result
+we evalu cross section of the abov singl product process at the lead
+order the twohiggsdoubletmodel 2hdm paramet are taken assum the
+minim supersymmetr standard model for the sm paramet we adopt the
+follow number mb 425 gev mt 175 gev me 0511 mev m 178
+gev m 0 mw 8023 gev w 208 gev mz 9119 gev
+z 250
+2
+gev sin w 0232 the centerofmass energi of the collid s is assum
+figur 1 total cross section for the tau associ product channel 1
+figur 2 total cross section for the w h associ product process 3
+to be 500 gev and 1000 gev detail of the calcul and the plot are shown
+in ref 3
+the associ product process 1 shown in fig 1 are
+domin by
+the pair product as long as it is kinemat allow mh s2 abov
+thi threshold the cross section still exceed 105 pb at larg tan valu if h is
+heavi enough to decay into tb domin background contribut come from topquark pair product by peform w and t mass reconstruct the background
+2
+can be reduc naiv by oew
+so that the signal would be visibl although
+detail simul are need depend on each machin
+the tb or tb associ product process 2 ha a similar structur to h
+mode but the tan depend is opposit the rate is larger for smaller tan
+valu the cross section is suppress abov the pair product threshold in
+comparison with that of h mode becaus of the differ in the phase space
+figur 2 show the cross section of the oneloop induc process e e
+w h 3 for small tan valu the h tb coupl includ in each quarkloop diagram is larg so that the cross section becom substanti the tan
+depend of the cross section is mt4 cot2 at small tan and m4b tan2 at
+veri larg tan the cross section remain larg beyond the pair product kinemat limit when the domin h decay mode is tb we can deal with the top
+pair background by reconstruct the final state and elimin event with two
+top quark thi is expect to reduc the top pair background by about ew
+which should enabl the observ of the peak at the charg higg mass in some
+region of the paramet space
+for the rest of the process 414 there is a varieti of structur observ in
+the cross section their rate howev turn out to be veri small for larger mh
+than the pair product threshold thi is owe to the reason such as coupl
+suppress cancel between feynman diagram andor smaller phase space
+detail of the numer result are shown in ref 3 as mention the process
+2 5 6 7 and 8 lead
+to the final state bbh w some channel have
+larg cross section for mh s2 3 the varieti of reson structur impli
+littl interfer among these process the e e bbh w mode therefor
+complement the pair product in the charg higg studi at lc especi below
+the threshold of the pair product 5 the procedur for the tag of the final
+state bbh w is outlin in ref 3
+in either process inform of the tau 9 and the top 10 polar can be
+use to help identifi the charg higg boson
+conclus
+we found that the h channel and the loop induc h w channel are
+the most promis channel for studi charg higg phenomenolog beyond
+the kinemat limit for pair product the h w channel is enhanc at low
+tan wherea the h channel is enhanc at larg tan for the charg
+higg boson whose mass is below the pair product threshold some of the singl product channel which lead to the bbh w final state complement the
+pair product some of their cross section becom larg but they are rapidli
+suppress abov the kinemat limit of the pair product our result motiv
+further studi of the decay mode the hadron final state and the background
+relev to these charg higg boson singl product process
+refer
+1
+2
+3
+4
+5
+6
+s komamiya phi rev d38 1988 2158
+a kiiskinen m battaglia and p p
+oyhonen these proceed
+s kanemura s moretti and k odagiri hepph0012030
+a gutierrezrodriguez and oa sampayo hepph9911361
+s moretti and k odagiri eur phi j c1 1998 633
+a arhrib m capdequi peyraner w hollik and g moultaka nucl phi b581
+2000 34 sh zhu hepph9901221
+7 s kanemura eur phi j c17 2000 473
+8 tg rizzo mod phi lett a4 1989 2757 a mendez and a pomarol nucl
+phi b349 1991 369 m capdequi peyraner he haber and p irulegui phi
+rev d44 1991 191 s kanemura phi rev d61 2000 095001
+9 bk bullock k hagiwara and ad martin phi lett b67 1991 3055
+10 k odagiri phi lett b452 1999 327

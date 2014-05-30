@@ -1,0 +1,275 @@
+arxivphysics0110087v1 physicsfludyn 30 oct 2001
+hydrodynam singular
+jen egger
+universit
+at gesamthochschul essen fachbereich physik
+45117 essen germani
+1
+introduct
+the equat of hydrodynam are nonlinear partial differenti equat so
+they includ the possibl of form singular in finit time thi mean
+that hydrodynam field becom infinit or at least nonsmooth at point line
+or even fractal object thi mathemat possibl is the price one ha to pay
+for the enorm conceptu simplif a continuum theori bring for the
+descript of a manyparticl system near singular the microscop structur reemerg as the flow chang over arbitrarili small distanc eventu
+the singular is cut off by some microscop length scale such as the distanc
+between molecul
+the most fundament question is whether the microscop structur becom relev for featur of the flow much larger than the microscop one
+if thi is the case the continuum descript is no longer selfconsist but
+ha to be supplement by microscop inform there are some wellknown
+case where singular are artifact of neglect diffus effect like viscos in the hydrodynam equat and there is no more smooth on small
+scale exampl are the singular wide believ to be produc by the
+threedimension euler equat majda 1991 or those of heleshaw flow at
+zero surfac tension dai kadanoff and zhou 1991 there doe not seem to
+be a direct correspond between the intric structur of spatial singular produc by these equat and real flow for a realist descript of
+experi some tini amount of viscos or surfac tension need to be ad
+the reason hydrodynam singular have nevertheless attract consider attent in recent year is the observ that certain singular have
+direct physic signific and are not a consequ of inadequaci of the
+equat in particular freesurfac flow exhibit a rich varieti of experiment
+observ singular which are respons for phenomena like the breakup
+of jet coalesc of drop and bubbl entrain
+2
+physic singular
+we attempt to divid these physic singular into two categori
+2
+21
+jen egger
+dynam singular
+these are singular which are confin to a point in time usual they are
+associ with topolog transit like the breakup of a piec of fluid into two
+piec or the join of two piec into one for exampl the breakup of a viscou
+jet of fluid is driven by surfac tension which tri to reduc the surfac area by
+diminish the radiu of the jet egger 1997a inerti forc constrain the
+motion to becom more and more local sinc smaller and smaller amount
+of fluid have to move thi caus the jet to break at a point in finit time
+onli the smooth effect of viscos prevent infinit gradient from occur
+befor the local radiu goe to zero
+as the local radiu of a fluid thread becom smaller and smaller dure
+pinch it inevit reach a microscop scale micro where the equat
+ceas to be valid for thread diamet between 10 and 100 nm shortrang
+van der waal forc come into play and for even smaller diamet the concept of a sharp interfac will certainli loos it mean moreov a stabil
+analysi brenner shi and nagel 1994 show that the pinch thread is veri
+sensit to thermal fluctuat thi make even thread of micron size unstabl and lead to a new structur of nest singular driven by microscop
+fluctuat after the thread ha dissolv new surfac form on either side
+whose rapid retract is again govern by the navierstok equat but with
+a new topolog it would appear as if the continu to the new navierstok
+problem should necessarili includ the microscop length micro at which the
+thread broke thi is howev not the case egger 1997a as long as one is
+look at scale much larger than micro name the final stage occur on veri
+small spatial and tempor scale and do not affect the flow at a finit distanc
+away from breakup thu the outer part of the solut can be use as a boundari condit for the new problem after breakup a closer analysi reveal that
+thi is suffici to determin the new solut complet thi mean that the
+dynam veri quickli forget the microscop detail of break thu make
+a consist hydrodynam theori of the topolog transit possibl
+22
+persist singular
+the other import categori of singular are those which exist for a period of
+time be either stationari or move about in space like the classic exampl
+of a shock wave at finit viscos a shock wave is not a true singular but
+maintain a finit width determin by the ratio of the viscos and the shock
+strength howev the width of the shock wave is typic of the same order as
+the mean free path of the ga it is move in what is import is thu the fact
+that the solut remain consist as goe to zero inde the dissip
+insid the shock remain finit in thi limit so on scale much larger than the
+flow field is the same as if were zero
+in the realm of freesurfac flow a beauti exampl of a stationari singular ha been discov recent on the surfac of the viscou flow between two
+hydrodynam singular
+3
+counterrot cylind joseph et al 1991 as seen in fig1 two counterrot cylind are submerg in a contain fill with a veri viscou fluid
+the rel strength of viscou forc and surfac tension is measur by the
+capillari number
+rc
+1
+ca
+free surfac hz
+2rc
+sheet of air
+fig 1 sketch of the tworol apparatu at a critic capillari number a point
+cusp appear at a second much higher capillari number a sheet eman from the
+cusp
+where is the coeffici of surfac tension the viscos and and rc are the
+cylind rotat speed and radiu respect at a critic capillari number
+the surfac appear to form a cusp as indic in fig1 sinc the flow remain
+twodimension thi correspond to a line of singular of the surfac assum that it is a true cusp the origin author analyz the flow use a solut
+due to richardson 1968 thi local solut lead to a logarithm diverg
+of the dissip and thu cannot be consist with continuum theori or a finit drive power it wa therefor suggest that the diverg is regular
+by some microscop scale sinc the singular is veri weak the dissip at
+the tip would still be small for realist valu of the microscop length howev thi explan for elimin the logarithm diverg would mean
+that there is a depend of the macroscop flow on a microscop paramet
+face with thi possibl the problem wa reanalyz by jeong and moffatt
+1992 who solv the stoke equat exactli make the simplifi assumpt that the two roller can be repres by a singl dipol the remark
+4
+jen egger
+result of their calcul is that the radiu of curvatur r at the tip is in fact
+finit but exponenti small in the capillari number
+r r0 exp 32ca
+2
+for realist valu of the capillari number thi give radii of curvatur far below
+ani physic scale but is still abl to regular the logarithm singular thu
+one find a finit valu of the energi dissip make the macroscop flow
+independ of the microscop paramet of the fluid
+for practic purpos the theoret valu of r is far too small to be realist rather it most like is the ga abov the fluid which will set the valu
+of r and thi physic effect ha been neglect so far becaus of the noslip
+boundari condit ga will be forc into the narrow channel form by the
+cusp a simpl calcul base on lubric theori show that for r 0 thi
+will lead to a diverg pressur at the tip of the cusp thu the ga will forc
+the channel to widen to a finit radiu at which the ga pressur is compar
+to the pressur insid the fluid
+it is worth note that the independ from microscop paramet is by
+no mean selfevid a famou counterexampl is that of a move contact
+line which occur for exampl when a circular drop is allow to spread on the
+surfac of a tabl de genn 1985 brenner and bertozzi 1993 use kinemat argument alon one show that there will be a logarithm singular
+of the energi dissip at the move contact line there is a vast literatur
+on thi problem deal either with possibl mechan for a microscop cutoff or with a consist mathemat descript of the result macroscop
+dynam the import point to note is that continuum mechan alon cannot resolv the problem in a selfconsist fashion it would predict that the
+spread of the drop is stall contradict observ
+3
+scale
+the central assumpt behind the descript of singular is that of local
+their spatial and tempor scale becom arbitrarili small so that the dynam
+should be remov from the largescal featur of the flow howev consist
+between the singular and the larg scale dynam ha to be assur by match
+condit between the inner and the outer problem
+a second close relat assumpt is that of selfsimilar of the singular
+flow which seem a natur concept for a class of problem which lack a typic
+lengthscal in the case of timedepend singular it mean that the interfac shape at differ time can be map on one anoth by an appropri
+rescal of the axe for exampl the surfac profil of the pinch singular
+when a fluid thread break is egger 1997a
+hz t
+t0 t
+12 z z0
+t0 t12
+3
+hydrodynam singular
+5
+where t0 and z0 are the tempor and spatial posit where the fluid break
+remark the scale function is univers independ of the type of fluid
+or of initi condit for the free surfac cusp of fig1 the shape of the
+interfac ha the scale form
+hz h0 r12 f
+z
+r34
+4
+where 0 h0 is the posit of the cusp tip
+natur it is of particular interest to comput the scale expon no
+gener understand of what select a particular set of expon exist usual local solut like 3 or 4 are not exact solut of the equat but
+onli balanc certain term that are asymptot domin in the case of
+the pinch singular these term belong to surfac tension viscou and inerti
+forc know that dimension analysi alon lead to the correct power law
+howev there are case like the pinch of a veri viscou thread papageorgi
+1995 where the expon are fix to irrat valu by other consist
+requir
+hz
+r
+rm
+0
+z
+fig 2 coalesc of two drop of radiu r and r asymptot the width w of
+the bridg between the drop is much smaller than the minimum radiu r
+what could possibl keep the local motion from behav in a selfsimilar
+fashion two exampl for broken selfsimilar come from the coalesc of
+two drop when two drop meet a point surfac tension will tri to merg
+them into one drop so the minimum radiu r of the bridg between the drop
+will increas fig2 as long as the bridg is veri small inerti effect can
+be neglect and the problem is initi govern by the stoke equat for
+geometr reason the width of the bridg w is much smaller than the minimum
+radiu r so dimension
+5
+rt t
+6
+jen egger
+is the onli possibl power law time depend of the radiu howev a closer
+analysi reveal egger lister and stone 1997 that 5 ha to be correct
+by a logarithm factor logrr where r is the initi radiu of a drop the
+reason for thi chang of the time depend lie in the longrang charact of
+the stoke equat which coupl veri dispar length scale henc the width
+of the bridg cannot be neglect but enter as a logarithm factor logwr
+logrr
+anoth mechan for broken selfsimilar is observ for the same problem but for much smaller initi size of the drop in that case the surfacetensiondriven motion will first occur on the surfac alon rather than be
+abl to drive a flow in the interior the equat of motion for thi surfac diffus wa first given by mullin 1965 base on simpl scale argument
+mullin 1965 gave
+rt t16
+6
+as the evolut of the radiu but thi result could not be corrobor by
+hi own numer simul to understand thi failur one need to take a
+closer look at the dynam near the rise bridg egger 1997b in contrast
+to the viscou flow problem as the gap between the two sphere fill a bulg of
+materi form just abov the minimum eventu it grow enough for both
+side to touch form a void insid the materi of cours at the point of
+touch a new singular occur and the topolog of the problem ha chang
+the naiv assumpt of a singl continu evolut underli 6 is thu
+incorrect selfsimilar can at best exist in a discret sens
+4
+birth of new structur
+if one drive the tworol apparatu of fig1 much harder than necessari for
+the format of a cusp a second transit occur abov which a thin sheet of
+air eman from the cusp and is drawn continu into the fluid thi sheet
+is stabl in time but undergo a threedimension instabl at it lower end
+where it decay into a curtain of tini droplet thi provid a gener mechan for the entrain of bubbl into a flow the exist of the sheet wa
+point out by moffatt 1994 and confirm in a seri of qualit experi egger and smock 1996 use a silicon oil 10000 time as viscou
+as water at suffici high drive the air forc into the cusp experi a
+strong enough downward pull to form a stabl sheet a preliminari calcul
+suggest that the thick of the sheet scale like
+air
+f luid
+12
+rc
+7
+thi predict is base on the assumpt that there is a return flow in the
+sheet which produc veri high gradient so when the sheet becom veri thin
+the inner flow is abl to balanc the high sheer stress produc by the viscou
+flow both surfac tension and graviti are not taken into account
+hydrodynam singular
+7
+fig 3 tipstream in a couett devic show a drop of water in silicon oil 1000
+time as viscou to initi tipstream 200 ppm of surfact ha been ad the
+imag height is 05 mm photograph courtesi h leonhard
+similar phenomena have been observ for a varieti of other stationari singular an exampl known as tipstream taylor 1934de bruijn 1993
+is shown in fig3 one see a drop of water in a shear flow of a veri viscou
+fluid which produc a coneshap singular at both end of the drop under
+circumst that are not well understood a jet eman from the tip and
+eventu decay into drop due to the rayleigh capillari instabl thi is the
+precis analogu of the sheet in the tworol apparatu but the dimens of
+the singular and of the result structur are lower by one a second exampl of a zerodimension singular give rise to a onedimension structur
+is that of a dielectr drop in a strong electr field where a local coneshap
+solut exist taylor 1964 thi taylor cone is never stabl but either
+oscil between a round and a point state or stabil itself by eject
+a jet from it tip again littl is known about the condit under which the jet
+formsbut the strike similar between differ system suggest a unifi
+explan for the emerg of these structur
+refer
+majda a j 1991 vortic turbul and acoust in fluid flow
+siam review 33 349388
+dai w kadanoff l p zhou s 1991 interfac dynam and the motion of singular phi rev a 43 66726682
+egger j 1997a nonlinear dynam and breakup of freesurfac flow
+rev mod phi 69 865929
+8
+jen egger
+brenner m p shi x d nagel s r 1994 iter instabl dure droplet
+fission phi rev lett 73 33913394
+joseph d d nelson j renardi m renardi y 1991 twodimension cusp
+interfac j fluid mech 223 383409
+richardson s 1968 two dimension bubbl in a slow flow
+j fluid mech 33 475493
+jeong jt moffatt h k 1992 freesurfac cusp associ with a flow at low
+reynold number j fluid mech 241 122
+de genn p g 1985 wet static and dynam rev mod phi 57 827863
+brenner m bertozzi a 1993 spread of droplet on a solid surfac
+phi rev lett 71 593596
+papageorgi d t 1995 on the breakup of viscou liquid thread
+phi fluid 7 15291544
+egger e lister j stone h 1997 coalesc of liquid drop
+manuscript in prepar
+mullin w w 1965 morpholog chang of a surfac of revolut due to
+capillarityinduc surfac diffus j appl phi 36 18261835
+egger j 1997b coalesc of sphere by surfac diffus
+phi rev lett 80 26342637
+moffatt h k 1994 privat commun
+egger j smock m 1996 the tworol apparatu at veri high drive
+unpublish experi
+taylor g i 1934 the format of emuls in defin field of flow
+proc roy soc london a 146 501523
+de bruijn r a1993 tipstream of drop in simpl shear flow
+chem eng sci 48 277284
+taylor g i1964 disentigr of water drop in an electr field
+proc roy soc london a 280 383397

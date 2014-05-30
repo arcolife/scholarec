@@ -34,4 +34,4 @@ nosetests.xml
 .project
 .pydevproject
 db
-data
+./data

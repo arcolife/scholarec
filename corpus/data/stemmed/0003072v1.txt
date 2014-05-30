@@ -1,0 +1,670 @@
+arxivphysics0003072v1 physicschemph 24 mar 2000
+phase chang in 38atom lennardjon cluster ii a parallel
+temper studi of equilibrium and dynam properti in the
+molecular dynam and microcanon ensembl
+f calvo
+depart de recherch sur la matier condense
+servic de ion atom et agregat cea grenobl
+f38054 grenobl cedex franc
+j p neirotti and david l freeman
+depart of chemistri univers of rhode island
+51 lower colleg road kingston ri 028810809
+and
+j d doll
+depart of chemistri brown univers
+provid ri 02912
+januari 11 2014
+abstract
+we studi the 38atom lennardjon cluster with parallel temper mont
+carlo method in the microcanon and molecular dynam ensembl a
+new mont carlo algorithm is present that sampl rigor the molecular
+dynam ensembl for a system at constant total energi linear and angular
+momenta by combin the parallel temper techniqu with molecular dynam method we develop a hybrid method to overcom quasiergod
+and to extract both equilibrium and dynam properti from mont carlo
+and molecular dynam simul sever thermodynam structur and
+dynam properti are investig for lj38 includ the calor curv
+the diffus constant and the largest lyapunov expon the import
+of insur ergod in molecular dynam simul is illustr by compar the result of ergod simul with earlier molecular dynam simul
+typeset use revtex
+i introduct
+the simul of system have complex potenti energi surfac pe is often difficult owe to the problem of quasiergod quasiergod can aris in system have
+sever energi minima separ by high energi barrier when such situat occur as
+for exampl in protein glass or cluster the system can becom trap in local basin
+of the energi landscap and the ergod hypothesi fail on the time scale of the simul
+in the canon ensembl the high energi region of the pe are exponenti suppress
+and barrier cross becom rare event calcul of equilibrium properti when phase
+space is thu partit requir method that overcom quasiergod by enhanc barrier cross mani techniqu have been propos to address thi problem includ the
+use of gener ensembl such as multicanonical1 or tsallisian23 simul tempering4
+configurational5 or forc bias6 mont carlo or variou version of the jumpwalking711 algorithm most of these techniqu have been introduc for mont carlo mc simul
+rather than molecular dynam md simul these techniqu have been appli to
+a varieti of sampl and optim problem and phase chang in cluster have often
+been consid as a benchmark to test these methods21011
+the doublefunnel energi landscap of the 38atom lennardjon lj cluster ha been
+investig in detail by doy miller and wales1215 who recent also estim the interfunnel rate constant use master equat dynamics13 thi landscap is challeng for
+simul becaus of the high freeenergi barrier separ the two funnels14 in the preced paper hereaft refer to as i16 we have shown how the parallel temper algorithm
+can be use to deal with thi particularli complex system for mont carlo simul in
+the canon ensembl achiev ergod in microcanon simul is much harder
+than in the canon ensembl becaus the system is unabl to cross ani energi barrier
+higher than the total energi avail the 38atom lennardjon cluster is fundament
+nonergod in a rang of energi thi nonergod may not be a seriou problem when
+consid one particular cluster on a short time scale howev in a statist sampl of
+such system it is import to have ergod result
+to allow md simul to cross the high energi barrier one may think of heat the
+system by increas it kinet energi follow by a cool back to it initi thermodynam state although thi process is straightforward the dynam becom bias and
+non physic dure the heat and cool process moreov it is difficult to control
+accur the heat and cool rate that should be chosen for ani system thi latter
+aspect is particularli critic for the 38atom lennardjon cluster where the narrow and
+deepest funnel is hard to reach even at high temperatur
+becaus of the inher difficulti of molecular dynam mc approach can be especi use for deal with the problem of cross high energi barrier mont carlo
+method have been develop in previou work1017 in the microcanon ensembl in
+these approach the microcanon sampl is at fix energi without ani addit
+constraint such method can be contrast with isoenerget molecular dynam where
+the total linear and angular momenta are also conserv these addit constraint must
+be consid even at zero angular momentum1820 to differenti microcanon simul where onli the energi is fix from molecular dynam simul where addit
+constraint are impos we identifi the former to be simul in the microcanon ensembl and identifi the latter simul to be in the molecular dynam ensembl the
+differ in the two ensembl can be particularli import when the angular momentum
+is larg enough to induc structur centrifug distortions20 becaus dynam properti
+are calcul use molecular dynam method in thi work we find that a combin
+of mont carlo and molecular dynam method are most conveni for develop ergod
+approach to dynam
+in thi paper we adapt the parallel temper method to both the microcanon and
+molecular dynam ensembl the applic of parallel temper in the molecular dynam ensembl requir the incorpor of the conserv of the total linear and angular
+momenta into the probabl in order to extract ergod dynam properti we combin mont carlo method with molecular dynam to develop a hybrid ergod mcmd
+algorithm the effici of the simul tool develop in thi work is demonstr by
+applic to the 38atom lennardjon cluster which exhibit a solidsolid transit
+prior to melting1316 thi transit to an equilibrium phase between truncat octahedr
+and icosahedr geometri make thi cluster an ideal candid for investig how the
+ergod hypothesi can influenc the dynam behavior of a complex system
+the content of the remaind of thi paper are as follow in the next section we recal the basic principl of mont carlo sampl in the microcanon ensembl and we
+present the simpl modif need to includ parallel temper we test microcanon parallel temper method on the 38atom lennardjon cluster and compar the
+microcanon result with those found in i use the canon ensembl we focu on
+equilibrium properti includ the calor curv and the isom distribut in section
+iii we review the characterist of the molecular dynam ensembl at fix total linear
+and angular momenta and fix total energi we extend the parallel temper mont
+carlo method to the md ensembl and we combin microcanon parallel temper with
+molecular dynam to produc an ergod md method we also appli these method to
+sever dynam properti of lj38 in particular the diffus constant and the largest
+lyapunov expon we summar our find and discuss our result in section iv
+ii parallel temper mont carlo in the microcanon
+ensembl
+the fundament quantiti in the microcanon ensembl is the densiti of state for
+a system have n ident particl volum v and total energi e is defin by
+n v e
+1
+nh3n
+hr p ed3n r d3n p
+1
+where h is planck constant and where hr p denot the classic hamiltonian function of
+the coordin r and momenta p of the n particl know the microcanon densiti
+of state one can calcul the canon partit function qn v t by a laplac
+transformation10 the kinet part of the hamiltonian h is quadrat in the momenta and
+eq 1 can be partli integr to give1021
+n v e
+2m
+h2
+3n2
+1
+n3n2
+e ure ur3n21 d3n r
+2
+in eq2 is the gamma function m is the mass of each particl ur h k is the
+potenti energi and is the heavisid step function x 1 if x 0 0 otherwis
+microcanon averag of a coordinatedepend variabl ar can be express
+a n v e
+e ure ur3n21 ard3n r
+e ure ur3n21 d3n r
+3
+the microcanon entropi s can be defin by sn v e kb ln n v e with kb the
+boltzmann constant the thermodynam temperatur t n v e is given by the thermodynam relat senv 1t and can be obtain from a microcanon average21
+t n v e
+2
+1
+3n 2 k 1
+4
+thi express is slightli differ from the kinet temperatur 2 k 3n which is a consequ of our choic in the definit of the entropi as discuss by pearson and coworkers21 it is also possibl to defin the entropi use the phase space volum
+n v e
+e
+0
+n v e de
+5
+definit of the temperatur base on differ from the temperatur base on to order
+1n and the two definit agre onli in the thermodynam limit
+mont carlo simul can be use to explor the microcanon ensembl by perform a random walk in configur space in the standard metropoli scheme a trial
+move from configur ro to configur rn is accept with the probability22
+accro rn min 1
+e rn t rn ro
+e ro t ro rn
+6
+where t ro rn is a trial probabl the accept probabl express in eq6
+insur detail balanc so that the random walk visit point in configur space proport to the equilibrium distribut e r defin by
+e r 1e ure ur3n21
+7
+where is the normal in practic t ro rn is a uniform distribut of point of
+width center about ro and is adjust as a function of the energi so that not too
+mani trial move are either accept or reject
+implement of microcanon mont carlo is as easi as it canon version becaus mont carlo method are base on random walk in configur space in principl
+the system can cross energi barrier higher than the avail energi howev in difficult
+case like lj38 larg atom displac have poor accept ratio are need to reach
+ergod
+parallel tempering2326 ha prove to be an import approach to insur ergod
+in canon mont carlo simul and parallel temper can be easili adapt to the
+microcanon ensembl by replac the boltzmann factor in the accept probabl by
+the microcanon weight e r in the parallel temper scheme sever microcanon
+mc simul are perform simultan at differ total energi ei with some
+predetermin probabl two simul at energi ei and ej attempt to exchang their
+current configur respect ri and rj and thi exchang is accept with probabl
+min 1
+ei rj ej ri
+ei ri ej rj
+the accept ratio is analog to the canon express given in i in microcanon
+simul the potenti energi must be smaller than minei ej otherwis the move
+is reject parallel temper microcanon mc work in the same way as in standard
+canon mc as with canon parallel temper mc the gap between adjac total
+energi must be chosen to be small enough so that exchang between the correspond
+trajectori are accept with a reason probabl
+by use a histogram reweight technique27 it is possibl to extract from the mc
+simul the densiti of state and then all the thermodynam quantiti in both the
+microcanon and the canon ensembl the procedur is similar to that describ
+in ref 28 and reli on the calcul of the distribut p u e of potenti energi
+u at the total energi e p is fit to the microcanon form p u e c ue
+u3n21 e where c stand for the configur densiti of state and e is
+extract by convolut of c u and e u3n21
+we have test the parallel temper mont carlo algorithm in the microcanon
+ensembl on the 38atom lennardjon cluster previous investig forti differ total energi rang from 1724737 to 124 have been use and the same simul
+condit have been chosen as in i in addit to a constrain sphere of radiu 225 to
+prevent evapor exchang have been attempt everi 10 pass with the same method
+for choos exchang trajectori as describ in the previou articl the simul are
+begun with random configur of the cluster geometri and consist of 13 1010 point
+accumul follow equilibr move consist of 95 106 metropoli pointsno exchang follow by 190 106 point use parallel temper the microcanon heat
+capac calcul in thi fashion and shown in fig 1 is qualit the same as the
+canon heat capac see i the melt peak in the microcanon heat capac occur
+at the same calcuat temperatur as the temperatur of the melt peak in the canon heat capac and there are slope chang region at temperatur that correspond to
+equilibrium between the icosahedr basin and the truncat octahedr global minimum
+structur the present simul are also use to obtain structur insight about the cluster as a function of total energi we have calcul the order paramet q4 as defin
+in i as a function of temperatur and compar the classif into the three categori
+of isom truncat octahedr icosahedr or liquidlik use the energi criterion also
+outlin in i
+in fig 2 we show the calor curv t e determin from our parallel temper microcanon mc simul we also present the canon curv for comparison the
+melt transit near t 0166kb is reflect in the chang in slope of the temperatur
+as a function of the energi the microcanon curv doe not display a van der waal
+loop and remain veri close to the canon curv the averag valu of the order paramet q4 is display in the lower panel of fig 2 as a function of the total energi as
+ha been discuss in i for the canon simul the order paramet begin to drop at
+energi where there is the onset of isomer transit to the icosahedr basin near
+e 160 and the order paramet reach it lowest valu at the melt transit
+the isom distribut have been evalu either use the paramet q4 or use the
+energi criterion see the discuss in paper i the result have been plot in fig 3
+as a function of the total energi the behavior of the isom distribut as a function
+of energi is similar to the canon distribut as a function of temperatur and the
+cluster exhibit equilibrium between truncat octahedr and icosahedr geometri in the
+e 150 prior to the solidlik to liquidlik phase chang as in
+energi rang 160
+the canon case the icosahedr distribut is a symmetr function of the energi when
+the energi criterion is use rather than the definit base on q4 thi differ reflect
+the differ between the two definit of icosahedr and liquid basin the oscillatori
+structur observ at the peak of pq4 for the icosahedr distribut in the upper panel of
+fig 3 is smaller than the calcul error two standard deviat of the mean are shown
+whether the observ structur would persist for a longer simul is not known to us
+becaus the definit that assign configur to the icosahedr basin is arbitrari we
+have chosen not to investig thi structur further
+it is use to contrast the current result with previou constant energi studi of lj38
+previou simul have use molecular dynam method where no attempt ha been
+made to insur ergod to contrast these past studi with the molecular dynam techniqu discuss in the next section of thi paper we defin standard molecular dynam to
+repres the usual molecular dynam method where no special procedur is introduc
+to insur ergod simul of lj38 use standard molecular dynam invari lead
+to a calor curv with a clear van der waal loop and a melt temperatur higher than
+that infer from fig 229 from the result of ref 29 the cluster is trap in the octahedr basin and the system doe reflect the true dynam coexist state between the
+truncat octahedron and the icosahedr basin thi is the common situat encount
+in md simul of the lj38 system the cluster choos either to remain trap in the
+octahedr basin or to escap and coexist between the icosahedr solidlik and liquidlik
+form becaus the system is unabl to return from the octahedr basin the microcanon
+temperatur decreas in the usual case van der waal loop aris when there are larg
+energi gap between the lowestenergi isomers30 in the specif case of lj38 it appear that
+the presenc of extra icosahedr isom onli slightli higher in energi than the octahedr
+structur elimin thi loop in the ergod microcanon calor curv
+in order to extract dynam quantiti the mont carlo method we have present
+must be modifi to sampl the md ensembl the modif is the subject of the next
+section
+iii ergod molecular dynam
+the molecular dynam ensembl differ from the microcanon ensembl in that two
+quantiti are conserv in addit to the total energi e volum v and number of particl
+n these two quantiti are the total linear momentum p and total angular momentum
+l if their valu are prescrib the densiti of state remain the fundament quantiti of
+interest and is now defin by
+n v e p l
+1
+nh3n
+n
+n
+hr p e p
+i1
+pi l
+i1
+ri pi d3n rd3n p
+8
+as is the case in the microcanon ensembl see eq2 for atom system the momentum
+integr in eq8 can be evalu explicitly1820 becaus the thermodynam properti are not affect by the translat motion of the center of mass we can assum that
+p 0 we then obtain20
+n v e p 0 l
+2m
+h2
+3n23
+1
+n3n2 3
+d3n r
+e ul re ul r3n24
+det i
+9
+where i is the inertia matrix and ul r ur l i1 l2 is the effect rovibr
+energi thi effect potenti energi includ the kinet energi contribut of the ro
+tate cluster consid as a rigid body3132 the landscap of rotat cluster ha been
+investig by miller and wale in order to studi cluster evaporation33 averag in the
+md ensembl are now express as
+a
+d3n r
+e ul re ul r3n24 ar
+det i
+3n
+d
+r
+e ul re ul r3n24
+det i
+10
+as in the microcanon ensembl we defin the entropi in the molecular dynam ensembl by s kb ln the differ between the microcanon and molecular dynam
+ensembl are the expon 3n2 which is reduc by 3 owe to the geometr constraint the potenti energi which now includ the contribut of the centrifug energi
+and the weight 1 det i which is a consequ of the conserv of the angular momentum mont carlo simul can sampl the md ensembl by perform a random walk
+in configur space the accept probabl from configur ro to configur
+rn is
+accro rn min 1
+el rn t rn ro
+el ro t ro rn
+11
+in the metropoli scheme the microcanon weight e r is now replac by the md
+weight el given by
+el r 1
+1
+e ul re ul r3n24
+det i
+12
+where is a normal the express for the accept probabl is similar to eq
+6 and a practic implement of mont carlo in the md ensembl is made in the same
+way as in the true microcanon ensembl given the vector l parallel temper can be
+also easili combin with the mc simul the accept probabl of exchang
+the configur ri and rj initi at the total energi ei and ej respect is then
+ei ul rj ej ul ri
+min 1
+ei ul riej ul rj
+3n24
+provid that all quantiti insid bracket are posit otherwis the move is reject it
+is remark that the geometr weight have cancel in thi express
+the mont carlo method we have just describ allow sampl of configur space
+rigor equival to the sampl we would obtain use molecular dynam but with
+the addit possibl of cross the energi barrier higher than the avail energi
+the method can be use in it present form to extract equilibrium properti onli depend
+on the energi or geometri as ha been illustr in the previou section to comput dynam quantiti the method can also provid a databas of configur repres
+of a given total energi instead of perform a few veri long md simul that are in
+principl unabl to reach other part of the energi surfac separ by barrier higher than
+the avail energi we choos to perform a statist number of short simul start
+from configur obtain by parallel temper mont carlo in the md ensembl with
+same total energi and angular momentum by construct if the mc method is correctli
+ergod then the hybrid md method we have suggest can be expect to yield ergod
+dynam observ
+we now illustr thi ergod molecular dynam method on the lj38 problem two
+essenti dynam paramet have been calcul the first is the self diffus constant
+d obtain from the deriv of the averag mean squar atom displac
+d
+1d
+rt r02
+6 dt
+13
+where the averag is taken over all particl of the system and over all short md simul
+the other paramet is the largest lyapunov expon that measur the exponenti rate
+of diverg of the distanc between two initi close trajectori in the phase space if
+we write the equat describ the hamiltonian dynam in condens form as t
+f where f is a nonlinear function and r p the phase space point then a small
+perturb evolv accord to the simpl equat ddt f the largest
+lyapunov expon is obtain from the time evolut of the vector
+t
+1
+ln
+t 00 t
+0
+lim
+lim
+14
+in eq14 is a metric on the phase space in principl ani metric can be use and we
+choos the euclidian metric includ both the momenta and the coordin the numer
+procedure34 involv a period renorm of the vector to prevent it exponenti
+diverg the success length are accumul and contribut to the averag valu of
+in i the cluster have been defin use a hard sphere constrain potenti becaus
+the angular momentum is not conserv after reflect from such hard wall boundari in
+the molecular dynam simul we have chosen a soft repuls spheric wall uc defin
+with respect to the center of mass of the cluster for each particl by
+uc r
+0
+r rc
+r rc 4 4 r rc
+15
+in thi equat the atom distanc r are measur with respect to the cluster center
+of mass the simul have been perform set the angular momentum to zero for
+simplic we stress that even in thi case with l 0 the weight 1 det i must be
+includ in the mont carlo probabl so that we effect sampl the md ensembl
+the actual thermodynam behavior in the md ensembl at zero angular momentum is
+nevertheless nearli ident to the microcanon behavior
+the applic to the lj38 cluster ha been made by perform 1010 mc step follow
+107 equilibr step in a parallel temper simul in the md ensembl the same
+40 total energi have been chosen as in the previou section and 105 configur have
+been store everi 105 step for each simul short molecular dynam run of 104 time
+step follow 103 equilibr step have been perform for each of these configur
+with the same total energi as the correspond mc trajectori of origin and with zero
+total linear and angular momenta as well the paramet use for the constrain wall
+are respect rc 225 and 100 for both the mc and md run a simpl verlet
+algorithm ha been use to propag the md trajectori with the time step t 001
+reduc lj unit the propag of the tangent trajectori to calcul the lyapunov
+expon ha been determin with a fourth order rungekutta scheme the final valu of
+d and are an averag over the 105 md simul the variat of d and with total
+energi are depict in fig 4 in both case two curv have been plot calcul either
+from standard molecular dynam with 108 time step follow 107 equilibr step
+and start initi from the lowestenergi structur or from our hybrid ergod molecular
+dynam method for both quantiti the two md scheme clearli yield distinct valu in
+the energi rang where equilibrium between truncat octahedr and icosahedr geometri
+occur the thermodynam temperatur not plot here ha the same variat as the
+calor curv of fig 2 when calcul with ergod md standard molecular dynam
+predict a van der waal loop center at t 018kb for standard md the cluster is
+trap in the icosahedr basin and is in practic unabl to reach the octahedr basin
+onli the equilibrium between the icosahedr basin and liquidlik structur occur as
+can be seen from the upper panel of fig 4 thi chang in curvatur of the temperatur is
+also present for the diffus constant which exhibit strong variat at the energi where
+the octahedr structur vanish when standard md is use in contrast the variat in
+ergod md are smooth
+the melt temperatur impli by the largest lyapunov expon is also higher in
+standard md than in ergod md even though the variat of the lyapunov expon are
+continu in both md schemes29 inde use ergod molecular dynam we observ a
+shift of the curv obtain by standard md toward the lower energi as shown by hind
+berri and wales3537 the lyapunov expon and the kolmogorov entropi are quantiti
+essenti depend on the local properti of the energi landscap one contribut
+come from the neg curvatur of the landscap and anoth contribut is the fluctuat of posit curvature38 both contribut are affect by the cluster be trap
+either insid the truncat octahedr basin or insid the icosahedr basin in thi latter
+case in particular the differ isom belong to the icosahedr basin are connect
+through region of neg curvatur while onli one isom defin the octahedr funnel
+becaus ergod molecular dynam allow the cluster to be found in both basin prior
+to melt the dynam behavior is like to be veri differ and more chaotic with
+respect to the dynam behavior of the cluster confin to the octahedr funnel thi
+differ is precis what we observ on the lower panel of fig 4
+iv conclus
+in thi paper we have explor the parallel temper method in simul in the
+microcanon ensembl the implement of the parallel temper algorithm in thi
+ensembl is straightforward the boltzmann factor expu be replac by the microcanon weight e u3n21 applic to the lj38 cluster ha shown the thermodynam behavior in the microcanon ensembl to be similar to the behavior in the canon
+ensembl the solidliquid phase chang is preced by a solidsolid phase chang where the
+cluster is in equilibrium between truncat octahedr and icosahedr geometri thi
+phase equilibrium is well reproduc in the simul owe to the power of parallel temper the calcul microcanon calor curv which doe not display a van der waal
+loop is consist with the singl peak heat capac observ in i16
+we have extend the parallel temper microcanon mont carlo algorithm to sampl the molecular dynam ensembl at constant total energi linear momentum and angular
+momentum combin with standard molecular dynam thi method circumv the lack
+of connect between region of the potenti energi surfac the method can ensur ergod in microcanon simul which is much more difficult to achiev than in the
+canon ensembl iron thi ergod md method can be view as the counterpart
+of the techniqu develop by chekmarev and krivov to studi the dynam of system
+confin to onli one catchment basin in the energi surface39
+we have perform a statist number of short molecular dynam run start from
+configur store period in parallel temper mont carlo simul these simul sampl the md ensembl at the same total energi linear and angular momenta
+as the standard molecular dynam run in fact the length of the md run is mainli
+dictat by the larg number of start configur one may think of reduc drastic thi number to allow for the calcul of paramet vari on longer time scale
+unfortun if the energi landscap is not known in advanc then it is hard to guess how
+import are the contribut of the basin not select as start configur in the
+case of lj38 have onli 3 main region on the energi surfac one possibl is to comput
+a dynam properti as the averag valu over 3 differ simul start either from
+the truncat octahedr geometri one icosahedr geometri or a lowli liquid geometri
+all carri out at the same total energi howev as we have seen in fig 3 it is not obviou
+how to choos properli the weight of each basin in thi averag becaus of the difficulti
+in distinguish between icosahedr and liquid structur in mani case for thi reason
+we believ that the first parallel temper mc step of the hybrid ergod method is essenti in the vicin of phase chang to captur mani start configur that are use
+subsequ in standard molecular dynam the enhanc sampl offer by parallel
+temper can also act as a statist represent of the energi surfac at a given total
+energi and the long time dynam may be further investig by use master equat
+after search the saddl points1540
+we have calcul two dynam quantiti with the present hybrid mdmc method
+the diffus constant and the largest lyapunov expon in the 38atom lennardjon
+cluster the variat of both quantiti with the total energi are significantli differ
+when evalu with standard nonergod molecular dynam or with our hybrid ergod
+md method these result emphas the differ contribut of the two funnel of the
+energi landscap to the averag valu of the paramet estim
+the algorithm develop in thi investig allow the calcul of thermodynam
+structur or dynam properti of system such as lj38 that can be express as phase
+space or time averag parallel temper work use a criterion base on the potenti
+energi but not on the geometri consequ permut isom can be introduc
+in the cours of the simul quantiti such as fluctuat of configurationdepend
+properti are much more difficult to extract than actual averag for instanc the lindemann index which measur the root mean squar bond length fluctuat is often
+consid to be a reliabl paramet for detect melt in atom and molecular system thi quantiti cannot be properli estim with the ergod md scheme and the
+same difficulti persist for other method base on the use of differ trajectori
+although the idea of combin mont carlo sampl with standard molecular dynam
+can be appli to other techniqu such as jumpwalk we believ that parallel temper
+is the key to the success in the case of lj38 as in the canon version the equilibrium
+phase between truncat octahedr and icosahedr structur is correctli reproduc in
+an energi rang preced the melt region becaus in thi rang configur may be
+access either from higher energi trajectori contain mainli icosahedr geometri
+or from lower energi trajectori act as a reservoir for the octahedr geometri as
+notic by falcioni and deem25 the parallel temper algorithm is especi use at low
+temperatur or in our case at low energi the long relax time inher in system
+like cluster protein critic or glassi liquid are a seriou difficulti for standard simul
+method we expect the present ergod method to be particularli use to deal with the
+dynam of such system
+the method we have present work at constant total energi it is possibl to improv
+ergod in constanttemperatur md either by use canon parallel temper as in
+the work of sugita and okamoto41 or by coupl parallel temper canon mont carlo
+to short nosehoov trajectori in the nosehoov approach such molecular dynam
+simul do conserv a zero angular momentum so a rigor mc sampl should in
+clude the geometr weight 1 det i in the probabl also in thi case the present
+microcanon scheme can be easili use for rotat bodi which make the method suitabl for investig the strong influenc of centrifug effect on phase chang in atom
+cluster
+acknowledg
+some of thi work ha been motiv by the attend of two of us dlf and fc
+at a recent cecam meet on overcom broken ergod in simul of condens
+matter system we would like to thank cecam je straub and b smit who organ the meet and those who attend the workshop for stimul discuss thi
+work ha been support in part by the nation scienc foundat under grant number
+che9714970 and cda9724347 thi research ha been support in part by the phillip
+laboratori air forc materi command usaf through the use of the mhpcc under
+cooper agreement number f29601930001 the view and conclus contain in thi
+document are those of the author and should not be interpret as necessarili repres
+the offici polici or endors either express or impli of phillip laboratori or
+the us govern
+refer
+1
+b a berg and t neuhau phi rev lett 68 9 1991
+2
+i andricioaei and j e straub j chem phi 107 9117 1997
+3
+u e hansmann and y okamoto phi rev e 56 2228 1997
+4
+e marinari and g parisi europhi lett 19 451 1992
+5
+j i siepmann and d frenkel mol phi 75 59 1992
+6
+c pangali m rao and b j bern chem phi lett 55 413 1978
+7
+d d frantz d l freeman and j d doll j chem phi 93 2769 1990
+8
+d d frantz d l freeman and j d doll j chem phi 97 5713 1992
+9
+a matro d l freeman and r q topper j chem phi 104 8690 1996
+10
+e curotto d l freeman and j d doll j chem phi 109 1643 1998
+11
+h xu and b j bern j chem phi 110 10 299 1999
+12
+j p k doy and d j wale phi rev 80 1357 1998
+13
+j p k doy d j wale and m a miller j chem phi 109 8143 1998
+14
+j p k doy m a miller and d j wale j chem phi 110 6896 1999
+15
+m a miller j p k doy and d j wale phi rev e 60 3701 1999
+16
+j p neirotti f calvo d l freeman and j d doll previou articl
+17
+m a miller and d j wale j chem phi 107 8568 1997
+18
+r s dumont j chem phi 95 9172 1991
+19
+s c smith j chem phi 97 2406 1992
+20
+f calvo and p labasti eur phi j d 3 229 1998
+21
+e m pearson t halicioglu and w a tiller phi rev a 32 3030 1985
+22
+n metropoli a rosenbluth m n rosenbluth a teller and e teller j chem phi
+21 1087 1953
+23
+c j geyer and e a thompson j am stat assoc 90 909 1995
+24
+m c tesi e j jans van rensburg e orlandini and s g whittington j stat phi
+82 155 1996
+25
+m falcioni and m w deem j chem phi 110 1754 1999
+26
+q yan and j j de pablo j chem phi 111 9509 1999
+27
+p labasti and r l whetten phi rev lett 65 1567 1990
+28
+f calvo and p labasti chem phi lett 247 395 1995
+29
+f calvo j chem phi 108 6861 1998
+30
+d j wale mol phi 78 151 1993
+31
+j jellinek and d h li phi rev lett 62 241 1989
+32
+d h li and j jellinek z phi d 12 177 1989
+33
+m a miller and d j wale mol phi 89 533 1996
+34
+g benettin l galgani and jm strelcyn phi rev a 14 2338 1974
+35
+r j hind r s berri and d j wale j chem phi 96 1376 1992
+36
+r j hind and r s berri j chem phi 99 2942 1993
+37
+d j wale and r s berri j phi b 23 l351 1991
+38
+v mehra and r ramaswami phi rev e 56 2508 1997
+39
+s f chekmarev and s v krivov phi rev e 57 2445 1998
+40
+k d ball and r s berri j chem phi 111 2060 1999
+41
+y sugita and y okamoto chem phi lett 314 141 1999
+figur
+fig 1 the heat capac as a function of energi calcul in the microcanon ensembl
+the melt peak occur at the same calcul temperatur in the microcanon ensembl as
+found in the canon ensembl but the height of the microcanon peak is significantli higher
+than the canon peak compar with fig 1 in i both the microcanon and canon heat
+capac display a region of chang in slope at the transit between the truncat octahedron
+and the icosahedr basin the error bar repres two standard deviat of the mean
+fig 2 upper panel the microcanon calor curv for lj38 obtain from parallel temper mont carlo simul the temperatur is plot as a function of the total energi both
+express in reduc lj unit the circl are the direct result of microcanon simul the
+solid line is a fit obtain by the histogram reweight techniqu also plot as a dot line is
+the calor curv in the canon ensembl lower panel averag valu of the order paramet q4
+as a funciton of the total energi for both panel the error bar are smaller than the size of the
+symbol
+fig 3 upper panel the probabl distribut of the order paramet q4 as a function of
+the total energi lower panel the probabl distribut of the energi of the quench structur
+as a function of the total energi for both quantiti fcc label the truncat octahedron ic
+label structur from the icosahedr basin and liq label structur from the liquid region in
+the lower panel the error bar are smaller than the size of the symbol in the upper panel the
+error bar repres two standard deviat of the mean
+fig 4 two dynam paramet calcul for lj38 use either standard molecular dynam start from the lowestenergi structur empti symbol or the hybrid ergod mdmc
+method full symbol as a function of the total energi the result are express in lennardjon
+time unit t0 upper panel diffus constant d lower panel largest lyapunov expon for
+both panel the error bar are smaller than the size of the symbol
+8
+7
+cvnkb
+6
+5
+4
+3
+180
+170
+160
+150
+e
+140
+130
+120
+04
+tkb
+03
+02
+01
+0
+02
+q4
+015
+01
+005
+0
+180
+170
+160
+150
+e
+140
+130
+120
+1
+fcc
+ic
+liq
+08
+pq
+4
+06
+04
+02
+0
+1
+p uquench
+08
+06
+fcc
+ic
+liq
+04
+02
+0
+180
+170
+160
+150
+e
+140
+130
+120
+0
+10
+standard
+ergod
+2
+dt0
+10
+4
+10
+6
+10
+8
+10
+25
+standard
+ergod
+2
+t0
+15
+1
+05
+0
+180
+170
+160
+150
+e
+140
+130
+120

@@ -1,0 +1,1180 @@
+ucd200110
+hepph0110340
+octob 2001
+physic of higg factori
+v barger1 m s berger2 j f gunion3 and t han1
+arxivhepph0110340v1 25 oct 2001
+1
+physic depart univers of wisconsin madison wi 53706
+2
+physic depart indiana univers bloomington in 47405
+3
+physic depart univers of california davi ca 95616
+we outlin the uniqu role of a muon collid as a higg factori for higg boson reson
+product in the schannel physic exampl includ the precis measur of the higg
+mass and total width and the result abil to discrimin between the smlike higg boson of
+differ model such as between a light sm higg boson and the light higg boson of the mssm the
+determin of the spin and coupl via the h decay mode differenti of two nearli
+degener heavi higg boson by an energi scan and the abil to explor a gener extend
+higg sector possibl with cpviolat coupl the muon collid higg factori could perform
+measur that would be highli complementari to higg studi at the lhc and lc it would
+be like to play a veri crucial role in fulli understand the higg sector
+i
+introduct
+a muon collid with cm energi center at the higg boson mass offer a uniqu opportun to produc
+higg boson in the schannel and therebi measur the higg mass total width and sever partial width to
+veri high precis in the event that onli a smlike higg boson is discov and it properti measur at
+the tevatron the lhc and a lc it may prove essenti to build a muon collid to fulli explor the higg
+sector in particular the veri narrow width of a standard model sm higg boson cannot be measur
+directli at the larg hadron collid lhc or at a futur linear collid lc furthermor there are region
+of paramet space for which it will be imposs for either the lhc or a lc to discov the heavier higg
+boson of supersymmetri or in the case of a gener twohiggsdoublet or more extend model higg boson
+of ani mass with small or zero v v coupl
+the valu of a futur higg factori should be discuss in light of recent experiment data while by no
+mean definit recent experiment result point in promis direct for higg factori first there is
+2 statist evid from lep1 2 3 4 5 for a higg boson near mh 115 gev such a mass is
+the
+in the optim rang for studi at a higg factori and it is for such a low mass that the muon collid factori
+option would add the most inform to data from the lhc and a lc first 115 gev is suffici abov
+the zpole that the background from z product and decay to bb is not so larg and the mass is suffici
+below the w w threshold that the decay width remain small and the abil of the muon collid to achiev
+a veri narrow beam energi spread can be exploit second it is for mass below 120 gev that the lc
+will have difficulti get a precis measur of the higg to w w branch ratio result in larg
+error for the indirect determin of the total higg width of cours a higg boson in thi mass rang
+and have substanti v v coupl is also the most natur interpret of current precis electroweak
+data on the theoret side a higg mass of 115 gev is veri suggest of supersymmetri in the minim
+supersymmetr model mssm such a mass is near the theoret upper limit of mh 130 gev and would
+indic a valu of the supersymmetri paramet tan substanti abov 1 assum stop mass
+1 tev
+a higg with mass 115 gev in the context of a largetan supersymmetri scenario would mesh nice
+with recent evid for an anomal magnet moment of the muon6 that deviat from the standard model
+predict the 26 discrep is natur account for provid tan is rel larg and superparticl
+mass are not too heavi more specif a supersymmetr interpret of thi discrep with the sm
+predict impli the follow relationship between the mass scale m
+of supersymmetr particl contribut
+submit to the proceed of the futur of particl physic snowmass 2001 e1 group
+work wa support in part by the us depart of energi
+thi
+2
+to the oneloop anomal magnet moment diagram and tan 7
+100 gev
+m
+tan
+2
+33 13
+furthermor if the anomal magnet moment is explain by supersymmetri the valu of the higg mass
+paramet of supersymmetr model ha a sign which is consist with the constraint from the radi
+decay b s thu a consist pictur begin to emerg suggest lowenergi supersymmetri with a higg
+boson in the predict mass rang
+while these recent experiment data are not definit they do point to an interest scenario wherebi a
+muon collid might prove essenti to the understand of the higg sector of a supersymmetr model the
+muon collid could perform at least two measur crucial for detail a susi higg sector 1 accur
+measur the properti of a light smlike higg boson and distinguish it from a supersymmetr higg
+boson and 2 discov heavi higg boson of supersymmetri and accur measur their properti
+ii
+muon collid
+muon collid have a number of uniqu featur that make them attract candid for futur
+accelerators8 the most import and fundament of these deriv from the larg mass of the muon in
+comparison to that of the electron thi lead to a the possibl of extrem narrow beam energi spread
+especi at beam energi below 100 gev b the possibl of acceler with veri high energi c the
+possibl of employ storag ring at high energi d the possibl of use decay of acceler muon to
+provid a high luminos sourc of neutrino under activ consider as review elsewher e increas
+potenti for probe physic in which coupl increas with mass as doe the sm hsm f f coupl
+here our focu is on the higg sector the rel larg mass of the muon compar to the mass of the
+electron mean that the coupl of higg boson to is veri much larger than to e e impli much
+larger schannel higg product rate at a muon collid as compar to an electron collid see fig 1 for
+higg boson with a veri small mev scale width such as a light sm higg boson product rate in the
+schannel are further enhanc by the muon collid abil to achiev beam energi spread compar to
+the tini higg width in addit there is littl bremsstrahlung and the beam energi can be tune to one part
+in a million through continu spinrot measurements9 due to these import qualit differ
+between the two type of machin onli muon collid can be advoc as potenti schannel higg factori
+capabl of determin the mass and decay width of a higg boson to veri high precision10 11 high rate of
+higg product at e e collid reli on substanti v v higg coupl for the zhigg higgsstrahlung or
+w w higg w w fusion reaction in contrast a collid can provid a factori for produc a higg
+boson with littl or no v v coupl so long as it ha smlike or enhanc coupl
+b t
+h
+b t
+m
+m b m t
+fig 1 feynman diagram for schannel product of a higg boson
+of cours there is a tradeoff between small beam energi spread ee r and luminos current
+estim for yearli integr
+luminos use l 1 1032 cm2 s1 as impli l 1 fb1 yr are
+1
+at s 100 gev for beam energi resolut of r 0003 001 01 respect
+lyear
+01 022 1 fb
+lyear 2 6 10 fb1 at s 200 350 400 gev respect for r 01 despit thi studi show that for
+small higg width the schannel product rate and statist signific over background is maxim by
+3
+tot
+choos r to be such that s
+h in particular in the sm context thi correspond to r 0003 for
+mhsm
+120 gev
+if the mh 115 gev lep signal is real or if the interpret of the precis electroweak data as an
+indic of a light higg boson with substanti v v coupl is valid 36 then both e e and
+collid will be valuabl in thi scenario the higg boson would have been discov at a previou higher
+energi collid possibl a muon collid run at high energi and then the higg factori would be built with
+a centerofmass energi precis tune to the higg boson mass37 the most like scenario is that the higg
+boson is discov at the lhc via gluon fusion gg h or perhap earlier at the tevatron via associ
+product q q w h tth and it mass is determin to an accuraci of about 100 mev if a linear collid
+ha also observ the higg via the higgsstrahlung process e e zh one might know the higg boson
+mass to better
+than 50 mev with an integr luminos of 500 fb1 the muon collid would be optim
+to run at s mh and thi centerofmass energi would be vari over a narrow rang so as to scan over the
+higg reson see fig 2 below
+iii
+higg product
+the product of a higg boson gener denot h in the schannel with interest rate is a uniqu
+featur of a muon collid 10 11 the reson cross section is
+4h
+h x
+h s
+2
+2
+2
+s mh m2h htot
+1
+in practic howev there is a gaussian spread s to the centerofmass energi and one must comput the
+effect schannel higg cross section after convolut assum some given central valu of s
+2
+s
+s
+smh
+1
+bfh x
+4 bfh
+2
+h s
+h s exp
+d s
+2
+2
+2
+m
+2 12
+2 s
+h
+s
+s
+8
+1 tot
+h
+it is conveni to express s in term of the rootmeansquar rm gaussian spread of the energi of an
+fig 2 number of event and statist error in the bb final state as a function of
+assum r 0003 and l 000125 fb1 at each data point
+s in the vicin of mhsm 110 gev
+individu beam r
+s 2 mev
+r
+0003
+s
+100 gev
+3
+4
+tot
+from eq 1 it is appar that a resolut s
+h is need to be sensit to the higg width further
+tot
+eq 2 impli that h 1s for s tot
+h and that larg event rate are onli possibl if h is not so larg
+that bfh is extrem suppress the width of a light smlike higg is veri small eg a few mev
+a light smlike h
+for mhsm 110 gev impli the need for r valu as small as 0003 for studi
+fig 2 illustr the result for the sm higg boson of an initi center scan over s valu in the vicin
+of mhsm 110 gev thi figur dramat a that the beam energi spread must be veri small becaus of
+the veri small tot
+hsm when mhsm is small enough that the w w decay mode is highli suppress b that we
+requir the veri accur in situ determin of the beam energi to one part in a million
+through the spin
+precess of the muon note earlier in order to perform the scan and then center on s mhsm with a high
+degre of stabil
+if the h ha smlike coupl to w w it width will grow rapidli for mh 2mw and it schannel product
+cross section will be sever suppress by the result decreas of bfh more gener ani h with
+smlike or larger h coupl will retain a larg schannel product rate when mh 2mw onli if the hw w
+coupl becom strongli suppress rel to the hsm w w coupl
+the gener theoret predict within supersymmetr model is that the lightest supersymmetr higg
+boson h0 will be veri similar to the hsm when the other higg boson are heavi thi decoupl limit is
+veri like to aris if the mass of the supersymmetr particl are larg sinc the higg mass and the
+superparticl mass are typic similar in size for most boundari condit choic thu h0 rate will be
+veri similar to hsm rate in contrast the heavier higg boson in a typic supersymmetr model decoupl
+from v v at larg mass and remain reason narrow as a result their schannel product rate remain
+larg
+for a smlike h at s mh 115 gev and r 0003 the bb final state rate are
+signal 104 event lfb1
+background 104 event lfb1
+4
+5
+the sm higg cross section and background are shown in fig 3 for r 0003 and mhsm valu such that
+the domin decay mode is bb
+fig 3 the sm higg cross section and background in bb w w and zz also shown is the luminos need for
+a 5 standard deviat detect in bb from ref 10
+iv
+the muon collid role
+an assess of the need for a higg factori requir that one detail the uniqu capabl of a muon collid
+versu the other possibl futur acceler as well as compar the abil of all the machin to measur
+5
+the same higg properti muon collid and a higg factori in particular would onli becom oper
+after the lhc physic program is welldevelop and quit possibl after a linear collid program is matur
+as well so one import question is the follow if a smlike higg boson and possibl import physic
+beyond the standard model have been discov at the lhc and perhap studi at a linear collid what
+new inform could a higg factori provid
+the schannel product process allow one to determin the mass total width and the cross section
+h h x for sever final state x to veri high precis the higg mass total width and the
+cross section can be use to constrain the paramet of the higg sector for exampl in the mssm their
+precis valu will constrain the higg sector paramet ma0 and tan where tan is the ratio of the two
+vacuum expect valu vev of the two higg doublet of the mssm the main question is whether these
+constraint will be a valuabl addit to lhc and lc constraint
+the expect for the luminos avail at linear collid ha risen steadili the most recent studi
+assum an integr luminos of some 500 fb1 correspond to 12 year of run at a few100 fb1 per
+year thi luminos result in the product of greater than 104 higg boson per year through the bjorken
+higgsstrahlung process e e zh provid the higg boson is kinemat access thi is compar
+or even better than can be achiev with the current machin paramet for a muon collid oper at
+the higg reson in fact recent studi have describ highluminos linear collid as higg factori
+though for the purpos of thi report we will reserv thi term for muon collid oper at the schannel
+higg reson
+a linear collid with such high luminos can certainli perform quit accur measur of certain
+higg paramet such as the higg mass coupl to gaug boson coupl to heavi quark etc18
+precis measur of the coupl of the higg boson to the standard model particl is an import test
+of the mass gener mechan in the standard model with one higg doublet thi coupl is proport
+to the particl mass in the more gener case there can be mix angl present in the coupl precis
+measur of the coupl can distinguish the standard model higg boson from the smlike higg boson
+typic present in a more gener model if deviat are found their magnitud can be extrem crucial for
+constrain the paramet of the more gener higg sector in particular it might be possibl to estim
+the mass of the other higg boson of the extend higg sector therebi allow a more focus search for
+them
+tabl i achiev rel uncertainti for a smlike mh 110 gev for measur the higg boson mass and total
+width for the lhc lc 500 fb1 and the muon collid 02 fb1
+mh
+tot
+h
+lhc
+lc
+4
+4
+9 10
+3 10
+1 3 106
+03
+017
+02
+the accuraci possibl at differ collid for measur mh and tot
+h of a smlike h with mh 110 gev
+are given in tabl i to achiev these accuraci one first determin the higg mass to about 1 mev by
+the preliminari scan illustr in fig 2 then a dedic threepoint fine scan10 near the reson peak
+use l 02 fb1 of integr luminos correspond to a few year of oper would be perform
+for a sm higg boson with a mass suffici below the w w threshold the higg total width is veri small
+of order sever mev and the onli process where it can be measur directli is in the schannel at a muon
+collid indirect determin at the lc can have higher accuraci onc mh is larg enough that the w w
+mode rate can be accur measur requir mh 120 gev thi is becaus at the lc the total width
+must be determin indirectli by measur a partial width and a branch fraction and then comput the
+total width
+tot
+h x
+brh x
+6
+for some final state x for a higg boson so light that the w w decay mode is not use then the total
+width measur would probabl requir use of the h decays19 thi would requir inform from
+a photon collid as well as the lc and a small error is not possibl for mh
+115 gev the muon collid
+can measur the total width of the higg boson with greater precis than can be achiev use the indirect
+mode techniqu at the lc and would be a veri valuabl input for precis test of the higg sector in
+particular sinc all the coupl of the standard model hsm are known htot
+is precis predict therefor
+sm
+the precis determin of tot
+obtain
+by
+thi
+scan
+would
+be
+an
+import
+test of the standard model and
+h
+ani deviat would be evid for a nonstandard higg sector or other new physic
+6
+tan
+tan
+in fact a muon collid of limit luminos can remain more than competit with lhc lc for discrimin between the sm hsm and some smlike h even for mh valu such that the lc obtain a good
+measur of w w rate as it happen for x bb there is a fortuit compens that result in
+h h bb be almost complet independ of the somewhat uncertain b quark mass veri
+roughli larger mb mean larger bfh bb but also larger tot
+h the latter impli a smaller convolut cross
+section h h ie befor includ the branch ratio further larger tot
+h mean less damp
+becaus of beam energi spread the result is that h h bb is essenti independ of the input
+mb valu within reason limit 13 as a result the precis measur of h h bb at a
+50
+40
+50
+40
+30
+30
+20
+20
+10
+9
+8
+7
+6
+5
+10
+9
+8
+7
+6
+5
+4
+4
+3
+3
+2
+2
+1
+1
+200
+400
+600
+800
+1000
+1200
+1400
+1600
+1800
+2000
+200
+400
+600
+800
+2
+tan
+1000
+1200
+1400
+1600
+1800
+2000
+2
+ma gevc
+ma gevc
+50
+40
+30
+20
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+200
+400
+600
+800
+1000
+1200
+1400
+1600
+1800
+2000
+2
+ma gevc
+fig 4 the ma0 tan discrimin from the measur at a lhc300 fb1 lc500 fb1 b 02 fb1 at
+a muon collid and c 10 fb1 at a muon collid the exclus region start from the left are 5 4 5
+3 4 2 3 and 1 2 from ref 13
+muon collid might provid the best singl discrimin between the sm higg and a smlike higg thi
+is nice illustr in the context of the mssm for a higg mass of 110 gev and assum a typic softsupersymmetrybreak scenario fig 4 show the result exclud region of ma0 for the a lhclc b
+with a muon collid with 02 fb1 integr luminos and c with a muon collid with 10 fb1 integr
+luminos
+some comment on these result are appropri first one should note that the measur of tot
+h
+05 mev ie 20 at the muon collid is not nearli so power a discrimin as the 35 05
+7
+measur of h h bb at l 02 fb1 10 fb1 second as mh increas and the w w decay
+mode becom more promin much more accur determin of partial width ratio and the total width
+becom possibl at lhclc and the lhclc exclus region move rapidli to higher ma0 but at best
+becom compar to the 02 fb1 muon collid exclus region third the conclus that with higher
+luminos than the 01 fb1 per year current envis for the higg factori thi discrimin would have
+incred sensit to ma0 assum that systemat error for the absolut cross section will be smaller than
+the statist error fourth we should note that there are high tan scenario in which decoupl set in
+veri earli in ma0 and no machin would be abl to set a lower bound on ma0 in particular for such scenario
+it would be incorrect to conclud that the absenc
+with respect to sm expect impli that
+of deviat
+0 mh 0 would be such that ma0 mh 0
+s
+so
+that
+e
+e
+h 0 a0 pair product is forbidden at a
+m
+a
+s 500 gev lc final if there wa a veri light neutralino such that h0 0 0 decay were possibl thi
+would be known ahead of time and the h0 bb rate predict within the susi context would have
+to be correct to veri high precis to account for these addit decay susi loop correct to the bb
+coupl might also have to be account for to high precis if the susi spectrum turn out to be light but
+these last two caveat also appli to the lc measur
+given the abov sensit the next question is the extent to which paramet of the superymmetr higg
+sector can be determin with some reason level of precis to studi thi an input mssm model wa
+assum with mh0 110 gev ma0 400 gev tan 10 and at msusi 1 tev variou observ
+were comput as a function of ma0 and tan let us for the moment imagin that mh0 can be comput
+theoret with arbitrari accuraci in term of the input susi model paramet were thi the case then the
+valu of mh0 would determin ma0 as a function of tan or vice versa given the fix susi break scenario
+paramet the bb event rate and to a lesser extent tot
+h0 determin the locat along the line allow by the
+fix valu of mh0 thi line in ma0 tan paramet space is illustr in the lower figur of fig 5 for the
+abov sampl model 14 also shown in these lower figur is the extent to which experiment measur
+1
+and l 10 fb1 would restrict the locat along thi line
+of n h0 bb and tot
+h0 for l 01 fb
+the accuraci 01 03 mev with which mh0 can be determin experiment at the muon collid would
+not significantli broaden thi line for the experiment accuraci of 90 mev at the lhc and 30 mev at
+the lc the line turn into the ellips of the upper figur of fig 5 unfortun due to the expect level of
+theoret uncertainti in the comput of mh0 the muon collid result are certainli unrealist and even
+the lhclc ellips are probabl overli optimist we estim that one might eventu be abl to achiev
+a theoret accuraci of 100 mev for the mh0 comput in term of the model paramet current
+the accuraci of the theoret comput is 2 3 gev so that much higherloop work will be requir
+to reach thi level thi would be compar to the lhc experiment error on mh0 thu the realiti may
+be that lhclc ellips of the upper half of fig 5 will be substanti enlarg in ani case the ellips size
+in both case would most probabl be determin by the accuraci of the theoret comput of mh0 as a
+function of susi paramet a determin of the allow ellipt region includ a reason level of
+systemat uncertainti for the mh0 comput should be made despit thi systemat uncertainti from the
+mh0 comput it is nonetheless clear that strong constraint would be impos on the allow region in the
+multidimension mssm paramet space that includ ma and tan and the susybreak paramet in
+order to achiev consist with the measur of mh0 h0 bb and tot
+h0
+one veri import probe of the physic of a light h that is onli possibl at a muon collid is the possibl
+of measur h typic the muon collid data must be combin with lc andor lhc data
+to extract thi veri fundament coupl if the h is smlike then the follow determin are possibl
+1
+h
+2
+h
+3
+h
+4
+h
+h bfhbb
+c
+bfhbbnlc
+h bfhw w
+bfhw w nlc
+h bfhzz
+c
+tot
+c h
+hzz nlc
+h bfhw w tot
+h
+hw w nlc
+c
+use the abov a determin of h with accuraci 4 would be possibl for an l 02 fb1
+muon collid run on the h peak and combin with lc200 fb1 data in the mssm context such precis
+mean that one would have 3 or greater differ between the expect for the hsm vs the result for the h0
+if ma0 600 gev assum mh0
+135 gev the mssm upper limit further thi is an absolut direct and
+model independ determin of h0 that for certain ha no systemat theoret uncertainti
+8
+2
+lhc and lc
+800
+lhc and lc
+800
+700
+700
+600
+600
+500
+500
+fpmc
+1
+300 pb
+400
+fpmc
+1
+10 fb
+400
+300
+300
+7
+8
+9
+10
+11
+tan
+7
+8
+9
+10
+11
+tan
+460
+2
+ma gevc
+460
+ma gevc
+2
+900
+ma gevc
+2
+ma gevc
+900
+440
+440
+420
+420
+400
+400
+380
+380
+360
+360
+97
+98
+99
+10
+101
+102
+tan
+97
+98
+99
+10
+101
+102
+tan
+fig 5 the implic of the h0 scan for the mssm ma0 tan paramet space assum all other susi paramet
+are known in the lower figur we illustr the result that would emerg were there no systemat theoret
+uncertainti in the mh0 comput in term of input susi paramet the experiment error of mh0 at a muon
+collid would not significantli broaden thi line the lh rh lower figur show the extent to which the locat along
+thi line would be fix by l 01 fb1 l 10 fb1 muon collid measur of n h bb and tot
+h
+with the former be the domin ingredi given it much smaller error in the upper two figur the restrict
+1 and 2 ellips that would emerg from lhclc measur includ the measur of mh0 with accuraci
+of order 30 mev are shown note the much more coars scale of the upper figur these figur are from ref 13
+unfortun the systemat error
+100 mev at best expect for the mh0 comput in term of the input
+susi paramet will caus the potenti muon collid line of the lower figur to turn into ellips similar in size to
+the lhclc ellips and will increas the size of the lhclc ellips significantli
+of cours the caveat remain that there are peculiar mssm paramet choic for which decoupl occur
+veri rapidli and the h0 coupl would be independ of ma0 howev we would know ahead
+of time from the susi spectrum observ at the lhc whether or not such a peculiar scenario wa relev
+final we emphas that the muon collid provid the onli accur probe of thi 2nd gener lepton
+coupl 38 and would thu be one of the best check of the the sm or mssm explan of lepton mass
+to summar if a higg is discov at the lhc or possibl earlier at the fermilab tevatron attent
+will turn to determin whether thi higg ha the properti expect of the standard model higg if the
+higg is discov at the lhc it is quit possibl that supersymmetr state will be discov concurr
+the next goal for a linear collid or a muon collid will be to better measur the higg boson properti
+to determin if everyth is consist within a supersymmetr framework or consist with the standard
+model a higg factori of even modest luminos can provid uniqu power constraint on the paramet
+space of the supersymmetr model via the highli accur determin of the total rate for h0 bb
+9
+fig 6 contour in ma0 tan paramet space for h0 hsm we have assum a nomix
+susi scenario and employ mh0 mhsm 110 gev for maxim mix there is littl chang in the contour
+onli the size of the allow rang is alter from 21
+which ha almost zero theoret systemat uncertainti due to it insensit to the unknown mb valu
+the moder accur determin of the h0 s total width and the remark accur uniqu and modelindepend determin of the h0 coupl constant
+v
+h
+a particularli import channel is the final state 15
+7
+in the sm at tree level thi schannel process proce in two way via z exchang and higg boson
+exchang the former involv the sm gaug coupl and present a characterist f b forwardbackward in
+the scatter angl asymmetri and a lr leftright in beam polar asymmetri the latter is govern
+by the higg boson coupl to proport to the fermion mass and is isotrop in phase space
+due to spin0 exchang the unambigu establish of the signal would allow a determin of the
+rel coupl strength of the higg boson to b and and thu test the usual assumpt of b unif
+the angular distribut would probe the spin properti of the higg reson
+the differenti cross section for via schannel higg exchang can be express as
+dh h
+1
+h 1 p p
+d co
+2
+8
+where is the scatter angl between and p the percentag longitudin polar of the initi
+beam with p 1 pure lefthand p 1 pure righthand and p 0 unpolar
+the differenti cross section for the sm background is given by the z contribut
+3
+8
+dsm
+f
+qed a1 p p p p alr 1 cos2 co aef
+f b
+d co
+8
+3
+9
+here the effect f b asymmetri factor is
+f
+aef
+fb
+b
+af b pef f af
+lr
+1 pef f alr
+10
+10
+fig 7 doubl differenti distribut for h s mh 120 gev is assum initi
+beam polar are taken to be p p 025 the higg product cross section is convolut with gaussian
+energi distribut for a resolut r 005
+with the effect polar
+p p
+1 p p
+11
+lrrllr lrrlrl
+lrrllr lrrlrl
+12
+pef f
+and
+b
+af
+lr
+af b alr are the standard asymmetri for the case of interest where initi and final state particl are
+b
+lepton alr af
+lr
+from the cross section formula of eq 8 and 9 the enhanc factor of the signaltobackground ratio
+sb due to the beam polar effect is
+s
+1 p p
+b
+1 p p p p alr
+13
+the final state polar configur of from the higg signal and the sm background are veri
+differ there is alway a charg track to defin a kinemat distribut for the decay in the rest frame
+the normal differenti decay rate can be written as
+1 di
+bi
+ai bi p co
+d co
+2
+14
+where is the angl between the momentum direct of the charg decay product in the rest frame 16 and
+the momentum direct bi is the branch fraction for a given channel i and p 1 is the helic
+for the twobodi decay mode ai and bi are constant and given by
+a b 1
+ai 1 and bi
+15
+m2
+2
+m
+2m2i
+2m2i
+for
+i a1
+16
+11
+fig 8 doubl differenti distribut for z s 120 gev is assum initi
+beam polar are taken to be p p 025 the sm product cross section is convolut with gaussian
+energi distribut for a resolut r 005
+for the threebodi lepton decay the ae and be are not constant for a given threebodi kinemat
+configur and are obtain by the integr over the energi fraction carri by the invis neutrino
+one can quantifi the event distribut shape by defin a sensit ratio paramet
+ri
+bi
+ai
+17
+for the twobodi decay mode the sensit are r 1 r 045 and ra1 0007 the a1 mode
+is consequ less use in connect with the polar studi as to the threebodi lepton mode
+although experiment readili identifi the energi smear from the decay make it hard to reconstruct
+the final state spin correl
+the differenti distribut for the two charg particl i j in the final state from decay respect
+can be express as
+d
+d co i d co j
+p 1
+bi bj
+ai bi p co i aj bj p co j
+4
+18
+where co i co j is defin in rest frame as in eq 14 for the higg signal channel helic
+are correl as ll p p 1 and rr p p 1 thi yield the spincorrel differenti
+cross section
+dh
+bi bj
+1 p p h
+ai aj bi bj co i co j
+d co i d co j
+4
+19
+we expect that the distribut reach maximum near co i co j 1 and minimum near co i
+co j 1 how signific the peak are depend on the sensit paramet in eq 17 here we
+simul the doubl differenti distribut
+of eq 19 for h and the result
+is shown in fig 7 here we take s mh 120 gev for illustr the higg product cross section
+is convolut with gaussian energi distribut for a resolut r 005 we see distinct peak in the
+distribut near co co 1 as anticip in thi demonstr we have taken beam
+polar to be p p 25 which is consid to be natur with littl cost to beam luminos
+12
+fig 9 integr luminos in fb1 need for observ the twobodi decay channel and at 3
+solid and 5 dash signific beam energi resolut r 0005 and a 25 polar are assum
+in contrast the sm background via z produc with helic correl of lr p p 1
+and rl p p 1 furthermor the number of the lefthand and righthand at a given
+scatter angl are differ becaus of the leftright asymmetri so the initi muon beam polar affect
+the spin correl nontrivi sum over the two polar combin in decay to
+particl i and j we have
+dsm
+d co i d co j
+1 p p sm 1 pef f alr
+bi bj
+f
+ai aj bi bj co i co j aef
+lr ai bj co j aj bi co i
+4
+20
+the final state spin correl for z decay into pair is shown in fig 8
+the maximum region near co co 1 are clearli visibl most importantli the peak region
+in fig 7 and 8 occur exactli in the opposit posit from the higg signal we also note that the spin
+correl from the higg signal is symmetr while that from the background is not the reason is that
+the effect lrasymmetri in the background channel chang the rel weight of the two maxima which
+becom transpar from the last term in eq 20
+we next estim the luminos need for signal observ of a given statist signific the result
+are shown in fig 9 the integr luminos l in fb1 need for observ the characterist twobodi
+decay channel and
+at 3 solid and 5 dash signific is calcul for both signal
+and sm background with s mh beam energi resolut r 0005 and a 25 beam polar are
+assum
+we estim the statist error on the cross section measur if we take the statist error to be given
+by
+1
+sb
+s b
+21
+s
+s
+l
+sum over both and channel for r 0005 a 25 beam polar with 1 fb1 luminos
+we obtain
+s mh gev
+100 110 120 130
+22
+27 21 23 32
+13
+the uncertainti on the cross section measur determin the extent to which the h coupl can be
+measur
+in summari we have demonstr the feasibl of observ the reson channel h at a muon
+collid for a narrow reson like the sm higg boson a good beam energi resolut is crucial for a clear
+signal on the other hand a moder beam polar would not help much for the signal identif
+the integr luminos need for a signal observ is present in fig 9 estim statist error
+for the h cross section measur are given in eq 22 we emphas the import
+of final state spin correl to purifi the signal of a scalar reson and to confirm the natur of it spin it
+is also import to care studi the channel of a supersymmetr higg boson which would allow a
+determin of the rel coupl strength of the higg to b and
+vi
+heavi higg boson
+as discuss in the previou section precis measur of the light higg boson properti might make
+it possibl to detect deviat with respect to expect for a smlike higg boson that would point to a
+limit rang of allow mass for the heavier higg boson thi becom more difficult in the decoupl
+limit where the differ between a supersymmetr and standard model higg are smaller nevertheless with
+suffici precis measur of the higg branch fraction it is possibl that the heavi higg boson
+mass can be infer a muon collid lighthigg factori might be essenti in thi process
+in the context of the mssm ma0 can probabl 39 be restrict to within 50 gev or better if ma0 500 gev
+thi includ the 250 500gev rang of heavi higg boson mass for which discoveri is not possibl via
+h 0 a0 pair product at a s 500 gev lc further the a0 and h 0 cannot be detect in thi mass rang
+at either the lhc or lc for a wedg of moder tan valu for larg enough valu of tan the heavi
+higg boson are expect to be observ in bba0 bbh 0 product at the lhc via their decay and
+also at the lc
+a muon collid can fill some perhap all of thi moder tan wedg if tan is larg the h 0 and
+0
+a coupl proport to tan time a smlike valu are enhanc therebi lead to enhanc
+product rate in collis the most effici procedur is the oper the muon collid at maximum
+energi and produc the h 0 and a0 often as overlap reson via the radi return mechan
+by
+look for a peak in the bb final state the h 0 and a0 can be discov and onc discov the machin s
+can be set to ma0 or mh 0 and factorylik precis studi pursu note that the a0 and h 0 are typic
+broad enough that r 01 would be adequ to maxim their schannel product rate in particular
+30 mev if the tt decay channel is not open and 3 gev if it is sinc r 01 is suffici much
+higher luminos l 2 10 fb1 yr would be possibl as compar to that for r 001 0003 as
+requir for studi the h0
+in short for those portion of paramet space character by moder tan and ma0
+250 gev which
+are particularli difficult for both the lhc and the lc the muon collid would be the onli place that these
+extra higg boson can be discov and their properti measur veri precis 40
+in the mssm the heavi higg boson are larg degener especi in the decoupl limit where they
+are heavi larg valu of tan heighten thi degeneraci as shown in fig 10 a muon collid with suffici
+energi resolut might be the onli possibl mean for separ out these state exampl show the h
+and a reson for tan 5 and 10 are shown in fig 11 for the larger valu of tan the reson are
+clearli overlap for the better energi resolut of r 001 the two distinct reson peak are still
+visibl but they are smear out and merg into one broad peak for r 006
+a precis measur on the heavi higg boson mass could provid a power window on radi
+correct in the supersymmetr higg sector22 supersymmetri with gaug invari in the mssm impli
+the masssquar sum rule
+2
+m2a m2z
+m2h mh
+23
+where is a calcul radi correct the treelevel sum rule result from set 0 solv for the
+mass differ
+ma mh
+m2h m2z
+ma mh
+24
+one obtain a formula involv observ that can be precis measur for exampl the error on the mz
+is just 22 mev from the lep measurements20 and the light higg mass can be measur to less than an
+mev in the schannel the mass of and the mass differ between the heavi higg state h and a can
+14
+fig 10 contour of mh ma in gev in the mh tan paramet space twolooprgeimprov radi
+correct are includ take mt 175 gev mt 1 tev and neglect squark mix
+fig 11 separ of a and h signal for tan 5 and 10 from ref 10
+also be measur precis by schannel product the ultim precis that can be obtain on the mass
+of the h and a depend strongli on the mass themselv and tan but a reason expect is that
+a scan through the reson should be abl to determin the mass and the massdiffer to some ten
+of mev22 altogeth these mass measur yield a predict for the radi correct which is
+calcul in term of the selfenergi diagram of the higg bosons23 to fulli exploit thi constraint might
+howev prove difficult given the notori difficulti of comput higg boson mass to high enough loop
+order that accuraci better than even a gev can be achiev
+final it will be especi interest to measur the branch ratio of these heavi higg boson and
+0
+0
+compar to the theoret predict for tan
+5 the h a decay more often into bb than into tt there is
+a substanti rang of paramet space where signific number of event involv both type of decay will
+be seen and new type of determin of tan will be possibl if supersymmetr particl mass are below
+ma0 2 then the branch ratio for a0 h 0 decay to the mani distinguish channel provid extrem
+15
+power constraint on the softsupersymmetrybreak paramet of the model 24 25 26
+vii
+higg threshold measur
+the mass width and spin of a smlike higg boson can also be determin by oper either a muon
+collid or a linear collid at the zh product threshold the rapid rise in the product near the threshold
+is sensit to the higg mass27 furthermor the spin of the higg boson can be determin by examin
+the rise in the cross section near threshold howev these measur requir ten of invers femtobarn to
+provid a use measur of the mass 100 mev these threshold measur can be perform at a
+lc with 100 fb1 of integr luminos an error of less than 100 mev can be achieved27 for mh 150 gev
+thi is compar to the other method at energi abov threshold the onli mean to reduc the experiment
+error on the higg mass further to below 1 mev is to produc the higg in the schannel at a muon collid
+the shape of the zh threshold cross section can also be use to determin the spin and to check the
+cp properti of the higgs28 these threshold measur becom of interest for a muon collid in the
+case where at least a hundr invers femtobarn of luminos is avail
+viii
+nonexot nonsupersymmetr sm higg sector extens
+although the standard interpret of precis electroweak data is that there should be a light higg
+boson with smlike v v coupl altern higg sector model can be construct in which a good fit to the
+precis data is obtain even though the higg boson with larg v v coupl is quit heavi 1 tev the
+simplest such model 12 is base upon the cpconserv gener twohiggsdoublet model the larg s 0
+and t 0 come from the heavi higg with larg v v coupl is compens by an even larger t 0
+come from a small m 1 gev is suffici mass split between the h and the other heavi neutral
+higg boson the result is a shift in the s 0 t 0 direct rel to the usual mhsm 100 gev
+scenario in the sm that remain well within the current 90 cl ellips in the s t plane the first signal for
+thi type of scenario would be discoveri of a heavi smlike higg boson at the lhc if such a heavi smlike
+higg is discov consist with precis electroweak data would then requir the abov type of scenario
+or some other exot new physic scenario
+model of thi type cannot aris in the supersymmetr context becaus of constraint on the higg self
+coupl come from the susi structur they requir a special nondecoupl form for the potenti that
+could aris in model where the twodoublet higg sector is an effect low energi descript up to some scale
+of order 10 tev or so for these special potenti form there is typic also a higg boson h h decoupledh0 or h a0 with mh 500 gev and no treelevel v v coupl it primari decay mode would be to bb
+or tt depend upon it mass and it coupl would be proport to tan for a substanti rang
+of tan thi h could not be detect at either the lhc or the lc 12 in particular at the lc even the
+e e z z hh process the
+quartic coupl be of guarante strength would onli allow h discoveri
+up to 150 gev 250 gev for s 500 gev 800 gev 29
+the muon collid could be the key to discov such a h by run at high energi the radi return
+tail for e might result in product of a detect number of event in particular if tan 5 oper
+at maxim s with r 01 would guarante that the h would be detect as a 4 or higher bump in the
+bremsstrahlung tail of the mbb distribut after 3 to 4 year of run altern a scan could be perform
+to look for the h the scan procedur depend upon how tot depend on mh in that one must alway have r
+h
+tot
+such that s
+the luminos expect for the requir r must then be employ further one must
+h
+use step of size tot s for 2mt mh 150 gev h bb and tot 005 01 gev unless tan 1
+h
+h
+for mh 2mt tot rise to at least 1 gev as result it would be possibl to employ r 005 01 or so for
+h
+mh 2mt rise to r 05 1 for mh 2mt in a 3 4 year program use earlier quot nomin yearli
+ls for such rs as function of s we could imagin devot
+l 0003 fb1 to 2000 point separ by 01 gev in s 150 350 gev rang the total luminos
+requir would be l 4 fb1 or about 3 year of oper one would find 4 level the h in the bb
+4 5
+state if tan
+l 003 fb1 to each of 100 point separ by 05 gev in the s 350 400 gev rang the
+1
+correspond total luminos use is l 3 fb or about 12 year of oper for tan 6 6
+16
+one would find the h in bb tt final state
+l 001 fb1 to each of 100 point separ by 1 gev in the s 400 500 gev rang the total
+luminos employ would be l 1 fb1 or about 110 year for tan 7 8 one would detect the
+h in the bb tt final state
+in thi way the muon collier would detect the h if mh 2mt and tan
+5 or if mh 2mt for ani tan onc
+discov s mh could be chosen for the muon collid and it would be possibl to studi the h properti
+in detail
+ix
+cp violat
+a muon collid can probe the cp properti of a higg boson produc in the schannel one can measur
+correl in the final state or if the higg boson is suffici heavi in the tt final state 31 32 in
+the mssm at treelevel the higg state h0 h 0 and a0 are cp eigenst but it ha been note recent
+that sizabl cp violat is possibl in the mssm higg sector through loop correct involv the third
+gener squarks33 34 as note earlier in the mssm the two heavi neutral higg boson h 0 be cpeven and a0 be cpodd are almost degener with a mass split compar or less than their width if
+there are cpviolat phase in the neutral higg potenti these will caus these cp eigenst to mix the
+result mass split between the eigenst can be larger than their width the excel mass resolut
+at the muon collid would make it possibl separ the mass of the h 0 and a0 boson the measur mass
+differ could be combin with the mass sum rule to provid a power probe of thi physic as alreadi
+note variou cp asymmetri in the tt final state can be observ as well and a muon collid is an ideal
+place to look for these effect 31 32
+the most ideal mean for determin the cp natur of a higg boson at the muon collid is to employ
+transvers polar muon for h product at a muon collid with muon coupl given by the form
+a ib5 h the cross section take the form
+h 0h 1 pl pl pt pt
+2ab
+a2 b 2
+co 2
+sin
+2
+2
+a b
+a b2
+0h 1 pl pl pt pt cos2
+25
+where 0h is the polar averag convolut cross section tan1 ab pt pl is the degre of transvers
+longitudin polar and is the angl of the transvers polar rel to that of the as
+measur use the the direct of the s momentum as the z axi of cours if there is no pt there would
+be sensit to 0h a2 b2 onli onli the sin term is truli cpviolat but the co term also provid
+2
+2
+2ab
+signific sensit to ab ideal one would isol aa2 b
+b2 and a2 b2 by run at fix 0 2 32
+and measur the asymmetri take pt pt pt and pl 0
+h
+h
+h
+h
+ai
+aii
+a2 b 2
+0 h
+pt2 co 2
+pt2 2
+0 h
+a b2
+2ab
+2 h 2
+pt2 sin 2
+pt2 2
+2 h 2
+a b2
+if a2 b2 is alreadi well determin
+and the background is known then the fraction error in these asymmetri
+2
+p
+cam be approxim as a
+l which point to the need for the highest possibl transvers polar
+t
+a
+even if some sacrific in l is requir
+of cours in realiti the precess of the muon spin in a storag ring make run at fix imposs
+a detail studi is requir 35 we attempt a brief outlin take b by we may write
+s ph
+z co 0 x sin pv 0 y
+s ph
+y
+z co 0 x sin pv 026
+here z is the direct of the instantan momentum ph pv is the horizont vertic ie y degre
+sin 2 pv 2 pt for ani setup for initi insert into
+co pl and ph
+of polar ph
+the storag ring can be comput as function of the turn number nt count start with nt 1
+the first time the bunch pass the ip for exampl if the beam enter the storag ring with ph
+p
+17
+then nt nt 12 where 2
+c co etc
+g 2
+2
+with em as a function of and defin
+h
+1 ph
+ph c c co 2pv pv ph
+ph s s sin 2ph
+pv s ph
+pv s
+0h
+27
+thi formula show that by follow the depend of h on nt one can extract valu for co 2 and
+sin 2 in practic it is best to run in sever configur to approxim the 0 configur one would
+2 to approxim the configur
+choos ph
+ph
+ph 005 pv pv p 2 ph
+2 to emphas the 2 and
+choos ph ph ph 005 pv pv p 2 ph
+32 configur over mani turn of the bunch we choos ph p pv 0 ph
+ph 005 and
+2
+2
+pv p ph to obtain an accur measur of it is necessari to develop a strategi for maxim
+pt2 l by select onli energet muon to acceler and combin bunch lack of space prevent a
+detail descript
+to gain a quantit understand of how success such a strategi for determin the cpnatur of the
+h can be let use defin
+a b a b gm 2mw and give contour at 2 1 4 6635 9 in the tan1 ab
+r a
+2 b2 paramet space we defin i as the proton sourc intens enhanc rel to the standard
+valu implicit for the earliergiven benchmark luminos we compar four case i the case of p 02
+l 015 fb1 which correspond to i 1 and the polar level natur achiev without ani special
+select against slow muon ii we maintain the same proton intens i 1 select faster muon to the extent
+that it becom possibl to merg neighbor muon bunch lead to p m i 1 039 and l 0075 fb1
+iii we increas the proton sourc intens by a factor of two i 2 while select faster muon and merg
+the bunch correspond to p m i 2 048 and l 0075 fb1 final iv we employ i 3 and use
+socal justful bunch correspond to p f i 3 045 and l 015 fb1 result in the case of a
+sm higg boson with mhsm 130 gev are present in fig 12 one see that a 30 1 measur of
+b
+a is possibl without increas proton sourc intens use the simpl techniqu of select fast muon
+and perform bunch merg an
+20 measur would requir a moder enhanc proton sourc
+intens
+after studi a number of case the overal conclus of 35 is that thi procedur will provid a good
+cp determin superior to other techniqu provid one merg bunch and compens for the loss of
+luminos associ with select onli energet muon so as to achiev high averag polar by have
+a proton sourc that is at least two time as intens as that need for the studi discuss in previou section
+that do not requir larg transvers polar
+x
+conclus and plan for futur facil
+around 2006 the lhc will begin take data hope reveal the path that particl physic will take
+in the next centuri at the moment there are a few experiment hint suggest that a higg boson might
+be just around the corner and there are intrigu indic from the anomal magnet moment of the
+muon that supersymmetr particl may be easili detect at the lhc thi scenario would present a strong
+argument for the construct of a lc to studi thi interest physic which would be at a scale light enough
+to be probe a muon collid could play a crucial role in sever way first a schannel lighthigg factori
+would provid crucial precis measur of the h0 properti includ the onli accur measur
+of it coupl deviat of these properti with respect to expect for the sm higg boson
+can in turn impos critic constraint on the mass of heavier higg boson and other susi paramet
+among other thing the heavier higg boson might be shown to definit lie within reach of muon collid
+schannel product further it could be that the heavier h 0 and a0 cannot be detect at the lhc or lc
+a scenario that aris in the mssm for exampl for moder tan valu and ma0 mh 0
+250 gev
+sinc their detect in schannel product at the muon collid would be rel certain the muon collid
+would be an essenti compon in elucid the full physic of the higg sector further there are even
+nonsupersymmetr scenario in which one onli see a smlike higg as the lhc and lc probe scale below
+a tev but yet muon collid higg factori studi would reveal addit higg boson use schannel higg
+product a muon collid would also provid particularli power possibl for studi the cp natur of
+the higg boson that are found such cp determin might be absolut crucial to a full understand
+of the higg sector final one should not forget that the muon collid might prove to be the best approach
+to achiev the highest energi possibl in the least amount of time construct of a higg factori would
+18
+fig 12 contour at 2 1 4 6635 9 for the a
+and b measur for a sm higg
+a 1 b 0 with mhsm
+2 b2 for
+110 gev for the four luminositybunchmerg option outlin in the text here tan1 b and r a
+a
+small
+b
+a
+be a vital link in the path to high energi
+1
+2
+3
+4
+r barat et al aleph collabor phi lett b 495 1 2000 hepex0011045
+p abreu et al delphi collabor phi lett b 499 23 2001 hepex0102036
+m acciarri et al l3 collabor phi lett b 495 18 2000 hepex0011043
+g abbiendi et al opal collabor phi lett b 499 38 2001 hepex01010141 2 3 4 5
+19
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+a n okpara hepph0105151
+h n brown et al muon g2 collabor phi rev lett 86 2227 2001 hepex0102017
+a czarnecki and w j marciano hepph0102122
+c m ankenbrandt et al phi rev st accel beams2 081001 1999 physics9901022
+r raja and a tollestrup phi rev d 58 013005 1998 hepex9801004
+v barger m s berger j f gunion and t han phi rept 286 1 1997 hepph9602415
+v barger m s berger j f gunion and t han phi rev lett 75 1462 1995 hepph9504330
+p chankowski et al phi lett b496 2000 195 hepph0009271
+b autin etal cern9902
+w j murray hepph0104268
+v barger t han and cg zhou phi lett b480 140 2000
+b k bullock k hagiwara and a d martin nucl phi b395 499 1993
+d asner j gronberg j gunion and t hill in prepar for a summari see the collid section of the
+snowmass 2001 proceed
+m battaglia and k desch hepph0101165
+j f gunion l poggioli r van kooten c kao and p rowson hepph9703330
+d e groom et al particl data group collabor eur phi j c 15 1 2000
+j f gunion detect and studi higg boson in perspect on higg physic ii ed gl kane world
+scientif publish 1997 hepph9705282
+m s berger hepph0105128
+m s berger phi rev d 41 225 1990
+jf gunion and j kelli phi rev d56 1997 1730 hepph9610495
+jf gunion and j kelli hepph9610421
+jl feng and t moroi phi rev d56 1997 5962 hepph9612333
+v barger m s berger j f gunion and t han phi rev lett 78 3991 1997 hepph9612279
+d j miller s y choi b eberl m m muhlleitn and p m zerwa phi lett b 505 149 2001 hepph0102023
+t farri and jf gunion in prepar
+jf gunion in transpar book higg factori workshop feb 28 march 1 2001 ucla
+b grzadkowski and j f gunion phi lett b 350 218 1995 hepph9501339
+e asakawa s y choi and j s lee phi rev d 63 015012 2001 hepph0005118
+a pilaftsi phi lett b 435 88 1998 hepph9805373
+a pilaftsi phi rev d 58 096010 1998 hepph9803297
+b grzadkowski j f gunion and j pliszka nucl phi b 583 49 2000 hepph0003091
+even in a twodoublet extens of the minim onedoublet sm higg sector paramet can be chosen so that
+the onli light higg boson ha no v v coupl and yet good agreement with precis electroweak data maintain
+12
+if the higher energi muon collid ha alreadi been construct thi would simpli requir construct of a small
+storag ring tune to the appropri energi
+for mh 120 gev estim given m battaglia at the recent ecfadesi
+meet for the accuraci to which
+h0 can be determin
+at
+an
+e
+e
+collid
+rang
+from
+30
+for
+s 350 gev run l 500 fb1
+not much differ for s 800 gev and l 1 ab1 to 7 for s 3 tev l 5 ab1
+for the peculiar paramet region with earli decoupl mention earlier thi would not be possibl howev as
+note earlier the susi spectrum observ at the lhc would allow us to determin if we are in such an except
+region of paramet space
+the collid option at an lc would also allow h 0 a0 discoveri throughout much of the wedg region 17 but
+onli the muon collid could directli scan for their total width and determin their coupl

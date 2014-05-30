@@ -1,0 +1,322 @@
+tifrth0104
+arxivhepph0102091v1 8 feb 2001
+look for the charg higg boson at lhc1
+dp roy
+tata institut of fundament research
+homi bhabha road mumbai 400 005 india
+i discuss lhc signatur of the charg higg boson of the mssm focuss mainli
+on the case of the h be heavier than top quark
+the minim supersymmetr standard model mssm contain two complex hig doublet 1 and 2 correspond to eight scalar state three of these are absorb as goldston boson leav five physic state the two neutral scalar h0 h 0 a pseudoscalar
+a0 and a pair of charg higg boson h all the treelevel mass and coupl of
+these particl are given in term of two paramet mh and tan the latter repres
+the ratio of the two vacuum expect valu 1 while ani one of the abov neutral higg
+boson may be hard to distinguish from that of the standard model the h carri a distinct hallmark of the susi higg sector moreov the coupl of the h are uniqu
+relat to tan sinc the physic charg higg boson correspond to the combin
+h
+1 sin 2 co
+1
+therefor the detect of h and measur of it mass and coupl are expect to
+play a veri import role in probe the susi higg sector
+the t bh decay is known to provid promis signatur for charg higg boson
+search at tevatron upgrad and lhc for mh mt 2 but it is hard to extend the h
+search beyond mt becaus in thi case the combin of domin product and decay
+channel th ttb suffer from a larg qcd background 3 moreov the subdomin
+1
+invit talk at the cairo intern confer on high energi physic 914 januari 2001
+1
+product channel of h w and h h have been found to give no viabl signatur at
+lhc 4 in view of thi we have undertaken a systemat studi of a heavi h signatur at
+lhc from it domin product channel th th follow by the decay h tb
+and w h0 while the 1st repres the domin decay channel of charg higg boson
+the and w h0 are the largest subdomin channel in the high and low tan region
+respect with
+b tan
+10 15 and bw h0 tan 1 5 5
+2
+the signatur for the domin decay channel of h tb ha been analys separ
+assum three and four btag the analys are gener base on parton level mont
+carlo program with gaussian smear of lepton and jet momenta for simul detector
+resolut
+i h tb signatur with four btag 5
+the domin signal and background process are
+gg th b hc ttbb
+3
+gg ttbb
+4
+follow by the lepton decay of one top and hadron decay of the other ie
+ttbb bbbbw w bbbbq q
+5
+a basic set of kinemat and isol cut
+pt 20 gev 25 r 2 2
+12
+04
+6
+is impos on all the jet and lepton momenta the pt cut is also impos on the missingpt
+obtain by vector addit of the pt s after resolut smear thi is follow by the
+mass reconstruct of the w and the top quark pair so that one can identifi the pair
+of bjet accompani the latter while the harder of these two bjet b1 come from
+h decay in the signal both of them come mainli from gluon split in the background
+consequ the sb ratio is improv by impos the follow cut on thi bjet pair
+mbb 120 gev eb1 120 gev and co bb 075
+7
+then each of thi bjet pair is combin with each of the reconstruct pair of top to give
+4 entri for the invari mass mtb per event one of these 4 entri correspond to the
+h mass for the signal event while the other constitut a combinatori background fig
+1 show thi tb invari mass distribut for the signal 3 and background 4 the
+right hand scale correspond to the crosssect for 4b 01 ie an optimist btag
+effici of b 056 reduc it to a more conserv valu of b 04 would reduc
+both the signal and background by a factor of 4 each
+2
+tabl 1 number of signal and background event
+in the 4 btag channel per 100 fb1 luminos
+in a mass window of mh 40 gev at
+tan 40 b 04
+mh gev
+s
+b
+s b
+310
+327 269
+63
+407
+227 173
+55
+506
+132
+99
+42
+605
+75
+55
+32
+tabl 1 list the number of signal and background event for a typic annual luminos of
+100 fb1 expect from the high luminos lhc run assum b 04 while the sb
+ratio is 1 the viabil of the signal is limit by the signal size2 one expect a 3
+signal upto mh 600 gev at tan 40 the signal size is veri similar at tan 15
+but smaller in between the reason the extrem valu of tan are favour is that the
+signal process 3 is control by the tbh yukawa coupl
+g
+h cot mt tbl tan mb tbr
+2mw
+8
+which is larg for tan 1 and mt mb interestingli these two region of tan are
+favour by b unif for a relat reason ie one need a larg tbh yukawa
+coupl contribut to the rge to control the rise of mb as one goe down from the gut
+to the low energi scale 6
+ii h tb signatur with three btag 7
+the contribut to thi signal come from 3 as well as
+gb th hc ttb hc
+9
+follow by the lepton decay of one top and hadron decay of the other the signal crosssect from 9 is 23 time larger than from 3 while their kinemat distribut are veri
+similar combin the two and subtract the overlap piec to avoid doubl count
+8 result in a signal crosssect which is midway between the two the background
+come from 4 as well as
+gb ttb hc and gg ttg
+10
+2
+increas the pt cut of bjet from 20 to 30 gev would reduc the signal background size by a factor
+of about 34 henc reduc the viabil of thi signal
+3
+where the gluon jet in the last case is mistag as a bjet assum the standard mistag
+factor of 1 thi contribut turn out in fact to be the largest sourc of the background
+as we see below
+the basic kinemat cut are as in 6 except for a harder pt cut pt 30 gev sinc the
+3 bjet come from h and tt decay are all reason hard thi is follow by the mass
+reconstruct of the top quark pair as befor so that one can identifi the accompani
+3rd bjet we impos a pt 80 gev cut on thi bjet to improv the sb ratio final
+thi bjet is combin with each of the reconstruct top pair to give two entri of mtb per
+event one of them correspond to the h mass for the signal while the other constitut the
+combinatori background fig 2 show thi tb invari mass distribut of the signal along
+with the abov mention background includ a btag effici factor of b 04
+while the sb ratio is 1 the signal crosssect is much larger than the previou case
+tabl 2 list the number of signal and background event for a luminos of 100 fb1 at
+tan 40
+the result are veri similar at tan 15 compar thi with tabl 1 we see
+that the s b ratio is veri similar in the two channel one should bear in mind howev
+the larger pt cut assum for the 3 btag channel the crosssect in both the case
+were calcul with the mrslo structur function 9
+tabl 2 number of signal and background event
+in the 3 btag channel per 100 fb1 luminos
+in a mass window of mh 40 gev at
+tan 40 b 04
+mh gev
+s
+b
+s b
+310
+133 443
+62
+407
+111 403
+56
+506
+73
+266
+45
+605
+43
+156
+34
+iii h signatur 10
+for simplic we have estim the signal and background crosssect from
+gb th hc b
+q q hc
+11
+gg tt b
+q qb hc
+12
+4
+follow by the 1prong hadron decay of the signal contain a hard a posit polar
+while the background contain a rel soft and neg polar from w boson
+decay the polar differ can be exploit to sharpen the signal by simpli requir
+the charg pion to carri 80 of the visibl momentum fig 3 show the signal and
+background crosssect against the transvers mass of the jet with the missingpt we
+see that by exploit the polar differ one can get a clean h signal in thi channel
+for the larg tan region at the level of a few fb thi ha been recent confirm by a
+more detail simul by the cm collabor includ detector accept 11
+iv h w h0 signatur 12
+we have estim the signal crosssect from
+gb th hc bw w h0 hc
+13
+follow by h0 bb w and w q q thu the final state consist of the
+same particl as the domin decay mode of eq 9 therefor we have to consid the
+background from the h tb decay 9 along with those from the qcd process of eq
+10
+we requir 3 btag along with the same basic cut as in section ii thi is follow by
+the mass reconstruct of w and the top which help to identifi the accompani bpair
+and the w the result bb and w b invari mass are then subject to the constraint
+mbb mh0 10 gev and mw b mt 20 gev
+14
+the h0 mass constraint and the veto on the second top help to distinguish the h w h0
+signal from the background howev the former is sever constrain by the signal size
+as well as the sb ratio consequ one expect at best a margin signal in thi channel
+and that too onli in a narrow strip of the mh tan paramet space at the boundari
+of the lep exclus region fig 4 show the signal 13 along with the background from
+9 and 10 against the reconstruct h mass at one such point mh 220 gev and
+tan 2
+the lep limit of mh0 ma0 100 gev in the low tan region impli that the h
+w h0 w a0 decay channel ha as high a threshold as the tb channel while the latter ha a
+more favour coupl consequ the h w h0 w a0 decay br is restrict to
+5 over the lep allow region 13 howev the lep constraint doe not hold in
+be
+singlet extens of the mssm like the nmssm 14 consequ the h w h0 w a0
+can be the domin decay mode for mh 160 gev in the low tan region and lead to a
+spectacular signal at the lhc as is illustr in 12 one need a systemat analysi of
+the lhc signatur for both neutral and charg higg boson in the nmssm particularli
+in the low tan region
+it should be mention here that these parton level mont carlo analys of the h
+signatur in tb and w h0 decay channel need to be follow up by detail simul with
+pythia includ detector accept as in the case of the channel 11 final
+it should be note that practic all the analys of h signal so far are base on the
+lowest order product vertex repres by the yukawa coupl of eq 8 one loop
+5
+electroweak correct to thi vertex can give upto 10 20 reduct in the signal crosssect at high low tan as recent shown in 15 the correspond correct from
+qcd loop is expect to be larger but not yet avail thi is evid import for a
+quantit evalu of thi signal one should also bear in mind the possibl of a larg
+correct to thi vertex from susi loop depend on the choic of susi paramet 16
+refer
+1 jf gunion he haber gl kane and s dawson the higg hunter guid
+addisonwesley read ma 1990
+2 s raychaudhuri and dp roy phi rev d 52 1556 1995 and d 53 4902 1996
+e ma dp roy and j wudka phi rev lett 80 1162 1998
+3 v barger rjn phillip and dp roy phi lett b 324 236 1994 jf gunion
+phi lett b 322 125 1994
+4 aa barriento bendez
+u and ba kniehl phi rev d 59 015009 1999 and hepph9908385 s moretti and k odagiri phi rev d 59 055008 1999
+5 dj miller s moretti dp roy and wj stirl phi rev d 61 055011 2000
+6 v barger ms berger and p ohmann phi rev d 47 1093 1993
+7 s moretti and dp roy phi lett b 470 209 1999
+8 f borzumati jl kneur and n polonski phi rev d 60 115011 1999 d dicu
+t stelzer z sullivan and s willenbrock phi rev d 59 094016 1999
+9 ad martin rg robert wj stirl and rs thorn phi lett b 443 301
+1998
+10 dp roy phi lett b 459 607 1999
+11 r kinnunen higg work group report for the le houch workshop on physic at
+tev collid hepph0002258 pp 4648
+12 m dree m guchait and dp roy phi lett b 471 39 1999
+13 s moretti and wj sterl phi lett b 347 291 1995 erratum ibid b 366 451
+1996 a djouadi j kalinowski and pm zerwa z phi c 70 435 1996
+14 m dree e ma pn pandita dp roy and s vempati phi lett b 433 346
+1998
+15 lg jin cs li rj oak and sh zhu hepph9907482
+16 ja coarasa d garcia j guasch ra jimenez and j sola eur phi j c 2 373
+1998
+6
+fig 1 the reconstruct tb invari mass distribut of the h signal 3 and the
+qcd background 4 in the isol lepton plu multijet channel with 4 btag the
+scale on the right correspond to a btag effici fator b4 01
+fig 2 the reconstruct tb invari mass distribut of the h signal and differ
+qcd background in the isol lepton plu multijet channel with 3 btag
+7
+bg
+200
+400
+600
+1
+1
+10
+1
+1
+10
+2
+2
+10
+10
+3
+10
+bg
+200
+400
+600
+10
+ddmt fbgev
+ddmt fbgev
+10
+3
+0
+100
+200
+300
+400
+500
+600
+700
+10
+800
+0
+100
+200
+300
+400
+500
+600
+700
+800
+mtc gev
+mt gev
+fig 3 distribut of the h signal and background crosssect in the transvers
+mass of the jet with the missingpt for a all 1prong jet b those where the
+charg pion carri over 80 of the jet pt mh 200 400 600 gev and tan
+40
+cross sectionin fbgev
+00025
+0002
+00015
+qcd
+0001
+00005
+htb
+sig
+0
+150
+200
+250
+300
+350
+400
+450
+mwbb
+fig 4 the h w h0 signal crosssect is shown against the reconstruct h
+mass for mh 220 gev and tan 2 along with the h tb and the qcd
+background
+8

@@ -1,0 +1,159 @@
+arxivmathph0112021v1 12 dec 2001
+theor math phi 123 671672 2000
+a remark on the matrix airi function
+am perelomov
+maxplanckinstitut f
+ur mathematik
+vivatsgass 7 53111 bonn germani
+abstract
+an integr represent for matrix airi function is present
+in memori of mv saveliev
+the wellknown witten conjectur 1 that the logarithm of the partit
+function of gener onematrix model can be consid as the gener
+function for intersect number on the moduli space of algebra curv
+wa prove by kontsevich 23 who reduc thi problem to the comput of the matrix airi function see 46 where mani aspect of thi
+problem were discuss the matrix airi function is defin by an integr
+represent we give anoth integr represent for thi function
+follow 3 we defin the matrix airi function on the space hn of
+hermitian n n matric by the integr
+ax
+exp
+i
+1
+tri 3 trxi
+3
+dy
+1
+over the space hn where dy is a u n invari measur on thi space
+x y hn we also note that the function a x satisfi the equat
+a x tr x ax 0
+2
+on leav of absenc from institut for theoret and experiment physic 117259
+moscow russia current email address perelomodftuzunizar
+1
+where is the laplacian
+we recal that the classic airi function
+ai x
+exp iy 3 3 xy dy
+3
+is the uniqu solut up to a scalar factor of the differenti equat
+ai x x aix 0
+4
+that is bound on real axe it follow from eq1 that the depend
+and n 1 tr x where x x
+i and
+of ax on the variabl x
+tr x 0 can be separ inde we have
+i
+xx
+y y i
+tr y 0
+tr x
+tr y 3 tr y 3 3 tri 2 n 3
+y n
+tr xy tr x
+theorem 1 the integr represent
+aq
+ax ax
+5
+i
+tr p 3 ai n 13 n trp 2 qp dp
+cn 13 exp
+3
+is valid for matrix airi function 1 where q and p are diagon matric
+u qu 1 y u1 p u 1 u and u1 are unitari matricesqp is the
+x
+1
+zonal spheric function
+p q
+det expiqj pk
+v p v q
+6
+dp v p 2 dp
+7
+c const and v p is the vandermond determin
+q diag q1 qn
+p diag p1 pn
+pj pk det pjk1
+v p
+jk
+proof thi follow immedi from the harishchandra formula
+2
+8
+theorem 2 7 if is a conjugaci invari function on the space
+hermitian n n matric then
+y exp i tr qy dy
+2in n 12 v q1
+p exp i trqp v p 2 dp 9
+for ani diagon hermitian matrix q where y u p u 1 and last integr
+is taken over the space of diagon hermitian matric p
+we thu obtain an integr represent of the matrix airi function
+such that the depend on the variabl is contain onli in the standard onedimension airi function thi represent may be use for
+investig of properti of the matrix airi function
+for the case n 2 we have trp 3 0 and integr represent 5
+take the simpler form
+ax a r
+exp
+2i 3
+3p2 3 rp p2 dp d
+3
+10
+where
+sin pr
+11
+pr
+is the zonal spheric function for the matrix space with n 2 the integr over give
+rp
+a r c
+ai
+3
+2
+13
+p2 rp p2 dp
+c 2
+3
+2
+13
+12
+if we take the integr over p in 10 we obtain anoth integr represent
+a r c1
+exp
+2i 3
+3 gr d
+3
+c1 const
+13
+where
+gr 32 expi 1 r 2
+14
+is the green function of the schr
+oding equat for free motion in threedimension space
+acknowledg thi note wa written dure a stay at maxplanckinstitut f
+ur mathematik bonn it is pleasur to thank the staff
+of the institut for their hospit
+3
+refer
+1
+witten e twodimension graviti and intersect theori
+on moduli space survey in diff geometri j differ geom
+suppl 1 243310 1991
+2
+kontsevich m intersect theori on the moduli space of
+curv func anal appl 25 no 2 123 129 1991
+3
+kontsevich m intersect theori on the moduli space of
+curv and the matrix airi function commun math phi
+147 123 1992
+4
+witten e on the kontsevich model and other model of twodimension graviti preprint iassn hep9124 princeton
+univ princeton nj 1991
+5
+witten e the n matrix model and gaug w zw model
+nucl phi b371 191245 1992
+6
+itzykson c and zuber jb combinator of the modular
+groupii the kontsevich integr int j mod phi a7
+56615705 1992
+7
+harishchandra differenti oper on semisimpl lie algebra amer j math 79 87120 1957
+4
