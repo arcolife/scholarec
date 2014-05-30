@@ -1,0 +1,1640 @@
+arxivcondmat0009243v1 condmatstatmech 16 sep 2000
+a statist mechan approach to combinatori chemistri
+michael w deem
+chemic engin depart
+univers of california
+lo angel ca 900951592
+februari 1 2008
+to appear in advanc in chemic engin
+1
+content
+i introduct
+3
+ii materi discoveri
+a the space of variabl
+b librari design and redesign
+c search the variabl space by mont carlo
+d the simplex of allow composit
+e signific of sampl
+f the random phase volum model
+g sever mont carlo protocol
+h effect of the mont carlo strategi
+i
+aspect of further develop
+iiiprotein molecular evolut
+a what is protein molecular evolut
+b background on experiment molecular evolut
+c the gener nk model
+d experiment condit and constraint
+e sever hierarch evolut protocol
+f possibl experiment implement
+g life ha evolv to evolv
+h natur analog of these protocol
+i
+conclud remark on molecular evolut
+ivsummari
+refer
+4
+4
+5
+6
+8
+9
+10
+12
+12
+14
+14
+15
+16
+18
+19
+20
+24
+25
+27
+28
+30
+30
+2
+i
+introduct
+the goal of combinatori chemistri is to find composit of matter that maxim a specif
+materi properti when combinatori chemistri is appli to materi discoveri the desir
+properti may be superconduct magnetoresist luminesc ligand specif sensor respons or catalyt activ when combinatori chemistri is appli to protein the desir
+properti may be enzymat activ fluoresc antibiot resist or substrat bind specif in either case the properti to be optim the figur of merit is gener an unknown
+function of the variabl and can be measur onli experiment
+combinatori chemistri is then a search over a multidimension space of composit and
+noncomposit variabl for region of high figur of merit a tradit synthet chemist would
+carri out thi search by use chemic intuit to synthes a few initi molecul of these
+molecul those that have a favor figur of merit would be identifi a homolog seri
+of compound similar to those best start point would then be synthes final of the
+compound in these homolog seri that with the best figur of merit would be identifi as the
+optim materi
+if the space of composit and noncomposit variabl is suffici larg novel or unfamiliar the tradit synthet approach may lead to the identif of materi that are not
+truli the best it is in thi case that combinatori chemistri becom use in combinatori
+chemistri trial librari of molecul are synthes instead of trial molecul by synthes
+and screen for figur of merit an entir librari of 102 105 molecul instead of a singl molecul
+the variabl space can be search much more thoroughli in thi sens combinatori chemistri
+is a natur extens of tradit chemic synthesi intuit determin of the individu
+molecul to synthes is replac by method for design of the molecular librari likewis
+synthesi of homolog compound is replac by redesign of the librari for multipl round of
+parallel screen experi
+while the combinatori approach attempt to search composit space broadli an exhaust
+search is usual not possibl it would take for exampl a librari of 9 106 compound to search
+a fivecompon system at a mole fraction resolut of 1 similarli it would take a librari
+of 20100 10130 protein to search exhaust the space of all 100 aminoacid protein domain
+clearli a signific aspect to the design of a combinatori chemistri experi is the design
+of the librari the librari member should be chosen so as to search the space of variabl as
+effect as possibl given the experiment constraint on the librari size
+the task of search composit space in combinatori chemistri for region of high figur
+of merit is veri similar to the task of search configur space by mont carlo comput
+simul for region of low free energi the space search by mont carlo comput simul
+is often extrem larg with 104 or more continu dimens yet with recent advanc in the
+design of mont carlo algorithm one is abl to locat reliabl the region of low free energi even
+for fairli complic molecular system
+thi chapter pursu the analog between combinatori chemistri and mont carlo comput
+simul exampl of how to design librari for both materi discoveri and protein molecular evolut will be given for materi discoveri the concept of librari redesign or the use
+previou experi to guid the design of new experi will be introduc for molecular
+evolut exampl of how to use bias mont carlo to search the protein sequenc space will
+be given chemic inform whether intuit theoret calcul or databas statist
+can be natur incorpor as an a priori bia in the mont carlo approach to librari design in
+combinatori chemistri in thi sens combinatori chemistri can be view as an extens of
+tradit chemic synthesi
+3
+ii
+materi discoveri
+a varieti of materi have been optim or develop to date by combinatori method
+perhap the first experi to gather great attent wa the demonstr that inorgan oxid
+hightc superconductor could be identifi by combinatori method xiang et al 1995 by
+search sever 128member librari of differ inorgan oxid system the known composit
+of superconduct bisrcacuo and ybacuo were identifi sinc then mani demonstr of
+find known materi and discoveri of new materi have appear known composit of
+giant magnetoresist materi have been identifi in librari of variou cobalt oxid brice
+no
+et al 1995 blue and red phosphor have been identifi from larg librari of 25000 differ
+inorgan oxid danielson et al 1997 danielson et al 1988 wang et al 1998 polymerbas
+sensor for variou organ vapor have been identifi by combinatori method dickinson and
+walt 1997 catalyst for the oxid of co to co2 have been identifi by search ternari
+compound of pd pt and rh or rh pd and cu weinberg et al 1998 cong et al 1999
+phase diagram of zeolit materi have been map out by a combinatori multiautoclav
+akporiay et al 1998 novel enantioselect catalyst have been found by search librari of
+transit metalpeptid complex cole et al 1996 novel phosphatas catalyst were found by
+search librari of carboxyl acidfunction polyallylamin polym menger et al 1995
+new catalyst and condit for ch insert have been found by screen of ligandtransit
+metal system burgess et al 1996 a new catalyst for the convers of methanol in a direct
+methanol fuel cell wa identifi by search the quaternari composit space of pt ir os and
+ru reddington et al 1998 final a novel thinfilm highdielectr compound that may be use
+in futur gener of dram chip wa identifi by search through over 30 multicompon
+ternari oxid system van dover et al 1998
+the task of identifi the optim compound in a materi discoveri experi can be
+reformul as one of search a multidimension space with the materi composit impur
+level and synthesi condit as variabl present approach to combinatori librari design
+and screen invari perform a grid search in composit space follow by a steepestasc
+maxim of the figur of merit thi procedur becom ineffici in highdimension space
+or when the figur of merit is not a smooth function of the variabl inde the use of a grid
+search is what ha limit essenti all current combinatori chemistri experi to quaternari
+compound ie to search a space with three variabl what is need is an autom yet more
+effici procedur for search composit space
+an analog with the comput simul techniqu of mont carlo allow us to design just
+such an effici protocol for search the variabl space falcioni and deem 2000 in materi
+discoveri a search is made through the composit and noncomposit variabl to find good
+figureofmerit valu in mont carlo a search is made through configur space to find region
+of low free energi by use insight gain from the design of mont carlo method the search in
+materi discoveri can be improv
+a
+the space of variabl
+sever variabl can be manipul in order to seek the materi with the optim figur of
+merit materi composit is certainli a variabl but also film thick van dover et al 1998
+and deposit method novet et al 1995 are variabl for materi made in thin film form the
+process histori such as temperatur pressur ph and atmospher composit is a variabl
+the guest composit or impur level can greatli affect the figur of merit cong et al 1999
+in addit the crystallin of the materi can affect the observ figur of merit van dover
+4
+et al 1998 final the method of nucleat or synthesi may affect the phase or morpholog of
+the materi and so affect the figur of merit helmkamp and davi 1995 zone et al 1998
+there are import point to note about these variabl first a small impur composit
+can caus a big chang in the figur of merit as seen by the rapid variat of catalyt activ in
+the curh oxid catalyst cong et al 1999 second the phase in thin film are not necessarili
+the same as those in bulk as seen in the case of the thinfilm dielectr where the optim materi
+wa found outsid the region where the bulk phase form van dover et al 1998 final the
+crystallin of the materi can affect the observ figur of merit again as seen in the thinfilm
+dielectr exampl van dover et al 1998
+b
+librari design and redesign
+the experiment challeng in combinatori chemistri appear to lie mainli in the screen
+method and in the technolog for the creation of the librari the theoret challeng on the
+other hand appear to lie mainli in the librari design and redesign strategi it is thi second
+question that is address by the analog with mont carlo comput simul
+combinatori chemistri differ from usual mont carlo simul in that sever simultan search of the variabl space are carri out that is in a typic combinatori chemistri
+experi sever sampl eg 10000 are synthes and screen for figur of merit at one time
+with the result of thi first round a new set of sampl can be synthes and screen thi
+procedur can be repeat for sever round although current materi discoveri experi
+have not systemat exploit thi featur
+pursu the analog with mont carlo each round of combinatori chemistri correspond to
+a move in a mont carlo simul instead of track one system with mani configur
+degre of freedom howev mani sampl are track each with sever composit and noncomposit degre of freedom modern experiment technolog is what allow for the costeffect synthesi and screen of multipl sampl composit
+the technolog for materi discoveri is still in the development stage and futur progress
+can still be influenc by theoret consider in thi spirit i assum that the composit and
+noncomposit variabl of each sampl can be chang independ as in spatial address
+librari akporiay et al 1998 pirrung 1997 thi is signific becaus it allow great flexibl
+in how the space can be search with a limit number of experiment sampl
+current experi uniformli tend to perform a grid search on the composit and noncomposit variabl it is prefer howev to choos the variabl statist from the
+allow valu it is also possibl to consid choos the variabl in a fashion that attempt to
+maxim the amount of inform gain from the limit number of sampl screen via a
+quasirandom lowdiscrep sequenc niederreit 1992 bratley et al 1994 such sequenc
+attempt to elimin the redund that natur occur when a space is search statist
+and they have sever favor theoret properti an illustr of these three approach to
+materi discoveri librari design is shown in figur 1
+inform about the figureofmerit landscap in the composit and noncomposit variabl can be incorpor by multipl round of screen one conveni way to incorpor thi
+feedback as the experi proce is by treat the combinatori chemistri experi as a
+mont carlo in the laboratori thi approach lead to sampl the experiment figur of merit
+e proport to exp if is larg then the mont carlo procedur will seek out valu of
+the composit and noncomposit variabl that maxim the figur of merit if is too larg
+howev the mont carlo procedur will get stuck in rel lowli local maxima the first
+round is initi by choos the composit and noncomposit variabl statist from the
+5
+uniform sampl
+random sampl
+00
+02
+00
+08
+04
+06
+04
+04
+08
+02
+10
+04
+06
+x axi
+08
+10
+00
+04
+06
+08
+02
+08
+02
+02
+y axi
+04
+06
+04
+10
+00
+06
+z axi
+y axi
+08
+00
+02
+08
+04
+06
+06
+10
+02
+08
+z axi
+y axi
+06
+00
+10
+02
+z axi
+00
+low discrep sequenc
+10
+10
+00
+10
+00
+x axi
+02
+04
+06
+08
+10
+x axi
+figur 1 shown are the grid random and lowdiscrep sequenc approach to design the
+first librari in a materi discoveri experi with three composit variabl the random
+approach break the regular pattern of the grid search and the lowdiscrep sequenc approach
+avoid overlap point that may aris in the random approach
+allow valu the variabl are chang in succeed round as dictat by the mont carlo
+procedur
+sever gener featur of the method for chang the variabl can be enumer the statist method of chang the variabl can be bias by concern such as materi cost theoret
+or experiment a priori insight into how the figur of merit is like to chang and patent
+both the composit and noncomposit variabl will be chang in each round like it
+would be desir to have a rang of move size for both type of variabl the characterist
+move size would like best be determin by fix the accept ratio of the move as is customari in mont carlo simul frenkel and smit 1996 in addit there would like be a
+smallest variabl chang that would be signific due to experiment resolut limit in the
+screen step final a steepestasc optim to find the best local optima of the figur
+of merit would like be benefici at the end of a materi discoveri experi driven by such a
+mont carlo strategi
+c
+search the variabl space by mont carlo
+two way of chang the variabl are consid a small random chang of the variabl of
+a randomli chosen sampl and a swap of a subset of the variabl between two randomli chosen
+sampl swap is use when there is a hierarch structur to the variabl the swap
+event allow for the combin of benefici subset of variabl between differ sampl for
+exampl a good set of composit variabl might be combin with a particularli good impur
+composit or a good set of composit variabl might be combin with a good set of
+process variabl these move are repeat until all the sampl in a round have been modifi
+the valu of the figur of merit for the propos new sampl are then measur whether to
+accept the newli propos sampl or to keep the current sampl for the next round is decid
+accord to the detail balanc accept criterion for a random chang of one sampl the
+metropoli accept probabl is appli
+pacc c p min 1 exp epropos ecurr
+1
+propos sampl that increas the figur of merit are alway accept propos sampl that
+decreas the figur of merit are accept with the metropoli probabl allow the figur of
+merit occasion to decreas is what allow sampl to escap from local maxima move that
+lead to invalid valu of the composit or noncomposit variabl are reject
+6
+a
+b
+parallel temper
+mont carlo
+select
+mc at 1
+mc at 2
+screen
+swap
+metropoli at
+figur 2 schemat of the mont carlo librari design and redesign strategi from falcioni and
+deem 2000 a one mont carlo round with 10 sampl shown are an initi set of sampl
+modif of the sampl measur of the new figur of merit and the metropoli criterion
+for accept or reject of the new sampl b one parallel temper round with 5 sampl at
+1 and 5 sampl at 2 in parallel temper sever mont carlo simul are perform at
+differ temperatur with the addit possibl of sampl exchang between the simul
+at differ temperatur
+for the swap move appli to sampl i and j the modifi accept probabl is
+appli
+j
+i
+epropos
+pacc c p min 1 exp epropos
+j
+i
+ecurr
+ecurr
+2
+figur 2a show one round of a mont carlo procedur the paramet is not relat to the
+thermodynam temperatur of the experi and should be optim for best effici the
+characterist size of the random chang in the composit and noncomposit variabl are
+also paramet that should be optim
+if the number of composit and noncomposit variabl is too great or if the figur of merit
+chang with the variabl in a toorough fashion normal mont carlo will not achiev effect
+sampl parallel temper is a natur extens of mont carlo that is use to studi statist
+geyer 1991 spin glass marinari et al 1998 and molecular falcioni and deem 1999 system
+with rug energi landscap our most power protocol incorpor the method of parallel
+temper for chang the system variabl in parallel temper a fraction of the sampl are
+updat by mont carlo with paramet 1 a fraction by mont carlo with paramet 2 and so
+on at the end of each round sampl are randomli exchang between the group with differ
+s as shown in figur 2b the accept probabl for exchang two sampl is
+pacc c p min 1 exp e
+3
+where is the differ in the valu of between the two group and e is the differ
+in the figur of merit between the two sampl it is import to notic that thi exchang step
+7
+w1
+n
+2 3
+2
+2
+n
+1
+1
+w2
+6
+n
+1
+b
+figur 3 the allow composit rang of a threecompon system is shown in the a origin
+composit variabl xi and b gramschmidt variabl wi
+doe not involv ani extra screen compar to mont carlo and is therefor free in term
+of experiment cost thi step is howev dramat effect at facilit the protocol to
+escap from local maxima the number of differ system and the temperatur of each system
+are paramet that must be optim
+to summar the first round of combinatori chemistri consist of the follow step construct the initi librari of sampl measur the initi figur of merit chang the variabl
+of each sampl a small random amount or swap subset of the variabl between pair of
+sampl construct the propos new librari of sampl measur the figur of merit of the
+propos new sampl accept or reject each of the propos new sampl and perform
+parallel temper exchang subsequ round of combinatori chemistri repeat these step
+start with make chang to the current valu of the composit and noncomposit variabl these step are repeat for as mani round as desir or until maxim figur of merit
+are found
+d
+the simplex of allow composit
+the point to be sampl in materi discoveri are the allow valu of the composit and
+noncomposit variabl typic the composit variabl are specifi by the mole fraction
+sinc the mole fraction sum to one sampl on these variabl requir special care
+in particular the specif or modif of the the d mole fraction variabl xi is done
+in the d 1dimension hyperplan orthogon to the ddimension vector 1 1 1 thi
+procedur ensur that the constraint di1 xi 1 is maintain thi subspac is identifi by a
+gramschmidt procedur which identifi a new set of basi vector ui that span thi hyperplan figur 3 illustr the geometri for the case of three composit variabl
+the new basi set is identifi as follow first ud is defin to be the unit vector orthogon
+to the allow hyperplan
+1
+1
+1
+4
+ud
+d d
+d
+the remain ui 1 i d are chosen to be orthogon to ud so that they lie in the allow
+hyperplan inde the ui form an orthonorm basi for the composit space thi orthonorm
+basi is identifi by the gramschmidt procedur first the origin composit basi vector
+8
+are defin
+e1 1 0 0 0
+e2 0 1 0 0
+ed1 0 0 1 0
+5
+each ui is identifi by project these basi vector onto the space orthogon to ud and the
+uj j i alreadi identifi
+e1 e1 ud ud
+e1 e1 ud ud
+e2 e2 ud ud e2 u1 u1
+u2
+e2 e2 ud ud e2 u1 u1
+ei ei ud ud i1
+j1 ei uj uj
+ui
+ei ei ud ud i1
+j1 ei uj uj
+u1
+6
+a point in the allow composit rang is specifi by the vector x di1 wi ui with wd 1 d
+note that the valu wi are relat to the composit valu xi by a rotat matrix sinc the
+gramschmidt procedur simpli identifi a rotat basi for the composit space
+x rw
+7
+where rij is given by the ith compon of uj each of the number wi 1 i d is to be
+vari in the materi discoveri experi not all valu of wi are feasibl howev sinc the
+constraint xi 0 must be satisfi feasibl valu are identifi by transform the wi to the
+xi by eq 7 and then check that the composit variabl are nonneg the constraint
+that the composit variabl sum to uniti is automat ensur by the choic wd 1 d
+e
+signific of sampl
+sampl the figur of merit by mont carlo rather than global optim by some other
+method is favor for sever reason first mont carlo is an effect stochast optim
+method second simpl global optim may be mislead sinc concern such as patent
+cost of materi and eas of synthesi are not usual includ in the experiment figur of merit
+moreov the screen that is most easili perform in the laboratori the primari screen is
+usual onli roughli correl with the true figur of merit inde after find materi that
+look promis base upon the primari screen experiment secondari and tertiari screen are
+usual perform to identifi that materi which is truli optim third it might be advantag
+to screen for sever figur of merit at onc for exampl it might be profit to search for
+reactant and condit that lead to the synthesi of sever zeolit with a particularli favor
+properti such as the presenc of a larg pore as anoth exampl it might be use to search for
+sever electrocatalyst that all possess a use properti such as be abl to serv as the anod
+or cathod materi in a particular fuel cell
+for all of these reason sampl by mont carlo to produc sever candid materi is
+prefer over global optim
+9
+figur 4 the random phase volum model from falcioni and deem 2000 the model is shown
+for the case of three composit variabl and one noncomposit variabl the boundari of
+the x phase are evid by the sharp discontinu in the figur of merit to gener thi figur
+the z variabl wa held constant the boundari of the z phase are shown as thin dark line
+f
+the random phase volum model
+the ultim test of new theoreticallymotiv protocol for materi discoveri is of cours
+experiment in order to motiv such experiment the effect of these protocol is
+demonstr by combinatori chemistri experi where the experiment screen step is
+replac by figur of merit return by the random phase volum model the random phase
+volum model is not fundament to the protocol it is introduc as a simpl way to test parameter and valid the variou search method
+the random phase volum model relat the figur of merit to the composit and noncomposit variabl in a statist way the model is fast enough to allow for valid of the
+propos search method on an enorm number of sampl yet possess the correct statist
+for the figureofmerit landscap
+the composit mole fraction are nonneg and sum to uniti and so the allow composit are constrain to lie within a simplex in d 1 dimens for the familiar ternari system
+thi simplex is an equilater triangl as shown in figur 3b typic sever phase will exist
+for differ composit of the materi the figur of merit will be dramat differ between each of these distinct phase to mimic thi expect behavior the composit variabl are
+group in the random phase volum model into phase center around nx point x randomli
+place within the allow composit rang the phase form a voronoi diagram sedgewick
+1988 as shown in figur 4
+the random phase volum model is defin for ani number of composit variabl and
+the number of phase point is defin by requir the averag space between phase point to
+be 025 to avoid edg effect addit point are ad in a belt of width 2 around the
+simplex of allow composit the number of phase point for differ grid space is shown
+in tabl 1
+the figur of merit should chang dramat between composit phase moreov within
+10
+tabl 1 number of phase point as a function of dimens and space
+01
+01
+01
+01
+02
+02
+02
+02
+025
+025
+025
+025
+d
+3
+4
+5
+6
+3
+4
+5
+6
+3
+4
+5
+6
+number of point
+193
+1607
+12178
+81636
+86
+562
+3572
+20984
+70
+430
+2693
+15345
+03
+03
+03
+03
+035
+035
+035
+035
+d
+3
+4
+5
+6
+3
+4
+5
+6
+number of point
+59
+353
+2163
+12068
+53
+306
+1850
+10234
+each phase the figur of merit should also vari with y x x due to crystallin effect such
+as crystallit size intergrowth defect and fault van dover et al 1998 in addit the
+noncomposit variabl should also affect the measur figur of merit the noncomposit
+variabl are denot by the bdimension vector z with each compon constrain to fall within
+the rang 1 1 without loss of gener there can be ani number of noncomposit variabl
+the figur of merit depend on the composit and noncomposit variabl in a correl
+fashion in particular how the figur of merit chang with the noncomposit variabl should
+depend on the valu of the composit variabl to mimic thi behavior within the random
+phase volum model the noncomposit variabl also fall within nz noncomposit phase
+defin in the space of composit variabl there are a factor of 10 fewer noncomposit phase
+than composit phase
+the function form of the model when x is in composit phase and noncomposit phase
+is
+ex z
+q
+d
+k
+fi1 ik xk ai1 ik yi1 yi2 yik
+u x
+k1 i1 ik 1
+q
+1
+w z
+2
+k1 i
+b
+k
+fi1 ik zk bi1 ik zi1 zi2
+1 ik 1
+zik
+8
+k
+where fi1 ik is a constant symmetri factor x and z are constant scale factor and u w ai1 ik
+k
+and bi1 ik are random gaussian variabl with unit varianc in more detail the symmetri factor
+is given by
+k
+9
+fi1 ik l
+i1 oi
+where l is the number of distinct integ valu in the set i1 ik and oi is the number of time
+that distinct valu i is repeat in the set note that 1 l k and li1 oi k the scale factor
+11
+are chosen so that each term in the multinomi contribut roughli the same amount x 2
+and z z 6 z 2 14 3714 the x and z are chosen so that the multinomi crystallin
+term contribut 40 as much as the constant phase term on averag for both multinomi
+q 6 as figur 4 show the random phase volum model describ a rug figureofmerit
+landscap with subtl variat local maxima and discontinu boundari
+g
+sever mont carlo protocol
+six differ way of search the variabl space are test with increas number of composit and noncomposit variabl the total number of sampl whose figur of merit will be
+measur is fix at m 100000 so that all protocol have the same experiment cost the singl
+pass protocol grid random and lowdiscrep sequenc ld are consid for the grid
+method the number of sampl in the composit space is mx m d1d1b and the number
+of sampl in the noncomposit space is mz m bd1b the grid space of the composit
+variabl is x vd mx 1d1 where
+d
+10
+vd
+d 1
+is the volum of the allow composit simplex note that the distanc from the centroid of the
+simplex to the closest point on the boundari of the simplex is
+rd
+1
+dd 112
+11
+1b
+the space for each compon of the noncomposit variabl is z 2mz for the ld
+method differ quasirandom sequenc are use for the composit and noncomposit variabl the feedback protocol mont carlo mont carlo with swap and parallel temper are
+consid the mont carlo paramet were optim on test case it wa optim to perform
+100 round of 1000 sampl with 2 for d 3 and 1 for d 4 or 5 and x 01rd
+and z 012 for the maximum random displac in each compon the swap move
+consist of an attempt to swap all of the noncomposit valu between the two chosen sampl and it wa optim to use pswap 01 for the probabl of a swap versu a regular random
+displac for parallel temper it wa optim to perform 100 round with 1000 sampl
+divid into three subset 50 sampl at 1 50 500 sampl at 2 10 and 450 sampl at
+3 1 the 50 sampl at larg essenti perform a steepestasc optim and have
+smaller x 001rd and z 0012
+h
+effect of the mont carlo strategi
+the figur of merit found by the protocol are shown in figur 5 the singleround protocol
+random and lowdiscrep sequenc find better solut than doe grid in one round of experi interestingli the lowdiscrep sequenc approach fare no better than doe random
+despit the desir theoret properti of lowdiscrep sequenc
+the multipleround mont carlo protocol appear to be especi effect on the more difficult
+system with larger number of composit and noncomposit variabl that is the mont
+carlo method have a tremend advantag over one pass method especi as the number of
+variabl increas with parallel temper the best method the mont carlo method in essenc
+gather more inform about how best to search the variabl space with each succeed round
+12
+grid
+random
+ld
+mont carlo
+mc swap
+parallel temper
+2
+x5z4
+x5z3
+x5z2
+x4z3
+x4z2
+x4z1
+x5z1
+x3z2
+x5z0
+x4z0
+x3z1
+1
+x3z0
+rel figur of merit
+3
+number of compon
+figur 5 the maximum figur of merit found with differ protocol on system with differ
+number of composit x and noncomposit z variabl from falcioni and deem 2000 the
+result are scale to the maximum found by the grid search method each valu is averag over
+scale result on 10 differ instanc of the random phase volum model with differ random
+phase the mont carlo method are especi effect on the system with larger number of
+variabl where the maxim figur of merit are more difficult to locat
+13
+thi feedback mechan prove to be effect even for the rel small total sampl size of
+100000 consid here it is expect that the advantag of the mont carlo method will becom
+even greater for larger sampl size note that in case such as catalyt activ sensor respons or
+ligand specif the experiment figur of merit would like be exponenti in the valu shown
+in figur 5 so that the success of the mont carlo method would be even more dramat a
+better calibr of the paramet in eq 8 may be possibl as more data becom avail in
+the literatur
+i
+aspect of further develop
+the space of composit and noncomposit variabl to search in materi discoveri experi can be forbiddingli larg yet by use mont carlo method one can achiev an effect
+search with a limit number of experiment sampl
+effici implement of the mont carlo search strategi are feasibl with exist librari
+creation technolog moreov close the loop between librari design and redesign is achiev
+with the same databas technolog current use to track and record the data from combinatori
+chemistri experi these multipleround protocol when combin with appropri robot
+autom should allow the practic applic of combinatori chemistri to more complex and
+interest system
+mani detail need to be work out in order to flesh out the propos protocol for materi
+discoveri for exampl
+1 how rough are real figur of merit and can the random phase volum model be calibr
+better
+2 can more of the hierarch structur of the variabl be identifi
+3 what are the best method of manipul the variabl in the mont carlo
+addit question some of which thi chapter ha begun to answer includ how doe the proxim to the global optimum scale with the number of sampl and with the algorithm by which
+they are select what is the best set of sampl to choos for an optim result chosen all at
+onc or in stage or sequenti what is the minimum number of sampl requir to make a
+montecarlobas algorithm attract as the driver
+iii
+protein molecular evolut
+the space to be search in protein combinatori chemistri experi is extrem larg
+consid for exampl that a rel short 100 amino acid protein domain were to be evolv
+the number of possibl amino acid sequenc of thi length is 20100 10130 sinc there are 20
+natur occur amino acid residu clearli all of these sequenc cannot be synthes and
+then screen for figur of merit in the laboratori some mean must be found for search thi
+space with the 104 or so protein than can be screen per day experiment
+a hierarch decomposit of the protein space can provid an effect search procedur
+it is known from protein structur biolog that protein are encod by dna sequenc dna
+sequenc code for amino acid amino acid arrang into secondari structur secondari structur
+arrang into domain domain group to form protein monom and protein monom aggreg
+to form multiprotein complex by sampl on each level of thi hierarchi one is abl to search
+the sequenc space much more effect in thi chapter search strategi make use of the dna
+14
+amino acid and secondari structur hierarchi will be describ with thi approach function
+protein space ha a larg yet manag number of dimens that is in a 100 amino acid
+protein domain there are approxim 10 secondari structur of 5 type helic loop strand
+turn and other roughli yield the potenti for 107 basic protein fold organ into
+secondari structur class repres a dramat reduct in the complex of sequenc space
+sinc there are 10170 differ dna sequenc and 10130 differ amino acid sequenc in thi
+space
+sampl on the differ level of protein structur is analog to combin of differ
+move type in a mont carlo simul a varieti of move from small local move to larg
+global move are often incorpor in the most success mont carlo simul while protein
+molecular evolut is carri out in the laboratori and mont carlo simul are carri out
+in silico the parallel are strike one of the most power new concept in mont carlo is the
+idea that move should be bias frenkel and smit 1996 that is small move such as the
+metropoli method sampl configur space rather slowli larger move are prefer sinc
+they sampl the space more rapidli larg move are usual reject howev sinc they often
+lead the system into a region of high energi so that the larg move will be more success a
+bia toward region that look promis is includ such bias mont carlo simul have
+been a factor of 105 to 1010 time more effici than previou method and they have allow the
+examin of system previous uncharacteriz by molecular simul techniqu frenkel
+et al 1992 frenkel and smit 1992 de pablo et al 1992 smit and maesen 1995
+in thi section the possibl of evolv protein molecul by strategi similar to bias mont
+carlo will be explor the larg move of mont carlo are implement by chang an evolv
+protein at the secondari structur level these evolutionari event will be bias in that the
+amino acid sequenc insert will be chosen so that they code for viabl secondari structur
+the concept of bia also appli at the amino acid level where differ dna sequenc code for
+the same amino acid can lead to differ propens for futur evolut
+a
+what is protein molecular evolut
+protein molecular evolut can be view as combinatori chemistri of protein sinc protein
+sequenc space is so larg most experi to date have sought to search onli small region a
+typic experi seek to optim the figur of merit of an exist protein for exampl an
+improv in the select or activ of an enzym might be sought altern an expans
+in the oper rang of an enzym might be sought to higher temperatur or pressur thi
+improv would be achiev by chang or evolv the amino acid sequenc of the enzym
+a more ambiti goal would be the ab initio evolut of a protein with a specif function
+that is noth would be known about the desir molecul except that it should be a protein
+and that an experiment screen for the desir figur of merit is avail one might want
+for exampl an enzym that catalyz an unusu reaction or one might want a protein that
+bind a specif substrat or one might want a protein with an unusu fluoresc spectrum
+the ab initio evolut of a protein ha never been accomplish befor such a feat would be
+remark natur biolog divers ha evolv despit the essenti infinit complex of
+protein sequenc replic of thi feat in the laboratori would repres substanti progress
+and mimick thi feat of natur is a current goal in the molecular evolut field inde the
+protocol describ in thi section are craft with just thi task in mind
+a still more ambiti goal would be the evolut of a multiprotein complex thi is a rather
+challeng task due to the increas complex of the space to be search the task can be made
+manag by ask a rather gener evolutionari question one can seek to evolv for exampl
+15
+a multiprotein complex that can serv as the coat protein complex for a viru sinc there are
+mani protein that may accomplish thi task thi evolutionari task may not be as specif and
+difficult as it might seem at first
+the most ambiti goal for laboratori evolut that ha been imagin is the evolut of
+new life form evolut on thi scale requir chang not onli at the secondari structur scale
+but also at the domain protein and protein pathway scale due to their simplic virus or
+phage would be the most like target of such largescal evolut attempt it is unclear how
+new life form would be distribut in term of pathogen and so such experi should be
+approach with caution
+the hierarch decomposit of sequenc space will allow effect molecular evolut if
+there are mani protein with a high valu of ani particular figur of merit that is if onli one
+out of 10130 small protein domain exhibit a high score on a particular figur of merit thi protein
+is unlik to be identifi on the other hand if mani protein score highli on the figur of
+merit onli a subset of these molecul need be sampl thi same issu aris in convent
+mont carlo simul sampl all of configur space is never possibl in a simul
+yet ensembl averag and experiment behavior can be reproduc by sampl repres
+configur that life on our planet ha evolv suggest that there is a great redund in
+protein space kauffman 1993 and so one may hope to search thi space experiment with
+suffici power move
+b
+background on experiment molecular evolut
+there are some constraint on molecular evolut as it is carri out in the laboratori there
+are constraint aris from limit of molecular biolog ie onli certain type of move are
+possibl on the dna that code for the protein there are also constraint aris from technic
+limit ie onli a certain number of protein can be screen for figur of merit in a day
+exist approach to the evolut of gener protein are essenti limit to chang at the
+singl base level somewhat more sophist method are avail for evolut of antibodi
+but thi is a special case that will not be consid here the first type of evolutionari chang that
+is possibl in the laboratori is a base substitut base substitut are natur made as dna
+is copi or amplifi by pcr the rate at which base substitut or mistak in the copi
+of the templat dna are made can be adjust by vari experiment condit such as the
+manganes and magnesium ion concentr it is import to note that these base substitut
+are made without knowledg of the dna sequenc of the evolv protein equal import is
+that these base substitut are made without the use of a chemic synthes these chang
+are made natur within the context of effici molecular biolog method anoth mean of
+modifi an exist protein is to use random or direct mutagenesi to chang specif dna
+base so that they code for random or specifi amino acid the approach requir both that
+the dna sequenc be known and that it subsequ be synthes by chemic mean such a
+labori approach is not practic in highthroughput evolut experi where typic 104
+protein are simultan modifi and evolv per day
+sinc the averag length of a human gene is roughli 1800 base basebybas point mutat
+will achiev signific evolut onli veri slowli more significantli the figureofmerit landscap
+for protein function is typic quit rug base mutat therefor invari ceas evolut
+at a local optima of the figur of merit base mutat can be view as an experiment method
+for local optim of protein figur of merit
+much of the current enthusiasm for protein molecular evolut is due to the discoveri of dna
+shuffl by pim stemmer in 1994 stemmer 1994 dna shuffl is a method for evolv an
+16
+tabl 2 gene and operon evolv by dna shuffl from patten et al 1997
+system
+tem1 lactamas
+galactosidas
+green fluoresc protein
+antibodi
+antibodi
+arsen operon
+alkyl transferas
+benzyl esteras
+trna synthetas
+improv
+enzym activ
+32000fold
+fucosidas activ
+66fold
+protein fold
+45fold
+avid
+400fold
+express level
+100fold
+arsen resist
+40fold
+dna repair
+10fold
+antibiot deprotect
+150fold
+charg of
+engin trna
+180fold
+size
+333 aa
+mutat
+6 aa
+1333 aa
+6 aa
+266 aa
+3 aa
+233 aa
+34 aa1
+233 aa
+5 aa
+766 aa
+3 aa
+166 aa
+7 aa
+500 aa
+8 aa
+666
+not
+determin
+1 thi
+wa a case of famili shuffl crameri et al 1998 so most of these chang were between
+homolog amino acid
+exist protein to achiev a higher figur of merit the great geniu of stemmer wa to develop
+a method for combin benefici base mutat that is natur accomplish with the tool of
+molecular biolog and that doe not requir dna sequenc or chemic synthesi the method is
+success becaus combin of base mutat that were individu benefici is like to lead
+to an even higher figur of merit than is achiev by either mutat alon of cours thi will not
+alway be true but the extent to which it is true is the extent to which dna shuffl will be an
+effect techniqu dna shuffl combin with base mutat is the current state of the art
+experiment techniqu for protein molecular evolut
+tabl 2 list a few of the protein system that have been evolv by the stemmer group
+evid dna shuffl is highli effect at improv the function of an exist protein much
+more effect than is simpl base mutat the specif of an enzym can even be alter as in
+the convers of a galactosidas into a fucosidas a rough median of the improv factor
+is about 100 most import howev is that all of these improv were achiev with a
+rel small number of amino acid chang on averag onli 6 amino acid were alter out
+of roughli 400 total residu in the protein as with base mutat then dna shuffl is abl
+to search sequenc space onli local after a small number of amino acid chang dna shuffl
+produc a protein with a local rather than global optim figur of merit
+the current state of the art experiment techniqu for protein molecular evolut can be
+view as local optim procedur in protein sequenc space altern they can be
+17
+view as experiment implement of simpl or metropoli mont carlo procedur by use
+our intuit regard the design of power bias mont carlo algorithm we can develop more
+power experiment protocol for molecular evolut
+interestingli theoret treatment of evolut whether in natur or in the laboratori tend to
+consid onli the effect of point mutat kauffman 1993 volkenstein 1994 inde interest
+theori regard the evolutionari potenti of point mutat have been develop as shown
+experiment howev point mutat is incap of significantli evolv protein at substanti
+rate even the more power techniqu of dna shuffl search protein space mere local
+onli with the inclus of more dramat move such as chang at the level of secondari structur
+can protein space be search more thoroughli
+c
+the gener nk model
+in order to valid the molecular evolut protocol to be present a model that relat amino
+acid sequenc to protein function is need of cours the real test of these protocol should be
+experiment and i hope that these experi will be forthcom in order to stimul interest
+in the propos protocol their effect will be simul on a model of protein function
+such a model would seem to be difficult to construct it is extrem difficult to determin the
+threedimension structur of a protein given the amino acid sequenc moreov it is extrem
+difficult to calcul ani of the typic figur of merit given the threedimension structur of a
+protein
+it is fortun that a model that relat figur of merit to amino acid sequenc for a specif
+protein is not need the requir is simpli a model that produc figureofmerit landscap
+in sequenc space that are analog to those that would be measur in the laboratori on an
+ensembl of protein thi type of model is easier to construct and a random energi model can
+be use to accomplish the task
+the gener nk model is just such a random energi model the nk model wa first
+introduc in order to model combinatori chemistri experi on peptid kauffman and
+levin 1987 kauffman 1993 kauffman and macreadi 1995 it wa subsequ gener
+to account for secondari structur in real protein perelson and macken 1995 the model wa
+further gener to account for interact between the secondari structur and for the presenc
+of a bind pocket bogarad and deem 1999
+thi gener nk model assign a uniqu figur of merit to each evolv protein sequenc
+thi model while a simplifi descript of real protein captur much of the thermodynam
+of protein fold and ligand bind the model take into account the format of secondari
+structur via the interact of amino acid side chain as well as the interact between secondari
+structur within protein in addit for specif the figur of merit is assum to be a
+bind constant and so the model includ a contribut repres bind to a substrat
+the combin abil to fold and bind substrat is what will be optim or evolv that is the
+direct of the protein evolut will be base upon the figur of merit return by thi gener
+nk model thi gener nk model contain sever paramet and a reason determin
+of these paramet is what allow the model to compar success with experi
+the specif energi function use as the select criterion in the molecular simul is
+usd
+u
+1
+p
+m
+m
+sdsd
+u
+1
+uic
+12
+i1
+thi energi function is compos of three part secondari structur subdomain energi u sd
+subdomainsubdomain interact energi u sdsd and chemic bind energi u c each of
+18
+these three energi term is weight equal and each ha a magnitud near uniti for a random
+sequenc of amino acid in thi nk base simul each differ type of amino acid behav as
+a complet differ chemic entiti therefor onli q 5 five chemic distinct amino class
+are consid eg neg posit polar hydrophob and other interestingli restrict
+alphabet of amino acid not onli are capabl of produc function protein kamtekar et al
+1993 riddl et al 1997 but also may have been use in the primit genet code miller and
+orgel 1974 schuster and stadler 1998 the evolv protein will be a rel short 100 amino
+acid protein domain within thi domain will be roughli m 10 secondari structur subdomain
+each n 10 amino acid in length the subdomain belong to one of l 5 differ type eg
+helic strand loop turn and other thi give l differ u sd energi function of the nk
+form kauffman and levin 1987 kauffman 1993 kauffman and macreadi 1995 perelson and
+macken 1995
+n k1
+1
+aj aj1 ajk1
+13
+usd
+m n k12 j1
+the degre of complex in the interact between the amino acid is parameter by the valu
+of k low valu of k lead to figureofmerit landscap upon which evolut is easi and high
+valu of k lead to extrem rug landscap upon which evolut is difficult combinatori
+chemistri experi on peptid have suggest the valu of k 4 as a reason one kauffman
+and macreadi 1995 note that the definit of k here is one greater than the convent in
+kauffman and levin 1987 kauffman 1993 kauffman and macreadi 1995 the quench
+unitnorm random number in eq 13 is differ for each valu of it argument for each of the
+l class thi random form mimic the complic amino acid side chain interact within a
+given secondari structur the energi of interact between secondari structur is given by
+sdsd
+u
+2
+dm m 1
+d
+i1
+12
+i
+aj1 ajk2 ajk21 ajk
+14
+the number of interact between secondari structur is set at d 6 here the unitnorm
+i
+weight and the interact amino acid j1 jk are select at random for each interact i the chemic bind energi of each amino acid is given by
+1
+uic i ai
+p
+15
+the contribut amino acid i and the unitnorm weight of the bind i are chosen at random
+a typic bind pocket is compos of five amino acid and so the choic of p 5 is made
+d
+experiment condit and constraint
+a typic protein evolut experi start with an initi protein sequenc thi sequenc is
+then copi to a larg number of ident sequenc all of these sequenc are evolv or mutat
+in parallel after one round of mutat event the protein are screen for figur of merit thi
+screen step is typic the rate limit step and so the effici of thi step determin how
+mani protein can be evolv in parallel for typic figur of merit 10000 protein can be screen
+in a day if select that is use of a screen base upon whether an organ live or die were
+19
+perform instead 109 1015 protein could be screen in a day select is a special case
+howev and so the more conserv case of screen 10000 protein per day is consid
+after the screen the protein are rank accord to their measur valu of the figur of
+merit typic the top x percent of the sequenc are kept for the next round of mutat the
+paramet x is to be adjust experiment in the simul evolut the valu of x 10
+wa alway found to be optim other method for select the protein to keep for the next
+round have been consid for exampl keep protein proport to expu ha been
+consid thi strategi seem to work less well than the top x percent method the main reason
+seem to be that in the top x percent method the criterion for select which sequenc to keep
+adjust natur with the rang of figur of merit found in the evolv sequenc after the top
+x percent sequenc are select they are copi back up to a total of 10000 sequenc these
+sequenc are the input for the next round of mutat and select
+in the simul molecular evolut the experi is continu for 100 round thi is a
+rel larg number of round to carri out experiment with the most power protocol
+howev it is possibl to evolv protein ab initio thi feat ha not been achiev to date in the
+laboratori in order to mimic thi feat of natur one should be will to do some number of
+round
+e
+1
+sever hierarch evolut protocol
+amino acid substitut
+to obtain a base line for search fold space molecular evolut is first simul via simpl
+mutagenesi see figur 6a simul evolut by amino acid substitut lead to significantli
+improv protein energi as shown in tabl 3 these evolut alway termin at local energi
+minima howev thi trap is due to the difficulti of combin the larg number of correl substitut necessari to gener new protein fold increas the screen stringenc in
+later round did not improv the bind constant of simul protein most like due to the
+lack of addit select criteria such as growth rate although onli nonconserv mutat were directli simul conserv and synonym neutral mutat are not exclud
+and can be taken into account in a more detail treatment inde the optim averag mutat rate of 1 amino acid substitutionsequenceround is equival to roughli 16 random base
+substitutionsround
+2
+dna shuffl
+dna shuffl improv the search of local fold space via a random yet correl combin of
+homolog code fragment that contain limit number of benefici amino acid substitut
+as in experiment evolut stemmer 1994 crameri et al 1998 zhang et al 1997 moor
+et al 1997 the simul shuffl improv protein function significantli better than did point
+mutat alon see tabl 3 and figur 6b howev local barrier in the energi function also
+limit molecular evolut via dna shuffl for exampl when the screen size wa increas from
+10000 to 20000 protein per round no further improv in the final evolv energi wa seen
+interestingli the optim simul dna shuffl length of 20 amino acid 60 base is nearli
+ident to fragment length use in experiment protocol crameri et al 1998
+20
+molecular evolut simul
+b
+dna shuffl
+a
+substitut
+start protein
+start protein
+mutat
+mutat
+screen
+repeat
+shuffl
+screen
+repeat
+c
+swap
+d
+start protein
+multipool swap
+low energi secondari structur pool
+swap
+same
+swap
+differ
+or same
+mutat
+mutat
+shuffl
+shuffl
+screen
+repeat
+screen
+repeat
+figur 6 schemat diagram of the simul molecular evolut protocol from bogarad and
+deem 1999 a simul of molecular evolut via base substitut substitut are repres by orang dot b simul dna shuffl show the optim fragment length of 2
+subdomain c the hierarch optim of local space search the 250 differ sequenc
+in each of the 5 pool eg helic strand turn loop and other are schemat repres
+by differ shade of the same color d the multipool swap model for search vast region
+of tertiari fold space is essenti the same as in the figur 6c except that now sequenc from
+all 5 differ structur pool can be swap into ani subdomain multipool swap allow
+for the format of new tertiari structur by chang the type of secondari structur at ani
+posit along the protein
+21
+tabl 3 result of mont carlo simul of the evolut protocol from bogarad and deem
+19991
+evolut method
+amino acid substitut
+dna shuffl
+swap
+mix
+multipool swapping2
+ustart
+1700
+1700
+0
+0
+0
+uevolv
+2318
+2383
+2452
+2488
+2540
+kbind
+1
+100
+147 104
+181 105
+880 106
+1 the
+start polypeptid energi of 1700 come from a proteinlik sequenc minim u sd
+and 0 come from a random initi sequenc of amino acid the evolv energi and bind
+constant are median valu the bind constant are calcul from kbind aebu where a
+and b are constant determin by normal the bind constant achiev by point mutat
+and shuffl to 1 and 100 respect
+2 note that the energi and bind constant achiev via multipool swap repres typic
+best evolv protein fold
+3
+singlepool swap
+in natur local protein space can be rapidli search by the direct recombin of encod
+domain from multigen pool a promin exampl is the creation of the primari antibodi
+repertoir in an adapt immun system these event are gener by simul the swap of amino acid fragment from 5 differ structur pool repres helic strand loop
+turn and other see figur 6c dure the swap step subdomain were randomli replac
+with member of the same secondari structur pool with an optim probabl of 001subdomainround the simul evolut of the primari fold is limit by maintain the linear order
+of swap secondari structur type the addit of the swap move wa so power that it
+wa possibl to achiev bind constant 2 order of magnitud higher than in shuffl simul
+see tabl 3 significantli these improv bind constant were achiev start with 1020
+time less minim structur subdomain materi
+4
+mix
+parallel temper is a power statist method that often allow a system to escap local
+energi minima geyer 1991 thi method simultan simul sever system at differ
+temperatur allow system at adjac temperatur to swap configur the swap
+between high and lowtemperatur system allow for an effect search of configur space
+thi method achiev rigor correct canon sampl and it significantli reduc the equilibr time in a simul instead of a singl system a larger ensembl with n system is
+consid in parallel temper and each system is equilibr at a distinct temperatur ti
+i 1 n the procedur in parallel temper is illustr in figur 7
+the system with the lowest temperatur is the one of our interest the higher temperatur
+system are ad to aid in the equilibr of the system of interest in addit to the normal
+mont carlo move perform in each system swap move are propos that exchang the
+configur between two system i and j i 1 1 i n the higher temperatur system
+are includ sole to help the lowest temperatur system to escap from local energi minima via
+22
+t5
+t4
+t
+t3
+t2
+t1
+mont carlo step
+figur 7 a schemat draw of the swap take place dure a parallel temper simul
+the swap move to achiev effici sampl the highest temperatur should be such that
+no signific free energi barrier are observ so that the swap move are accept with a
+reason probabl the energi histogram of system adjac in the temperatur ladder should
+overlap
+in natur as well it is known that gene gene fragment and gene operon are transfer
+between speci of differ evolutionari complex ie at differ temperatur by analog
+limit popul mix is perform among sever parallel swap experi by randomli
+exchang evolv protein at an optim probabl of 0001proteinround these mix
+simul optim local space search and achiev bind constant 105 higher than did
+base substitut alon see tabl 3 improv function is due in part to the increas number of
+event in parallel experi inde mix may occur in natur when the evolutionari target
+function chang with time that is in a dynam environ with multipl select pressur
+mix would be especi effect when the rate of evolut of an isol popul is slower
+than the rate of environment chang it ha also been argu that spatial heterogen in drug
+concentr a form of spatial parallel temper facilit the evolut of drug resist
+kepler and perelson 1998
+5
+multipool swap
+the effect navig of protein space requir the discoveri and select of tertiari structur to model the larg scale search of thi space a random polypeptid sequenc wa use as a
+start point and the swap protocol wa repeat now howev secondari structur from
+all 5 differ pool were permit to swap in at everi subdomain see figur 6d thi multipool swap approach evolv protein with bind constant 107 better than did amino acid
+substitut of a proteinlik start sequenc see tabl 3 thi evolut wa accomplish by
+the random yet correl juxtaposit of differ type of low energi secondari structur thi
+approach dramat improv specif ligand bind while effici discov new tertiari
+structur see figur 8 optim of the rate of these hierarch molecular evolutionari
+23
+figur 8 schemat diagram repres a portion of the highdimension protein composit
+space from bogarad and deem 1999 the threedimension energi landscap of protein fold
+1 is shown in cut away the arc with arrowhead repres the abil of a given molecular
+evolut process to chang the composit and so to travers the increasingli larg barrier in the
+energi function the smallest arc repres the abil to evolv improv fold function via point
+mutat then in increas order dna shuffl swap and mix final the multipool
+swap protocol allow an evolv system to move to a differ energi landscap repres
+a new tertiari fold bottom
+move includ relax of the select criteria enabl the protein to evolv despit the high
+rate of failur for these dramat swap move interestingli of all the molecular evolutionari
+process model onli multipool swap demonstr chaotic behavior in repetit simul thi chaotic behavior wa like due to the discoveri of differ model fold that vari in
+their inher abil to serv as scaffold for ligand specif bind
+f
+possibl experiment implement
+an import motiv of thi work wa that the propos protocol must be experiment
+feasibl inde the ultim test of the effect of these protocol will be experiment it is
+hope that the search of larg region of protein space appar possibl with these method will
+identifi new protein fold and function of great valu to basic industri and medic research
+the main technic challeng pose by the swap protocol is the nonhomolog recombin necessari to swap the dna that code for differ secondari structur into the evolv
+protein one approach would be to gener multipl librari of synthet oligonucleotid pool
+mandecki 1990 stemmer et al 1995 encod the differ secondari subdomain structur
+24
+asymmetr complementari encod linker with embed restrict site would make the assembl shuffl and swap step possibl
+altern the techniqu of itchi ostermei et al 1999a and scratchi ostermei
+et al 1999b may be use to accomplish the nonhomolog swap of secondari structur
+requir within our protocol
+final exon shuffl may be use to perform the nonhomolog swap event in thi
+case the pool of secondari structur would be encod with exon of a live organ such as
+e coli there is preced for such use of exon shuffl both at the dna fisch et al 1996 and
+rna moran et al 1999 level
+g
+life ha evolv to evolv
+although the focu ha been on the higher level of the evolut hierarchi becaus that is
+where the biggest theoret and experiment gap lie all level are import in particular the
+detail of how point mutat assist protein evolut is import
+dna base mutat lead onli indirectli to chang in protein express how mutat occur
+in the base and how these mutat lead to codon chang and so amino acid chang is not pure
+random the inher properti of the genet code and bias in the mechan of dna base
+substitut are perfectli suit for the neutral search of local space previous the genet code
+ha been present as a nodal or hypercub structur to illustr these relationship maeshiro
+and kimura 1998 jimenezmonta
+no et al 1996 it seem prefer to view the standard genet
+code quantit as a 64 64 twodimension matrix seed of thi approach can be found in
+kepler work regard evolv in immunoglobulin gene cowel et al 1999 kepler and bartl
+1998 kepler 1997 the valu in thi matrix are the probabl of a specif codon mutat
+to anoth by a singl base chang under errorpron condit eg mutat strain of bacteria
+error prone pcr or somat hypermut assum each base mutat independ in the
+codon thi matrix can be calcul from a simpler 4 4 matrix of base mutat probabl
+the base mutat matrix can be extract from avail experiment data smith et al 1996
+a synonym transit probabl can be defin for each codon which is the probabl per
+replic of a base chang that lead to a codon that code for the same amino acid a conserv
+transit probabl can further be defin which is the probabl per replic that a base
+chang lead to a conserv mutat final a nonconserv transit probabl can be
+defin which is the probabl per replic that a base chang lead to a nonconserv
+mutat the conserv and nonconserv mutat probabl can be view as defin
+the evolutionari potenti of each codon codon with high conserv and nonconserv
+mutat rate can be said to exhibit a high evolutionari potenti these mutat tendenc
+are shown in figur 9 in gener amino acid that exhibit a dramat function properti such
+as the charg residu the ring residu cystein and tryptophan tend to mutat at higher
+nonconserv rate that allow for the possibl delet of the properti amino acid that are
+more gener such as the polar neutral residu and the nonpolar nonring residu tend to
+mutat at higher conserv rate that allow sequenc space to be search for similar favor
+contact
+there is a connect between condon usag and dna shuffl in the most success dna
+shuffl experi by the stemmer group codon assign of the initi code sequenc are
+optim for express thi assign typic increas the nonsynonym mutat rate
+describ abov in particular thi assign tend to increas the conserv mutat rate
+for the gener amino acid and the nonconserv mutat rate for the dramaticallyfunct
+amino acid codon usag then ha alreadi implicitli been use to manipul mutat rate
+25
+5
+p x 10
+cy
+ser
+thr
+pro
+neutral and polar
+ala
+gli asn asp hi
+gln
+glu
+arg
+neg posit
+and
+and
+polar
+polar
+ly ile
+met
+val phe trp
+tyr
+stop
+nonpolar
+with
+ring
+synoym
+conserv
+nonconserv
+leu
+nonpolar
+without
+ring
+tgc
+tgt
+agc
+agt
+tca
+tcc
+tcg
+tct
+aca
+acc
+acg
+act
+cca
+ccc
+ccg
+cct
+gca
+gcc
+gcg
+gct
+gga
+ggc
+ggg
+ggt
+aac
+aat
+caa
+cag
+gac
+gat
+gaa
+gag
+cac
+cat
+aga
+agg
+cga
+cgc
+cgg
+cgt
+aaa
+aag
+atg
+ata
+atc
+att
+cta
+ctc
+ctg
+ctt
+tta
+ttg
+gta
+gtc
+gtg
+gtt
+ttc
+ttt
+tac
+tat
+tgg
+taa
+tag
+tga
+figur 9 shown are the probabl of a given codon mutat in a synonym unfil
+conserv hatch and nonconserv fill way in one round of replic under error
+prone condit the codon are group by the amino acid encod and the amino acid are
+group by categori
+26
+explicit consider of the import of codon assign would be an interest aminoacid
+level refin of exist molecular evolut protocol optim protocol paramet can
+be identifi take into account the detail codon usag inform similarli the codon
+potenti matrix can be use in the design of the pool of secondari structur in the swappingtyp molecular evolut protocol that is dna can be chosen that code for the secondari
+structur that i tend not to mutat ii tend to mutat to synonym sequenc iii tend to
+mutat to conserv sequenc or iv tend to mutat to nonconserv sequenc
+in natur there are numer exampl of exploit codon potenti in ongo evolutionari
+process kepler 1997 in the v region of encod antibodi highpotenti serin codon such
+as agc are found predomin in the encod cdr loop while the encod framework contain
+lowpotenti serin codon such as tct unfortun antibodi and drug are often no match
+for the hydrophil highpotenti codon of errorpron pathogen the dramat mutabl
+of the hiv gp120 coat protein is one such exampl one can envis a scheme for use codon
+potenti to target diseas epitop that mutat rare ie lowpotenti and unproduct
+ie becom stop lowpotenti or structurebreak codon such a therapeut scheme is
+quit simpl and so could be quit gener use against diseas that otherwis tend to becom
+drug resist
+h
+natur analog of these protocol
+dure the cours of ani evolutionari process protein becom trap in local energi minima dramat move such as swap and juxtaposit are need to break out of these region
+dramat move are usual deleteri howev the evolutionari success of these event depend
+on popul size gener time mutat rate popul mix select pressur or freedom such as success genom duplic or the establish of setasid cell davidson et al
+1995 and the mechan that transfer low energi encod structur domain
+by use the analog with mont carlo to design bias move for molecular evolut a
+swappingtyp move ha been deriv that is similar to sever mechan of natur evolut
+virus and transposon for exampl have evolv largescal integr mechan pennisi
+1998 exon shuffl is also a gener of divers and a possibl scenario is that exon shuffl
+gener the primordi fold divers gilbert 1978 gilbert et al 1997 netzer and hartl
+1997 altern random swap by horizont transfer lawrenc 1997 rearrang
+recombin delet and insert can lead to high infram success rate in genom with high
+densiti of code domain and read frame as in certain prokaryot and mitochondria
+while inter and intraspeci exchang of dna is often thought to occur primarili on the
+scale of gene and operon shorter exchang often occur inde the most preval exchang
+length within e coli is on the order of sever hundr to a thousand base pair syvanen 1997
+similarli analysi of the evolut of vertebr cytochromec suggest that transfer of segment
+significantli smaller than a singl gene must have occur syvanen 1997
+inde swap mutat lead to signific divers are not rare in natur neisseria
+meningitidi is a frequent caus of mening in subsaharan africa hobb et al 1997 the opa
+protein are a famili of protein that make up part of the outer coat of thi bacteria these protein
+undergo some of the same class switch and hypervari mutat as antibodi domain a
+signific sourc of divers also appear to have come from interspeci transfer with neisseria
+gonorrhoea hobb et al 1997 both the surfac coat protein and pilon protein of n gonorrhoea undergo signific homolog recombin to produc addit divers it appear
+gener true that the intra and interspeci transfer of short segment of gene is common in
+e coli streptococci and neisseria rapid evolut of divers such as thi obvious pose a
+27
+signific challeng for therapeut protocol
+three dramat exampl of use of swap by natur are particularli notabl the first is
+the develop of antibiot resist it wa origin thought that no bacteria would becom
+resist to penicillin due to the mani point mutat requir for resist resist occur
+howev within sever year it is now known that thi resist occur through the swap
+of piec of dna between evolv bacteria shapiro 1992 shapiro 1997 one mechan of
+antibiot resist wa incorpor of gene code for lactamas these gene which directli
+degrad lactam antibiot appear to be rel ancient and their incorpor is a rel
+simpl exampl of a swappingtyp event these lactamas have continu to evolv howev
+in the presenc of antibiot pressur both by point mutat and by shuffl of protein domain
+via exon shuffl maiden 1998 medeiro 1997 the bacteri target of penicillin the penicillinbind protein are modular protein that have undergon signific structur evolut sinc
+the introduct of penicillin massova and mobasheri 1999 goffin and ghuysen 1998 thi
+evolut wa of a domainshuffl form and it is a more sophist exampl of a natur
+swappingtyp move multidrug resist is of cours now a major current health care problem
+the creation of the primari antibodi repertoir in vertebr is anoth exampl of dna swap
+of gene gene segment or pseudogen inde the entir immun system mostli like evolv
+from a singl transposon insert some 450 million year ago plasterk 1998 agraw et al 1998
+thi insert combin with duplic and subsequ mutat of a singl membran span
+protein mostli like lead to the class switch apparatu of the primari repertoir final the
+evolut of e coli from salmonella occur exclus by dna swap lawrenc 1997
+none of the phenotyp differ between these two speci is due to point mutat moreov
+even the observ rate of evolut due to dna swap 31000 basesmillion year is higher than
+that due to point mutat 22000 basesmillion year even though a dna swap event is less
+like to be toler than is a point mutat the more dramat natur of the swap event
+lead to a higher overal rate of evolut thi is exactli the behavior observ in the simul
+molecular evolut
+i
+conclud remark on molecular evolut
+dna base substitut in the context of the genet code is ideal suit for the gener
+diversif and optim of local protein space miller and orgel 1974 maeshiro and
+kimura 1998 howev the difficulti of make the transit from one product tertiari
+fold to anoth limit evolut via base substitut and homolog recombin alon nonhomolog dna recombin rearrang and insert allow for the combinatori creation
+of product tertiari fold via the novel combin of suitabl structur inde effici search
+of the highdimension fold space requir a hierarch rang of mutat event
+thi section ha address from a theoret point of view the question of how protein space can
+be search effici and thoroughli either in the laboratori or in natur it wa shown that point
+mutat alon is incap of evolv system with substanti new protein fold it wa further
+demonstr that even the dna shuffl approach is incap of evolv substanti new
+protein fold the mont carlo simul demonstr that nonhomolog dna swap
+of low energi structur is a key step in search protein space
+more gener the simul demonstr that the effici search of larg region of protein
+space requir a hierarchi of genet event each encod higher order structur substitut it
+wa shown how the complex protein function landscap can be navig with these move it wa
+conclud that analog move have driven the evolut of protein divers found in natur the
+propos move which appear to be experiment feasibl would make an interest addit to
+28
+the techniqu of molecular biolog an especi import applic of the theoret approach
+to molecular evolut is model the molecular evolut of diseas
+there are mani experiment applic of the technolog for molecular evolut patten
+et al 1997 perhap some of the most signific are in the field of human therapeut molecular
+evolut can be use directli to improv the perform of protein pharmaceut molecular
+evolut can be use indirectli to evolv small molecul pharmaceut by evolv the pathway
+that code for small molecul synthesi in e coli molecular evolut can be use for gene therapi
+and dna vaccin molecular evolut can be use to produc recombin protein vaccin or
+viral vaccin final molecular evolut can be use to creat modifi enzymat assay in
+drug screen effort the abil to develop new assay that do not infring on competitor
+techniqu is an import abil for larg pharmaceut compani given the current complex
+state of patent claim there is a similar rang of applic of molecular evolut in the field
+of biotechnolog as shown in tabl 2 mani of the tool of molecular biolog can be improv or
+modifi through the use of molecular evolut
+a wide varieti of pest organ and parasit includ fungi weed insect protozoan
+macroparasit and bacteria have use evolutionari process to evad chemic control the
+rang of evolutionari event exhibit by these organ is similar in spirit to the hierarchi of
+move present in the molecular evolut protocol see figur 6 bacteria provid one of the most
+press exampl of the problem pose by an evolv diseas a move target although
+there undoubtedli have been mani select pressur upon bacteria the novel pressur with the
+largest impact in the last half centuri ha been the worldwid use of antibiot thi background
+presenc of antibiot ha lead to the develop of antibiot resist in mani speci of
+bacteria inde multidrug resist is now a major health care issu with some strain resist
+to all but one or even all known antibiot
+interestingli there is anoth strong pressur on evolv bacteria that of the vertebr immun system thi pressur is thought to be respons for mosaic or modular as a result of
+swappingtyp event gene found in speci of bacteria not natur genet compet such
+as e coli and s pyogen dowson et al 1997 in these case the longstand strong select
+pressur due to the interact with the immun system like led to genet exchang
+kepler and perelson have note that a spatial heterogen in the concentr of a drug
+can facilit evolv resist in the diseas organ kepler and perelson 1998 thi occur
+becaus region of low drug concentr provid a safe harbor for the diseas where replic
+and mutat can occur the region of high diseas concentr provid the select pressur for
+the evolut explicit exampl of thi mode of evolut includ the role of spatial heterogen
+in the spread of insecticid resist noncompli to antibiot regim in the rise of resist
+in the tuberculosi bacterium and heterogen within the bodi of the proteas inhibitor indinavir
+in the rise of resist hiv1 strain kepler and perelson 1998 as note abov thi type of
+evolut is a spatial exampl of parallel temper a techniqu that ha proven to be veri power
+at sampl difficult molecular system with mani and larg energi barrier thi analog with
+parallel temper suggest that heterogen must be of great and intrins import in natur
+evolut
+qualit chang in protein space such as those model here allow virus parasit bacteria and cancer to evad the immun system vaccin antibiot and therapeut all of these
+pathogen evolv to a greater or lesser degre by larg swappingtyp mutat the success
+design of vaccin and drug must anticip the evolutionari potenti of both local and larg
+space search by pathogen in respons to therapeut and immun select the addit of
+diseas specif constraint to simul such as these should be a promis approach for predict pathogen plastic inde infecti agent will continu to evolv unless we can forc
+29
+them down the road to extinct
+iv
+summari
+signific opportun exist for the applic of idea from statist mechan to the
+burgeon area of combinatori chemistri while combinatori chemistri wa not invent by
+research in the field of statist mechan it is fair to say that perhap it should have been
+the design of effect experiment method for search composit space is similar in concept
+to the design of effect mont carlo method for search configur space optim
+of the paramet in combinatori chemistri protocol is analog to the integr of variou
+type of move in mont carlo simul it is notabl that one of the strongest present propon of combinatori chemistri in the solid state henri weinberg at symyx technolog ha
+taught graduat statist mechan for the last twentyf year applic of combinatori
+chemistri abound in the field of catalysi sensor coat microelectron biotechnolog and
+human therapeut hope statist mechan will have a signific role to play in shape
+these new method of materi design
+acknowledg
+it is a pleasur to acknowledg the contribut of my collabor leonard d bogarad
+marco falcioni and taison tan thi work wa support by the nation scienc foundat
+refer
+agraw a eastman q m and schatz d g transposit mediat by rag1 and rag2
+and it implic for the evolut of the immun system natur 394 744751 1998
+akporiay d e dahl i m karlsson a and wendelbo r combinatori approach to the
+hydrotherm synthesi of zeolit angew chem int ed 37 609611 1998
+bogarad l d and deem m w a hierarch approach to protein molecular evolut proc
+natl acad sci usa 96 25912595 1999
+bratley p fox b l and niederreit h algorithm738program to gener niederreit
+lowdiscrep sequenc acm tran math softwar 20 494495 1994
+brice
+no g chang h sun x schultz p g and xiang xd a class of cobalt oxid
+magnetoresist materi discov with combinatori synthesi scienc 270 273275
+1995
+burgess k lim hj port a m and sulikowski g a new catalyst and condit for
+a ch insert reaction identifi by high throughput catalyst screen angew chem
+int ed 35 220222 1996
+cole b m shimizu k d krueger c a harriti j p a snapper m l and hoveyda
+a h discoveri of chiral catalyst through ligand divers ticatalyz enantioselect
+addit of tmscn to meso epoxid angew chem int ed 35 16681671 1996
+30
+cong p doolen r d fan q giaquinta d m guan s mcfarland e w poojari d m
+self k turber h w and weinberg w h highthroughput synthesi and screen of
+combinatori heterog catalyst librari angew chem int ed 38 484488 1999
+cowel l g kim h j humaljoki t berek c and kepler t b enhanc evolv in
+immunoglobulin v gene under somat hypermut j mol evol 49 2326 1999
+crameri a raillard s a bermudez e and stemmer w p c dna shuffl of a famili of
+gene from divers speci acceler direct evolut natur 391 288291 1998
+danielson e devenney m giaquinta d m golden j h haushalt r c mcfarland
+e w poojari d m reav c m weinberg w h and wu x d a rareearth
+phosphor contain onedimension chain identifi through combinatori method
+scienc 279 837839 1988
+danielson e golden j h mcfarland e w reav c m weinberg w h and wu x d a
+combinatori approach to the discoveri and optim of luminesc materi natur
+389 944948 1997
+davidson e h peterson k j and cameron r a origin of bilaterian bodi plansevolut
+of development regulatori mechan scienc 270 13191325 1995
+de pablo j j laso m and suter u w estim of the chemic potenti of chain molecul
+by simul j chem phi 96 6157 1992
+dickinson t a and walt d r gener sensor divers through combinatori polym
+synthesi anal chem 69 34133418 1997
+dowson c g barcu v king s pickeril p whatmor a and yeo m horizont gene
+transfer and the evolut of resist and virul determin in steptococcu j appl
+micro biol symposium supplement 83 42s51 1997
+falcioni m and deem m w a bias mont carlo scheme for zeolit structur solut j
+chem phi 110 17541766 1999
+falcioni m and deem m w librari design in combinatori chemistri by mont carlo
+method phi rev e 61 59485952 2000
+fisch i kontermann r e finnern r hartley o solergonzalez a s griffith a d and
+winter g a strategi of exon shuffl for make larg peptid repertoir display on
+filament bacteriophag proc natl acad sci usa 93 77617766 1996
+frenkel d and smit b unexpect length depend of the solubl of chain molecul
+mol phi 75 983 1992
+frenkel d and smit b understand molecular simul from algorithm to applic
+academ press san diego 1996
+frenkel d mooij c g a m and smit b novel scheme to studi structur and thermal
+properti of continu deform molecul j phi conden matter 4 3053 1992
+geyer c j markov chain mont carlo maximum likelihood in comput scienc and statist proceed of the 23rd symposium on the interfac american statist associ
+new york 1991 pp 156163
+31
+gilbert w whi gene in piec natur 271 501 1978
+gilbert w desouza s j and long m origin of gene proc natl acad sci usa 94
+76987703 1997
+goffin c and ghuysen jm multimodular penicillinbind protein an enigmat famili
+of ortholog and paralog microbiol mol biol 62 10791093 1998
+helmkamp m m and davi m e synthesi of porou silic ann rev mater sci 25
+161192 1995
+hobb m m seiler a achtman m and cannon j g microevolut within a clonal popul of pathogen bacteria recombin gene duplic and horizont genet
+exchang in the opa gene famili of neisseria meningitidi molec microbiol 12 171180
+1997
+jimenezmonta
+no m a de la morabasan
+ez c r and p
+oschel t the hypercub structur
+of the genet code explain conserv and nonconserv amino acid substitut
+in vivo and in vitro biosystem 39 117125 1996
+kamtekar s schiffer j m xiong h y babik j m and hecht m h protein design by
+binari pattern of polar and nonpolar amino acid scienc 262 16801685 1993
+kauffman s and levin s toward a gener theori of adapt walk on rug landscap
+j theor biol 128 1145 1987
+kauffman s a the origin of order oxford univers press new york 1993
+kauffman s a and macreadi w g search strategi for appli molecular evolut j
+theor biol 173 427440 1995
+kepler t b codon bia and plastic in immunoglobulin mol biol evol 14 637643 1997
+kepler t b and bartl s plastic under somat mutat in antigen receptor curr top
+micrbiol 229 149162 1998
+kepler t b and perelson a s drug concentr heterogen facilit the evolut of
+drug resist proc natl acad sci usa 95 1151411519 1998
+lawrenc j g selfish operon and speciat by gene transfer trend microbiol 5 355359
+1997
+maeshiro t and kimura m role of robust and changeabl on the origin and evolut
+of gentic code proc natl acad sci usa 95 50885093 1998
+maiden m c j horizont genet exchang evolut and spread of antibiot resist in
+bacertia clin infect di 27 s12s20 1998
+mandecki w a method for construct of long random open read frame and
+polypeptid protein eng 3 221226 1990
+marinari e parisi g and ruizlorenzo j numer simul of spin glass system in
+spin glass and random field a young ed world scientif singapor volum 12 of
+direct in condens matter physic 1998 pp 5998
+32
+massova i and mobasheri s structur and mechanist aspect of evolut of lactamas
+and penicillinbind protein curr pharm design 5 929937 1999
+medeiro a a evolut and dissemin of lactamas acceler by gener of lactam antiobiot clin infect di 24 s19s45 1997
+menger f m eliseev a v and migulin v a phosphatas catalysi develp via combinatori organ chemistri j org chem 60 66666667 1995
+miller s and orgel l the origin of life on earth prentic hall london 1974
+moor j c jin hm kuchner o and arnold f h strategi for the invitro evolut of
+protein functionenzym evolut by random recombin of improv sequenc j
+mol bio 272 336347 1997
+moran j v deberardini r j and kazazian h h exon shuffl by l1 retrotransposit
+scienc 283 15301534 1999
+netzer w j and hartl f u recombin of protein domain facilit by cotransl
+fold in eukaryot natur 388 343349 1997
+niederreit h random number gener and quasimont carlo method societi for industri and appli mathemat philadelphia 1992
+novet t johnson d c and fister l interfac interfaci reaction and superlattic reactant adv chem ser 245 425469 1995
+ostermei m nixon a e and benkov s j increment truncat as a strategi in the
+engin of novel biocatalyst bioorgan med chem 7 21392144 1999a
+ostermei m shim j h and benkov s j a combinatori approach to hybrid enzym
+independ of dna homolog natur biotech 17 12051209 1999b
+patten p a howard r j and stemmer w p c applic of dna shuffl to pharmaceut and vaccin curr opin biotech 8 724733 1997
+pennisi e how the genom readi itself for evolut scienc 281 11311134 1998
+perelson a s and macken c a protein evolut on partial correl landscap proc
+natl acad sci usa 92 96579661 1995
+pirrung m c spatial address combinatori librari chem rev 97 473488 1997
+plasterk r vdj recombin ragtim jump natur 394 718719 1998
+reddington e sapienza a gurau b viswanathan r sarangapani s smotkin e s and
+mallouk t e combinatori electrochemistri a highli parallel optic screen method
+for discoveri of better electrocatalyst scienc 280 17351737 1998
+riddl d s santiago j v brayhal s t doshi n grantcharova v p yi q and baker d
+function rapidli fold protein from simplifi amino acid sequenc natur struct
+biol 4 805809 1997
+33
+schuster p and stadler p f sequenc redund in biopolym a studi on rna and protein structur in viral regulatori structur and their degeneraci g myer ed addisonwesley new york 1998 pp 163186
+sedgewick r algorithm addisonwesley new york 2nd ed 1988
+shapiro j a natur genet engin in evolut genetica 86 99111 1992
+shapiro j a genom organ natur genet engin and adapt mutat trend
+in genet 13 98104 1997
+smit b and maesen t l m commensur freez of alkan in the channel of a zeolit
+natur 374 42 1995
+smith d s creadon g jena p k portanova j p kotzin b l and wysocki l j diand trinucleotid target prefer of somat mutagenesi in normal and autoreact b
+cell j immunol 156 26422652 1996
+stemmer w p c rapid evolut of a protein invitro by dna shuffl natur 370 389391
+1994
+stemmer w p c crameri a ha k d brennan t m and heynek h l singlestep
+assembl of a gene and entir plasmid from larg number of oligodeoxyribonucleotid
+gene 164 4953 1995
+syvanen m horizont gene transfer evid and possibl consequ annu rev genet
+28 237261 1997
+van dover r b schneemey l f and fleme r m discoveri of a use thinfilm
+dielectr use a compositionspread approach natur 392 162164 1998
+volkenstein m v physic approach to biolog evolut springerverlag new york 1994
+wang j yoo y gao c takeuchi i sun x chang h xiang xd and schultz p g
+identif of a blue photoluminesc composit materi from a combinatori librari
+scienc 279 17121714 1998
+weinberg w h jandeleit b self k and turner h combinatori method in homogen
+and heterogen catalysi curr opin chem bio 3 104110 1998
+xiang xd sun x brice
+no g lou y wang ka chang h wallacefreedman w g
+chang sw and schultz p g a combinatori approach to materi discoveri scienc
+268 17381740 1995
+zhang jh daw g and stemmer w p c direct evolut of a fucosidas from a
+galactosidas by dna shuffl and screen proc natl acad sci usa 94 45044509
+1997
+zone s i nakagawa y lee g s chen c y and yuen l t search for new high silica
+zeolit through a synergi of organ templat and novel inorgan condit micropor
+mesopor mat 21 199211 1998
+34

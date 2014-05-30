@@ -1,0 +1,751 @@
+arxivcs0004004v1 csm 13 apr 2000
+mathemat softwar past present and
+futur
+ronald f boisvert
+nation institut of standard and technolog
+abstract
+thi paper provid some reflect on the field of mathemat softwar on the occas of john rice 65th birthday i describ some of the
+common theme of research in thi field and recal some signific event
+in it evolut final i rais a number of issu that are of concern to
+futur develop
+1
+introduct
+11
+the studi of mathemat softwar
+the field of mathemat softwar is concern with the scienc and engin of solv mathemat problem with comput the primari focu is
+the develop of generalpurpos softwar tool applic to problem in a
+varieti of disciplin there are a larg number of facet to thi work includ
+the follow
+the develop and analysi of algorithm for standard mathemat
+problem which occur in a wide varieti of applic
+the practic implement of mathemat algorithm on comput
+devic includ studi of interact with particular hardwar and softwar system
+the environ for the construct of mathemat softwar such as
+comput arithmet system languag and relat softwar develop tool
+dedic to john r rice on occas of hi 65th birthday contribut of the nation
+institut of standard and technolog not subject to copyright mention of commerci
+product in thi paper doe not impli recommend or endors by nist convers
+omiss of a product name doe not impli unsuit for use author address mathemat and comput scienc divis inform technolog laboratori nist
+stop 8910 100 bureau drive gaithersburg md 208998910 usa
+1
+softwar design for mathemat comput system includ user interfac
+test and evalu of mathemat softwar includ methodolog
+tool testb and studi of particular system
+issu relat to the dissemin and mainten of mathemat softwar
+in 1977 john rice aptli character the need for special studi in thi
+area with the follow observ 66
+mani sophist scientist produc naiv softwar just as mani
+sophist comput programm produc naiv scienc
+tremend progress ha been made in the mathemat softwar field in the
+past 25 year yet there continu to be a wide rang of qualiti in exist
+softwar in both the research and commerci domain good mathemat
+softwar result from the applic of certain principl methodolog and
+practic deriv from both appli mathemat and comput scienc the
+studi of these principl and practic is central to the field of mathemat
+softwar to thi end typic softwar engin practic while benefici
+to the product of mathemat softwar system are not suffici mathemat softwar oper in the milieu of scientif comput which ha a
+number of characterist that distinguish it from other area among these are
+the follow
+floatingpoint arithmet most scientif comput are perform
+with floatingpoint arithmet consequ round error occur in
+most arithmet oper mathemat algorithm therefor must
+not onli be correct in a strict mathemat sens but they must control
+the accumul of roundoff avoid catastroph loss of signific from
+the subtract of like quantiti and avoid unnecessari overflow and
+underflow such problem are sometim unavoid softwar system
+must be design so that they do not fail when these anomali do occur
+approxim floatingpoint arithmet certainli impli approxim at a veri fine level howev more substanti approxim
+occur in mathemat comput infinit seri are truncat difficulttocomput function are approxim by polynomi deriv are
+approxim by differ integr are approxim by finit sum
+curv domain are approxim by polygon one the combin effect
+of such approxim on the final result can be quit difficult to assess
+analysi must be use to show that the correct solut is obtain as the
+approxim are made more precis ie that the algorithm is converg howev good softwar must do more it must provid mechan
+for a user to assess the qualiti of the result and to alert the user when
+the result is suspect well engin softwar can use such metric to
+2
+automat control the level of approxim optim adapt the
+algorithm to the situat at hand
+infinit process mani mathemat comput consist of appli some infinit process that obtain the desir result onli in the limit
+such process must be truncat for practic use consider research
+effort have been involv in find iter that converg quickli decid when to stop is alway a difficult problem of practic concern to
+softwar develop good softwar must employ techniqu that detect
+diverg or too slow converg and take appropri action
+coupl with these fundament mathemat challeng are practic concern about portabl how can develop produc softwar with reliabl
+reproduc behavior when it must run in veri differ environ with
+differ type of processor architectur arithmet system memori hierarchi oper system and languag processor such question are critic
+in the studi of mathemat softwar
+12
+the contribut of john r rice
+at thi confer we are celebr john rice long and influenti research
+career john ha made fundament contribut to the area of approxim
+theori numer analysi mathemat softwar and comput scienc in
+the area of mathemat softwar hi technic contribut have had three
+overrid theme
+1 architectur of scientif softwar system john ha particip in
+the design and develop of a varieti of wide distribut mathemat softwar system 37 38 58 64 68 70 in the cours of thi work
+he pioneer a number of design concept which have influenc mani
+system among these are polyalgorithm 59 metaalgorithm 61 and
+softwar part 72
+2 rais the level of abstract softwar user are more effici
+when they can express their comput need in the languag of their
+technic field for appli mathemat abstract are base upon
+concept of the calculu not simpl arithmet oper encapsul
+in program languag like fortran john rice work in highlevel
+compon and languag 70 72 intellig interfac 40 41 42 and
+problemsolv environ 29 56 have serv to push abstract to
+higher and higher level
+3 understand softwar via experiment understand the
+behavior of softwar is necessari in order to make practic decis regard algorithm select 62 john ha often stress the import
+of the use of experiment in such evalu the mani small engin decis made in the cours of translat an abstract algorithm
+3
+into a work comput program can have an enorm impact on it
+perform characterist john ha devot much time to develop
+test and evalu methodolog 7 43 57 65 80 and appli it to
+particular situat 24 23 36 67 inde one of the principl applic of the ellpack system 70 and it successor ha been to the
+perform evalu of softwar for partial differenti equat
+john contribut to the field of mathemat softwar have been volumin and farreach in thi paper i have onli cite a few exampl of hi
+mani write on thi subject in the remaind of thi paper i will enumer
+some of the major event in math softwar point out some of john key
+contribut along the way i will then describ sever current issu face
+the field and make sever hazi predict of the futur
+2
+21
+mathemat softwar past
+begin
+the earliest applic of electron comput were in scienc and engin
+for which mathemat comput play a central role program wa
+a veri difficult chore done without modern aid like highlevel languag compil and debugg the first public of a piec of mathemat softwar
+in a research journal probabl occur in 1949 when mathemat tabl and
+other aid to comput print a univac code for the solut of laplac
+equat written in machin languag 76 such code were veri difficult to produc and the need for reus of softwar wa recogn veri earli on in 1951
+wilk wheeler and gill present one of the earliest program librari which
+wa develop for the edsac1 82
+by the 1960 the introduct of highlevel program languag eg
+algol and fortran had greatli eas the task of produc reusabl mathemat softwar the use of such languag wa not without controversi of cours
+compil code wa not quit as effici as handtun assembl code but most
+peopl were will to accept thi in light of the great save in programm
+time also the subprogram structur provid by these languag provid a
+simpl framework for the construct and mainten of librari of util
+in 1960 the associ for comput machineri acm began a new
+editori depart in the commun of the acm cacm devot to
+the publish of algorithm edit by j h wegstein of the nation bureau of
+standard nb thi section print the code of contribut algol procedur
+most such code were quit short also remark on and certif of
+previous publish code were solicit the first such contribut wa a
+code for numer quadratur submit by r j herbold of nb 35 each
+1 the edsac electron delay storag automat comput wa built in the late 1940
+at the mathemat laboratori of the univers of cambridg it wa oper from 1949
+until 1958
+4
+algorithm wa given a number and the set of algorithm later becam known
+as the collect algorithm of the acm calgo
+comput manufactur also began to develop librari for their user the
+most promin of these wa probabl the ibm scientif softwar packag
+ssp a number of laboratori such as bell lab boe harwel and monsanto began the develop of math softwar librari for their intern use
+sever organ such as share the ibm user group began to collect
+such util for redistribut
+of cours subroutin librari were not the onli focu of research in thi
+new field some were imagin way in which these new power comput
+could be use to transform the way in which appli mathemat wa practic
+mani of these idea were discuss at the symposium on interact system for
+experiment appli mathemat held in in washington dc in august 1967
+46 the vision there is remark clear mani of the particip report
+on develop in technolog which would onli final begin to be realiz
+in the 1980 and 1990 at purdu for exampl john rice saul rosen and
+colleagu design napss numer analysi problemsolv system an
+interact mathemat problemsolv system which would accept input akin
+to normal mathemat notat 71 and would employ a varieti of heurist
+to autom numer analysi unfortun the resourc necessari for such
+an ambiti system exceed even the supercomput of the day like the cdc
+6400 and a fulli function system wa never realiz
+22
+a commun emerg
+perhap the first event that provid a real sens of commun for research
+interest in the product and dissemin of reusabl mathemat softwar wa the mathemat softwar symposium held at purdu univers in
+april 1970 john rice organ the symposium2 which wa sponsor by
+acm and the offic of naval research and the proceed were publish as
+a book by academ press 60 includ in the proceed were 23 paper
+four descript of select mathemat softwar and more than 40 page of
+introductori materi prepar by rice
+one of the recommend from the symposium wa for the establish
+of a journal that would publish paper relat to mathemat softwar john
+rice vigor pursu thi possibility3 after consider negoti with
+acm and the societi for industri and appli mathemat siam acm
+agre to publish the new journal paper from an nsfsponsor confer
+were use to provid articl to seed the journal mathemat softwar ii
+wa held at purdu in may 1974 there were 225 attende with 82 paper
+present the best of those paper make up the major of the first volum
+of the acm transact on mathemat softwar tom which publish
+2 the organ committe includ robert ashenhurst charl lawson m stuart lynn
+and joseph traub
+3 a committe that includ wayn cowel lloyd fosdick tom hull m stuart lynn and
+joseph traub work with him
+5
+it first issu in 1975 with john rice as editorinchief john continu in that
+posit until 1993
+tom wa charter not onli to publish tradit research paper but
+also algorithm with includ code which would be refere certif
+translat and remark on previous publish algorithm the algorithm
+section of cacm wa move to tom and henc tom algorithm were
+number begin at 493 one of the import featur of the new journal
+wa the establish of a reliabl algorithm distribut servic for calgo
+the distribut on magnet tape wa perform on a costrecoveri basi by
+imsl inc obtain softwar in machineread form wa much more use
+than read code on paper thi also allow tom to adopt the polici of
+not print the code of algorithm in the page of it journal thu save much
+in product cost
+a third confer organ by john rice mathemat softwar iii wa
+held at univers of wisconsin in 1977 63 by the end of the decad mathemat softwar had emerg as a viabl research area with an activ commun
+to support it after publish 25 volum tom remain a vibrant outlet for
+the work of thi commun 79
+23
+softwar emerg
+anoth import activ in the 1970 were the numer effort to develop
+care construct systemat collect of mathemat softwar one of
+the first of these wa the nat project the nation activ to test softwar
+which wa conceiv in 1970 a joint ventur of argonn nation laboratori
+stanford univers and the univers of texa at austin nat wa design
+to studi problem in produc certifi distribut and maintain qualiti
+numer softwar a key part of thi effort wa the product of two fortran
+softwar packag eispack 30 75 for eigenvalu problem and funpack
+13 for special function
+eispack which first appear in 1972 wa base upon algorithm publish in the 1960 in numerisch mathematik and later collect by wilkinson
+and reinsch in the handbook for automat comput 83 although the
+core of eispack wa larg a fortran translat of these exist algol code
+the project wa enorm influenti it set a new standard for qualiti transport mathemat softwar rigor test in a wide varieti of comput
+environ it success inspir the develop of mani systemat collect or pack in other area linpack for linear system 19 fishpak
+for separ ellipt problem 77 deboor bspline interpol packag 17
+minpack for nonlinear system 50 depac for ordinari differenti equat 74 fullerton function librari fnlib 28 swarztraub fftpack
+for fast fourier transform 78 and quadpack for numer quadratur 53
+of all the earli pack linpack undoubt saw the most widespread
+use one of the key to linpack success wa the decis to base it code
+on the newli propos basic linear algebra subprogram bla 47 the
+bla perform elementari vector oper such as norm dot product
+6
+scale and vector sum the innermost loop in linpack columnori
+algorithm occur insid the bla thi allow optim of the whole
+packag by simpli optim the bla thi approach prove quit success
+and mani machinespecif version of the bla were develop and support
+by comput manufactur
+the 1970 also saw great advanc in softwar for ordinari differenti equat ode gear code difsub 31 provid a well design framework
+for automat integr of both stiff and nonstiff problem use linear multistep method shampin and gordon ode 73 did the same for rungekutta
+method mani subsequ packag were built use these basic design other
+influenti packag includ colsi for twopoint boundaryvalu problem
+3 and dassl4 for differenti algebra system 52
+a number of high qualiti multipurpos librari also had their start in the
+1970 in 1970 six british comput center began an effort to develop a
+librari for their icl 1906a comput the next year mark 1 of the nottingham algorithm group nag librari wa releas implement for
+other system follow and in 1976 a notforprofit compani numer algorithm group ltd wa form to continu develop and distribut the
+nag effort continu today 51 the first commerci math librari effort wa
+also begun in 1970 with the incorpor in houston texa of imsl inc by
+charl w johnson and edward battist by the time the compani show it
+first profit in 1976 there were 430 librari subscrib the imsl librari remain
+a viabl commerci product 44 bell laboratori also develop a librari
+port whose singlesourc approach to portabl influenc mani subsequ
+effort 26
+the develop of ellpack a system for ellipt boundaryvalu problem also began in the mid 1970 thi effort which wa led by john rice wa
+a cooper project of purdu univers the univers of texa at austin
+yale univers and other in ellpack the solut process wa partit
+into a number of distinct phase domain process discret index
+linear system solut and output and the interfac between these phase
+were care defin thi design allow the develop of a larg librari
+of compon which could be easili compos to build algorithm for solv
+particular problem ellpack also prove to be an excel testb for the
+evalu of softwar for ellipt problem to eas the use of the system john
+rice design a veryhighlevel languag to describ the problem to be solv
+and to select the compon to be use to solv it the system first becam
+fulli oper in 1978 70 mani of the basic concept in ellpack design
+such as highlevel user interfac and plugandplay softwar part technolog
+are in common use in modern problemsolv environ
+the develop of mathemat softwar in the 1970 and earli 1980
+is describ in detail in the book sourc and develop of mathemat
+softwar edit by wayn cowel 15
+4 dassl
+won the 1991 wilkinson prize for numer softwar
+7
+24
+increas access
+by the begin of the 1980 a substanti collect of mathemat softwar mostli in the form of fortran subprogram wa avail for use the
+user base for thi softwar had grown substanti and with it came a new
+problem how to locat that need softwar compon the nation bureau
+of standard now nist develop an extens catalog of such softwar their
+guid to avail mathemat softwar gam base upon a detail
+treestructur problemori classif system 10 allow reader to
+see which compon of which librari and packag both public domain and
+commerci were avail to solv each problem the catalog remain avail
+today as an onlin resourc 34
+anoth barrier to the widespread use of softwar develop by the research
+commun wa simpli the process of obtain the code one had to locat the
+author request a magnet tape and attempt to deciph it format use
+softwar wa often lost to the commun when an author chang institut
+and there wa no longer support for distribut it in 1985 jack dongarra
+then at argonn nation lab and eric gross at bell lab start a softwar
+repositori they call netlib 20 which pioneer the use of comput network
+in softwar distribut softwar could be obtain automat by return
+email after send request to an address whose email wa process by a
+unix daemon the readi avail of such softwar chang the way in which
+mani research work mani more made routin use of high qualiti softwar
+and mani other were freed of the necess of maintain their own privat
+repositori now webaccess and support by the univers of tennesse
+at knoxvil and bell lab with mirror worldwid netlib remain the premier
+repositori of softwar develop by the mathemat softwar commun 11
+the 1980 also saw the first commerci success for generalpurpos interact system for mathemat a system for matrix comput develop as
+a teach aid dure the period 197784 by cleve moler at the univers of
+new mexico wa commerci as a tool for control system engin today
+matlab is a veri popular system for scientif comput 49 the overal
+structur of modern interact mathemat system wa greatli influenc by
+the system mathematica develop by stephen wolfram in 1988 84 mathematica wa the first commerci system to integr symbol numer and
+graphic capabl into a singl packag the grow avail of person comput and workstat wa an import factor in the success of
+these system with these tool the use of mathemat softwar wa begin to expand to those with littl experi in numer method or even
+program
+25
+new architectur
+the 1980 also brought vector and parallel comput into widespread use and
+with them addit challeng to the design of mathemat softwar vector processor vendor develop special math librari tune for their sy
+8
+tem mainli contain softwar for linear system and fft these solut
+emerg becaus the perform of linear algebra softwar such as linpack
+wa disappoint on vector regist architectur like the cray and convex
+the main reason for thi wa the fact that move data from memori to vector regist wa veri costli and that linpack columnori algorithm
+base on the bla necessit more data movement than wa realli necessari
+in 1984 john rice host a workshop at purdu parvec workshop number 4 in which a varieti of scheme for develop portabl highperform
+softwar for vector parallel system were propos 69 jack dongarra and sven
+hammarl propos the develop of new class of bla level 2 bla
+for matrixvector oper and level 3 bla for matrixmatrix oper
+encapsul on2 and on3 oper respect as fundament oper would provid much more opportun to optim core oper on differ processor these new bla 21 22 would provid the basi for a major
+new linear algebra packag releas in 1992 lapack 2 which includ the
+function of both eispack and linpack use blockori algorithm
+in which the fundament oper were now matrix oper encapsul
+in the level 3 bla these have proven to be highli effici on modern vector
+processor and symmetr multiprocessor everi major comput manufactur now support tune bla for their system and incorpor lapack
+in their math librari commun effort are current underway to extend the
+bla in new direct such as spars matrix oper 6
+in the late 1980 multiprocessor system of wide differ design were becom routin avail and with them a host of new program model
+support by special messagepass primit develop portabl softwar for the class of distribut memori multipl instruct multipl data or
+mimd system becam a new challeng the pvm system develop in 1991
+provid a use abstract for parallel program and wa veri wide
+adopt 32 it implement on mani parallel machin demonstr the
+use and feasibl of a common messagepass infrastructur thi
+led to a grass root messagepass standard effort the result messag pass interfac mpi transform the landscap for distribut parallel
+comput 33
+one of the first portabl math softwar librari for distribut architectur
+wa scalapack a distribut memori counterpart of lapack linear system
+solver 5 thi packag becam the core of sever multipurpos distribut
+memori math softwar librari which first appear in the 1990 among
+these are the nag parallel librari 51 ibm pessl 14 and the european
+pineapl effort 54
+the increas complex of scientif softwar system be develop in
+the 1990 led to an interest in new softwar architectur objectori approach to the develop of mathemat softwar began to be serious
+consid the notori ineffici of pure objectori design and the
+lack of languag standard made such pursuit difficult nevertheless approach that allow mani of the advantag of objectori design without
+sacrif effici were develop lapack a subset of the linear sys9
+tem solver in lapack written in c wa one of the first such success
+packag 18 today objectori approach are routin use in scientif
+comput
+26
+expand vision
+by the 1990 rapidli increas comput power wa lead to new vision for
+the futur of mathemat softwar system dure that period for exampl
+john rice and colleagu led in the establish of a new commun of research interest in exploit the promis of expert system for numer
+comput in a seri of confer held at purdu 40 41 42 the use of ai
+approach for such task as algorithm select automat program and
+process manag were explor
+by thi time comput had becom an essenti ingredi in the practic of scienc and engin interest in comput scienc as a new field
+of studi wa begin and interdisciplinari program for train it practition were be establish in mani univers john rice and other
+began to develop a new vision for mathemat softwar system to support
+comput scienc research these system call problemsolv environ 29 56 would provid natur graphic user interfac in which scientist
+describ their problem use the vocabulari of their nativ disciplin they
+would provid access to rich librari of problemsolv compon enabl
+webbas parallel and distribut comput user would be abl to interact with ongo comput to easili visual result to manag a larg
+databas of experiment result and to ask advic of expert advisori system
+mani smallscal specialpurpos system now under develop and use can
+be classifi as problemsolv environ and research group throughout
+the world are work on infrastructur necessari for the routin construct
+and use of such system work at purdu on parallel ellpack 39 webellpack 48 and pythia 80 are serv to address issu in pse design
+exampl of current work in networkbas scientif comput are netsolv
+12 the neo optim server 16 and the comput grid 25
+the vision of scientif comput in heterogen distribut environ place stringent requir on the portabl and interoper of
+scientif softwar that are extrem difficult to achiev 4 such need have
+spark interest in the use of common virtual environ such as java5 for
+comput scienc and engin the java languag and it environ
+the java virtual machin which ha becom avail on nearli everi comput platform provid a fix floatingpoint model thread remot execut
+standard gui and other facil within a simpl objectori program
+languag while these are the main facil necessari for the construct of
+problemsolv environ there ha been some reluct to adopt java
+within the scientif commun due to concern about effici and the lack
+of sever program conveni import to scientist and engin 9
+5 java
+is a trademark of sun microsystem
+10
+commun effort such as the java grand forum are seek to improv thi
+situat 45
+virtual environ do not necessarili solv the problem of perform
+portabl sinc virtual machin instruct must be map on to local comput hardwar for execut modern comput hardwar is extrem complex character by multipl process unit vector pipe regist farm
+sever level of cach with increas access time local memori remot
+memori and disk storag get the highest perform possibl requir
+that the programm take into account all the special properti of the system in use thi lead to extrem complex softwar even for the simplest of
+task matrix multipl can turn into a 10000line polyalgorithm recent
+approach have provid new hope for overcom thi softwar develop
+nightmar clint whaley and jack dongarra have recent develop a system
+call atla for automat tune linear algebra subprogram 81 atla gener highli effici bla for a given architectur use an experiment approach by run mani hundr of test atla determin the
+most effici way to implement a given oper the result is consist
+on par with and often exceed code which take expert programm week
+to develop matteo frigo and stephen johnson have taken a similar approach
+in the comput of fast fourier transform 27 for fft hardwar also
+interact with the prime factor of the sequenc length n to add further
+complic fftw the fastest fourier transform in the west use heurist and experiment to develop a justintim strategi for fast comput
+for a given n on a given processor6
+3
+mathemat softwar present
+in thi section i point out a varieti of metaissu that face mathemat softwar research today
+31
+massmarket softwar
+until recent mathemat softwar wa produc mostli by expert in numer analysi as a byproduct of their research in algorithm user of thi
+softwar also were fairli sophist with some experi in numer algorithm develop themselv they had an appreci of the limit of
+numer algorithm and the necess of care verif of result even
+when use softwar develop by expert
+today commun of mathemat softwar develop and user is much
+larger and much more divers the great demand for mathemat comput ha made massmarket mathemat softwar profit commerci
+support mathemat and statist softwar is now wide avail with
+highlevel interfac that allow use by nonprogramm such user often do
+6 fftw
+won the 1999 wilkinson prize for numer softwar
+11
+not have the background necessari to recogn the differ between a difficult problem and a routin one the mathemat landscap is still litter
+with pitfal and these user may be too trust of the result produc by the
+scientif softwar system that they use programm who add mathemat
+and statist capabl to commerci softwar system are no longer expert
+in numer analysi they may be content to code up a formula from a book
+without give thought to it numer properti the problem may be even
+more sever in system that are not overtli mathemat in natur mathemat comput are increasingli be done in embed devic code
+by programm whose mathemat sophist may be suspect
+as a result in spite of tremend progress in numer method and softwar mani user of modern mathemat softwar are at risk there is now
+a desper need for numer analyst to develop and appli methodolog
+for the valid of mathemat and statist softwar techniqu tool
+refer data and refer softwar are need to support critic evalu
+of mathemat softwar by develop and user 8 unfortun there is
+littl interest and support within the research commun for such activ
+those softwar develop who seek advic regard numer softwar
+product are like to look to popular sourc like numer recip 55
+book like thi provid a reason good introduct to numer method
+and the program they includ provid good exampl of the basic techniqu
+program like these are often incorpor wholesal into applic in spite
+of the fact that they are typic less effici robust and reliabl than stateoftheart mathemat softwar the mathemat softwar commun need
+more popular who can bring the messag of good numer softwar design
+to those in other field
+32
+tower of babel
+for mani year there wa one languag for scientif comput fortran thi
+greatli simplifi the develop and reus of mathemat softwar compon today we are face with a plethora of program languag in use
+for scientif comput though offici obsolet fortran 77 is still the languag of mani good compil are now avail for fortran 90 and mani
+have been extend to support fortran 95 the current fortran standard although their adopt by programm ha been slow in come the c languag ha proven much more popular for which excel compil are now
+avail most gam user who cannot find the softwar they seek are look for c procedur c the objectori extens to c is the choic
+for a grow number of new mathemat model project unfortun
+c ha not until recent had an agreedto standard and as a result develop portabl softwar ha been difficult java the popular networkawar
+objectori program languag develop by sun is be serious consid by mani although it perform and languag featur leav much
+to be desir the fact that java is now be wide taught in univers insur it futur final mani softwar compon are be develop in the
+12
+veryhighlevel languag use in special system matlab is the primari
+exampl
+we are clearli face a transit in comput languag for scienc and engin comput numer analyst no longer have much influenc on the
+choic of languag of those do numer comput languag choic are
+more often made base on other consider such as the need for conveni
+and portabl graphic user interfac visual tool and other critic
+system servic while such servic are larg unavail to fortran programm wish to develop portabl system they are conveni at hand
+in c c and java the increas portabl afford by the widespread
+avail of java virtual machin on window unix and appl platform
+ha made java a veri attract option while mixedlanguag program
+is possibl and doe provid the abil to reus legaci fortran softwar thi
+option is not popular among user it add complex to the softwar project
+while make the code more difficult to transport
+unfortun there is almost no support for the migrat of the exist
+base of fortran mathemat softwar compon to other languag as a
+result thi wellengin softwar is be increasingli bypass in favor of
+inferior homegrown solut
+33
+the risk of selfpublish
+the rise of the internet ha greatli eas the exchang of inform among research it is simpl and conveni for research group to develop a web page
+to distribut softwar and document to potenti user while thi ha led
+to increas access to research softwar it place the longterm mainten of
+the output of the research commun in jeopardi project web page on department server are not perman fixtur nevertheless mani research
+are use such facil in place of submit their softwar to more perman
+archiv such as netlib or the collect algorithm of the acm there is a danger that much of the current avail expertis embed in such softwar
+will be lost to futur research
+4
+mathemat softwar futur
+in thi section i offer a few predict regard futur mathemat softwar
+research and usag
+predict within five year acm will ceas print public of tom
+subscript to tom have been drop at the rate of about 5 percent per
+year for some time other acm journal and inde most other mathemat
+and comput scienc journal are experienc the same phenomenon one
+of the reason for thi is the prolifer of special journal princip
+develop by commerci publish
+13
+for some time acm ha been consid mechan for maintain their
+public program as a viabl servic to the commun the solut to thi
+problem is found in the acm digit librari acmdl which premier in 1998
+1 the acmdl provid it subscrib with onlin access to all acm journal
+articl and confer proceed publish sinc 1985 at a subscript fee
+which is less than the cost of three print journal current thi account for
+more than 350000 page of text accept of the acmdl by member and
+subscrib ha been overwhelm provid acm with the additon revenu
+to begin the work of extend the acmdl hold to includ all materi
+publish by acm sinc it incept in 1947 at the same time the success of
+the acmdl ha contribut to a further 25 percent drop in print subscript
+in 1999 if present trend continu print version of acm journal will be
+no longer be sustain in five year time instead they will be superced by
+their electron counterpart
+the acmdl will serv to blur the distinct between individu acm
+journal the concept of a journal will be replac by that of an input stream
+to the acmdl control by a certif author ie a board of editor
+support by volunt refere in such an environ it will be much easier and much less financi riski for acm to initi new refere input
+stream and to phase out those which have becom less product rather
+than subscrib to individu journal acmdl subscrib will have access to
+an individu tailor notif servic which will alert them to the avail of new articl in their area of interest
+public in the acmdl will not be restrict to articl with a sever
+page limit extend appendic will be easili accommod as will other
+artifact such as softwar audio video etc
+predict user will no longer instal mathemat softwar on their workstat
+the need for instantan distribut and use of mathemat softwar
+compon in heterogen network environ will put new pressur for
+softwar portabl a key element of the solut will be standard virtual
+environ in which softwar can execut java is an exampl of such an
+environ it widespread avail also provid a new model for softwar
+distribut complex conglomer of sourc code will no longer need to
+be explicitli download and instal on the local system in advanc of their
+use instead precompil bytecod for the virtual machin will be abl to
+be download from site of develop or vendor on demand thi also provid a solut to the problem of distribut patch and updat to softwar
+rather than purchas an entir librari softwar user will have the option of
+subscrib to a servic pay onli for the portion of the librari that they
+actual use
+anoth new model for softwar reus in a network environ is base
+on a remot execut paradigm in thi case problemsolv servic are
+made avail to user over the network when a problem need be solv a
+14
+messag contain a highlevel specif of the problem is sent to the servic
+provid who provid both the softwar and the execut cycl need to
+solv it thi model is probabl more appropri for access to larg scale
+system like finiteel model packag
+predict the percentag of peopl directli use math softwar librari
+will decreas
+the wide avail of problemsolv environ pse for variou
+domain will bring comput capabl to an even wider audienc than
+today these user will make use of the servic of the pse bliss unawar
+of the complex system involv softwar librari expert system and remot
+execut which are be marshal on their behalf
+howev if thi vision is to be realiz a new class of softwar design
+must be train they must be wellvers in numer analysi mathemat
+algorithm modern softwar design and highperform comput and commun addit research in mathemat softwar must be perform
+to provid new method for improv the robust and adapt of mathemat softwar system and to address new problem area and final new
+method for assess the correct and reliabl of complex mathemat
+softwar system must be devis and deploy
+mathemat softwar is still a vital and vibrant research area that will
+increas in import in the come decad we are grate to john rice for
+hi vision and leadership in get us here
+refer
+1 acm digit librari associ for comput machineri new york see
+httpwwwacmorgdl
+2 e anderson z bai c bischof s blackford j demmel j dongarra j du
+croz a greenbaum s hammarl a mckenney and d sorensen lapack
+user guid siam public philadelphia third edit 1999 see also
+httpwwwnetliborglapack
+3 u ascher j christiansen and r d russel a colloc solver for mix order
+system of boundari valu problem mathemat of comput 33659679
+1979
+4 l s blackford a cleari a petitet r c whaley j demmel i dhillon
+h ren k stanley j dongarra and s hammarl practic experi in the
+numer danger of heterogen comput acm transact on mathemat softwar 2312133147 1997
+5 s blackford j choi a cleari e dazevedo j demmel i dhillon j dongarra s hammarl g henri a petitet k stanley d walker and r c
+whaley scalapack user guid siam public philadelphia 1997 see
+also httpwwwnetliborgscalapack
+6 bla technic forum see httpwwwnetliborgcgibincheckoutblastblastpl
+15
+7 r boisvert e n housti and j r rice a system for perform evalu
+of partial differenti equat softwar ieee tran softwar eng 5418425
+1979
+8 ronald f boisvert editor the qualiti of numer softwar assess and
+enhanc chapman and hall london 1997
+9 ronald f boisvert jack j dongarra roldan pozo karin a remington and
+g w stewart develop numer librari in java concurr practic
+and experi 10111311171129 1998
+10 ronald f boisvert salli e howe and david k kahan gamsa framework
+for the manag of scientif softwar acm transact on mathemat
+softwar 11313355 1985
+11 shirley brown jack dongarra eric gross and tom rowan the netlib
+mathemat softwar repositori dlib magazin septemb 1995 see
+httpwwwdliborgdlibseptember9509contentshtml
+12 henri cassanova and jack dongarra appli netsolv networken server
+ieee comput scienc engin 535767 julyseptemb 1998
+13 w j codi the funpack packag of special function subroutin acm
+transact on mathemat softwar 11325 1975
+14 intern busi machin corpor parallel engin and scientif
+subroutin librari for aix guid and refer 1997
+15 wayn r cowel editor sourc and develop of mathemat softwar
+prenticehal englewood cliff nj 1984
+16 joseph czyzk michael p mesnier and jorg j more the neo server
+ieee comput scienc engin page 6875 1998 see also
+httpwwwfpmcsanlgovotc
+17 carl de boor a practic guid to spline volum 27 of appli mathemat
+scienc springerverlag new york 1978
+18 j dongarra r pozo and d walker lapack a design overview of
+objectori extens for high perform linear algebra in proceed
+of supercomput 93 page 162171 ieee comput societi 1993 see also
+httpwwwnetliborglapack
+19 j j dongarra j r bunch c b moler and g w stewart linpack user
+guid siam public philadelphia 1979
+20 jack dongarra and eric gross distribut of mathemat softwar via electron mail commun of the acm 305403407 1987
+21 jack j dongarra jeremi du croz sven hammarl and iain s duff an set
+of level 3 basic linear algebra subprogram acm transact on mathemat
+softwar 16117 1990
+22 jack j dongarra jeremi du croz sven hammarl and richard j hanson an
+extend set of fortran basic linear algebra subprogram acm transact
+on mathemat softwar 14117 1988
+23 w r dyksen e n housti r e lynch and j r rice the perform of
+the colloc and galerkin method with hermit bicub siam journal on
+numer analysi 21695715 1984
+16
+24 w r dyksen c j ribben and j r rice the perform of numer method for ellipt problem with mix boundari condit numer method for
+partial differenti equat 4347361 1988
+25 ian foster and carl kesselman globu a metacomput infrastructur toolkit
+intern journal of supercomput applic 112115128 1997
+26 p a fox a d hall and n l schryer the port mathemat subroutin
+librari acm transact on mathemat softwar 4104126 1978
+27 matteo frigo and steven g johnson fftw an adapt softwar architectur
+for the fft in proceed of the ieee intern confer on acoust speech and signal process volum 3 page 13811384 ieee comput
+societi 1998 also see httpwwwfftworg
+28 wayn f fullerton portabl special function routin in wayn cowel editor
+portabl of numer softwar page 452483 springerverlag new york
+1977 see also httpwwwnetliborgfnlib
+29 e gallopoulo e n housti and j r rice comput as thinkerdo
+problemsolv environ for comput scienc ieee comput
+scienc engin 121123 summer 1994
+30 b s garbow j m boyl j j dongarra and c b moler matrix eigensystem
+routin eispack guid extens volum 51 of lectur note in comput
+scienc springerverlag new york 2nd edit 1977
+31 c william gear numer initi valu problem in ordinari differenti equat prenticehal englewood cliff nj 1971
+32 al geist adam beguelin jack dongarra weicheng jiang robert mancheck
+and vaidi sunderam pvm parallel virtual machin mit press 1994 see
+also httpwwwnetliborgpvm
+33 william gropp marc snir bill nitzberg and ewe lusk mpi the complet
+refer scientif and engin comput seri mit press 1998
+34 guid to avail mathemat softwar nation institut of standard and
+technolog see httpmathnistgovgam
+35 r j herbold quadi commun of the acm 3274 februari 1960
+36 e n housti r e lynch and j r rice evalu of numer method for
+ellipt partial differenti equat journal comput physic 27323350
+1978
+37 e n housti w f mitchel and j r rice algorithm 637 gencol colloc on gener domain with bicub hermit polynomi acm transact
+on mathemat softwar 11413415 1985
+38 e n housti w f mitchel and j r rice algorithm 638 intcol and
+hermcol colloc on rectangular domain with bicub hermit polynomi acm transact on mathemat softwar 11416418 1985
+39 e n housti j r rice and t s papatheodor parallel ellpack an
+expert system for parallel process of partial differenti equat mathemat
+and comput in simul 31497508 1989
+40 e n housti j r rice and r vichnevetski editor intellig mathemat
+softwar system northholland amsterdam 1990
+17
+41 e n housti j r rice and r vichnevetski editor artifici intellig
+expert system and symbol comput northholland amsterdam 1992
+42 e n housti j r rice and r vichnevetski editor expert system for
+scientif comput northholland amsterdam 1992
+43 e n housti and jr rice an experiment design for the comput
+evalu of ellipt partial differenti equat solver in the product and
+assess of numer softwar page 5766 academ press 1980
+44 imsl librari visual numer inc houston see httpwwwvnicom
+45 java grand forum numer work group nation institut of standard
+and technolog see httpmathnistgovjavanumer
+46 melvin klerer and juri reinfeld editor interact system for experiment
+appli mathemat academ press new york 1968 thi is the proceed of the acm symposium on interact system for experiment appli
+mathemat held in washington dc in 1967
+47 c lawson r hanson d kincaid and f krogh basic linear algebra subprogram for fortran usag acm transact on mathemat softwar 5308
+323 1979
+48 shahani marku sanjiva weerawarana elia n housti and john r rice scientif comput via the web the net pellpack pse server ieee comput
+scienc engin 43 julyseptemb 1997
+49 matlab the mathwork inc see httpwwwmathworkscom
+50 j j more b s garbow and k e hillstrom user guid for minpack1
+technic report anl8074 argonn nation laboratori argonn il 1980
+see also httpwwwnetliborgminpack
+51 nag librari
+numer algorithm group
+httpwwwnagcouk
+ltd
+oxford
+see
+52 linda petzold a descript of dassl a differentialalgebra system solver
+imac transact on scientif comput 1 1982
+53 r piessen e de donker and d kahan quadpack a subroutin
+packag for automat integr springerverlag new york 1983 see also
+httpwwwnetliborgquadpack
+54 pineapl a european project in hpcn numer algorithm group ltd
+oxford see httpwwwnagcoukprojectspineapl
+55 william h press saul a teukolski william t vetterl and brian p flanneri numer recip in c the art of scientif comput cambridg
+univers press 1993
+56 j r rice and r f boisvert from scientif softwar librari to problemsolv environ ieee comput scienc and engin 334453
+fall 1996
+57 j r rice e n housti and w r dyksen a popul of linear second
+order ellipt partial differenti equat on rectangular domain mathemat
+of comput 36475484 1981
+58 j r rice c ribben and w ward algorithm 622 a simpl macro processor
+acm transact on mathemat softwar 10410416 1984
+18
+59 john r rice on the construct of polyalgorithm for automat numer
+analysi in interact system for experiment appli mathemat page
+301313 academ press new york 1968
+60 john r rice editor mathemat softwar academ press new york 1971
+61 john r rice a metalgorithm for adapt quadratur journal of the associ
+for compput machineri 226182 1975
+62 john r rice the algorithm select problem in rubicoff and yovit editor
+advanc in comput volum 15 academ press 1976
+63 john r rice editor mathemat softwar iii academ press new york
+1977
+64 john r rice algorithm 525 adapt adapt smooth curv fit acm
+transact on mathemat softwar 4130 1978
+65 john r rice methodolog for the algorithm select problem in perform
+evalu of numer softwar page 301307 northholland 1979
+66 john r rice softwar for numer comput in p wegner editor research
+direct in softwar technolog mit press 1979
+67 john r rice perform analysi of 13 method to solv the galerkin method
+equat linear algebra and applic 53533535 1983
+68 john r rice algorithm 625 a two dimension domain processor acm transact on mathemat softwar 10443452 1984
+69 john r rice the bla linear algebra modul and supercomput technic
+report csdtr501 purdu univers depart of comput scienc 1984
+70 john r rice and ronald f boisvert solv ellipt problem use ellpack
+volum 2 of springer seri in comput mathemat springerverlag new
+york 1985
+71 john r rice and saul rosen napss a numer analysi problem solv
+system in proceed of the acm nation confer page 5156 1966
+72 john r rice and h d schwetman interfac issu in a softwar part technolog
+in softwar reusabl ieee comput societi press 1987
+73 l f shampin and m k gordon comput solut of ordinari differenti
+equat w h freeman and co san francisco 1975
+74 l f shampin and h a watt design of a user orient packag of ode solver
+technic report sand792374 sandia laboratori albuquerqu nm 1980
+75 b t smith j m boyl j j dongarra b s garbow y ikeb and v c
+klema matrix eigensystem routin eispack guid volum 6 of lectur
+note in comput scienc springerverlag new york 2nd edit 1976
+76 franc e snyder and hubert m livingston code of a laplac boundari valu
+problem for the univac mathemat tabl and other aid to comput
+3341350 januari 1949
+77 p n swarztraub and r a sweet
+algorithm 541 effici fortran subprogram for the solut of ellipt partial differenti equat
+acm transact on mathemat softwar 5352364 1979
+see also
+httpwwwnetliborgfishpak
+19
+78 paul n swarztraub vector the fft in garri rodrigu editor parallel comput page 5184 academ press new york 1982 see also
+httpwwwnetliborgfftpak
+79 acm transact on mathemat softwar associ for comput machineri new york see httpwwwacmorgtom
+80 s weerawarana e n housti j r rice a joshi and ce housti pythia
+a knowledg base system to select scientif algorithm acm transact on
+mathemat softwar 22447468 1996
+81 r c whaley and j dongarra automat tune linear algebra softwar
+in proceed of supercomput 98 ieee comput societi 1998 also see
+httpwwwnetliborgatla
+82 m v wilk d j wheeler and s gill the prepar of program for an
+electron digit comput addison wesley press cambridg ma 1951
+83 j h wilkinson and c reinsch editor linear algebra volum ii of handbook
+for automat comput springerverlag new york 1971
+84 stephen wolfram the mathematica book cambridg univers press 1999
+20

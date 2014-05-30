@@ -1,0 +1,341 @@
+LIEB-THIRRING INEQUALITIES – In- (by considering V (x) = λW (x) with W smooth and
+equalities concerning the negative eigenvalues of the λ → ∞) that
+c
+Schr¨
+odinger operator
+Lγ,n ≥ Lγ,n
+An interesting, and mostly open problem is to determine the sharp value of the constant Lγ,n , especially to find those cases in which Lγ,n = Lcγ,n .
+M. Aizenman and Lieb [1] proved that the ratio
+Rγ,n = Lγ,n /Lcγ,n is a monotonically non-increasing
+function of γ. Thus, if RΓ,n = 1 for some Γ then
+Lγ,n = Lcγ,n for all γ ≥ Γ. The equality L 23 ,n = Lc3 ,n
+2
+was proved for n = 1 in [13] and for n > 1 in [8] by
+A. Laptev and T. Weidl. (See also [2].)
+The following sharp constants are known:
+
+arXiv:math-ph/0003039v1 27 Mar 2000
+
+H = −∆ + V (x)
+on L2 (Rn ), n ≥ 1. With e1 ≤ e2 ≤ · · · < 0 denoting the negative eigenvalues of H (if any), the LiebThirring inequalities state that for suitable γ ≥ 0 and
+constants Lγ,n
+
+j≥1
+
+|ej |γ ≤ Lγ,n
+
+V (x)γ+n/2 dx
+
+(1)
+
+Rn
+
+with V (x) := max{−V (x), 0}. When γ = 0 the left
+side is just the number of negative eigenvalues. Such
+an inequality (1) can hold if and only if
+1
+for
+2
+γ > 0 for
+γ ≥ 0 for
+
+γ≥
+
+Lγ,n
+L1/2,1
+
+n=1
+
+j≥1
+
+≈ (2π)−n
+= Lcγ,n
+
+p2 + V (x)
+
+= 1/2
+
+all γ ≥ 3/2, [13], [1], [8]
+[7]
+
+There is strong support for the conjecture [13] that
+
+n=2
+n≥3.
+
+(2)
+Lγ,1 = √
+
+The cases γ > 21 , n = 1, γ > 0, n ≥ 2, were established by E.H. Lieb and W.E. Thirring [13] in connection with their proof of stability of matter. The
+case γ = 12 , n = 1 was established by T. Weidl [16].
+The case γ = 0, n ≥ 3 was established independently
+by M. Cwikel [4], Lieb [9] and G.V. Rosenbljum [14]
+by different methods and is known as the CLR bound;
+the smallest known value for L0,n is in [9], [11].
+Closely associated with the inequality (1) is the
+semi-classical approximation for
+|e|γ , which serves
+as a heuristic motivation for (1). It is (cf. [13]).
+|e|γ
+
+= Lcγ,n
+
+γ
+
+1
+Γ(γ + 1)
+π(γ − 12 ) Γ(γ + 1/2)
+
+γ−
+γ+
+
+1
+2
+1
+2
+
+γ+1/2
+
+(3)
+
+for 12 < γ < 32 .
+Instead of considering all the negative eigenvalues
+as in (1), one can consider just e1 . Then for γ as in
+(2)
+|e1 |γ ≤ L1γ,n
+
+V (x)γ+n/2 dx .
+Rn
+
+Clearly, L1γ,n ≤ Lγ,n , but equality can hold, as in
+the cases γ = 1/2 and 3/2 for n = 1. Indeed, the
+conjecture in (3) amounts to L1γ,1 = Lγ,1 for 1/2 <
+γ < 3/2. The sharp value (3) of L1γ,n is obtained
+by solving a differential equation [13]. It has been
+conjectured that for n ≥ 3, L0,n = L10,n . In any case,
+B. Helffer and D. Robert showed that for all n and
+all γ < 1, Lγ,n > Lcγ,n .
+The sharp constant L10,n , n ≥ 3 is related to the
+sharp constant Sn in the Sobolev inequality
+
+dpdx
+
+Rn ×Rn
+
+V (x)γ+n/2 dx
+Rn
+
+with
+∇f
+
+Lcγ,n = 2−n π −n/2 Γ(γ + 1)/Γ(γ + 1 + n/2) .
+
+L2 (Rn ) ≥
+
+Sn
+
+f
+
+L2n/(n−2) (Rn )
+
+(4)
+
+by L10,n = (Sn )−n .
+Indeed,
+< ∞ for all γ ≥ 0 whereas (1) holds
+By a ‘duality argument’ [13] the case γ = 1 in
+only for the range given in (2). It is easy to prove (1) can be converted into the following bound for
+Lcγ,n
+
+1
+
+the Laplacian, ∆. This bound is referred to as a −E. Then, for γ > 0,
+Lieb-Thirring kinetic energy inequality and its most
+∞
+important application is to the stability of mat|e|γ = γ
+NE (V )E γ−1 dE
+ter [12], [13]. Let f1 , f2 , . . . be any orthonormal se0
+quence (finite or infinite) in L2 (Rn ) such that ∇fj ∈
+L2 (Rn ) for all j ≥ 1. Associated with this sequence Assuming V = −V (since V+ only raises the eigenis a ‘density’
+values), NE (V ) is most accessible via the positive
+semidefiniate Birman-Schwinger kernel (cf. [15])
+ρ(x) =
+|fj (x)|2 .
+(5)
+√
+√
+j≥1
+KE (V ) = V (−∆ + E)−1 V .
+Then, with Kn := n(2/L1,n )2/n (n + 2)−1−2/n ,
+2
+
+j≥1
+
+Rn
+
+|∇fj (x)| dx ≥ Kn
+
+1+2/n
+
+ρ(x)
+
+e < 0 is an eigenvalue of H if and only if 1 is an
+eigenvalue of K|e| (V ). Furthermore, KE (V ) is operator monotone decreasing in E, and hence NE (V )
+equals the number of eigenvalue of KE (V ) that are
+greater than 1.
+An important generalization of (1) is to replace −∆
+in H by |i∇ + A(x)|2 , where A(x) is some arbitrary
+vector field in Rn (called a magnetic vector potential). Then (1) still holds but it is not known if the
+sharp value of Lγ,n changes. What is known is that
+all presently known values of Lγ,n are unchanged. It is
+also known that (−∆+ E)−1 , as a kernel in Rn × Rn ,
+is pointwise greater than the absolute value of the
+kernel (|i∇ + A|2 + E)−1 .
+There is another family of inequalities for orthonormal functions, which is closely related to (1) and to
+the CLR bound [10]. As before, let f1 , f2 , . . . , fN be
+N orthonormal functions in L2 (Rn ) and set
+
+dx . (6)
+
+Rn
+
+This can be extended to antisymmetric functions in
+L2 (RnN ). If Φ = Φ(x1 , . . . , xN ) is such a function we
+define, for x ∈ Rn ,
+ρ(x) = N
+Rn(N −1)
+
+Then, if
+
+RnN
+
+RnN
+
+|Φ(x, x2 , . . . , xN )|2 dx2 . . . dxN .
+
+|Φ|2 = 1,
+|∇Φ|2 ≥ Kn
+
+ρ(x)1+2/n dx .
+
+(7)
+
+Rn
+
+Note that the choice Φ = (N !)−1/2 det fj (xk )|N
+j,k=1
+with fj orthonormal reduces the general case (7) to
+(6).
+If the conjecture L1,3 = Lc1,3 is correct then the
+bound in (7) equals the Thomas-Fermi kinetic energy ansatz, and hence it is a challenge to prove this
+conjecture. In the meantime, see [11], [3] for the best
+available constants to date (1998).
+Of course, (∇f )2 = f (−∆f ). Inequalities of the
+type (7) can be found for other powers of −∆ than
+the first power. The first example of this kind, due
+to I. Daubechies [5], and one of√the most important
+physically, is to replace −∆ by −∆ in H. Then an
+inequality similar to (1) holds with γ + n/2 replaced
+by γ + n (and with a different Lγ,n1 , of course). Likewise there is an analogue of (7) with 1 + 2/n replaced
+by 1 + 1/n.
+All proofs of (1) (except [7] and [16])actually proceed by finding an upper bound to NE (V ), the number of eigenvalues of H = −∆ + V (x) that are below
+
+uj
+
+=
+
+ρ(x)
+
+=
+
+(−∆ + m2 )−1/2 fj
+N
+j=1
+
+|uj (x)|2 .
+
+uj is a Riesz potential (m = 0) or Bessel potential (m > 0) of fj . If n = 1 and m > 0 then,
+ρ ∈ C 0,1/2 (Rn ) and ρ L∞ (R) ≤ L/m.
+If n = 2 and m > 0 then for all 1 ≤ p < ∞
+ρ Lp (R2 ) ≤ Bp m−2/p N 1/p .
+If n ≥ 3, p = n/(n − 2) and m ≥ 0 (including
+m = 0) then ρ Lp (Rn ) ≤ An N 1/p .
+Here, L, Bp , An are universal constants. Without
+the orthogonality, N 1/p would have to be replaced
+by N . Further generalizations are possible [10].
+2
+
+References
+[1]
+
+[2]
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+
+[11] LIEB, E.H.: ‘On characteristic exponents in turbulence’, Commun. Math. Phys. 92 (1984), 473AIZENMAN, M.A. AND LIEB, E.H.: ‘On semi480.
+classical bounds for eigenvalues of Schr¨odinger
+[12] LIEB, E.H.: ‘Kinetic energy bounds and their
+operators’, Phys. Lett. 66A (1978), 427-429.
+applications to the stability of matter’, in H.
+BENGURIA, R. AND LOSS, M.: ‘A simple
+HOLDEN and A. JENSEN (eds.): Springer Lecproof of a theorem of Laptev and Weidl’,
+ture Notes in Physics 345 (1989), 371-382.
+preprint, 1999.
+[13] LIEB, E.H. AND THIRRING W.: ‘InequaliBLANCHARD, PH. AND STUBBE, J.: ‘Bound
+ties for the moments of the eigenvalues of the
+states for Schr¨odinger Hamiltonians: phase space
+Schr¨odinger Hamiltonian and their relation to
+methods and applications’, Rev. Math. Phys. 8
+Sobolev inequalities’, in E. LIEB, B. SIMON,
+(1996), 503-547.
+A. WIGHTMAN (eds.): ‘Studies in Mathematical Physics’, Princeton University Press, 1976,
+CWIKEL, M.: ‘Weak type estimates for singupp. 269-303. See also W. Thirring (ed.) The Stalar values and the number of bound states of
+bility of Matter: From Atoms to Stars, Selecta of
+Schr¨odinger operators’, Ann. Math. 106 (1977),
+E.H. Lieb, Springer, 1997.
+93-100.
+[14] ROSENBLJUM, G.V.: ‘Distribution of the disDAUBECHIES, I.: ‘An uncertainty principle for
+crete spectrum of singular differential operators’,
+fermions with generalized kinetic energy’, ComDok. Akad. Nauk SSSR 202 (1972), 1012-1015.
+mun. Math. Phys. 90 (1983), 511-520.
+The details are given in Izv. Vyss. Ucebn. Zaved.
+Matem. 164 (1976), 75-86. (English trans. Sov.
+HELFFER, B. AND ROBERT, D.: ‘Riesz means
+Math. (Iz VUZ) 20 (1976), 63-71.
+of bound states and semi-classical limit con-
+
+nected with a Lieb-Thirring conjecture, II’, Ann. [15] SIMON, B.: ‘Functional integration and quanInst. Henri Poincar´e, Sect. Physique Th´eorique
+tum physics’: Vol. 86 of Pure and Applied Math53 (1990), 139-147.
+ematics, Academic Press, 1979.
+[7] HUNDERTMARK, D., LIEB, E.H. AND [16] WEIDL, T.: ‘On the Lieb-Thirring constants
+THOMAS, L.E.: ‘A sharp bound for an
+Lγ,1 for γ ≥ 1/2’. Commun. Math. Phys. 178
+eigenvalue moment of the one-dimensional
+no. 1 (1996), 135-146.
+Schr¨odinger operator’, Adv. Theor. Math. Phys.
+2 (1998), 719-731.
+Elliott H. Lieb
+[8] LAPTEV, A. AND WEIDL, T.: ‘Sharp LiebDepartments of Mathematics and Physics
+Thirring inequalities in high dimensions’, Acta
+Princeton University
+Math., in press, 1999.
+[9] LIEB, E.H.: ‘The numbers of bound states of
+one-body Schr¨odinger operators and the Weyl
+problem’, Vol. 36 of Proc. Symp. Pure Math.,
+Amer. Math. Soc., 1980, pp. 241-251. (cf. [3] and
+[10] for improvements.)
+
+c 1998 by Elliott H. Lieb
+
+[10] LIEB, E.H.: ‘An Lp bound for the Riesz and
+Bessel potentials of orthonormal functions’, J.
+Funct. Anal. 51 (1983), 159-165.
+3
+
+

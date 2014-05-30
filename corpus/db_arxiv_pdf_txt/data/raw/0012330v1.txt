@@ -1,0 +1,2279 @@
+arXiv:cond-mat/0012330v1 18 Dec 2000
+
+Spectral decompositions for evolution
+operators of mixing dynamical systems
+S. Roberts and B. Muzykantskii
+University of Warwick,
+Coventry, UK, CV4 7AL
+December 29, 2013
+Abstract
+Spectral decompositions for the evolution operator on an energy shell in phase space are constructed for the free motion on
+compact 2D surfaces of constant negative curvature. Applications
+to quantum chaos and in particular to the recently proposed ballistic σ-model are briefly discussed.
+
+1
+
+Introduction
+
+The dynamics of a Hamiltonian system can either be described in terms of
+the trajectories x0 → x(t) = Ut x0 in the phase space, or by specifying the
+ˆt ϕ. The
+laws of evolution of a function ϕ(x) on the phase space: ϕ → U
+ˆ
+evolution operator Ut which advances a function along the trajectories is
+defined by
+ˆt ϕ(x) = ϕ(Ut x) = ϕ(x(t)).
+U
+Quantum mechanics has a natural relation to the trajectory based
+approach through Feynman’s Path Integral. In the semiclassical limit
+the path integral can be approximated by the saddle point contributions
+(which turn out to be the classical orbits) and leads to the Gutzwiller
+trace formula [1] for the Green’s function of the quantum mechanical
+Hamiltonian. This is a useful tool for studying such problems as the
+quantum energy level correlations but it requires knowledge of the long
+periodic orbits in order to obtain the correlations at small energy differences [2, 3]. The situation is particularly bad in chaotic systems, where
+the periodic orbits proliferate exponentially with length. In practice some
+uncontrolled approximations about correlations of actions for different
+periodic orbits are made to get the analytical results.
+In contrast, the flow based approach seems suitable for studying the
+behavior of chaotic systems at long times when due to the decay of correlations the dynamics becomes trivial. To use this approach in quantum
+1
+
+chaos two problems however need to be overcome. First, it is unclear how
+to relate the quantum mechanics to the evolution operator since there is
+no analogue of the Feynman path integral. Second, one needs to be able
+to calculate various properties of the evolution operator which are natuˆt in decaying
+rally formulated in terms of the spectral decomposition of U
+eigenmodes.
+The first problem has recently been addressed in [4, 5] where it has
+been conjectured that the (suitably averaged) correlation functions of the
+quantum energy levels and/or quantum eigenfunctions can be generated
+from an effective action of nonlinear σ-model type involving the Liouville
+ˆ = dU
+ˆ
+operator L
+dt t (the so called “ballistic” σ-model). The inspiration
+for this approach comes from the well developed theory of weakly disordered metals, where the disorder averaged properties of an ensemble of
+macroscopically identical systems are calculated using a similar σ-model
+with a diffusion operator instead of the Liouvillian one. (See [6, 7] for a
+detailed discussion of the diffusive case).
+Our paper is devoted to the second problem. In particular we compute
+a generalized spectral decomposition of the evolution operator
+ˆt =
+U
+λ
+
+˜
+eλt |λ λ|.
+
+(1)
+
+for a class of “model” chaotic systems namely the free motion on two
+dimensional compact surfaces with constant negative curvature.
+ˆt
+For mixing systems the only square integrable eigenfunctions of U
+are the constant functions (see Appendix A). The eigenfunctions |λ
+entering the spectral decomposition belong to a larger space C ∞ (M )∗
+of distributions and can be obtained from the residues of the analytical
+ˆ (see section 2).
+continuation of matrix elements of the resolvent of L
+The procedure was suggested by Ruelle [8] and was successfully used
+to study the dynamics of some chaotic maps (see [9, 10, 11, 12]). The
+eigenvalues λ entering the spectral decomposition are sometimes called
+“Ruelle resonances”. For our model dynamical system the resonances
+can be found using the Selberg trace formula to relate the classical and
+quantum zeta-functions [13]. This approach however does not provide
+the eigenmodes which we compute using the representation theory of
+SO(2, 1).
+The rest of the paper is organized as follows. We start by outlining
+the Ruelle procedure for flows concentrating on criteria for convergence
+of the resulting decomposition (section 2). We then introduce geodesic
+flows on constant negative curvature surfaces (section 3); summarize the
+important facts from the representation theory of SO(2, 1) and proceed
+to obtaining the spectral decomposition (section 4, equation (36)). This
+decomposition is used to refine approximations of the decay of correlations
+for geodesic flows (section 5.1) and relate the evolution of particle density
+on the configuration space to the Laplacian operator (section 5.2). To
+conclude we discuss the regularization of the Liouvillian operator entering
+2
+
+the ballistic σ-model (section 6.2). Some technical details are relegated
+to the appendices.
+
+2
+2.1
+
+Decompositions of evolution operators for
+general mixing systems
+Spectral decompositions
+
+Consider a Hamiltonian system on a phase space T ∗ N with coordinates
+x = (q, p) where N is a smooth compact manifold parameterised by q and
+p is the momentum. When the Hamiltonian H does not depend on time
+energy is conserved and the trajectories lie on surfaces M of constant
+energy. We study the restriction of the flow Ut to a constant energy shell
+M for some value of the energy. If dH is non-zero on M the Liouvillian
+measure dpdq induces a measure dµ on M according to dµdH = dpdq
+[13]. By Liouville’s theorem this measure is preserved by the flow Ut .
+ˆt advances a function ϕ(x) : M → C along
+The evolution operator U
+the flow
+ˆ
+ˆt ϕ(x) = ϕ(Ut x) = eLt
+ϕ(x)
+U
+
+ˆ is given by
+where for a Hamiltonian system the Liouville operator L
+ˆ = d
+Lϕ
+dt
+
+t=0
+
+ˆt ϕ = {H, ϕ}
+U
+
+(2)
+
+with { , } being the Poisson bracket.
+ˆt is unitary with respect to the scalar product
+The operator U
+ξ(x)|ϕ(x) =
+
+ξ(x)ϕ(x) dµ(x)
+
+(3)
+
+x∈M
+
+ˆt is the Hilbert space
+since µ is preserved by Ut . A natural space for U
+ˆ preserves a smaller
+L2 (M ) of square integrable functions on M , while L
+space of compactly supported infinitely differentiable functions C ∞ (M ).
+ˆt
+We would like to find a spectral decomposition (1) for the operator U
+˜ onto its eigenfunctions
+in terms of its eigenvalues eλt and projectors λ|
+|λ . This would enable us to establish the evolution of a function ϕ(x):
+ˆt |ϕ =
+U
+
+λ
+
+˜
+eλt |λ λ|ϕ
+
+ˆt is unitary on L2 (M ) it can only have eigenvalues
+Since the operator U
+which lie on the unit circle. On the other hand, in a mixing chaotic system
+(definitions and properties of mixing systems are given in appendix A) all
+deviations from a constant value decay implying the existence of modes
+3
+
+corresponding to eigenvalues with modulus less than 1. The resolution of
+this apparent paradox lies in observing that the L2 (M ) eigenfunctions of
+ˆt do not necessarily form a basis in L2 (M ) or even in C ∞ (M ). In fact,
+U
+ˆt are the
+for a mixing system the only square integrable eigenfunctions of U
+constant functions which have the eigenvalue 1 (appendix A). In order to
+ˆt we need to extend the Hilbert space
+find a spectral decomposition for U
+L2 (M ) to a rigged Hilbert space as described below. A similar approach
+was successfully employed for various maps (see e.g. [9, 10]).
+
+2.2
+
+Rigged Hilbert spaces
+
+A Hilbert space H may be extended to the set of linear functionals on a
+suitable dense subspace S. The resulting space S∗ is called the rigging of
+H over S. We denote by f [ϕ] the value of the linear functional f ∈ S∗ on
+the vector ϕ ∈ S.
+A vector g ∈ H may be naturally embedded in S∗ as g[ϕ] = ϕ|g , so
+we get a sequence of spaces S ⊂ H ⊂ S∗ . We make the above embedding
+explicit [9] and denote the functional f ∈ S∗ by |f ; its value on a vector
+ϕ ∈ S being f [ϕ] = ϕ|f . We also introduce the notation f |ϕ for the
+antilinear functional f [ϕ].
+ˆt in the rigWe search for eigenfunctionals of the evolution operator U
+∞
+∗
+∞
+ging C (M ) of L2 (M ) over C (M ). The evolution operator is extended
+to C ∞ (M )∗ by
+ˆt f = U
+ˆ−t ϕ|f where |f ∈ C ∞ (M )∗ and ϕ ∈ C ∞ (M ).
+ϕ|U
+ˆt does not preserve any scalar product in C ∞ (M )∗ its eigenvalues
+Since U
+need not lie on the unit circle.
+We shall construct decompositions for the correlation function
+ˆt |ϕ =
+ξ|U
+
+dµξ(x)Uˆt ϕ(x)
+M
+
+in a subset of eigenfunctionals {|fλ } from C ∞ (M )∗ :
+ˆt |ϕ =
+ξ|U
+
+λ
+
+ˆt |fη = eηt |fη .
+eλt ξ|fλ f−λ |ϕ , U
+
+(4)
+
+In general (4) only has asymptotic meaning (see section 2.3 for details),
+and will only converge when t > 0 and ξ and ϕ belong to a subspace T of
+C ∞ (M ). For the free motion on compact surfaces of constant negative
+curvature we find such a subspace which is dense in the set of infinitely differentiable functions. Note, that the eigenfunction |f−λ with the eigenˆt )+ = U−t
+value e−λt appears in (4) due to the unitarity condition (U
+which leads to another expansion for the correlation function:
+ˆt |ϕ = ϕ|U
+ˆ−t |ξ =
+ξ|U
+
+4
+
+λ
+
+e−λt ξ|f−λ fλ |ϕ
+
+(5)
+
+converging when t < 0 and ξ, ϕ ∈ T
+Decompositions (4,5) appear naturally in connection with the correˆ − z)−1 |φ of the resolvent of L
+ˆ.
+lation function ξ|(L
+
+2.3
+
+Resolvent method for calculating the evolution
+operator decompositions
+
+Choosing an integral representation for the resolvent of the Liouville operator converging when Re z > 0
+∞
+
+R− (z) = −
+
+0
+
+ˆT dT = (L
+ˆ − z)−1
+e−zT U
+
+(6)
+
+and assuming decomposition (4) we obtain for the correlation function of
+the resolvent
+Fξ,ϕ (z) ≡ ξ|R− (z)|ϕ =
+
+λ
+
+ξ|fλ f−λ |ϕ
+λ−z
+
+(7)
+
+where ξ, ϕ ∈ T.
+Conversely decomposition (4), can be constructed by analytically continuing F to the left half of the z-plane and analyzing its singularities
+and residues. The position of the poles dictate the rate of decay of the
+correlation function of the evolution operator [8]. The values of λ in
+decomposition (4) are called Ruelle resonances.
+Each term in decomposition (4) is well defined for ξ, ϕ ∈ C ∞ (M )
+when
+the position of the poles of Fξ,ϕ (z)
+does not depend on the choice of ξ or ϕ.
+
+(8)
+
+A famous conjecture due to Ruelle [8] states that the poles of the resolvent
+for a mixing system do indeed satisfy this condition.
+The sum in (4) converges if in addition the residues Res(λ, Fξ,ϕ ) grow
+slowly enough when |λ| → ∞:
+eλt Res(λ, Fξ,ϕ ) = 0
+
+lim
+
+R→∞
+
+(9)
+
+R<|λ|<∞
+
+The set T will comprise of functions in C ∞ (M ) which satisfy condition
+(9).
+To prove the convergence we consider the integral of Fξ,ϕ,t (z) =
+ezt ξ|R− (z)|φ for ξ and φ in T around the contour |z| = R for a given
+large R. In the limit R → ∞ this integral converges due to (9) to
+lim
+
+R→∞
+
+Fξ,ϕ,t (z) dz = 2πi
+|z|=R
+
+eλt Res(λ, Fξ,ϕ )
+
+Res(λ, Fξ,ϕ,t ) = 2πi
+λ
+
+λ
+
+(10)
+5
+
+where the sum is over all the poles λ other than ∞.
+Since all the poles are in the left half of the z-plane the contour can
+be deformed to go along the line Re z = a for a fixed a > 0 leading to
+∞
+
+Ft (z) dz
+
+ezt
+
+=
+
+Re z=a
+∞
+∞
+
+Re z=a
+
+T =0
+
+=
+T =0
+∞
+
+=
+T =0
+
+y=−∞
+
+ˆT |ϕ dT dz
+e−zT ξ|U
+
+ˆT |ϕ dT
+e(a+iy)(t−T ) dy ξ|U
+
+ˆT |ϕ dT
+δ(t − T ) ξ|U
+
+ˆt |ϕ for t > 0
+ξ|U
+
+=
+
+(11)
+
+From equation (10) we get the decomposition into residues
+ˆt |ϕ = 2πi
+ξ|U
+
+eλt Res(λ, F )
+
+(12)
+
+λ
+
+which converges absolutely for t > 0.
+The individual terms in (12) exist for arbitrary ξ, ϕ ∈ C ∞ (M ) but
+the series converges only for ξ, ϕ ∈ T. The residue Res(λ, F ) is a linear
+functional of ξ and an antilinear functional of ϕ. We define the operator
+ˆ λ : C ∞ (M ) → C ∞ (M )∗ by
+K
+ˆ λ |ϕ
+2πi Res(λ, F ) = ξ|K
+
+ξ, ϕ ∈ C ∞ (M )
+
+so that
+ˆt |ϕ =
+ξ|U
+
+λ
+
+ˆ λ |ϕ
+eλt ξ|K
+
+ξ, ϕ ∈ T
+
+ˆ λ |ϕ is an eigenfunctional of U
+ˆt
+and K
+ˆ λ |ϕ = eλt K
+ˆ λ |ϕ .
+ˆt K
+U
+Let {|fλk } be a basis for the eigenspace corresponding to the eigenvalue
+ˆ λ.
+eλt i.e. the image of C ∞ (M ) under K
+ˆ λ |ϕ =
+K
+
+k
+
+ˆt |f k = eλt |f k .
+ck |ϕ |fλk with U
+λ
+λ
+
+Substituting this expression into (12) we obtain
+ˆt |ϕ
+ξ|U
+
+=
+λ
+
+ˆ λ |ϕ
+ξ|K
+
+=
+λ
+
+k
+
+k
+|ϕ
+ξ|fλk f−λ
+
+6
+
+ξ, ϕ ∈ T, t > 0
+
+(13)
+
+where by virtue of the unitarity of the evolution operator the coefficients
+k
+ˆt with eigenvalues e−λt .
+ck |ϕ are given by eigenfunctionals |f−λ
+of U
+k
+ck |ϕ = ϕ|f−λ
+
+Equation (13) reduces to (4) in the non-degenerate case when the image
+ˆ λ is one dimensional.
+of K
+For arbitrary ξ and φ in C ∞ (M ) the convergence of decomposition
+(4) is asymptotic:
+ξ|Ut |ϕ −
+
+Re λ≥−a
+
+< C(a)e−at
+
+eλt f−λ |ϕ ξ|fλ
+
+This inequality holds since the integral
+
+∞
+
+0
+
+ ξ|Ut |ϕ −
+
+Re λ≥−a
+
+, a > 0.
+
+(14)
+
+
+
+eλt f−λ |ϕ ξ|fλ  e−zt dt
+
+is analytic in the region Re z > −a of the z-plane.
+A similar procedure starting with the representation R+ (z) for the
+resolvent converging at Re z < 0
+0
+
+R+ (z) =
+−∞
+
+ˆt dt = (L
+ˆ − z)−1
+ezt U
+
+(15)
+
+gives the decomposition (5) which converges absolutely for t < 0 when
+the conditions (8,9) are met.
+
+2.4
+
+Evolution operator at long times
+
+We can use the decompositions (4) and (5) to study the approach to
+equilibrium at long times for mixing dynamical systems.
+We show below that for ξ and ϕ in T the function C(a) in (14) is
+independent of a. The behavior at long future times may be approximated
+by retaining only the terms in (4) where λ has a small negative real part.
+ˆt |ϕ
+ξ|U
+
+=
+Re λ≥−a
+
+≈
+=
+
+eλt f−λ |ϕ ξ|fλ +
+e
+
+Re λ≥−a
+
+λt
+
+Re λ<−a
+
+eλt f−λ |ϕ ξ|fλ
+
+f−λ |ϕ ξ|fλ
+
+ϕ|1 1|ξ +
+0>Re λ≥−a
+
+eλt f−λ |ϕ ξ|fλ ,
+(16)
+
+7
+
+where we have separated out the the contibution from the constant L2 (M )
+eigenfunction with λ = 0. For a mixing system the latter is the only nondecaying eigenfunction. By the absolute convergence of the sum (4) for
+t > 0 the discarded terms are bounded by
+|
+
+Re λ<−a
+
+eλt f−λ |ϕ ξ|fλ | ≤
+
+e−at
+Re λ<−a
+
+| f−λ |ϕ ξ|fλ | < e−at C
+
+for some constant C and hence decay faster than e−at .
+For long past times we work analogously from (5) rather than (4) to
+obtain:
+ˆt |ϕ ≈ ϕ|1 1|ξ +
+ξ|U
+
+0<Re(−λ)≤b
+
+e−λt fλ |ϕ ξ|f−λ for t → −∞.
+
+Here the terms which decay faster than ebt as t → −∞ have been discarded.
+
+3
+
+Surfaces of constant negative curvature
+
+We will use the resolvent method described in the previous section to
+obtain a spectral decomposition for the evolution operator of a ’model’
+chaotic system. The simplest systems which are strongly chaotic (and in
+particular mixing) are the free motion on compact 2D surfaces of constant
+negative curvature.
+The hyperbolic plane N plays the role of a universal cover for these
+surfaces. It can be embedded in Minkowski space where the metric is
+ds2 = −dx21 + dx22 + dx23
+as the surface satisfying the equation
+−x21 + x22 + x23 = −1.
+We shall consider the free motion on compactifications of N formed by
+quotienting it under the action of some discrete group as described below.
+We start by analyzing the free motion of a particle on the hyperbolic
+plane itself. This dynamical system has the phase space T ∗ N and is
+p2
+which is just the kinetic energy
+described by the Hamiltonian H = 2m
+of the particle. The trajectories for this dynamical system are given by
+the geodesics of the surface N . For a particle with unit mass m = 1, the
+constant energy surface M with energy E = 12 consists of the points with
+momenta of unit modulus (and hence also unit speed). Thus the energy
+shell M is the unit cotangent bundle of the hyperbolic plane. Changing
+the energy amounts to a rescaling which leaves the trajectories unchanged
+and only alters the rate at which they are traversed.
+
+8
+
+The group of isometries of the hyperbolic plane G = SO(2, 1) acts
+simply transitively on the points of the energy shell. Let us take as a
+base point in M the point O = (q, p) where the position q is given by
+(0, 0, 1) and the momentum p is (1, 0, 0). A point x on the energy shell
+may be identified with the unique element of G which takes O to x = gO.
+In this way the constant energy shell can be identified with the elements
+of G. The above construction gives a diffeomorphism from the topological
+group G to the energy shell M.
+We choose a basis for the Lie algebra g of G consisting of the matrices
+
+
+
+
+
+
+0 1 0
+0 0 1
+0 0 0
+P = 1 0 0 Q = 0 0 0 K = 0 0 1
+(17)
+0 0 0
+1 0 0
+0 −1 0
+An element g ∈ G may be written as a product [14]
+g(φ, τ, ψ) = eKφ eP τ eKψ .
+
+(18)
+
+The parameters τ , φ and ψ are known as the Euler angles. Note that τ
+and φ give the position in polar coordinates:
+(x1 , x2 , x3 ) = (cosh τ, sinh τ cos φ, sinh τ sin φ)
+while the angle ψ gives a consistent way of parameterizing the direction
+of the momentum.
+After a time t a free particle at the point O on the constant energy
+surface advances along the geodesic to which it belongs to the point ht O
+where ht = eP t . The point gO moves to ght O; hence on identifying M
+with G the evolution corresponds to right multiplication by the element
+ht . This 1-parameter group of transformations
+g → Ut (g) = ght
+is the geodesic flow on G. The measure µ on M which is invariant under
+the geodesic flow Ut is the Haar measure dg of the group G. This measure
+is invariant under right and left multiplication by elements of the group.
+The Ut invariant scalar product for functions on G is therefore given by
+f1 |f2
+
+f1 (g)f2 (g) dg
+
+=
+g∈G
+
+=
+
+1
+4π 2
+
+∞
+
+2π
+
+2π
+
+f2 (φ, τ, ψ)f2 (φ, τ, ψ) sinh τ dτ dφ dψ.
+0
+
+0
+
+0
+
+Finally we notice that right multiplication by elements in the rotation
+subgroup H = {eKψ } only affects the direction of momentum and does
+not change the position of the particle. Therefore we can identify the
+hyperbolic plane N with the set of right cosets G/H.
+9
+
+We now turn to the free motion on general surfaces of constant negative curvature which are constructed by taking a tessellation of the hyperbolic plane G/H and identifying the tessellating shapes (the fundamental
+domains). Let Γ be the group of transformations mapping the tessellating shapes to each other. For every γ ∈ Γ the points γgH and gH of
+the hyperbolic plane are identified. The points of the quotient surface
+formed under this identification are labeled by double cosets in Γ\G/H.
+When the directions of momentum at each of the points are included the
+constant energy surface M = Γ\G is formed. Since the free motion is
+given by the right shift by ht it is not affected by quotienting on the left
+by the subgroup Γ, so on the constant energy surface Γ\G the geodesic
+flow is given by
+Ut (Γg) = Γght
+
+4
+
+(19)
+
+Decomposition of the evolution operator
+for the geodesic flows
+
+In this section we use the representation theory of G = SO(2, 1) to find
+a decomposition of the form (7) for the resolvent for the geodesic flow on
+Γ\G.
+The right regular representation TR (h) of G on L2 (Γ\G) is defined by
+TR (h)ϕ(Γg) = ϕ(Γgh) where ϕ ∈ L2 (Γ\G).
+It can be decomposed as a direct sum of irreducible unitary representations T y which leads to a splitting of L2 (Γ\G) into a direct sum of the
+spaces H(T y ) on which T y acts.
+L2 (Γ\G) = ⊕ H(T y )
+
+(20)
+
+y∈Y
+
+As the geodesic flow Ut defined in (19) amounts to right multiplication
+ˆt coincides with TR (ht )
+by the group element ht the evolution operator U
+y
+and leaves H(T ) invariant leading to the decomposition
+ˆt =
+U
+
+T y (ht ).
+
+(21)
+
+y∈Y
+
+Substituting (21) into (6) we obtain the resolvent for the geodesic
+flow:
+∞
+
+R− (z) = −
+y
+where R−
+(z) = −
+
+ˆt dt =
+e−zt U
+
+0
+
+y
+(z)
+R−
+y∈Y
+
+∞ −zt y
+e T (ht ) dt.
+0
+
+10
+
+(22)
+
+The rest of this section is organized as follows. In section 4.1 we
+discuss the unitary irreducible representations T y . In section 4.2 we study
+the decompositions (20) and relate it to the spectra of the Laplacian on
+the quotient surface Γ\G/H. In section 4.3 we calculate the integrals
+y
+R−
+(z) for each of these irreducible representations and in section 4.4 we
+combine all the results to find R− (z).
+
+4.1
+
+Irreducible representations of SO(2, 1)
+
+Let T be an arbitrary unitary representation of G = SO(2, 1) on the
+Hilbert space H(T ) with scalar product
+| . The Casimir operator is
+defined on H(T ) by
+Ω(T ) = L2P (T ) + L2Q (T ) − L2K (T )
+where LX (T ) is the Lie derivative of T in the direction X ∈ g and
+P, Q, K ∈ g are as defined in (17). This operator commutes with each of
+the T (g) [15] and therefore must be a scalar multiple of the identity on
+each of the irreducible representations T y . It is convenient to denote by
+T ρ the unitary irreducible representation on which this scalar is − 14 − ρ2 ,
+i.e. for all v ∈ H(T ρ ) we have:
+1
+Ω(T ρ )v = (− − ρ2 )v
+4
+
+(23)
+
+The following values of ρ are allowed [15]:
+• Im ρ = 0 and Re ρ ≥ 0 (the principal series)
+• Re ρ = 0 and Im ρ ∈ (0, 21 ) (the complimentary series)
+• Re ρ = 0 and Im ρ ∈ N each corresponding to a pair of inequivalent
+representations (the discrete series).
+In addition we have the 1-dimensional identity representation I for which
+Ω(I)v = 0 for v ∈ H(I).
+Under the action of the compact abelian subgroup H = {eKt } the
+representation T ρ splits into one dimensional irreducible representations.
+Let |n ∈ H(T ρ ) be a vector in one such one-dimensional representation
+with
+T ρ (eKt )|n = eint |n
+
+(24)
+
+It is a fact [16] that in a representation T ρ there is at most one vector
+|n for each value n and they can be normalized to form an orthonormal
+basis for the space H(T ρ ). We also use the notation |ρ, n when the
+irreducible representation to which |n belongs needs to be specified. For
+the representations of the principal and complimentary series the value of
+
+11
+
+n ranges over all the integers. For the discrete series, one of the pair has a
+basis consisting of |n where n ≥ Im ρ and the other where n ≤ Im ρ [16].
+A vector |ϕ in H(T ρ ) may be expanded in the basis {|n } as
+|ϕ =
+
+n
+
+n|ϕ |n
+
+(25)
+
+In the basis {|n } the matrix elements for the representation T ρ are given
+by [14]
+l
+m|T ρ (g)|n = eimφ einψ Bmn
+(cosh τ )
+
+where l =
+
+4.2
+
+1
+2
+
+l
++ iρ and Bmn
+(cosh τ ) are the Jacobi functions.
+
+Decomposition of L2 (Γ\G)
+
+We now consider the decomposition of L2 (Γ\G) into irreducible representations T ρ for a particular quotient surface Γ\G/H.
+Suppose that the decomposition (20) of L2 (Γ\G) has Nρ copies of the
+irreducible representation T ρ , labeled by s ∈ {1, ..., Nρ }:
+N
+
+ρ
+L2 (Γ\G) = ⊕ρ (⊕s=1
+H(T ρ;s )).
+
+(26)
+
+Each H(T ρ;s ) has a basis {|ρ, n; s } as described in section (4.1). From
+(23) and (24) we deduce that the space spanned by the vectors {|ρ, n; s where s =
+1, ..., Nρ } is the intersection of the eigenspaces of Ω(TR ) and LK (TR ) with
+the eigenvalues − 41 − ρ2 and in respectively.
+Ω(TR )|ρ, n; s
+Lk (TR )|ρ, n; s
+
+1
+= (− − ρ2 )|ρ, n; s
+4
+= in|ρ, n; s
+
+(27)
+
+The functions |ρ, 0; s are invariant under multiplication on the right
+by elements of H and therefore can be viewed as functions in L2 (Γ\G/H).
+ˆ hence
+On this space the Casimir operator Ω reduces to the Laplacian ∆
+the values of ρ occuring in (26) correspond to the eigenvalues ǫ(ρ) =
+ˆ on the quotient surface Γ\G/H. Nρ is the
+− 41 − ρ2 of the Laplacian ∆
+multiplicity of the eigenvalue ǫ(ρ) and |ρ, 0; s are its eigenfunctions. It
+ˆ on a compact surface Γ\G/H is
+is known that the spectrum ΛΓ of ∆
+discrete and is bounded above by 0. It also contains the eigenvalue 0
+which corresponds to the the constant eigenfunction. Hence (26) takes
+the form:
+L2 (Γ\G) =
+
+⊕
+
+− 14 −ρ2 ∈ΛΓ
+
+N
+
+ρ
+(⊕s=1
+H(T ρ;s )).
+
+(28)
+
+A differential equation for the eigenfunctions |ρ, n; s is obtained by
+unwrapping a function in L2 (Γ\G) to give a periodic function on the
+whole group χ : G → C which obeys
+χ(γg) = χ(g) for all γ ∈ Γ.
+12
+
+Using Euler’s coordinates (18) on G in (27) we deduce that the unwrapinψ
+ping of the function |ρ, n; s has the form χρ,n
+where χρ,n
+s (τ, θ)e
+s (τ, θ)
+obeys the second order differential equation:
+∂2
+∂
+− 2in cosh τ
+− n2
+∂2φ
+∂φ
+
+1
+∂
+∂
+1
+sinh τ
++
+sinh τ ∂τ
+∂τ
+sinh2 τ
+
+4.3
+
+1
+χρ,n
+= (− − ρ2 )χρ,n
+s .
+s
+4
+(29)
+
+Spectral decompositions for the irreducible representations
+
+ρ
+We now find the correlation functions of the resolvents R−
+(z) for each of
+ρ
+the irreducible representations T and obtain a spectral decomposition
+for the operator T ρ (ht ).
+Expanding
+∞
+
+ρ
+ξ|R−
+(z)|ϕ = −
+
+in the basis {|n } we get
+ρ
+ξ|R−
+(z)|ϕ =
+
+∞
+
+e−zt ξ|T ρ (ht )|ϕ dt
+0
+
+e−zt
+
+0
+
+ξ|m m|T ρ (ht )|n n|ϕ dt
+
+(30)
+
+m,n
+
+The matrix element m|T ρ (ht )|n can be written as a sum over the exponentials eλt where
+λ ∈ {l, l − 1, l − 2...; l, l − 1, l − 2, ...} = Λρ
+
+(31)
+
+cλmn eλt
+
+(32)
+
+and
+l
+m|T ρ (ht )|n = Bmn
+(cosh t) =
+λ∈Λρ
+
+Substituting (32) into the resolvent (30) we obtain
+ρ
+ξ|R−
+(z)|ϕ
+
+∞
+
+e(λ−z)t
+
+=
+λ∈Λρ
+
+0
+
+m,n
+
+ξ|m
+
+=
+
+λ∈Λρ
+
+cλmn
+
+n|ϕ
+
+λ−z
+
+λ∈Λρ m,n
+
+=
+
+ξ|m cλmn n|ϕ dt
+
+ˆ λ |ϕ
+ξ|K
+.
+λ−z
+
+(33)
+
+ˆ λ determining the residue at the pole λ ∈ Λρ are given
+The operators K
+by
+ˆλ =
+K
+m,n
+
+|m cλmn n|.
+
+13
+
+The matrix elements cλmn may be split into a product (appendix B) cλmn =
+aλm bλn which enables us to write (33) in the form
+ρ
+ξ|R−
+(z)|ϕ
+
+n
+
+=
+
+n|bλn |ϕ
+
+m
+
+ξ|aλm |m
+
+λ−z
+
+λ∈Λρ
+
+f−λ |ϕ ξ|fλ
+λ−z
+
+=
+λ∈Λρ
+
+(34)
+
+where λ runs through the set Λρ (31) and
+|fλ =
+
+m
+
+aλm |m , |f−λ =
+
+m
+
+bλm |m
+
+are eigenvectors of T ρ (ht ):
+T ρ (ht )|fη = eηt |fη .
+The coefficients aλm and bλm where λ = l, l are found explicitly in appendix
+B along with a procedure for generating the eigenfunctionals for the other
+values of λ ∈ Λρ .
+The eigenfunctionals |fλ and |f−λ are linear functionals on the
+ρ
+space Sρ ⊂ H(T ρ ) of test vectors |ϕ =
+n cn |ρ, n ∈ H(T ) where
+the coefficients cn → 0 as |n| → ∞ faster than any power of n i.e.
+lim|n|→∞ cn nk = 0 for all k ∈ N. By comparing (34) with (7) we arrive
+at the spectral decomposition for T ρ (ht )
+T ρ (ht ) =
+λ∈Λρ
+
+eλt |fλ f−λ |.
+
+(35)
+
+This decomposition converges absolutely for t > 0 for test vectors in the
+dense subspace Tρ ⊂ Sρ of vectors of the form |ϕ = K
+n=−K cn |ρ, n ∈
+H(T ρ ) for some K. (appendix C).
+
+4.4
+
+Spectral decompositions of the evolution operators for the geodesic flows
+
+On combining (35) with (28) we obtain the central result of this paper:
+ˆt :
+a spectral decomposition for U
+Nρ
+
+ˆt = TR (ht ) =
+U
+− 14 −ρ2 ∈ΛΓ
+
+λ∈Λρ s=1
+
+ρ;s
+|
+eλt |fλρ;s f−λ
+
+(36)
+
+where ΛΓ is the spectrum of the Laplacian on Γ\G/H containing eigenvalues − 41 − ρ2 with multiplicities Nρ and where Λρ given by equation
+14
+
+(31) and also shown in figure 1. The functionals
+|fλρ;s
+
+=
+
+ρ;s
+|f−λ
+
+=
+
+n
+
+aλn |ρ, n; s
+
+n
+
+bλn |ρ, n; s
+
+ˆt :
+are the eigenfunctionals of U
+ˆt |fηρ;s = eηt |fηρ;s .
+U
+The functions |ρ, n; s , s = 1, ...Nρ form an orthogonal basis in the space
+of solutions of the linear differential equation (29). The coefficients are
+l
+obtainable by expanding Bmn
+(cosh t) in powers of eλt (see equation 32)
+and are given explicitly for λ = l, l in (55).
+The eigenfunctionals |fηρ;s belong to the space C ∞ (Γ\G)∗ and act
+on test functions in
+⊕
+Sρ = C ∞ (Γ\G). The decomposition (36)
+− 14 −ρ2 ∈ΛΓ
+
+converges for functions in a dense subspace
+Nρ
+
+T = {|ϕ =
+
+K
+
+− 14 −ρ2 ∈ΛΓ s=1 n=−K
+
+cn,ρ;s |ρ, n; s for some K} ⊂ C ∞ (Γ\G)
+(37)
+
+of test functions whose unwrappings have only a finite number of Fourier
+components in the angle ψ (appendix C).
+The eigenvalues entering (36) could also be obtained by comparing
+ˆ and ∆
+ˆ [17].
+classical orbit expansions for the traces of the resolvents of L
+
+5
+5.1
+
+Properties of the evolution operators for
+the geodesic flows
+Decay of correlations
+
+At long times only the leading terms with k = 0 in each of the Λρ in the
+ˆt (36) remain significant (see section 2.4).
+spectral decomposition for U
+Therefore as t → ∞, for ξ, ϕ ∈ T ⊂ C ∞ (Γ\G)
+ˆt |ϕ ≈
+ξ|U
+
+1
+
+− 14 −ρ2 ∈ΛΓ
+
+s
+
+ρ;s
+|ϕ ξ|f−
+e(− 2 ±iρ)t f ρ;s
+1
+1
+±iρ
+±iρ
+2
+
+2
+
+Separating out the eigenvalue with λ = 0 for a compact quotient surface
+where the dynamics is mixing we find that
+ˆt |ϕ ≈ 1|ϕ ξ|1 +
+U
+
+1
+
+0=− 14 −ρ2 ∈ΛΓ
+
+s
+
+15
+
+ρ;s
+|ϕ ξ|f−
+(38)
+e(− 2 ±iρ)t f ρ;s
+1
+1
+±iρ
+±iρ
+2
+
+2
+
+1
+
+The approach to equilibrium is governed by the eigenvalue(s) e(− 2 ±iρ)t
+in this expansion with the largest modulus (see figure 1). There are two
+possibile cases distinguished by the smallest non-zero eigenvalue −ǫ0 of
+ˆ
+−∆.
+1. If −ǫ0 <
+e
+
+λ0 t
+
+1
+4
+
+then the slowest decaying term gives the decay rate
+
+where λ0 = − 21 +
+
+1
+4
+
++ ǫ0 . For the non-constant part of the
+
+ˆt |ϕ between ξ, ϕ ∈ C ∞ (Γ\G) we have
+correlation function ξ|U
+ˆt |ϕ − ξ|1 1|ϕ = O(eλ0 t )
+ξ|U
+2. If −ǫ0 >
+λ0 = − 21
+
+1
+4
+
+(39)
+
+then all the values of ρ in (38) are real and we get
+ˆt |ϕ − ξ|1 1|ϕ = O(e− 2 )
+ξ|U
+t
+
+(40)
+
+By applying the result (14) to the geodesic flows we find that for
+arbitrary ξ, ϕ ∈ C ∞ (M )
+ˆt |ϕ − ξ|1 1|ϕ | < Ceλ0 t
+| ξ|U
+This is a classical result proving the exponential decay of correlations for
+geodesic flows on constant negative curvature surfaces (see e.g. [15] for a
+detailed discussion). Also from (14) we get the other terms in the long
+time asymptote:
+ˆt |ϕ
+ξ|U
+
+−
+
+ξ|1 1|ϕ
+Nρ
+
+−
+<
+
+5.2
+
+N
+1
+
+− 14 −ρ2 ∈ΛΓ s=1 ± k=0
+
+ρ;s
+f ρ;s
+|ϕ
+e(− 2 ±iρ−k)t ξ|f−
+1
+1
+±iρ−k
+±iρ+k
+2
+
+C(N )e(λ0 −(N +1))t .
+
+2
+
+(41)
+
+Relation to the Laplacian
+
+In addition to refining the long time asymptotic form of the correlation
+function (41) the full expansion (36) provides a more detailed description
+of the evolution of distribution functions. Consider a smooth function
+Ψ on Γ\G which is independent of the momentum coordinate ψ (hence
+ˆt this function will acquire
+belongs to the space T). As it evolves under U
+some angular dependence but we will only be interested in the density
+ˆt Ψ where Pˆ is the
+on the configuration space i.e. the projection Ψt = Pˆ U
+projector Γ\G → Γ\G/H:
+1
+Pˆ χ =
+2π
+16
+
+2π
+
+χ dψ
+0
+
+− 12 + iρ
+
+− 23 + iρ
+
+Im λ
+
+1
+4
+
+−ǫ0
+
+λ0
+
++ ρ2
+
+Re λ
+
+Figure 1: The poles λ = − 21 − iρ − k (crosses) of the resolvent give
+the eigenvalues eλt of the evolution operator appearing in decomposition
+ˆ (open
+(36). These poles are related to the eigenvalues −ǫ = 14 + ρ2 of −∆
+λ0 t
+circles). The rate of decay e
+at long times is determined by the pole
+λ0 with the least negative real part.
+
+Expanding Ψ as a linear combination of the eigenfunctions |ρ, 0; s of
+the Laplacian for the quotient surface
+|Ψ =
+
+− 14 −ρ2 ∈ΛΓ
+
+s
+
+ρ, 0, s|Ψ |ρ, 0; s
+
+and using
+ˆt |ρ, 0; s
+U
+
+=
+
+T ρ (ht )|ρ, 0; s
+
+=
+n
+
+|ρ, n; s ρ, n; s|T ρ (ht )|ρ, 0; s
+− 1 +iρ
+
+=
+
+Bn02
+
+(cosh t)|ρ, n; s
+
+n
+
+combined with the following expressions for the matrix elements of the
+projection operator
+Pˆ |ρ, n; s
+Pˆ |ρ, n; s
+
+= 0 n=0
+= |ρ, 0; s
+
+we obtain for Ψt :
+ˆt |Ψ =
+|Ψt = Pˆ U
+
+− 1 +iρ
+
+B002
+
+(cosh t)
+s
+
+− 14 −ρ2 ∈ΛΓ
+
+Using the symbolic notation
+ˆ − 1 |ρ, 0; s = ρ|ρ, 0; s
+−∆
+4
+17
+
+ρ, 0, s|Ψ |ρ, 0; s
+
+(42)
+
+we rewrite (42) as
+√
+ˆ 1
+− 21 +i −∆−
+4
+ˆ
+ˆ
+(cosh t)|Ψ
+P Ut |Ψ = B00
+
+(43)
+
+ˆ on the surfaces of constant negative curwhich relates the Laplacian ∆
+vature to the classical dynamics in the configuration space.
+
+6
+6.1
+
+Conclusions
+Summary of results
+
+ˆt of a general mixing dyDecompositions for the evolution operators U
+namical system on a manifold M were constructed following Ruelle’s prescription [8] using the analytic continuation of the resolvent (6):
+∞
+
+Fξ,ϕ (z) = −
+
+0
+
+ˆT |ϕ dT.
+e−zT ξ|U
+
+It was proved that when conditions (8, 9) are met we have the followˆt :
+ing decompostions of U
+ˆt |ϕ
+ξ|U
+ˆt |ϕ
+ξ|U
+
+k
+|ϕ ξ|fλk convergent for t > 0
+f−λ
+
+eλt
+
+=
+λ
+
+=
+
+k
+
+e
+λ
+
+−λt
+k
+
+k
+fλk |ϕ ξ|f−λ
+convergent for t < 0
+
+ˆt
+where |fηk are eigenfunctionals of U
+ˆt |fηk = eηt |fηk
+U
+belonging to the space C ∞ (M )∗ . They can be obtained from the residues
+of Fξ,ϕ (z) which are positioned at λ and have the form
+2πi Res(λ, Fξ,ϕ ) =
+k
+
+k
+|ϕ .
+ξ|fλk f−λ
+
+ˆt for the free
+On applying this method to the evolution operator U
+motion on a compact surface of constant negative curvature Γ\G/H we
+obtained the decomposition (36) which is convergent for ξ and ϕ in a dense
+subspace T ⊂ C ∞ (Γ\G) of functions whose unwrappings onto functions
+of G have only a finite number of Fourier harmonics in the Euler angle ψ
+(see equations 18, 37). From this decomposition we obtained a refinement
+for the rate of decay of correlations (41) for these systems.
+ˆt from
+We also found that the projection of the evolution operator Pˆ U
+ˆ
+Γ\G to Γ\G/H is related to the Laplacian ∆ on the surface Γ\G/H by:
+√
+1
+ˆ 1
+ˆt = B − 2 +i −∆− 4 (cosh t).
+Pˆ U
+00
+18
+
+6.2
+
+Consequences for the ballistic σ-model
+
+Finally we discuss some consequences of the spectral decomposition (4)
+for the ballistic σ-model [4, 5]. Without diving into (the still controversial) issue of the σ-model derivation and its region of validity we quote
+below the result for the effective action (see [4, 5, 18] for a detailed discussion):
+ˆ + i(ω + i0)Λ W,
+dµ tr ΛW −1 L
+
+S=
+
+(44)
+
+where W (x) belongs to some (super)-group and Λ is a particular matrix
+in this group obeying Λ2 = 1. The detailed structure of the target space
+is somewhat involved and for the purpose of our discussion it suffices to
+consider a toy model with W ∈ SU (2) and Λ = diag(1, −1). Then the
+target space is a two-dimensional sphere S 2 = SU (2)/U (1) parametrized
+by the matrices Q = W −1 ΛW . The action (44) does not depend on the
+parametrization of S 2 in terms of W . Indeed, introducing the two-form
+Q∗ V on the energy shell M obtained by pulling back the invariant volume
+V on S 2 by the function Q(x) : M → S 2 we get for the action:
+S=
+M
+
+(Q∗ V ) ∧ pdq + i(ω + i0) tr(ΛQ)dµ,
+
+where pdq is the antiderivative of the simplectic structure dp ∧ dq. If Q∗ V
+is exact (and it is certainly closed) the first term does not depend on the
+choice of the antiderivative but only on the simplectic structure dp ∧ dq.
+It is universally believed that some sort of regularization should supplement the effective action (44). It was conjectured [5] that in the limit of
+a vanishing regulator the eigenvalues of the regularized Liouvillian operator approach the Ruelle resonances (which were refered to as “eigenvalues
+of the Perron Frobenius operator” in [5]).
+We would like to point out, that this conjecture must be further clarified due to the existence of the two inequivalent sets of Ruelle resonances.
+One set of resonances is in the left half of the complex plane, while the
+other is in the right. These two sets originate from the different branches
+of the resolvent given by the two integral representations (equations 6
+and 15 respectively). As a result there exists two non-equivalent reguˆ Denoting by Lreg the regularization of L
+ˆ
+larizations of the operator L.
+with eigenvalues close to the Ruelle resonances in the left half plane and
+observing that the operator −L+
+reg has the eigenvalues close to the Ruelle
+resonances in the right half plane we suggest that the two regularizations
+of L are Lreg and −L+
+reg .
+We suggest the following structure for the regularized operator in the
+target space:
+ˆ + i(ω + i0)Λ −→
+L
+
+Lreg + iω
+0
+19
+
+0
+−L+
+reg − iω
+
+.
+
+(45)
+
+which ensures the convergence of the action (44). Expanding the ac0
+w
+tion (44) near Q = Λ as W = 1 +
+we verify that the choice
+−w
+¯ 0
+(45) ensures that the quadratic part of the action δ 2 S is non-postively
+defined:
+0
+Lreg
+w
+δ 2 S = − dµ(w,
+¯ w)
+−L+
+0
+w
+¯
+reg
+Note, that a similar structure for the regularized action appeared in the
+model with diffusive scattering [19].
+
+Acknowledgements
+One of the authors (B. Muzykantskii) wishes to acknowledge useful discussions with D. Khmelnitskii and M. Pollicott.
+
+A
+
+Mixing dynamical systems
+
+A dynamical system (M, Ut , µ) is mixing if for any two sets A, B ⊂ M
+lim µ(Ut A ∩ B) = µ(A)µ(B)
+
+t→∞
+
+(46)
+
+ˆt
+For a mixing system the only square integrable eigenfunctions of U
+are the constant functions which have the eigenvalue 1. The proof [20] of
+this result is reproduced below.
+We write (46) in terms of the characteristic functions χA and χB of
+the sets A and B (The characteristic function χC of a set C takes on the
+value χC (x) = 1 if x ∈ C and 0 otherwise).
+ˆt χA |χB = χA |1 1|χB
+lim U
+
+t→∞
+
+(47)
+
+Since the space of linear combinations of characteristic functions is dense
+in the space of square integrable functions (47) must also be true for
+f, g ∈ L2 (M )
+ˆt f |g = f |1 1|g
+lim U
+
+t→∞
+
+(48)
+
+ˆt with eigenvalue eλt and g = 1 then (48)
+Let f be an eigenfunction of U
+becomes
+eλt f |1 = f |1
+therefore the eigenvalue must be 1.
+
+20
+
+B
+
+Coefficients for the eigenfunctionals
+
+ˆ λ |n of the operator K
+ˆλ
+We now study the matrix elements cλmn = m|K
+appearing in the residues of the resolvent (33)
+ˆ λ |ϕ
+ξ|K
+=
+λ−z
+
+ρ
+ξ|R−
+(z)|ϕ =
+λ∈Λρ
+
+λ∈Λρ m,n
+
+ξ|m cλmn n|ϕ
+.
+λ−z
+
+Consider the following operators on H(T ρ )
+L
+B−
+
+= LP (T ρ )
+= LK (T ρ ) + LQ (T ρ )
+
+B+
+
+= LK (T ρ ) − LQ (T ρ ).
+
+Note that T ρ (ht ) = eLt and we have the commutation relations
+[L, B+ ]
+[L, B− ]
+
+= B+
+= −B−
+
+[B− , B+ ]
+
+= 2L
+
+(49)
+
+From the commutation relations we have that B+ L = (L+1)B+ therefore B+ eLt = e(L+1)t B+ i.e. B+ T ρ (ht ) = et T ρ (ht )B+ . By considering
+ρ
+ξ|B+ R−
+|ϕ and using this result we obtain
+ˆλ = K
+ˆ λ+1 B+
+B+ K
+
+(50)
+
+ˆ λ into the image of K
+ˆ λ+1 . In particular
+Hence B+ sends the image of K
+ˆ = 0 since there are no eigenvalues l + 1 and l + 1 in
+ˆ l = 0 = B+ K
+B+ K
+l
+the set Λρ .
+Consider an eigenfunctional |f in the image of Kλ so that it satisfies
+T ρ (ht )|f = eλt |f and therefore
+L|f = λ|f .
+Suppose also that it is annihilated by B+ :
+B+ |f = 0
+so that using (49) we get
+n|B+ |f
+
+n|B+ B− |f
+
+=
+
+0
+
+=
+
+−2 n|L|f = −2λ n|f
+
+for all n ∈ Z.
+Representing |f by the linear combination
+|f =
+
+n
+
+αn |n where αn = n|f
+21
+
+and using the explicit expression for the matrix elements of B+ and B−
+[14]
+− 2i n|B+
+−2i n|B−
+
+=
+=
+
+−(l + n) n − 1| − 2n n| + (l − n) n + 1|
+(l + n) n − 1| − 2n n| − (l − n) n + 1|
+
+(51)
+
+we get the system of linear equations
+− (l + n)αn−1 − 2nαn + (l − n)αn+1 = 0
+
+− (l + n − 1)(l + n)αn−2 − 2(l + n)αn−1 + 2(l(l + 1) + n2 )αn
+− 2(l − n)αn+1 − (l − n − 1)(l − n)αn−2 = −4λαn
+These equations have only the trivial solution αn = 0 unless λ = l =
+− 21 + iρ or λ = l = − 12 − iρ in which case they have the unique non-trivial
+solutions
+αln
+
+=
+
+αln
+
+=
+
+1
+(l + n)!(l − n)!
+
+(−1)n
+
+(52)
+
+ˆ l and K
+ˆ are one-dimensional.
+respectively. Hence the images of K
+l
+ˆ λ into the image of K
+ˆ λ+1 and its
+Since B+ sends the image of K
+ˆ λ has zero kernel for λ = l, l we deduce that
+restriction on the image of K
+ˆ l−k and K
+ˆ
+the images of K
+l−k for all k ∈ N are also one-dimensional. The
+ˆ
+operators Kλ where λ ∈ Λρ may therefore be written as
+ˆ λ = |fλ f | =
+K
+−λ
+
+m,n
+
+|m aλm bλn n| =
+
+m,n
+
+|m cλmn n|
+
+and their matrix elements cλmn split into a product cλmn = aλm bλn where
+|fλ
+
+=
+
+|f−λ
+
+=
+
+m
+
+aλm |m
+
+n
+
+bλn |n
+
+(53)
+
+as stated in the main text.
+Combining (52) with (53) we see that aln = αln and aln = αln . This
+l
+can be confirmed from equation (32) and the expansion of Bm0
+(cosh t) at
+large t [21]:
+l
+Bm0
+(cosh t)
+
+=
+
+1
+2l (l!)2
+√
+elt
+π (l + m)!(l − m)!
+
++
+
+2l (l!)
+√ (−1)m elt
+π
+
+×
+
+1 + O(e−t ) .
+22
+
+(54)
+
+Using (54) and the symmetry relation [14]
+l
+Bmn
+(cosh t) =
+
+(l + n)!(l − n)! l
+B (cosh t)
+(l + m)!(l − m)! nm
+
+we can find the coefficients bln and bln :
+bln
+
+=
+
+2l
+√ (l!)2
+π
+
+bln
+
+=
+
+2l
+√ (l!)2 (l + n)!(l − n)!
+π
+
+To summarize the functionals |fλ , |f−λ involved in the decomposiˆ λ for λ = l, l have the following form
+tion of K
+|fl
+
+=
+
+|fl
+
+=
+
+|f−l
+
+=
+
+|f−l
+
+=
+
+n
+
+n
+
+1
+|n
+(l + n)!(l − n)!
+(−1)n |n
+
+n
+
+2l
+√ (l!)2 |n and
+π
+
+n
+
+2l
+√ (l!)2 (l + n)!(l − n)!|n
+π
+
+(55)
+
+Given the eigenfunctionals |fl and |f−l the eigenfunctionals |fλ for
+the other values of λ ∈ Λρ may be obtained by successive applications of
+the operator B− :
+k
+|fλ−k = B−
+|fλ
+
+(56)
+
+ˆλ = K
+ˆ λ−1 B− which is proved analogously to
+due to the relation B− K
+(50).
+Similarly, the projectors can be obtained by applying the operator B+
+to |f−l and |f−l :
+k
+|f−λ+k = B+
+|f−λ .
+
+(57)
+
+From (51) and the relations (56,57) we find that
+anl−k
+
+=
+
+anl−k
+
+=
+
+bnl−k
+
+=
+
+bnl−k
+
+=
+
+k
+n|fl−k = n|B−
+|fl = O(nk )
+
+k
+n|fl−k = n|B−
+|fl = O(nk )
+
+k
+n|f−l+k = n|B+
+|f−l = O(nk )
+
+k
+n|f−l+k = n|B+
+|f−l = O(nk )
+
+23
+
+(58)
+
+C
+
+Convergence of the spectral decompositions
+
+We now present the necessary condition for the convergence of the spectral decomposition (35):
+eλt f−λ |ϕ ξ|fλ .
+
+ξ|T ρ (ht )|ϕ =
+λ∈Λρ
+
+(59)
+
+In particular we show it is convergent when ξ and ϕ belong to the dense
+subspace Tρ of S ρ ⊂ H(T ρ ) where
+K
+
+Tρ = {|ϕ =
+
+n=−K
+
+cn |ρ, n for some K}
+
+(60)
+
+First we show that each term eλt f−λ |ϕ ξ|fλ in (59) is defined for ξ
+and ϕ in the subspace Sρ :
+Sρ = {|ϕ =
+
+n
+
+cn |ρ, n where
+
+lim cn nq = 0 for all q ∈ N}.
+
+|n|→∞
+
+(61)
+
+Note that Sρ is invariant under T ρ (ht ). Let ξ and ϕ be given by
+|ϕ
+
+=
+
+|ξ
+
+=
+
+n
+
+cn |ρ, n
+
+n
+
+dn |ρ, n
+
+(62)
+
+Using f−λ |m n|fλ = aλm bλn we get
+|eλt f−λ |ϕ ξ|fλ | <
+
+m,n
+
+λ λ
+bn cm dn |
+|eλt am
+
+(63)
+
+The eigenvalue λ is of the form l − k or l − k so by (58) aλm = O(mk ) and
+bλn = O(nk ). Hence
+|eλt f−λ |ϕ ξ|fλ | < C|eλt |
+
+m
+
+|cm mk |
+
+n
+
+|dn nk |
+
+which converges due to (61). Therefore each term is defined for ξ, ϕ ∈ Sρ
+and the eigenfunctionals |fη belong to the space Sρ∗ .
+Now we show that the sum (59) converges for ξ, ϕ ∈ Tρ . Since the
+sums (62) for ξ, ϕ have only a finite number of terms it suffices to prove
+convergence for |ϕ = |n and |ξ = |m . In this case (59) reduces to (32)
+which converges absolutely for t > 0.
+
+24
+
+Now we turn to the convergence of the spectral decomposition of the
+ˆt (36)
+evolution operator U
+Nρ
+
+ˆt |ϕ =
+ξ|U
+
+− 14 −ρ2 ∈ΛΓ s=1 λ∈Λρ
+
+ρ;s
+|ϕ
+eλt ξ|fλρ;s f−λ
+
+(64)
+
+ρ;s
+By the above considerations the terms in this series eλt ξ|fλρ;s f−λ
+|ϕ
+are defined for ξ, ϕ ∈
+⊕
+Sρ = C ∞ (Γ\G).
+− 41 −ρ2 ∈ΛΓ
+
+We will show that expansion (64) is convergent when ξ, ϕ belong to
+the subspace T ⊂ C ∞ (Γ\G):
+Nρ
+
+T = {|ϕ =
+
+K
+
+− 41 −ρ2 ∈ΛΓ s=1 n=−K
+
+cn,ρ;s |ρ, n; s for some K}
+
+(65)
+
+It is sufficient to determine the convergence for
+Nρ
+
+|ϕ
+
+=
+− 14 −ρ2 ∈ΛΓ s=1
+
+cρ;s |ρ, n; s
+
+Nρ
+
+|ξ
+
+=
+− 14 −ρ2 ∈ΛΓ s=1
+
+dρ;s |ρ, m; s
+
+for which decomposition (64) is
+Nρ
+
+ˆt |ϕ =
+ξ|U
+
+eλt cρ,s aλn dρ,s bλm
+
+(66)
+
+− 41 −ρ2 ∈ΛΓ s=1 λ∈Λρ
+
+Let ϕ(τ, θ, ψ) = ϕn (τ, θ)einψ be the unwrapping of |ϕ . The function
+ϕn on Γ\G/H has the norm
+ϕn
+
+2
+
+=
+
+1
+2π
+
+F
+
+|ϕn (τ, θ)|2 sinh τ dτ dθ , F is a fundamental domain
+
+We may expand ϕn in the eigenfunctions χρ;s
+n (the unwrappings of
+|ρ, n; s ) of the operator (29):
+Nρ
+
+cρ,s χρ;s
+n .
+
+ϕn (τ, θ) =
+− 41 −ρ2 ∈ΛΓ
+
+s=1
+
+hence
+Nρ
+
+ϕn
+
+2
+
+=
+− 14 −ρ2 ∈ΛΓ
+
+25
+
+s=1
+
+|cρ;s |2 .
+
+(67)
+
+Similarly
+Nρ
+
+ξn
+
+2
+
+=
+− 14 −ρ2 ∈ΛΓ
+
+s=1
+
+|dρ;s |2 .
+
+Using the fact that
+Nρ
+
+− 14 −ρ2 ∈ΛΓ s=1
+
+|cρ,s dρ,s | < ξn
+
+ϕn
+
+and that (32) converges absolutely we see from (66) that
+Nρ
+
+ˆt |ϕ |
+| ξ|U
+
+=
+− 14 −ρ2 ∈ΛΓ
+
+s=1
+
+|cρ,s dρ,s |
+
+λ∈Λρ
+
+|aλn bλm eλt |
+
+Nρ
+
+< C
+− 14 −ρ2 ∈ΛΓ s=1
+
+|cρ,s dρ,s | < C ξn
+
+ϕn
+
+is bounded.
+Hence taking ξ, ϕ ∈ T ensures the convergence of the spectral decomposition (64). Since the unwrapping of |ρ, n; s has the form χρ;s
+n the
+unwrappings of functions in T will have only a finite number of Fourier
+components in ψ.
+
+References
+[1] M. C. Gutzwiller. Periodic orbits and classical quantization conditions. Journal of Mathematical Physics, 12:343, 1971.
+[2] M. V. Berry. Quantum chaology. Proceedings of the Royal Society
+of London A, 413:183–198, 1987.
+[3] E. B. Bogomolny and J. P. Keating. Gutzwiller’s trace formula and
+spectral statistics: Beyond the diagonal approximation. Physical
+Review Letters, 77(8):1472–1475, 1996.
+[4] Boris A. Muzykantskii and David E. Khmelnitskii. Effective action in theory of quasi-ballistic disordered conductors. JETP letters,
+62(1):76–82, 1995. Pis’ma ZH. Eksp Teor Fiz. 62 No 1, 68-74 (1995).
+[5] A. V. Andreev, O. Agam, B. D. Simons, and B. L. Altshuler. Quantum chaos, irreversible classical mechanics and random matrix theory. Physical Review Letters, 76:3947, 1996.
+[6] K. B. Efetov. Supersymmetry and theory of disordered metals. Advances in Physics, 32(1):53–127, 1983.
+26
+
+[7] K. B. Efetov. Supersymmetry in Disorder and Chaos. New York:
+Cambridge University Press, 1997.
+[8] Ruelle D. Resonances of chaotic dynamical systems. Physical Review
+Letters, 56(5):405–407, 1986.
+[9] I. Antoniou and S. Tasaki. Generalized spectral decompositions
+of mixing dynamical systems. International Journal of Quantum
+Chemistry, 46:425–474, 1993.
+[10] S. Tasaki Z. Suchanecki, I. Antoniou and O.F. Bandtlow. Rigged
+hilbert spaces for chaotic dynamical systems. J. Math. Phys.,
+37(11):5837–5847, 1996.
+[11] I. Antoniou and B. Qiao. Spectral decomposition of the tent maps
+and the isomorphism of dynamical systems. Physics Letters A,
+215:280–290, 1996.
+[12] B. Qiao and I. Antoniou. Spectral decomposition of chebyshev maps.
+Physica A, 233:449–457, 1996.
+[13] H. H. Rugh. Dynamical approach to temperature. Physical Review
+Letters, 78(5):772–774, 1997.
+[14] N.J. Vilenkin. Special Functions and the Theory of Group Representations. Providence, RI: American Mathematical Society, 1968.
+[15] Marina Ratner. The rate of mixing for geodesic and horocycle flows.
+Ergodic Theory Dynamical Systems, 7(2):267–288, 1987.
+[16] S. Lang. SL2 (R). Berlin: Springer, 1985.
+[17] H.H. Rugh. Generalized fredholm determinants and selberg zeta
+functions for axiom a dynamical systems. Ergodic Theory and Dynamical Systems, 16(Pt4):805–819, 1996.
+[18] A. V. Andreev, B. D. Simons, O. Agam, and B. L. Altshuler. Semiclassical field theory approach to quantum chaos. Nuclear Physics
+B, 482:536–566, 1996.
+[19] Y.M. Blanter, A.D. Mirlin, and B.A. Muzykantskii. Quantum billiards with surface scattering: ballistic sigma-model approach. Physical Review Letters, 80(19):4161–4164, 1998.
+[20] Arnold and Avez. Ergodic Problems of Classical Mechanics. New
+York: Benjamin, 1968.
+[21] W. Magnus and F. Oberhettinger. Formulas and theorems for the
+special functions of mathematical physics. Berlin: Springer, 1966.
+
+27
+
+

@@ -1,0 +1,739 @@
+arxivmathph0009004v1 4 sep 2000
+local and modular invari
+in 2d conform qft
+kh rehren
+inst f theor physik
+universitat gottingen
+37073 gottingen
+germani
+dedic to s doplich and je robert
+abstract
+the relat and differ between variou classif problem aris in
+the context of local twodimension 2d conform quantum field theori modular invari and subfactor are discuss the extent to which local impli
+modular invari is exhibit
+am subject classif 81t40 46l37 primari 81t05 secondari
+introduct
+modular invari 2d conform qft and subfactor
+one of the great excit in conform qft wa the ade classif of modular
+invari coupl matric for the su2 current algebra 5 at each level k thi algebra
+ha onli a finit number of covari represent with posit energi superselect
+sector and the partit function for the conform hamiltonian in these sector span a
+linear represent of the modular group sl2 z act on the temperatur paramet
+a modular invari is a quadrat form describ by the coupl matrix z in thi space
+of partit function which is invari under the modular group and which is subject
+to a number of addit constraint these constraint are necessari for the modular
+invari be interpret as the partit function of a local 2d conform qft with
+a uniqu vacuum vector thi 2d conform qft contain the su2 current algebra
+both as left and right chiral subalgebra
+the fact that su2 modular invari can be classifi accord to an ade scheme
+ha rais the interest of mathematician both for it arithmet appeal and for it relationship to sever other classif problem for an overview see 27 as a physicist
+contribut to mathemat physic in mathemat and physic siena june 2025 2000
+1
+kh rehren local and modular invari
+2
+i want to focu on the quantum field theoret aspect of thi classif problem i
+also want to consid it from a broader perspect name as a statement about the
+possibl posit of the embed of two left and right chiral subtheori al and ar
+into a local 2d conform quantum field theori b the case of su2 is then just a veri
+special one and an exact ade classif cannot be expect to prevail in gener
+from thi perspect the classif problem is to find all local 2d conform
+qft which extend the given chiral subtheori al and ar these extens are also
+though not complet character by a coupl matrix z the nontrivi requir
+here which impos constraint on z is local while modular invari is a secondari
+featur
+final there is a third aspect of modular invari which is of interest for the classif of subfactor the embed of chiral subtheori into a local 2d conform
+qft give rise to local subfactor of the form ac b which are call canon tensor
+product subfactor 22 the specif mean of canon will be explain below and
+is again relat to the exist of a coupl matrix such subfactor also aris eg
+as gener quantum doubl or as asymptot subfactor a gener classif is
+not avail but sever result on canon tensor product subfactor will be report
+which have direct implic with regard to the modular and local qft classif
+problem
+i emphas that in the local perspect modular invari is an addit requir which is often impos on the 2d conform qft by string theori demand in
+fact it is not independ from the requir of local sever result below show
+that 2d local almost impli modular invari but not quit sinc there are easi
+exampl of local 2d extens with a coupl matrix which is not modular invari
+on the other hand among the modular invari coupl matric for affin lie algebra
+of higher rank there are some accident one which do not come from ani local 2d
+conform qft eg 25
+in order to further clarifi the relat between local and modular invari we
+recal the notion of statist charact introduc in 20 which directli deriv from
+local it provid a pair of matric x and y defin in term of the statist of a system
+of superselect sector sect 3 x is the diagon matrix of the statist phase while
+y collect the valu of the rel monodromi oper in a natur tracial state
+unless there is some degeneraci in the statist these matric yield anoth unitari
+represent of the modular group sl2 z statist represent prop 33 a
+priori thi represent is not relat to modular transform of the temperatur
+paramet of the partit function for these sector note also that partit function
+need not even exist a priori as gibb function but at least for affin lie algebra and
+certain relat algebra both represent of the modular group exist and coincid
+the counter exampl mention abov local 2d conform qft but not modular
+invari are due to the possibl noncoincid of the two represent in mani
+case even if thermodynam modular invari fail the analog invari properti
+with respect to the matric x and y still hold true i propos to call thi invari
+properti degener or nondegener statist symmetri def 34 nondegener
+3
+kh rehren local and modular invari
+statist symmetri is equival to modular invari with respect to the statist
+represent prop 35 use criteria for statist symmetri will be provid eg
+the maxim chiral observ within the 2d theori alway have it but there are also
+exampl of local 2d theori which satisfi not even statist symmetri cf sect 3
+i shall not discuss the character of solut to the variou classif problem in term of graph such as ade further detail on thi aspect can be found in
+3 19 27
+1
+the modular invari perspect
+one consid a ration chiral qft a and the finit system of it covari represent
+i with posit energi the most promin exampl for a are affin lie algebra
+current algebra the virasoro algebra with central charg c 1 or certain w algebra
+aris in coset construct one assum that the charact i for each of these
+represent exist as gibb function ie exp i l0 are trace class oper
+and that the charact transform linearli in a unitari represent of the sl2 z
+transform of the complex temperatur paramet i2 in the regim im 0
+and further paramet if necessari thi assumpt is fulfil for all the exampl
+mention 11
+the unitari matrix repres for the gener transform 1
+and 1 are commonli call t and s respect the squar of the latter
+transform is a central involut in sl2 z and uniti in p sl2 z henc c s 2
+commut with s and t and c 2 1l the sl2 z relat are thu
+t st st s
+ct t c
+cs sc s 1
+11
+one look for modular invari quadrat form of the form
+z
+zij i j
+12
+ij
+with a coupl matrix z satisfi
+t z zt
+and sz zs
+modular invari
+13
+in addit one postul that the matrix entri zij are nonneg integ and z00
+1 the label 0 is alway reserv for the vacuum sector these are necessari condit
+0
+1
+if one want to interpret z as a partit function tr exprepconf
+iimpconf
+where pconf are the conform hamiltonian and momentum of a 2d conform qft with
+a uniqu vacuum vector zij then is the multipl of the product of chiral sector i j
+within the vacuum represent of the 2d theori one consid
+the modular classif problem find all coupl matric z with nonneg integ entri and z00 1 which commut with the given pair of matric s and
+t and find out and discard the accident one which do not correspond to a local 2d
+theori see abov
+kh rehren local and modular invari
+4
+one find sever type of solut which come in pair becaus with z also zc cz
+is a solut there is alway the diagon solut z
+i i i along with the
+conjug diagon solut z i i i all solut share the block form
+z
+i i
+14
+i
+where the extend charact i i nii i unit certain famili i of sector and
+is some permut of the famili among these there are the orbifold solut where
+sector i and j belong to the same famili if and onli if they differ by a simpl sector with
+respect to fusion belong to some group of simpl sector solut with the ident
+permut are call type i those with a nontrivi permut are call type ii
+for the su2 affin lie algebra it turn out that for all modular invari the
+nonvanish diagon entri zii 0 can be identifi with the coxet expon of a
+dynkin diagram of type a d or e 5 the an diagram correspond to the diagon type i
+invari dodd to permut and deven to orbifold invari respect e6 and e8
+correspond to the except type i and e7 to the except type ii invari these
+ade invari exhaust all modular invari for su2 there are similar classif
+for su3 but an exact match with dynkin diagram cannot be achiev 8
+2
+the local qft perspect
+we consid
+the local classif problem find all local 2d conform qft which irreduc extend the given pair of chiral theori a al ar
+al ar b
+21
+to formal the problem i adopt the algebra framework of qft thu a qft
+is given by a net of local von neumann algebra factor say ai with i a light ray
+interv or bo with o a 2d doublecon subject to standard axiom includ essenti
+haag dualiti an inclus like 21 is thu alway understood as the collect of local
+subfactor al i ar j bo for all o i j
+there is no a priori reason from the local qft perspect whi the left and right
+chiral subtheori al and ar of a 2d conform qft b should be isomorph pariti
+symmetr i prefer to includ the heterot nonsymmetr case in my discuss
+from the begin
+the left and right chiral observ within the 2d conform theori b must commut
+with the respect opposit mobiu group it ha been shown 21 that all 2d observ
+which are invari under the right mobiu group inde defin a chiral subtheori refer to as the maxim left chiral observ amax
+l these contain the given subtheori
+of left chiral observ al and one ha the intermedi inclus
+al ar amax
+amax
+b
+l
+r
+22
+kh rehren local and modular invari
+5
+anticip result below one find that the maxim chiral observ coincid
+with the extend observ in the modular invari context 16 with respect to
+which the coupl matrix turn into a permut matrix thu give rise to the block
+form 14 thi fact is due in view of prop 41 below to the follow equival
+character of the maxim chiral observ 21
+proposit 21 21 let b be a local 2d conform qft and al ar chiral subtheori
+whose observ gener the left and right mobiu group respect for ani doublecon region of conform 2d minkowski space o i j in light ray coordin one
+ha
+al i amax
+23
+l i bo ugr bo ar j
+max
+the correspond stament hold for r l in particular amax
+l i and ar j are
+each other rel commut in bo
+the subalgebra of left and right chiral observ form an algebra tensor product
+and at least in the cyclic subspac of the vacuum they are also repres as a tensor
+product 21 it is expect that the tensor product is spatial in the full represent of
+the 2d theori and we shall assum thi in the sequel
+thi mean that the vacuum represent of b as a represent of the subalgebra
+al ar decompos into irreduc accord to the scheme
+zij il jr
+24
+ij
+the coupl matrix z appear in thi decomposit serv as a first though not
+complet character of the extens again z ha nonneg integ entri
+and z00 1 becaus of the uniqu of the vacuum vector but the label i and j may
+run over differ set the sector of al and of ar and z may be rectangular although
+a priori the direct sum might be countabl or even uncount infinit we shall assum
+it to be finit throughout
+it follow that the thermodynam partit function of the 2d conform qft if
+it exist is of the most gener form in term of chiral gibb function
+zij li r
+j
+z
+25
+ij
+with the same coupl matrix z as in the decomposit 24 the notion of coupl matrix thu coincid in the modular and in the local interpret i emphas
+howev that coupl matric associ with local 2d extens are not necessarili
+modular invari thi issu will be discuss in sect 3
+due to the intermedi inclus 22 the coupl matrix is a product
+z blt z max br
+26
+where z max is the coupl matrix with respect to the maxim left and right chiral
+observ and the branch matric bl and br describ the irreduc decomposit
+6
+kh rehren local and modular invari
+of the chiral superselect sector imax of amax upon restrict to a amax the
+restrict represent imax a
+bii i play a role like the famili of sector in eq
+14 thi analog will also be exhibit in sect 3
+the question aris by which data of the chiral subtheori apart from the coupl
+matrix their local 2d extens can be character it should be stress that the
+coupl matrix will in gener not determin the local extens up to equival although it happen to do so in model with few sector an answer ha been given in
+14 for the more gener problem of character local extens b of a qft a in ani
+dimens
+the local extens b of a quantum field theori a is character by it canon
+dhr tripl w w1 assum the index of the local subfactor ao bo to
+be finit 14 here is the dhr endomorph 6 of a which describ the vacuum
+represent of b as a reduc represent of a and the isometr intertwin
+w ida w1 2 in a satisfi the ident of a qsystem 13
+1
+w w1 w w1 2 1la
+w1 w1 w1 w1
+w1 w1 w1 w1
+27
+and the eigenvalu condit for the statist oper 6 2 a
+w1 w1
+28
+the signific of the oper ident 27 and 28 ha been explain in 23
+the sector of describ the dhr charg 6 with respect to the subtheori a which
+appear in the vacuum represent of b the isometri w singl out the vacuum
+charg zero sector within and w1 is a gener function for the collect of
+3jsymbol amplitud of 3point function of charg carri field the ident
+27 reflect the condit that the correspond linear combin of local vertex
+oper charg field bundl element 7 form a algebra the eigenvalu condit
+28 express the condit that these combin which constitut the field of b
+commut at spacelik distanc
+the extens b is recov from the canon dhr tripl as follow 14 if is
+local in some spacetim doublecon o0 then it restrict to an endomorph of
+the correspond local algebra 0 endao0 and 0 w w1 is a qsystem which
+determin the local algebra bo0 extend ao0 with the help of unitari charg
+transport for the local qsystem 0 w w1 can be move to everi poincar or
+mobiu transform doublecon o go0 give rise to a coher net of algebra
+bo extend ao these satisfi local commut thank to 28
+we conclud that local extens of local qft are complet character by
+canon dhr tripl that is solut w w1 to 27 and 28 within the categori of
+dhr endomorph and their intertwin for ration qft these oper ident
+constitut a finit system of nonlinear algebra equat which may serv as the basi
+of the present classif problem
+kh rehren local and modular invari
+7
+in the 2d case of our interest a al ar is a tensor product and so is it dhr
+categori the endomorph enter the problem is given by eq 24
+zij il jr
+29
+ij
+it specif is equival to the specif of the coupl matrix thu the local
+classif problem is equival to
+the local classif problem algebra version find all canon dhr
+tripl for the given pair of chiral theori a al ar with of the form 29
+the local classif problem involv the determin of all admiss coupl
+matric as wa mention befor and will be discuss in more detail in the next section
+these do not coincid with the modular invari coupl matric nevertheless the
+question aris whether for ani given modular invari an associ local 2d conform
+qft exist and whether thi will be uniqu we therefor address also
+the exist and uniqu problem for local 2d conform qft decid
+whether a given coupl matrix z for al ar modular invari or not aris as the
+coupl matrix of a local 2d conform qft and whether the latter is uniqu
+there is no reason to expect that the uniqu problem will have a posit answer
+in gener it is well known that nonisomorph subfactor can have the same canon
+endomorph henc the same coupl matrix the eigenvalu condit 28 will
+presum not alter the situat veri much
+as for the exist problem some progress ha been made a standard solut of
+27 and 28 ha been given in 14 for the coupl matrix z c pertain to the
+pariti symmetr case al ar base on prop 42 below thi mean that conjug
+left and right chiral dhr charg can alway be combin to yield local 2d field the
+standard solut exist for ani close under fusion and conjug subsystem of dhr
+sector of a and thu yield truncat conjug diagon coupl matric which are
+typic not modular invari
+a more gener class of possibl heterot solut can be obtain from prop 43
+below for all su2 and mani other modular invari coupl matric
+3
+on the relat between modular invari and local
+it is appropri to discuss the distinct between the local and the modular classif
+problem
+first it is not complet understood in which sens the gibb partit function of
+ani chiral theori a should transform linearli under the modular group in gener when
+no kacpeterson formula 11 is avail higher rank current algebra alreadi exhibit
+pair of conjug sector with the same partit function and thi degeneraci ha to be
+lift by introduc addit thermodynam paramet on which the modular group
+can act the most gener result in thi direct is due to nahm 18 onli the subgroup
+gener by t act in gener which measur the spectrum of l0 modulo integ
+8
+kh rehren local and modular invari
+second one should not exclud heterot model with differ left and right chiral
+observ as such model might aris upon passag to extend chiral algebra 16
+even if one start with pariti symmetr model the left and right chiral algebra then
+might have differ modular transform matric and the requir of modular
+invari is no longer a commut properti but an intertwin properti
+tl z ztr
+and sl z zsr
+heterot modular invari
+31
+if we enlarg the framework accordingli the question aris to which extent modular
+invari of the coupl matrix of a local 2d extens is impli by the properti of
+a canon dhr tripl
+the intertwin properti for t is easili establish accord to the standard
+argument all wightman field affili with the local 2d theori b must be bose field
+henc should have integ differ between left and right chiral scale dimens in
+the algebra framework thi follow from the eigenvalu condit
+lemma 31 let w w1 be a canon dhr tripl in ani dimens and an
+irreduc subsector of then ha statist phase 1
+proof the statist paramet of 6
+r r r r
+can be comput insert the isometri r w1 w ida 2 and use 28 and 27
+yield
+w w1 w1 w w w1 w1w 1 1l d1 1l
+sinc the spectrum of the statist paramet determin the statist phase of the
+subsector 6 7 the claim follow
+qed
+corollari 32 in the 2d conform case with a al ar let be of the tensor
+product form l r then l and r have equal statist phase henc the coupl
+matrix intertwin the left and right diagon matric x of statist phase
+xl z zxr
+32
+proof spacelik separ in 2d mean posit left separ and neg right separ or vice versa henc the statist oper of is the tensor product of two
+opposit chiral statist oper and the statist phase of is the quotient of the
+chiral statist phase from thi the statement are obviou
+qed
+now the chiral statist phase are relat to the chiral scale dimens h by the
+spinstatist theorem 9 exp 2ih thu the matric t differ from the matric
+c
+x by an overal complex phase exp 2i 24
+depend on the chiral central charg 11
+it follow that the coupl matrix z intertwin tl and tr up to the quotient of these
+9
+kh rehren local and modular invari
+phase thu local alway impli invari under the modular transform t up
+to a phase which is trivial if the left and right central charg coincid modulo 24
+a statement of compar gener cannot be obtain for the full modular group
+eg the local 2d theori b al ar ha the coupl matrix zij i0 j0 which is
+definit not modular invari but we can obtain nontrivi gener result concern
+a symmetri which special to modular invari in favor case as thi symmetri
+doe not refer to gibb function but to statist i call it statist symmetri def
+34 we shall see that it is alway satisfi as a consequ of local for the maxim
+chiral observ
+thu rather than the thermodynam transform matric t and s we consid
+the statist phase matrix x the same as in cor 32 and the statist charact matrix
+y defin in 20 these matric can be written as
+i j
+xij xji i ij
+and
+yij yji
+nijk
+dk
+33
+k
+k
+where i j k run over all irreduc dhr sector of the model in the present case of the
+chiral observ al or ar or over ani close subsystem thereof i and di are the
+complex phase and the invers modulu of the statist paramet 6 7 of the sector i
+and nijk are the fusion rule for a nonexhaust system the matric x and y are
+truncat to those row and column of the full matric which correspond to
+proposit 33 20 the matric x and y satisfi the relat
+xy xy x z y
+cx xc
+cy y c y
+34
+where z i i d2i and c is the charg conjug matrix if y is invert a rescal
+of x and y yield unitari matric t stat and s stat which satisfi 11 and henc gener a
+represent statist represent of sl2 z turn into a modular categori
+17
+more specif in the nondegener case z2 equal the global index w
+stat
+2
+w 12 y t stat zz13 x
+i di of the system of sector and s
+it is expect that t stat t and s stat s whenev modular transform matric
+t and s exist independ in fact the first of these coincid is essenti the spinstatist theorem 9 which relat the statist phase determin t stat to the chiral
+scale dimens spin enter t the second one is at least empir true wherev
+it ha been test
+that y is inde invert provid is the system of all dhr sector wa recent
+shown 12 to follow from the split properti and is therefor true whenev the chiral
+gibb function tr exp i l0 exist for ani temperatur 1 0
+let us now turn to the question of statist symmetri
+definit 34 a local 2d extens satisfi statist symmetri if
+xl z zxr
+and
+1
+1
+yl z
+zyr
+l
+r
+statist symmetri
+35
+10
+kh rehren local and modular invari
+the factor l i zi0 dil and likewis r in the y relat are dictat by
+comparison of the 00 compon they equal the indic d0max a of the inclus
+max
+a amax becaus br j0 j0 and zi0
+i0 henc zi0 bl 0i
+proposit 35 if yl and yr are nondegener statist symmetri impli
+tlstat z ztrstat
+and slstat z zsrstat
+nondegener statist symmetri
+36
+ie the coupl matrix is a modular invari with respect to the left and right statist
+represent of sl2 z cf prop 33
+proof the claim is clearli true up to scalar factor eq 34 and 35 impli zl l
+zr r the complex phase and the modulu of thi equal impli that all scalar factor
+cancel incident 4 prop 31 impli that the left and right global indic wl wr
+and the inclus indic l r coincid separ
+qed
+cor 32 state that the x part of statist symmetri follow directli from the local
+condit on the 2d extens local also enter the proof of the y part but suitabl
+complet condit will be requir in addit cf cor 38
+in order to discuss the intertwin relat for y we recal from sect 2 the product
+form of the total coupl matrix
+z blt z max br
+26
+al ar amax
+amax
+b
+l
+r
+22
+due to the intermedi inclus
+here z max is the coupl matrix for the maxim observ and bl and br are the
+branch matric from prop 21 we know that the maxim chiral observ are
+each other rel commut and in fact are distingush by thi properti prop 41
+below will tell us that the set of sector of amax
+and amax
+contribut to the coupl
+l
+r
+max
+matrix 26 are both close under fusion and z
+is a permut matrix which induc
+an isomorph of the fusion rule and henc preserv the statist dimens sinc
+it also respect the statist phase cor 32 it intertwin the left and right statist
+charact y max as well in particular ylmax is invert if yrmax is and the coupl
+matrix intertwin the ensu left and right statist represent
+corollari 36 the coupl matrix of a local 2d conform qft with respect to it
+maxim chiral observ or equival everi coupl matrix which is a permut
+matrix satisfi
+ylmax z max z max yrmax
+37
+henc statist symmetri if in addit both the left and right chiral statist is nondegener then the coupl matrix is a modular invari with respect to the left and right
+statist represent of sl2 z
+kh rehren local and modular invari
+11
+in 2 condit were found that the branch matric intertwin the matric y and
+y max up to a numer factor thi impli that the total coupl matrix z blt z max br
+also interwin yl with yr ie z ha statist symmetri
+proposit 37 2 lemma 63 consid a local extens of chiral qft a amax
+with finit index if is a close system of dhr sector of a then it imag 0
+under ambichir induct is a close system of dhr sector of amax and the branch
+matrix b intertwin the matric y and y max associ with the system and 0
+1
+by y max b
+38
+ambichir induct is a map between close system of dhr endomorph
+base on induct the latter is the natur prescript to extend dhr endomorph of a subtheori to an ambient theori give rise to solitontyp sector in gener
+induct wa first consid by j robert 24 in a cohomolog problem and it
+relev for the local extens problem wa discuss in 14 it functori properti
+where first elabor by xu 26 and by bockenhau and evan 1 due to nontrivi
+monodromi there are in fact two prescript for induct and ambichir induct is the intersect of the two set of irreduc subsector obtain by appli both
+prescript to the element of
+an entri of the branch matrix b is by definit the multipl of an irreduc
+dhr sector of a in the restrict of an irreduc dhr sector of amax by reciproc which hold for local extens 1 thi multipl equal the multipl
+of the dhr sector of amax in the imag of the sector of a under either induct in
+particular everi dhr sector of amax belong to the ambichir imag of each sector of a
+contain in it restrict
+corollari 38 consid the local 2d extens b with coupl matric z and z max
+with respect to the chiral observ al ar and amax
+amax
+l
+r respect let x and
+max
+x x l r be the set of chiral dhr sector contribut to the respect coupl
+matric if x are both close system and max
+both coincid with the imag of x
+x
+under ambichir induct or equival with the preimag of x under restrict
+then the coupl matrix z satisfi statist symmetri
+follow from reciproc and
+proof the equival of the two condit on max
+x
+max
+the obviou fact that x is the imag of x under restrict accord to prop
+37 the branch matric intertwin the statist charact for the close system of
+sector x and 0 x while accord to cor 36 the permut matrix z max interand max
+twine the statist charact for the close system max
+l
+r thu under the
+state condit cor 36 and prop 37 show that the coupl matrix z blt z max br
+intertwin the statist charact for l and r with the state numer factor
+qed
+thi corollari is the strongest result one may expect for gener heterot theori as
+a gener of modular invari impli by 2d local howev the condit on
+kh rehren local and modular invari
+12
+the behavior of sector under induct and restrict in the corollari in order to appli
+the result of 2 are not alway satisfi
+simpl counter exampl of perfectli local 2d extens which violat the assumpt
+and conclus of cor 38 are given by
+al ar amax
+amax
+b
+l
+r
+39
+where the chiral inclus a amax have subfactor depth larger than 2 such as the
+conform embed su210 sp51 with partit function
+z max
+max
+0 3 0 3
+0
+0
+310
+onli those sector of a contribut to the coupl matrix which are contain in the
+vacuum sector of amax and these do not form a close system unless the depth is 2
+induct on these sector produc new dhr sector of amax which are not contain
+in the vacuum represent of b complet the system of chiral sector ensur the
+correct intertwin properti for the branch matric but the coupl matrix z max
+now be a biject between subsystem of the complet system no longer intertwin
+ylmax with yrmax for the complet system
+i do not see whether the coupl matrix satisfi ani sensibl intertwin properti
+weaker than statist symmetri in complet gener a possibl criterium to exclud
+model like the counter exampl 310 and hope to enforc the intertwin properti
+35 could be that the local 2d theori b doe not possess nontrivi superselect
+sector but i have no proof that thi condit inde ha the desir consequ
+thu we see that 2d local come close to impli the statist symmetri def
+34 which gener modular invari to gener heterot model and to model
+without proper modular transform law for the chiral gibb function but counter
+exampl are easili construct
+convers as mention in the introduct there are accident modular invari
+which do not admit a correspond local 2d extens of the chiral observ thu
+we conclud that modular invari and 2d local are intim relat while neither
+can impli the other without suitabl further input
+4
+canon tensor product subfactor
+solv the oper ident 27 within the dhr categori of the local net a is
+equival to find a qsystem 0 w w1 for the local factor ao0 such that 0
+endfin ao0 is the restrict of some dhr endomorph of a local in o0 the
+problem is thu of the type find all subfactor a1 of a factor a whose canon endomorph decompos into irreduc from a given system of sector of a in thi form
+it is mathemat wellpos with ani pure infinit factor a and ani given system of
+sector endfin a to impos also the eigenvalu condit 28 one ha to assum
+the system of sector to be braid
+there is no gener solut to thi problem but there are some partial result which
+relat to the specif tensor product structur we call a subfactor of the form a c b
+kh rehren local and modular invari
+13
+a canon tensor product subfactor ctp 22 if it dual canon endomorph
+endfin a c decompos into irreduc as
+zij i j
+41
+ij
+with i enda and j endc
+the embed al ar b of sect 3 share thi structur the coupl matrix z
+of a ctp is again in gener rectangular it ha nonneg integ entri and z00 1
+if and onli if the ctp is irreduc we shall consid
+the subfactor classif problem find all irreduc canon tensor product subfactor a c b with i and j in 41 belong to given system of sector
+of the given factor a and c respect
+we have seen in sect 2 that the left and right maxim chiral observ are each
+other rel commut within the 2d theori therefor the follow gener result
+formul in the broader framework of subfactor is of interest
+proposit 41 21 let a c b be a ctp with dual canon endomorph as
+in 41 then the follow are equival
+i 1l c is the rel commut of a 1l in b and vice versa thi properti is
+call normal
+ii z0j 0j and zi0 i0
+iii the sector i of a and the sector j of c contribut to 41 are both close
+under conjug and fusion there is a biject between them which preserv the
+fusion rule and the coupl matrix is the permut matrix for thi biject
+it is not clear whether everi ctp a c b ha an intermedi normal ctp
+a c b as in prop 41 presum thi is not the case in gener the result
+in 21 on the tensor product posit of chiral observ within a 2d conform qft
+howev ensur the exist of a uniqu normal intermedi subfactor correspond
+to the maxim observ
+al ar amax
+amax
+b
+l
+r
+22
+the proposit when appli to canon dhr tripl thu split the local classif problem into two independ part classif of chiral local extens
+a amax and classif of normal canon dhr tripl with z max an isomorph
+of the fusion rule of amax
+and amax
+l
+r
+the proposit also impli that the coupl matrix 26 for a local 2d extens is
+of block form 14 as for modular invari note that in the heterot case a distinct
+between type i and type ii is meaningless
+the ctp classif problem can again be formul algebra in term of qsystem for a c satisfi 27 with of the form 41 we cannot solv thi problem
+systemat but there are systemat prescript for the construct of qsystem
+for ctpss in thi way the follow prop 42 and 43 were obtain which are mainli
+relev for the associ exist problem
+14
+kh rehren local and modular invari
+proposit 42 14 let a be a pure infinit factor and endfin a a finit
+close system of irreduc endomorph with finit index then there is a subfactor
+a aopp b with dual canon endomorph
+opp
+42
+if the system is braid then the eigenvalu condit 28 is also satisfi
+the result ha been gener to factor of type ii and to infinit system by
+masuda 15 who also show that the result subfactor is isomorph to the asymptot
+subfactor associ with the inclus a a where is the direct sum of all
+i izumi ha shown how to comput the complet structur of these subfactor 10
+the coupl matrix in prop 42 is the diagon unit matrix for the system in chiral
+conform qft on the circl aopp aiopp is natur isomorph to ai ai
+and the latter is mobiu conjug to ai a under these identif the opposit
+opp of a dhr endomorph belong to the charg conjug sector
+9 henc in
+cqft eq 42 correspond to a canon dhr tripl for al ar with coupl matrix
+z c the charg conjug matrix
+appli to the exist problem for a given coupl matrix or modular invari
+the proposit thu state that the conjug diagon matrix z c alway correspond
+to a local 2d theori by choos irreduc subfactor a a 1 2 one obtain
+an abund of ctpss a1 aopp
+b with coupl matrix in block form as with type
+2
+i modular invari the correspond famili of sector of a cf sect 1 are the
+restrict of enddhr a to a
+the follow result is an import gener by which local 2d conform qft
+can be associ with numer other also type ii modular invari
+proposit 43 22 let a m 1 2 be two subfactor of finit index
+endfin a two finit close system of inequival irreduc endomorph for a
+pair of induct see below of put
+z dim hom m
+1 2
+43
+then there is a ctp a1 aopp
+b with dual canon endomorph
+2
+z opp
+44
+1 2
+an induct assign to each an endomorph endfin m in a functori manner extend ie a and intertwin between product of i are
+intertwin for product of i as well ie hom1 2 3 a hom1 2 3 m
+if furthermor the system are braid and the braid fulfil a natur condit with respect to hom m then the ctp also satifi the eigenvalu condit
+28
+kh rehren local and modular invari
+15
+let a1 a2 be local algebra of chiral observ 1 2 subsystem of their dhr
+endomorph and assum that the dual canon endomorph for the subfactor
+a m are also dhr endomorph these subfactor need not describ local chiral
+extens then induct cf sect 3 is applic to and the assumpt of
+prop 43 are fulfil with the two opposit prescript for induct it wa shown
+in 4 that the correspond coupl matrix 43 ha statist symmetri in fact
+mani thermodynam modular invari can be obtain thi way for these modular
+invari prop 43 thu prove the exist of an associ local 2d conform qft
+the statement of prop 43 is howev not restrict to induct and therefor
+produc a larger class of ctpss than appear in 2d conform qft on the other
+hand uniqu of the subfactor in prop 42 and 43 is not claim there may well be
+inequival ctpss with the same dual canon endomorph but with inequival
+qsystem
+conclus
+i have discuss the interrel between sever classif problem aris in mathemat and physic with variou applic and interpret modular invari
+local 2d conform qft and canon tensor product subfactor they all have some
+aspect in common notabl a coupl matrix but the specif requir impos
+on the coupl matrix depend on the perspect progress in ani of these classif
+problem will have a bear on the relat one
+acknowledg
+i thank j bockenhau s carpi and a ocneanu for numer discuss and j mund
+for a critic read of the manuscript
+refer
+1 bockenhau j evan de modular invari graph and induct for net of
+subfactor i commun math phi 197 361386 1998 ii ibid 200 57103 1999 and
+iii ibid 205 183229 1999
+2 bockenhau j evan de modular invari from subfactor type i coupl matric and intermedi subfactor mathoa9911239
+3 bockenhau j evan de modular invari from subfactor mathoa0006114
+4 bockenhau j evan de kawahigashi y on induct chiral gener and
+modular invari for subfactor commun math phi 208 429487 1999
+1
+5 cappelli a itzykson c zuber jb the ade classif of minim and a1
+conform invari theori commun math phi 113 126 1987
+6 doplich s haag r robert je local observ and particl statist i commun
+math phi 23 199230 1971 and ii ibid 35 4985 1974
+kh rehren local and modular invari
+16
+7 fredenhagen k rehren kh schroer b superselect sector with braid group statist and exchang algebra i commun math phi 125 201226 1989 and ii rev
+math phi si1 special issu 113157 1992
+8 gannon t the classif of su 3 modular invari revisit ann inst h poinc
+65 1556 1996
+9 guido d longo r the conform spin and statist theorem commun math phi
+181 1136 1996
+10 izumi m the structur of sector associ with the longorehren inclus i to
+appear in commun math phi and ii kyoto preprint 2000
+11 kac vg peterson dh infinitedimension lie algebra theta function and modular
+form adv math 53 125264 1984
+12 kawahigashi y longo r m
+uger m multiinterv subfactor and modular of represent in conform field theori mathoa9903104
+13 longo r a dualiti for hopf algebra and for subfactor i commun math phi 159
+133150 1994
+14 longo r rehren kh net of subfactor rev math phi 7 567597 1995
+15 masuda t an analogu of longo canon endomorph for bimodul theori and it
+applic to asymptot inclus int j math 8 249265 1997
+16 moor g seiberg n natur in conform field theori nucl phi b313 1640
+1989
+17 m
+uger m conform field theori and doplich robert reconstruct contribut to
+thi confer mathph0008027
+18 nahm w a proof of modular invari int j mod phi a6 28372845 1991
+19 ocneanu a contribut to thi confer
+20 rehren kh braid group statist and their superselect rule in the algebra
+theori of superselect sector d kastler ed world scientif singapor 1990 pp
+333355
+21 rehren kh chiral observ and modular invari commun math phi 208
+689712 2000
+22 rehren kh canon tensor product subfactor commun math phi 211 395406
+2000
+23 rehren kh stanev ya todorov it character invari for local extens
+of current algebra commun math phi 174 605633 1996
+24 robert je local cohomolog and superselect structur commun math phi 51
+107119 1976
+25 schelleken an yankielowicz s field identif fix point in the coset construct
+nucl phi b334 67102 1990
+26 xu f new braid endomorph from conform inclus commun math phi
+192 349403 1998
+27 zuber jb cft bcft ade and all that hepth0006151

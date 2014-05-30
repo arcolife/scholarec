@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Copy all plain text files to ../data/ 
+mkdir data
+cp */*.txt ./data/
+cp */*/*.txt ./data/

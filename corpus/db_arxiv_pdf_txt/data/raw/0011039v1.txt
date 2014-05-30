@@ -1,0 +1,2775 @@
+(Revised version)
+
+arXiv:math-ph/0011039v1 23 Nov 2000
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM: I.
+A MOSER-TRUDINGER INEQUALITY
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+Abstract. In this paper, we analyze solutions of the open Toda
+system and establish an optimal Moser-Trudinger type inequality
+for this system. Let Σ be a closed surface with area 1 and K =
+(aij )N ×N the Cartan matrix for SU (N + 1), i.e.,
+
+
+2 −1
+0 ··· ···
+0
+
+
+2 −1
+0
+·
+0 
+ −1
+
+
+ 0 −1
+2 −1 · · ·
+0 
+
+
+ ··· ··· ··· ··· ··· ··· .
+
+
+
+
+ 0 · · · · · · −1
+2 −1 
+0 ··· ···
+0 −1
+2
+We show that
+1
+2 i,j=1
+
+N
+
+N
+
+N
+
+ΦM (u) =
+
+aij (∇ui ∇uj +2Mi uj )−
+Σ
+
+i=1
+
+aij uj )
+
+exp(
+
+Mi log
+Σ
+
+j=1
+
+has a lower bound in (H 1 (Σ))N if and only if
+Mj ≤ 4π,
+
+for j = 1, 2, · · · , N.
+
+As a direct consequence, if Mj < 4π for j = 1, 2, · · · , N , ΦM has
+a minimizer u which satisfies
+−∆ui = Mi (
+
+exp(
+Σ
+
+exp(
+
+N
+j=1 aij uj )
+N
+j=1 aij uj )
+
+Date: Nov. 23, 2000.
+1
+
+− 1), for 1 ≤ i ≤ N.
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+2
+
+1. Introduction
+Let Σ be a closed surface with area 1. The Moser-Trudinger inequality is
+Σ
+
+|∇u|2 + 8π
+
+Σ
+
+u − 8π log
+
+Σ
+
+eu > −C, for any u ∈ H 1 (Σ),
+(1.1)
+
+for some constant C > 0. ((1.1) is a slightly weaker form of the original
+Moser-Trudinger inequality , see [41, 43, 25, 15, 38].) The inequality
+(1.1) has been extensively used in many mathematical and physical
+problems, for instance, in the problem of prescribing Gaussian curvature [7, 8, 11, 9], the mean field equation [5, 6, 31, 18, 42], the model of
+chemotaxis [46, 28] and the relativistic Abelian Chern-Simons model
+[27, 29, 4, 44, 16, 17, 19, 38], etc. In all such problems, the corresponding equation is similar to the Liouville equation
+eu
+− 1),
+(1.2)
+− ∆u = M0 (
+u
+Σe
+for some prescribed constant M0 > 0.
+The system-analog of (1.2) is the following system of equations
+− ∆ui = Mi (
+
+exp(
+Σ exp(
+
+n
+j=1 aij uj )
+n
+j=1 aij uj )
+
+− 1),
+
+1 ≤ i ≤ n,
+
+(1.3)
+
+for a coefficient matrix A = (aij )n×n . Here Mi > 0 ( i = 1, 2, · · · , n)
+are prescribed constants. When the coefficient matrix admits only
+nonnegative entries, there is a generalized Moser-Trudinger inequality
+obtained in [13, 45]
+Theorem 1.1. [13, 45] Let the coefficient matrix A be a positive definite matrix with nonnegative entries. If for any subset J ⊆ I :=
+{1, 2, · · · , n}
+Mj −
+
+ΛJ := 8π
+j∈J
+
+aij Mi Mj > 0,
+
+(1.4)
+
+i,j∈J
+
+then there is a constant C > 0 such that for any u = (u1 , u2 , · · · , un ) ∈
+(H 1(Σ))n
+1
+2
+
+aij (∇ui∇uj + 2Mi uj ) −
+i=1
+
+n
+
+n
+
+n
+
+Mi log
+i=1
+
+Ω
+
+exp(
+j=1
+
+aij uj ) ≥ −C.
+(1.5)
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+3
+
+In fact, the condition that A is positive definite can be removed by
+using another formulation of the functional JM , see [13, 45]. Theorem
+1.1 is sharp in the sense that if there is a subset J ⊆ I with ΛJ (M) < 0,
+then inf u∈(H 1 Σ))n JM (u) = −∞. When n = 1, the condition (1.4) is
+equivalent to a11 M1 < 8π. Therefore, it is natural to conjecture [45]
+that Theorem 1.1 holds if and only if
+ΛJ (M) ≥ 0, for any J ⊆ I.
+
+(1.6)
+
+In [45], a proof of this conjecture was sketched for a special, but interesting case.
+Theorem 1.2. Let A be a symmetric, positive definite row stochastic
+matrix, i.e.,
+n
+
+aij = 1 for any i ∈ I.
+
+aij ≥ 0 and
+
+(1.7)
+
+j=1
+
+Then there is a constant C > 0 such that
+JM (u) ≥ −C
+
+for any u ∈ (H 1 (Σ))n
+
+if and only if (1.6) holds.
+The “only if” part was first proved in [13] in a more general case. It is
+clear that in general, such an inequality cannot be true if the coefficient
+matrix A admits some negative entries. However, in many interesting
+systems arising in Physics and Differential Geometry, there are negative
+coefficients, for instance, in the Toda system and the relativistic and
+nonrelativistic non-Abelian Chern-Simons models [32, 20, 24, 26].
+In this paper, we want to generalize Theorem 1.2 to the Toda system.
+Let K denote the Cartan matrix for SU(N + 1), i.e.,
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
+−1
+0
+···
+0
+0
+
+−1
+2
+−1
+···
+···
+···
+
+0
+−1
+2
+···
+···
+···
+
+···
+0
+−1
+···
+−1
+0
+
+···
+0
+·
+0
+···
+0
+··· ···
+2 −1
+−1
+2
+
+
+
+
+
+
+
+
+.
+
+
+
+
+
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+4
+
+The open SU(N + 1) Toda system (or, 2-dimensional Toda lattice) is
+N
+
+aij euj , for i = 1, 2, · · · , N.
+
+− ∆ui =
+
+(1.8)
+
+j=1
+
+The popular interpretation of the (one-dimensional) Toda lattice is a
+Hamiltonian system which describes the motion of N particles moving
+in a straight line, with “exponential interaction”. The two-dimensional
+Toda system has a much closer relationship with differential geometry.
+It can be seen as the Frenet frame of holomorphic curves into CPN .
+For the Toda system and its geometric interpretation see, e.g.,[26] and
+references therein. See also [20].
+In this paper, we establish the following Moser-Trudinger type inequality for (1.8).
+Theorem 1.3. Let Σ be a closed surface with area 1 and A = K.
+Define a functional ΦN : (H 1 (Σ))N → R by
+ΦM (u) =
+
+1 N
+2 i,j=1
+
+N
+
+N
+Σ
+
+aij (∇ui ∇uj + 2Mi uj ) −
+
+Mi log
+i=1
+
+Σ
+
+aij uj ).
+
+exp(
+j=1
+
+Then, the functional has a lower bound if and only if
+Mj ≤ 4π,
+
+for j = 1, 2, · · · , N.
+
+(1.9)
+
+We remark that the condition (1.9) is equivalent to (1.6) in this
+case. Since the coefficient matrix K admits negative entries, we might
+encounter the problem that the maximum principle fails. This is the
+reason why we cannot classify all entire solutions of (1.8) with finite
+energy yet∗ (see Sections 2 and 7). Fortunately, when proving Theorem
+1.3 we can avoid this problem.
+We outline our main idea of the proof of Theorem 1.3 for N = 2. We
+first show that ΦM has a lower bound if Mj < 4π for j = 1, 2 (Theorem
+4.1). The idea is as follows. Let us define
+Λ = {M = (M1 , M2 ) ∈ R+ × R+ | inf ΦM > −∞}.
+From the ordinary Moser-Trudinger inequality (1.1), we know Λ = ∅.
+Theorem 4.1 now is equivalent to (0, 4π) × (0, 4π) ⊆ Λ. If it were false
+then there exists M 0 = (M10 , M20 ) such that M ǫ = (M10 −ǫ, M20 −ǫ) ∈ Λ,
+∗
+
+We are able to classify all such solutions now.
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+5
+
+but (M10 + ǫ, M20 + ǫ) ∈ Λ for any small ǫ > 0. It is easy to show
+that ΦM ǫ admits a minimizer uǫ = (uǫ1 , uǫ2 ) which satisfies (1.3) for
+M ǫ = (M10 − ǫ, M20 − ǫ). If uǫ blows up, there are three cases (see
+Section 4 below). For each case, after rescaling we obtain a “bubble”
+which is an entire solution of the Liouville equation (3.6) or the Toda
+system (1.8) with finite energy. A classification result of [12] for the
+Liouville equation and Corollary 2.6 below imply that in any case one
+of M10 and M20 is larger than or equal to 4π, a contradiction. However,
+uǫ may not blow up. Ding [14] introduced a trick to deal with such
+a problem in his study of the ordinary Moser-Trudinger inequality .
+Following his trick, we perturb the functional ΦM ǫ a little bit such that
+the resulting functional FM ǫ also admits a minimizer u˜ǫ which does
+blow up as ǫ → 0. u˜ǫ satisfies a similar system as (1.3) and has the
+same “bubble”. Then we are able to use the argument above to get a
+contradiction.
+To prove Theorem 1.3, we consider the sequence of minimizers uǫ =
+(uǫ1, uǫ2 ) of ΦM ǫ with M ǫ = M 0 − (ǫ, ǫ) = (4π − ǫ, 4π − ǫ) for small
+ǫ > 0. (The existence of the uǫ follows from Theorem 4.1.) uǫ satisfies
+a Toda type system. If uǫ converges u0 in H2 := H 1 × H 1 , then
+it is clear that inf u∈H2 ΦM 0 (u) = ΦM 0 (u0 ) > −∞. Hence, we may
+assume uǫ does not converge in H2 . Using the analysis developed in
+Sections 2 and 3, we know there are three possibilities: (a) |S1 |1 and
+S2 = ∅, (b) |S1 | = |S2 | = 1 and S1 = S2 and (c) |S1 | = |S2 | = 1
+and S1 ∩ S2 = ∅. Here Sj (j = 1, 2) is the blow-up set defined in
+Section 5 below and |S| is the number of points of the finite set S.
+We use a “local” Pohozaev identity to exclude case (b). This is the
+crucial point to avoid the aforementioned problem that the maximum
+principle fails, since the remaining cases are essentially scalar problems.
+In fact, we can reduce case (a) directly to the corresponding problem
+of one function-the ordinary Moser-Trudinger inequality. For case (b),
+we can apply the method developed in [15, 38] to give a lower bounded
+of ΦM 0 .
+We shall apply Theorem 1.3 in a forthcoming paper [30] to study the
+relativistic SU(N + 1) non-Abelian Chern-Simons model ([32, 34, 35,
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+6
+
+20]), which can be seen as a non-integrable perturbation of the integrable Toda system (1.8). For mathematical aspects of the relativistic
+non-Abelian Chern-Simons model, see [49, 47]† . We hope Theorem 1.3
+will become a powerful tool for studying problems arising from higher
+rank models, as the ordinary Moser-Trudinger inequality has become
+in the Abelian case.
+For simplicity we only give detailed proofs for the case N = 2. The
+proofs in case N > 2 are completely analogous and just require a more
+complicated notation. In Section 2, we analyze the solutions of (1.8)
+in R2 and obtain a relation between R2 eu1 and R2 eu2 for any entire
+solutions of (1.8). In Section 3, we analyze the convergence of solutions
+as in [3]. In Section 4, we first show ΦM has a lower bound if Mj < 4π
+for all j. Then we show that if ΦM has a lower bound, Mj ≤ 4π for all
+j. We prove Theorem 1.3 in Section 5.
+2. Analysis of the Toda system
+In this section, we consider the analysis of solutions of the following
+system
+
+
+
+− ∆u1 = 2eu1 − eu2 ,
+ −∆u2 = −eu1 + 2eu2 ,
+
+(2.1)
+
+which is equivalent to system (1.8) with N = 2. Similar results were
+obtained in [3, 12] for the Liouville equation and in [10, 13] for the
+Liouville type systems, see also [36].
+¯3 ) satisfy
+Lemma 2.1. Let u ∈ C 2 (B3 ) ∩ C 1 (B
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+−∆u1
+−∆u2
+uj (xj )
+uj
+
+=
+=
+=
+≤
+
+2eu1 − eu2
+−eu1 + 2eu2
+bj ,
+a0 ,
+
+in B3 ,
+in B3 ,
+for some xj ∈ B1 , j = 1, 2,
+in B3 , for j = 1, 2.
+
+Then there is a constant C = C(a0 , b1 , b2 ) such that
+min {u1 , u2} ≥ C.
+
+x∈B1
+†
+
+See also [40].
+
+(2.2)
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+7
+
+Proof. Let w = (w1 , w2 ) defined by
+1
+2π
+1
+w2 (x) =
+2π
+
+w1 (x) =
+
+B3
+
+B3
+
+log |x − y|(2eu1(y) − eu2 (y) )dy
+log |x − y|(2eu2(y) − eu1 (y) )dy
+
+Set u˜ = (˜
+u1 , u˜2 ) = u − w. Obviously,
+∆˜
+uj = 0 in B2 , for j = 1, 2
+
+(2.3)
+
+|wj |(x) ≤ c1 (a0 ), for y ∈ B2 .
+
+(2.4)
+
+and
+
+(2.4) and (2.2) imply that u˜j ≤ c2 (a0 ) and u˜j (xj ) ≥ c3 (bj ). Now from
+the Harnack inequality, we have
+min u˜j (x) ≥ −c(a0 , b1 , b2 ).
+
+x∈B1
+
+The Lemma follows from (2.4) and (2.5).
+
+(2.5)
+✷
+
+Lemma 2.2. There exists γ0 > 0 such that for any u ∈ C 2 (B2+ ) ∩
++
+C 1 (B 2 ) satisfying
+
+
+
+
+
+
+
+
+we have
+
+
+
+
+
+
+
+
+−∆u1
+−∆u2
+u1
+B2 e
+u2
+B2 e
+
+=
+=
+<
+<
+
+2eu1 − eu2
+−eu1 + 2eu2
+γ0 ,
+γ0 ,
+
+in B3 ,
+in B3 ,
+
+(2.6)
+
+max max{u1, u2 } ≤ C1 ,
+B 1/4
+
+for some positive constant C1 .
+, by the Brezis-Merle inequality [3] we have
+Proof. Choosing γ0 < 4π
+3
+that ∆uj Lp (j = 1, 2) is bounded for some p > 1. The Lemma follows
+from the standard elliptic estimates.
+✷
+Note that Lemma 2.2 is true for any γ0 < 4π, see Lemma 3.2 below.
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+8
+
+1
+1
+Proposition 2.3. Let u = (u1 , u2) ∈ Hloc
+(R2 ) × Hloc
+(R2 ) be a solution
+of (2.1) on R2 with
+
+R2
+
+eu1 < ∞ and
+
+R2
+
+eu2 < ∞.
+
+(2.7)
+
+Then u is smooth and satisfies
+max2 {u1 (x), u2 (x)} < ∞.
+x∈R
+
+Proof. Let
+wj =
+
+1
+2π
+
+R2
+
+(log |x − y| − log(|y| + 1))euj (y) dy
+
+and αj = R2 euj for j = 1, 2. Set u˜1 = u1 − 2w1 + w2 and u˜2 =
+u2 − 2w2 + w1 . Clearly ∆˜
+uj = 0 in R2 . By Lemma 2.4 below and
+Lemma 2.2, u˜j (j = 1, 2) is bounded from above. Thus, u˜ ≡ cj for
+some constants c1 and c2 . Now the Lemma follows from Lemma 2.5
+and (2.9) below.
+✷
+Using potential analysis as in [12], we have
+Lemma 2.4. For any small ǫ > 0, there is a constant cǫ > 0 such that
+− (αj + ǫ) log |x| − cǫ ≤ wj (x) ≤ −(αj − ǫ) log |x| + cǫ , for any x ∈ R2 .
+(2.8)
+Proof. See [12].
+
+✷
+
+Lemma 2.5. β1 := 2α1 − α2 > 4π and β2 := 2α2 − α1 > 4π.
+Proof.
+The previous Lemma implies that
+− (2α1 − α2 + ǫ) log |x| − cǫ ≤ 2w1(x) − w2 (x) ≤ −(2α1 − α2 − ǫ) log |x| + cǫ
+(2.9)
+Since u1 = 2w1 −w2 + c1 , from (2.9) and (2.8), we deduce that β1 > 4π.
+Similarly, we have β2 > 4π.
+✷
+Corollary 2.6. αj > 4π for j = 1, 2.
+✷
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+9
+
+Lemma 2.7. Let u be a solution of (2.1) and (2.7). We have,
+|uj −
+
+βj
+2π
+
+log(|x| + 1)| ≤ c,
+βj
+j
+= − 2π
+,
+limr→∞ r ∂u
+∂r
+∂uj
+limr→∞ ∂θ = 0,
+
+(2.10)
+
+where x = (r, θ).
+Proof. From above, we have
+1
+2π
+1
+=
+2π
+
+u1 =
+u2
+
+R2
+
+R2
+
+[log |x − y| − log(|y| + 1)](2eu1 (y) − eu2 (y) )dy + c1 ,
+[log |x − y| − log(|y| + 1)](2eu2 (y) − eu1 (y) )dy + c2 .
+
+The Lemma follows from potential analysis, see for instance [12].
+Now we are in the position to give a relation between
+Proposition 2.8. Let αj =
+
+R2
+
+✷
+
+eu1 and eu2 .
+
+euj for j = 1, 2. We have
+
+α12 + α22 − α1 α2 = 4π(α1 + α2 ).
+
+(2.11)
+
+Proof. From equation (2.1), we have the Pohozaev identities as follows:
+∂u1 2
+| −
+∂r
+∂BR
+∂u2 2
+−R
+| −
+(|
+∂r
+∂BR
+−R
+
+(|
+
+1
+|∇u1|2 ) = 2
+2
+1
+|∇u2|2 ) = 2
+2
+
+∂BR
+
+∂BR
+
+Reu1 − 4
+Reu2 − 4
+
+BR
+
+BR
+
+eu1 −
+eu2 −
+
+BR
+
+BR
+
+eu2 x∇u1 ,
+eu1 x∇u2
+
+and
+1 ∂u2
++ BR ∇u1 ∇u2 + BR x 2j=1 ∇(∇j u2 )∇j u1
+R ∂u
+∂n ∂n
+= − ∂BR Reu2 + 2 BR eu2 + 2 BR eu1 x∇u2 ,
+1 ∂u2
+− ∂BR R ∂u
++ BR ∇u1 ∇u2 + BR x 2j=1 ∇(∇j u1 )∇j u2
+∂n ∂n
+(2.12)
+= − ∂BR Reu1 + 2 BR eu1 + 2 BR eu2 x∇u1 .
+
+−
+
+∂BR
+
+¿From above, we get the Pohozaev identity for the Toda system (2.1)
+−2
+
+2
+j=1
+
+3 ∂BR R(eu1 + eu2 ) − 6 BR (eu1 + eu2 ) =
+1
+∂u1 ∂u2
+1
+2
+2
+∂BR R(|∂n uj | − 2 |∇uj | ) − 2 ∂BR R( ∂n ∂n − 2 ∇u1 ∇u2 ).
+(2.13)
+
+Applying Lemmas 2.5 and 2.7 in (2.13) and letting R → ∞, we get
+β12 + β22 + β1 β2 = 12π(β1 + β2 ),
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+10
+
+which is equivalent to (2.11). This proves the Lemma.
+
+✷
+
+Similar results for systems with non-negative entries were obtained
+in [10] and [13]. We conjecture that α1 = α2 = 8π. It is also very
+interesting to classify all solutions of (2.1) with finite energy R2 euj <
+∞ for j = 1, 2. When solutions have suitable decay near infinity such
+that they can be seen as functions on S2 , the classification was obtained
+by differential geometers and physicists, see [23, 20]. In fact, in this
+case, all solutions can been seen as minimal immersions from S2 to CP2
+which are deformations of the Veronese immersion by the action of the
+group P GL(3, C), see [23, 2, 48].
+3. Convergence of solutions
+In this section, we consider the convergence of solutions of the Toda
+system. We follow the method developed in [3], but we need to be
+careful with the use of the maximum principle, since the coefficient
+matrix has some negative entries.
+For simplicity, we only consider the system on the bounded domain
+Ω. We have
+Theorem 3.1. Let uk = (uk1 , uk2 ) be a sequence of solutions of the following system
+
+
+
+with
+
+k
+
+k
+
+−∆u1k = 2eu1 − eu2 + ψ1k ,
+ −∆uk = 2euk2 − euk1 + ψ k ,
+2
+2
+k
+
+Ω
+
+eu1 < C and
+
+on Ω,
+on Ω,
+
+k
+
+Ω
+
+eu2 < C
+
+(3.1)
+
+(3.2)
+
+and
+ψ1k
+
+Lp (Ω)
+
++ ψ2k
+
+Lp (Ω)
+
+≤ C,
+
+for some constant C > 0 and p > 1. Let
+Sj = {x ∈ Σ|there is a sequence y ǫ → x such that uǫj (y ǫ ) → +∞}.
+(3.3)
+Then, one of the following possibilities happens: (after taking subsequences)
+∞
+(1) uk is bounded in L∞
+loc (Ω) × Lloc (Ω).
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+11
+
+k
+(2) For some j ∈ {1, 2}, uki in L∞
+loc (Ω), but uj → −∞ uniformly on
+any compact subset of Ω for j = i.
+(3) For some i ∈ {1, 2}, Si = ∅, but Sj = ∅, for j = i. In this
+case, uki → −∞ on any compact subset of Ω\Si , and either, ukj is
+k
+bounded in L∞
+loc (Ω), or uj → −∞ on any compact subset of Ω.
+(4) S1 = ∅ and S2 = ∅. Moreover, ukj is either bounded or → −∞ on
+any compact subset of Ω\(S1 ∪ Σ2 ) for j = 1, 2.
+
+Proof. Here, for simplicity we only give a proof of the Theorem when
+ψ1k = ψ2k = 0.
+In view of (3.2), we may assume that there exist two nonnegative
+bounded measures µ1 and µ2 such that
+k
+
+euj ψ →
+
+ψdµj as k → ∞,
+
+for every smooth function ψ with support in Ω and j = 1, 2. A point
+x ∈ Ω is called a γ-regular point with respect to µj if there is a function
+ψ ∈ Cc (Ω) , 0 ≤ ψ ≤ 1, with ψ = 1 in a neighborhood of x such that
+Ω
+
+ψdµj < γ.
+
+We define
+Ωj (γ) = {x ∈ Ω | x is not a γ−regular point with respect to µj }.
+By definition and (3.2), it is clear that Ω1 (γ) and Ω2 (γ) are finite. And
+Ωj (γ) is independent of γ for small γ > 0, see below. We divide the
+proof into 3 steps.
+Step 1. For j = 1, 2, Sj = Ωj (γ) provided γ <
+
+4π
+.
+3
+
+First from Lemma 2.2, we know that for any point x ∈ Ω\(Ω1 (γ) ∪
+Ω2 (γ)), there is some r0 such that
++
+
+ukj is bounded in L∞ (Br0 (x)) for j = 1, 2.
+
+(3.4)
+
+Here u+ = max{u, 0}. The argument in [3] implies directly that
+S1 ∪ S2 = Ω1 (γ) ∪ Ω2 (γ).
+Hence, S1 and S2 are both finite. Let x0 ∈ S1 . Assume by contradiction
+k
+that x0 ∈ Ω1 . Thus, Bδ (x0 ) eu1 ≤ γ for any small constant δ > 0. Note
+
+12
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+k
+
+k
+
+k
+
+that −∆u1k = 2eu1 − eu2 ≤ 2eu1 . Define w : Bδ (x0 ) → R by
+
+
+
+k
+
+−∆w = 2eu1 ,
+
+w = uk1 ,
+
+in Bδ (x0 ),
+on ∂Bδ (x0 ).
+
+The maximum principle implies that uk1 ≤ w. Since S1 is finite, we
++
+may assume that uk1 is uniformly bounded in L∞ (∂Bδ (x0 )). In view
+k
+of Bδ (x0 ) eu1 ≤ γ < 4π
+, a result of Brezis and Merle [3] implies that
+3
++
++
+∞
+w ∈ L (B δ (x0 )), which in turn implies that uk1 ∈ L∞ (B δ (x0 )),
+2
+2
+a contradiction. Hence, S1 ⊂ Ω1 (γ). Ω1 (γ) ⊂ S1 follows from the
+argument in [3]. Similarly, we have S2 = Ω2 (γ).
+Step 2. S1 ∪ S2 = ∅ implies (1) and (2). S1 = ∅ and S2 = ∅ imply (4).
+S1 ∪ S2 = ∅ means that uǫ1 + and uǫ2 + are bounded in L∞
+loc (Ω). Thus,
+p
+uǫ2
+uǫ1
+e and e are bounded in Lloc (Ω) for any p > 1, which implies that
+µ1 , µ2 ∈ L1 (Ω) ∩ Lploc (Ω). Applying the Harnack inequality as in [3], we
+have (1) or (2). The second statement follows similarly.
+Step 3. S1 = ∅ and S2 = ∅ imply (3).
+We need the following lemma.
+Lemma 3.2. Lemma 2.2 is true for any γ0 < 4π.
+Proof. We use a blow-up argument to prove this Lemma. Assume by
+contradiction that Lemma 2.2 were false for some γ0 < 4π, i.e., there
+exists a sequence of solutions uk = (uk1 , uk2 ) of (2.7) with Ω euj ≤ γ0
+(j = 1, 2) for some γ0 < 4π such that
+max max{uk1 , uk2 } → ∞, as k → ∞.
+B 1/4
+
+Without loss of generality, we may assume that S1 = {x0 } and S2 ∩
+(B1/4 \{x0 }) = ∅. We may also assume that there exists a sequence of
+points {xk } ⊂ B1/4 such that
+uk1 (xk ) = max max{u1k , uk2 }.
+B 1/4
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+13
+
+Let mk = uk1 (xk ). Define u˜kj (x) = ukj (λk x + xk ) − mk for j = 1, 2 with
+1
+λk = e− 2 mk . Clearly, λk → 0 as k → ∞ and u˜k = (˜
+uk1 , u
+˜k2 ) satisfies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+−∆˜
+uk1
+−∆˜
+u2k
+u
+˜kj
+Ωk e
+u˜kj (x)
+
+=
+=
+≤
+≤
+
+k
+
+k
+
+2eu˜1 − eu˜2
+k
+k
+2eu˜2 − eu˜1
+γ0 , j = 1, 2,
+0 = u˜k1 (0),
+
+in Ωk
+in Ωk
+
+(3.5)
+
+where Ωk = λ−1
+k (B1/4 − xk ). Applying Lemma 2.1, Lemma 2.2 and
+(1)-(2) in Theorem 3.1, we have two possibilities:
+1
+1
+(i). u˜k converges to u0 = (u01 , u02 ) in Hloc
+(R2 ) × Hloc
+(R2 ) which satisfies the Toda system (2.1) in R2 . (In this case u˜k2 is bounded in
+2
+L∞
+loc (R ).)
+1
+(ii). u˜k1 converges to ξ0 in Hloc
+(R2 ) and u˜k2 tends to −∞ uniformly in
+any compact subset in R2 . Moreover, ξ0 satisfies
+
+− ∆ξ0 = 2eξ0
+
+(3.6)
+
+with
+R2
+
+eξ0 < ∞.
+
+In view of Corollary 2.6 and a classification result of (3.6) obtained
+k
+by Chen-Li [12], in these two cases limk→∞ Ω eu1 ≥ 4π, which is a
+contradiction. This proves the Lemma.
+✷
+Now we continue to prove Step 3. As in Step 2, we know that either
+(i) uk1 is bounded on any subset of Ω\S1 , or
+(ii) uk1 → −∞ on any subset of Ω\S1 .
+k
+
+In view of Lemma 3.2, (3) implies that Bδ (p) eu1 ≥ 4π for any p ∈ S1
+and any small δ > 0. Now we can follow the argument in [3] to exclude
+(i).
+✷
+Remark 3.3. We believe that in case (4) ukj → −∞ on any compact
+subset. ¿From the argument of Step 3, one can show this if S1 = S2 .
+In our application (the proof of Theorems 5.1 and 1.3), we can exclude
+case (4).
+Before we start to prove our main results, we remark that
+(1) ǫ → 0 always means some sequence ǫn > 0 such that ǫn → 0 as
+n → ∞.
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+14
+
+(2) C denotes a constant independent of ǫ, which may vary from line
+to line.
+(3) Any 2-dimensional surface (Σ, g) is locally conformally flat, i.e.,
+for any x ∈ Σ there is a neighborhood x ∈ U ⊂ Σ and a conformal
+factor ξ : U → R such that g|U = eξ (dx2 + dy 2) in local coordinates.
+Instead of considering the equation −∆g = f in U, we can consider
+−∆0 = eξ f in a domain of the Euclidean plane. Hence, wlog, we can
+assume ξ =0, i.e., U is a flat domain. In the following sections, we will
+assume that near a blow-up point there is a flat neighborhood.
+4. A Moser-Trudinger inequality for the SU(3) Toda
+system
+Let K be the Cartan matrix for SU(3), i.e.,
+
+
+
+
+2 −1
+K=
+.
+−1 2
+We have the following Moser-Trudinger inequality.
+Theorem 4.1. Let Σ be a closed surface with area 1 and A = K. For
+any M = (M1 , M2 ) ∈ (0, 4π) × (0, 4π), there is a constant C > 0 such
+that
+˜ M (v) = 1 {2|∇v1 |2 + 2|∇v2 |2 − 2∇v1 ∇v2 + 2(2M1 − M2 )v1 +
+Φ
+2 Σ
+
+2(2M2 − M1 )v2 } − M1 log e2v1 −v2 − M2 log e2v2 −v1
+(4.1)
+≥ −C,
+for any v ∈ H2 , or equivalently,
+ΦM (u) =
+
+1
+{|∇u1 |2
+3 Σ
+
++ |∇u2|2 + ∇u1 ∇u2 + 3M1 u1 + 3M2 u2 }
+−M1 log eu1 − M2 log eu2 ≥ −C,
+(4.2)
+
+for any u ∈ H2 .
+˜
+The equivalence between Φ(v)
+and Φ(u) can be seen easily from the
+following equation
+u1 = 2v1 − v2
+u2 = 2v2 − v1
+
+(4.3)
+
+Here we use the method of Ding [14] to prove Theorem 4.1. This
+method was introduced in his study of the ordinary Moser-Trudinger
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+15
+
+inequality and was applied in [45] to obtain a similar inequality for a
+system of functions.
+Proof. Set
+Λ = {(M1 , M2 ) ∈ R+ × R+ |ΦM is bounded from below on H2 }.
+Since A is positive definite, it is easy to see that Λ = ∅ from the ordinary
+Moser-Trudinger inequality [41, 43]. In fact, one can show easily that
+( 8π
+, 8π
+) ∈ Λ and ( 16π
++ ǫ, 16π
++ ǫ) ∈ Λ (ǫ > 0) from the ordinary Moser3
+3
+3
+3
+Trudinger inequality and the H¨older inequality. Clearly, Λ preserves a
+partial order of R+ × R+ , namely, if (M1 , M2 ) ∈ Λ, then (M1′ , M2′ ) ∈ Λ
+provided that M1′ ≤ M1 and M2′ ≤ M2 . The Theorem is equivalent to
+(0, 4π) × (0, 4π) ⊂ Λ.
+
+(4.4)
+
+Assume by contradiction that (4.4) is false. We may assume that there
+is a point
+M 0 = (M10 , M20 ) ∈ (0, 4π) × (0, 4π)
+
+(4.5)
+
+such that
+1. For any ǫ > 0, M 0 − ǫ = (M10 − ǫ, M20 − ǫ) ∈ Λ,
+2. For any ǫ > 0, M 0 + ǫ = (M10 + ǫ, M20 + ǫ) ∈ Λ.
+We first need several lemmas.
+Lemma 4.2. For any M with M1 < M10 and M2 < M20 , there exists a
+constant c > 0 such that
+ΦM (u) ≥ c−1 ( ∇u1
+
+2
+
++ ∇u2 2 ) − c, for any u ∈ H2 .
+(4.6)
+
+Moreover, ΦM admits a minimizer u = (u1 , u2).
+Proof. Choose a small number δ > 0 such that M1 (1 + δ) < M10 and
+M2 (1 + δ) < M20 . By the definition of M 0 , we know that (1 + δ)M =
+((1 + δ)M1 , (1 + δ)M2 ) ∈ Λ, i.e., there is a constant C > 0 such that
+Φ(1+δ)M (u) ≥ −C,
+
+for any u ∈ H2 .
+
+It follows that
+ΦM (u) =
+≥
+
+1
+δ
+2
+Φ
++ 3(1+δ)
+Ω (|∇u1 | +
+1+δ (1+δ)M
+δ
+(|∇u1|2 + |∇u2|2 ) − C.
+6(1+δ) Ω
+
+|∇u2|2 + ∇u1 ∇u2 )
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+16
+
+This inequality means that ΦM satisfies the coercivity condition. Now
+it is standard to show that ΦM admits a minimizer, for ΦM is weakly
+lower semi-continuous.
+✷
+Lemma 4.3. There exists a sequence uk ∈ H2 such that limk→∞ ∇uk 2 →
+∞ and
+ΦM 0 (uk )
+lim
+≤ 0,
+(4.7)
+k→∞ ∇uk 2
+where ∇u
+
+2
+
+= ∇u1
+
+2
+
++ ∇u2 2 .
+
+Proof. Assume by contradiction that for any sequence uk ∈ H2 with
+limk→∞ ∇uk 2 → ∞,
+ΦM 0 (uk )
+> δ > 0.
+lim
+k→∞ ∇uk 2
+Then we can show that ΦM 0 satisfies the coercivity condition,
+δ
+ΦM 0 (u) ≥ ∇u 2 + c, u ∈ H2 ,
+2
+for some constant c > 0, which implies that there is a small δ > 0 such
+that M 0 + δ ∈ Λ, a contradiction.
+✷
+Lemma 4.4. ([14]) For any two sequences ak and bk satisfying
+lim ak → +∞
+
+k→∞
+
+and
+
+bk
+≤ 0,
+k→∞ ak
+
+d0 = lim
+
+(4.8)
+
+there exists a smooth function F : [1, ∞) → [0, 12 ] satisfying
+|F ′ (t)| < 1/2 and |F ′ (t)| → 0 as t → ∞
+
+(4.9)
+
+F (ank ) − bnk → +∞ as k → ∞,
+
+(4.10)
+
+and
+
+for some subsequence {nk }.
+Proof. We give the proof for completeness, though it is rather elementary. If there is a subsequence bnk of bk with property that bkn ≤ 0, we
+can choose F (t) = log t. So we may assume that bk ≥ 0 and d0 = 0.
+Wlog, we assume more that abkk is non-increasing. Choose another sequence ck with
+bk
+ck
+→ 0 and
+→ 0.
+ak
+ck
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+17
+
+It is easy to find a non-increasing smooth function F : [0, ∞) → R with
+the property that
+F (ak ) = ck
+
+and
+
+F ′ (t) → 0 as t → ∞.
+
+Clearly, this function F satisfies all conditions of the Lemma.
+
+✷
+
+Applying Lemma 4.4 to sequences
+1
+ak =
+[|∇uk1 |2 + |∇uk2 |2 + ∇uk1 ∇uk2 ] and bk = ΦM 0 (uk ),
+3 Σ
+where uk is obtained in Lemma 4.3, we can find a function F satisfying
+(4.9) and (4.10). For any small ǫ ≥ 0, define a perturbed functional by
+1
+[|∇u1|2 + |∇u2|2 + ∇u1 ∇u2 ]),
+3 Σ
+where M 0 − ǫ = (M10 − ǫ, M20 − ǫ).
+Iǫ (u) = ΦM 0 −ǫ (u) − F (
+
+Lemma 4.5. Let βǫ = inf u∈H2 Iǫ (u). We have
+1. for ǫ > 0, the infimum βǫ > −∞, and it is achieved by uǫ ∈ H2
+satisfying
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ǫ
+
+(1 − F ′ (gǫ ))∆uǫ1 = −2(M10 − ǫ)eu1 − 2M10 − ǫ,
+ǫ
++(M20 − ǫ)eu2 + M20 − ǫ
+ǫ
+(1 − F ′ (gǫ ))∆uǫ2 = −2(M20 − ǫ)eu2 − 2M20 − ǫ
+ǫ
++(M10 − ǫ)eu1 + M10 − ǫ,
+
+(4.11)
+
+with
+
+ǫ
+
+R2
+
+eu1 =
+
+ǫ
+
+R2
+
+eu2 = 1.
+
+(4.12)
+
+where
+1
+(|∇uǫ1 |2 + |∇uǫ2 |2 + ∇uǫ1 · ∇u32 ).
+3
+2. for ǫ = 0, I0 has no lower bound, i.e.,
+gǫ =
+
+β0 = −∞.
+
+(4.13)
+
+Proof. 1. As in Lemma 4.2, we can show that Iǫ (ǫ > 0) satisfies the
+coercivity condition from the construction of F . It is also easy to check
+that Iǫ is weakly lower semicontinuous. Therefore, Iǫ has a minimizer
+which satisfies (4.11).
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+18
+
+2. From the construction of F , we have
+I0 (uk ) = ΦM 0 (uk ) − F ( ∇uk 2 ) = −(F (ak ) − bk ) → −∞,
+as k → ∞, where the sequence uk was obtained in Lemma 4.3.
+
+✷
+
+We now continue to prove Theorem 4.1 by considering the sequence
+u obtained in the previous Lemma.
+We claim that uǫ blows up, i.e.,
+ǫ
+
+max max{uǫ1 (x), uǫ2(x)} → +∞ as ǫ → 0.
+
+(4.14)
+
+x∈Σ
+
+Otherwise, we can show that uǫ converges to some u0 in H2 that is a
+minimizer of I0 . On the other hand, by Lemma 4.5, I0 has no minimizer,
+a contradiction.
+Let mǫ = maxx∈Σ max{uǫ1 (x), uǫ2 (x)} = max{uǫ1(xǫ ), uǫ2(xǫ )}. We
+have mǫ → ∞ as ǫ → 0. Define a new sequence v ǫ by
+1
+
+u˜ǫ1 = uǫ1 (e− 2 mǫ x + xǫ ) − mǫ
+
+and
+
+1
+
+u˜ǫ2 = uǫ2 (e− 2 mǫ x + xǫ ) − mǫ
+
+near a small, but fixed neighborhood U of x0 ∈ Σ, where x0 = lim xǫ .
+Here, we have abused a little bit the notation. (For simplicity, we
+consider U as a domain in R2 .) Clearly, u˜ǫ = (˜
+uǫ1 , u˜ǫ2) satisfies on
+1
+
+Uǫ = mǫ2 U(· − xǫ ) that
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ǫ
+
+1
+
+ǫ
+
+(1 − F ′ ( ∇uǫ 2 ))∆˜
+uǫ1 = −2(M10 − ǫ)eu˜1 + 2e− 2 m (M10 − ǫ)
+1 ǫ
+ǫ
++(M20 − ǫ)eu˜2 − e− 2 m (M20 − ǫ),
+1 ǫ
+ǫ
+(1 − F ′ ( ∇uǫ 2 ))∆˜
+uǫ2 = −2(M20 − ǫ)eu˜2 + e− 2 m (M20 − ǫ)
+(4.15)
+1 ǫ
+ǫ
++(M10 − ǫ)eu˜1 − e− 2 m (M10 − ǫ),
+
+Recall that ∇uǫ 2 → ∞ as ǫ → 0 and limt→∞ F ′ (t) = 0. By using the
+same argument as in the proof of Lemma 3.2, we have that one of M1
+and M2 is larger than or equal to 4π, which is a contradiction. This
+completes the proof of Theorem 4.1.
+✷
+Corollary 4.6. Let Σ be a closed surface with area 1. For any M =
+(M1 , M2 ) with M1 < 4π and M2 < 4π, ΦM admits a minimizer u =
+(u1, u2 ) which satisfies
+
+
+
+− ∆u1 = 2M1 (eu1 − 1) − M2 (eu2 − 1),
+ −∆u2
+= 2M2 (eu2 − 1) − M1 (eu1 − 1).
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+19
+
+Proof. Theorem 4.1 implies that ΦM not only has a lower bound but
+also satisfies the coercivity condition. Since ΦM is weakly lower semicontinuous, there is a minimizer that satisfies (4.6) which is the EulerLagrange equation of ΦM .
+✷
+To end this section, we observe that 4π is the best constant.
+Proposition 4.7. If one of Mi is greater that 4π, then ΦM has no
+lower bound in H2 .
+Proof. Wlog, assume that M1 > 4π and Σ contains a flat disk Bδ0 for
+a small constant δ0 > 0. Let
+uλ1
+uλ2
+We estimate
+
+
+
+
+2
+
+log (1+λ2λπ|x|2)2
+=
+λ2
+ log
+(1+λ2 π|δ0 |2 )2
+
+
+
+2
+
+in Bδ0
+in Σ\Bδ0
+
+− 21 log (1+λ2λπ|x|2 )2
+=
+λ2
+ − 1 log
+2
+(1+λ2 π|δ0 |2 )2
+|∇uλ1 |2
+|∇uλ2 |2
+∇uλ1 · ∇uλ2
+uλ1
+uλ2
+λ
+log eu1
+λ
+log eu2
+
+=
+=
+=
+=
+=
+=
+=
+
+in Bδ0 ,
+in Σ\Bδ0 .
+
+32π log λ + O(1),
+8π log λ + O(1),
+−16π log λ + O(1),
+−2 log λ + O(1),
+log λ + O(1),
+O(1),
+log λ + O(1),
+
+(4.16)
+
+which implies that
+ΦM (uλ ) = 2(4π − M1 ) log λ + O(1).
+The Proposition follows from the previous formula by letting λ → ∞.
+✷
+5. The optimal Moser-Trudinger inequality
+In this section, we prove Theorem 1.3 for N = 2. Let M 0 = (4π, 4π).
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+20
+
+Theorem 5.1. Let Σ be a closed surface with area 1. There is a constant C > 0 such that
+˜ M 0 (v) =
+Φ
+
+1
+{2|∇v1 |2
+2 Σ
+
++ 2|∇v2 |2 − 2∇v1 ∇v2 + 8πv1 +
+8πv2 } − 4π log e2v1 −v2 − 4π log e2v2 −v1
+(5.1)
+≥ −C,
+
+for any v ∈ H2 , or equivalently,
+ΦM 0 (u) =
+
+1
+{|∇u1 |2 +
+3 Σ
+u1
+
+|∇u2 |2 + ∇u1 ∇u2 + 12πu1 + 12πu2}
+− 4π log eu2 ≥ −C,
+(5.2)
+
+−4π log e
+for any u ∈ H2 .
+
+To prove Theorem 5.1, we only have to prove that there is a constant
+C > 0 independent of ǫ such that
+ΦM ǫ (u) ≥ −C,
+
+for any u ∈ H2 ,
+
+(5.3)
+
+where M ǫ = (4π − ǫ, 4π − ǫ) for small constant ǫ > 0.
+To show (5.3), first applying Corollary 4.6 we obtain a minimizer
+ǫ
+u = (uǫ1 , uǫ2 ) of ΦM ǫ with M ǫ = (4π − ǫ, 4π − ǫ). Recall that uǫ satisfies
+
+
+
+ǫ
+
+ǫ
+
+−∆uǫ1 = (8π − 2ǫ)eu1 − (4π − ǫ)eu2 − (4π − ǫ)
+ −∆uǫ = (8π − 2ǫ)euǫ2 − (4π − ǫ)eu1ǫ − (4π − ǫ),
+2
+
+(5.4)
+
+with
+ǫ
+
+Σ
+
+eu1 =
+
+ǫ
+
+Σ
+
+eu2 = 1.
+
+(5.5)
+
+Then, we will show that
+ΦM ǫ (uǫ ) ≥ −C,
+
+(5.6)
+
+for some constant C > 0. (5.6) is equivalent to (5.3). If uǫ is bounded
+from above uniformly, by using the analysis developed in Section 3
+we can show that uǫ converges (by taking subsequences) to u0 in H2
+strongly. This implies that inf u∈H2 ΦM 0 (u) = ΦM 0 (u0 ) > −∞, and
+hence (5.6). Hence, we assume that
+max{mǫ1 , mǫ2 } → +∞ as ǫ → 0.
+
+(5.7)
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+21
+
+where mǫj = max uǫj . Assume that mǫ1 ≥ mǫ2 . As in Section 3, we may
+assume that there exist two nonnegative bounded measures µ1 and µ2
+such that
+ǫ
+euj ψ → ψdµj as ǫ → 0,
+for every smooth function ψ : Σ → R and j = 1, 2. We define, for
+j = 1, 2 and small γ > 0,
+Sj = {x ∈ Σ|there is a sequence y ǫ → x such that uǫj (y ǫ ) → +∞}
+and
+Ωj (γ) = {x ∈ Ω | x is not a γ−regular point with respect to µj }.
+For the definition of γ-regular point, see Section 3 above. ¿From Section
+3, we know that
+Sj = Ωj (γ)
+
+and
+
+|Sj | < ∞ for j = 1, 2,
+
+(5.8)
+
+for any small γ > 0.
+Lemma 5.2. |S1 | = 1 and |S2 | ≤ 1.
+Proof. By (5.7), we have |S1 | ≥ 1. Let y ∈ S1 and choose δ > 0 so small
+that (Bδ (y)\{y}) ∩ (S1 ∪ S2 ) = ∅. One can use the blow-up argument
+as in the previous section to show that
+lim
+
+ǫ→0 Bδ (y)
+
+ǫ
+
+eu1 ≥ 1,
+
+which implies that S1 = {y} by (5.8), because of (5.4).
+Assume by contradiction that |S2 | ≥ 2. Then there exists z ∈ S2
+but z = y. Similarly, we can show that there is a small constant δ > 0
+satisfying (Bδ (z)\{z}) ∩ (S1 ∪ S2 ) = ∅ and
+lim
+
+ǫ→0 Bδ (z)
+
+ǫ
+
+eu2 ≥ 1.
+
+It follows, together with (5.5) that
+lim
+
+ǫ→0 Σ\Bδ (z)
+
+ǫ
+
+eu2 = 0.
+
+By (5.8), we have S2 = {z}, a contradiction.
+
+✷
+
+Proof of Theorem 5.1. In view of Lemma 5.2, there are three possibilities:
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+22
+
+(a). |S2 | = 0.
+(b). |S2 | = 1 and S1 = S2 ,
+(c). |S2 | = 1 and S1 ∩ S2 = ∅,
+We discuss the sequence uǫ case by case. We shall show that case
+(b) cannot occur, which is crucial to establish our Moser-Trudinger
+inequality. Case (a) is easy to handle, while case (c) is more delicate.
+Case (a). Reduction to the ordinary Moser-Trudinger inequality .
+Let S1 = {p}. In this case, by Theorem 3.1 and similar arguments
+given in the proof of Lemma 5.6 in case (c) below, we can show that
+2
+(a1). uǫ2 converges to G2 in H 1,q (Σ) (q ∈ (1, 2)) and in Cloc
+(Σ\{p}),
+where G2 satisfies
+
+−∆G2 = 8πeG2 − 4πδp − 4π
+with Σ eG2 = 1.
+2
+(a2). uǫ1 − u¯ǫ1 converges to G1 in H 1,q (Σ) (q ∈ (1, 2)) and in Cloc
+(Σ\{p}),
+where G1 satisfies
+−∆G1 = 8πδp − 4πeG2 − 4π
+with
+
+Σ
+
+G1 = 0.
+
+Furthermore, we have the following Lemma.
+Lemma 5.3. For any small ǫ > 0 there exists a function wǫ satisfying
+− ∆wǫ = 2(4π − ǫ)ehǫ ewǫ − 2(4π − ǫ) in Σ
+
+(5.9)
+
+such that
+(i). uǫ1 − wǫ and hǫ are bounded in C 1 (Σ),
+(ii). uǫ2 + 21 wǫ − 12 w¯ǫ is bounded in C 1 (Σ).
+Proof. For small ǫ > 0, let w
+˜ǫ be a function defined by
+
+
+
+ǫ
+
+−∆w˜ǫ = (4π − ǫ)eu2 − (4π − ǫ)
+
+˜ǫ = 0
+Σw
+
+Since uǫ2 is uniformly bounded from above, w˜ǫ is bounded in C 1 (Σ) by
+elliptic estimates. Let wǫ = uǫ1 + w˜ǫ . Clearly, wǫ satisfies (5.9) with
+hǫ = −w˜ǫ , which is bounded in C 1 (Σ). By definition, uǫ1 − wǫ = w˜ǫ .
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+23
+
+Thus uǫ1 − wǫ is also bounded in C 1 (Σ). In view of (5.9), the function
+uǫ2 + 12 wǫ − 2w˜ǫ is harmonic, thus
+1
+uǫ2 + wǫ − 2w˜ǫ = cǫ ,
+2
+for some constant cǫ . By (a1), u¯ǫ2 is uniformly bounded. Hence, cǫ − 12 w¯ǫ
+is bounded. This proves the Lemma.
+✷
+We now can reduce our problem to the ordinary Moser-Trudinger
+inequality . By Lemma 5.3, we have
+1
+3
+
+Σ
+
+(|∇uǫ1 |2 + |∇uǫ2 |2 + ∇uǫ1 ∇uǫ2 ) =
+
+1
+4
+
+Σ
+
+|∇wǫ |2 + O(1)
+
+and
+Σ
+
+(uǫ1 + uǫ2 ) =
+
+S
+
+wǫ + O(1).
+
+Thus,
+1
+(|∇wǫ |2 + 4(4π − ǫ)wǫ ) + O(1),
+4 Σ
+which has a lower bound due to the ordinary Moser-Trudinger inequality , see e.g. [25] or [15]. This completes the proof of Theorem 5.1 in
+case (a).
+✷
+ΦM ǫ (uǫ ) ≥
+
+Case (b). We show that case (b) does not happen.
+Let S1 = S2 = {p}. Wlog, we assume that Bδ (p) is a flat disk for
+ǫ
+small δ > 0. By Lemma 3.2, in this case, we have that limǫ→0 Bδ (p) eu1 =
+1 for any small δ > 0. By the argument in Step 3 in the proof of Theorem 3.1, we have that uǫ1 → −∞ (as ǫ → 0) on any compact subset
+of Σ\{p}. We also have either
+(i) uǫ2 → −∞ (as ǫ → 0) on any compact subset of Σ\{p}, or
+(ii) uǫ2 is uniformly bounded on any compact subset of Σ\{p}.
+We first consider case (i). In this case, the same argument given in
+the proof of Lemma 5.6 implies
+Lemma 5.4. For any q ∈ (1, 2) and j = 1, 2
+uǫj − u¯ǫj converges to Gp in H 1,q (Σ),
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+24
+
+where Gp satisfies
+−∆Gp = 4πδp − 4π, in Σ,
+Σ Gp = 0
+
+(5.10)
+
+2
+Moreover, uǫj − u¯ǫj converges to Gp in Cloc
+(Σ\{p}).
+
+By this Lemma, we know that for any small, but fixed number r > 0,
+we have
+uǫj − u¯ǫj − Gp → 0, in C 1 (∂Br (p)),
+
+(5.11)
+
+as ǫ → 0. For any small δ > 0, there exist ǫ0 > 0 and r0 > 0 such that
+for any ǫ < ǫ0 and r < r0
+ǫ
+
+Br (p)
+
+euj > 1 − δ.
+
+(5.12)
+
+As in Proposition 2.8, we have the following Pohozaev identity for (5.1)
+6(4π − ǫ)
+
+u1
+Br (e
+
+∂uǫ
+
++ eu2 ) = 2 2j=1 ∂Br r(| ∂nj |2 − 21 |∇uǫj |2 )
+∂uǫ ∂uǫ
++2 ∂Br r( ∂n1 ∂n2 − 12 ∇uǫ1 ∇uǫ2 )
++3(4π − ǫ) ∂Br r(eu1 + eu2 ). (5.13)
+
+It is clear that, letting ǫ → 0, the left hand side of (5.13) tends to a
+number 48π(1 − δ), while the right hand side of (5.13) tends to
+4
+
+∂Br
+
+r(| ∂G
+|2 − 12 |∇G|2 ) + 2 ∂Br r(| ∂G
+|2 − 12 |∇G|2 )
+∂n
+∂n
+|2 ,
+= 3 ∂Br r| ∂G
+∂r
+
+which tends to 24π as r → 0, a contradiction. Hence, case (i) does not
+happen.
+Now we consider case (ii), i.e., uǫ2 is bounded on any compact subset
+of Σ\{p}. Let
+σ2 = lim lim
+
+δ→0 ǫ→0 Bδ (p)
+
+ǫ
+
+eu2 .
+
+Since p ∈ S2 = Ω2 (δ) for small δ > 0, we have that 0 < σ2 < 1. As in
+the proof of (i), we first have
+Lemma 5.5. There exists a function w ∈ C 2 (Σ) with
+such that
+
+Σ
+
+ew = 1 − σ2
+
+2
+1. uǫ1 −¯
+uǫ1 converges to G1 in H 1,q (Σ)∩Cloc
+(Σ\{p}), where G1 satisfies
+
+−∆G1 = 4π(2 − σ2 )πδp − 4πew − 4π and
+
+Σ
+
+G1 = 0.
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+25
+
+2
+2. uǫ2 − u¯ǫ2 converges to w + G2 in H 1,q (Σ) ∩ Cloc
+(Σ\{p}), where G2
+satisfies
+
+−∆G2 = 8πew + 4π(σ2 − 1)δp − 4π and
+
+Σ
+
+(G2 + w) = 0.
+
+Then, we apply (5.13) again to get a contradiction. In fact, we can
+show that in this case its left hand tends to 24π(1 + σ2 ) while its right
+hand tends 24π(σ22 − σ2 + 1), which is impossible if 0 < σ2 < 1. This
+implies that case (ii), hence case (b), does not happen either.
+Such an argument, using a“local” Pohozaev identity, was used in [46]
+and [50] for studying the blow up of Liouville type equations.
+Case (c). This case is more delicate.
+Set S1 = {p1 } and S2 = {p2 }. Note that p1 = p2 . In view of Theorem
+3.1 and the blow-up argument given above, uǫj (j = 1, 2) tends to −∞
+uniformly on any compact subset of Σ\{p1 , p2 }. We first show the
+following lemma.
+Lemma 5.6. Let u¯ǫj be the average of uǫj (j = 1, 2). For any q ∈ (1, 2),
+we have
+uǫj − u¯ǫj converges to Gj in H 1,q (Σ),
+where G1 and G2 satisfy
+
+
+
+
+
+−∆G1 = 8πδp1 − 4πδp2 − 4π,
+−∆G2 = 8πδp2 − 4πδp1 − 4π,
+
+
+
+= 0, for j = 1, 2
+Σ Gj
+
+(5.14)
+
+where δy is the Dirac distribution. Moreover,
+
+2
+uǫj − u¯ǫj converges to Gj in Cloc
+(Σ\{p1 , p2 }).
+
+(5.15)
+
+Proof. First we show that for any q ∈ (1, 2),
+Σ
+
+(|∇uǫ1|q + |∇uǫ2 |q ) is bounded.
+
+Let q ′ > 2 be determined by
+∇uǫ1
+
+Lq
+
+≤ sup{|
+
+1
+q′
+
++
+
+1
+q
+
+= 1. By definition, we know
+′
+
+Σ
+
+(5.16)
+
+∇uǫ1 · ∇φ| |φ ∈ H 1,q (Σ),
+
+Σ
+
+φ=0& φ
+
+H 1,q′
+
+= 1}.
+(5.17)
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+26
+
+The Sobolev embedding theorem implies that for any φ with φ
+1,
+φ
+
+L∞
+
+Lq′
+
+=
+
+< c,
+
+for some constant c > 0. Hence,
+|
+
+Σ
+
+∇uǫ1 · ∇φ| = | Σ φ∆uǫ1 |
+ǫ
+ǫ
+≤ c Σ {(8π − ǫ)eu1 + (4π − ǫ)eu2 + (4π − ǫ)}
+(5.18)
+≤ c1 .
+
+It follows that ∇uǫ1 Lq ≤ c1 . Similarly, we have ∇uǫ2
+proves (5.16).
+By Theorem 3.1 and Remark 3.3, we can show that
+ǫ
+
+eu1 → δp1
+
+and
+
+ǫ
+
+eu2 → δp2
+
+Lq
+
+≤ c2 . This
+
+(5.19)
+
+in the sense of measures as ǫ → 0. Like (5.18), we have
+|
+
+ǫ
+
+Σ
+
+∇(uǫ1 − u¯ǫ1 − G1 )∇φ| ≤ c Σ |(8π − 2ǫ)eu1 − 8πδp1 |
+ǫ
++c Σ |(4π − ǫ)eu1 − 4πδp2 | + O(ǫ)
+(5.20)
+≤ O(ǫ).
+
+Therefore, we have
+∇(uǫ1 − u¯ǫ1 − G1 )
+
+Lq
+
+→ 0 as ǫ → 0.
+
+It follows that uǫ1 − u¯ǫ1 − G1 Lq → 0 as ǫ → 0. Hence, we have
+uǫ1 − u¯1ǫ → G1 in H 1,q (Σ). Similarly, uǫ2 − u¯ǫ2 → G2 in H 1,q (Σ). Now it
+is easy to show (5.15). This proves the Lemma.
+✷
+Let γ be a smooth closed curve on Σ with the properties that Σ/γ
+consists of two disjoint component Σ1 and Σ2 and p1 ∈ Σ1 and p2 ∈ Σ2 .
+Now we consider our system in Σ1 first. As above, we set
+1
+v1ǫ = (2uǫ1 + uǫ2 ) and
+3
+
+1
+v2ǫ = (2uǫ2 + uǫ1 ).
+3
+
+Clearly, (v1ǫ , v2ǫ ) satisfies
+
+
+
+ǫ
+
+−∆v1ǫ = (4π − ǫ)eu1 − (4π − ǫ),
+ −∆v ǫ = (4π − ǫ)euǫ2 − (4π − ǫ).
+2
+uǫ2 + u¯ǫ1 ) is bounded in C 1 (Σ1 ).
+Lemma 5.7. v2ǫ − 21 (2¯
+
+(5.21)
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+27
+
+Proof. Define a function v˜2ǫ satisfying
+
+
+
+ǫ
+
+v˜2ǫ = (4π − ǫ)eu2 − (4π − ǫ),
+ v
+˜2ǫ = 0,
+
+in Σ1
+on γ.
+
+Since uǫ2 is bounded from above in Σ1 , v˜2ǫ is bounded in C 1 (Σ1 ). Now
+uǫ2 + u¯ǫ1 ) is also bounded in C 1 (Σ1 ).
+it is easy to see that v2ǫ − v˜2ǫ − 13 (2¯
+Hence the Lemma follows.
+✷
+¿From Lemma 5.7, we have
+1
+(|∇uǫ1|2 + |∇uǫ2|2 + ∇uǫ1 · ∇u2ǫ ) + (4π − ǫ) Σ1 (uǫ1 + uǫ2 )
+3 Σ1
+1
+|∇uǫ1 |2 + 21 (4π − ǫ) Σ1 uǫ1 + 12 (4π − ǫ)(2¯
+uǫ2 + u¯ǫ1 )|Σ1 | + O(1)
+4 Σ1
+1
+(5.22)
+|∇uǫ1 |2 + (4π − ǫ)(¯
+uǫ2 + u¯ǫ1 )|Σ1 | + O(1),
+4 Σ1
+
+=
+=
+
+where we have used the fact that Σ1 uǫ1 − u¯ǫ1 is bounded, which was
+implied by Lemma 5.3. Here |Σ1 | is the area of Σ1 . Similarly, we can
+get
+=
+
+1
+(|∇uǫ1 |2 + |∇uǫ2 |2 + ∇u2ǫ · ∇uǫ2 ) + (4π −
+3 Σ2
+1
+|∇uǫ2 |2 + (4π − ǫ)(¯
+uǫ2 + u¯ǫ1 )|Σ2 | + O(1).
+4 Σ2
+
+ǫ)
+
+ǫ
+Σ1 (u1
+
++ uǫ2 )
+(5.23)
+
+Hence, to prove Theorem 5.1 in this case, we only need to show the
+following
+Lemma 5.8. There exists a constant C > 0 independent of ǫ such that
+1
+4
+
+Σ1
+
+|∇uǫ1 |2 +
+
+1
+4
+
+Σ2
+
+|∇uǫ2|2 + (4π − ǫ)(¯
+uǫ1 + u¯ǫ2 ) > −C.
+
+Unlike case (a), we cannot use the ordinary Moser-Trudinger inequality directly. Fortunately, the ideas in the proof of the ordinary
+Moser-Trudinger inequality in [38, 15] can be applied to show Lemma
+5.8. We claim that there is a constant C > 0 independent of ǫ such
+that
+1
+|∇uǫ1 |2 + (4π − ǫ)¯
+uǫ1 > −C.
+(5.24)
+4 Σ1
+Let xǫj be one of the maximum points of uǫj , i.e., mǫj = uǫ1 (xǫj ) (j =
+1, 2). Set
+u˜ǫ1 (x) = uǫ1 (λǫ1 x + xǫ1 ) − m1ǫ
+
+and
+
+u˜ǫ2 (x) = uǫ2 (λǫ1 x + xǫ1 ) − mǫ1 ,
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+28
+
+ǫ
+
+where (λǫ1 )2 = e−m1 . Since mǫ1 → ∞, λǫ1 → 0 as ǫ → 0. From the
+discussion above, we know that u˜ǫ1 (0) = max u˜ǫ1 = 0 and u˜ǫ2 → −∞
+uniformly on any compact domain of Σ1 .
+1
+Lemma 5.9. We have that u˜ǫ1 converges to φ0 in Hloc
+(R2 ), where φ0 =
+−2 log(1 + π|x|2 ) is a solution of the Liouville equation
+
+−∆φ = 8πeφ .
+Proof. Note that u˜ǫ = (˜
+uǫ1 , u˜ǫ2 ) satisfies
+
+
+
+ǫ
+
+ǫ
+
+− ∆˜
+uǫ1 = (8π − 2ǫ)eu˜1 − (4π − ǫ)eu˜2 − λǫ1 (4π − ǫ),
+ǫ
+ǫ
+ −∆˜
+uǫ2 = (8π − 2ǫ)eu˜2 − (4π − ǫ)eu˜1 − λǫ1 (4π − ǫ).
+
+in (λǫ1 )−1 Bδ (xǫ1 )
+in (λ1ǫ )−1 Bδ (xǫ1 )
+(5.25)
+
+Clearly, (λǫ1 )−1 Bδ (x1ǫ ) → R2 as ǫ → 0. For any large, but fixed constant
+R > 0, we consider u˜ǫ on BR (0). Define ξRǫ by
+
+
+
+ǫ
+
+−∆ξRǫ = −(4π − ǫ)eu˜2 − (λǫ1 )2 (4π − ǫ) := fǫ
+
+ξRǫ = 0,
+
+in BR (0),
+on ∂BR (0).
+
+The elliptic estimate implies that ξRǫ → 0 in L∞ (BR (0)). Set w˜1ǫ =
+u˜ǫ1 − ξRǫ . It is clear that
+ǫ
+
+ǫ
+
+− ∆w˜1ǫ = (8π − 2ǫ)eξR ew˜1 .
+
+(5.26)
+
+Since u˜ǫ1 ≤ 0, u˜ǫ1 (0) = 0 and ξRǫ is bounded, w˜1ǫ is bounded from above
+and |w˜1ǫ (0)| is bounded. It is easy to show that w˜1ǫ , hence u˜ǫ1 , converges
+in H 1,2(BR ). (See, for example, [3].) Now by a diagonal argument, we
+1,2
+have that u˜ǫ1 converges to φ0 in Hloc
+(R2 ), where φ0 satisfies
+−∆φ0 = 8πeφ0
+with φ0 (0) = 0 = max φ0 . A classification of Chen-Li [12] implies that
+φ0 (x) = −2 log(1 + π|x|2 ).
+✷
+Now we need the following
+Lemma 5.10. 1. For any small σ > 0, there exist constants Rσ > 0,
+ǫσ > 0 and Cσ such that
+ǫ
+uǫ1 (x) ≤ −(1 − 3σ)mǫ1 − (4 − )(1 − σ) log |x − xǫ1 | + Cσ ,
+π
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+29
+
+for any x ∈ Bδ (xǫ1 )\Brǫ (xǫ1 ) with rǫ = (λǫ1 )−1 Rσ and ǫ < ǫσ .
+2. mǫ1 + u¯ǫ1 ≥ O(1).
+Now from Lemma 5.10, we can finish the proof of our main theorem.
+¿From (5.4), we have
+Σ1
+
+|∇uǫ1 |2 =
+
+∂Σ1
+
+uǫ1
+
+∂uǫ1
++ 2(4π − ǫ)
+∂n
+
+−(4π − ǫ)
+=
+
+∂Σ1
+
+uǫ1
+
+ǫ
+
+Σ1
+
+eu1 u1ǫ
+
+uǫ2
+
+Σ1
+
+e uǫ1 − (4π − ǫ)
+
+∂uǫ1
++ 2(4π − ǫ)
+∂n
+
+Σ1
+
+uǫ1
+
+Σ1
+
+uǫ1
+
++2(4π − ǫ)
+
+Σ1
+
+ǫ
+
+ǫ
+
+eu1 mǫ1 − (4π − ǫ)
+
+e (uǫ1 − mǫ1 ) − (4π − ǫ)
+
+Σ1
+
+Σ1
+
+eu2 uǫ1
+
+uǫ1 ,
+
+where n is the outer normal of Σ1 . By Lemma 5.6 and equation (5.4),
+we have
+∂uǫ1 ǫ
+∂uǫ1 ǫ
+∂uǫ
+u¯1 +
+(u1 − u¯ǫ1 )
+uǫ1 1 =
+∂n
+∂Σ1 ∂n
+∂Σ1 ∂n
+∂Σ1
+∂uǫ1 ǫ
+=
+u¯1 + O(1)
+∂Σ1 ∂n
+= −¯
+uǫ1 {2(4π − ǫ)
+
+ǫ
+
+eu1 − (4π − ǫ)
+
+Σ1
+
+ǫ
+
+Σ1
+
+eu2 − (4π − ǫ)|Σ1 |} + O(1).
+
+By Lemmas 5.9 and 5.10, we have
+ǫ
+
+Σ1
+
+eu1 (uǫ1 − mǫ1 ) =
+=
+=
+
+ǫ
+
+eu1 (uǫ1 − mǫ1 ) +
+
+Σ1 \Bδ (xǫ1 )
+
+ǫ
+
+Bδ (xǫ1 )
+
+eu1 (u1ǫ − mǫ1 )
+
+ǫ
+
+Bδ (xǫ1 )
+
+eu1 (uǫ1 − mǫ1 ) + O(1)
+ǫ
+
+B(λǫ )−1 δ (0)
+
+eu˜1 u˜ǫ1 + O(1)
+
+1
+
+≤
+
+ǫ
+
+B(λǫ )−1 δ (0)
+
+Cσ1 e(1−σ1 )˜u1 + O(1) = O(1),
+
+1
+
+for a small fixed number σ1 > 0. Here, we have used (5.27) below.
+Hence, using Lemma 5.10 we get
+Σ1
+
+|∇uǫ1 |2 = 2(4π − ǫ)(mǫ1 − u¯ǫ1 )
+≥ 4(4π − ǫ)¯
+uǫ1
+≥ 4(4π −
+
+ǫ)¯
+uǫ1
+
+ǫ
+
+Σ1
+
+ǫ
+
+Σ1
+
+eu1 − (4π − ǫ)(
+
+eu1 + O(1)
+
++ O(1).
+
+Σ1
+
+uǫ1 − |Σ|¯
+uǫ1) + O(1)
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+30
+
+This is (5.24). Here we have used the fact that
+m1ǫ
+
+ǫ
+
+Σ\Bδ (xǫ1 )
+
+eu1 → o(1),
+
+(5.27)
+
+which can be deduced as follows. From (5.4), we have
+ǫ
+
+−∆uǫ1 ≤ (8π − 2ǫ)eu1
+
+in Σ\Bδ (xǫ1 ).
+
+Let hǫ satisfy
+
+
+
+ǫ
+
+−∆hǫ = (8π − 2ǫ)eu1 ,
+ hǫ
+= 0,
+
+in Σ\Bδ (x1ǫ ),
+on ∂Bδ (xǫ1 ).
+
+Since uǫ1 is uniformly bounded from above in Σ\Bδ (xǫ1 ), hǫ is uniformly
+bounded. Now applying the maximum principle to ue1 − hǫ , together
+with Lemma 5.10, we can obtain that uǫ1 (x) ≤ −(1 − 3σ)mǫ1 + C for
+any x ∈ Bδ (x1ǫ ), which implies (5.27).
+Similarly, we can show that
+1
+4
+
+Σ2
+
+|∇uǫ2 |2 + 4(π − ǫ)¯
+uǫ2 > −C,
+
+for some constant C > 0, which, together with (5.24), proves Lemma
+5.8, hence Theorem 5.1.
+Now it remains to prove Lemma 5.10.
+Proof of Lemma 5.10. Wlog, we assume that B2δ (p1 ) is a flat disk,
+for some small constant δ > 0, see Remark at the end of Section 3.
+Consider in B2δ (xǫ1 )
+ǫ
+
+ǫ
+
+− ∆uǫ1 = 2(4π − ǫ)eu1 − (4π − ǫ)eu2 − (4π − ǫ) =: fǫ .
+(5.28)
+Recall that u˜ǫj = uǫj (λǫ1 x + xǫ1 ) − mǫ1 (for j = 1, 2). For any small σ > 0,
+by Lemma 5.9 we choose Rσ > 0 and ǫσ > 0 such that
+σ
+σ
+ǫ
+ǫ
+and
+eu2 < .
+eu˜1 > 1 −
+2
+2
+Σ1
+BR (0)
+Let Γ(x, y) =
+
+1
+2π
+
+log |x − y|. Using Green’s representation, we have
+
+uǫ1 (y) = −
++
+
+Γ(x − y)fǫ (x)dx
+∂uǫ1
+∂Γ
+ǫ
+∂B2δ (xǫ1 ) u1 (x) ∂n (x − y) − Γ(x − y) ∂n (x) ds.
+(5.29)
+B2δ (xǫ1 )
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+31
+
+Since δ > 0 is fixed, it is easy to check that
+∂uǫ1
+= O(1)
+Γ(x
+−
+y)
+∂n
+∂B2δ (xǫ1 )
+and
+∂B2δ (xǫ1 )
+
+uǫ1 (x)
+
+∂Γ(x − y)
+= u¯ǫ1 + O(1).
+∂n
+
+Hence, we have
+uǫ1 (y) − mǫ1 = uǫ1 (y) − uǫ1 (xǫ1 )
+|x − y|
+1
+fǫ dx + O(1).
+log
+= −
+ǫ
+2π B2δ (x1 )
+|x − xǫ1 |
+Now it is convenient to write the previous equation as follows.
+u˜ǫ1 (y) = uǫ1 (λǫ1 y + xǫ1 ) − mǫ1
+1
+|x − (λǫ1 y + xǫ1 )|
+= −
+f (λǫ1 y + xǫ1 )dx
+log
+ǫ
+ǫ
+2π B2δ (x1 )
+|x − x1 |
+|x − y| ˜
+1
+fǫ (x)dx,
+log
+= −
+2π B2δ(λǫ )−1 (0)
+|x|
+1
+
+where
+ǫ
+ǫ
+f˜1ǫ (x) = 2(4π − ǫ)eu˜1 − (4π − ǫ)eu˜2 − (λǫ1 )2 (4π − ǫ) = (λǫ1 )2 f (λǫ1 x + xǫ1 ).
+
+Applying the potential analysis, it is easy to show that there is a constant Cσ > 0 such that
+ǫ
+u˜ǫ1 (y) ≤ −(1 − σ)(4 − ) log |y| + Cσ ,
+π
+for |y| ≥ Rσ . See, for instance, Lemma 2.4 or [38]. This implies statement 1 of the Lemma.
+¿From (5.29) we have
+1
+mǫ1 = uǫ1 (xǫ1 ) = −
+log |x − xǫ1 |fλ (x)dx + u¯ǫ1 + O(1)
+ǫ
+2π B2δ (x1 )
+1
+log |λǫ1 x|f˜ǫ (x)dx + u¯ǫ1 + O(1)
+= −
+2π B2δ(λǫ )−1 (0)
+1
+
+1
+log λǫ1
+fǫ (x)dx + u¯ǫ1 + O(1)
+ǫ
+2π
+B2δ (x1 )
+ǫ
+m1
+fǫ (x)dx + u¯ǫ1 + O(1)
+=
+ǫ
+4π B2δ (x1 )
+≤ 2mǫ1 + u¯ǫ1 + O(1).
+= −
+
+32
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+which implies Statement 2. Here we have used
+B2δ(λǫ )−1 (0)
+
+log |x|f˜ǫ (x)dx ≤ C,
+
+1
+
+for some constant C, which is deduced from Statement 1. Hence, we
+✷
+finish the proof of the Lemma, hence our main theorem.
+Acknowledgement. We would like to thank the referee for his/or her careful and critical reading and for pointing out some inaccuracies in the first
+version.
+
+References
+[1] Aubin, T., Nonlinear analysis on manifolds, Monge-Amp`ere equations,
+Springer-Verlag, 1982
+[2] Bolton, J., Jensen, G. R. Rigoli, M. and Woodward, L. M., On conformal
+minimal immersions of S 2 into CPn , Math. Ann. 279 (1988), no. 4, 599–620
+[3] Brezis, H. and Merle, F., Uniform estimates and blow up behavior for solutions
+of −∆u = V (x)eu in two dimensions, Comm. Partial Diff. Equat., 16, 12231253 (1991)
+[4] Caffarelli, L. and Yang, Y.S., Vortex condensation in the Chern-Simons Higgs
+model: An existence theorem, Commun. Math. Phys. 168, 321–336 (1995)
+[5] Caglioti, E., P. L. Lions, C. Marchioro and M. Pulvirenti, A special class of
+stationary flows for two-dimensional Euler equations: a statistical mechanics
+description, Commun. Math. Phys., 143 (1992), 501-525
+[6] Caglioti, E., P. L. Lions, C. Marchioro and M. Pulvirenti, A special class of
+stationary flows for two-dimensional Euler equations: a statistical mechanics
+description. Part II, Commun. Math. Phys., 174 (1995), 229-260
+[7] Chang, A. S. Y. and Yang, P., Conformal deformation of metrics on S 2 , J.
+Diff. Geom., 23 (1988), 259–296.
+[8] Chang, A. S. Y. and Yang, P., Prescribing Gaussian curvature on S 2 , Acta
+Math., 159(1987), 214–259.
+[9] Chang, K. C. and Liu, J. Q., On Nirenberg’s problem, International J. Math.,
+4 (1993), 35–57.
+[10] Chanillo, S and Kiessling, M. K.-H., Conformally invariant systems of nonlinear PDE of Liouville type. Geom. Funct. Anal. 5 (1995) 924–947
+[11] Chen, W. X. and Ding, W. Y., Scalar curvature on S 2 , Trans. Amer. Math.
+Soc., 303 (1987), 365–382.
+[12] Chen, W. X and Li, C., Classification of solutions of some nonlinear elliptic
+equations, Duke Math. J., 63 (1991) 615–622
+[13] Chipot, M., I. Shafrir and G. Wolansky, On the solutions of Liouville systems,
+J. Diff. Equations, 140 59-105 (1997)
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+33
+
+[14] Ding, W., On the best constant in a Sobolev inequality on compact 2-manifolds
+and application, unpublished manuscript (1984)
+[15] Ding, W., Jost, J., Li, J. and Wang, G. The differential equation ∆u =
+8π − 8πheu on a compact Riemann surface, Asian J. Math., 1 (1997), 230248
+[16] Ding, W., Jost, J., Li, J. and Wang, G.,An analysis of the two-vortex case in
+the Chern-Simons Higgs model, Calc. Vari. and P. D. E., 7 (1998), 87–97
+[17] Ding, W., Jost, J., Li, J. and Wang, G., Multiplicity results for the two-vortex
+Chern-Simons Higgs model on the two sphere, Commun. Math. Helv., 74
+(1999), 118-142
+[18] Ding, W., Jost, J., Li, J. and Wang, G., Existence results for mean field
+equations, Ann. Inst. Henri Poincar´e, Analyse non lin´eaire 16 (1999), 653666
+[19] Ding, W., Jost, J., Li, J., Peng, X. and Wang, G., Self duality equations for
+Ginzburg-Landau and Seiberg-Witten type functionals with 6th order potentials, to appear in Commun. Math. Phys.
+[20] Dunne, G., Self-dual Chern-Simons Theories, Lecture Notes in Physics, vol.
+m36, Berlin: Springer-Verlag, 1995
+[21] Dunne, G., Mass degeneracies in self-dual model, Phys. Lett. B345, 452–457
+(1995)
+[22] Dunne, G. Jackiw, R., Pi, S-Y. and Trugenberger, C., Self-dual Chern-Simons
+solitons and two dimensional nonlinear equation, Phys. Rev. D43 1332 (1991)
+[23] Eell, J. and J. C. Wood, Harmonic maps from surfaces to complex projective
+spaces, Adv. in Math., 49 (1983), 217–263
+[24] Fordy, A. P. and J. C. Wood, (ed.) Harmonic maps and integrable systems,
+Aspects of Mathematics, E23, Friedr. Vieweg & Sohn, Braunschweig, 1994.
+[25] Fontana, L., Sharp borderline Sobolev inequalities on compact manifolds,
+Comment. Math. Helv., 68 415-454 (1993)
+[26] Guest, M. A., Harmonic maps, loops groups, and Integrable systems, London
+Math. Soc., Student Texts 38, Cambridge, 1997
+[27] Hong, J., Kim, Y. and Pac, P.Y., Multivortex solutions of the Abelian ChernSimons theory, Phys. Rev. Lett. 64 , 2230–2233 (1990)
+[28] Horstman, D. and G. Wang, Blowup in a chemotaxis model without symmetry
+assumptions, to appear in European J. of Appl. Math.
+[29] Jackiw, R. and Weinberg, E., Self-dual Chern-Simons vortices, Phys. Rev.
+Lett. 64, 2234–2237 (1990)
+[30] Jost, J. and G. Wang, Analytic aspects of the Toda system: II. An application
+to the relativistic SU (3) Chern-Simons model
+[31] Kiessling, M. K. H., Statistical mechanics of classical particles with logarithmic interactions, Comm. Pure Appl. Math., 46 (1993), 27-56
+
+34
+
+¨
+JURGEN
+JOST AND GUOFANG WANG
+
+[32] Kao, H. C. and Lee, K., Self-dual SU (3) Chern-Simons Higgs systems, Phys.
+Rev. D50, 6626–6632 (1994)
+[33] Kostant, B., The solution to a generalized Toda lattice and representation
+theory, Adv. Math. 34, 195–338 (1979)
+[34] Lee, K., Self-dual nonabelian Chern-Simons solitons, Phys. Rev. Lett. 66,
+553–555 (1991)
+[35] Lee, K., Relativistic nonabelian Chern-Simons systems, Phys. Lett. B255,
+381–384 (1991)
+[36] Li, Yanyan and Zhu, M., Uniqueness theorems through the method of moving
+spheres, Duke Math. J. 80 (1995), 383–417.
+d2
+[37] Liouville, J., Sur l’´equation aux diff´erences partielles dudv
+log λ ± 2aλ2 = 0, J.
+Math. Pures Appl. 18, 71 (1853)
+[38] Nolasco, M. and Tarantello, G., Double vortex condensates in the ChernSimons-Higgs theory, Calc. Var. Partial Differential Equations, 9 (1999), 31–
+94
+[39] Nolasco, M. and Tarantello, G., On a sharp Sobolev-type inequality on twodimensional compact manifolds, Arch. Ration. Mech. Anal., 145 (1998), 161–
+195
+[40] Nolasco, M. and Tarantello, G., Vortex condensates for the SU (3) ChernSimons theory, to appear in Commun. Math. Phys.
+[41] Moser, J.,A sharp form of an inequality of N. Trudinger, Indiana Univ. Math.
+J., 20 1077-1092 (1971)
+[42] Struwe, M. and Tarantello, G., On multivortex solutions in Chern-Simons
+gauge theory, Boll. Unione Mat. Ital. Sez. B Artic. Ric. Mat. (8) 1 (1998),
+109–121
+[43] Trudinger, N., On imbedding into Orlicz spaces and some applications, J.
+Math. Mech.,17 473-483 (1967)
+[44] Tarantello, G., Multiple condensate solutions for the Chern-Simons Higgs
+theory, J. Math. Phys. 37, 3769–3796 (1996)
+[45] Wang, G., Moser-Trudinger inequalities and Liouville type systems, C. R.
+Acad. Sci. Paris, 328 (1999), 895-900
+[46] Wang, G. and J. Wei, Steady state solutions of a reaction-diffusion system
+modeling chemotaxis, to appear in Math. Nach.
+[47] Wang, G. and Zhang, L., Non-topological solutions of the relativistic SU (3)
+Chern-Simons Higgs model, Commun. Math. Phys., 202 (1999) 501-515
+[48] Woodward, L. M., private communication.
+[49] Yang, Y., The relativistic non-Abelian Chern-Simons equations, Commun.
+Math. Phys. 186, 199–218 (1997)
+[50] Ye, D. and F. Zhou, A generalized two dimensional Emden-Fowler equation
+with exponential nonlinearity, 1999
+
+ANALYTIC ASPECTS OF THE TODA SYSTEM I
+
+35
+
+Max-Planck institute for Mathematics in the Sciences, Leipzig, Germany
+E-mail address: jost@mis.mpg.de
+Institute of Mathematics, Academic Sinica, Beijing, China
+E-mail address: gwang@math03.math.ac.cn
+Max-Planck institute for Mathematics in the Sciences, Leipzig, Germany
+E-mail address: gwang@mis.mpg.de
+
+

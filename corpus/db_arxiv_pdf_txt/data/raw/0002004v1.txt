@@ -1,0 +1,2462 @@
+Stochastic Model Checking for Multimedia
+
+arXiv:cs/0002004v1 [cs.MM] 4 Feb 2000
+
+Jeremy Bryans, Howard Bowman and John Derrick
+Computing Laboratory, University of Kent, Canterbury, CT2 7NF, UK.
+(Phone: + 44 1227 764000, Email: J.Derrick@ukc.ac.uk.)
+
+Modern distributed systems include a class of applications in which non-functional requirements
+are important. In particular, these applications include multimedia facilities where real time
+constraints are crucial to their correct functioning. In order to specify such systems it is necessary
+to describe that events occur at times given by probability distributions and stochastic automata
+have emerged as a useful technique by which such systems can be specified and verified.
+However, stochastic descriptions are very general, in particular they allow the use of general
+probability distribution functions, and therefore their verification can be complex. In the last few
+years, model checking has emerged as a useful verification tool for large systems. In this paper
+we describe two model checking algorithms for stochastic automata. These algorithms consider
+how properties written in a simple probabilistic real-time logic can be checked against a given
+stochastic automaton.
+Additional Key Words and Phrases: Distributed systems, stochastic automata, model checking
+
+1. INTRODUCTION
+In this paper we describe and compare two model checking algorithms for stochastic
+automata. The reason for building such model checking algorithms is to support
+the verification of non-functional properties in distributed multimedia systems.
+The advent of distributed multimedia applications such as video conferencing,
+collaborative virtual environments, video on demand etc, place great demands on
+the specification and design of such systems because of the need to describe and
+verify non-functional requirements [Bowman et al. 1998]. These non-functional
+requirements typically involve real time constraints such as placing bounds on endName: J. Bryans
+Address: Computing Laboratory, University of Kent at Canterbury, Canterbury, Kent, CT2 7NF
+PHONE: +44 1227 827697
+Name: H. Bowman
+Address: Computing Laboratory, University of Kent at Canterbury, Canterbury, Kent, CT2 7NF
+PHONE: +44 1227 823815
+Name: J. Derrick
+Address: Computing Laboratory, University of Kent at Canterbury, Canterbury, Kent, CT2 7NF
+PHONE: +44 1227 827570
+Permission to make digital or hard copies of part or all of this work for personal or classroom use is
+granted without fee provided that copies are not made or distributed for profit or direct commercial
+advantage and that copies show this notice on the first page or initial screen of a display along
+with the full citation. Copyrights for components of this work owned by others than ACM must
+be honored. Abstracting with credit is permitted. To copy otherwise, to republish, to post on
+servers, to redistribute to lists, or to use any component of this work in other works, requires prior
+specific permission and/or a fee. Permissions may be requested from Publications Dept, ACM
+Inc., 1515 Broadway, New York, NY 10036 USA, fax +1 (212) 869-0481, or permissions@acm.org.
+
+2
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+to-end latency, and are often called Quality of Service (QoS) [Bowman et al. 1998]
+requirements because they reflect the overall quality of delivery as opposed to the
+functional aspects.
+In order to specify and verify such constraints it is necessary not only to be
+able to describe deterministic timing concerns but also probabilistic and stochastic
+systems. That is, in practice timings cannot be assumed to be fixed (deterministic timings) but events can occur at different times with particular probabilities.
+Therefore it is necessary to describe timings that occur according to certain probability distributions. For example, in a network specification it is not sufficient to
+assume that the packet deliveries arrive at fixed predetermined times, instead we
+need to model the system where they might arrive at times determined by (for
+example) an exponential distribution.
+There are now a number of techniques which can be used to describe such systems, e.g. Queueing Systems [Kleinrock 1975], Generalised Stochastic Petri-nets
+[Marsam et al. 1984], Markov Chains [Stewart 1994], generalised semi-Markov processes [Glynn 1989], Stochastic Process Algebra [Hillston 1996] and Stochastic Automata [D’Argenio 1999] etc. In this paper we consider Stochastic Automata (which
+are related to timed automata [Alur and Dill 1994]). We define two model checking [Baier and Kwiatkowska 1998] algorithms for them.
+Stochastic automata are a very promising specification and verification paradigm.
+In particular they allow the study of both functional and non-functional requirements within the same description, giving a more complete view of overall performance than, say, a queueing theory description of the problem. They also support
+not just exponential distributions but general distributions. The issue here is the
+following. In a stochastic specification we need to associate a distribution function
+F with an action a so that we can describe the probability of the time delay after
+which a can happen. Stochastic automata naturally allow general distributions,
+in contrast say to stochastic process algebras which usually restrict themselves to
+exponential distributions [Hillston 1996].
+In practice it is unrealistic to only consider exponential distributions and it is
+necessary for arbitrary distributions (e.g. uniform, gamma, deterministic etc) to
+be considered. For example, it is often assumed that packet lengths are exponentially distributed. However, in reality this is not the case, rather they are either
+of constant length (as in ATM cells [Tanenbaum 1996]) or they are uniformly distributed with minimum and maximum size (as in Ethernet frames [Tanenbaum
+1996]). Stochastic automata allow such arbitrary distributions to be used.
+There are ostensibly two ways to move from the tractable case of exponential
+distributions to the less tractable case of generalised distributions. One approach
+is to make small generalisations of markov chains by allowing limited forms of
+non-memoryless behaviour (see e.g. GSPNs [Marsam et al. 1984]). However, the
+problem with this approach is that there will always be classes of distributions
+that cannot be modelled. The alternative is to allow any distribution, but then
+use heuristics and coarse approximation techniques to contain the problem of intractability. The majority of work on this topic follows the first of these approaches.
+However here we investigate the feasibility of the second approach and thus we impose few constraints on the generality of the distributions we allow in our stochastic
+automata.
+Because stochastic automata are related to timed automata, verification strategies for stochastic automata can be derived by using the extensive work on verification for timed automata, see e.g. [Larsen et al. 1997] [Daws et al. 1995] [Henzinger
+et al. 1997]. The particular verification technique we consider is model checking [Alur et al. 1990]. This is perhaps the most successful technique to have arisen
+
+Stochastic Model-Checking for Multimedia
+
+System
+(Automaton)
+
+Property
+(Temporal Logic
+Formula)
+
+Model Checker
+
+System models formula
+
+Fig. 1.
+
+System does not
+model formula
+
+Model checker
+
+from concurrency theory. The basic approach is to show that an automaton description of a system satisfies a temporal logic property, see Figure 1.
+In accordance with a number of other workers, e.g. [Baier et al. 1999], we view the
+application of model checking to analysis of stochastic systems as a very exciting
+combination, since it provides a form of generalised transient analysis — for example the property [¬error U<1000 error] < 0.01 states that the probability of first
+reaching an error state within 1000 time units is less than 1 percent, and whether
+a particular stochastic system satisfies this property can be investigated.
+In defining our model checking algorithm we draw heavily on the experience of
+model checking timed automata e.g. [Larsen et al. 1997]. However, the move from
+timed to stochastic leads to new issues that must be tackled. In particular, many
+of the properties that we wish to verify are inherently probabilistic. Conventional
+model checking allows us to answer questions such as “Is a particular sequence of
+events possible?”, but in stochastic model checking we want to ask “What is the
+probability of this sequence of events?”. To do this we will check an automaton
+against a simple probabilistic temporal logic.
+We present two approaches to model checking stochastic automata. Both approaches are enumerative in the sense that, in showing whether a property holds,
+they enumerate reachable configurations of the system. However, the methods by
+which they determine the probability of being in a particular configuration are quite
+different. Specifically, one derives probabilities by integrating the relevant probability density functions, while the second responds to the difficulties incurred in
+evaluating these integrals (which will become clear during the paper) by employing
+a discretisation process.
+The structure of the paper is as follows. In Section 2 we introduce stochastic automata illustrated by a simple example. In Section 3 we define a small probabilistic
+real-time logic, in which we can express simple properties that we wish to check
+our stochastic automata against. The first algorithm is presented in Section 4, and
+the second is presented in 5. Section 6 looks at an example of the operation of the
+second algorithm and Section 7 considers some issues of correctness and convergence relating to the second algorithm, and Section 8 looks at the time and space
+complexity. We conclude in Section 9.
+2. STOCHASTIC AUTOMATA
+In this section we introduce stochastic automata using a small example. Stochastic
+automata are related to timed automata [Alur and Dill 1994], however stochas-
+
+·
+
+3
+
+4
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+tic clock settings are used, instead of the strictly deterministic timings used in
+timed automata. We begin with the formal definition of stochastic automata, then
+present a simple example. We use the definition of stochastic automata presented
+in [D’Argenio et al. 1998].
+Definition 1. A stochastic automaton is a structure (S, s0 , C, A, −−⊲, κ, F ) where:
+• S is a set of locations with s0 ∈ S being the initial location, C is the set of all
+clocks, and A is a set of actions.
+• −−⊲ ⊆ S × (A× Pfin (C))× S is the set of edges. If s and s′ are states, a is an action
+a,C
+
+and C is a subset of C, then we denote the edge (s, a, C, s′ ) ∈ −−⊲ by s −−⊲ s′
+a
+
+and we say that C is the trigger set of action a. We use s −−⊲ s′ as a shorthand
+a,C
+
+notation for ∃C.s −−⊲ s′ .
+• κ : S → Pfin (C) is the clock setting function, and indicates which clocks are to
+be set in which states, where Pfin (C) is the finite powerset of clocks.
+• F : C → (R → [0, 1]) assigns to each clock a distribution function such that, for
+any clock x, F (x)(t) = 0 for t < 0; we write Fx for F (x) and thus Fx (t) states
+the probability that the value selected for the clock x is less than or equal to t.
+Each clock x ∈ C has an associated random variable with distribution Fx . To
+facilitate the model checking, we introduce a function ξ which associates locations
+with sets of atomic propositions.
+ξ : S → P(AP )
+where AP is the set of atomic propositions.
+
+✷
+
+It is necessary to impose some limitations on the stochastic automata which
+can be used with the model checking algorithms. In particular, we require that
+each clock distribution function Fx must have a positive finite upper bound and
+a non-negative lower bound, and must be continuous between these bounds. The
+finiteness constraints mean that there are certain distribution functions which we
+must approximate. We further assume that clocks are only used on transitions
+emanating from states in which they are set.
+As an example, consider the simple packet producer (which is a component in a
+large multimedia specification) in Figure 2. This is written
+({s0 , s1 , s2 }, s0 , {x, y, z},
+{tryagain, conc, send, f ail}, −−⊲, κ, {Fx , Fy , Fz })
+where
+−−⊲ = {(s0 , tryagain, {x}, s0), (s0 , conc, {x}, s1 ),
+(s1 , send, {z}, s0), (s0 , f ail, {y}, s2)}
+κ(s0 ) = {x, y}, κ(s1 ) = {z}, κ(s2 ) = {}
+and the distribution functions for clocks x, y and z are
+Fx (t) = 2t − t2 , if t ∈ [0, 1]
+= 0, if t < 0
+= 1, otherwise
+Fy (t) = t2 , if t ∈ [0, 1]
+= 0, if t < 0
+= 1, otherwise
+
+Stochastic Model-Checking for Multimedia
+
+tryagain, {x}
+
+s0
+
+s1
+
+conc, {x}
+
+x,y
+
+z
+send, {z}
+
+fail, {y}
+s2
+
+1
+
+1
+Fx(t)=
+
+1
+Fz(t)=
+
+Fy(t)=
+
+time
+
+Fig. 2.
+
+time
+
+time
+
+The packet producer
+
+and
+Fz (t) = t, if t ∈ [0, 1]
+= 0, if t < 0
+= 1, otherwise
+as depicted. The horizontal axis measures time, and the vertical axis measures the
+probability of the clock being set to a value less than that time.
+The packet producer starts in location s0 , and attempts to establish a connection
+with its medium. Three options are possible at this stage. Either the medium allows
+a connection, the medium tells the packet producer to try again or the medium takes
+too long and the connection fails (is timed out). These options are modelled in the
+automaton by setting clocks x and y according to the functions Fx and Fy . If clock
+x expires first then there is a nondeterministic choice between the transition labelled
+conc (which moves the automaton to state s1 ) and the transition labelled tryagain
+(which moves the automaton back to state s0 ). This choice is nondeterministic
+because in reality it would depend on the medium, which we have not specified
+here. If clock y expires first, then action fail is triggered (we say that {y} is the
+trigger set of fail) and the automaton moves to state s2 . This corresponds to the
+medium taking too long to respond, and nothing further happens.
+This example has been chosen because it is small enough that we can show, in
+their entirety, the set of configurations that our model checking algorithms enumerate. Thus it can be used to illustrate our two algorithms. But, in addition, we have
+chosen it because it is canonical in the sense that it illustrates the key concepts of
+stochastic automata, e.g. simultaneous enabling of multiple transitions generating
+non-determinism. The reader should also notice that this is a good example of a
+situation in which steady-state analysis is not interesting. Specifically, in the steady
+state, all the probability mass will be in state s2 . Thus, the sort of questions we
+wish to ask about such a system are about its transient behaviour, e.g. what is
+the probability of reaching state s2 within a particular period of time and indeed
+this is exactly the type of question we will be able to formulate with the logic we
+introduce in the next section and answer with our model checking algorithms.
+
+·
+
+5
+
+6
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+3. A PROBABILISTIC REAL-TIME TEMPORAL LOGIC
+3.1 The Logic
+In this section, we introduce a simple probabilistic temporal logic. The purpose of
+the logic is to express properties that we wish to check the stochastic automaton
+against. The logic we define allows us to check a range of such properties.
+Recall that the region tree contains nondeterminism, and so we resolve this using the notion of adversaries (see for example [Baier and Kwiatkowska 1998]). An
+adversary of a stochastic automaton can be thought of as a scheduler, which resolves any nondeterministic choices which the stochastic automaton must make.
+An adversary may vary it’s behaviour according to the previous behaviour of the
+automaton, or it may prescribe that for all non-deterministic choices a particular
+branch is always preferred. See [D’Argenio 1999] for examples of adversaries.
+We assume that when we wish to model check a property against an automaton,
+we are also given an adversary to resolve the nondeterminism within the automaton.
+(Without this adversary, enumerative analysis would not be possible; the provision
+of an adversary is a prerequisite of model checking.) We can now, for example,
+answer such questions as “Given a stochastic automaton and an adversary, is the
+probability of a send event occurring within 5 time units greater than 0.8?”.
+The syntax of our logic is
+ψ ::= tt | ap | ¬ψ | ψ1 ∧ ψ2 | [φ1 U ∼c φ2 ] ≃ p
+φ ::= tt | ap | ¬φ | φ1 ∧ φ2
+where [φ1 U ∼c φ2 ] ≃ p is a path formula. The path formulae can only be used
+at the top level — they cannot be nested. This is because the model checking
+algorithm we give can only evaluate path formulae from the initial state and is a
+necessary restriction of the current approach. Further: c ∈ N (natural numbers),
+ap is an atomic proposition, p ∈ [0, 1] is a probability value and ≃, ∼∈ {<, >, ≤, ≥}.
+We can define a number of derived operators. For example, other propositional
+operators are defined in the usual way:ff ≡ ¬tt
+φ1 ∨ φ2 ≡ ¬(φ1 ∧ φ2 )
+φ1 ⇒ φ2 ≡ ¬φ1 ∨ φ2
+and we can define a number of abbreviations of a number of temporal operators.
+[✸∼c φ] ≃ p
+[✷∼c φ] ≃ p
+[✷φ] ≃ p
+[✸φ] ≃ p
+∀[φ1 U ∼c φ2 ]
+∃[φ1 U ∼c φ2 ]
+∀✷φ
+∃✷φ
+∀✸φ
+∃✸φ
+
+≡
+≡
+≡
+≡
+≡
+≡
+≡
+≡
+≡
+≡
+
+[tt U ∼c φ] ≃ p
+[¬✸∼c ¬φ] ≃ p
+[✷≥0 φ] ≃ p
+[✸∼0 φ] ≃ p
+[φ1 U ∼c φ2 ] = 1
+[φ1 U ∼c φ2 ] > 0
+∀[✷φ]
+∃[✷φ]
+∀[✸φ]
+∃[✸φ]
+
+where ∀ and ∃ are the branching time temporal logic operators, for all and
+exist [Emerson 1990]. See [Baier et al. 1999] for similar definitions.
+With this syntax, an example of a valid formula that we can check would be
+[tt U <10 send] > 0.8 which says that the probability of reaching a send event within
+10 time units is greater than 0.8.
+
+Stochastic Model-Checking for Multimedia
+
+3.2 Model Checking
+It should be clear that since we do not allow temporal formulae to be nested we can
+use the following recipe in order to model check a formula ψ of our logic against a
+stochastic automaton A.
+1. For each until subformula (i.e. of the form [φ1 U
+individual model check to ascertain whether
+
+∼c φ2 ]
+
+≃ p) in ψ perform an
+
+A |= [φ1 U ∼c φ2 ] ≃ p
+2. Replace each until formula in ψ by tt if its corresponding model check was
+successful, or ff otherwise.
+3. Replace each atomic proposition in ψ by tt or ff depending upon its value in the
+initial location of A.
+4. ψ is a now ground term, i.e. truth values combined by a propositional connective (¬ and ∧). Thus, it can simply be evaluated to yield a truth value. The
+automaton is a model of ψ if this evaluation yields tt, and is not otherwise.
+This recipe employs standard techniques apart from the individual checking that
+A |= [φ1 U ∼c φ2 ] ≃ p and this is what our two algorithms address.
+4. THE REGION-TREE ALGORITHM
+In this section we introduce the first algorithm.
+In model checking, we take a temporal logic predicate and seek to establish
+whether it is true for our particular specification. For example, we might try to
+establish whether the above stochastic automaton has the following property: Is
+the probability that a packet will be successfully sent within ten time units greater
+than eighty percent? In order to do this, we need to define a means by which we
+can check the stochastic automaton against this logic. To achieve this the temporal
+logic and the specification must have the same semantic model. In [D’Argenio et al.
+1998], stochastic automata are given a semantics in terms of probabilistic transition
+systems, and so the temporal logic is given a semantics in terms of probabilistic
+transition systems as well, see Appendix A.
+4.1 Region Trees
+For practical purposes, however, we cannot construct the probabilistic transition
+system, since it is an infinite structure, (both in branching and depth.) We instead
+construct a region tree from the specification. This is finitely branching, but may
+be infinite in depth. Thus, a particular region tree represents an unfolding of the
+stochastic automaton to a certain depth. In fact, we use the temporal logic formula
+to construct a probabilistic region tree, which is used to verify the temporal logic
+formula. More precisely, the region tree is expanded until sufficient probability has
+been accumulated to ascertain the truth or falsity of the formula (this will become
+more clear shortly.) In this section, we describe how to construct region trees from
+stochastic automata.
+We begin with the definition of a valuation, which we use to record the values of
+all the clocks in a particular state at a particular moment in time. The unique clock
+a ∈ C, which we add to the set of clocks, is used to facilitate the model checking. It
+keeps track of the total time elapsed in the execution of the stochastic automaton,
+but plays no part in the behaviour of the automaton.
+Definition 2. A valuation is a function v : C {a} → R {⊥} such that v(x) =
+⊥ or v(x) ≤ xmax , where xmax is the maximum value to which clock x can be set.
+
+·
+
+7
+
+8
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+def
+
+If d ∈ R≥0 , v − d is defined by ∀x ∈ C {a}.(v − d)(x) = v(x) − d. The function
+min(v) returns the value of the smallest defined clock.
+✷
+Since we assume that clocks are only used in the states in which they are set,
+there is no need to remember their value once the state has been exited. Only
+the clock a maintains its value; the rest are set to ⊥. At the initialisation of a
+stochastic automaton, clock a is set to some natural number, (we will show later
+how we choose this; it depends on the formula we are interested in) and all other
+clocks are undefined. We define this initial valuation as On , if O(a) = n.
+We also need a notion of equivalence between the valuations, which will enable
+us to construct the regions within the probabilistic region tree. The issue here is
+the following. Although the size of the tree will be potentially infinite, at each node
+we wish to have finite branching. We achieve this because, although there are an
+infinite number of valuations possible for any particular state, there are a finite
+number of valuation equivalence classes. This gives us the finite branching.
+∼ v′ )
+Definition 3. Two clock valuations v and v ′ are equivalent (denoted v =
+provided the following conditions hold:
+—For each clock x ∈ C {a}, either both v(x) and v ′ (x) are defined, or v(x) =⊥
+and v ′ (x) =⊥.
+—For every (defined) pair of clocks x, y ∈ C {a}.v(x) < v(y) ⇐⇒ v ′ (x) < v ′ (y).
+The same clocks are defined in each valuation, and the order of the values of the
+defined clocks is all that is important.
+✷
+The reason that the order of the values of the defined clocks is all that is important
+in the definition of a valuation equivalence class is that the actions are triggered
+by the first clock to expire. Therefore we only need to know whether one clock
+is greater than or less than another. Also note that there is a probability of zero
+that different clocks are set to the same value. This is because all distributions are
+assumed to be continuous.
+We are now in a position to describe how a region tree is constructed from a
+stochastic automaton. Intuitively, we build the region tree by “unfolding” the
+stochastic automaton. At each newly reached state, we calculate all possible
+valuations (up to ≃) and the probabilities of each one, then from each of these
+(state,valuation) pairs we calculate the possible new states and repeat.
+Suppose we wish to construct the region tree for the stochastic automaton in
+Figure 2.
+The resulting region tree (up to a particular level of unfolding) is given in Figure 3.
+The first node is labelled with the location s0 , where the SA starts, the valuation
+01 , (i.e. (1, ⊥, ⊥)) since clocks x and y have not yet been set, and clock a is set
+to value one. Clock a is set according to the time value on the formula in which
+we are interested; we will give the example formula in Section 4.2. The clocks x
+and y are then set, giving a potential 3! = 6 different equivalence classes. However,
+these can be reduced to two by observing that clock a will be fixed on 1 and
+xmax = ymax = 1 and the probability of either x or y being set to exactly 1 is
+zero1 . Using the convention that we subscript the clock variables by the iteration
+number, in order to distinguish different settings of the same clock, the two possible
+equivalence classes are therefore v0 (y) < v0 (x) < v0 (a) and v0 (x) < v0 (y) < v0 (a),
+where v0 (a) = 1 in both cases. For convenience, we will write x0 for v0 (x), y0 for
+v0 (y) and a0 for v0 (a).
+1 This coincidence of a, x
+max and ymax is assumed in order to simplify our presentation; the next
+iteration illustrates the general case.
+
+Stochastic Model-Checking for Multimedia
+3
+
+s1
+
+6
+
+s1
+
+14
+
+s0
+
+z1<a1
+
+7
+
+s0
+
+30
+
+s0
+
+31
+
+s0
+
+32
+
+s0
+
+33
+
+s1
+
+34
+
+s0
+
+s0
+27
+x1<y1<a1
+
+35
+
+s1
+
+28
+
+36
+
+s2
+
+37
+
+s2
+
+24
+
+a1<y1<x1
+
+s1
+
+15
+
+s1
+
+a1<z1
+25
+0
+
+s0
+
+01
+
+1
+
+s0
+
+s0
+
+a1<x1<y1
+
+4
+
+s0
+
+x0<y0<a0
+
+8
+
+s0
+
+16
+
+s0
+
+a1<y1<x1
+
+26
+9
+
+s0
+
+17
+
+s0
+
+x1<a1<y1
+s0
+
+a1<x1<y1
+
+18
+
+10
+
+s0
+
+19
+
+s1
+
+s0
+
+x1<a1<y1
+
+20
+
+s1
+
+29
+s0
+11
+x1<y1<a1
+
+21
+
+s0
+
+12
+
+22
+
+s2
+
+23
+
+s2
+
+s0
+
+s0
+
+y1<a1<x1
+s0
+
+y1<x1<a1
+
+y1<a1<x1
+2
+
+s0
+
+5
+
+s2
+
+y0<x0<a0
+
+13
+
+s0
+
+y1<x1<a1
+
+Fig. 3.
+
+The region tree
+
+If clock x is set to less than clock y, the automaton will allow time to pass in
+location s0 , and each clock will count down, until clock x reaches zero. Then,
+either action tryagain or action conc will fire (the choice is nondeterministic), and
+the automaton will enter location s0 or s1 respectively. The time at which this
+occurs will obviously vary according to the initial value of the clock x. The possible
+locations entered are depicted by regions 3 and 4 in the region tree in Figure 3,
+where clocks x and y (since they are irrelevant in these regions) are not recorded.
+The initial value of clock a when moving from region 1 to either region 3 or region
+4 will be 1 − x0 (we will denote this value as a1 ). Thus, it will be in the range (0, 1).
+If clock y is set to less than clock x (represented by region 2), then the action
+fail fires, causing the automaton to enter location s2 , and this is depicted by region
+5 in the region tree. Again, all we can say about the value of clock a at this stage
+is that it lies in the range (0, 1).
+From region 3 there are two possibilities. Either clock z is set to less than a1 ,
+(region 6), or it is set to greater than a1 (region 7). From region 6 the action send
+will occur before the clock a expires, moving the automaton to location s0 and the
+region tree to region 14. From region 7 the clock a will expire before the action
+send occurs. The region tree moves to region 15, and the automaton remains in
+
+·
+
+9
+
+10
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+state s1 .
+From region 4 (location s0 ) both clocks x and y are reset according to their
+probability density functions, to values x1 and y1 . Since we cannot now be sure
+about the value of clock a, we have 3! = 6 equivalence classes, and these are
+represented by regions 8 to 13 when we unfold the SA another level.
+In regions 8 and 9 a1 is less than the (new) initial values of clocks x and y: these
+regions represent the case where clock a expires before either of x1 and y1 . When
+we consider a particular temporal logic formula this will represent the case where
+time has run out, and so the region tree moves to either region 16 (if y expired
+first) or region 17 (if clock x expired first).
+Regions 10 and 11 represent the valuation equivalence classes where x1 is less
+than both a1 and y1 , and so from these clock x will expire first, either action
+tryagain or conc will be performed, and the stochastic automaton will enter either
+location s0 or s1 (regions 18—21).
+Region 12 and represent the valuation equivalence classes where y1 is less than
+both a1 and x1 , so clock y will expire first, action fail will fire, and the automaton
+will enter location s2 (region 22—23).
+The region tree can be expanded further if necessary. There is no need to continue to expand regions 5, 15, 16, 17, 22 and 23, because in all of these either the
+clock a has expired or the stochastic automata has reached location s2 , which is
+a deadlocked state, and there is no further information to be gained. In Figure 3,
+further regions are derived from region 14 in the same way as above; these are
+needed when we build the probabilistic region tree in the next section.
+4.2 Probabilistic Region Trees
+Given a stochastic automaton, adversary and formula ψ = [φ1 U ∼c φ2 ] ≃ p the
+model checking algorithm consists of a number of iterations which are repeated
+until the formula is found to be either true or false.
+An iteration unfolds the region tree by expanding each leaf node. At each iteration stage there are two steps. The first step resolves the nondeterministic choices
+in the newly expanded region tree using the given adversary. The second step then
+calculates the probabilities on each node in the newly expanded part of the tree.
+The region tree (Figure 3) represents an unfolding of the stochastic automaton
+without the nondeterministic choices being resolved. The probabilistic region tree
+(Figure 4) records the resolution of the nondeterministic choices and the probabilities at the final nodes represent the chances of taking the particular sequence of
+actions that end in that node.
+At each iteration, we update the information we have on the probability of a path
+satisfying the formula. To do this, we define three new propositions, and each node
+of the probabilistic region tree is labelled with p, f or u: p, if it has passed (it is the
+end of a path which models the bounded until formula ψ); f, if it has failed (it is
+the end of a path which cannot model ψ), or u, if it is undecided. We also have two
+global variables, Σp and Σf, which keep running totals of the probabilities of the
+pass and fail paths.
+The basic idea of the model checking algorithm is that we check the values of Σp
+and Σf at each stage, and if we cannot deduce from these the truth or falsity of
+the formula we are checking, we look more closely at the undecided nodes. That is,
+we extend the undecided paths by each possible subsequent action, label these new
+nodes p, f or u, and calculate their probabilities. We then add these probabilities
+to Σp and Σf and repeat.
+We will begin by demonstrating the technique for an example. The full algorithm
+appears as appendix B. Consider the example stochastic automaton (Figure 2).
+
+Stochastic Model-Checking for Multimedia
+3
+5
+3
+
+s1
+
+6
+
+s1
+
+14
+
+u
+24
+
+s0
+
+7
+
+30
+
+s2
+
+31
+
+s1
+
+33
+
+s1
+
+s0
+27
+x1<y1<a1
+
+35
+
+s1
+
+28
+
+36
+
+s2
+
+37
+
+s2
+
+s0
+
+a1<y1<x1
+
+z1<a1
+
+s1
+
+15
+
+f
+
+s1
+
+a1<z1
+
+7
+30
+0
+
+s0
+
+01
+
+1
+
+f
+
+25
+
+s0
+
+f
+
+a1<x1<y1
+
+s0
+
+x0<y0<a0
+
+26
+
+s0
+
+u
+
+x1<a1<y1
+
+s0
+
+u
+
+p
+
+y1<a1<x1
+29
+
+s0
+
+y1<x1<a1
+
+2
+
+s0
+
+5
+
+s2
+
+y0<x0<a0
+
+Fig. 4.
+
+p
+
+p
+
+1
+6
+
+The probabilistic region tree
+
+Let us consider the formula
+ψ = [(φ0 ∨ φ1 ) U <1 φ2 ] ≥ 0.9
+where φ0 (resp. φ1 , φ2 ) is the proposition that we are in state s0 (resp. s1 , s2 ).
+The question2 we are therefore asking is: is the probability of reaching location s2
+(failing) within one time unit greater than 0.9?
+Note that a steady state analysis will tell us only that the automaton will fail
+(reach state s2 ) eventually, but here we want to obtain information about the
+transient behaviour of the automaton. The nondeterministic choice that has to be
+made is between location s1 and s2 . We will consider the benevolent adversary, i.e.
+the one that always chooses location s1 .
+Consider region 1 first (Figure 3). It has two possible outgoing transitions, and
+the choice between them is made nondeterministically. So we must refer to the
+adversary, which chooses location s1 , that is, region 3. Region 4 is not generated.
+We note that the value of clock a is greater than zero (so time has not run out),
+2 In
+
+fact, the algorithm can easily be adapted to handle questions such as “what is the probability
+(to within some ǫ) of a formula such as [φ0 U <1 φ2 ] being true?”.
+
+·
+
+11
+
+12
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+and that proposition p0 ∨ p1 is true (so the temporal logic formula is able to be
+satisfied), so this region is labelled with u (undecided).
+In region 5 proposition p2 is true, and clock a is still greater than zero, so this
+region is labelled as passed p, and region 5 becomes a terminal node.
+In region 6 a1 is greater than the (new) initial value of clock z, and therefore the
+send action will fire before the clock a expires. The region is therefore labelled u.
+In region 7 a1 is less than the (new) initial value of clock z, and therefore time
+will run out before the send action has a chance to fire. The region is therefore
+labelled f.
+From region 6 the send action moves the automaton to location s0 (region 14),
+and from here there are 6 possibilities for the setting of the clocks.
+Regions 24 and 25 represent the valuation equivalence classes where a1 is less
+than x1 and y1 . Since clock a will expire before either clock x or clock y, we know
+that these paths will not reach location s2 in less than one time unit, so regions
+30 and 31 will be labelled f. The remainder of the tree is generated in a similar
+manner.
+Figure 4 represents two unfoldings. In order to determine whether the formula
+is true we also have to calculate the probabilities on the nodes. If the sum of the
+pass and the sum of the fail nodes is sufficient to tell us whether the formula is true
+then we can stop here, otherwise we unfold the tree another level.
+To determine the probabilities on the arcs, we need to use probability density
+functions Px , Py and Pz of the functions Fx , Fy and Fz , which we find by differentiating Fx , Fy and Fz between their upper and lower bounds and setting to zero
+everywhere else.
+Px (t) = 2 − 2t, if t ∈ [0, 1]
+0, otherwise
+Py (t) = 2t, if t ∈ [0, 1]
+0, otherwise
+Pz (t) = 1, if t ∈ [0, 1]
+0, otherwise
+Evaluating the function Fx at a point a gives the probability that clock x is set
+to a value less than a, and if a > b, then Fx (a) − Fx (b) gives the probability that
+clock x is set to a value between a and b, provided a and b are constants. The same
+calculation using the corresponding probability density function (pdf) would be
+a
+b Px (x)dx, which at first sight appears more complicated. The advantage is that
+these functions can be used to calculate the probability that clock x is set to a value
+less than y, where y is a random variable set according to the distribution function
+Fy . If, for example, we wished to calculate the probability of the equivalence class
+y
+in region 1 (v0 (x) < v0 (y) < v0 (a), where v0 (a) = 1) we would evaluate 0 Px (x)dx,
+to give us a function that returns the probability that v0 (x) is between 0 and y,
+multiply this by the pdf Py (y), and integrate between zero and one:
+1
+
+y
+
+Px (x)dxPy (y)dy
+0
+
+0
+
+which gives us the probability that x will be less than y, where x and y are random
+variables conforming to the distribution functions Fx and Fy .
+We will now evaluate the probabilities of some of the arcs in the example. In the
+following, we will continue to subscript the clock variables by the iteration number,
+in order to distinguish different settings of the same clock.
+
+Stochastic Model-Checking for Multimedia
+1
+
+1−z1
+
+1
+
+Py (y0 )dy0 Px (x0 )dx0 Pz (z1 )dz1
+0
+
+0
+
+1
+
+x0
+
+1
+
+1
+
+Py (y0 )dy0 Px (x0 )dx0 Pz (z1 )dz1
+0
+
+1−z1
+
+x0
+
+Table 1.
+
+The integrals
+
+In our example, to determine the probability on arc (0, 2), where the value to
+which clock y is initially set (which we will refer to as y0 ) is less than the value to
+which clock x was initially set (x0 ), (y0 < x0 ) we perform the double integration
+1
+
+x0
+
+2y0 dy0 (2 − 2x0 )dx0
+0
+
+0
+
+which evaluates to 16 .
+Arc (0, 1) must have the value 1 −
+and can be calculated as
+1
+
+1
+6
+
+=
+
+5
+6,
+
+since it is the only other possibility,
+
+1
+
+2y0 dy0 (2 − 2x0 )dx0
+0
+
+x0
+
+These two arcs represent the setting of the clocks, and are therefore instantaneous.
+From Region 2 the only region which can be reached is the leaf node region 5,
+and therefore the arc (2, 5) has probability 1.
+Calculating probabilities on the paths through region 3 is more complicated. Consider arc (3, 6) first. In fact, we must calculate the probability of the path (0, 1, 3, 6)
+in its entirety rather than determine separately the conditional probability of arc
+(3, 6). We do this as follows.
+The clock setting information we know is: the first time the clocks x and y are
+set, the initial value of x is less than the initial value of y (x0 < y0 ); and when z1
+is set, the sum of x0 and z1 is less than the initial value of clock a (x0 + z1 < 1).
+1
+These constraints are captured as the combination of the integrals x0 Py (y0 )dy0
+1−z
+
+(to ensure that x0 < y0 < 1), 0 1 Px (x0 )dx0 (to ensure that x0 + z1 < 1), and
+1
+0 Pz (z1 )dz1 (since all constraints have been captured in the first two integrals.)
+The combination is given as the first integral in Table 1 and equals 53 .
+The path (0, 1, 3, 7) differs only in the fact that a1 (= 1 − x0 ) is less than z1 ,
+7
+and can be calculated as the second integral in Table 1 which equals 30
+. The only
+difference is that Px (x0 ) is integrated between 1 − z1 and 1.
+7
+At this stage in the algorithm, Σp = 61 and Σf = 30
+. Since Σf > 1 − 0.9 we can
+deduce that the formula is false, and in this case, there is no need to unfold further
+the node labelled u.
+The accuracy with which we know the values of Σp and Σu will increase as the
+probabilistic region tree is extended, and in some cases it may need to be extended
+to infinity for perfect accuracy. However, we can achieve accuracy to within an
+arbitrary tolerance ǫ with a finite probabilistic region tree.
+The major drawback of this algorithm is its complexity: with every new unfolding
+of the probabilistic region tree not only does the number of nodes to be considered
+increase, but also the number of integrations required to determine the probability
+on a single node increases exponentially. It therefore becomes intractable after a
+few iterations. This is the issue we try to tackle with the second algorithm. Rather
+
+·
+
+13
+
+14
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+than integrate the probability density functions, we discretise the ranges of the
+functions and work with the resulting approximations.
+5. THE MATRIX ALGORITHM
+In this section we present an overview of the second algorithm. The second algorithm takes a stochastic automaton SA, together with a bounded until temporal
+logic formula TL, a time step parameter δ and an adversary pick. For convenience
+we will present only the case where TL is of the form [φ0 U ≤c φ1 ] > p. Minor modifications to the algorithm would allow any of ≥ p, ≤ p or < p. We use the atomic
+propositions φ0 and φ1 as part of the formula because anything more complex can
+be reduced to these by standard model checking techniques. Using ≤ c guarantees
+that the algorithm will terminate, although we discuss the ≥ c case in Section 6.1.
+A single iteration of the algorithm will return one of three results: true, false or
+undecided. If it returns true, then the automaton models the formula. If it returns
+false, then the automaton does not model the formula. If it returns undecided, then
+the algorithm was unable to determine whether the automaton models the formula.
+In this case, the algorithm can be re-applied with a smaller value for the timestep
+δ. The question of convergence to the correct answer as δ tends to zero is discussed
+in section 7. For the remainder of this section we assume δ to be fixed.
+A stochastic automaton has a finite number of clocks each with a probability
+distribution function (pdf). For each state, the set of clocks has an (arbitrary)
+order, and the algorithm makes use of this ordering3 . We assume that each clock
+has non-zero lower and upper bounds on the values to which it can be set. The
+first of these is a new constraint and was not required for the first algorithm. This
+has been done so that δ can be initially chosen to be less than the minimum of all
+these lower bounds.
+The algorithm works by creating a snapshot of the automaton at each time point
+nδ (n ∈ N)4 and extracting some global information about the probability of the
+formula [φ0 U ≤c φ1 ] being satisfied at this point.5 To build the next snapshot, the
+algorithm picks out at each time point nδ the transitions that the automaton is
+capable of during the next interval of length δ. Because δ is less than the minimum
+of all the clock lower bounds, a maximum of one transition per path can occur in
+each interval. Recording all possible states of the automaton at each time point is
+therefore enough to record all the possible transitions.
+The algorithm stops when either enough information has been gathered to determine the truth or falsity of the formula, or enough time has passed so that nδ > c,
+and allowing time to pass further will make no difference to the information we
+already have. In this case the result undecided is returned.
+5.1 Data structures
+The principal data structures used by the algorithm are matrices. For each state
+s in the stochastic automaton we derive a matrix for a given time t (which is a
+rational number and calculated as nδ), denoted matrix(s, t), which is a record of
+the probabilities of the various combinations of clock values in state s at time t.
+Each matrix matrix(s, t) will have #κ(s) dimensions. Each dimension is associated with a particular clock, and the ordering of the dimensions corresponds to the
+ordering of the clocks. The dimension associated with a clock c will have ⌈ cmax
+δ ⌉
+3 However,
+
+the choice of ordering is arbitrary and does not carry any meaning. Any ordering will
+be sufficient.
+4 We will speak of the time instants generated by nδ (n ∈ N) as time points.
+5 We also require that ∃n.nδ = c, which ensures that one of the snapshots will be at exactly time
+c.
+
+Stochastic Model-Checking for Multimedia
+
+entries, where cmax is the largest value to which the clock c can be set, and ⌈ cmax
+δ ⌉ is
+the smallest integer greater than or equal to cmax
+.
+For
+a
+clock
+c
+,
+we
+will
+abbreviate
+i
+δ
+c
+⌈ imax
+δ ⌉ by Ni .
+The valuation function v gives the value of a particular clock: v(ci ) is the value
+of clock ci .
+Each entry in the matrix matrix(s, t) is the probability that at time point t, the
+automaton is in state s, and each clock is within a particular time range. Thus, the
+value matrix(s, t)[k1 . . . kn ] is the probability that at time point t, the automaton
+is in state s, and v(ci ) ∈ (δ(ki − 1), δki ] for each clock ci .
+A further data structure we shall need is live(t), which is the set of states “live”
+at time t (i.e. their matrices at time t contain at least one non-zero entry, and the
+formula is still undecided). In order to get an accurate picture of the automaton at
+time t + δ, we must take into account all states live at time point t.
+A snapshot of the automaton at time t is the set of all matrices matrix(s, t)
+where s is in live(t).
+Let pr(ci ∈ (δ(ki − 1), δki ]) be the probability that clock ci is initially set to a
+value in the range (δ(ki − 1), δki ]. Before the algorithm proper begins, we calculate
+all these values from the clock probability distribution functions, which are entered
+into the algorithm as part of the stochastic automaton.
+5.2 Variables
+The algorithm also uses a number of auxiliary variables.
+prob(s, t) is the probability of entering state s during the time range (δ(k − 1), δk]
+(where t = δk) and is defined for states s live at time δ(k − 1), and s′ live at time
+δk.
+new states(s, t) is the set of states which can be reached from a state s during a
+time range (δ(k − 1), δk].
+total pass is a probability value. It is incremented at each iteration. The iterations of the algorithm correspond to the time points, and total pass records the
+probability of the automaton having passed the formula at that time. total f ail is
+also a probability value; it records the probability of the automaton having failed
+the formula as the algorithm progresses.
+error is an upper bound on the possible errors of total pass and total f ail.
+After an iteration, we know that the actual probability of the automaton having
+passed the formula is in the range [total pass, total pass + error], and similarly for
+total f ail.
+5.3 Overview
+The second algorithm is given in detail in Appendix C. We begin here with a
+pseudocode description.
+build matrix(s0 , 0)
+check formula against s0 and t = 0
+↓ undecided
+repeat
+t := t + δ
+forall locations s in live(t − δ)
+build matrix(s, t)
+
+update live(t)
+forall locations s′ in live(t)
+
+→ pass
+→ fail
+
+(record possible new locations)
+(increment probability of entering new locations)
+(increment error)
+
+·
+
+15
+
+·
+
+16
+
+J. Bryans, H. Bowman and J. Derrick
+
+check formula against location:
+if pass then add probability to total pass
+if fail then add probability to total f ail
+if undecided then update matrix(s′ , t)
+until (formula has passed, or
+formula has failed, or
+t has reached the limit set by the formula)
+set all locations undecided at last iteration to false
+if total pass > f ormulaprobability then output pass
+elseif total f ail > 1 − f ormulaprobability then output fail
+else output undecided
+We now present the formula for initially calculating matrices, then describe the
+algorithm in overview, outlining the procedures involved.
+If there are n clocks in state s, then matrix(s, t) is calculated using the probability
+distribution functions of the clocks in state s as follows:
+∀1 ≤ k1 ≤ N1
+..
+.
+n
+
+∀1 ≤ kn ≤ Nn • matrix(s, t)[k1 . . . kn ] :=
+
+pr(v(cl ) ∈ (δ(kl − 1), δkl ])
+l=1
+
+The algorithm begins by calculating matrix(s0 , 0), where s0 is the initial state
+of the stochastic automaton.
+live(0) will either be {s0 } or the empty set, according to whether the formula
+TL is made true or false by state s0 , or whether we cannot yet decide. This is
+determined as follows. If state s0 models proposition φ1 , then the formula TL is
+immediately true and live(0) is the empty set. Otherwise, if s0 models φ0 we cannot
+yet decide, and so live(0) contains s0 . If the state models neither proposition then
+the formula TL is immediately false, and live(0) is the empty set.
+If the initial step does not determine whether the formula is true or false, we
+perform a number of iterations. Each iteration builds the snapshot at time point
+t + δ, based upon the snapshot at time point t. The sequence of snapshots build
+progressively more information as to whether the stochastic automaton has passed
+or failed the formula.
+In the case of a bounded until formula with a ≤ c subscript6 , the number of
+iterations is finite (i.e. the algorithm always terminates) because the iterations terminate either when sufficient information has been extracted to determine whether
+the formula passes or fails, or after the δc th iteration, since the formula cannot
+become true after time c.
+If the information at time t is not enough to determine the truth or falsity of the
+formula, we build the snapshot for time point t + δ. We now describe an individual
+iteration.
+An iteration consists of two sections. In the first, we consider all of the states
+which are currently undecided. These are all the states in live(t). For each state we
+create the matrices at time t + δ, update live(t + δ) and calculate prob(s′ , t + δ) for
+states s′ which can be reached in the interval (t, t + δ]. In the second, we look at all
+states which can be reached in the interval (t, t + δ], and consider them with respect
+6 i.e.
+
+[φ0 U ≤c φ1 ] > p. See Section 6.1 for a discussion of how > c time bounds are handled.
+
+Stochastic Model-Checking for Multimedia
+
+to the temporal logic formula. We then either update the global probabilities, if
+the states cause the formula to pass or fail, otherwise we update the respective
+matrices.
+Note that in this algorithm a matrix is updated at most twice. Once within procedure new time matrix(refer to Appendix C), if the state was live at the previous
+time, and once within the procedure new state matrix, if the state is reachable via
+a transition in the previous interval.
+5.3.1 Creating and updating matrices. We begin with some necessary notation.
+Let us assume δ is a fixed rational number greater than zero.
+Definition 4. If c1 , . . . , cn are the clocks on state s, a valuation7 is the vector
+of results of the valuation function v(ci ) from clocks to R which gives the values of
+each of the n clocks.
+Two valuations v and v ′ are (δ−) equivalent if
+∀ci .∃kl ∈ N.v(ci ) ∈ (δ(kl − 1), kl ] ∧ v ′ (ci ) ∈ (δ(kl − 1), kl ]
+A valuation equivalence class (or clock configuration) is a maximal set of equivalent valuations.
+✷
+If δ is understood, we can abbreviate this configuration as (k1 , . . . , kn ). For a
+n
+state s and a time point t, the probability l=1 pr(v(cl ) ∈ (δ(kl − 1), δkl ]) is an
+(s, t)-clock configuration probability (or just a clock configuration probability when
+s and t are understood).
+There are two different procedures for updating a matrix. The first (encapsulated in the procedure new time matrix) corresponds to the situation within the
+stochastic automaton where time passes, but the state remains unchanged. In this
+case we must shift the clock configuration probabilities in the previous matrix down
+by one index step (which corresponds to δ time passing) and add the result to the
+matrix we are updating.
+We also at this stage determine the new states which can be reached from the
+current state during the δ time passing, and the probability of entering these states.
+We do this by looking at all the clock configurations where at least one of the indices
+has the value one. If the clocks are set within such a configuration then we know
+that at least one clock will expire during the ensuing δ timestep.
+If only one index in the configuration has the value one then only one clock can
+expire, and only one state can be entered from this clock configuration, and so that
+state is added to the set of states which can be entered from the current state at
+the current time.
+If more than one index in the configuration has the value one, then we simply do
+not go any further into the automaton and the configuration probability is added
+to error.
+The second way to update a matrix corresponds to a transition from one state to
+another within the automaton. It is described in the procedure new state matrix.
+For each matrix entry we calculate the clock configuration probability, multiply it
+by the probability of moving into this state at this time, and add it to the matrix
+entry we are updating.
+5.3.2 Termination of an iteration. When the iteration terminates, it will output one of three results: true, false or undecided. true means that the automaton models the temporal formula, i.e. SA |= [φ0 U ≤c φ1 ] > p. false means that
+7 We
+
+alter the definition of valuation slightly here for the second algorithm.
+
+·
+
+17
+
+18
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+SA |= [φ0 U ≤c φ1 ] > p, and undecided means that the algorithm could not accumulate enough information to decide whether or not the automaton modelled the
+formula.
+The algorithm makes the output decision based on the three global variables
+total pass, total f ail and error.
+total pass is a lower bound on the probability that the stochastic automaton
+models the formula, and total f ail is a lower bound on the probability that the
+stochastic automaton does not model the formula. error is the largest amount by
+which total f ail or total pass may be wrong. In a sense, it records the size of the
+uncertainty introduced by the choice of δ.
+If neither of these situations holds then the errors introduced by the algorithm
+are too large to determine an answer with this value of δ. In this case, we can
+rerun the algorithm with a smaller δ, and in section 7 we show that the sum of
+the errors tends to zero as δ tends to zero. Note, however, that in the case where
+the probability that SA models [φ0 U ≤c φ1 ] is exactly p, we cannot guarantee that
+there will be a δ small enough to allow the algorithm to generate a true or a false.
+This is the sort of limitation that has to be accepted when working with generalised
+distributions.
+6. EXAMPLE
+The second algorithm requires slightly more stringent restrictions on the stochastic
+automaton than the first one, because the clock distribution functions must have
+positive lower bounds, (as opposed to the non-negative lower bounds required by
+the first). Therefore in order to illustrate the second algorithm, we will use the
+automaton in Figure 2, but alter slightly each of the clock distribution functions,
+by shifting each of them half a time unit to become
+Fx (t) = 2t − t2 , if t ∈ ( 12 , 23 ]
+= 0, if t ≤ 12
+= 1, otherwise
+Fy (t) = t2 , if t ∈ ( 21 , 32 ]
+= 0, if t ≤ 12
+= 1, otherwise
+and
+Fz (t) = t, if t ∈ ( 12 , 32 ]
+= 0, if t ≤ 21
+= 1, otherwise
+In this section, we will consider the temporal formula [(a0 ∨ a1 ) U ≤ 23 a2 ] > 12 ,
+where si |= ai , i ∈ {1, 2, 3}.
+We now illustrate this algorithm by applying it to the example8 . We set δ equal
+to 21 .
+Sections A, B and C below correspond to the sections A,B and C in the algorithm
+description in Appendix C. Within section C, line numbers correspond to the line
+numbers of the algorithm.
+8 The
+
+type of situation where this algorithm would do very badly is if one clock has a very small
+lower bound and all the rest have a very high lower bound. This is accentuated if the first clock
+is hardly used. It might even be that the state where the first clock is used is unreachable or has
+a very low probability of being reached. Thus a criterion for the algorithm to work efficiently is
+that all pdf lower bounds are “similar”.
+
+Stochastic Model-Checking for Multimedia
+
+Section A. This section initialises all the variables to zero, and calculates all the
+probabilities of clocks falling in the ranges (0, δ], (δ, 2δ] etc. from the probability
+distribution functions entered as part of the stochastic automaton.
+In our example, the probabilities that the clocks x, y and z are in the ranges
+(0, δ], (δ, 2δ] or (2δ, 3δ] are given by
+x y z
+(0, δ] 0 0 0
+(δ, 2δ] 43 14 12
+(2δ, 3δ]
+
+1
+4
+
+3
+4
+
+1
+2
+
+These are easy to obtain from the clock probability distribution functions. Indeed, the ease of determining these probabilities is the main benefit of this algorithm
+and contrasts with the intractable manner in which the integrals explode in the first
+algorithm.
+Section B. The initial state s0 does not model a1 , but it does model the proposition a0 , and so the procedure init matrix is called. This returns matrix(s0 , 0)
+which is as follows
+y
+3 0 83 18
+2 0 83 18
+1 0 0 0
+1 2 3 x
+and is easily derivable from the probabilities above. The procedure also sets live(0)
+to {s0 }.
+If Nx is the upper bound of x, and Ny is the upper bound of y, there will be
+⌈Nx × 1δ ⌉ entries on the x axis, and ⌈Ny × 1δ ⌉ entries on the y axis, so in this case
+(where Nx = 32 , Ny = 32 and δ = 21 ), we get a 3 × 3 matrix.
+This matrix tells us e.g. that when the clocks in the initial state are first set,
+the probability of clock x being set within the range (δ, 2δ] and clock y being set
+within the range (2δ, 3δ] is 38 . That is, for the clock configuration (δ, 2δ], (2δ, 3δ] ,
+the clock configuration probability is 38 .
+Section C. We now enter the iterative part of the algorithm, where each iteration
+corresponds to increasing the time by one time unit (δ), and the snapshot produced
+at the end of iteration n corresponds to a view of the automaton at time nδ. The
+three global probability values9 are all still zero (lines 1-1a), so ct (current time)
+becomes δ. Only the state s0 is live at time zero, so new time matrix is called
+(line 6) for matrix(s0 , δ). This returns a number of parameters: matrix(s0 , δ),
+new states(s1 , δ), prob and error.
+The procedure new time matrix will return the matrix(s0 , δ) as
+y
+3 0 0 0
+2 38 18 0
+1 38 18 0
+1 2 3 x
+where each clock has advanced one time unit from matrix(s0 , 0). So, at time δ,
+the probability of clock x being within the range (0, δ] and clock y being within the
+range (δ, 2δ] is 38 .
+9 These
+
+are the probability values that are updated throughout the algorithm: total pass, total f ail
+and error.
+
+·
+
+19
+
+20
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+The probability of staying in state s0 for at least half a time unit is 1; this
+follows from the fact that no clock can be set to less than δ ( 12 time unit). Thus
+prob(s0 , δ) = 1.
+None of the edge values (those with at least one clock in the range (0, δ]) of
+the previous time matrix (matrix(s0 , 0)) is non-zero (so there is no possibility of
+any clock reaching zero and causing a transition to fire). The second half of the
+procedure (lines 10-23, which would determine the new states reached from state
+s0 ) is therefore not executed and the global probability values (total pass, total f ail
+and error) are all still zero. new states(s0 , δ) will be returned as {}, since no new
+states can be reached at time δ.
+The next step (lines 7-11 of section C) is to calculate the live states at time δ,
+and since remain(s0 , δ) = true (it is possible to remain in state s0 at time δ) we
+include s0 .
+Since there are no states which can be reached from state s0 in the time interval
+(0, δ], lines 12-22 of section C are not executed.
+All of the global probability values are still zero, (i.e. we don’t have enough
+information to decide the truth or falsity of the formula at this stage, lines 1-1a
+of Section C), and 2δ ≤ 2 (we have more time in which to gain more information,
+lines 2-3 of Section C), so we begin a second iteration.
+On the second iteration of the while loop, ct is set to 2δ. Only s0 was live
+at the last iteration (live(δ) = {s0 }), so at line 6 we call new time matrix for
+matrix(s0 , 2δ).
+This again returns a number of parameters, e.g. matrix(s0 , 2δ) becomes
+y
+3 0 0 0
+2 0 0 0
+1 18 0 0
+1 2 3 x
+where the entry matrix(s0 , 2δ)(1, 1) is taken from the clock configuration (δ, 2δ], (δ, 2δ]
+in the previous time matrix matrix(s0 , δ) and thus the probability of staying in state
+s0 in the interval (δ, 2δ] is 81 . However this is not the final version of matrix(s0 , 2δ),
+because some of the clock configurations lead to transitions which lead back to state
+s0 .
+All the other clock configurations ((1, 1), (1, 2) and (2, 1)) in matrix(s0 , δ) lead
+to transitions. Lines 10-22 of procedure new time matrix are executed for each of
+these three configurations.
+For clock configuration (1, 1), clock x is (arbitrarily) chosen to fire, and we assume
+that the adversary pick chooses the action conc, leading to state s1 . Line 13a of
+the procedure adds state s1 to new states(s0 , 2δ), and prob(s1 , 2δ) becomes 38 (line
+14). Clock configuration (1, 1) is one where some error may be introduced into the
+algorithm result. Choosing clock x and action conc meant that we go to a state
+where the formula T L can still be true, but choosing the other clock may not lead
+to such a state. We therefore allow for the possible error introduced here by adding
+the clock configuration probability to error, which becomes 38 . Clock configurations
+(1, 2) and (2, 1) are dealt with similarly, but error remains constant.
+Now, the new time matrix procedure is finished, and lines 7-11 of Section C determine the value of live(2δ) which is {s0 , s1 , s2 }, because at time 2δ the automaton
+may be in any state.
+Lines 12-22 of Section C consider each new state that can be reached in time
+interval (δ, 2δ]. State s0 still allows the temporal logic formula to be true, and so
+procedure new state matrix is called (line 17). However, prob(s0 , 2δ) = 0, and
+
+Stochastic Model-Checking for Multimedia
+
+therefore matrix(s0 , 2δ) is not altered.
+State s1 still allows the temporal logic formula to become true (line 13) and so
+procedure new state matrix is called (line 17). The probability of entering state
+s1 in this interval is 68 , so matrix(s1 , 2δ) is
+0 83 38
+1 2 3 z
+In state s2 the formula is true, and so prob(s2 , 2δ) ( 81 ) is added to total pass (line
+14).
+In the final iteration, the global probability values become: total pass = 18 ,
+total f ail = 38 and error = 48 . The iterations stopped because the value of time
+became too large — not because the global probabilities contained enough information to make a decision. This means that total pass ( 81 ) is a maximum possible
+probability value of the formula [(a0 ∨ a1 ) U ≤ 32 a1 ] (with any clock ordering) and
+total pass − error (− 83 ) is a minimum possible probability value.
+Thus, since we wish to determine whether the actual probability value is greater
+than 21 , the algorithm will output fail.
+If we were interested in a similar formula with a probability value in the range
+[0, 18 ], we could reduce the size of δ, and take snapshots (e.g.) every 41 time unit.
+This (for the reasons outlined in Section 7) will reduce the size of the error variable.
+6.1 Unbounded until formulae
+As just presented the second algorithm only handles until formulae of the form
+[φ1 U ≤c φ2 ] ≃ p
+however a combination of the second and first algorithms yields a method to verify
+unbounded until formulae, i.e. those of the form
+[φ1 U >c φ2 ] ≃ p
+The basic idea is to observe that verification of a formula such as φ1 U >c φ2 can
+be split into a conjunction of separate verifications
+(a) Check that φ1 holds at all times until c time units have elapsed; and
+(b) Check that there exists an X > c such that φ2 holds at time X, and that for
+all times strictly greater than c and less than X, φ1 holds.
+Thus, we can model check formulae such as [φ1 U >c φ2 ] ≃ p in the following way.
+(i) Run (the obvious slight adaption of) the second algorithm to check that (a)
+holds. This will finish with a certain amount of probability mass in the variable
+total fail and no probability mass in total pass. The reason for the latter is that
+pass states can only be revealed once time has passed beyond c. In addition,
+live(c) will indicate the locations that are still undecided, i.e. from which we
+must explore further.
+(ii) Run the first algorithm using live(c) as the starting locations and the initial
+timing regions determined from the remaining matrices (this can be done in a
+straightforward manner). However, notice that running the first algorithm in
+this situation does not incur the problems of intractability that it does in the
+general case. Specifically, since the time bound on the until has been satisfied we
+ostensibly only have an untimed until verification. Consequently probabilities can
+be assigned to nodes without requiring the global clock to be taken into account
+and thus, they can be evaluated “locally”. Hence, the exponential explosion in
+the number of integrals to be considered does not occur.
+
+·
+
+21
+
+22
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+7. CORRECTNESS AND CONVERGENCE
+For a single run with fixed δ, we wish to prove two things: that the algorithm
+terminating with pass implies that the automaton models the formula, and that
+the algorithm terminating with fail implies that the automaton does not model the
+formula.
+If the algorithm outputs pass then the variable total pass must be greater than
+p (where p is taken from the temporal formula [φ0 U ≤c φ1 ] > p). The only place
+where total pass gets incremented is line 14 of section C (see full algorithm in
+Appendix C). If the current state q models φ1 (and all previous states in the path
+model φ0 ) we add the probability of entering the state q at the current time point.
+If the sum of these probabilities is greater than p then the algorithm outputs pass.
+We will consider the case when the algorithm outputs pass. Consider the initial
+state. Note that for any clock configuration, the probability of all paths which
+commence with the clocks being set somewhere within this configuration is equal to
+the clock configuration probability. Furthermore, for an arbitrary state s and time
+c and configuration, the probability of all paths which go through this configuration
+at this time is the probability of the configuration multiplied by the probability of
+reaching that state at that time.
+The probability of reaching state s at time c is the second parameter passed to
+the procedure new state matrix10 .
+If every valuation in a configuration corresponds to the same automaton transition, and this transition is the final one in a path which models the formula, then we
+add the clock configuration probability (multiplied by the probability of reaching
+that state at that time) to total pass.
+This is the only way in which the algorithm adds to the variable total pass. Since
+the algorithm only outputs pass if total pass is greater than the formula probability
+p, it is clear that the algorithm will only output pass if the automaton models the
+formula.
+If more than one clock in the configuration is in the range (0, δ] then more
+than one of the clocks will have reached time 0 in the interval we are considering,
+and so the clock configuration probability is added to error (line 12 of procedure
+new time matrix).
+A similar argument applies in the case where the algorithm outputs fail.
+Therefore the algorithm is sound in the sense that if we are given a definitive
+answer, this answer is correct. There remains, of course, the question of convergence
+to the correct answer, and the following theorem summarises the situation.
+Theorem 1. For every automaton SA and propositions φ0 and φ1 it is the case
+that if SA models [φ0 U ≤c φ1 ] with probability p, then for any error e greater than
+zero, there is a timestep δ greater than zero such that for the formula [φ0 U ≤c φ1 ] >
+q, the algorithm will only return undecided if q ∈ [p−e, p+e].
+First note that n independent single variable continuous probability distribution
+functions f1 . . . fn can always be combined to give a single n variable probability
+distribution function which is continuous in all dimensions: f (x1 . . . xn ) = f1 (x1 ) ×
+· · · × fn (xn ).
+For convenience, consider a location with two outgoing transitions and two clocks
+x and y with distribution functions fx and fy . Because fx and fy are both contin10 In
+
+fact, it is greater than or equal to this sum, because some routes through the transition system
+may have passed or failed the formula already, and therefore would be considered no further by
+the algorithm.
+
+Stochastic Model-Checking for Multimedia
+
+y=x+d
+y=x−d
+
+y
+
+x
+Fig. 5.
+
+Upper bound on error with clocks x and y.
+
+uous, if we set f (x, y) = fx (x) × fy (y) we can (by the note above) say that
+∀ǫ > 0.∃δ > 0.f (x, x + δ) − f (x, x − δ) < ǫ
+We will show that for any desired size of error we can choose a suitably small
+timestep.
+m
+Now, 0 f (x, x + δ) − f (x, x − δ)dx 11 (the probability of the clock valuation
+falling between the two 45 degree lines in Figure 5) is greater than the sum of
+all contributions to the error variables (represented by the squares in the figure).
+Since the number of locations in the stochastic automaton is finite (say Ns ) and (for
+bounded until formulas with less than subscripts) the maximum number of visits to
+any location is finite (say Nv ) for any desired error e we must ensure that, for every
+location, for the multivariate function associated with that location, we choose ǫ
+e
+such that ǫ < Ns ×N
+. If the timestep is set to the smallest δ necessary to ensure
+v
+e
+, then total error provided by
+that every location provides errors less than Ns ×N
+v
+e
+one location (over all time) will be less than Ns and the total error provided by all
+locations will be less than e.
+8. COMPLEXITY MEASURES
+8.1 Time complexity
+The time complexity of the algorithm discussed in Section 5 depends on a number
+of factors, namely δ, t, n1 , n2 and | S |. The explanation of these parameters is as
+follows:
+—t is the value of time given in the time-bounded until formula: [a U≤t b] ∼ p;
+—δ is the chosen timestep;
+—| S | is the number of states in the automaton;
+—n1 is the largest number of clocks in a single state and
+—n2 is the largest (positive finite) upper bound of all the clocks.
+An upper bound on the number of matrices which need to be built in a single
+iteration is | S |, where S is the set of all states in the automaton.
+To calculate the time complexity we also need to calculate the size of the largest
+matrix. Each matrix is multi-dimensional, and nδ2 will be the maximum number
+of entries over all matrices and all dimensions. For example, in the example in
+11
+
+m = min{xmax , ymax }, where xmax is the largest value to which clock x can be set.
+
+·
+
+23
+
+24
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+Section 6 all the matrices had 2 dimensions and the maximum number of entries in
+any dimension was 3 since δ = 21 and n2 = 32 .
+An upper bound on the size of the largest matrix will therefore be the number
+of elements in the largest dimension, raised to the power of the largest number of
+clocks on a single state.
+The time complexity is thus bounded by the time taken to update all the possible
+matrices in each iteration of the while loop in the algorithm, multiplied by the
+maximum number of iterations the algorithm will perform in the worst case. This
+latter value is δt , therefore the time complexity is
+t
+n2
+× ( )n1 × | S |
+δ
+δ
+Although this is exponential, the exponent n1 is something which should in general be fairly small (≤ 3) because we only allow clocks to be used from the state in
+which they are set.
+In fact, the algorithm could be optimised to provide a better time complexity,
+by limiting the size of the matrices to min( δt , nδ2 ) since there is no need to consider
+the operation of the clock beyond the limit set by the time bound on the temporal
+formula. The size of the largest matrix would therefore be less than (min( δt , nδ2 ))n1 ,
+where n1 is the largest number of clocks in a single state.
+An upper bound on the time complexity would therefore be
+t n2
+t
+× (min( , ))n1 × | S |
+δ
+δ δ
+The time complexity also relies heavily on δ, and the bigger the δ the lower the
+time complexity. To see the relationship with δ, note that the upper bound can be
+rewritten as
+1
+δ
+
+n1 +1
+
+× t × (n2 )n1 × | S |
+
+8.2 Space complexity
+An upper bound on the space complexity will be proportional to the product of
+the size of the biggest matrix and the largest number of matrices which need to
+be stored at one time. The size of the largest matrix is less than ( nδ2 )n1 , (from
+time complexity calculations) and the largest number of matrices which need to be
+stored at any one time is twice the number of states in the automaton, 2 × | S |.
+The upper bound on space complexity is therefore
+2×(
+
+n2 n1
+) ×|S|
+δ
+
+9. CONCLUSIONS AND FURTHER WORK
+In this paper we have presented two algorithms for model checking bounded until
+formulae against stochastic automata. Both of these algorithms allow systems to
+be described using continuous probability distributions, and we believe that this
+represents an important advance.
+The principal advantage of the first algorithm is its generality: the clocks may
+be set according to any function, providing the corresponding probability density
+function is integrable. The major drawback of the algorithm is its complexity: with
+every new unfolding of the probabilistic region tree not only does the number of
+nodes to be considered increase, but also the number of integrations required to
+determine the probability on a single node increases exponentially.
+
+Stochastic Model-Checking for Multimedia
+
+The principal advantage of the second algorithm is its efficiency: the discretisation of the probability functions means that the calculations required are considerably simpler. A limitation in comparison to the first algorithm is that the
+probability distributions must have a finite lower bound.
+In addition, an advantage of both the algorithms is that, since the “complete”
+model is at no point generated, the state space explosion (which typically hinders
+model checking) is contained. In particular, all data structures apart from those
+which reflect undecided nodes (i.e. u labelled regions in the first algorithm and live
+locations in the second algorithm) can be deleted. In this sense the algorithms yield
+a form of on-the-fly exploration – only keeping information about the “leaves” of
+the exploration tree.
+Further work on the second algorithm will include relaxing the restrictions imposed on the stochastic automata, particularly the ability to set and use clocks
+anywhere in the automaton. Being able to do this would allow parallel composition.
+It would also be good to increase the expressiveness of the logic, allowing nested
+untils or “greater than” queries, and to extend the model checking algorithm itself
+to allow queries such as “what is the probability of [φ0 U ≤c φ1 ]?” and receive a
+probability value for an answer.
+Acknowledgements: The research presented here is supported by the UK Engineering and Physical Sciences Research Council under grant number GR/L95878
+(A Specification Architecture for the Validation of Real-time and Stochastic Quality of Service). Thanks are due to co-workers on this project for their input into
+this work: Gordon and Lynne Blair from Lancaster University. Also to Pedro
+D’Argenio, Joost-Pieter Katoen and Holger Hermanns. In particular Pedro’s observations on clock equivalences for stochastic automata have greatly influenced our
+approach.
+REFERENCES
+Alur, R., Courcoubetis, C., and Dill, D. 1990. Model-checking for real-time systems.
+In Proceedings of 5th LICS (1990), pp. 414–425.
+Alur, R. and Dill, D. 1994.
+A theory of timed automata. Theoretical Computer Science 126, 183–235.
+Baier, C., Katoen, J.-P., and Hermanns, H. 1999. Approximate symbolic model checking
+of continuous-time markov chains. In Proceedings of CONCUR’99 , Number 1664 in LNCS
+(1999), pp. 146–162.
+Baier, C. and Kwiatkowska, M. 1998. Model checking for a probabilistic branching time
+logic with fairness. Distributed Computing 11, 125–155.
+Bowman, H., Blair, L., Blair, G. S., and Chetwynd, A. 1998. Formal Specification of
+Distributed Multimedia Systems. University College London Press.
+D’Argenio, P. 1999.
+Algebras and automata for timed and stochastic systems. Ph. D.
+thesis, University of Twente.
+D’Argenio, P. R., Katoen, J.-P., and Brinksma, E. 1998. An algebraic approach to the
+specification of stochastic systems (extended abstract). In D. Gries and W.-P. de Roever
+Eds., Proceedings of the IFIP Working Conference on Programming Concepts and Methods,
+PROCOMET’98 (1998), pp. 126–147. Chapman & Hall.
+Daws, C., Olivero, A., Tripakis, S., and Yovine, S. 1995. The tool Kronos. In R. Alur,
+T. A. Henzinger, and E. D. Sontag Eds., Proceedings of Workshop on Verification
+and Control of Hybrid Systems III , Volume 1066 of LNCS (October 1995), pp. 208–219.
+Springer-Verlag.
+Emerson, E. A. 1990. Handbook of Theoretical Computer Science, Chapter 16: Temporal
+and Modal Logic, pp. 996–1072. Elsevier Science Publishers.
+Glynn, P. 1989.
+A GSMP formalism for discrete event simulation. In Proceedings of the
+IEEE , Volume 77(1) (1989), pp. 14–23.
+Henzinger, T. A., Ho, P.-H., and Wong-Toi, H. 1997.
+Hytech: A model checker for
+
+·
+
+25
+
+26
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+hybrid systems. Software Tools for Technology Transfer 1, 110–122.
+Hillston, J. 1996.
+A Compositional Approach to Performance Modelling. Distinguished
+Dissertations in Computer Science. Cambridge University Press.
+Kleinrock, L. 1975. Queueing Systems, Volume I: Theory. John Wiley, New York.
+Larsen, K. G., Pettersson, P., and Yi, W. 1997.
+Uppaal in a nutshell. International
+Journal on Software Tools for Technology Transfer. 1, 1–2 (Oct), 134–152.
+Marsam, M. A., Conte, G., and Balbo, G. 1984. A class of generalised stochastic petri
+nets for the performance evaluation of multiprocessor systems. ACM Transactions on Computer Systems 2, 2 (May), 93–122.
+Shiryayev, A. N. 1984. Probability. Springer Series in Soviet Mathematics. Springer-Verlag.
+Stewart, W. J. 1994. Introduction to the Numerical Solution of Markov Chains. Princetown University Press, Princetown, New Jersey.
+Tanenbaum, A. S. 1996. Computer Networks. Prentice Hall.
+
+APPENDIX
+A. SEMANTICS
+A.1 Probabilistic Transition Systems
+The definition of the semantics of stochastic automata is given in terms of probabilistic transition systems. The definition of probabilistic transition systems is
+reproduced from [D’Argenio et al. 1998].
+N is the set of non-negative integers. R is the set of real numbers, and R≥0 the
+set of non-negative reals. For n ∈ N, let Rn denote the nth cartesian product of
+def
+R. R0 = {∅}.
+A probability space is a structure (Ω, F , P ) where Ω is a sample space, F is a σalgebra on Ω and P is a probability measure on F . In this work, as in [D’Argenio
+et al. 1998], we consider only probability spaces isomorphic to some Borel space
+defined in a real hyperspace, whose coordinates come from independent random
+variables. We denote by R(F1 , . . . Fn ) the probability space (Rn , B(Rn ), Pn ) where
+B(Rn ) is the Borel algebra on Rn and Pn is the probability measure obtained from
+F1 . . . Fn , a given family of distribution functions. See [Shiryayev 1984] for details.
+Let P = (Ω, F , P ) be a probability space. Let D : Ω → Ω′ be a bijection. We lift D
+def
+
+def
+
+to subsets of Ω: D(A) = {D(a) | a ∈ A} and define F ′ = {D(A) | A ∈ F }. Now,
+def
+
+it is clear that D(P) = (Ω′ , F ′ , P ◦ D−1 ) is also a probability space. Since D(P)
+is basically the same probability space as P, we say that D is a decoration and we
+refer to D(P) as the decoration of P according to D. This is used when we come to
+give a semantics to stochastic automata.
+Definition 5. Let P (H) denote the set of probability spaces (Ω, F , P ) such that
+Ω ⊆ H. A probabilistic transition system is a structure T = (Σ, Σ′ , σ0 , L, T, −→)
+where
+(1) Σ and Σ′ are two disjoint sets of states, with the initial state σ0 ∈ Σ. States
+in Σ are called probabilistic states and states in Σ′ are called non-deterministic
+states.
+(2) L is a set of labels.
+(3) T : Σ → P (Σ′ ) is the probabilistic transition relation.
+(4) −→⊆ Σ′ × L × Σ is the labelled (or non-deterministic) transition relation.
+l
+
+l
+
+l
+
+We use σ ′ −→ σ to denote σ ′ , l, σ ∈−→, σ ′ −→ for ¬∃σ.σ ′ −→ σ and σ ′ −→ σ
+l
+for ∃l.σ ′ −→ σ.
+✷
+
+Stochastic Model-Checking for Multimedia
+
+Since we are interested in timed systems, we set L = A × R≥0 , where A is a set of
+action names. A timed action transition will be described as a(d), which indicates
+that the action a occurs exactly d time units after the system has been idling.
+Definition 6. A valuation is a function v : C → R≥0 {⊥} such that v(x) ≤
+xmax , where xmax is the maximum value to which clock x can be set. The set of
+def
+all valuations is V. If d ∈ R≥0 , v − d is defined by ∀x ∈ C.(v − d)(x) = v(x) − d.
+→
+
+We assume the set of clocks is ordered so, if C ⊆ C, we can write C for the ordered
+→
+→
+form of C and C (i) for the i-th element. Let C ⊆ C, n = #C, and D∈ Rn . We
+→
+
+→
+
+define v[C ←⊣D] by
+→
+
+→
+
+→
+
+→
+
+D (i) if x =C (i), for some i ∈ {1, . . . , n}
+⊥
+otherwise
+
+def
+
+v[C ←⊣D](x) =
+
+✷
+This definition will be used when we explain how clock values change as states
+change. It differs from the definition given in [D’Argenio et al. 1998] because there
+clocks not in the set C maintain their values through this operation. This is because
+in [D’Argenio et al. 1998] clocks may be used to trigger actions in any state, not
+just the state in which they are set. In this work, however, in order to simplify the
+model checking, we insist that clocks are only used in the states in which they are
+set, and therefore there is no need to remember their value once the state has been
+exited.
+The main obstacle now in constructing the probabilistic transition system semantics is in showing how the clock probability functions are used to construct the
+probability spaces. We do this by defining a decoration function, discussed in Section A.1.
+Let SA = (S, s0 , C, A, −−⊲, κ, F ) be a stochastic automaton. Let s be a location
+→
+
+→
+
+→
+
+in S and n = #κ(s). Let v be a valuation in V. Let V ′ = {v[κ(s)←⊣D] |D∈
+Rn } ⊆ V. We define the decoration function Dvs : Rn → {s} × V ′ × {1} by
+→ def
+
+→
+
+→
+
+Dvs (D) = (s, v[κ(s)←⊣D], 1). Notice that Dvs is a bijection. In the next definition,
+we use the probability space R(Fx1 , . . . , Fxn ) decorated according to some Dvs .
+Definition 7. Let SA = (S, s0 , C, A, −−⊲, κ, F ) be a stochastic automaton. The
+def
+
+actual behaviour of SA is given by the PTS I(SA) = ((S × V × {0}), (S × V ×
+{1}), (s0 , 0, 0), A × R≥0 , T, −→), where in the initial valuation 0 clock a is set to
+some natural number (chosen according to the PRTL function, see Section 3), and
+each other clock is undefined. T and −→ are defined as follows:
+−→
+
+κ(s)={x1 ,...,xn }
+T (s,v,0)=Dvs (R(Fx1 ,...,Fxn ))
+
+Prob
+
+a,{x}
+
+s −−⊲ s′ ∧ d ∈ R≥0 ∧ (v − d)(x) ≤ 0
+b,{y}
+
+∀d′ ∈ [0.d).∀s′ .s −−⊲ s′ .(v − d′ )(y) > 0
+a(d)
+
+Act
+
+(s,v,1)−→(s′ ,(v−d),0)
+
+✷
+Within a stochastic automaton, two forms of uncertainty may arise. One is the
+probabilistic uncertainty associated with the clock-setting. Although we know
+
+·
+
+27
+
+·
+
+28
+
+J. Bryans, H. Bowman and J. Derrick
+
+which clocks are to be set, the choice of values for these clocks is probabilistic.
+This is where the stochastic element of the model arises, and is defined by rule
+Prob. The other is the nondeterministic uncertainty that arises if two actions
+are simultaneously able to be performed, and is defined using the rule Act. This
+nondeterminism is resolved using an adversary (Definition 10).
+Definition of a PTS-path:
+Definition 8. A PTS-path is a finite or infinite sequence of states
+σ0 , σ0′ , σ1 , σ1′ , . . .
+where, σ0 is the initial state, for each σi′ , there exists a probability space (S, F , P )
+such that T (σi ) = (S, F , P ), σi′ ∈ S and σi′ −→ σi+1 .
+✷
+Definition 9. An SA-path is a finite or infinite sequence
+(s0 , v0 ), (s0 , v0′ ), (s1 , v1 ), (s1 , v1′ ), . . . , (sn , vn ), (sn , vn′ ), . . .
+such that
+—v0 means no clocks are set.
+—vi′ ∈ R(Fx1 , . . . , Fxn ) where T (si , vi , 0) = Dvs (R(Fx1 , . . . , Fxn )). Each valuation
+vi′ is a possible result of the clock setting functions.
+a(d)
+
+—(si , vi′ , 1) −→ (si+1 , vi+1 , 0) for some d. Timed action transitions must be allowed
+by the SA.
+—Finite paths end on a probabilistic state.
+✷
+An SA-path is like a run of the SA expanded with clock values.
+Definition 10. An adversary of an SA is a function mapping sequences of states
+to states
+adv :< s0 , s1 , . . . , sn >−→ sn+1
+such that < s0 , s1 , . . . , sn , sn+1 > is a run of the SA.
+
+✷
+
+Note that adversaries do not make any reference to time.
+With an adversary, an SA becomes deterministic. The corresponding PTS contains
+no nondeterminism either.
+If
+σ = (s0 , 0), (s0 , v0′ ), (s1 , v1 ), (s1 , v1′ ), . . . , (sk , vk ), (sk , vk′ )
+is a finite SA-path, then σ[i] = si and σ(x) is the state at time x.
+R(Fx1 , . . . , Fxn ) is the Borel space (Rn , B(Rn ), Pn ) where Pn is the unique probability measure obtained from R(Fx1 , . . . , Fxn ).
+Now, for all j < k, set Aj to be the maximal set of valuations equivalent to vj
+which lead to state sj+1 .
+Let
+C(s0 , A0 , s1 , . . . , sk−1 , Ak−1 , sk )
+denote the cylinder set which contains all paths starting at s0 and going through
+all states sj (j ≤ k) and valuation sets Aj (j ≤ k).
+
+Stochastic Model-Checking for Multimedia
+
+The probability measure P r on F (P ath(s0 ))12 is identified by induction on k by
+P r(C(s0 )) = 1 and for k ≥ 0:
+P r(C(s0 , A0 , . . . , Ak , sk+1 ) = P r(C(s0 , A0 , . . . , Ak−1 , sk )) · P (Ak )
+where P (Ak ) is the probability of the set Ak , and is taken from the relevant Borel
+space.
+A.2 PRTL Semantics
+In this section, we introduce the semantics for the temporal logic PRTL.
+To facilitate model checking, we use Probabilistic Transition Systems as a semantic
+model for the definition of PRTL. But in order to do this we must resolve two
+problems. The first is that PRTL is a real-time logic — it enables reference to
+specific instants in time — and the abstract definition of PTSs [D’Argenio et al.
+1998] does not contain reference to time. This is easily solved — we simply use
+the PTS generated by a Stochastic Automaton. This contains much more detailed
+state information, in particular, the values of clocks.
+The second problem is that the PTS contains nondeterministic information, and this
+nondeterminism must be resolved before we can use the PTS to assign a semantics
+to our logic. We do this using adversaries.
+Recall the syntax of PRTL:
+ψ ::= tt | ap | ¬ψ | ψ1 ∧ ψ2 | [φ1 U ∼c φ2 ] ≃ p
+φ ::= tt | ap | ¬φ | φ1 ∧ φ2
+where c ∈ N, a is an atomic proposition, p ∈ [0, 1] is a probability value and
+∼, ≃∈ {<, >, ≤, ≥}.
+The path formulae ψ can only be used at the outermost level — they cannot be
+nested. This is because the model checking algorithms only evaluate path formulae
+from the initial state.
+Definition 11. If SA = (S, s0 , C, A, −−⊲, κ, F ) is a Stochastic Automaton and
+P T S = (Σ, Σ′ , σ0 , L, T, −→) is the resulting Probabilistic Transition System, then
+Σ(= Σ′ ) ⊆ S ×V, L ⊆ A×R≥0 and σ0 = (s0 , 0). We must also introduce a function
+ξ which maps SA locations to the logical propositions true in that location.
+✷
+We only need to use the probabilistic states to define the logic, since once a probabilistic state has been entered the behaviour of the automaton is completely determined until the first clock expires.
+The simple formulae φ are defined in the conventional way for each probabilistic
+region σ ′ , but the until formulae ψ are defined only for the initial region σ0 . The
+model checking algorithm does not yet allow path formulae to be established for an
+arbitrary region.
+•
+•
+•
+•
+
+s |= tt
+s |= a, provided a ∈ ξ(s)
+s |= φ1 ∧ φ2 , provided s |= φ1 and s |= φ2
+s |= ¬φ, provided s |= φ
+
+12 P ath(s
+
+0)
+
+is all paths possible from s0 , and F (P ath(s0 )) is the smallest σ−algebra on P ath(s0 ).
+
+·
+
+29
+
+30
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+If σ is an SA-path, and ψ a path formula then
+• σ |= [φ1 U φ2 ] iff ∃k ≥ 0.(σ[k] |= φ2 ∧ ∀0 ≤ i ≤ k.σ[i] |= ψ1 )
+• σ |= [φ1 U ∼t φ2 ] iff ∃x ∼ t.(σ(x) |= φ2 ∧ ∀y ∈ [0, x).σ(y) |= ψ1 )
+and
+def
+
+• P T S |= [φ1 U ∼t φ2 ] ≃ p iff P rob(s0 , φ1 U ∼t φ2 ) ≃ p where P rob(s0 , ψ) = P r{ρ ∈
+P ath(s0 ) | ρ |= ψ}
+Therefore, the Probabilistic Transition System P T S models the PRTL [φ1 U
+p provided P rob(s0 , φ1 U ∼t φ2 ) ≃ p.
+
+∼t φ2 ]
+
+≃
+
+B. FIRST ALGORITHM
+Here, we give the definition of the first model checking algorithm for bounded until
+formulae. We will consider a PRTL formula of the form [φ1 U <c φ2 ] > p. “less
+than p” queries may be handled in a similar way.
+Assume an adversary Adv, and that each SA location is mapped to either φ1 or
+¬φ1 and to either φ2 or ¬φ2 . Note that the algorithm can easily be extended to
+the more general case where locations contain set of atomic propositions.
+Add the (new) clock a to the set of all clocks.
+Construct the PRG node (s0 , 0c ).
+Set s = s0 .
+If s |= φ1 then stop with no, else
+REPEAT
+For each possible valuation equivalence class [vi ] from κ(s) {a}, form the node
+(s, [vi ]).
+For each new node (s, [vi ]) choose a subsequent non-deterministic node (sj , ⊥)
+according to the adversary Adv.
+For each new non-deterministic node (sj , ⊥)
+label ‘p’ if sj |= φ2 and v(a) > 0.
+label ‘f’ if sj |= φ1 or sj |= φ2 or v(a) ≤ 0.
+label ‘u’ otherwise
+For each node labelled with either ‘p’ or ‘f’, calculate the probability of the corresponding path.
+If Σp pr(s, [v]) > p then stop with yes.
+If Σf pr(s, [v]) > 1 − p then stop with no.
+Otherwise, repeat for each node labelled ‘u’.
+C. SECOND ALGORITHM
+In this section we present a detailed description of the algorithm. It is divided into
+Section A (which initialises variables), Section B (the initial part of the algorithm)
+and Section C (the iterative part). Procedures used are described at the end.
+The lines of code are prefaced with numbers, and the comments are delimited
+with double stars.
+** Section A**
+M odel check(SA, F ormula, δ, pick)
+** note that the function pick is the adversary, used in procedure new time matrix.**
+** We are assuming a TL formula of the form [a0 U ≤t a1 ] ≥ p. **
+
+Stochastic Model-Checking for Multimedia
+
+** The ≥ p could easily be changed; the ≤ t is hardwired into the algorithm. **
+** **
+** We begin by initialising variables.**
+** ct: (integer) current time**
+ct := 0
+** total pass and total f ail are reals in [0, 1]. **
+** At any point in the algorithm, total pass is the accumulated **
+** probability of all the passed paths and total f ail is the accumulated **
+** probability of all the failed paths. We initialise them both to zero.**
+total pass := 0
+total f ail := 0
+** error is a real in [0, 1]. It is the accumulated probability of all paths **
+** which, because of the discretisation of the algorithm, we cannot determine exactly.**
+** This is where the revised version of the algorithm differs from the initial one.**
+** It is initialised to zero. **
+** **
+error := 0
+** prob(s, t) is the probability of moving (from anywhere) to location s **
+** at time t. (i.e. in interval (t − δ, t].)**
+** For all combinations of locations and times, we initialise prob **
+** to zero. **
+∀s ∈ S.∀i ≤ n.
+prob(s, δi) := 0
+** remain(s, t) is a boolean which is true if the probability of remaining **
+** in location s during time interval (t − δ, t] is non-zero, false otherwise.**
+** They are all initialised to false.**
+∀s ∈ S.∀i ≤ n.
+remain(s, δi) := f alse
+** live(t) is the set of locations “active” at the end of **
+** interval (t − δ, t], which **
+** we need for calculating the information for the next time interval. **
+** For all time values, we initialise live to the emptyset. **
+∀i ≤ n.
+live(δi) := ∅
+** We initialise all values in all matrices to zero.**
+** The are ns clocks in location s.**
+∀s ∈ S.
+∀0 ≤ j ≤ n.
+∀1 ≤ i1 ≤ N1
+..
+.
+∀1 ≤ ins ≤ Nns .matrix(s, δj)[i1 . . . ins ] := 0
+** call procedure for calculating probabilities of clocks falling in the ranges **
+** (0, δ], (δ, 2δ] etc. This comes directly from the clock PDFs, **
+** and is only calculated once. It is needed for determining the clock**
+**probabilities. **
+**C is the set of all clocks and F is the set of clock probability functions**
+** This procedure returns pr, which is needed in new state matrix **
+** and init matrix. **
+clock conf ig probs(C, F, δ, pr)
+** **
+
+·
+
+31
+
+·
+
+32
+
+J. Bryans, H. Bowman and J. Derrick
+
+** Section B**
+** Consider initial location of SA: s 0 **
+** If s 0 |= a 1 then formula is trivially true. **
+if s 0 |= a1 then
+total pass := 1
+** If s 0 |= a 0 then formula is undecided and we must **
+** unfold SA further. **
+elseif s 0 |= a0 then
+** Build the initial matrix, i.e. matrix(s 0, 0). **
+**This will then contain the probabilities **
+**of all the different clock settings for location s 0 at time zero. **
+init matrix(matrix(s 0, 0))
+** The only location “live” at time zero will be s 0. **
+live(0) := {s 0}
+** If s 0 does not model a 0 or a 1 then formula is trivially false. **
+else
+total f ail := 1
+end if
+**
+**
+**
+**
+**
+**
+**
+**
+1:
+2:
+4:
+5:
+
+6:
+7:
+
+8:
+9:
+
+Section C**
+Each iteration of the following loop unfolds the automaton by **
+one time step of δ. States which cause the formula to **
+pass/fail are pruned from the tree, and their probabilities added to **
+total pass/total f ail, while the undecided states are recorded **
+for the next iteration. **
+We continue while the values of total pass, total f ail and error **
+are not enough to determine whether the formula is true or false **
+repeat
+** Increment current time **
+ct := ct + δ
+** for all states s that were live at the last clock tick **
+∀s ∈ live(ct − δ)
+** set current state to s. **
+cs := s
+** The procedure new time matrix returns **
+** matrix(cs, ct): the matrix for the current state at the current time. **
+** It also **
+** updates the function prob with the probability of remaining **
+** in the current state at the current time and the probabilities of **
+** moving to different states at the current time. **
+** It also updates the value of error. **
+new time matrix(matrix(cs, ct), new states(cs, ct), remain(cs, ct), prob, error)
+** If the probability of remaining in current state at current time is zero **
+if remain(cs, ct) = f alse then
+** current state is not live at current time and **
+** only the states which can be reached from current state at current time **
+** are added to those live at current time **
+live(ct) := live(ct) new states(cs, ct)
+else ** remain(cs, ct) = true **
+** The current state, plus all states which may be reached from it at **
+** the current time, must be added to the live states. **
+
+Stochastic Model-Checking for Multimedia
+
+live(ct) := live(ct) {cs} new states(cs, ct)
+end if
+end forall ** ∀s ∈ live(ct − δ) **
+Now, we have live(ct) and prob(cs, ct) for all cs in live(ct) **
+i.e. all the states we could be in at time ct, and the probability of **
+actually entering them in the previous time interval. **
+**
+** For every state which can be reached at the current **
+** time, we must see if it causes the formula to pass or fail, in **
+** which cases we adjust the values for total pass or **
+** total f ail and remove the state from the live set. If we cannot yet **
+** tell whether the formula is true or false, we must build the state/time matrix. **
+12:
+∀q ∈ live(ct)
+** if q |= a1 , then formula is true **
+13:
+if q |= a1 then
+** total pass is incremented by the probability of entering q **
+** from the current state at the current time **
+14:
+total pass := total pass + prob(q, ct)
+** State q is removed from the live set **
+live(ct) := live(ct) \ {q}
+15:
+** Otherwise, if q |= a0 (and q is not a terminating state) **
+** then the formula may still be true, **
+** so we must build matrix(q, ct) and keep state q in the live(ct) set. **
+16:
+elseif q |= a0 ∧ q ∈ terminating states then
+** The procedure new state matrix returns **
+** matrix(q, ct): the matrix for state q at current time, and requires **
+** prob(q, ct): the probability of entering state q from the current **
+** state at the current time. **
+17:
+new state matrix(matrix(q, ct), prob(q, ct))
+18:
+else ** If q does not model a 0 or it is a terminating state and also **
+** it does not model a 1 then the formula is false **
+** total f ail is incremented by the probability of entering q **
+** from the current state at the current time **
+19:
+total f ail := total f ail + prob(q, ct)
+** State q is removed from the live set **
+20:
+live(ct) := live(ct) \ {q}
+21:
+end if
+22:
+end forall ** for all states in live(ct) **
+23: until total pass > p ** formula has passed **
+24:
+or
+25:
+total f ail ≥ 1 − p ** formula has failed **
+26:
+or
+27:
+(error ≥ 1 − p ∧ error ≥ p) ** no possibility of a pass or a fail **
+28:
+or
+29:
+ct = t ** time’s up.**
+30: if (ct = t) then
+** All states undecided at the last iteration are now false, so **
+** total f ail is set to 1 − total pass − error **
+31:
+total f ail := 1 − total pass − error
+32: end if
+****
+** Output result, based on the values of**
+10:
+11:
+11a:
+**
+**
+**
+**
+
+·
+
+33
+
+34
+
+·
+
+J. Bryans, H. Bowman and J. Derrick
+
+** total pass, total f ail and error **
+33: if total pass > p then
+** SA models formula **
+34: output pass
+35: elseif ** total f ail ≥ 1 − p **
+** SA does not model formula **
+36: output fail
+37: else ** errors are too large; cannot decide **
+38: output undecided
+39: end if
+**
+**
+**
+**
+
+This procedure builds the initial matrix. **
+We assume there are n clocks associated with this state, **
+and csl 0 is the lth clock. **
+We abbreviate ⌈upper bound(csl 0 )⌉. 1δ by Nl . **
+
+procedure init matrix(matrix(s0 , 0))
+begin procedure
+∀1 ≤ i1 ≤ N1
+..
+.
+n
+
+pr(csl 0 ∈ [il − δ, il ))
+
+∀1 ≤ in ≤ Nn .matrix(s0 , 0)[i1 . . . in ] :=
+l=1
+
+end procedure
+procedure new time matrix(matrix(cs, ct), new states(cs, ct), remain(cs, ct), prob, error)
+** This procedure updates a matrix by incrementing time, not by **
+** changing state. We can do this by considering the values in the previous time **
+** matrix. It also updates the function prob,**
+** and the variable error.**
+** There are n clocks in state cs.**
+begin procedure
+1: ∀1 ≤ i1 ≤ N1
+..
+.
+2: ∀1 ≤ in ≤ Nn .
+
+3:
+4:
+
+5:
+6:
+7:
+
+8:
+9:
+
+** If one of the matrix indices is at its maximum value, then the **
+** probability value in this position must be zero. This is **
+** because this procedure is always the first to update a state/time matrix. **
+** **
+** **
+if ∃l ≤ n • il = Nl then
+matrix(cs, ct)[i1 , . . . , in ] := 0
+** otherwise the values in the matrix can be updated simply from the **
+** values in the previous time matrix. **
+else ** all clocks ci are ≥ 1 and < Ni **
+matrix(cs, ct)[i1 , . . . , in ] :=
+matrix(cs, ct)[i1 , . . . , in ] + matrix(cs, ct − δ)[i1 +1, . . . , in +1]
+** we record the fact that it is possible to remain in this state **
+** at this time. **
+remain(cs, ct) := true
+end if
+
+Stochastic Model-Checking for Multimedia
+
+9a:end forall
+** We now pick out the positions in the previous time matrix which, **
+** when moved forward one unit in time, result in a new state. **
+10: ∀1 ≤ i1 ≤ N1
+..
+.
+11: ∀1 ≤ in ≤ Nn
+** If more than one of the previous time matrix indices is one, we know that **
+** more than one of the clocks will have reached zero by ct, and so we **
+** add the probability to error. **
+11a:
+if #{cl | cl = 1} > 1 then
+12:
+error := error + matrix(cs, ct − δ)[i1 , . . . , in ]
+12a:
+else if #{cl | cl = 1} = 1
+** Given the stochastic Automaton SA, the state cs and the clock cc **
+** s′ is the resulting state. If the clock is associated with more than **
+** one transition the function pick (the adversary) chooses the **
+** resulting state. Otherwise the state is the one determined by the **
+** transition relation of the SA. **
+s′ := pick(SA, cs, cl )
+13:
+13a:
+new states(cs, ct) := new states(cs, ct) {s′ }
+** the probability of entering s′ at time ct **
+** is incremented by the matrix probability **
+14:
+prob(s′ , ct) := prob(s′ , ct) + matrix(cs, ct − δ)[i1 , . . . , in ]
+22:
+end if **line 11**
+23:
+end forall
+24:end procedure
+**
+**
+**
+**
+**
+**
+**
+**
+
+This procedure builds a new matrix, where the state is new rather than the time **
+We assume there are n clocks associated with this state, **
+and csl is the lth clock. **
+We abbreviate ⌈upper bound(csl )⌉. 1δ by Nl . **
+The values in the matrix are calculated by multiplying the clock **
+probabilities by a factor of p, where p is the probability of **
+entering the state, and adding this value to the value already in **
+the position. **
+
+procedure new state matrix(matrix(cs, ct), p)
+begin procedure
+∀1 ≤ i1 ≤ N1
+..
+.
+∀1 ≤ in ≤ Nn .matrix(cs, ct)[i1 , . . . , in ] :=
+
+n
+
+pr(csl ∈ [il − δ, il )) )
+
+matrix(cs, ct)[i1 , . . . , in ] + (p ×
+l=1
+
+end procedure
+
+·
+
+35
+
+

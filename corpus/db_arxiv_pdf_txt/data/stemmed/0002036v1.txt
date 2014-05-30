@@ -1,0 +1,1051 @@
+univers of wisconsin madison
+madph001157
+cernth2000039
+februari 2000
+arxivhepph0002036v1 3 feb 2000
+measur higg boson coupl at the lhc
+d zeppenfeld1 r kinnunen2 a nikitenko3 e richterwas4
+1 depart
+of physic univers of wisconsin madison wi 53706 usa and
+cern th divis 1211 geneva 23 switzerland
+2 helsinki
+3 helsinki
+institut of physic helsinki finland
+institut of physic helsinki finland on leav from itep moscow russia
+4 cern
+it divis 1211 geneva 23 switzerland and
+institut of comput scienc jagellonian univers institut of nuclear physic
+30055 krakow ul kawiori 26a poland
+abstract
+for an intermedi mass higg boson with smlike coupl the lhc
+allow observ of a varieti of decay channel in product by gluon fusion and weak boson fusion cross section ratio provid measur of
+variou ratio of higg coupl with accuraci of order 15 for 100 fb1
+of data in each of the two lhc experi for higg mass abov
+120 gev minim assumpt on the higg sector allow for an indirect
+measur of the total higg boson width with an accuraci of 10 to
+20 and of the h w w partial width with an accuraci of about 10
+1
+i introduct
+investig of the symmetri break mechan of the electroweak su2 u1
+gaug symmetri will be one of the prime task of the lhc correspondingli major
+effort have been concentr on devis method for higg boson discoveri for the
+mh 1 tev
+entir mass rang allow within the standard model sm 100 gev
+after lep2 and for higg boson search in extens of the sm like the mssm 12
+while observ of one or more higg scalar at the lhc appear assur discoveri
+will be follow by a more demand task the systemat investig of higg boson
+properti beyond observ of the variou cp even and cp odd scalar which natur
+may have in store for us thi mean the determin of the coupl of the higg
+boson to the known fermion and gaug boson ie the measur of htt hbb h
+and hw w hzz h coupl to the extent possibl
+clearli thi task veri much depend on the expect higg boson mass for mh
+200 gev and within the sm onli the h zz and h w w channel are expect
+to be observ and the two gaug boson mode are relat by su2 abov mh
+250 gev where detector effect will no longer domin the mass resolut of the
+h zz 4 reson addit inform is expect from a direct measur
+of the total higg boson width h a much richer spectrum of decay mode is predict
+for the intermedi mass rang ie if a smlike higg boson ha a mass between the
+110 gev and the zpair threshold the main reason for focus
+reach of lep2
+on thi rang are present indic from electroweak precis data which favor mh
+250 gev 3 as well as expect within the mssm which predict the lightest higg
+130 gev 4
+boson to have a mass mh
+until recent the prospect of detail and model independ coupl measur at the lhc were consid somewhat remot 5 becaus few promis search
+channel were known to be access for ani given higg boson mass take atla
+search scenario as an exampl these were 1
+2
+gg h
+150 gev
+for mh
+1
+gg h zz 4
+130 gev
+for mh
+2
+and
+150 gev
+for mh
+gg h w w
+3
+with the possibl of obtain some addit inform from process like w h
+andor tth associ product with subsequ h bb and h decay for higg
+boson mass near 100 gev throughout thi paper gg h stand for inclus higg
+product which is domin by the gluon fusion process for a smlike higg boson
+thi rel pessimist outlook is chang consider now due to the demonstr that weak boson fusion is a promis higg product channel also in the
+intermedi mass rang previous thi channel had onli been explor for higg
+mass abov 300 gev specif it wa recent shown in parton level analys that
+the weak boson fusion channel with subsequ higg decay into photon pair 67
+qq qqh h
+for mh
+150 gev
+4
+140 gev
+for mh
+5
+into pair 79
+qq qqh h
+or into w pair 710
+qq qqh h w w e pt
+120 gev
+for mh
+6
+can be isol at the lhc preliminari analys which tri to extend these parton level
+result to full detector simul look promis 11 the weak boson fusion channel
+util the signific background reduct which are expect from doubl forward jet
+tag 1214 and central jet veto techniqu 1516 and promis low background
+environ in which higg decay can be studi in detail the parton level result
+predict highli signific signal with substanti less than 100 fb1
+3
+the prospect of observ sever higg product and decay channel over the
+entir intermedi mass rang suggest a reanalysi of coupl determin at the
+lhc 5 in thi paper we attempt a first such analysi for the case where the branch fraction of an intermedi mass higg reson are fairli similar to the sm case
+ie we analyz a smlike higg boson onli we make use of the previous publish
+analys for the inclus higg product channel 12 and of the weak boson fusion
+channel 610 the former were obtain by the experiment collabor and includ detail detector simul the latter are base on parton level result which
+employ full qcd tree level matrix element for all signal and background process we
+will not discuss here differ in the perform expect for the atla and cm
+detector nor detail in the theoret assumpt which lead to differ estim for
+expect signal and background rate the reader is refer to the origin public from which number are extract in section ii we summar expect for
+the variou channel includ expect accuraci for cross section measur of the
+variou signal for an integr luminos of 100 fb1 implic for the determin of coupl ratio and the measur of higg boson partial decay width are
+then obtain in section iii a final summari is given in section iv
+ii survey of intermedi mass higg channel
+the variou higg channel list in eq 16 and their observ at the lhc
+have all been discuss in the literatur where avail we give valu as present
+quot by the experiment collabor in order to compar the accuraci with which
+the cross section of differ higg product and decay channel can be measur we
+need to unifi these result for exampl kfactor of uniti are assum throughout
+our goal in thi section is to obtain reason estim for the rel error h h
+which are expect after collect 100 fb1 in each the atla and the cm detector
+ie we estim result after a total of 200 fb1 of data have been collect at the
+4
+tabl i number of expect event for the inclus sm h signal and expect
+background assum an integr luminos of 100 fb1 and high luminos perform
+number correspond to optim invari mass window for cm and atla the expect
+rel statist error on the signal cross section are given for the individu experi
+and are combin in the last line
+cm 1718
+atla 1
+combin
+mh
+100
+110
+120
+130
+140
+150
+ns
+865
+1038
+1046
+986
+816
+557
+nb
+29120
+22260
+16690
+12410
+9430
+7790
+h h
+200
+147
+127
+117
+124
+164
+ns
+1045
+1207
+1283
+1186
+973
+652
+nb
+56450
+47300
+39400
+33700
+28250
+23350
+h h
+229
+182
+157
+157
+176
+238
+h h
+151
+114
+99
+94
+101
+135
+lhc presum these data will be taken with a mix of both low and high luminos
+run
+we find that the measur are larg domin by statist error for all
+channel event rate with 200 fb1 of data will be larg enough to use the gaussian
+approxim for statist error the experi measur the signal cross section by
+separ determin the combin signal background rate nsb and the expect
+number of background event nb the signal cross section is then given by
+h
+ns
+nsb nb
+ldt
+ldt
+where denot effici factor thu the statist error is given by
+h
+nsb
+ns nb
+h
+ns
+ns
+7
+8
+where in the last step we have drop the distinct between the expect and the
+actual number of background event systemat error on the background rate are
+5
+ad in quadratur to the background statist error
+nb where appropri
+well below the h w w threshold the search for h event is arguabl the
+cleanest channel for higg discoveri lhc detector have been design for excel
+twophoton invari mass resolut with thi higg signal in mind we directli take
+the expect signal and background rate for the inclus h search from the
+detail studi of the cm and atla collabor 17181 which were perform
+for an integr luminos of 100 fb1 in each detector expect are summar
+in tabl i rate correspond to not includ a kfactor for the expect signal and
+background cross section in cm and atla cross section have been determin
+with mr r1 parton distribut function pdf for cm while atla number
+are base on cteq2l pdf
+the inclus h signal will be observ as a narrow invari mass peak
+on top of a smooth background distribut thi mean that the background can be
+directli measur from the veri high statist background distribut in the sideband
+we expect ani systemat error on the extract of the signal event rate to be neglig
+compar to the statist error which are given in the last row of tabl i with
+100 fb1 of data per experi gg h bh can be determin with a
+rel error of 10 to 15 for higg mass between 100 and 150 gev here we do not
+includ addit systemat error eg from the luminos uncertainti or from higher
+order qcd correct becaus we will mainli consid cross section ratio in the final
+analysi in the next section these systemat error larg cancel in the cross section
+ratio systemat error common to sever channel will be consid later where
+appropri
+a higg search channel with a much better signal to background ratio at the price of
+lower statist howev is avail via the inclus search for h zz 4 event
+expect event number for 100 fb1 in both atla 1 and cm 19 are list in
+tabl ii these number were deriv use cteq2l pdf and are correct to contain
+6
+tabl ii number of expect event for the inclus sm h zz signal
+and expect background assum an integr luminos of 100 fb1 and high luminos
+perform number correspond to optim fourlepton invari mass window for cm and
+atla and to the combin total rate in parenthes correspond to number interpol
+accord to h zz branch ratio for the signal the expect rel statist error
+on the signal cross section are given for each experi and are combin in the last line
+cm 19
+atla 1
+combin
+mh
+120
+130
+140
+150
+160
+170
+180
+ns
+192
+553
+99
+1314
+48
+294
+765
+nb
+129
+171
+20
+225
+26
+275
+27
+h h
+295
+154
+110
+94
+179
+257
+133
+ns
+103
+287
+51
+676
+31
+191
+497
+nb
+444
+776
+8
+892
+8
+887
+881
+h h
+373
+210
+151
+129
+201
+277
+154
+h h
+231
+124
+89
+76
+134
+188
+101
+no qcd kfactor for those higg mass where no atla or cm predict is
+avail we interpolateextrapol the result for the nearest higg mass take the
+expect h zz branch ratio into account for the signal similar to the case of
+h event the signal is seen as a narrow peak in the fourlepton invari mass
+distribut ie the background can be extract directli from the signal sideband
+the combin rel error on the measur of gg hbh zz is list in
+the last line of tabl ii for higg mass in the 130150 gev rang and abov zpair
+threshold a 10 statist error on the cross section measur is possibl in the
+intermedi rang where h w w domin and for lower higg mass where the
+higg is expect to dominantli decay into bb the error increas substanti
+abov mh 135 gev h w w becom the domin sm higg decay channel the result inclus w w signal is visibl abov background after
+7
+tabl iii number of expect event for the inclus sm h w w
+signal and expect background assum an integr luminos of 30 fb1 number
+correspond to optim cut vari with the mass of the higg boson be search for
+the expect rel error on the signal cross section are given for each experi separ
+the statist error the effect of a systemat 5 error of the background level and the two
+ad in quadratur the combin error for the two experi assum 100 correl
+of the systemat error on the background determin
+cm 20
+atla 1
+mh
+120
+130
+140
+150
+160
+170
+180
+ns
+44
+106
+279
+330
+468
+371
+545
+nb
+272
+440
+825
+732
+360
+360
+1653
+190
+h h stat
+404 220 119
+99
+61
+73
+86
+h h syst
+309 208 148 111
+38
+49
+152
+h h comb
+509 303 190 149
+73
+88
+174 206
+ns
+240
+400
+337
+276
+124
+nb
+844
+656
+484
+529
+301
+h h stat
+137
+81
+85
+103 166
+h h syst
+176
+82
+72
+96
+121
+h h comb 509 303 190 223 115 111 141 206
+combin
+h h comb 421 260 170 148
+70
+80
+136 169
+exploit the characterist lepton angular correl for spin zero decay into w pair
+near threshold 20 the inclus channel which is domin by gg h w w
+ha been analyz by atla for mh 150 gev and for integr luminos of 30
+and 100 fb1 1 and by cm for mh 120 gev and 30 fb1 20 the expect event
+number for 30 fb1 are list in tabl iii the number are deriv without qcd
+kfactor and use cteq2l for atla and mrsa pdf for cm result
+unlik the two previou mode the two miss neutrino in the h w w event
+8
+do not allow for a reconstruct of the narrow higg mass peak sinc the higg signal
+is onli seen as a broad enhanc of the expect background rate in leptonneutrino
+transvers mass distribut with similar shape of signal and background after applic of all cut a precis determin of the background rate from the data is not
+possibl rather one ha to reli on background measur in phase space region
+where the signal is weak and extrapol to the search region use nlo qcd predict the precis error on thi extrapol is unknown at present the assumpt
+of a 5 systemat background uncertainti appear optimist but attain it turn
+out that with 30 fb1 alreadi the systemat error start to domin becaus the
+background exce the signal rate by factor of up to 5 depend on the higg mass
+run at high luminos make matter wors becaus the less effici reduct of
+tt background due to less stringent bjet veto criteria increas the background rate
+further becaus of thi problem we onli present result for 30 fb1 of low luminos
+run in tabl iii sinc neither of the lhc collabor ha present predict
+for the entir higg mass rang we take cm simul below 150 gev and atla
+result at 190 gev but divid the result statist error by a factor 2 to take
+account of the presenc of two experi between 150 and 180 gev we combin both
+experi assum 100 correl in the systemat 5 normal error of the
+background
+the previou analys are gear toward measur of the inclus higg product cross section which is is domin by the gluon fusion process 15 to 20 of
+the signal sampl howev is expect to aris from weak boson fusion qq qqh or
+correspond antiquark initi process the weak boson fusion compon can be
+isol by make use of the two forward tag jet which are present in these event
+and by veto addit central jet which are unlik to aris in the color singlet
+signal process 15 a more detail discuss of these process can be found in ref 7
+from which most of the follow number are taken
+9
+tabl iv number of expect jj event from the qq qqh h weak boson fusion signal and expect background assum an integr luminos of 100 fb1
+number correspond to optim invari mass window for cm and atla and to the
+combin total as project from the parton level analysi of ref 67 the expect rel
+statist error on the signal cross section are given for each experi and are combin in
+the last line
+mh
+100
+110
+120
+130
+140
+150
+project cm
+ns
+37
+48
+56
+56
+48
+33
+perform
+nb
+33
+32
+31
+30
+28
+25
+h h
+226
+186
+167
+166
+182
+231
+project atla
+ns
+42
+54
+63
+63
+54
+37
+perform
+nb
+61
+60
+56
+54
+51
+46
+h h
+242
+198
+173
+172
+190
+246
+h h
+165
+136
+120
+119
+131
+168
+combin
+the qq qqh h process wa first analyz in ref 6 where cross section
+for signal and background were obtain with full qcd tree level matrix element the
+parton level mont carlo determin all geometr accept correct addit
+detector effect were includ by smear parton and photon 4momenta with expect
+detector resolut and by assum trigger identif and reconstruct effici of 086 for each of the two tag jet and 08 for each photon result cross
+section were present in ref 7 for a fix invari mass window of total width
+m 2 gev we correct these number for mh depend mass resolut in the
+experi we take 14 mass window as given in ref 1 for high luminos run which are expect to contain 79 of the signal event for atla the 2 gev
+window for mh 100 gev at cm 1718 is assum to scale up like the atla
+10
+tabl v number of expect signal and background event for the qq qqh jj
+channel for 100 fb1 and two detector cross section are ad for h pt and
+e pt event as given in ref 79 the last line give the expect statist rel
+error on the qq qqh h cross section
+mh
+100
+110
+120
+130
+140
+150
+ns
+211
+197
+169
+128
+79
+38
+nb
+305
+127
+51
+32
+27
+24
+h h
+108
+91
+88
+99
+130
+207
+resolut and assum to contain 70 of the higg signal the expect total signal
+and background rate for 100 fb1 and result rel error for the extract of the
+signal cross section are given in tabl iv statist error onli are consid for the
+background subtract sinc the background level can be measur independ by
+consid the sideband to the higg boson peak
+the next weak boson fusion channel to be consid is qq qqh h again
+thi channel ha been analyz at the parton level includ some estim of detector
+effect as discuss for the h case here a lepton identif effici of 095
+is assum for each lepton e two decay mode have been consid so far
+h h pt 8 and h e pt 9 these analys were perform
+for low luminos run some deterior at high luminos is expect as in
+the analog ha channel in the mssm search 1 at high luminos pileup effect degrad the pt resolut significantli which result in a wors invari
+mass resolut at a less signific level a higher pt threshold for the minijet veto
+techniqu will increas the qcd and tt background the identif effici is
+similar at high and low luminos we expect that the reduc perform at high
+luminos can be compens for by consid the addit channel h
+11
+tabl vi number of event expect for qq qqh h w w e pt in
+200 fb1 of data and correspond background 10 the expect rel statist error
+on the signal cross section is given in the last line
+mh
+120
+130
+140
+150
+160
+170
+180
+190
+ns
+136
+332
+592
+908
+1460
+1436
+1172
+832
+nb
+136
+160
+188
+216
+240
+288
+300
+324
+h h
+121
+67
+47
+37
+28
+29
+33
+41
+e e pt pt zjet and zzjet background with zz are strongli
+suppress by reject same flavor lepton pair which are compat with z decay
+m mz 6 gev drellyan plu jet background are further reduc by requir
+signific pt sinc these analys have not yet been perform we use the predict
+cross section for onli those two channel which have alreadi been discuss in the
+literatur and scale event rate to a combin 200 fb1 of data result are given in
+tabl v
+the previou two weak boson channel allow reconstruct of the higg reson as
+an invari mass peak thi is not the case for h w w as discuss previous for the inclus search the weak boson fusion channel can be isol separ
+by employ forward jet tag and color singlet exchang isol techniqu in addit to tool like charg lepton angular correl which are use for the inclus
+channel the correspond parton level analysi for qq qqh h w w e pt
+ha been perform in ref 10 and we here scale the result to a total integr luminos of 200 fb1 which take into account the avail of two detector as for the tau
+case the analysi wa done for low luminos run condit and somewhat higher
+background are expect at high luminos on the other hand the w w pt
+and w w e e pt mode should roughli doubl the avail statist sinc veri
+12
+few signal event have lepton pair invari mass compat with z decay
+therefor our estim are actual conserv note that the expect background
+for thi weak boson fusion process is much smaller than for the correspond inclus
+measur as a result modest systemat uncertainti will not degrad the accuraci
+with which qq qqh bh w w can be measur a 10 systemat error
+on the background doubl the error assum in the inclus case would degrad the
+statist accuraci by typic a factor 12 or less as a result we expect that a veri
+precis measur of qq qqh bh w w can be perform at the lhc
+with a statist accuraci of order 5 or even better in the mass rang mh 140 gev
+even for mh as low as 120 gev a 12 measur is expect
+iii measur of higg properti
+one would like to translat the cross section measur of the variou higg product and decay channel into measur of higg boson properti in particular
+into measur of the variou higg boson coupl to gaug field and fermion
+thi translat requir knowledg of nlo qcd correct to product cross section inform on the total higg decay width and a combin of the measur
+discuss previous the task here is to find a strategi for combin the anticip
+lhc data without undu loss of precis due to theoret uncertainti and systemat
+error
+for our further discuss it is conveni to rewrit all higg boson coupl in
+term of partial width of variou higg boson decay channel the higgsfermion
+coupl ghf f for exampl which in the sm are given by the fermion mass
+ghf f mf mh v can be trade for the h ff partial width
+2
+2
+cf ghf f 1 4mf
+f h ff
+8
+m2h
+3
+2
+mh
+9
+here cf is the color factor 1 for lepton 3 for quark similarli the squar of the
+hw w coupl ghw w gmw in the sm or the hzz coupl is proport to
+13
+the partial width w h w w or z h zz 21 analog we
+trade the squar of the effect h and hgg coupl for h and
+g h gg note that the hgg coupl is essenti proport to ghtt the
+higg coupl to the top quark
+the higg product cross section are govern by the same squar of coupl
+thi allow to write eg the gg h product cross section as 22
+gg h h gg
+2
+8m3h
+1
+dx
+gx m2h g m2h
+x
+x
+10
+where m2h s similarli the qq qqh cross section via w w and zz fusion are
+proport to h w w and h zz respect in the narrow width
+approxim which is appropri for the intermedi higg mass rang consid
+here these product cross section need to be multipli by the branch fraction
+for final state j bh j j where denot the total higg width thi mean
+that the variou cross section measur discuss in the previou section provid
+measur of variou combin i j
+the product cross section are subject to qcd correct which introduc
+theoret uncertainti while the kfactor for the gluon fusion process is larg 23
+which suggest a sizabl theoret uncertainti on the product cross section the
+nlo correct to the weak boson fusion cross section are essenti ident to the
+one encount in deep inelast scatter and are quit small 24 thu we can
+assign a small theoret uncertainti to the latter of order 5 while we shall use a
+larger theoret error for the gluon fusion process of order 20 23 the problem for
+weak boson fusion is that it consist of a mixtur of zz h and w w h event
+and we cannot distinguish between the two experiment in a larg class of model
+the ratio of hw w and hzz coupl is ident to the one in the sm howev and
+thi includ the mssm we therefor make the follow w zunivers assumpt
+the h zz and h w w partial width are relat by su2 as in the sm
+ie their ratio z is given by the sm valu
+14
+z z w zsm w
+11
+note that thi assumpt can be test at the 1520 level for mh 130 gev
+by form the ratio bgg h zz bgg h w w in which qcd
+uncertainti cancel see tabl vii
+with w zunivers the three weak boson fusion cross section give us direct
+measur of three combin of partial width
+w
+w
+x
+2
+xw w
+x
+from qq qqh h
+12
+from qq qqh h
+13
+from qq qqh h w w
+14
+with common theoret systemat error of 5 in addit the three gluon fusion
+channel provid measur of
+g
+g z
+yz
+g w
+yw
+y
+from gg h
+15
+from gg h zz
+16
+from gg h w w
+17
+with common theoret systemat error of 20
+the first precis test of the higg sector is provid by take ratio of the xi s
+and ratio of the yi s in these ratio the qcd uncertainti and all other uncertainti
+relat to the initi state like luminos and pdf error cancel beyond test w zunivers these ratio provid use inform for higg mass between 100 and
+150 gev and 120 to 150 gev respect where more than one channel can be observ
+in the weak boson fusion and gluon fusion group typic error on these cross section
+ratio are expect to be in the 15 to 20 rang see tabl vii accept an addit
+systemat error of about 20 a measur of the ratio g w which determin the
+htt to hw w coupl ratio can be perform by measur the cross section ratio
+15
+tabl vii summari of the accuraci with which variou ratio of partial width can
+be determin with 200 fb1 of data the first two column give the ratio consid and
+indic the method by which it is measur yz yw for exampl indic a measur
+of bh zz bh w w in gluon fusion while xi ratio correspond to weak boson
+fusion see text for detail the statist combin of sever channel for a given width
+ratio is indic by 5 and 20 theoret uncertainti for weak boson and gluon fusion
+cross section affect the mix gluonweak boson fusion ratio onli which are need for a
+measur of g w the effect of thi systemat error is indic in the last line
+mh
+z z w
+100
+110
+120
+130
+140
+150
+160
+170
+180
+yz yw
+48
+29
+19
+17
+15
+20
+17
+yz x
+y xw
+30
+21
+19
+23
+15
+20
+17
+yz
+yw
+yz x
+y xw
+29
+19
+15
+14
+w
+y
+yw
+x
+xw
+16
+12
+11
+13
+w
+x
+xw
+15
+12
+14
+21
+x
+x
+g w
+y
+x
+yw
+xw
+y
+x
+yw
+xw
+21
+20
+16
+15
+16
+18
+27
+22
+18
+15
+13
+12
+13
+8
+9
+14
+30
+27
+25
+24
+24
+24
+22
+22
+25
+bgg h qq qqhbh and bgg h w w qq
+qqhbh w w expect accuraci are list in tabl vii in these estim
+the systemat come from understand detector accept is not includ
+beyond the measur of coupl ratio minim addit assumpt allow
+an indirect measur of the total higg width first of all the partial width
+properli normal is measur with an accuraci of order 10 the is a third
+gener fermion with isospin 21 just like the bquark in all extens of the sm
+with a common sourc of lepton and quark mass even if gener symmetri is
+broken the ratio of b to yukawa coupl is given by the fermion mass ratio we thu
+16
+assum in addit to w zunivers that
+the ratio of b to coupl of the higg is given by their mass ratio ie
+y
+b
+m2 mh
+g2
+3cqcd 2hbb 3cqcd b 2
+gh
+m
+18
+where cqcd is the known qcd and phase space correct factor
+the total higg width is domin by decay to bb w w zz gg and ie
+the branch ratio for unexpect channel is small
+1 bh bb bh bh w w
+bh zz bh gg bh
+1
+19
+note that in the higg mass rang of interest these two assumpt are satisfi for
+both cp even higg boson in most of the mssm paramet space the first assumpt
+hold in the mssm at tree level but can be violat by larg squark loop contribut
+in particular for small ma and larg tan 2526 the second assumpt might be
+violat for exampl if the h cc partial width is except larg howev a
+larg uptyp yukawa coupl would be notic in the g w coupl ratio which
+measur the htt coupl
+with these assumpt consid the observ
+g
+w x 1 y xw 1 z x x
+b w z g
+w
+1 w
+20
+g g w is determin by combin yw and the product y xw x
+w
+where x
+provid a lower bound on h w w w provid is small 01 suffic
+w provid a direct measur of the
+for practic purpos the determin of
+h w w partial width onc w ha been determin the total width of the higg
+boson is given by
+17
+1
+2w
+g
+x 1 y xw 1 z x x
+xw
+xw
+2
+1
+1 2
+21
+for a smlike higg boson the higg width is domin by the h bb and h w w
+w is domin by the uncertainti of the xw and x
+channel thu the error on
+measur and by the theoret uncertainti on the bquark mass which enter the
+determin of y quadrat accord to the particl data group the present
+uncertainti on the b quark mass is about 35 27 assum a luminos error of
+5 in addit to the theoret uncertainti of the weak boson fusion cross section of
+5 the statist error of the qq qqh h and qq qqh h w w cross
+w determin of
+section of tabl v and vi lead to an expect accuraci of the
+order 10 more precis estim as a function of the higg boson mass are shown in
+fig 1
+the extract of the total higg width via eq 21 requir a measur of
+the qq qqh h w w cross section which is expect to be avail for mh
+115 gev 10 consequ error are larg for higg mass close to thi lower limit
+we expect a rel error of 20 for mh 120 gev and 005 but for higg
+boson mass around the w w threshold 1 2 can be determin with an error of
+about 10 result are shown in fig 1 and look highli promis
+iv summari
+in the last section we have found that variou ratio of higg partial width can
+be measur with accuraci of order 10 to 20 with an integr luminos of 100
+fb1 per experi thi translat into 5 to 10 measur of variou ratio
+of coupl constant the ratio w measur the coupl of downtyp fermion
+rel to the higg coupl to gaug boson to the extent that the h triangl
+diagram are domin by the w loop the width ratio measur the same
+relationship the fermion triangl lead to an effect hgg coupl are expect to
+18
+fig 1 expect accuraci with which the higg boson width can be measur at the
+lhc with 100 fb1 of data in each experi result are shown for the extract of the
+the h w w partial with w and and the total higg boson width is the sum of the
+residu small branch ratio of unobserv channel mainli h c
+c see text for detail
+be domin by the topquark thu g w probe the coupl of uptyp fermion
+rel to the hw w coupl final for higg boson mass abov 120 gev
+the absolut normal of the hw w coupl is access via the extract of the
+h w w partial width in weak boson fusion
+note that these measur test the crucial aspect of the higg sector the
+hw w coupl be linear in the higg field identifi the observ higg boson as
+the scalar respons for the spontan break of su2 u1 a scalar without a
+vacuum expect valu coupl to gaug boson onli via hhw w or hhw vertic
+at tree level ie the interact is quadrat in scalar field the absolut valu of the
+hw w coupl as compar to the sm expect reveal whether h may be the onli
+mediat of spontan symmetri break or whether addit higg boson await
+19
+discoveri within the framework of the mssm thi is a measur of sin
+at the 005 level the measur of the ratio of ghtt ghw w and gh ghw w then
+probe the mass gener of both up and down type fermion
+the result present here constitut a first look onli at the issu of coupl extract for the higg thi is the case for the weak boson fusion process in particular
+which prove to be extrem valuabl if not essenti our analysi is mostli an estim
+of statist error with some rough estim of the systemat error which are to be
+expect for the variou measur of partial width and their ratio a number
+of issu need to be address in further studi in particular with regard to the weak
+boson fusion channel
+a the weak boson fusion channel and their background have onli been studi
+at the parton level to date full detector level simul and optim of
+strategi with more complet detector inform is crucial for further progress
+b a central jet veto ha been suggest as a power tool to suppress qcd background to the color singlet exchang process which we call weak boson fusion
+the feasibl of thi tool and it reach need to be investig in full detector
+studi at both low and high luminos
+c in the weak boson fusion studi of h w w and h decay doubl lepton e e pt and pt signatur have not yet been consid their inclus
+promis to almost doubl the statist avail for the higg coupl measur at the price of addit zzjet and drellyan plu jet background
+which are expect to be manag
+d other channel like w h or tth associ product with subsequ decay
+h bb or h provid addit inform on higg coupl ratio
+120 gev 25
+which complement our analysi at small higg mass valu mh
+these channel need to be includ in the analysi
+20
+e much addit work is need on more reliabl background determin for
+the h w w pt channel in particular where no narrow higg reson peak can be reconstruct a precis background estim is crucial for
+the measur of higg coupl need improv includ nlo qcd
+correct singl top quark product background the combin of shower
+mont carlo program with higher order qcd matrix element calcul and
+more
+f both in the inclus and wbf analys ani given channel contain a mixtur of
+event from gg h and qq qqh product process the determin
+of thi mixtur add anoth sourc of systemat uncertainti which wa not includ in the present studi in ratio of x observ or of differ yi these
+uncertainti larg cancel except for the effect of accept variat due to
+differ signal select sinc an admixtur from the wrong product channel
+is expect at the 10 to 20 level onli these systemat error are not expect
+to be seriou
+g we have onli analyz the case of a singl neutral cp even higg reson with
+coupl which are close to the one predict in the sm while thi case ha mani
+applic eg for the larg ma region of the mssm more gener analys in
+particular of the mssm case are warrant and highli promis
+while much addit work is need our studi clearli show that the lhc ha
+excel potenti to provid detail and accur inform on higg boson interact the observ of the higg boson at the lhc ha been clearli establish
+within the sm and extens like the mssm the task now is to sharpen the tool for
+accur measur of higg boson properti at the lhc
+21
+acknowledg
+we would like to thank the organ of the le houch workshop where thi work
+wa initi for get us togeth in an inspir atmospher use discuss with
+m carena a djouadi k jakob and g weiglein are grate acknowledg we
+thank cern for the hospit extend to all of us dure variou period of thi
+work the research of e rw wa partial support by the polish govern
+grant kbn 2p03b14715 and by the polishamerican maria sklodowskacuri joint
+fund ii in cooper with paa and doe under project paadoe97316 the work
+of d z wa support in part by the univers of wisconsin research committe
+with fund grant by the wisconsin alumni research foundat and in part by the
+u s depart of energi under contract no defg0295er40896
+22
+refer
+1 atla collabor atla detector and physic perform technic design
+report report cernlhcc9915 1999
+2 g l bayatian et al cm technic propos report cernlhcc9438
+1994 d denegri prospect for higg sm and mssm search at lhc
+talk in the circl line tour seri fermilab octob 1999 httpwwwtheoryfnalgovcirclelinedanielbghtml r kinnunen and d denegri expect
+smsusi higg observ in cm cm note 1997057 r kinnunen and
+a nikitenko studi of hsu sy l h etmiss in cm cm tn97106 rkinnunen and d denegri the hsu sy h h x channel it
+advantag and potenti instrument drawback hepph9907291
+3 for recent review see eg jl rosner comment nucl part phi 22 205
+1998 khagiwara ann rev nucl part sci 1998 463 wj marciano hepph9902332 and refer therein
+4 h e haber and r hempfl phi lett d48 4280 1993 m carena jr espinosa m quiro and cem wagner phi lett b355 209 1995 s heinemey w hollik and g weiglein phi rev d58 091701 1998 rj zhang
+phi lett b447 89 1999
+5 j f gunion l poggioli r van kooten c kao and p rowson hepph9703330
+6 d rainwat and d zeppenfeld journal of high energi physic 12 005 1997
+7 d rainwat phd thesi hepph9908378
+8 d rainwat d zeppenfeld and k hagiwara phi rev d59 014037 1999
+9 t plehn d rainwat and d zeppenfeld hepph9911385
+10 d rainwat and d zeppenfeld phi rev d60 113004 1999 erratum to appear
+23
+hepph9906218 v3
+11 a nikitenko talk given at the workshop on physic at tev collid le houch
+franc 818 june 1999
+12 r n cahn s d elli r kleiss and w j stirl phi rev d35 1626 1987
+v barger t han and r j n phillip phi rev d37 2005 1988 r kleiss
+and w j stirl phi lett 200b 193 1988 d froideveaux in proceed
+of the ecfa larg hadron collid workshop aachen germani 1990 edit by
+g jarlskog and d rein cern report 9010 geneva switzerland 1990 vol ii
+p 444 m h seymour ibid p 557 u baur and e w n glover nucl phi
+b347 12 1990 phi lett b252 683 1990
+13 v barger k cheung t han and r j n phillip phi rev d42 3052 1990
+v barger et al phi rev d44 1426 1991 v barger k cheung t han and
+d zeppenfeld phi rev d44 2701 1991 erratum phi rev d48 5444 1993
+phi rev d48 5433 1993 v barger et al phi rev d46 2028 1992
+14 d dicu j f gunion and r vega phi lett b258 475 1991 d dicu
+j f gunion l h orr and r vega nucl phi b377 31 1991
+15 y l dokshitz v a khoze and s troian in proceed of the 6th intern
+confer on physic in collis 1986 ed m derrick world scientif 1987
+p365 j d bjorken int j mod phi a7 4189 1992 phi rev d47 101
+1993
+16 v barger r j n phillip and d zeppenfeld phi lett b346 106 1995
+17 cm collabor the electromagnet calorimet project technic design
+report cernlhcc 9733 cm tdr 4 15 decemb 1997
+18 katri lassilaperini discoveri potenti of the standard model higg in cm at
+the lhc diss eth n12961
+24
+19 i iashvili r kinnunen a nikitenko and d denegri studi of the h zz
+4 in cm cm tn95059 1995
+20 m dittmar and h dreiner phi rev d55 167 1997 and hepph9703401
+cm note 1997083
+21 w keung and wj marciano phi rev d30 248 1984
+22 v barger and rj phillip collid physic redwood citi usa addisonwesley 1987 592 p frontier in physic vol 71
+23 a djouadi n spira and p zerwa phi lett b264 440 1991 m spira
+a djouadi d graudenz and pm zerwa nucl phi b453 17 1995
+24 t han g valencia and s willenbrock phi rev lett 69 3274 1992
+25 m carena s mrenna and c e wagner phi rev d60 075010 1999 hepph9808312 h eberl k hidaka s kraml w majerotto and y yamada hepph9912463
+26 l j hall r rattazzi and u sarid phi rev d50 7048 1994 hepph9306309
+r hempfl phi rev d49 6168 1994 m carena m olechowski s pokorski
+and c e wagner nucl phi b426 269 1994 hepph9402253 d m pierc
+j a bagger k matchev and r zhang nucl phi b491 3 1997 hepph9606211 j a coarasa r a jimenez and j sola phi lett b389 312
+1996 hepph9511402 r a jimenez and j sola phi lett b389 53 1996
+hepph9511292
+27 particl data group c caso et al eur phi j c3 1 1998
+25

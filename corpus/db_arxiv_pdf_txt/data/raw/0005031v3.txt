@@ -1,0 +1,1697 @@
+Journal of Arti cial Intelligence Research 14 (2001) 359{389
+
+Submitted 10/00; published 6/01
+
+Conditional Plausibility Measures and Bayesian Networks
+Joseph Y. Halpern
+
+Cornell University, Computer Science Department
+Ithaca, NY 14853
+http://www.cs.cornell.edu/home/halpern
+
+halpern@cs.cornell.edu
+
+Abstract
+
+A general notion of algebraic conditional plausibility measures is de ned. Probability
+measures, ranking functions, possibility measures, and (under the appropriate de nitions)
+sets of probability measures can all be viewed as de ning algebraic conditional plausibility
+measures. It is shown that algebraic conditional plausibility measures can be represented
+using Bayesian networks.
+
+1. Introduction
+Pearl (1988) among others has long argued that Bayesian networks (that is, the dags without the conditional probability tables) represent important qualitative information about
+uncertainty regarding conditional dependencies and independencies. To the extent that this
+is true, Bayesian networks should make perfect sense for non-probabilistic representations
+of uncertainty. And, indeed, Bayesian networks have been used with rankings (Spohn,
+1988) by Darwiche and Goldszmidt (1994). It follows from results of Wilson (1994) that
+possibility measures (Dubois & Prade, 1990) can be represented using Bayesian networks.
+The question I address in this paper is \What properties of a representation of uncertainty are required to be able to represent the uncertainty using a Bayesian network?" This
+question too has been addressed in earlier work, see (Darwiche, 1992; Darwiche & Ginsberg,
+1992; Friedman & Halpern, 1995; Wilson, 1994), although the characterization given here
+is somewhat di erent. Shenoy and Shafer (1990) consider a related question|essentially,
+what is required of a representation of uncertainty so that marginals can be computed using
+\local computations" of the type used in Bayesian networks|and provide axioms su cient
+to guarantee that this is possible.
+Here I represent uncertainty using plausibility measures, as in (Friedman & Halpern,
+1995). To answer the question, I must examine general properties of conditional plausibility
+as well as de ning a notion of plausibilistic independence. Unlike earlier papers, I enforce a
+symmetry condition in the de nition of conditional independence, so that, for example, A is
+independent of B i B is independent of A. While this property holds for probability, under
+the asymmetric de nition of independence used in earlier work it does not necessarily hold
+for other formalisms. There are also subtle but important di erences between this paper
+and (Friedman & Halpern, 1995) in the notion of conditional plausibility. The de nitions
+here are simpler but more general; particular attention is paid here to conditions on when
+the conditional plausibility must be de ned.
+The major results here are a general condition, simpler than that given in (Friedman &
+Halpern, 1995; Wilson, 1994), under which a conditional plausibility measure satis es the
+c 2001 AI Access Foundation and Morgan Kaufmann Publishers. All rights reserved.
+
+Halpern
+
+semi-graphoid properties (which means it can be represented using a Bayesian network).
+Conditions are also given that su ce for a Bayesian network to be able to quantitatively
+represent a plausibility measure; more precisely, conditions are given so that a plausibility
+measure can be uniquely reconstructed given conditional plausibility tables for each node in
+the Bayesian network. Conditions for quantitative representation by Bayesian networks do
+not seem to have been presented in the literature for representations of uncertainty other
+than probability (for which the conditions are trivial). A minor additional condition also
+su ces to guarantee that d-separation in the network characterizes conditional independence. All these conditions clearly apply to rankings and possibility measures. Perhaps
+more interestingly, they also apply to sets of probabilities under a novel representation of
+such sets as a plausibility measure. This novel representation (and the associated notion of
+conditioning) is shown to have some natural properties not shared by other representations.
+The rest of the paper is organized as follows. In Section 2, I discuss conditional plausibility measures. Section 3 introduces algebraic conditional plausibility measures, which
+are ones where there is essentially an analogue to + and . (Putting such an algebraic
+structure on uncertainty is not new; it was also done in (Darwiche, 1992; Darwiche & Ginsberg, 1992; Friedman & Halpern, 1995; Weydert, 1994).) Section 4 discusses independence
+and conditional independence in conditional plausibility spaces, and shows that algebraic
+conditional plausibility measures satisfy the semi-graphoid properties. Finally, in Section 5,
+Bayesian networks based on (algebraic) plausibility measures are considered. Combining
+the fact that algebraic plausibility measures satisfy the semi-graphoid properties with the
+results of (Geiger, Verma, & Pearl, 1990), it follows that d-separation in a Bayesian network G implies conditional independence for all algebraic plausibility measures compatible
+with G; a weak richness condition is shown to yield the converse. The paper concludes in
+Section 6. Longer proofs are relegated to the appendix.
+
+2. Conditional Plausibility
+
+2.1 Unconditional Plausibility Measures
+
+Before getting to conditional plausibility measures, it is perhaps best to consider unconditional plausibility measures. The basic idea behind plausibility measures is straightforward.
+A probability measure maps subsets of a set W to 0; 1]. Its domain may not consist of
+all subsets of W ; however, it is required to be an algebra. (Recall that an algebra F over
+W is a set of subsets of W containing W and closed under union and complementation,
+so that if U; V 2 F , then so are U V and U .) A plausibility measure is more general; it
+maps elements in an algebra F to some arbitrary partially ordered set. If Pl is a plausibility
+measure, then we read Pl(U ) as \the plausibility of set U ". If Pl(U ) Pl(V ), then V is at
+least as plausible as U . Because the ordering is partial, it could be that the plausibility of
+two di erent sets is incomparable. An agent may not be prepared to say of two sets that
+one is more likely than another or that they are equal in likelihood.
+Formally, a plausibility space is a tuple S = (W; F ; Pl), where W is a set of worlds, F
+is an algebra over W , and Pl maps sets in F to some set D of plausibility values partially
+ordered by a relation D (so that D is re exive, transitive, and anti-symmetric) that
+contains two special elements >D and ?D such that ?D D d D >D for all d 2 D; these
+are intended to be the analogues of 1 and 0 for probability. As usual, the ordering is de ned
+360
+
+Conditional Plausibility Measures and Bayesian Networks
+
+<D by taking d1 <D d2 if d1 D d2 and d1 6= d2 . I omit the subscript D from D , <D , >D
+and ?D whenever it is clear from context.
+There are three requirements on plausibility measures. The rst two are obvious analogues of requirements that hold for other notions of uncertainty: the whole space gets
+the maximum plausibility and the empty set gets the minimum plausibility. The third
+requirement says that a set must be at least as plausible as any of its subsets.
+Pl1. Pl(;) = ?D .
+Pl2. Pl(W ) = >D .
+Pl3. If U U 0 , then Pl(U ) Pl(U 0 ).
+(In Pl3, I am implicitly assuming that U; U 0 2 F . Similar assumptions are made throughout.)
+All the standard representations of uncertainty in the literature can be represented as
+plausibility measures. I brie y describe some other representations of uncertainty that will
+be of relevance to this paper.
+Sets of probabilities: One common way of representing uncertainty is by a set of probability measures. This set is often assumed to be convex (see, for example, (Campos & Moral,
+1995; Cousa, Moral, & Walley, 1999; Gilboa & Schmeidler, 1993; Levi, 1985; Walley, 1991)
+for discussion and further references), however, convex sets do not seem appropriate for representing independence assumptions, so I do not make this restriction here. For example,
+if a coin with an unknown probability of heads is tossed twice, and the tosses are known to
+be independent, it seems that a reasonable representation is given by the set P0 consisting
+of all measures , where (hh) = 2 ; (ht) = (th) = (1 ); (tt) = (1 )2 .
+Unfortunately, P0 is not convex. Moreover, its convex hull includes many measures for
+which the coin tosses are not independent. It is argued in (Cousa et al., 1999) that a set
+of probability measures is behaviorally equivalent to its convex hull. However, even if we
+accept this argument, it does not follow that a set and its convex hull are equivalent insofar
+as determination of independencies goes.
+There are a number of ways of viewing a set P of probability measures as a plausibility
+measure. One uses the lower probability P , de ned as P (U ) = inf f (U ) : 2 Pg. Clearly
+P satis es Pl1{3. The corresponding upper probability P , de ned as P (U ) = supf : 2
+Pg = 1 P (U ), is also clearly a plausibility measure.
+Both P and P give a way of comparing the likelihood of two subsets U and V of W .
+These two ways are incomparable; it is easy to nd a set P of probability measures on W
+and subsets U and V of W such that P (U ) < P (V ) and P (U ) > P (V ). Rather than
+choosing between P and P , we can associate a di erent plausibility measure with P that
+captures both. Let DP ;P = f(a; b) : 0 a b 1g and de ne (a; b) (a0 ; b0 ) i b a0 .
+This puts a partial order on DP ;P ; clearly ?DP P = (0; 0) and >DP P = (1; 1). De ne
+PlP ;P (U ) = (P (U ); P (U )). Thus, PlP ;P associates with a set U two numbers that can
+be thought of as de ning an interval in terms of the lower and upper probability of U . It
+is easy to check that PlP ;P (U ) PlP ;P (V ) if the upper probability of U is less than or
+equal to the lower probability of V . PlP ;P satis es Pl1{3, so it is indeed a plausibility
+measure, but one which puts only a partial order on events.
+;
+
+361
+
+;
+
+Halpern
+
+The trouble with P , P , and even PlP ;P is that they lose information. For example,
+it is not hard to nd a set P of probability measures and subsets U; V of W such that
+(U )
+(V ) for all 2 P and (U ) < (V ) for some 2 P , but P (U ) = P (V ) and
+P (U ) = P (V ). Indeed, there exists an in nite set P of probability measures such that
+(U ) < (V ) for all 2 P but P (U ) = P (V ) and P (U ) = P (V ). If all the probability
+measures in P agree that U is less likely than V , it seems reasonable to conclude that U is
+less likely than V . However, none of P , P , or PlP ;P will necessarily draw this conclusion.
+Fortunately, it is not hard to associate yet another plausibility measure with P that
+does not lose this important information. For technical convenience that will become clear
+later, assume that there is some index set I such that P = f i : i 2 I g. Thus, for example,
+if P = f 1 ; : : : ; n g, then I = f1; : : : ; ng. Let DI = 0; 1]I , that is, the functions from I to
+0; 1], with the pointwise ordering, so that f g i f (i) g(i) for all i 2 I .1 It is easy to
+check that ?D is the function f : I ! 0; 1] such that f (i) = 0 for all i 2 I and >D is the
+function g such that g(i) = 1 for all i 2 I . For U W , let fU be the function such that
+fU (i) = i(U ) for all i 2 I . For example, for the set P0 of measures representing the two
+coin tosses (which is indexed by IR), the set W can be taken to be fhh; ht; tt; thg. Then,
+for example, ffhhg ( ) = (hh) = 2 and ffht;ttg ( ) = 1 .
+It is easy to see that f; = ?D and fW = >D . Now de ne PlP (U ) = fU . Thus,
+PlP (U ) PlP (V ) i fU (i) fV (i) for all i 2 I i (U ) (V ) for all 2 P . Clearly PlP
+satis es Pl1{3. Pl1 and Pl2 follow since PlP (;) = f; = ?D and PlP (W ) = fW = >D ,
+while Pl3 follows since if U V then (U )
+(V ) for all 2 P . PlP captures all the
+information in P (unlike, say, P , which washes much of it away by taking infs).
+This way of associating a plausibility measure with a set P of probability measures
+generalizes: it provides a way of associating a single plausibility measure with any set of
+plausibility measures; I leave the straightforward details to the reader.
+Possibility measures: A fuzzy measure (or a Sugeno measure ) f on W (Wang & Klir,
+1992) is a function f : 2W 7! 0; 1], that satis es Pl1{3. (That is, it is less general than a
+plausibility measure only in that it requires the range to be 0; 1] rather than an arbitrary
+partially ordered set.) A possibility measure Poss on W is a special case of a Sugeno measure;
+it is a function mapping subsets of W to 0; 1] such that Poss(W ) = 1, Poss(;) = 0, and
+Poss(U ) = supw2U (Poss(fwg)), so that Poss(U V ) = max(Poss(U ); Poss(V )) (Dubois &
+Prade, 1990). Clearly a possibility measure is a plausibility measure.
+Ranking functions: An ordinal ranking (or -ranking or ranking function ) on W (as
+de ned by (Goldszmidt & Pearl, 1992), based on ideas that go back to (Spohn, 1988))
+is a function mapping subsets of W to IN = IN f1g such that (W ) = 0, (;) =
+1, and (U ) = minw2U ( (fwg)), so that (U V ) = min( (U ); (V )). Intuitively, a
+ranking function assigns a degree of surprise to each subset of worlds in W , where 0 means
+unsurprising and higher numbers denote greater surprise. It is easy to see that if is a
+ranking function on W , then (W; 2W ; ) is a plausibility space, where x IN y if and only
+if y x under the usual ordering on the natural numbers. One standard view of a ranking
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+1. In the conference version of this paper (Halpern, 2000), D , the range of the plausibility measure, was
+taken to be functions from to 0; 1], not from the index set I to 0; 1]. The di erence is mainly cosmetic,
+but this representation makes the range independent of , so that the same plausibility values can be
+used for any set of probability measures indexed by I .
+I
+
+P
+
+P
+
+362
+
+Conditional Plausibility Measures and Bayesian Networks
+
+function, going back to Spohn, is that a ranking of k can be associated with a probability
+of k , for some xed (possibly in nitesimal) . Note that this viewpoint justi es taking
+(W ) = 0, (;) = 1, and (U V ) = min( (U ); (V )).
+
+2.2 Conditional Plausibility Measures
+
+Since Bayesian networks make such heavy use of conditioning, my interest here is not just
+plausibility measures, but conditional plausibility measures (cpm's). Given a set W of
+worlds, a cpm maps pairs of subsets of W to some partially ordered set D. I write Pl(U jV )
+rather than Pl(U; V ), in keeping with standard notation for conditioning. In the case of
+a probability measure , it is standard to take (U jV ) to be unde ned in (V ) = 0. In
+general, we must make precise what the allowable second arguments are. Thus, I take
+the domain of a cpm to have the form F F 0 where, intuitively, F 0 consists of those sets
+in F on which it makes sense to condition. For example, for a conditional probability
+measure de ned in the usual way from an unconditional probability measure , F 0 consists
+of all sets V such that (V ) > 0. (Note that F 0 is not an algebra|it is not closed under
+complementation.) A Popper algebra over W is a set F F 0 of subsets of W W satisfying
+the following properties:
+Acc1. F is an algebra over W .
+Acc2. F 0 is a nonempty subset of F .
+Acc3. F 0 is closed under supersets in F ; that is, if V 2 F 0 , V
+V 0 2 F 0.
+
+V 0 , and V 0 2 F , then
+
+(Popper algebras are named after Karl Popper, who was the rst to consider formally
+conditional probability as the basic notion (Popper, 1968). De Finetti (1936) also did some
+early work, apparently independently, taking conditional probabilities as primitive. Indeed,
+as Renyi (1964) points out, the idea seems to go back as far as Keynes (1921).)
+A conditional plausibility space (cps ) is a tuple (W; F ; F 0 ; Pl), where F F 0 is a Popper
+algebra over W , Pl : F F 0 ! D, D is a partially ordered set of plausibility values, and Pl
+is a conditional plausibility measure (cpm) that satis es the following conditions:
+CPl1. Pl(;jV ) = ?D .
+CPl2. Pl(W jV ) = >D .
+CPl3. If U
+
+U 0 , then Pl(U jV ) Pl(U 0 jV ).
+
+CPl4 Pl(U jV ) = Pl(U \ V jV ).
+CPl1{3 are the obvious analogues to Pl1{3. CPl4 is a minimal property that guarantees
+that when conditioning on V , everything is relativized to V . It follows easily from CPl1{4
+that Pl( jV ) is a plausibility measure on V for each xed V . A cps is acceptable if it satis es
+Acc4. If V 2 F 0 , U 2 F , and Pl(U jV ) 6= ?D , then U \ V 2 F 0 .
+363
+
+Halpern
+
+Acceptability is a generalization of the observation that if Pr(V ) 6= 0, then conditioning on
+V should be de ned. It says that if Pl(U jV ) 6= ?D , then conditioning on V \ U should be
+de ned.
+CPl1{4 are rather minimal requirements. For example, they do not place any constraints
+on the relationship between Pl(U jV ) and Pl(U jV 0 ) if V 6= V 0 . One natural additional
+condition is the following.
+CPl5. If V \ V 0 2 F 0 and U; U 0 2 F , then Pl(U jV \ V 0 ) Pl(U 0 jV \ V 0 ) i Pl(U \ V jV 0 )
+Pl(U 0 \ V jV 0 ).
+It is not hard to show that CPl5 implies CPl4.
+
+Lemma 2.1: CPl5 implies CPl4.
+Proof: Since clearly Pl(U \ V jV ) = Pl(U \ V \ V jV ), by CPl5 it follows that Pl(U jV \ V ) =
+Pl(U \ V jV \ V ), and hence Pl(U jV ) = Pl(U \ V jV ).
+
+CPl5 does not follow from CPl1{4 (indeed, as shown below, the standard notion of
+conditioning for lower probabilities satis es CPl1{4 but not CPl5). A cps that satis es
+CPl5 is said to be coherent. Although I do not assume CPl5 here, it in fact holds for all
+plausibility measures to which one of the main results applies (see Lemma 3.5).
+In any case, CPl5 is certainly not the only coherence that might be required. For
+example, it may seem reasonable to require that if V and V 0 are disjoint, then it is not the
+case that both Pl(U jV V 0 ) > Pl(U jV ) and Pl(U jV V 0 ) > Pl(U jV 0 ). Similarly, we may
+want to require that it not be the case that Pl(U jV V 0 ) < Pl(U jV ) and Pl(U jV V 0 ) <
+Pl(U jV 0 ).2 Coming up with a reasonable set of coherence conditions remains a topic for
+future work. The only properties needed for the results of this paper are CPl1{4.
+The notion of cps considered here is closely related to that de ned in (Friedman &
+Halpern, 1995). There, a cps is taken to be a family fW; DV ; PlV ) : V W; V 6= ;g of
+plausibility spaces, where each plausibility measure PlV satis es Pl1{3 and has domain 2W
+and an analogue of CPl5 holds: PlV \V 0 (U ) PlV \V 0 (U 0 ) i PlV 0 (U \ V ) PlV 0 (U 0 \ V ). To
+distinguish the de nition of cps given in this paper from that given in (Friedman & Halpern,
+1995), I call the latter an FH-cps. There is no analogue to Acc1{4 in (Friedman & Halpern,
+1995); F is implicitly taken to be 2W , while F 0 is implicitly taken to be 2W f;g. This is
+an inessential di erence between the de nitions. More signi cantly, note that in an FH-cps,
+(W; DV ; PlV ) is a plausibility space for each xed V , and thus satis es Pl1{3. However,
+requiring CPl1{3 is a priori stronger than requiring Pl1{3 for each separate plausibility
+space. Pl1 requires that Pl(;jV ) = ?D , but the elements ?D may be di erent for each
+V . By way of contrast, CPl1 requires that Pl(?jV ) must be the same element, ?D , for all
+V . Similar remarks hold for Pl2. Nevertheless, as is shown below, there is a construction
+that converts an FH-cps to a coherent cps.
+I now consider some standard ways of getting a cps starting with an unconditional
+representation of uncertainty.
+De nition 2.2: A cps (W; F ; F 0 ; Pl) extends an unconditional plausibility space (W; F ; Pl0 )
+if Pl(U jW ) = Pl0 (U ). (W; F ; F 0 ; Pl) is standard if F 0 = fU : Pl(U ) 6= ?g.
+All the constructions below result in standard cps's.
+V
+
+V
+
+2. I think an anonymous referee of this paper for suggesting this condition.
+
+364
+
+Conditional Plausibility Measures and Bayesian Networks
+
+Ranking functions: Given an unconditional ranking function , there is a well-known
+way of extending it to a conditional ranking function:
+(
+(U \ V ) (V ) if (V ) 6= 1,
+(U jV ) = unde
+ned
+if (V ) = 1.
+This is consistent with the view that if (V ) = k, then (V ) = k , since then (U jV ) =
+(U \V ) (V ) . It is easy to check that this de nition results in a coherent cps.
+Possibility measures: There are two standard ways of de ning a conditional possibility
+measure from an unconditional possibility measure Poss. To distinguish them, I write
+Poss(U jV ) for the rst approach and Poss(U jjV ) for the second approach. According to the
+rst approach,
+8
+>
+< Poss(V \ U ) if Poss(V \ U ) < Poss(V ),
+if Poss(V \ U ) = Poss(V ) > 0,
+Poss(U jV ) = > 1
+: unde ned if Poss(V ) = 0.
+The second approach looks more like conditioning in probability:
+(
+Poss(V \ U )=Poss(V ) if Poss(V ) > 0,
+Poss(U jjV ) = unde
+ned
+if Poss(V ) = 0.
+It is easy to show that both de nitions result in a coherent cps. (Many other notions of
+conditioning for possibility measures can be de ned; see, for example (Fonck, 1994). I focus
+on these two because they are the ones most-often considered in the literature.)
+Sets of probabilities: For a set P of probabilities, conditioning can be de ned for all
+the representations of P as a plausibility measure. But in each case there are subtle choices
+involving when conditioning is unde ned. For example, one de nition of conditional lower
+probability is that P (U jV ) is inf f (U jV ) : (V ) =
+6 0g if (V ) 6= 0 for all 2 P , and is
+unde ned otherwise (i.e., if (V ) = 0 for some 2 P ). It is easy to check that P de ned
+this way gives a coherent cpm, as does the corresponding de nition of P . The problem
+with this de nition is that it may result in a rather small set F 0 for which conditioning
+is de ned. For example, if for each set V 6= W , there is some measure 2 P such that
+(V ) = 0 (which can certainly happen in some nontrivial examples), then F 0 = fW g. As
+a consequence, the cps de ned in this way is not acceptable (i.e., does not satisfy Acc4) in
+general.
+The following de nition gives a lower probability which is de ned on more arguments:
+(
+f (U jV ) : (V ) 6= 0g if (V ) 6= 0 for some 2 P ,
+P (U jV ) = inf
+unde ned
+if (V ) = 0 for all 2 P .
+It is easy to see that this de nition agrees with the rst one whenever the rst is de ned and
+results, in general, in a larger set F 0 . Moreover, the resulting cps is acceptable. However,
+the second de nition does not satisfy CPl5. For example, suppose that W = fa; b; cg and
+P = f ; 0 g, where (a) = (b) = 0, (c) = 1, 0(a) = 2=3, 0(b) = 1=3, and 0(c) = 0.
+365
+
+Halpern
+
+Taking V = fa; bg, U = fag, and U 0 = fbg, it is easy to see that according to the second
+de nition, P (U \ V jW ) = P (U 0 \ V jW ) = 0, but P (U jV ) > P (U 0 jV ).
+For PlP , there are two analogous de nitions. For the rst, PlP (U jV ) is de ned only if
+(V ) > 0 for all 2 P , in which case PlP (U jV ) is fU jV , where fU jV (i) = i (U jV ). This
+de nition gives a coherent cps, but again, in general, not one that is acceptable. In this
+paper, I focus on the following de nition, which does result in an acceptable cps.
+First extend DI by allowing functions which have value (intuitively, denotes undened). More precisely, let DI0 consist of all functions f from I to 0; 1] f g such that f (i) 6=
+for at least one i 2 I . The idea is to de ne PlP (U jV ) = fU jV , where fU jV (i) = i (U jV )
+if i (V ) > 0 and otherwise. (Note that this agrees with the previous de nition, which
+applies only to the situation where (V ) > 0 for all 2 P .) There is a problem though,
+one to which I have already alluded. CPl1 says that f;jV must be ? for all V . Thus, it
+must be the case that f;jV1 = f;jV2 for all V1 ; V2 W . But if i 2 P and V1 ; V2 W are
+such that i (V1 ) > 0 and i(V2 ) = 0, then f;jV1 (i) = 0 and f;jV2 (i) = , so f;jV1 6= f;jV2 . A
+similar problem arises with CPl2.
+To deal with this problem DI0 must be slightly modi ed. Say that f 2 DI0 is equivalent
+to ?D if f (i) is either 0 or * for all i 2 I ; similarly, f is equivalent to >D if f (i) is
+either 1 or * for all i 2 I . (Since, by de nition, f (i) =
+6 for at least one i 2 I , an
+element cannot be equivalent to both >D and ?D .) Let DI be the same as DI0 except
+that all elements equivalent to ?D are identi ed (and viewed as one element) and all
+elements equivalent to >D are identi ed. More precisely, let DI = f?D ; >D g ff 2 D0 :
+f is not equivalent to >D or ?D g. De ne the ordering on DI by taking f g if one of
+the following three conditions holds:
+f = ?D ,
+g = >D ,
+neither f nor g is ?D or >D and for all i 2 I , either f (i) = g(i) = or f (i) 6= ,
+g(i) 6= , and f (i) g(i).
+Now de ne
+8?
+if (V ) 6= 0 for some 2 P and
+>
+D
+>
+>
+(V ) 6= 0 implies (U jV ) = 0 for all 2 P ,
+<
+if 9 2 P ( (V ) 6= 0) and 8 2 P ( (V ) 6= 0 ) (U jV ) = 1),
+PlP (U jV ) = > >D
+>
+if (V ) = 0 for all 2 P ,
+>
+: funde ned otherwise.
+U jV
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+It is easy to check that this gives a coherent cps.
+Plausibility measures: The construction for PlP can be used to convert any FH-cps
+to a cps. I demonstrate the idea by showing how to construct a conditional plausibility
+measure from an unconditional plausibility measure. Given an unconditional plausibility
+space (W; F ; Pl) with range D, an FH-cps is constructed in (Friedman & Halpern, 1995) by
+de ning Pl(U jV ) = Pl(U \ V ). Thus, DV = fd 2 D : d Pl(V )g and >D = Pl(V ). This
+is not a cps because CPl2 is not satis ed, but it is an FH-cps, since Pl1{3 is satis ed for
+each xed V , and so is CPl5. As observed in (Friedman & Halpern, 1995), this is in fact
+V
+
+366
+
+Conditional Plausibility Measures and Bayesian Networks
+
+the FH-cps extending Pl that makes the minimal number of comparisons, in the sense that
+if Pl0 is an FH-cps extending Pl and Pl(U jV ) Pl(U 0 jV ), then Pl0 (U jV ) Pl0 (U 0 jV ).
+To get a cps, let D0 = f(d; V ) : V W; d Pl(V ); Pl(V ) > ?D g. Say that (d; V ) is
+equivalent to ?D if d = ?D ; say that (d; V ) is equivalent to >D if d = Pl(V ). Now let
+D = f?D ; >D g ff 2 D0 : f is not equivalent to >D or ?D g. Then de ne d D d0
+for d; d0 2 D i d = ?D , d0 = >D , or there is some V W such that d = (d1 ; V ),
+d0 = (d2 ; V ), and d1 D d2 . Finally, for U; V 2 F , de ne
+8
+>
+(Pl(U \ V ); V ) if ?D < Pl(U \ V ) < Pl(V ),
+>
+< >D
+if Pl(U \ V ) = Pl(V ) > ?D ,
+Pl(U jV ) = > ?
+if Pl(U \ V ) = ?D , Pl(V ) > ?D ,
+D
+>
+: unde
+ned
+if Pl(V ) = ?D .
+I leave it to the reader to check that Pl is a coherent cpm. It is important that Pl(U jV ) is
+unde ned if Pl(V ) = ?D ; if we tried to extend the construction to V such that Pl(V ) = ?D ,
+then we would have >D = ?D . This issue did not arise in (Friedman & Halpern, 1995),
+since there were separate plausibility spaces for each choice of V .
+
+3. Algebraic Conditional Plausibility Measures
+
+To be able to carry out the type of reasoning used in Bayesian networks, it does not su ce to
+just have conditional plausibility. We need to have analogues of addition and multiplication.
+More precisely, there needs to be some way of computing the plausibility of the union of
+two disjoint sets in terms of the plausibility of the individual sets and a way of computing
+Pl(U \ V jV 0 ) given Pl(U jV \ V 0 ) and Pl(V jV 0 ).
+
+De nition 3.1: A cps (W; F ; F 0 ; Pl) where Pl has range D is algebraic if it is acceptable
+and there are functions : D D ! D and : D D ! D such that the following
+
+properties hold:
+Alg1. If U; U 0 2 F are disjoint and V 2 F 0 then Pl(U U 0 jV ) = Pl(U jV ) Pl(U 0 jV ).
+Alg2. If U 2 F , V \ V 0 2 F 0 , then Pl(U \ V jV 0 ) = Pl(U jV \ V 0 ) Pl(V jV 0 ).
+Alg3. distributes over ; more precisely, a (b1
+bn) = (a b1 )
+(a bn )
+if (a; b1 ); : : : ; (a; bn ); (a; b1
+bn) 2 DomPl ( ) and (b1 ; : : : ; bn); (a b1 ; : : : ; a
+bn ) 2 DomPl( ), where DomPl( ) = f(Pl(U1 jV ); : : : ; Pl(UnjV )) : U1 ; : : : ; Un 2 F are
+pairwise disjoint and V 2 F 0 g and DomPl ( ) = f(Pl(U jV \ V 0 ); Pl(V jV 0 )) : U 2
+F ; V \ V 0 2 F 0g.3 (See below for a discussion of DomPl( ) and DomPl( ). In the
+sequel, I omit the subscript Pl if it is clear from context.)
+Alg4. If (a; c); (b; c) 2 Dom( ), a c b c, and c 6= ?, then a b.
+3. In the conference version of this paper, Dom( ) was taken to consist only of pairs, not tuples of arbitrary
+nite length, and distributivity was considered only for terms of the form a (b b0 ). The more general
+version considered here is slightly stronger. The reason is that it is possible that (a; b1
+b)
+Dom( ) even though (a; b1
+b ) = Dom( ) for k n. Note also that only left distributivity is
+required here.
+n
+
+k
+
+2
+
+367
+
+2
+
+Halpern
+
+I sometimes refer to the cpm Pl as being algebraic as well.
+It may seem more natural to consider a stronger version of Alg4 that applies to all pairs
+in D D, such as
+Alg40 . If a c b c and c 6= ?, then a b.
+However, as Proposition 3.2 below shows, by requiring that Alg3 and Alg4 hold only for
+tuples in Dom( ) and Dom( ) rather than on all tuples in D D, some cps's of interest
+become algebraic that would otherwise not be. Intuitively, we care about mainly to the
+extent that Alg1 and Alg2 holds, and Alg1 and Alg2 apply only to tuples in Dom( ) and
+Dom( ), respectively. Thus, it does not seem unreasonable that Alg4 be required to hold
+only for these tuples.
+
+Proposition 3.2: The constructions for extending an unconditional probability measure,
+ranking function, possibility measure (using either Poss(U jV ) or Poss(U jjV )), and the plausibility measure PlP de ned by a set P of probability measures to a cps result in algebraic
+
+cps's.4
+
+Proof: It is easy to see that in each case the cps is acceptable. It is also easy to nd
+
+appropriate notions of and in the case of probability measures, ranking functions, and
+possibility measures using Poss(U jjV ). For probability, clearly and are essentially +
+and ; however, since the range of probability is 0; 1], a b must be de ned as max(1; a + b),
+and Alg3 holds only for Dom( ) = f(a1 ; : : : ; ak ) : a1 + + ak 1g; there is no constraint on
+Dom( ); it is 0; 1] 0; 1]. For ranking, and are min and +; there are no constraints
+on Dom(min) and Dom(+). For Poss(U jjV ), is max and is ; again, there are no
+constraints on Dom(max) and Dom( ). I leave it to the reader to check that Alg1{4 hold
+in all these cases.
+For Poss(U jV ), is again max and is min. There are no constraints on Dom(max);
+however, note that (a; b) 2 Dom(min) i either a < b or a = 1. For suppose that (a; b) =
+(Poss(U jV \ V 0 ); Poss(V jV 0 ), where U 2 F and V \ V 0 2 F 0 . If Poss(U \ V \ V 0 ) =
+Poss(V \ V 0 ) then a = Poss(U jV \ V 0 ) = 1; otherwise, Poss(U \ V \ V 0 ) < Poss(V \ V 0 ), in
+which case a = Poss(U jV \ V 0 ) = Poss(U \ V \ V 0 ) < Poss(V \ V 0 ) Poss(V jV 0 ) = b. It
+is easy to check Alg1{3. While min does not satisfy Alg40 |certainly min(a; c) = min(b; c)
+does not in general imply that a = b|Alg4 does hold. For if min(a; c) min(b; c) and
+a = 1, then clearly b = 1. Alternatively, if a < c, then min(a; c) = a and the only way that
+a min(b; c), given that b < c or b = 1, is if a b.
+Finally, for PlP , and are essentially pointwise addition and multiplication. But
+there are a few subtleties. As in the case of probability, Dom( ) consists of sequences
+which sum to at most 1 for each index i. Care must also be taken in dealing with ?D and
+>D . More precisely, Dom( ) consists of all tuples (f1; : : : ; fn) such that either
+I
+
+I
+
+1(a). fj 6= >D ; j = 1; : : : ; n,
+I
+
+1(b). if fj ; fk 6= ?D for 1 j; k n, then fj (i) = i fk (i) = , for all i 2 I , and
+I
+
+4. Essentially the same result is proved in (Friedman & Halpern, 1995) for all cases but PlP .
+
+368
+
+Conditional Plausibility Measures and Bayesian Networks
+
+1(c). Pfj :f 6=? ;f (i)6= g fj (i) 1
+or
+2. there exists j such that fj = >D and fk = ?D for k 6= j ;
+Dom( ) consists of pairs (f; g) such that either one of f or g is in f?D ; >D g or neither
+f nor g is in f?D ; >D g and g(i) 2 f0; g i f (i) = . The de nition of is relatively
+straightforward. De ne f >D = >D f = >D and f ?D = ?D f = f . If
+f; g \ f?D ; >D g = ;, then f g = h, where h(i) = min(1; f (i) + g(i)) (taking a + =
++ a = and min(1; ) = ). In a similar spirit, de ne f >D = >D f = f
+and f ?D = ?D f = ?D ; if ff; gg \ f?D ; >D g = ;, then f g = h, where
+h(i) = f (i) g(i) (taking a = a = if a 6= 0 and 0 = 0 = 0). It is important
+that 0 = 0 and
+= , since otherwise Alg3 may not hold. For example, according
+to Alg3,
+j
+
+D
+I
+
+j
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+((1=2; ; 1=2) (a; 0; b)) ((1=2; ; 1=2)) (a; 0; b)) = ((1=2; ; 1=2) (1=2; ; 1=2)) (a; 0; b) = (a; 0; b)
+(since (1=2; ; 1=2) (1=2; ; 1=2) = >D ) and, similarly, ((1=2; ; 1=2) (a; ; b)) ((1=2; ; 1=2))
+(a; ; b)) = (a; ; b). Since
+0 = 0 and
+= , these equalities hold. I leave it to the
+reader to check that, with these de nitions, Alg1{4 hold (although note that the restrictions
+to Dom( ) and Dom( ) are required for both Alg3 and Alg4 to hold).
+Conditional lower probability is not algebraic. For example, it is not hard to construct
+pairwise disjoint sets U1 , V1 , U2 , and V2 and a set P of probability measures such that
+P (Ui) = P (Vi) (and P (Ui) = P (Vi )) for i = 1; 2, but P (U1 U2 ) 6= P (V1 V2). That
+means there cannot be a function in the case of lower probability.5
+For later convenience, I list some simple properties of algebraic cpms that show that ?
+and > act like 0 and 1 with respect to addition and multiplication. Let Range(Pl) = fd :
+Pl(U jV ) = d for some (U; V ) 2 F F 0 g.
+I
+
+Lemma 3.3: If (W; F ; F 0 ; Pl) is an algebraic cps, then d ? = ? d = d for all d 2
+
+Range(Pl).
+
+Proof: Suppose that d = Pl(U jV ). By Alg1, it follows that
+d = Pl(U jV ) = Pl(U ;jV ) = Pl(U jV ) Pl(;jV ) = d ?:
+A similar argument shows that d = ? d.
+Lemma 3.4: If (W; F ; F 0 ; Pl) is an algebraic cps then, for all d 2 Range(Pl),
+(a) d > = d;
+5. For readers familiar with Dempster-Shafer belief functions (Shafer, 1976), they provide another example
+of a plausibility measure. There are two well-known ways of de ning conditioning for belief functions
+(see (Fagin & Halpern, 1991)), one using Dempster's rule of combination and the other treating belief
+functions as lower probabilities. Neither leads to an algebraic cps, which is why I have not discussed
+belief functions in this paper.
+
+369
+
+Halpern
+
+(b) if d 6= ?, then > d = d;
+(c) if d 6= ?, then ? d = ?;
+(d) if (d; ?) 2 Dom( ), then > ? = d ? = ? ? = ?.
+
+Proof: Suppose that d = Pl(U jV ). By Alg2, CPl2, and CPl4, it follows that
+d = Pl(U jV ) = Pl(U \ V jV ) = Pl(U jV ) Pl(V jV ) = d >:
+Similarly, if d =
+6 ?, then U \ V 2 F 0 (by Acc4), so
+d = Pl(U jV ) = Pl(U \ V jV ) = Pl(U \ V jU \ V ) Pl(U \ V jV ) = > d:
+If d =
+6 ?, then by Alg2, CPl1, and CPl4
+? = Pl(?jV ) = Pl(?jU \ V ) Pl(U jV ) = ? d:
+Finally, if (d; ?) 2 Dom( ), then there exist U; V; V 0 such that V \V 0 2 F 0 , Pl(U jV \V 0 ) = d
+and Pl(V jV 0 ) = ?. By Alg2, Pl(U \ V jV 0 ) = Pl(U jV \ V 0 ) Pl(V jV 0 ) = d ?. By CPl3,
+Pl(U \ V jV 0 ) Pl(V jV 0 ) = ?, so Pl(U \ V jV 0 ) = ?. Thus, d ? = ?. Replacing U
+with V \ V 0 , the same argument shows that > ? = ?; replacing U with ;, we get that
+? ? = ?.
+I conclude this section by showing that a standard algebraic cps that satis es one other
+minimal property must also satisfy CPl5. Say that is monotonic if d d0 and e e0 then
+d e d0 e0 . A cpm (cps) is monotonic if is.
+
+Lemma 3.5: A standard algebraic monotonic cps satis es CPl5.
+Proof: Suppose that (W; F ; F 0 ; Pl) is a standard algebraic cps and that V \ V 0 2 F 0 . If
+Pl(U jV \ V 0 ) Pl(U 0 jV \ V 0 ), then it follows from Alg2 and monotonicity that
+Pl(U \ V jV 0 ) = Pl(U jV \ V 0 ) Pl(V jV 0 ) Pl(U 0 jV \ V 0 ) Pl(V jV 0 ) = Pl(U 0 \ V jV 0 ):
+For the opposite implication, suppose that Pl(U \ V jV 0 ) Pl(U 0 \ V jV 0 ). Then, by Alg2,
+Pl(U jV \ V 0 ) Pl(V jV 0 ) Pl(U 0 jV \ V 0 ) Pl(V jV 0 ):
+(1)
+Since V \V 0 2 F 0 and the cps is standard, it must be the case that Pl(V \V 0 ) 6= ?. Hence (by
+CPl3), Pl(V 0 ) 6= ?; moreover, Pl(V jV 0 ) =
+6 ? (otherwise Pl(V \ V 0) = Pl(V jV 0) Pl(V 0 ) =
+?). Thus, by applying Alg4 to (1), it follows that Pl(U jV \ V 0) Pl(U 0jV \ V 0).
+
+4. Independence
+
+How can we capture formally the notion that two events are independent? Intuitively, it
+means that they have nothing to do with each other|they are totally unrelated; the occurrence of one has no in uence on the other. None of the representations of uncertainty
+that we have been considering can express the notion of \unrelatedness" (whatever it might
+370
+
+Conditional Plausibility Measures and Bayesian Networks
+
+mean) directly. The best we can do is to capture the \footprint" of independence on the
+notion. For example, in the case of probability, if U and V are unrelated, it seems reasonable to expect that learning U should not a ect the probability of V and symmetrically,
+learning V should not a ect the probability of U . \Unrelatedness" is, after all, a symmetric
+notion.6 The fact that U and V are probabilistically independent (with respect to probability measure ) can thus be expressed as (U jV ) = (U ) and (V jU ) = (V ). There is a
+technical problem with this de nition: What happens if (V ) = 0? In that case (U jV ) is
+unde ned. Similarly, if (U ) = 0 then (V jU ) is unde ned. It is conventional to say that,
+in this case, U and V are still independent. This leads to the following formal de nition.
+
+De nition 4.1: U and V are probabilistically independent (with respect to probability measure ) if (V ) =
+6 0 implies (U jV ) = (U ) and (U ) 6= 0 implies (V jU ) = (V ).
+This does not look like the standard de nition of independence in texts, but an easy
+calculation shows that it is equivalent.
+Proposition 4.2: The following are equivalent:
+(a) (U ) 6= 0 implies (V jU ) = (V ),
+(b) (U \ V ) = (U ) (V ),
+(c) (V ) 6= 0 implies (U jV ) = (U ).
+Thus, in the case of probability, it would be equivalent to say that U and V are independent with respect to if (U \ V ) = (U ) (V ) or to require only that (U jV ) = (U )
+if (V ) 6= 0 without requiring that (V jU ) = (V ) if (U ) 6= 0. However, these equivalences do not necessarily hold for other representations of uncertainty. The de nition of
+independence I have given here seems to generalize more appropriately.7
+The de nition of probabilistic conditional independence is analogous.
+De nition 4.3: U and V are probabilistically independent given V 0 (with respect to probability measure ) if (V \ V 0 ) 6= 0 implies (U jV \ V 0 ) = (U jV 0 ) and (U \ V 0 ) 6= 0 implies
+(V jU \ V 0 ) = (V jV 0 ).
+It is immediate that U and V are (probabilistically) independent i they are independent
+conditional on W .
+The generalization to conditional plausibility measures (and hence to all other representations of uncertainty that we have been considering) is straightforward.
+De nition 4.4: Given a cps (W; F ; F 0 ; Pl), U; V 2 F are plausibilistically independent
+given V 0 2 F (with respect to the cpm Pl), written IPl (U; V jV 0 ), if V \ V 0 2 F 0 implies
+Pl(U jV \ V 0 ) = Pl(U jV 0 ) and U \ V 0 2 F 0 implies Pl(V jU \ V 0 ) = Pl(V jV 0 ).
+6. Walley (1991) calls the asymmetric notion irrelevance and de nes U being independent of V as U is
+irrelevant to V and V is irrelevant to U . Although my focus here is independence, irrelevance is an
+interesting notion in its own right; see (Cozman, 1998; Cozman & Walley, 1999).
+7. Another property of probabilistic independence is that if U is independent of V then U is independent
+of V . This too does not follow for the other representations of uncertainty, and Walley (1991) actually
+makes this part of his de nition. Adding this requirement would not a ect any of the results here,
+although it would make the proofs somewhat lengthier, so I have not made it part of the de nition.
+
+371
+
+Halpern
+
+We are interested in conditional independence of random variables as well as in conditional independence of events. All the standard de nitions extend to plausibility in a
+straightforward way. A random variable X on W is a function from W to the reals. Let
+R(X ) be the set of possible values for X (that is, the set of values over which X ranges). As
+usual, X = x is the event fw : X (w) = xg. If X = fX1 ; : : : ; Xk g is a set of random variables
+and x = (x1 ; : : : ; xk ), let X = x be an abbreviation for the event X1 = x1 \ : : : \ Xk = xk .
+A random variable is measurable with respect to cps (W; F ; F 0 ; Pl) if X = x 2 F for all
+x 2 R(X ). For the rest of the paper, I assume that all random variables X are measurable and that R(X ) is nite for all random variables X . Random variables X and Y are
+independent with respect to plausibility measure Pl if the events X = x and Y = y are
+independent for all x 2 R(X ) and y 2 R(Y ). More generally, given sets X, Y, and Z of
+random variables, X and Y are plausibilistically independent given Z (with respect to Pl),
+denoted IPlrv (X; YjZ), if IPl (X = x; Y = xjZ = z) for all x, y, and z. (Note that I am using
+IPl for conditional independence of events and IPlrv for conditional independence of random
+variables.) If Z = ;, then IPlrv (X; YjZ) if X and Y are unconditionally independent, that
+is, if IPl (X = x; Y = xjW ) for all x, y; if either X = ; or Y = ;, then IPlrv (X; YjZ) is taken
+to be vacuously true.
+Now consider the following four properties of random variables, called the semi-graphoid
+properties (Pearl, 1988), where X, Y, and Z are pairwise disjoint sets of variables.
+CIRV1. If IPlrv (X; YjZ) then IPlrv (Y; XjZ).
+
+CIRV2. If IPlrv (X; Y Y0 jZ) then IPlrv (X; YjZ).
+
+CIRV3. If IPlrv (X; Y Y0 jZ) then IPlrv (X; YjY0 Z).
+
+CIRV4. If IPlrv (X; YjZ) and IPlrv (X; Y0 jY Z) then IPlrv (X; Y Y0 jZ).
+It is well known that CIRV1{4 hold for probability measures. The following result
+generalizes this. The proof is not di cult, although care must be taken to show that the
+result depends only on the properties of algebraic cpms.
+
+Theorem 4.5: CIRV1{4 hold for all algebraic cps's.
+Proof: See the appendix.
+Theorem 4.5, of course, is very dependent on the de nition of conditional independence
+given here. Other notions of independence have been studied in the literature for speci c
+representations of uncertainty. Perhaps the most common de nition tries to generalize the
+observation that if U and V are probabilistically independent, then (U \ V ) = (U ) (V ).
+Zadeh (1978) considered this approach in the context of possibility measures, calling it
+noninteraction, but it clearly makes sense for any algebraic cpm.
+
+De nition 4.6: U and V do not interact given V 0 (with respect to the algebraic cpm Pl),
+denoted NI Pl (U; V jV 0 ), if V 0 2 F 0 implies that Pl(U \ V jV 0 ) = Pl(U jV 0 ) Pl(V jV 0 ).8
+8. Shenoy (1994) de nes a notion similar in spirit to noninteraction for random variables.
+
+372
+
+Conditional Plausibility Measures and Bayesian Networks
+
+Fonck (1994) shows that noninteraction is strictly weaker than independence for a number of notions of independence for possibility measures. The following result shows that
+independence implies noninteraction for all algebraic cpms.
+
+Lemma 4.7: If (W; F ; F 0 ; Pl) is an algebraic cps, then IPl(U; V jV 0) implies NI Pl(U; V jV 0 ).
+Proof: Suppose that V 0 2 F 0 and IPl(U; V jV 0) holds. If V \ V 0 2 F 0 then, from Alg2, it
+follows that
+
+Pl(U \ V jV 0 ) = Pl(U jV \ V 0 ) Pl(V jV 0 ) = Pl(U jV 0 ) Pl(V jV 0 ):
+On the other hand, if V \ V 0 2= F 0 , then by Acc4, Pl(V jV 0 ) = ?. By CPl3, Pl(U \ V jV 0 ) = ?,
+and by Lemma 3.3, Pl(U jV 0 ) Pl(V jV 0 ) = ?. Thus, Pl(U \ V jV 0 ) = Pl(U jV 0 ) Pl(V jV 0 ).
+What about the converse to Lemma 4.7? The results of Fonck show that it does not hold
+in general|indeed, it does not hold for Poss(U jV ). So what is required for noninteraction
+to imply independence? The following lemma provides a su cient condition.
+
+Lemma 4.8: If (W; F ; F 0 ; Pl) is a standard algebraic cps that satis es Alg40, then NI Pl(U; V jV 0)
+implies IPl (U; V jV 0 ).
+Proof: Suppose that V \ V 0 2 F 0 and NI Pl(U; V jV 0). Then by Alg2,
+Pl(U \ V jV 0 ) = Pl(U jV \ V 0 ) Pl(V jV 0 ):
+(2)
+By Acc3, V 0 2 F 0 , so NI Pl (U; V jV 0 ) implies
+Pl(U \ V jV 0 ) = Pl(U jV 0 ) Pl(V jV 0 ):
+(3)
+Since V \ V 0 2 F 0 and (W; F ; F 0 ; Pl) is standard, Pl(V \ V 0 ) =
+6 ?. Since Pl(V \ V 0) =
+Pl(V jV 0 ) Pl(V 0 ), it follows from Lemma 3.4 that Pl(V jV 0 ) =
+6 ?. So, by Alg40 , (2),
+0
+0
+and (3), it follows that Pl(U jV \ V ) = Pl(U jV ). An identical argument shows that
+Pl(V jU \ V 0 ) = Pl(V jV 0 ) if U \ V 0 2 F 0 . Thus, IPl(U; V jV 0 ).
+Lemmas 4.7 and 4.8 show why noninteraction and independence coincide for conditional
+probability de ned from unconditional probability, ranking functions, and possibility measures using Poss(U jjV ). Moreover, they suggest why they do not coincide in general. Since
+neither Poss(U jV ) nor PlP satisfy Alg40 , it is perhaps not surprising that in neither case
+does noninteraction imply conditional independence. (We shall shortly see an example in
+the case of PlP ; Fonck (1994) gives examples in the case of Poss(U jV ).) Indeed, noninteraction may not even imply conditional independence for an arbitrary conditional probability
+measure, as the following example shows.
+Example 4.9: Suppose that W = fa; bg, F = 2W , F 0 = F f;g, (a) = 1, (b) = 0, but
+(bjb) = 1. It is easy to see that fbg is not independent of itself, but fbg does not interact
+with fbg, since (b) = (b) (b). Nevertheless, it is not hard to check that this conditional
+probability measure is algebraic and, in fact, satis es Alg40 . However, it is not standard,
+since fbg 2 F 0 although (b) = 0.
+373
+
+Halpern
+
+It is easy to see that the assumption of standardness is necessary in Lemma 4.8. For
+suppose that (W; F ; F 0 ; Pl) is an arbitrary nonstandard algebraic cps for which > =
+6 ?.
+Since (W; F ; F 0 ; Pl) is nonstandard, there must exist some U 2 F 0 such that Pl(U jW ) = ?.
+But then
+? = Pl(;jW ) = Pl(;jU ) Pl(U jW ) = ? ?:
+Thus
+Pl(U jW ) = ? = ? ? = Pl(U jW ) Pl(U jW );
+so NI Pl(U; U jW ). But Pl(U jU ) = > 6= ? = Pl(U ), so IPl (U; U jW ) does not hold.
+In general, Theorem 4.5 does not hold if we use NI Pl rather than IPl . That is, Alg1{4
+do not su ce to ensure that CIRV1{4 hold for NI Pl . Besides noninteraction, a number of
+di erent approaches to de ning independence for possibility measures (Campos & Huete,
+1999a, 1999b; Dubois, Fari~nas del Cerro, Herzig, & Prade, 1994; Fonck, 1994) and for sets
+of probability measures (Campos & Huete, 1993; Campos & Moral, 1995; Cousa et al.,
+1999) have been considered. In general, Theorem 4.5 does not hold for them either. It is
+beyond the scope of this paper to discuss and compare these approaches to that considered
+here, but it is instructive to consider independence for sets of probability measures in a
+little more detail, especially for the representation PlP .
+De Campos and Moral (1995) de ne what the call type-1 independence. U and V
+are type-1 independent conditional on V 0 with respect to P if U and V are independent
+conditional on V 0 with respect to every 2 P . It is easy to check that type-1 independence
+is equivalent to noninteraction in the context of sets of probability measures. Thus, by
+Lemma 4.7, IPlP (U; V jV 0 ) implies that U and V are type-1 independent conditional on
+V 0 (and similarly for random variables). However, the converse does not necessarily hold,
+because the two approaches treat conditioning on events that have probability 0 according
+to some (but not all) of the measures in P di erently. To see this, consider an example
+discussed by de Campos and Moral. Suppose a coin is known to be either double-headed or
+double-tailed and is tossed twice. This can be represented by P = f 0 ; 1 g, where 0 (hh) =
+1 and 0 (ht) = 0 (th) = 0 (tt) = 0, while 1 (tt) = 1 and 1 (ht) = 1 (th) = 1 (hh) = 0.
+Let X1 and X2 be the random variables representing the outcome of the rst and second
+coin tosses, respectively. Clearly there is a functional dependence between X1 and X2 , but
+it is easy to check that X1 and X2 are type-1 independent with respect to P . Moreover,
+noninteraction holds: NI Pl(X1 = i; X2 = j ) holds for i; j 2 fh; tg. On the other hand,
+IPlP (X1 ; X2 ) does not hold. For example, fX1 =h(1) = 0 while fX1 =hjX2 =h(1) = .9
+The di erence between noninteraction (i.e., type-1 independence) and the de nition of
+independence used in this paper in the context of sets of probability measures can be summarized as follows. U and V do not interact with respect to P if U and V are independent
+9. As Peter Walley private communication, 2000] points out, this example is somewhat misleading. The
+de nition of independence with respect to PlP produces the same counterintuitive behavior as type-1
+independence if the probabilities are modi ed slightly so as to make them positive, i.e., when there is
+\almost functional dependence" between the two variables. For example, suppose that the coin in the
+example is known to either land heads with probability :99 or :01 (rather than 1 and 0, as in the example).
+Let 00 and 01 be the obvious modi cations of 0 and 1 required to represent this situation, and let
+0 = 00 ; 01 . It is easy to check that X1 and X2 continue to be type-1 independent, and noninteraction
+continues to hold, but now IPl (X1 ; X2 ) also holds. The real problem is that this representation of
+uncertainty does not enable learning.
+P
+
+f
+
+g
+
+P0
+
+374
+
+Conditional Plausibility Measures and Bayesian Networks
+
+with respect to all measures 2 P . On the other hand, U and V are independent with
+respect to P if (1) U and V are independent for all measures 2 P such that (U ) > 0 and
+(V ) > 0 and (2) (U ) = 0 i (V ) = 0 for all 2 P . The de nition of independence used
+here is thus more restrictive; it does not ignore the measures that give U or V probability 0
+when determining independence. The di erence between the two approaches is illustrated
+in the example in the previous paragraph.
+As the variant of the example considered in Footnote 9 shows though, neither de nition
+can completely claim to represent the intuition that if U is independent of V , then learning
+U gives no information about V . If the coin in the example is known to land heads with
+probability either .99 or .01, then seeing the rst coin toss land heads certainly seems to
+give information about the second coin toss, even though both de nitions would declare
+the events independent. However, the de nition of independence used here does have the
+advantage of leading to an algebraic cps, which means, as is shown in the next section, that
+using it leads to a representation of sets of probability measures that can be represented as
+a Bayesian network.
+
+5. Bayesian Networks
+
+Throughout this section, I assume that we start with a set W of possible worlds characterized
+by a set X = fX1 ; : : : ; Xn g of n binary random variables. That is, a world in W is a tuple
+(x1 ; : : : ; xn ) with xi 2 f0; 1g, and Xi (x1 ; : : : ; xn ) = xi ; that is, the value of Xi in world
+w = (x1 ; : : : ; xn ) = wi.10 The goal of this section is to show that many of the tools of
+Bayesian network technology can be applied in this setting. The proofs of the main results
+all proceed in essentially the same spirit as well-known results for probabilistic Bayesian
+networks (see (Geiger & Pearl, 1988; Geiger et al., 1990; Verma, 1986)).
+
+5.1 Qualitative Bayesian Networks
+
+As usual, a (qualitative) Bayesian network (over X ) is a dag whose nodes are labeled by
+variables in X . The standard notion of a Bayesian network representing a probability
+measure (Pearl, 1988) can be generalized in the obvious way to plausibility.
+De nition 5.1: Given a qualitative Bayesian network G, let ParG(X ) be the parents of the
+random variable X in G; let DesG (X ) be all the descendants of X , that is, X and all those
+nodes Y such that X is an ancestor of Y ; let NDG (X ), the nondescendants of X , consist
+of X DesG (X ). Note that all ancestors of X are nondescendants of X . The Bayesian
+network G is compatible with the cps (W; F ; F 0 ; Pl) (or just compatible with Pl, if the other
+components of the cps are clear from context) if IPlrv (X; NDG (X )jPar(X )), that is, if X is
+conditionally independent of its nondescendants given its parents, for all X 2 X .
+There is a standard way of constructing a Bayesian network that represents a probability measure (Pearl, 1988). I brie y review the construction here, since it works without
+change for an algebraic cpm. Given an algebraic cpm Pl, let Y1 ; : : : ; Yn be a permutation of the random variables in X . Construct a qualitative Bayesian network GPl;hY1 ;:::;Y i
+n
+
+10. The assumption that the random variables are binary is just for ease of exposition. It is easy to generalize
+the results to the case where (X ) is nite for each X ; there is no need to assume that (X ) is a
+subset of the reals.
+R
+
+i
+
+i
+
+375
+
+R
+
+i
+
+Halpern
+
+as follows: For each k, nd a minimal subset of fY1 ; : : : ; Yk 1 g, call it Pk , such that
+IPlrv (fY1 ; : : : ; Yk 1g; Yk jPk ). Then add edges from each of the nodes in Pk to Yk . Verma
+(1986) shows that this construction gives a Bayesian network that is compatible with Pl in
+the case that Pl is a probability measure; his proof depends only on CIRV1{4. Thus, the
+construction works for algebraic cpms.
+
+Theorem 5.2: GPl;hY1 ;:::;Y i is compatible with Pl.
+Proof: For ease of notation in the proof, I write G instead of GPl;hY1 ;:::;Y i . Note that
+Y1; : : : ; Yn represents a topological sort of G; edges always go from nodes in fY1 ; : : : ; Yk 1 g
+n
+
+n
+
+to Yk . It follows that G is acyclic; i.e., it is a dag. The construction guarantees that
+Pk = ParG(Yk ) and that IPlrv (fY1 ; : : : ; Yk 1g; Yk jParG(Yk )). It follows from results of (Verma,
+1986) (and is not hard to verify directly) that IPlrv (NDG (Yk ); Yk jParG (Yk )) can be proved
+using only CIRV1{4. The result now follows from Theorem 4.5.
+
+5.2 Quantitative Bayesian Networks
+
+A qualitative Bayesian network G gives qualitative information about dependence and independence, but does not actually give the values of the conditional plausibilities. To provide
+the more quantitative information, we associate with each node X in G a conditional plausibility table (cpt) that quanti es the e ects of the parents of X on X . A cpt for X gives,
+for each setting of X 's parents in G, the plausibility that X = 0 and X = 1 given that
+setting. For example, if X 's parents in G are Y and Z , then the cpt for X would have an
+entry denoted dX =ijY =j \Z =k for all (i; j; k) 2 f0; 1g3 . As the notation is meant to suggest,
+dX =ijY =j \Z =k = Pl(X = ijY = j \ Z = k) for the plausibility measure Pl represented by
+G.11 For each xed j and k, we assume that x0jk x1jk = >. A quantitative Bayesian
+network is a pair (G; f ) consisting of a qualitative Bayesian network G and a function f
+that associates with each node X in G a cpt for X .
+
+De nition 5.3: A quantitative Bayesian network (G; f ) represents Pl if G is compatible
+with Pl and the cpts agree with Pl, in the sense that, for each random variable X , the entry
+dX =ijY1 =j1 ;:::;Y =j in the cpt is Pl(X = ijY1 = j1 \: : :\Yk = jk ) if Y1 = j1 \: : :\Yk = jk 2 F 0 .
+(It does not matter what dX =ijY1 =j1 ;:::;Y =j is if Y1 = j1 \ : : : \ Yk = jk 2= F 0 .)
+k
+
+k
+
+k
+
+k
+
+Given a cpm Pl, it is easy to construct a quantitative Bayesian network (G; f ) that
+represents Pl: simply construct G that is compatible with Pl as in Theorem 5.2 and de ne
+f appropriately, using Pl. The more interesting question is whether there is a unique
+algebraic cpm determined by a quantitative Bayesian network. As stated, this question is
+somewhat undetermined. The numbers in a quantitative network do not say what and
+ought to be for the algebraic cpm.
+A reasonable way to make the question more interesting is the following. Recall that,
+for the purposes of this section, I have taken W to consist of the 2n worlds characterized by
+the n binary random variables in X . Let PLD; ; consist of all standard cps's of the form
+(W; F ; F 0 ; Pl), where F = 2W , so that all subsets of W are measurable, the range of Pl is
+11. Of course, if the random variables are not binary, i; j; k have to range over all possible values for the
+random variables.
+
+376
+
+Conditional Plausibility Measures and Bayesian Networks
+
+D, and Pl is algebraic with respect to and . Thus, for example, PLIN ;min;+ consists
+of all conditional ranking functions on W de ned from unconditional ranking functions by
+the construction in Section 2. Since a cps (W; F ; F 0 ; Pl) 2 PLD; ; is determined by Pl, I
+often abuse notation and write Pl 2 PLD; ; .
+With this notation, the question becomes whether a quantitative Bayesian network
+(G; f ) such that the entries in the cpts are in D determines a unique element in PLD; ; . As
+I now show, the answer is yes, provided (D; ; ) satis es some conditions. Characterizing
+the conditions on (D; ; ) required for this result turns out to be a little subtle. Indeed,
+it is somewhat surprising how many assumptions are required to reproduce the simple
+arguments that are required in the case of probability.
+
+De nition 5.4: (D; ; ) is a BN-compatible domain (with respect to PLD; ; ) if there
+are sets D( ) D D and D( ) D D2 D3 : : : satisfying the following properties:
+
+BN1.
+
+and
+
+are commutative and associative.
+
+BN2. For all d 2 D, (>; d); (?; d) 2 D( ), (?; d) 2 D( ), > d = d, ? d = ?, and
+? d = d.
+BN3.
+
+distributes over ; more precisely, a (b1
+bn) = (a b1 )
+(a bn ) if
+(a; b1 ); : : : ; (a; bn ); (a; b1
+bn) 2 D( ) and (b1 ; : : : ; bn); (a b1 ; : : : ; a bn ) 2 D( );
+moreover, (a1
+an) b = a1 b
+an b if (a1 ; : : : ; an ); (a1 b; : : : ; an b) 2
+D( ) and (a1
+an; b); (a1 ; b); : : : ; (an ; b) 2 D( ).
+
+BN4. If (a; c); (b; c) 2 D( ), a c b c, and c 6= ?, then a b.
+BN5. If (d1 ; : : : ; dk ) 2 D( ) and d1
+dk d, then there exists (d01 ; : : : ; d0k ) 2 D( )
+dk0 ; d) 2 D( ), di = di0 d, for i = 1; : : : ; k,
+such that (d01 ; d); : : : ; (d0k ; d); (d01
+0
+0
+dk ) d.
+and d1
+dk = (d1
+BN6. D( ) is closed under permutations and pre xes, so that if (x1 ; : : : ; xk ) 2 D( ) and
+is a permutation of (1; : : : ; k), then (x (1) ; : : : ; x (k) ) 2 D( ) and if k0 k, then
+(x1 ; : : : ; xk0 ) 2 D( ); moreover D( ) D.
+BN7. If (d1 ; : : : ; dk ); (d01 ; : : : ; d0m ) 2 D( ), (di ; d0j ) 2 D( ) for i = 1; : : : ; k, j = 1; : : : ; m,
+then (d1 d01 ; : : : ; d1 d0m ; : : : ; dk d01 ; : : : ; dk d0m ) 2 D( ).
+BN8. If (d1 ; : : : ; dk ) 2 D( ) and k0 k, then d1
+
+dk 0 d1
+
+dk .
+
+Note that all the representations of uncertainty we have considered so far have associated
+with them BN-compatible domains. Indeed, the de nitions of D( ), D( ), , and in
+each case are given in the proof of Proposition 3.2. For example, for PL 0;1];max;min, the
+set of conditional possibility measures determined by unconditional possibility measures,
+D( ) = 0; 1] 0; 1], while D( ) consists of all pairs (a; b) 2 0; 1] 0; 1] such that a < b
+or a = 1. I leave it to the reader to check that, in all these cases, BN1{8 hold.
+Given a tuple x = (x1 ; : : : ; xn ) 2 0; 1]n , let dX ;G;x denote the value dX =x jPar (X )=y ,
+where y is the restriction of x to the variables in ParG (Xi ).
+i
+
+377
+
+i
+
+i
+
+G
+
+i
+
+Halpern
+
+De nition 5.5: If (D; ; ) is BN-compatible, then a quantitative Bayesian network (G; f )
+is (D; ; )-representable if the values of the cpts for G lie in D and the following properties
+hold:
+R1. For every node X in G and every setting y of ParG (X ), (dX =0jPar (X )=y ; dX =1jPar (X )=y ) 2
+Dom( ) and
+dX =0jPar (X )=y dX =1jPar (X )=y = >:
+G
+
+G
+
+G
+
+G
+
+R2. Suppose Y1 ; : : : ; Yn is a topological sort of the nodes in G. Then for all y 2 f0; 1gn
+and all 1 j < k n, (dY ;G;y ; dY +1 ;G;y
+dY ;G;y) 2 D( ) and (dY ;G;y
+dY 1 ;G;y ; dY ;G;y) 2 D( ).
+j
+
+k
+
+j
+
+k
+
+j
+
+k
+
+R1 is the obvious analogue of the requirement in the probabilistic case that the entries
+of the cpt for X , for a xed setting of X 's parents, add up to 1. R2 essentially says that
+certain terms (the ones required to compute the plausibility of Y = y for Y = hY1 ; : : : ; Yn i)
+are required to be in D( ), so that it makes sense to take their product. Since D( ) =
+0; 1] 0; 1] in the case of probability, there is no need to make this requirement explicit.
+However, it is necessary for other representations of uncertainty.
+The following result shows that, as the name suggests, there is a unique cpm that
+represents a representable quantitative Bayesian network.
+
+Theorem 5.6 : If (G; f ) is (D; ; )-representable, then there is a unique cpm Pl 2
+PLD; ; such that (G; f ) represents Pl.
+5.3 D-Separation
+
+Just as in the case of probability, conditional independencies can be read o the Bayesian
+network using the criterion of d-separation (Pearl, 1988). Recall that a set X of nodes
+in G = (V; E ), is d-separated from a set Y of nodes by a set Z of nodes in G, written
+d-sep G (X; YjZ), if, for every X 2 X, Y 2 Y, and a trail from X to Y (that is, a sequence
+(X0 ; : : : ; Xk ) of nodes in G such that X0 = X , Xk = Y and either (Xi ; Xi+1 ) or (Xi+1 ; Xi )
+is a directed edge in G) and a node Xi on the trail with 0 < i < k such that either:
+(a) Xi 2 Z and there is an arrow leading into Xi and an arrow leading out (i.e., either
+(Xi 1 ; Xi ); (Xi ; Xi+1 ) 2 E or (Xi ; Xi 1 ); (Xi+1 ; Xi ) 2 E
+(b) Xi 2 Z and Xi is a tail-to-tail node (i.e., (Xi ; Xi 1 ); (Xi ; Xi+1 ) 2 E )
+(c) Xi is a head to head node (i.e., (Xi 1 ; Xi ); (Xi+1 ; Xi ) 2 E ), and neither Xi nor any
+of its descendants are in Z.
+Let G;Pl consist of all statements of the form IPlrv (X; NDG (X )jParG (X )). Let PLD; ;
+be an arbitrary collection of cps's of the form (W; F ; F 0 ; Pl) where all components other
+than Pl are xed, and the plausibility measures Pl all have the same range D of plausibility
+values. Consider the following three statements:
+1. d-sep G (X; YjZ).
+2. IPlrv (X; YjZ) is provable from CIRV1{4 and G;Pl.
+378
+
+Conditional Plausibility Measures and Bayesian Networks
+
+3. IPlrv (X; YjZ) holds for every plausibility measure in PLD; ; compatible with G.
+The implication from 1 to 2 is proved in (Geiger et al., 1990; Verma, 1986).
+
+Theorem 5.7: (Geiger et al., 1990; Verma, 1986) If d-sep G(X; YjZ), then IPlrv (X; YjZ) is
+provable from CIRV1{4 and G;Pl.
+
+It is immediate from Theorem 4.5 that the implication from 2 to 3 holds for algebraic
+cpms.
+Corollary 5.8: If IPlrv (X; YjZ) is provable from CIRV1{4 and G;Pl, then IPlrv (X; YjZ)
+holds for every algebraic cpm Pl compatible with G.
+Finally, the implication from 3 to 1 for probability measures is proved in (Geiger & Pearl,
+1988; Geiger et al., 1990). Here I generalize the proof to algebraic plausibility measures.
+Notice that to prove the implication from 3 to 1, it su ces to show that if X is not dseparated from Y by Z in G, then there is a plausibility measure Pl 2 PLD; ; such that
+IPlrv (X; Y jZ) does not hold. To guarantee that such a plausibility measure exists in PLD; ; ,
+we have to ensure that there are \enough" plausibility measures in PLD; ; in the following
+technical sense.
+
+De nition 5.9: A BN-compatible domain (D; ; ) is rich if there exist d; d0 2 D such
+that (1) (d; d0 ) 2 D( ), (2) d d0 = > and (3) if x = x1 : : : xk , where each xi is either
+
+d or d0 and k < n, then (d; x), (x; d), (d0 ; x), and (x; d0 ) are all in D( ) (intuitively, D( )
+contains all products involving d and d0 of length at most n).
+All the domains for the cps's we have considered are easily seen to be rich.
+
+Theorem 5.10: Suppose that plausibility measures in PLD; ; take values in a rich BNcompatible domain. Then if IPlrv (X; YjZ) holds for every plausibility measure in PLD; ;
+compatible with G, then d-sep G (X; YjZ).
+I remark that independence and d-separation for various approaches to representing sets
+of probability measures using Bayesian networks are discussed by Cozman (2000b, 2000a).
+However, the technical details are quite di erent from the approach taken here.
+
+6. Conclusion
+
+I have considered a general notion of conditional plausibility that generalizes all other standard notions of conditioning in the literature, and examined various requirements that
+could be imposed on conditional plausibility. One set of requirements, those that lead to
+algebraic cps's, was shown to su ce for the construction of Bayesian networks. Further
+assuming that the range D of the plausibility measure is a BN-compatible domain su ces
+for all the more quantitative properties of Bayesian networks to hold and for d-separation
+to characterize the independencies. It should also be clear that standard constructions like
+belief propagation in Bayesian networks (Pearl, 1988) can also be applied to algebraic cps's
+with ranges that are BN-compatible, since they typically use only basic properties of conditioning, addition, and multiplication, all of which hold in BN-compatible domains (using
+379
+
+Halpern
+
+and ). In particular, these results apply to sets to probability measures, provided that
+they are appropriately represented as plausibility measures. The particular representation
+of sets of probability measures advocated in this paper was also shown to have a number of
+other attractive properties.
+The results of this paper show that Alg1{4 are su cient conditions for representing
+a measure of uncertainty that is acceptable as a Bayesian network. They may not be
+necessary. It would be interesting to see if other natural conditions also su ce. Similarly, I
+have focused only on acceptable cps's, that is, ones that satisfy Acc1{4. Acc3 and Acc4 are
+nontrivial conditions; it would be of interest to see to what extent they could be weakened
+while still being able to prove results in the spirit of this paper. I leave these questions to
+future research.
+
+Appendix A. Proofs
+
+In this section I give the proofs of Theorems 4.5, 5.6, and 5.10. I repeat the statement of
+the results for the convenience of the reader.
+
+Lemma A.1: Suppose that (W; F ; F 0 ; Pl) is a cps, A1 ; : : : ; An is a partition of W , X; A1 ; : : : ; An 2
+F , and Y 2 F 0 . Then
+Pl(X jY ) = fi:A \Y 2F 0 g Pl(X jAi \ Y ) Pl(Ai jY ):12
+i
+
+Proof: Using an easy induction argument, it follows from Alg1 that
+Pl(X jY ) = ni=1 Pl(X \ Ai jY ):
+If Ai \ Y 2= F 0 , then it follows from Acc4 that Pl(Ai jY ) = ?. Thus, by CPl3, Pl(X \ Ai jY ) =
+?. Using Lemma 3.3, it follows that
+Pl(X jY ) = fi:A \Y 2F 0 g Pl(X \ Ai jY ):
+If Ai \ Y 2 F 0 , then it follows from Alg2 that Pl(X \ Ai jY ) = Pl(X jAi \ Y ) Pl(Ai jY ).
+i
+
+Thus,
+
+Pl(X jY ) = fi:A \Y 2F 0 g Pl(X jAi \ Y ) Pl(Ai jY );
+i
+
+as desired.
+
+Theorem 4.5: CIRV1{4 hold for all algebraic cps's.
+Proof: CIRV1 is immediate from the fact that independence is symmetric.
+For CIRV2, suppose that IPlrv (X; Y Y0 jZ). We must show IPlrv (X; YjZ). That is, we
+must show that IPl (X = x; Y = yjZ = z), for all x, y, and z. This requires showing two
+
+things.
+
+0 , then Pl(X A Y ) Pl(A Y ) = Pl(X A Y ) by Alg2. Thus, the terms
+12. Notice that if A Y
+arising on the right-hand side of the equation in Lemma A.1 are in Dom( ). This means that there is
+no need to put in parentheses; is associative on terms in Dom( ).
+i \
+
+2 F
+
+j
+
+i \
+
+ij
+
+380
+
+\
+
+ij
+
+Conditional Plausibility Measures and Bayesian Networks
+
+2(a). If X = x \ Z = z 2 F 0 , then
+Pl(Y = yjX = x \ Z = z) = Pl(Y = yjZ = z):
+2(b). If Y = y \ Z = z 2 F 0 , then
+Pl(X = xjY = y \ Z = z) = Pl(X = xjZ = z):
+For 2(a), suppose that Pl(X = x \ Z = z) 2 F 0 . From IPl (X; Y Y0jZ), it follows that
+IPl(X = x; Y = y \ Y0 = y0 jZ = z) for all y0 . Hence
+Pl(Y = y \ Y0 = y0 jX = x \ Z = z) = Pl(Y = y \ Y0 = y0 jZ = z)
+
+(4)
+
+for all y0 2 R(Y0 ). From (4) it follows that
+
+y0 Pl(Y = y \ Y0 = y0 jX = x \ Z = z) = y0 Pl(Y = y \ Y0 = y0 jZ = z):
+Thus,
+Pl( y0 Y = y \ Y0 = y0 jX = x \ Z = z) = Pl( y0 Y = y \ Y0 = y0 jZ = z):
+Since y0 (Y = y \ Y0 = y0 ) = Y = y, 2(a) holds.
+For 2(b), from IPlrv (X; Y Y0 jZ), it follows that if Y = y \ Y0 = y0 \ Z = z 2 F 0 , then
+Pl(X = xjY = y \ Y0 = y0 \ Z = z) = Pl(X = xjZ = z):
+
+(5)
+
+From (5) and Lemma A.1, it follows that
+Pl(X = xjY = y \ Z = z)
+fy0 :Y=y\Y0 =y0 \Z=z2F 0 g Pl(X = xjY = y \ Y0 = y0 \ Z = z) Pl(Y0 = y0 jY = y \ Z = z)
+fy0 :Y=y\Y0 =y0 \Z=z2F 0 g Pl(X = xjZ = z) Pl(Y0 = y0 jY = y \ Z = z):
+(6)
+0
+0
+0
+0
+0
+By Acc4, it follows that if Y = y \ Y = y \ Z = z 2= F , then Pl(Y = y jY = y \
+Z = z) = ?. Thus, by Lemma 3.3, Alg1, CPl2, and CPl4,
+=
+=
+
+fy0 :Y=y\Y0 =y0 \Z=z2F 0 g Pl(Y0 = y0 jY = y \ Z = z)
+y0 Pl(Y0 = y0 jY = y \ Z = z)
+
+=
+= Pl(W jY = y \ Z = z)
+= >:
+
+(7)
+
+The next step is to apply distributivity (Alg3) to the last line of (6). To do this, we
+must show that certain tuples are in Dom( ) and Dom( ), respectively. Since
+(Pl(X = xjY = y \ Y0 = y0 \ Z = z); Pl(Y0 = y0 jY = y \ Z = z) 2 Dom( );
+from (5) it follows that
+(Pl(X = xjZ = z); Pl(Y0 = y0 jY = y \ Z = z)) 2 Dom( ):
+381
+
+Halpern
+
+If fyi0 1 ; : : : ; yi0 g = fy0 2 R(Y0 ) : Y = y \ Y0 = y0 \ Z = z 2 F 0 g, then clearly
+k
+
+(Pl(Y0 = yi0 1 jY = y \ Z = z); : : : ; Pl(Y0 = y0i jY = y \ Z = z) 2 Dom( ):
+k
+
+Moreover, using (5) again and Alg2, it follows that
+Pl(X = xjZ = z) Pl(Y0 = y0i jY = y \ Z = z) = Pl(X = x \ Y0 = y0i jY = y \ Z = z):
+k
+
+k
+
+Thus, (Pl(X = xjZ = z) Pl(Y0 = y0i1 jY = y\Z = z); : : : ; Pl(X = xjZ = z) Pl(Y0 = y0i jY = y\
+Z = z) 2 Dom( ). Finally, since (7) shows that fy0:Y=y\Y0=y0\Z=z2F 0g = > and, by the
+proof of Lemma 3.4, (d; >) 2 Dom( ) for all d 2 Range(Pl), it follows that
+k
+
+(Pl(XjZ = z); fy0 :Y=y\Y0 =y0 \Z=z2F 0 g Pl(Y0 = y0 jY = y \ Z = z)) 2 Dom( ):
+It now follows, using Alg3, (7), and Lemma 3.4, that
+fy0 :Y=y\Y0 =y0 \Z=z2F 0 g Pl(X = xjZ = z) Pl(Y0 = y0 jY = y \ Z = z)
+= Pl(X = xjZ = z) ( fy0 :Y=y\Y0 =y0 \Z=z2F 0 g Pl(Y0 = y0 jY = y \ Z = z))
+
+= Pl(X = xjZ = z) >
+= Pl(X = xjZ = z):
+
+Thus, from (6), it follows that Pl(X = xjY = y \ Z = z) = Pl(X = xjZ = z). This completes the proof of 2(b) and CIRV2.
+For CIRV3, suppose that IPlrv (X; Y Y0 jZ). We must show that IPlrv (X; YjY0 Z). This
+again requires showing two things:
+3(a). If X = x \ Y0 = y0 \ Z = z 2 F 0 , then
+Pl(Y = yjX = x \ Y0 = y0 \ Z = z) = Pl(Y = yjY0 = y0 \ Z = z):
+3(b). If Y = y \ Y0 = y0 \ Z = z 2 F 0 , then
+Pl(X = xjY = y \ Y0 = y0 \ Z = z) = Pl(X = xjY0 = y0 \ Z = z):
+For 3(a), suppose that X = x\Y0 = y0 \Z = z 2 F 0 . Thus, by Acc3, X = x\Z = z 2 F 0 .
+Since IPlrv (X; Y Y0 jZ), it follows that
+Pl(Y = y00 \ Y0 = y0 jX = x \ Z = z) = Pl(Y = y00 \ Y0 = y0 jZ = z)
+for all y00 2 R(Y). Applying Alg2 to each side of (8), it follows that
+Pl(Y = yjY0 = y0 \ X = x \ Z = z) Pl(Y0 = y0 jX = x \ Z = z)
+= Pl(Y = yjY0 = y0 \ Z = z) Pl(Y0 = y0 jZ = z):
+Thus, to prove 3(a), it follows from Alg4 that it su ces to show that
+Pl(Y0 = y0 jX = x \ Z = z) = Pl(Y0 = y0 jZ = z) 6= ?:
+382
+
+(8)
+
+Conditional Plausibility Measures and Bayesian Networks
+
+But by (8) and Alg1, it follows that
+Pl(Y0 = y0 jX = x \ Z = z)
+= y00 2R(Y) Pl(Y = y00 \ Y0 = y0 jX = x \ Z = z)
+= y00 2R(Y) Pl(Y = y00 \ Y0 = y0 jZ = z)
+= Pl(Y0 = y0 jZ = z);
+as desired. Moreover, since X = x \ Y0 = y0 \ Z = z 2 F 0 , it follows from Acc4 that
+Pl(Y0 = y0 jZ = z) 6= ?.
+For 3(b), suppose that Y = y \ Y0 = y0 \ Z = z 2 F 0 . Since IPlrv (X; Y Y0 jZ), it follows
+that
+Pl(X = xjY = y \ Y0 = y0 \ Z = z) = Pl(X = xjZ = z):
+Thus, to prove 3(b), it su ces to show that
+Pl(X = xjY0 = y0 \ Z = z) = Pl(X = xjZ = z):
+(9)
+Recall that we are assuming that IPlrv (X; Y Y0 jZ). By CIRV2, it follows that IPlrv (X; Y0 jZ).
+Thus, (9) is immediate from 2(b) (since Y = y \ Y0 = y0 \ Z = z 2 F 0 implies that Y0 = y0 \
+Z = z 2 F 0).
+Finally, consider CIRV4. Suppose that IPlrv (X; YjZ) and IPlrv (X; Y0 jY Z). We must
+show that IPlrv (X; Y Y0 jZ). As usual, this requires showing two things:
+4(a). If Y = y \ Y0 = y0 \ Z = z 2 F 0 , then
+Pl(X = xjY = y \ Y0 = y0 \ Z = z) = Pl(X = xjZ = z):
+4(b). If X = x \ Z = z 2 F 0 , then
+Pl(Y = y \ Y0 = y0 jX = x \ Z = z) = Pl(Y = y \ Y0 = y0 jZ = z):
+Both 4(a) and 4(b) are straightforward. For 4(a), suppose that Y = y\Y0 = y0 \Z = z 2
+F 0 . Since IPlrv (X; Y0 jY Z), it follows that
+Pl(X = xjY = y \ Y0 = y0 \ Z = z) = Pl(X = xjY = y \ Z = z):
+And since IPlrv (X; YjZ), it follows that
+Pl(X = xjY = y \ Z = z) = Pl(X = xjZ = z):
+Thus we have 4(a).
+For 4(b), suppose that X = x \ Z = z 2 F 0 . There are now two cases to consider. If
+Pl(Y = yjX = x \ Z = z) 6= ? then, by Acc4, X = x \ Y = y \ Z = z 2 F 0 . Moreover, by
+Alg2,
+Pl(Y = y\Y0 = y0 jX = x\Z = z) = Pl(Y0 = y0 jX = x\Y = y\Z = z) Pl(Y = yjX = x\Z = z):
+(10)
+Since IPlrv (X; Y0 jY Z), it follows that
+Pl(Y0 = y0 jX = x \ Y = y \ Z = z) = Pl(Y0 = y0 jY = y \ Z = z):
+383
+
+Halpern
+
+And since IPlrv (X; YjZ), it follows that Pl(Y = yjX = x \ Z = z) = Pl(Y = yjZ = z). Plugging this into (10) and applying Alg2 again gives
+Pl(Y = y \ Y0 = y0 jX = x \ Z = z)
+= Pl(Y0 = y0 jY = y \ Z = z) Pl(Y = yjZ = z)
+= Pl(Y = y \ Y0 = y0 jZ = z);
+as desired.
+Now if Pl(Y = yjX = x \ Z = z) = ?, then by CPl3, it follows that Pl(Y = y \
+Y0 = y0 jX = x\Z = z) = ?. Moreover, since IPlrv (X; YjZ), it follows that Pl(Y = yjZ = z) =
+?. Applying CPl3, we get that Pl(Y = y \ Y0 = y0 jZ = z) = ?. Thus, again 4(b) holds.
+
+Theorem 5.6: If (G; f ) is (D; ; )-representable then there is a unique cpm Pl 2
+PLD; ; such that (G; f ) represents Pl.
+Proof: Given (G; f ), suppose without loss of generality that X = hX1 ; : : : ; Xn i is a topo-
+
+logical sort of the nodes in G. I now de ne the plausibility measure Pl determined by (G; f ).
+I start by de ning Pl(G;f ) on sets of the form X = x.
+It easily follows from Alg2 that if Pl 2 PLD; ; and Pl(X1 = x1 \ : : : \ Xn 1 = xn 1 ) 6=
+?, then
+Pl(X = x) = Pl(Xn = xn jX1 = x1 \ : : : \ Xn 1 = xn 1 )
+Pl(Xn 1 = xn 1 jX1 = x1 \ : : : \ Xn 2 = xn 2 )
+(11)
+Pl(X2 = x2 jX1 = x1 ) Pl(X1 = x1 ):
+Thus, an algebraic plausibility measure satis es an analogue of the chain rule for probability.
+(Since in D is assumed to be associative, no parentheses are required here. However, even
+without this assumption, it follows easily from Alg2 that is in fact associative on tuples
+(a; b; c) of the form (Pl(U1 jU2 ); Pl(U2 jU3 ); Pl(U3 jU4 )), where U1 U2 U3 U4 , which are
+the only types of tuples that arise in (11). Associativity will be more of an issue below.)
+If Pl is compatible with G, then in fact
+Pl(X = x) = Pl(Xn = xn j \X 2Par (X ) Xj = xj )
+Pl(Xn 1 = xn 1 j \X 2Par (X 1) Xj = xj )
+(12)
+(X1 = x1 ):
+(If ParG (Xk ) = ;, then Pl(Xk = xk j\X 2Par (X ) Xj = xj ) is just taken to be Pl(Xk = xk ).)
+It is clear from (12) that Pl(G;f ) (X = x) must be dX ;G;x
+dX1 ;G;x.
+Note that every subset of W can be written as a disjoint union of events of the form
+X = x. Thus, if U 2 F , de ne
+Pl(G;f ) (U ) = fx:X=x U gdX ;G;x
+dX1 ;G;x:
+For conditional plausibilities, suppose that Pl(G;f ) (V ) 6= ?, so that V 2 F 0 . Let
+fx1 ; : : : ; xk g = fx : X = x V g. It follows easily from BN6, BN7, R1, and R2 that
+(Pl(G;f ) (X = x1 ); : : : ; Pl(G;f ) (X = xk )) 2 D( ). Thus, by BN8, if X = x V , then
+Pl(G;f ) (X = x) Pl(G;f ) (V ). By BN5, for each j , there exists dX=x jV such that
+(dX=x jV ; Pl(G;f ) (V )) 2 D( ) and dX=x jV Pl(G;f ) (V ) = Pl(G;f ) (X = x);
+j
+
+n
+
+G
+
+j
+
+j
+
+G
+
+G
+
+n
+
+k
+
+n
+
+n
+
+j
+
+j
+
+j
+
+384
+
+Conditional Plausibility Measures and Bayesian Networks
+
+it follows from BN4 that dX=x jV is the unique element in D with this property. Moreover,
+by BN5, (dX=x1 jV ; : : : ; dX=x jV ) 2 D( ). De ne Pl(G;f ) (U jV ) = fx:X=x U \V g dX=xjV
+(where Pl(G;f ) (;jV ) is taken to be ?). Note for future reference that it follows from BN5
+that (Pl(G;f ) (U jV ); Pl(G;f ) (V )) 2 D( ) and
+Pl(G;f ) (U jV ) Pl(G;f ) (V ) = Pl(G;f ) (U \ V ):
+(13)
+This completes the de nition of Pl(G;f ) . It remains to check that it is an algebraic cpm
+that is represented by (G; f ). Thus, we must check that Alg1{4 and CPl1{4 hold. Alg1
+is immediate from the de nitions and BN1 and BN2 (BN2 is necessary for the case that
+one of the disjoint sets is empty); Alg3 is immediate from BN3 and Alg4 is immediate
+from BN4. For Alg2, note that if Pl(G;f ) (V ) 6= ? and Pl(G;f ) (V 0 ) 6= ? then, by (13),
+Pl(G;f ) (U \ V jV 0 ) Pl(G;f ) (V 0 ) = Pl(G;f ) (U \ V \ V 0 ) and
+(Pl(G;f )(U jV \ V 0 ) Pl(G;f ) (V jV 0 )) Pl(G;f ) (V 0 )
+= Pl(G;f )(U jV \ V 0 ) (Pl(G;f ) (V jV 0 ) Pl(G;f ) (V 0 ))
+= Pl(G;f ) (U jV \ V 0 ) Pl(G;f ) (V \ V 0 )
+= Pl(G;f ) (U \ V \ V 0 ):
+(Note that the associativity of is being used here.) Thus, by BN4,
+Pl(G;f ) (U \ V jV 0 ) = Pl(G;f )(U jV \ V 0 ) Pl(G;f ) (V jV 0 ):
+CPl1 is immediate by de nition (the empty sum is taken to be ?). For CPl2, note that
+by (13), Pl(G;f ) (W jV ) Pl(G;f ) (V ) = Pl(G;f ) (V ). Since > Pl(G;f ) (V ) = Pl(G;f ) (V ) by
+BN2, it follows from BN4 that Pl(G;f ) (W jV ) = >. CPl3 follows readily from the de nitions
+together with BN1, BN6, and BN7. CPl4 also follows by de nition.
+Next we must show that (G; f ) represents Pl(G;f ) . The rst step is to show that
+Pl(G;f ) (X = xjParG (X ) = z) = dX =xjPar (X )=z . Note that by (13),
+Pl(G;f ) (X = xjParG (X ) = z) Pl(G;f ) (ParG (X ) = z) = Pl(G;f ) (X = x \ ParG (X ) = z):
+By de nition,
+Pl(G;f ) (X = x \ ParG (X ) = z) = fx:X=x0 (X =x\Par (X )=~y)g Pl(G;f ) (X = x0 ):
+Each term in the \sum" on the right is the \product" of terms; indeed, the sum is over all
+possible products that include dX =yjPar (X )=z as one of the terms and a term dY =yjPar (Y )=z0
+for each Y 2 ParG (X ), where y is the component of z corresponding to Y . By using BN1,
+BN3, R1, and R2, it is not hard to show that
+Pl(G;f ) (X = y \ ParG (X ) = z)
+= f:X=x0 (X =x\Par (X )=~y) Pl(G;f ) (X = x0 )
+(14)
+= dX =xjPar =z Pl(G;f ) (ParG (X ) = z):
+It now follows from BN4 that Pl(G;f ) (X = xjParG (X ) = z) = dX =xjPar (X )=z .
+To show that Pl(G;f ) (X = xjNDG (X ) = ~y \ ParG (X ) = z) = dX =xjPar (X )=z , it su ces
+to show that
+Pl(G;f ) (X = x \ NDG (X ) = ~y \ ParG (X ) = z)
+(15)
+= dX =xjPar (X )=z Pl(G;f ) (NDG (X ) = ~y \ ParG (X ) = z);
+j
+
+k
+
+G
+
+G
+
+G
+
+G
+
+G
+
+G
+
+G
+
+G
+
+G
+
+385
+
+Halpern
+
+for then the result follows by BN5. (15) can be shown much like (14), but now the commutativity of (BN1) is essential. That is, the expressions for Pl(G;f ) (X = x \ NDG (X ) =
+~y \ ParG (X ) = z) and dX =xjPar (X )=z Pl(G;f ) (NDG (X ) = ~y \ ParG (X ) = z) involve
+the same terms, but not necessarily in the same order. With commutativity, they can be
+permuted so that they are in the same order.
+Similar arguments, which I leave to the reader, show that Pl(G;f ) (NDG (X ) = ~yjX =
+x \ ParG (X ) = z) = Pl(G;f ) (NDG (X ) = ~yjParG (X ) = z). Thus, (G; f ) represents Pl(G;f ) .
+G
+
+Theorem 5.10: Suppose that (D; ; ) is a rich BN-compatible domain. Then if IPlrv (X; YjZ)
+holds for every plausibility measure in PLD; ; compatible with G, then d-sep G (X; YjZ).
+Proof: Suppose that X is not d-separated from Y by Z in G. Then there is some X 2 X
+and Y 2 Y such that X is not d-separated from Y by Z in G. I construct a cpm in
+Pl 2 PLD; ; such that IPlrv (X; Y jZ) does not hold, using the techniques of (Geiger et al.,
+1990).
+As shown in (Geiger et al., 1990, Lemma 9), if X is not d-separated from Y in G, there
+exists a subgraph G0 of G such that
+1. G0 includes all the nodes in G but only a subset of the edges in G,
+2. X is not d-separated from Y by Z in G0 .
+3. the edges E 0 in G0 consist only of those speci ed below:
+(a) a trail q from X to Y ,
+(b) for every head-to-head node Xi on the trail q, there is a directed path pi in G0 to
+a node in Z; moreover, the paths pi do not share any nodes and the only node
+that pi shares with q is Xi .
+Note that every node in G0 has either 0, 1, or 2 parents in G0 . Let (G0 ; f ) be a quantitative
+Bayesian network such that for each node in X in G0 with no parents in G0 , the cpt f (X )
+is such that dX =0 = d and dX =1 = d0 . If a node X in G0 has one parent, say X 0 , then the
+cpt f (X ) is such that dX =ijX 0 =j is > if i = j and ? if i 6= j . Finally, if X has two parents,
+say X 0 and X 00 , the cpt f (X ) is such that dX =kjX 0 =i\X 00 =k is > if k = i j ( mod2) and is ?
+otherwise. Since d d0 = > and BN2 guarantees that > ? = >, the construction satis es
+R1. The richness of D guarantees that R2 holds. By Theorem 5.6, there is a (unique)
+plausibility measure in Pl 2 PLD; ; that is represented by (G0 ; f ). It is easy to check that
+Pl is compatible with G as well. There are three cases to consider:
+Suppose that X has no parents in G0 . Then it is easy to see that IPlrv (X; YjZ) for all
+Y and Z (and, in particular, if Y = NDG(X ) and Z = ParG(X )).
+Suppose that X has one parent in G0 , say X 0 . Then it is easy to see that IPlrv (X; YjZ)
+holds for all Y and Z such that X 0 2 Z. Since X 0 is a parent of X in G, again
+IPlrv (X; NDG (X )jParG (X )) must hold.
+Finally, if X has two parents in G0 , say X 0 and X 00 , then it is easy to see that
+IPlrv (X; YjZ) holds for all Y and Z such that fX 0 ; X 00 g Z. Since X 0 and X 00 are
+parents of X in G, again IPlrv (X; NDG (X )jParG (X )) must hold.
+386
+
+Conditional Plausibility Measures and Bayesian Networks
+
+Acknowledgments
+A preliminary version of this paper appears in Uncertainty in Arti cial Intelligence, Proceedings of the Sixteenth Conference, 2000. I thank Seraf n Moral, Fabio Cozman, Peter
+Walley, and the anonymous referees of both the UAI and journal version of the paper for
+very useful comments. This work was supported in part by the NSF, under grants IRI-9625901 and IIS-0090145.
+
+References
+
+Campos, L., & Huete, J. F. (1993). Independence concepts in upper and lower probabilities. In Bouchon-Meunier, B., Valverde, L., & Yager, R. R. (Eds.), Uncertainty in
+Intelligent Systems, pp. 85{96. North-Holland, Amsterdam.
+Campos, L., & Huete, J. F. (1999a). Independence concepts in possibility theory: Part I.
+Fuzzy Sets and Systems, 103 (1), 127{152.
+Campos, L., & Huete, J. F. (1999b). Independence concepts in possibility theory: Part II.
+Fuzzy Sets and Systems, 103 (3), 487{505.
+Campos, L., & Moral, S. (1995). Independence concepts for sets of probabilities. In
+Proc. Eleventh Conference on Uncertainty in Arti cial Intelligence (UAI '95), pp.
+108{115.
+Cousa, I., Moral, S., & Walley, P. (1999). Examples of independence for imprecise probabilities. In Proc. First Intl. Symp. Imprecise Probabilities and Their Applications.
+Cozman, F. G. (1998). Irrelevance and independence relations in Quasi-Bayesian networks.
+In Proc. Fourteenth Conference on Uncertainty in Arti cial Intelligence (UAI '98),
+pp. 89{96.
+Cozman, F. G. (2000a). Credal networks. Arti cial Intelligence, 120 (2), 199{233.
+Cozman, F. G. (2000b). Separation properties of setes of probability measures. In Proc. Sixteenth Conference on Uncertainty in Arti cial Intelligence (UAI 2000).
+Cozman, F. G., & Walley, P. (1999). Graphoid properties of epistemic irrelevance and
+independence. Unpublished manuscript.
+Darwiche, A. (1992). A Symbolic Generalization of Probability Theory. Ph.D. thesis, Stanford University.
+Darwiche, A., & Ginsberg, M. L. (1992). A symbolic generalization of probability theory.
+In Proceedings, Tenth National Conference on Arti cial Intelligence (AAAI '92), pp.
+622{627.
+Darwiche, A., & Goldszmidt, M. (1994). On the relation between kappa calculus and probabilistic reasoning. In Proc. Tenth Conference on Uncertainty in Arti cial Intelligence
+(UAI '94), pp. 145{153.
+387
+
+Halpern
+
+Dubois, D., Fari~nas del Cerro, L., Herzig, A., & Prade, H. (1994). An ordinal view of
+independence with applications to plausible reasoning. In Proc. Tenth Conference on
+Uncertainty in Arti cial Intelligence (UAI '94), pp. 195{203.
+Dubois, D., & Prade, H. (1990). An introduction to possibilistic and fuzzy logics. In
+Shafer, G., & Pearl, J. (Eds.), Readings in Uncertain Reasoning, pp. 742{761. Morgan
+Kaufmann, San Francisco, Calif.
+Fagin, R., & Halpern, J. Y. (1991). A new approach to updating beliefs. In Bonissone, P.,
+Henrion, M., Kanal, L., & Lemmer, J. (Eds.), Uncertainty in Arti cial Intelligence 6,
+pp. 347{374. Elsevier Science Publishers, Amsterdam.
+Finetti, B. d. (1936). Les probabilites nulles. Bulletins des Science Mathematiques (premiere
+partie), 60, 275{288.
+Fonck, P. (1994). Conditional independence in possibility theory. In Proc. Tenth Conference
+on Uncertainty in Arti cial Intelligence (UAI '94), pp. 221{226.
+Friedman, N., & Halpern, J. Y. (1995). Plausibility measures: a user's guide. In
+Proc. Eleventh Conference on Uncertainty in Arti cial Intelligence (UAI '95), pp.
+175{184.
+Geiger, D., & Pearl, J. (1988). On the logic of causal models. In Proc. Fourth Workshop
+on Uncertainty in Arti cial Intelligence (UAI '88), pp. 136{147.
+Geiger, D., Verma, T., & Pearl, J. (1990). Identifying independence in bayesian networks.
+Networks, 20, 507{534.
+Gilboa, I., & Schmeidler, D. (1993). Updating ambiguous beliefs. Journal of Economic
+Theory, 59, 33{49.
+Goldszmidt, M., & Pearl, J. (1992). Rank-based systems: A simple approach to belief
+revision, belief update and reasoning about evidence and actions. In Principles of
+Knowledge Representation and Reasoning: Proc. Third International Conference (KR
+'92), pp. 661{672. Morgan Kaufmann, San Francisco, Calif.
+Halpern, J. Y. (2000). Conditional plausibility measures and Bayesian networks. In
+Proc. Sixteenth Conference on Uncertainty in Arti cial Intelligence (UAI 2000), pp.
+247{255. To appear, Journal of A.I. Research.
+Keynes, J. M. (1921). A Treatise on Probability. Macmillan, London.
+Levi, I. (1985). Imprecision and uncertainty in probability judgment. Philosophy of Science,
+52, 390{406.
+Pearl, J. (1988). Probabilistic Reasoning in Intelligent Systems. Morgan Kaufmann, San
+Francisco, Calif.
+Popper, K. R. (1968). The Logic of Scienti c Discovery (revised edition). Hutchison,
+London. The rst version of this book appeared as Logik der Forschung, 1934.
+388
+
+Conditional Plausibility Measures and Bayesian Networks
+
+Renyi, A. (1964). Sur les espaces simples de probabilites conditionelles. Annales de l'Institut
+Henri Poincare, Nouvelle serie, Section B, 1, 3{21. Reprinted as paper 237 in Selected
+Papers of Alfred Renyi, III: 1962{1970, Akademia Kiado, 1976, pp. 284{302.
+Shafer, G. (1976). A Mathematical Theory of Evidence. Princeton University Press, Princeton, N.J.
+Shenoy, P. P. (1994). Conditional independence in valuation based systems. International
+Journal of Approximate Reasoning, 10, 203{234.
+Shenoy, P. P., & Shafer, G. (1990). An axiomatic framework for Bayesian and belief-function
+propagation. In Shachter, R., Levitt, T., Kanal, L., & Lemmer, J. (Eds.), Uncertainty
+in Arti cial Intelligence 4, pp. 169{198.
+Spohn, W. (1988). Ordinal conditional functions: a dynamic theory of epistemic states.
+In Harper, W., & Skyrms, B. (Eds.), Causation in Decision, Belief Change, and
+Statistics, Vol. 2, pp. 105{134. Reidel, Dordrecht, Netherlands.
+Verma, T. (1986). Causal networks: semantics and expressiveness. Technical report R{103,
+UCLA Cognitive Systems Laboratory.
+Walley, P. (1991). Statistical Reasoning with Imprecise Probabilities, Vol. 42 of Monographs
+on Statistics and Applied Probability. Chapman and Hall, London.
+Wang, Z., & Klir, G. J. (1992). Fuzzy Measure Theory. Plenum Press, New York.
+Weydert, E. (1994). General belief measures. In Proc. Tenth Conference on Uncertainty in
+Arti cial Intelligence (UAI '94), pp. 575{582.
+Wilson, N. (1994). Generating graphoids from generalized conditional probability. In
+Proc. Tenth Conference on Uncertainty in Arti cial Intelligence (UAI '94), pp. 583{
+591.
+Zadeh, L. A. (1978). Fuzzy sets as a basis for a theory of possibility. Fuzzy Sets and Systems,
+1, 3{28.
+
+389
+
+

@@ -1,0 +1,208 @@
+arXiv:math/0003001v1 [math.GM] 1 Mar 2000
+
+EXPERIMENTAL DETECTION OF INTERACTIVE
+PHENOMENA AND THEIR ANALYSIS
+
+Denis V. Juriev
+ul.Miklukho-Maklaya 20-180 Moscow 117437 Russia
+(e-mail: denis@juriev.msk.ru)
+math.GM/0003001
+The article is devoted to mathematical methods of experimental detection of interactive phenomena in complex systems and their analysis.
+
+This article may be regarded as an account of conclusions from the ten year author’s practical researches on the joint of experimental mathematics, experimental
+psychophysics and computer science in the problems of visual perception in the interactive videosystems and from his parallel theoretical studies on interactivity and
+tactics. The current exposition is self-consistent and claims a minimal knowledge
+of the experimental or theoretical basis, which underlies it. The goal of the article
+is to discuss the methods of experimental detection of interactive phenomena and
+of their analysis. Though the author had deal presumably with the interactive phenomena in perception the resulted scheme is applicable to many systems of natural,
+behavioral, social and economical sciences and it is reasonable to think that many
+concrete specialists will find it useful for their own needs in the nearest future.
+I. Experimental detection of interactive phenomena
+Let us consider a natural, behavioral, social or economical system S. It will be
+described by a set {ϕ} of quntities, which characterize it at any moment of time t
+(so that ϕ = ϕt ). One may suppose that the evolution of the system is described
+by a differential equation
+ϕ˙ = Φ(ϕ)
+and look for the explicit form of the function Φ from the experimental data on the
+system S. However, the function Φ may depend on time, it means that there are
+some hidden parameters, which control the system S and its evolution is of the
+form
+ϕ˙ = Φ(ϕ, u),
+where u are such parameters of unknown nature. One may suspect that such
+parameters are chosen in a way to minimize some goal function K, which may be
+an integrodifferential functional of ϕt :
+K = K([ϕτ ]τ ≤t )
+
+(such integrodifferential dependence will be briefly notated as K = K([ϕ]) below).
+More generally, the parameters u may be divided on parts u = (u1 , . . . , un ) and each
+part ui has its own goal function Ki . However, this hypothesis may be confirmed
+by the experiment very rarely. In the most cases the choice of parameters u will
+seem accidental or even random. Nevertheless, one may suspect that the controls
+ui are interactive, it means that they are the couplings of the pure controls u◦i with
+the unknown or incompletely known feedbacks:
+ui = ui (ui◦ , [ϕ])
+and each pure control has its own goal function Ki . Thus, it is suspected that the
+system S realizes an interactive game. There are several ways to define the pure
+controls u◦i . One of them is the integrodifferential filtration of the controls ui :
+u◦i = Fi ([ui ], [ϕ]).
+To verify the formulated hypothesis and to find the explicit form of the convenient
+filtrations Fi and goal functions Ki one should use the theory of interactive games,
+which supplies us by the predictions of the game, and compare the predictions with
+the real history of the game for any considered Fi and Ki and choose such filtrations
+and goal functions, which describe the reality better. One may suspect that the
+dependence of ui on ϕ is purely differential for simplicity or to introduce the socalled intention fields, which allow to consider any interactive game as differential.
+Moreover, one may suppose that
+ui = ui (u◦i , ϕ)
+and apply the elaborated procedures of a posteriori analysis and predictions to the
+system.
+In many cases this simple algorithm effectively unravels the hidden interactivity
+of a complex system.
+II. Analysis of interactive phenomena
+Below we shall consider the complex systems S, which have been yet represented
+as the n-person interactive games by the procedure described above.
+2.1. Functional analysis of interactive phenomena. To perform an analysis
+of the interactive control let us note that often for the n-person interactive game
+the interactive controls ui = ui (u◦i , [ϕ]) may be represented in the form
+ui = ui (u◦i , [ϕ]; εi ),
+where the dependence of the interactive controls on the arguments u◦i , [ϕ] and εi is
+known but the ε-parameters εi are the unknown or incompletely known functions
+of u◦i , [ε]. Such representation is very useful in the theory of interactive games and
+is called the ε-representation.
+One may regard ε-parameters as new magnitudes, which characterize the system,
+and apply the algorithm of the unraveling of interactivity to them. Note that εparameters are of an existential nature depending as on the states ϕ of the system
+S as on the controls.
+2
+
+The ε-parameters are useful for the functional analysis of the interactive controls
+described below.
+First of all, let us consider new integrodifferential filtrations Vα :
+vα◦ = Vα ([ε], [ϕ]),
+where ε = (ε1 , . . . , εn ). Second, we shall suppose that the ε-parameters are expressed via the new controls vα◦ , which will be called desires:
+◦
+εi = ε(v1◦ , . . . , vm
+, [ϕ])
+
+and the least have the goal functions Lα . The procedure of unraveling of interactivity specifies as the filtrations Vα as the goal functions Lα .
+Example. Let us considered the interactive videosystem directed by the eye movements of an observer. The pure controls are the slow movements of eyes, whereas
+saccads are considered as a result of the unknown feedbacks (tremor is supposed to
+be random). Many classical and modern experiments clarifies the role of saccads
+in the formation of the stable and complete final image so such formation may
+be regarded as their goal function. The functional analysis of the eye movements
+extracts the parameters (the normal forms), which describe saccads in the concrete interactive videosystems. The normal forms are extremely interesting in the
+multi-user mode when the saccads of various observers begin to be correlated and
+synchronized.
+2.2. The second quantization of desires. Intuitively it is reasonable to consider systems with a variable number of desires. It can be done via the second
+quantization.
+To perform the second quantization of desires let us mention that they are defined
+as the integrodifferential functionals of ϕ and ε via the integrodifferential filtrations.
+So one is able to define the linear space H of all filtrations (regarded as classical
+fields) and a submanifold M of the dual H ∗ so that H is naturally identified with a
+subspace of the linear space O(M ) of smooth functions on M . The quantized fields
+of desires are certain operators in the space O(M ) (one is able to regard them as
+unbounded operators in its certain Hilbert completion). The creation/annihilation
+operators are constructed from the operators of multiplication on an element of
+H ⊂ O(M ) and their conjugates.
+To define the quantum dynamics one should separate the quick and slow time.
+Quick time is used to make a filtration and the dynamics is realized in slow time.
+Such dynamics may have a Hamiltonian form being governed by a quantum Hamiltonian, which is usually differential operator in O(M ).
+If M coincides with the whole H ∗ then the quadratic part of a Hamiltonian describes a propagator of the quantum desire whereas the highest terms correspond
+to the vertex structure of self-interaction of the quantum field. If the submanifold M is nonlinear the extraction of propagators and interaction vertices is not
+straightforward.
+2.3. SD-transform and SD-pairs. The interesting feature of the proposed description (which will be called the S-picture) of an interactive system S is that it
+contains as the real (usually personal) subjects with the pure controls ui as the
+impersonal desires vα . The least are interpreted as certain perturbations of the
+3
+
+first so the subjects act in the system by the interactive controls ui whereas the
+desires are hidden in their actions.
+One is able to construct the dual picture (the D-picture), where the desires act
+in the system S interactively and the pure controls of the real subjects are hidden
+in their actions. Precisely, the evolution of the system is governed by the equations
+˜
+ϕ˙ = Φ(ϕ,
+v),
+where v = (v1 , . . . , vm ) are the ε-represented interactive desires:
+vα = vα (vα◦ , [ϕ]; ε˜α )
+and the ε-parameters ε˜ are the unknown or incompletely known functions of the
+states [ϕ] and the pure controls u◦i .
+D-picture is convenient for a description of systems S with a variable number
+of acting persons. Addition of a new person does not make any influence on the
+evolution equations, a subsidiary term to the ε-parameters should be added only.
+The transition from the S-picture to the D-picture is called the SD-transform.
+The SD-pair is defined by the evolution equations in the system S of the form
+˜
+ϕ˙ = Φ(ϕ, u) = Φ(ϕ,
+v),
+where u = (u1 , . . . , un ), v = (v1 , . . . , vm ),
+ui =ui (ui◦ , [ϕ]; εi)
+vα =vα (vα◦ , [ϕ]; ε˜α )
+and the ε-parameters ε = (ε1 , . . . , εn ) and ε˜ = (˜
+ε1 , . . . , ε˜m ) are the unknown or
+◦
+◦
+◦
+incompletely known functions of [ϕ] and v = (v1 , . . . , vm
+) or u◦ = (u◦1 , . . . , u◦n ),
+respectively.
+Note that the S-picture and the D-picture may be regarded as complementary
+in the N.Bohr sense. Both descriptions of the system S can not be applied to it
+simultaneously during its analysis, however, they are compatible and the structure
+of SD-pair is a manifestation of their compatibility. The choice of a picture is an
+action of our attention: it is concentrated on the personal subjects in S-picture
+(the self-conscious attention) whereas it is concentrated on the impersonal desires
+in D-picture (the creative attention).
+2.4. Verbalization of SD-pairs and synlinguism. The main problem is to
+interrelate the S- and D-pictures of the system S. One way is a verbalization of
+SD-pairs. Let us remind a definition of the verbalizable interactive game.
+An interactive game of the form
+ϕ˙ = Φ(ϕ, u)
+with ε–represented couplings of feedbacks
+ui = ui (u◦i , [ϕ]; εi )
+4
+
+is called verbalizable if there exist a posteriori partition t0 < t1 < t2 < . . . < tn < . . .
+and the integrodifferential functionals
+ωn (ε(τ ), ϕ(τ )|tn−1
+u∗n (u◦ (τ ), ϕ(τ )|tn−1
+
+tn ),
+
+τ
+τ
+
+tn )
+
+such that
+ωn = Ω(ωn−1 , u∗n ; ϕ(τ )|tn−1
+
+τ
+
+tn ),
+
+quantities ωn are called the words.
+Let us now consider the SD-pair and suppose that both S- and D-pictures are
+verbalizable with the same ωn . The fact that ωn are the same for both S- and
+D-pictures is called their synlinguism. One may characterize it poetically by the
+phrase that “the speech of real subjects is resulted in the same text as a whisper
+of the impersonal desires”. The existential character of the synlinguism should be
+stressed. Really it is not derived from the fact that the objective states ϕ of the
+system S are the same in the S- and D-pictures. The synlinguism interrelates the
+different ε-parameters of existential nature in both pictures.
+The synlinguism is very important in the analysis of tactical phenomena, which
+essentially used the concept of verbalization in their definition. To my mind the
+synlinguism lies in the basis of psychophysical nature of mutual understanding of
+the independent subjects of a dialogue communication. In this situation it allows
+to identify the personal interpretations with the impersonal ones, unraveling the
+role of impersonal desires as bearers of the objective sense and its dynamics.
+To the verbalizable SD-pairs some procedures of linguistic analysis are applicable. Some of them are inherited from the verbalizable interactive games (the
+grammatical analysis), some are specific (the explication and analysis of objective
+sense).
+III. Conclusions
+Thus, mathematical procedures of the experimental detection of interactive phenomena in complex natural, behavioral, social and economical systems and their
+analysis are described. The special attention is concentrated on the role of desires
+and their second quantization as well as on the abstract structure of SD-pairs, their
+verbalization and the synlinguism.
+
+5
+
+

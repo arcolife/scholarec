@@ -1,0 +1,1719 @@
+revis version
+arxivmathph0011039v1 23 nov 2000
+analyt aspect of the toda system i
+a mosertruding inequ
+jurgen
+jost and guofang wang
+abstract in thi paper we analyz solut of the open toda
+system and establish an optim mosertruding type inequ
+for thi system let be a close surfac with area 1 and k
+aij n n the cartan matrix for su n 1 ie
+2 1
+0
+0
+2 1
+0
+0
+1
+0 1
+2 1
+0
+0 1
+2 1
+0
+0 1
+2
+we show that
+1
+2 ij1
+n
+n
+n
+m u
+aij ui uj 2mi uj
+i1
+aij uj
+exp
+mi log
+j1
+ha a lower bound in h 1 n if and onli if
+mj 4
+for j 1 2 n
+as a direct consequ if mj 4 for j 1 2 n m ha
+a minim u which satisfi
+ui mi
+exp
+exp
+n
+j1 aij uj
+n
+j1 aij uj
+date nov 23 2000
+1
+1 for 1 i n
+jurgen
+jost and guofang wang
+2
+1 introduct
+let be a close surfac with area 1 the mosertruding inequ is
+u2 8
+u 8 log
+eu c for ani u h 1
+11
+for some constant c 0 11 is a slightli weaker form of the origin
+mosertruding inequ see 41 43 25 15 38 the inequ
+11 ha been extens use in mani mathemat and physic
+problem for instanc in the problem of prescrib gaussian curvatur 7 8 11 9 the mean field equat 5 6 31 18 42 the model of
+chemotaxi 46 28 and the relativist abelian chernsimon model
+27 29 4 44 16 17 19 38 etc in all such problem the correspond equat is similar to the liouvil equat
+eu
+1
+12
+u m0
+u
+e
+for some prescrib constant m0 0
+the systemanalog of 12 is the follow system of equat
+ui mi
+exp
+exp
+n
+j1 aij uj
+n
+j1 aij uj
+1
+1 i n
+13
+for a coeffici matrix a aij nn here mi 0 i 1 2 n
+are prescrib constant when the coeffici matrix admit onli
+nonneg entri there is a gener mosertruding inequ
+obtain in 13 45
+theorem 11 13 45 let the coeffici matrix a be a posit definit matrix with nonneg entri if for ani subset j i
+1 2 n
+mj
+j 8
+jj
+aij mi mj 0
+14
+ijj
+then there is a constant c 0 such that for ani u u1 u2 un
+h 1n
+1
+2
+aij uiuj 2mi uj
+i1
+n
+n
+n
+mi log
+i1
+exp
+j1
+aij uj c
+15
+analyt aspect of the toda system i
+3
+in fact the condit that a is posit definit can be remov by
+use anoth formul of the function jm see 13 45 theorem
+11 is sharp in the sens that if there is a subset j i with j m 0
+then inf uh 1 n jm u when n 1 the condit 14 is
+equival to a11 m1 8 therefor it is natur to conjectur 45
+that theorem 11 hold if and onli if
+j m 0 for ani j i
+16
+in 45 a proof of thi conjectur wa sketch for a special but interest case
+theorem 12 let a be a symmetr posit definit row stochast
+matrix ie
+n
+aij 1 for ani i i
+aij 0 and
+17
+j1
+then there is a constant c 0 such that
+jm u c
+for ani u h 1 n
+if and onli if 16 hold
+the onli if part wa first prove in 13 in a more gener case it is
+clear that in gener such an inequ cannot be true if the coeffici
+matrix a admit some neg entri howev in mani interest
+system aris in physic and differenti geometri there are neg
+coeffici for instanc in the toda system and the relativist and
+nonrelativist nonabelian chernsimon model 32 20 24 26
+in thi paper we want to gener theorem 12 to the toda system
+let k denot the cartan matrix for sun 1 ie
+2
+1
+0
+0
+0
+1
+2
+1
+0
+1
+2
+0
+1
+1
+0
+0
+0
+0
+2 1
+1
+2
+jurgen
+jost and guofang wang
+4
+the open sun 1 toda system or 2dimension toda lattic is
+n
+aij euj for i 1 2 n
+ui
+18
+j1
+the popular interpret of the onedimension toda lattic is a
+hamiltonian system which describ the motion of n particl move
+in a straight line with exponenti interact the twodimension
+toda system ha a much closer relationship with differenti geometri
+it can be seen as the frenet frame of holomorph curv into cpn
+for the toda system and it geometr interpret see eg26 and
+refer therein see also 20
+in thi paper we establish the follow mosertruding type inequ for 18
+theorem 13 let be a close surfac with area 1 and a k
+defin a function n h 1 n r by
+m u
+1 n
+2 ij1
+n
+n
+aij ui uj 2mi uj
+mi log
+i1
+aij uj
+exp
+j1
+then the function ha a lower bound if and onli if
+mj 4
+for j 1 2 n
+19
+we remark that the condit 19 is equival to 16 in thi
+case sinc the coeffici matrix k admit neg entri we might
+encount the problem that the maximum principl fail thi is the
+reason whi we cannot classifi all entir solut of 18 with finit
+energi yet see section 2 and 7 fortun when prove theorem
+13 we can avoid thi problem
+we outlin our main idea of the proof of theorem 13 for n 2 we
+first show that m ha a lower bound if mj 4 for j 1 2 theorem
+41 the idea is as follow let us defin
+m m1 m2 r r inf m
+from the ordinari mosertruding inequ 11 we know
+theorem 41 now is equival to 0 4 0 4 if it were fals
+then there exist m 0 m10 m20 such that m m10 m20
+we are abl to classifi all such solut now
+analyt aspect of the toda system i
+5
+but m10 m20 for ani small 0 it is easi to show
+that m admit a minim u u1 u2 which satisfi 13 for
+m m10 m20 if u blow up there are three case see
+section 4 below for each case after rescal we obtain a bubbl
+which is an entir solut of the liouvil equat 36 or the toda
+system 18 with finit energi a classif result of 12 for the
+liouvil equat and corollari 26 below impli that in ani case one
+of m10 and m20 is larger than or equal to 4 a contradict howev
+u may not blow up ding 14 introduc a trick to deal with such
+a problem in hi studi of the ordinari mosertruding inequ
+follow hi trick we perturb the function m a littl bit such that
+the result function fm also admit a minim u which doe
+blow up as 0 u satisfi a similar system as 13 and ha the
+same bubbl then we are abl to use the argument abov to get a
+contradict
+to prove theorem 13 we consid the sequenc of minim u
+u1 u2 of m with m m 0 4 4 for small
+0 the exist of the u follow from theorem 41 u satisfi
+a toda type system if u converg u0 in h2 h 1 h 1 then
+it is clear that inf uh2 m 0 u m 0 u0 henc we may
+assum u doe not converg in h2 use the analysi develop in
+section 2 and 3 we know there are three possibl a s1 1 and
+s2 b s1 s2 1 and s1 s2 and c s1 s2 1
+and s1 s2 here sj j 1 2 is the blowup set defin in
+section 5 below and s is the number of point of the finit set s
+we use a local pohozaev ident to exclud case b thi is the
+crucial point to avoid the aforement problem that the maximum
+principl fail sinc the remain case are essenti scalar problem
+in fact we can reduc case a directli to the correspond problem
+of one functionth ordinari mosertruding inequ for case b
+we can appli the method develop in 15 38 to give a lower bound
+of m 0
+we shall appli theorem 13 in a forthcom paper 30 to studi the
+relativist sun 1 nonabelian chernsimon model 32 34 35
+jurgen
+jost and guofang wang
+6
+20 which can be seen as a nonintegr perturb of the integr toda system 18 for mathemat aspect of the relativist
+nonabelian chernsimon model see 49 47 we hope theorem 13
+will becom a power tool for studi problem aris from higher
+rank model as the ordinari mosertruding inequ ha becom
+in the abelian case
+for simplic we onli give detail proof for the case n 2 the
+proof in case n 2 are complet analog and just requir a more
+complic notat in section 2 we analyz the solut of 18
+in r2 and obtain a relat between r2 eu1 and r2 eu2 for ani entir
+solut of 18 in section 3 we analyz the converg of solut
+as in 3 in section 4 we first show m ha a lower bound if mj 4
+for all j then we show that if m ha a lower bound mj 4 for all
+j we prove theorem 13 in section 5
+2 analysi of the toda system
+in thi section we consid the analysi of solut of the follow
+system
+u1 2eu1 eu2
+u2 eu1 2eu2
+21
+which is equival to system 18 with n 2 similar result were
+obtain in 3 12 for the liouvil equat and in 10 13 for the
+liouvil type system see also 36
+3 satisfi
+lemma 21 let u c 2 b3 c 1 b
+u1
+u2
+uj xj
+uj
+2eu1 eu2
+eu1 2eu2
+bj
+a0
+in b3
+in b3
+for some xj b1 j 1 2
+in b3 for j 1 2
+then there is a constant c ca0 b1 b2 such that
+min u1 u2 c
+xb1
+see also 40
+22
+analyt aspect of the toda system i
+7
+proof let w w1 w2 defin by
+1
+2
+1
+w2 x
+2
+w1 x
+b3
+b3
+log x y2eu1i eu2 y dy
+log x y2eu2i eu1 y dy
+set u
+u1 u2 u w obvious
+uj 0 in b2 for j 1 2
+23
+wj x c1 a0 for y b2
+24
+and
+24 and 22 impli that uj c2 a0 and uj xj c3 bj now from
+the harnack inequ we have
+min uj x ca0 b1 b2
+xb1
+the lemma follow from 24 and 25
+25
+lemma 22 there exist 0 0 such that for ani u c 2 b2
+c 1 b 2 satisfi
+we have
+u1
+u2
+u1
+b2 e
+u2
+b2 e
+2eu1 eu2
+eu1 2eu2
+0
+0
+in b3
+in b3
+26
+max maxu1 u2 c1
+b 14
+for some posit constant c1
+by the brezismerl inequ 3 we have
+proof choos 0 4
+3
+that uj lp j 1 2 is bound for some p 1 the lemma follow
+from the standard ellipt estim
+note that lemma 22 is true for ani 0 4 see lemma 32 below
+jurgen
+jost and guofang wang
+8
+1
+1
+proposit 23 let u u1 u2 hloc
+r2 hloc
+r2 be a solut
+of 21 on r2 with
+r2
+eu1 and
+r2
+eu2
+27
+then u is smooth and satisfi
+max2 u1 x u2 x
+xr
+proof let
+wj
+1
+2
+r2
+log x y logi 1euj y dy
+and j r2 euj for j 1 2 set u1 u1 2w1 w2 and u2
+u2 2w2 w1 clearli
+uj 0 in r2 by lemma 24 below and
+lemma 22 uj j 1 2 is bound from abov thu u cj for
+some constant c1 and c2 now the lemma follow from lemma 25
+and 29 below
+use potenti analysi as in 12 we have
+lemma 24 for ani small 0 there is a constant c 0 such that
+j log x c wj x j log x c for ani x r2
+28
+proof see 12
+lemma 25 1 21 2 4 and 2 22 1 4
+proof
+the previou lemma impli that
+21 2 log x c 2w1x w2 x 21 2 log x c
+29
+sinc u1 2w1 w2 c1 from 29 and 28 we deduc that 1 4
+similarli we have 2 4
+corollari 26 j 4 for j 1 2
+analyt aspect of the toda system i
+9
+lemma 27 let u be a solut of 21 and 27 we have
+uj
+j
+2
+logx 1 c
+j
+j
+2
+limr r u
+r
+uj
+limr 0
+210
+where x r
+proof from abov we have
+1
+2
+1
+2
+u1
+u2
+r2
+r2
+log x y logi 12eu1 y eu2 y dy c1
+log x y logi 12eu2 y eu1 y dy c2
+the lemma follow from potenti analysi see for instanc 12
+now we are in the posit to give a relat between
+proposit 28 let j
+r2
+eu1 and eu2
+euj for j 1 2 we have
+12 22 1 2 41 2
+211
+proof from equat 21 we have the pohozaev ident as follow
+u1 2
+r
+br
+u2 2
+r
+r
+br
+r
+1
+u12 2
+2
+1
+u22 2
+2
+br
+br
+reu1 4
+reu2 4
+br
+br
+eu1
+eu2
+br
+br
+eu2 xu1
+eu1 xu2
+and
+1 u2
+br u1 u2 br x 2j1 j u2 j u1
+r u
+n n
+br reu2 2 br eu2 2 br eu1 xu2
+1 u2
+br r u
+br u1 u2 br x 2j1 j u1 j u2
+n n
+212
+br reu1 2 br eu1 2 br eu2 xu1
+br
+from abov we get the pohozaev ident for the toda system 21
+2
+2
+j1
+3 br reu1 eu2 6 br eu1 eu2
+1
+u1 u2
+1
+2
+2
+br rn uj 2 uj 2 br r n n 2 u1 u2
+213
+appli lemma 25 and 27 in 213 and let r we get
+12 22 1 2 121 2
+jurgen
+jost and guofang wang
+10
+which is equival to 211 thi prove the lemma
+similar result for system with nonneg entri were obtain
+in 10 and 13 we conjectur that 1 2 8 it is also veri
+interest to classifi all solut of 21 with finit energi r2 euj
+for j 1 2 when solut have suitabl decay near infin such
+that they can be seen as function on s2 the classif wa obtain
+by differenti geomet and physicist see 23 20 in fact in thi
+case all solut can been seen as minim immers from s2 to cp2
+which are deform of the verones immers by the action of the
+group p gl3 c see 23 2 48
+3 converg of solut
+in thi section we consid the converg of solut of the toda
+system we follow the method develop in 3 but we need to be
+care with the use of the maximum principl sinc the coeffici
+matrix ha some neg entri
+for simplic we onli consid the system on the bound domain
+we have
+theorem 31 let uk uk1 uk2 be a sequenc of solut of the follow system
+with
+k
+k
+u1k 2eu1 eu2 1k
+uk 2euk2 euk1 k
+2
+2
+k
+eu1 c and
+on
+on
+k
+eu2 c
+31
+32
+and
+1k
+lp
+2k
+lp
+c
+for some constant c 0 and p 1 let
+sj x there is a sequenc y x such that uj y
+33
+then one of the follow possibl happen after take subsequ
+1 uk is bound in l
+loc lloc
+analyt aspect of the toda system i
+11
+k
+2 for some j 1 2 uki in l
+loc but uj uniformli on
+ani compact subset of for j i
+3 for some i 1 2 si but sj for j i in thi
+case uki on ani compact subset of si and either ukj is
+k
+bound in l
+loc or uj on ani compact subset of
+4 s1 and s2 moreov ukj is either bound or on
+ani compact subset of s1 2 for j 1 2
+proof here for simplic we onli give a proof of the theorem when
+1k 2k 0
+in view of 32 we may assum that there exist two nonneg
+bound measur 1 and 2 such that
+k
+euj
+dj as k
+for everi smooth function with support in and j 1 2 a point
+x is call a regular point with respect to j if there is a function
+cc 0 1 with 1 in a neighborhood of x such that
+dj
+we defin
+j x x is not a regular point with respect to j
+by definit and 32 it is clear that 1 and 2 are finit and
+j is independ of for small 0 see below we divid the
+proof into 3 step
+step 1 for j 1 2 sj j provid
+4
+3
+first from lemma 22 we know that for ani point x 1
+2 there is some r0 such that
+ukj is bound in l br0 x for j 1 2
+34
+here u maxu 0 the argument in 3 impli directli that
+s1 s2 1 2
+henc s1 and s2 are both finit let x0 s1 assum by contradict
+k
+that x0 1 thu b x0 eu1 for ani small constant 0 note
+12
+jurgen
+jost and guofang wang
+k
+k
+k
+that u1k 2eu1 eu2 2eu1 defin w b x0 r by
+k
+w 2eu1
+w uk1
+in b x0
+on b x0
+the maximum principl impli that uk1 w sinc s1 is finit we
+may assum that uk1 is uniformli bound in l b x0 in view
+k
+of b x0 eu1 4
+a result of brezi and merl 3 impli that
+3
+w l b x0 which in turn impli that uk1 l b x0
+2
+2
+a contradict henc s1 1 1 s1 follow from the
+argument in 3 similarli we have s2 2
+step 2 s1 s2 impli 1 and 2 s1 and s2 impli 4
+s1 s2 mean that u1 and u2 are bound in l
+loc thu
+p
+u2
+u1
+e and e are bound in lloc for ani p 1 which impli that
+1 2 l1 lploc appli the harnack inequ as in 3 we
+have 1 or 2 the second statement follow similarli
+step 3 s1 and s2 impli 3
+we need the follow lemma
+lemma 32 lemma 22 is true for ani 0 4
+proof we use a blowup argument to prove thi lemma assum by
+contradict that lemma 22 were fals for some 0 4 ie there
+exist a sequenc of solut uk uk1 uk2 of 27 with euj 0
+j 1 2 for some 0 4 such that
+max maxuk1 uk2 as k
+b 14
+without loss of gener we may assum that s1 x0 and s2
+b14 x0 we may also assum that there exist a sequenc of
+point xk b14 such that
+uk1 xk max maxu1k uk2
+b 14
+analyt aspect of the toda system i
+13
+let mk uk1 xk defin ukj x ukj k x xk mk for j 1 2 with
+1
+k e 2 mk clearli k 0 as k and uk
+uk1 u
+k2 satisfi
+uk1
+u2k
+u
+kj
+k e
+ukj x
+k
+k
+2eu1 eu2
+k
+k
+2eu2 eu1
+0 j 1 2
+0 uk1 0
+in k
+in k
+35
+where k 1
+k b14 xk appli lemma 21 lemma 22 and
+12 in theorem 31 we have two possibl
+1
+1
+i uk converg to u0 u01 u02 in hloc
+r2 hloc
+r2 which satisfi the toda system 21 in r2 in thi case uk2 is bound in
+2
+l
+loc r
+1
+ii uk1 converg to 0 in hloc
+r2 and uk2 tend to uniformli in
+ani compact subset in r2 moreov 0 satisfi
+0 2e0
+36
+with
+r2
+e0
+in view of corollari 26 and a classif result of 36 obtain
+k
+by chenli 12 in these two case limk eu1 4 which is a
+contradict thi prove the lemma
+now we continu to prove step 3 as in step 2 we know that either
+i uk1 is bound on ani subset of s1 or
+ii uk1 on ani subset of s1
+k
+in view of lemma 32 3 impli that b p eu1 4 for ani p s1
+and ani small 0 now we can follow the argument in 3 to exclud
+i
+remark 33 we believ that in case 4 ukj on ani compact
+subset from the argument of step 3 one can show thi if s1 s2
+in our applic the proof of theorem 51 and 13 we can exclud
+case 4
+befor we start to prove our main result we remark that
+1 0 alway mean some sequenc n 0 such that n 0 as
+n
+jurgen
+jost and guofang wang
+14
+2 c denot a constant independ of which may vari from line
+to line
+3 ani 2dimension surfac g is local conform flat ie
+for ani x there is a neighborhood x u and a conform
+factor u r such that gu e dx2 dy 2 in local coordin
+instead of consid the equat g f in u we can consid
+0 e f in a domain of the euclidean plane henc wlog we can
+assum 0 ie u is a flat domain in the follow section we will
+assum that near a blowup point there is a flat neighborhood
+4 a mosertruding inequ for the su3 toda
+system
+let k be the cartan matrix for su3 ie
+2 1
+k
+1 2
+we have the follow mosertruding inequ
+theorem 41 let be a close surfac with area 1 and a k for
+ani m m1 m2 0 4 0 4 there is a constant c 0 such
+that
+m v 1 2v1 2 2v2 2 2v1 v2 22m1 m2 v1
+2
+22m2 m1 v2 m1 log e2v1 v2 m2 log e2v2 v1
+41
+c
+for ani v h2 or equival
+m u
+1
+u1 2
+3
+u22 u1 u2 3m1 u1 3m2 u2
+m1 log eu1 m2 log eu2 c
+42
+for ani u h2
+the equival between v
+and u can be seen easili from the
+follow equat
+u1 2v1 v2
+u2 2v2 v1
+43
+here we use the method of ding 14 to prove theorem 41 thi
+method wa introduc in hi studi of the ordinari mosertruding
+analyt aspect of the toda system i
+15
+inequ and wa appli in 45 to obtain a similar inequ for a
+system of function
+proof set
+m1 m2 r r m is bound from below on h2
+sinc a is posit definit it is easi to see that from the ordinari
+mosertruding inequ 41 43 in fact one can show easili that
+8
+8
+and 16
+16
+0 from the ordinari moser3
+3
+3
+3
+truding inequ and the holder inequ clearli preserv a
+partial order of r r name if m1 m2 then m1 m2
+provid that m1 m1 and m2 m2 the theorem is equival to
+0 4 0 4
+44
+assum by contradict that 44 is fals we may assum that there
+is a point
+m 0 m10 m20 0 4 0 4
+45
+such that
+1 for ani 0 m 0 m10 m20
+2 for ani 0 m 0 m10 m20
+we first need sever lemma
+lemma 42 for ani m with m1 m10 and m2 m20 there exist a
+constant c 0 such that
+m u c1 u1
+2
+u2 2 c for ani u h2
+46
+moreov m admit a minim u u1 u2
+proof choos a small number 0 such that m1 1 m10 and
+m2 1 m20 by the definit of m 0 we know that 1 m
+1 m1 1 m2 ie there is a constant c 0 such that
+1m u c
+for ani u h2
+it follow that
+m u
+1
+2
+31
+u1
+1 1m
+u12 u22 c
+61
+u22 u1 u2
+jurgen
+jost and guofang wang
+16
+thi inequ mean that m satisfi the coerciv condit now
+it is standard to show that m admit a minim for m is weakli
+lower semicontinu
+lemma 43 there exist a sequenc uk h2 such that limk uk 2
+and
+m 0 uk
+lim
+0
+47
+k uk 2
+where u
+2
+u1
+2
+u2 2
+proof assum by contradict that for ani sequenc uk h2 with
+limk uk 2
+m 0 uk
+0
+lim
+k uk 2
+then we can show that m 0 satisfi the coerciv condit
+m 0 u u 2 c u h2
+2
+for some constant c 0 which impli that there is a small 0 such
+that m 0 a contradict
+lemma 44 14 for ani two sequenc ak and bk satisfi
+lim ak
+k
+and
+bk
+0
+k ak
+d0 lim
+48
+there exist a smooth function f 1 0 12 satisfi
+f t 12 and f t 0 as t
+49
+f ank bnk as k
+410
+and
+for some subsequ nk
+proof we give the proof for complet though it is rather elementari if there is a subsequ bnk of bk with properti that bkn 0 we
+can choos f t log t so we may assum that bk 0 and d0 0
+wlog we assum more that abkk is nonincreas choos anoth sequenc ck with
+bk
+ck
+0 and
+0
+ak
+ck
+analyt aspect of the toda system i
+17
+it is easi to find a nonincreas smooth function f 0 r with
+the properti that
+f ak ck
+and
+f t 0 as t
+clearli thi function f satisfi all condit of the lemma
+appli lemma 44 to sequenc
+1
+ak
+uk1 2 uk2 2 uk1 uk2 and bk m 0 uk
+3
+where uk is obtain in lemma 43 we can find a function f satisfi
+49 and 410 for ani small 0 defin a perturb function by
+1
+u12 u22 u1 u2
+3
+where m 0 m10 m20
+i u m 0 u f
+lemma 45 let inf uh2 i u we have
+1 for 0 the infimum and it is achiev by u h2
+satisfi
+1 f g u1 2m10 eu1 2m10
+m20 eu2 m20
+1 f g u2 2m20 eu2 2m20
+m10 eu1 m10
+411
+with
+r2
+eu1
+r2
+eu2 1
+412
+where
+1
+u1 2 u2 2 u1 u32
+3
+2 for 0 i0 ha no lower bound ie
+g
+0
+413
+proof 1 as in lemma 42 we can show that i 0 satisfi the
+coerciv condit from the construct of f it is also easi to check
+that i is weakli lower semicontinu therefor i ha a minim
+which satisfi 411
+jurgen
+jost and guofang wang
+18
+2 from the construct of f we have
+i0 uk m 0 uk f uk 2 f ak bk
+as k where the sequenc uk wa obtain in lemma 43
+we now continu to prove theorem 41 by consid the sequenc
+u obtain in the previou lemma
+we claim that u blow up ie
+max maxu1 x u2x as 0
+414
+x
+otherwis we can show that u converg to some u0 in h2 that is a
+minim of i0 on the other hand by lemma 45 i0 ha no minim
+a contradict
+let m maxx maxu1 x u2 x maxu1x u2x we
+have m as 0 defin a new sequenc v by
+1
+u1 u1 e 2 m x x m
+and
+1
+u2 u2 e 2 m x x m
+near a small but fix neighborhood u of x0 where x0 lim x
+here we have abus a littl bit the notat for simplic we
+consid u as a domain in r2 clearli u
+u1 u2 satisfi on
+1
+u m2 u x that
+1
+1 f u 2
+u1 2m10 eu1 2e 2 m m10
+1
+m20 eu2 e 2 m m20
+1
+1 f u 2
+u2 2m20 eu2 e 2 m m20
+415
+1
+m10 eu1 e 2 m m10
+recal that u 2 as 0 and limt f t 0 by use the
+same argument as in the proof of lemma 32 we have that one of m1
+and m2 is larger than or equal to 4 which is a contradict thi
+complet the proof of theorem 41
+corollari 46 let be a close surfac with area 1 for ani m
+m1 m2 with m1 4 and m2 4 m admit a minim u
+u1 u2 which satisfi
+u1 2m1 eu1 1 m2 eu2 1
+u2
+2m2 eu2 1 m1 eu1 1
+analyt aspect of the toda system i
+19
+proof theorem 41 impli that m not onli ha a lower bound but
+also satisfi the coerciv condit sinc m is weakli lower semicontinu there is a minim that satisfi 46 which is the eulerlagrang equat of m
+to end thi section we observ that 4 is the best constant
+proposit 47 if one of mi is greater that 4 then m ha no
+lower bound in h2
+proof wlog assum that m1 4 and contain a flat disk b0 for
+a small constant 0 0 let
+u1
+u2
+we estim
+2
+log 12x22
+2
+log
+12 0 2 2
+2
+in b0
+in b0
+21 log 12x2 2
+2
+1 log
+2
+12 0 2 2
+u1 2
+u2 2
+u1 u2
+u1
+u2
+log eu1
+log eu2
+in b0
+in b0
+32 log o1
+8 log o1
+16 log o1
+2 log o1
+log o1
+o1
+log o1
+416
+which impli that
+m u 24 m1 log o1
+the proposit follow from the previou formula by let
+5 the optim mosertruding inequ
+in thi section we prove theorem 13 for n 2 let m 0 4 4
+jurgen
+jost and guofang wang
+20
+theorem 51 let be a close surfac with area 1 there is a constant c 0 such that
+m 0 v
+1
+2v1 2
+2
+2v2 2 2v1 v2 8v1
+8v2 4 log e2v1 v2 4 log e2v2 v1
+51
+c
+for ani v h2 or equival
+m 0 u
+1
+u1 2
+3
+u1
+u2 2 u1 u2 12u1 12u2
+4 log eu2 c
+52
+4 log e
+for ani u h2
+to prove theorem 51 we onli have to prove that there is a constant
+c 0 independ of such that
+m u c
+for ani u h2
+53
+where m 4 4 for small constant 0
+to show 53 first appli corollari 46 we obtain a minim
+u u1 u2 of m with m 4 4 recal that u satisfi
+u1 8 2eu1 4 eu2 4
+u 8 2eu2 4 eu1 4
+2
+54
+with
+eu1
+eu2 1
+55
+then we will show that
+m u c
+56
+for some constant c 0 56 is equival to 53 if u is bound
+from abov uniformli by use the analysi develop in section 3
+we can show that u converg by take subsequ to u0 in h2
+strongli thi impli that inf uh2 m 0 u m 0 u0 and
+henc 56 henc we assum that
+maxm1 m2 as 0
+57
+analyt aspect of the toda system i
+21
+where mj max uj assum that m1 m2 as in section 3 we may
+assum that there exist two nonneg bound measur 1 and 2
+such that
+euj dj as 0
+for everi smooth function r and j 1 2 we defin for
+j 1 2 and small 0
+sj x there is a sequenc y x such that uj y
+and
+j x x is not a regular point with respect to j
+for the definit of regular point see section 3 abov from section
+3 we know that
+sj j
+and
+sj for j 1 2
+58
+for ani small 0
+lemma 52 s1 1 and s2 1
+proof by 57 we have s1 1 let y s1 and choos 0 so small
+that b yy s1 s2 one can use the blowup argument
+as in the previou section to show that
+lim
+0 b y
+eu1 1
+which impli that s1 y by 58 becaus of 54
+assum by contradict that s2 2 then there exist z s2
+but z y similarli we can show that there is a small constant 0
+satisfi b zz s1 s2 and
+lim
+0 b z
+eu2 1
+it follow togeth with 55 that
+lim
+0 b z
+eu2 0
+by 58 we have s2 z a contradict
+proof of theorem 51 in view of lemma 52 there are three possibl
+jurgen
+jost and guofang wang
+22
+a s2 0
+b s2 1 and s1 s2
+c s2 1 and s1 s2
+we discuss the sequenc u case by case we shall show that case
+b cannot occur which is crucial to establish our mosertruding
+inequ case a is easi to handl while case c is more delic
+case a reduct to the ordinari mosertruding inequ
+let s1 p in thi case by theorem 31 and similar argument
+given in the proof of lemma 56 in case c below we can show that
+2
+a1 u2 converg to g2 in h 1q q 1 2 and in cloc
+p
+where g2 satisfi
+g2 8eg2 4p 4
+with eg2 1
+2
+a2 u1 u1 converg to g1 in h 1q q 1 2 and in cloc
+p
+where g1 satisfi
+g1 8p 4eg2 4
+with
+g1 0
+furthermor we have the follow lemma
+lemma 53 for ani small 0 there exist a function w satisfi
+w 24 eh ew 24 in
+59
+such that
+i u1 w and h are bound in c 1
+ii u2 21 w 12 w is bound in c 1
+proof for small 0 let w
+be a function defin by
+w 4 eu2 4
+0
+w
+sinc u2 is uniformli bound from abov w is bound in c 1 by
+ellipt estim let w u1 w clearli w satisfi 59 with
+h w which is bound in c 1 by definit u1 w w
+analyt aspect of the toda system i
+23
+thu u1 w is also bound in c 1 in view of 59 the function
+u2 12 w 2w is harmon thu
+1
+u2 w 2w c
+2
+for some constant c by a1 u2 is uniformli bound henc c 12 w
+is bound thi prove the lemma
+we now can reduc our problem to the ordinari mosertruding
+inequ by lemma 53 we have
+1
+3
+u1 2 u2 2 u1 u2
+1
+4
+w 2 o1
+and
+u1 u2
+s
+w o1
+thu
+1
+w 2 44 w o1
+4
+which ha a lower bound due to the ordinari mosertruding inequ see eg 25 or 15 thi complet the proof of theorem 51 in
+case a
+m u
+case b we show that case b doe not happen
+let s1 s2 p wlog we assum that b p is a flat disk for
+small 0 by lemma 32 in thi case we have that lim0 b p eu1
+1 for ani small 0 by the argument in step 3 in the proof of theorem 31 we have that u1 as 0 on ani compact subset
+of p we also have either
+i u2 as 0 on ani compact subset of p or
+ii u2 is uniformli bound on ani compact subset of p
+we first consid case i in thi case the same argument given in
+the proof of lemma 56 impli
+lemma 54 for ani q 1 2 and j 1 2
+uj uj converg to gp in h 1q
+jurgen
+jost and guofang wang
+24
+where gp satisfi
+gp 4p 4 in
+gp 0
+510
+2
+moreov uj uj converg to gp in cloc
+p
+by thi lemma we know that for ani small but fix number r 0
+we have
+uj uj gp 0 in c 1 br p
+511
+as 0 for ani small 0 there exist 0 0 and r0 0 such that
+for ani 0 and r r0
+br p
+euj 1
+512
+as in proposit 28 we have the follow pohozaev ident for 51
+64
+u1
+br e
+u
+eu2 2 2j1 br r nj 2 21 uj 2
+u u
+2 br r n1 n2 12 u1 u2
+34 br reu1 eu2 513
+it is clear that let 0 the left hand side of 513 tend to a
+number 481 while the right hand side of 513 tend to
+4
+br
+r g
+2 12 g2 2 br r g
+2 12 g2
+n
+n
+2
+3 br r g
+r
+which tend to 24 as r 0 a contradict henc case i doe not
+happen
+now we consid case ii ie u2 is bound on ani compact subset
+of p let
+2 lim lim
+0 0 b p
+eu2
+sinc p s2 2 for small 0 we have that 0 2 1 as in
+the proof of i we first have
+lemma 55 there exist a function w c 2 with
+such that
+ew 1 2
+2
+1 u1
+u1 converg to g1 in h 1q cloc
+p where g1 satisfi
+g1 42 2 p 4ew 4 and
+g1 0
+analyt aspect of the toda system i
+25
+2
+2 u2 u2 converg to w g2 in h 1q cloc
+p where g2
+satisfi
+g2 8ew 42 1p 4 and
+g2 w 0
+then we appli 513 again to get a contradict in fact we can
+show that in thi case it left hand tend to 241 2 while it right
+hand tend 2422 2 1 which is imposs if 0 2 1 thi
+impli that case ii henc case b doe not happen either
+such an argument use aloc pohozaev ident wa use in 46
+and 50 for studi the blow up of liouvil type equat
+case c thi case is more delic
+set s1 p1 and s2 p2 note that p1 p2 in view of theorem
+31 and the blowup argument given abov uj j 1 2 tend to
+uniformli on ani compact subset of p1 p2 we first show the
+follow lemma
+lemma 56 let uj be the averag of uj j 1 2 for ani q 1 2
+we have
+uj uj converg to gj in h 1q
+where g1 and g2 satisfi
+g1 8p1 4p2 4
+g2 8p2 4p1 4
+0 for j 1 2
+gj
+514
+where y is the dirac distribut moreov
+2
+uj uj converg to gj in cloc
+p1 p2
+515
+proof first we show that for ani q 1 2
+u1q u2 q is bound
+let q 2 be determin by
+u1
+lq
+sup
+1
+q
+1
+q
+1 by definit we know
+516
+u1 h 1q
+0
+h 1q
+1
+517
+jurgen
+jost and guofang wang
+26
+the sobolev embed theorem impli that for ani with
+1
+l
+lq
+c
+for some constant c 0 henc
+u1 u1
+c 8 eu1 4 eu2 4
+518
+c1
+it follow that u1 lq c1 similarli we have u2
+prove 516
+by theorem 31 and remark 33 we can show that
+eu1 p1
+and
+eu2 p2
+lq
+c2 thi
+519
+in the sens of measur as 0 like 518 we have
+u1 u1 g1 c 8 2eu1 8p1
+c 4 eu1 4p2 o
+520
+o
+therefor we have
+u1 u1 g1
+lq
+0 as 0
+it follow that u1 u1 g1 lq 0 as 0 henc we have
+u1 u1 g1 in h 1q similarli u2 u2 g2 in h 1q now it
+is easi to show 515 thi prove the lemma
+let be a smooth close curv on with the properti that
+consist of two disjoint compon 1 and 2 and p1 1 and p2 2
+now we consid our system in 1 first as abov we set
+1
+v1 2u1 u2 and
+3
+1
+v2 2u2 u1
+3
+clearli v1 v2 satisfi
+v1 4 eu1 4
+v 4 eu2 4
+2
+u2 u1 is bound in c 1 1
+lemma 57 v2 21 2
+521
+analyt aspect of the toda system i
+27
+proof defin a function v2 satisfi
+v2 4 eu2 4
+v
+2 0
+in 1
+on
+sinc u2 is bound from abov in 1 v2 is bound in c 1 1 now
+u2 u1 is also bound in c 1 1
+it is easi to see that v2 v2 13 2
+henc the lemma follow
+from lemma 57 we have
+1
+u12 u22 u1 u2 4 1 u1 u2
+3 1
+1
+u1 2 21 4 1 u1 12 4 2
+u2 u1 1 o1
+4 1
+1
+522
+u1 2 4
+u2 u1 1 o1
+4 1
+where we have use the fact that 1 u1 u1 is bound which wa
+impli by lemma 53 here 1 is the area of 1 similarli we can
+get
+1
+u1 2 u2 2 u2 u2 4
+3 2
+1
+u2 2 4
+u2 u1 2 o1
+4 2
+1 u1
+u2
+523
+henc to prove theorem 51 in thi case we onli need to show the
+follow
+lemma 58 there exist a constant c 0 independ of such that
+1
+4
+1
+u1 2
+1
+4
+2
+u22 4
+u1 u2 c
+unlik case a we cannot use the ordinari mosertruding inequ directli fortun the idea in the proof of the ordinari
+mosertruding inequ in 38 15 can be appli to show lemma
+58 we claim that there is a constant c 0 independ of such
+that
+1
+u1 2 4
+u1 c
+524
+4 1
+let xj be one of the maximum point of uj ie mj u1 xj j
+1 2 set
+u1 x u1 1 x x1 m1
+and
+u2 x u2 1 x x1 m1
+jurgen
+jost and guofang wang
+28
+where 1 2 em1 sinc m1 1 0 as 0 from the
+discuss abov we know that u1 0 max u1 0 and u2
+uniformli on ani compact domain of 1
+1
+lemma 59 we have that u1 converg to 0 in hloc
+r2 where 0
+2 log1 x2 is a solut of the liouvil equat
+8e
+proof note that u
+u1 u2 satisfi
+u1 8 2eu1 4 eu2 1 4
+u2 8 2eu2 4 eu1 1 4
+in 1 1 b x1
+in 1 1 b x1
+525
+clearli 1 1 b x1 r2 as 0 for ani larg but fix constant
+r 0 we consid u on br 0 defin r by
+r 4 eu2 1 2 4 f
+r 0
+in br 0
+on br 0
+the ellipt estim impli that r 0 in l br 0 set w1
+u1 r it is clear that
+w1 8 2er ew1
+526
+sinc u1 0 u1 0 0 and r is bound w1 is bound from abov
+and w1 0 is bound it is easi to show that w1 henc u1 converg
+in h 12br see for exampl 3 now by a diagon argument we
+12
+have that u1 converg to 0 in hloc
+r2 where 0 satisfi
+0 8e0
+with 0 0 0 max 0 a classif of chenli 12 impli that
+0 x 2 log1 x2
+now we need the follow
+lemma 510 1 for ani small 0 there exist constant r 0
+0 and c such that
+u1 x 1 3m1 4 1 log x x1 c
+analyt aspect of the toda system i
+29
+for ani x b x1 br x1 with r 1 1 r and
+2 m1 u1 o1
+now from lemma 510 we can finish the proof of our main theorem
+from 54 we have
+1
+u1 2
+1
+u1
+u1
+24
+n
+4
+1
+u1
+1
+eu1 u1
+u2
+1
+e u1 4
+u1
+24
+n
+1
+u1
+1
+u1
+24
+1
+eu1 m1 4
+e u1 m1 4
+1
+1
+eu2 u1
+u1
+where n is the outer normal of 1 by lemma 56 and equat 54
+we have
+u1
+u1
+u
+u1
+u1 u1
+u1 1
+n
+1 n
+1 n
+1
+u1
+u1 o1
+1 n
+u1 24
+eu1 4
+1
+1
+eu2 4 1 o1
+by lemma 59 and 510 we have
+1
+eu1 u1 m1
+eu1 u1 m1
+1 b x1
+b x1
+eu1 u1 m1
+b x1
+eu1 u1 m1 o1
+b 1 0
+eu1 u1 o1
+1
+b 1 0
+c1 e11 u1 o1 o1
+1
+for a small fix number 1 0 here we have use 527 below
+henc use lemma 510 we get
+1
+u1 2 24 m1 u1
+44
+u1
+44
+u1
+1
+1
+eu1 4
+eu1 o1
+o1
+1
+u1
+u1 o1
+jurgen
+jost and guofang wang
+30
+thi is 524 here we have use the fact that
+m1
+b x1
+eu1 o1
+527
+which can be deduc as follow from 54 we have
+u1 8 2eu1
+in b x1
+let h satisfi
+h 8 2eu1
+h
+0
+in b x1
+on b x1
+sinc u1 is uniformli bound from abov in b x1 h is uniformli
+bound now appli the maximum principl to ue1 h togeth
+with lemma 510 we can obtain that u1 x 1 3m1 c for
+ani x b x1 which impli 527
+similarli we can show that
+1
+4
+2
+u2 2 4
+u2 c
+for some constant c 0 which togeth with 524 prove lemma
+58 henc theorem 51
+now it remain to prove lemma 510
+proof of lemma 510 wlog we assum that b2 p1 is a flat disk
+for some small constant 0 see remark at the end of section 3
+consid in b2 x1
+u1 24 eu1 4 eu2 4 f
+528
+recal that uj uj 1 x x1 m1 for j 1 2 for ani small 0
+by lemma 59 we choos r 0 and 0 such that
+and
+eu2
+eu1 1
+2
+2
+1
+br 0
+let x y
+1
+2
+log x y use green represent we have
+u1 y
+x yf xdx
+u1
+b2 x1 u1 x n x y x y n x ds
+529
+b2 x1
+analyt aspect of the toda system i
+31
+sinc 0 is fix it is easi to check that
+u1
+o1
+x
+y
+n
+b2 x1
+and
+b2 x1
+u1 x
+x y
+u1 o1
+n
+henc we have
+u1 y m1 u1 y u1 x1
+x y
+1
+f dx o1
+log
+2 b2 x1
+x x1
+now it is conveni to write the previou equat as follow
+u1 y u1 1 y x1 m1
+1
+x 1 y x1
+f 1 y x1 dx
+log
+2 b2 x1
+x x1
+x y
+1
+f xdx
+log
+2 b2 1 0
+x
+1
+where
+f1 x 24 eu1 4 eu2 1 2 4 1 2 f 1 x x1
+appli the potenti analysi it is easi to show that there is a constant c 0 such that
+u1 y 1 4 log y c
+for y r see for instanc lemma 24 or 38 thi impli statement 1 of the lemma
+from 529 we have
+1
+m1 u1 x1
+log x x1 f xdx u1 o1
+2 b2 x1
+1
+log 1 xf xdx u1 o1
+2 b2 1 0
+1
+1
+log 1
+f xdx u1 o1
+2
+b2 x1
+m1
+f xdx u1 o1
+4 b2 x1
+2m1 u1 o1
+32
+jurgen
+jost and guofang wang
+which impli statement 2 here we have use
+b2 1 0
+log xf xdx c
+1
+for some constant c which is deduc from statement 1 henc we
+finish the proof of the lemma henc our main theorem
+acknowledg we would like to thank the refere for hisor her care and critic read and for point out some inaccuraci in the first
+version
+refer
+1 aubin t nonlinear analysi on manifold mongeamper equat
+springerverlag 1982
+2 bolton j jensen g r rigoli m and woodward l m on conform
+minim immers of s 2 into cpn math ann 279 1988 no 4 599620
+3 brezi h and merl f uniform estim and blow up behavior for solut
+of u v xeu in two dimens comm partial diff equat 16 12231253 1991
+4 caffarelli l and yang ys vortex condens in the chernsimon higg
+model an exist theorem commun math phi 168 321336 1995
+5 caglioti e p l lion c marchioro and m pulvirenti a special class of
+stationari flow for twodimension euler equat a statist mechan
+descript commun math phi 143 1992 501525
+6 caglioti e p l lion c marchioro and m pulvirenti a special class of
+stationari flow for twodimension euler equat a statist mechan
+descript part ii commun math phi 174 1995 229260
+7 chang a s y and yang p conform deform of metric on s 2 j
+diff geom 23 1988 259296
+8 chang a s y and yang p prescrib gaussian curvatur on s 2 acta
+math 1591987 214259
+9 chang k c and liu j q on nirenberg problem intern j math
+4 1993 3557
+10 chanillo s and kiessl m kh conform invari system of nonlinear pde of liouvil type geom funct anal 5 1995 924947
+11 chen w x and ding w y scalar curvatur on s 2 tran amer math
+soc 303 1987 365382
+12 chen w x and li c classif of solut of some nonlinear ellipt
+equat duke math j 63 1991 615622
+13 chipot m i shafrir and g wolanski on the solut of liouvil system
+j diff equat 140 59105 1997
+analyt aspect of the toda system i
+33
+14 ding w on the best constant in a sobolev inequ on compact 2manifold
+and applic unpublish manuscript 1984
+15 ding w jost j li j and wang g the differenti equat u
+8 8heu on a compact riemann surfac asian j math 1 1997 230248
+16 ding w jost j li j and wang gan analysi of the twovortex case in
+the chernsimon higg model calc vari and p d e 7 1998 8797
+17 ding w jost j li j and wang g multipl result for the twovortex
+chernsimon higg model on the two sphere commun math helv 74
+1999 118142
+18 ding w jost j li j and wang g exist result for mean field
+equat ann inst henri poincar analys non lineair 16 1999 653666
+19 ding w jost j li j peng x and wang g self dualiti equat for
+ginzburglandau and seibergwitten type function with 6th order potenti to appear in commun math phi
+20 dunn g selfdual chernsimon theori lectur note in physic vol
+m36 berlin springerverlag 1995
+21 dunn g mass degeneraci in selfdual model phi lett b345 452457
+1995
+22 dunn g jackiw r pi sy and trugenberg c selfdual chernsimon
+soliton and two dimension nonlinear equat phi rev d43 1332 1991
+23 eell j and j c wood harmon map from surfac to complex project
+space adv in math 49 1983 217263
+24 fordi a p and j c wood ed harmon map and integr system
+aspect of mathemat e23 friedr vieweg sohn braunschweig 1994
+25 fontana l sharp borderlin sobolev inequ on compact manifold
+comment math helv 68 415454 1993
+26 guest m a harmon map loop group and integr system london
+math soc student text 38 cambridg 1997
+27 hong j kim y and pac py multivortex solut of the abelian chernsimon theori phi rev lett 64 22302233 1990
+28 horstman d and g wang blowup in a chemotaxi model without symmetri
+assumpt to appear in european j of appl math
+29 jackiw r and weinberg e selfdual chernsimon vortic phi rev
+lett 64 22342237 1990
+30 jost j and g wang analyt aspect of the toda system ii an applic
+to the relativist su 3 chernsimon model
+31 kiessl m k h statist mechan of classic particl with logarithm interact comm pure appl math 46 1993 2756
+34
+jurgen
+jost and guofang wang
+32 kao h c and lee k selfdual su 3 chernsimon higg system phi
+rev d50 66266632 1994
+33 kostant b the solut to a gener toda lattic and represent
+theori adv math 34 195338 1979
+34 lee k selfdual nonabelian chernsimon soliton phi rev lett 66
+553555 1991
+35 lee k relativist nonabelian chernsimon system phi lett b255
+381384 1991
+36 li yanyan and zhu m uniqu theorem through the method of move
+sphere duke math j 80 1995 383417
+d2
+37 liouvil j sur lequat aux differ partiel dudv
+log 2a2 0 j
+math pure appl 18 71 1853
+38 nolasco m and tarantello g doubl vortex condens in the chernsimonshigg theori calc var partial differenti equat 9 1999 31
+94
+39 nolasco m and tarantello g on a sharp sobolevtyp inequ on twodimension compact manifold arch ration mech anal 145 1998 161
+195
+40 nolasco m and tarantello g vortex condens for the su 3 chernsimon theori to appear in commun math phi
+41 moser ja sharp form of an inequ of n truding indiana univ math
+j 20 10771092 1971
+42 struw m and tarantello g on multivortex solut in chernsimon
+gaug theori boll union mat ital sez b artic ric mat 8 1 1998
+109121
+43 truding n on imbed into orlicz space and some applic j
+math mech17 473483 1967
+44 tarantello g multipl condens solut for the chernsimon higg
+theori j math phi 37 37693796 1996
+45 wang g mosertruding inequ and liouvil type system c r
+acad sci pari 328 1999 895900
+46 wang g and j wei steadi state solut of a reactiondiffus system
+model chemotaxi to appear in math nach
+47 wang g and zhang l nontopolog solut of the relativist su 3
+chernsimon higg model commun math phi 202 1999 501515
+48 woodward l m privat commun
+49 yang y the relativist nonabelian chernsimon equat commun
+math phi 186 199218 1997
+50 ye d and f zhou a gener two dimension emdenfowl equat
+with exponenti nonlinear 1999
+analyt aspect of the toda system i
+35
+maxplanck institut for mathemat in the scienc leipzig germani
+email address jostmismpgd
+institut of mathemat academ sinica beij china
+email address gwangmath03mathaccn
+maxplanck institut for mathemat in the scienc leipzig germani
+email address gwangmismpgd

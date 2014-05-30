@@ -1,0 +1,2221 @@
+arXiv:cond-mat/0011285v1 [cond-mat.mtrl-sci] 16 Nov 2000
+
+Analytical Hartree-Fock gradients for periodic systems
+K. Doll1 , V. R. Saunders1 and N. M. Harrison1,2
+1 CLRC,
+2
+
+Daresbury Laboratory, Daresbury, Warrington, WA4 4AD, UK
+
+Department of Chemistry, Imperial College, London, SW7 2AY, UK
+
+Abstract
+We present the theory of analytical Hartree-Fock gradients for periodic systems as implemented in the code CRYSTAL. We demonstrate how derivatives
+of the integrals can be computed with the McMurchie-Davidson algorithm.
+Highly accurate gradients with respect to nuclear coordinates are obtained
+for systems periodic in 0,1,2 or 3 dimensions.
+
+Typeset using REVTEX
+1
+
+I. INTRODUCTION
+
+The determination of equilibrium structure is one of the most important targets in electronic structure calculations. Analytical gradients provide an important tool to facilitate
+this and therefore the implementation of analytical gradients has become an important part
+of modern codes. Although most solid state calculations are nowadays performed within the
+framework of density functional theory, Hartree-Fock theory can serve as a useful starting
+point for a correlation treatment. In the field of quantum chemistry, a Hartree-Fock solution is necessary to make a wavefunction based correlation scheme such as, for example,
+the coupled-cluster approach, applicable. Therefore, the determination of a Hartree-Fock
+solution is often an important target.
+The calculation of Hartree-Fock gradients was pioneered by Pulay who performed the
+first implementation for multicenter basis sets1 . It should be mentioned, that the theory had
+already been derived earlier independently2 . Analytical gradients have become an important
+area in quantum chemistry and several review articles have been published3–6 .
+Significant work has already been performed for one-dimensional systems: formulas for
+analytic gradients, with respect to nuclear coordinates as well as with respect to the lattice
+vector, have been derived and implemented in a periodic code7 ; and the theory has been
+extended to metallic systems8 . Further progress has been the derivation and implementation
+of formulas for MP2 energy9,10 and gradients11 , as well as gradients on the density functional
+level12 . Even formulas for second derivatives have meanwhile been coded13 . Recently, a
+scheme for an accurate treatment of long-range Coulombic effects in Hartree-Fock gradients
+has been presented14 , and a new implementation of density functional energy and gradients
+for periodic systems has been demonstated to be highly efficient and accurate15 .
+In this article, we report on an implementation of Hartree-Fock gradients with respect
+to nuclear coordinates in a general periodic code (the CRYSTAL16–19 package), which is to
+the best of our knowledge the first implementation for the case of 2- and 3- dimensional
+periodicity.
+2
+
+The article is structured as follows: in section II, the basis functions and Hartree-Fock
+equations are given. The calculation of integrals which relies on the McMurchie-Davidson
+algorithm and the calculation of gradients of the integrals is explained in sections III and
+IV. The total energy as calculated by the CRYSTAL code is given in section V. In section
+VI, we explain the calculation of forces and possible sources of error. Finally, in section VII
+we illustrate the accuracy of the gradients with some examples.
+
+II. BASIS FUNCTION AND HARTREE-FOCK EQUATIONS
+
+In this section, we summarize the basis functions used in the CRYSTAL code and give
+the structure of the Hartree-Fock equations.
+
+A. Basis functions
+
+Unnormalized spherical Gaussian type functions (SGTF) in a polar coordinate system
+characterized by the set of variables (|r|, ϑ, ϕ), and centered at A, are defined as
+S(α, r − A, n, l, m) = |r − A|
+|m|
+
+with Pl
+
+2n+l
+
+2
+
+|m|
+
+Pl (cos ϑ) exp(imϕ) exp(−α|r − A| )
+
+(1)
+
+being the associated Legendre function. In the context of the McMurchie-
+
+Davidson algorithm, Hermite Gaussian type functions are necessary which are defined as:
+Λ(γ, r − A, t, u, v) =
+
+∂
+∂Ax
+
+t
+
+∂
+∂Ay
+
+u
+
+∂
+∂Az
+
+v
+
+exp(−γ|r − A|2 )
+
+(2)
+
+Real spherical Gaussian type functions are defined as
+R(α, r − A, n, l, 0) = S(α, r − A, n, l, 0)
+R(α, r − A, n, l, |m|) = Re S(α, r − A, n, l, |m|)
+R(α, r − A, n, l, −|m|) = Im S(α, r − A, n, l, |m|)
+CRYSTAL uses real spherical Gaussian type functions, which are in the following denoted
+as φµ (r − Aµ ) = Nµ R(α, Aµ , n, l, m), with the normalization Nµ . µ is an index enumerating
+3
+
+the basis functions in the reference cell (e.g. the primitive unit cell). Although the code
+allows only the use of SGTFs with n = 0, in the process of the evaluation of molecular
+integrals, SGTFs with n = 0 are used20 .
+
+B. Hartree-Fock equations
+
+The Hartree-Fock treatment of periodic systems21 is briefly repeated in this section.
+We assume that orbitals are doubly occupied and work within the restricted Hartree-Fock
+formalism. The crystalline orbitals are linear combinations of Bloch functions
+Ψi (r, k) =
+
+aµi (k)ψµ (r, k)
+
+(3)
+
+µ
+
+which are expanded in terms of real spherical Gaussian type functions with fixed contraction coefficients dj :
+dj R(αj , r − Aµ − g, n, l, m)eikg
+
+ψµ (r, k) = Nµ
+
+(4)
+
+j
+
+g
+
+The sum over g is over all direct lattice vectors. The Hartree-Fock-Roothaan equations
+have a structure similar to the molecular case and have to be solved on a set of points in
+the reciprocal lattice:
+Fµν (k)aνi (k) =
+ν
+
+Sµν (k)aνi (k)ǫi (k)
+
+(5)
+
+ν
+
+The Fock matrix F is given in detail in section V of this article, the overlap matrix S in
+section III. The spin-free density matrix in reciprocal space is defined as
+aµi (k)a∗νi (k)Θ(ǫF − ǫi (k))
+
+Pµν (k) = 2
+
+(6)
+
+i
+
+with the Fermi energy ǫF and the Heaviside function Θ; i is an index enumerating the
+eigenvalues. The density matrix in real space Pµ0νg is obtained by Fourier transformation.
+
+4
+
+III. CALCULATION OF INTEGRALS
+
+A. Types of integrals
+
+In this section we summarize the appearing types of integrals. This is done with the
+assumption that the basis functions, φµ , are real.
+
+1. Overlap integral
+
+The basic integral is the overlap integral:
+φµ (r − Aµ − g1 )φν (r − Aν − g2 )d3 r
+
+Sµg1 ν g2 =
+
+(7)
+
+The integration is over the whole space, i.e. x from −∞ to +∞ and similarly for y and
+z. Exploiting translational invariance we can rewrite this as
+Sµ0νg =
+
+φµ (r − Aµ )φν (r − Aν − g)d3 r
+
+(8)
+
+with g = g2 − g1 .
+Further integrals appearing are:
+
+2. Kinetic energy integrals
+
+1
+φµ (r − Aµ )(− ∆r )φν (r − Aν − g)d3 r
+2
+
+Tµ0νg =
+
+(9)
+
+3. Nuclear attraction integrals
+
+Nµ0νg = −
+
+Za
+
+φµ (r − Aµ )A(r − Aa )φν (r − Aν − g)d3 r
+
+(10)
+
+a
+
+where A is defined as the Coulomb potential in the molecular case, as the EulerMacLaurin potential for systems periodic in one dimension22,23 , as Parry’s potential24 for
+systems periodic in two dimensions, and as the Ewald potential for systems periodic in three
+dimensions25,26 . The a summation runs over all nuclei of the primitive unit cell.
+5
+
+4. Electron-electron Coulomb interaction integrals
+
+A bielectronic integral can be defined as
+Bµ0νgτ nσn+h =
+
+φµ (r − Aµ )φν (r − Aν − g)φτ (r ′ − Aτ − n)φσ (r ′ − Aσ − n − h) 3 3 ′
+d rd r
+|r − r ′ |
+(11)
+
+In the context of periodic systems, it is necessary to perform summation over all lattice
+vectors g, h, n. We define a Coulomb integral as follows
+pen
+
+Cµ0νgτ 0σh =
+n
+
+φµ (r − Aµ )φν (r − Aν − g)φτ (r ′ − Aτ − n)φσ (r ′ − Aσ − n − h) 3 3 ′
+d rd r =
+|r − r ′ |
+
+pen
+
+Bµ0νgτ nσn+h
+
+(12)
+
+n
+
+The penetration depth pen is defined as those terms for which
+[g(αµmin , r − Aµ )g(ανmin , r − Aν − g)]1/2 g(ατmin , r − Aτ − n)d3 r > 10−IT OL2
+
+(13)
+
+min
+
+holds, with g(αamin , r) = ( 2απa )3/4 exp(−αamin |r|2 ).
+g(αamin , r) means the lowest exponent of all Gaussians centered at Aa . For these integrals,
+the Coulomb interaction is evaluated without approximation. All the other integrals are
+evaluated with a multipolar expansion. ”IT OL2” is a tolerance which can be chosen by the
+user of the code. This criterion introduces an asymmetry in the energy expression: a given
+bielectronic integral might be evaluated in different ways for Bµ0νgτ nσn+h and Bτ nσn+hµ0νg .
+Avoiding this would however be very inefficient: To keep the symmetry, the lattice sum
+would have to be further broken down into pieces which are evaluated exactly and other
+pieces which are approximated — this would require a much higher computational effort
+and more disk storage. The simpler criterion in equation 13 minimizes the effort, and, when
+IT OL2 is chosen sufficiently large, the violation of the symmetry is negligible. We will
+illustrate this with some examples in section VII.
+
+6
+
+5. Electron-electron exchange interaction integrals
+
+Xµ0νgτ 0σh =
+n
+
+φµ (r − Aµ )φτ (r − Aτ − n)φν (r ′ − Aν − g)φσ (r ′ − Aσ − n − h) 3 3 ′
+d rd r =
+|r − r ′ |
+
+Bµ0τ nνgσn+h
+
+(14)
+
+n
+
+For an individual exchange integral,
+Bµ0τ nνgσn+h = Bτ nµ0σn+hνg
+should hold.
+
+(15)
+
+However, for efficiency reasons, two different thresholds have been
+
+introduced16 which leads to another possible asymmetry: an exchange integral is discarded
+when the pseudooverlap associated with φµ (r − Aµ ) and φν (r − Aν − g) or the pseudooverlap
+associated with φτ (r − Aτ − n) and φσ (r − Aσ − n − h) is smaller than certain thresholds, 10−IT OL4 and 10−IT OL5. It is recommended that the threshold IT OL5 associated with
+φτ (r − Aτ − n) and φσ (r − Aσ − n − h) should be higher than IT OL4. This, however, will
+lead to a violation of equation 15 and therefore another asymmetry in the energy expression.
+A further cutoff parameter, IT OL3, selects the exchange integrals symmetrically: exchange
+integrals are also neglected if the overlap of φµ (r − Aµ ) with φτ (r − Aτ − n) or the overlap
+of φν (r − Aν − g) with φσ (r − Aσ − n − h) is lower as 10−IT OL3. This is a symmetric cutoff,
+and therefore should not lead to an inaccuracy in the forces.
+
+6. Multipolar integrals
+
+The charge distribution is approximated with the help of a multipolar expansion up to
+order L.
+ηlm (ρ; Ac ) =
+
+ρ(r)Xlm (r − Ac )d3 r
+
+(16)
+
+with Xlm being regular solid harmonics26 and the charge ρ(r) defined as
+Pνgµ0 φµ (r − Aµ )φν (r − Aν − g)
+
+ρ(r) = −
+g,µ,ν
+
+7
+
+(17)
+
+7. Field integrals
+
+The electrostatic potential is approximated with an expansion up to the maximum quantum number L.
+ˆ
+m
+Mlµ
+= Zlm (Ac )
+0νgc
+
+pen
+
+φµ (r − Aµ )φν (r − Aν − g) A(r − Ac ) −
+n
+
+1
+|r − Ac − n|
+
+ˆ
+ˆ
+with Zlm (Ac ) being the spherical gradient operator, Zlm (Ac ) =
+
+d3 r
+
+Nlm
+ˆ
+X m (Ac )
+(2l−1)!! l
+
+(18)
+and a
+
+normalization Nlm (Ref. 26).
+
+8. Spheropole
+
+This term arises because the charge distribution is approximated by a model charge
+distribution in the long range. However, the use of the Ewald potential instead of the
+Coulomb potential requires a correction in the three-dimensional case26 .
+Q=
+
+2π
+3V
+
+(ρc (r) − ρmodel
+(r))|r|2 d3 r
+c
+
+(19)
+
+Pνgµ0 φµ (r − Aµ )φν (r − Aν − g)
+
+(20)
+
+Qc =
+c
+
+c
+
+with
+ρc (r) = −
+µ∈c g,ν
+
+and
+L
+
+ρmodel
+(r)
+c
+
+l
+
+ηlm (ρc ; Ac )δlm (Ac , r)
+
+=
+
+(21)
+
+l=0 m=−l
+
+and
+ˆ
+δlm (Ac , r) = lim Zlm (Ac )Λ(α, r − Ac , 0, 0, 0)
+α→∞
+
+c is chosen as the set of basis functions sited at center Ac .
+
+8
+
+(22)
+
+B. McMurchie-Davidson algorithm
+
+In this section, we indicate how the integrals are evaluated. This is done with the
+McMurchie-Davidson27 algorithm. In this formalism, the product of two Gaussian type
+functions is expanded at an intermediate center in terms of Hermite Gaussian type functions.
+S(α, r − A, n, l, m)S(β, r − B, n
+˜ , ˜l, m)
+˜ =
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v)
+
+(23)
+
+t,u,v
+
+with γ = α + β and P =
+
+αA+β B
+.
+α+β
+
+E also depends on α, β and the distance B − A;
+
+however, the dependence on these parameters is suppressed in the notation.
+This makes a very efficient evaluation of integrals feasible.
+
+The starting point
+
+αβ
+E(0, 0, 0, 0, 0, 0, 0, 0, 0) = exp(− α+β
+|B − A|2 ) can be derived from the Gaussian product
+
+rule28,29 :
+exp(−α|r − A|2 ) exp(−β|r − B|2 ) = exp
+
+−
+
+αβ
+|B − A|2 exp
+α+β
+
+− (α + β) r −
+
+αA + β B
+α+β
+(24)
+
+The coefficients E can be generated by recursion relations27,20 . They are zero for the
+case t + u + v > 2n + 2˜
+n + l + ˜l and for all negative values of t, u or v.
+
+IV. CALCULATION OF DERIVATIVES
+
+A. Gradients within the McMurchie-Davidson algorithm
+
+The evaluation of gradients of the integrals is closely related to the evaluation of
+the integrals themselves.
+
+All the integrals can be expressed with the help of the E-
+
+coefficients27,20,26,30 . In the following we show how derivatives of the integrals can be expressed in a similar way with Hermite Gaussian type functions. Starting from equation 23,
+we obtain
+
+9
+
+2
+
+∂
+S(α, r − A, n, l, m)S(β, r − B, n
+˜ , ˜l, m)
+˜ =
+∂Ax
+∂
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v) =
+∂Ax t,u,v
+t,u,v
+
+∂
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v) Λ(γ, r − P , t, u, v) +
+∂Ax
+
+α
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t + 1, u, v) =
+α+β
+α
+∂
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v) +
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t − 1, u, v) Λ(γ, r − P , t, u, v)) =
+∂A
+α
++
+β
+x
+t,u,v
+GxA (n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v)
+
+(25)
+
+t,u,v
+
+Therefore, the gradients can be obtained in a quite similar way as the integrals. Instead
+A
+A
+B
+B
+of the E-coefficients, the coefficients GA
+x (and, for the other derivatives, Gy , Gz , Gx , Gy
+
+and GB
+z ) have to be used, as defined in equation 25. We obtain the following relation from
+equation 25:
+GA
+˜ , ˜l, m,
+˜ t, u, v) =
+x (n, l, m, n
+∂
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v) +
+∂Ax
+α
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t − 1, u, v)
+α+β
+
+(26)
+
+We could thus derive the G-coefficients from the E-coefficients. However, a more convenient way would be to have a recursion relation similar to the E-coefficients. Indeed, these
+relations can be obtained in an analogous way19 . We give the relations here for the case
+of complex spherical Gaussian type functions; a transformation to real spherical Gaussian
+type functions is possible along the lines given in ref. 18. The starting point can be obtained
+from equation 26 and the definition of E(0, 0, 0, 0, 0, 0, 0, 0, 0) given in section III B:
+GA
+x (0, 0, 0, 0, 0, 0, 0, 0, 0) =
+∂
+E(0, 0, 0, 0, 0, 0, 0, 0, 0) +
+∂Ax
+
+α
+E(0, 0, 0, 0, 0, 0, −1, 0, 0) =
+α+β
+2
+
+αβ
+(Bx − Ax )E(0, 0, 0, 0, 0, 0, 0, 0, 0)
+α+β
+10
+
+and
+GA
+x (0, 0, 0, 0, 0, 0, 1, 0, 0) =
+∂
+E(0, 0, 0, 0, 0, 0, 1, 0, 0) +
+∂Ax
+α
+E(0, 0, 0, 0, 0, 0, 0, 0, 0) =
+α+β
+α
+E(0, 0, 0, 0, 0, 0, 0, 0, 0)
+α+β
+
+(27)
+
+All the other GA
+x (0, 0, 0, 0, 0, 0, t, u, v) are zero. Similarly, we obtain
+GA
+y (0, 0, 0, 0, 0, 0, 0, 1, 0) =
+GA
+z (0, 0, 0, 0, 0, 0, 0, 0, 1) =
+GA
+x (0, 0, 0, 0, 0, 0, 1, 0, 0)
+and
+GA
+y (0, 0, 0, 0, 0, 0, 0, 0, 0) =
+2
+
+αβ
+(By − Ay )E(0, 0, 0, 0, 0, 0, 0, 0, 0)
+α+β
+and
+GA
+z (0, 0, 0, 0, 0, 0, 0, 0, 0) =
+
+2
+
+αβ
+(Bz − Az )E(0, 0, 0, 0, 0, 0, 0, 0, 0)
+α+β
+
+(28)
+
+Recursion relations for the G-coefficients can be derived using similar arguments as for
+the E-coefficients19 . There exist recursion relations to generate E(n + 1, l, m, n
+˜ , ˜l, m,
+˜ t, u, v),
+E(n, l + 1, m, n
+˜ , ˜l, m,
+˜ t, u, v), E(n, l + 1, l + 1, n
+˜ , ˜l, m,
+˜ t, u, v) and E(n, −l − 1, −l −
+A
+A
+1, n
+˜ , ˜l, m,
+˜ t, u, v). Recursions are now necessary for GA
+x , Gy and Gz .
+
+1. Recursion in l and m
+
+With S(α, r − A, n, l + 1, l + 1) = (2l + 1)((x − Ax ) + i(y − Ay ))S(α, r − A, n, l, l), we
+obtain:
+S(α, r − A, n, l + 1, l + 1)S(β, r − B, n
+˜ , ˜l, m)
+˜ =
+11
+
+E(n, l, l, n
+˜ , ˜l, m,
+˜ t, u, v)((x − Ax ) + i(y − Ay ))Λ(γ, r − P , t, u, v) =
+
+(2l + 1)
+t,u,v
+
+E(n, l + 1, l + 1, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v)
+
+(29)
+
+t,u,v
+
+In the case of gradients, we obtain:
+∂
+S(α, r − A, n, l + 1, l + 1)S(β, r − B, n
+˜ , ˜l, m)
+˜ =
+∂Ax
+∂
+(2l + 1)
+E(n, l, l, n
+˜ , ˜l, m,
+˜ t, u, v)((x − Ax ) + i(y − Ay ))Λ(γ, r − P , t, u, v) =
+∂Ax t,u,v
+−E(n, l, l, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v) +
+
+(2l + 1)
+t,u,v
+
+((x − Ax ) + i(y − Ay ))
+
+∂
+E(n, l, l, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v)
+∂Ax
+
+=
+
+−E(n, l, l, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v) +
+
+(2l + 1)
+t,u,v
+
+((x − Ax ) + i(y − Ay ))GA
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v) =
+x (n, l, l, n
+GA
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v)
+x (n, l + 1, l + 1, n
+
+(30)
+
+t,u,v
+
+By substituting the recursion relation for Hermite polynomials
+(x − Px )Λ(γ, r − P , t, u, v) =
+
+1
+Λ(γ, r − P , t + 1, u, v) + tΛ(γ, r − P , t − 1, u, v)
+2γ
+
+(31)
+
+in the penultimate expression of equation 30, we obtain:
+−E(n, l, l, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v) +
+
+(2l + 1)
+t,u,v
+
+1
+Λ(γ, r − P , t + 1, u, v) +
+2γ
+tΛ(γ, r − P , t − 1, u, v) +
+(Px − Ax )Λ(γ, r − P , t, u, v) +
+i
+
+1
+Λ(γ, r − P , t, u + 1, v) +
+2γ
+uΛ(γ, r − P , t, u − 1, v) +
+
+(Py − Ay )Λ(γ, r − P , t, u, v)
+From this, we deduce the following relation:
+12
+
+GA
+˜ , ˜l, m,
+˜ t, u, v)
+x (n, l, l, n
+
+(32)
+
+GA
+˜ , ˜l, m,
+˜ t, u, v) =
+x (n, l + 1, l + 1, n
+(2l + 1) − E(n, l, l, n
+˜ , ˜l, m,
+˜ t, u, v) +
+1 A
+G (n, l, l, n
+˜ , ˜l, m,
+˜ t − 1, u, v) +
+2γ x
+(t + 1)GA (n, l, l, n
+˜ , ˜l, m,
+˜ t + 1, u, v) +
+x
+
+(Px − Ax )GA
+˜ , ˜l, m,
+˜ t, u, v) +
+x (n, l, l, n
+1 A
+G (n, l, l, n
+˜ , ˜l, m,
+˜ t, u − 1, v) +
+2γ x
+(u + 1)GA (n, l, l, n
+˜ , ˜l, m,
+˜ t, u + 1, v) +
+i
+
+x
+
+(Py − Ay )GA
+˜ , ˜l, m,
+˜ t, u, v)
+x (n, l, l, n
+
+(33)
+
+In an analogous way, we obtain the following recursion relation:
+˜ , ˜l, m,
+˜ t, u, v) =
+GA
+x (n, l + 1, −l − 1, n
+(2l + 1) − E(n, l, −l, n
+˜ , ˜l, m,
+˜ t, u, v) +
+1 A
+G (n, l, −l, n
+˜ , ˜l, m,
+˜ t − 1, u, v) +
+2γ x
+(t + 1)GA (n, l, −l, n
+˜ , ˜l, m,
+˜ t + 1, u, v) +
+x
+
+(Px − Ax )GA
+˜ , ˜l, m,
+˜ t, u, v) −
+x (n, l, −l, n
+1 A
+G (n, l, −l, n
+˜ , ˜l, m,
+˜ t, u − 1, v) +
+2γ x
+(u + 1)GA (n, l, −l, n
+˜ , ˜l, m,
+˜ t, u + 1, v) +
+i
+
+x
+
+(Py − Ay )GA
+˜ , ˜l, m,
+˜ t, u, v)
+x (n, l, −l, n
+
+(34)
+
+2. Recursion in n
+
+With S(α, r − A, n + 1, l, m) = |r − A|2 S(α, r − A, n, l, m) the following relation can be
+derived19 :
+GA
+˜ , ˜l, m,
+˜ t, u, v) =
+x (n + 1, l, m, n
+1
+GA (n, l, m, n
+˜ , ˜l, m,
+˜ t − 2, u, v) +
+4γ 2 x
+13
+
+GA
+˜ , ˜l, m,
+˜ t, u − 2, v) +
+x (n, l, m, n
+GA
+˜ , ˜l, m,
+˜ t, u, v − 2) +
+x (n, l, m, n
+1
+(Px − Ax )GA
+˜ , ˜l, m,
+˜ t − 1, u, v) −
+x (n, l, m, n
+γ
+˜ , ˜l, m,
+˜ t − 1, u, v) +
+E(n, l, m, n
+(Py − Ay )GA
+˜ , ˜l, m,
+˜ t, u − 1, v) +
+x (n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v − 1) +
+(Pz − Az )GA
+x (n, l, m, n
+|P − A|2 +
+
+(t + u + v + 23 ) A
+Gx (n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v) −
+γ
+2(Px − Ax )E(n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v) +
+
+2 (Px − Ax )(t + 1)GA
+˜ , ˜l, m,
+˜ t + 1, u, v) −
+x (n, l, m, n
+(t + 1)E(n, l, m, n
+˜ , ˜l, m,
+˜ t + 1, u, v) +
+(Py − Ay )(u + 1)GA
+˜ , ˜l, m,
+˜ t, u + 1, v) +
+x (n, l, m, n
+(Pz − Az )(v + 1)GA
+˜ , ˜l, m,
+˜ t, u, v + 1) +
+x (n, l, m, n
+(t + 2)(t + 1)GA
+˜ , ˜l, m,
+˜ t + 2, u, v) +
+x (n, l, m, n
+(u + 2)(u + 1)GA
+˜ , ˜l, m,
+˜ t, u + 2, v) +
+x (n, l, m, n
+(v + 2)(v + 1)GA
+˜ , ˜l, m,
+˜ t, u, v + 2)
+x (n, l, m, n
+
+(35)
+
+3. Recursion in l
+
+Using that S(α, r − A, n, l + 1, m) = ((2l + 1)(z − Az )S(α, r − A, n, l, m) − |r − A|2 (l +
+|m|)S(α, r − A, n, l − 1, m))/(l − |m| + 1) the following relation can be derived19 :
+GA
+˜ , ˜l, m,
+˜ t, u, v) =
+x (n, l + 1, m, n
+GA (n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v − 1)
++
+(2l + 1) x
+2γ
+(Pz − Az )GA (n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v) +
+x
+
+(v + 1)GA
+˜ , ˜l, m,
+˜ t, u, v + 1) −
+x (n, l, m, n
+(l + |m|)
+
+˜ , ˜l, m,
+˜ t − 2, u, v) +
+GA
+x (n, l − 1, m, n
+14
+
+GA
+˜ , ˜l, m,
+˜ t, u − 2, v) +
+x (n, l − 1, m, n
+GA
+˜ , ˜l, m,
+˜ t, u, v − 2) /(2γ)2 +
+x (n, l − 1, m, n
+(Px − Ax )GA
+˜ , ˜l, m,
+˜ t − 1, u, v) −
+x (n, l − 1, m, n
+E(n, l − 1, m, n
+˜ , ˜l, m,
+˜ t − 1, u, v) +
+(Py − Ay )GA
+˜ , ˜l, m,
+˜ t, u − 1, v) +
+x (n, l − 1, m, n
+˜ , ˜l, m,
+˜ t, u, v − 1) /γ +
+(Pz − Az )GA
+x (n, l − 1, m, n
+|P − A|2 +
+
+(t + u + v + 23 ) A
+Gx (n, l − 1, m, n
+˜ , ˜l, m,
+˜ t, u, v) −
+γ
+2(Px − Ax )E(n, l − 1, m, n
+˜ , ˜l, m,
+˜ t, u, v) +
+
+2 (Px − Ax )(t + 1)GA
+˜ , ˜l, m,
+˜ t + 1, u, v) −
+x (n, l − 1, m, n
+(t + 1)E(n, l − 1, m, n
+˜ , ˜l, m,
+˜ t + 1, u, v) +
+(Py − Ay )(u + 1)GA
+˜ , ˜l, m,
+˜ t, u + 1, v) +
+x (n, l − 1, m, n
+(Pz − Az )(v + 1)GA
+˜ , ˜l, m,
+˜ t, u, v + 1) +
+x (n, l − 1, m, n
+(t + 2)(t + 1)GA
+˜ , ˜l, m,
+˜ t + 2, u, v) +
+x (n, l − 1, m, n
+(u + 2)(u + 1)GA
+˜ , ˜l, m,
+˜ t, u + 2, v) +
+x (n, l − 1, m, n
+(v + 2)(v + 1)GA
+˜ , ˜l, m,
+˜ t, u, v + 2)
+x (n, l − 1, m, n
+
+/(l − |m| + 1)
+
+(36)
+
+20
+The recursion relations for the GA
+x -coefficients are similar to those for the E-coefficients ,
+
+with the extra terms arising from the derivative
+and from the derivative
+
+∂
+|r
+∂Ax
+
+∂
+(x
+∂Ax
+
+− Ax ) for the recursion in l and m,
+
+− A|2 for the recursion in l and the recursion in n.
+
+A
+This can similarly be done for GA
+y and Gz . Finally, all G-coefficients are zero for the
+
+case t + u + v > 2n + 2˜
+n + l + ˜l + 1 and for all negative values of t, u or v.
+
+B. Gradients with respect to other centers
+
+To obtain the derivatives with respect to center B, the following relation is used31 (note
+R = A − B):
+∂ ∂Px
+∂ ∂Rx
+∂
+=
++
+=
+∂Ax
+∂Px ∂Ax ∂Rx ∂Ax
+15
+
+α ∂
+∂
++
+γ ∂Px ∂Rx
+(37)
+and
+∂
+∂ ∂Px
+∂ ∂Rx
+=
++
+=
+∂Bx
+∂Px ∂Bx ∂Rx ∂Bx
+∂
+β ∂
+−
+γ ∂Px ∂Rx
+(38)
+Therefore,
+∂
+∂
+∂
++
+=
+∂Ax ∂Bx
+∂Px
+
+(39)
+
+This means that
+∂
+∂Bx
+
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v) =
+t,u,v
+
+∂
+∂
+−
+∂Px ∂Ax
+
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v)
+
+(40)
+
+t,u,v
+
+Applying equation 25, we obtain:
+GB
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v) =
+x (n, l, m, n
+t,u,v
+
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t + 1, u, v)
+t,u,v
+
+GA
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v)
+x (n, l, m, n
+
+−
+
+(41)
+
+t,u,v
+
+Finally, we conclude:
+GB
+˜ , ˜l, m,
+˜ t, u, v) = E(n, l, m, n
+˜ , ˜l, m,
+˜ t − 1, u, v) − GA
+˜ , ˜l, m,
+˜ t, u, v)
+x (n, l, m, n
+x (n, l, m, n
+
+(42)
+
+and similar for derivatives with respect to y and z direction. All the integrals can be
+expressed with the help of the E-coefficients. Taking the derivative therefore reduces to
+A
+replacing E with the corresponding GA
+x , Gy , etc coefficients.
+
+16
+
+As an example, we show how overlap integral and gradient are obtained. First, the
+overlap is computed as follows:
+S(α, r − A, n, l, m)S(β, r − B, n
+˜ , ˜l, m)d
+˜ 3r =
+E(n, l, m, n
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v)d3r =
+t,u,v
+
+π
+E(n, l, m, n
+˜ , ˜l, m,
+˜ 0, 0, 0)
+γ
+
+3
+2
+
+(43)
+
+We have used that
+3
+
+Λ(γ, r, t, u, v)d r =
+
+π
+γ
+
+3
+2
+
+δt0 δu0 δv0
+
+(44)
+
+because of the orthogonality of the Hermite Gaussian type functions (δt0 is the Kronecker
+delta).
+The gradient is computed similarly:
+∂
+∂Ax
+
+S(α, r − A, n, l, m)S(β, r − B, n
+˜ , ˜l, m)d
+˜ 3r =
+GA
+˜ , ˜l, m,
+˜ t, u, v)Λ(γ, r − P , t, u, v)d3r =
+x (n, l, m, n
+
+t,u,v
+
+GA
+˜ , ˜l, m,
+˜ 0, 0, 0)
+x (n, l, m, n
+
+π
+γ
+
+3
+2
+
+(45)
+
+In our implementation, we therefore compute the gradient of the two Gaussians which
+are associated with the integrals, by replacing E-coefficients with G-coefficients. As a consequence, if an operator, which might appear in the integral, has a nonvanishing derivative
+(such as, for example, the nuclear attraction), this must be taken into account additionally.
+This derivative with respect to the third center can be obtained by applying translational
+invariance with respect to a simultaneous uniform translation of the three centers. In the
+case of bielectronic integrals, products with two E-coefficients appear. Obviously, when differentiating, the corresponding rules of differentiating a product must be applied and two
+derivative terms appear, each of them consisting of a product of one set of E− and one set
+of G−coefficients. Finally, the nuclear-nuclear term must be differentiated which is trivial.
+17
+
+It is interesting to compare this implementation with that of the Namur group14 where
+also gradients within the McMurchie-Davidson algorithm are computed.
+
+Whereas our
+
+scheme computes the derivatives of the two Gaussians appearing in the integral and a possibly necessary derivative of an operator is obtained by applying translational invariance, the
+alternative implementation14 relies on explicitly computing derivatives of E-coefficients and
+of the auxiliary function27 Rt,u,v appearing in the integrals.
+
+V. TOTAL ENERGY
+
+The total energy consists of kinetic energy, Coulomb energy (nuclear-nuclear repulsion,
+nuclear-electron attraction and electron-electron repulsion), and exchange energy. We assume that all the orbitals are either empty or doubly occupied.
+
+A. Kinetic energy
+
+The kinetic energy of the electrons is obtained as:
+E kinetic =
+
+Pνgµ0
+g,µ,ν
+
+1
+φµ (r − Aµ ) − ∆r φν (r − Aν − g)d3 r =
+2
+Pνgµ0 Tµ0νg
+
+(46)
+
+g,µ,ν
+
+B. Exchange energy
+
+The exchange energy is obtained as:
+E exch−el =
+−
+
+1
+P
+4 g,µ,ν νgµ0
+
+Pσh+nτ n
+h,n,τ,σ
+
+φµ (r − Aµ )φτ (r − Aτ − n)φν (r ′ − Aν − g)φσ (r ′ − Aσ − h − n) 3 3 ′
+d rd r =
+|r − r ′ |
+1
+Pσhτ 0 Xµ0νgτ 0σh
+P
+−
+4 g,µ,ν νgµ0
+h,τ,σ
+
+18
+
+(47)
+
+where we have exploited translational invariance of the density matrix with respect to
+direct lattice vectors n: Pσh+nτ n = Pσhτ 0 .
+We can define a Fock operator for the exchange energy which is
+Fµexch−el
+=−
+0νg
+
+1
+2
+
+Pσhτ 0 Xµ0νgτ 0σh
+
+(48)
+
+h,τ,σ
+
+C. Coulomb energy
+
+Both kinetic energy and exchange energy must converge independently. However, a
+separation of the contributions to the Coulomb energy is not possible: for example, in a one
+dimensional periodic system with lattice constant a, and n being an index enumerating the
+cells, the electron-electron interaction per unit cell would have contributions like:
+∞
+
+1
+n=1 na
+
+(49)
+
+This sum is divergent (similarly in two and three dimensions). Therefore, in CRYSTAL
+a scheme based on the Ewald method is used to sum the interactions32,26 . We only quote
+the results for the individual contributions:
+
+1. Nuclear-nuclear repulsion:
+
+E NN =
+
+1
+2
+
+Za Zb A(Ab − Aa )
+
+(50)
+
+a,b
+
+2. Nuclear-electron attraction:
+
+The energy
+
+1
+E ,
+2 NE
+
+which is the Ewald energy of the nuclei in the primitive unit cell
+
+with the all the electrons of all cells, is the same as the energy 21 EEN , which is the Ewald
+energy of the electrons of the primitive unit cell with all the nuclei in all cells, as long as
+no approximations are introduced30 . CRYSTAL uses the following expression as the sum of
+these interactions:
+19
+
+E coul−nuc =
+g,µ,ν
+
+Pνgµ0 Fµcoul−nuc
+0νg
+
+(51)
+
+with the Fock matrix Fµcoul−nuc
+containing the nuclear-electron contributions defined as
+0νg
+Fµcoul−nuc
+=−
+0νg
+
+Za
+
+φµ (r − Aµ )φν (r − Aν − g)A(r − Aa )d3 r
+
+(52)
+
+a
+
+3. Electron-electron repulsion:
+
+E coul−el =
+
+1
+P
+F coul−el
+2 g,µ,ν νgµ0 µ0νg
+
+(53)
+
+with the Fock matrix Fµcoul−el
+containing the electron-electron contributions defined as
+0νg
+L
+
+Fµcoul−el
+= −QSµ0νg +
+0νg
+
+Pσhτ 0 Cµ0νgτ 0σh −
+h,τ,σ
+
+l
+
+c l=0 m=−l
+
+m
+ηlm (ρc ; Ac )Mlµ
+0νgc
+
+(54)
+
+D. Total energy
+
+Finally, the total energy can be expressed as
+E total = E kinetic + E NN + E coul−nuc + E coul−el + E exch−el =
+= E NN +
+
+Pνgµ0 Tµ0νg
+g,µ,ν
+
+Pνgµ0
+
+−
+g,µ,ν
+
++
+−
+
+Za
+
+φµ (r − Aµ )φν (r − Aν − g)A(r − Aa )d3 r
+
+a
+
+1
+− QSµ0νg +
+P
+2 g,µ,ν νgµ0
+1
+P
+4 g,µ,ν νgµ0
+
+L
+
+Pσhτ 0 Cµ0νgτ 0σh −
+h,τ,σ
+
+l
+
+c l=0 m=−l
+
+Pσhτ 0 Xµ0νgτ 0σh
+
+m
+ηlm (ρc ; Ac )Mlµ
+0νgc
+
+(55)
+
+h,τ,σ
+
+The Fock operator used has the structure:
+Fµtotal
+= Tµ0νg + Fµcoul−nuc
++ Fµcoul−el
++ Fµexch−el
+0νg
+0νg
+0νg
+0νg
+
+(56)
+
+We note that this expression for the Fock operator would be exact if we could guarantee that the penetration depth and screening was symmetric. This would require that
+20
+
+Cµ0νgτ 0σh = Cτ 0σhµ0νg should always hold. This, however, as aforementioned, cannot be
+guaranteed because the truncation is not necessarily symmetric. In addition, the screening
+of the exchange interaction is not necessarily symmetric. Therefore, an inaccuracy in the
+Fock operator will show up which will be stronger the more asymmetric the truncation in
+the energy expression is.
+The total energy can be expressed as
+E total = E NN +
+
+1
++ (Fµcoul−el
+Pνgµ0 Tµ0νg + Fµcoul−nuc
++ Fµexch−el
+)
+0νg
+0νg
+0νg
+2
+g,µ,ν
+
+(57)
+
+and the Hartree-Fock equations become as in equation 5. In ref. 26, it was pointed out
+that the quantity QSµ0νg can be removed from the Fock operator which has been done in
+CRYSTAL. This leads to eigenvalues shifted by Q as we now use the modified equation
+total
+(Fµν
+(k) + QSµν (k))aνi (k) =
+ν
+
+Sµν (k)aνi (k)(ǫi (k) + Q)
+
+(58)
+
+ν
+
+VI. GRADIENT OF THE TOTAL ENERGY
+
+The force on the nuclei can be calculated similarly to the molecular case2,1 . The derivatives of all the integrals are necessary, and the derivative of the density matrix is expressed
+with the help of the energy-weighted density matrix. One important assumption is that
+Bµ0νgτ nσn+h = Bτ nσn+hµ0νg = Bσn+hτ nνgµ0
+
+(59)
+
+holds. Taking the derivative leads, for example, to terms like the following
+∂
+
+Pνgµ0
+
+∂ Ai
+
+g,µ,ν
+
+∂
+g,µ,ν
+
+∂ Ai
+
+g,µ,ν
+
+g,µ,ν
+
+h,τ,σ
+
+Pσhτ 0
+h,τ,σ
+
+∂
+∂ Ai
+
+∂
+
+Pνgµ0
+
+Pσhτ 0 Cµ0νgτ 0σh +
+
+Pνgµ0
+
+Pνgµ0
+
++
+
+Pσhτ 0 Cµ0νgτ 0σh =
+h,τ,σ
+
+h,τ,σ
+
+∂ Ai
+
+Pσhτ 0 Cµ0νgτ 0σh
+
+Cµ0νgτ 0σh
+
+When equation 59 holds, we rename the indices in the second addend and obtain:
+21
+
+(60)
+
+∂
+
+2
+
+∂ Ai
+
+g,µ,ν
+
+g,µ,ν
+
+h,τ,σ
+
+Pσhτ 0
+
+Pνgµ0
+
+Pσhτ 0 Cµ0νgτ 0σh +
+
+Pνgµ0
+
+h,τ,σ
+
+∂
+∂ Ai
+
+Cµ0νgτ 0σh
+
+(61)
+
+We derived the equation for the force this way although equation 59 does not always
+hold. Therefore, inaccuracies will appear when equation 59 is strongly violated. The full
+force is obtained as:
+FAi = −
+
+∂E total
+
+=
+∂ Ai
+∂Tµ0νg
+
+Pνgµ0
+
+−
+
+∂ Ai
+
+g,µ,ν
+
+Pνgµ0
+
++
+g,µ,ν
+
+−
+
+Za
+a
+
+−
+
+∂E NN
+∂ Ai
+
+∂
+
+φµ (r − Aµ )φν (r − Aν − g)A(r − Aa )d3 r
+
+∂ Ai
+
+2π
+1
+Pνgµ0 − Sµ0νg
+2 g,µ,ν
+3V
+
+∂
+
+c h,σ,τ ∈c
+
+Pσhτ 0
+
+− φτ (r − Aτ )φσ (r − Aσ − h)
+
+∂ Ai
+L
+
+l
+
+φτ (r ′ − Aτ )φσ (r ′ − Aσ − h)Xlm (r ′ − Ac )d3 r′ δlm (Ac , r) r 2 d3 r
+
++
+l=0 m=−l
+
++
+τ,σ
+
+Pσhτ 0
+L
+
+∂Cµ0νgτ 0σh
+∂ Ai
+l
+
+−
+c l=0 m=−l h,τ ∈c,σ
+
++
+
+1
+P
+4 g,µ,ν νgµ0
+
+Pσhτ 0
+
+g,µ,ν
+
+∂ Ai
+
+∂
+
+BZ
+
+m
+φτ (r − Aτ )φσ (r − Aσ − h)Xlm (r − Ac )d3 r Mlµ
+0νgc
+
+∂ Ai
+
+∂Xµ0νgτ 0σh
+
+h,τ,σ
+
+∂Sµ0νg
+
+−
+
+Pσhτ 0
+
+∂ Ai
+2aνj (k)a∗µj (k)(ǫj (k) + Q)Θ(ǫF − ǫj (k) − Q)d3 k
+
+exp(ikg)
+
+(62)
+
+j
+
+The last addend is the energy weighted density matrix; the integral is over the first
+Brillouin zone. It is worthwhile mentioning that the factor Pνgµ0 Sµ0νg is equal to the number
+of electrons in the unit cell and therefore its derivative with respect to Ai vanishes. We note
+three important points:
+• Equation 62 is correct for the exact solution of the Hartree-Fock equations. Thus, in
+practice, a well converged solution is necessary to achieve accurate forces.
+
+22
+
+• The energy-weighted density matrix is k-dependent. Therefore, the accuracy of the
+forces will become dependent on the number of k-points.
+• The derivation of equation 62 assumes that equation 59 holds. The treatment of the
+Coulomb series with finite penetration depth leads to an asymmetry associated with
+IT OL2 in the CRYSTAL code. In addition, in the treatment of the exchange series
+an asymmetry can be introduced if the screening parameters (IT OL4 and IT OL5 in
+the CRYSTAL code) are chosen differently. Therefore, the choice of IT OL2, IT OL4
+and IT OL5 will influence the accuracy of the gradients.
+
+VII. RESULTS FROM TEST CALCULATIONS
+
+With a few examples, we want to illustrate the accuracy of the analytically computed
+gradients.
+In table I, all the integrals are evaluated without approximation and the analytical
+derivative agrees to five digits with the numerical derivative. As the numerical derivative is
+only accurate up to five digits, this is certainly satisfying.
+In table II the variation in accuracy when penetration depth and overlap criteria are
+altered, is displayed. As described in the article, lowering IT OL2 to low values leads to
+inaccuracies in the gradients. Lowering only one of the parameters IT OL4 or IT OL5 also
+leads to inaccuracies, whereas lowering both to the same value gives an analytical gradient
+which is consistent with the numerical gradient — however, as a value of 1 for IT OL4
+and IT OL5 was chosen, energy and force are completely different from calculations with
+reasonable values for IT OL4 and IT OL5. The parameter IT OL1, which selects the oneelectron and Coulomb integrals according to the overlap, can lead to numerical instabilities
+in the energy calculation and inaccurate gradients when chosen too low, and should therefore
+be reasonably high. The parameter IT OL3 does not influence the accuracy of the gradients:
+although when chosen much too low with a value of e.g. 1, numerical and analytical gradient
+still agree. The default values for the IT OL-parameters for the energy calculation are 6, 6,
+23
+
+6, 6 and 12. In all calculations performed so far, these default values did not lead to serious
+errors for the gradients.
+Another example (table III) is the CO molecule arranged as a single molecule
+(”molecule”), as a molecule periodically repeated in one dimension (”polymer”), in two
+dimensions (”slab”) and in three dimensions (”bulk”). The forces agree well, and it is
+demonstrated that using stricter real-space truncation parameters improves the agreement.
+The forces seem to be relatively insensitive to the number of sampling points and changing
+their number changed the error in the forces only slightly.
+Finally, in table IV we compare analytical and numerical derivatives for MgO when
+moving the oxygen atom in x-direction which would correspond to a longitudinal phonon.
+h
+(default IT OL parameters were used).
+Again, agreement is to the order of 10−5 E
+aB
+
+VIII. CONCLUSION
+
+We presented the theory of analytic Hartree-Fock gradients for periodic systems. This
+has been implemented in the code CRYSTAL which is to the best of our knowledge the first
+implementation of Hartree-Fock gradients in systems periodic in 2 and 3 dimensions. The
+results are in excellent agreement with numerical derivatives.
+Future directions will be the improvement of the efficiency of the code (implementation
+of symmetry and various technical improvements), derivatives with respect to the lattice
+vector, as well as an extension to metallic systems.
+
+IX. ACKNOWLEDGMENTS
+
+The authors would like to acknowledge support from EPSRC grant GR/K90661.
+
+24
+
+REFERENCES
+1
+
+P. Pulay, Mol. Phys. 17, 197 (1969).
+
+2
+
+S. Brato˘z, in Calcul des fonctions d’onde mol´eculaire, Colloq. Int. C. N. R. S. 82, 287
+(1958).
+
+3
+
+P. Pulay, Adv. Chem. Phys. 69, 241 (1987).
+
+4
+
+P. Pulay, in Applications of Electronic Structure Theory, edited by H. F. Schaefer III, 153
+(Plenum, New York, 1977).
+
+5
+
+H. B. Schlegel, Adv. Chem. Phys. 67, 249 (1987).
+
+6
+
+T. Helgaker and P. Jørgensen, Adv. in Quantum Chem. 19, 183 (1988)
+
+7
+
+H. Teramae, T. Yamabe, C. Satoko and A. Imamura, Chem. Phys. Lett. 101, 149 (1983);
+H. Teramae, T. Yamabe and A. Imamura, J. Chem. Phys. 81, 3564 (1984).
+
+8
+
+M. Kertesz, Chem. Phys. Lett. 106, 443 (1984).
+
+9
+
+S. Suhai, Phys. Rev. B 27, 3506 (1983); S. Suhai, Chem. Phys. Lett. 96, 619 (1983).
+
+10
+
+J.-Q. Sun and R. J. Bartlett, J. Chem. Phys. 104, 8553 (1996).
+
+11
+
+S. Hirata and S. Iwata, J. Chem. Phys. 109, 4147 (1998).
+
+12
+
+S. Hirara and S. Iwata, J. Chem. Phys. 107, 10075 (1997); S. Hirata, H. Torii and M.
+Tasumi, Phys. Rev. B 57, 11994 (1998); S. Hirata and S. Iwata, J. Chem. Phys. 108, 7901
+(1998); S. Hirata and S. Iwata, J. Phys. Chem. A 102, 8426 (1998).
+
+13
+
+S. Hirata and S. Iwata, J. Mol. Struct.: THEOCHEM 451, 121 (1998).
+
+14
+
+D. Jacquemin, J.-M. Andr´e and B. Champagne, J. Chem. Phys. 111, 5306 (1999); J.
+Chem. Phys. 111, 5324 (1999).
+
+15
+
+K. N. Kudin and G. E. Scuseria, Phys. Rev. B 61, 16440 (2000).
+
+25
+
+16
+
+V. R. Saunders, R. Dovesi, C. Roetti, M. Caus`a, N. M. Harrison, R. Orlando, C. M.
+Zicovich-Wilson, crystal 98 User’s Manual, Theoretical Chemistry Group, University
+of Torino (1998).
+
+17
+
+C. Pisani and R. Dovesi, Int. J. Quantum Chem. 17, 501 (1980); R. Dovesi and C. Roetti,
+Int. J. Quantum Chem. 17, 517 (1980).
+
+18
+
+C. Pisani, R. Dovesi, and C. Roetti, Hartree-Fock Ab Initio Treatment of Crystalline
+Systems, edited by G. Berthier et al, Lecture Notes in Chemistry Vol. 48 (Springer, Berlin,
+1988).
+
+19
+
+V. R. Saunders, N. M. Harrison, R. Dovesi, C. Roetti, Electronic Structure Theory: From
+Molecules to Crystals (in preparation)
+
+20
+
+V. R. Saunders, in Methods in Computational Molecular Physics, edited by G. H. F.
+Diercksen and S. Wilson, 1 (Reidel, Dordrecht, Netherlands, 1984).
+
+21
+
+J. M. Andr´e, L. Gouverneur and G. Leroy, Int. J. Quant. Chem. 1, 427 (1967); Int. J.
+Quant. Chem. 1, 451 (1967); J. M. Andr´e, J. Chem. Phys. 50, 1536 (1969).
+
+22
+
+J. Delhalle, J. M. Andr´e, Ch. Demanet and J. L. Br´edas, Chem. Phys. Lett. 54, 186
+(1978).
+
+23
+
+V. R. Saunders, C. Freyria-Fava, R. Dovesi, and C. Roetti, Comp. Phys. Comm. 84, 156
+(1994).
+
+24
+
+D. E. Parry, Surf. Science 49, 433 (1975); 54, 195 (1976) (Erratum).
+
+25
+
+P. P. Ewald, Ann. Phys. (Leipzig) 64, 253 (1921).
+
+26
+
+V. R. Saunders, C. Freyria-Fava, R. Dovesi, L. Salasco, and C. Roetti, Mol. Phys. 77, 629
+(1992).
+
+27
+
+L. E. McMurchie and E. R. Davidson, J. Comput. Phys. 26, 218 (1978).
+
+26
+
+28
+
+S. F. Boys, Proc. Roy. Soc. A 200, 542 (1950).
+
+29
+
+R. McWeeny, Nature 166, 21 (1950).
+
+30
+
+R. Dovesi, C. Pisani, C. Roetti, and V. R. Saunders, Phys. Rev. B 28, 5781 (1983).
+
+31
+
+T. Helgaker and P. R. Taylor, Theor. Chim. Acta 83, 177 (1992).
+
+32
+
+F. E. Harris, in Theoretical Chemistry: Advances and Perspectives, Vol. 1, 147 (1975),
+edited by H. Eyring and D. Henderson, Academic Press, New York
+
+27
+
+TABLES
+TABLE I. CO molecule, all tolerances high enough that all the integrals are done without
+approximation. The carbon atom is placed at (0 ˚
+A, 0 ˚
+A, 0 ˚
+A), the oxygen atom at (0.8 ˚
+A, 0.5
+˚
+A, 0.4 ˚
+A). To calculate the numerical force in x-direction, the x-coordinate of the oxygen atom is
+changed (column 1). The Hartree-Fock energy is displayed in column 2. The numerical force is
+determined from 2 points at (0.8 ±δ) ˚
+A and displayed in column 3. The analytical derivative for
+x=0.8 ˚
+A is displayed in column 4. Basis sets of the size [2s2p1d] were used.
+x-coordinate of oxygen
+
+energy
+
+numerical derivative
+
+analytical derivative
+
+(x-component)
+
+(x-component)
+Eh /aB
+
+˚
+A
+
+Eh
+
+Eh /aB
+
+0.799
+
+-1.107642201574E+02
+
+0.376915
+
+0.7999
+
+-1.107648645627E+02
+
+0.376913
+
+0.79999
+
+-1.107649287000E+02
+
+0.376914
+
+0.80000
+
+-1.107649358230E+02
+
+0.80001
+
+-1.107649429453E+02
+
+0.8001
+
+-1.107650070153E+02
+
+0.801
+
+-1.107656446886E+02
+
+28
+
+0.37691274
+
+TABLE II. CO molecule, when varying the IT OL parameters. The first and second parameter
+should be reasonably high, the fourth and fifth should both be high or identical to obtain accurate
+forces.
+IT OL values
+
+numerical derivative
+
+analytical derivative
+
+(x-component)
+
+(x-component)
+
+Eh /aB
+
+Eh /aB
+
+6 6 6 6 12
+
+0.37691
+
+0.376913
+
+20 20 20 20 20
+
+0.37691
+
+0.376913
+
+4 20 20 20 20
+
+0.37691
+
+0.376912
+
+3 20 20 20 20
+
+0.37747
+
+0.377389
+
+2 20 20 20 20
+
+0.38883
+
+0.388260
+
+20 2 20 20 20
+
+0.37684
+
+0.376821
+
+20 1 20 20 20
+
+-7.40676
+
+-1.246409
+
+20 20 1 20 20
+
+-8.09240
+
+-8.09240
+
+20 20 20 1 20
+
+-0.51905
+
+-3.504654
+
+20 20 20 20 1
+
+0.40892
+
+0.359847
+
+20 20 20 1 1
+
+-33.34823
+
+-33.348229
+
+29
+
+TABLE III.
+
+CO molecule, arranged periodic in 0 dimensions (”molecule”), in 1 dimension
+
+(”polymer”), in 2 dimensions (”slab”) and in 3 dimensions (”bulk”). We display the accuracy
+of the gradient as a function of the number of sampling points, and as a function of the IT OL
+parameters.
+dimension number of sampling points IT OL parameters numerical derivative analytical derivative
+(x-component)
+
+(x-component)
+
+Eh /aB
+
+Eh /aB
+
+0
+
+-
+
+6 6 6 6 12
+
+0.37691
+
+0.376913
+
+1
+
+5
+
+6 6 6 6 12
+
+0.37659
+
+0.376633
+
+1
+
+5
+
+6 9 6 12 12
+
+0.37662
+
+0.376647
+
+2
+
+34
+
+6 6 6 6 12
+
+0.37630
+
+0.376335
+
+3
+
+8
+
+6 6 6 6 12
+
+0.37571
+
+0.375742
+
+3
+
+260
+
+6 6 6 6 12
+
+0.37565
+
+0.375679
+
+3
+
+260
+
+6 8 6 8 14
+
+0.37570
+
+0.375720
+
+3
+
+260
+
+8 8 6 8 14
+
+0.37573
+
+0.375721
+
+30
+
+TABLE IV. MgO at a lattice constant of 4.21 ˚
+A. We compare numerical and analytical derivatives when moving the oxygen ion parallel to the x-direction. Basis sets of the size [3s2p] were
+used.
+displacement of oxygen
+
+analytical derivative
+
+numerical derivative
+
+(x-component)
+
+(x-component)
+
+in % of lattice constant
+
+Eh /aB
+
+Eh /aB
+
++1
+
+-0.005923
+
+-0.00593
+
++2
+
+-0.012254
+
+-0.01226
+
++3
+
+-0.019385
+
+-0.01940
+
+31
+
+

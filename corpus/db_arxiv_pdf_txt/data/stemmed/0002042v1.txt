@@ -1,0 +1,260 @@
+januari 31 2000
+arxivnuclth0002042v1 16 feb 2000
+evid for a new state of matter
+an assess of the result from the cern lead beam programm
+ulrich heinz and mauric jacob
+theoret physic divis cern ch1211 geneva 23 switzerland
+the year 1994 mark the begin of the cern lead beam programm a
+beam of 33 tev or 160 gev per nucleon lead ion from the sp now extend
+the cern relativist heavi ion programm start in the mid eighti to the
+heaviest natur occur nuclei a run with lead beam of 40 gev per nucleon
+in fall of 1999 complement the program toward lower energi seven larg experi particip in the lead beam program measur mani differ aspect
+of leadlead and leadgold collis event na44 na45cer na49 na50
+na52newmass wa97na57 and wa98 some of these experi use multipurpos detector to measur simultan and correl sever of the more
+abund observ other are dedic experi to detect rare signatur
+with high statist thi coordin effort use sever complement experi ha proven veri success the present document summar the most
+import result from thi program at the dawn of the rhic era soon the relativist heavi ion collid at bnl will allow to studi goldgold collis at 10 time
+higher collis energi
+physicist have long thought that a new state of matter could be reach if the
+short rang repuls forc between nucleon could be overcom and if squeez
+nucleon would merg into one anoth present theoret idea provid a more
+precis pictur for thi new state of matter it should be a quarkgluon plasma
+qgp in which quark and gluon the fundament constitu of matter are
+no longer confin within the dimens of the nucleon but free to move around
+over a volum in which a high enough temperatur andor densiti prevail thi
+plasma also exhibit the socal chiral symmetri which in normal nuclear matter
+is spontan broken result in effect quark mass which are much larger
+than the actual mass for the transit temperatur to thi new state lattic
+qcd calcul give valu between 140 and 180 mev correspond to an energi
+densiti in the neighborhood of 1 gevfm3 or seven time that of nuclear matter
+temperatur and energi densiti abov these valu exist in the earli univers
+dure the first few microsecond after the big bang
+it ha been expect that in high energi collis between heavi nuclei suffici high energi densiti could be reach such that thi new state of matter
+would be form quark and gluon would then freeli roam within the volum of
+the firebal creat by the collis the individu quark and gluon energi would
+1
+be typic of a system at veri high temperatur abov 200 mev even if the system should not have enough time to fulli thermal posit identif of the
+quarkgluon plasma state in relativist heavi ion collis is howev extrem
+difficult if creat the qgp state would have onli a veri transient exist
+due to color confin a wellknown properti of strong interact at low energi singl quark and gluon cannot escap from the collis they must alway
+combin to colorneutr hadron befor be abl to travel to the detector thi
+process is call hadron thu regardless of whether or not qgp is form
+in the initi stage the collis firebal later turn into a system of hadron in a
+headon leadlead collis at the sp about 2500 particl are creat na49 of
+which more than 999 are hadron evid for or against format of an initi
+state of deconfin quark and gluon at the sp thu must be extract from a
+care and quantit analysi of the observ final state
+a common assess of the collect data lead us to conclud that
+we now have compel evid that a new state of matter ha inde
+been creat at energi densiti which had never been reach over
+appreci volum in laboratori experi befor and which exceed
+by more than a factor 20 that of normal nuclear matter the new state
+of matter found in heavi ion collis at the sp featur mani of the
+characterist of the theoret predict quarkgluon plasma
+the evid for thi new state of matter is base on a multitud of differ
+observ mani hadron observ show a strong nonlinear depend on
+the number of nucleon which particip in the collis model base on hadron
+interact mechan have consist fail to simultan explain the wealth
+of accumul data on the other hand the data exhibit mani of the predict
+signatur for a quarkgluon plasma even if a full character of the initi
+collis stage is present not yet possibl the data provid strong evid that it
+consist of deconfin quark and gluon
+we emphas that the evid collect so far is indirect sinc it stem from
+the measur of particl which have undergon signific reinteract between the earli collis stage and their final observ still they retain enough
+memori of the initi quarkgluon state to provid evid for it format like
+the grin of the cheshir cat in alic in wonderland which remain even after the cat
+ha disappear it is expect that the present proof by circumstanti evid
+for the exist of a quarkgluon plasma in high energi heavi ion collis will
+be further substanti by more direct measur eg electromagnet signal
+which are emit directli from the quark in the qgp which will becom possibl
+at the much higher collis energi and firebal temperatur provid by rhic
+at brookhaven and later the lhc at cern
+in the follow the most import experiment find and their interpret are describ in more detail
+2
+hadron are strongli interact particl in nuclear collis after be first
+creat they undergo mani secondari interact befor escap from the collis
+firebal when they are final set free the firebal volum ha expand by about
+a factor 3050 thi inform can be extract from twoparticl correl between ident hadron by a method call boseeinstein interferometri na44
+na49 wa98 at thi point the rel abund and momentum distribut
+of the hadron still contain import memori of the dens earli collis stage
+which can be extract by a comprehens analysi of the hadron final state more
+than 20 differ hadron speci includ a few small antinuclei antideuteron
+antihelium have been measur by the seven experi na44 na45 na49
+na50 na52 wa97 wa98 a combin analysi of their momentum distribut
+and twoparticl correl show that at the point where they stop interact
+and freez out the firebal is in a state of tremend explos with expans
+veloc exceed half the speed of light and veri close to local thermal equilibrium at a temperatur of about 100120 mev thi characterist featur gave rise
+to the name littl bang the observ explos call for strong pressur in the
+earlier collis stage recent measur anisotropi in the angular distribut
+of the momenta perpendicular to the beam direct na49 na45 wa98 indic
+that the pressur wa built up quickli point to intens rescatt in the earli
+collis stage
+an earlier glimps of the expand system is provid by a measur of
+correl electronpositron pair also call dilepton na45 these data show
+that in sulphurgold and leadgold collis the expect peak from the rho
+vector meson a particl which can decay into dilepton even befor freezeout is
+complet smear out simultan na45 find in leadgold collis an excess
+of dilepton in the mass region between 250 and 700 mev by about a factor 3 abov
+expect from hadron decay scale from protonnucleon to leadgold collis
+theori explain thi by a broaden of the s spectral function result from
+scatter among pion and nucleon in a veri dens hadron firebal just below
+the critic energi densiti for quarkgluon plasma format the meson mix
+with it partner under chiral symmetri transform signal the onset of chiral
+symmetri restor as matter becom denser and denser
+the theoret analysi of the measur hadron abund na44 na45
+na49 na50 na52 wa97 wa98 show that they reflect a state of chemic
+equilibrium at a temperatur of about 170 mev thi point to an even earlier
+stage of the collis in fact such temperatur correspond to an energi densiti of about 1 gevfm3 are the highest allow one befor accord to lattic
+qcd hadron should dissolv into quark and gluon the observ are explain by assum that at thi temperatur the hadron were form by a statist hadron process from a preexist quarkgluon system theoret
+studi show that at cern energi subsequ interact among the hadron
+while caus pressur and drive the expans and cool of the firebal are
+veri ineffect in chang the abund ratio thi is whi after account for
+3
+the decay of unstabl reson the final measur hadron yield reflect rather
+accur the condit at the quarkhadron transit
+a particularli strike aspect of thi appar chemic equilibrium at the
+quarkhadron transit temperatur is the observ enhanc rel to protoninduc collis of hadron contain strang quark global when normal to the number of particip nucleon thi enhanc correspond to a
+factor 2 na49 but hadron contain more than one strang quark are enhanc
+much more strongli wa97 na49 na50 up to a factor 15 for the omega hyperon and it antiparticl wa97 leadlead collis are thu qualit differ from a superposit of independ nucleonnucleon collis that the rel
+enhanc is found to increas with the strang quark content of the produc
+hadron contradict predict from hadron rescatt model where secondari
+product of multistrang antibaryon is hinder by high mass threshold and
+low cross section sinc the hadron abund appear to be frozen in at the point of
+hadron format thi enhanc signal a new and faster strangenessproduc
+process befor or dure hadron involv intens rescatt among quark
+and gluon thi effect wa predict about 20 year ago as a quarkgluon plasma
+signatur result from a combin of larg gluon densiti and a small strang
+quark mass in thi color deconfin chiral symmetr state experiment it
+is found not onli in leadlead collis but even in central sulphurnucleu collis with target nuclei rang from sulphur to lead na35 wa85 wa94 thi
+is consist with estim of initi energi densiti abov the critic valu of 1
+gevfm3 even in those collis
+evid for the format of a transient quarkgluon phase without color confin is further provid by the observ suppress of the charmonium state
+j c and na50 these particl contain charm quark and antiquark c
+and c which are so heavi that they can onli be produc at the veri begin
+when the constitu of the collid nuclei still have their full energi as one vari
+the size of the collid nuclei and the central of the collis one find after subtract the expect absorpt effect from final state interact between the c
+c
+pair and the nucleon of the interpenetr nuclei a success of suppress pattern the most weakli bound state is suppress alreadi in sulphururanium
+collis na38 the intermedi c seem to disappear quit suddenli in semicentr leadlead collis and in the most central leadlead collis an addit
+reduct of the j yield indic that now also the strongli bound j ground
+state itself is significantli suppress na50 the observ of c suppress is
+indirect via it 3040 contribut to the measur j yield which is expect
+from scale protonproton measur charmonium suppress wa predict
+15 year ago as a consequ of color screen in a quarkgluon plasma which
+should keep the charm quarkantiquark pair from bind to each other accord to thi predict suppress the j requir temperatur which are
+about 30 abov the color deconfin temperatur or energi densiti of about
+3 gevfm3 thi agre with estim of the initi energi densiti reach in
+4
+central leadlead collis base on calorimetri or on a backextrapol from
+the freezeout stage to the timei befor expans start it wa tri to reproduc
+the data by assum that the charmonia are destroy sole by final state interact with surround hadron none of these attempt can account for the shape
+of the central depend of the observ suppress on the other hand the
+interpret of thi pattern in term of color screen by deconfin quark and
+gluon lead to the predict of a similar suppress pattern at rhic in much
+smaller nuclei thi predict will soon be test
+in spite of it mani facet the result pictur is simpl the two collid nuclei
+deposit energi into the reaction zone which materi in the form of quark and
+gluon which strongli interact with each other thi earli veri dens state energi
+densiti about 34 gevfm3 mean particl momenta correspond to t 240 mev
+suppress the format of charmonia enhanc strang and begin to drive the
+expans of the firebal subsequ the plasma cool down and becom more
+dilut at an energi densiti of 1 gevfm3 t 170 mev the quark and gluon
+hadron and the final hadron abund are fix at an energi densiti of order 50
+mevfm3 t 100120 mev the hadron stop interact and the firebal freez out
+at thi point it expand with more than half the light veloc
+thi doe not happen onli in a few special collis event but essenti
+in everi leadlead collis characterist observ like the averag transvers
+momentum of produc particl or the kaonpion ratio show onli the statist
+expect fluctuat in a thermal ensembl around averag valu which are
+the same in all collis na49 sinc the kaonpion ratio is essenti fix
+at the point of hadron thi indic the absenc of longrang correl
+like those expect in a fullydevelop thermodynam phase transit a better
+theoret understand of the phasetransit dynam might emerg from these
+observ the shortrang charact suggest similar with the transit
+found in hightc superconduct
+direct observ of the quarkgluon plasma may be possibl via electromagnet radiat emit by the quark dure the hot initi stage search for thi
+radiat were perform at the sp wa98 na45 na50 but are difficult due to
+high background from other sourc for sulphurgold collis wa80 and na45
+establish that not more than 5 of the observ photon are emit directli for
+leadlead collis wa98 have report indic for a signific direct photon
+contribut preliminari data from na45 are consist with thi find but so
+far not statist signific na50 ha seen an excess by about a factor 2 in
+the dimuon spectrum in the mass region between the and j vector meson
+the predict electromagnet radiat rate at the abov mention temperatur
+are margin for detect while under these condit it is a great experiment
+achiev to have obtain posit evid for a signal it connect with the
+predict thermal plasma radiat is not yet firmli establish
+thi is expect to chang at the higher collis energi provid by rhic and
+5
+lhc the much higher initi temperatur up to nearli 1000 mev for leadlead
+collis at the lhc have been predict and longer plasma lifetim should facilit the direct observ of the plasma radiat and lead to the product of
+addit heavi charm quark by gluongluon scatter in the qgp phase the
+much higher initi energi densiti which can be reach at rhic and lhc give us
+more time until the quark and gluon rehadron thu allow for a quantit
+character of the quarkgluon plasma and detail studi of it earli tharmal process and dynam evolut final the higher collis energi
+allow for the product of jet with larg transvers momenta whose lead quark
+can be use as hard penetr probe within the quarkgluon plasma at rhic
+a set of four larg detector with complementari goal and capabl ensur
+that all experiment aspect of ultrarelativist heavi ion collis are optim
+cover the abil of the collid to simultan acceler and collid nuclei of
+differ size and energi promis a complet understand of systemat trend
+as one proce from protonproton via protonnucleu to goldgold collis as in
+solid state physic where the knowledg of the basic interact lagrangian qed
+doe not permit to reliabl predict mani bulk properti and where the detail
+understand of the latter is usual driven by experi we expect that such
+a systemat experiment studi of strongli interact matter will eventu lead
+to a quantit understand of bulk qcd we are look forward to these
+farreach opportun provid by rhic and lhc
+key refer to the experiment data
+na44 collabor
+h beker et al mt depend of boson interferometri in heavi ion collis at
+the cern sp physic review letter 74 1995 33403343
+ig bearden et al collect expans in highenergi heavi ion collis physic review letter 78 1997 20802083
+ig bearden et al strang meson enhanc in pbpb collis physic
+letter b 471 1999 612
+na45cer collabor
+g agakichiev et al lowmass e e pair product in 158 a gev pbau collis at the cern sp it depend on multipl and transvers momentum
+physic letter b 422 1998 405412
+b lenkeit et al new result on lowmass lepton pair product in pbau collis at 158 gevc per nucleon nuclear physic a 654 1999 627c630c
+b lenkeit et al recent result from pbau collis at 158 gevc per nucleon
+obtain with the cere spectromet nuclear physic a 661 1999 23c32c
+na49 collabor
+t alber et al transvers energi product in 208 pbpb collis at 158 gev
+per nucleon physic review letter 75 1995 38143817
+6
+h appelshaus et al hadron expans dynam in central pbpb collis
+at 158 gev per nucleon european physic journal c 2 1998 661670
+f sikler et al hadron product in nuclear collis from the na49 experi
+at 158 gevc a nuclear physic a 661 1999 45c54c
+na50 collabor
+mc abreu et al anomal j suppress in pbpb interact at 158 gevc
+per nucleon physic letter b 410 1997 337343
+mc abreu et al observ of a threshold effect in the anomal j suppress physic letter b 450 1999 456466
+mc abreu et al evid for deconfin of quark and gluon from the j
+suppress pattern measur in pbpb collis at the cernsp cernep2000013 submit to physic letter b
+na52newmass collabor
+r klingenberg et al strangelet search and antinuclei product studi in pbpb
+collis nuclear physic a 610 1996 306c316c
+g ambrosini et al baryon and antibaryon product in pbpb collis at 158
+a gevc physic letter b 417 1998 202210
+g ambrosini et al impact paramet depend of k p p d and d product
+in fix target pb pb collis at 158 gev per nucleon new journal of physic
+1 1999 2212223
+wa97na57 collabor
+e andersen et al strang enhanc at midrapid in pbpb collis
+at 158 a gevc physic letter b 449 1999 401406
+f antinori et al product of strang and multistrang hadron in nucleusnucleu collis at the sp nuclear physic a 661 1999 130c139c
+f antinori et al transvers mass spectra of strang and multistrang particl
+in pbpb collis at 158 a gevc cernep2000001 submit to european
+physic journal c
+wa98 collabor
+r albrecht et al limit on the product of direct photon in 200 a gev 32 sau
+collis physic review letter 76 1996 35063509
+mm aggarw et al central depend of neutral pion product in 158
+a gev 208 pb208 pb collis physic review letter 81 1998 40874091 84
+2000 578579e
+mm aggarw et al freezeout paramet in central 158 a gev
+collis physic review letter 83 1999 926930
+7
+208
+pb208 pb

@@ -1,0 +1,338 @@
+arXiv:math-ph/0003040v1 27 Mar 2000
+
+i.e., the TF energy and density is obtained by minimizing E(ρ) with ρ ∈ L5/3 (R3 ) and ρ = N . The
+Euler-Lagrange equation, called the Thomas-Fermi
+equation, is
+
+THOMAS-FERMI THEORY – Sometimes
+called the ‘statistical theory’, it was invented by
+L. H. Thomas[TH] and E. Fermi[EF], shortly after
+Schr¨odinger invented his quantum-mechanical wave
+equation, in order to approximately describe the electron density, ρ(x), x ∈ R3 , and the ground state
+energy, E(N ) for a large atom or molecule with a
+large number, N , of electrons. Schr¨odinger’s equation, which would give the exact density and energy,
+cannot be easily handled when N is large.
+A starting point for the theory is the TF energy
+functional. For a molecule with K nuclei of charges
+Zi > 0 and locations Ri ∈ R3 (i = 1, ..., K), it is
+
+E(ρ)
+
+:=
++
+
+γρ(x)2/3 = [Φ(x) − µ]+ ,
+
+where [a]+ = max{0, a}, µ is some constant (Lagrange
+multiplier) and Φ is the TF potential:
+
+The following essential mathematical facts about the
+TF equation were established by E.H. Lieb and B.
+Simon [LS] (cf. the review article [EL]).
+1. There is a density ρTF
+N that minimizes E(ρ) if and
+K
+only if N ≤ Z := j=1 Zj . This ρTF
+N is unique
+and it satisfies the TF equation (2) for some µ ≥
+0. Every positive solution, ρ, of (2) is a minimizer
+of (1) for N = ρ. If N > Z then E TF (N ) =
+E TF (Z) and any minimizing sequence converges
+weakly in L5/3 (R3 ) to ρTF
+Z .
+
+K
+
+Zj |x − rj |−1 ,
+j=1
+
+U
+
+2. Φ(x) ≥ 0 for all x. (This need not be so for the
+real Schr¨odinger ρ.)
+
+Zi Zj |Ri − Rj |−1 ,
+
+=
+
+(3)
+
+R3
+
+3
+γ
+ρ(x)5/3 dx −
+V (x)ρ(x) dx
+5 R3
+R3
+ρ(x)ρ(y)
+1
+dxdy + U
+(1)
+2 R3 R3 |x − y|
+
+=
+
+|x − y|−1 ρ(y) dy.
+
+Φ(x) = V (x) −
+
+in suitable units. Here,
+V (x)
+
+(2)
+
+1≤i<j≤K
+
+3. µ = µ(N ) is a strictly monotonically decreasing
+function of N and µ(Z) = 0 (the neutral case).
+µ is the chemical potential, namely
+
+and γ = (3π 2 )2/3 . The constraint on ρ is ρ(x) ≥ 0
+and R3 ρ = N . The functional ρ → E(ρ) is convex.
+
+The justification for this functional is this:
+∂E TF (N )
+µ(N ) = −
+.
+• The first term is roughly the minimum quantum∂N
+mechanical kinetic energy of N electrons needed to
+produce an electron density ρ.
+E TF (N ) is a strictly convex, decreasing function
+• The second term is the attractive interaction of
+of N for N ≤ Z and E TF (N ) = E TF (Z) for
+the N electrons with the K nuclei, via the Coulomb
+N ≥ Z. If N < Z, ρTF
+N has compact support.
+potential V .
+• The third is approximately the electron-electron
+When N = Z, (2) becomes γρ2/3 = Φ. By applying
+repulsive energy.
+the Laplacian ∆ to both sides we obtain
+• U is the nuclear-nuclear repulsion and is an
+K
+important constant.
+−3/2
+3/2
+Zj δ(x − Rj ) ,
+−∆Φ(x) + 4πγ
+Φ(x)
+= 4π
+j=1
+The TF energy is defined to be
+E TF (N ) = inf{E(ρ) : ρ ∈ L5/3 ,
+
+which is the form in which the TF equation is usually
+stated (but it is valid only for N = Z).
+
+ρ = N, ρ ≥ 0} ,
+1
+
+Thus, a large atom (i.e., large Z) is smaller than a
+Z = 1 atom by a factor Z −1/3 in radius. Despite
+this seeming paradox, TF theory gives the correct
+electron density in a real atom — so far as the bulk
+of the electrons is concerned — as Z → ∞
+Another important fact is the large |x| asymptotics
+of ρTF
+atom for a neutral atom. As |x| → ∞,
+
+An important property of the solution is Teller’s
+theorem [ET] (proved rigorously in [LS]) which implies that the TF molecule is always unstable, i.e.,
+for each N ≤ Z there are K numbers Nj ∈ (0, Zj )
+with j Nj = N such that
+K
+
+E
+
+TF
+
+TF
+Eatom
+(Nj , Zj ) ,
+
+(N ) >
+
+(4)
+
+j=1
+
+3
+3
+−6
+ρTF
+,
+atom (x, N = Z, Z) ∼ γ (3/π) |x|
+
+TF
+Eatom
+(Nj , Zj )
+
+where
+is the TF energy with K =
+1, Z = Zj and N = Nj . The presence of U in (1)
+is crucial for this result. The inequality is strict. Not
+only does E TF decrease when the nuclei are pulled
+infinitely far apart (which is what (4) says) but any
+dilation of the nuclear coordinates (Rj → ℓRj , ℓ > 1)
+will decrease E TF in the neutral case (positivity of
+the pressure) [EL], [BL]. This theorem plays an important role in the stability of matter.
+An important question concerns the connection between E TF (N ) and E Q (N ), the ground state energy
+(= infimum of the spectrum) of the Schr¨odinger operator, H, it was meant to approximate.
+
+independent of Z. Again, this behavior agrees with
+quantum mechanics — on a length scale Z −1/3 , which
+is where the bulk of the electrons are to be found.
+In light of the limit theorem (5), Teller’s theorem
+can be understood as saying that as Z → ∞ the
+quantum mechanical binding energy of a molecule is
+of lower order in Z than the total ground state energy.
+Thus, Teller’s theorem is not a defect of TF theory
+(although it is sometimes interpreted that way) but
+an important statement about the true quantum mechanical situation.
+For finite Z one can show, using the Lieb-Thirring
+inequality
+[LT] and the Lieb-Oxford inequality [LO],
+N
+TF
+that
+E
+(N
+), with a modified γ, gives a lower bound
+−1
+H=−
+[∆i + V (xi )] +
+|xi − xj | + U ,
+Q
+to
+E
+(N
+).
+i=1
+1≤i<j≤N
+Several ‘improvements’ to Thomas-Fermi theory
+which acts on the antisymmetric functions have been proposed, but none have a fundamen∧N L2 (R3 ; C2 ) (i.e., functions of space and spin). It tal significance in the sense of being ‘exact’ in the
+used to be believed that E TF is asymptotically exact Z → ∞ limit. The von Weizs¨acker correction conas N → ∞ but this is not quite right; Z → ∞ is also sists in adding a term
+needed. Lieb and Simon [LS] proved that if we fix
+K and Zj /Z and we set Rj = Z −1/3 Rj0 , with fixed
+(const.)
+|∇ ρ(x)|2 dx
+Rj0 ∈ R3 , and set N = λZ, with 0 ≤ λ < 1 then
+3
+R
+lim
+
+E TF (λZ)/E Q (λZ) = 1 .
+
+(5) to E(ρ). This preserves the convexity of E(ρ) and adds
+(const.)Z 2 to E TF (N ) when Z is large. It also has
+In particular, a simple change of variables shows that the effect that the range of N for which there is a
+TF
+TF
+(λ, 1) and hence the true minimizing ρ is extend from [0,Z] to [0,Z + (const.)
+Eatom
+(λ, Z) = Z 7/3 Eatom
+energy of a large atom is asymptotically proportional K].
+to Z 7/3 . Likewise, there is a well-defined sense in
+Another correction, the Dirac exchange energy, is
+which the quantum mechanical density converges to to add
+ρTF
+N (cf. [LS]).
+ρ(x)4/3 dx
+−(const.)
+The TF density for an atom located at R = 0,
+Z→∞
+
+R3
+
+which is spherically symmetric, scales as
+ρTF
+atom (x; N = λZ, Z)
+Z 2 ρTF
+atom (
+
+to E(ρ). This spoils the convexity but not the range
+[0,Z] for which a minimizing ρ exists cf. [LS] for both
+of these corrections.
+
+=
+Z 1/3 x; N = λ, Z = 1) .
+2
+
+magnetic fields: I. lowest Landau band region’,
+Commun. Pure Appl. Math. 47 (1994), 513-591.
+
+When a uniform external magnetic field B is
+present, the operator −∆ in H is replaced by
+
+[LSY2] LIEB, E.H., SOLOVEJ, J.P., AND YNGVASON, J.: ‘Asymptotics of heavy atoms in high
+magnetic fields: II. semiclassical regions’, Comwith curl A = B and σ denoting the Pauli spin mamun. Math. Phys. 161 (1994), 77-124.
+trices. This leads to a modified TF theory that is
+asymptotically exact as Z → ∞, but the theory de[LSY3] LIEB, E.H., SOLOVEJ, J.P., AND YNGVApends on the manner in which B varies with Z. There
+SON, J.: ‘Ground states of large quantum dots in
+4/3
+are five distinct regimes and theories: B ≪ Z , B ∼
+magnetic fields’, Phys. Rev. B 51 (1995) 106464/3
+4/3
+3
+3
+3
+Z ,Z
+≪ B ≪ Z , B ∼ Z , ≫ Z . These theo10665.
+ries [LSY1], [LSY2] are relevant for neutron stars.
+Another class of TF theories with magnetic fields is [LSY4] LIEB, E.H., SOLOVEJ, J.P., AND YNGrelevant for electrons confined to two-dimensional geVASON, J.: ‘Asymptotics of natural and artiometries (quantum dots) [LSY3]. In this case there
+ficial atoms in strong magnetic fields, in W.
+are three regimes. A convenient review is [LSY4].
+THIRRING (ed.): The stability of matter: from
+Still another modification of TF theory is its exatoms to stars, selecta of E. H. Lieb, second editension from a theory of the ground states of atoms
+tion, Springer, 1997, pp. 145-167.
+and molecules (which corresponds to zero temperaJ.:
+‘Temperature
+dependent
+ture) to a theory of positive temperature states of [JM] MESSER,
+Thomas-Fermi
+theory’:
+Vol.
+147
+of
+Lecture
+large systems such as stars (cf. [JM], [WT]).
+Notes in Physics, Springer, 1981.
+|i∇ + A(x)|2 + σ · B(x) ,
+
+[ET] TELLER, E.,: ‘On the stability of molecules
+in Thomas-Fermi theory’, Rev. Mod. Phys. 34
+(1962), 627-631.
+[BL] BENGURIA, R. AND LIEB, E.H.: ‘The positivity of the pressure in Thomas-Fermi theory’, [LT] LIEB, E.H. AND THIRRING W.: ‘InequaliCommun. Math. Phys. 63 (1978), 193-218. Erties for the moments of the eigenvalues of the
+rata 71, (1980), 94.
+Schr¨odinger Hamiltonian and their relation to
+Sobolev inequalities’, in E. LIEB, B. SIMON,
+[EF] FERMI, E.: ‘Un metodo statistico per la deterA. WIGHTMAN (eds.): ‘Studies in Mathematminazione di alcune priorieta dell’atome’, Rend.
+ical Physics’, Princeton University Press, 1976,
+Accad. Naz. Lincei 6 (1927), 602-607.
+pp. 269-303.
+[EL] LIEB, E.H.: ‘Thomas-Fermi and related theo- [WT] THIRRING, W.: ‘A course in mathematical
+ries of atoms and molecules’, Rev. Mod. Phys.
+physics’: Vol. 4, Springer, 1983, pp. 209-277.
+53 (1981), 603-641. Errata 54 (1982), 311.
+[TH] THOMAS, L.H.: ‘The calculation of atomic
+[LO] LIEB, E.H. AND OXFORD, S.: ‘An improved
+fields’, Proc. Camb. Phil. Soc. 23 (1927), 542lower bound on the indirect coulomb energy’,
+548.
+Int. J. Quant. Chem. 19 (1981), 427-439.
+
+References
+
+[LS] LIEB, E.H. AND SIMON, B.: ‘The ThomasFermi theory of atoms, molecules and solids’,
+Adv. in Math 23 (1977), 22-116.
+
+Elliott H. Lieb
+Departments of Mathematics and Physics
+Princeton University
+
+[LSY1] LIEB, E.H., SOLOVEJ, J.P., AND YNGVASON, J.: ‘Asymptotics of heavy atoms in high
+
+c 1998 by Elliott H. Lieb
+3
+
+

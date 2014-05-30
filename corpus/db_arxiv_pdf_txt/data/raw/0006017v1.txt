@@ -1,0 +1,864 @@
+arXiv:math-ph/0006017v1 16 Jun 2000
+
+Constructive Field Theory and Applications:
+Perspectives and Open Problems
+
+V. Rivasseau
+Centre de Physique Th´eorique, CNRS UPR 14
+Ecole Polytechnique
+91128 Palaiseau Cedex, FRANCE
+
+Abstract
+In this paper we review many interesting open problems in mathematical
+physics which may be attacked with the help of tools from constructive field
+theory. They could give work for future mathematical physicists trained with
+the constructive methods well within the 21st century.
+
+I
+
+Introduction
+
+Constructive field theory started in the 70’s as a program to study the existence and properties of non-trivial particular interacting field theories, those
+with simple Lagrangians. Indeed it was not obvious at that time that such
+structures (fulfilling a suitable set of axioms such as the Wightman axioms
+[Wi]) existed at all. In three decades, not only models of field theory, first
+superrenormalizable, then just renormalizable, have been built and to some
+extent analyzed, but also the methods and techniques developed in constructive field theory have been applied to a wide variety of problems outside the
+initial scope of the program. Constructive techniques have been applied to
+equilibrium statistical mechanics, particularly to the study of critical phenomena, and to disordered systems. They have been introduced successfully
+in the analysis of many Fermions models, such as those of condensed matter. They have also inspired and renewed studies in classical mechanics, and
+in time dependent problems, such as non-equilibrium phenomena. It is no
+longer easy to draw the contours of this nebula. However the initial group of
+people who pioneered constructive field theory in the early 70’s, together with
+1
+
+a second and now a third generation of bright students, although working in
+very different domains nowadays, still share in common a certain number of
+features. They are usually faithful to long-term programs, maybe even stubborn! Beyond the adjective “constructive”, they share in common with the
+“constructive” trend in mathematics, advocated for instance by Kronecker,
+a taste for explicit solutions, together with explicit bounds, rathere than abstract existence theorems. In principle this means that when translated into
+algorithms, and implemented on computers, the “constructive” analysis of
+a physical model can lead to quantities computed with better precision and
+better controlled accuracy.
+In this review for the special issue of JMP of year 2000, we will be brief
+on the successes of the past and refer to the existing books1 . Instead we
+will focus on the open problems, conjectures and challenges that lie ahead
+in a subject that could now perhaps be called “Constructive Physics” rather
+than “Constructive Field Theory”, and which remains characterized by the
+rigorous treatment of models issued from physics by hard analytic methods.
+This paper does not contain any equation; its purpose is to entice the reader
+to choose among the challenging problems just mentioned, and then to go
+for the references, where the formalisms for the corresponding problems are
+more precisely defined. Finally we apologize for the fact that the list of open
+problems emphasized inevitably reflects our personal biases and interests.
+I thank D. Brydges and J. Imbrie for several discussions and for their
+hospitality at the University of Virginia (Charlottesville, USA) where a large
+part of this paper was written; I thank also C. Kopper and V. Mastropietro
+for several discussions.
+
+II
+
+Constructive Field Theory
+
+This is the historical core of the theory, and in spite of some spectacular
+successes, it remains largely a mine of open problems.
+We recall that using the Euclidean functional integral approach, models
+of non-trivial interacting field theories have been built over the past thirty
+years, which satisfy Osterwalder-Schrader’s axioms, hence in turn have a
+1
+
+For classical references on constructive field theory, see [Er][Si][GJ1]; for reviews on
+constructive renormalization, and the problem of asymtotic completeness, see respectively
+[R] and [Ia]; and for the most recent Proceedings on constructive field theory, see [CP].
+
+2
+
+continuation to Minkowski space that satisfy Wightman axioms [Wi][OS][Z].
+Such models are unfortunately yet restricted to space-time dimensions 2 or
+3 but they include now both the first wave of superrenormalizable models,
+such as P (φ)2 [GJS1][GJ1][Si], φ43 [GJ2][Fe][FO][MS] or the Yukawa model
+in 2 and 3 dimensions, as well as just renormalizable models such as the
+massive Gross-Neveu model in two dimensions, or GN2 [GK1,FMRS,DR1].
+Most of these models have been built in the weak coupling regime, using
+expansions such as the cluster and Mayer expansions; the harder models
+require multiscale versions of these expansions, reshuffled according to the
+renormalization group philosophy.
+In most cases the relationship of the non-perturbative construction to the
+perturbative one has been elucidated, the non-perturbative Green’s functions
+being the Borel sum of the corresponding perturbative expansion [EMS],
+[MS], [FMRS].
+We identify and discuss several main areas for future progress:
+
+II.1
+
+Asymptotic Freedom, Four dimensional Models
+
+By “Coleman’s theorem”, renormalizable asymptotically free field theories
+in dimension 4 must involve non-Abelian gauge fields. However these fields
+lead to dreadful infrared problems, e.g. confinement. Therefore no theory
+satisfying the flat infinite volume Wightman’s axioms in dimension 4 (the
+historic goal of constructive field theory) has been constructed yet. However in a finite volume Balaban succeeded in proving ultraviolet stability
+of the effective action for non-Abelian lattice gauge theories (after an arbitrarily large number of renormalization group steps) [Ba1]. We mention
+also a less advanced attempt to construct this ultraviolet limit in a particular non-standard gauge, using gauge symmetry breaking cutoffs [MRS]. This
+situation is not completely satisfying. We list among open problems:
+II.1.1
+
+Non-linear sigma model
+
+Construct the ultraviolet limit of the two dimensional O(N) non linear sigma
+model, which is a well behaved asymptotically free bosonic field theory (see
+e.g. [GK2] for construction of the hierarchical version of the model). It is
+quite irritating that we still do not have such a construction: many experts
+
+3
+
+in the field tried it without success. The infrared mass generation has been
+obtained recently (see [K][IT]).
+II.1.2
+
+Yang-Mills
+
+Construct the Yang Mills 4 correlation functions in a finite volume and a
+standard gauge (such as the Landau gauge). This presumably implies a
+front attack on the Gribov problem.
+Simplify and rewrite Balaban’s results on the lattice gauge theory. This
+is no small task since references in [Ba1] total hundreds of pages. . .
+II.1.3
+
+φ44
+
+Elucidate the nature of φ44 renormalized pertubation series, proving for instance that renormalons do exist (see [DFR]). Can one prove in full generality
+that its ultraviolet limit is trivial [A1][Fr][R]?
+II.1.4
+
+Supersymmetric and Topological Field theory
+
+Develop constructive versions of the now-popular supersymmetric field theories, and topological field theories: develop a constructive understanding of
+Montonen-Olive duality in N = 4 SUSY Yang-Mills4 , and of Seiberg-Witten
+duality for N = 2 SUSY Yang-Mills4 .
+Since these issues represent rather formidable challenges, it may be worth
+to attack first some two dimensional problems [W1]: polynomial (hence superrenormalizable) N = 2 supersymmetric field theories allow the construction of interesting quantities sensitive to topological change [W2]; then the
+more difficult Wess-Zumino-Witten model at large parameter k, and the
+Calabi-Yau models, are field theories in which the field takes value in a nontrivial manifold as target space.
+According to the point of view of Witten [W1], developing constructive
+theory of functional field theoretic integrals for these models could attract
+more mathematicians to field theory and may speed up the constructive
+programs in other more traditional areas too.
+
+4
+
+II.2
+
+Strong Coupling or Low Temperature Results
+
+In the regime of strong coupling or low temperature, there are less results.
+Contour expansions have been used to prove the existence of the φ42 phase
+transition [GJS2]. Many results have been obtained for models with an
+ultra-violet cutoff, i.e. models inspired by field theory but which are truly
+statistical mechanics models. For instance the phase transition and nonperturbative mass generation has been proved for the GN2 model with an
+ultraviolet cutoff [KMR], and continuous symmetry breaking (in dimensions
+greater or equal to 3) has been studied with renormalization group techniques [Ba2]. An interesting challenge would be to glue this non-trivial
+low-temperature analysis to the construction of the ultraviolet limit when
+it is possible. Since the weak-coupling expansion for the ultraviolet limit is
+somewhat in contradiction with the low-temperature expansion, this should
+be done first for models with an other auxiliary small parameter, such as
+N-vector models at large N, where the 1/N expansion can complete in the
+infrared the small coupling expansion in the ultraviolet.
+Therefore the first problems to attack in that direction could be:
+II.2.1
+
+Constructive Dimensional Transmutation
+
+Glue the ultraviolet analysis of the Gross-Neveu model [GK1][FMRS][DR1]
+with the non-perturbative mass generation of the same model [KMR] at large
+N, to obtain the first example of so called dimensional transmutation.
+One could also glue the ultraviolet construction of φ43 to the infrared
+continuous symmetry breaking analysis of [Ba2] to control the large Ncomponent φ43 model in the continuous symmetry broken phase without an
+ultraviolet cutoff.
+II.2.2
+
+Constructive conformal field theory
+
+Develop rigorous links between conformal field theory in dimension two and
+constructive field theory: along this line, the first significant result should
+be to prove that the phase transition of φ42 is in the same universality class
+(i.e. has the same critical exponents) than the Ising 2 phase transition. This
+could be later extended to P (φ2 ) models with more vacua and Potts models.
+More generally it should be nice to develop contact points between conformal field theory in two dimension [BPZ], the theory of integrable systems,
+5
+
+which relies more onto algebraic tools, and constructive theory which relies
+more on analysis. For instance there exist integrable lattice models of the
+ADE type which scale to conformal field theories of the [BPZ] classification
+at their critical point [Pa]; can we find a model which can be built with
+constructive methods for every such conformal theory?
+
+II.3
+
+Scattering, asymptotic completeness and
+Minkowski space
+
+Develop phase space analysis and non-perturbative methods for field theory
+that work directly in Minkowski space. This should lead to first proofs of
+asymptotic completeness (see [Ia]) for quantum field theory models.
+The easiest model in this direction may be the Gross-Neveu model since
+it is “purely perturbative”: although it is just-renormalizable, hence has
+a worse ultraviolet power counting than φ42 , it can be written purely as a
+reshuffled perturbation series [DR1], so that in order to build it directly in
+Minkowski space one does not need to develop a theory of functional integration in Minkowski space, based on stationary phase analysis; it should be
+enough to simply develop a renormalization group analysis around the mass
+shell hyperbola, which should resemble the renormalization group around the
+Fermi surface of section IV.
+
+II.4
+
+Other problems
+
+Complete in full detail the construction of the first non renormalizable field
+theory, the Gross-Neveu model in three dimensions and large number of components [dCFdVMS][dV]. Construct other models of this type, for instance
+the corresponding regime of the sine-Gordon model.
+Develop constructive field theory in curved space-time.
+Make better contact with the C ∗ -algebra approach (sometimes called axiomatic field theory). We refer to [BV] for a point of view on the renormalization group in algebraic field theory.
+
+6
+
+III
+
+Equilibrium Statistical Mechanics
+
+In this category we already mentioned the constructive study of continuous
+symmetry breaking [Ba2] and dimensional transmutation in subsection II.2.1.
+
+III.1
+
+Coulomb gases
+
+After proofs of Debye screening and Kosterlitz Thouless (KT) phase transition, this area (together with the study of the sine-Gordon and Thirring
+model) remains very active among constructivists. For background in this
+subject we refer to [BM]. Here is a list of open problems for which we thank
+D. Brydges:
+III.1.1
+Find a direct proof of convergence of the Mayer expansion for dipoles at
+low activity (which does not use a cluster expansion). The dipole-dipole
+interaction should be smoothed at short distance so that it is stable.
+III.1.2
+Convergence of the Mayer expansion at low activity for the KT phase of the
+2D Coulomb gas. This is harder than the previous problem, and involves
+presumably an effective analysis of that gas in terms of multipoles.
+III.1.3
+Prove exponential screening in the 2D Coulomb gas at not particularly small
+temperatures (down to the KT transition?).
+III.1.4
+Control the correlations at the KT transition.
+III.1.5
+Are the transitions between βKT and 1/2βKT in the D=2 Coulomb gas visible
+in any correlations?
+7
+
+III.2
+
+Disordered Systems
+
+The proof by J. Imbrie that the three dimensional Random Field Ising model
+develops symmetry breaking at zero temperature [Im] remains a beautiful
+example in which rigorous constructive methods have solved a controversial
+physical issue. Disordered systems are common in nature (conductors or
+semi-conductors with structural defects or doping, spin glasses, real glasses,
+granular or porous media, etc...). They pose particularly challenging mathematical problems, and we review here only a few of them.
+III.2.1
+
+Anderson model of an electron in a random potential
+
+Here after the main results of [FS2] and followers on the localization regime
+at high disorder or out of the continuous spectrum of the free Hamiltonian,
+we feel that the main area for open problems is the weak-coupling phase.
+It is expected that the Anderson 2 model And2 is always localized but with
+exponentially small localization length when the coupling constant tends to
+0. A proof of this statement through constructive field theory methods seems
+to require first the proof of decay of a single averaged Green’s function <
+G± > on a scale proportional to λ2 , the square of the coupling constant (this
+also controls the density of states of the system). A constructive analysis is
+under way, based on sector decomposition (as in [FMRT1]), a random matrix
+analogy, and Ward identities [MPR1]. Then the real study of localization
+involves the study of < G+ G− >, and requires a resummation of leading
+ladders plus a study of the associated “Goldstone mode”. Therefore the
+whole program is certainly as hard to complete as the BCS2 program for
+interacting fermions defined in section IV below.
+In dimension 3 one expects the small coupling phase to be diffusive, hence
+the system should undergo an “Anderson Mott” phase transition from insulating to conducting at a certain critical coupling. To prove this one should
+again first control the decay on a length scale of λ−2 of a single averaged
+Green’s function: this seems much harder than in dimension 2 essentially for
+the same reason that BCS3 is much harder than BCS2: the random potential
+viewed as a random matrix between angular directions is not of the usual
+type (i.e. is not independent identically distributed, see [MPR2]). After that
+difficulty has been solved, however, the task of controlling the square modulus of the Green’s function < G+ G− > should be easier than in dimension
+8
+
+2, since we expect diffusion rather than localization.
+III.2.2
+
+Constructive Study of Spin Glasses.
+
+This area is not familiar to me, but it contains certainly very challenging
+problems which do not often belong to the culture of main stream constructivists. To “solve” in a constructive sense models like the SherringtonKirckpatrik model is certainly an ambitious goal for the future. One should
+understand the correct notion of states for the model (in particular in connexion with the ultrametric structure conjectured by the physicists). It would
+be fascinating to also understand in a more precise and constructive sense
+the replica symmetry breaking tool of Parisi. Recently an explicit formula
+for the partition function at low temperature has been obtained [Kou].
+
+III.3
+
+Polymers
+
+Polymers and self-avoiding walks (SAW) are related to zero-component field
+theories and have been often studied by constructive theorists. Among the
+established results are the works [A2][BS][HS][L][IM] which explore the behavior of these systems in 4 dimensions or more. Scaling dimensions of SAW
+with specific interactions in two dimensions can also be studied rigorously
+through conformal invariance. See [D] for a recent result in this area using
+quantum gravity methods.
+Here is a list of open problems:
+III.3.1
+Polymers with partly attractive interactions: prove that they scale to Brownian motion in d > 4, at least if the interaction is stable and small. Existence
+of transitions when the interaction is stable but attractive?
+III.3.2
+d = 4 Self avoiding walk: find new proofs that the end-to-end distance has
+an exponent of 1/2 with log corrections.
+
+9
+
+III.3.3
+Find new proofs that random walk in random environment scales to Brownian
+motion in d > 2.
+III.3.4
+Prove anything at all about the expected end-to end distance of a self avoiding
+walk in d < 4. Is it greater than that of simple random walk? Does it have
+an exponent? If it does, is the exponent different from 1/2?
+III.3.5
+Prove that the scaling limit of True Self Avoiding Walk in d > 2 is Brownian
+Motion.
+
+III.4
+
+Interfaces, Wulff construction
+
+The constructive study of functional integrals associated to interacting surfaces (Polyakov’s functional integral) is much harder than the ordinary random walk. The importance of these functional integrals (for instance in
+string theory) nevertheless justify that constructivists should get interested
+into them.
+III.4.1
+
+Wetting
+
+The study of interfaces is more advanced for solid-on solid models than for
+real models such as the Ising model in the two phase regime.
+An important open problem is to construct the non-trivial renormalization group fixed point for a solid-on-solid model of an interface with two
+competing exponentials. This should be doable at least in the regime where
+this fixed point is closed to a Gaussian one, thanks to a small parameter in
+the rate of the two exponentials [BHL].
+An other important problem is to give rigorous meaning to the Wulff
+construction for such models [DM].
+There are also perturbative results on the renormalization surfaces interacting e.g. with a single impurity [DDG] which one would like to connect to
+a constructive analysis.
+10
+
+III.5
+
+Non Equilibrium Statistical Mechanics
+
+The study of situations far from equilibrium made a big conceptual progress
+with the introduction of the SRB steady states [SRB]. A typical recent rigorous result in this domain is the fluctuation theorem of Gallavotti and Cohen
+[GC] on entropy production. See [G1] for a discussion of this result.
+We remark that the quantum non-equilibrium statistical mechanics remain a widely open subject. An important long term goal for constructive
+theory should be, after many body systems are better understood and the
+main problems of the next section IV are solved, to develop the corresponding
+theory near equilibrium, namley to put on a firm mathematical microscopic
+analysis the Kubo formula and the Joule effect, and more generally transport
+theory.
+
+IV
+
+Condensed Matter
+
+In the constructive theory of condensed matter, the main event of the past
+was the adaptation of renormalization group techniques to models with a
+Fermi surface [BG][FT1-2][FMRT1-5].
+
+IV.1
+
+Interacting fermions in 2 dimensions
+
+- In two dimensions there is a well-defined strategy which should lead ultimately to the complete construction of the BCS2 model, namely the control
+of the BCS phase at zero temperature [FMRT5]. There exists already a control of the model until a scale where the coupling constant becomes small
+but of order unity, which proves that any transition temperature has to be
+exponentially small in the coupling [DR2-3]. Then the zone where the coupling constant is of order unity should be under control through some kind
+of 1/N expansion, where here N is no longer an ad hoc parameter but is
+the effective number of angular directions on the Fermi surface at the scale
+considered [FMRT2]; this expansion is not easy to write, and one may start
+with a simpler model which has only quartic interaction at the BCS scale,
+like in [KMR]; then one has to glue this analysis to the previous one, hence
+treat the corrections to the quartic effective action. Finally one has to control the distance scales much longer that the BCS scale, where the physics
+is governed by the infrared singularity of the Goldstone boson. Here the
+11
+
+key tool should be a multiscale renormalization group analysis that relies on
+Ward identities [FMRT4] like in [Ba2]. This is a long and difficult program
+(even by the constructive standards!).
+
+IV.2
+
+Interacting fermions in 3 dimensions (BCS3)
+
+In dimension 3 the BCS program is less advanced. Although perturbative
+power counting for the Fermi liquid is independent of dimension, and the
+Goldstone boson problem is easier in 3+1 than in 2+1 dimensions, the initial
+regime (the equivalent of [FMRT1]-[DR2]) is harder to control for BCS3
+because the momentum conservation laws are not as restrictive in 3 than
+in 2 dimensions: vertices can be non-planar, or “twisted” in 3 dimensions
+[FMRT3]. The only rigorous result so far is that the radius of convergence
+of perturbation theory in a slice around the Fermi surface is independent
+of the distance of that slice to the singularity [MR]). To find the analog of
+[FMRT1][DR2], namely that the sum of all “convergent contributions” to the
+theory is analytic in the coupling constant remains in our opinion a major
+challenge of constructive theory.
+
+IV.3
+
+Bose-Einstein condensation
+
+Develop the theory of Bose-Einstein condensation. This can be viewed as a
+piece of the previous BCS program where the bosons are Cooper pairs, i.e.
+bound states of Fermions, or as an independent program if the bosons are
+given from the start (see [Be]).
+
+IV.4
+
+Non-Spherical Surfaces; Hubbard Model
+
+IV.4.1
+Treat non-spherical surfaces. After the work on the renormalization of convex
+surfaces [FKLT][FST], treat surfaces with flat pieces and/or singular points:
+the regular Hubbard model at half-filling on a square lattice has both these
+features. Until now, this has to rely for at least some part on numerical
+rather than analytical tools.
+
+12
+
+IV.4.2
+Develop a rigorous non-perturbative mean-field theory for condensed matter,
+i.e. develop the non-perturbative version of the dynamical mean-field or
+d = ∞ limit of models such as the Hubbard model: this dynamical meanfield model is really a one dimensional theory with a self-consistent condition,
+but without an explicit action [GKKR].
+
+IV.5
+
+Quasi-periodic potentials, quasi-crystals
+
+Develop the mathematical theory of conduction in quasi-crystals.
+In one dimension it is believed that fermions develop a Charge Density
+Wave instability at small temperature with period equal to the inverse of
+the density. An interesting goal is to prove the generation of such CDW in a
+system of interacting Fermions. In this direction an expansion for interacting
+Fermions with an incommensurate external potential satisfying a proper diophantine conditions was shown to converge in [Ma]; this is a first bridge on
+the gap between solid state physics and classical mechanics (the KAM theorem below), since it amounts to solve a small denominator problem “with
+loops”. It would be nice to extend this bridge to other models, in particular
+in greater dimensions.
+
+V
+
+Classical Mechanics
+
+Again this is an area I do not fell too competent to review and my remarks
+will be brief. Contributions from constructive theorists have been devoted in
+particular to the area of the KAM theorem, where in particular the Italian
+school around G. Gallavotti has developed the renormalization group approach to the KAM theorem, but also to classical and quantum chaos, and
+to classical mechanics in random environment.
+
+V.1
+
+KAM theory
+
+Invariant tori in Hamiltonian systems analytically close to integrable systems
+can be written as perturbative Lindstedt series in the perturbation parameter. A direct proof of the convergence of such series, done by Eliasson [E],
+can be also obtained in the quantum field theory language, using multiscale
+13
+
+analysis as in the renormalization group, and cancellations [G2]. (These
+cancellations can be interpreted as Ward identities related to translation invariance [BGK1]).
+An interesting open question is what happens to Lindstedt series in the
+non-analytic case. Moser, by using Nash theorem, proved that KAM tori
+exist also in this case, with suitable conditions, but in general they are not
+analytic. In [BGGM] analyticity was nevertheless proved for a class of nonanalytic pertubations by direct analysis of new cancellations in the Lindstedt
+series. In more general cases where the summability of Lindstedt series may
+fail it is an open question to know if some extended notion of summability,
+like Borel summability (quite frequent in quantum field theory), may still
+hold.
+Another set of problems concern Arnold’s diffusion. In a priori unstable
+systems, a key quantity is the splitting which is the determinant of a certain
+matrix whose elements are series whose first order is exponentially small,
+but the others are not. However the determinant itself is exponentially small
+due to cancellations. Using Dyson equation for classical mechanics, Arnold
+diffusion can be proved in certain a priori stable systems [GGM], but the
+same question is open in general a priori stable systems such as those arising
+from celestial mechanics.
+
+V.2
+
+Classical Chaos, Turbulence
+
+Of course the solution of Navier-Stokes equation and their scaling laws remain a challenge, pretty much as it was at the beginning of the century.
+In the fully developed turbulence, experimentally observed deviations from
+Kolmogorov’s scaling of the velocity correlators signal a non-Gaussian character of the velocity distributions at short distances, called intermittency.
+Such intermittency, or deviations from Kolmogorov’s scaling, has been more
+or less understood in the particular case of the passive advection of a scalar
+quantity (temperature, or density of a pollutant) by a random velocity field
+[GK3][BGK2]. However an explanation of the origin of intermittency in the
+general case of developed turbulence remains one of the main open problems
+of theoretical hydrodynamics.
+
+14
+
+V.3
+
+Quantum Chaos
+
+Here let us mention the results [CRR] on the Gutzwiller trace formula, that
+one would like to extend to longer time evolution. A main challenge is to put
+the heuristic connection between quantum chaos and the spectra of random
+matrices on a mathematically rigorous footing.
+
+V.4
+
+Partial Differential Equations and Renormalization
+
+I would like to cite the work of Bricmont and Kupiainen on random walks in
+a random environment [BK1], and more generally the application of renormalization group methods to partial differential equations [BK2].
+The major open problems listed in [BK2] are the study of stability of
+fronts in dissipative equations; extension of renormalization group methods to
+hyperbolic equations; the study of invariant measures for dynamical systems
+called Coupled Map Lattices [Ka], and of nonequilibrium “phase transitions”
+in which these invariant measures change as the coupling is varied.
+
+VI
+
+Improving Constructive Techniques
+
+In this section we would like to gather some list of mathematical techniques
+which are quite general, so that they ought to be useful not only for a single
+problem but for many models in different branches of physics.
+
+VI.1
+
+Renormalization Group
+
+A central problem in constructive theory is to simplify and further rationalize the various techniques which allow to perform rigorous Renormalization
+Group computations. The inductive version of the renormalization group
+itself has been better formalized by Brydges and coworkers [Br]; the multiscale phase space expansions which are some kind of expanded solution of
+the renormalization group induction have been also recently formalized more
+explicitly [AR], and also recast using wavelets [Bat]. These efforts should
+be continued if we want the rigorous approach to become part of the regular cursus of field theory. An open problem which could be mentioned along
+15
+
+these lines is to find an inductive rigorous constructive renormalization which
+would be as simple as Polchinski’s induction for perturbative renormalization
+[P]: even for Fermions, this remains an open problem [S2][DR1].
+
+VI.2
+
+Gluing together various expansions
+
+Techniques to glue together different expansions or different regimes of the
+renormalization group (e.g small coupling/1/N coupling) should be developed. This is a condition to treat many interesting models with “nonperturbative” phases. Somewhat like the geometric description of non-trivial
+manifolds requires to glue several local charts together, the construction of
+non-trivial models with non-perturbative effects requires to develop some
+experience in such gluing operations (see II.2.1).
+In a similar vein it is interesting to combine together several expansion
+techniques which are usually treated separately. For instance one can study
+the Many Body Models of section IV with the additional complication of
+random or quasi-periodic environment (see [Ma] for a one-dimensional example).
+
+VI.3
+
+Symmetries and Ward identities
+
+Many difficult constructive problems involve symmetries which are crucial to
+their understanding (gauge symmetries, supersymmetry, replica symmetry).
+One would like to have more general methods to quotient out or break these
+symmetries, and develop a more general theory of non-perturbative Ward
+identities.
+
+VI.4
+
+Non-integer dimensions
+
+Non-integer dimensions is an interesting perturbative tool (e.g. for the renormalization of non-Abelian gauge fields or for the ǫ expansion in statistical mechanics) that has no constructive analog. One should understand
+why and build the non-perturbative theory of functional integration in noninteger dimensions. This is a long-term difficult goal, perhaps related to
+non-commutative geometry, where ordinary space is lost and the ordinary
+algebra of functions is replaced by a non-commutative algebra.
+
+16
+
+VI.5
+
+Random Matrices
+
+Random matrices is a powerful tool for a wide range of physical problems,
+from nuclear physics to quantum chaos, localization, quantized gravity and
+M-theory. The classical theory is the theory of independent identically distributed random matrices, and relates them to orthogonal polynomials and
+integrable PDE’s [M]. An important progress may come from the understanding of random matrices with non-independent coefficients. In the point
+of view of Voiculescu [V], the Wigner law for independent identically distributed matrices model is the non-commutative analog of Gaussian integration. Constructivists, just as they developed the theory of non-Gaussian
+functional integration, may therefore try to develop a more general theory of
+random matrices, including in particular those with constraints of geometric
+origin (see eg [MPR2] for an example). This could presumably be very useful for the physics in spatial dimensions higher than 2 (condensed matter,
+scattering, phase transitions).
+
+VII
+
+String Theory and Conclusion
+
+When the constructive field theory program began in the 60’s, field theory
+was the prominent candidate for a fundamental theory of nature at the microscopic level (although it did not include quantization of gravity). Today
+the main stream of theoretical physics holds the view that field theory is only
+an effective theory and that superstring or M-theory is the best candidate
+for a fundamental global theory of nature, a “theory of everything”. Even if
+on a philosophical level the very existence of such a final theory is dubious,
+it is certainly a fascinating dream. So in order to remain faithful to its initial
+quest, one could ask whether constructivists should not join the efforts to
+find and build this TOE?
+I would be tempted to adopt a rather cautious answer to this question,
+namely “Perhaps, but not yet”. There are three reasons for this cautious
+attitude.
+- String theory or M-theory are mathematically very difficult: even the
+perturbative theory of superstring amplitudes contain enormous difficulties:
+a proof of finiteness e.g. of the 10-dimensional E8 × E8 heterotic superstring
+amplitudes is a very difficult program in itself.
+17
+
+- The theory is in such a state of rapid evolution that it is not clear what
+should really be built. In the recent years, the different models had a rather
+short life time before they were absorbed in a more general formalism. Under
+such circumstances, to launch a major constructive effort could be premature,
+since the model might be outdated well before the rigorous construction is
+completed.
+- The theory has not yet received direct experimental confirmation. We
+can at best hope for indirect hints, which may come in the next decades
+(spatial experiments such as those probing the background cosmic radiation,
+large cosmic rays detectors, new accelerators such as the LHC, etc. . . may
+select along various cosmological or high energy scenarii, and give indirect
+support to such or such models).
+For these three reasons I do not think that time is ripe to launch today
+“constructive string theory”, as “constructive field theory” was launched by
+A. Wightman and followers in the 60’s.
+To soften slightly these remarks, let me add that of course I consider
+string theory extremely important for the future of mathematical physics.
+Indeed string theory has not only been a very successful motivation to attract some of the best minds to theoretical physics and to lead them to
+brilliant insights; it has also opened up a new interface with mathematicians,
+mostly centered around geometry (differential, symplectic and algebraic geometry, mirror symmetry, quantum cohomology, knot theory, ...). However
+this rapidly growing interface is very different from the one opened in the
+past by constructive theory. Algebra and geometry dominate over analysis,
+and there are no longer precise programs centered around axioms; but various
+pieces of the theory and various cross-consistent results emerge progressively
+from this interaction between mathematicians and theoretical physicists.
+In conclusion, although at the present stage I would still rather personally
+favor the applications of constructive field theory methods to well established
+physics, I would be happy, when some of the dust has settled, to see new
+generations of mathematical physicists attack in the constructive spirit the
+problem of building rigorously the high energy models that will emerge and
+survive in the coming century.
+
+References
+[A1] M. Aizenman, Geometric Analysis of φ4 fields and Ising models, Comm.
+Math. Phys. 86, 1 (1982).
+
+18
+
+[A2] M. Aizenman, Comm. Math. Phys. 97, 91 (1985).
+[AR] A. Abdesselam and V. Rivasseau, An Explicit Large Versus Small Field Multiscale Cluster Expansion, Rev. Math. Phys. Vol. 9 No 2, 123 (1997).
+[Ba1] T. Balaban, Comm. Math. Phys. 95, 17 and 96, 223 (1984); 98, 17, 99, 75,
+99, 389 and 102, 277 (1985); 109, 249 (1987); 116, 1 and 119, 243 (1988); 122,
+175 and 122, 355 (1989).
+[Ba2] T. Balaban, Comm. Math. Phys. 167 103 (1995); 175, 607 (1996); 182, 33
+(1996); 182, 675 (1997); 196, 485 198, 1 and 198, 493 (1998).
+[Bat] G. Battle, Wavelets and Renormalization, World Scientific, 1998.
+[Be] G. Benfatto, Renormalization Group approach to Zero Temperature Bose Condensation, in [CP].
+[BF] D. Brydges and P. Federbush, Debye Screening, Comm. Math. Phys. 73,
+197 (1980).
+[BG] G. Benfatto and G. Gallavotti, Perturbation theory of the Fermi surface in a
+quantum liquid. A general quasi particle formalism and one dimensional systems,
+Journ. Stat. Phys. 59 (1990) 541.
+[BGGM] F. Bonetto, G. Gallavotti, G. Gentile and V. Mastropietro, Quasi linear
+flows on tori and regularity of their linearization, Comm. Math. Phys. 192, 707
+(1998).
+[BGK1] J. Bricmont, K. Gawedzki and A. Kupiainen, Field Theory and KAM tori,
+Comm. Math. Phys. 201, 699 (1999).
+[BGK2] D. Bernard, K. Gawedzki and A. Kupiainen, Anomalous Scaling in the
+N-point functions of a Passive Scalar, Phys. Rev. E54, 2564 (1996).
+[BK1] J. Bricmont and A. Kupiainen, Random walks in asymmetric random environments, Comm. Math. Phys. 142, 345 (1991).
+[BK2] J. Bricmont and A. Kupiainen, Renormalizing Partial Differential Equations, in [CP].
+[BHL] E. Br´ezin, B. I. Halperin and S. Leibler, Phys. Rev. Lett. 50, 1387 (1983).
+[BM] D. Brydges and Ph. Martin, Coulomb Systems at low density, to appear in
+Journ. Stat. Phys.
+[BPZ] Belavin, Polyakov and Zamolodchikov, Nucl. Phys. B241, 333 (1984)
+[Br] D. Brydges, Weak perturbations of the Massless Gaussian Measure, in [CP].
+[BS] D. Brydges and T. Spencer, Comm. Math. Phys. 97, 125 (1985).
+[BV] D. Buchholz and R. Verch, Rev. Math. Phys. 7, 1195 (1995)
+
+19
+
+[CP] Constructive Physics, ed by V. Rivasseau, Lecture Notes in Physics 446,
+Springer Verlag, 1995.
+[CRR] M. Combescure, J. Ralston and D. Robert, A proof of the Gutzwiller semiclassical trace formula using coherent states decomposition, Comm. Math. Phys.
+202, 463 (1999)
+[D] B. Duplantier, Random Walks, Polymers, Percolation and Quantum Gravity
+in Two Dimensions, Physica A 263, 452 (1999).
+[dCFdVMS] de Calan, C., Faria da Veiga, P.A., Magnen, J., S´en´eor, R.: Constructing the Three Dimensional Gross-Neveu Model with a Large Number of Flavor
+Components, Phys. Rev. Lett. 66, 3233-3236 (1991).
+[DDG] F. David, B. Duplantier and E. Guitter, Renormalization Theory for the
+Self-Avoiding Polymerized Membranes, cond-mat/9702136.
+[DFR] F. David, J. Feldman and V. Rivasseau On the large order behavior of φ44 ,
+Comm. Math. Phys. 116, 215 (1988).
+[DM] F. Dunlop and J. Magnen, A Wulff Shape from Constructive Field Theory,
+in Mathematical Results in Statistical Mechanics, World Scientific, 1998.
+[DR1] M. Disertori and V. Rivasseau, Continuous Constructive Fermionic Renormalization, hep-th/9802145, to appear in Annales Henri Poincar´e.
+[DR2] M. Disertori and V. Rivasseau, Interacting Fermi liquid in two dimensions
+at finite temperature, Part I: Convergent Attributions, cond-mat/9907130.
+[DR3] M. Disertori and V. Rivasseau, Interacting Fermi liquid in two dimensions
+at finite temperature, Part II: Renormalization, cond-mat/9907131.
+[dV] P. Faria da Veiga, Construction de Mod`eles Non Perturbativement Renormalisables en Th´eorie Quantique des Champs, Th`ese, Universit´e de Paris XI, 1992;
+[E] L.H. Eliasson, Absolutely convergent series expansions for quasi-periodic motions, Math. Phys. Elec. Journal, 2, 1996.
+[EMS] J.P. Eckmann, J. Magnen and R. S´en´eor, Decay properties and Borel summability for the Schwinger functions in P (φ)2 theories, Comm. Math. Phys. 39, 251
+(1975).
+[Er] Constructive Quantum field theory, Proceedings of the 1973 Erice Summer
+School, ed. by G. Velo and A. Wightman, Lecture Notes in Physics, Vol. 25,
+Springer 1973.
+[Fe] J. Feldman, The λφ43 field theory in a finite volume, Comm. Math. Phys. 37,
+93 (1974).
+[Fr] J. Fr¨
+ohlich, On the triviality of λφ4d theories and the approach to the critical
+point in d ≥ 4 dimensions, Nucl. Phys. B200 (FS4), 281 (1982).
+
+20
+
+[FKLT] J. Feldman, H. Kn¨
+orrer, D. Lehmann and E. Trubowitz, Fermi Liquids in
+Two Space Time Dimensions, in [CP].
+[FMRS1] J. Feldman, J. Magnen, V. Rivasseau and R. S´en´eor, A renormalizable
+field theory: the massive Gross-Neveu model in two dimensions, Comm. Math.
+Phys. 103, 67 (1986).
+[FMRT1] J. Feldman, J. Magnen, V. Rivasseau and E. Trubowitz, An infinite
+Volume Expansion for Many Fermion Green’s Functions, Helv. Phys. Acta 65
+(1992) 679.
+[FMRT2] J. Feldman, J. Magnen, V. Rivasseau and E. Trubowitz, An Intrinsic
+1/N Expansion for Many Fermion System, Europhys. Letters 24, 437 (1993).
+[FMRT3] J. Feldman, J. Magnen, V. Rivasseau and E. Trubowitz, Two dimensional Many Fermion Systems as Vector Models, Europhys. Letters 24, 521 (1993).
+[FMRT4] J. Feldman, J. Magnen, V. Rivasseau and E. Trubowitz, Ward Identities and a Perturbative Analysis of a U(1) Goldstone Boson in a Many Fermion
+System, Helv. Phys. Acta 66, 498 (1993).
+[FMRT5] J. Feldman, J. Magnen, V. Rivasseau and E. Trubowitz, A Rigorous
+Analysis of the Superconducting Phase of an Electron-Phonon System, Proceedings
+de l’Ecole des Houches 1994 (F. David, P. Ginsparg eds.
+[FO] J. Feldman and K. Osterwalder, The Wightman axioms and the mass gap for
+weakly coupled φ43 quantum field theories, Ann. Phys. 97, 80 (1976).
+[FS1] J. Fr¨
+ohlich and T. Spencer, The Kosterlitz-Thouless Transition in TwoDimensional Abelian Spin Systems and the Coulomb Gas, Comm. Math. Phys.
+81, 527 (1981).
+[FS2] J. Fr¨
+ohlich and T. Spencer, Absence of diffusion in the Anderson tight binding
+model for large disorder or low energy, Comm. Math. Phys. 88, 151 (1983).
+[FST] J. Feldman, M. Salmhofer and E. Trubowitz, Perturbation Theory around
+Non-nested Fermi Surfaces II. Regularity of the Moving Fermi Surface, RPA Contributions, Comm. Pure. Appl. Math. 51 (1998) 1133; Regularity of the Moving
+Fermi Surface, The Full Selfenergy, to appear in Comm. Pure. Appl. Math.
+[FT1] J. Feldman and E. Trubowitz, Perturbation theory for Many Fermion Systems, Helv. Phys. Acta 63 (1991) 156.
+[FT2] J. Feldman and E. Trubowitz, The flow of an Electron-Phonon System to
+the Superconducting State, Helv. Phys. Acta 64 (1991) 213.
+[G1] G. Gallavotti, A local Fluctuation Theorem, Physica A 263, 39 (1999).
+[G2] G. Gallavotti, Twistless KAM tori, quasi flat homoclinic intersections, and
+other cancellations in the perturbation series of certain completely integrable Hamil-
+
+21
+
+tonian systems. A review, Reviews on Mathematical Physics 6, 343 (1994).
+[GC] G. Gallavotti and E.G.D. Cohen, Dynamical ensembles in nonequilibrium
+statistical mechanics, Phys. Rev. Lett. 74, 2694 (1995); Dynamical ensembles in
+stationary states, Journ. Stat. Phys. 80, 931 (1995).
+[GGM] G. Gallavotti, G. Gentile and V. Mastropietro, Hamilton-Jacobi equation
+and existence of heteroclinic chains in three time scales systems (to appear on
+Nonlinearity).
+[GJ1] J. Glimm and A. Jaffe, “Quantum Physics. A functional integral point of
+view”, Mc Graw and Hill, New York, 1981
+[GJ2] J. Glimm and A. Jaffe, Positivity of the φ43 Hamiltonian, Fortschr. Phys.
+21, 327 (1973).
+[GJS1] J. Glimm, A. Jaffe and T. Spencer, The Wightman Axioms and Particle
+Structure in the P (φ)2 Quantum Field Model, Ann. Math. 100, 585 (1974).
+[GJS2] J. Glimm, A. Jaffe and T. Spencer, Phase transitions for φ42 Quantum
+Fields, Comm. Math. Phys. 45, 203 (1975).
+[GK1] K. Gawedzki and A. Kupiainen, Gross-Neveu model through convergent
+perturbation expansions, Comm. Math. Phys. 102, 1 (1985).
+[GK2] K. Gawedzki and A. Kupiainen, Comtinuum limit of the hierarchical O(N )
+nonlinear σ model, Comm. Math. Phys. 106, 533 (1986).
+[GK3] K. Gawedzki and A. Kupiainen, Anomalous Scaling of the Passive Scalar,
+Phys. Rev. Lett. 75, 3834 (1995).
+[GKKR] A. Georges, G. Kotliar, W. Krauth and M. Rozenberg, The Local Impurity
+Self-Consistent Approximation to Strongly Correlated Fermion Systems and the
+Limit of Infinite Dimensions, Rev. Mod. Physics, 68, 13 (1996).
+[HS] T. Hara and G. Slade, Comm. Math. Phys. 147, 101 (1992).
+[Ia] D. Iagolnitzer, Scattering in Quantum Field Theories, Princeton University
+Press, 1992.
+[Im] J. Imbrie, The Ground State of the Three Dimensional Random Field Ising
+Model, Comm. Math. Phys. 98, 145 (1985).
+[IM] D. Iagolnitzer and J. Magnen, Polymers in a Weak Random Potential in
+Dimension 4: Rigorous Renormalization Group Analysis, Comm. Math. Phys.
+162, 85 (1994).
+[IT] K.R. Ito and H. Tamura, N -dependence of upper bounds of critical temperatures of 2d O(N) spin models, Comm. Math. Phys. 202, 127 (1999).
+[K] C. Kopper, Mass Generation in the large N non-linear sigma Model, Comm.
+Math. Phys. 202, 89 (1999).
+
+22
+
+[Ka] K. Kaneko, Theory and Applications of Coupled Map Lattices, Wiley, (1993).
+[KMR] C. Kopper, J. Magnen and V. Rivasseau, Mass Generation in the Large N
+Gross-Neveu Model, Comm. Math. Phys. 169, 121 (1995)
+[Kou] F. Koukiou, Large deviations for the mean behaviour of the SherringtonKirkpatrick spin glass model, to appear in Comm. Math. Phys. (1999).
+[M] M. L. Mehta, Random Matrices and the Statistical Theory of Energy Levels,
+Academic Press 1967.
+[Ma] V. Mastropietro, Small Denominators and Anomalous Behaviour in the Incommensurate Hubbard-Holstein Model, Comm. Math. Phys. 201, 81 (1999).
+[MPR1] J. Magnen, G. Poirot and V. Rivasseau, Ward type Identities for the 2d
+Anderson Model at weak Disorder, Journ. Stat. Phys. 93, 331 (1998)
+[MPR2] J. Magnen, G. Poirot and V. Rivasseau, The Anderson Model as a Matrix
+Model, Nucl. Phys. B (Proc. Suppl.) 58, 149 (1997).
+[MR] J. Magnen and V. Rivasseau, A Single Scale Infinite Volume Expansion for
+Three Dimensional Many Fermion Green’s Functions, Math. Phys. Electronic
+Journal, 1, 1995.
+[MS] J. Magnen and R. S´en´eor, Phase space cell expansion and Borel summability
+for the Euclidean φ43 theory, Comm Math. Phys. 56, 237 (1977).
+[MRS] J. Magnen, V. Rivasseau and R. S´en´eor, Construction of Y M4 with an
+infrared cutoff, Commun. Math. Phys. 155, 325 (1993).
+[P] J. Polchinski, Nucl Phys B 231, 269 (1984)
+[Pa] V. Pasquier, Two dimensional critical systems labelled by Dynkin diagrams,
+Nucl. Phys. B285, [FS19] 162 (1986)
+[OS] K. Osterwalder and R. Schrader, Axioms for Euclidean Green’s functions,
+Comm. Math. Phys. 31, 83 (1973).
+[R] V. Rivasseau, From perturbative to constructive renormalization, Princeton
+University Press, 1991.
+[Si] B. Simon, The P (φ)2 (Euclidean) Quantum field theory, Princeton University
+Press, 1974.
+[S1] M. Salmhofer, Improved Power Counting and Fermi Surface Renormalization,
+Rev. Math. Phys. 10, 553 (1998).
+[S2] M. Salmhofer, Continuous renormalization for Fermions and Fermi liquid
+theory, Commun. Math. Phys.194, 249 (1998).
+[SRB] Y. Sinai, Gibbsian measures in ergodic theory, Uspekhi Mat. Nauk 27 no 4,
+21 (1972); R. Bowen and D. Ruelle, The ergodic theory of Axiom A flows, Invent.
+
+23
+
+Math. 29, 181 (1975); D. Ruelle, A measure associated with Axiom A attractors,
+Am. J. Math. 98, 619 (1976).
+[V] D. Voiculescu, Limit Laws for random Matrices and Free Products, Invent.
+Math. 104, 201 (1991).
+[W1] E. Witten, Some Questions for Constructive Field Theorists, in [CP].
+[W2] E. Witten, Phases of N = 2 Models in two Dimensions, Nucl. Phys. B403,
+159, (1993)
+[Wi] A. Wightman, Quantum field theory in terms of vacuum expectation values,
+Phys. Rev. 101, 860 (1956)
+[Z] Y. Zinoviev, Equivalence of Euclidean and Wightman Field Theories, in [CP].
+
+24
+
+

@@ -1,0 +1,137 @@
+arXiv:math/0008078v2 [math.AP] 22 Aug 2000
+
+A Lax Pair for the 2D Euler Equation
+
+Yanguang (Charles) Li
+
+∗
+
+Department of Mathematics,
+University of Missouri
+Columbia, MO 65211
+E-mail: cli@math.missouri.edu
+February 1, 2008
+
+∗
+
+This work is supported by the Guggenheim Fellowship.
+
+1
+
+Abstract
+A Lax pair for the 2D Euler equation is found.
+PACS Codes: 47, 02.
+MSC numbers: 35, 51.
+Keywords: Lax Pair, Euler Equation.
+
+1.
+
+A Lax Pair for the 2D Euler Equation
+
+This is to report that a Lax pair for the 2D Euler equation is found. We write the 2D Euler
+equation in the vorticity form,
+∂Ω
++ {Ψ, Ω} = 0 ,
+(1.1)
+∂t
+where Ω is the vorticity, Ψ is the stream function, and the bracket { } is defined as
+{f, g} = (∂x f )(∂y g) − (∂y f )(∂x g) .
+Let us denote the x-directional and the y-directional velocities by u and v respectively. Then
+u=−
+
+∂Ψ
+∂Ψ
+∂v ∂u
+, v=
+, Ω=
+−
+, ∆Ψ = Ω .
+∂y
+∂x
+∂x ∂y
+
+The Lax pair is given as
+Lϕ = λϕ ,
+∂t ϕ + Aϕ = 0 ,
+
+(1.2)
+
+where
+Lϕ = {Ω, ϕ} ,
+
+Aϕ = {Ψ, ϕ} ,
+
+and λ is a complex constant, and ϕ is a complex-valued function. The compatibility condition
+of the Lax pair (1.2) gives the 2D Euler equation (1.1), i.e.
+∂t L = [L, A] ,
+where [L, A] = LA − AL, gives the Lax representation of the 2D Euler equation (1.1).
+Remark 1.1 With the recent development on chaos in partial differential equations [1] [2]
+[3], I am interested in building a dynamical system theory for 2D Euler equation under periodic boundary condition [4] [5]. In particular, I am investigating the existence v.s. nonexistence of homoclinic structure. For such studies, it will be fundamentally important to find
+a Lax pair (if it exists) for the 2D Euler equation. Then I started with Vladimir Zakharov’s
+paper [6]. Zakharov proposed the Lax pair
+λD1 ϕ + {Ω, ϕ} = 0 ,
+∂t ϕ + λD2 ϕ + {S, ϕ} = 0 ,
+
+2
+
+where
+D1 = α
+
+∂
+∂
++β
+,
+∂x
+∂y
+
+D2 = γ
+
+∂
+∂
++δ
+,
+∂x
+∂y
+
+α, β, γ, and δ are real constants, λ is a complex constant, S is a real-valued function, and ϕ
+is a complex-valued function. The compatibility condition of this Lax pair gives the following
+equation instead of the 2D Euler equation,
+
+
+
+
+
+
+∂Ω
+∂t
+
++ {S, Ω} = 0 ,
+
+D1 S = D2 Ω .
+
+(Notice the misprints in the English translation of the article [6].)
+Remark 1.2 The author is also aware of the Lax pair in the inverse Cauchy-Green tensor
+variable of the Lagrangian formulations of both 2D and 3D Euler equations found by Susan
+Friedlander and Misha Vishik [7] [8].
+
+References
+[1] Y. Li and D. W. McLaughlin. Morse and Melnikov Functions for NLS Pde’s. Commun.
+Math. Phys., 162:175–214, 1994.
+[2] Y. Li, D. McLaughlin, J. Shatah, and S. Wiggins. Persistent Homoclinic Orbits for a
+Perturbed Nonlinear Schr¨odinger equation. Comm. Pure Appl. Math., XLIX:1175–1255,
+1996.
+[3] Y. Li. Smale Horseshoes and Symbolic Dynamics in Perturbed Nonlinear Schr¨odinger
+equations. J. Nonlinear Sci., 9:363–415, 1999.
+[4] Y. Li. On 2D Euler Equations. I. On the Energy-Casimir Stabilities and the Spectra for
+Linearized 2D Euler Equations. J. Math. Phys., 41, no. 2:728–758, 2000.
+[5] Y. Li. On 2D Euler Equations. II. Degeneracy v.s. Nondegeneracy of the Hyperbolic
+Foliations - A Galerkin Truncation Study. submitted, Physica D, 2000.
+[6] V. E. Zakharov. On the Algebra of Integrals of Motion in Two-Dimensional Hydrodynamics in Clebsch Variables. Functional Anal. Appl., 23, no. 3:189–196, 1989.
+[7] S. Friedlander and M. Vishik. Lax Pair Formulation for the Euler Equation. Phys. Lett.
+A, 148, no. 6-7:313–319, 1990.
+[8] M. Vishik and S. Friedlander. An Inverse Scattering Treatment for the Flow of an Ideal
+Fluid in Two Dimensions. Nonlinearity, 6, no. 2:231–249, 1993.
+
+3
+
+

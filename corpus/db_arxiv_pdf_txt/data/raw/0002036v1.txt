@@ -1,0 +1,1613 @@
+University of Wisconsin - Madison
+
+MADPH-00-1157
+CERN-TH/2000-039
+February 2000
+
+arXiv:hep-ph/0002036v1 3 Feb 2000
+
+Measuring Higgs boson couplings at the LHC
+D. Zeppenfeld1 , R. Kinnunen2 , A. Nikitenko3 , E. Richter-W¸as4
+1 Department
+
+of Physics, University of Wisconsin, Madison, WI 53706, USA and
+CERN, TH Division, 1211 Geneva 23, Switzerland
+2 Helsinki
+
+3 Helsinki
+
+Institute of Physics, Helsinki, Finland
+
+Institute of Physics, Helsinki, Finland, on leave from ITEP, Moscow, Russia
+4 CERN,
+
+IT Division, 1211 Geneva 23, Switzerland and
+
+Institute of Computer Science, Jagellonian University, Institute of Nuclear Physics,
+30-055 Krakow, ul. Kawiory 26a, Poland
+
+Abstract
+For an intermediate mass Higgs boson with SM-like couplings the LHC
+allows observation of a variety of decay channels in production by gluon fusion and weak boson fusion. Cross section ratios provide measurements of
+various ratios of Higgs couplings, with accuracies of order 15% for 100 fb−1
+of data in each of the two LHC experiments. For Higgs masses above
+120 GeV, minimal assumptions on the Higgs sector allow for an indirect
+measurement of the total Higgs boson width with an accuracy of 10 to
+20%, and of the H → W W partial width with an accuracy of about 10%.
+
+1
+
+I. INTRODUCTION
+
+Investigation of the symmetry breaking mechanism of the electroweak SU(2) × U(1)
+gauge symmetry will be one of the prime tasks of the LHC. Correspondingly, major
+efforts have been concentrated on devising methods for Higgs boson discovery, for the
+< mH < 1 TeV,
+entire mass range allowed within the Standard Model (SM) (100 GeV∼
+∼
+after LEP2), and for Higgs boson search in extensions of the SM, like the MSSM [1,2].
+While observation of one or more Higgs scalar(s) at the LHC appears assured, discovery
+will be followed by a more demanding task: the systematic investigation of Higgs boson
+properties. Beyond observation of the various CP even and CP odd scalars which nature
+may have in store for us, this means the determination of the couplings of the Higgs
+boson to the known fermions and gauge bosons, i.e. the measurement of Htt, Hbb, Hτ τ
+and HW W , HZZ, Hγγ couplings, to the extent possible.
+Clearly this task very much depends on the expected Higgs boson mass. For mH >
+200 GeV and within the SM, only the H → ZZ and H → W W channels are expected
+to be observable, and the two gauge boson modes are related by SU(2). Above mH ≈
+250 GeV, where detector effects will no longer dominate the mass resolution of the
+H → ZZ → 4ℓ resonance, additional information is expected from a direct measurement
+of the total Higgs boson width, ΓH . A much richer spectrum of decay modes is predicted
+for the intermediate mass range, i.e. if a SM-like Higgs boson has a mass between the
+< 110 GeV) and the Z-pair threshold. The main reasons for focusing
+reach of LEP2 (∼
+on this range are present indications from electroweak precision data, which favor mH <
+250 GeV [3], as well as expectations within the MSSM, which predicts the lightest Higgs
+< 130 GeV [4].
+boson to have a mass mh ∼
+Until recently, the prospects of detailed and model independent coupling measurements at the LHC were considered somewhat remote [5], because few promising search
+channels were known to be accessible, for any given Higgs boson mass. Taking ATLAS
+search scenarios as an example, these were [1]
+2
+
+gg → H → γγ ,
+
+< 150 GeV ,
+for mH ∼
+
+(1)
+
+gg → H → ZZ ∗ → 4ℓ ,
+
+> 130 GeV ,
+for mH ∼
+
+(2)
+
+and
+> 150 GeV ,
+for mH ∼
+
+¯ ,
+gg → H → W W ∗ → ℓ¯
+ν ℓν
+
+(3)
+
+with the possibility of obtaining some additional information from processes like W H
+and/or tt¯H associated production with subsequent H → ¯bb and H → γγ decay for Higgs
+boson masses near 100 GeV. Throughout this paper, “gg → H” stands for inclusive Higgs
+production, which is dominated by the gluon fusion process for a SM-like Higgs boson.
+This relatively pessimistic outlook is changing considerably now, due to the demonstration that weak boson fusion is a promising Higgs production channel also in the
+intermediate mass range. Previously, this channel had only been explored for Higgs
+masses above 300 GeV. Specifically, it was recently shown in parton level analyses that
+the weak boson fusion channels, with subsequent Higgs decay into photon pairs [6,7],
+qq → qqH, H → γγ ,
+
+for mH <
+∼ 150 GeV ,
+
+(4)
+
+< 140 GeV ,
+for mH ∼
+
+(5)
+
+into τ + τ − pairs [7–9],
+qq → qqH, H → τ τ ,
+or into W pairs [7,10]
+qq → qqH, H → W W (∗) → e± µ∓ p/T ,
+
+> 120 GeV ,
+for mH ∼
+
+(6)
+
+can be isolated at the LHC. Preliminary analyses, which try to extend these parton level
+results to full detector simulations, look promising [11]. The weak boson fusion channels
+utilize the significant background reductions which are expected from double forward jet
+tagging [12–14] and central jet vetoing techniques [15,16], and promise low background
+environments in which Higgs decays can be studied in detail. The parton level results
+predict highly significant signals with (substantially) less than 100 fb−1 .
+3
+
+The prospect of observing several Higgs production and decay channels, over the
+entire intermediate mass range, suggests a reanalysis of coupling determinations at the
+LHC [5]. In this paper we attempt a first such analysis, for the case where the branching fractions of an intermediate mass Higgs resonance are fairly similar to the SM case,
+i.e. we analyze a SM-like Higgs boson only. We make use of the previously published
+analyses for the inclusive Higgs production channels [1,2] and of the weak boson fusion
+channels [6–10]. The former were obtained by the experimental collaborations and include detailed detector simulations. The latter are based on parton level results, which
+employ full QCD tree level matrix elements for all signal and background processes. We
+will not discuss here differences in the performance expected for the ATLAS and CMS
+detectors nor details in the theoretical assumptions which lead to different estimates for
+expected signal and background rates. The reader is referred to the original publications from which numbers are extracted. In Section II we summarize expectations for
+the various channels, including expected accuracies for cross section measurement of the
+various signals for an integrated luminosity of 100 fb−1 . Implications for the determination of coupling ratios and the measurement of Higgs boson (partial) decay widths are
+then obtained in Section III. A final summary is given in Section IV.
+
+II. SURVEY OF INTERMEDIATE MASS HIGGS CHANNELS
+
+The various Higgs channels listed in Eqs. (1–6) and their observability at the LHC
+have all been discussed in the literature. Where available, we give values as presently
+quoted by the experimental collaborations. In order to compare the accuracy with which
+the cross sections of different Higgs production and decay channels can be measured, we
+need to unify these results. For example, K-factors of unity are assumed throughout.
+Our goal in this section is to obtain reasonable estimates for the relative errors, ∆σH /σH ,
+which are expected after collecting 100 fb−1 in each the ATLAS and the CMS detector,
+i.e. we estimate results after a total of 200 fb−1 of data have been collected at the
+4
+
+TABLE I. Number of expected events for the inclusive SM H → γγ signal and expected
+backgrounds, assuming an integrated luminosity of 100 fb−1 and high luminosity performance.
+Numbers correspond to optimal γγ invariant mass windows for CMS and ATLAS. The expected
+relative statistical errors on the signal cross section are given for the individual experiments
+and are combined in the last line.
+
+CMS [17,18]
+
+ATLAS [1]
+
+Combined
+
+mH
+
+100
+
+110
+
+120
+
+130
+
+140
+
+150
+
+NS
+
+865
+
+1038
+
+1046
+
+986
+
+816
+
+557
+
+NB
+
+29120
+
+22260
+
+16690
+
+12410
+
+9430
+
+7790
+
+∆σH /σH
+
+20.0%
+
+14.7%
+
+12.7%
+
+11.7%
+
+12.4%
+
+16.4%
+
+NS
+
+1045
+
+1207
+
+1283
+
+1186
+
+973
+
+652
+
+NB
+
+56450
+
+47300
+
+39400
+
+33700
+
+28250
+
+23350
+
+∆σH /σH
+
+22.9%
+
+18.2%
+
+15.7%
+
+15.7%
+
+17.6%
+
+23.8%
+
+∆σH /σH
+
+15.1%
+
+11.4%
+
+9.9%
+
+9.4%
+
+10.1%
+
+13.5%
+
+LHC. Presumably these data will be taken with a mix of both low and high luminosity
+running.
+We find that the measurements are largely dominated by statistical errors. For all
+channels, event rates with 200 fb−1 of data will be large enough to use the Gaussian
+approximation for statistical errors. The experiments measure the signal cross section by
+separately determining the combined signal + background rate, NS+B , and the expected
+number of background events, NB . The signal cross section is then given by
+σH =
+
+NS
+NS+B − NB
+=
+,
+ǫ Ldt
+ǫ Ldt
+
+where ǫ denotes efficiency factors. Thus the statistical error is given by
+√
+√
+∆σH
+NS+B
+NS + NB
+=
+=
+,
+σH
+NS
+NS
+
+(7)
+
+(8)
+
+where in the last step we have dropped the distinction between the expected and the
+actual number of background events. Systematic errors on the background rate are
+5
+
+added in quadrature to the background statistical error,
+
+√
+
+NB , where appropriate.
+
+Well below the H → W W threshold, the search for H → γγ events is arguably the
+cleanest channel for Higgs discovery. LHC detectors have been designed for excellent
+two-photon invariant mass resolution, with this Higgs signal in mind. We directly take
+the expected signal and background rates for the inclusive H → γγ search from the
+detailed studies of the CMS and ATLAS collaborations [17,18,1], which were performed
+for an integrated luminosity of 100 fb−1 in each detector. Expectations are summarized
+in Table I. Rates correspond to not including a K-factor for the expected signal and
+background cross sections in CMS and ATLAS. Cross sections have been determined
+with MRS (R1) parton distribution functions (pdf’s) for CMS, while ATLAS numbers
+are based on CTEQ2L pdf’s.
+The inclusive H → γγ signal will be observed as a narrow γγ invariant mass peak
+on top of a smooth background distribution. This means that the background can be
+directly measured from the very high statistics background distribution in the sidebands.
+We expect any systematic errors on the extraction of the signal event rate to be negligible
+compared to the statistical errors which are given in the last row of Table I. With
+100 fb−1 of data per experiment σ(gg → H) · B(H → γγ) can be determined with a
+relative error of 10 to 15% for Higgs masses between 100 and 150 GeV. Here we do not
+include additional systematic errors, e.g. from the luminosity uncertainty or from higher
+order QCD corrections, because we will mainly consider cross section ratios in the final
+analysis in the next Section. These systematic errors largely cancel in the cross section
+ratios. Systematic errors common to several channels will be considered later, where
+appropriate.
+A Higgs search channel with a much better signal to background ratio, at the price of
+lower statistics, however, is available via the inclusive search for H → ZZ ∗ → 4ℓ events.
+Expected event numbers for 100 fb−1 in both ATLAS [1] and CMS [19] are listed in
+Table II. These numbers were derived using CTEQ2L pdf’s and are corrected to contain
+
+6
+
+TABLE II. Number of expected events for the inclusive SM H → ZZ ∗ → ℓ+ ℓ− ℓ+ ℓ− signal
+and expected backgrounds, assuming an integrated luminosity of 100 fb−1 and high luminosity
+performance. Numbers correspond to optimal four-lepton invariant mass windows for CMS and
+ATLAS and to the combined total. Rates in parentheses correspond to numbers interpolated,
+according to H → ZZ ∗ branching ratios for the signal. The expected relative statistical errors
+on the signal cross section are given for each experiment and are combined in the last line.
+
+CMS [19]
+
+ATLAS [1]
+
+Combined
+
+mH
+
+120
+
+130
+
+140
+
+150
+
+160
+
+170
+
+180
+
+NS
+
+19.2
+
+55.3
+
+(99)
+
+131.4
+
+(48)
+
+29.4
+
+(76.5)
+
+NB
+
+12.9
+
+17.1
+
+(20)
+
+22.5
+
+(26)
+
+27.5
+
+(27)
+
+∆σH /σH
+
+29.5%
+
+15.4%
+
+11.0%
+
+9.4%
+
+17.9%
+
+25.7%
+
+13.3%
+
+NS
+
+10.3
+
+28.7
+
+(51)
+
+67.6
+
+(31)
+
+19.1
+
+49.7
+
+NB
+
+4.44
+
+7.76
+
+(8)
+
+8.92
+
+(8)
+
+8.87
+
+8.81
+
+∆σH /σH
+
+37.3%
+
+21.0%
+
+15.1%
+
+12.9%
+
+20.1%
+
+27.7%
+
+15.4%
+
+∆σH /σH
+
+23.1%
+
+12.4%
+
+8.9%
+
+7.6%
+
+13.4%
+
+18.8%
+
+10.1%
+
+no QCD K-factor. For those Higgs masses where no ATLAS or CMS prediction is
+available, we interpolate/extrapolate the results for the nearest Higgs mass, taking the
+expected H → ZZ ∗ branching ratios into account for the signal. Similar to the case of
+H → γγ events, the signal is seen as a narrow peak in the four-lepton invariant mass
+distribution, i.e. the background can be extracted directly from the signal sidebands.
+The combined relative error on the measurement of σ(gg → H)·B(H → ZZ ∗ ) is listed in
+the last line of Table II. For Higgs masses in the 130–150 GeV range, and above Z-pair
+threshold, a 10% statistical error on the cross section measurement is possible. In the
+intermediate range, where H → W W dominates, and for lower Higgs masses, where the
+Higgs is expected to dominantly decay into ¯bb, the error increases substantially.
+Above mH ≈ 135 GeV, H → W W (∗) becomes the dominant SM Higgs decay channel. The resulting inclusive W W → ℓ+ νℓ− ν¯ signal is visible above backgrounds, after
+7
+
+TABLE III. Number of expected events for the inclusive SM H → W W ∗ → ℓ+ νℓ− ν¯
+signal and expected backgrounds, assuming an integrated luminosity of 30 fb−1 . Numbers
+correspond to optimized cuts, varying with the mass of the Higgs boson being searched for.
+The expected relative errors on the signal cross section are given for each experiment, separating
+the statistical error, the effect of a systematic 5% error of the background level, and the two
+added in quadrature. The combined error for the two experiments assumes 100% correlation
+of the systematic errors on the background determination.
+
+CMS [20]
+
+ATLAS [1]
+
+mH
+
+120
+
+130
+
+140
+
+150
+
+160
+
+170
+
+180
+
+NS
+
+44
+
+106
+
+279
+
+330
+
+468
+
+371
+
+545
+
+NB
+
+272
+
+440
+
+825
+
+732
+
+360
+
+360
+
+1653
+
+190
+
+∆σH /σH (stat.)
+
+40.4% 22.0% 11.9%
+
+9.9%
+
+6.1%
+
+7.3%
+
+8.6%
+
+∆σH /σH (syst.)
+
+30.9% 20.8% 14.8% 11.1%
+
+3.8%
+
+4.9%
+
+15.2%
+
+∆σH /σH (comb.)
+
+50.9% 30.3% 19.0% 14.9%
+
+7.3%
+
+8.8%
+
+17.4% 20.6%
+
+NS
+
+240
+
+400
+
+337
+
+276
+
+124
+
+NB
+
+844
+
+656
+
+484
+
+529
+
+301
+
+∆σH /σH (stat.)
+
+13.7%
+
+8.1%
+
+8.5%
+
+10.3% 16.6%
+
+∆σH /σH (syst.)
+
+17.6%
+
+8.2%
+
+7.2%
+
+9.6%
+
+12.1%
+
+∆σH /σH (comb.) 50.9% 30.3% 19.0% 22.3% 11.5% 11.1% 14.1% 20.6%
+Combined
+
+∆σH /σH (comb.) 42.1% 26.0% 17.0% 14.8%
+
+7.0%
+
+8.0%
+
+13.6% 16.9%
+
+exploiting the characteristic lepton angular correlations for spin zero decay into W pairs
+near threshold [20]. The inclusive channel, which is dominated by gg → H → W W ,
+has been analyzed by ATLAS for mH ≥ 150 GeV and for integrated luminosities of 30
+and 100 fb−1 [1] and by CMS for mH ≥ 120 GeV and 30 fb−1 [20]. The expected event
+numbers for 30 fb−1 are listed in Table III. The numbers are derived without QCD
+K-factors and use CTEQ2L for ATLAS and MRS(A) pdf’s for CMS results.
+Unlike the two previous modes, the two missing neutrinos in the H → W W events
+
+8
+
+do not allow for a reconstruction of the narrow Higgs mass peak. Since the Higgs signal
+is only seen as a broad enhancement of the expected background rate in lepton-neutrino
+transverse mass distributions, with similar shapes of signal and background after application of all cuts, a precise determination of the background rate from the data is not
+possible. Rather one has to rely on background measurements in phase space regions
+where the signal is weak, and extrapolation to the search region using NLO QCD predictions. The precise error on this extrapolation is unknown at present, the assumption
+of a 5% systematic background uncertainty appears optimistic but attainable. It turns
+out that with 30 fb−1 already, the systematic error starts to dominate, because the
+background exceeds the signal rate by factors of up to 5, depending on the Higgs mass.
+Running at high luminosity makes matters worse, because the less efficient reduction of
+t¯t backgrounds, due to less stringent b-jet veto criteria, increases the background rate
+further. Because of this problem we only present results for 30 fb−1 of low luminosity
+running in Table III. Since neither of the LHC collaborations has presented predictions
+for the entire Higgs mass range, we take CMS simulations below 150 GeV and ATLAS
+√
+results at 190 GeV, but divide the resultant statistical errors by a factor 2, to take
+account of the presence of two experiments. Between 150 and 180 GeV we combine both
+experiments, assuming 100% correlation in the systematic 5% normalization error of the
+background.
+The previous analyses are geared towards measurement of the inclusive Higgs production cross section, which is is dominated by the gluon fusion process. 15 to 20% of
+the signal sample, however, is expected to arise from weak boson fusion, qq → qqH or
+corresponding antiquark initiated processes. The weak boson fusion component can be
+isolated by making use of the two forward tagging jets which are present in these events
+and by vetoing additional central jets, which are unlikely to arise in the color singlet
+signal process [15]. A more detailed discussion of these processes can be found in Ref. [7]
+from which most of the following numbers are taken.
+
+9
+
+TABLE IV. Number of expected γγjj events from the qq → qqH, H → γγ weak boson fusion signal and expected backgrounds, assuming an integrated luminosity of 100 fb−1 .
+Numbers correspond to optimal γγ invariant mass windows for CMS and ATLAS and to the
+combined total, as projected from the parton level analysis of Refs. [6,7]. The expected relative
+statistical errors on the signal cross section are given for each experiment and are combined in
+the last line.
+mH
+
+100
+
+110
+
+120
+
+130
+
+140
+
+150
+
+projected CMS
+
+NS
+
+37
+
+48
+
+56
+
+56
+
+48
+
+33
+
+performance
+
+NB
+
+33
+
+32
+
+31
+
+30
+
+28
+
+25
+
+∆σH /σH
+
+22.6%
+
+18.6%
+
+16.7%
+
+16.6%
+
+18.2%
+
+23.1%
+
+projected ATLAS
+
+NS
+
+42
+
+54
+
+63
+
+63
+
+54
+
+37
+
+performance
+
+NB
+
+61
+
+60
+
+56
+
+54
+
+51
+
+46
+
+∆σH /σH
+
+24.2%
+
+19.8%
+
+17.3%
+
+17.2%
+
+19.0%
+
+24.6%
+
+∆σH /σH
+
+16.5%
+
+13.6%
+
+12.0%
+
+11.9%
+
+13.1%
+
+16.8%
+
+combined
+
+The qq → qqH, H → γγ process was first analyzed in Ref. [6], where cross sections
+for signal and background were obtained with full QCD tree level matrix elements. The
+parton level Monte Carlo determines all geometrical acceptance corrections. Additional
+detector effects were included by smearing parton and photon 4-momenta with expected
+detector resolutions and by assuming trigger, identification and reconstruction efficiencies of 0.86 for each of the two tagging jets and 0.8 for each photon. Resulting cross
+sections were presented in Ref. [7] for a fixed γγ invariant mass window of total width
+∆mγγ = 2 GeV. We correct these numbers for mH dependent mass resolutions in the
+experiments. We take 1.4σ mass windows, as given in Ref. [1] for high luminosity running, which are expected to contain 79% of the signal events for ATLAS. The 2 GeV
+window for mH = 100 GeV at CMS [17,18] is assumed to scale up like the ATLAS
+
+10
+
+TABLE V. Number of expected signal and background events for the qq → qqH → τ τ jj
+channel, for 100 fb−1 and two detectors. Cross sections are added for τ τ → ℓ± h∓ /pT and
+τ τ → e± µ∓ /pT events as given in Refs. [7,9]. The last line gives the expected statistical relative
+error on the qq → qqH, H → τ τ cross section.
+mH
+
+100
+
+110
+
+120
+
+130
+
+140
+
+150
+
+NS
+
+211
+
+197
+
+169
+
+128
+
+79
+
+38
+
+NB
+
+305
+
+127
+
+51
+
+32
+
+27
+
+24
+
+∆σH /σH
+
+10.8%
+
+9.1%
+
+8.8%
+
+9.9%
+
+13.0%
+
+20.7%
+
+resolution and assumed to contain 70% of the Higgs signal. The expected total signal
+and background rates for 100 fb−1 and resulting relative errors for the extraction of the
+signal cross section are given in Table IV. Statistical errors only are considered for the
+background subtraction, since the background level can be measured independently by
+considering the sidebands to the Higgs boson peak.
+The next weak boson fusion channel to be considered is qq → qqH, H → τ τ . Again,
+this channel has been analyzed at the parton level, including some estimates of detector
+effects, as discussed for the H → γγ case. Here, a lepton identification efficiency of 0.95
+is assumed for each lepton ℓ = e, µ. Two τ -decay modes have been considered so far:
+H → τ τ → ℓ± h∓ p/T [8] and H → τ τ → e± µ∓p/T [9]. These analyses were performed
+for low luminosity running. Some deterioration at high luminosity is expected, as in
+the analogous H/A → τ τ channel in the MSSM search [1]. At high luminosity, pileup effects degrade the p/T resolution significantly, which results in a worse τ τ invariant
+mass resolution. At a less significant level, a higher pT threshold for the minijet veto
+technique will increase the QCD and tt¯ backgrounds. The τ -identification efficiency is
+similar at high and low luminosity. We expect that the reduced performance at high
+luminosity can be compensated for by considering the additional channels H → τ τ →
+11
+
+TABLE VI. Number of events expected for qq → qqH, H → W W (∗) → µ± e∓ /pT in
+200 fb−1 of data, and corresponding backgrounds [10]. The expected relative statistical error
+on the signal cross section is given in the last line.
+mH
+
+120
+
+130
+
+140
+
+150
+
+160
+
+170
+
+180
+
+190
+
+NS
+
+136
+
+332
+
+592
+
+908
+
+1460
+
+1436
+
+1172
+
+832
+
+NB
+
+136
+
+160
+
+188
+
+216
+
+240
+
+288
+
+300
+
+324
+
+∆σH /σH
+
+12.1%
+
+6.7%
+
+4.7%
+
+3.7%
+
+2.8%
+
+2.9%
+
+3.3%
+
+4.1%
+
+e+ e− p/T , µ+ µ−p/T . Z+jets and ZZ+jets backgrounds (with ZZ → ℓ+ ℓ− ν ν¯) are strongly
+suppressed by rejecting same flavor lepton pairs which are compatible with Z decays
+(mℓℓ = mZ ± 6 GeV). Drell-Yan plus jets backgrounds are further reduced by requiring
+significant p/T . Since these analyses have not yet been performed, we use the predicted
+cross sections for only those two channels which have already been discussed in the
+literature and scale event rates to a combined 200 fb−1 of data. Results are given in
+Table V.
+The previous two weak boson channels allow reconstruction of the Higgs resonance as
+an invariant mass peak. This is not the case for H → W W → ℓ+ νℓ− ν¯ as discussed previously for the inclusive search. The weak boson fusion channel can be isolated separately
+by employing forward jet tagging and color singlet exchange isolation techniques in addition to tools like charged lepton angular correlations which are used for the inclusive
+channel. The corresponding parton level analysis for qq → qqH, H → W W (∗) → µ± e∓ p/T
+has been performed in Ref. [10] and we here scale the results to a total integrated luminosity of 200 fb−1 , which takes into account the availability of two detectors. As for the tau
+case, the analysis was done for low luminosity running conditions and somewhat higher
+backgrounds are expected at high luminosity. On the other hand the W W (∗) → µ+ µ− p/T
+and W W (∗) → e+ e− p/T modes should roughly double the available statistics since very
+
+12
+
+few signal events have lepton pair invariant masses compatible with Z → ℓℓ decays.
+Therefore our estimates are actually conservative. Note that the expected background
+for this weak boson fusion process is much smaller than for the corresponding inclusive
+measurement. As a result modest systematic uncertainties will not degrade the accuracy
+with which σ(qq → qqH) · B(H → W W (∗) ) can be measured. A 10% systematic error
+on the background, double the error assumed in the inclusive case, would degrade the
+statistical accuracy by, typically, a factor 1.2 or less. As a result, we expect that a very
+precise measurement of σ(qq → qqH) · B(H → W W (∗) ) can be performed at the LHC,
+with a statistical accuracy of order 5% or even better in the mass range mH ≥ 140 GeV.
+Even for mH as low as 120 GeV a 12% measurement is expected.
+
+III. MEASUREMENT OF HIGGS PROPERTIES
+
+One would like to translate the cross section measurements of the various Higgs production and decay channels into measurements of Higgs boson properties, in particular
+into measurements of the various Higgs boson couplings to gauge fields and fermions.
+This translation requires knowledge of NLO QCD corrections to production cross sections, information on the total Higgs decay width and a combination of the measurements
+discussed previously. The task here is to find a strategy for combining the anticipated
+LHC data without undue loss of precision due to theoretical uncertainties and systematic
+errors.
+For our further discussion it is convenient to rewrite all Higgs boson couplings in
+terms of partial widths of various Higgs boson decay channels. The Higgs-fermion
+couplings gHf f , for example, which in the SM are given by the fermion masses,
+gHf f = mf (mH )/v, can be traded for the H → f¯f partial widths,
+2
+2
+¯ ) = cf gHf f 1 − 4mf
+Γf = Γ(H → ff
+8π
+m2H
+
+3
+2
+
+mH .
+
+(9)
+
+Here cf is the color factor (1 for leptons, 3 for quarks). Similarly the square of the
+HW W coupling (gHW W = gmW in the SM) or the HZZ coupling is proportional to
+13
+
+the partial widths ΓW = Γ(H → W W ∗ ) or ΓZ = Γ(H → ZZ ∗ ) [21]. Analogously we
+trade the squares of the effective Hγγ and Hgg couplings for Γγ = Γ(H → γγ) and
+Γg = Γ(H → gg). Note that the Hgg coupling is essentially proportional to gHtt , the
+Higgs’ coupling to the top quark.
+The Higgs production cross sections are governed by the same squares of couplings.
+This allows to write e.g. the gg → H production cross section as [22]
+σ(gg → H) = Γ(H → gg)
+
+π2
+τ
+8m3H
+
+1
+τ
+
+τ
+dx
+g(x, m2H )g( , m2H ) ,
+x
+x
+
+(10)
+
+where τ = m2H /s. Similarly the qq → qqH cross sections via W W and ZZ fusion are
+proportional to Γ(H → W W ∗ ) and Γ(H → ZZ ∗ ), respectively. In the narrow width
+approximation, which is appropriate for the intermediate Higgs mass range considered
+here, these production cross sections need to be multiplied by the branching fractions
+for final state j, B(H → j) = Γj /Γ, where Γ denotes the total Higgs width. This means
+that the various cross section measurements discussed in the previous Section provide
+measurements of various combinations Γi Γj /Γ.
+The production cross sections are subject to QCD corrections, which introduces
+theoretical uncertainties. While the K-factor for the gluon fusion process is large [23],
+which suggests a sizable theoretical uncertainty on the production cross section, the
+NLO corrections to the weak boson fusion cross section are essentially identical to the
+ones encountered in deep inelastic scattering and are quite small [24]. Thus we can
+assign a small theoretical uncertainty to the latter, of order 5%, while we shall use a
+larger theoretical error for the gluon fusion process, of order 20% [23]. The problem for
+weak boson fusion is that it consists of a mixture of ZZ → H and W W → H events,
+and we cannot distinguish between the two experimentally. In a large class of models
+the ratio of HW W and HZZ couplings is identical to the one in the SM, however, and
+this includes the MSSM. We therefore make the following W, Z-universality assumption:
+• The H → ZZ ∗ and H → W W ∗ partial widths are related by SU(2) as in the SM,
+i.e. their ratio, z, is given by the SM value,
+14
+
+ΓZ = z ΓW = zSM ΓW .
+
+(11)
+
+Note that this assumption can be tested, at the 15-20% level for mH > 130 GeV,
+by forming the ratio Bσ(gg → H → ZZ ∗ )/Bσ(gg → H → W W ∗ ), in which QCD
+uncertainties cancel (see Table VII).
+With W, Z-universality, the three weak boson fusion cross sections give us direct
+measurements of three combinations of (partial) widths,
+ΓW Γγ
+Γ
+ΓW Γτ
+Xτ =
+Γ
+2
+Γ
+XW = W
+Γ
+Xγ =
+
+from qq → qqH, H → γγ ,
+
+(12)
+
+from qq → qqH, H → τ τ ,
+
+(13)
+
+from qq → qqH, H → W W (∗) ,
+
+(14)
+
+with common theoretical systematic errors of 5%. In addition the three gluon fusion
+channels provide measurements of
+Γg Γγ
+Γ
+Γg ΓZ
+YZ =
+Γ
+Γg ΓW
+YW =
+Γ
+Yγ =
+
+from gg → H → γγ ,
+
+(15)
+
+from gg → H → ZZ (∗) ,
+
+(16)
+
+from gg → H → W W (∗) ,
+
+(17)
+
+with common theoretical systematic errors of 20%.
+The first precision test of the Higgs sector is provided by taking ratios of the Xi ’s
+and ratios of the Yi ’s. In these ratios the QCD uncertainties, and all other uncertainties
+related to the initial state, like luminosity and pdf errors, cancel. Beyond testing W, Zuniversality, these ratios provide useful information for Higgs masses between 100 and
+150 GeV and 120 to 150 GeV, respectively, where more than one channel can be observed
+in the weak boson fusion and gluon fusion groups. Typical errors on these cross section
+ratios are expected to be in the 15 to 20% range (see Table VII). Accepting an additional
+systematic error of about 20%, a measurement of the ratio Γg /ΓW , which determines the
+Htt to HW W coupling ratio, can be performed, by measuring the cross section ratios
+15
+
+TABLE VII. Summary of the accuracy with which various ratios of partial widths can
+be determined with 200 fb−1 of data. The first two columns give the ratio considered and
+indicate the method by which it is measured. YZ /YW , for example, indicates a measurement
+of σB(H → ZZ ∗ )/σB(H → W W ∗ ) in gluon fusion, while Xi ratios correspond to weak boson
+fusion (see text for details). The statistical combination of several channels for a given width
+ratio is indicated by ⊕. 5% and 20% theoretical uncertainties for weak boson and gluon fusion
+cross sections affect the mixed gluon/weak boson fusion ratios only, which are needed for a
+measurement of Γg /ΓW . The effect of this systematic error is indicated in the last line.
+mH
+z = ΓZ /ΓW
+
+100
+
+110
+
+120
+
+130
+
+140
+
+150
+
+160
+
+170
+
+180
+
+YZ /YW
+
+48%
+
+29%
+
+19%
+
+17%
+
+15%
+
+20%
+
+17%
+
+YZ Xγ
+Yγ XW
+
+30%
+
+21%
+
+19%
+
+23%
+15%
+
+20%
+
+17%
+
+YZ
+YW
+
+⊕
+
+YZ Xγ
+Yγ XW
+
+29%
+
+19%
+
+15%
+
+14%
+
+Γγ /ΓW
+
+Yγ
+YW
+
+⊕
+
+Xγ
+XW
+
+16%
+
+12%
+
+11%
+
+13%
+
+Γτ /ΓW
+
+Xτ
+XW
+
+15%
+
+12%
+
+14%
+
+21%
+
+Γτ /Γγ
+
+Xτ
+Xγ
+
+Γg /ΓW
+
+Yγ
+Xγ
+
+⊕
+
+YW
+XW
+
+Yγ
+Xγ
+
+⊕
+
+YW
+XW
+
+⊕ 21%
+
+20%
+
+16%
+
+15%
+
+16%
+
+18%
+
+27%
+
+22%
+
+18%
+
+15%
+
+13%
+
+12%
+
+13%
+
+8%
+
+9%
+
+14%
+
+30%
+
+27%
+
+25%
+
+24%
+
+24%
+
+24%
+
+22%
+
+22%
+
+25%
+
+Bσ(gg → H → γγ)/σ(qq → qqH)B(H → γγ) and Bσ(gg → H → W W ∗ )/σ(qq →
+qqH)B(H → W W ∗ ). Expected accuracies are listed in Table VII. In these estimates
+the systematics coming from understanding detector acceptance is not included.
+Beyond the measurement of coupling ratios, minimal additional assumptions allow
+an indirect measurement of the total Higgs width. First of all, the τ partial width,
+properly normalized, is measurable with an accuracy of order 10%. The τ is a third
+generation fermion with isospin − 21 , just like the b-quark. In all extensions of the SM
+with a common source of lepton and quark masses, even if generational symmetry is
+broken, the ratio of b to τ Yukawa couplings is given by the fermion mass ratio. We thus
+
+16
+
+assume, in addition to W, Z-universality, that
+• The ratio of b to τ couplings of the Higgs is given by their mass ratio, i.e.
+y=
+
+Γb
+m2 (mH )
+g2
+,
+= 3cQCD 2Hbb = 3cQCD b 2
+Γτ
+gHτ τ
+mτ
+
+(18)
+
+where cQCD is the known QCD and phase space correction factor.
+• The total Higgs width is dominated by decays to ¯bb, τ τ , W W , ZZ, gg and γγ, i.e.
+the branching ratio for unexpected channels is small:
+ǫ = 1 − B(H → b¯b) + B(H → τ τ ) + B(H → W W (∗) ) +
+B(H → ZZ (∗) ) + B(H → gg) + B(H → γγ)
+
+≪1.
+
+(19)
+
+Note that, in the Higgs mass range of interest, these two assumptions are satisfied for
+both CP even Higgs bosons in most of the MSSM parameter space. The first assumption
+holds in the MSSM at tree level, but can be violated by large squark loop contributions,
+in particular for small mA and large tan β [25,26]. The second assumption might be
+violated, for example, if the H → c¯c partial width is exceptionally large. However, a
+large up-type Yukawa coupling would be noticeable in the Γg /ΓW coupling ratio, which
+measures the Htt coupling.
+With these assumptions consider the observable
+˜g
+˜ W = Xτ (1 + y) + XW (1 + z) + Xγ + X
+Γ
+= Γτ + Γb + ΓW + ΓZ + Γγ + Γg
+
+ΓW
+= (1 − ǫ)ΓW ,
+Γ
+
+(20)
+
+˜ g = Γg ΓW /Γ is determined by combining YW and the product Yγ XW /Xγ . Γ
+˜W
+where X
+provides a lower bound on Γ(H → W W (∗) ) = ΓW . Provided ǫ is small (ǫ < 0.1 suffices
+˜ W provides a direct measurement of the
+for practical purposes), the determination of Γ
+H → W W (∗) partial width. Once ΓW has been determined, the total width of the Higgs
+boson is given by
+17
+
+Γ=
+
+1
+Γ2W
+˜g
+=
+Xτ (1 + y) + XW (1 + z) + Xγ + X
+XW
+XW
+
+2
+
+1
+.
+(1 − ǫ)2
+
+(21)
+
+For a SM-like Higgs boson the Higgs width is dominated by the H → ¯bb and H → W W (∗)
+˜ W is dominated by the uncertainties of the XW and Xτ
+channels. Thus, the error on Γ
+measurements and by the theoretical uncertainty on the b-quark mass, which enters the
+determination of y quadratically. According to the Particle Data Group, the present
+uncertainty on the b quark mass is about ±3.5% [27]. Assuming a luminosity error of
+±5% in addition to the theoretical uncertainty of the weak boson fusion cross section of
+±5%, the statistical errors of the qq → qqH, H → τ τ and qq → qqH, H → W W cross
+˜ W determination of
+sections of Tables V and VI lead to an expected accuracy of the Γ
+order 10%. More precise estimates, as a function of the Higgs boson mass, are shown in
+Fig. 1.
+The extraction of the total Higgs width, via Eq. (21), requires a measurement of
+the qq → qqH, H → W W (∗) cross section, which is expected to be available for mH >
+∼
+115 GeV [10]. Consequently, errors are large for Higgs masses close to this lower limit
+(we expect a relative error of ≈ 20% for mH = 120 GeV and ǫ < 0.05). But for Higgs
+boson masses around the W W threshold, Γ(1 − ǫ)2 can be determined with an error of
+about 10%. Results are shown in Fig. 1 and look highly promising.
+
+IV. SUMMARY
+
+In the last section we have found that various ratios of Higgs partial widths can
+be measured with accuracies of order 10 to 20%, with an integrated luminosity of 100
+fb−1 per experiment. This translates into 5 to 10% measurements of various ratios
+of coupling constants. The ratio Γτ /ΓW measures the coupling of down-type fermions
+relative to the Higgs couplings to gauge bosons. To the extent that the Hγγ triangle
+diagrams are dominated by the W loop, the width ratio Γτ /Γγ measures the same
+relationship. The fermion triangles leading to an effective Hgg coupling are expected to
+
+18
+
+FIG. 1. Expected accuracy with which the Higgs boson width can be measured at the
+LHC, with 100 fb−1 of data in each experiment. Results are shown for the extraction of the
+the H → W W partial with, ΓW , and and the total Higgs boson width, Γ. ǫ is the sum of the
+residual (small) branching ratios of unobserved channels, mainly H → c¯
+c (see text for detail).
+
+be dominated by the top-quark, thus, Γg /ΓW probes the coupling of up-type fermions
+relative to the HW W coupling. Finally, for Higgs boson masses above ≈ 120 GeV,
+the absolute normalization of the HW W coupling is accessible via the extraction of the
+H → W W (∗) partial width in weak boson fusion.
+Note that these measurements test the crucial aspects of the Higgs sector. The
+HW W coupling, being linear in the Higgs field, identifies the observed Higgs boson as
+the scalar responsible for the spontaneous breaking of SU(2) × U(1): a scalar without a
+vacuum expectation value couples to gauge bosons only via HHW W or HHW vertices
+at tree level, i.e. the interaction is quadratic in scalar fields. The absolute value of the
+HW W coupling, as compared to the SM expectation, reveals whether H may be the only
+mediator of spontaneous symmetry breaking or whether additional Higgs bosons await
+19
+
+discovery. Within the framework of the MSSM this is a measurement of | sin(β − α)|,
+at the ±0.05 level. The measurement of the ratios of gHtt /gHW W and gHτ τ /gHW W then
+probes the mass generation of both up and down type fermions.
+The results presented here constitute a first look only at the issue of coupling extractions for the Higgs. This is the case for the weak boson fusion processes in particular,
+which prove to be extremely valuable if not essential. Our analysis is mostly an estimate
+of statistical errors, with some rough estimates of the systematic errors which are to be
+expected for the various measurements of (partial) widths and their ratios. A number
+of issues need to be addressed in further studies, in particular with regard to the weak
+boson fusion channels.
+(a) The weak boson fusion channels and their backgrounds have only been studied
+at the parton level, to date. Full detector level simulations, and optimization of
+strategies with more complete detector information is crucial for further progress.
+(b) A central jet veto has been suggested as a powerful tool to suppress QCD backgrounds to the color singlet exchange processes which we call weak boson fusion.
+The feasibility of this tool and its reach need to be investigated in full detector
+studies, at both low and high luminosity.
+(c) In the weak boson fusion studies of H → W W and H → τ τ decays, double leptonic e+ e− p/T and µ+ µ−p/T signatures have not yet been considered. Their inclusion
+promises to almost double the statistics available for the Higgs coupling measurements, at the price of additional ZZ+jets and Drell-Yan plus jets backgrounds
+which are expected to be manageable.
+(d) Other channels, like W H or tt¯H associated production with subsequent decay
+H → ¯bb or H → γγ, provide additional information on Higgs coupling ratios,
+< 120 GeV [2,5].
+which complement our analysis at small Higgs mass values, mH ∼
+These channels need to be included in the analysis.
+20
+
+(e) Much additional work is needed on more reliable background determinations. For
+′
+
+the H → W W (∗) → ℓ+ ℓ − p/T channel in particular, where no narrow Higgs resonance peak can be reconstructed, a precise background estimate is crucial for
+the measurement of Higgs couplings. Needed improvements include NLO QCD
+corrections, single top quark production backgrounds, the combination of shower
+Monte Carlo programs with higher order QCD matrix element calculations and
+more.
+(f) Both in the inclusive and WBF analyses any given channel contains a mixture of
+events from gg → H and qq → qqH production processes. The determination
+of this mixture adds another source of systematic uncertainty, which was not included in the present study. In ratios of X observables (or of different Yi ) these
+uncertainties largely cancel, except for the effects of acceptance variations due to
+different signal selections. Since an admixture from the wrong production channel
+is expected at the 10 to 20% level only, these systematic errors are not expected
+to be serious.
+(g) We have only analyzed the case of a single neutral, CP even Higgs resonance with
+couplings which are close to the ones predicted in the SM. While this case has many
+applications, e.g. for the large mA region of the MSSM, more general analyses, in
+particular of the MSSM case, are warranted and highly promising.
+While much additional work is needed, our study clearly shows that the LHC has
+excellent potential to provide detailed and accurate information on Higgs boson interactions. The observability of the Higgs boson at the LHC has been clearly established,
+within the SM and extensions like the MSSM. The task now is to sharpen the tools for
+accurate measurements of Higgs boson properties at the LHC.
+
+21
+
+ACKNOWLEDGMENTS
+
+We would like to thank the organizers of the Les Houches Workshop, where this work
+was initiated, for getting us together in an inspiring atmosphere. Useful discussions with
+M. Carena, A. Djouadi, K. Jakobs and G. Weiglein are gratefully acknowledged. We
+thank CERN for the hospitality extended to all of us during various periods of this
+work. The research of E. R.-W. was partially supported by the Polish Government
+grant KBN 2P03B14715, and by the Polish-American Maria Skl¸odowska-Curie Joint
+Fund II in cooperation with PAA and DOE under project PAA/DOE-97-316. The work
+of D. Z. was supported in part by the University of Wisconsin Research Committee
+with funds granted by the Wisconsin Alumni Research Foundation and in part by the
+U. S. Department of Energy under Contract No. DE-FG02-95ER40896.
+
+22
+
+REFERENCES
+[1] ATLAS Collaboration, ATLAS Detector and Physics Performance Technical Design
+Report, report CERN/LHCC/99-15 (1999).
+[2] G. L. Bayatian et al., CMS Technical Proposal, report CERN/LHCC/94-38
+(1994); D. Denegri, Prospects for Higgs (SM and MSSM) searches at LHC,
+talk in the Circle Line Tour Series, Fermilab, October 1999, (http://wwwtheory.fnal.gov/CircleLine/DanielBG.html); R. Kinnunen and D. Denegri, Expected
+SM/SUSY Higgs observability in CMS, CMS NOTE 1997/057; R. Kinnunen and
+A. Nikitenko, Study of HSU SY → τ τ → l± + h∓ + Etmiss in CMS, CMS TN/97106; R.Kinnunen and D. Denegri, The HSU SY → τ τ → h± + h∓ + X channel, its
+advantages and potential instrumental drawbacks, hep-ph/9907291.
+[3] For recent reviews, see e.g. J.L. Rosner, Comments Nucl. Part. Phys. 22, 205
+(1998); K.Hagiwara, Ann. Rev. Nucl. Part. Sci. 1998, 463; W.J. Marciano, [hepph/9902332]; and references therein.
+[4] H. E. Haber and R. Hempfling, Phys. Lett. D48, 4280 (1993); M. Carena, J.R. Espinosa, M. Quiros, and C.E.M. Wagner, Phys. Lett. B355, 209 (1995); S. Heinemeyer, W. Hollik and G. Weiglein, Phys. Rev. D58, 091701 (1998); R.-J. Zhang,
+Phys. Lett. B447, 89 (1999).
+[5] J. F. Gunion, L. Poggioli, R. Van Kooten, C. Kao and P. Rowson, hep-ph/9703330.
+[6] D. Rainwater and D. Zeppenfeld, Journal of High Energy Physics 12, 005 (1997).
+[7] D. Rainwater, PhD thesis, hep-ph/9908378.
+[8] D. Rainwater, D. Zeppenfeld and K. Hagiwara, Phys. Rev. D59, 014037 (1999).
+[9] T. Plehn, D. Rainwater and D. Zeppenfeld, hep-ph/9911385.
+[10] D. Rainwater and D. Zeppenfeld, Phys. Rev. D60, 113004 (1999), erratum to appear
+23
+
+[hep-ph/9906218 v3].
+[11] A. Nikitenko, talk given at the workshop on Physics at TeV Colliders, Les Houches,
+France, 8-18 June 1999.
+[12] R. N. Cahn, S. D. Ellis, R. Kleiss and W. J. Stirling, Phys. Rev. D35, 1626 (1987);
+V. Barger, T. Han, and R. J. N. Phillips, Phys. Rev. D37, 2005 (1988); R. Kleiss
+and W. J. Stirling, Phys. Lett. 200B, 193 (1988); D. Froideveaux, in Proceedings
+of the ECFA Large Hadron Collider Workshop, Aachen, Germany, 1990, edited by
+G. Jarlskog and D. Rein (CERN report 90-10, Geneva, Switzerland, 1990), Vol II,
+p. 444; M. H. Seymour, ibid, p. 557; U. Baur and E. W. N. Glover, Nucl. Phys.
+B347, 12 (1990); Phys. Lett. B252, 683 (1990).
+[13] V. Barger, K. Cheung, T. Han, and R. J. N. Phillips, Phys. Rev. D42, 3052 (1990);
+V. Barger et al., Phys. Rev. D44, 1426 (1991); V. Barger, K. Cheung, T. Han, and
+D. Zeppenfeld, Phys. Rev. D44, 2701 (1991); erratum Phys. Rev. D48, 5444 (1993);
+Phys. Rev. D48, 5433 (1993); V. Barger et al., Phys. Rev. D46, 2028 (1992).
+[14] D. Dicus, J. F. Gunion, and R. Vega, Phys. Lett. B258, 475 (1991); D. Dicus,
+J. F. Gunion, L. H. Orr, and R. Vega, Nucl. Phys. B377, 31 (1991).
+[15] Y. L. Dokshitzer, V. A. Khoze, and S. Troian, in Proceedings of the 6th International
+Conference on Physics in Collisions, (1986) ed. M. Derrick (World Scientific, 1987)
+p.365; J. D. Bjorken, Int. J. Mod. Phys. A7, 4189 (1992); Phys. Rev. D47, 101
+(1993).
+[16] V. Barger, R. J. N. Phillips, and D. Zeppenfeld, Phys. Lett. B346, 106 (1995).
+[17] CMS Collaboration, “The electromagnetic calorimeter project“, Technical Design
+Report, CERN/LHCC 97-33, CMS TDR 4, 15 December 1997.
+[18] Katri Lassila-Perini, “Discovery Potential of the Standard Model Higgs in CMS at
+the LHC“, Diss. ETH N.12961.
+24
+
+[19] I. Iashvili, R. Kinnunen, A. Nikitenko and D. Denegri, “Study of the H → ZZ ∗ →
+4ℓ± in CMS“, CMS TN/95-059 (1995).
+[20] M. Dittmar and H. Dreiner, Phys. Rev. D55, 167 (1997); and [hep-ph/9703401],
+CMS NOTE 1997/083.
+[21] W. Keung and W.J. Marciano, Phys. Rev. D30, 248 (1984).
+[22] V. Barger and R.J. Phillips, “Collider Physics”, Redwood City, USA: AddisonWesley (1987) 592 p., (Frontiers in Physics, Vol. 71).
+[23] A. Djouadi, N. Spira and P. Zerwas, Phys. Lett. B264, 440 (1991). M. Spira,
+A. Djouadi, D. Graudenz and P.M. Zerwas, Nucl. Phys. B453, 17 (1995).
+[24] T. Han, G. Valencia and S. Willenbrock, Phys. Rev. Lett. 69, 3274 (1992).
+[25] M. Carena, S. Mrenna and C. E. Wagner, Phys. Rev. D60, 075010 (1999) [hepph/9808312]; H. Eberl, K. Hidaka, S. Kraml, W. Majerotto and Y. Yamada, hepph/9912463.
+[26] L. J. Hall, R. Rattazzi and U. Sarid, Phys. Rev. D50, 7048 (1994) [hep-ph/9306309];
+R. Hempfling, Phys. Rev. D49, 6168 (1994); M. Carena, M. Olechowski, S. Pokorski
+and C. E. Wagner, Nucl. Phys. B426, 269 (1994) [hep-ph/9402253]; D. M. Pierce,
+J. A. Bagger, K. Matchev and R. Zhang, Nucl. Phys. B491, 3 (1997) [hepph/9606211]; J. A. Coarasa, R. A. Jimenez and J. Sola, Phys. Lett. B389, 312
+(1996) [hep-ph/9511402]; R. A. Jimenez and J. Sola, Phys. Lett. B389, 53 (1996)
+[hep-ph/9511292].
+[27] Particle Data Group, C. Caso et al., Eur. Phys. J. C3, 1 (1998).
+
+25
+
+

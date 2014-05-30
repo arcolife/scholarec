@@ -1,0 +1,904 @@
+arXiv:math-ph/0009004v1 4 Sep 2000
+
+Locality and Modular Invariance
+in 2D Conformal QFT ∗
+K.-H. Rehren
+Inst. f. Theor. Physik
+Universit¨at G¨ottingen
+37073 G¨ottingen
+Germany
+Dedicated to S. Doplicher and J.E. Roberts.
+
+Abstract
+The relations and differences between various classification problems arising in
+the context of local two-dimensional (2D) conformal quantum field theory, modular invariants, and subfactors, are discussed. The extent to which locality implies
+modular invariance, is exhibited.
+AMS Subject classification: 81T40, 46L37 (primary); 81T05 (secondary)
+
+Introduction:
+Modular invariants, 2D conformal QFT, and subfactors
+One of the great excitements in conformal QFT was the ADE classification of modular
+invariant coupling matrices for the SU(2) current algebra [5]. At each level k, this algebra
+has only a finite number of covariant representations with positive energy (superselection
+sectors), and the partition functions for the conformal Hamiltonian in these sectors span a
+linear representation of the modular group SL(2, Z) acting on the temperature parameter.
+A modular invariant is a quadratic form (described by the coupling matrix Z) in this space
+of partition functions which is invariant under the modular group, and which is subject
+to a number of additional constraints. These constraints are necessary for the modular
+invariant being interpretable as the partition function of a local 2D conformal QFT with
+a unique vacuum vector. This 2D conformal QFT contains the SU(2) current algebra
+both as left and right chiral subalgebras.
+The fact that SU(2) modular invariants can be classified according to an ADE scheme,
+has raised the interest of mathematicians both for its arithmetic appeal, and for its relationship to several other classification problems (for an overview see [27]). As a physicist,
+∗
+
+Contributed to “Mathematical Physics in Mathematics and Physics”, Siena, June 20-25, 2000
+
+1
+
+K.-H. Rehren: Locality and modular invariance
+
+2
+
+I want to focus on the quantum field theoretical aspect of this classification problem. I
+also want to consider it from a broader perspective, namely as a statement about the
+possible position of the embedding of two (left and right) chiral subtheories AL and AR
+into a local 2D conformal quantum field theory B. The case of SU(2) is then just a very
+special one, and an exact ADE classification cannot be expected to prevail in general.
+From this perspective, the classification problem is to find all local 2D conformal
+QFT’s which extend the given chiral subtheories AL and AR . These extensions are also
+(though not completely) characterized by a coupling matrix Z. The nontrivial requirement
+here which imposes constraints on Z, is locality, while modular invariance is a secondary
+feature.
+Finally, there is a third aspect of modular invariants which is of interest for the classification of subfactors. The embedding of chiral subtheories into a local 2D conformal
+QFT gives rise to local subfactors of the form A⊗C ⊂ B which are called canonical tensor
+product subfactors [22]. The specific meaning of “canonical” will be explained below, and
+is again related to the existence of a coupling matrix. Such subfactors also arise, e.g.,
+as generalized quantum doubles or as asymptotic subfactors. A general classification is
+not available, but several results on canonical tensor product subfactors will be reported,
+which have direct implications with regard to the modular and local QFT classification
+problems.
+I emphasize that in the local perspective, modular invariance is an additional requirement which is often imposed on the 2D conformal QFT by string theory demands. In
+fact, it is not independent from the requirement of locality. Several results below show
+that 2D locality “almost” implies modular invariance – but not quite, since there are easy
+examples of local 2D extension with a coupling matrix which is not modular invariant.
+On the other hand, among the modular invariant coupling matrices for affine Lie algebras
+of higher rank, there are some accidental ones, which do not come from any local 2D
+conformal QFT (e.g., [25]).
+In order to further clarify the relation between locality and modular invariance, we
+recall the notion of “statistics characters” introduced in [20] which directly derives from
+locality. It provides a pair of matrices X and Y defined in terms of the statistics of a system
+of superselection sectors (Sect. 3). X is the diagonal matrix of the statistics phases, while
+Y collects the values of the (relative) monodromy operators in a natural tracial state.
+Unless there is some degeneracy in the statistics, these matrices yield another unitary
+representation of the modular group SL(2, Z) (“statistics representation”, Prop. 3.3). A
+priori, this representation is not related to modular transformations of the temperature
+parameter of the partition functions for these sectors. (Note also that partition functions
+need not even exist a priori as Gibbs functionals.) But at least for affine Lie algebras and
+certain related algebras, both representations of the modular group exist, and coincide.
+The counter examples mentioned above (local 2D conformal QFT, but not modular
+invariant) are due to the possible non-coincidence of the two representations. In many
+cases, even if thermodynamic modular invariance fails, the analogous invariance property
+with respect to the matrices X and Y still holds true. I propose to call this invariance
+property “(degenerate or nondegenerate) statistics symmetry” (Def. 3.4). Nondegenerate
+
+3
+
+K.-H. Rehren: Locality and modular invariance
+
+statistics symmetry is equivalent to modular invariance with respect to the statistics
+representation (Prop. 3.5). Useful criteria for statistics symmetry will be provided (e.g.,
+the maximal chiral observables within the 2D theory always have it), but there are also
+examples of local 2D theories which satisfy not even statistics symmetry, cf. Sect. 3.
+I shall not discuss the characterization of solutions to the various classification problems in terms of graphs (such as ADE). Further details on this aspect can be found in
+[3, 19, 27].
+
+1
+
+The modular invariants perspective
+
+One considers a rational chiral QFT A and the finite system of its covariant representations
+πi with positive energy. The most prominent examples for A are affine Lie algebras
+(current algebras), the Virasoro algebra with central charge c < 1, or certain W -algebras
+arising in coset constructions. One assumes that the characters χi (β) for each of these
+representations exist as Gibbs functionals (i.e., exp −βπi (L0 ) are trace class operators),
+and that the characters transform linearly in a unitary representation of the SL(2, Z)
+transformations of the complex temperature parameter τ = iβ/2π in the regime Im(τ ) > 0
+(and further parameters, if necessary). This assumption is fulfilled for all the examples
+mentioned [11].
+The unitary matrix representatives for the generating transformations τ → τ + 1
+and τ → −1/τ are commonly called T and S, respectively. The square of the latter
+transformation is a central involution in SL(2, Z), and unity in P SL(2, Z). Hence C = S 2
+commutes with S and T , and C 2 = 1l. The SL(2, Z) relations are thus
+T ST ST = S,
+
+CT = T C,
+
+CS = SC = S −1 .
+
+(1.1)
+
+One looks for modular invariant quadratic forms of the form
+Z(τ ) =
+
+Zij χi (τ )χj (τ )
+
+(1.2)
+
+ij
+
+with a coupling matrix Z, satisfying
+T Z = ZT
+
+and SZ = ZS
+
+(modular invariance).
+
+(1.3)
+
+In addition one postulates that the matrix entries Zij are nonnegative integers, and Z00 =
+1 (the label 0 is always reserved for the vacuum sector). These are necessary conditions
+0
+1
+if one wants to interpret Z as a partition function Tr exp(−Re(β)Pconf
+− iIm(β)Pconf
+)
+µ
+where Pconf are the conformal Hamiltonian and momentum of a 2D conformal QFT with
+a unique vacuum vector. Zij then is the multiplicity of the product of chiral sectors πi ⊗πj
+within the vacuum representation of the 2D theory. One considers
+The modular classification problem: Find all coupling matrices Z with nonnegative integer entries and Z00 = 1, which commute with the given pair of matrices S and
+T (and find out and discard the accidental ones, which do not correspond to a local 2D
+theory, see above).
+
+K.-H. Rehren: Locality and modular invariance
+
+4
+
+One finds several types of solutions, which come in pairs because with Z also ZC = CZ
+is a solution. There is always the diagonal solution, Z =
+i χi ⊗ χi , along with the
+conjugate diagonal solution Z = i χi ⊗ χ¯i . All solutions share the “block form”
+Z=
+
+χI ⊗ χσ(I)
+
+(1.4)
+
+I
+
+where the “extended characters” χI = i NiI χi unite certain “families” I of sectors, and
+σ is some permutation of the families. Among these, there are the orbifold solutions where
+sectors i and j belong to the same family if and only if they differ by a simple sector (with
+respect to fusion) belonging to some group of simple sectors. Solutions with the identical
+permutation are called Type I, those with a nontrivial permutation σ are called Type II.
+For the SU(2) affine Lie algebra, it turns out that for all modular invariants, the
+nonvanishing diagonal entries Zii = 0 can be identified with the Coxeter exponents of a
+Dynkin diagram of type A, D or E [5]. The An diagrams correspond to the diagonal type I
+invariants, Dodd to permutation and Deven to orbifold invariants, respectively. E6 and E8
+correspond to the exceptional Type I, and E7 to the exceptional Type II invariants. These
+ADE invariants exhaust all modular invariants for SU(2). There are similar classifications
+for SU(3), but an exact match with Dynkin diagrams cannot be achieved [8].
+
+2
+
+The local QFT perspective
+
+We consider
+The local classification problem: Find all local 2D conformal QFT’s which irreducibly extend the given pair of chiral theories A = AL ⊗ AR ,
+AL ⊗ AR ⊂ B.
+
+(2.1)
+
+To formalize the problem, I adopt the algebraic framework of QFT; thus a QFT
+is given by a net of local von Neumann algebras (factors), say A(I) with I a light ray
+interval, or B(O) with O a 2D double-cone, subject to standard axioms including essential
+Haag duality. An inclusion like (2.1) is thus always understood as the collection of local
+subfactors AL (I) ⊗ AR (J) ⊂ B(O) for all O = I × J.
+There is no a priori reason from the local QFT perspective why the left and right
+chiral subtheories AL and AR of a 2D conformal QFT B should be isomorphic (parity
+symmetric). I prefer to include the “heterotic” (non-symmetric) case in my discussion
+from the beginning.
+The left and right chiral observables within the 2D conformal theory B must commute
+with the respective opposite M¨obius group. It has been shown [21] that all 2D observables
+which are invariant under the right M¨obius group, indeed define a chiral subtheory, referred to as the maximal left chiral observables Amax
+L . These contain the given subtheory
+of left chiral observables AL , and one has the intermediate inclusion
+AL ⊗ AR ⊂ Amax
+⊗ Amax
+⊂ B.
+L
+R
+
+(2.2)
+
+K.-H. Rehren: Locality and modular invariance
+
+5
+
+Anticipating results below, one finds that the maximal chiral observables coincide
+with the “extended observables” in the modular invariants context [16], with respect to
+which the coupling matrix turns into a permutation matrix thus giving rise to the block
+form (1.4). This fact is due, in view of Prop. 4.1 below, to the following equivalent
+characterization of the maximal chiral observables [21].
+Proposition 2.1 [21] Let B be a local 2D conformal QFT, and AL , AR chiral subtheories
+whose observables generate the left and right M¨obius groups, respectively. For any doublecone region of conformal 2D Minkowski space, O = I × J in light ray coordinates, one
+has
+′
+′
+AL (I) ⊂ Amax
+(2.3)
+L (I) = B(O) ∩ U(GR ) = B(O) ∩ AR (J) .
+max
+(The corresponding staments hold for R ↔ L.) In particular, Amax
+L (I) and AR (J) are
+each other’s relative commutants in B(O).
+
+The subalgebras of left and right chiral observables form an algebraic tensor product,
+and at least in the cyclic subspace of the vacuum they are also represented as a tensor
+product [21]. It is expected that the tensor product is spatial in the full representation of
+the 2D theory, and we shall assume this in the sequel.
+This means that the vacuum representation of B, as a representation of the subalgebra
+AL ⊗ AR decomposes into irreducibles according to the scheme
+Zij πiL ⊗ πjR .
+
+π≃
+
+(2.4)
+
+ij
+
+The coupling matrix Z appearing in this decomposition serves as a first (though not
+complete) characterization of the extension. Again, Z has nonnegative integer entries,
+and Z00 = 1 because of the uniqueness of the vacuum vector, but the labels i and j may
+run over different sets (the sectors of AL and of AR ), and Z may be rectangular. Although
+a priori the direct sum might be countably or even uncountably infinite, we shall assume
+it to be finite throughout.
+It follows that the thermodynamical partition function of the 2D conformal QFT, if
+it exists, is of the most general form in terms of chiral Gibbs functionals,
+Zij χLi (τ )χR
+j (τ ),
+
+Z=
+
+(2.5)
+
+ij
+
+with the same coupling matrix Z as in the decomposition (2.4). The notions of “coupling matrix” thus coincide in the modular and in the local interpretation. I emphasize,
+however, that coupling matrices associated with local 2D extensions are not necessarily
+modular invariant. This issue will be discussed in Sect. 3.
+Due to the intermediate inclusion (2.2) the coupling matrix is a product
+Z = BLt Z max BR
+
+(2.6)
+
+where Z max is the coupling matrix with respect to the maximal left and right chiral
+observables, and the branching matrices BL and BR describe the irreducible decomposition
+
+6
+
+K.-H. Rehren: Locality and modular invariance
+
+of the chiral superselection sectors πImax of Amax upon restriction to A ⊂ Amax . The
+restricted representations πImax |A ≃
+BIi πi play a role like the families of sectors in eq.
+(1.4). This analogy will also be exhibited in Sect. 3.
+The question arises by which data of the chiral subtheories, apart from the coupling
+matrix, their local 2D extensions can be characterized. (It should be stressed that the
+coupling matrix will in general not determine the local extension up to equivalence, although it happens to do so in models with “few” sectors.) An answer has been given in
+[14] for the more general problem of characterizing local extensions B of a QFT A in any
+dimension.
+The local extension B of a quantum field theory A is characterized by its canonical
+DHR triple (ρ, w, w1) (assuming the index λ of the local subfactors A(O) ⊂ B(O) to
+be finite) [14]. Here, ρ is the DHR endomorphism [6] of A which describes the vacuum
+representation of B as a reducible representation of A, and the isometric intertwiners
+w : idA → ρ, w1 : ρ → ρ2 in A satisfy the identities of a “Q-system” [13]
+1
+
+w ∗ w1 = ρ(w ∗ )w1 = λ− 2 1lA ,
+w1 w1 = ρ(w1 )w1 ,
+w1 w1∗ = ρ(w1∗ )w1 ,
+
+(2.7)
+
+and the eigenvalue condition for the statistics operator [6] ε(ρ, ρ) ∈ ρ2 (A)′
+ε(ρ, ρ)w1 = w1 .
+
+(2.8)
+
+The significance of the operator identities (2.7) and (2.8) has been explained in [23]:
+The sector of ρ describes the DHR charges [6] with respect to the subtheory A which
+appear in the vacuum representation of B. The isometry w singles out the vacuum
+(charge zero) sector within ρ, and w1 is a generating functional for the collection of
+3j-symbols (amplitudes of 3-point functions of charge carrying fields). The identities
+(2.7) reflect the condition that the corresponding linear combinations of localized vertex
+operators (charged field bundle elements [7]) form a * algebra. The eigenvalue condition
+(2.8) expresses the condition that these combinations, which constitute the fields of B,
+commute at spacelike distance.
+The extension B is recovered from the canonical DHR triple as follows [14]. If ρ is
+localized in some space-time double-cone O0 , then it restricts to an endomorphism of
+the corresponding local algebra, ρ0 ∈ End(A(O0 )), and (ρ0 , w, w1) is a Q-system which
+determines the local algebra B(O0 ) extending A(O0 ). With the help of unitary charge
+transporters for ρ, the local Q-system (ρ0 , w, w1) can be moved to every Poincar´e or
+M¨obius transformed double-cone O = g(O0), giving rise to a coherent net of algebras
+B(O) extending A(O). These satisfy local commutativity thanks to (2.8).
+We conclude that local extensions of local QFT’s are completely characterized by
+canonical DHR triples, that is, solutions (ρ, w, w1) to (2.7) and (2.8) within the category of
+DHR endomorphisms and their intertwiners. For rational QFT’s, these operator identities
+constitute a finite system of nonlinear algebraic equations which may serve as the basis
+of the present classification problem.
+
+K.-H. Rehren: Locality and modular invariance
+
+7
+
+In the 2D case of our interest, A = AL ⊗ AR is a tensor product, and so is its DHR
+category. The endomorphism ρ entering the problem is given by eq. (2.4),
+Zij αiL ⊗ αjR .
+
+ρ≃
+
+(2.9)
+
+ij
+
+Its specification is equivalent to the specification of the coupling matrix. Thus, the local
+classification problem is equivalent to
+The local classification problem (algebraic version): Find all canonical DHR
+triples for the given pair of chiral theories A = AL ⊗ AR with ρ of the form (2.9).
+The local classification problem involves the determination of all admissible coupling
+matrices. As was mentioned before and will be discussed in more detail in the next section,
+these do not coincide with the modular invariant coupling matrices. Nevertheless, the
+question arises whether for any given modular invariant, an associated local 2D conformal
+QFT exists, and whether this will be unique. We therefore address also
+The existence and uniqueness problem for local 2D conformal QFT: Decide
+whether a given coupling matrix Z for AL ⊗ AR (modular invariant or not) arises as the
+coupling matrix of a local 2D conformal QFT, and whether the latter is unique.
+There is no reason to expect that the uniqueness problem will have a positive answer
+in general. It is well known that non-isomorphic subfactors can have the same canonical
+endomorphism (hence the same coupling matrix). The eigenvalue condition (2.8) will
+presumably not alter the situation very much.
+As for the existence problem, some progress has been made. A standard solution of
+(2.7) and (2.8) has been given in [14] for the coupling matrix Z = C pertaining to the
+parity symmetric case AL ≃ AR , based on Prop. 4.2 below. This means that conjugate
+left and right chiral DHR charges can always be combined to yield local 2D fields. The
+standard solution exists for any closed (under fusion and conjugation) subsystem of DHR
+sectors of A, and thus yields truncated conjugate diagonal coupling matrices which are
+typically not modular invariant.
+A more general class of possibly heterotic solutions can be obtained from Prop. 4.3
+below for all SU(2) and many other modular invariant coupling matrices.
+
+3
+
+On the relation between modular invariance and locality
+
+It is appropriate to discuss the distinction between the local and the modular classification
+problem.
+First, it is not completely understood in which sense the Gibbs partition functions of
+any chiral theory A should transform linearly under the modular group in general when
+no Kac-Peterson formula [11] is available. (Higher rank current algebras already exhibit
+pairs of conjugate sectors with the same partition function, and this degeneracy has to be
+lifted by introducing additional thermodynamic parameters on which the modular group
+can act.) The most general result in this direction is due to Nahm [18]. Only the subgroup
+generated by T acts in general, which measures the spectrum of L0 modulo integers.
+
+8
+
+K.-H. Rehren: Locality and modular invariance
+
+Second, one should not exclude heterotic models with different left and right chiral
+observables, as such models might arise upon passage to “extended chiral algebras” [16],
+even if one starts with parity symmetric models. The left and right chiral algebras then
+might have different modular transformation matrices, and the requirement of modular
+invariance is no longer a commutation property, but an intertwining property:
+TL Z = ZTR
+
+and SL Z = ZSR
+
+(heterotic modular invariance).
+
+(3.1)
+
+If we enlarge the framework accordingly, the question arises to which extent modular
+invariance of the coupling matrix of a local 2D extension is implied by the properties of
+a canonical DHR triple.
+The intertwining property for T is easily established. According to the standard
+argument, all Wightman fields affiliated with the local 2D theory B must be Bose fields,
+hence should have integer difference between left and right chiral scaling dimensions. In
+the algebraic framework, this follows from the eigenvalue condition:
+Lemma 3.1 Let (ρ, w, w1) be a canonical DHR triple (in any dimension), and σ an
+irreducible subsector of ρ. Then σ has statistics phase +1.
+Proof: The statistics parameter of ρ [6]
+φρ (ε(ρ, ρ)) = r ∗ ρ(ε(ρ, ρ))r = ρ(r ∗ )ε(ρ, ρ)∗ r
+can be computed: inserting the isometry r = w1 w : idA → ρ2 , and using (2.8) and (2.7)
+yields
+φρ (ε(ρ, ρ)) = ρ(w ∗ w1∗ )w1 w = ρ(w ∗ )w1 w1∗w = λ−1 1l = d(ρ)−1 1l.
+Since the spectrum of the statistics parameter determines the statistics phases of the
+subsectors [6, 7], the claim follows.
+Q.E.D.
+Corollary 3.2 In the 2D conformal case, with A = AL ⊗ AR , let σ ≺ ρ be of the tensor
+product form σL ⊗ σR . Then σL and σR have equal statistics phases. Hence the coupling
+matrix intertwines the left and right diagonal matrices X of statistics phases,
+XL Z = ZXR .
+
+(3.2)
+
+Proof: Spacelike separation in 2D means positive left separation and negative right separation, or vice versa. Hence the statistics operator of σ is the tensor product of two
+opposite chiral statistics operators, and the statistics phase of σ is the quotient of the
+chiral statistics phases. From this, the statements are obvious.
+Q.E.D.
+Now, the chiral statistics phases κ are related to the chiral scaling dimensions h by the
+spin-statistics theorem [9], κ = exp 2πih. Thus, the matrices T differ from the matrices
+c
+X by an overall complex phase exp 2πi 24
+depending on the chiral central charges [11].
+It follows that the coupling matrix Z intertwines TL and TR up to the quotient of these
+
+9
+
+K.-H. Rehren: Locality and modular invariance
+
+phases. Thus, locality always implies invariance under the modular transformation T up
+to a phase which is trivial if the left and right central charges coincide modulo 24.
+A statement of comparable generality cannot be obtained for the full modular group.
+E.g., the local 2D theory B = AL ⊗ AR has the coupling matrix Zij = δi0 δj0 which is
+definitely not modular invariant. But we can obtain nontrivial general results concerning
+a symmetry which specializes to modular invariance in favorable cases. As this symmetry
+does not refer to Gibbs functionals but to statistics, I call it “statistics symmetry” (Def.
+3.4). We shall see that it is always satisfied, as a consequence of locality, for the maximal
+chiral observables.
+Thus, rather than the thermodynamical transformation matrices T and S, we consider
+the statistics phase matrix X (the same as in Cor. 3.2) and the statistics character matrix
+Y , defined in [20]. These matrices can be written as
+κi κj
+Xij = Xji = κi δij
+and
+Yij = Yji =
+Nijk
+dk
+(3.3)
+κk
+k
+where i, j, k run over all irreducible DHR sectors of the model (in the present case: of the
+chiral observables AL or AR ), or over any closed subsystem ∆ thereof. κi and di are the
+complex phase and the inverse modulus of the statistics parameter [6, 7] of the sector πi ,
+and Nijk are the fusion rules. For a non-exhaustive system ∆, the matrices X and Y are
+truncated to those rows and columns of the full matrices which correspond to ∆.
+Proposition 3.3 [20] The matrices X and Y satisfy the relations
+XY XY X = z Y,
+
+CX = XC,
+
+CY = Y C = Y ∗
+
+(3.4)
+
+where z = i∈∆ κi d2i and C is the charge conjugation matrix. If Y is invertible, a rescaling
+of X and Y yields unitary matrices T stat and S stat which satisfy (1.1) and hence generate a
+representation (“statistics representation”) of SL(2, Z), turning ∆ into a modular category
+[17].
+(More specifically, in the nondegenerate case, |z|2 equals the “global index” w =
+stat
+2
+= w −1/2 Y , T stat = (z/|z|)−1/3 X).
+i∈∆ di of the system of sectors, and S
+It is expected that T stat = T and S stat = S, whenever modular transformation matrices
+T and S exist independently. In fact, the first of these coincidences is essentially the spinstatistics theorem [9] which relates the statistics phase determining T stat to the chiral
+scaling dimension (“spin”) entering T . The second one is at least empirically true wherever
+it has been tested.
+That Y is indeed invertible provided ∆ is the system of all DHR sectors, was recently
+shown [12] to follow from the split property, and is therefore true whenever the chiral
+Gibbs functionals Tr exp −βπi (L0 ) exist for any temperature 1/β > 0.
+Let us now turn to the question of statistics symmetry.
+Definition 3.4 A local 2D extension satisfies statistics symmetry if
+XL Z = ZXR
+
+and
+
+1
+1
+YL Z =
+ZYR
+λL
+λR
+
+(statistics symmetry).
+
+(3.5)
+
+10
+
+K.-H. Rehren: Locality and modular invariance
+
+The factors λL = i Zi0 d(πiL ) (and likewise λR ) in the Y relation are dictated by
+comparison of the 00 components. They equal the indices λ = d(π0max |A ) of the inclusions
+max
+A ⊂ Amax (because (BR )J0 = δJ0 and ZI0
+= δI0 , hence Zi0 = (BL )0i ).
+Proposition 3.5 If YL and YR are nondegenerate, statistics symmetry implies
+TLstat Z = ZTRstat
+
+and SLstat Z = ZSRstat
+
+(nondegenerate statistics symmetry),
+
+(3.6)
+
+i.e., the coupling matrix is a modular invariant with respect to the left and right statistics
+representations of SL(2, Z) (cf. Prop. 3.3).
+Proof: The claim is clearly true up to scalar factors. Eqs. (3.4) and (3.5) imply zL /λL =
+zR /λR . The complex phase and the modulus of this equality imply that all scalar factors
+cancel. (Incidentally, [4, Prop. 3.1] implies that the left and right global indices wL = wR
+and the inclusion indices λL = λR coincide separately.)
+Q.E.D.
+Cor. 3.2 states that the X part of statistics symmetry follows directly from the locality
+condition on the 2D extension. Locality also enters the proof of the Y part, but suitable
+completeness conditions will be required in addition, cf. Cor. 3.8.
+In order to discuss the intertwining relation for Y , we recall from Sect. 2 the product
+form of the total coupling matrix
+Z = BLt Z max BR ,
+
+(2.6)
+
+AL ⊗ AR ⊂ Amax
+⊗ Amax
+⊂ B.
+L
+R
+
+(2.2)
+
+due to the intermediate inclusion
+
+Here Z max is the coupling matrix for the maximal observables, and BL and BR are the
+branching matrices. From Prop. 2.1 we know that the maximal chiral observables are
+each other’s relative commutants, and in fact are distingushed by this property. Prop. 4.1
+below will tell us that the sets of sectors of Amax
+and Amax
+contributing to the coupling
+L
+R
+max
+matrix (2.6) are both closed under fusion, and Z
+is a permutation matrix which induces
+an isomorphism of the fusion rules, and hence preserves the statistical dimensions. Since
+it also respects the statistics phases (Cor. 3.2), it intertwines the left and right statistics
+characters Y max as well. In particular, YLmax is invertible if YRmax is, and the coupling
+matrix intertwines the ensuing left and right statistics representations.
+Corollary 3.6 The coupling matrix of a local 2D conformal QFT with respect to its
+maximal chiral observables (or equivalently: every coupling matrix which is a permutation
+matrix) satisfies
+YLmax Z max = Z max YRmax ,
+(3.7)
+hence statistics symmetry. If in addition both the left and right chiral statistics is nondegenerate, then the coupling matrix is a modular invariant with respect to the left and right
+statistics representations of SL(2, Z).
+
+K.-H. Rehren: Locality and modular invariance
+
+11
+
+In [2] conditions were found that the branching matrices intertwine the matrices Y and
+Y max up to a numerical factor This implies that the total coupling matrix Z = BLt Z max BR
+also interwines YL with YR , i.e., Z has statistics symmetry:
+Proposition 3.7 [2, Lemma 6.3] Consider a local extension (of chiral QFT’s) A ⊂ Amax
+with finite index λ. If ∆ is a closed system of DHR sectors of A, then its image α0 (∆)
+under ambichiral induction is a closed system of DHR sectors of Amax , and the branching
+matrix B intertwines the matrices Y and Y max associated with the systems ∆ and α0 (∆):
+1
+BY = Y max B.
+λ
+
+(3.8)
+
+“Ambichiral induction” is a map between closed systems of DHR endomorphisms,
+based on α-induction. The latter is the natural prescription to extend DHR endomorphisms of a subtheory to an ambient theory, giving rise to soliton-type sectors in general.
+α-induction was first considered by J. Roberts [24] in a cohomological problem, and its
+relevance for the local extension problem was discussed in [14]. Its functorial properties
+where first elaborated by Xu [26] and by B¨ockenhauer and Evans [1]. Due to nontrivial
+monodromies, there are in fact two prescriptions for α-induction, and ambichiral induction is the intersection of the two sets of irreducible subsectors obtained by applying both
+prescriptions to the elements of ∆.
+An entry of the branching matrix B is by definition the multiplicity of an irreducible
+DHR sector of A in the restriction of an irreducible DHR sector of Amax . By “α-σreciprocity” which holds for local extensions [1], this multiplicity equals the multiplicity
+of the DHR sector of Amax in the image of the sector of A under either α-induction. In
+particular, every DHR sector of Amax belongs to the ambichiral image of each sector of A
+contained in its restriction.
+Corollary 3.8 Consider the local 2D extension B with coupling matrices Z and Z max
+with respect to the chiral observables AL ⊗ AR and Amax
+⊗ Amax
+L
+R , respectively. Let ∆X and
+max
+∆X (X = L, R) be the sets of chiral DHR sectors contributing to the respective coupling
+matrices. If ∆X are both closed systems, and ∆max
+both coincide with the images of ∆X
+X
+under ambichiral induction (or, equivalently, with the preimage of ∆X under restriction),
+then the coupling matrix Z satisfies statistics symmetry.
+follows from α-σ-reciprocity and
+Proof: The equivalence of the two conditions on ∆max
+X
+max
+the obvious fact that ∆X is the image of ∆X under restriction. According to Prop.
+3.7, the branching matrices intertwine the statistics characters for the closed systems of
+sectors ∆X and α0 (∆X ), while according to Cor. 3.6, the permutation matrix Z max interand ∆max
+twines the statistics characters for the closed systems ∆max
+L
+R . Thus, under the
+stated conditions, Cor. 3.6 and Prop. 3.7 show that the coupling matrix Z = BLt Z max BR
+intertwines the statistics characters for ∆L and ∆R with the stated numerical factors.
+Q.E.D.
+This corollary is the strongest result one may expect for general heterotic theories, as
+a generalization of modular invariance implied by 2D locality. However, the conditions on
+
+K.-H. Rehren: Locality and modular invariance
+
+12
+
+the behavior of sectors under induction and restriction in the corollary (in order to apply
+the results of [2]) are not always satisfied.
+Simple counter examples of perfectly local 2D extensions which violate the assumption
+and conclusion of Cor. 3.8 are given by
+AL ⊗ AR ⊂ Amax
+⊗ Amax
+=B
+L
+R
+
+(3.9)
+
+where the chiral inclusions A ⊂ Amax have subfactor depth larger than 2, such as the
+“conformal embedding” SU(2)10 ⊂ Sp(5)1 with partition function
+Z = χmax
+⊗ χmax
+= (χ0 + χ3 ) ⊗ (χ0 + χ3 ).
+0
+0
+
+(3.10)
+
+Only those sectors of A contribute to the coupling matrix which are contained in the
+vacuum sector of Amax , and these do not form a closed system unless the depth is 2.
+α-induction on these sectors produces new DHR sectors of Amax which are not contained
+in the vacuum representation of B. Completing the systems of chiral sectors ensures the
+correct intertwining property for the branching matrices, but the coupling matrix Z max ,
+now being a bijection between subsystems of the completed systems, no longer intertwines
+YLmax with YRmax for the completed systems.
+I do not see, whether the coupling matrix satisfies any sensible intertwining property
+weaker than statistics symmetry in complete generality. A possible criterium to exclude
+models like the counter examples (3.10), and hopefully to enforce the intertwining property
+(3.5), could be that the local 2D theory B does not possess nontrivial superselection
+sectors, but I have no proof that this condition indeed has the desired consequences.
+Thus, we see that 2D locality comes close to imply the statistics symmetry (Def.
+3.4) which generalizes modular invariance to general heterotic models and to models
+without proper modular transformation laws for the chiral Gibbs functionals. But counter
+examples are easily constructed.
+Conversely, as mentioned in the introduction, there are accidental modular invariants
+which do not admit a corresponding local 2D extension of the chiral observables. Thus,
+we conclude that modular invariance and 2D locality are intimately related while neither
+can imply the other without suitable further input.
+
+4
+
+Canonical tensor product subfactors
+
+Solving the operator identities (2.7) within the DHR category of the local net A is
+equivalent to finding a Q-system (ρ0 , w, w1) for the local factor A(O0 ) such that ρ0 ∈
+Endfin (A(O0 )) is the restriction of some DHR endomorphism of A localized in O0 . The
+problem is thus of the type: Find all subfactors A1 of a factor A whose canonical endomorphisms ρ decompose into irreducibles from a given system of sectors of A. In this form
+it is mathematically well-posed with any purely infinite factor A and any given system of
+sectors ∆ ⊂ Endfin (A). To impose also the eigenvalue condition (2.8), one has to assume
+the system of sectors to be braided.
+There is no general solution to this problem. But there are some partial results which
+relate to the specific tensor product structure. We call a subfactor of the form A ⊗ C ⊂ B
+
+K.-H. Rehren: Locality and modular invariance
+
+13
+
+a canonical tensor product subfactor (CTPS) [22] if its dual canonical endomorphism
+ρ ∈ Endfin (A ⊗ C) decomposes into irreducibles as
+ρ≃
+
+Zij αi ⊗ γj ,
+
+(4.1)
+
+ij
+
+with αi ∈ End(A) and γj ∈ End(C).
+The embeddings AL ⊗ AR ⊂ B of Sect. 3 share this structure. The coupling matrix Z
+of a CTPS is again in general rectangular. It has nonnegative integer entries, and Z00 = 1
+if and only if the CTPS is irreducible. We shall consider
+The subfactor classification problem: Find all irreducible canonical tensor product subfactors A ⊗ C ⊂ B with αi and γj in (4.1) belonging to given systems of sectors
+of the given factors A and C, respectively.
+We have seen in Sect. 2 that the left and right maximal chiral observables are each
+other’s relative commutants within the 2D theory. Therefore, the following general result,
+formulated in the broader framework of subfactors, is of interest.
+Proposition 4.1 [21] Let A ⊗ C ⊂ B be a CTPS with dual canonical endomorphism as
+in (4.1). Then the following are equivalent.
+(i) 1l ⊗ C is the relative commutant of A ⊗ 1l in B, and vice versa. (This property is
+called “normality”).
+(ii) Z0j = δ0j and Zi0 = δi0 .
+(iii) The sectors αi of A and the sectors γj of C contributing to (4.1) are both closed
+under conjugation and fusion. There is a bijection between them which preserves the
+fusion rules, and the coupling matrix is the permutation matrix for this bijection.
+It is not clear whether every CTPS A ⊗ C ⊂ B has an intermediate normal CTPS
+Aˆ ⊗ Cˆ ⊂ B as in Prop. 4.1. Presumably, this is not the case in general. The results
+in [21] on the tensor product position of chiral observables within a 2D conformal QFT,
+however, ensure the existence of a unique normal intermediate subfactor, corresponding
+to the maximal observables,
+AL ⊗ AR ⊂ Amax
+⊗ Amax
+⊂ B.
+L
+R
+
+(2.2)
+
+The proposition, when applied to canonical DHR triples, thus splits the local classification problem into two independent parts: classification of chiral local extensions
+A ⊂ Amax , and classification of normal canonical DHR triples with Z max an isomorphism
+of the fusion rules of Amax
+and Amax
+L
+R .
+The proposition also implies that the coupling matrix (2.6) for a local 2D extension is
+of block form (1.4) as for modular invariants. (Note that in the heterotic case a distinction
+between “Type I” and “Type II” is meaningless.)
+The CTPS classification problem can again be formulated algebraically in terms of Qsystems for A ⊗ C satisfying (2.7) with ρ of the form (4.1). We cannot solve this problem
+systematically, but there are systematic prescriptions for the construction of Q-systems
+for CTPS’s. In this way, the following Props. 4.2 and 4.3 were obtained, which are mainly
+relevant for the associated existence problem.
+
+14
+
+K.-H. Rehren: Locality and modular invariance
+
+Proposition 4.2 [14] Let A be a purely infinite factor, and ∆ ⊂ Endfin (A) a finite
+closed system of irreducible endomorphisms σ with finite index. Then there is a subfactor
+A ⊗ Aopp ⊂ B with dual canonical endomorphism
+σ ⊗ σ opp .
+
+ρ≃
+
+(4.2)
+
+σ∈∆
+
+If the system ∆ is braided, then the eigenvalue condition (2.8) is also satisfied.
+The result has been generalized to factors of type II and to infinite systems ∆ by
+Masuda [15], who also showed that the resulting subfactor is isomorphic to the asymptotic
+subfactor associated with the inclusion ρ∆ (A) ⊂ A where ρ∆ is the direct sum of all
+αi ∈ ∆. Izumi has shown how to compute the complete structure of these subfactors [10].
+The coupling matrix in Prop. 4.2 is the diagonal unit matrix for the system ∆. In chiral
+conformal QFT on the circle, Aopp = A(I)opp is naturally isomorphic to A(I)′ = A(I ′ ),
+and the latter is M¨obius conjugate to A(I) = A. Under these identifications, the opposite
+σ opp of a DHR endomorphism σ belongs to the charge conjugate sector σ
+¯ [9]. Hence, in
+CQFT eq. (4.2) corresponds to a canonical DHR triple for AL ≃ AR with coupling matrix
+Z = C, the charge conjugation matrix.
+Applied to the existence problem for a given coupling matrix, or modular invariant,
+the proposition thus states that the conjugate diagonal matrix Z = C always corresponds
+to a local 2D theory. By choosing irreducible subfactors Aν ⊂ A (ν = 1, 2), one obtains
+an abundance of CTPS’s A1 ⊗ Aopp
+⊂ B with coupling matrix in block form as with Type
+2
+I modular invariants. The corresponding families of sectors of Aν (cf. Sect. 1) are the
+restrictions of σ ∈ EndDHR (A) to Aν .
+The following result is an important generalization, by which local 2D conformal QFT’s
+can be associated with numerous other (also Type II) modular invariants.
+Proposition 4.3 [22] Let Aν ⊂ M (ν = 1, 2) be two subfactors of finite index, ∆ν ⊂
+Endfin (Aν ) two finite closed systems of (inequivalent irreducible) endomorphisms. For a
+pair of inductions · (see below) of ∆ν put
+Zσ,τ = dim Hom(σ, τ )M
+
+(σ ∈ ∆1 , τ ∈ ∆2 ).
+
+(4.3)
+
+Then there is a CTPS A1 ⊗ Aopp
+⊂ B with dual canonical endomorphism
+2
+Zσ,τ σ ⊗ τ opp .
+
+ρ≃
+
+(4.4)
+
+σ∈∆1 ,τ ∈∆2
+
+(An “induction” · assigns to each σ ∈ ∆ an endomorphism σ ∈ Endfin (M) in a functorial manner: σ extends σ, i.e., σ|A = σ, and intertwiners between products of σi are
+intertwiners for products of σi as well, i.e., Hom(σ1 , σ2 σ3 )A ⊂ Hom(σ1 , σ2 σ3 )M .)
+If furthermore the systems ∆ν are braided, and the braidings fulfill a naturality condition with respect to Hom(σ, τ )M , then the CTPS also satifies the eigenvalue condition
+(2.8).
+
+K.-H. Rehren: Locality and modular invariance
+
+15
+
+Let A1 ≃ A2 be local algebras of chiral observables, ∆1 ≃ ∆2 subsystems of their DHR
+endomorphisms, and assume that the dual canonical endomorphisms for the subfactors
+Aν ⊂ M are also DHR endomorphisms (these subfactors need not describe local chiral
+extensions). Then α-induction (cf. Sect. 3) is applicable to ∆ν , and the assumptions of
+Prop. 4.3 are fulfilled with the two opposite prescriptions for α-induction. It was shown
+in [4] that the corresponding coupling matrix (4.3) has statistics symmetry. In fact,
+many thermodynamical modular invariants can be obtained this way. For these modular
+invariants, Prop. 4.3 thus proves the existence of an associated local 2D conformal QFT.
+The statement of Prop. 4.3 is, however, not restricted to α-induction, and therefore
+produces a larger class of CTPS’s than appearing in 2D conformal QFT. On the other
+hand, uniqueness of the subfactors in Props. 4.2 and 4.3 is not claimed. There may well be
+inequivalent CTPS’s with the same dual canonical endomorphism, but with inequivalent
+Q-systems.
+
+Conclusions
+I have discussed the interrelations between several classification problems arising in mathematics and physics with various applications and interpretations: modular invariants,
+local 2D conformal QFT, and canonical tensor product subfactors. They all have some
+aspects in common (notably a coupling matrix), but the specific requirements imposed
+on the coupling matrix depend on the perspective. Progress in any of these classification
+problems will have a bearing on the related ones.
+
+Acknowledgments
+I thank J. B¨ockenhauer, S. Carpi and A. Ocneanu for numerous discussions, and J. Mund
+for a critical reading of the manuscript.
+
+References
+[1] B¨ockenhauer, J., Evans, D.E.: Modular invariants, graphs and α-induction for nets of
+subfactors. I, Commun. Math. Phys. 197, 361-386 (1998), II, ibid. 200, 57-103 (1999), and
+III, ibid. 205, 183-229 (1999).
+[2] B¨ockenhauer, J., Evans, D.E.: Modular invariants from subfactors: Type I coupling matrices and intermediate subfactors. math.OA/9911239.
+[3] B¨ockenhauer, J., Evans, D.E.: Modular invariants from subfactors. math.OA/0006114.
+[4] B¨ockenhauer, J., Evans, D.E., Kawahigashi, Y.: On α-induction, chiral generators and
+modular invariants for subfactors. Commun. Math. Phys. 208, 429-487 (1999).
+(1)
+
+[5] Cappelli, A., Itzykson, C., Zuber, J.B.: The A-D-E classification of minimal and A1
+conformal invariant theories. Commun. Math. Phys. 113, 1-26 (1987).
+[6] Doplicher, S., Haag, R., Roberts, J.E.: Local observables and particle statistics. I, Commun.
+Math. Phys. 23, 199-230 (1971), and II, ibid. 35, 49-85 (1974).
+
+K.-H. Rehren: Locality and modular invariance
+
+16
+
+[7] Fredenhagen, K., Rehren, K.-H., Schroer, B.: Superselection sectors with braid group statistics and exchange algebras. I, Commun. Math. Phys. 125, 201-226 (1989), and II, Rev.
+Math. Phys. SI1 (Special Issue), 113-157 (1992).
+[8] Gannon, T.: The classification of SU (3) modular invariants revisited. Ann. Inst. H. Poinc.
+65, 15-56 (1996).
+[9] Guido, D., Longo, R.: The conformal spin and statistics theorem, Commun. Math. Phys.
+181, 11-36 (1996).
+[10] Izumi, M.: The structure of sectors associated with the Longo-Rehren inclusions. I, to
+appear in Commun. Math. Phys., and II, Kyoto preprint (2000).
+[11] Kac, V.G., Peterson, D.H.: Infinite-dimensional Lie algebras, theta functions and modular
+forms. Adv. Math. 53, 125-264 (1984).
+[12] Kawahigashi, Y., Longo, R., M¨
+uger, M.: Multi-interval subfactors and modularity of representations in conformal field theory. math.OA/9903104.
+[13] Longo, R.: A duality for Hopf algebras and for subfactors. I, Commun. Math. Phys. 159,
+133-150 (1994).
+[14] Longo, R., Rehren, K.-H.: Nets of subfactors. Rev. Math. Phys. 7, 567-597 (1995).
+[15] Masuda, T.: An analogue of Longo’s canonical endomorphism for bimodule theory and its
+application to asymptotic inclusions. Int. J. Math. 8, 249-265 (1997).
+[16] Moore, G., Seiberg, N.: Naturality in conformal field theory. Nucl. Phys. B313, 16-40
+(1989).
+[17] M¨
+uger, M.: Conformal field theory and Doplicher Roberts reconstruction. Contribution to
+this conference, math-ph/0008027.
+[18] Nahm, W.: A proof of modular invariance. Int. J. Mod. Phys. A6, 2837-2845 (1991).
+[19] Ocneanu, A.: Contribution to this conference.
+[20] Rehren, K.-H.: Braid group statistics and their superselection rules. In: The Algebraic
+Theory of Superselection Sectors, D. Kastler (ed.). World Scientific, Singapore 1990, pp.
+333-355.
+[21] Rehren, K.-H.: Chiral observables and modular invariants. Commun. Math. Phys. 208,
+689-712 (2000).
+[22] Rehren, K.-H.: Canonical tensor product subfactors. Commun. Math. Phys. 211, 395-406
+(2000).
+[23] Rehren, K.-H., Stanev, Ya.S., Todorov, I.T.: Characterizing invariants for local extensions
+of current algebras. Commun. Math. Phys. 174, 605-633 (1996).
+[24] Roberts, J.E.: Local cohomology and superselection structure. Commun. Math. Phys. 51,
+107-119 (1976).
+[25] Schellekens, A.N., Yankielowicz, S.: Field identification fix points in the coset construction.
+Nucl. Phys. B334, 67-102 (1990).
+[26] Xu, F.: New braided endomorphisms from conformal inclusions. Commun. Math. Phys.
+192, 349-403 (1998).
+[27] Zuber, J.-B.: CFT, BCFT, ADE and all that. hep-th/0006151.
+
+

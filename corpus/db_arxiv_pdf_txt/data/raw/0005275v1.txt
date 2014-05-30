@@ -1,0 +1,117 @@
+arXiv:math/0005275v1 [math.GM] 29 May 2000
+
+NEW MATHEMATICAL METHODS FOR
+PSYCHOPHYSICAL FILTERING OF EXPERIMENTAL DATA
+AND THEIR PROCESSING
+
+Denis V. Juriev
+ul.Miklukho-Maklaya 20-180, Moscow 117437 Russia
+(e-mail: denis@juriev.msk.ru)
+math.GM/0005275
+
+This article, which is devoted to new mathematical methods for psychophysical
+filtering of experimental data and their processing, may be regarded as a development of ideas of Ref.1 on the experimental detection of interactivity in complex
+systems. The main innovation is that a psychophysical filtering is used consistently
+now for such detection.
+1. Basic procedure. Let us consider a natural, behavioral, social or economical
+system S. It will be described by a set {ϕ} of quntities, which characterize it at
+any moment of time t (so that ϕ = ϕt ). One may suppose that the evolution of the
+system is described by a differential equation
+ϕ˙ = Φ(ϕ)
+and look for the explicit form of the function Φ from the experimental data on the
+system S. However, the function Φ may depend on time, it means that there are
+some hidden parameters, which control the system S and its evolution is of the
+form
+ϕ˙ = Φ(ϕ, u),
+where u are such parameters of unknown nature. One may suspect that such
+parameters are chosen in a way to minimize some goal function K, which may be
+an integrodifferential functional of ϕt :
+K = K([ϕτ ]τ ≤t )
+(such integrodifferential dependence will be briefly notated as K = K([ϕ]) below).
+More generally, the parameters u may be divided on parts u = (u1 , . . . , un ) and each
+part ui has its own goal function Ki . However, this hypothesis may be confirmed
+by the experiment very rarely. In the most cases the choice of parameters u will
+seem accidental or even random. Nevertheless, one may suspect that the controls
+
+ui are interactive, it means that they are the couplings of the pure controls u◦i with
+the unknown or incompletely known feedbacks:
+ui = ui (ui◦ , [ϕ])
+and each pure control has its own goal function Ki . Thus, it is suspected that the
+system S realizes an interactive game. There are several ways to define the pure
+controls u◦i . One of them was proposed in Ref.1. It is based on the integrodifferential
+filtration of the controls ui :
+u◦i = Fi ([ui ], [ϕ]).
+To verify the formulated hypothesis and to find the explicit form of the convenient
+filtrations Fi and goal functions Ki one should use the theory of interactive games,
+which supplies us by the predictions of the game, and compare the predictions with
+the real history of the game for any considered Fi and Ki and choose such filtrations
+and goal functions, which describe the reality better. One may suspect that the
+dependence of ui on ϕ is purely differential for simplicity or to introduce the socalled intention fields, which allow to consider any interactive game as differential.
+Moreover, one may suppose that
+ui = ui (u◦i , ϕ)
+and apply the elaborated procedures of a posteriori analysis and predictions to the
+system.
+In many cases this simple algorithm effectively unravels the hidden interactivity of a complex system, however, sometimes it does not work. Therefore, more
+sophisticated procedures should be applied. One of them will be described below.
+Let us consider an interactive game with states ψ and interactive controls w =
+(w1 , . . . , wm ) so that the evolution equation has the form
+ψ˙ = Ψ(ψ, w).
+◦
+The interactive controls are the couplings of pure controls w◦ = (w1◦ , . . . , wm
+) with
+the unknown or incompletely known feedbacks:
+
+w = w(w◦ , ψ).
+Often such interactive game is a game of a real human person and the interactivity
+is caused by the coupling of conscious and subconscious behavioral reactions.
+Let us consider the integrodifferential nonlinear operator, which will expresses
+the pure controls w◦ via u and ϕ:
+w◦ = W ([u], [ϕ]).
+In the simplest case one may put
+w◦ = W (u, ϕ).
+The pure controls w◦ realize a scenario for the interactive game and it becomes a
+performance.
+The integrodifferential filtration should be applied to w instead of u now:
+u◦i = Fi ([w], [ϕ], [ψ]).
+We suspect that u◦ = (u◦1 , . . . , u◦n ) are pure controls for u = (u1 , . . . , un ). It means
+that
+u = u(u◦ , ϕ)
+and the explicit dependence is unknown or incompletely known. Because we use
+a human person, the whole procedure realizes a psychophysical filtering of the
+experimental data.
+2
+
+2. Psychophysical engineering.
+The basic procedure, which is described above, admits further improvements,
+which are based on the ideas of automata theory and form the psychophysical
+engineering.
+First, let us mark that an interactive game may be regarded as an infinite automata with continuous time. Therefore, one is able to consider a composition
+of interactive games. It means that the interactive controls of one game are used
+as pure controls for other one. Certainly, some integrodifferential transforms of
+controls (analogous to one decribed above) may be used between output of one
+game and the input of another to glue the games. Such transforms are defined by
+the known integrodifferential nonlinear operators. Of course, such operators are
+reduced to functions in the simplest cases.
+Such glueings of interactive games allows to construct very sophisticated objects
+started from only few basic interactive games. Combined with the basic procedure
+above such psychophysical engineering becomes an effective tool for the unraveling
+of interactivity in complex systems. Concrete parts of the whole construction may
+be realized either by one human person or by their group. Of course, external
+interactive phenomena of non-human nature may be used also.
+The simplest interactive games, which may be used for the psychophysical engineering, are the visual (or general perceptive) games. However, it is difficult to
+parallelize such games so it is reasonable to interiorize the behavioral reactions,
+which are generated in such games. It means that the functional dependences between pure and interactive controls are remebered and reproduced by the person
+without any external or even internal visual image.
+Of course, the process of psychophysical engineering may be regarded as a tactical procedure [2] and may contain the intuitive subconscious steps. Therefore,
+a psychophysiological training may sufficiently enlarge the capabilities of a person
+to perform the psychophysical engineering. The group trainings are effective when
+groups are used. Personal abilities to adapt the external interactivity of non-human
+nature are also very essential.
+References
+[1] Juriev D., Experimental detection of interactive phenomena and their analysis. E-print:
+math.GM/0003001.
+[2] Juriev D., Tactical games & behavioral self-organization. E-print: math.GM/9911147.
+
+3
+
+

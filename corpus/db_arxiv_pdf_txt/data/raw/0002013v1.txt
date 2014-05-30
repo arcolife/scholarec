@@ -1,0 +1,1002 @@
+MINIMAL ESCAPE VELOCITIES
+W. Hunziker
+
+Institut f¨
+ur Theoretische Physik, ETH Z¨
+urich
+hunziker@itp.phys.ethz.ch
+
+I.M. Sigal
+
+Departement of Mathematics, University of Toronto
+sigal@math.toronto.edu
+
+A. Soffer
+
+Departement of Mathematics, Rutgers University
+soffer@math.rutgers.edu
+
+arXiv:math-ph/0002013v1 5 Feb 2000
+
+(March 1997)
+Abstract. We give a new derivation of the minimal velocity estimates [SiSo1] for unitary evolutions.
+Let H and A be selfadjoint operators on a Hilbert space H. The starting point is Mourre’s inequality
+i[H, A] ≥ θ > 0, which is supposed to hold in form sense on the spectral subspace H∆ of H for
+(k)
+some interval ∆ ⊂ R. The second assumption is that the multiple commutators adA (H) are wellbehaved for k = 1 . . . n (n ≥ 2) . Then we show that, for a dense set of ψ’s in H∆ and all m < n−1 ,
+ψt = exp(−iHt) is contained in the spectral subspace A ≥ θt as t → ∞, up to an error of order
+t−m in norm. We apply this general result to the case where H is a Schr¨odinger operator on √
+Rn
+and A the dilation generator, proving that ψt (x) is asymptotically supported in the set |x| ≥ t θ
+up to an error of order t−m in norm.
+
+1.
+
+INTRODUCTION
+
+Before posing the problem in abstract form we describe it in its original concrete setting. Consider the
+Schr¨odinger equation
+
+1 2
+p + V (x) on L2 (Rn )
+(1.1)
+2
+for a particle in Rn under the influence of a potential V (x). We are interested in the long–time behavior of
+i∂t ψt = Hψt ;
+
+H=
+
+orbits t → ψt in the continuous spectral subspace Hc of H. Under mild conditions on V , H is selfadjoint
+
+and
+
+p2
+for some constant c ∈ R. Here Φ
+
+ψ
+
+ψ
+
+≤ const. H + c
+
+ψ
+
+(1.2)
+
+= (ψ, Φψ) denotes the expectation value of an observable Φ in the state
+
+ψ. By Ruelle’s theorem ([Rue], see also [CFKS], [HuSi1]) any orbit ψt in Hc is escaping in a mean ergodic
+
+sense :
+
+lim
+
+T →∞
+
+1
+T
+
+T
+
+dt
+|x|≤R
+
+0
+
+dx |ψt (x)|2 = 0
+
+(1.3)
+
+for any finite R. The question is : how fast ? The answer will of course depend on the initial state ψ. The
+simplest example is the free particle (V = 0): if the Fourier transform ψ of ψ is smooth and supported
+outside some ball of radius v > 0, then a standard asymptotic expansion gives the result
+|x|≤vt
+
+dx |ψt (x)|2 = O(t−m ) (t → ∞)
+
+(1.4)
+
+for any m. In this sense the orbits ψt of the given type are said to have a minimal escape velocity v given by
+the support of ψ. To obtain a similar result for V = 0 we study the long–time behavior of the expectation
+values A
+
+t
+
+= (ψt , Aψt ) for suitable observables A, which evolve according to
+∂t A
+
+t
+
+= i[H, A]
+1
+
+t
+
+.
+
+(1.5)
+
+Mourre’s very fruitful idea [Mou] was to find observables A such that the commutator in (1.5) is conditionally
+positive , in the sense that
+E∆ i[H, A] E∆ ≥ θ E∆
+
+(θ > 0)
+
+(1.6)
+
+for some interval ∆ ⊂ R, where E∆ is the corresponding spectral projection of H. This implies that
+A
+
+t
+
+≥ θ t + O(1) → ∞
+
+(t → ∞)
+
+(1.7)
+
+for orbits ψt in the spectral subspace H∆ = Ran E∆ . Evidently A must be unbounded, so that domain
+questions arise. Also H∆ must be a subspace of Hc since A
+
+t
+
+is constant and i[H, A]
+
+ψ
+
+= 0 for any
+
+eigenvector ψ of H. (1.6) is a special case of a more general inequality due to Mourre, which was first proven
+for Schr¨odinger operators (including N –body systems), where A was taken as the dilation generator :
+A =
+
+1
+(p · x + x · p) ;
+2
+
+i[H, A] = p2 − x · ∇V (x)
+
+(1.8)
+
+([Mou], [PSS], see also [CFKS], [HuSi1]). In this case the intervals ∆ for which (1.6) holds fill the continous
+spectrum of H, in the sense that the corresponding subspaces H∆ span Hc . Moreover, since
+1
+A = i [H, x2 ]
+2
+is itself a commutator, (1.5) can be written as ∂t 2 x2
+x2
+
+t
+
+t
+
+(1.9)
+
+≥ 2θ for orbits ψt in H∆ , which implies that
+
+≥ θ t2 + O(t)
+
+(t → ∞) .
+
+(1.10)
+
+This is of course weaker than (1.4) : it only says that the mean value of x2 for the probability distribution
+|ψt (x)|2 diverges like θ t2 , whereas we want to prove that the support of this distribution is asymptotically
+√
+contained in |x| ≥ t θ as t → ∞ . The first step is to derive a corresponding result for the spectral support
+
+of ψt with respect to A. We state this result in abstract form for a pair (H , A) of selfdjoint operators on a
+Hilbert space H.
+(k)
+
+Theorem 1.1. Suppose that adA (f (H)) is bounded for any f ∈ C0∞ (R) and k = 1 . . . n, n ≥ 2, and that
+
+the Mourre inequality (1.6) holds for some open interval ∆ ⊂ R. Let χ± be the characteristic function of
+
+R± . Then
+
+χ− (A − a − ϑt)e−iHt g(H)χ+ (A − a) ≤ const. t−m
+
+(1.11)
+
+for any g ∈ C0∞ (∆), any ϑ in 0 < ϑ < θ and any m < n − 1, uniformly in a ∈ R .
+Since g ∈ C0∞ (∆) and a ∈ R are arbitrary, the vectors of the form
+ψ = g(H) χ+ (A − a)ϕ;
+
+ϕ∈H
+
+(1.12)
+
+are dense in H∆ . (1.11) says that, for any such ψ, ψt = exp(−iHt)ψ has spectral support in [ t ϑ , +∞) with
+
+respect to A , up to a remainder of order t−m in norm.
+2
+
+Remarks
+(k)
+
+(k)
+
+Commutators. The hypothesis adA (f (H)) ∈ L(H) may be replaced by conditions on adA (H) which are
+more subtle to formulate since the operators A and H are generally unbounded (see e.g. [ABG], [JMP]). For
+
+the special case (1.8) this is further discussed below.
+Resolvent smoothness and local decay. We indicate briefly how minimal velocity estimates are related to
+resolvent smoothness [JMP] and to local decay [PSS]. Let ρ(A) = (1 + A2 )1/2 . Setting a = −θt/2 and using
+that
+
+ρ(A)−α = ρ(A)−α χ± (A ± ct) + O(t−α ) ,
+we obtain from (1.11)
+ρ(A)−α e−iHt g(H)ρ(A)−α ≤ const. (1 + t)− min(α,m) .
+For α, m > 1 this is integrable over −∞ < t < +∞ , which (by Fourier transform) leads to the resolvent
+estimate
+
+sup ρ(A)−α (z − H)−1 g(H)ρ(A)−α ≤ ∞ .
+
+(1.13)
+
+z ∈R
+/
+
+Similar estimates for the derivatives with respect to z (higher powers) of the resolvent (z −H)−1 are obtained
+
+using correspondingly higher values of α, m (resolvent smoothness). Replacing g by g 2 in (1.13) it also follows
+that the operator ρ(A)−α is H–smooth for α > 1 and therefore ([RSIV] Theorem XIII.25 and corollary)
++∞
+
+dt ρ(A)−α e−iHt ψ
+
+−∞
+
+2
+
+≤ const. ψ
+
+2
+
+∀ψ ∈ H∆′ ,
+
+(1.14)
+
+where ∆′ is any fixed compact subset of ∆ (local decay). By an independent argument of Mourre (given in
+[PSS]) the estimate (1.13) and therefore (1.14) can be improved from α > 1 to α > 1/2.
+Our second result is an application of Theorem 1.1 to the Schr¨odinger equation (1.1). Here A is given by
+(1.8), and
+(k)
+
+ik adA (H) = 2k−1 p2 + (−x · ∇)k V (x) .
+
+(1.15)
+
+A simple way to satisfy the hypothesis of Theorem 1.1 in this case is to assume that V has relative bound
+less than 1 with respect to 21 p2 , and that the distributions (x · ∇)k V (x) are locally L2 and (as multiplications
+
+operators) bounded relative to p2 for k = 1 . . . n. Then the operators (1.15) are bounded relative to H and it
+(k)
+
+is straightforward to compute and to estimate the the norms of adA ((z − H)−1 ) for Im(z) = 0. Representing
+
+f (H) by the resolvent (z − H)−1 (e.g. using the Helffer-Sj¨ostrand formula ([HeSj], [Dav]) it then follows
+(k)
+
+that adA (f (H)) is bounded for k = 1 . . . n. The result is that fast decay (large m) in (1.11) must be paid
+for by high smoothness of V (x) for all x. This is unnatural, and in fact there is a better way to construct A
+
+which requires only smoothness of V (x) for arbitray large |x|. The idea is to replace x2 in (1.9) by a smooth,
+
+convex function G(x) which is equal to x2 for large |x| but constant in some abitrary large ball |x| ≤ R.
+
+Then A changes to
+
+A=
+
+1
+(∇G(x) · p + p · ∇G(x)) ,
+2
+3
+
+(k)
+
+and the Mourre inequality can be established as before. Then the operators adA (p2 ) remain second order
+in p with bounded coefficients, while
+(k)
+
+ik adA (V ) = (−∇G(x) · ∇)k V (x)
+requires only derivatives of V (x) in the region |x| > R. A more carful construction of G(x) due to Graf
+
+[Gra1] is specially adapted to the N -body case, requiring only smoothness of the pair potentials for large
+separations (see [Skib], [Gri]). The following result can also be proven in this more general setting.
+Theorem 1.2. Let H and A be given by (1.1) and (1.8). Then, under the hypothesis of Theorem 1.1 ,
+χ− (x2 − 2at − ϑ t2 ) e−iHt g(H) χ+ (A − a) ≤ const. t−m
+
+(1.16)
+
+for any ϑ in 0 < ϑ < θ, any m < n − 1 and any a ∈ R.
+We remark that for initial states of the form (1.13) this is equivalent to
+dx ψt (x)
+
+2
+
+|x|≤v t
+
+for any v <
+
+≤ const. t−2m
+
+(1.17)
+
+√
+θ.
+
+The proofs of these results are given in section 2. The main tool is the method of commutator expansions
+summarized in section 3.
+We conclude the introduction with some (not exhaustive) bibliographical notes. Minimal velocity estimates
+were first given by Sigal and Soffer [SiSo1] and then extended by Skibsted [Ski] and by G´erard and Sigal [GeSi],
+with applications to scattering theory ([SiSo2], [Sig], [HeSk]) and to the theory of resonances ([GeSi], [SoWe],
+[Nier]). Our derivation is similar in spirit to [Ski] and incorporates remarks by Froese and Loss [FrLo]. The
+related subject of resolvent smoothness and local decay is more fully treated by time–independent methods
+e.g. in [PSS], [JMP] and [GIS], where further references can be found. The generalization of Mourre’s
+theorem using the construction of Graf [Gra1] first appears in [Ski]. A simpler proof due to Graf [Gra2] is
+given in [Gri]. For other applications of Mourre’s inequality to wave equations and spectral geometry see
+e.g. [DHS], [DBiPr], [FHP].
+2.
+
+PROOFS
+
+The following lemma gives the basic estimate for a proof by bootstrap of Theorem 1.1. A smooth function
+f on R is said to be of order p if for each k
+|f (k) (x)| ≤ const. |x|p−k .
+Lemma 2.1. Suppose that A, H and g satisfy the hypothesis of Theorem 1.1. Let f be a positive C ∞ function on R of order < 4 with f ′ ≤ 0 and f (x) = 0 for x ≥ 0. Let 1 ≤ s < ∞; a ∈ R, As = s−1 (A − a),
+
+and ε ≤ 1. Then
+
+g(H)i[H, f (As )]g(H) ≤ s−1 θg(H)f ′ (As )g(H)
+
++ s−(1+ε) g(H)f1 (As )g(H)
+
++ const. s−(2n−1−ε) g 2 (H)
+4
+
+(2.1)
+
+uniformly in a ∈ R, where f1 is a function on R which again satisfies the hypothesis stated for f .
+Proof. In the commutator i[H, f (As )] occurring in (2.1) we can replace H by a bounded operator
+Hb = H b(H)
+
+(2.2)
+
+where b ∈ C0∞ (R); b ≡ 1 on supp(g). Then the commutators
+(k)
+
+Bk = i adA (Hb ) ,
+
+k = 1...n ,
+
+are bounded by hypothesis. As a first step we show that
+i[Hb , f (As )] = −s−1 (−f ′ (As ))1/2 B1 (−f ′ (As ))1/2 + remainder .
+
+(2.3)
+
+Here and in the rest of the proof a remainder is defined as a quadratic form rem(s) with an estimate
+±rem(s) ≤ s−(1+ε) f1 (As ) + const. s−(2n−1−ε) ,
+
+(2.4)
+
+uniformly in a, where f1 is a function on R satisfying the hypothesis for f . Any such remainder clearly
+fits into (2.1) and needs no further consideration. To prove (2.3) we factorize f = F 2 and then expand the
+commutator
+
+i[Hb , f ] = i[Hb , F ]F + F i[Hb , F ]
+n−1
+
+=
+k=1
+−n
+
++s
+
+1 −k (k)
+s (F Bk F + F Bk∗ F (k) )
+k!
+
+(2.5)
+
+(RF + F R∗ )
+
+using (3.1). Since n ≥ 2 and since F is of order < 2 it follows from (3.2) that R is bounded uniformly in
+
+s and a. Now we observe that all the terms in the expansion (2.5) except the leading term (k = 1) are
+remainders. In particular
+|(ψ, F (k) Bk F ψ)| ≤ Bk
+
+F (k) ψ
+
+F ψ ≤ const. (ψ, f1 ψ),
+
+(2.6)
+
+where f1 is a common upper bound for F 2 = f and (F (k) )2 which satisfies the hypothesis for f . The last
+term in (2.5) is estimated using the operator inequality
+±(P ∗ Q + Q∗ P ) ≤ P ∗ P + Q∗ Q
+1
+
+1
+
+for Q = s− 2 (1+ε) F ; P ∗ = s−n+ 2 (1+ε) R, with the result
+±s−n (RF + F R∗ ) ≤ s−(1+ε) f + s−(2n−1−ε) R
+
+2
+
+.
+
+(2.7)
+
+Therefore it remains to consider the leading term (k = 1) in (2.5), which is rewritten as
+s−1 (F ′ B1 F + F B1 F ′ ) = −s−1 (v 2 B1 u2 + u2 B1 v 2 )
+by factorizing F = u2 , −F ′ = v 2 . Since u is of order < 1 it follows from (3.2) that [B1 , u] ≤ const. s−1
+
+uniformly in a, and similarly for [B1 , v]. As in (2.6) this leads to the form estimate
+s−1 |v 2 B1 u2 − uvB1 uv| = s−1 |v[B1 , u]uv + v[v, B1 ]u2 |
+≤ const. s−2 (v 2 + u2 v 2 + u4 ) ≤ const. s−2 f1 (As ) ,
+5
+
+where f1 shares the properties of f = u4 (note that v is of lower order than u). Since the same estimate
+holds with u and v interchanged, we conclude that
+s−1 (F ′ B1 F + F B1 F ′ ) = −2s−1 uv B1 uv
+plus a remainder. (2.3) now follows since f ′ = 2F F ′ = −2(uv)2 .
+To complete the proof of Lemma 2.1. we multiply (2.3) from both sides with g(H) = g(H)G(H), where
+G ∈ C0∞ (∆) is real and G ≡ 1 on supp(g). We also adjust the function b in (2.2) such that b ≡ 1 on supp(G).
+Multiplying (1.6) by G(H) from both sides we obtain the Mourre inequality :
+G(H)B1 G(H) = G(H)i[H, A]G(H) ≥ θ G2 (H).
+
+(2.8)
+
+Abbreviating G(H) = G and (−f ′ (As ))1/2 = j we show that
+s−1 GjBjG − s−1 jGBGj = s−1 jGB[j, G] + [G, j]BGj + [G, j]B[j, G]
+
+(2.9)
+
+is a remainder for any bounded B = B ∗ , using for [G, j] the expansion
+n−1
+
+[G, j] =
+k=1
+
+1 −k (k)
+(k)
+s j (A) adA (G) + s−n R
+k!
+
+(k)
+
+and its adjoint for [j, G]. Since adA (G) is bounded for k ≤ n, the right hand side of (2.9) then becomes a
+
+sum of terms of the following types :
+(a)
+
+s−(k+l+1) j (k) C j (l) + j (l) C ∗ j (k) ;
+
+(0 ≤ k, l ≤ n − 1; k + l ≥ 1);
+
+(b)
+
+s−(k+n+1) j (k) C + C ∗ j (k) ;
+
+(0 ≤ k ≤ n − 1);
+
+(c)
+
+s−(2n+1) C,
+
+where in each case C stands for some operator which is bounded uniformly in a and s. By the same arguments
+as in (2.6) and (2.7) these terms have corresponding upper and lower bounds
+
+(a)
+
+± s−2 2 C
+
+(b)
+
+± s−2 j (k)2 + s−2n C
+
+(c)
+
+j (k)2 + j (l)2 ;
+2
+
+;
+
+± s−(2n+1) C .
+
+For any bounded B = B ∗ we therefore obtain
+s−1 GjBjG ∼
+= s−1 jGBGj ,
+
+(2.10)
+
+meaning that the difference of the two expresssions is a remainder (2.4). For B = B1 = i[Hb , A] we use
+Mourre’s inequality (2.8) to obtain from (2.3) :
+G i[H, f ] G ∼
+= −s−1 Gj B1 jG ∼
+= −s−1 jG B1 Gj
+≤ −s−1 θjG2 j ∼
+= −s−1 θGj 2 G
+= s−1 θGf ′ G ,
+6
+
+with remainders arising from (2.3) and twice from (2.10). Multiplying from both sides with g(H) removes
+G(H) and leads directly to (2.1).
+Proof of Theorem 1.1. We prove a slightly stronger version of (1.11), which will serve later in the proof
+of Theorem 1.2. Let
+Ats = s−1 (A − a − θt) ,
+and suppose that F is a positive C ∞ -function of order ≤ 1/2 on R with F ′ ≤ 0 and F (x) = 0 for x ≥ 0.
+
+Instead of (1.11) we show under the same hypothesis that
+
+F (Ats )eiHt g(H)χ+ (A − a) ≤ const. s−m
+
+(2.11)
+
+for m < n − 1, uniformly in 0 ≤ t ≤ s and in a ∈ R. (1.11) then follows by setting t = s and by observing
+that, since ϑ < θ, χ− (s−1 (A − a) − ϑ) ≤ F (s−1 (A − a) − θ) for some F of the required type. To prove (2.11)
+
+we consider the operator
+
+φs (t) = g(H)f (Ats )g(H) ; f = F 2 ,
+and the evolution
+ψt = e−iHt χ+ (A − a)ϕ ; ϕ ∈ H .
+
+(2.12)
+
+Then the estimate (2.11) to be proved reads
+φs (t)
+
+t
+
+= (ψt , φs (t)ψt ) ≤ const. ϕ 2 s−2m ,
+
+(2.13)
+
+uniformly in 1 < s , 0 ≤ t ≤ s and in a ∈ R. We compute
+∂t φs (t)
+
+t
+
+= (ψt , Dt φs (t)ψt ) ;
+
+(2.14)
+
+Dt φs (t) = i[H, φs (t)] + ∂t φs (t)
+= g(H)i[H, f (Ats )]g(H) − s−1 θg(H)f ′ (Ats )g(H) .
+
+(2.15)
+
+First we conclude that
+Dt φs (t) ≤ const.
+
+(2.16)
+
+uniformly in s, t, a, since f is of order ≤ 1. (cf. the remark after (3.4)). Secondly, by (3.8),
+φs (0)
+
+0
+
+≤ ϕ
+
+2
+
+F (s−1 (A − a))g(H)χ+ (A − a)
+
+≤ const. s−2n ϕ
+
+2
+
+2
+
+.
+
+(2.17)
+
+Integrating (2.14) over t and using (2.16) and (2.17) we find the crude estimate
+φs (t)
+
+t
+
+≤ const. ϕ 2 (s−2n + s)
+
+for 0 ≤ t ≤ s, which proves (2.13) for m = −1/2. Now we bootstrap this estimate. First we note that by
+(2.15) and Lemma 2.1
+
+Dt φs (t) ≤ s−1−ε g(H)f1 (Ast )g(H) + const. s−(2n−1−ε) g 2 (H) .
+7
+
+(2.18)
+
+As an induction assumption, suppose that (2.13) holds for some m < n − 1. Since f1 also satisfies the
+
+hypothesis for f it then follows from (2.18) that
+
+2
+
+| Dt φs (t) t | ≤ const. ϕ
+
+· s−1 s−(2m+ε) + s−(2(n−1)−ε ,
+
+and again by integrating over t :
+φs (t)
+
+t
+
+≤ const. ϕ
+
+s−2n + s−(2m+ε) + s−(2(n−1)−ε)
+
+2
+
+uniformly in 0 ≤ t ≤ s and in a ∈ R. Recalling that ε ≤ 1, the best decay for s → ∞ is obtained by setting
+ε = min 1, (n − 1) − m ,
+which boosts the exponent m in (2.13) to m′ = m + ε/2. Therefore (2.13) holds for any m < n − 1.
+Proof of Theorem 1.2. It suffices to prove that
+χ(t−2 x2 − 2t−1 a − ϑ)e−iHt g(H)χ+ (A − a) ≤ const. t−m
+
+(2.19)
+
+if χ is a smoothed characteristic function of (−∞, −ε) for some ε > 0 : χ(x) = 1 for large negative x, χ′ ≤ 0,
+
+and χ(x) = 0 for x ≥ −ε. Following the line of the previous proof we consider the operators
+φs (t) = f (x2ts ); f = χ2 ; x2ts =
+
+1 2
+(x − 2at − ϑt2 )
+s2
+
+(2.20)
+
+and the evolution
+ψt = e−iHt g(H)χ+ (A − a)ϕ , ϕ ∈ H ,
+
+(2.21)
+
+for 0 ≤ t ≤ s. The desired inequality (2.19) then reads
+φs (s)
+
+s
+
+≤ const. s−2m .
+
+(2.22)
+
+Writing x2 − 2at − ϑ2 = (x − a)2 − (a2 + ϑ)t2 we see that
+φs (t) = 0
+
+for
+
+and therefore
+
+t≤s
+
+ε
+≡ αs ,
+a2 + ϑ
+
+s
+
+φs (s)
+
+s
+
+=
+
+dt Dt φs (t)
+
+s
+
+.
+
+αs
+
+To find Dt φs (t) we first compute
+i 2
+[p , φs (t)] = s−2 Af ′ (x2ts ) + f ′ (x2ts )A
+2
+= −2s−2 u(x2ts )Au(x2ts ) ,
+
+i[H, φs (t)] =
+
+where we have factorized f ′ = −u2 and used that [A, u]u = 0. Adding the term
+∂t φs (t) = 2s−2 (a + ϑt)u2 (x2ts )
+8
+
+(2.23)
+
+we arrive at
+Dt φs (t) = −2ts−2 u(x2ts )(t−1 (A − a) − ϑ)u(x2ts ) .
+
+(2.24)
+
+Now we use ϑ < θ to estimate
+−(t−1 (A − a) − ϑ) ≤ −(t−1 (A − a) − ϑ)χ− (t−1 (A − a) − ϑ)
+≤ F (t−1 (A − a) − θ)
+
+2
+
+by some smooth function F of order 1/2 supported in R− and with F ′ ≤ 0. Setting At = t−1 (A − a) − θ we
+find
+
+Dt φs (t)
+
+t
+
+≤ 2ts−2 F (At )u(x2ts )eiHt g(H)χ+ (A − a)ϕ
+
+2
+
+.
+
+(2.25)
+
+On the other hand, it follows from (2.11) by setting t = s that
+F (At )eiHt g(X)χ+ (A − a) ≤ const. t−m .
+
+(2.26)
+
+Before we can use this estimate in (2.25) we must commute the factor u(x2ts ) to the left. The required
+commutator can be expanded to any order n :
+n−1
+
+[u(x2ts ), F (At )] =
+k=1
+
+1 −k (k)
+t adA (u) F (k) (At ) + t−n R ,
+k!
+
+(n)
+
+(k)
+
+where R ≤ const. adA (u) . Since u ∈ C0∞ (R), the commutators adA (u) are easily bounded :
+(1)
+
+−iadA (u) = x · ∇u(x2ts ) = 2s−2 x2 u′ (x2ts )
+= 2x2ts u′ (x2ts ) + 2s−2 (2at + ϑt2 )u′ (x2ts )
+(k)
+
+and so forth, with the result that adA (u) ≤ const. uniformly in 1 ≤ s < ∞ and 0 ≤ t ≤ s. Since (2.26)
+
+also holds if F is replaced by a derivative F (k) , we find the estimate
+n−1
+
+Dt φs (t)
+
+s
+
+≤ const. ts−2 (t−m +
+≤ const. s
+
+t−k−m + t−n )2
+k=1
+
+−2 −2m+1
+
+t
+
+for 1 ≤ s < ∞, 0 ≤ t ≤ s, uniformly in a. Therefore, by (2.23),
+s
+
+φs (s)
+
+3.
+
+s
+
+≤ const. s
+
+−2
+αs
+
+dt t−2m+1 ≤ const. s−2m .
+
+COMMUTATOR EXPANSIONS
+
+Let H and A be self-adjoint operators on a Hilbert space H and suppose that H is bounded. To say that
+the commutor i[H, A] is bounded means that the quadratic form
+
+i[(Hψ, Aψ) − (Aψ, Hψ)]
+9
+
+on D(A) is bounded and thus defines a bounded, symmetric operator called i[H, A]. In the same sense we
+assume that the higher commutators
+(k)
+
+(k−1)
+
+adA (H) = [adA
+
+(H) , A]
+
+are bounded for k = 2 . . . n. Let f be a real C ∞ –function on R. Then, under a further condition given
+below, the commutator [H, f (A)] has an expansion
+n−1
+
+[H, f (A)] =
+k=1
+
+1 (k)
+(k)
+f (A)adA (H) + Rn
+k!
+
+(3.1)
+
+with a remainder estimate
+n+2
+(n)
+
+Rn ≤ cn adA (H)
+
+k=0
+
+dx(1 + |x|)k−n−1 |f (k) (x)| .
+
+(3.2)
+
+The further condition on f is that the integrals (3.2) exist. The number cn is a numerical constant depending
+on n but not on f , A or H. In particular, the expansion (3.1) holds if
+f (k) (x) = O(|x|n−ε−k )
+
+(x → ±∞)
+
+(3.3)
+
+for k = 1 · · · n + 2, i.e. if the function f (x) grows not faster than |x|n−ε , with corresponding slower growth
+
+of the successive derivatives. We will refer to (3.3) by saying that f is of order n − ε. In that case (3.1) is
+defined in form sense on the domain of f (1) (A). Taking the adjoint of (3.1) and noting that
+(k)
+
+(k)
+
+adA (H)∗ = (−1)k adA (H) ,
+we also obtain
+
+n−1
+
+[H, f (A)] =
+k=1
+
+1
+(k)
+.(−1)k−1 adA (H)f (k) (A) − Rn∗ .
+k!
+
+(3.4)
+
+This defines [H, f (A)] as an operator on the domain of f (1) (A) = f ′ (A). In particular, if f is of order ≤ 1
+
+and n ≥ 2, then [H, f (A)] is bounded. In the general case where H is not bounded, we will work with
+operators g(H), g ∈ C0∞ (R), assuming that
+(k)
+
+adA (g(H)) is bounded for k = 1 · · · n .
+
+(3.5)
+
+Then, if f is of order < n,
+n−1
+
+[g(H), f (A)] =
+k=1
+
+1 (k)
+(k)
+f (A)adA ((g(H)) + Rn ;
+k!
+
+Rn ≤ const.
+
+(n)
+adA ((g(H))
+
+(3.6)
+
+,
+
+with a constant depending on f and n, and similarly for the adjoint expansion. All these formulas are
+particularly useful if the role of A is played by a scaled operator, say s−1 A, 0 < s < ∞. Then the commutor
+
+expansions are expansions in powers of s−1 , e.g.
+n−1
+
+[g(H), f (s−1 A)] =
+k=1
+
+1 −k (k)
+(k)
+s f (A)adA (g(H)) + s−n Rn .
+k!
+10
+
+(3.7)
+
+A simple but useful observation is the following. Suppose that f (x) = 0 for x ∈ R+ , and let χ+ be the
+
+characteristic function of R+ . Then
+
+χ+ (A)g(H)f (s−1 A) ≤ const. s−n .
+
+(3.8)
+
+Proof. Since χ+ (A)f (s−1 A) = 0 we have
+χ+ (A)g(H)f (s−1 A) = χ+ (A)[g(H), f (s−1 A)] .
+Inserting the expansion (3.7) we notice that only the remainder s−n Rn contributes, since
+χ+ (A)f (k) (A) = 0.
+Commutator expansions of this type were introduced in [SiSo1] and have since become an important tool
+of operator analysis. There are several versions ([SiSo1], [Ski], [IvSi], [ABG]) which differ in the form of
+the remainder estimate. The results above are derived in [HuSi2] and are based on the Helffer-Sj¨ostrand
+functional calculus ([HeSj], [Dav]).
+Acknowledgements. This work was supported by the Swiss National Fund (WH), by NSERC under Grant
+NA 7901 (IMS), and by NSF (AS).
+REFERENCES
+[ABG] W.O. Amrein, A. Boulet de Monvel and V. Georgescu : C0 -Groups, Commutator Methods and
+Spectral Theory for N –Body Hamiltonians. Progress in Mathematical Physics, Vol. 135, Birkh¨auser
+Verlag (1996).
+[CFKS] H. Cycon, R. Froese, W. Kirsch and B. Simon : Schr¨odinger operators. Texts and Monographs in
+Physics, Springer Verlag (1987).
+[Dav] E.B. Davies : Spectral Theory and Differential Operators. Cambridge University Press (1995).
+[DHS] S. DeBi`evre, P. Hislop and I.M. Sigal : Scattering theory for the wave equation on non-compact
+manifolds. Rev. Math. Phys. 4 (1992) 575–618.
+[DBiPr] S. DeBi`evre and D.W. Pravica : Spectral analysis for optical fibres and stratified fluids, I, II. J. Funct.
+Anal. 98 (1991) and Comm. P.D.E. 17 (1992) 69–97.
+[FHP] R. Froese, P. Hislop and P. Perry : A Mourre estimate and related bounds for hyperbolic manifolds
+with cusps of non-maximal rank. J. Funct. Anal. 98 (1991) 292–310.
+[FrLo] R. Froese and M. Loss : unpublished notes.
+[Ger] C. G´erard : Sharp Propagation Estimates for N–Particle Systems. Duke Math. J. 67 (1992) 483–515.
+[GIS] C. G´erard, H. Isozaki and E. Skibsted : N-body resolvent estimates. J. Math. Soc. Japan 48 (1996)
+135–160.
+[GeSi] C. G´erard and I.M. Sigal : Space-time picture of semiclassical resonances. Comm. Math. Phys. 145
+(1992) 281–328.
+[Gra1] G.M. Graf : Asymptotic completeness for N -body short-range quantum systems : a new proof.
+Comm. Math. Phys. 132 (1990), 73–101.
+[Gra2] G.M. Graf : private communication.
+[Gri] M. Griesemer : N –body quantum systems with singular interactions. Ann. Inst. H. Poincar´e (1998),
+to appear.
+11
+
+[HeSj] B. Helffer and J. Sj¨
+ostrand : Equation de Schr¨odinger avec champ magn´etique et ´equation de Harper.
+In : Schr¨odinger operators. H. Holden, A. Jensen eds., Lecture Notes in Physics Vol. 345 Springer
+Verlag (1989).
+[HeSk] I. Herbst and E. Skibsted : Free channel Fourier transform in the long-range N -body problem. J.
+d’Analyse Math. 65 (1995) 297–332.
+[HuSi1] W. Hunziker and I.M. Sigal : The General Theory of N–Body Quantum Systems. In : Mathematical
+quantum theory : II. Schr¨odinger operators, J. Feldman et al., eds., CRM Proc. and Lecture Notes
+Vol. 8, Amer. Math. Soc. (1995).
+[HuSi2] W. Hunziker and I.M. Sigal : Time dependent scattering theory for N -body quantum systems.
+Preprint, ETH Z¨
+urich (1997).
+[IvSi] V. Ivrii and I.M. Sigal, Asymptotics of the ground state energies of large Coulomb systems, Annals
+of Math. 138 (1993) 243–335.
+[JMP] A. Jensen, E. Mourre and P. Perry : Multiple commutator estimates and resolvent smoothness in
+quantum scattering theory. Ann. Inst. H.Poincar´e 41 (1984) 207–225.
+[Mou] E. Mourre : Absence of singular continuous spectrum for certain seladjoint operators. Commun.
+Math. Phys. 78 (1981) 391–408.
+[Nie] F. Nier : The dynamics of some open quantum systems with short-range non-linearities. Preprint,
+Ecole Polytechnique, Paris (1997).
+[PSS] P. Perry, I.M. Sigal and B. Simon : Spectral Analysis of N –body Shcr¨
+odinger Operators, Ann. Math.
+144, (1981) 519–567.
+[RSIV] M. Reed and B. Simon : Methods of Modern Mathematical Physics, IV: Analysis of Operators,
+Academic Press (1978)
+[Rue] D. Ruelle : A remark on bound states in potential scattering theory. Nuovo Cimento A61 (1969)
+655–662.
+[Sig] I.M. Sigal : On long range scattering. Duke Math. J. 60 (1990) 473–496.
+[SiSo1] I.M. Sigal and A. Soffer : Local decay and velocity bounds. Preprint, Princeton University (1988).
+[SiSo2] I.M. Sigal and A. Soffer : Long-range many-body scattering. Invent. Math. 99 (1990) 115–143.
+[Ski] E. Skibsted : Propagation estimates for N –body Schr¨odinger operators. Comm. Math. Phys. 142
+(1992) 67–98.
+[SoWe] A. Soffer and M. Weinstein : Time-dependent resonance theory. Preprint, Ann Arbor (1997).
+
+12
+
+

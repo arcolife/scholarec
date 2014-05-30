@@ -1,0 +1,327 @@
+cosmolog thermal decoupl and
+primordi molecul
+arxivastroph0011496v1 27 nov 2000
+by deni puy
+institut of theoret physic univers of zurich 8057 zurich switzerland
+and
+paul scherrer institut laboratori for astrophys 5232 villigen switzerland
+puyphysikunizhch
+primordi chemistri began at the recombin epoch when the adiabat expans caus the
+temperatur of the radiat to fall below 4000k the chemistri of the earli univers involv the
+element hydrogen it isotop deuterium helium with it isotop form and lithium in thi contribut i will discuss the influenc of the primordi molecul on the cosmolog decoupl
+in the framework of the gravit instabl theori each protostructur start as a tini local
+overdens as long as these inhomogen are small their evolut can be studi by the classic
+linear perturb theori onc the deviat becom larg the linear theori is no more valid we
+present the role play by these molecul on the transit between the linear regim and the nonlinear regim and show that the molecul can lead to a thermal chang at the turnaround point
+between these two regim
+1 introduct
+at earli time the univers wa fill up with an extrem dens and hot ga due to
+the expans it cool below the bind energi of hydrogen deuterium helium lithium
+which led to the format of these nuclei sarkar 1996 after thi nucleosynthesi period the
+recombin process is not instantan becaus the electron captur into differ atom
+energi level could not cascad instantan down to the ground state atom reach the
+ground state either through the cosmolog redshift of the lyman line photon or by
+the 2s 1s two photon process nevertheless the univers expand and cool faster than
+recombin could complet and small fraction of free electron and proton remain
+the principl of calcul of the primordi recombin have been mention initi
+by shklovskii 1967 novikov zeldovich 1967 peebl 1968 wa the first to present a
+theori in which the veri complic recombin process is reduc to simpler term see
+puy signor 2000 for the histor descript and refer therein
+at the end of the recombin period it is plausibl to imagin that molecul could be
+form temperatur of matter and radiat as well as the densiti are not so high and we
+have possibl collision reaction between the speci howev in thi cosmolog context
+we have metalfre ga which doe not allow the effici reaction of adsorpt on the surfac
+of grain
+the literatur on the chemistri in the postrecombin epoch ha grown consider in
+the recent year mani author have develop studi of primordi chemistri in differ
+context for exampl lepp shull 1984 latter black 1991 puy et al 1993 stancil
+et al 1996 galli palla 1998 for the chemic network palla galli silk 1995 puy
+signor 1996 1997 1998a 1998b abel et al 1997 and galli palla 1998 in the context
+of the format of the first object
+chemistri of the earli univers is the gaseou chemistri of the hydrogen helium lithium
+and electron speci the effici of the molecular format process is control by
+collis matter temperatur and temperatur of the cosmic microwav background radiat
+talk given at the jenam may 29thjune 3rd 2000 moscow russia
+1
+2
+d puy jenam 2000 proceed
+the complet chemic network consist of 90 reaction see puy et al 1993 and more recent
+galli palla 1998 and refer therein
+molecul could lead to radi process through the excit of the rotat level and
+contribut to the thermal evolut of the medium puy et al 1993 examin the thermal
+balanc in the earli univers and show that the molecular cool and heat function have
+a slight influenc on the decreas of the temperatur of the matter nevertheless molecul
+could play a more decis role in the collaps of protocloud sinc molecular cool can
+trigger thermal instabl prior the gravit instabl as mention puy signor
+1996 1998a 1998b protocloud evolut in three phase
+linear evolut which approxim follow expans
+turnaround epoch when the protocloud reach it maximum valu
+nonlinear evolut of the collaps
+at the turnaround point it is crucial to know the initi condit and particularli the temperatur of the precollaps in thi contribut i will recal the thermal function gener
+by the primordi molecul sect 2 then i will show the influenc on the thermal decoupl
+sect 3 in sect 4 the role of the molecul on the turnaround point will be discuss and
+a brief outlook will be present in sect 5
+2 molecular thermal function
+the disappear of free charg particl reduc the scatter crosssect thomson
+scatter the photon decoupl from the rest of the matter thi happen at t tdec 026
+ev where tdec is the temperatur of the matter correspond to the redshift zdec 1100 after
+the recombin although the densitydecreas act against molecular format it turn out
+that the temperatur is small enough for thi format occur
+the chemic composit of the primordi ga consist of electron proton hydrogen h
+h h3 h2 h2 deuterium d d hd hd h2 d helium he he he heh
+and lithium li li li lih lih thu from the abund of primordi atom given
+by the standard model of nucleosynthesi see tabl 1 we integr the network of coupl
+chemic equat which is an initi valu problem for stiff differenti equat lepp
+shull 1984 puy et al 1993 and more recent galli palla 1998 calcul as function
+of redshift the fraction abund start at the redshift z 104 where he h d and li
+are fulli ioniz
+helium heh
+deuterium dh
+lithium lih
+8 102
+43 105
+24 1010
+tabl 1 initi abund given by the standard of the nucleosynthesi see sarkar 1996
+the reaction rate depend on the temperatur thu the temperatur and densiti evolut
+equat must be solv simultan which need in turn the simultan determin of
+molecular cool and heat rate see puy et al 1993 galli palla 1998 the abund
+of the main molecul are obtain in tabl 2
+the finit amount of primordi molecul such as h2 hd and lih form immedi
+after the recombin of cosmolog hydrogen can induc a thermal respons of molecul
+on the medium through the interact with the radiat the presenc of nonzero perman
+electr dipol moment make hd and lih a potenti more import coolant than h2 at
+modest temperatur although hd and lih are much less abund than h2 below 3000
+d puy jenam 2000 proceed
+e h
+h2 h
+hdh
+lihh
+3 104
+106
+12 109
+7 1020
+3
+tabl 2 abund of primordi molecul at z 5
+k onli the rotat level of the molecul can be excit the popul of the rotat
+level is mainli due to collision excit and deexcit with h h2 and he on one hand
+and to radi process absorpt from cosmic background radiat and spontan or
+induc emiss on the other hand molecular cool correspond to collision excit
+follow by radi transit provid that no further absorpt occur molecular heat
+is due to the radi excit from cosmic microwav background follow by collision
+deexcit notic that although the radi deexcit is faster than collision one
+becaus the excit have the opposit order the full cool and heat process
+must be evalu molecular thermal function molec character by the two process
+molecular heat and cool is defin by
+molec
+k
+21
+k
+where the index k is defin for each molecul h2 hd or lih and k is the molecular
+thermal function for the molecul k defin by
+x r
+ni bij uij pijc nx cij
+pij ij in erg cm3 s1
+nj
+k
+j
+22
+i
+x
+where nj and ni is respect the popul of the rotat level j and i cij
+is the
+rate of collis with the speci x with the densiti nx bij the second einstein coeffici
+uij the radi densiti of cosmic microwav background radiat at the energi ij which
+correspond to the transit between the level i and j pijc and pijr defin respect the
+probabl of collision deexcit and the probabl of radi deexcit here we
+consid 10 rotat level for each molecul the first term of eq 22 correspond to
+molecular heat when the second term correspond to molecular cool
+3 cosmolog thermal decoupl
+the evolut of the energi densiti uga of a homogen ga is describ by the equat
+3
+33
+nktm qdt
+2
+where k is the boltzmann constant n the matter densiti tm the temperatur of matter and q
+the extern energi densiti which depend on the molecular thermal function molec and on
+the net transfer of energi compt from the cosmic background radiat to the ga via compton
+scatter of cosmic background photon on electron thu we have
+duga d
+q molec compt
+34
+where see peebl 1968
+compt
+4t abb tr4
+ne tr tm
+me c
+35
+4
+d puy jenam 2000 proceed
+t is the thomson crosssect abb is the black bodi constant c the speed light me the mass
+of electron and ne the electron densiti tr is the temperatur of the radiat thu eq
+33 lead to the evolut of matter temperatur tm
+where ad
+3
+dtm
+nk
+ad compt molec
+2
+dt
+defin the adiabat cool due to the expans of the univers
+ad 3nktm ho 1 z32
+36
+37
+ho is the hubbl constant hereaft ho 67 km s1 mpc1 and z the redshift we have
+neglect the chemic heat and cool due to the enthalpi of reaction see puy et al
+1993
+we adopt the standard cosmolog model with zero cosmolog constant einsteind sitter univers thu the matter temperatur tm and the radiat temperatur tr remain
+the same until a redshift of about 1100 the begin of the recombin era after which
+compton scatter wa no longer abl to overcom the cool by expans and tm fell below
+tr in thi context the adiabat cool becom domin
+in fig 1 compton heat and thermal molecular function in unit of adiabat cool are
+compar the thermal molecular function which is mainli a molecular heat domin
+the compton heat when z 180 thi fact should be import for the evolut of the
+matter after thi redshift particularli for the collaps of the first object
+05
+in unit of adiabat cool
+04
+03
+compton heat
+molecular thermal function
+02
+01
+0
+1000
+100
+redshift
+10
+figur 1 evolut of the thermal function ie compton heat compt and molecular molec in
+unit of adiabat cool ad
+4 turnaround period and protocollaps
+we assum that at some time in the past there were small deviat from homogen
+in our univers these deviat can grow due to gravit instabl as long as these
+inhomogen are small their evolut can be studi by the classic linear perturb
+theori onc the deviat from the homogen univers becom larg the linear theori
+d puy jenam 2000 proceed
+5
+is no more valid it is reason to expect that region which are significantli overdens will
+collaps and eventu form gravit bound object in these overdens region the
+selfgrav of the local mass concentr will work against the expans of the univers
+ie thi region expand at a progress slower rate compar to the background univers
+such a slow down will increas the densiti contrast between the overdens region and the
+background univers and consequ make the gravit potenti of the local mass
+concentr more and more domin eventu such a region will collaps under it own
+selfgrav and will form a bound system the detail of the abov process will depend on the
+initi densiti profil the simplest model which one can studi analyt is base on the
+assumpt that the overdens region is spheric symmetr
+peebl 1980 describ the transit between the linear regim where the expans of
+the perturb is maximum and the nonlinear regim where the perturb begin to
+collaps by introduc the turnaround point
+in an einsteind sitter univers the temperatur at the turnaround point hereaft turnaround temperatur is given by
+3 43
+tm zta
+48
+4
+where tm zta is the temperatur of the matter at the redshift of the turnaround zta gener
+it is assum an isotherm perturb describ by the initi mass spectrum
+tturn
+m
+m
+1 z1
+49
+where m is the mass of an overdens region ie the mass of a cloud and m 1015 m is
+a typic mass of a superclust gott ree 1975 take 13 thu the redshift of the
+turnaround is given by
+3 23 m
+410
+zta
+4
+m
+it is crucial to know the temperatur of the matter at the turnaround redshift in order to
+evalu the thermal initi condit of the collaps we consid the same order of magnitud
+for the mass of the fluctuat given by lahav 1986 and puy signor 1996 which
+correspond to turnaround redshift in the rang 10 zta 150 which is the typic period
+of the format of the first object
+the evolut of turnaround temperatur is shown in fig 2 without and with the molecular
+contribut the evolut of radiat temperatur is also plot we see two regim
+for the two turnaround temperatur one correspond to a temperatur higher than the
+radiat temperatur tr the second is rel to temperatur below tr it is import to
+estim the redshift zi where the turnaround temperatur is equal to tr thi point govern the
+initi behaviour of the ga if the turnaround temperatur is below the radiat temperatur
+the ga heat when the ga cool when the radi temperatur is below the turnaround
+temperatur thu thi condit is locat at the redshift zi 130 in the case without
+molecul and zi 105 in the case with molecul anoth interest point is the point
+which correspond to the turnaround redshift z 55 thi redshift correspond to a typic
+valu 109 m of a collaps mass see puy signor 1997 we find see fig 2 that the turnaround temperatur tturn 70 k without molecul and tturn 100 k for the turnaround
+temperatur with molecul the consequ could be import if we notic that the lower
+excit temperatur for hd main thermal molecular function is 112 k close to 100 k
+6
+d puy jenam 2000 proceed
+600
+turnaround temperatur without molecul
+turnaround temperatur with molecul
+radiat temperatur
+temperatur in kelvin
+500
+400
+300
+200
+100
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+redshift
+figur 2 evolut of the turnaround temperatur with and without molecul and of the
+radiat temperatur
+5 outlook
+thi work show a possibl thermal modif due to the primordi molecul at the
+begin of the collaps thi thermal mechan could modifi the initi condit of a
+gravit collaps the follow analysi could reveal process of fragment triger
+by the thermal molecular function see puy signor 1997 1998b thi last point is crucial
+for the estim of the amplitud of secondari cosmic microwav background anisotropi
+dubrovich 1977 1993 show that reson elast scatter must be consid as the most
+effici process in coupl matter and radiat at high redshift he note that the cross
+section for reson scatter between the cosmic microwav background and molecul is
+sever order of magnitud larger than thomson scatter even with a modest abund
+of primordi molecul let us onli emphas that again at present time the primordi
+molecul abund and the reaction rate of the chemic reaction are both quit uncertain
+the author grate acknowledg the jenam organ for organ such a pleasant
+confer i would like to thank andrei doroshkevich and victor dubrovich for valuabl and
+fruit comment and discuss part of thi work ha been support by the dr tomalla
+foundat and by the swiss nation scienc foundat
+refer
+abel t annino p zhang y norman m 1997 new astr 2 181
+dubrovich v 1977 sov astr lett 3 128
+dubrovich v 1993 astron lett 19 53
+gott iii r ree m 1975 a a 45 265
+galli d palla f 1998 a a 335 403
+lahav o 1986 mnra 220 259
+latter w black j 1991 apj 371 161
+lepp s shull m 1984 apj 280 465
+d puy jenam 2000 proceed
+novikov i zeldovich ya 1967 ann rev astr ap 5 627
+palla f galli d silk j 1995 apj 451 44
+peebl pje 1968 apj 153 1
+peebl pje 1980 in the larg scale structur of the univers princeton univers press
+puy d alecian g lebourlot j leorat j pineau de foret 1993 a a 267 337
+puy d signor m 1996 a a 305 371
+puy d signor m 1997 new astr 27 622
+puy d signor m 1998a new astr 3 27
+puy d signor m 1998b new astr 3 247
+puy d signor m 2000 new astr rev accept
+sarkar s 1996 rep prog phi 59 1493
+shklovskii i 1967 in proceed 4th texa conf on relativist ap 5 627
+stancil p lepp s dalgarno a 1996 apj 458 401
+7

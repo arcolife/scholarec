@@ -1,0 +1,4436 @@
+Asymptotic behaviour of a solution for
+Kadomtsev-Petviashvili-2 equation ∗
+arXiv:math-ph/0003014v1 16 Mar 2000
+
+O.M. Kiselev
+Institute of Mathematics
+112 Chernyshevsky str., Ufa, 450000, Russia
+E-Mail: ok@imat.rb.ru
+16th March 2000
+
+Abstract
+An asymptotic behaviour of solution of Kadomtsev-Petviashvili2 equation is obtained as t → ∞ uniformly with respect to spatial
+variables.
+
+1
+
+Introduction
+
+Properties of solutions and process of integration for the KadomtsevPetviashvili equation (KP) [1]:
+∂x (∂t u + 6u∂x u + ∂x3 u) = −3σ 2 ∂y2 u
+
+(1)
+
+depend on sign of σ 2 . This equation is called KP-2 if σ 2 = 1.
+In this work the asymptotic behaviour of decreasing solution of
+equation KP-2 is obtained as t → ∞. The main term of the asymptotics has an order by O(t−1 ) and fast oscillates. An envelope of these
+oscillations depends on ξ = x/t and η = y/t. Results of the work
+are formulated in terms of scattering data for auxiliary linear problem, which is associated with equation KP-2 in the inverse scattering
+transform (IST) [2, 3].
+This work was partially supported by RFBR (97-01-459), grant for scientific schools
+(001596038) and INTAS (No1068).
+∗
+
+1
+
+The equation KP plays important role in modern mathematical
+physics. Many applications of these equation are known in plasma
+physics, water waves and other fields of waves process [4]. Therefore questions about solvability of this equation in different functional
+classes were studied in detail. In particular, the existence of global solution of Cauchy problem in class of distribution functions was proved
+in [5]. A norm of solution in Sobolev space was estimated and an
+asymptotics of a solution were obtained as t → ∞ for KP-like equation but with more high nonlinearity, which called generalized equation KP, in [6].
+The IST formalism allows to reduce a constructing of the solution
+of nonlinear integrable equation into solving of linear problems. One of
+most important achievements of IST is the constructing of asymptotic
+behaviours of solutions as t → ∞. These results are well-known for
+1+1-dimensional equations (one spatial and one temporal variable)
+[7]-[13]. Asymptotic behaviours of solutions for (2+1)-dimensional
+equations were studied not so in detail. Rigorous results about temporal asymptotics of solutions, which is nonuniform with respect to
+spatial variables, for a special class of nondecreasing solutions were obtained in [14], [15]. In work [16] an formal asymptotics of decreasing
+solution of equation KP-1, which is nonuniform with respect to spatial variables, was constructed. Results about asymptotic behaviour
+of decreasing solutions of equation KP-2 as t → ∞ and about a remainder of this asymptotics, which are uniform with respect to spatial
+variables, are obtained in present work.
+The formalism IST for solving of Cauchy problem for equation
+KP-2 was presented in [17]. This formalism will be used in this work.
+Below we remind basic steps of solving of Cauchy problem for equation
+KP-2 by IST.
+Let us denote an initial condition for equation KP-2 as:
+u|t=0 = u0 (x, y).
+
+(2)
+
+The process of solving of the Cauchy problem (1), (2) consists of
+several steps.
+First step is solving direct scattering problem. On this step a
+boundary problem is solved for function ϕ:
+− ∂y ϕ + ∂x2 ϕ + 2ik∂x ϕ + uϕ = 0,
+
+ϕ||k|→∞ = 1,
+
+and scattering data are constructed by a formula:
+F (k) =
+
+sgn(−Re(k))
+2π
+
+R2 dx dy u0 (x, y)ϕ(x, y, k, 0) ×
+
+2
+
+(3)
+
+¯ − (k2 − k¯2 )y).
+× exp(−i(k + k)x
+
+(4)
+
+It is useful to note, if u is real, then the function F (k) has property
+¯ = −F¯ (k). This follows from formulas (3) and (4).
+F (−k)
+On the next step an evolution of scattering data is determined.
+This evolution is very simple:
+F(k; t) = F (k) exp(4it(k3 + k¯3 )).
+Third step is solving of inverse scattering problem. This is reduced
+¯
+to so-called D-problem:
+¯ exp(itS),
+∂k¯ ϕ = ψ F (−k)
+∂k ψ = −ϕ F (k) exp(−itS);
+
+ϕ
+ψ
+
+||k|→∞ =
+
+1
+1
+
+,
+
+(5)
+
+¯ − i(k2 − k¯2 )η, ξ = x/t, η = y/t, the
+where S = 4(k3 + k¯3 ) + (k + k)ξ
+function F (k) is nonanalytic with respect to complex variable k ∈ C.
+Solving of this problem allows to obtain the functions ϕ and ψ at any
+time, if we know the evolution of scattering data.
+At last we can obtain the solution of the Cauchy problem by using
+the formula [17]:
+u(x, y, t) = ∂x
+
+C
+
+dk ∧ dk¯ F (k)ψ(k, x, y, t) exp(itS).
+
+(6)
+
+However, this successive method of solving for Cauchy problems
+for general initial conditions allows to obtain very implicit answer
+with respect to initial data. Therefore the problem (5) and integral
+(6) are used usually for solving of integrable nonlinear equations and
+the scattering data is taking from some suitable functional class (see,
+for example, [14]-[16]). On one-hand side this gives for studying a
+functional class of solutions, but on the other hand-side this leads to
+implicit restrictions on class of initial conditions.
+The auxiliary linear problem (3) and some related problems were
+studied in [18]-[23]. In the work [23] it was proved that if the function
+u0 (x, y) decreases exponentially, then the direct scattering problem
+(3) is solvable for ∀k ∈ C.
+To construct the asymptotics of u as t → ∞ we use the asymptotics
+of ψ and evaluate an asymptotics of the integral (6) by stationary
+phase method [24]. As it turned out, the main term of asymptotics
+of the function u may be defined by using only the main term of
+an asymptotic expansion of ψ as t → ∞. Taking into account the
+
+3
+
+fast oscillating coefficients of the system from (5) one can guess, that
+ψ = 1 + o(1) as t → ∞. But we cannot say something definitely about
+the asymptotic behaviour of the function u, until we do not know
+analytic properties and an order of the remainder of asymptotics of ψ
+more precisely. Thus we come to studying an asymptotic behaviour
+¯
+of a solution of the D-problem
+(5).
+¯
+The asymptotic behaviour of the solution of the D-problem
+as
+t → ∞ with continuous and fast oscillated coefficients was obtained in
+¯
+[25]. Here we study the D-problem
+with discontinuous coefficients on
+imaginary axis of complex parameter k. Constructing of the asymptotics of solution for such problem is more complicated. Not only
+stationary points of phase function of an oscillated exponent define a
+structure of the asymptotic solution for (5) as in [25] (see also [26]),
+but the location of these stationary points with respect to line of discontinuity of coefficients of the equations (5) as well. It contributes
+additional difficulties into evaluating and leads to changes in results.
+The uniform asymptotics of the solution of the problem (5) is constructed by matching method [27].
+
+2
+
+Main result
+
+Theorem 1 Let (1 + |k|)F ∈ L1 ∩ C, ∂ α F ∈ L1 ∩ C as Re(k) = 0,
+|a| ≤ 2 and:
+F (κ + iλ)
+< 2π,
+(7)
+sup
+dκdλ
+2
+κ + iλ − z
+R
+z∈C
+then the solution of the Cauchy problem of equation KP-2 for corresponding initial condition exists as ∀t > 0. The asymptotic behaviour
+of the solution as t → ∞ differs in different domains of variables
+(x, y, t):
+as −(12ξ + η 2 )t1/3 ≫ 1:
+u(x, y, t) = −4t−1
+
+π
+1
+f
+2
+2
+12i −η − 12ξ
+
+× exp
+as (12ξ + η 2 )t1/3 ≫ 1:
+
+− 11it −
+
+x
+y2
+− 12
+t2
+t
+
+u = o(t−1 );
+
+4
+
+−η 2 − 12ξ +
+
+iη
+12
+
+×
+
++ c.c. + o(1).
+
+as |12ξ + 12η 2 | ≪ 1:
+
+√
+u(x, y, t) = 8it−1 πf (iη/12)
+∞
+
++
+
+∞
+0
+
+√
+dp1 p1 cos 8p31 − zp1 +
+
+√
+
++ o(t−1 ).
+
+dp1 p1 sin 8p31 − zp1
+
+0
+
+Here ξ = x/t, η = y/t,
+z=8
+f (k) =
+
+1
+2π
+
+R2
+
+y2
+x
++ 1/3 ;
+4/3
+12t
+t
+
+dx dy u0 (x, y)ϕ(x, y, k, 0) ×
+
+¯ − (k2 − k¯2 )y).
+× exp(−i(k + k)x
+The domains of validity for the asymptotics of the solution of equation KP-2 are intersected and therefore they give combined asymptotics of the solution uniformly on plane of x, y.
+
+3 An analytic behaviours of the scattering data
+In this section we demonstrate analytic behaviour of the scattering
+data which corresponds to sufficiently smooth and decreasing initial
+condition (2).
+First of all we show, that the solution of (5) exists.
+Theorem 2 Let F (k) be such, that the condition (7) is fulfilled, then
+the solution of (5) exists in a space of continuous vector-functions
+bounded when k ∈ C.
+Proof. Let us consider a system of integral equations which is
+equivalent to (5):
+ϕ
+ψ
+
+=
+
+1
+1
+
++ G[F ]
+
+ϕ
+ψ
+
+,
+
+where
+G[F ]V =
+
+m∈C
+
+
+
+dm ∧ dm
+¯ ×
+
+0
+ F (m)
+exp(−itS)
+k−m
+
+F (−m)
+¯
+k−m
+
+5
+
+
+
+exp(itS)
+ V (m, ξ, η, t).
+0
+
+Using well-known results about integral operators (see, for example
+[29]) one can show that the operator G[F ] transforms the space of
+continuous vector-functions into itself.
+The operator G[F ] is contracting operator. It is follows from inequality (7). Hence we obtain the theorem statement.
+To construct the asymptotics we must study smoothness of scattering data F (k) in neighborhood of line of discontinuity Re(k) = 0.
+Lemma 1 Let u0 (x, y) be a finite function, then in neighborhood of
+some point k′ ∈ C the scattering data have to be represented in the
+form:
+2
+
+F (k) = sgn[Re(−k)]
+|α|=0
+
+fα1 α2 (k′ )(k − k′ )α1 (k − k′ )α2 + O(|k − k′ |3 ),
+
+where fα1 ,α2 (k′ ) are continuous functions, when Re(k′ ) = 0 and
+fα1 ,α2 (k′ ) = fα(1)
+(k′ ) + sgn[Re(−k)]fα(2)
+(k′ ),
+1 α2
+1 α2
+when Re(k′ ) = 0.
+Proof of this lemma consists of successive evaluating of partial deriva¯ For example let us
+tives of scattering data with respect to k and k.
+(j) ′
+(j) ′
+evaluate f10 (k ) and f10 (k ) as Re(k′ ) = 0.
+Denote
+f (k) =
+
+1
+2π
+
+R
+
+2
+
+2 ¯2
+¯
+dx dy u0 (x, y)ϕ(x, y, k, 0) exp(−i(k+k)x−(k
+−k )y).
+
+(1)
+
+(0)
+
+Then f00 (k′ ) = f (k′ ), f00 (k′ ) ≡ 0.
+(1)
+(0)
+Evaluate f10 (k′ ) = f10 (k′ ) + sgn[Re(−k)]f10 (k′ ).
+∂k f (k) =
+
+1
+2π
+
+R
+
+2
+
+¯ − (k2 − k¯2 )y) ×
+dxdy u0 (x, y) exp(−i(k + k)x
+[(ix − 2ky)ϕ(x, y, k, 0) + ∂k ϕ(x, y, k, 0)].
+
+To evaluate the derivative ∂k ϕ we use the integral equation for the
+function ϕ:
+−1
+V.P.
+2iπ
+
+dm ∧ dm
+¯
+F (−m)
+¯ ×
+C (k − m)2
+exp(i(m + m)
+¯ − (m2 − m
+¯ 2 )y)ψ(x, y, m).
+
+∂k ϕ =
+
+6
+
+The functions F (−m)
+¯ and ψ(x, y, m) are smooth on the left and righthand sides of complex plane of m and one can show that the integral
+exists. Let us represent it into more convenient form. For this we
+rewrite the integral into sum of two integrals over left-hand side and
+right-hand side of complex plane. Let us integrate by parts these
+integrals. As a result we obtain
+∂k ϕ =
+
+−1
+2iπ
+
+±
+
+Ω±
+
+−1
+2iπ
+
+±
+
+∂Ω±
+
+(±)dm
+¯
+[f (−m)
+¯ ×
+k−m
+
+exp(i(m + m)x
+¯ − (m2 − m
+¯ 2 )y)ψ(x, y, m)] −
+dm ∧ dm
+¯
+(ix − 2my)(±)f (−m)ψ(x,
+¯
+y, m) +
+k−m
+
+(±)∂m f (−m)ψ(x,
+¯
+y, m) − ϕ(x, y, m)f (−m)f
+¯ (m) ×
+× exp(i(m + m)x
+¯ − (m2 − m
+¯ 2 )y).
+Here Ω± is right-hand side (+) and left-hand side (-) of complex plane.
+We mean the integral over ∂Ω+ as sum of integral over right-hand side
+and left-hand side of the circle with center at origin of coordinates and
+with large radius (which tends into infinity) and of improper integral
+over imaginary line and of an integral over the circle with small radius
+ε with center at k = m. The direction of the integration over ∂Ω+ is
+determined by standard way.
+Consider the sum of the integrals over ∂Ω± . Each of the integrals
+over large half-circles is equal to zero as R → ∞ because the integrand
+decreases. The sum of the integrals over the imaginary axis gives
+doubled integral over the imaginary axis in positive direction. The
+integral over small circle equals zero as ε → 0.
+Let us evaluate the derivative ∂m f (−m)
+¯ of the integrand of the
+¯ 0),
+double integrals. For this we note that ϕ(x, y, k, 0) = ψ(x, y, −k,
+hence f (−m)
+¯ has to be represented by the function ψ(x, y, m, 0) and
+then:
+∂m f (−m)
+¯ =
+
+1
+2π
+
+R2
+
+dx dy u0 (x, y)[ − f (m)ϕ(x, y, m, 0)+
+
++(−ix − 2my)ψ(x, y, m, 0)] exp(−i(m + m)x
+¯ − (m2 − m
+¯ 2 )y).
+
+So we obtain a formula f10 (k′ ):
+(1)
+
+(2)
+
+f10 (k′ ) = f10 (k′ ) + sgn[Re(−k)]f10 (k′ ),
+
+7
+
+where
+1
+(1)
+f10 (k′ ) = −f (−k¯′ )ψ(x, y, k′ , 0)
+2πi
+
+R2
+
+dxdyu0 (x, y) ×
+
+(ix − 2ky)φ(x, y, k, 0) +
+−1
+2iπ
+−1
+2iπ
+
+Ω±
+
+±
+
+i∞
+
+V.P.
+−i∞
+
+±
+
+dm
+¯
+(±)f (−m)ψ(x,
+¯
+y, m, 0) −
+−m
+
+k′
+
+dm ∧ dm
+¯
+(ix − 2my)(±)f (−m)ψ(x,
+¯
+y, m) +
+k−m
+
+(±)∂m f (−m)ψ(x,
+¯
+y, m) − ϕ(x, y, m)f (−m)f
+¯ (m) ×
+exp(i(m + m)x
+¯ − (m2 − m
+¯ 2 )y) ×
+exp(−i(k′ + k¯′ )x − (k′2 − k¯′2 )y) ;
+(2)
+
+f10 =
+
+−1
+π
+
+R2
+
+dxdyu0 (x, y)f (−k¯′ )ψ(x, y, k′ , 0).
+(2)
+
+(1)
+
+An expression of f01 (k′ ) = f01 (k′ ) + sgn[Re(−k)]f01 (k′ ) has the
+form:
+(1)
+
+f01 (k′ ) =
+(2)
+
+f01 (k′ )
+
+′
+¯′
+R2 dxdy u0 (x, y)(−ix + 2k y)ϕ(x, y, k , 0) ×
+
+1
+2iπ
+
+=
+
+exp(i(k′ + k¯′ )x − (k′2 − k¯′2 )y),
+
+1
+2iπ
+
+′
+R2 dxdy u0 (x, y)ψ(x, y, k , 0) ×
+
+× exp(2i(k′ + k¯′ )x − 2(k′2 − k¯′2 )y).
+
+The expressions of other coefficients of the expansion have to be
+evaluated by the same way. The lemma is proved.
+
+4
+
+¯
+Asymptotic solution of D-problem
+
+In this section we construct an asymptotic solution as t → ∞ of the
+¯
+D-problem:
+∂k¯ µ = ν F (k) exp(itS),
+¯ exp(−itS);
+∂k ν = −µ F (−k)
+
+8
+
+µ
+ν
+
+||k|→∞ =
+
+1
+0
+
+.
+
+(8)
+
+The solution of the problem (5) has to be obtained using the solution of (8) and the formula:
+ϕ
+ψ
+
+=
+
+µ(k, ξ, η, t)
+ν(k, ξ, η, t)
+
++
+
+¯ ξ, η, t)
+−ν(−k,
+¯
+µ(−k, ξ, η, t)
+
+.
+
+(9)
+
+The asymptotic solution of the problem (8) is combined. Here
+we construct the asymptotics as t → ∞ uniformly with respect to
+¯ ξ, η)
+all parameters. The stationary points of the functions S(k, k,
+with respect to parameters k, k¯ plays the important role in these
+constructions.
+The asymptotic expansion of the solutions is constructed using
+the inverse powers of large parameter t as a asymptotic sequence of
+asymptotic expansion outside of small neighborhoods of the stationary
+points of the function. Near the stationary points the asymptotic
+sequence has the form t−n/2 , where n = 0, 1, 2, . . .. Following the
+terminology of matching method [27], we call the asymptotics outside
+of small neighborhoods of stationary points by outer expansion and we
+call by interior expansion the asymptotics near the stationary points .
+The right-hand side in the system of equations (8) is discontinuous on
+the line Re(k) = 0, therefore the asymptotic solution is differentiable
+out of the line Re(k) = 0.
+The domains of validity for interior and exterior asymptotic expansions are intersected. This fact is used by matching method in
+order to construct unique combined asymptotic expansions.
+The phase function S depends on two parameters (ξ, η) ∈ R2 . On
+the curve 12ξ + η 2 = 0 the confluence of two stationary points of the
+function S occurs. In this case we have one confluent stationary point.
+The structure of the asymptotic expansion of solution of (8) is changed
+here. As |12ξ + η 2 | ≪ 1 the expansion is constructed on the powers of
+t−n/3 , n = 0, 1, 2, . . . as a asymptotic sequence.
+The formulas for the uniform asymptotic expansions of the solution
+of (8) are large and it seems convenient to formulate the results about
+general case in section 4.1 and about confluence case in section 4.2 for
+convenience .
+
+4.1
+
+Asymptotics in a general case
+
+In this section the combined asymptotic solution of (8) is constructed
+when the phase function S has nondegenerate stationary points k = k1
+and k = k2 . Here we suppose that ∀k ∈ C, t1/3 |∂k2 S|k=k1,2 | ≫ 1 as
+
+9
+
+t → ∞. This leads to restriction on values of the parameters ξ and
+η, namely, t1/3 |12ξ + η 2 | ≫ 1. The asymptotic expansion which is
+uniform with respect to k ∈ C is formulated in the end of this section.
+To construct the combined asymptotic solution which is valuable as
+k ∈ C we obtain exterior and interior asymptotic expansions. These
+expansions are valid outside of small neighborhoods of kj , j = 1, 2
+and in the small neighborhoods of kj respectively. Denote: θ =
+−12ξ − η 2 . Then one can obtain an expressions for the stationary
+1
+1
+(iη+θ), k2 = 12
+(iη−θ).
+points of S by using the parameter θ: k1 = 12
+
+4.1.1
+
+The stationary points outside of the break line
+
+Consider the case when Re(θ) = 0, i.e. when the stationary points
+k1,2 are outside of the discontinuity line Re(k) = 0. Let us formulate
+a result of this section about the combined asymptotic solution:
+Lemma 2 Let the system of the equations (8) have not the homogeneous solutions, F (k) ∈ C 2 ∩ L1 as Re(k) = 0 and the parameters ξ
+and η satisfy the inequality t1/3 |θ|2 ≫ 1, then:
+when t|θ||k − k1,2 | ≫ 1 the formal asymptotic solution of the
+system (8) with respect to mod(O(t−2 |∂k S|−3 )) has the form:
+1
+
+µ
+˜ = 1 + t−1 µ (k, ξ, η),
+1
+
+2
+
+1
+
+ν˜ = (t−1 ν 1 (k, ξ, η) + t−2 ν 1 (k, ξ, η)) exp(−itS) + t−1 ν 0 (k, ξ, η);
+1
+
+1
+
+1
+
+2
+
+the functions µ, ν 1 , ν 1 , ν 0 are defined by (18), (12), (16), (29);
+when |θ|−1 |k − kj | ≪ 1 the formal asymptotic solution of the
+system (8) with respect to mod(O(t−1 |θ|−1 )) has the form:
+1
+
+µ
+˜ = 1 + t−1 M (lj , ξ, η),
+1
+
+2
+
+ν˜ = (t−1/2 N (lj , ξ, η) + t−1 N (lj , ξ, η)) exp(−itS),
+where lj , j = 1, 2, are defined by formula:
+lj =
+1
+
+√
+
+t(k − kj )
+
+∂k2 Sj
++ 4(k − kj ),
+2
+
+1
+
+2
+
+the functions M (lj , ξ, η), N (lj , ξ, η), N (lj , ξ, η) are defined by (31),
+(26), (30).
+
+10
+
+Proof.
+
+Let us construct the external asymptotic solution in the
+
+form:
+2
+
+1
+
+µex = 1 + t−1 µ (k, ξ, η) + t−2 µ1 (k, ξ, η) exp(itS) + . . . ,
+
+(10)
+
+2
+
+1
+
+ν ex = (t−1 ν 1 (k, ξ, η) + t−2 ν (k, ξ, η) + . . . ) exp(−itS) +
+1
+
++t−1 ν 0 (k, ξ, η) + . . . .
+
+(11)
+
+Let us substitute the formulas (10) and (11) into (8), equate coefficients with equal power of t. As a result we obtain:
+1
+
+¯
+−i∂k S ν 1 (k, ξ, η) = −sgn(Re(k))f (−k),
+2
+
+1
+
+∂k¯ µ (k, ξ, η) + i∂k¯ S µ1 (k, ξ, η) exp(itS) =
+1
+
+−sgn(Re(k))f (k) ν 1 (k, ξ, η) +
+1
+
+sgn(Re(k))f (k) ν 0 (k, ξ, η) exp(itS),
+1
+
+2
+
+−i∂k S exp(−itS) ν 1 (k, ξ, η) + ∂k ν 0 (k, ξ, η) =
+
+¯ µ1 (k, ξ, η)∂k ν1 1 (k, ξ, η)) exp(−itS).
+( − sgn(Re(k))f (−k)
+
+If we equate to zero the coefficients of oscillated terms and nonoscillated terms of the expansions (10) and (11) respectively , then we
+obtain formulas:
+¯
+sgn(Re(k))f (−k)
+1
+ν 1=
+;
+(12)
+i∂k S
+1
+
+∂k ν 0 (k, ξ, η) = 0;
+1
+
+∂k¯ µ=
+
+(13)
+
+¯ (k)
+−f (−k)f
+;
+i∂k S
+
+(14)
+
+1
+
+2
+
+sgn(Re(k))f (k) ν 0 (k, ξ, η)
+;
+i∂k¯ S
+
+(15)
+
+¯ µ1 ∂k ν1 1 .
+−sgn(Re(k))f (−k)
+
+(16)
+
+µ1 (k, ξ, η) =
+2
+
+ν=
+
+−1
+i∂k S
+
+1
+
+The function ν 1 has a jump on the imaginary axis of k. This jump
+is
+In order for the coefficients of the asymptotics of function ν as
+2f (k)
+i∂k S .
+
+11
+
+¯ which has the
+t− 1 to be continuous, we add an analytic function of k,
+1
+same jump on the imaginary axis in inverse direction, to ν 1 exp(iSt):
+1
+
+¯ =
+ν ′ 0 (k)
+
+1
+iπ
+
+i∞
+−i∞
+
+dnf (n)
+.
+(k¯ − n)∂n S
+
+1
+
+(17)
+
+1
+
+The function ν ′1 define an analytic function ν 0 of k¯ uncompletely.
+The rest terms will be defined when we will match the exterior and
+interior expansion.
+A Cauchy-Green formula gives solution of (14) which is decreasing
+as |k| → ∞ and bounded when ∀k ∈ C:
+1
+
+µ=
+
+−1
+2iπ
+
+dp ∧ d¯
+p f (−¯
+p)f (p)
+.
+k
+−
+p
+i∂
+C
+pS
+
+(18)
+
+We can obtain the domain of values of k, where the external ex2
+1
+pansion is valid, using the condition |t−1 ν 1 /(t−2 ν)| ≫ 1. As a result
+of calculations we obtain:
+t|θ||k − kj | ≫ 1.
+Let us construct the interior asymptotic solution which is valid in
+the neighborhood of point kj as j = 1, 2. Denote new scaling variable
+by lj :
+∂ 2 Sj
++ 4t(k − kj )3 .
+(19)
+lj2 = t(k − kj )2 k
+2
+When |lj | is not so large (t1/2 |∂k2 Sj |3/2 ≫ |lj |) an asymptotic formula is valid as t → ∞
+(k − kj ) =
+
+2
+
+lj
+t∂k2 Sj
+
+−
+
+8
+l2
+2
+t(∂k Sj )2 j
+
++ ....
+
+(20)
+
+Rewrite the system (8) into terms of new variables lj and ¯lj . Substitute the asymptotic expansion
+1
+
+µin = 1 + t−1 M j (lj , ξ, η) + . . . ,
+1
+
+2
+
+ν in = (t−1/2 N j (lj , ξ, η) + t−1 N j (lj , ξ, η) + . . .) exp(−itS),
+into system (8).
+
+12
+
+(21)
+(22)
+
+As a result one can obtain equations for the coefficients of expansions (21) and (22):
+1
+
+1
+
+∂lj N j −2ilj N j = −
+2
+
+2
+
+∂lj N j −2ilj N j = sgn(Re(kj ))
+−
+
+2
+
+¯
+
+sgn(Re(kj ))f (−kj );
+∂k2 Sj
+
+(23)
+
+16
+2
+f (−k¯j ) − 2 f10 (−k¯j ) lj −
+(∂k2 Sj )2
+∂k Sj
+
+2¯lj
+f01 (−k¯j ) ;
+|∂k2 Sj |
+
+1
+
+(24)
+
+1
+
+∂¯lj M j = −sgn(Re(kj ))f (kj ) N j
+
+2
+
+.
+∂k¯2 Sj
+
+(25)
+
+Construct the solutions of the equations (23)–(25). Since the external expansion has not the terms of order t−1/2 , then the boundary
+1
+
+condition for function N 1 (lj , ξ, η) has the form:
+1
+
+N j (lj , ξ, η)||lj |→∞ = 0.
+1
+
+The solution of the boundary condition for N j (lj , x, y) is evaluated
+by formula:
+√
+1
+2f (−k¯j ) exp(i(lj2 + ¯lj2 ))
+×
+N j (lj , ξ, η) = sgn(Re(kj ))
+2iπ
+∂ 2 Sj
+k
+
+×
+
+dn ∧ d¯
+n
+exp(−i(n2 + n
+¯ 2 ));
+C lj − n
+
+(26)
+2
+
+The solution of nonhomogeneous equation for the function N j
+(lj , ξ, η) has the form:
+8f (−k¯j )
+f10 (−k¯j )
+−
+2
+2
+(∂k Sj )
+∂k2 Sj
+2f01 (−k¯j )
+exp(i(lj2 + l¯j2 ))
+|∂k2 Sj |
+
+2
+
+N js (lj , ξ, η) = sgn(Re(kj ))
+
+− ¯lj
+
+2f01 (−k¯j ) exp(i(lj2 + l¯j2 ))
+|∂k2 Sj |
+2iπ
+
+dn ∧ d¯
+n
+exp(−i(n2 + n
+¯ 2 )) . (27)
+l
+−
+n
+C j
+
+13
+
+1
+
+The partial solution of the equation for the function M j (lj , ξ, η)
+has to be written as four-multiple integral:
+1
+
+s
+Mj =
+
+−2f (kj )f (−k¯j )
+J,
+|∂k¯2 Sj |
+
+(28)
+
+where
+J=
+
+1
+2iπ
+
+¯ 2 ))
+dn ∧ d¯
+n exp(i(n2 + n
+×
+2iπ
+C lj − n
+dm ∧ dm
+¯
+exp(−i(m2 + m
+¯ 2 )).
+n
+−
+m
+C
+
+It is possible to reduce this four-multiple integral into two-multiple
+integral (see Appendix):
+J = ¯lj
+
+exp(i(lj2 + ¯lj2 ))
+2iπ
+
+dn ∧ d¯
+n
+exp(−i(n2 + n
+¯ 2 )) −
+C lj − n
+exp(i(l2 + ¯l2 )).
+j
+
+j
+
+There exists an domain of values of complex parameter k, in which
+the external and internal asymptotic expansions of solution for the
+problem (8) are valid. In this domain these asymptotic expansions are
+equal up to the terms of order o(t−1 ). In the domain, where t1/2 |k −
+kj | ≫ 1 and |k − kj | ≤ t−1/4 , the external and internal expansion are
+valid. We compute asymptotics of external expansion as k → kj and
+internal expansion as |lj | → ∞.
+1
+
+2
+
+Let us present the asymptotics of the functions N j and N j s as
+|lj | → ∞:
+1
+
+N j ||lj |→∞ = − sgn(Re(kj ))
+1
++
+2ilj
+2
+
+2
+
+¯
+
+f (−kj ) ×
+∂k2 Sj
+exp(i(lj2 + ¯lj2 ))
+¯lj
+
++ O(|lj |−3 ) .
+
+8if (−k¯j )
+if10 (−k¯j )
+−
+2
+2
+(∂k Sj )
+∂k2 Sj
+¯lj −2f01 (−k¯j )
++
++ O(|lj |−1 ) .
+2ilj
+|∂k¯2 Sj |
+
+N j (lj , ξ, η)||lj |→∞ = sgn(Re(kj ))
+
+14
+
+The matching condition for ν˜ means that in the domain t1/3 |k −
+kj | ≫ 1 and |k − kj | = o(1):
+1
+
+2
+
+t−1/2 N j (lj , ξ, η) + t−1 N j (lj , ξ, η) exp(−itS) −
+1
+
+1
+
+= o(t−1 ).
+
+t−1 ν 1 (k, ξ, η) exp(−itS)+ ν 0 (k, ξ, η)
+2
+
+Using the asymptotics of interior expansions of N j , which are rewritten in the terms of external variable k as k → k1,2 , and external
+1
+
+expansion of ν 0 , we can obtain:
+1
+
+1
+
+¯1 ) exp(itS1 )
+2f (−k
+|∂k2 S1 |(k−k1 )
+¯2 ) exp(itS2 )
+−2f (−k
+
+¯ +
+ν 0 (k, x, y) =ν ′0 (k)
++
+
+|∂k2 S2 |(k−k2 )
+
++
+
+,
+
+(29)
+
+1
+¯ is defined by (17);
+where the function ν 0′ (k)
+2
+
+1
+
+2
+
+2
+2
+s
+′
+N j =N j + ν 0 (kj ) exp(i(lj + ¯lj )) exp(itSj ) +
+2sgn(Re(km ))f (−k¯m ) exp(itSm )
++
+exp(i(lj2 + ¯lj2 )),
+2
+|∂k Sm |(kj − km )
+
+(30)
+
+2
+
+where m = j, the function N js is defined by (27).
+1
+
+Let us construct M j (lj , ξ, η). The asymptotics of (28) as |lj | → ∞
+has the form:
+1
+
+M js ||lj |→∞ =
+
+¯lj
+lj
+
+∂k2 Sj i f (−k¯j )f (kj )
+.
+∂k¯2 Sj 12π
+∂k2 S
+1
+
+Evaluate the asymptotics of µ0 as k → kj :
+1
+
+µ0 |k→kj =
++
+
+1
+2iπ
+
+here n ∈ 1, 2, n = j.
+
+f (kj )f (−k¯j )
+(k − kj ) f (−k¯j )f (kj )
+−
++
+k − kj 12i(kj − kn )
+12i(kj − kn )
+C
+
+dp ∧ d¯
+p
+
+f (−¯
+p)f (p) − f (kj )f (−k¯j )
+,
+12i(p − kj )2 (p − kn )
+
+15
+
+The matching condition for µ
+˜ when t−1/3 |k−kj | ≫ 1 and |k−kj | =
+has the form:
+
+o(t−1/4 )
+
+1
+
+1
+
+(1 + t−1 µ0 (k, ξ, η))(1 + t−1 M j (lj , ξ, η)) = o(t−1 ).
+1
+
+These condition allows to define M j (lj , ξ, η):
+1
+
+1
+
+s
+M j (lj , ξ, η) =M j (lj , ξ, η) + Cj (ξ, η).
+
+(31)
+
+1
+
+Here the function M j s (lj , ξ, η) is defined by (28), Cj (ξ, η) has the
+form:
+f (kj )f (−k¯j )
++
+12i(kj − kn )
+f (−¯
+p)f (p) − f (kj )f (−k¯j )
+,
+dp ∧ d¯
+p
+12i(p − kj )2 (p − kn )
+C
+
+Cj (ξ, η) = −
+1
+2iπ
+
+(32)
+
+where n ∈ 1, 2, n = j.
+Thus we have constructed the interior expansion in neighborhood
+of nondegenerate stationary point of S as |12ξ + η 2 | ≥ t−1/4 .
+Lemma is proved.
+Constructed asymptotic solutions are nonuniform with respect to
+k. But one can obtain an uniform asymptotic solution by using their
+combination. This uniform solution has the form (see, for example,
+[27]):
+µ
+ˆ
+νˆ
+
+=
+
+µ
+˜
+ν˜
+
++
+
+˜1
+M
+˜1
+N
+
++
+
+A1,k
+
+˜1
+M
+˜1
+N
+
+˜2
+M
+˜2
+N
+
+−
+
+− A1,k
+
+˜2
+M
+˜2
+N
+
+.
+
+(33)
+
+˜ is defined
+The result of action of operator An,k on the function M
+˜ (lj , ξ, η, t), and change the
+as follows ([27]). Take the formula for M
+dependence on variable lj into the dependence on variable k using the
+formula (19). Rewrite the sum of all terms of asymptotic expansion
+up to t with powers equal to −m, where 0 ≤ m ≤ n. For example for
+˜ (l1 , ξ, η, t) and N
+˜ (l1 , ξ, η, t) this process leads to the
+the functions M
+formulas:
+˜ 1 ) = 1 + t−1
+A1,k (M
+
+θ(k − k1 )2 + 4(k − k1 )3 f (−k¯1 )f (k1 )
+;
+2|∂k2 S1 |
+θ(k − k1 )2 + 4(k − k1 )3
+
+16
+
+f (−k¯1 )
+−
+2iθ θ(k − k1 )2 + 4(k − k1 )3
+f (−k¯1 ) exp(−it(S − S1 ))
+−
++
+|θ| θ(k − k1 )2 + 4(k − k1 )3
+1
+f01 (−k¯1 ) θ(k − k1 )2 + 4(k − k1 )3
+.
++ ν ′0 −
+|θ|
+θ(k − k1 )2 + 4(k − k1 )3
+
+˜1 ) = t−1
+A1,k (N
+
+If we substitute (33) into (8) and evaluate a remainder, then we
+obtain:
+Theorem 3 The formal asymptotic solution of the problem (8) with
+respect to mod(O((t|θ|)−1 )), which is uniformly valuable when k ∈ C
+and θ 2 t ≫ 1, has the form (33).
+
+4.1.2
+
+The stationary points on the imaginary axis
+
+If Re(θ) = 0, then the stationary point of the phase function S belongs
+to the line, where the coefficients of the equation (8) are discontinuous.
+In this case constructing of the formal asymptotic solution of problem
+(8) differs from the asymptotic solution which was constructed before.
+The main result about the combined asymptotic solution is:
+Lemma 3 Let the system of equations (8) have no homogeneous solutions, F (k) ∈ C 2 ∩ L1 as Re(k) = 0; the parameters ξ and η are
+−t2/3 (12ξ + η 2 ) ≫ 1, then:
+when t|θ||k − k1,2 | ≫ 1the formal asymptotic solution of (8) with
+respect to mod(O(t−2 |∂k S|−3 )) has the form:
+1
+
+µ
+˜ = 1 + t−1 α (k, ξ, η),
+1
+
+2
+
+1
+
+ν˜ = (t−1 β 1 (k, ξ, η) + t−2 β 1 (k, ξ, η)) exp(−itS) + t−1 β 0 (k, ξ, η);
+1
+
+1
+
+2
+
+1
+
+the functions α, β 1 , β 1 , β 0 are defined by (36), (37), (40), (46);
+when |θ| |k − kj | ≪ 1 the formal asymptotic solution of (8) with respect
+to mod(O(t−1 |θ|−1 )) has the form:
+1
+
+Y˜ = 1 + t−1 Y (lj , ξ, η),
+1
+
+2
+
+Z˜ = (t−1/2 Z (lj , ξ, η) + t−1 Z (lj , ξ, η)) exp(−itS),
+1
+
+1
+
+2
+
+where the functions Y (lj , ξ, η), Z (lj , ξ, η), Z (lj , ξ, η) are defined by
+(48), (47).
+
+17
+
+The proof. Let us construct the asymptotics. The external expansion is constructed similarly as in 4.1.1. The main difference is that
+the stationary points of the function S are on the line of discontinuity
+of the coefficients of system (8). It leads to sufficient modifications in
+the formulas for asymptotics. Let us find the external expansion in
+the form:
+1
+
+2
+
+µex = 1 + t−1 α (k, ξ, η) + t−2 α1 (t, ξ, η) exp(itS) + . . . ,
+1
+
+1
+
+(34)
+
+2
+
+ν ex = t−1 (β (k, ξ, η) exp(−itS)+ β 0 (k, ξ, η)) + t−2 β exp(−itS) + . . . .
+(35)
+After substituting of (34) and (35) into the system (8) we equate the
+coefficients with identical powers of t and with oscillated and nonoscillated terms correspondingly. As a result we obtain equations for the
+coefficients of asymptotic expansions (34) and (35). The obvious formulas are
+n)f (n)
+dn ∧ d¯
+n f (−¯
+−1
+1
+α=
+,
+(36)
+2iπ
+k
+−
+n
+i∂
+S(n,
+ξ, η)
+C
+n
+1
+
+β1=
+
+¯
+sgn(Re(k))f (−k)
+.
+i∂k S
+
+(37)
+
+1
+
+The function β 1 is discontinuous on the imaginary axis. We add an
+analytic function with the same jump on the imaginary axis in back
+direction then the coefficient of the expansion (35) at t−1 is continuous:
+1
+
+β′0=
+
+i∞
+
+1
+πi∂k¯ S
+
+−i∞
+
+dnf (n)∂n¯ S
+1
+=
+¯
+πi∂k¯ S
+(k − n)∂n S
+
+i∞
+−i∞
+
+dnf (n)
+.
+k¯ − n
+
+(38)
+
+1
+
+Unlike ν ′ 0 , this function have singularities on the discontinuous line.
+The formulas for the other coefficients of the expansions (34) and
+(35) have the forms:
+1
+
+sgn(Re(k))f (k) β 0 (k, ξ, η)
+α1 =
+,
+i∂k¯ S
+2
+
+2
+
+β=
+
+−1
+i∂k S
+
+1
+
+(39)
+1
+
+¯ α −∂k β .
+− sgn(Re(k)f (−k)
+1
+1
+
+(40)
+
+Here the analytic function β 0 is still undefined. We will finally define
+this function after matching of external and internal expansions.
+
+18
+
+The interior expansion in the neighborhood of the point kj depend
+on the scaling variable lj . The asymptotics of the functions µ and ν
+1
+
+2
+
+has the same asymptotic sequence, but the equations for Z j , Z j and
+1
+
+Y j have discontinuous right-hand sides.
+1
+
+1
+
+∂lj Z j −2ilj Z j =
+
+2
+
+¯
+
+¯
+
+f (−kj )sgn(Re(l exp(iπ/4)));
+∂k2 Sj
+
+(41)
+
+2
+
+2
+
+∂lj Z j −2ilj Z j = sgn(Re[¯l exp(iπ/4)]) ×
+16
+2lj (1)
+2i¯lj (1)
+×
+f00 (−k¯j ) + 2 f01 (−k¯j ) + 2 f10 (−k¯j ) +
+2
+2
+(∂k Sj )
+∂k Sj
+|∂k Sj |
+2i¯lj (2)
+2lj (2)
++ 2 f01 (−k¯j ) + 2 f10 (−k¯j ). (42)
+∂k Sj
+|∂k Sj |
+1
+
+1
+
+∂¯lj Y j = sgn(Re(l exp(−iπ/4)))f (kj ) Z j
+
+2
+
+.
+∂k¯2 Sj
+
+(43)
+
+Continuous partial solutions of the equations (41), (42) and (43)
+are obtained by Cauchy-Green formula. The formulas for the partial
+solutions of the equations (41) and (42) are differing from the formulas
+obtained in section 4.1.1 by function sgn(−Re(¯
+n exp(iπ))) under the
+sign of double integral:
+1
+
+1
+
+1
+
+2
+
+Z js = J [Hj ](lj ),
+
+2
+
+Z js = J [Hj ](lj ),
+
+2
+
+(44)
+
+where H j and H j are the right-hand side of the equations (41) and
+(42). An operator J has the form:
+lj2 ))
+exp(i(lj2 + ¯
+dn ∧ d¯
+n
+h(n) exp(−i(lj2 + ¯lj2 )).
+J [h](lj ) =
+2iπ
+C lj − n
+The partial solution of (43) contains of the double integral the
+same as in (28) and the term, which is defined by integral over the
+1
+
+discontinuous line. The function Y js has the form:
+1
+2f (kj )f (−k¯j )
+(J − 2J+− − 2J−+ ),
+Y js =
+|∂k¯2 Sj |
+where:
+J∓± =
+
+Ω∓
+
+¯ 2 ))
+dm ∧ dm
+¯ exp(i(m2 + m
+×
+l−m
+2iπ
+dn ∧ d¯
+n
+exp(−i(n2 + n
+¯ 2 )).
+±
+n
+−
+m
+Ω
+
+19
+
+(45)
+
+Here Ω± = {±Re[l exp(−iπ/4) > 0}. Note that J−+ (l) = J+− (−l).
+In the Appendix we show, that we can reduce the integral J−+ into
+double integral. As a result we obtain:
+3
+J−+ = − iπ +
+4
+dm ∧ dm
+¯
+exp(−i(m2 + m
+¯ 2 )), when l ∈ Ω+ ;
+¯
+Ω+ il − m
+dm ∧ dm
+¯
+= ¯l exp(i(l2 + ¯l2 ))
+exp(−i(m2 + m
+¯ 2 ))
+¯
+Ω+ il − m
+1
+1
+− iπ − iπ exp(i(l2 + ¯l2 )), when l ∈ Ω− ;
+4
+2
+il
+
+J−+
+
+1
+
+Thus, the function Y js is represented by sum of double integrals.
+Let us consider matching of the external and internal asymptotic
+expansions. For that we need the asymptotic behaviour of the partial
+solutions of (41) and (42) as |l| → ∞. The asymptotic behaviour of
+the double integrals is evaluated in the Appendix. By using it we
+obtain:
+2
+
+1
+
+s
+Z j ||l|→∞ = sgn[Re[−¯lj exp(iπ/4)]]f (−k¯j )
+
++
+
+∂k2 Sj
+
+−1
++
+2ilj
+
+exp(−i(lj2 + ¯lj2 ))
++ O(|lj |−2 ) ;
+2¯lj
+
+2
+
+s
+Z j ||lj |→∞ = sgn[Re[−¯lj exp(iπ/4)]] ×
+
+(1)
+2if10
+−¯lj
+1
+− exp(i(lj2 + ¯lj2 ))
++
+2ilj
+2
+|∂k2 Sj |2
+
++
+
+1
+1
+(1)
+− exp(i(lj2 + ¯lj2 )) 2f01 +
+4
+4
+
+(2)
+¯lj
+2if10
+1
+(2)
++ exp(i(lj2 + ¯lj2 )) + if01 + O(|lj |−1 ).
+2
+|∂k Sj | −2il 2
+1
+
+The asymptotic behaviour of the function β 0′′ is:
+1
+
+β 0′′ |k→kj =
+
+1
+¯ +
+f (kj )sgn[Re(−k)]
+12i(k − kj )(kj − km )
+1 ∞
+f (in) − f (kj )
++
+dn
++
+πi −∞
+n − ikj
+
+20
+
+−1
+¯ +
+f (kj )sgn[Re(−k)]
+12i(kj − km )2
+1
+1 ∞
+f (in) − f (kj )
+(1)
+f01 (kj ) +
++
+dn
+πi −∞
+n − ikj
+12i(kj − km )
+
+(2)
+
+(1)
+
+(2)
+
++f01 (kj )sgn[Im(ik)] + f10 (kj ) + f10 (kj )sgn[Im(ik)] +
++
+
+1
+πi
+
+ν ex
+
+∞
+
+(2)
+
+dn
+
+−∞
+
+(2)
+
+f (in) − f (kj )(in − ikj )f01 (kj ) − (in − ikj )f10 (kj )
+(n − ikj )2
++o(1).
+
+Using the matching conditions for the asymptotics of the external
+and internal ν in expansions we obtain:
+1
+
+1
+
+β 0 =β ′ 0 −
+
+C11
+C21
+−
+,
+12i(k − k1 )(k1 − k2 )
+12i(k − k2 )(k2 − k1 )
+
+(46)
+
+1
+
+where β 0′ is defined by formula (38),
+Cj1 =
+1
+
+∞
+
+1
+πi
+
+dn
+
+−∞
+
+1 s
+
+f (−n) − f (−kj )
+,
+n − ikj
+
+2
+
+j = 1, 2;
+
+2
+
+s
+2
+2
+2
+Z j =Zj − exp(−i(lj + ¯lj ))Cj ,
+
+Z j =Z j
+1
+
+(47)
+
+2
+
+where functions Z js and Z js are defined by (44),
+Cj1 =
+1
+πi
+
+∞
+−∞
+
+dn
+
+i
+(2)
+f (−k¯j )
+2
+∂k Sj 10
+
+−
+
+(2)
+(2)
+f (n) − f (−k¯j ) − f01 (−k¯j )(n − ikj )(n − ikj )f10 (kj )
+.
+(n − ikj )2
+1
+
+The asymptotic behaviour of the function Y js is :
+1
+
+s
+Yj =
+
+− iπ +
+
+f (−k¯j )f (kj )
+i¯lj
+.
+12πlj
+|∂k2 Sj |
+
+The matching condition for the external expansion of µex and for the
+internal expansion of µin gives:
+1
+
+1
+
+s
+Y j =Y j + Cj (ξ, η) + iπ
+
+21
+
+f (−k¯j )f (kj )
+,
+|∂k2 Sj |
+
+(48)
+
+1
+
+where Y j s is defined by (45), The function Cj (ξ, η) is defined by (32).
+The lemma is proved.
+Constructed external and internal expansions are irregular with
+respect to parameters k, ξ, η. The uniform expansion with respect to
+k when(12ξ + η 2 )t1/3 ≫ 1 has to be constructed by the same way as
+in preceding section:
+Y˜2
+.
+Z˜2
+(49)
+The operator An,k was defined above. Let us substitute (49) into (8)
+and evaluate a remainder. As a result we obtain
+µ
+ˆ
+νˆ
+
+=
+
+µ
+˜
+ν˜
+
++
+
+Y˜1
+Z˜1
+
++
+
+Y˜2
+Z˜2
+
+− A1,k
+
+Y˜1
+Z˜1
+
+− A1,k
+
+Theorem 4 The formal asymptotic solution of the problem (8) with
+respect to mod(O((t|θ|)−1 )), which is uniform when k ∈ C and
+−θ 2 t2/3 ≫ 1, has the form (49).
+
+4.2 Asymptotics in neighborhood of confluent
+stationary point
+The system of equations in the problem (8) depends on two control
+parameters ξ and η. On the parabola 12ξ + η 2 = 0 the degeneracy
+of stationary points occurs: k1 = k2 = k0 = iη. For this reason
+the asymptotics constructed in section 4.1 is invalid when parameter
+1
+θ = η 2 + 12ξ is close to zero. For example, the asymptotics of µ as
+k → k0 and θ → 0 is discontinuous:
+1
+|k − k0 |
+k − k0
+θ¯
+µ |k→k0 |θ→0 =
+−
+×
+2
+2
+12i((k − k0 ) − θ ) θ 12i((k − k0 )2 − θ 2 )
+f (−k¯0 )f (k0 ) + o(1).
+This shows that we need new scaling of the parameter θ. The scaled
+control parameter is:
+θ
+v = t1/3 √ .
+12
+The external expansion constructed in sec. 4.1 becomes discontinuous at θ = 0 and the internal expansions constructed in sec. 4.1
+become singular at the point θ = 0 and lose their asymptotic properties. Therefore here we must change the internal variable for the
+internal asymptotic expansion:
+p = t1/3 (k − k0 ).
+
+22
+
+(50)
+
+In this section we construct a formal asymptotic solution of the
+problem (8) with respect to mod(O(t−1 )) when |θ| ≪ 1 uniform with
+respect to k ∈ C. The result is formulated in the end of this section.
+To construct the uniform asymptotic solution we need the external
+and internal asymptotics outside and inside a small neighborhood of
+the point k0 respectively.
+Lemma 4 Let the system of the equations (8)be have no the homogeneous nontrivial solutions, F (k) ∈ C 2 ∩ L1 and the parameters ξ and
+η satisfy the inequality |12ξ + η 2 | ≪ 1, then:
+when |k − k0 |t1/3 ≫ 1 the formal asymptotic solution of the system (8)
+with respect to mod(O(t−2/3 /|k − k0 |) + O(t−1 )) has the form:
+1
+
+µ
+˜ = 1 + t−1 m (k, ξ, η),
+2
+
+1
+
+1
+
+ν˜ = t−2/3 n0 +t−1 ( n1 exp(itS)+ n0 )
+1
+
+1
+
+2
+
+the function m is defined by (76), the functions n0 and n2 are defined
+1
+
+by (72) and (73) respectively, the function n1 is defined by (63);
+when |k−k0 | ≪ 1 the asymptotic solution of the system (8)with respect
+to mod(O(t−2/3 |k − k0 | + O(t−1 )) has the form:
+2
+
+1
+
+µ
+˜ = 1 + t−2/3 M +t−1 M,
+3
+
+2
+
+1
+
+ν˜ = (t−1/3 N +t−2/3 N +t−1 N ) exp(−itS);
+j
+
+j
+
+the functions M, j = 1, 2 and N , j = 1, 2, 3 are defined by (75), and
+(74) respectively.
+Proof. Let us find the internal formal asymptotic expansion for
+the solution of the system (8) in the form:
+1
+
+2
+
+Min = 1 + t−2/3 M +t−1 M + . . . ,
+1
+
+2
+
+3
+
+N in = (t−1/3 N +t−2/3 N +t−1 N + . . .) exp(−itS).
+
+(51)
+(52)
+
+Change the variable k into the variable p in the system (8). The
+phase function of the exponent is depend on the variable p as:
+tS ≡ ω(p) ≡ 4(p3 + p¯3 ) − v 2 (p + p¯),
+
+23
+
+√
+where v = t1/3 θ/ 12. Substitute (51) and (52) into the system (8),
+equate the coefficients with equal power of t. As a result we obtain
+a sequence of equation for the coefficients of the expansions (51) and
+(52).
+1
+
+1
+
+p)]f (−k¯0 ),
+∂p N −i(12p2 − v 2 ) N = sgn[Re(−¯
+2
+
+(53)
+
+2
+
+(1)
+p)](f01 (−k¯0 )¯
+p+
+∂p N −i(12p2 − v 2 ) N = −sgn[−Re(¯
+(1)
+(2)
+(2)
+¯
++f (−k)p)
+− f (−k¯0 )¯
+p − f (−k¯0 )p.
+10
+
+01
+
+1
+
+10
+
+1
+
+p)]f (k0 ) N ,
+∂p¯ M= sgn[−Re(¯
+3
+
+(54)
+(55)
+
+3
+
+∂p N −i(12p2 − v 2 ) N =
+1
+(1)
+(2)
+− sgn[ − Re(−¯
+p)]f20 (−k¯0 ) + f20 (−k¯0 ) p2
+2
+1
+(1)
+(2)
+p)]f02 (−k¯0 ) + f02 (−k¯0 ) p¯2
+− sgn[ − Re(−¯
+2
+(1)
+
+(2)
+
+− sgn[ − Re(¯
+p)]f11 (−k¯0 ) + f11 (−k¯0 ) |p|2
+1
+
+−sgn[ − Re(−¯
+p)]f (−k¯0 ) M .
+
+2
+
+(56)
+
+2
+
+∂p¯ M= sgn[Re(p)]f (k0 ) N +
+(1)
+
+(2)
+
+1
+
+sgn[ − Re(¯
+p)]f10 (k0 ) + f10 (k0 ) N p +
+(1)
+
+(2)
+
+1
+
++ sgn[−Re(k)]f01 (k0 ) + f01 (k0 ) N p¯.
+
+(57)
+
+These equations are obtained in a supposition that |p|t−1/3 ≪
+1. The uniform bounded partial solutions of the equations for the
+coefficients of the expansion (52) are obtained by using an integral
+operator:
+P[g] =
+
+exp(iω(p))
+2iπ
+
+dr ∧ d¯
+r
+exp(−iω(r)) g(r),
+C p−r
+
+(58)
+
+where g(r) is the right-hand side of corresponding equation.
+Thus, the bounded partial solutions of the equations (53) and (54)
+1
+
+2
+
+(the functions N s and N s ) are represented by double integrals.
+Bounded partial solutions of equations for the coefficients of the
+expansion (51) are constructed by using the Cauchy-Green formula.
+
+24
+
+The formula for the partial solution of the equation (55) has the
+form:
+1
+
+−+
++−
+s
+2
+M (p, ξ, η) = f (k0 )f (−k¯0 )(J1 (p, v ) − 2J1 − 2J1 ).
+
+(59)
+
+Here
+J1 =
+
+1
+2iπ
+
+J1∓± =
+
+1
+2iπ
+
+dn ∧ d¯
+n exp(iω(n))
+p
+−
+n
+2iπ
+C
+Ω∓
+
+dr ∧ d¯
+r
+exp(−iω(r)).
+n
+−
+r
+C
+
+dn ∧ d¯
+n exp(iω(n))
+p−n
+2iπ
+
+Ω±
+
+dr ∧ d¯
+r
+exp(−iω(r)).
+n−r
+
+In the Appendix the integrals J1 and J1−+ are reduced into double
+integrals. By the similar way we may represent the integral J1+− as
+1
+
+the sum of double integrals. Therefore we may represent Ms as sum of
+double integrals also. Corresponded formula is very large and we don’t
+write it here. But we will use this formula to evaluate an asymptotic
+1
+
+behaviour of Ms as |p| → ∞.
+The bounded partial solution of the equation (57) when p ∈ C has
+2
+
+to be built similarly . We give following statement about M.
+
+2
+
+Lemma 5 Continuous partial solution of the equation for M exists.
+This solution is uniformly bounded when p ∈ C.
+2
+
+Sketch of proof. The partial solution of the equation for M has
+to be obtained as a result of using of the operator:
+2
+
+s
+∂p−1
+¯ [g] =M ≡
+
+dn ∧ d¯
+n
+g(n)
+p
+−
+n
+C
+
+1
+2iπ
+
+(60)
+
+to the right-hand side of the equation. The integrals, which are obtained, are continuous by virtue of continuity of the integral operator
+with respect to the parameter p. The boundedness of these integrals
+with respect to p when p ∈ C may be obtained by using the asymp2
+
+totic behaviour of the right-hand side terms of the equation for M as
+|p| → ∞.
+Let us to construct the external expansion in the form:
+2
+
+1
+
+2
+
+m = 1 + t−1 m0 (k, v) + t−5/3 (m1 exp(itS)+ m0 ) + . . . ;
+
+25
+
+(61)
+
+3
+
+2
+
+1
+
+n = (t−1 n1 (k, v) + t−5/3 n1 (k, v) + t−2 n1 . . .) exp(itS)
+2
+
+1
+
++t−2/3 n0 (k, v) + t−1 n0 (k, v) + . . . .
+
+(62)
+
+Substitute (61) and (62) into (8). As a result we get the equations
+for coefficients of the expansions:
+1
+¯
+n1 = sgn[Re(−k)]
+
+¯
+f (−k)
+;
+12i(k − k0 )2
+1
+
+∂k¯ m=
+1
+
+2
+¯
+n1 = −sgn[Re(−k)]
+
+¯
+f (k)f (−k)
+;
+12i(k − k0 )2
+
+¯
+v 2 f (−k)
+;
+144i(k − k0 )4
+(63)
+(64)
+
+2
+
+∂k n0 (k, ξ, η) = 0;
+
+(65)
+
+¯ 2
+f (k)f (−k)v
+;
+144i(k − k0 )4
+
+(66)
+
+¯ (k) n0 (k, ξ, η) ;
+m1 (k, ξ, η) = sgn[Re(−k)]f
+12i¯(k − k) )2
+
+(67)
+
+∂k n0 (k, ξ, η) = 0;
+
+2
+
+∂k¯ m0 =
+
+1
+
+2
+
+3
+
+n1 (k, ξ, η) =
+
+1
+1
+¯ (−k)
+¯ m
+sgn[Re(−k)]f
+0
+2
+12i(k − k0 )
+
+(1)
+¯
+¯ + f (2) (−k)
+¯
+¯
+f10 (−k)sgn[Re(−
+k)]
+2f (−k)
+10
+¯
+sgn[Re(−
+k)]
+. (68)
++
+12i(k − k0 )3
+12i(k − k0 )2
+1
+
+2
+
+3
+
+The formulas (63) and (68) define the functions n1 , n1 and n1 . Us1
+
+2
+
+ing the formulas (65) we can see, that the functions n0 n0 are analytic
+¯ The obvious form of this dependence is defined by two
+of variable k.
+conditions. First one is the continuity of the asymptotics and second
+one is matching condition for the external and internal asymptotic
+expansions.
+One can see, that the sufficient condition for the continuity of
+the coefficient of the asymptotics (62) as t−1 with respect to k is an
+2
+
+addition into n0 of the term:
+2
+
+n′ 0 =
+
+1
+1
+πi 12i(k − k0 )2
+
+26
+
+i∞
+−i∞
+
+dλ
+f (−¯l).
+k−λ
+
+(69)
+
+It follows from the formulas (67), that the coefficient of the asymp1
+
+totics (61) as t−5/3 is defined after evaluating of n0 , i.e. after matching
+of the coefficients as t−2/3 of the external and internal expansions.
+1
+Consider the problem for defining of m in detail. This function
+satisfies the boundary condition:
+1
+
+m0 ||k|→∞ = 0.
+The external solution is valid outside of small neighborhoods of the
+points kj , j = 0, 1, 2. Therefore solutions of the equation (64), which
+are smooth, bounded and decreased as |k| → ∞:
+1
+
+m0s (k, θ) =
+
+1
+2iπ
+
+r)f (r) − f (−k¯0 )f (k0 )
+dr ∧ d¯
+r f (−¯
++
+12i(r − k0 )2
+C k−r
+(k − k0 )f (k0 )f (−k¯0 )
++
+12i(k − k0 )2
+
+(70)
+
+are defined to within an analytic function with respect to variable k,
+1
+which has poles when t1/3 |k − k0 | ≪ 1. The full definition of m0 will
+be done by matching of the external and internal expansions.
+For matching process we need asymptotic behaviour of the partial
+solutions of equations (53)-(56) as |p| → ∞. Constructing of these
+asymptotics is reduced to evaluating of an integrals with weak singularity in the integrand. Evaluating of these integrals is done in the
+Appendix. Here we write the asymptotic behaviour of partial solutions
+of equations (53)-(56) as |p| → ∞.
+1
+2
+−
+2
+exp(iω(p))f (−k¯0 )[φ+
+00 (v ) − φ00 (v )] +
+p¯
+1
+¯ + (v 2 ) − φ− (v 2 )] +
++ 2 exp(iω(p))f (−k)[φ
+01
+01
+p¯
+1
+exp(iω(p))
+1
+f (−k¯0 )sgn[Re(−¯
+p)]( 2 −
+) + O(|v 2 ||p|−3 ).
++
+12i
+p
+p¯2
+1
+
+s
+N (p, ξ, η) =
+
+2
+
+exp(iω(p)) + 2
+2
+(φ10 (v ) − φ−
+10 (v )) +
+p¯
+p)] (1) ¯
+1 exp(iω(p)) sgn[Re(−¯
+−
+f10 (−k0 ) +
+p
+p¯
+12i
+1
+1
+(2)
+exp(iω(p))φ10 (v 2 ) +
+f (−k¯0 ) +
+p¯
+12ip 10
+
+s
+N (p, ξ, η) =
+
+27
+
+exp(iω(p)) + 2
+p¯
+exp(ω(p))
+2
+(φ01 (v ) − φ−
+−
+×
+01 (v )) +
+p¯
+p2
+p¯
+1
+sgn[Re(−¯
+p)] (1) ¯
+exp(iω(p))φ01 (v 2 ) +
+f01 (−k0 ) +
+12i
+p¯
+p¯
+(2)
+f01 (−k¯0 ) + O(|p|−2 ) + O(|v|2 |p|−2 ),
+2
+12ip
+−¯
+p
++
+12ip2
+
+1
+
+Ms (p, ξ, η) = −f (k0 )f (−k¯0 )
+1
+p
+
+− 12iφ01 (v 2 )φ10 (v 2 ) + iv 2 φ00 (v 2 )φ00 (v 2 ) −
+
+2 2 + 2 − 2
++ 2
+2
+iv φ00 (v )ψ00 (v ) + φ−
+00 (v )ψ00 (v ) +
+p
+1
+− 2
+−
++ 2
+2
+2
++12i φ+
++
+01 (v )ψ01 (v ) + φ01 (v )ψ01 (v ) − ψ01
+2
+O(|v|2 |p|−2 );
+2
+
+p¯
++
+12ip
+p¯
+1
+(2)
+f (k0 )f10 (−k¯0 )
++
+sgn[Re(p)] +
+12ip 12i
+1
+p¯2
+(2)
+−
+sgn[Re(p)] +
+f (k0 )f01 (−k¯0 )
+2
+24ip
+24i
+p¯2
+(1)
++ Φ(v 2 ) + O(|v|2 |p|−1 ),
+f (k0 )f01 (−k¯0 )
+24ip2
+(1)
+
+Ms (p, ξ, η) = f (k0 )f10 (−k¯0 )
+
+1
+(1)
+sgn[Re(−¯
+p)](1 − exp(iω(p)))f20 (−k¯0 ) +
+24i
+(2)
+p¯2
+exp(iω(p)) (1) ¯
+p¯2 f02 (−k¯0 )
+sgn[Re(−¯
+p)](
+−
+)f
+(−
+k
+)
++
++
+0
+02
+12ip2
+24i
+24ip2
+exp(iω(p)) (1) ¯
+p¯ (2) ¯
+p¯
++
+)f11 (−k0 ) +
+f (−k0 ) +
+sgn[Re(−¯
+p)](
+12ip
+12i
+12ip 11
+f02 (−k¯0 )f (k0 ) exp(iω(p))Ψ(v 2 ) + O(|v||p|−1 ).
+3
+
+s
+N (p, ξ, η) =
+
+The functions Φ(v 2 ) and Ψ(v 2 ) are smooth and uniformly bounded
+when v 2 ∈ R. Here we use notations:
+φ±
+mn =
+
+∓Re(r)>0
+
+dr ∧ d¯
+r r m r¯n exp(iω(r)),
+
+28
+
+±
+ψmn
+=
+
+∓Re(r)>0
+
+φmn =
+ψmn =
+
+C
+C
+
+dr ∧ d¯
+r r m r¯n exp(−iω(r)),
+
+dr ∧ d¯
+rr m r¯n exp(iω(r)),
+
+dr ∧ d¯
+r r m r¯n exp(−iω(r)).
+
+(71)
+
+Evaluate an asymptotic behaviours of the coefficients of the external expansion as k → k0 and ∂k2 S = o(1).
+f (−k¯0 )
+¯ +
+sgn[Re(−k)]
+12i(k − k0 )2
+1
+(1)
+¯ + f (1) (−k¯0 ) k − k0 +
+f10 (−k)
+01
+12i(k − k0 )
+k − k0
+k − k0
+(2)
+(2)
+¯ +
+sgn[Re(−k)]
+f10 (−k¯0 ) + f01 (−k¯0 )
+k − k0
+1 (1) ¯
+k − k0 1 (1) (k − k0 )2
+(1)
++ f20 (−k)
++ f11 (−k¯0 )
++ f
++
+2
+k − k0 2 02 (k − k0 )2
+1 (2) ¯
+k − k0
+(2)
+f (−k0 ) + f11 (−k¯0 )
++
+2 20
+k − k0
+1 (2) ¯ (k − k0 )2
+¯ + o(1).
+f (−k0 )
+sgn[Re(−k)]
+2 02
+(k − k0 )2
+1
+
+n1 |k→k0 =
+
+2
+
+n0′ =
+
+−1
+×
+24π(k − k0 )2
+
+πif (−k¯0 )sgn[Re(−¯
+p)] + V.P.
+
+∞
+
+−∞
+
+dλf (iλ)
++
+λ − ik0
+
+1
+(1)
+(1)
+−
+πif01 (−k¯0 ) + πif10 (−k¯0 ) + (πif10 (2)(−k¯0 ) +
+12π(k − k0 )
+(2)
++πif (−k¯0 ))sgn[Re(−k¯0 )] +
+01
+
+∞
+
+dλf (iλ)
+1
+(1)
++
+πif20 (−k¯0 ) +
+2
+(λ
+−
+ik
+)
+12i
+−∞
+0
+(1)
+(1)
+(2)
+(2)
+¯
+¯
++2πif11 (−k0 ) + πif02 (−k0 ) + (πif20 (−k¯0 ) + 2πif11 (−k¯0 ) +
+∞ dλf (iλ)
+(2)
+¯ + V.P.
++ o(1).
++πif02 (−k¯0 ))sgn[Re(−k)]
+3
+−∞ (λ − ik0 )
++V.P.
+
+1
+
+ms =
+
+29
+
+(k − k0 )
+f (−k¯0 )f (k0 )
+12i(k − k0 )2
+
+k − k0
+(1)
+¯ +
+(f10 (−k¯0 )sgn[Re(−k)]
+12i(k − k0 )
+
+(2)
+(1)
+(2)
++f10 (−k¯0 ))f (k0 ) + f (−k¯0 )(f10 (k0 )sgn[Re(k)] + f10 (k0 ))
+
+(k − k0 )2
+(1)
+¯ + f (2) (−k¯0 )) +
+f (k0 )(f01 (−k¯0 )sgn[Re(−k)]
+01
+2
+12i(k − k0 )
+
+(1)
+(2)
++f (−k¯0 )(f01 (k0 )sgn[Re(k)] + f01 (k0 )) + o(1).
+
+Let us do matching of the external and internal asymptotic expansions of the function ν˜. The matching condition for ν˜ in domain
+t−1/3 ≪ |k − k0 | ≪ 1 when |θ| ≪ 1 has the form:
+1
+
+2
+
+1
+
+(t−2/3 n0 +t−1 n0 +t−1 n1 exp(itS)) −
+1
+
+3
+
+2
+
+(t−1/3 N +t−2/3 N +t−1 N ) = o(t−1 ).
+Let us equate the coefficients with equal powers of the large parameter
+t. As a result we obtain:
+1
+1
+2
+−
+2
+n0 =
+f (−k¯0 )[φ+
+(72)
+00 (v ) − φ00 (v )],
+k − k0
+2
+
+n0 =
+
+−
+1
+2
+¯ + 2
+2 f (−k)[φ01 (v ) − φ01 (v )] +
+k−k0
+(1)
+(2)
+1
+1
+2 −
+2
+2
+¯
+f (−k¯0 )[φ+
+10 (v )φ10 (v )] + k−k0 f10 (−k0 )φ10 (v ) +
+k−k0 10
+(1)
+−
+1
+2
+2
+f (−k¯0 )[φ+
+01 (v ) − φ01 (v )] +
+k−k0 01
+(2)
+
+1
+f01 (−k¯0 )φ01 (v 2 ),
++ k−k
+
+(73)
+
+0
+
+where φ, ψ, φ± ψ ± are defined by (71);
+1
+
+N = P[g1 ],
+
+3
+
+2
+
+N = P[g2 ],
+
+N = P[g3 ]f02 (−k¯0 )f (k0 ) exp(iω(p))Ψ(v 2 ),
+
+(74)
+j
+
+where gj are the right-hand sides of the equations for N , the operator
+P[g] is defined by (58), the function Ψ(v 2 ) is smooth and uniformly
+bounded with respect to v 2 when v 2 ∈ R.
+Matching condition for the function µ
+˜ in the domain t−1/3 ≪ |k −
+k0 | ≪ 1 when |θ| ≪ 1 has the form:
+1
+
+1
+
+2
+
+(1 + t−1 m ) − (1 + t−2/3 M +t−1 M ) = o(t−1 ).
+
+30
+
+As a result we obtain:
+1
+
+1
+
+s
+M=M ;
+
+2
+
+2
+
+s
+2
+M=M − Φ(v ),
+
+1
+
+(75)
+
+2
+
+where Ms is defined by (59), the function Ms is defined by (60) and
+the function Φ(v 2 ) is smooth and uniformly bounded when v 2 ∈ R.
+1
+
+1
+
+m=ms −
+
+1
+− 12iφ01 (v 2 )φ10 (v 2 ) + iv 2 φ00 (v 2 )φ00 (v 2 )
+k − k0
+2
++
+− 2
++ 2
+2
+−
+iv 2 φ00
+(v 2 )ψ00
+(v ) + φ−
+00 (v )ψ00 (v ) +
+k − k0
+1
+2
++ 2
+2
+− 2
+−
++12i φ+
+01 (v )ψ01 (v ) + φ01 (v )ψ01 (v ) − ψ01 . (76)
+2
+
+1
+
+Here m s is defined by (70) and the functions ψ ± , φ± , φ and ψ are
+defined by formulas (71).
+Thus we have matched internal and external expansions of µ
+˜ and
+ν˜. The lemma is proved.
+These expansions are ununiform with respect to k. Now we can
+construct uniform asymptotic expansion with respect to k ∈ C. Following the matching method the uniform expansion is:
+µ
+ˆ
+νˆ
+
+=
+
+m
+˜
+n
+˜
+
++
+
+˜1
+M
+˜1
+N
+
+− A1,k
+
+˜1
+M
+˜1
+N
+
+.
+
+(77)
+
+˜ 1 in the formula
+Here the operator An,k processes on the function M
+for M1 by followed manner. One must change the variable p into the
+variable k using the formula (50) and write all terms of the asymptotic
+expansion with respect to t with the powers are equal to −m, where
+˜
+0 ≤ m ≤ n. For example, one can obtain for the function M(p,
+ξ, η, t):
+˜
+A1,k [M(p,
+ξ, η, t)] = 1 + t−1 − f (k0 )f (−k¯0 )
+
+−k − k0
++
+12i(k − k0 )2
+
+1
+− 12iφ01 (v 2 )φ10 (v 2 ) + iv 2 φ00 (v 2 )φ00 (v 2 )
+k − k0
+2
+− 2
+−
++ 2
+2
+2
+−
+iv 2 φ+
+00 (v )ψ00 (v ) + φ00 (v )ψ00 (v ) +
+k − k0
+1
+− 2
+−
++ 2
+2
+2
++12i φ+
+01 (v )ψ01 (v ) + φ01 (v )ψ01 (v ) − ψ01
+2
+k − k0
+(1)
+f (k0 )f10 (−k¯0 )
++
+12i(k − k0 )
+
++
+
+31
+
+(2)
+
+f (k0 )f10 (−k¯0 )
+
+1
+k − k0
++
+sgn[Re(k)] +
+12i(k − k0 ) 12i
+2
+
+(1)
+
+f (k0 )f01 (−k¯0 )
+2
+
+(2)
+
++f (k0 )f01 (−k¯0 )
+
+k − k0
++
+24i(k − k0 )2
+
+1
+k − k0
+−
+sgn[Re(k)] ,
+2
+24i(k − k0 )
+24i
+
+˜ ] is more large and doesn’t shown
+The obviously formula for A1,k [N
+here.
+Theorem 5 The formula (77) gives the asymptotics solution of the
+problem (8) with respect to mod(O(t−1 )) as t → ∞. This asymptotic
+solution is uniform with respect to k ∈ C and |θ| ≫ 1.
+
+5 Justification of the asymptotics of
+¯
+the solution of D-problem
+In this section we prove that the remainder of the asymptotics has
+order by t−4/3 uniformly with respect to k ∈ C and this remainder has
+to be differentiable with respect to x. We call by the remainder of the
+asymptotics the difference between solution of the problem (8) and
+constructed asymptotic solutions (33) when θ 2 t−2/3 ≫ 1, (49) when
+−θ 2 t−2/3 ≫ 1 and (77) when |θ| ≪ 1. The differentiability of the
+remainder will be important when we will construct an asymptotic
+behaviour of solution of the equation KP-2.
+¯ ∈ L1 ∩ C 1 when |α| ≤ 2 when k is out of
+Theorem 6 Let ∂ α f (k, k)
+the imaginary axis and
+dk ∧ dk¯
+|F (k)| < 2π,
+C |k − z|
+
+sup
+z∈C
+
+then the solution of the problem (8) is:
+µ
+ν
+
+=
+
+µ
+˜
+ν˜
+
++ O(t4 /3 ),
+
+(78)
+
+when k ∈ C, ξ, η ∈ R. The remainder of the asymptotics has to be
+differentiable with respect to x.
+
+32
+
+The proof. Let us write the system of differential equation for
+the remainder. Denote the remainder in (82) by V . Substitute (82)
+into (8). As a result we obtain:
+∂k¯ 0
+0 ∂k
+
+¯ exp(itS)
+0
+F (−k)
+F (k) exp(−itS)
+0
+
+V =
+
+V + f, (79)
+
+V ||k|→∞ = 0.
+
+(80)
+
+We denote by the vector f the residual which originates in (8) when
+we substitute the column into this equation (˜
+µ, ν˜)T :
+¯ exp(itS)˜
+˜ + F (−k)
+ν,
+f1 = −∂k¯ µ
+f2 = −∂k ν˜ + F (k) exp(−itS)˜
+µ.
+Let us denote by X the space of bounded and continuous with
+respect to k vector-functions with the norm:
+||W || =
+
+sup
+k∈C,(ξ,η)∈R
+
+2
+
+|W1 | +
+
+sup
+k∈C,(ξ,η)∈R
+
+2
+
+|W2 |.
+
+Consider a system of integral equations instead of the problem
+(79), (80):
+V = G[F ]V + H,
+(81)
+where G[F ] is the integral operator:
+G[F ]V =
+
+
+m∈C
+
+0
+ F (m)
+exp(−itS)
+k−m
+H=
+
+dm ∧ dm
+¯ ×
+F (−m)
+¯
+k−m
+
+m∈C
+
+
+
+exp(itS)
+ V (m, ξ, η, t);
+0
+
+
+dm ∧ dm
+¯
+
+f1 (m,ξ,η,t)
+k−m
+f2 (m,ξ,η,t)
+k−m
+
+
+
+.
+
+Using obvious forms of the functions f1,2 one can proof, that
+||H|| = O(t−4/3 )
+uniformly with respect to ξ, η ∈ R when k ∈ C.
+The operator G[F ] is contracting in the space X, therefore the
+solution of the integral equation (81) exists in X and is evaluated by
+O(t−4/3 ) uniformly with respect to ξ, η ∈ R.
+
+33
+
+Show that the remainder of the asymptotics is differentiable on
+x = tξ. Differentiate with respect to x the system of the equation for
+the remainder. Denote the derivative of the vector V by χ. Then we
+obtain:
+χ = G[F ]χ + ∂x G[F ]V + ∂x H.
+The terms ∂x G[F ]V + ∂x H may be evaluated by order O(t−4/3 ).
+The operator G[F ] is contracting, therefore one can obtain: ||χ|| =
+O(t−4/3 ). The theorem is proved.
+
+6
+
+Solution of the equation KP-2
+
+An asymptotics of the solution of the problem (5) as t → ∞ may be
+written as:
+φ
+ψ
+
+=
+
+µ
+˜
+ν˜
+
+−˜
+ν
+µ
+˜
+
+¯ ξ, η, t) +
+(k, k,
+
+¯ −k, ξ, η, t) + O(t−4/3 ).
+(−k,
+
+(82)
+The second term in this formula is the solution of the problem (5)
+with the boundary condition:
+µ
+˜
+ν˜
+
+=
+|k|→∞
+
+0
+1
+
+.
+
+The proof of the theorem 1. Let us substitute the function
+¯ ξ, η, t) into the formula for the solution of the equation KPψ(k, k,
+2(6). Differentiate the integrand with respect to x. The main terms
+of the integrand are the terms which appear after differentiating of the
+exponent. The derivatives with respect to x of others factors of integrand are small because they depend on x slowly. The integrals of such
+terms over the plane are evaluated by the order O(t−4/3 ) uniformly
+with respect to (x, y) ∈ R. Rewrite the main term of the integral as the
+integral over real plane: (κ, λ) ∈ R2 , where κ = Re(k), λ = Im(k).
+As a result we obtain:
+u(x, y, t) = −4
+
+R2
+
+dκ ∧ dλ |κ|f (κ + iλ) ×
+
+× exp(it(8κ3 − 24κλ2 + 2κξ + 4κλη)) + O(t−4/3 ).
+
+(83)
+
+Thus the main term of the asymptotics of the solution of the
+Cauchy problem for the equation KP-2 is given by integral with fast
+
+34
+
+oscillating exponent. Let us evaluate the asymptotic behaviour of this
+integral.
+Let η 2 + 12ξ > 0 and t1/3 |η 2 + 12ξ| ≫ 1, then the stationary points
+η
+± η 2 + 12ξ, κ1,2 = 0. The stationary
+of the exponent are: λ1,2 = 12
+phase method (see for example [24]) gives:
+u(x, y, t) = o(t−1 ).
+± 21
+
+η
+, κ1,2 =
+Let η 2 + 12ξ < 0 and t1/3 |η 2 + 12ξ| ≫ 1, then λ1,2 = 12
+−η 2 − 12ξ. The asymptotic behaviour of the integral is:
+
+u(x, y, t) = −4t−1
+
+1
+π
+f
+0
+2
+12i −η 2 − 12ξ
+
+× exp
+
+− 11it −
+
+−η 2 − 12ξ +
+
+x
+y2
+− 12
+2
+t
+t
+
+iη
+12
+
+×
+
++ c.c. + o(t−1 ).
+
+To evaluate the main term of the asymptotics of the integral when
+|12ξ+η 2 | = o(1), we substitute the scaled variables p1 = t1/3 Re(k−k
+0 ),
+√
+p2 = t1/3 Im(k − k0 ) and the parameter v 2 = t2/3 (η 2 + 12ξ)/ 12 into
+integral (83). As a result we obtain:
+u(ξ, η, t) = 4it−1 f (k0 )
+
+R2
+
+dp1 dp2 ×
+
+p1 exp(i(8p31 − 2v 2 p1 − 24p1 p22 )) + o(t−1 ).
+Let us integrate the internal integral with respect to the parameter
+p2 , use the even property of the integrand with respect to p1 . As a
+result we obtain:
+∞
+√
+√
+dp1 p1 cos (8p1 (p21 − 8v 2 )) +
+u(x, y, t) = 8it−1 πf (iη/12)
+0
+
+∞
+
++
+0
+
+√
+dp1 p1 sin (8p1 (p21 − 8v 2 ))
+
++ o(t−1 ).
+
+The theorem 1 is proved.
+
+A Asymptotic behaviour of double integral with weak singularity of the integrand
+Here we obtain the asymptotic behaviour of integrals which are appeared when the asymptotic solution of (8) was studied.
+
+35
+
+Evaluating of the asymptotic behaviour of one-dimensional integrals with weak singular integrand and fast oscillated exponent was
+done in [24] p.26 and [28] p.332. The asymptotic behaviour of manydimensional integrals with fast oscillating exponent was studied in
+[24], [30]. The asymptotic behaviour of the Cauchy integrals with fast
+oscillating exponent in one-dimensional case was studied in [24] and in
+many-dimensional case was studied in [31]. The asymptotic behaviour
+of the two-dimensional for some integrals over all complex plane with
+weak singularity was studied in [25].
+
+A.1 Integrals over half-plane with general stationary point of fast oscillated exponent
+Here we study an asymptotic behaviour of an integral:
+I=
+
+Ω+
+
+dn ∧ d¯
+n
+exp(−i(n2 + n
+¯ 2 )),
+l−n
+
+where |l| → ∞ and the domain Ω+ = {Re(l + l¯ − i(l − ¯l)) > 0}.
+Theorem 7 The asymptotic behaviour of the integral I as |p| → ∞
+has the form:
+I = −2iπ
+
+3iπ
+exp(−i(l2 + ¯l2 ))
+− ¯ + O(|l|−2 )
+2il
+2l
+iπ
+I = − ¯ + O(|l|−2 )
+2l
+
+where
+
+l ∈ Ω+ ;
+
+l ∈ Ω+ .
+
+The proof. Let us suppose that l ∈ Ω+ . Divide the domain Ω+
++
+into three domains: first one is Ω+
+1 = {Ω \{[|n| ≤ |l|/2] ∪ [|n − l| <
+ε]}}. This domain hasn’t stationary point of phase function of the
+exponent and the singularity of the integrand. Second one is Ω+
+2 =
+{Ω+ \[|n| ≥ |l|/2]}. This domain contains the stationary point of the
+phase function. At last, third domain is Ω+
+3 = {|n − l| < ε}. This
+domain contains the singularity of the integrand.
+Let us integrate by parts over Ω+
+1 . As a result we obtain:
+Ω+
+1
+
+dn ∧ d¯
+n
+exp(−i(n2 + n
+¯ 2 )) =
+l−n
+−
+
+Ω+
+1
+
+∂Ω+
+1
+
+d¯
+n exp(−i(n2 + n
+¯ 2 ))
+−
+−2in
+l−n
+
+¯ 2 ))
+dn ∧ d¯
+n exp(−i(n2 + n
+.
+2in2
+l−n
+
+36
+
+(84)
+
+The boundary of the domain Ω+
+1 includes a large half-circle of radius
+R as R → ∞, a circle of radius ε over the point l = n, a half-circle
+of radius |l|/2 and two segments: [R exp(3iπ/4), |l| exp(3iπ)/2] and
+[|l| exp(−iπ/4)/2, R exp(3iπ)].
+Consider the integrals over boundary of the domain Ω+
+1 . The integral over large half-circle is equals to zero as R → ∞. The integral over half-circle of radius |l|/2 has order |l|−3 (because of oscillations and small value of the integrand). The integral over the circle
+at n = l equals to a residue of the integrand multiplied by 2iπ as
+ε → 0. The integral over the segments [R exp(3iπ/4), |l| exp(3iπ)/2]
+and [|l| exp(−iπ/4)/2, R exp(3iπ)] (let us denote their union by L) is
+reduced to the form:
+exp(3iπ/4)
+d¯
+n
+=
+−2i¯l
+−2in(l − n)
+
+n∈L
+
+|λ|≥|l|/2
+
+dλ
+¯l − λ exp(iπ/4) .
+
+The second term of (84) has to be evaluated as by O(|l|−3 ).
+Let us consider the integral over Ω+
+2 . Represent:
+n
+¯
+1
+1
+= ¯(1 +
+).
+l
+l−n
+l−n
+
+Then the integral over Ω+
+2 has to be written as:
+I2 =
+
+dn ∧ d¯
+n
+exp(−i(n2 + n
+¯ 2 )) =
+l−n
+dn ∧ d¯
+n
+exp(−i(n2 + n
+¯ 2 )) +
++
+l
+−
+n
+Ω2
+dn ∧ d¯
+n
+n
+¯ exp(−i(n2 + n
+¯ 2 )).
++
+l−n
+Ω2
+
+Ω+
+2
+
+1
+¯
+l
+1
+¯
+l
+
+Here we integrate by parts the second term. After evaluations we
+obtain:
+1
+I2 = ¯
+l
+1
+2i¯l
+
+dn ∧ d¯
+n exp(−i(n2 + n
+¯ 2 )) +
+
+Ω+
+|l| exp(−iπ/4)/2
+|l| exp(3iπ/4)/2
+
+dn
++ O(|l|−2 ).
+l−n
+
+The integral over Ω+
+3 as ε → 0 equals to zero.
+Let us sum the obtained asymptotics:
+I = −2iπ
+
+exp(iπ/2)
+exp(−i(l2 + ¯l2 ))
++
+2il
+2i¯l
+
+37
+
+∞
+−∞
+
+dλ
+¯l exp(−iπ/4) − λ +
+
+1
+dn ∧ d¯
+n exp(−i(n2 + n
+¯ 2 )) + O(|l|−2 ).
+2i¯l Ω+
+Thus the first statement of the theorem is proved. The second
+statement has to be proved by the same way.
+The theorem is proved.
+
+A.2 Asymptotic behaviour of the integral
+with confluent phase function
+In this section we obtain an asymptotic behaviour of an integral as
+|p| → ∞
+dr ∧ d¯
+r
+exp(−iω(r)).
+(85)
+W+ =
++
+p
+−
+r
+Ω
+Theorem 8 The asymptotic behaviour of the integral (85) where ω(p)
+= 4(p3 + p¯3 ) − v 2 (p + p¯) as |p| → ∞ and |p ± √v12 | ≥ 0 has the form:
+
+W+
+
+
+
+
+
+
+=
+
+
+
+
+exp(−iω(p))
+πi
+1 +
+1 +
+2
+2
++
+p¯ φ00 (v ) + p¯2 φ01 (v ) + 12¯
+p2 + 2πi
+12p2
++O(|p|−3 + |v|2 |p|−2 ), when p ∈ Ω+ ;
+1 +
+1 +
+2
+2 πi +
+p¯ φ00 (v ) + p¯2 φ01 (v ) 12¯
+p2
++O(|p|−3 + |v|2 |p|−2 ), when p
+
+(86)
+
+∈ Ω+ .
+
+Let us prove the theorem. Represent the integral in the form:
+W+ =
++
++
++
+
+1
+12¯
+p2
+
+1
+p¯2
+
+v2
+12¯
+p2
+Ω+
+
+1
+p¯
+
+Ω+
+Ω+
+
+dn ∧ d¯
+n exp(−iω(n)) +
+
+dn ∧ d¯
+n exp(−iω(n))¯
+n +
+
+dn ∧ d¯
+n 2
+n
+¯ exp(−iω(n)) +
+Ω+ p − n
+dn ∧ d¯
+n
+(12¯
+n2 − v 2 ) exp(−iω(n)).
+p−n
+
+Integrate by parts the last term. As a result we obtain:
+1
+1 + 2
+2
+W + = φ+
+00 (v ) + 2 φ01 (v ) +
+p¯
+p¯
+n2 − v 2 ) exp(−iω(n)))
+1
+d¯
+n (12¯
++
++
+12¯
+p2 ∂Ω+ p − n
+(−i)(12n2 − v 2 )
+
+O(|p|−3 + |v|2 |p|−2 ).
+
+38
+
+Consider the integral over the boundary of the domain ∂Ω+ . This
+integral may be considered as a sum of integrals over imaginary axis
+Re(r) = 0, over half-circle of radius R as R → ∞, Re(r) > 0 and
+over the circle |p − r| = ε as ε → 0 (if p ∈ Ω+ ). We can see that the
+integral over the large half-circle tends to zero. As a result we obtain
+the statement of the theorem.
+One more double integral which we need is:
+U+ =
+
+Ω+
+
+dr ∧ d¯
+r
+r¯ exp(−iω(r)).
+p−r
+
+Its asymptotics can be evaluated by the same way as the asymptotics
+of the integral (85) as |p| → ∞ |p ± v| ≥ 0:
+
+
+
+
+U =
+
+
+
+exp(−iω(p))
+1
+πi
++ 2iπ 12ip
+exp(−iω(p)) + 12¯
++
+p + 2πi
+12p2
+−2
+2
+−2
++
++O(|p| + |v| |p| ), when p ∈ Ω ;
+
+1 +
+2
+p¯ φ10 (v )
+
+1 +
+2 πi
+p¯ φ10 (v ) 12¯
+p
+
++ O(|p|−2 + |v|2 |p|−2 ),
+
+when p ∈ Ω+ .
+
+B Reducing of four-multiply integral
+into double integral
+This section is pure technical. Here we show as the four-multiply
+integrals have to be reduced into double integrals over half-plane and
+all complex plane.
+
+B.1 Four-multiply integral with nondegenerate phase of the exponent.
+Let us show that the four-multiply integral may be written as a sum
+of double integrals. Change the variable: n − m = r, then the integral
+J has the form:
+dn ∧ d¯
+n
+1
+×
+2iπ
+C lj − n
+dr ∧ d¯
+r
+exp(i(r 2 + r¯2 )) exp(−2i(rn + rn)).
+r
+¯
+C
+J=
+
+1
+2iπ
+
+Integrate by part over n
+¯ . As a result we obtain:
+J=
+
+−1
+lim
+4π 2 R→∞
+
+39
+
+|n|=R
+
+dn¯
+n
+×
+lj − n
+
+dr ∧ d¯
+r
+exp(i(r 2 + r¯2 )) exp(−2i(rn + rn)) +
+r¯
+C
+dn¯
+n
+1
+lim
+×
+2iπ ε→0 |l−n|=ε lj − n
+dr ∧ d¯
+r
+exp(i(r 2 + r¯2 )) exp(−2i(rn + rn)) −
+r¯
+C
+1
+dn ∧ d¯
+n
+n
+¯×
+2iπ
+l
+−
+n
+C j
+
+1
+2iπ
+
+1
+2iπ
+
+C
+
+dr ∧ d¯
+r (−2i) exp(i(r 2 + r¯2 )) exp(−2i(rn + rn)).
+
+First term is equal to zero because of fast oscillating of the integrand,
+second term is equal to residue with sign minus of the integrand at
+n = l, the internal integral in the third term has to be evaluated.
+Finally we obtain:
+J =¯
+lj
+
+lj2 ))
+exp(i(lj2 + ¯
+2iπ
+
+dn ∧ d¯
+n
+exp(−i(n2 + n
+¯ 2 )) − exp(i(lj2 + ¯lj2 )).
+l
+−
+m
+C j
+
+B.2 Four-multiply integral over different halfplanes with nondegenerate phase function
+Let us consider an integral:
+J−+ =
+
+¯ 2 ))
+dn ∧ d¯
+n exp(i(n2 + n
+×
+2iπ
+Ω− l − n
+dm ∧ dm
+¯
+exp(−i(m2 + m
+¯ 2 )).
+Ω+ n − m
+
+A partially integrating over n
+¯ gives:
+J−+ =
+
+Ω−
+
+dn exp(i(n2 + n
+¯ 2 ))
+n
+¯
+×
+2iπ
+∂Ω− l − n
+dm ∧ dm
+¯
+exp(−i(m2 + m
+¯ 2 )) −
++
+n
+−
+m
+Ω
+¯ 2 ))
+dn ∧ d¯
+n ∂ exp(i(n2 + n
+n
+¯
+×
+l − n ∂n
+¯
+2iπ
+dm ∧ dm
+¯
+exp(−i(m2 + m
+¯ 2 )).
++
+n−m
+Ω
+
+The derivative is:
+J−+ =
+
+∂Ω−
+
+dn n
+¯ exp(i(n2 + n
+¯ 2 ))
+×
+l−n
+2iπ
+
+40
+
+Ω+
+
+dm ∧ dm
+¯
+exp(−i(m2 + m
+¯ 2 )) −
+n−m
+dn
+3
+exp(i(n2 + n
+¯ 2 )).
+4 ∂Ω− l − n
+
+Let us consider integral over part of the boundary in first term :
+¯ exp(i(n2 + n
+¯ 2 ))
+dn n
+×
+2iπ
+R exp(−iπ/4) l − n
+dm ∧ dm
+¯
+exp(−i(m2 + m
+¯ 2 )).
+Ω+ n − m
+R exp(3iπ/4)
+
+I = lim
+
+R→∞
+
+Change the order of integration over m, m
+¯ and n. The internal integral
+over n has to be evaluate:
+R exp(3iπ/4)
+
+lim
+
+R→∞ R exp(−iπ/4)
+
+dn
+
+n
+¯
+=
+(l − n)(n − m)
+
+1
+2
+
+m
+¯
++ il−
+when l ∈ Ω+ ;
+m
+¯,
+−1/2 when l ∈ Ω+ .
+
+In last expression of J−+ the integrals over the large half of circle
+|n| = R as R → ∞ are equal to zero.
+Final formulas for J−+ have to be written as:
+
+J−+
+
+
+
+
+
+=
+
+
+
+−5
+4 iπ
+
++ il
+
+2
+
+Ω+
+
+2 ))
+
++m
+¯
+dm ∧ dm
+¯ exp(−i(m
+il−m
+¯
+
+,
+
+when l ∈ Ω+ ;
+
++ 23 iπ exp(i)l2 + ¯l2 )) − ¯l exp(i(l2 + ¯l2 ))×
+2 +m
+¯ 2 ))
+, when l ∈ Ω− .
+¯ exp(−i(m
+Ω+ dm ∧ dm
+l−m
+
+−5
+4 iπ
+
+B.3 Four-multiply integral with confluent
+phase function
+Let us reduce an four-multiply integral
+J1 =
+
+dn ∧ d¯
+n
+exp(iω(n))
+C p−n
+
+dm ∧ dm
+¯
+exp(−iω(m))
+C n−m
+
+into sum of double integrals. Denote:
+V (n, v 2 ) =
+
+dr ∧ d¯
+r
+exp(−iω(r)).
+C n−r
+
+exp(iω(n))
+2iπ
+
+The function V (p, v 2 ) has to be written as:
+∂V
+= 12i¯
+n exp(iω(n))φ00 (v 2 ) + 12i exp(iω(n))φ01 (v 2 ).
+∂n
+¯
+
+41
+
+We can obtain this formula by changing variable in the integrand
+ρ = n − r and differentiating the obtained expression of V (n, v 2 ) with
+respect to n
+¯ and, finally changing the variable back: r = n − ρ.
+Partial differentiating of the double integral over n
+¯ and n gives:
+dn ∧ d¯
+n
+V (n, v 2 ) = lim
+R→∞
+p
+−
+n
+C
++ lim
+
+ε→0 |p−n|=ε
+
+dn n
+¯
+V (n, v 2 ) −
+p−n
+
+|n|=R
+
+dn n
+¯ V (n, v 2 )
++
+p−n
+
+dn ∧ d¯
+n ∂V (n, v 2 )
+n
+¯
+.
+∂n
+¯
+C p−n
+
+(87)
+
+Asymptotic behaviour of V (n, v 2 ) as |n| → ∞ was obtained above.
+Using this asymptotics for the first part of the formula (87) gives
+zero. Second term of the right-hand side of (87) gives the residue of
+the integrand at p multiplied by 2iπ. Then we obtain:
+J1 (p, v 2 ) = p¯ V (p, v 2 ) − φ00 (v 2 ) exp(iω(p)) −
+− 12iφ01 (v 2 )
+
+1
+2iπ
+
++ iv 2 φ00 (v 2 )
+
+1
+2iπ
+
+dn ∧ d¯
+n
+n
+¯ exp(iω(n)) +
+C p−r
+dn ∧ d¯
+n
+exp(iω(n)).
+C p−r
+
+On the same way one can evaluate an integral
+J1−+ =
+
+Ω−
+
+dn ∧ d¯
+n
+exp(iω(n))
+p−n
+
+Ω+
+
+dm ∧ dm
+¯
+exp(−iω(m)).
+n−m
+
+The difference between the integral J1 and the integral J1−+ consists in the addition terms over boundaries of the domains Ω+ and Ω−
+in the result. The finally forms are:
+when p ∈ Ω+ :
+2
+J1−+ = −φ+
+00 (v ) exp(iω(p)) +
+dm ∧ dm
+¯
+exp(−iω(m))
++¯
+p exp(iω(p))
++
+p
+−
+m
+Ω
+1
+dn ∧ d¯
+n
+n
+¯ exp(iω(n)) +
+−
+2
+p−n
+Ω
+dn ∧ d¯
+n
+2 1
+exp(iω(n))
++iv 2 φ+
+00 (v )
+2iπ
+Ω− p − n
+dn ∧ d¯
+n
+2 1
+−12iφ+
+n
+¯ exp(iω(n));
+01 (v )
+2iπ
+Ω− p − n
+
+42
+
+when p ∈ Ω+ :
++
+J1−+ = −φ00
+(v 2 ) + p
+
+1
+2
+2 1
+iv 2 φ+
+00 (v )
+2iπ
+1
+2
+−12iφ+
+01 (v )
+2iπ
+−
+
+Ω+
+
+dm ∧ dm
+¯
+exp(−iω(m))
+p+m
+¯
+
+dn ∧ d¯
+n
+n
+¯ exp(iω(n))
+p−n
+dn ∧ d¯
+n
+exp(iω(n))
+−
+p−n
+Ω
+dn ∧ d¯
+n
+n
+¯ exp(iω(n)).
+Ω− p − n
+Ω−
+
+Acknowledgements.
+I am grateful to S.G. Glebov, A.M. Il’in, L.A. Kalyakin and M.M.
+Shakir’yanov for stimulated discussions.
+
+References
+[1] B.B. Kadomtsev, V.I. Petviasvili. The stability of solitary waves
+with in weakly dispersive madia. Dokl. Acad. Nauk. SSSR, v.192,
+pp.753-756.
+[2] V.E. Zakharov, A.B. Shabat. A scheme for integrating the nonlinear equations of mathematical physics by the method of the
+inverse cesattering problem. I. Func Anal. Appl., v8, pp.226-235.
+[3] V.S. Dryuma. Abuot analytic solution of two-dimensional
+Korteveg-de Vries equation. Pis’ma v JhETPh, v.19, pp.753-757.
+[4] V.I. Petviashvili, O.A. Pokhotelov. Solitary waves in plasma.
+Moscow, Energoatomizdat, 1989.
+[5] A.V. Faminskii, The Cauchy problam for generalized KP equation. Siberian Matem. Journal, v.33, pp.160-172.
+[6] Hayashi N.,Naumkin P.I., Saut J.-C.. Asymptotics for large time
+of global solutions to the generalized Kadomtsev-Petviashvili
+equation. Comm. in math. phys., 1999, v.201, n3, p.577-590.
+[7] M.J. Ablowitz, A.C. Newell. The decay of thr continuous spectrum for the solutions of the Korteveg -de Vries equation. J. Math.
+Phys., 1973, p.1277-1284.
+
+43
+
+[8] A.B. Shabat. About korteveg-de Vries equation. Dokl. Akad.
+Nauk SSSR, v.211, pp.1310-1313.
+[9] S.V. Manakov. Nonlinear Fraunhofer’s diffraction. JETPh, v.65,
+pp.1392-1398
+[10] V.E. Zakharov, S.V. Manakov. Asyptotic behaviour of nonlinear
+wave systems integrating by method of inverse problem. JETPh,
+v.71, pp.203-215.
+[11] J.W. Miles. The asymptotic solution of the Korteveg-de Vries
+equation in the absense of solitons, Stud. Appl. Math., v.60, pp.
+59-72
+[12] V.Yu. Novokshenov. Asymptotics as t → ∞ of solution of Cauchy
+problem for nonlinear Schr¨
+odinger equation., Dokl. Acad. Nauk
+SSSR, v.251, pp.799-801.
+[13] A.R. Its. Asymptotics of solutions of nonlinear Schr¨
+odinger equation and monodromy-preserve deformations of linear differential
+systems. Dokl. Acad. Nauk SSSR, v.261, pp.14-18.
+[14] I.A. Anders, V.P. Kotlyarov, E.Ya Khruslov. Curve asymptotic
+solitons of Kadomtsev-Petviashvili equation. Teor. Mat. Fiz.,
+v.99, pp.27-35.
+[15] D.Yu. Ostapenko, A.P. Pal-Vall, E.Ya. Khruslov. Uniform asymptotic formulas for curve solitons of Kadomtsev-Petviashvili equations. Teor. Mat. Fiz., v.108, pp.205-211.
+[16] S.V. Manakov, P.M. Santini, L.A. Takchtadzhyan. A asymptotic
+behavior of the solutions of the Kadomtsev–Petviashvili equations. Phys. Lett. A, 1980, v.75, p.451-454.
+[17] M.J. Ablowitz, D. Bar Yaacov, A.S. Fokas. On the inverse scattering transform for the Kadomtsev-Petviashvili equation. stud.
+in Appl. Math. 1983, v.69, p.135-143.
+¯
+[18] R.G. Novikov, G.M. Khenkin. ∂-equation
+in many-dimensional
+scattering problem. Uspekhi. Matem. Nauk v.42(3), pp.93-152.
+[19] V.D. Lipovsky. Hamiltonian structure of equation KP-II in class
+of decreasing Cauchy data. Funk. Analiz i ego Prilogeniya.
+v.20(4), pp.35-45.
+[20] I.M. Krichever. Spectral theory of wto-dimensional periodical operators. Uspekhi Matem. Nauk., v.44(2), pp.121-184.
+
+44
+
+[21] M.V. Wickenhauser. Inverse scattering for the heat operator and
+e volution in 2+1 variables, Comm. Math. Phys., v.108, pp.67-87.
+[22] A.S. Fokas, L.J. Sung. On the solvalability on the N-wave, DaveyStewartson and Kadomtsev-Petviashvili equations. Inv. probl., 8,
+p.673-708.
+[23] P.G. Grinevich. Nonsingularity of the direct scattering transform
+for the KP II equation with real exponentially decaying at infinity
+potential. Lett. Math. Phys., v.40, pp.59-73.
+[24] M.V. Fedoryuk.Asymptotics. Integrals and series. Moscow,
+Nauka, 1987.
+[25] O.M. Kiselev. Asymptotic behaviour of the solution of the twodimensional Dirac system with rapidly oscillating coefficients.
+Sbornik: Mathematics, v.190, pp.233-254.
+[26] O.M. Kiselev. Asymptotic behaviour of the soliton-free of the
+Davey-Stewartson-II equation. Differentsialnye Uravneniya, v.33,
+pp.812-819.
+[27] A.M. Il’in, Matching of asymptotic expansions of solutions of
+boundary value problem. AMS, 1992.
+[28] F. Olver. Asymptotics and special functions. Academic Press,
+Ney York, 1974.
+[29] V.S. Vladimirov. Equations of mathematical physics. Moscow,
+Nauka, 1988.
+[30] V.I. Arnold, A.N. Varchenko, S.M. Gusein-Zade. Singularities
+of differtiable maps. Monodromy and asymptotics of integrals.
+Moscow, Nauka, 1984.
+[31] O.M. Kiselev. Asymptotics of a multiple Cauchy integral with
+rapidly oscillating exponenial. Matem. Zametki, v.58, pp.231-242.
+
+45
+
+

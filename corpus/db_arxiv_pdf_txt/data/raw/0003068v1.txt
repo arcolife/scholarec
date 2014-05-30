@@ -1,0 +1,1110 @@
+arXiv:physics/0003068v1 [physics.chem-ph] 24 Mar 2000
+
+Phase changes in 38 atom Lennard-Jones clusters. I: A parallel
+tempering study in the canonical ensemble
+J. P. Neirotti
+Department of Chemistry, University of Rhode Island
+51 Lower College Road, Kingston, RI 02881-0809
+
+F. Calvo
+D´epartement de Recherche sur la Mati`ere Condens´ee
+Service des Ions, Atomes et Agr´egats
+CEA Grenoble
+F38054 Grenoble Cedex, France
+
+David L. Freeman
+Department of Chemistry, University of Rhode Island
+51 Lower College Road, Kingston, RI 02881-0809
+and
+J. D. Doll
+Department of Chemistry, Brown University
+Providence, RI 02912
+(January 14, 2014)
+
+Abstract
+The heat capacity and isomer distributions of the 38 atom Lennard-Jones
+cluster have been calculated in the canonical ensemble using parallel tempering Monte Carlo methods. A distinct region of temperature is identified that
+corresponds to equilibrium between the global minimum structure and the
+
+icosahedral basin of structures. This region of temperatures occurs below the
+melting peak of the heat capacity and is accompanied by a peak in the derivative of the heat capacity with temperature. Parallel tempering is shown to
+introduce correlations between results at different temperatures. A discussion
+is given that compares parallel tempering with other related approaches that
+ensure ergodic simulations.
+
+Typeset using REVTEX
+
+I. INTRODUCTION
+
+Because the properties of molecular aggregates impact diverse areas ranging from nucleation and condensation1 to heterogeneous catalysis, the study of clusters has continued
+to be an important part of modern condensed matter science. Clusters can be viewed as
+an intermediate phase of matter, and clusters can provide information about the transformation from finite to bulk behavior. Furthermore, the potential surfaces of clusters can be
+complex, and many clusters are useful prototypes for studying other systems having complex
+phenomenology.
+The properties of small clusters can be unusual owing to the dominance of surface rather
+than bulk atoms. A particularly important and well studied example of a property that
+owes its behavior to the presence of large numbers of surface atoms is cluster structure.2–4
+The structure of clusters can differ significantly from the structure of the corresponding
+bulk material, and these differences in structure have implications about the properties of
+the clusters. For example, most small Lennard-Jones (LJ) clusters have global potential
+surface minima that are based on icosahedral growth patterns. The five-fold symmetries
+of these clusters differ substantially from the closest-packed arrangements observed in bulk
+materials.
+While most small Lennard-Jones clusters have geometries based on icosahedral core
+structures, there can be exceptions.2,5–7 A notable example is the 38-atom Lennard-Jones
+cluster [LJ38 ]. This cluster is particularly interesting owing to its complex potential surface
+and associated phenomenology. The potential surface for LJ38 has been described in detail
+by Doye, Miller and Wales5 who have carefully constructed the disconnectivity graph8,9 for
+the system using information garnered from basin hopping and eigenvector following studies
+of the low energy potential minima along with examinations of the transition state barriers.
+The general structure of this potential surface can be imagined to be two basins of similar
+energies separated by a large energy barrier with the lowest energy basin being significantly
+narrower than the second basin. Striking is the global minimum energy structure for LJ38
+
+which, unlike the case for most small Lennard-Jones clusters, is not based on an icosahedral
+core, but rather is a symmetric truncated octahedron. The vertices defined by the surface
+atoms of LJ38 have a morphology identical to the first Brillouin zone of a face centered
+cubic lattice,10 and the high symmetry of the cluster may account for its stability. It is
+interesting to note that recent experimental studies11 of nickel clusters using nitrogen uptake
+measurements have found the global minimum of Ni38 to be a truncated octahedron as well.
+The basin of energy minima about the global minimum of LJ38 is narrow compared to
+the basin about the next highest energy isomer which does have an icosahedral core. The
+difference in energy between the global minimum and the lowest minimum in the icosahedral
+basin is only 0.38% of the energy of the global minimum.5
+Characteristic of some thermodynamic properties of small clusters are ranges of temperature over which these properties change rapidly in a fashion reminiscent of the divergent
+behavior known to occur in bulk phase transitions at a single temperature. The rapid
+changes in such thermodynamic properties for clusters are not divergent and occur over a
+range of temperatures owing to the finite sizes of the systems. In accord with the usage
+introduced by Berry, Beck, Davis and Jellinek12 we refer to the temperature ranges where
+rapid changes occur as “phase change” regions, rather than using the term “phase transition,” that is reserved for systems at the thermodynamic limit. As an example LJ55 displays
+a heat capacity anomaly over a range in temperatures often associated with what has been
+termed “cluster melting.”13 Molecular dynamics and microcanonical simulations performed
+at kinetic temperatures in the melting region of LJ55 exhibit van der Waals type loops in
+the caloric curves and coexistence between solid-like and liquid-like forms.
+In recent studies, Doye, Wales and Miller14 and Miller, Doye and Wales15 have examined
+the phase change behavior of LJ38 . These authors have calculated the heat capacity and
+isomer distributions as a function of temperature using the superposition method.16,17 In the
+superposition method the microcanonical density of states is calculated for each potential
+minimum, and the total density of states is then constructed by summation with respect
+to each local density of states. Because it is not possible to find all potential minima for
+
+a system as complex as LJ38 , the summation is augmented with factors that represent the
+effective weights of the potential minima that are included in the sum. The superposition
+method has also been improved to account for anharmonicities and stationary points.17 For
+LJ38 Doye et al.14 have identified two phase change regions. The first, accompanied by a heat
+capacity maximum, is associated with a solid-to-solid phase change between the truncated
+octahedral basin and the icosahedral basin. A higher temperature heat capacity anomaly
+represents the solid-liquid coexistence region, similar to that found in other cluster systems.
+The heat capacity anomaly associated with the melting transition in LJ38 is steeper and more
+pronounced than the heat capacity peak that Doye et al.14 have associated with the solidsolid transition. Because the weights that enter in the sum to construct the microcanonical
+density of states are estimated, it is important to confirm the findings of Doye et al.14 by
+detailed numerical simulation. Such simulations are a goal of the current work and its
+companion paper. As is found in Section III, the simulations provide a heat capacity curve
+for LJ38 that has some qualitative differences with the curve reported by Doye et al.14
+Owing to the complex structure of the potential surface of LJ38 , the system represents
+a particularly challenging case for simulation. It is well known that simulations of systems
+having more than one important region of space separated by significant energy barriers can
+be difficult. The difficulties are particularly severe if any of the regions are either narrow
+or reachable only via narrow channels. The narrow basin about the global minimum makes
+simulations of LJ38 especially difficult. There are several methods that have been developed
+that can prove to be useful in overcoming such ergodicity difficulties in simulations. Many of
+these methods use information about the underlying potential surface generated from simulations on the system using parameters where the various regions of configuration space are
+well-connected. One of the earliest of these methods is J-walking18 where information about
+the potential surface is obtained from simulations at high temperatures, and the information
+is passed to low temperature walks by jumping periodically to the high temperature walk.
+Closely allied with J-walking is the parallel tempering method19–23 where configurations are
+exchanged between walkers running at two differing temperatures. A related approach,24
+
+similar in spirit to J-walking, uses Tsallis distributions that are sufficiently broad to cover
+much of configuration space. Another recent addition25 to these methods is the use of multicanonical distributions26 in the jumping process. Multicanonical walks are performed using
+the entropy of the system, and multicanonical distributions are nearly independent of the
+energy thereby allowing easy transitions between energy basins. As we discuss in the current work, we have found the parallel tempering method to be most useful in the context
+of simulations of LJ38 . A comparative discussion of some of the methods outlined above is
+given later in this paper.
+In the current work we apply parallel tempering to the calculation of the thermodynamic
+properties of LJ38 in the canonical ensemble. In the paper that follows27 we again use parallel
+tempering to study LJ38 , but using molecular dynamics methods along with microcanonical
+Monte Carlo simulations. Our goals are to understand better this complex system and to
+determine the best simulation method for systems of comparable complexity. The contents
+of the remainder of this first paper are as follows. In Section II we discuss the methods
+used with particular emphasis on the parallel tempering approach and its relation to the
+J-walking method. In Section III we present the results including the heat capacity as a
+function of temperature and identify the phase change behaviors of LJ38 . In Section IV we
+present our conclusions and describe our experiences with alternatives to parallel tempering
+for insuring ergodicity.
+
+II. METHOD
+
+For canonical simulations we model a cluster with N atoms by the standard LennardJones potential augmented by a constraining potential Uc used to define the cluster
+N
+
+
+
+σ
+
+U(r) = 4ε
+rij
+i<j
+
+12
+
+σ
+−
+rij
+
+6
+
+
+
+ + Uc ,
+
+(1)
+
+where σ and ε are respectively the standard Lennard-Jones length and energy parameters,
+and rij is the distance between particles i and j. The constraining potential is necessary
+
+because clusters at defined temperatures have finite vapor pressures, and the evaporation
+events can make the association of any atom with the cluster ambiguous. For classical Monte
+Carlo simulations, a perfectly reflecting constraining potential is most convenient
+N
+
+Uc =
+
+u(ri),
+
+(2)
+
+i=1
+
+with
+u(r) =
+
+
+
+
+
+
+
+
+
+∞ |r − rcm | > Rc
+0
+
+(3)
+
+|r − rcm | < Rc
+
+where rcm is the center of mass of the cluster, and we call Rc the constraining radius.
+Thermodynamic properties of the system are calculated with Monte Carlo methods using
+the parallel tempering technique.19–23 To understand the application of the parallel tempering method and to understand the comparison of parallel tempering with other related
+methods, it is useful to review the basic principles of Monte Carlo simulations.
+In the canonical ensemble the goal is the calculation of canonical expectation values. For
+example, the average potential energy is expressed
+d3N r U(r)e−βU (r)
+,
+d3N r e−βU (r)
+
+U =
+
+(4)
+
+where β = 1/kB T with T the temperature and kB the Boltzmann constant. In Monte
+Carlo simulations such canonical averages are determined by executing a random walk in
+configuration space so that the walker visits points in space with a probability proportional
+to the canonical density ρ(r) = Z −1 exp[−βU(r)], where Z is the configurational integral
+that normalizes the density. After generating M such configurations in a random walk, the
+expectation value of the potential energy is approximated by
+U
+
+M
+
+The approximate expectation value U
+
+1
+=
+M
+M
+
+M
+
+U(ri ).
+
+(5)
+
+i=1
+
+becomes exact in the limit that M → ∞.
+
+A sufficiency condition for the random walk to visit configuration space with a probability
+proportional to the density ρ(r) is the detailed balance condition28,29
+
+ρ(ro )K(ro → rn ) = ρ(rn )K(rn → ro ),
+
+(6)
+
+where ro and rn represent two configurations of the system and K(ro → rn ) is the conditional
+probability that if the system is at configuration ro it makes a transition to rn . In many
+Monte Carlo approaches, the conditional probability is not known and is replaced by the
+expression
+K(ro → rn ) = T (ro → rn ) acc(ro → rn ),
+
+(7)
+
+where T (ro → rn ) is called the trial probability and acc(ro → rn ) is an acceptance probability constructed to ensure K(ro → rn ) satisfies the detailed balance condition. The trial
+probability can be any normalized density function chosen for convenience. A common
+choice for the acceptance probability is given by28,29
+acc(ro → rn ) = min 1,
+
+ρ(rn )T (rn → ro )
+.
+ρ(ro )T (ro → rn )
+
+(8)
+
+The Metropolis method,30 obtained from Eq.(8) by choosing T (ro → rn ) to be a uniform
+distribution of points of width ∆ centered about ro , is arguably the most widely used Monte
+Carlo method and the basis for all the approaches discussed in the current work. The
+Metropolis method rigorously guarantees a random walk visits configuration space proportional to a given density function asymptotically in the limit of an infinite number of steps.
+In practice when configuration space is divided into important regions separated by significant energy barriers, a low temperature finite Metropolis walk can have prohibitively long
+equilibration times.
+Such problems in attaining ergodicity in the walk do not occur at temperatures sufficiently high that the system has significant probability of finding itself in the barrier regions.
+In both the J-walking and parallel tempering methods, information obtained from an ergodic
+Metropolis walk at high temperatures is passed to a low temperature walker periodically to
+enable the low temperature walker to overcome the barriers between separated regions. In
+the J-walking method18 the trial probability at inverse temperature β is taken to be a high
+temperature Boltzmann distribution
+
+T (ro → rn ) = Z −1 e−βJ U (rn )
+
+(9)
+
+where βJ represents the jumping temperature that is sufficiently high that a Metropolis walk
+can be assumed to be ergodic. Introduction of Eq.(9) into Eq.(8) results in the acceptance
+probability
+acc(ro → rn ) = min {1, exp[−(β − βJ )(U(rn ) − U(ro ))]} .
+
+(10)
+
+In practice at inverse temperature β the trial moves are taken from the Metropolis distribution about 90% of the time with jumps attempted using Eq.(9) about 10% of the time.
+The jumping configurations are generated with a Metropolis walk at inverse temperature
+βJ , and jump attempts are accepted using Eq.(10). The acceptance expression [Eq.(10)]
+is correct provided the configurations chosen for jumping are a random representation of
+the distribution e−βJ U (r) . The Metropolis walk that is used to generate the configurations
+at inverse temperature βJ is correlated,28 and Eq.(10) is inappropriate unless jumps are
+attempted sufficiently infrequently to break the correlations. In practice Metropolis walks
+are still correlated after 10 steps, and it is not possible to use Eq.(10) correctly if jumps
+are attempted 10% of the time. In J-walking the difficulty with correlations is overcome in
+two ways. In the first method, often called serial J-walking,18 a large set of configurations is
+stored to an external distribution with the configurations generated with a Metropolis walk
+at inverse temperature βJ , and configurations stored only after sufficient steps to break the
+correlations in the Metropolis walk. Additionally, the configurations are chosen from the
+external distribution at random. This external distribution is made sufficiently large that
+the probability of ever choosing the same configuration more than once is small. In this
+method detailed balance is strictly satisfied only in the limit that the external distribution
+is of infinite size. In the second method, often called parallel J-walking,31,32 the walks at
+each temperature are made in tandem on a parallel machine. Many processors, randomly
+initialized, are assigned to the jumping temperature, and each processor at the jumping
+temperature is used to donate a high temperature configuration to the low temperature
+
+walk sufficiently infrequently that the correlations in the Metropolis walk at inverse temperature βJ are broken. In this parallel method, configurations are never reused, but the
+acceptance criterion [Eq.(10)] is strictly valid only in the limit of an infinite set of processors
+at inverse temperature βJ . In practice both serial and parallel J-walking work well for many
+applications with finite external distributions or with a finite set of processors.18,31–38
+In parallel tempering19–23 configurations from a high temperature walk are also used
+to make a low temperature walk ergodic. In contrast to J-walking rather than the high
+temperature walk feeding configurations to the low temperature walk, the high and low
+temperature walkers exchange configurations. By exchanging configurations detailed balance
+is satisfied, once the Metropolis walks at the two temperatures are sufficiently long to be
+in the asymptotic region. To verify detailed balance is satisfied by the parallel tempering
+procedure we let
+′
+
+ρ2 (r, r′ ) = Z −1 e−βU (r) e−βJ U (r )
+
+(11)
+
+be the joint density that the low temperature walker is at configuration r and the high
+temperature walker is at configuration r′ . When configurations between the two walkers are
+exchanged, the detailed balance condition is
+ρ2 (r, r′)K(r → r′ , r′ → r) = ρ2 (r′ , r)K(r′ → r, r → r′ )
+
+(12)
+
+By solving for the ratio of the conditional transition probabilities
+K(r → r′ , r′ → r)
+= exp[−(β − βJ )(U(r′ ) − U(r))],
+′
+′
+K(r → r, r → r )
+
+(13)
+
+it is evident that if exchanges are accepted with the same probability as the acceptance
+criterion used in J-walking [see Eq.(10)], detailed balance is satisfied.
+Although the basic notions used by both J-walking and parallel tempering are similar,
+the organization of a parallel tempering calculation can be significantly simpler than the
+organization of a J-walking calculation. In parallel tempering no external distributions are
+required nor are multiple processors required at any temperature. Parallel tempering can
+
+be organized in the same simple way that serial tandem J-walking is organized as discussed
+in the original J-walking reference.18 Unlike serial tandem J-walking where detailed balance
+can be attained only asymptotically, parallel tempering satisfies detailed balance directly.
+For a problem as difficult as LJ38 where very long simulations are required, the huge external distributions needed in serial J-walking, or the large set of jumping processors needed
+in parallel J-walking, make the method prohibitive. As discussed in Section III, parallel
+tempering can be executed for arbitrarily long simulations making the method suitable at
+least for LJ38 .
+In the current calculation parallel tempering is used not just to simulate the system at
+some low temperature using high temperature information, but simulations are performed
+for a series of temperatures. As is the case for J-walking18 and as discussed elsewhere for
+parallel tempering,22 the gaps between adjacent temperatures cannot be chosen arbitrarily.
+Temperature gaps must be chosen so that exchanges are accepted with sufficient frequency.
+If the temperature gap is too large, the configurations important at the two exchanging
+temperatures can be sufficiently dissimilar that no exchanges are ever accepted. Preliminary
+calculations must be performed to explore the temperature differences needed for acceptable
+exchange probabilities. In practice we have found at least 10% of attempted exchanges need
+to be accepted for the parallel tempering procedure to be useful. In general the temperature
+gaps must be decreased near phase change regions or when the temperature becomes low.
+By exchanging configurations between temperatures, correlations are introduced at different temperature points. For example, the average heat capacities at two temperatures
+may rise or fall together as each value fluctuates statistically. In some cases the values of
+the heat capacities or other properties at two temperatures can be anti-correlated. The
+magnitude of these correlations between temperatures are measured and discussed in Section III. As discussed in Section III the correlations between differing temperatures imply
+that the statistical fluctuations must be sufficiently low to ensure any features observed in
+a calculation as a function of temperature are meaningful.
+
+III. RESULTS
+
+Forty distinct temperatures have been used in the parallel tempering simulations of LJ38
+ranging from T = 0.0143ε/kB to T = 0.337ε/kB . The simulations have been initiated
+from random configurations of the 38 atoms within a constraining sphere of radius 2.25
+σ. We have chosen Rc = 2.25σ, because we have had difficulties attaining ergodicity with
+larger constraining radii. With large constraining radii, the system has a significant boiling region at temperatures not far from the melting region, and it is difficult to execute
+an ergodic walk with any method when there is coexistence between liquid-like and vapor
+regions. Constraining radii smaller than 2.25σ can induce significant changes in thermodynamic properties below the temperature of the melting peak. Using the randomly initialized
+configurations the initialization time to reach the asymptotic region in the Monte Carlo walk
+has been found to be long with about 95 million Metropolis Monte Carlo points followed
+by 190 million parallel tempering Monte Carlo points included in the walk prior to data
+accumulation. This long initiation period can be made significantly shorter by initializing
+each temperature with the structure of the global minimum. We have chosen to initialize
+the system with random configurations to verify the parallel tempering method is able to
+equilibrate this system with no prior knowledge about the structure of the potential surface.
+Following this initiation period, 1.3 × 1010 points have been included with data accumulation. Parallel tempering exchanges have been attempted every 10 Monte Carlo passes over
+the 38 atoms in the cluster.
+In an attempt to minimize the correlations in the data at differing temperatures, an
+exchange strategy has been used that includes exchanges between several temperatures. To
+understand this strategy, we let the set of temperatures be put into an array. One-half of
+the exchanges have been attempted between adjacent temperatures in the array, one-fourth
+have been attempted between next near neighboring temperatures, one-eighth between every
+third temperature, one-sixteenth between every fourth temperature and one-thirty second
+between every fifth temperature in the array. We have truncated this procedure at fifth near
+
+neighboring temperatures, because exchanges between temperatures differing by more than
+fifth neighbors are accepted with frequencies of less than ten per cent. The data presented
+in this work have been generated using the procedure outlined above. In retrospect, we have
+found exchanges are only required between adjacent temperatures. We have also performed
+the calculations where exchanges are included only between adjacent temperatures, and
+we have seen no significance differences either in the final results or in the correlations
+between different temperatures. Using the random initializations of the clusters, after the
+initialization period the lowest temperature walks are dominated by configurations well
+represented by small amplitude oscillations about the global minimum structure.
+For all data displayed in this work, the error bars represent two standard deviations of
+the mean. The heat capacity, calculated from the standard fluctuation expression of the
+energy
+CV = kB β 2 [ E 2 − E 2 ],
+
+(14)
+
+is displayed in the upper panel of Fig. 1. In agreement with the heat capacity for LJ38
+reported by Doye et al.,14 the heat capacity displayed in Fig. 1 has a melting maximum
+centered at about T = 0.166ε/kB . In contrast to the results of Doye et al.14 we find no
+maximum associated with the solid-solid transition between the two basins in the potential
+surface. Rather, we see a small change in slope at about T = 0.1ε/kB . To characterize
+this region having a change in slope, in the lower panel of Fig. 1 we present a graph of
+(∂CV /∂T )V calculated from the fluctuation expression
+∂CV
+∂T
+
+= −2
+V
+
+CV
+1
++ 2 4 [ E3 + 2 E
+T
+kB T
+
+3
+
+− 3 E2 E ]
+
+(15)
+
+The small low temperature maximum in (∂CV /∂T )V occurs within the slope change region.
+To interpret the configurations associated with the various regions of the heat capacity, we
+use an order parameter nearly identical to the order parameter introduced by Steinhardt,
+Nelson and Ronchetti39 to distinguish face centered cubic from icosahedral structures in
+liquids and glasses. The order parameter has been used by Doye et al.5 to monitor phase
+changes in LJ38 . The order parameter Q4 is defined by the equation
+
+1/2
+
+
+
+where
+
+4π 4
+|Q |2 
+Q4 = 
+9 m=−4 4,m
+
+Q4,m =
+
+1
+Nb
+
+,
+
+(16)
+
+Y4,m (θij , φij ).
+
+(17)
+
+rij <rb
+
+To understand the parameters used in Eq.(17), it is helpful to explain how Q4,m is evaluated.
+The center of mass of the full 38 atom cluster is located and the atom closest to the center of
+mass is then identified. The atom closest to the center of mass plus the 12 nearest neighbors
+of that atom define a “core” cluster of the 38 atom cluster. The center of mass of the core
+cluster is then calculated. The summation in Eq.(17) is performed over all vectors that point
+from the center of mass of the core cluster to all Nb bonds formed from the 13 atoms of
+the core cluster. A bond is assumed to be formed between two atoms of the core cluster if
+their internuclear separation rij is less than a cut-off parameter rb , taken to be rb = 1.39σ
+in this work. In Eq.(17) θij and φij are respectively the polar and azimuthal angles of the
+vector that points from the center of mass of the core cluster to the center of each bond,
+and Y4,m (θ, φ) is a spherical harmonic. To verify that the optimal value of Q4 is obtained,
+the procedure is repeated by choosing the second closest atom to the center of mass of the
+whole cluster to define the core cluster. The value of Q4 obtained from this second core
+cluster is compared with that obtained from the first core cluster, and the smallest resulting
+value of Q4 is taken to be the value of Q4 for the entire cluster.
+In the work of Steinhardt et al.39 fewer bonds are included in the summation appearing
+in Eq.(17) than in the current work. In the definition used by Steinhardt et al.,39 the only
+bonds that contribute to the sum in Eq.(17) are those involving the central atom of the
+core cluster. In the definition used in this work, at low temperatures the sum includes all
+the bonds included by Steinhardt et al.39 in addition to vectors that connect the center
+of mass of the core cluster with the centers of bonds that connect atoms at the surface
+of the core cluster with each other. For a perfect and undistorted icosahedral or truncated
+octahedral cluster, the current definition and the definition of Steinhardt et al.39 are identical
+
+numerically owing to the rotational symmetry of the spherical harmonics. However, for
+distorted clusters the two definitions differ numerically. For perfect, undistorted icosahedral
+clusters Q4 = 0 whereas for perfect, undistorted truncated octahedral clusters, Q4 ∼
+= 0.19,
+and both definitions of the order parameter are able to distinguish configurations from the
+truncated octahedral basin and other basins at finite temperatures. However, we have found
+the definition introduced by Steinhardt et al.39 is unable to distinguish structures in the
+icosahedral basin from liquid-like structures. This same issue has been discussed previously
+by Lynden-Bell and Wales.40 In contrast, we have found that liquid-like structures have
+larger values of Q4 than icosahedral structures when the present definition of Q4 [i.e the
+definition that includes additional bonds in Eq.(17)], is used. Consequently, as discussed
+shortly, the current definition of Q4 enables an association of each configuration with either
+the icosahedral basin, the truncated octahedral basin, or structures that can be identified
+as liquid-like.
+The average of Q4 as a function of temperature is plotted in the upper panel of Fig. 2.
+Again the error bars represent two standard deviations of the mean. At the lowest calculated
+temperatures Q4 is characteristic of the global truncated octahedral minimum. As the
+temperature is raised to the point where the slope change begins in the heat capacity, Q4
+begins to drop rapidly signifying the onset of transitions between the structures associated
+with the global minimum and icosahedral structures. We then have the first hint that the
+slope change in CV is associated with a analogue of a solid-solid transition from the truncated
+octahedron to icosahedral structures.
+To clarify the transition further, the data plotted in the lower panel of Fig. 2 represent
+the probability of observing particular values of Q4 as a function of temperature. The
+probabilities have been calculated by tabulating the frequency of observing particular values
+of Q4 for each configuration generated in the simulation. Different values of Q4 are then
+assigned to either icosahedral structures (labeled IC in the graph), truncated octahedral
+structures (labeled FCC) or liquid-like structures (labeled LIQ). below. By comparing the
+lower panel of Fig. 2 with the derivative of the heat capacity plotted in the lower panel of
+
+Fig. 1, it is evident that icosahedral structures begin to be occupied and the probability
+of finding truncated octahedral structures begins to fall when the derivative in the heat
+capacity begins to rise. Equilibrium between the truncated octahedral structures and the
+icosahedral structures continues into the melting region, and truncated octahedral structures
+only disappear on the high temperature side of the melting peak of the heat capacity. Doye
+et al.14 and Miller et al.15 have generated data analogous to that depicted in the lower
+panel of Fig. 2 using the superposition method, and the data of Miller et al.15 are in
+qualitative agreement with the present data. A more direct comparison with the data of
+these authors can be made by performing periodic quenching along the parallel tempering
+trajectories. We then use an energy criterion similar to that of Doye et al.14 to distinguish
+the three categories of geometries and to generate the respective probabilities P . For a
+given total cluster energy E, a truncated octahedron is associated with E < −173.26ε,
+icosahedral-based structures with −173.26ε ≤ E < −171.6ε, and liquid-like structures with
+E ≥ −171.6ε. The quenches have been performed every 104 MC steps for each temperature,
+and the results of these quenches are plotted in Fig. 3. Using the energy criterion, the
+behavior we observe is qualitatively similar to the data of Doye et al..14 However, the largest
+probability of observing icosahedral structures is found here to be substantially lower than
+Doye et al.14 The data accumulated more recently by Miller et al.15 using the superposition
+method include contributions from more stationary points than in the previous work of Doye
+et al.,14 but no reweighting has been performed. As a result, the distributions of isomers
+look quite different, especially at high temperatures.14
+The assignment of a particular value of Q4 to a structure as displayed in Fig. 2, is made
+by an analysis of the probability distribution PQ (T, Q4 ) of the order parameter displayed in
+Figs. 4 and 5. Figure 4 is a representation of the three-dimensional surface of PQ (T, Q4 )
+as a function of temperature and order parameter. A projection of this surface onto two
+dimensions is given in Fig. 5. The probability density in Fig. 5 is represented by the shading
+so that the brighter the area the greater the probability. The horizontal white lines in Fig.
+5 define the regions of the heat capacity curve. The lowest temperature horizontal line
+
+represents the temperature at which the slope of the heat capacity first changes rapidly, the
+middle temperature horizontal line represents the lowest temperature of the melting peak
+and the highest temperature horizontal line represents the end of the melting region. An
+additional representation of the data is given in Fig. 6, where the probability of observing
+particular values of Q4 is given as a function of Q4 at a fixed temperature of 0.14ε/kB . In
+Fig. 6 three regions are evident for PQ (T = 0.14ε/kB , Q4 ) with Q4 ranging from 0.13 to
+0.19. Although the presence of three regions seems to indicate three distinct structures, all
+three regions correspond to the truncated octahedral global minimum. We have verified this
+assignment by quenching the structures with Q4 ranging from 0.13 to 0.19 to their nearest
+local minima, and we have found all such structures quench to the truncated octahedron.
+To explain the three regions, we have found that there are small distortions of LJ38 about
+the truncated octahedral structure where both the energy and Q4 increase together. These
+regions where both the energy and Q4 increase above Q4 ∼
+= 0.13 have low probability and
+account for the oscillations observed in Figs. 4–6. In the lower panel of Fig. 2, all structures
+having Q4 > 0.13 have been identified as truncated octahedra. Quench studies of the broad
+region visible in Fig. 5 at the lowest values of Q4 , or equivalently in the first low Q4 peak in
+Fig. 6 find all examined structures to belong to the icosahedral basin. To determine if a given
+configuration is associated with the icosahedral basin, one-dimensional cross sectional plots
+are made from Fig. 4 at each temperature used in the calculation. Figure 6 is a particular
+example of such a cross sectional plot. The maximum present at low Q4 represents the
+center for structures in the icosahedral basin. The next two maxima at higher Q4 represents
+the midpoint of the liquid region. Consequently, in generating the lower panel of Fig. 2, all
+configurations with Q4 between Q4 = 0 and the first minimum in Fig. 6 have been identified
+as icosahedral structures. All other values of Q4 , represented by the broad intermediate
+band in Fig. 5 (or the region about the second two maxima in Fig. 6), have been identified
+as liquid-like structures. To make these identifications, separate cross sections of Fig. 4 must
+be made at each temperature. Of course, it is impossible to verify that the identification of
+all values of Q4 with a particular structure as discussed above would agree with the result of
+
+quenching the structure to its nearest potential minimum. The differences found by defining
+icosahedral, truncated octahedral or liquid-like structures using either an energy criterion
+or Q4 is clarified by comparing Fig. 3 and the lower panel of Fig. 2. Both definitions are
+arbitrary, and the information carried by the two classification methods complement each
+other.
+Figure 5 also provides additional evidence that the peak in (∂CV /∂T )V is associated with
+the equilibrium between the truncated octahedral structures and the icosahedral structures.
+There is significant density for both kinds of structures in the region between the lowest two
+parallel lines that define the region with the slope change. Additionally, both icosahedral
+structures and truncated octahedral structures begin to be in equilibrium with each other at
+the beginning of the slope change region. This equilibrium continues to temperatures above
+the melting region.
+Another identification of the slope change region with a transition between truncated
+octahedral and icosahedral forms can be made by defining PR (T, R)dR to be the probability
+that an atom in the cluster is found at location R to R + dR from the center of mass of the
+cluster at temperature T . A projection of PR (T, R) onto the R and T plane is depicted in
+Fig. 7. The solid vertical lines represent the location of atoms from the center of mass of
+the truncated octahedral structure (the lower set of vertical lines), and the lowest energy
+icosahedral structure (the upper set of vertical lines). As in Fig. 5, increased probability
+is represented by the lighter shading. At the lowest temperatures PR (T, R) is dominated
+by contributions from the truncated octahedron as is evident by comparing the shaded
+regions with the lowest set of vertical lines. As the temperature is increased, contributions
+to PR (T, R) begin to appear from the icosahedral structures. The shaded region at R = 0.45
+does not match any of the vertical lines shown, but corresponds to atoms in the third lowest
+energy isomer, which like the second lowest energy isomer, comes from the icosahedral basin.
+The equilibrium between the icosahedral and truncated octahedral structures observed in
+Fig. 7 matches the regions of temperature observed in Fig. 5.
+We have mentioned previously that parallel tempering introduces correlations in the data
+
+accumulated at different temperatures, and it is important to ensure the statistical errors
+are sufficiently small that observed features are real and not artifacts of the correlations.
+To measure these correlations we define a cross temperature correlation function for some
+temperature dependent property g by
+γ(T1 , T2 ) =
+
+(g(T1 ) − g(T1 ) )(g(T2) − g(T2 ) )
+.
+[ (g(T1) − g(T1 ) )2 (g(T2) − g(T2) )2 ]1/2
+
+(18)
+
+A projection of γ(T1 , T2 ) when g = CV is given in Fig. 8. In Fig. 8 white represents
+γ = 1 and black represents γ = −1 with other shadings representing values of γ between
+these two extremes. The white diagonal line from the lower left hand corner to the upper
+right hand corner represents the case that T1 = T2 so that γ = 1. The light shaded areas
+near this diagonal represent cases where T1 and T2 are adjacent temperatures in the parallel
+tempering simulations, and we find γ to be only slightly less than unity. More striking are
+the black regions off the diagonal where γ is nearly −1. These black regions correspond to
+anti-correlations between results at temperatures near the heat capacity maximum in the
+melting peak and temperatures near the center of the slope change region associated with
+the transition between icosahedral and truncated octahedral structures. These correlations
+imply the importance of performing sufficiently long simulations to ensure that statistical
+fluctuations of the data are small compared to important features in the data as a function
+of temperature.
+
+IV. CONCLUSIONS
+
+Using parallel tempering methods we have successfully performed ergodic simulations of
+the equilibrium thermodynamic properties of LJ38 in the canonical ensemble. As discussed
+by Doye et al.5 the potential surface of this system is complex with two significant basins; a
+narrow basin about the global minimum truncated octahedral structure, and a wide icosahedral basin. These two basins are separated both by structure and a large energy barrier
+making simulations difficult. In agreement with the results of Doye et al.14 we find clear
+
+evidence of equilibria between structures at the basin of the global minimum and the icosahedral basin at temperatures below the melting region. Unlike previous work we find no
+heat capacity maximum associated with this transition, but rather a region with a change
+in the slope of the heat capacity as a function of temperature.
+We have found parallel tempering to be successful with this system, and have noted
+correlations in our data at different temperatures when the parallel tempering method is
+used. These correlations imply the need to perform long simulations so that the statistical
+errors are sufficiently small that the correlations do not introduce artificial conclusions.
+We believe that the methods used in this work could be applied to a variety of other
+systems including clusters of complexity comparable to LJ38 . For instance, the 75-atom
+Lennard-Jones cluster is known to share many features with the 38-atom cluster investigated here. LJ75 is also characterized by a double funnel energy landscape, one funnel being
+associated with icosahedral structures, and the other funnel being associated with the decahedral global minimum. The landscape of LJ75 has been recently investigated by Doye,
+Miller and Wales6 who have used Q6 as the order parameter. In another paper,2 Wales and
+Doye have predicted that the temperature where the decahedral/icosahedral equilibrium
+takes place should be close to 0.09ε/kB . This prediction is made by using the superposition method, but no caloric curves have yet been reported for LJ75 . The parallel tempering
+Monte Carlo method can be expected to work well for LJ75 , and such a parallel tempering
+study would be another good test case for theoretical methods discussed in this work.
+A useful enhancement of parallel tempering Monte Carlo is the use of multiple histogram
+methods13,41 that enables the calculation of thermodynamic functions in both the canonical
+and microcanonical ensembles by the calculation of the microcanonical entropy. In practice
+the multiple histogram method requires the generation of histograms of the potential energy
+at a set of temperatures such that there is appreciable overlap of the potential energy
+distributions at adjacent temperatures. This overlap requirement is identical to the choice
+of temperatures needed in parallel tempering.
+In performing simulations on LJ38 we have tried other methods to reduce ergodicity
+
+errors, and we close this section by summarizing the difficulties we have encountered with
+these alternate methods. It is important to recognize that the parallel tempering simulations
+include in excess of 1010 Monte Carlo points, and most of our experience with these alternate
+methods have come from significantly shorter simulations. Our ability to include this large
+number of Monte Carlo points with parallel tempering is an important reason why we feel
+parallel tempering is so useful.
+¿From experience with other smaller and simpler clusters, for a J-walking simulation
+to include 1010 points, an external distribution containing at least 109 points is required
+to prevent oversampling of the distribution. Such a large distribution is prohibitive with
+current computer technology. Our J-walking simulations containing about 107 Monte Carlo
+points have resulted in data that have not been internally reproducible, and data that are not
+in good agreement with the parallel tempering data. Many long J-walking simulations with
+configurations initiated at random only have icosahedral structures at the lowest calculated
+temperatures. To stabilize the J-walking method with respect to the inclusion of truncated
+octahedral structures at low temperatures, we have attempted to generate distributions using
+the modified potential energy function Um (r, λ) = U(r) − λQ4 . In this modified potential
+λ is a parameter chosen to deepen the octahedral basin without significantly distorting the
+cluster. While this modified potential has led to more stable results than J-walking using
+the bare potential, the results with 108 Monte Carlo points have not been reproducible in
+detail. The application of Tsallis distributions24 has not improved this situation.
+We have also tried to apply the multicanonical J-walking approach recently introduced
+by Xu and Berne.25 While this multicanonical approach has been shown to improve the
+original J-walking strategy for other cluster systems, in the case of LJ38 the iterations needed
+to produce the external multicanonical distribution have not produced truncated octahedral
+structures. The iterations have produced external distributions having either liquid-like
+structures or structures from the icosahedral basin. The multicanonical distribution is known
+to have deficiencies at low energies, and this low energy difficulty appears to be problematic
+for LJ38 . We have attempted to solve these deficiencies by including prior information about
+
+the thermodynamics of the system. In this attempt we have chosen the multicanonical weight
+to be wmu (U) = exp[−SPT (U)] where SPT (U) is the microcanonical entropy extracted from
+a multihistogram analysis13,41 of a parallel tempering Monte Carlo simulation. In several
+attempts using this approach we have not observed either the truncated octahedral structure
+nor structures from the icosahedral basin with significant probability. The multicanonical
+distribution so generated is dominated by liquid-like structures, and the distribution appears
+to be incapable of capturing the solid-to-solid transition that leads to the low temperature
+peak in (∂CV /∂T )V . Whether there are other approaches to generate a multicanonical
+distribution that are more successful in capturing low temperature behaviors is unknown to
+us.
+Much insight about phase change behaviors can be obtained from simulations in the
+microcanonical ensemble or using molecular dynamics methods. For example, the van der
+Waals loops observed in LJ55 13 complement the interpretation of the canonical caloric curves.
+In the next paper27 we present parallel tempering results for LJ38 using both molecular
+dynamics and microcanonical Monte Carlo methods.
+
+ACKNOWLEDGMENTS
+
+Some of this work has been motivated by the attendance of two of us (DLF and FC)
+at a recent CECAM meeting on ‘Overcoming broken ergodicity in simulations of condensed
+matter systems.’ We would like to thank CECAM, J.E. Straub and B. Smit who organized
+the meeting, and those who attended the workshop for stimulating discussions, particularly
+on the connections between J-walking and parallel tempering. Two of us (DLF and JPN)
+would also like to thank Professor M.P. Nightingale for helpful discussions concerning the
+parallel tempering method. This work has been supported in part by the National Science
+Foundation under grant numbers CHE-9714970 and CDA-9724347. This research has been
+supported in part by the Phillips Laboratory, Air Force Material Command, USAF, through
+the use of the MHPCC under cooperative agreement number F29601-93-0001. The views
+
+and conclusions contained in this document are those of the authors and should not be
+interpreted as necessarily representing the official policies or endorsements, either expressed
+or implied, of Phillips Laboratory or the U.S. Government.
+
+REFERENCES
+1
+
+F.F. Abraham, Homogeneous Nucleation Theory (Academic, New York, 1974).
+
+2
+
+D.J. Wales and J.P.K. Doye, J. Phys. Chem. A 101, 5111 (1997).
+
+3
+
+D.L. Freeman and J.D. Doll, Ann. Rev. Phys. Chem. 47, 43 (1980).
+
+4
+
+J. Xie, J.A. Northby, D.L. Freeman and J.D. Doll, J. Chem. Phys. 91, 612 (1989).
+
+5
+
+J.P.K. Doye, M.A. Miller and D.J. Wales, J. Chem. Phys. 110, 6896 (1999).
+
+6
+
+J.P.K. Doye, M.A. Miller and D.J. Wales, J. Chem. Phys. 111, 8417 (1999)
+
+7
+
+R.H. Leary and J.P.K. Doye, Phys. Rev. E 60, R6320 (1999).
+
+8
+
+R. Czerminski and R. Elber, J. Chem. Phys. 92, 5580 (1990).
+
+9
+
+O.M. Becker and M. Karplus, J. Chem. Phys. 106, 1495 (1997).
+
+10
+
+C. Kittel, Introduction to Solid State Physics, 4’th Edition (John Wiley, New York, 1971)
+
+11
+
+E.K. Parks, G.C. Nieman, K.P. Kerns and S.J. Riley, J. Chem. Phys. 107, 1861 (1997).
+
+12
+
+R.S. Berry, T.L. Beck, H.L. David and J. Jellinek, Adv. Chem. Phys. 70B, 75 (1988).
+
+13
+
+P. Labastie and R.L. Whetten, Phys. Rev. Lett. 65, 1567 (1990).
+
+14
+
+J.P.K. Doye, D.J. Wales and M.A. Miller, J. Chem. Phys. 109, 8143 (1998).
+
+15
+
+M.A. Miller, J.P.K. Doye and D.J. Wales, Phys. Rev. E 60, 3701 (1999).
+
+16
+
+D.J. Wales, Mol. Phys. 78, 151 (1993).
+
+17
+
+J.P.K. Doye and D.J. Wales, J. Chem. Phys. 102, 9659 (1995).
+
+18
+
+D.D. Frantz, D.L. Freeman and J.D. Doll, J. Chem. Phys. 93, 2769 (1990).
+
+19
+
+E. Marinari and G. Parisi, Europhys. Lett. 19, 451 (1992).
+
+20
+
+C.J. Geyer and E.A. Thompson, J. Am. Stat. Assoc. 90, 909 (1995).
+
+21
+
+M.C. Tesi, E.J. Janse van Rensburg, E. Orlandini and S.G. Whittington, J. Stat. Phys.
+82, 155 (1996).
+
+22
+
+M. Falcioni and M.W. Deem, J. Chem. Phys. 110, 1754 (1999).
+
+23
+
+Q. Yan and J.J. de Pablo, J. Chem. Phys. 111, 9509 (1999).
+
+24
+
+I. Andricioaei and J.E. Straub, J. Chem. Phys. 107, 9117 (1997).
+
+25
+
+H. Xu and B.J. Berne, J. Chem. Phys. 110, 10299 (1999).
+
+26
+
+B. Berg and T. Neuhaus, Phys. Rev. Lett. 68, 9 (1991).
+
+27
+
+F. Calvo, J.P. Neirotti, D.L. Freeman and J.D. Doll, J. Chem. Phys. (following article).
+
+28
+
+M.A. Kalos and P.A Whitlock, Monte Carlo Methods (John Wiley, New York, 1986).
+
+29
+
+D. Frenkel and B. Smit, Understanding Molecular Simulations (Academic, San Diego,
+1996).
+
+30
+
+N. Metropolis, A.W. Rosenbluth, M.N. Rosenbluth, A.H. Teller and E. Teller, J. Chem.
+Phys. 21, 1087 (1953).
+
+31
+
+A. Matro, D.L. Freeman and R.Q. Topper, J. Chem. Phys. 104, 8690 (1996).
+
+32
+
+A. Dullweber, M.P. Hodges and D.J. Wales, J. Chem. Phys. 106, 1530 (1997).
+
+33
+
+D.D. Frantz, D.L. Freeman and J.D. Doll, J. Chem. Phys. 97, 5713 (1992).
+
+34
+
+M.A. Strozak, G.E. Lopez and D.L. Freeman, J. Chem. Phys. 97, 4445 (1992).
+
+35
+
+G.E. Lopez and D.L. Freeman, J. Chem. Phys. 98, 1428 (1993).
+
+36
+
+E. Curotto, D.L. Freeman, B. Chen and J.D. Doll, Chem. Phys. Lett. 295, 366 (1998).
+
+37
+
+C.J. Tsai and K.D. Jordan, J. Chem. Phys. 99, 6957 (1993).
+
+38
+
+A.J. Acevedo, L.M. Caballero and G.E. Lopez, J. Chem. Phys. 106, 7257 (1997).
+
+39
+
+P.J. Steinhardt, D.R. Nelson and M. Ronchetti, Phys. Rev. B 28, 784 (1983).
+
+40
+
+R.M. Lynden-Bell and D.J. Wales, J. Chem. Phys. 101, 1460 (1994).
+
+41
+
+A.M. Ferrenberg and R.H. Swendsen, Phys. Rev. Lett. 61, 2635 (1988).
+
+FIGURES
+FIG. 1. The heat capacity CV per particle of LJ38 in units of kB (upper panel) and (∂CV /∂T )V
+per particle (lower panel) as a function of reduced temperature. The small low temperature maximum in the derivative associated with a change in slope of the heat capacity identifies the transition
+region between the truncated octahedral basin and the icosahedral basin. The large heat capacity
+peak identifies the melting region.
+FIG. 2. The expectation value of the order parameter (upper panel) and the order parameter
+probability distribution (lower panel) as a function of reduced temperature. In the lower panel
+FCC labels the truncated octahedron, IC labels structures from the icosahedral basin and LIQ
+labels structures from the liquid region. The transition between FCC and IC occurs at the same
+temperature as the low temperature peak in (∂CV /∂T )V in Fig. 1.
+FIG. 3. The probability distributions of observing different structures as a function of temperature using the energy criterion. The labels are the same as those defined in the lower panel of
+Fig. 2, and the data complements the interpretation of the lower panel of Fig. 2
+FIG. 4. The probability of observing configurations with particular values of Q4 with Q4 displayed along one axis and the reduced temperature displayed along the other axis. The large peak
+at low temperatures comes from the truncated octahedral structures and the broad region with
+small Q4 at intermediate temperatures represents structures in the icosahedral basin.
+FIG. 5. A projection of Fig. 4 onto the T -Q4 plane. The probability is measured by the shading
+with increasing probability represented by lighter shading. The lowest temperature horizontal white
+line represents the temperature at which transitions between the icosahedral and lowest energy
+basins begin. The second lowest temperature horizontal white line represents the beginning of the
+melting region, and the highest temperature horizontal white line represents the end of the melting
+peak of the heat capacity. The coexistence of icosahedral and octahedral structures continues into
+the melting region.
+
+FIG. 6. The probability of observing configurations with particular values of Q4 as a function
+of Q4 at T = 0.14ε/kB . The region from Q4 = 0 through the first maximum to the first minimum
+defines the icosahedral basin at T = 0.14ε/kB , the region from the first minimum to the third
+defines liquid-like structures, and the region about the three maxima having the highest values of
+Q4 define the truncated octahedral basin. The oscillations in the truncated octahedral basin arise
+from distorted structures of low probability where both the energy and Q4 rise together.
+FIG. 7. The projected probability of observing particles a distance R from the center of mass of
+LJ38 as a function of R and reduced temperature. As in Fig. 5 increased probability is represented
+by the lightest shading. The lower vertical lines represent the location of atoms in the fully relaxed
+truncated octahedron and the upper vertical lines represent the location of atoms in the fully
+relaxed icosahedral structure that is lowest in energy. Equilibrium between the icosahedral and
+octahedral forms are observed in the same temperature range as found in Figs. 2 and 5.
+FIG. 8. γ(T1 , T2 ) for the heat capacity as defined in Eq.(18) [with g = CV ] as a function of
+reduced temperature along two axes. White shading represents γ = 1 and black represents γ = −1.
+The white diagonal line connecting the lower left hand corner with the upper right hand corner
+indicates T1 = T2 so that γ = 1. The black areas show anti-correlation from parallel tempering
+between the heat capacity calculated at the maximum of the heat capacity and the center of the
+change in slope region.
+
+6.0
+
+〈 CV 〉 / NkB
+
+5.0
+
+4.0
+
+3.0
+
+(1/NkB) ( ∂〈CV 〉 / ∂T )V
+
+100
+
+50
+
+0
+
+−50
+
+−100
+0.0
+
+0.1
+
+kBT / ε
+
+0.2
+
+0.3
+
+0.20
+
+〈 Q4 〉
+
+0.15
+
+0.10
+
+0.05
+
+1.0
+IC
+LIQ
+FCC
+
+0.8
+
+PQ
+
+4
+
+0.6
+
+0.4
+
+0.2
+
+0.0
+0.0
+
+0.1
+
+kBT / ε
+
+0.2
+
+0.3
+
+1.0
+
+IC
+LIQ
+FCC
+
+0.8
+
+P
+
+0.6
+
+0.4
+
+0.2
+
+0.0
+0.0
+
+0.1
+
+0.2
+
+kBT / ε
+
+0.3
+
+0.337
+
+0.273
+
+k BT
+
+0.21
+
+0.14
+
+0.071
+
+0.002
+0
+
+0.45
+
+0.9
+
+1.35
+Q4
+
+1.8
+
+2.25
+
+90
+
+PQ (T = 0.14 ε / kB , Q4 )
+
+70
+
+50
+
+30
+
+10
+
+0.00
+
+0.05
+
+0.10
+
+Q4
+
+0.15
+
+0.20
+
+0.337
+
+0.282
+
+k BT
+
+0.227
+
+0.171
+
+0.12
+
+0.061
+
+0.061 0.12 0.171 0.227 0.282 0.337
+k BT
+
+

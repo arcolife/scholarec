@@ -1,0 +1,1504 @@
+IMSc/2000/03/09
+
+arXiv:math-ph/0003018v1 20 Mar 2000
+
+AN INTRODUCTION TO QUANTUM ALGEBRAS
+AND THEIR APPLICATIONS †
+Ramaswamy JAGANATHAN
+The Institute of Mathematical Sciences
+C.I.T. Campus, Tharamani, Chennai - 600 113, India
+E-Mail :jagan@imsc.ernet.in
+Abstract : A very elementary introduction to quantum algebras is presented and a
+few examples of their physical applications are mentioned.
+I shall give a very elementary introduction to the topic of quantum algebras and
+mention a few physical applications. Quantum algebras, or quantum groups, extend the domain of classical group theory and constitute a new and growing field
+of mathematics with vast potential for applications in physics. In fact, the origins
+of quantum groups lie in physics : in the studies on the behaviour of integrable systems in quantum field theory and statistical mechanics, using the quantum inverse
+scattering method, by Sklyanin, Kulish, Reshetikhin, Takhtajan, and Faddeev in
+the 1980s. Mathematical abstraction from the observations on the common features of these systems led to the definition of the concept of a quantum group and
+the studies of Drinfeld, Jimbo, Manin, Woronowicz, Connes, Wess, Zumino, Macfarlane, Biedenharn, ..., revealed many aspects of quantum groups from different
+mathematical and physical points of view. I shall neither go into the history of the
+developements of the various significant concepts nor give any specific references to
+their origins. I shall cite at the end some books and articles which would give these
+details and lead to the vast literature on the subject of quantum groups and their
+applications.
+Let us consider a two dimensional classical vector space whose elements can be
+written as
+x
+,
+(1)
+y
+where the coordinates x and y are real variables and commute with each other, i.e.,
+xy = yx .
+
+(2)
+
+In the space of functions {f (x, y)} defined in the above vector space the partial
+∂
+∂
+derivative operations ∂x
+and ∂y
+and the operations of multiplications by x and y
+satisfy the differential calculus
+[x , y] = 0 ,
+
+†
+
+∂
+∂
+,
+∂x ∂y
+∂
+,x
+∂x
+
+= 0,
+= 1,
+
+∂
+,y
+∂x
+∂
+,y
+∂y
+
+= 0,
+= 1,
+
+∂
+,x
+∂y
+
+= 0,
+(3)
+
+Article based on Narayani, N. and Kadayam S. Sankaran Memorial Lectures delivered by the
+author at the Department of Mathematics, Ramakrishna Mission Vivekananda College, Mylapore,
+Chennai, on 23 & 27 January 1999
+
+where the commutator bracket [ , ] is defined by
+[A , B] = AB − BA .
+x
+y
+
+Let us make a linear transformation of the vector
+x′
+y′
+
+=M
+
+x
+y
+
+=
+
+(4)
+
+a b
+c d
+
+as
+x
+y
+
+(5)
+
+where the entries of the matrix M are real and satisfy the condition
+ad − bc = det M = 1 ,
+
+(6)
+
+or in other words the transformation (5) is an element of the group SL(2, R). Then,
+the new coordinates x′ and y ′ and partial derivatives with respect to them, namely
+∂
+and ∂y∂ ′ , also satisfy the same relations as (3). This is easily checked by noting
+∂x′
+
+
+
+
+∂
+∂x′
+∂
+∂y ′
+
+
+
+
+
+
+
+
+=
+
+d
+−b
+
+−c
+a
+
+
+
+
+
+∂
+∂x
+∂
+∂y
+
+
+
+
+
+
+
+
+= M −1 
+
+∂
+∂x
+∂
+∂y
+
+
+
+
+
+,
+
+(7)
+
+where A means the transpose of the matrix A. We say that the differential calculus
+on the two dimensional (x, y)-plane is covariant under the group SL(2, R).
+In nature all physical systems are quantum mechanical. But, the quantum mechanical behaviour is generally revealed only at the microscopic (molecular and
+deeper) level. At the macroscopic level of everyday experience quantum physics
+becomes classical physics as an approximation. So, only classical physics was discovered first and observations of failure of classical physics at the atomic level led to
+the discovery of quantum physics in the 20th century. This passage from classical
+physics to quantum physics can be mathematically described as a process of deformation of the classical physics wherein the commuting classical observables of a
+physical system are replaced by noncommuting hermitian operators. This process is
+characterized by a very small deformation parameter known as the Planck constant
+h
+¯ and, roughly speaking, in the limit h
+¯ −→ 0 classical physics is recovered from the
+structure of quantum physics.
+In analogy with the process of quantizing the classical physics let us now quantize the classical vector space to get a quantum vector space by assuming that the
+coordinates do not commute with each other at any point. Let us model the noncommutativity of the coordinates X and Y of a two dimensional quantum plane
+by
+XY = qY X ,
+(8)
+where q is the deformation parameter which we shall consider, in general, to be
+any nonzero complex number. Note that in the limit q −→ 1 the noncommuting
+quantum coordinates X and Y become commuting classical coordinates. To be
+specific, let us choose
+q = eiθ .
+(9)
+2
+
+It is easy to find an example of such noncommuting variables. Let Tα and Gθ/α be
+operators acting on functions of a single real variable x such that
+Tα ψ(x) = ψ(x + α) ,
+
+Gθ/α ψ(x) = eiθx/α ψ(x) .
+
+(10)
+
+Then, for any ψ(x),
+Tα Gθ/α ψ(x) = eiθ(x+α)/α ψ(x + α) = eiθ Gθ/α Tα ψ(x) ,
+
+(11)
+
+for a given fixed value of θ. Thus, with the variation of α, Tα and Gθ/α become
+noncommuting variables obeying the relation
+Tα Gθ/α = eiθ Gθ/α Tα ,
+
+(12)
+
+with fixed value for θ.
+Now the interesting questions are :
+• Is it possible to define a differential calculus on the two dimensional (X, Y )plane?
+• If so, will it be covariant under some generalization of the classical group
+SL(2)?
+The answers are yes, yes! First let us understand how one can give a meaning
+to partial derivatives with respect to X and Y . These have to operate on the
+space of functions {f (X, Y )} which we shall consider to be polynomials in X and
+Y . We can write f (X, Y ) = m,n fmn X m Y n since any polynomial in X and Y ,
+with coefficients commuting with X and Y , can be brought to this form using the
+commutation relation (8). Then, if we take formally
+∂ m
+X = mX m−1 ,
+∂X
+
+∂ n
+Y = nY n−1 ,
+∂Y
+
+(13)
+
+we would have a differential calculus in the (X, Y )-plane, as desired, once we pre∂
+scribe consistently the remaining commutation relations between X, Y , ∂X
+and
+∂
+.
+∂Y
+Without going into any further details, let me state the complete set of commutation relations defining the differential calculus in the (X, Y )-plane (with q = eiθ ) :
+∂
+∂
+∂
+∂
+∂ ∂
+∂ ∂
+= q −1
+,
+Y = qY
+,
+X = qX
+,
+∂X ∂Y
+∂Y ∂X
+∂X
+∂X
+∂Y
+∂Y
+∂
+∂
+∂
+∂
+∂
+X − q2X
+= 1 + (q 2 − 1)Y
+,
+Y − q2Y
+= 1.
+(14)
+∂X
+∂X
+∂Y
+∂Y
+∂Y
+This noncommutative differential calculus on the two-dimensional quantum plane is
+seen to be covariant under the transformations
+XY = qY X ,
+
+
+
+
+
+X′
+Y′
+∂
+∂X ′
+∂
+∂Y ′
+
+= T
+
+
+
+
+X
+Y
+
+
+
+
+
+= T −1 
+
+=
+∂
+∂X
+∂
+∂Y
+
+
+
+
+
+A B
+C D
+
+
+
+=
+3
+
+X
+Y
+D
+−1
+
+−q B
+
+−qC
+A
+
+
+
+
+
+∂
+∂X
+∂
+∂Y
+
+
+
+
+
+,
+
+(15)
+
+provided
+A, B, C, and D commute with X and Y ,
+AB = qBA , CD = qDC , AC = qCA ,
+BC = CB , AD − DA = q − q −1 BC ,
+
+(16)
+
+BD = qDB ,
+(17)
+
+and
+AD − qBC = detq T = 1 .
+
+(18)
+
+∂
+∂
+In other words X ′ , Y ′ , ∂X
+′ , and ∂Y ′ defined by (15) satisfy the relations obtained
+from (14) by just replacing X and Y by X ′ and Y ′ respectively. Note that detq T
+defined in (17) commutes with all the matrix elements of T . Verify that
+
+T −1 =
+
+D −q −1 B
+−qC
+A
+
+is such that
+
+(19)
+
+1 0
+0 1
+
+T T −1 = T −1 T = 1l =
+
+.
+
+(20)
+
+A B
+is called a 2 × 2 quantum matrix if its matrix elements
+C D
+{A, B, C, D} satisfy the commutation relations in (17). In the limit q −→ 1 a
+quantum matrix T becomes a classical matrix with commuting elements. Note that
+1 0
+is a quantum matrix.
+the identity matrix 1l =
+0 1
+Entries of a quantum matrix T are noncommuting variables satisfying the
+A1 B1
+A2 B2
+commutation relations (17). Let T1 =
+and T2 =
+be
+C 1 D1
+C 2 D2
+any two quantum matrices; i.e., {A1 , B1 , C1, D1 } obey the relations (17), and
+{A2 , B2 , C2 , D2 } also obey the relations (17). The matrix elements of T1 and T2
+may be ordinary classical matrices satisfying the required relations (17). Define the
+product
+A matrix T =
+
+˙ 2=
+∆12 (T ) = T1 ⊗T
+=
+=
+
+A1 B1
+C 1 D1
+
+˙
+⊗
+
+A2 B2
+C 2 D2
+
+A1 ⊗ A2 + B1 ⊗ C2 A1 ⊗ B2 + B1 ⊗ D2
+C1 ⊗ A2 + D1 ⊗ C2 C1 ⊗ B2 + D1 ⊗ D2
+
+∆12 (A) ∆12 (B)
+∆12 (C) ∆12 (D)
+
+(21)
+
+where ⊗ denotes the direct product with the property (P ⊗ R)(Q ⊗ S) = P Q ⊗ RS.
+Then one finds that the matrix elements of ∆12 (T ), namely,
+∆12 (A) = A1 ⊗ A2 + B1 ⊗ C2 ,
+∆12 (C) = C1 ⊗ A2 + D1 ⊗ C2 ,
+4
+
+∆12 (B) = A1 ⊗ B2 + B1 ⊗ D2 ,
+∆12 (D) = C1 ⊗ B2 + D1 ⊗ D2 ,
+
+(22)
+
+also satisfy the commutation relations (17). In other words, ∆12 (T ) is also a quantum
+˙ 2 , is called the coproduct or comultiplication.
+matrix. This product, ∆12 (T ) = T1 ⊗T
+Note that there is no inverse for this coproduct. Under this coproduct the 2 × 2
+A B
+quantum matrices T =
+form a pseudomatrix group, commonly called
+C D
+a quantum group, denoted by SLq (2). The algebra of functions over SLq (2), or the
+algebra of polynomials in {A, B, C, D}, is denoted by F unq (SL(2)). The coproduct
+operation (∆) defined by (22), is symbolically written as
+∆(A) = A ⊗ A + B ⊗ C ,
+∆(C) = C ⊗ A + D ⊗ C ,
+
+∆(B) = A ⊗ B + B ⊗ D ,
+∆(D) = C ⊗ B + D ⊗ D .
+
+(23)
+
+For any f (A, B, C, D) ∈ F unq (SL(2)) the definition of ∆ is extended as
+∆f (A, B, C, D) = f (∆(A), ∆(B), ∆(C), ∆(D)). The algebra F unq (SL(2)) is technically a Hopf algebra. To complete this algebraic structure two more operations
+called the coinverse (or antipode) denoted by S, and the counit denoted by ε, are
+defined and these operations ∆, S, and ε are required to satisfy certain axioms. We
+shall not consider these details of the Hopf algebraic structure. From the point of
+view physical applications quantum groups provide a generalization of symmetry
+concepts and involve mainly two fundamental new ideas : deformation and noncommutative comultiplication.
+A B
+corresponds to the fundamental irreducible repreThe matrix T =
+C D
+sentation of SLq (2). Higher dimensional representations are defined as follows. An
+n × n matrix
+
+
+T11 T12 . . . T1n
+
+
+ T21 T22 . . . T2n 
+
+
+. ... . 
+(24)
+T = (Tij ) = 
+ ,
+ .
+
+
+.
+.
+.
+.
+.
+.
+
+
+Tn1 Tn2 . . . Tnn
+is said to be an n-dimensional representation of SLq (2) if its matrix elements (Tij )
+are polynomials in {A, B, C, D}, or in other words elements of F unq (SL(2)), and
+satisfy the property
+n
+
+˙
+T ⊗T
+
+ij
+
+=
+l=1
+
+Til ⊗ Tlj = ∆ (Tij )
+
+= Tij (∆(A), ∆(B), ∆(C), ∆(D)) ,
+Now, for example, look at
+T (1)
+
+∀ i, j = 1, 2, . . . , n .
+
+√
+
+2
+2
+−2 AB
+A
+1
++
+q
+B
+√
+ √
++ q −1 BC
+1 + q −2 BD 
+=  1 + q −2 AC AD
+.
+√
+2
+2
+−2
+C
+1 + q CD
+D
+
+
+(25)
+
+(26)
+
+It can be verified that T (1) is the 3-dimensional representation of SLq (2). For instance, see that
+T
+
+(1)
+
+˙ (1)
+⊗T
+
+3
+11
+
+=
+l=1
+
+(1)
+
+(1)
+
+T1l ⊗ Tl1
+
+5
+
+= A2 ⊗ A2 + 1 + q −2 AB ⊗ AC + B 2 ⊗ C 2
+
+= A2 ⊗ A2 + AB ⊗ AC + BA ⊗ CA + B 2 ⊗ C 2
+(1)
+= (A ⊗ A + B ⊗ C)2 = (∆(A))2 = ∆ T11 ,
+
+(27)
+
+as required. Similarly, for other matrix elements of T (1) one can verify the property (25), namely,
+˙
+T ⊗T
+= ∆ (Tij ) .
+(28)
+ij
+
+In the theory of classical Lie groups we know that an element of a Lie group G,
+say g, can be written as
+g = eǫ1 L1 eǫ2 L2 · · · eǫn Ln ,
+(29)
+where the parameters {ǫi } characterize the group element g and {Li } are constant
+generators of the group G satisfying a Lie algebra
+n
+
+[Li , Lj ] =
+
+Cijk Lk ,
+
+i, j = 1, 2, . . . , n ,
+
+(30)
+
+k=1
+
+with Cijk as the structure constants. When the group element g is close to the
+identity element (I) of the group, the parameters {ǫi } are infinitesimals and one can
+write
+n
+g≈I+
+
+ǫi Li .
+
+(31)
+
+i=1
+
+Now, the interesting question is
+• Is there an analogue of the Lie algebra in the case of a quantum group?
+The answer is yes! To this end, first we have to recall some basic notions of the
+theory of q-series.
+One defines the q-shifted factorial by
+(x; q)n =
+
+1,
+n = 0,
+2
+n−1
+(1 − x)(1 − xq)(1 − xq ) . . . (1 − xq ) , n = 1, 2, . . . .
+
+(32)
+
+Then, with the notation
+(x1 , x2 , . . . , xm ; q)n = (x1 ; q)n (x2 ; q)n . . . (xm ; q)n ,
+
+(33)
+
+an r φs basic hypergeometric series, or a general q-hypergeometric series, is given by
+r φs
+
+(a1 , a2 , . . . , ar ; b1 , b2 , . . . , bs ; q, z)
+∞
+1+s−r n
+(a1 , a2 , . . . , ar ; q)n
+(−1)n q n(n−1)/2
+z ,
+=
+n=0 (b1 , b2 , . . . , bs ; q)n (q; q)n
+r, s = 0, 1, 2, . . . .
+
+Consider
+
+(34)
+
+∞
+
+1 φ0 (0; −; q, (1
+
+− q)z) =
+6
+
+eqz
+
+zn
+,
+=
+n=0 [n]q !
+
+(35)
+
+where
+1 − qn
+,
+1−q
+[n]q ! = [n]q [n − 1]q [n − 2]q . . . [2]q [1]q ,
+
+[n]q =
+
+n = 1, 2, . . . , [0]q ! = 1 .
+
+(36)
+
+The q-number [n]q , or the so-called basic number, was defined by Heine (1846).
+Much of Ramanujan’s work is related to these q-series. Note that
+q→1
+
+q→1
+
+eqz −→ ez .
+
+[n]q −→ n ,
+
+(37)
+
+Thus, ezq defined by (35) is a q-generalization of the exponential function, called a
+q-exponential function ; note that there can be several generalizations of the exponential function satisfying the condition that in the limit q → 1 it should become the
+standard exponential function. In the theory of quantum groups a new definition of
+the q-number is often useful. It is
+[[n]]q =
+
+q n − q −n
+.
+q − q −1
+
+(38)
+
+Note that [[n]]q also becomes n in the limit q → 1, and [[n]]q is symmetric with respect
+to the interchange of q and q −1 unlike Heine’s [n]q .
+Now consider the 2-dimensional T -matrix parametrized as
+T =
+
+A B
+C D
+
+eα
+eα β
+γeα e−α + γeα β
+
+=
+
+,
+
+(39)
+
+which requires the variable parameters {α, β, γ} to satisfy a Lie algebra
+[α, β] = (log q) β ,
+
+[α, γ] = (log q) γ ,
+
+[β, γ] = 0 ,
+
+(40)
+
+so that {A, B, C, D} obey the algebra (17). Then, one can write
+γX
+
+(1/2)
+
+T = eq−2−
+
+(1/2)
+
+e2αX0
+
+βX
+
+(1/2)
+
+eq2 +
+
+,
+
+(41)
+
+with
+(1/2)
+
+X0
+
+=
+
+1
+2
+
+1
+0
+0 −1
+γX
+
+(1/2)
+
+Of course, in this case, eq−2−
+(1/2)
+βX+
+
+e
+
+(1/2)
+
+X−
+
+,
+
+0 0
+1 0
+
+=
+βX
+
+(1/2)
+
+and eq2 +
+
+,
+
+(1/2)
+
+X+
+
+=
+
+0 1
+0 0
+
+.
+
+(42)
+(1/2)
+
+are trivially the same as eγX−
+
+and
+
+(1/2) 2
+X±
+
+, respectively, since
+= 0.
+Actually, equation (41) is the special case of a universal formula for the representations of the T -matrices of SLq (2) and corresponds to the fundamental representation. The generic form of the T -matrix is given by
+γX
+
+βX
+
+T = eq−2− e2αX0 eq2 + ,
+7
+
+(43)
+
+called the universal T -matrix, where {X0 , X+ , X− } obey the algebra
+q 2X0 − q −2X0
+= [[2X0 ]]q ,
+[X+ , X− ] =
+q − q −1
+
+[X0 , X± ] = ±X± ,
+
+(44)
+
+called the quantum algebra slq (2). In the limit q → 1, {X } → {X} which generate
+sl(2),
+[X0 , X± ] = ±X± , [X+ , X− ] = 2X0 ,
+(45)
+(1/2)
+
+(1/2)
+
+(1/2)
+
+in (42) provide the
+the Lie algebra of SL(2). The matrices X0 , X+ , X−
+fundamental 2-dimensional irreducible representation of the algebra (44) (actually,
+they also provide the fundamental representation of the generators of sl(2) algebra (45)). When a higher dimensional representation of (44) is plugged in the formula (43) T becomes a higher dimensional representation of the T -matrix. For example, the three dimensional representation (26) is obtained by substituting in (43)
+(1)
+
+X0
+
+(1)
+
+X−
+
+(1)
+
+X+
+
+
+
+
+
+1 0
+0
+
+0 
+=  0 0
+ ,
+0 0 −1
+=
+
+=
+
+
+
+0
+0
+0
+ √
+0
+0
+[[2]]q  q
+√
+0 1/ q 0
+
+√
+0 1/ q 0
+√
+
+0
+q
+[[2]]q  0
+0
+0
+0
+
+
+
+
+
+,
+
+
+
+
+
+,
+
+(46)
+
+which provide the three dimensional irreducible representation of the slq (2) algebra (44), and using the parametrization of {A, B, C, D} in terms of {α, β, γ} as
+given by (39). Note that in the limit q → 1 these matrices (46) obey the sl(2)
+algebra (45). As seen from (39), (43) and (44), one can say that for a quantum
+group the group-parameter space is noncommutative.
+The algebra slq (2) is also often called a quantum group. Actually, the relations
+in (44) define the generators of the q-deformation of the universal enveloping algebra
+of sl(2). Hence, the relations (44) are also referred to, more properly, as Uq (sl(2)),
+the q-deformed universal enveloping algebra of sl(2). The algebra Uq (sl(2)), generated by polynomials in {X0 , X+ , X− } obeying the relations (44), is also a Hopf
+algebra. We shall consider only the coproduct(s) for Uq (sl(2)). A coproduct for
+slq (2) is
+∆q (X0 ) = X0 ⊗ 1l + 1l ⊗ X0 ,
+
+∆q (X± ) = X± ⊗ q X0 + q −X0 ⊗ X± .
+
+(47)
+
+It can be easily verified that this comultiplication rule is an algebra isomorphism for
+slq (2) :
+[∆q (X0 ) , ∆q (X± )] = ±∆q (X± ) ,
+
+[∆q (X+ ) , ∆q (X− )] = [[2∆q (X0 )]]q .
+
+(48)
+
+The most important property of this coproduct is its noncommutativity. Note that
+the algebra (44) is invariant under the interchange q ↔ q −1 since [[2X0 ]]q = [[2X0 ]]q−1 .
+8
+
+However, the comultiplication (47) is not invariant under such an interchange. This
+means that the comultiplication obtained from (47) by an interchange q ↔ q −1
+should also be an equally good comultiplication. It can be verified that the coproduct
+so obtained, namely,
+∆q−1 (X± ) = X± ⊗ q −X0 + q X0 ⊗ X± .
+
+∆q−1 (X0 ) = X0 ⊗ 1l + 1l ⊗ X0 ,
+
+(49)
+
+is indeed an algebra isomorphism for slq (2). This coproduct (49), ∆q−1 , is called the
+opposite coproduct in view of the relation
+∆q−1 (X ) = τ (∆q (X )) , where τ (u ⊗ v) = v ⊗ u .
+
+(50)
+
+Since
+∆q−1 = ∆q ,
+
+or τ (∆) = ∆ ,
+
+(51)
+
+the comultiplications ∆q and ∆q−1 of slq (2) are noncommutative. In the limit q → 1,
+the classical sl(2) has only a single comultiplication, ∆(X) = X ⊗ 1l + 1l ⊗ X , which
+is commutative (i.e., τ (∆) = ∆).
+One can show that the two comultiplications of sl2 (q), namely ∆q and ∆q−1 ,
+are related to each other by an equivalence relation such that there exists an R ∈
+Uq (sl(2)) ⊗ Uq (sl(2)), called the universal R-matrix, satisfying the relation
+∆q−1 (X ) = R∆q (X )R−1 .
+
+(52)
+
+This universal R-matrix is the central object of the quantum group theory. In this
+case it can be shown that
+R=q
+
+2(X0 ⊗X0 )
+
+n
+
+∞
+
+(1 − q 2 ) n(n−1)/2 X0
+q X+ ⊗ q −X0 X−
+q
+[[n]]q !
+n=0
+
+n
+
+.
+
+(53)
+
+If we insert the matrix representations of {X } in this expression for R we get
+numerical R-matrices. For example, substituting in (53) the 2 × 2 representation of
+{X }, given in (42), we get the fundamental 4-dimensional R-matrix
+
+
+q
+0
+0
+0
+
+1 
+
+R=√ 
+q
+
+0
+0
+1 (q − q −1 )
+0
+1
+0
+0
+
+0
+0
+0
+1
+
+Let us now write any R in the form
+R=
+i
+
+
+
+
+
+
+
+.
+
+ai ui ⊗ vi .
+
+(54)
+
+(55)
+
+It is clear from (53) that this can be done. Now, define
+R12 = R ⊗ 1l ,
+
+R13 =
+i
+
+ai ui ⊗ 1l ⊗ vi ,
+
+R23 = 1l ⊗ R .
+
+(56)
+
+Then, these satisfy the remarkable relation
+R12 R13 R23 = R23 R13 R12 .
+9
+
+(57)
+
+known as the quantum Yang-Baxter equation, or simply the Yang-Baxter equation (YBE).
+We have considered only the simplest example of a quantum group, namely
+SLq (2), associated with the classical group SL(2). There exists a systematic theory
+of deformation of any classical group. It is also possible, in certain cases, to obtain
+deformations with several q-parameters. Actually, the study of quantum groups
+sheds more light on the structure of the classical group theory. I shall not go further
+into the details of the formalism of quantum group theory.
+Now, I am in a position to mention a few applications of quantum groups and
+algebras. First, let us see how these things started. Define
+T1 = T ⊗ 1l =
+
+A B
+C D
+
+T2 = 1l ⊗ T =
+
+1 0
+0 1
+
+1 0
+0 1
+
+,
+
+A B
+C D
+
+.
+
+⊗
+⊗
+
+(58)
+
+Note that
+
+
+
+
+
+T1 T2 = 
+
+A2
+AC
+CA
+C2
+
+AB
+AD
+CB
+CD
+
+
+
+
+
+A2
+BA B 2
+ CA
+BC BD 
+
+
+ = T2 T1 = 
+ AC
+DA DB 
+2
+C2
+DC D
+
+
+
+AB B 2
+CB DB 
+
+,
+AD BD 
+CD D2
+
+BA
+DA
+BC
+DC
+
+(59)
+
+because {A, B, C, D} ae noncommutative. The relation between T1 T2 and T2 T1 turns
+out to be
+RT1 T2 = T2 T1 R .
+(60)
+This type of relation is commonly encountered in the quantum inverse scattering
+method approach to integrable models in quantum field theory and statistical mechanics. Substituting in (60) R from (54), and T1 and T2 from (58), it is found that
+equation (60) is a compact way of stating the commutation relations (17) defining
+the fundamental T -matrix of SLq (2). What about the commutation relations (44)
+defining slq (2)? Define
+√
+q −X0 − q (q − q −1 ) X−
+(+)
+L
+=
+,
+0
+q X0
+q X0
+0
+−1/2
+−1
+−X0
+q
+(q − q ) X+ q
+
+L(−) =
+(±)
+
+L1
+
+(±)
+
+= L(±) ⊗ 1l ,
+
+L2
+
+,
+
+= 1l ⊗ L(±) .
+
+(61)
+
+Then, the commutation relations (44), defining the generators of slq (2), can be
+stated elegantly as
+(±)
+
+(±)
+
+R−1 L1 L2
+
+(±)
+
+(±)
+
+= L2 L1 R−1 ,
+
+(+)
+
+(−)
+
+R−1 L1 L2
+
+(−)
+
+(+)
+
+= L2 L1 R−1 .
+
+(62)
+
+Note that the L(±) -matrices are special realizations of the T -matrices, i.e., the elements of L(±) -matrices obey the commutation relations required of the T -matrix
+elements.
+10
+
+If we define for the R-matrix in (54),
+ˇ ⊗ 1l,
+S1 = R
+where
+ˇ = PR,
+R
+
+ˇ,
+S2 = 1l ⊗ R
+
+
+
+
+
+
+P =
+
+then, it is found that
+
+1
+0
+0
+0
+
+0
+0
+1
+0
+
+0
+1
+0
+0
+
+0
+0
+0
+1
+
+(63)
+
+
+
+
+
+
+S1 S2 S1 = S2 S1 S2 ,
+
+,
+
+(64)
+
+(65)
+
+which is an alternative form of the YBE (57). For any general R-matrix the YBE (57)
+can be put in this form (65). This relation (65) represents a property of the generators of a braid group which is a generalization of the well known symmetric group
+Sn . The symmetric group Sn is the group of all permutations of n given objects. An
+element of the braid group Bn can be depicted as a system of n strings joining two
+sets of n points, each set located on a line, the two lines, say top and bottom, being
+parallel, with over-crossings or under-crossings of the strings. The over-crossings
+and the under-crossings of the strings make Bn an infinite group which will otherwise reduce to Sn . If i and i + 1 are two consecutive points on the top and bottom
+lines, the string starting at i on the top line can reach i + 1 on the bottom line by
+either under-crossing or over-crossing the string starting at i + 1 on the top line and
+reaching i on the bottom line. The corresponding elements of the braid group are
+usually denoted by σi and σi−1 , respectively. The elements {σi | i = 1, 2, · · · n − 1 } ,
+generating the braid group Bn , satisfy two relations,
+σi σj = σj σi
+
+for |i − j| > 1 ,
+
+(66)
+
+and
+σi σi+1 σi = σi+1 σi σi+1 .
+
+(67)
+
+Now, comparing the relations (65) and (67) it is obvious that the solutions of the
+YBE (R-matrices), or the quantum algebras, should play a central role in the theory of representations of braid groups. Braid groups have many applications. In
+mathematics they are useful in the study of complex functions of hypergeometric
+type having several variables. In physics they appear in knot theory, statistical
+mechanics, two-dimensional conformal field theory, and so on.
+In quantum mechanics the notion of continuous space-time with commutative
+coordinates is taken over from classical mechanics. This is an assumption. What will
+happen if at some deeper microscopic level the space-time coordinates themselves are
+noncommutative? It is clear that to deal with such a situation one will have to use a
+noncommutative differential calculus and the theory of quantum groups provides the
+necessary framework as we have seen above. For example, consider the motion of a
+quantum particle in a two dimensional noncommutative plane with X and Y as the
+coordinates. If we take the corresponding conjugate momenta to be proportional to
+∂
+∂
+and ∂Y
+, respectively, then the relations (14) indicate how the two-dimensional
+∂X
+11
+
+quantum mechanical phase-space would be deformed at that level. Thus, the theory
+of quantum groups would provide the mathematical framework for the future of
+quantum physics if it turns out that at some deeper microscopic level space-time
+manifold is noncommutative. Hence there has been a lot of interest in studying the
+fundamental modifications that would occur in the framework quantum mechanics,
+relativity theory, Poincar´e group, ..., etc., if the space-time manifold happens to be
+noncommutative.
+Apart from applications of fundamental nature, such as those mentioned above,
+there have been many phenomenological applications of quantum algebras in nuclear physics, condensed matter physics, molecular physics, quantum optics, and
+elementary particle physics. In these applications either an existing model is identified with a quantum algebraic structure, or a standard model is deformed to have
+an underlying quantum algebraic structure and studied to reveal the new features
+emerging. To give an idea of such applications, let me mention, as the final example, the q-deformation of the quantum mechanical harmonic oscillator algebra, also
+known as the boson algebra. The algebraic treatment of the quantum mechanical
+harmonic oscillator involves a creation operator a† , an annihilation operator (a),
+and a number operator (N), obeying the commutation relations
+N , a† = a† ,
+
+a , a† = 1 ,
+
+(68)
+
+where N is a hermitian operator and a† is the hermitian conjugate of a. The energy
+spectrum of the harmonic oscillator is given by the eigenvalues of the Hamiltonian
+operator
+1
+H=
+aa† + a† a ,
+(69)
+2
+in the appropriate units. Taking two such sets of oscillator operators, a1 , a†1 , N1
+and a2 , a†2 , N2 , which are assumed to commute with each other, and defining
+J0 =
+it is found that
+
+1
+(N1 − N2 ) ,
+2
+
+J+ = a†1 a2 ,
+
+J0† = J0 ,
+
+J− = a†2 a1 ,
+
+J+† = J− ,
+
+(70)
+
+(71)
+
+and
+[J0 , J± ] = ±J± ,
+
+[J+ , J− ] = 2J0 .
+
+(72)
+
+This Lie algebra (72) is seen to be the same as the sl(2) algebra (45) subject to the
+hermiticity conditions (71) and is known as su(2) algebra, the Lie algebra of the
+group SU(2). The su(2) algebra is the algebra of three dimensional rotations, or
+the rigid rotator, with {J0 , J± } representing the angular momentum operators. The
+coproduct rule
+∆ (J0 ) = J0 ⊗ 1l + 1l ⊗ J0 ,
+
+∆ (J± ) = J± ⊗ 1l + 1l ⊗ J± ,
+
+12
+
+(73)
+
+for the algebra (72), obtained by setting q = 1 in (47) (or (49)), represents the rule
+for addition of angular momenta. Correspondingly, the relations (44) rewritten as
+[J0 , J± ] = ±J± ,
+
+[J+ , J− ] = [[2J0 ]]q ,
+
+(74)
+
+J+† = J− ,
+
+(75)
+
+with the hermiticity conditions
+J0† = J0 ,
+
+represent the suq (2) (or Uq (su(2))) algebra or the q-deformed version of the su(2)
+algebra (72). One can say that suq (2) is the algebra of the q-rotator. For the
+q-angular momentum operators there are two possible addition rules,
+∆q±1 (J0 ) = J0 ⊗ 1l + 1l ⊗ J0 ,
+
+∆q±1 (J± ) = J± ⊗ q ±J0 + q ∓J0 ⊗ J± ,
+
+(76)
+
+as seen from (47) and (49). Now the interesting fact is that one has a realization of
+suq (2) generators given by
+J0 =
+
+1
+(N1 − N2 ) ,
+2
+
+J+ = A†1 A2 ,
+
+J− = A†2 A1 ,
+
+(77)
+
+exactly analogous to the su(2) case (70), where the two sets of operators
+A1 , A†1 , N1 and A2 , A†2 , N2 commute with each other and obey, within each
+set, the algebra
+(78)
+AA† − qA† A = q −N ,
+N , A† = A† .
+Further, N is hermitian and A , A† is a hermitian conjugate pair. The q-deformed
+oscillator algebra (78) is known as the q-oscillator or the q-boson algebra. When
+q −→ 1 the q-oscillator algebra (78) reduces to the canonical oscillator algebra (68).
+As is easy to guess, phenomenological applications of quantum algebras in nuclear
+and molecular spectroscopy involve the substitution of harmonic oscillator model
+by the q-oscillator model and the rigid rotator model by the q-rotator model. Such
+applications lead to impressive results showing that the actual vibrational-rotational
+spectra of nuclei and molecules can be fit into schemes in which the number of phenomenological q-parameters required are very much fewer than the number of traditional phenomenological parameters required to fit the same spectral data. Somehow
+such q-deformed models seem to take into account more efficiently the anharmonicity of vibrations and the nonrigidity of rotations in nuclear and molecular systems.
+I wish to thank the Management, and Prof. Dr. K. V. Parthasarathy (Head,
+Department of Mathematics), of the Ramakrishna Mission Vivekananda College, for
+giving me the privilege of delivering the Narayani, N. and Kadayam S. Sankaran
+Memorial Lectures for 1999.
+
+References
+[1] Kulish, P. P. (Ed.), Quantum Groups, Lecture Notes in Mathematics No. 1510
+(Springer Verlag, Berlin, 1990).
+13
+
+[2] Doebner, H. -D. and Hennig, J. D. (Eds.), Quantum Groups, Lecture Notes in
+Physics No. 370 (Springer-Verlag, Berlin, 1990).
+[3] Curtright, T., Fairlie, D., and Zachos, C. (Eds.), Quantum Groups (World
+Scientific, Singapore, 1991).
+[4] Fuchs, J., Affine Lie Algebras and Quantum Groups : An Introduction with
+Applications in Conformal Field Theory (Cambridge Univ. Press, Cambridge,
+1992).
+[5] Ge, M. L. (Ed.), Quantum Group and Quantum Integrable Systems (World
+Scientific, Singapore, 1992).
+[6] Gerstenhaber, M. and Stasheff, J. (Eds.), Deformation Theory and Quantum
+Groups with Applications to Mathematical Physics (American Math. Soc., Providence, RI, 1992).
+[7] Kibler, M. R., “Introduction to Quantum Algebras”, in Symmetry and
+Structural Properties of Condensed Matter, Edited by W. Florek, D. Lipinski, and T. Lulek (World Scientific, Singapore, 1993) (e-Print Archive
+No.: hep-th/9409012).
+[8] Ma, Z. Q., Yang-Baxter Equation and Quantum Enveloping Algebras (World
+Scientific, Singapore, 1993).
+[9] Chari, V. and Pressley, A., A Guide to Quantum Groups (Cambridge Univ.
+Press, Cambridge, 1994).
+[10] Barbier, R. and Kibler, M. R., “On the Use of Quantum Algebras in RotationVibration Spectroscopy”, in Modern Group Theoretical Methods in Physics
+Edited by J. Bertrand et al. (Kluwer Academic, Dordrecht, 1995) (e-Print
+Archive No.: atom-ph/9511001).
+[11] Biedenharn, L. C. and Lohe, M. A., Quantum Group Symmetry and q-Tensor
+Algebras (World Scientific, Singapore, 1995).
+[12] Chang, Z., “Quantum Group and Quantum Symmetry”, Phys.Rep. 262 (1995)
+137 (e-Print Archive No.: hep-th/9508170).
+[13] Lukierski, J., Popowicz, Z., and Sobczyk, J. (Eds.), Quantum Groups : Formalism and Applications (Polish Scientific Publ., Warszawa, 1995).
+[14] Majid, S., Foundations of Quantum Group Theory (Cambridge Univ. Press.,
+Cambridge, 1995)
+[15] Castellani, L. and Wess, J. (Eds.), Quantum Groups and Their Applications in
+Physics (IOS Press, Amsterdam, 1996).
+[16] Chaichian, M. and Demichev, A., Introduction to Quantum Groups (World
+Scientific, Singapore, 1996).
+14
+
+[17] Gomez, C., Ruiz-Altaba, M., and Sierra, G., Quantum Groups in Twodimensional Physics (Cambridge Univ. Press, Cambridge, 1996).
+[18] Kundu, A., “Quantum Integrable Systems : Construction, Solution, Algebraic
+Aspect”, (e-Print Archive No.: hep-th/9612046).
+[19] Quesne, C. and Vansteenkiste, N., “Representation Theory of Deformed
+Oscillator Algebras”, Helv. Phys. Acta 69 (1996) 60 (e-Print Archive
+No.: q-alg/9605041).
+[20] Klimyk, A. and Schm¨
+udgen, K., Quantum Groups and Their Representations
+(Springer Verlag, Berlin, 1997)
+[21] Bonatsos, D. and Daskaloyannis, C., “Quantum Groups and Their Applications in Nuclear Physics”, Prog. Part. & Nucl. Phys. 43 (1999) 537 (e-Print
+Archive No.: nucl-th/9909003).
+
+15
+
+

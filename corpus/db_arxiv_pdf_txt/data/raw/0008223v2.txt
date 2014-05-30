@@ -1,0 +1,900 @@
+Gel’fand-Dorfman Bialgebras
+Xiaoping Xu
+
+arXiv:math/0008223v2 [math.QA] 8 Dec 2000
+
+(A talk given in the workshop on Algebra and Discrete Mathematics at The Chinese
+University of Hong Kong, 27 - 31 March 2000)
+
+1
+
+Introduction
+
+A Gel’fand-Dorfman bialgebra is a vector space with a Lie algebra structure and a Novikov
+algebra structure, satisfying a certain compatibility condition. This bialgebraic structure
+corresponds to a certain Hamiltonian pairs in the Gel’fand-Dikii-Dorfman’s theory of Hamiltonian operators (cf. [GDi], [GDo]). In this talk, I will give a survey on the study of
+Gel’fand-Dorfman bialgebras. First let me give a more technical initial introduction to the
+bialgebras through what I call “Lie algebra with one-variable structure.”
+Let F be an arbitrary field. Denote by Z the ring of integers and by N the additive
+semi-group of nonnegative integers. All the vector spaces are assumed over F. Let V be a
+vector space and let t be an indeterminant. Form a tensor
+Vˆ = V ⊗F F[t, t−1 ].
+
+(1.1)
+
+(u ⊗ tn )z −n−1
+
+(1.2)
+
+We denote
+u(z) =
+
+for u ∈ V,
+
+nZ
+
+where z is a formal variable. A Lie algebra with one-variable structure is a vector space Vˆ
+with the Lie bracket of the form
+m
+
+n
+
+z2−1 ∂zi 1 δ
+
+[u(z1 ), v(z2 )] =
+i=0 j=0
+
+z1
+z2
+
+∂zj2 wij (z2 )
+
+(1.3)
+
+for u, v ∈ V , where m, n are nonnegative integers depending on u, v, and wij ∈ V . Here we
+have used the notation
+zk .
+
+δ(z) =
+
+(1.4)
+
+k∈Z
+
+Moreover, each wij depends on u and v bilinearly by (1.2) and (1.3). Above definition is
+not in general form. We aim at giving the audience a simple rough picture. According
+to Wightman’s axioms of quantum field theory, the algebraic content of two-dimensional
+quantum field theory is a certain representation theory of Lie algebras with one-variable
+structure (e.g., cf. [K]), where intertwining operators among irreducible modules, “partition
+
+functions” (characters in algebraic terms) and “correlation functions” related to (1.3) etc.
+play important roles.
+Suppose that m = n = 0 in (1.3). We denote
+w00 = [u, v].
+
+(1.5)
+
+Then (V, [u, v]) forms a Lie algebra and Vˆ is the corresponding loop algebra with the Lie
+bracket
+[u ⊗ tj , v ⊗ tk ] = [u, v] ⊗ tj+k
+
+for u, v ∈ V, j, k ∈ Z.
+
+(1.6)
+
+If V = Fe is one-dimensional and
+[e(z1 ), e(z2 )] = z2−1 δ
+
+z1
+z2
+
+∂z2 e(z2 ) − 2z2−1 ∂z1 δ
+
+z1
+z2
+
+e(z2 ),
+
+(1.7)
+
+Then Vˆ is the centerless Virasoro algebra (or a rank-one Witt algebra) with the Lie bracket
+[e ⊗ tj , e ⊗ tk ] = (j − k)e ⊗ tj+k
+
+for j, k ∈ Z.
+
+(1.8)
+
+A natural generalization of the above one-dimensional case is
+[u(z1 ), v(z2 )] = z2−1 δ
+
+z1
+z2
+
+∂z2 w01 (z2 ) + z2−1 ∂z1 δ
+
+z1
+z2
+
+w10 (z2 )
+
+(1.9)
+
+for u, v ∈ V . Denote
+w01 = v ◦ u.
+
+(1.10)
+
+(u ◦ v) ◦ w = (u ◦ w) ◦ v,
+
+(1.11)
+
+(u ◦ v) ◦ w − u ◦ (v ◦ w) = (v ◦ u) ◦ w − v ◦ (u ◦ w)
+
+(1.12)
+
+Then (V, ◦) is an algebra satisfying
+
+for u, v, w ∈ V. The above algebra (V, ◦) appeared in Gel’fand and Dorfman’s work [GDo],
+corresponding to certain Hamiltonian operators. Moreover, it also appeared in Balinskii and
+Novikov’s work [BN] as the local structures of certain Poisson brackets of hydrodynamic type.
+This structure was first abstractly studied by Zel’manov [Z], Filippov [F] and was named as
+“Novikov algebra” by Osborn [O1].
+Note that (1.12) is the axiom of left-symmetric algebra. Left-symmetric algebras play
+fundamental roles in the theory of affine manifolds (cf. [A], [FD]). Novikov algebras are
+Left-symmetric algebras whose right multiplication operators are mutually commutative (cf.
+(1.11)). Furthermore,
+w10 = −(u ◦ v + v ◦ u).
+
+(1.13)
+
+The Lie bracket on Vˆ is
+[u ⊗ tj , v ⊗ tk ] = ju ◦ v ⊗ tj+k−1 − kv ◦ u ⊗ tj+k−1
+
+for u, v ∈ V, j, k ∈ Z.
+
+(1.14)
+
+Consider the mixed case
+[u(z1 ), v(z2 )] = z2−1 δ
+
+z1
+z2
+
+[w00 (z2 ) + ∂z2 w01 (z2 )] + z2−1 ∂z1 δ
+
+z1
+z2
+
+w10 (z2 )
+
+(1.15)
+
+for u, v ∈ V . Denote
+w00 = [v, u],
+
+w01 = v ◦ u.
+
+(1.16)
+
+Then (V, [·, ·]) forms a Lie algebra, (V, ◦) forms a Novikov algebra and the following compatibility condition holds
+[w ◦ u, v] − [w ◦ v, u] + [w, u] ◦ v − [w, v] ◦ u − w ◦ [u, v] = 0
+
+(1.17)
+
+for u, v, w ∈ V .
+I called the triple (V, [·, ·], ◦) a Gel’fand-Dorfman bialgebra (cf. [X4]), which corresponds
+to a certain Hamiltonian pair in Gel’fand and Dorfman’s work [GDo]. Moreover, (1.13) holds.
+The Lie bracket on Vˆ is
+[u ⊗ tj , v ⊗ tk ] = [v, u] ⊗ tj+k + ju ◦ v ⊗ tj+k−1 − kv ◦ u ⊗ tj+k−1
+
+(1.18)
+
+for u, v ∈ V, j, k ∈ Z.
+For convenience, we shall use the following notation of index
+m, n = {m, m + 1, ..., n}
+
+(1.19)
+
+for m, n ∈ N such that m ≤ n.
+The article is organized as follows. In Section 2, I will talk about structures of simple
+Novikov algebras and their irreducible representations. In Section 3, I will present some general constructions of Gel’fand-Dorfman bialgebras. In Section 4, I will give a few classification
+results on the bialgebras. In Section 5, examples of application to simple “cubic conformal
+algebras” and “quartic conformal algebras” will be given.
+
+2
+
+Novikov Algebras
+
+Let us first give a construction of Novikov algebras. Let (A, ·) be a commutative associative
+algebra. Then (A, ·) forms a Novikov algebra, which is not so interesting. Take a derivation
+∂ of (A, ·) and ξ ∈ A. We define
+u ◦ξ v = u∂(v) + ξuv
+
+for u, v ∈ A.
+
+(2.1)
+
+Then (A, ◦ξ ) forms a Novikov algebra. The above construction was found by S. Gel’fand
+when ξ = 0 (cf. [GDo]), by Fillip [F] when ξ ∈ F and by me [X2] in general case.
+
+Theorem 2.1 (Zel’manov [Z]). Any finite-dimensional simple Novikov algebra over an
+algebraically closed field F with characteristic 0 isomorphic to (F, ·).
+Based on Osborn’s work [O1], I obtained the following result:
+Theorem 2.2 (Xu, [X1]). A finite-dimensional simple Novikov algebra over an algebraically closed field F with characteristic p > 2 is either one-dimensional with a base
+element e such that e ◦ e = e or has dimension pk for some positive integer k with a basis
+{ςj | j ∈ −1, pk − 2} satisfying
+ςj1 ◦ ςj2 = ( j1 +jj22 +1 )ςj1 +j2 + δj1 ,−1 δj2 ,0 aςpk −2 + δj1 ,−1 δj2 ,−1 bςpk −2
+
+(2.2)
+
+for j1 , j2 ∈ −1, pk − 1, where a, b ∈ F are constants.
+Next, we consider infinite-dimensional simple Novikov algebra with char F = 0. Let ∆ be
+an additive subgroup of F and let F1 be an extension field of F. Take a map f : ∆ × ∆ →
+F×
+1 = F1 \ {0} such that
+f (α, β) = f (β, α), f (α, β)f (α + β, γ) = f (α, β + γ)f (β, γ)
+
+(2.3)
+
+for α, β, γ ∈ ∆. Take J to be the additive semi-group {0} or N. Let A(∆, f, J) be a vector
+space over F1 with a basis
+{uα,i | α ∈ ∆, i ∈ N}.
+
+(2.4)
+
+We define an algebraic operation “·” on A(∆, f, J) by
+uα,i · uβ,j = f (α, β)uα+β,i+j
+
+for α, β ∈ ∆, i, j ∈ J.
+
+(2.5)
+
+Then (A(∆, f, J), ·) forms a commutative associative algebra over F1 , and also over F. We
+define a derivation ∂ of A(∆, f, J) over F1 by
+∂(uα,i ) = αuα,i + iuα,i−1
+
+for α ∈ ∆, i ∈ J,
+
+(2.6)
+
+where we treat
+uβ,j = 0
+
+if (β, j) ∈ ∆ × J.
+
+(2.7)
+
+Note that ∂ is also a derivation of A(∆, f, J) over F.
+Theorem 2.3 (Xu, [X2]). For any element ξ ∈ (A(∆, f, J), the Novikov algebra
+(A(∆, f, J), ◦ξ ) (cf. (2.1)) is simple.
+Osborn [O3] gave a classification of infinite-dimensional simple Novikov algebras with an
+element e such that e◦e ∈ Fe, assuming the existence of generalized-eigenspace decomposition
+
+with respect to its left multiplication operator. There are four fundamantal mistakes in
+his classification. The first is using of Proposition 2.6 (d) in [O1] with β = 0, which was
+misproved. The second is that the eigenspace A0 in Lemma 2.12 of [O3] does not form a
+field when b = 0 with respect to the Novikov algebraic operation. The third is that A0 may
+not be a perfect field when b = 0. The fourth is that the author forgot the case b = 0 and
+∆ = {0} in Lemma 2.8. In addition to these four mistakes, there are gaps in the arguments of
+classification in [O3]. It seems that one can not draw any conclusions of classification based
+on the arguments in [O3].
+A linear transformation T of a vector space V is called locally finite if the subspace
+∞
+
+FT m (v) is finite-dimensional for any v ∈ V.
+
+(2.8)
+
+m=0
+
+An element u of a Novikov algebra N is called left locally finite if its left multiplication
+operator Lu is locally finite.
+I have re-established the following classification theorem:
+Theorem 2.4 (Xu, [X6]) Let (N , ◦) be an infinite-dimensional simple Novikov algebra
+over an algebraically field F with characteristic 0. Suppose that N contains a left locally finite
+element e whose right multiplication Re is a constant map and left multiplication is surjective
+if Re = 0. Then there exist an additive subgroup ∆ of F, an extension field F1 of F, a map
+f : ∆ × ∆ → F×
+1 satisfying (2.3) and ξ ∈ F such that the algebra (N , ◦) is isomorphic to
+(A(∆, f, J), ◦ξ ).
+Now we consider representations of a Novikov algebra. A module M of a Novikov algebras
+(N , ◦) is a vector space with two linear maps
+N × M → M : (u, w) → u ◦ w, M × N → M : (w, u) → w ◦ u
+
+(2.9)
+
+such that (1.11) and (1.12) hold when one of the elements in {u, v, w} is in M and the other
+two are in N . The commutator algebra associated with a finite-dimensional simple Novikov
+algebra over an algebraically closed field F with characteristic p > 2 is a rank-one simple Lie
+algebra of Witt type (cf. [O1]), whose finite-dimensional irreducible modules has not been
+completely classified yet. However, we have the following complete result.
+Theorem 2.5 (Xu, [X1]). Suppose that F is an algebraically closed field with characteristic p > 2. If M is a finite-dimensional irreducible module of a finite-dimensional simple
+Novikov algebra (N , ◦) in the presentation (2.2), then there exists a constant λ and a basis
+{vj | j ∈ −1, pk − 2} of M such that
+2 +1
+2 +2
+ςj1 ◦ vj2 = ( j1 +j
+)vj1 +j2 + ( j1j+j
+)λvj1 +j2 +1 + δj1 ,−1 δj2 ,0 avpk −2
+j2
+1 +1
+
+(2.10)
+
+2 +1
+vj2 ◦ ςj1 = ( j1 +j
+)vj1 +j2 + δj2 ,−1 δj1 ,0 avpk −2 + δj2 ,−1δj1 ,−1 bvpk −2
+j1
+
+(2.11)
+
+for j1 , j2 ∈ −1, pk − 2. Moreover, λ = 0 if a = 0. Conversely, (2.10) and (2.11) define an
+irreducible module for any 0 = λ ∈ F and for λ = 0 if a = 0.
+Let us go to the case of char F = 0. First we shall give a construction of irreducible
+modules. Take J to be the additive semi-group {0} or N. Let A be a vector space with a
+basis
+{uα,i | α ∈ F, i ∈ J}.
+
+(2.12)
+
+Define the operation “·” on A by
+uα,i · uβ,j = uα+β,i+j
+
+for α, β ∈ F, i, j ∈ J.
+
+(2.13)
+
+Then (A, ·) forms a commutative associative algebra with the identity element 1 = u0,0 .
+We define the derivation ∂ on A by (2.6). Let ∆ be an additive subgroup of F such that
+J + ∆ = {0}. Set
+N =
+
+Fuα,i .
+
+(2.14)
+
+α∈∆,i∈J
+
+For any fixed element ξ ∈ N , we define the operation “◦” on A by
+u ◦ v = u · ∂(v) + ξ · u · v
+
+for u, v ∈ A.
+
+(2.15)
+
+By Theorem 2.3, (A, ◦) forms a simple Novikov algebra and (N , ◦) forms a simple subalgebra
+of (A, ◦). For λ ∈ F, we set
+M(λ) =
+
+Fuα+λ,i
+
+(2.16)
+
+α∈∆,i∈J
+
+Expression (2.15) shows
+N ◦ M(λ), M(λ) ◦ N ⊂ M(λ).
+
+(2.17)
+
+Thus M(λ) forms an N -module. By the proof of Theorem 2.9 in [X2], we have
+Theorem 2.6 (Xu, [X6]). The N -module M(λ) is irreducible.
+A natural question is to what extent the modules {M(λ) | λ ∈ F} cover the irreducible
+modules of N . Up to this point, we are not be able to answer this for a general element
+ξ ∈ N . For an N -module M, we define the left action LM (u0,0 ) of u0,0 by
+LM (u0,0 )(w) = u0,0 ◦ w
+
+for w ∈ M.
+
+(2.18)
+
+Theorem 2.7 (Xu, [X6]). If ξ ∈ F, then any irreducible N -module M with locally finite
+LM (u0,0) is isomorphic to M(λ) for some λ ∈ F, when F is algebraically closed.
+
+3
+
+Constructions of Gel’fand-Dorfman Bialgebras
+
+Recall the compatibility condition (1.17). Let (N , ◦) be a Novikov algebra. Define
+[u, v]− = u ◦ v − v ◦ u
+
+for u, v ∈ N .
+
+(3.1)
+
+Theorem 3.1 (Gel’fand and Dorfman, [GDo]). The triple (N , [·, ·]− , ◦) forms a
+Gel’fand-Dorfman bialgebra.
+Let (A, ·) be a commutative associative algebra. Denote by Der A the Lie algebras of all
+the derivations of A. Set
+N = Der A ⊕ A.
+
+(3.2)
+
+We define two algebraic operation [·, ·] and ◦ on N by
+[d1 + ξ1 , d2 + ξ2 ] = [d1 , d2 ] + d1 (ξ2 ) − d2 (ξ1 ),
+
+(3.3)
+
+(d1 + ξ1 ) ◦ (d2 + ξ2 ) = ξ2 (d1 + ξ1 )
+
+(3.4)
+
+for d1 , d2 ∈ Der A and ξ1 , ξ2 ∈ A.
+Theorem 3.2 (Xu, [X4]). The triple (N , [·, ·], ◦) forms a Gel’fand-Dorfman bialgebra.
+The above construction is extracted from the simple Lie algebras of Witt type.
+Our second construction is related to the following concept. A Lie-Poisson algebra is a
+vector space A with two algebraic operations “·” and [·, ·] such that (A, ·) forms a commutative
+associative algebra, (A, [·, ·]) forms a Lie algebra and the following compatibility condition is
+satisfied:
+[u, v · w] = [u, v] · w + v · [u, w]
+
+for u, v, w ∈ A.
+
+(3.5)
+
+Let (A, ·, [·, ·]) be a Lie-Poisson algebra and let ∂ be a derivation of the algebra (A, ·) such
+that
+∂[u, v] = [∂(u), v] + [u, ∂(v)] + ξ[u, v]
+
+for u, v ∈ A,
+
+(3.6)
+
+where ξ ∈ F is a constant. Now we define another algebraic operation on ◦ on A by
+u ◦ v = u∂(v) + ξuv
+
+for u ∈ A, v ∈ A.
+
+(3.7)
+
+Theorem 3.3 (Xu, [X4]). The triple (A, [·, ·], ◦) forms a Gel’fand-Dorfman bialgebra.
+The above construction is related to the Lie algebras of Hamiltonian type and Contact
+type.
+Let (A, ·) be a commutative associative algebra and let ∂1 , ∂2 be mutually commutative
+derivations of (A, ·). Define algebraic operations on A by
+[u, v] = ∂1 (u)∂2 (v) − ∂2 (u)∂1 (v) + u∂2 (v) − ∂2 (u)v, u ◦ v = u∂2 (v)
+
+(3.8)
+
+for u, v ∈ A.
+Theorem 3.4 (Xu, [X4]). The triple (A, [·, ·], ◦) forms a Gel’fand-Dorfman bialgebra.
+Let (A, ·), ∂1 and ∂2 be the same as in the above. For any constant b ∈ F, we define
+[u, v] = ∂1 (u)∂2 (v) − ∂2 (u)∂1 (v) + b(u∂2 (v) − ∂2 (u)v), u ◦ v = u∂1 (v) + buv
+
+(3.9)
+
+for u, v ∈ A.
+Theorem 3.5 (Xu, [X4]). The triple (A, [·, ·], ◦) forms a Gel’fand-Dorfman bialgebra.
+
+4
+
+Classifications of the Bialgebras
+
+If (N , [·, ·], ◦) is a Gel’fand-Dorfman bialgebra, then we say that (N , [·, ·]) is a Lie algebra
+over the Novikov algebra (N , ◦). Similarly, (N , ◦) is a Novikov algebra over the Lie algebra
+(N , [·, ·]).
+Let F be an algebraically closed field with char F = 0. Take J to be the additive semigroup {0} or N and take an additive subgroup ∆ of F. Let A(∆, J) be a vector space with
+a basis
+{uα,i | α ∈ ∆, i ∈ J}.
+
+(4.1)
+
+For any constant b ∈ F, we define an algebraic operation ◦b on A(∆, J) by
+u ◦b v = u · ∂(v) + b · u · v
+
+for u, v ∈ A(∆, J).
+
+(4.2)
+
+By Theorem 2.3, (A(∆, J), ◦b ) forms a simple Novikov algebra.
+Theorem 4.1 (Osborn and Zel’manov, [OZ]). If ∆ = Z, J = {0}, b ∈ Z or
+∆ = 0, J = N, then any nontrivial Lie algebra over the Novikov algebra (A(∆, J), ◦b) is
+isomorphic to (A(∆, J), [·, ·]− ), where
+[uα,i , uβ,j ]− = (β − α)uα+β,i+j + (j − i)uα+β,i+j−1
+
+(4.3)
+
+for α, β ∈ ∆ and i, j ∈ J.
+Theorem 4.2 (Xu, [X4]). If b ∈ ∆, then any Lie algebra over the Novikov algebra
+(A(∆, J), ◦b) has the Lie bracket
+[uα,i , uβ,j ] = [(α + b)ϕ(β) − (β + b)ϕ(α)]uα+β,i+j
++[i(ϕ(β) − λ(β + b)) + j(λ(α + b) − ϕ(α))]uα+β,i+j−1
+
+(4.4)
+
+for α, β ∈ ∆, i, j ∈ J, where ϕ : ∆ → F is an additive group homomorphism and λ ∈ F is a
+constant.
+
+When J = {0}, (4.4) gives a Block algebra (cf. [B]). Next we assume J = {0} and
+redenote uα,0 by uα for α ∈ ∆.
+Theorem 4.3 (Xu, [X4]) Any Lie algebra over the Novikov algebra (A(∆, {0}), ◦0) has
+the Lie bracket
+[uα , uβ ] = (φ(α, β) + a(β − α))uα+β
+
+for α, β ∈ ∆,
+
+(4.5)
+
+where a is a constant and φ(·, ·) : ∆ × ∆ → F is a skew-symmetric map such that there exists
+a symmetric map S0 (·, ·, ·) : ∆ × ∆ × ∆ → F satisfying
+φ(β + γ, α) = φ(γ, α) + φ(β, α) + αS0 (α, β, γ),
+
+(4.6)
+
+(γφ(α, β) + αφ(β, γ) + βφ(γ, α))(S0(α, β, γ) − a) = 0.
+
+(4.7)
+
+for α, β, γ ∈ ∆. In particular, the following φ satisfies our condition: when a = 0, φ is any
+skew-symmetric Z-bilinear form; when a = 0,
+φ(α, β) = αϕ0 (β) − βϕ0 (α)
+
+for α, β ∈ ∆,
+
+(4.8)
+
+where ϕ0 : ∆ → F is an additive group homomorphism.
+Theorem 4.4 (Xu, [X4]) Suppose 0 = b ∈ ∆. Any Lie algebra over the Novikov algebra
+(A(∆, {0}), ◦b) has the Lie bracket
+[uα , uβ ] = θ(α, β)uα+β+b + ((α + b)ϕ(β) − (β + b)ϕ(α))uα+β
+
+(4.9)
+
+for α, β ∈ ∆, where ϕ : ∆ → F is additive group homomorphism, θ ≡ 0 if ϕ(b) = 0 and
+θ : ∆ × ∆ → F is a skew-symmetric map satisfying
+(α + b)(θ(α + γ, β) − θ(γ, β) − θ(α, β)) = (β + b)(θ(β + γ, α) − θ(γ, α) − θ(β, α))
+
+(4.10)
+
+and
+θ(α, β)θ(α + β + b, γ) + θ(β, γ)θ(β + γ + b, α) + θ(γ, α)θ(γ + α + b, β) = 0
+
+(4.11)
+
+if ϕ(b) = 0. In particualr, we can take ϕ : ∆ → F to be any additive group homomorphism
+such that ϕ(b) = 0 and take θ(·, ·)to be a skew-symmetric Z-bilinear map such that b ∈ Radθ
+or
+θ(α, β) = ϕ1 (α)ϕ2 (β) − ϕ1 (β)ϕ2(α)
+
+for α, β ∈ ∆,
+
+(4.12)
+
+where ϕ1 , ϕ2 : ∆ → F are additive group homorphisms such that ϕ1 (b) = 0 and ϕ2 (b) = 0.
+Theorem 4.5 (Xu, [X4]). If ◦ is a Novikov algebra operation on the space A(∆, {0})
+such that
+uα ◦ uβ − uβ ◦ uα = (β − α)uα+β
+
+for α, β ∈ ∆,
+
+(4.13)
+
+then there exists an element ξ ∈ A(∆, {0}) such that
+uα ◦ uβ = (β + ξ)uα+β
+
+5
+
+for α, β ∈ ∆.
+
+(4.14)
+
+Application to Cubic and Quartic Conformal Algebras
+
+For two vector spaces V1 and V2 , we denote by LM(V1 , V2 ) the space of linear maps from V1
+to V2 . We shall also use the following operator of taking residue:
+Resz (z n ) = δn,−1
+
+for n ∈ Z.
+
+(5.1)
+
+Furthermore, all the binomials are assumed to be expanded in the nonnegative powers of the
+second variable. For example ,
+1
+1
+=
+=
+z−x
+z(1 − x/z)
+
+∞
+
+z
+
+−1
+
+j=0
+
+x
+z
+
+∞
+
+j
+
+z −j−1 xj .
+
+=
+
+(5.2)
+
+j=0
+
+In particular, the above equation implies
+Resx
+
+1
+(
+ξj z j ) =
+z − x j∈Z
+
+∞
+
+ξ−j z −j .
+
+(5.3)
+
+j=1
+
+So the operator Resx (1/(z − x))(—) is taking the part of negative powers in a formal series
+and changing the variable x to z.
+A conformal algebra R is an F[∂]-module equipped with a linear map Y + (·, z) : R →
+LM(R, R[z −1 ]z −1 ) satisfying:
+Y + (∂u, z) =
+
+d +
+ex∂ Y + (v, −x)u
+Y (u, z), Y + (u, z)v = Resx
+,
+dz
+z−x
+
+Y + (u, z1 )Y + (v, z2 ) − Y + (v, z2 )Y + (u, z1 ) = Resx
+
+Y + (Y + (u, z1 − x)v, x)
+z2 − x
+
+(5.4)
+(5.5)
+
+for u, v ∈ R. We denote by (R, ∂, Y + (·, z)) a conformal algebra.
+The above definition is the equivalent generating-function form to that given in [K], where
+the author used the component formula with Y + (u, z) =
+
+∞
+n=0
+
+u(n) z −n−1 /n!. The connection
+
+between between the Lie algebra with one-variable structure in (1.3) and conformal algebra
+is that R = F[∂] ⊗F V and
+m
+
+n
+
+(−1)i i!∂ j wij z −i−1 .
+
++
+
+Y (u, z)v =
+i=0 j=0
+
+Conformal algebras are equivalent to linear Hamiltonian operators (cf. [X5]).
+
+(5.6)
+
+Suppose that (R, ∂, Y + (·, z)) is a conformal algebra that is a free F[∂]-module over a
+subspace V , namely
+R = F[∂]V (∼
+= F[∂] ⊗F V ).
+
+(5.7)
+
+Let m be a positive integer. The algebra R is called of degree m if for any u, v ∈ V ,
+∂ i wi,j z −j
+
+Y + (u, z)v =
+
+with wi,j ∈ V,
+
+(5.8)
+
+0<j;i+j≤m
+
+and wm−j,j = 0 for some u, v ∈ V and j ∈ 1, m. A quadratic conformal algebra is a conformal
+algebra of degree 2, a cubic conformal algebra is a conformal algebra of degree 3 and a
+quartic conformal algebra is a conformal algebra of degree 4. In [X4], I have proved that a
+quadratic conformal algebra is equivalent to a Gel’fand-Dorfman bialgebra. Below I will give
+the construction of quadratic conformal algebra from Gel’fand-Dorfman bialgebras.
+Let (N , [·, ·], ◦) be a Gel’fand Dorfman bialgebra. Set
+RN = F[∂] ⊗F N .
+
+(5.9)
+
+So RN is a free F[∂]-module generated by N . For convenience, we identify N with 1 ⊗ N .
+We define a linear map Y + (·, z) : R → LM(R, R[z −1 ]z −1 ) by
+n
++
+
+m
+
+(−1)j (nj )
+
+n
+
+Y (∂ u, z)∂ v =
+j=0
+
+d
+dz
+
+m+j
+
+∂ n−j (([v, u]+∂(v ◦u))z −1 +(u◦v +v ◦u)z −2 ) (5.10)
+
+for u, v ∈ N and m, n ∈ N.
+Theorem 5.1 (Xu, [X4]). The triple (RN , ∂, Y + (·, z)) forms a quadratic conformal
+algebra.
+Next I will use the above theorem to construct simple cubic conformal algebras and quartic
+conformal algebras. A conformal algebra (R, ∂, Y + (·, z)) is called simple if there does not
+exist a nonzero proper subspace I of R such that
+Y + (u, z)(I) ⊂ I[z −1 ]
+
+for u ∈ R.
+
+(5.11)
+
+Take J to be the additive semi-group {0} or N. Let Γ be an additive subgroup of F 2 such
+that
+(J, 0) + Γ ⊂ (0, F),
+
+Γ ⊂ (F, 0).
+
+(5.12)
+
+Let A be the semi-group algebra of Γ × J with the canonical basis {uα,i | α ∈ ∆, i ∈ J},
+that is,
+uα,i · uβ,j = uα+β,i+j
+
+for α, β ∈ Γ, i, j ∈ J.
+
+(5.13)
+
+Define two derivations ∂1 and ∂2 of A by
+∂1 (uα,i ) = α1 uα,i + iuα,i−1 , ∂2 (uα,i ) = α2 uα,i
+
+(5.14)
+
+for α = (α1 , α2 ) ∈ Γ and i ∈ J.
+First we define
+[u, v]1 = ∂1 (u)∂2 (v) − ∂2 (u)∂1 (v) + u∂2 (v) − ∂2 (u)v, u ◦1 v = u∂2 (v)
+
+(5.15)
+
+Then (A, [·, ·]1, ◦1 ) forms a Gel’fand-Dorfman bialgebra by Theorem 3.4. On RA , the structure
+map (5.10) is determined by
+Y1+ (uα,i , z)uβ,j = [((1 + α1 )β2 − α2 (1 + β1 ))uα+β,i+j + (iβ2 − jα2 )uα+β,i+j−1
++β2 ∂uα+β,i+j ]z −1 + (α2 + β2 )uα+β,i+j z −2 .
+
+(5.16)
+
+for α = (α1 , α2 ), β = (β1 , β2 ) ∈ Γ and i, j ∈ J. When β2 = −α2 , (5.16) becomes
+Y1+ (uα,i , z)uβ,j = β2 [(α1 + β1 + 2 + ∂)uα+β,i+j + (i + j)uα+β,i+j−1]z −1 .
+
+(5.17)
+
+Set
+R1 =
+
+F[∂]uα,i +
+α=(α1 ,α2 )∈Γ, α2 =0
+
+F[∂][(β1 + 2 + ∂)uβ,j + juβ,j−1].
+
+(5.18)
+
+β=(β1 ,0)∈Γ, j∈J
+
+Then R1 forms a subalgebra of (RA , ∂, Y1+ (·, z)) by (5.17), that is,
+∂R1 ⊂ R1 , Y1+ (u, z)v ∈ R1 [z −1 ]
+
+for u, v ∈ R1 .
+
+(5.19)
+
+Theorem 5.2 (Xu, [X7]). The conformal algebra (R1 , ∂, Y1+ (u, z)) is a simple cubic
+conformal algebra.
+Let A, ∂1 and ∂2 be the same as in the above. Take b ∈ F to be any fixed constant such
+that
+(F, 2b)
+
+Γ = ∅,
+
+Γ ⊂ (F, 0).
+
+(5.20)
+
+We define
+[u, v]2 = ∂2 (u)∂1 (v) − ∂1 (u)∂2 (v) + b(u∂1 (v) − ∂1 (u)v, u ◦2 v = u∂2 (v) + buv
+
+(5.21)
+
+for u, v ∈ A.
+Then (A, [·, ·]2, ◦2 ) forms a Gel’fand-Dorfman bialgebra by Theorem 3.5. On RA , the
+structure map (5.10) is determined by
+Y2+ (uα,i , z)uβ,j = [(α1 (β2 + b) − (α2 + b)β1 ))uα+β,i+j + (i(β2 + b) − j(α2 + b))uα+β,i+j−1
++(β2 + b)∂uα+β,i+j ]z −1 + (α2 + β2 + 2b)uα+β,i+j z −2 .
+
+(5.22)
+
+for α = (α1 , α2 ), β = (β1 , β2 ) ∈ Γ and i, j ∈ J. When α2 = 2b − β2 , (5.22) becomes
+Y2+ (uα,i , z)uβ,j = (β2 + b)[(α1 + β1 + ∂)uα+β,i+j + (i + j)uα+β,i+j−1]z −1 .
+
+(5.23)
+
+Set
+R2 =
+
+F[∂]uα,i +
+α=(α1 ,α2 )∈Γ, α2 =−2b
+
+F[∂][(β1 + ∂)uβ,j + juβ,j−1].
+
+(5.24)
+
+β=(β1 ,−2b)∈Γ, j∈J
+
+Then R2 forms a subalgebra of (RA , ∂, Y2+ (·, z)) by (5.23), that is,
+∂R2 ⊂ R2 , Y2+ (u, z)v ∈ R2 [z −1 ]
+
+for u, v ∈ R2 .
+
+(5.25)
+
+Theorem 5.3 (Xu, [X7]). The conformal algebra (R2 , ∂, Y2+ (u, z)) is a simple cubic
+conformal algebra if b = 0 and is a simple quartic conformal algebra if b = 0.
+
+References
+[A] L. Ausland, Simple transitive groups of affine motions, Amer. J. Math. 99 (1977),
+809-826.
+[BN] A. A. Balinskii and S. P. Novikov, Poisson brackets of hydrodynamic type, Frobenius
+algebras and Lie algebras, Soviet Math. Dokl. Vol. 32 (1985), No. 1, 228-231.
+[B] R. Block, On torsion-free abelian groups and Lie algebras, Proc. Amer. Math. Soc. 9
+(1958), 613-620.
+[F] V. T. Filipov, A class of simple nonassociative algebras, Mat. Zametki 45 (1989), 101105.
+[FG] D. Fried and W. Goldman, Three dimensional affine crystallographic groups, Adv.
+Math. 47 (1983), 1-49.
+[GDi] I. M. Gel’fand and L. A. Dikii, Asymptotic behaviour of the resolvent of SturmLiouville equations and the algebra of the Korteweg-de Vries equations, Russian Math.
+Surveys 30:5 (1975), 77-113.
+[GDo] I. M. Gel’fand and I. Ya. Dorfman, Hamiltonian operators and algebraic structures
+related to them, Funkts. Anal. Prilozhen 13 (1979), 13-30.
+[K] V. G. Kac, Vertex algebras for beginners, University lectures series, Vol 10, AMS. Providence RI, 1996.
+
+[O1] J. Marshall Osborn, Novikov algebras, Nova J. Algebra & Geom. 1 (1992), 1-14.
+[O2] —, Simple Novikov algebras with an idempotent, Commun. Algebra 20 (1992), No. 9,
+2729-2753.
+[O3] —, Infinite dimensional Novikov algebras of characteristic 0, J. Algebra 167 (1994),
+146-167.
+[O4] —, Modules for Novikov algebras, Proceeding of the II International Congress on Algebra, Barnaul, 1991.
+[O5] —, Modules for Novikov algebras of characteristic 0, Commun. Algebra 23 (1995),
+3627-3640.
+[OZ] J. Marshall Osborn and E. Zel’manov, Nonassociative algebras related to Hamiltonian
+operators in the formal calculus of variations, J. Pure. Appl. Algebra 101 (1995),
+335-352.
+[X1] X. Xu, On simple Novikov algebras and their irreducible modules, J. Algebra 185
+(1996), 905-934.
+[X2] —, Novikov-Poisson algebras, J. Algebra 190 (1997), 253-279.
+[X3] —, Variational calculus of supervariables and related algebraic structures, J. Algebra
+223 (2000), 396-437.
+[X4] —, Quadratic conformal superalgebras, J. Algebra 231 (2000), 1-38.
+[X5] —, Equivalence of conformal superalgebras to Hamiltonian superoperators, to appear
+in Algebra Colloquium 8 (2001), 63-92.
+[X6] —, On classification of simple Novikov algebras and their irreducible modules over a
+field with characteristic 0, ArXiv:math.QA/0008072, 2000.
+[X7] —, Algebraic Theory of Hamiltonian Superoperators, a monograph, initial preprint.
+[Z] E. I. Zel’manov, On a class of local translation invariant Lie algebras, Soviet Math. Dokl.
+Vol 35 (1987), No. 1, 216-218.
+Department of Mathematics, The Hong Kong University of Science and Technology, center,
+Clear Water Bay, Kowloon, Hong Kong
+
+

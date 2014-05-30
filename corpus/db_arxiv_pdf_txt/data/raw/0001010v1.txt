@@ -1,0 +1,166 @@
+arXiv:math-ph/0001010v1 6 Jan 2000
+
+Osterwalder–Schrader axioms—Wightman Axioms—The mathematical
+axiom systems for quantum field theory (QFT) grew out of Hilbert’s sixth problem
+[6], that of stating the problems of quantum theory in precise mathematical terms.
+There have been several competing mathematical systems of axioms, and here we
+shall deal with those of A.S. Wightman [5] and of K. Osterwalder and R. Schrader
+[4], stated in historical order. They are centered around group symmetry, relative
+to unitary representations of Lie groups in Hilbert space. We also mention how the
+Osterwalder–Schrader axioms have influenced the theory of unitary representations
+of groups, making connection with [3]. Wightman’s axioms involve: (1) a unitary
+representation U of G := SL (2, C) ⋊ R4 as a cover of the Poincar´e group of relativity, and a vacuum state vector ψ0 fixed by the representation, (2) quantum fields
+ϕ1 (f ) , . . . , ϕn (f ), say, as operator-valued distributions, f running over a specified
+space of test functions, and the operators ϕi (f ) defined on a dense and invariant
+domain D in H (the Hilbert space of quantum states), and ψ0 ∈ D, (3) a transformation law which states that U (g) ϕj (f ) U g −1 is a finite-dimensional representation R of the group G acting on the fields ϕi (f ), i.e., i Rji g −1 ϕi (g [f ]),
+g acting on space-time and g [f ] (x) = f g −1 x , x ∈ R4 . (4) The fields ϕj (f ) are
+assumed to satisfy locality and one of the two canonical commutation relations of
+[A, B]± = AB ± BA, for fermions, resp., bosons; and (5) it is assumed that there
+is scattering with asymptotic completeness, in the sense H = Hin = Hout .
+The Wightman axioms were the basis for many of the spectacular developments
+in QFT in the seventies, see, e.g., [1, 2], and the Osterwalder–Schrader axioms [3, 4]
+came in response to the dictates of path space measures. The constructive approach
+involved some variant of the Feynman measure. But the latter has mathematical divergences that can be resolved with an analytic continuation so that the mathematically well-defined Wiener measure becomes instead the basis for the analysis. Two
+analytical continuations were suggested
+√ in this connection: in the mass-parameter,
+and in the time-parameter, i.e., t → −1t. With the latter, the Newtonian quadratic form on space-time turns into the form of relativity, x21 + x22 + x23 − t2 . We get
+a stochastic process Xt : symmetric, i.e., Xt ∼ X−t ; stationary, i.e., Xt+s ∼ Xs ;
+and Osterwalder–Schrader positive, i.e., Ω f1 ◦ Xt1 f2 ◦ Xt2 · · · fn ◦ Xtn dP ≥ 0,
+f1 , . . . , fn test functions, −∞ < t1 ≤ t2 ≤ · · · ≤ tn < ∞, and P denoting a path
+space measure.
+Specifically: If −t/2 < t1 ≤ t2 ≤ · · · ≤ tn < t/2, then
+(1)
+
+ˆ
+
+ˆ
+
+Ω A1 e−(t2 −t1 )H A2 e−(t3 −t2 )H A3 · · · An Ω
+
+n
+
+= lim
+
+t→∞
+
+k=1
+
+Ak (q (tk )) dµt (q ( · )) .
+
+By Minlos’ theorem, there is a measure µ on D′ such that
+(2)
+
+lim
+
+t→∞
+
+eiq(f ) dµt (q) =
+
+eiq(f ) dµ (q) =: S (f )
+
+for all f ∈ D. Since µ is a positive measure, we have
+k
+
+l
+
+c¯k cl S fk − f¯l ≥ 0
+
+for all c1 , . . . , cn ∈ C, and all f1 , . . . , fn ∈ D. When combining (1) and (2), we
+note that this limit-measure µ then accounts for the time-ordered n-point functions
+1
+
+2
+
+which occur on the left-hand side in formula (1). This observation is further used
+in the analysis of the stochastic process Xt , Xt (q) = q (t). But, more importantly,
+it can be checked from the construction that we also have the following reflection
+positivity: Let (θf ) (s) := f (−s), f ∈ D, s ∈ R, and set
+D+ = {f ∈ D | f real valued, f (s) = 0 for s < 0} .
+Then
+k
+
+l
+
+c¯k cl S (θ (fk ) − fl ) ≥ 0
+
+for all c1 , . . . , cn ∈ C, and all f1 , . . . , fn ∈ D+ , which is one version of Osterwalder–
+Schrader positivity.
+Since the Killing form of Lie theory may serve as a finite-dimensional metric, the
+Osterwalder–Schrader idea [4] turned out also to have implications for the theory
+of unitary representations of Lie groups. In [3], the authors associate to Riemannian symmetric spaces G/K of tube domain type, a duality between complementary
+series representations of G on one side, and highest weight representations of a
+c
+c-dual Gc on the other side. The duality
+√ G ↔ G involves analytic continuation, in a sense which generalizes t → −1t, and the reflection positivity of the
+Osterwalder–Schrader axiom system. What results is a new Hilbert space where
+the new representation of Gc is “physical” in the sense that there is positive energy
+and causality, the latter concept being defined from certain cones in the Lie algebra
+of G.
+A unitary representation π acting on a Hilbert space H(π) is said to be reflection
+symmetric if there is a unitary operator J : H(π) → H(π) such that
+R1) J 2 = id.
+
+g ∈ G,
+
+R2) Jπ(g) = π(τ (g))J ,
+2
+
+where τ ∈ Aut (G), τ = id, and H := {g ∈ G | τ (g) = g}.
+A closed convex cone C ⊂ q is hyperbolic if C o = ∅ and if ad X is semisimple
+with real eigenvalues for every X ∈ C o .
+Assume the following for (G, π, τ, J):
+PR1) π is reflection symmetric with reflection J.
+PR2) There is an H-invariant hyperbolic cone C ⊂ q such that S(C) = H exp C
+is a closed semigroup and S(C)o = H exp C o is diffeomorphic to H × C o .
+
+PR3) There is a subspace 0 = K0 ⊂ H(π) invariant under S(C) satisfying the
+positivity condition
+v v
+
+J
+
+:= v J(v) ≥ 0,
+
+∀v ∈ K0 .
+
+Assume that (π, C, H, J) satisfies (PR1)–(PR3). Then the following hold:
+1) S(C) acts via s → π
+˜ (s) by contractions on K (= the Hilbert space obtained
+by completion of K0 in the norm from (PR3)).
+2) Let Gc be the simply connected Lie group with Lie algebra gc . Then there
+exists a unitary representation π
+˜ c of Gc such that d˜
+π c (X) = d˜
+π (X) for
+c
+X ∈ h and i d˜
+π (Y ) = d˜
+π (iY ) for Y ∈ C, where h := {X ∈ g | τ (X) = X}.
+3) The representation π
+˜ c is irreducible if and only if π
+˜ is irreducible.
+
+3
+
+References
+[1] Glimm, J., and Jaffe, A.: Quantum field theory and statistical mechanics (a collection of
+papers), Birkh¨
+auser, Boston, 1985.
+[2] Glimm, J., and Jaffe, A.: Quantum physics (2nd ed.), Springer-Verlag, New York, 1987.
+´
+[3] Jorgensen, P.E.T., and Olafsson,
+G.: ‘Unitary representations of Lie groups with reflection
+symmetry’, J. Funct. Anal. 158 (1998), 26–88.
+[4] Osterwalder, K., and Schrader, R.: ‘Axioms for Euclidean Green’s functions’, Comm.
+Math. Phys. 31 (1973), 83–112; 42 (1975), 281–305.
+[5] Streater, R.F., and Wightman A.S.: PCT, spin and statistics, and all that, W.A. Benjamin, Inc., New York, 1964.
+[6] Wightman, A.S.: ‘Hilbert’s sixth problem: Mathematical treatment of the axioms of physics’,
+in F.E. Browder (ed.): Vol. 28 (part 1) of Proc. Symp. Pure Math., Amer. Math. Soc., 1976,
+pp. 241–268.
+
+Palle E.T. Jorgensen: jorgen@math.uiowa.edu
+´
+olafsson@math.lsu.edu
+Gestur Olafsson:
+
+

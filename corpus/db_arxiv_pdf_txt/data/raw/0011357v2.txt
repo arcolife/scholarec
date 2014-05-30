@@ -1,0 +1,3143 @@
+Phenomenology of Higgs bosons in the Zee-Model
+Shinya Kanemura1,2∗ , Takashi Kasai3,4† , Guey-Lin Lin5‡ ,
+Yasuhiro Okada3,6§ , Jie-Jun Tseng5∗∗ , and C.-P. Yuan2,7††
+1
+
+arXiv:hep-ph/0011357v2 18 May 2001
+
+2
+
+Institut f¨
+ur Theoretische Physik, Universit¨
+at Karlsruhe, D-76128 Karlsruhe, Germany
+
+Physics and Astronomy Department, Michigan State University, East Lansing, MI 48824-1116,
+USA
+3
+
+4
+
+Theory Group, KEK, Tsukuba, Ibaraki, 305-0801 Japan
+
+Department of Accelerator Science, The Graduate University for Advanced Studies, Tsukuba,
+Ibaraki, 305-0801 Japan
+5
+
+6
+
+National Chiao Tung University, Hsinchu 300, Taiwan
+
+Department of Particle and Nuclear Physics, The Graduate University for Advanced Studies,
+Tsukuba, Ibaraki, 305-0801 Japan
+7
+
+Theory Division, CERN, CH-1211, Geneva, Switzerland
+
+To appear in Physical Review D
+
+∗ Email:
+
+kanemu@particle.physik.uni-karlsruhe.de
+
+† Email:
+
+kasai@post.kek.jp
+
+‡ Email:
+
+glin@cc.nctu.edu.tw
+
+§ Email:
+
+yasuhiro.okada@kek.jp
+
+∗∗ Email:
+
+u8627512@cc.nctu.edu.tw
+
+†† Email:
+
+yuan@pa.msu.edu
+
+Abstract
+To generate small neutrino masses radiatively, the Zee-model introduces two
+Higgs doublets and one weak-singlet charged Higgs boson to its Higgs sector.
+From analyzing the renormalization group equations, we determine the possible range of the lightest CP-even Higgs boson (h) mass and the Higgs boson
+self-couplings as a function of the cut-off scale beyond which either some of
+the coupling constants are strong enough to invalidate the perturbative analysis or the stability of the electroweak vacuum is no longer guaranteed. Using
+the results obtained from the above analysis, we find that the singlet charged
+Higgs boson can significantly modify the partial decay width of h → γγ via
+radiative corrections, and its collider phenomenology can also be drastically
+different from that of the charged Higgs bosons in the usual two-Higgs-doublet
+models.
+PACS number(s): 13.15. +g, 14.80.Cp.
+hep-ph/0011357, KA-TP-18-2000, KEK-TH-706, NCTU-HEP-0004, CERNTH/2000-228
+
+Typeset using REVTEX
+
+2
+
+I. INTRODUCTION
+
+From the atmospheric and solar neutrino data, there is increasing evidence for neutrino
+oscillations [1]. If this is a correct interpretation, the Standard Model (SM) has to be
+extended to incorporate the small masses of the neutrinos suggested by data. There have
+been several ideas proposed in literature to generate small neutrino masses. The Zee-model
+is one of such attempts [2–6]. In this model, all flavor neutrinos are massless at the tree
+level, and their small masses are induced radiatively through one-loop diagrams. For such a
+mass-generation mechanism to work, it is necessary to extend the Higgs sector of the SM to
+contain at least two weak-doublet fields and one weak-singlet charged scalar field. Although
+some studies have been done to examine the interaction of the leptons and the Higgs bosons
+in the Zee-model [7], the scalar (Higgs) sector of the model remains unexplored in detail.
+In this paper we study the Higgs sector of the Zee-model to clarify its impact on the Higgs
+search experiments, either at the CERN LEP-II, the Run-II of the Fermilab Tevatron, the
+CERN Large Hadron Collider (LHC), or future linear colliders (LC’s).
+Experimental search for the Higgs boson has been continued at the CERN LEP and the
+Fermilab Tevatron experiments. In the LEP-II experiments, the Higgs boson with the mass
+less than about 110 GeV has been excluded if its production cross section and decay modes
+are similar to those of the SM Higgs boson [8]. Run-II of the Tevatron can be sensitive to
+a SM-like Higgs boson with the mass up to about 180 GeV, provided that the integrated
+luminosity of the collider is large enough (about 30 fb−1 ) [9]. Furthermore, the primary goal
+of the CERN LHC experiments is to guarantee the discovery of a SM-like Higgs boson for its
+mass as large as about 1 TeV [10], which is the upper bound of the SM Higgs boson mass.
+(For a Higgs boson mass beyond this value, the SM is no longer a consistent low energy
+theory.)
+When the Higgs boson is discovered, its mass and various decay properties will be measured to test the SM and to distinguish models of new physics at high energy scales. For
+example, the allowed mass range of the lightest CP-even Higgs boson (h) can be determined
+3
+
+by demanding the considered theory to be a valid effective theory all the way up to some
+cut-off energy scale (Λ). For Λ = 1019 GeV (i.e., the Planck scale), the lower and upper
+bounds of the SM Higgs boson masses are 137 GeV and 175 GeV, respectively [11]. The
+Higgs mass bounds for the two-Higgs-doublet-model (THDM) were also investigated [12,13]
+with and without including the soft-breaking term with respect to the discrete symmetry
+that protects the natural flavor conservation. It was found in Ref. [13] that the lower bound
+of the lightest CP-even Higgs boson is about 100 GeV in the decoupling regime where only
+one neutral Higgs boson is light as compared to the other physical states of Higgs bosons.
+The Higgs sector of the Zee-model is similar to that of the THDM except for the existence
+of an additional weak-singlet charged Higgs field, so that the physical scalar bosons include
+two CP-even, one CP-odd and two pairs of charged Higgs bosons. In this paper, we shall
+first determine the upper and lower bounds for the lightest CP-even Higgs boson mass (mh )
+as a function of the cut-off scale Λ of the Zee-model, using renormalization group equations
+(RGE’s).1 We show that the upper and lower mass bounds for h are almost the same as those
+in the THDM. We also study the possible range of the Higgs-boson self-coupling constants
+at the electroweak scale as a function of Λ. By using these results, we examine effects of the
+additional loop contribution of the singlet charged Higgs boson to the partial decay width of
+h → γγ. We show that, by taking Λ = 1019 GeV, the deviation of the decay width from the
+SM prediction can be about −20% or nearly +10% for mh between 125 GeV and 140 GeV
+when the mass of the isospin singlet charged Higgs boson is taken to be around 100 GeV.
+The magnitude of the deviation becomes larger for lower cutoff scales and smaller masses of
+the singlet charged Higgs boson. If we choose Λ = 104 GeV and the singlet charged Higgs
+boson mass to be 100 GeV, the positive deviation can be greater than +30% (+40%) for
+mh = 125 GeV (140 GeV). Such a deviation from the SM prediction could be tested at the
+
+1 For
+
+the model with see-saw mechanism for neutrino mass generation the Higgs mass bound has
+
+been studied as a function of cut-off scale in Ref. [14].
+
+4
+
+LHC, the e+ e− LC and the γγ option of LC [15–17]. We also discuss phenomenology of the
+singlet charged Higgs boson at present and future collider experiments, which is found to be
+completely different from that of the ordinary THDM-like charged Higgs bosons. To detect
+such a charged Higgs boson at LEP-II experiments, experimentalists have to search for their
+data sample with e± or µ± plus missing energy, in contrast to the usual detection channels:
+either τ ν or cs decay modes.
+This paper is organized as follows. In Sec. II, we introduce the Higgs sector of the Zeemodel and review the neutrino masses and mixings in this model which are consistent with
+the atmospheric and solar neutrino observations. Numerical results on the possible range
+of the mass and coupling constants of the Higgs bosons are given in Sec. III. In Sec IV, we
+discuss the one-loop effect of the extra-Higgs bosons in the Zee-model to the partial decay
+width of h → γγ and its impacts on the neutral Higgs-boson search at high-energy colliders.
+The phenomenology of the charged Higgs boson that comes from the additional singlet field
+is discussed in Sec. V. In Sec. VI, we present additional discussions and conclusion. Relevant
+RGE’s for the Zee-model are given in the Appendix.
+
+II. ZEE-MODEL
+
+To generate small neutrino mass radiatively, the Zee-model contains a SU(2)L singlet
+charged scalar field ω − , in addition to two SU(2)L doublet fields φ1 , and φ2 . The Zee-model
+Lagrangian is written as:
+L = Lkin + Lllω + LY ukawa − V (φ1 , φ2 , ω − ) ,
+
+(1)
+
+where
+2
+
+Lkin = |Dµ φ1 |2 + |Dµ φ2 |2 + Dµ ω − + iqL γ µ Dµ qL + iuR γ µ Dµ uR + idR γ µ Dµ dR
++ilL γ µ Dµ lL + ieR γ µ Dµ eR +
+
+1 a2
+F ,
+4 µν
+a=SU (3),SU (2),U (1)
+C
+
+Lllω = fij liL (iτ2 )(ljL )C ω − + fij liL (iτ2 )ljL ω + ,
+5
+
+(2)
+
+(3)
+
+where i, j (= 1, 2, 3) are the generation indices, and
+V (φ1 , φ2 , ω − ) = m21 |φ1 |2 + m22 |φ2 |2 + m20 ω −
+
+2
+
+T
+
+−m23 (φ†1 φ2 + φ†2 φ1 ) − µφ1 iτ2 φ2 ω − + µφT2 iτ2 φ1 ω +
+1
+1
++ λ1 |φ1 |4 + λ2 |φ2 |4 + λ3 |φ1 |2 |φ2 |2
+2
+2
+2
+2
+2
+λ5
++λ4 φ†1 φ2 +
+φ†1 φ2 + φ†2 φ1
+2
+2
+2
+1
+2
++σ1 ω − |φ1 | + σ2 ω − |φ2 |2 + σ3 ω −
+4
+
+4
+
+.
+
+(4)
+
+In the above equations, qL is the left-handed quark doublet with an implicit generation index
+while uR and dR denote the right-handed singlet quarks. Similarly, lL and eR denote the lefthanded and right-handed leptons in three generations. The charge conjugation of a fermion
+T
+
+−γ µT )
+field is defined as ψ C ≡ Cψ , where C is the charge conjugation matrix (C −1 γ µC = 
+0
+ φm 
+ and
+with the super index T indicating the transpose of a matrix. Also, φm = 
+
+
+−
+φm
+φm ≡ (iτ2 ) φ∗m with m = 1, 2. Without loss of generality, we have taken the anti-symmetric
+
+matrix fij and the coupling µ to be real in the equations (3) and (4). In order to suppress
+flavor changing neutral current (FCNC) at the tree level, a discrete symmetry, with φ1 → φ1 ,
+φ2 → −φ2 , ω + → +ω + , is imposed to the Higgs sector of the Lagrangian, which is only
+broken softly by the m23 term and the µ term. Under the discrete symmetry there are two
+possible Yukawa-interactions; that is, for type-I
+†
+LY ukawa−I = dRi yD VCKM
+
+†
+
+†
+
+(5)
+
+†
+
+†
+
+(6)
+
+ij
+
+φ2 qLj + uRi (yU )ii φ†2 qLi + eRi (yE )ii φ2 lLi + h.c. ,
+
+ij
+
+φ1 qLj + uRi (yU )ii φ†2 qLi + eRi (yE )ii φ1 lLi + h.c. ,
+
+and for type-II,
+†
+LY ukawa−II = dRi yD VCKM
+
+where yU ,yD ,yE are diagonal Yukawa matrices and VCKM is the Cabibbo-Kobayashi-Maskawa
+(CKM) matrix. Later, we shall only keep the top Yukawa coupling constants yt = (yU )33
+
+6
+
+in our numerical evaluation of the RGE’s2 . In that case, there is no difference between the
+Yukawa couplings of the type-I and the type-II models. Finally, for simplicity, we assume
+that all λi and m2i are real parameters.
+Let us now discuss the Higgs sector. The SU(2)L × U(1)Y symmetry is broken to U(1)em
+by φ1 and φ2 , the vacuum expectation values of φ1 and φ2 . (They are assumed to be
+real so that there is no spontaneous CP violation.) The number of physical Higgs bosons
+are two CP-even Higgs bosons (H,h), one CP-odd Higgs boson (A) and two pairs of charged
+Higgs boson (S1± , S2± ). We take a convention of mH > mh and mS1 > mS2 . In the basis
+where two Higgs doublets are rotated by the angle β, with tan β =
+
+φ02
+φ01
+
+, the mass matrices
+
+for the physical states of Higgs bosons are given by
+
+
+4
+4
+ λ1 cos β +λ2 sin β
+
+2 
+MN
+=
+
+2
+
+λ2 sin β −λ1
+
+cos2 β
+
++ λ2
+
+sin2 2β v 2
+
++λ cos 2β
+
+λ2 sin2 β −λ1 cos2 β +λ cos 2β
+
+sin 2β 2
+2 v
+
+M2
+
++ (λ1 + λ2 − 2λ)
+
+for CP-even Higgs bosons,
+MA2 = M 2 − λ5 v 2 ,
+
+
+
+sin 2β 2
+2 v 
+
+
+,
+
+sin2 2β 2
+4 v
+
+(7)
+
+(8)
+
+for CP-odd Higgs boson, and
+
+
+
+
+MS2 = 
+
+
+2
+
+M −
+
+µv
+−√
+2
+
+λ4 +λ5 2
+v
+2
+
+µv
+−√
+2
+
+σ1
+2
+
+m20 +
+
+cos2 β +
+
+σ2
+2
+
+sin2 β v 2
+
+
+
+
+
+
+,
+
+(9)
+
+for charged Higgs bosons. Here, λ ≡ λ3 + λ4 + λ5 and M 2 ≡ m23 / sin β cos β. The vacuum
+√
+expectation value v (∼ 246 GeV) is equal to 2 φ01 2 + φ02 2 . Mass eigenstates for the
+CP-even and the charged Higgs bosons are obtained by diagonalizing the mass matrices (7)
+and (9), respectively. The original Higgs boson fields, φ1 , φ2 , ω − , can be expressed in terms
+of the physical states and the Nambu-Goldstone modes (G0 and G± ) as
+
+2 Our
+
+analyses will thus be valid in the cases where the effect of the bottom Yukawa coupling is
+
+sufficiently small; i.e. in the region of not too large tan β.
+
+7
+
+1
+φ01 = √ v cos β + H cos α − h sin α + i(G0 cos β − A sin β) ,
+2
+−
+−
+φ1 = G cos β − (S1− cos χ − S2− sin χ) sin β,
+
+(10)
+(11)
+
+1
+φ02 = √ v sin β + H sin α + h cos α + i(G0 sin β + A cos β) ,
+2
+−
+−
+φ2 = G sin β + (S1− cos χ − S2− sin χ) cos β,
+
+(12)
+(13)
+
+ω − = S1− sin χ + S2− cos χ ,
+
+(14)
+
+where the angle α and χ are defined from the matrices which diagonalize the 2 × 2 matrices
+MN2 and MS2 , respectively. Namely, we have
+
+
+
+
+
+
+
+cos(α − β) sin(α − β) 
+
+− sin(α − β) cos(α − β)
+
+
+
+
+
+
+
+
+ M2 
+ N
+
+
+
+cos(α − β) − sin(α − β) 
+sin(α − β) cos(α − β)
+
+
+
+
+cos χ sin χ 
+
+− sin χ cos χ
+
+
+ M2 
+ S
+
+
+
+m2H
+
+
+
+mS2 1
+
+
+
+
+=
+
+
+
+
+
+=
+
+
+
+
+cos χ − sin χ 
+sin χ cos χ
+
+
+
+
+
+0
+
+0
+
+
+
+0 
+
+mh2
+
+
+
+
+,
+
+
+
+0 
+
+m2S2
+
+
+
+
+(15)
+
+,
+
+(16)
+
+where m2H > m2h and m2S1 > m2S2 . The mixing angles α and χ then satisfy
+tan 2α =
+tan 2χ =
+
+M 2 − (λ3 + λ4 + λ5 ) v 2
+tan 2β,
+2
+M 2 − (λ1 cos2 β − λ2 sin2 β) cosv 2β
+√
+− 2µv
+
+M 2 − m20 − λ4 + λ5 + σ1 cos2 β + σ2 sin2 β
+
+which show that α and χ approaches to β −
+
+π
+2
+
+(17)
+
+v2
+2
+
+,
+
+(18)
+
+and zero, respectively3 , when M 2 is much
+
+greater than v 2 , µ2 and m20 ; i.e., in the decoupling regime. In this limit, the massive Higgs
+bosons from the extra weak-doublet are very heavy due to the large M so that they are
+decoupled from the low energy observable.
+Although neutrinos in this model are massless at the tree level, the loop diagrams involving charged Higgs bosons, as shown in Fig. 1, can generate the Majorana mass terms
+for all three-flavors of neutrinos. It was shown [2] that at the one-loop order, the neutrino
+mass matrix, defined in the basis where the charged lepton Yukawa-coupling constants are
+
+3 Recall
+
+that we assumed mH > mh .
+
+8
+
+φ0i
+
+ω−
+
+φ−
+j
+
+µ
+ye
+
+νµL
+
+fµe
+
+eR
+
+eL
+
+ye
+
+νeL
+
+0
+
+φj
+FIG. 1. A representative diagram that generates the neutrino mass. For type-I, i = 1, j = 2,
+
+and for type-II, i = 2, j = 1.
+
+diagonal in the lepton flavor space, is real and symmetric with vanishing diagonal elements.
+More explicitly, we have
+
+
+Mν =
+
+ 0
+
+
+m
+ 12
+
+
+
+
+
+m12 m13 
+0
+
+m13 m23
+
+with
+
+mij = fij (m2ej − m2ei )µ cot β
+
+m23
+0
+
+
+
+
+
+
+
+
+,
+
+m2S1
+1
+1
+ln
+,
+16π 2 m2S1 − m2S2 m2S2
+
+(19)
+
+(20)
+
+where mei (i = 1, 2, 3) is the charged lepton mass for type-I. For type-II, cot β should be
+replaced by tan β. Note that Eq. (20) is valid for mSi ≫ mej .
+The phenomenological analysis of the above mass matrix was given in Ref. [4,5]. It was
+concluded that, in the Zee-model, the bi-maximal mixing solution is the only possibility to
+reconcile the atmospheric and the solar neutrino data. Here we give a brief summary of their
+results, for completeness. Let us denote the three eigenvalues for the neutrino mass matrix,
+cf. Eq. (19), as mν1 , mν2 and mν3 , which satisfy mν1 + mν2 + mν3 = 0. The possible pattern
+of the neutrino mass spectrum which is allowed in the Zee-model is |mν1 | ≃ |mν2 | ≫ |mν3 |,
+with mν21 −m2ν3 ≃ m2ν2 −m2ν3 = ∆m2atm , and m2ν1 − m2ν2 = ∆m2solar , where ∆m2atm = O(10−3)
+eV2 from the atmospheric neutrino data, and ∆m2solar = O(10−5) eV2 (MSW large angle
+solution) or O(10−10) eV2 (vacuum oscillation solution) from the solar neutrino data4 . Thus,
+
+4 Due
+
+to the structure of the mass matrix, cf. Eq. (19), only the hierarchy pattern |mν1 | ≃ |mν2 | ≫
+
+9
+
+2
+
+we have |mν1 | ≃ |mν2 | ≃
+
+∆m
+. The approximate
+∆m2atm (mν1 ≃ −mν2 ) and |mν3 | ≃ √ solar
+2
+2
+
+∆matm
+
+form of the neutrino mass matrix is given by
+
+
+Mν =
+
+
+
+
+
+
+
+
+
+
+0
+±
+∓
+
+|mν1 mν2 |
+2
+
+|mν1 mν2 |
+2
+
+±
+
+|mν1 mν2 |
+2
+
+
+
+|mν1 mν2 | 
+∓
+2
+
+
+0
+
+−mν1 − mν2
+
+−mν1 − mν2
+
+0
+
+
+
+
+
+
+
+
+,
+
+(21)
+
+where the upper (lower) sign corresponds to mν1 < 0 (> 0) case, and the corresponding
+Maki-Nakagawa-Sakata (MNS) matrix [18] which diagonalizes the neutrino mass matrix is
+
+
+
+
+|mν2 |
+|mν1 |
+
+0 
+
+
+|mν1 |+|mν2 |
+|mν1 |+|mν2 |
+
+
+
+
+m
+|mν1 |
+|
+ν
+|
+ √1
+
+2
+√1
+√1  ,
+U =− 2
+2
+2 
+
+mν1 |+|mν2 |
+mν1 |+|mν2 |
+|
+|
+
+
+
+
+mν1 |
+mν2 |
+|
+|
+ 1
+
+1
+1
+√
+√
+√
+−
+2
+2
+|mν1 |+|mν2 |
+|mν1 |+|mν2 | 2
+In the above equations, we took the limiting case where U13 = 0 and U32 = U23 =
+
+(22)
+
+√1 5 .
+2
+
+From Eqs. (20) and (21), we obtain
+m2
+f12
+≃ 2τ ≃ 3 × 102 ,
+f13
+mµ
+
+
+√
+ 2
+2∆m2atm  10 (for the MSW large angle solution)
+f13
+≃
+≃
+.
+
+f23
+∆m2solar
+
+ 107 (for the vacuum oscillation solution)
+
+(23)
+
+(24)
+
+Therefore, the magnitudes of the three coupling constants should satisfy the relation |f12 | ≫
+|f13 | ≫ |f23 |. This hierarchy among the couplings fij is crucial for our later discussion on
+the phenomenology of the singlet charged Higgs bosons.
+For a given value of the parameters mS1 , mS2 , tan β and µ, the coupling constants fij can
+be calculated from Eq. (20). For example, for mS1 = 500 GeV, mS2 = 100 GeV, tan β = 1,
+µ = 100 GeV and m12 = 3 × 10−2 eV, we obtain |f12 | ∼ 3 × 10−4 . As in this example, when
+|mν3 |, rather than |mν1 | ≃ |mν2 | ≪ |mν3 |, is realized in the Zee-model [4,5]
+5 This
+
+limit corresponds to θ2 =
+
+π
+4
+
+and θ3 = 0 in the notation of Ref. [18].
+
+10
+
+S1− is rather heavy and the lighter charged Higgs boson S2− is almost a weak singlet, i.e. the
+mixing angle χ approaches to zero, it is unlikely that there are observable effects to the low
+energy data [7]; e.g., the muon life-time, the universality of tau decay into electron or muon,
+the rare decay of µ → eγ, the universality of W -boson decay into electron, muon or tau,
+and the decay width of Z boson. When |fij | are small, we do not expect a large rate in the
+lepton flavor violation decay of a light neutral Higgs boson, such as h → µ± e∓ (the largest
+one), h → e± τ ∓ , or h → µ± τ ∓ (the smallest one). On the contrary, as to be discussed in
+Section IV, the decay width of h → γγ can significantly deviate from the SM value.
+Finally, the phenomenological constraints on f12 were derived in Ref. [6]. From the
+consistency of the muon decay rate and electroweak precision test it was found that
+2
+f12
+
+M
+
+2
+
+< 7 × 10−4 GF ,
+
+(25)
+
+where GF is the Fermi constant, and
+sin2 χ cos2 χ
++
+.
+2 =
+m2S1
+m2S2
+M
+1
+
+(26)
+
+This means that the fij cannot be O(1) unless the charged Higgs boson masses are at the
+order of 10 TeV.
+
+III. HIGGS BOSON MASS AND COUPLINGS THROUGH RGE’S
+
+In this section, we determine the bounds on the mass of the lightest CP-even Higgs boson
+as a function of the cut-off scale of the Zee-model by analyzing the set of renormalization
+group equations (RGE’s). We also study the allowed ranges of the coupling constants,
+especially σ1 and σ2 in Eq. (4). In Sec. IV, they will be used to evaluate how much the
+partial decay width of h → γγ can deviate from its SM value due to the one-loop contribution
+from the singlet charged Higgs boson.
+The mass bounds are determined in the following manner. For each set of parameters
+defined at the electroweak scale, the running coupling constants are calculated numerically
+11
+
+through RGE’s at the one-loop level. We require that all the dimensionless coupling constants do not blow up below a given cut-off scale Λ, and the coupling constants satisfy the
+vacuum stability condition. We vary the input parameters at the electroweak scale and
+determine the possible range of the lightest CP-even Higgs boson mass as a function of Λ.
+In a similar manner, we also study the allowed ranges of various Higgs boson self-coupling
+constants at the electroweak scale as well as a function of the lightest CP-even Higgs boson
+mass.
+We derived the one-loop RGE’s for the Zee-model, and listed them in the Appendix for
+reference. For simplicity, in the RGE’s, we have neglected all the Yukawa coupling constants
+(yu , yd , ye ) but the top Yukawa coupling yt .6 Although we kept the new coupling constants
+fij in the RGE’s listed in the Appendix, we have neglected fij in the numerical calculation.
+This is because the magnitudes of these coupling constants are numerically too small to
+affect the final results unless the singlet-charged scalar-boson mass is larger than a few TeV
+[ cf. Eq. (25) ]. The dimensionless coupling constants relevant to our numerical analysis are
+the three gauge-coupling constants g1 , g2 , g3 , the top Yukawa-coupling constant yt , and eight
+scalar self-coupling constants, λi (i = 1 − 5) and σi (i = 1 − 3). There are five dimensionful
+parameters in the Higgs potential, namely m21 , m22 , m23 , m20 and µ. Instead of m21 , m22 , m23 ,
+we take v, tan β, and M 2 ≡ m23 / sin β cos β, as independent parameters, where v (∼ 246
+GeV) characterizes the weak scale and M the soft-breaking scale of the discrete symmetry.
+In the actual numerical calculation we first fix tan β and M. For a given mass (mh ) of
+the lightest CP-even Higgs boson, we solve one of the λi , which is chosen to be λ3 here,
+in terms of other λi . We then numerically evaluate all dimensionless coupling constants
+according to the RGE’s. From mh to M we use the SM RGE’s, which are matched to the
+
+6 In
+
+the model with the type-II Yukawa interaction, the bottom-quark Yukawa interaction can
+
+become important for a large tan β.
+
+12
+
+Zee-model RGE’s at the soft-breaking scale M.
+
+7
+
+We requires the following two conditions to be satisfied for each scale Q up to a given
+cut-off scale Λ.
+1. Applicability of the perturbation theory implies
+λi (Q) < 8π,
+
+σi (Q) < 8π,
+
+yt2 (Q) < 4π .
+
+(27)
+
+2. The vacuum stability conditions must be satisfied. The requirement that quartic
+coupling terms of the scalar potential do not have a negative coefficient in any direction
+leads to the following conditions at each renormalization scale Q:
+(a)
+λ1 (Q) > 0,
+
+λ2 (Q) > 0,
+
+σ3 (Q) > 0 .
+
+(28)
+
+(b)
+σ1 (Q) +
+
+λ1 (Q) σ3 (Q)
+> 0,
+2
+
+(29)
+
+σ2 (Q) +
+
+λ2 (Q) σ3 (Q)
+> 0,
+2
+
+(30)
+
+λ(Q) +
+
+λ1 (Q) λ2 (Q) > 0 ,
+
+(31)
+
+where λ(Q) = λ3 (Q) + min (0, λ4 (Q) + λ5 (Q), λ4 (Q) − λ5 (Q)).
+7 The
+
+parameter m0 and µ are only relevant to the charged scalar mass matrix. In principle, our
+
+numerical results also depend on these parameters through the renormalization of various coupling
+constants from the scale of mh to the charged scalar mass. Since these effects are expected to be
+small, we calculate the RGE’s as if all the scalar-bosons except h decouple at the scale M .
+
+13
+
+(c) If σ1 (Q) < 0 and σ2 (Q) < 0, then
+λ(Q) +
+
+2
+σ3 (Q)
+
+λ1 (Q) σ3 (Q)
+− σ12 (Q)
+2
+
+λ2 (Q) σ3 (Q)
+− σ22 (Q) − σ1 (Q) σ2 (Q)
+2
+
+> 0.
+
+(32)
+
+λ1 (Q) σ3 (Q)
+− σ12 (Q) − σ1 (Q) λ(Q)
+2
+
+> 0.
+
+(33)
+
+λ2 (Q) σ3 (Q)
+− σ22 (Q) − σ2 (Q) λ(Q)
+2
+
+> 0.
+
+(34)
+
+If σ1 (Q) < 0 and λ(Q) < 0, then
+σ2 (Q) +
+
+1
+λ1 (Q)
+
+2
+
+λ1 (Q) λ2 (Q) − λ (Q)
+
+If σ2 (Q) < 0 and λ(Q) < 0, then
+σ1 (Q) +
+
+1
+λ2 (Q)
+
+2
+
+λ1 (Q) λ2 (Q) − λ (Q)
+
+[ When σ1 (Q), σ2 (Q) and λ(Q) are all negative, the above three conditions are
+equivalent. ]
+In addition to the above conditions, we also demand local stability of the potential at the
+electroweak scale, namely, we calculate the mass spectrum of all scalar fields at the extremum
+of the potential and demand that all eigenvalues of the squared scalar mass are positive. We
+scan the remaining seven-dimensional space of λi and σi and examine whether a given mass
+of the lightest CP-even Higgs boson is allowed under the above conditions. In this way we
+obtain the allowed range of mh as a function of tan β and M, for each value of the cut-off
+scale Λ.
+First, we discuss our result in the decoupling case, in which the soft-breaking scale M
+is much larger than the electroweak scale ∼ v, and the masses of all the Higgs bosons but
+h (and S2 ) are at the order of M 8 . In Fig. 2, the allowed range of mh is shown as a
+function of tan β for M = 1000 GeV. (We take the pole mass of top quark mt = 175 GeV,
+
+8 In
+
+the decoupling regime (M → ∞, which leads to α → β −
+
+π
+2
+
+and χ → 0), the masses of h and
+
+S2 are dominated by the (11) component of the mass matrix in Eq. (7) and the (22) component of
+that in Eq. (9), respectively. The mass of h is determined by the self-coupling constants λi , while
+that of S2 depends not only on the self-couplings constants σi but also on the free mass parameter
+m0 . As noticed in the footnote 7, from mh to M , the SM RGE are used in our analysis, even if
+
+14
+
+mh (GeV)
+
+500
+
+M = 1000 GeV
+
+104
+
+400
+
+300
+
+107
+1010
+13
+1016 1910
+Λ=10 (GeV)
+
+200
+
+100
+
+0
+
+104
+
+1
+
+2
+
+4
+
+8
+
+16
+
+tanβ
+FIG. 2. The allowed mass range of the lightest CP-even Higgs boson for M = 1000 GeV. Λ is
+the cut-off scale.
+
+αs (mZ ) = 0.118 for numerical calculation.) The allowed ranges are shown as contours for
+six different values of Λ, i.e. Λ = 1019 , 1016 ,1013 ,1010 ,107 and 104 GeV. For most values
+of tan β, except for small tan β region, the upper bound of mh is about 175 GeV and the
+lower bound is between 110 GeV and 120 GeV for the cut-off scale Λ to be near the Planck
+scale. The numerical values in this figure are very close to those in the corresponding figure
+for the THDM discussed in Ref. [13]. Compared to the corresponding lower mass bound in
+the SM, which is 145 GeV when using the one-loop RGE’s, the lower mass bound in this
+model is reduced by about 30 GeV to 40 GeV. The reason is similar to the THDM case: the
+lightest CP-even Higgs boson mass is essentially determined by the value of λ2 for tan β to
+
+the mass of S2 is smaller than M . The effect of S2 on the mass bound of h is expected to be small,
+because at the one-loop level the primary effect is through the running of g1 , whose contribution
+to the right-handed side of the RGE for the Higgs-self coupling constant is small.
+
+15
+
+mh (GeV)
+
+500
+
+M = 100 GeV
+
+400
+
+300
+
+104
+
+200
+
+107
+101013
+
+10 16
+10
+
+Λ=10 (GeV)
+19
+
+100
+
+0
+
+1
+
+2
+
+104
+4
+
+8
+
+16
+
+tanβ
+FIG. 3. The allowed mass range of the lightest CP-even Higgs boson for M = 100 GeV.
+
+be larger than about 2 , where λ2 plays the role of the self-coupling constant of the Higgs
+potential in the SM9 . On the right-hand side of the RGE for λ2 , cf. Eq. (A5), there are
+additional positive-definite terms
+
+2
+16π 2
+
+(λ23 + (λ3 + λ4 )2 + λ25 + σ22 ) as compared to the RGE
+
+for the Higgs self-coupling constant in the SM. These additional terms can improve vacuum
+stability, and allow lower values of mh . Therefore, one of the features of the model is to have
+a different mass range for the lightest CP-even Higgs boson as compared to the SM Higgs
+boson, for a given cut-off scale.
+Next, we show our result for M to be around v. In Fig. 3, we present the mh bound for
+M = 100 GeV. In this case, the allowed range of mh is reduced as compared to that in the
+decoupling case, and lies around mh ∼ M for large tan β. Notice that we have not included
+9 However,
+
+tan β cannot be too large to ignore the contribution of the bottom quark in the case
+
+with the type-II Yukawa interaction.
+
+16
+
+phenomenological constraints from the b → sγ, ρ parameter and the direct Higgs boson
+search experiment at LEP. As mentioned before, the mass bounds obtained from the RGE
+analysis are the same for the type-I and type-II models without these phenomenological
+constraints. However, it was shown in Ref. [13] that the b → sγ data can put a strong
+< 200–400 GeV in the
+constraint on the allowed range of the Higgs boson mass for M ∼
+type-II THDM, whereas there is no appreciable effect in the type-I model. This is because a
+small M implies a light charged Higgs boson in the THDM which can induce a large decay
+branching ratio for b → sγ in the type-II model [19]10 . We expect a similar constraint from
+the b → sγ data on the type-II Zee-model, when M is small.
+In Fig. 4, we show the upper and lower bounds of mh as a function of M for various
+√
+values of Λ. For given M, we scan the range of tan β for 1 ≤ tan β ≤ 16 2 (≃ 22.6). We
+find that the obtained mh bounds are almost the same as those for the THDM. The primary
+reason for this is that the new coupling constants σ1 , σ2 and σ3 do not appear directly in
+the mass formula for mh , and therefore, do not induce large effects on the bounds of mh .
+We also investigate the allowed range of coupling constants σ1 , σ2 and σ3 . For this
+purpose, we fix σ1 (or σ2 , σ3 ) as well as tan β and M to evaluate the upper and the lower
+bounds of mh for each Λ value. In this way, we determine the possible range of σ1 (or σ2 ,
+σ3 ) under the condition that the theory does not break down below the cut-off scale Λ. In
+Fig. 5, we present the allowed range of σ1 and mh for different choice of Λ in the case of
+√
+√
+M = 1000 GeV and tan β = 2 or 16 2. A similar figure is shown for the possible range of
+σ2 in Fig. 6. We see that the maximal value of σ1 and σ2 is around 0.7 for mh = 110 − 170
+GeV if we take the cut-off scale to be 1019 GeV. For smaller value of Λ the allowed ranges
+of σi becomes larger. For example, σ1 can exceed 1 for Λ = 1013 GeV. We have calculated
+for other value of tan β and checked that these figures does not change greatly between
+
+10 In
+
+addition, it has been known that the Rb data also give strong constraints on the charged
+
+Higgs bosons in the type-II THDM [20].
+
+17
+
+Λ (GeV)
+
+500
+
+104
+
+mh (GeV)
+
+400
+
+300
+
+107
+10
+
+200
+
+Λ = 10 GeV
+19
+
+100
+
+0
+
+0
+
+200
+
+400
+
+600
+
+800
+
+1013
+1016
+1019
+10
+1019
+104
+
+1000
+
+M (GeV)
+FIG. 4. The allowed ranges of the lightest CP-even Higgs boson mass as a function of M for
+various Λ values.
+
+√
+tan β = 1.4 and 16 2. We also present the allowed range in the σ1 and σ2 plane for a fixed
+value of mh in Figs. 7 and 8 for mh = 125 GeV and mh = 140 GeV, respectively. For either
+√
+value of mh with tan β = 16 2, both σ1 and σ2 can be as large as 0.5 (2) for Λ = 1019 (107)
+GeV. The allowed range of σ3 and mh for various values of Λ is given in Fig. 9. It is shown
+that, σ3 has to be larger than zero, due to the vacuum stability condition. The maximal
+value of σ3 is about 1 (3) for Λ = 1019 (107 ) GeV and M = 1000 GeV. The impact of these
+new coupling constants on the collider phenomenology is discussed in the next section.
+
+18
+
+mh (GeV)
+
+500
+
+104
+
+
+
+M = 1000 GeV, tanβ = √2
+
+400
+
+300
+
+Λ=107(GeV)
+10
+10
+13
+101610
+
+200
+
+1019
+
+mh (GeV)
+
+100
+
+0
+500
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+6
+
+8
+
+4
+
+10
+
+
+
+M = 1000 GeV, tanβ = 16√2
+
+400
+
+300
+
+Λ=107(GeV)
+10
+10
+13
+101610
+1019
+
+200
+
+100
+
+0
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+6
+
+FIG. 5. The allowed range of σ1 and mh for various Λ values.
+
+19
+
+8
+
+σ1
+
+mh (GeV)
+
+500
+
+104
+
+
+
+M = 1000 GeV, tanβ = √2
+
+400
+
+300
+
+Λ=107(GeV)
+1010
+10161013
+1019
+
+200
+
+mh (GeV)
+
+100
+
+0
+500
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+6
+
+104
+
+8
+
+
+
+M = 1000 GeV, tanβ = 16√2
+
+400
+
+300
+
+Λ=107(GeV)
+1010
+10161013
+1019
+
+200
+
+100
+
+0
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+6
+
+FIG. 6. The allowed range of σ2 and mh for various Λ values.
+
+20
+
+8
+
+σ2
+
+σ2
+
+8
+
+6
+
+Λ=104(GeV)
+4
+
+2
+
+107
+13
+10
+16
+10 10 10
+19
+
+0
+
+10
+
+σ2
+
+-2
+
+-4
+8
+
+mh = 125 GeV
+
+M = 1000 GeV, tanβ = √2
+-4
+
+-2
+
+0
+
+2
+
+4
+
+6
+
+8
+
+6
+
+Λ=104(GeV)
+4
+
+2
+
+107
+1010
+
+13
+
+10
+
+16
+
+10
+
+19
+
+10
+
+0
+
+-2
+
+mh = 125 GeV
+
+M = 1000 GeV, tanβ = 16√2
+
+-4
+-4
+
+-2
+
+0
+
+2
+
+4
+
+6
+
+σ1
+
+FIG. 7. The allowed range of σ1 and σ2 for mh = 125 GeV.
+
+21
+
+8
+
+σ2
+
+8
+
+6
+
+Λ=104(GeV)
+4
+
+2
+
+107
+13
+10
+16
+10 10 10
+19
+
+0
+
+10
+
+σ2
+
+-2
+
+-4
+8
+
+mh = 140 GeV
+
+M = 1000 GeV, tanβ = √2
+-4
+
+-2
+
+0
+
+2
+
+4
+
+6
+
+8
+
+6
+
+Λ=104(GeV)
+4
+
+2
+
+107
+1010
+
+13
+
+16 10
+10
+19
+10
+
+0
+
+-2
+
+mh = 140 GeV
+
+M = 1000 GeV, tanβ = 16√2
+
+-4
+-4
+
+-2
+
+0
+
+2
+
+4
+
+6
+
+σ1
+
+FIG. 8. The allowed range of σ1 and σ2 for mh = 140 GeV.
+
+22
+
+8
+
+mh (GeV)
+
+500
+
+104
+
+
+
+M = 1000 GeV, tanβ = √2
+
+400
+
+300
+
+Λ=107(GeV)
+1010
+13
+1610
+
+200
+
+10
+1019
+
+mh (GeV)
+
+100
+
+0
+500
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+6
+
+4
+
+8
+
+
+
+10
+
+M = 1000 GeV, tanβ = 16√2
+
+400
+
+300
+
+Λ=107(GeV)
+1010
+13
+1610
+
+200
+
+10
+
+1019
+100
+
+0
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+6
+
+FIG. 9. The allowed range of σ3 and mh for various Λ values.
+
+23
+
+8
+
+σ3
+
+IV. TWO-PHOTON DECAY WIDTH OF THE NEUTRAL HIGGS BOSON
+
+In this section, we study the phenomenological consequences of the Higgs boson mass and
+the Higgs-boson-coupling constants derived in the previous section. The important feature
+of the Higgs sector of the Zee-model is that there are an additional weak doublet and a
+singlet charged Higgs boson. The physical states of the Higgs particles are two CP-even
+Higgs bosons, one CP-odd Higgs boson and two pairs of charged Higgs bosons. Therefore,
+the Higgs phenomenology is quite close to the ordinary two-Higgs-doublet model. One
+unique difference is the existence of the additional weak-singlet charged Higgs boson. The
+effect of this extra charged Higgs boson is especially important when M is much larger
+than the Z boson mass, i.e. in the decoupling regime. In such a case, the heavier CP-even
+Higgs boson, the CP-odd Higgs boson as well as one of the charged Higgs bosons have
+masses approximately equal to M, and these heavy states are decoupled from low energy
+observables. (Note that the condition on the applicability of the perturbation theory forbids
+too large self-couplings among the Higgs bosons. Hence, in the limit of large M, the heavy
+Higgs bosons decouple from the low energy effective theory. ) The remaining light states
+are the lighter CP-even Higgs boson h and the lighter charged Higgs boson S2 which mainly
+comes from the weak-singlet. In the previous section, we show that, even in the decoupling
+case, there can be large difference in the allowed range of mh between the Zee-model and the
+SM. Similarly, we expect that, even in the decoupling case, the presence of the additional
+weak-singlet charged Higgs boson can give rise to interesting Higgs phenomenology.
+Since the lighter charged Higgs boson S2 can couple to Higgs bosons and leptons, it can
+affect the decay and the production of the neutral Higgs bosons at colliders through radiative
+corrections. In the following, we consider the decay width of h → γγ as an example. For
+a SM Higgs boson, the partial decay width (or branching ratio) of h → γγ is small: ∼ 9.2
+keV (or 2.2 × 10−3 ) for mh = 125 GeV, and ∼ 15.4 keV (or 1.9 × 10−3 ) for mh = 140 GeV,
+with a 175 GeV top quark. Nevertheless, it is an important discovery mode of the Higgs
+boson at the LHC experiments for mh less than twice of the W -boson mass. Needless to
+24
+
+say that a change in the branching ratio of h → γγ would lead to a different production
+rate of pp → hX → γγX. At future e+ e− LC’s, the branching ratio of h → γγ can be
+determined via the reaction e+ e− → qqγγ and e+ e− → ννγγ with a 16-22% accuracy [16].
+At the photon-photon collision option of the future LC’s, the partial decay width of h → γγ
+can be precisely tested within a 2 % accuracy [17] by measuring the inclusive production
+rate of the Higgs boson h. Clearly, a change in the partial decay width of h → γγ will
+lead to a different production rate for h. In the Zee-model, such a change is expected after
+taking into account the loop contribution of the extra charged Higgs boson. We find that
+the deviation from the SM prediction can be sizable, and therefore testable at the LHC and
+future LC’s.
+The partial decay width of h → γγ is calculated at the one-loop order. Similar to our
+√
+previous discussion, we limit ourselves to the parameter space in which 1 ≤ tan β ≤ 16 2,
+and keep only the top quark contribution from the fermionic loop diagrams. Including the
+loop contributions from the W boson and the charged Higgs bosons S1 and S2 together with
+the top quark loop contribution, we obtain [21]
+(αmh )3
+Γ(h → γγ) =
+256π 2 sin2 θW m2W
+
+2
+
+Ii
+
+,
+
+(35)
+
+i=S1 ,S2 ,t,W
+
+with
+IS1 = RS1 F0 (ri ) ,
+IS2 = RS2 F0 (ri ) ,
+It =
+
+4
+3
+
+cos α
+F1/2 (ri ) ,
+sin β
+
+IW = sin(β − α)F1 (ri ) ,
+where ri =
+
+4m2i
+m2h
+
+and mi is the mass of the internal lines in the loop diagram. RS1 and RS2
+
+are given by
+RS1 =
+
+v2 1
+cos2 χ −λ1 sin α sin2 β cos β + λ2 cos α sin β cos2 β
+2 m2S1
+1
++λ3 cos α sin3 β − sin α cos3 β − (λ4 + λ5 ) cos(α + β) sin 2β
+2
+25
+
++ sin2 χ {−σ1 sin α cos β + σ2 cos α sin β} +
+
+RS2 =
+
+√
+
+µ
+2 sin χ cos χ sin(α − β) ,
+v
+
+v2 1
+sin2 χ −λ1 sin α sin2 β cos β + λ2 cos α sin β cos2 β
+2 m2S2
+1
++λ3 cos α sin3 β − sin α cos3 β − (λ4 + λ5 ) cos(α + β) sin 2β
+2
+√
+µ
++ cos2 χ {−σ1 sin α cos β + σ2 cos α sin β} − 2 sin χ cos χ sin(α − β) ,
+v
+
+(36)
+
+(37)
+
+and
+F0 (r) = r (1 − rf (r)) ,
+
+(38)
+
+F1/2 (r) = −2r (1 + (1 − r)f (r)) ,
+
+(39)
+
+F1 (r) = 2 + 3r + 3r (2 − r) f (r) ,
+
+(40)
+
+with
+f (r) =
+
+
+
+
+
+
+
+
+
+sin−1
+
+1/r
+√
+
+2
+
+1+√1−r
+− 14 ln 1−
+− iπ
+1−r
+
+2
+
+if r ≥ 1
+
+.
+
+(41)
+
+if r < 1
+
+In the decoupling case of the model, namely M 2 ≫ λi v 2 , the above formulae are greatly
+simplified. This limit corresponds to α → β − π2 and χ → 0, so that the light charged Higgs
+boson S2± is identical to the weak-singlet Higgs boson ω ± . Thus, we have
+RS2
+
+v2 1
+σ1 cos2 β + σ2 sin2 β ,
+→
+2
+2 mS2
+
+(42)
+
+and both the top-quark and the W boson loop contributions reduce to their SM values. We
+like to stress that the weak-singlet Higgs boson does not directly couple to the quark fields
+in the limit of χ → 0. Therefore, it does not affect the decay rate of b → sγ at the one-loop
+order. Similarly, being a weak singlet, it also gives no contribution to the ρ parameter.
+Hence the low-energy constraint from either the b → sγ decay or the ρ parameter on the
+Zee-model in the limit of χ → 0 is similar to effects of that on the THDM. Let us examine
+at the one-loop effect of the weak-singlet charged Higgs boson on the decay width of h → γγ
+in the decoupling limit. Let us recall that in Fig. 8, the size of the new couplings σ1 and
+26
+
+1.0
+
+0.8
+
+0.8
+
+0.6
+
+0.6
+
+0.4
+
+0.4
+
+ëë)
+
+1.0
+
+ëë) / Γ
+
+SM
+
+(h
+
+0
+
+
+
+: σ = 0.5
+_ _ _ _ _ : σ = 0.6
+
+r = ΓZee(h
+
+0
+
+
+
+: σ = 0.5
+_ _ _ _ _ : σ = 0.6
+
+. . . . . . . : σ = 1.0
+
+0.2
+
+aaa
+
+. . . . . . . : σ = 1.0
+
+aaa : σ = 3.5
+
+: σ = 3.5
+
+m h = 125 GeV
+0.0
+80
+
+100
+
+120
+
+140
+
+0.2
+
+m h = 140 GeV
+
+160 80
+
+100
+
+120
+
+m s2 (GeV)
+
+m s2 (GeV)
+
+(a)
+
+(b)
+
+140
+
+0.0
+160
+
+FIG. 10. (a) The ratio r as a function of the charged Higgs boson mass mS2 for various values
+of the coupling constants σ1 = σ2 ≡ σ with mh = 125 GeV. The two smaller σ’s are consistent with
+the cut-off scales Λ = 1019 GeV and Λ = 1016 GeV, respectively. The two larger σ’s are allowed
+for Λ = 104 GeV. (b) A similar plot with mh = 140 GeV.
+
+σ2 can be as large as 2 simultaneously, if the cut-off scale is at the order of 107 GeV. For
+the Zee-model to be a valid low energy effective theory up to 1019 GeV, σ1 and σ2 cannot
+be much larger than 0.6. To illustrate the implications of this result, we show in Figs. 10
+(a) and 10 (b) the ratio (r) of the h → γγ width predicted in the Zee-model to that in the
+SM, r ≡ ΓZee (h → γγ)/ΓSM (h → γγ), as a function of the coupling constant σ2 and the
+charged Higgs boson mass mS2 . Here, for simplicity, we have set σ1 = σ2 so that the tan β
+dependence drops in the decoupling case, cf. Eq. (42). For illustrations, we consider two
+cases for the mass of the lighter CP-even Higgs boson: mh = 125 GeV and mh = 140 GeV.
+As shown in the figures, the ratio r can be around 0.8 for σ1 = σ2 ≡ σ ≈ 0.5 and mS2 ≈ 100
+GeV. This reduction is due to the cancellation between the contribution from the S2 -boson
+27
+
+2.0
+
+1.8
+
+1.8
+
+ëë)
+
+2.0
+
+1.6
+
+ëë) / Γ
+
+_ _ _ _ _ : σ = − 0.6
+2
+
+_ _ _ _ _ : σ = − 0.5
+2
+
+: σ2 = − 1.0
+
+: σ2 = − 0.8
+
+m h = 140 GeV
+
+m h = 125 GeV
+
+1.4
+
+1.6
+
+1.4
+
+r = ΓZee(h
+
+0
+
+
+
+. . . . . . . . : σ = − 0.25
+2
+
+. . . . . . . . : σ = − 0.2
+2
+
+SM
+
+(h
+
+0
+
+
+
+1.2
+
+1.0
+80
+
+1.2
+
+100
+
+120
+
+140
+
+160 80
+
+100
+
+120
+
+m s2 (GeV)
+
+m s2 (GeV)
+
+(a)
+
+(b)
+
+140
+
+1.0
+160
+
+FIG. 11. (a) The ratio r as a function of the charged Higgs boson mass mS2 for negative values
+√
+of the coupling constants σ2 with mh = 125 GeV, σ1 = 0 and tan β = 16 2. The value σ2 = −0.2,
+−0.5 or −0.8 is consistent with the cut-off scale Λ = 1019 , 107 or 104 GeV, respectively. (b) A
+√
+similar plot with mh = 140 GeV, σ1 = 0 and tan β = 16 2. The value σ2 = −0.25, −0.6 or −1 is
+consistent with the cut-off scale Λ = 1019 , 107 or 104 GeV, respectively.
+
+loop and the W -boson loop contributions. To have a similar reduction rate in ΓZee (h → γγ)
+for a heavier S2 , the coupling constant σ2 (and σ1 ) has to be larger. Next, as shown in
+Figs. 7 and 8, σ1 and σ2 do not have to take the same values in general, and they can be less
+than zero. In the case where both σ1 and σ2 are negative, the contribution of the S2 -loop
+diagram and that of the W -loop diagram have the same sign, so that r can be larger than
+1. Such an example is shown in Fig. 11 (a), where the ratio r for mh = 125 GeV is shown as
+√
+a function of mS2 at various negative σ2 values with σ1 = 0 and tan β = 16 2. We consider
+the case with σ2 = −0.2, −0.5 or −0.8, which is consistent with the cut-off scale Λ = 1019 ,
+107 or 104 GeV, respectively. In the case of Λ = 1019 GeV (104 GeV), the deviation from the
+28
+
+4.0
+Γ(h → S2 S2 ) (GeV)
+
+2
+
+3.0
+
+−
+
+100
+2.0
+
+150
+
++
+
+(a)
+
+mS = 80 GeV
+
+0
+
+1.0
+200
+0.0
+100
+
+200
+
+300
+mh (GeV)
+
+400
+
+500
+
+1
+
+10
+
+10
+
+100
+−1
+
+10
+
+150
+
+0
+
++
+
+−
+
+(b)
+
+2
+
+0
+
+Γ(h →S2 S2 ) / Γh
+
+total
+
+(SM)
+
+mS = 80 GeV
+
+200
+−2
+
+10
+
+100
+
+200
+
+300
+mh (GeV)
+
+400
+
+500
+
+FIG. 12. (a) The partial decay width Γ(h → S2+ S2− ) for mS2 = 80, 100, 150, 200 GeV with
+σ1 = σ2 = 1 for the allowed range of mh from 100 GeV to 500 GeV. (b) The ratio of Γ(h → S2+ S2− )
+with the total decay width of the SM Higgs boson for each values of mS2 .
+
+SM prediction can be about +6% (+30%) for mS2 = 100 GeV. In Fig. 11 (b), the similar
+√
+plot of the ratio r is shown for mh = 140 GeV with σ1 = 0 and tan β = 16 2. Each case
+with σ2 = −0.25, −0.6 or −1 is consistent with Λ = 1019 , 107 or 104 GeV, respectively. The
+correction is larger in the case with mh = 140 GeV than in the case with mh = 125 GeV
+for a given Λ. The deviation from the SM prediction can amount to about +8% (+40%) for
+Λ = 1019 GeV (104 GeV) when mS2 = 100 GeV. Larger positive corrections are obtained
+for smaller mS2 values. Such a deviation from the SM prediction can be tested at the LHC,
+the e+ e− LC and the γγ option of LC.
+
+29
+
+Before concluding this section, we remark that if mh is larger than 2mS2 such that the
+decay mode h → S2+ S2− is open, the total decay width of h can be largely modified from the
+SM prediction for large σ1,2 . In terms of RS2 , the partial decay width of h → S2+ S2− is given
+by
+Γ(h → S2+ S2− ) =
+
+c2 v 2
+16πmh
+
+1−
+
+4m2S2
+,
+m2h
+
+(43)
+
+where c2 = (2m2S2 RS2 /v 2 )2 . In Fig. 12 (a), we show the partial decay width Γ(h → S2+ S2− )
+for mS2 = 80, 100, 150, 200 GeV with σ1 = σ2 = 1, cf. Eq. (42), for the allowed range of mh
+from 100 GeV to 500 GeV. In Fig. 12 (b), the ratio of Γ(h → S2+ S2− ) to the total width of the
+(SM)) is shown as a function of mh for each value of mS2 . This is to
+SM Higgs boson (Γtotal
+h
+illustrate the possible size of the difference between the total width of the lightest CP-even
+Higgs boson h in the Zee-model and that of the SM Higgs boson11 . Clearly, the impact of
+the S2+ S2− decay channel is especially large in the small mh region. We note that Γtotal
+(SM)
+h
+can be determined to the accuracy of 10-20% at the LHC and the LC if mh < 2mZ , and to
+that of a couple of per cents if mh > 2mZ [23]. (mZ is the mass of the Z-boson.) Hence,
+measuring the total width of the lightest neutral Higgs boson can provide a further test
+of the Zee-model for mh > 2mS2 . The change in the total width also modifies the decay
+branching ratio of h → ZZ, hence yields a different rate of h → ZZ → µ+ µ− µ+ µ− for a
+given mh . (In the SM, the branching ratio of h → ZZ is about 1/3 for mh > 200 GeV.)
+Needless to say that for mh > 2mS2 , the production mode of h → S2+ S2− → ℓ+ ℓ′ − E/T is also
+useful to test the Zee-model. Further discussion on this possibility will be given in Sec. VI.
+
+11 In
+
+doing this analysis, we have in mind a low cut-off scale Λ = 104 GeV, which allows a wide
+
+range of values for σ’s, mS2 and mh .
+
+30
+
+V. PHENOMENOLOGY OF CHARGED-HIGGS BOSONS
+
+In the Zee-model, two kinds of charged Higgs bosons appear. If there is no mixing
+between them (χ = 0), the mass eigenstates S1± and S2± correspond to the THDM-like
+charged Higgs field and the singlet Higgs field ω ± , respectively. The case with χ = 0 occurs
+in the limit of M 2 ≫ v 2 , µ2 and m20 ; i.e. in the decoupling limit. The detection of S2± can
+be a clear indication of the Zee-model. As to be shown later, its phenomenology is found to
+be drastically different from that of the THDM-like charged Higgs bosons S1± [24]. Here, we
+discuss how the effects of this extra charged boson can be explored experimentally. We first
+consider the case with χ = 0, and then extend the discussion to the case with a non-zero χ.
+The S2− boson decays into a lepton pair ei− ν cej with the coupling constant fij . The partial
+c
+decay rate, ΓSij2 = Γ(S2− → e−
+i ν ej ), is calculated as
+
+ΓSij2
+
+m2
+m
+= S2 fij 2 1 − 2ei
+4π
+mS2
+
+2
+
+,
+
+(44)
+
+and the total decay width of S2− is given by
+2
+ΓStotal
+=
+
+3
+
+ΓSij2 .
+
+(45)
+
+i,j=1
+
+By taking into account the hierarchy pattern of fij , cf. Eqs. (23) and (24), and by assuming
+mS2 = 100 GeV and |f12 | = 3 × 10−4 , the total decay width and the life time (τ ) is estimated
+to be12
+S2
+2
+ΓStotal
+∼ Γ12
++ ΓS212 ∼ 1.6 keV,
+2
+τ ∼ 1/ΓStotal
+∼ 10−18 sec.
+
+(46)
+(47)
+
+This implies that S2 decays after traveling a distance of ∼ 10−10 m, which is significantly
+12 The
+
+size of the decay width depends on the value of f12 . If we take mS1 > 500 GeV or µ < 100
+
+GeV, f12 can become one order of magnitude larger than 3 × 10−4 , while still being consistent with
+the phenomenological bounds discussed in Sec. II.
+
+31
+
+shorter than the typical detector scale. Therefore, S2± decays promptly after its production,
+and can be detected at collider experiments.
+The main production channel at the LEP-II experiment may be the pair production
+process e+ e− → S2+ S2− , similar to the production of the THDM-like charged Higgs boson
+S1+ . The matrix-element squares for the Si+ Si− production (i = 1, 2) are given by
+2
+
++
++ −
+M(e−
+L(R) eR(L) → Si Si ) =
+
+Qe e2
+1
+(I 3 − s2W Qe )g 2
+− 2 (IS3i − s2W QSi ) e
+s
+cW
+s − m2Z
+
+2
+
+s2 βS2i sin2 Θ, (48)
+
+−
+1
+3
+where Qe = −1 and Ie3 = − 21 (0) for the incoming electron e−
+L (eR ); QSi = −1 and ISi = − 2
+
+(0) for i = 1 (2); βSi =
+angle of Si− in the e+ e−
+
+1 − 4m2Si /s, sW = sin θW , cW = cos θW , and Θ is the scattering
+√
+center-of-mass (CM) frame whose energy is s. For the other
+
++
+− +
+electron-positron helicity configuration (e−
+L eL and eR eR ), the cross sections are zero. Thus
+
+the total cross section for the S2+ S2− pair production is given by
+σ(e+ e− → S2+ S2− ) =
+
+
+
+1 4 3  1
+e βS2 s
++
+96π
+s
+
+s2W
+c2W
+
+1
+s − m2Z
+
+2
+
++
+
+1
+1
+−
+− s2W
+s
+2
+
+1
+1
+2
+cW s − m2Z
+
+2
+
+
+
+.
+
+(49)
+
+Hence, the production rates of S1− and S2− are different. We note that the ratio of cross
+sections for S1+ S1− and S2+ S2− production, σ(e+ e− → S2+ S2− )/σ(e+ e− → S1+ S1− ), is 0.8 at
+√
+s = 210 GeV assuming that the masses of S1± and S2± are the same. This ratio is independent of the masses of S1 and S2 for a fixed CM energy. (Only the difference between
+S1+ S1− Z and S2+ S2− Z coupling constants determines this ratio. )
+The lower mass bound of the THDM-like charged boson S1± can be obtained by studying
+its τ ν and cs decay modes, completely in the same way as the charged Higgs boson search in
+the minimal supersymmetric standard model (MSSM) [22]. Similar experimental constraints
+may be obtained for the extra charged bosons S2± . The situation, however, turns out to be
+fairly different from the S1± case. First of all, decays of S2± are all leptonic. Secondly, the
+branching ratios of various S2± decay modes are estimated as
+B(S2− → e− E/T ) ∼ 0.5,
+B(S2− → µ− E/T ) ∼ 0.5,
+B(S2− → τ − E/T ) ∼ O
+32
+
+(50)
+(51)
+mµ4
+m4τ
+
+∼ 10−5 ,
+
+(52)
+
+where we have used the relations given in Eqs. (23) and (24). Clearly, the branching ratio
+into the τ − E/T mode is very small, so that it is not useful for detecting S2± at all. This is
+different from the case of detecting the ordinary THDM-like charged Higgs boson, which
+preferentially decays into heavy fermion pairs (e.g. τ ν and cs). Instead of studying the
+τ ± ν c mode, the e± ν c and µ± ν c modes can provide a strong constraint on the mass of
+S2± . In fact, the branching ratio of S2− → e− E/T or µ− E/T is almost 100 %, so that we have
+σ(e+ e− → S2+ S2− → ℓ+ ℓ′− E/T ) ∼ σ(e+ e− → S2+ S2− ), where ℓ− and ℓ′− represent e− or µ− (not
+τ − ). Let us compare this with the cross section σ(e+ e− → W + W − → ℓ+ ℓ′− E/T ) = σ(e+ e− →
+W + W − )·B(W − → ℓ− E/T )2 , where B(W − → ℓ− E/T ) = B(W − → e− E/T )+B(W − → µ− E/T ) ∼
+21%. As seen in Fig. 13, the cross section σ(e+ e− → S2+ S2− → ℓ+ ℓ′− E/T ) is comparable with
+σ(e+ e− → W + W − → ℓ+ ℓ′− E/T ). Therefore, by examining the LEP-II data for ℓ+ ℓ′− E/T
+(where ℓ+ ℓ′− = e+ e− , e± µ∓ or µ+ µ− , in contrast to τ + τ − for the S1± case), the experimental
+lower bound on the mass of S2± can be determined. Such a bound can be induced from
+the smuon search results at the LEP experiments [25,26] in the case that neutralinos are
+√
+assumed to be massless. From the µ+ µ− E/T data accumulated up to s = 202 GeV [26],
+we find that the lower mass bound of S2± is likely to be 80-85 GeV for the χ = 0 cases. [
+We note that the right-handed smuon (˜
+µ±
+R ) in the MSSM carries the same SU(2) × U(1)
+quantum number as the weak-singlet charged Higgs boson (S2± for χ± ∼ 0). ]
+We next comment on S2± -production processes at hadron colliders and future LC’s. At
+hadron colliders, the dominant production mode is the pair production through the Drell√
+Yan-type process. The cross sections for pp → S2+ S2− at the Tevatron Run-II energy ( s = 2
+√
+TeV) and pp → S2+ S2− at the LHC energy ( s = 14 TeV) are shown as a function of mS2
+in Fig. 14 for χ = 0. At future LC’s, the S2± boson may be discovered through the above√
+discussed pair-production process from the electron-positron annihilation if s/2 > mS2 . In
+Fig. 15, we show the total cross section of e+ e− → S2+ S2− for χ = 0 as a function of mS2 for
+√
+s = 300, 500, and 1000 GeV.
+Finally, we like to discuss the case with a non-zero χ, in which S2− is a mixture of the
+singlet charged Higgs boson state (ω − ) and the doublet charged Higgs boson state (H − ). Let
+33
+
++
+
++ −
+
++ ’− c c
+
+−
+
+σ(e e →S2 S2 →l l ν ν )
+1
+
++ −
+
+√s = 190 GeV
+200
+
+−
+
++ ’−
+
+(√s=210GeV)
+
+210
+
+pb 0.5
+
+0
+
++
+
+e e →W W →l l νν
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+mS (GeV)
+2
+
+FIG. 13. The cross section of the leptonic decay process e+ e− → S2+ S2− → ℓ+ ℓ′− E/T (where
+√
+ℓ and ℓ′ = e or µ) at s = 190, 200, 210 GeV. The process e+ e− → W + W − → ℓ+ ℓ′− E/T at
+√
+s = 210GeV is shown for comparison.
+
+us see how the above discussion is changed in this case. The doublet charged Higgs bosons
+with the mass of 100 GeV mainly decay into the τ − ν and cs channels. Thus, the branching
+ratio of the decay process S2− → ℓ− E/T , where ℓ− represents e− and µ− , is expressed in a
+non-zero χ case as
+B(S2− → ℓ− E/T ) =
+
+2
+cos2 χ ΓStotal
+|χ=0
+,
+S1
+S2
+2
+sin χ Γtotal |χ=0 + cos2 χ Γtotal
+|χ=0
+
+(53)
+
+Si
+where Γtotal
+|χ=0 (i = 1, 2) is the total width of Si− at χ = 0 with the same mass as the
+S2
+decaying S2− on the left-hand side of the above equation. The formula of Γtotal
+|χ=0 is given
+1
+in Eq. (45), while ΓStotal
+|χ=0 , which is the same as the total decay width of the charged Higgs
+
+boson in the THDM is given by
+1
+ΓStotal
+|χ=0 =
+
+ff′
+
+Γ(S1− → f f ′ ),
+
+(54)
+
+where f f ′ are fermion pairs which are kinematically allowed. In the type-II Yukawa couplings, we have
+34
+
+10
+
++
+
+−
+
+pp→S2 S2
+
+(√s = 14 TeV)
+
+fb
+1
++
+−
+−
+pp→S
+(√s = 2 TeV)
+2 S2
+
+100
+
+200
+
+300
+(GeV)
+
+mS
+
+2
+
+FIG. 14. The total cross sections of pp → S2+ S2− at
+√
+at s = 14 TeV (dotted curve) as a function of mS2 .
+3
+10
+
+√
+
+400
+
+500
+
+s = 2 TeV (solid curve) and pp → S2+ S2−
+
++ −
+
++
+
+e e →S2 S2
+
+−
+
+2
+
+10
+
+√s=1000GeV
+
+fb 101
+
+500GeV
+0
+
+300GeV
+
+10
+
+100
+
+200
+mS
+
+2
+
+300
+(GeV)
+
+400
+
+500
+
+FIG. 15. The total cross section of e+ e− → S2+ S2− as a function of mS2 at
+1000 GeV.
+
+35
+
+√
+
+s = 300, 500 and
+
+B( S2 → l ν )
+−
+
+−
+
+0
+
+10
+
+36
+18
+
+−1
+
+10
+
+9
+
+−4
+
+f12=3(×10 )
+−2
+
+10
+
+0.0
+
+0.2
+
+0.4
+
+sin χ
+
+0.6
+
+0.8
+
+1.0
+
+FIG. 16. The decay branching ratio of S2− → ℓ− E/T (where ℓ− = e− or µ− ) as a function of the
+mixing angle χ for mS2 = 100 GeV, tan β = 1 and various values of the coupling constant f12 .
+
+
+2
+
+mS1
+m2τ 
+2
+2
+1 −
+Γ(S1− → τ − ν) =
+(m
+tan
+β)
+,
+8πv 2 τ
+m2S1
+Γ(S1−
+
+(55)
+
+
+
+2
+
+
+
+2
+
+3mS1 2
+m2c 
+2
+2
+2
+1 −
+(m
+tan
+β
++
+m
+cot
+β)
+,
+→ cs) ≃
+s
+c
+8πv 2
+m2S1
+
+3mS1 2
+m2t 
+2
+2
+2
+1 −
+(m
+tan
+β
++
+m
+cot
+β)
+.
+Γ(S1− → tb) ≃
+t
+8πv 2 b
+m2S1
+
+(56)
+(57)
+
+In the THDM, the total decay width of the charged Higgs boson (H − ) for mH − = 100 GeV
+is about 470 keV. Hence, if the mixing angle χ is not so small, the decay pattern of S2− is
+dominated by that of the THDM charged Higgs boson H − . In Fig. 16, we plot the branching
+ratio B(S2− → ℓ− E/T ) as a function of sin χ at mS2 = 100 GeV for several values of f12 . We
+only show the case with tan β = 1, where the result is independent of the type of the Yukawa
+interaction. The coupling constant f12 is taken to be 3, 9, 18 and 36 (×10−4 ), which satisfy
+the phenomenological constraints given in Sec. II. As expected, the branching ratio decreases
+as χ increases. When f12 = 36 × 10−4 , B(S2− → ℓ− E/T ) is smaller than 10% for sin χ > 0.89.
+36
+
+For the smaller f12 values, the branching ratio reduces more quickly. The branching ratio is
+not sensitive to mS2 unless the mass exceeds the threshold of the decay into a tb or h0 W −
+pair. Above the threshold of the tb pair production, the decay rate of S2− → tb is large due
+to the large mass of the top quarks, so that B(S2− → ℓ− E/T ) is substantial only for very
+small values of χ. Finally, while the decay branching ratio can change drastically depending
+on the mixing angle χ, the production cross section for e+ e− → S2+ S2− remains unchanged.
+In conclusion, the process e+ e− → S2+ S2− → ℓ+ ℓ′− E/T can also be useful for testing the
+Zee-model in the non-zero χ case, provided sin χ is not too large.
+
+VI. DISCUSSION AND CONCLUSION
+
+In this paper, the Higgs sector of the Zee-model has been investigated, in which neutrino
+masses are generated radiatively. This model contains extra weak-doublet Higgs field and
+singlet charged Higgs field.
+We have studied indirect effects of these extra Higgs bosons on the theoretical mass
+bounds of the lightest CP-even Higgs boson, which are obtained from the requirement that
+the running coupling constants neither blow up to a very large value nor fall down to a
+negative value, up to a high-energy cut-off scale Λ. For Λ = 1019 GeV, the upper bound
+of mh is found to be about 175 GeV, which is almost the same value as the SM prediction.
+In the decoupling regime (M ≫ mZ ), the lower bound is found to be about 100 GeV for
+Λ = 1019 GeV, which is much smaller than the lower bound in the SM, and is almost the
+same as that in the THDM. For smaller Λ values, the bounds are more relaxed, similar
+to that of the SM. We have also investigated the allowed range of the coupling constants
+relevant to the weak-singlet Higgs field.
+The most striking feature of the Zee-model Higgs sector is the existence of the weaksinglet charged Higgs boson. We have examined the possible impact of the singlet chargedHiggs boson on the neutral Higgs boson search through radiative corrections. We found
+that its one-loop contributions to the h → γγ width can be sizable. In the allowed range
+37
+
+of the coupling constants the deviation from the SM prediction for this decay width can be
+about −20% or near +10% for mS2 = 100 GeV and Λ = 1019 GeV, depending on the sign
+of the coupling constants σi . The magnitude of the deviation is larger for lower Λ values
+or for smaller mS2 values. For example, a positive deviation over 30-40% is possible for
+mh = 125-140 GeV, mS2 = 100 GeV, and Λ = 104 GeV.
+In the decoupling limit (i.e. when M 2 ≫ v 2 , where α → β − π/2 and χ → 0), we
+expect that the production cross sections for gg → h, e+ e− → ννh and e+ e− → Z 0 h in
+the Zee-model are the same as those in the SM. However, a sizable change in the decay
+branching ratio of h → γγ can alter the production rate of pp → hX → γγX at the
+LHC, where this production rate can be determined with a relative error of 10-15% [15].
+Also, such a deviation in the branching ratio of h → γγ directly affects the cross section
+of e+ e− → ννh (andZ 0 h) → ννγγ, which can be measured with an accuracy of 16-22%
+√
+at the future e+ e− LC (with s = 500 GeV and the integrated luminosity of 1 ab−1 ) [16].
+Therefore, the Zee-model with low cut-off scales can be tested through the h → γγ process at
+the LHC and the e+ e− LC’s. At the future photon colliders, the enhancement (or reduction)
+of the h → γγ partial decay rate will manifest itself in the different production rate of h
+from the SM prediction. A few per cent of the deviation in Γ(h → γγ) · B(h → bb) can be
+detected at a photon collider [17], so that the effects of the singlet charged Higgs boson can
+be tested even if the cutoff scale Λ is at the Planck scale.
+The collider phenomenology of the singlet charged Higgs boson has turned out to be
+completely different from that of the THDM-like charged Higgs boson. The singlet charged
+Higgs boson mainly decays into ℓ± E/T (with ℓ± = e± or µ± ), while the decay mode τ ± E/T
+is almost negligible due to the relation |f12 | ≫ |f13 | ≫ |f23 |. This hierarchy among the
+coupling constants fij results from demanding bi-maximal mixings in the neutrino mass
+matrix generated in the Zee-model to be consistent with the neutrino oscillation data. On
+the other hand, the THDM-like charged Higgs boson decays mainly into either the τ ν mode
+or the cs mode, through the usual Yukawa-interactions. Hence, to probe this singlet charged
+Higgs boson using the LEP-II data, experimentalists should examine their data sample with
+38
+
+e+ e− E/T , e+ µ− E/T , µ+ e− E/T or µ+ µ− E/T , while the experimental lower mass bound of the
+THDM-like charged Higgs boson is obtained from examining the τ τ E/T , τ E/T jj and jjjj
+events. Using the published LEP-II constraints on the MSSM smuon production (assuming
+the lightest neutralinos to be massless), we estimate the current lower mass bound of this
+singlet charged Higgs boson to be about 80-85 GeV. The Tevatron Run-II, LHC and future
+LC’s can further test this model.
+Finally, we comment on a case in which the singlet charged Higgs boson (S2± for χ = 0)
+is the lightest of all the Higgs bosons. For mh /2 > mS2 > mZ , the Higgs sector of the
+Zee-model can be further tested by measuring the production rate of pp (or pp) → hX →
+S2+ S2− X → ℓ+ ℓ′− E/T X. The branching ratio for h → S2+ S2− → ℓ+ ℓ′ − E/T can be large. For
+instance, for mh = 210 GeV and mS2 = 100 GeV, this branching ratio is about 12% for
+each ℓ+ ℓ′ − = e+ e− , e+ µ− , µ+ e− or µ+ µ− . The branching ratio decreases for larger masses
+of h. Moreover, the total decay width of h can be largely modified when the decay channel
+h → S2+ S2− is open. In this case, the decay branching ratios of h → W + W − , ZZ are also
+different from the SM predictions.
+In conclusion, the distinguishable features of the Zee-model from the SM and the THDM
+can be tested by the data from LEP-II, the Tevatron Run-II and future experiments at LHC
+and LC’s.
+
+ACKNOWLEDGMENTS
+
+We are grateful to the warm hospitality of the Center for Theoretical Sciences in Taiwan
+where part of this work was completed. CPY would like to thank H.-J. He, J. Ng and
+W. Repko for stimulating discussions. SK was supported, in part, by the Alexander von
+Humboldt Foundation. GLL and JJT were supported, in part, by the National Science
+Council of R.O.C. under the Grant No NSC-89-2112-M-009-035; YO was supported by the
+Grant-in-Aid of the Ministry of Education, Science, Sports and Culture, Government of
+Japan (No. 09640381), Priority area “Supersymmetry and Unified Theory of Elementary
+39
+
+Particles” (No. 707), and “Physics of CP Violation” (No. 09246105); CPY is supported by
+the National Science Foundation in the USA under the grant PHY-9802564.
+
+40
+
+APPENDIX: ONE-LOOP RGE’S FOR DIMENSIONLESS COUPLING
+CONSTANTS
+
+Here, we summarize the relevant RGE’s to our study. For the gauge coupling constants,
+we have
+d
+1 22 3
+g1 =
+g ,
+dµ
+16π 2 3 1
+d
+1
+µ g2 =
+(−3) g23 ,
+dµ
+16π 2
+1
+d
+(−7) g33 .
+µ g3 =
+2
+dµ
+16π
+µ
+
+(A1)
+(A2)
+(A3)
+
+The RGE’s for the Higgs-self-coupling constants of the doublets are calculated at the oneloop level as
+d
+1
+12λ21 + 4λ32 + 4λ3 λ4 + 2λ24 + 2λ25 + 2σ12
+λ1 =
+dµ
+16π 2
+3 4 3 2 2 9 4
+g + g g + g
+,
+− 3g12 + 9g22 λ1 +
+4 1 2 1 2 4 2
+d
+1
+12λ22 + 4λ32 + 4λ3 λ4 + 2λ24 + 2λ25 + 2σ22 + 12yt2λ2 − 12yt4
+µ λ2 =
+dµ
+16π 2
+3 4 3 2 2 9 4
+− 3g12 + 9g22 λ2 +
+g + g g + g
+,
+4 1 2 1 2 4 2
+1
+d
+2 (λ1 + λ2 ) (3λ3 + λ4 ) + 4λ23 + 2λ24 + 2λ25 + 2σ1 σ2 + 6yt2λ3
+µ λ3 =
+dµ
+16π 2
+3 4 3 2 2 9 4
+− 3g12 + 9g22 λ3 +
+g − g g + g
+,
+4 1 2 1 2 4 2
+1
+d
+2 (λ1 + λ2 ) λ4 + 4 (2λ3 + λ4 ) λ4 + 8λ25 + 6yt2 λ4
+µ λ4 =
+dµ
+16π 2
+µ
+
+− 3g12 + 9g22 λ4 + 3g12g22 ,
+
+µ
+
+1
+d
+λ5 =
+2λ1 + 2λ2 + 8λ3 + 12λ4 + 6yt2 − 3g12 + 9g22
+dµ
+16π 2
+
+(A4)
+
+(A5)
+
+(A6)
+
+(A7)
+λ5 ,
+
+(A8)
+
+and those with respect to the additional singlet charged Higgs are given by
+d
+1
+4σ12 + 2σ1 σ3 + 6λ1 σ1 + (4λ3 + 2λ4 ) σ2 + 8fij fij σ1
+σ1 =
+dµ
+16π 2
+15 2 9 2
+−
+g + g σ1 + 3g14 ,
+2 1 2 2
+d
+1
+µ σ2 =
+4σ22 + 2σ2 σ3 + 6λ2 σ2 + (4λ3 + 2λ4 ) σ1 + 6yt2σ2 + 8fij fij σ2
+dµ
+16π 2
+
+µ
+
+41
+
+(A9)
+
+−
+µ
+
+15 2 9 2
+g1 + g2 σ2 + 3g14 ,
+2
+2
+
+(A10)
+
+1
+d
+σ3 =
+8σ12 + 8σ22 + 5σ32 + 16fij fij σ3 − 128 tr f 4 − 12g12σ3 + 24g14 .
+dµ
+16π 2
+
+(A11)
+
+Finally, the RGE’s for the Yukawa-type coupling constants are obtained at one-loop level as
+d
+9
+1
+17 2 9 2
+−
+yt =
+g1 + g2 + 8g32 yt + yt3 ,
+2
+dµ
+16π
+12
+4
+2
+1
+3 2 9 2
+d
+− g1 + g2 fij + 4fkl fkl fij − 4fik fkl flj ,
+µ fij =
+dµ
+16π 2
+2
+2
+µ
+
+where
+tr f 4 ≡
+fij fij ≡
+
+fij fjk fkl fli ,
+i,j,k,l=1−3
+
+fij fij .
+i,j=1−3
+
+42
+
+(A12)
+(A13)
+
+REFERENCES
+[1] Super-Kamiokande Collaboration, Y. Fukuda et al., Phys. Rev. Lett. 81 (1998) 1562.
+[2] A. Zee, Phys. Lett. B 93 (1980) 339; Phys. Lett. B 161 (1985) 141.
+[3] S.T. Petcov, Phys. Rev. D 115 (1982) 401; J. Liu, Phys. Lett. B 216 (1989) 367;
+B.K. Pal, Phys. Rev. D 44 (1991) 2261; W. Grimus, and G. Nardulli, Phys. Lett. B 271
+(1991) 161; A.Y. Smirnov and Z.-J. Tao, Nucl. Phys. B 426 (1994) 415; P.H. Frampton
+and S.L. Glashow, Phys. Lett. B 461 (1999) 95; G.C. McLaughlin and J.N. Ng, Phys.
+Lett. B 464 (1999) 232; A.S. Jaurabh and S.D. Rindani, Phys. Lett. B 464 (1999) 239;
+K. Cheung, O.C.W. Kong, Phys. Rev. D 61 (2000) 113012; K. Cheung, O.C.W. Kong,
+hep-ph/0003276; Y. Koide and A. Ghosal, Phys. Rev. D 63 (2001) 037301.
+[4] C. Jarlskog, M. Matsuda, S. Skadhauge, M. Tanimoto, Phys. Lett. B 449 (1999) 240.
+[5] C. Jarlskog, M. Matsuda, S. Skadhauge, M. Tanimoto, (hep-ph/0005147).
+[6] A.Yu. Smirnov, M. Tanimoto, Phys. Rev. D 55 (1997) 1665.
+[7] G.C. McLaughlin and J.N. Ng, Phys. Lett. B 455 (1999) 224.
+[8] ALEPH Collaboration, Phys. Lett. B 487 (2000) 253,
+[9] “Report of the Higgs Working Group” from the Physics at Run II Supersymmetry/Higgs
+Workshop, hep-ph/0010338.
+[10] CMS Technical Proposal, CERN/LHCC/94-38 (1994); ATLAS Technical Proposal,
+CERN/LHCC/94-93 (1994); ATLAS Technical Design Report, CERN/LHCC/99-15
+(1999).
+[11] N. Cabibbo, L. Maiani, G. Parisi and R. Petronzio, Nucl. Phys. B 158 (1976) 295; M.
+Lindner, Z. Phys. C 31 (1986) 295; G. Altarelli and I. Ishidori, Phys. Lett. B 337 (1994)
+141; J.A. Casas, J.R. Espinosa, and M. Quir´os, Phys. Lett. B 342 (1995) 171; ibid. B
+382 (1996) 374; J.R. Espinosa and M. Quir´os, Phys. Lett. B 353 (1995) 257; M. Quir´os,
+43
+
+IEM-FT-153/97, in Perspectives on Higgs Physics II, Ed. G.L. Kane, World Scientific,
+Singapore; T. Hambye and K. Riesselmann, Phys. Rev. D 55 (1997) 7255.
+[12] H. Komatsu, Prog. Theor. Phys. 67 (1982) 1177; R.A. Flores and M. Sher, Ann.
+Phys. (NY) 148 (1983) 295; M. Sher, Phys. Rep. 179 (1989) 273; D. Kominis and
+R.S. Chivukula, Phys. Lett. B 304 (1993) 152; S. Kanemura, T. Kubota and E. Takasugi, Phys. Lett. B 313 (1993) 155; S. Nie and M. Sher, Phys. Lett. B 449 (1999) 89;
+A. Akeroyd, A. Arhrib, E. Naimi, Phys. Lett. B 490 (2000) 119.
+[13] S. Kanemura, T. Kasai, Y. Okada, Phys. Lett. B 471 (1999) 182.
+[14] J. Casas, V. Clemente, A. Ibarra, M. Quir´os, Phys. Rev. D 62 (2000) 053005.
+[15] D. Zeppenfeld, R. Kinnunen, A. Nikitenko, and E. Richiter-Was, Phys. Rev. D 62 (2000)
+013009.
+[16] E. Boos, J.-C. Brient, D.W. Reid, H.J. Schreiber, and R. Schanidze, hepph/0011366;
+
+Rick van Kooten, Talk at the Berkeley Linear Collider Meet-
+
+ing in March 2000
+
+(http://needmore.physics.indiana.edu/~rickv/nlc/talks/
+
+Berkeley 2000/Berkeley 2000.html).
+[17] M. Melles, Talk given at LCWS 2000 (Fermilab, October 2000), hep-ph/0012195.
+[18] Z. Maki, M. Nakagawa and S. Sakata, Prog. Theor. Phys. 28 (1962) 870.
+[19] M. Ciuchini, G. Degrassi, P. Gambini and G.F. Giudice, Nucl. Phys. B 527 (1998) 21;
+P. Ciafaloni, A. Romanino and A. Strumia, Nucl. Phys. B 524 (1998) 361; F. Borzumati
+and G. Greub, Phys. Rev. D 58 (1998) 074004; T.M. Aliev and E.O. Iltan, Phys. Rev.
+D 58 (1998) 095014.
+[20] H.E. Haber and H.E. Logan, Phys. Rev. D 62 (2000) 015011.
+[21] J.F. Gunion, H.E. Haber, G. Kane and Sally Dawson, The Higgs Hunters Guide,
+Addison-Wesley Publishing Company (1990).
+
+44
+
+[22] ALEPH Collaboration, Phys. Lett. B 495 (2000) 1; L3 Collaboration, Phys. Lett. B 495
+(2000) 18.
+[23] V. Drollinger and A. Sopczak, hep-ph/0102342.
+[24] S. Kanemura, T. Kasai, G.-L. Lin, Y. Okada, J.J. Tseng, and C.-P. Yuan,
+hep-ph/0010233.
+[25] M. Dima, talk given at LCWS 2000 (Fermilab, October 2000)
+http://www-lc.fnal.gov/lcws2000/;
+ALEPH Collaboration, Phys. Lett. B 407 (1997) 377.
+[26] ALEPH Collaboration, Phys. Lett. B 487 (2000) 253.
+
+45
+
+40
+
+total
+
+Γh
+
+(b)
+
+(GeV)
+
+60
+
+20
+
+0
+100
+
+200
+
+300
+mh (GeV)
+
+400
+
+500
+
+

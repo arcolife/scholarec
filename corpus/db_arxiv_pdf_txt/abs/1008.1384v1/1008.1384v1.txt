@@ -1,0 +1,1330 @@
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS IN THEIR
+COMPLEMENTS
+
+arXiv:1008.1384v1 [math.QA] 8 Aug 2010
+
+R. KASHAEV AND N. RESHETIKHIN
+Abstract. Let G be a simple complex algebraic group. By using a notion of a G-category we define
+invariants of tangles with flat G-connections in their complements. We also show that quantized universal
+enveloping algebras at roots of unity provide examples of G-categories.
+
+Contents
+Introduction
+
+2
+
+1. Tangles with flat G-connections in their complements
+
+2
+
+1.1. Tangles and diagrams
+
+2
+
+1.2. Flat G-connections in the complement of a tangle and G-tangles
+
+4
+
+1.3. The category of G-tangles
+
+6
+
+2. The category of G-colored diagrams
+
+7
+
+2.1. Factorizable groups and Lie groups
+
+7
+
+2.2. G-colorings of diagrams
+
+7
+
+2.3. The category of G-colored diagrams
+
+8
+
+2.4. The equivalence of categories
+
+9
+
+2.5.
+
+A geometric version of the functor F
+
+10
+
+3. Braided G-categories
+
+11
+
+3.1. Braided G-categories
+
+11
+
+3.2. The category of G-colored diagrams is a ribbon G-category
+
+15
+
+3.3. Elementary diagrams
+
+17
+
+3.4. The category of C-diagrams
+
+18
+
+4. Invariants of framed G-tangles
+
+19
+
+4.1. The functor Φ : D(C) → C
+
+19
+
+4.2. Invariants of framed G-tangles
+
+20
+
+5. Quantized universal enveloping algebra of gl2
+
+20
+
+5.1. The algebra Uh (gl2 )
+
+20
+
+5.2. The inner automorphism R
+
+21
+
+6. The algebra U
+
+22
+
+Date: July, 2002.
+1
+
+2
+
+R. KASHAEV AND N. RESHETIKHIN
+
+7. The algebra Uε
+
+23
+
+8. Conclusion
+
+25
+
+References
+
+25
+
+Introduction
+A breakthrough in the theory of invariants of knots came with the discovery of the Jones polynomial [J]
+and its generalizations (HOMFLY and Kauffman). Then it was shown in [RT] that such invariants as well
+as invariants of tangled graphs can be obtained from quantized universal enveloping algebras of simple Lie
+algebras.
+In this paper we extend the construction of invariants of links from [RT] (for details see [T1]). We construct
+invariants of tangles in R2 × [0, 1] with a flat connection in a principal G-bundle (where G is a simple complex
+algebraic group) over the complement of a tangle. The invariant is a functor from the category of G-tangles
+to a given G-category (see sections 1–3 for definitions). The invariant of a tangle with a gauge class of flat
+connections in the complement is defined as the image of the corresponding G-tangle.
+In section 1 of this paper first we describe the moduli space of flat connections in the complement to a
+tangle in R2 × [0, 1]. Then we define the category of tangles with gauge classes of flat connections in their
+complements. The construction is essentially the same as π-tangles introduced and studied by Turaev in
+[T2]. In section 2 we define the category of G-colored tangle diagrams and show that it is naturally equivalent
+to the category of tangles with flat G-connections in their complements. In section 3 we introduce the notion
+of a G-category, which is very similar but different from that of [T2]. In section 4 we construct invariants
+of G-tangles. In sections 5–7 we show that representations of Uε provide examples of GL∗2 -categories and
+therefore provide invariants of tangles with GL2 -connections in their complements.
+We are grateful to R. Kirby, D. Thurston, V. Turaev, and M. Yakimov for interesting discussions and
+useful comments. Both authors were partly supported by the NSF grant DMS-0070931 and by the CRDF
+grant RM1-2244 and by the Swiss National Science Foundation.
+
+1. Tangles with flat G-connections in their complements
+1.1. Tangles and diagrams. Let I ≡ [0, 1] be the closed unit interval. A geometric tangle t ⊂ R2 × I
+is the image of a smooth embedding I ⊔ . . . ⊔ I ⊔ S 1 ⊔ . . . ⊔ S 1 → R2 × I with oriented components such
+k times
+
+l times
+
+that ∂t ⊂ R2 × ∂I, and t intersects the boundary R2 × ∂I perpendicularly. We have ∂t = ∂+ t ⊔ ∂− t
+where ∂+ t = (R2 × {1}) ∩ ∂t and ∂− t = (R2 × {0}) ∩ ∂t. The geometric tangle t is called standard if
+∂+ t = {(0, 1, 1), (0, 2, 1) . . . (0, n, 1)} and ∂− t = {(0, 1, 0), (0, 2, 0) . . . (0, m, 0)} for some n, m ∈ Z>0 . We will
+say that such tangle has type (m, n).
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+3
+
+Denote by Dt the image of t under the projection
+(1)
+
+p : R2 × I → R × I, (x, y, z) → (y, z)
+
+together with the additional information at each self-crossing point about underpassing and overpassing
+segments. The projection Dt is called regular if its only singularities are double points at which the images
+of the corresponding components of t intersect transversally. The ambient isotopy class of a regular projection
+Dt is called a diagram of the tangle t. When it is not confusing we will use the same notation Dt for diagrams
+and regular projections.
+The diagram of a tangle can be regarded as the isotopy class of a smooth embedding of a graph with
+four-valent vertices of two types and one-valent vertices. These are the double points and the boundary
+points, respectively. The edges of the graph are the segments running between the vertices. A vertex of Dt
+is called positive if it is a double point and the angle between upper and lower components is positive. If
+the angle is negative, the vertex is called negative, see Fig. 1. Each such embedding is always a diagram
+of some tangle. Two diagrams are called Reidemeister equivalent if one can be obtained from another by a
+finite sequence of Reidemeister moves (see Figs 2–4).
+
+(a) Negative intersec- (b) Positive intersection
+tion
+
+Figure 1.
+
+=
+
+Figure 2.
+
+4
+
+R. KASHAEV AND N. RESHETIKHIN
+
+=
+
+=
+
+Figure 3.
+
+=
+
+Figure 4.
+
+A tangle is the isotopy class of a geometric tangle. Tangles are in bijection with Reidemeister classes of
+diagrams.
+A geometric framing of a geometric tangle t is a continuous nonsingular section of the normal bundle to t.
+A framing of a tangle is the isotopy class of a geometric framing. A framing is standard if it is parallel to the
+x-axis at ∂± t with positive projection to this axis. It is clear that every framed geometric tangle with such
+framing at the boundary is isotopically equivalent to a framed geometric tangle with the framing parallel to
+x-axis. Framed tangle is the isotopy class of a framed geometric tangle with the standard framing.
+Two diagrams of tangles are called framed Reidemeister equivalent if they are connected by a sequence of
+moves in Figs 2, 3, 5.
+Framed Reidemeister classes of diagrams are in bijection with the framed tangles.
+
+1.2. Flat G-connections in the complement of a tangle and G-tangles. Let E be a trivial principal
+G-bundle over R2 × I and At ∈ Ω1 (R2 × I\t, g) be the 1-form representing a flat connection in E over
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+5
+
+=
+
+Figure 5.
+the complement to a standard geometric framed tangle t of type (m, n). The corresponding parallel transport operators along paths give an equivalent description of the flat connection as a representation of the
+fundamental groupoid of (R2 × I)\t in G.
+
+←
+2
+
+′
+
+*
+
+Let Em be a trivial principal G-bundle over R , and α be the g-valued 1-form of a flat connection in E over
+R2 \{(0, 1), . . . , (0, m)}. Assume that α(x, y) decays sufficiently fast when y goes to −∞ so that the parallel
+2
+
+transport operator of α along a path connecting (x0 , y0 ) with (x, y) in R has a limit as y0 → −∞. Let [α]
+be the gauge class of α with respect to gauge transformations trivial at ∞. Let γi be a path which starts at
+(0, −∞) encircles points (0, 1), . . . , (0, i) and then returns to (0, −∞) (see Fig. 6). We can identify the class
+[α] with an element of Gm = G × · · · × G so that the group element gi in the collection (g1 , . . . , gm ) ∈ Gm
+is the holonomy along the path γi .
+
+Figure 6.
+Let α and β be flat connections in Em and En , respectively. Denote by At (α, β) the space of flat
+G-connections over the complement of t which, when restricted to R2 × {0} \ {(0, 1, 0), . . . , (0, m, 0)} and
+R2 × {1} \ {(0, 1, 1), . . . , (0, n, 1)}, coincide with α and β, respectively, and which decay sufficiently fast
+when y → −∞ (so that the parallel along a path connecting (x0 , y0 , z0 ) and (x, y, z) has a finite limit when
+y0 → −∞).
+If Gt is the group of gauge transformations trivial at infinity, the quotient space
+Mt ([α], [β]) = At (α, β)/Gt is by definition the moduli space of those flat G-connections in the complement
+of t which, when restricted to two boundary components R2 × {0} \ ∂t and R2 × {1} \ ∂t, give representatives
+of the gauge classes [α] and [β] respectively.
+
+←
+*
+
+6
+
+R. KASHAEV AND N. RESHETIKHIN
+
+Following [T2], denote Ct = (R2 × I)\t and consider the fundamental group of Ct with the base point in
+{0} × [−∞, L] × I with t ⊂ R × [L + 1, ∞] × I. The set of such base points is contractible and we will write
+π1 (Ct ) for the fundamental group, suppressing the base point. We will call such base points left base points.
+It is clear that an element of Mt ([α], [β]) defines a representation of π1 (Ct ). Gauge classes of boundary
+values [α] and [β] become elements of Gm and Gn respectively, defined as holonomies along γi (see above).
+Thus, the space Mt ([α], [β]) can be identified with a subspace of G-tangles [T2], where a G-tangle is defined
+as a pair consisting of a framed oriented tangle t and a group homomorphism ρ : π1 (Ct ) → G.
+Let t and t′ be two standard isotopically equivalent geometric tangles. An isotopy bringing t to t′ lifts to
+an isomorphism between G-connections over the complements of t and t′ and therefore to an isomorphism
+between corresponding moduli spaces of flat G-connections. The isomorphism class of the moduli spaces
+generated by these isomorphisms can be identified with the equivalence class of pairs (t, At ) with respect
+to isotopies of tangles, their pull-backs acting on connections and gauge transformations from Gt . We will
+denote the obtained set of classes by M[t] ([α], [β]).
+From now on we will work with G-tangles. The geometric picture with flat connections will be used only
+once below when we shall assign a geometrical meaning to G-colorings of diagrams.
+Let v = (x, y, z) ∈ t ⊂ R2 × I and γv ⊂ Ct be a (homotopy) path which starts at a left base point then
+goes to the point (x, y + δ, z) ”over” the tangle, then returns to the base point ”under” the tangle. Here δ is
+sufficiently small and we assume that t is transversal to (x, y)-plane at (x, y, z). We will call such path (the
+homotopy class thereof) standard for v = (x, y, z).
+
+1.3. The category of G-tangles. Objects of the category T (G) of G-tangles are finite sequences {(ε1 , g1 ), . . . , (εn , gn )}
+with εi = ±1, gi ∈ G. Morphisms from {(ε1 , g1 ), . . . , (εm , gm )} to
+{(σ1 , h1 ), . . . , (σn , hn )} are G-tangles.
+Here m is the number of connected components of (R2 × {0}) ∩ t and n is the number of connected components of (R2 × {1}) ∩ t. The signs εi and σi show the orientation of the boundary components. If ′′ +′′ ,
+the component is oriented upward and if ′′ −′′ , it is oriented downward. The representation ρ : π1 (Ct ) → G
+should agree with {gi } and {hi } in the following way. If γi+ is a path from a left base point encircling
+boundary points (0, 1, 0), . . . (0, i, 0) in the vicinity of R2 × {0} then ρ(γi+ ) = gi . Similarly for a path γi−
+encircling points (0, 1, 1), . . . , (0, i, 1) in the vicinity of R2 × {1} we have ρ(γi− ) = hi .
+The composition of morphisms is defined by gluing tangles. The identity morphism of
+{(ε1 , g1 ), . . . , (εn , gn )} to itself is the trivial braid with the representation of the fundamental group defined
+by g1 , . . . , gn .
+Remark 1. The category T (G) can also be defined in more geometrical terms of gauge classes of flat
+connections. Objects are sequences (ε1 , . . . , εn ; [α]) where [α] is a gauge class of a flat connection over
+R2 \{(0, 1) . . . (0, n)} in the trivial principal G-bundle over R2 and εi = ±1. Morphisms between (ε1 , . . . , εm ; [α])
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+7
+
+and (σ1 , . . . , σn , [β]) are elements of M[t] ([α], [β]) i.e. equivalence classes of pairs (t, At ) described in the
+previous subsection.
+2. The category of G-colored diagrams
+2.1. Factorizable groups and Lie groups. We say that group G is factorizable into two subgroups
+G± ⊂ G if any element g ∈ G can be represented in a unique way as
+−1
+g = g+ g−
+
+(2)
+where g± ∈ G± .
+
+If G is a complex algebraic Lie group (later we will focus on this case) we will say that it is factorizable if
+there exists a Zariski open neighborhood G′ ⊂ G of 1 such that every element of G′ has a unique factorization
+(2). Notice that in this case any l ∈ g = Lie(G) has a unique decomposition
+l = l+ − l−
+where l± ∈ g± = Lie(G± ).
+Remark 2. We can choose G+ = {e} and G− = G. We call it trivial factorizability.
+Let G be a factorizable group. Define a binary operation
+g ⋆ h = g+ h+ (g− h− )−1
+which obviously defines a group structure on G with the same identity element as for the original group
+−1
+structure. The inverse of g in this group is i(g) = g+
+g− . This operation corresponds to the multiplication
+
+of the group G+ × G− under the mapping G+ × G− → G, (g+ , g− ) → g+ (g− )−1 . In what follows, we shall
+denote this group G∗ .
+2.2. G-colorings of diagrams. Let t be a standard geometric tangle and Dt , its diagram with the set of
+edges E(Dt ). Assume that G is a factorizable group.
+Definition 1. The map E(Dt ) → G which associates to edge e element xe ∈ G is called a G-coloring of
+diagram Dt if at each double point it satisfies the relations
+xbv = (xav )−1
+± xcv (xav )± ,
+
+xav = (xcv )∓ xdv (xcv )−1
+∓ ,
+
+depending on whether the intersection is positive or negative. Here the enumeration of edges is the same as
+on Fig. 7.
+Let xL , xR : G × G → G be mappings acting as
+(3)
+
+xL (x, y) = x− yx−1
+− ,
+
+−1
+xR (x, y) = xL (x, y)+
+xxL (x, y)+
+
+In terms of these maps the definition above means that at positive double points we have (xa , xb ) =
+(xL (xc , xd ), xR (xc , xd )) and at negative double points (xc , xd ) = (xL (xa , xb ), xR (xa , xb )).
+
+8
+
+R. KASHAEV AND N. RESHETIKHIN
+
+av
+
+bv
+v
+
+dv
+
+cv
+Figure 7.
+
+The following proposition is due to Weinstein and Xu [WX] in the context of factorizable Poisson–Lie
+groups.
+Proposition 1. The map R : G × G → G × G acting as (x, y) → (xL (y, x), xR (y, x)) satisfies the settheoretical Yang–Baxter equation:
+R12 R13 R23 = R23 R13 R12
+Here all mapping act from G×3 to itself. The mapping R12 acts as R in the first two factors and trivially
+in the last one. The other mappings act in a similar way. The subindices indicate in which factors the
+mapping acts non-trivially.
+It follows from this proposition that if the G-coloring of lower edges of both diagrams on Fig. 2 are x, y, z,
+then the colorings of upper edges of the diagrams (which are determined by the diagrams and the coloring
+of lower edges) are the same for both diagrams. In other words, the G-coloring is compatible with the third
+Reidemeister move. It is easy to see that the G-coloring is also compatible with other framed Reidemeister
+moves.
+Let (D, c) and (D′ , c′ ) be two G-colored diagrams which are Reidemeister equivalent. Then, since in each
+Reidemeister move the coloring of a new diagram is uniquely defined by the coloring of the initial diagram,
+c′ is uniquely determined by c. Thus, we have Reidemeister classes of G-colored diagrams.
+2.3. The category of G-colored diagrams. Let G be a factorizable group. Define category D(G) of
+G-colored diagrams as follows.
+Objects of the category are sequences {(ε1 , x1 ), . . . , (εn , xn )} where εi = ± and xi ∈ G and the empty set.
+Morphisms between {(ε1 , x1 ), . . . , (εn , xn )} and {(σ1 , y1 ), . . . , (σm , ym )} are Reidemeister classes of Gcolored diagrams with the orientation of the boundary edges (adjacent to 1-valent vertices) defined by εi
+and σj as it is shown on Fig. 8 and with the G-colorings of the boundary edges given by εi (xi ) and σj (yj )
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+9
+
+where ε(x) is defined as
+(4)
+
+ε(x) =
+
+x = x+ x−1
+−
+i(x) = x−1
++ x−
+
+for ε = +1
+for ε = −1
+
+The operation x → i(x) is taking the inverse in G∗ . The identity morphism is shown on Fig. 9.
+Composition of Reidemeister classes of G-colored diagrams (D1 , c1 ) and (D2 , c2 ) is the Reidemeister class
+of the G-colored diagram (D1 ◦ D2 , c) where D1 ◦ D2 is the diagram obtained by gluing D1 and D2 and the
+coloring c is induced by colorings c1 and c2 ,
+(+ , m)
+
+(−, m)
+
+(+ , m)
+
+( − , m)
+
+Figure 8.
+
+..................
+
+Figure 9.
+2.4. The equivalence of categories. Here we will prove the equivalence of categories T (G) ≃ D(G).
+Consider the map F : T (G) → D(G) acting on objects as
+F ((ε1 , g1 ), . . . , (εn , gn )) = {(ε1 , x1 ) . . . (εn , xn )}
+Here xi ∈ G are related to gi ∈ G via
+(5)
+
+−εi
+−ε1
+gi = (x1 )ε+1 . . . (xi )ε+i (xi )−
+(x1 )−
+
+For a G-tangle (t, ρ) define
+F ((t, ρ)) = [(Dt , c)]
+
+10
+
+R. KASHAEV AND N. RESHETIKHIN
+
+where Dt is a diagram of the tangle t, c is the coloring of Dt which we define below, and [(Dt , c)] the colored
+framed Reidemeister class of (D, c).
+Consider a standard path γv associated with point v ∈ t. Let e1 , . . . , ei be the edges of Dt intersected
+by the projection of γv , and ε1 , . . . , εi the signs of the projections of their orientations to the vertical axis.
+Then the holonomy gv = gi along γv associated to ρ is given by formula (5), where x1 , . . . , xi now are the
+colors of edges e1 , . . . , ei . It is easy to see that this correspondence between ρ and the edge colors is one to
+one, and thus the mapping F is invertible.
+It is easy to see that the map F a functor. To prove this it remains to show that F (f g) = F (f )F (g) for
+morphisms f and g, which is obvious. It is also clear that this functor is an equivalence of categories.
+2.5. A geometric version of the functor F . Now consider a geometric description of the category T (G)
+and describe the functor F in this terms.
+To define the action of F on objects we consider a special representative α
+˜ of the gauge class [α]. Namely,
+α
+˜ is continuous and vanishes outside the strips {(x, y)| x ∈ R, i − ǫ < y < i + ǫ} for some 0 < ǫ < 1/2. Let γi±
+be paths connecting points (0, i − 1/2) and (0, i + 1/2) which go around (0, i) in the clock-wise direction for
+γi− and in the counter clock-wise direction for γi+ . These paths are shown as (−) and (+) paths respectively
+on Fig. 10.
+(−)
+
+(0,i−1/2)
+
+(0,i)
+
+(0,i+1/2)
+
+(+)
+
+Figure 10.
+Define the action of F on objects as:
+F : (ε1 , . . . , εn ; [α]) → {(ε1 , x1 ), . . . , (εn , xn )}
+α) and γi = γi+ ◦ (γi− )−1 .
+where xi = holγi (˜
+To define the action of F on morphisms, first, let us look at the geometry of the projection p. The
+preimages of edges of Dt form a system of “walls” p−1 (e) ⊂ R2 × I, e ∈ E(Dt ), intersecting at lines which
+are preimages of the vertices of Dt . Let At be a flat connection over the complement of t. If the tangle is
+not a link all chambers bounded by walls including the ”outer” chambers are simply connected so the flat
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+11
+
+connection At can be trivialized inside these chambers, except a thin neighborhood of walls. If the tangle is
+a link, the outer chamber is not simply connected, but we still can trivialize the flat connection inside this
+chamber since the link can be placed into a ball and the outside of a ball is a simply connected region in
+R2 × I. Thus, we can trivialize the flat connection in each chamber outside of a thin neighborhood of walls.
+Assume that this thin neighborhood is such that at the boundary it is inside of strips x ∈ R, i − ǫ < y < i + ǫ.
+The tangle t separates each wall into two semi-infinite parts. Let e be an edge of Dt , denote by p−1 (e)−
+the part of the wall p−1 (e) which is semi-infinite in the negative x-direction and by p−1 (e)+ the other part
+of this wall. Since the connection is flat and since now it is trivial inside the chambers (except of a thin
+neighborhood of walls), the holonomy through the wall p−1 (e) along any path that is based on a pair of
+points separated by this wall and which are outside of a thin neighborhood of the wall, depends only on
+the homotopy class of the path. Let us call the path positive if its orientation together with the orientation
+of the edge e and with the direction of the projection p form positively oriented triple of vectors in R3
+with the standard orientation. This produces two elements x± (e) of G which we can assign to the edge e
+corresponding to holonomies along positive paths through p−1 (e)± . The product x(e) = x+ (e)x− (e)−1 is the
+holonomy along a closed path that crosses first the wall p−1 (e)+ in the positive direction and then p−1 (e)−
+in the negative direction. If G is factorizable there exists unique pair x(e)± which factorizes x(e) as above
+with x(e)± ∈ G± , and one can choose the connection At so that x± (e) = x(e)± . This gives us an assignment
+e → x(e) of group elements to edges of the diagram. Notice that this assignment does not depend on base
+points inside chambers and depends only on the gauge class of the flat connection.
+The holonomy along a path connecting two points based inside chambers is the product of holonomies
+through the walls intersected by this path. Given a tangle t and its diagram Dt these holonomies can be
+computed by the wall crossing rule (see Fig. 15). Horizontal edges on Fig. 15 represent parts of the path.
+Vertical edges represent parts of the tangle (walls). Under-crossings and over-crossings show whether the
+path went through p−1 (e)− or p−1 (e)+ respectively where e is the corresponding edge of the diagram. The
+holonomy gained at the crossing is given in terms of the G coloring of e.
+To show that the map assigning group elements to edges constructed above gives G-colorings, one should
+consider pairs of paths from Figs 11–14. Isotopy equivalence of these paths implies the equality of the
+corresponding holonomies. Computation of them according to the “wall-crossing rules” described above
+gives the identities in the definition of the G-coloring.
+3. Braided G-categories
+3.1. Braided G-categories. A braided group is a pair (G, R : G × G → G × G) where G is a group and
+the map R satisfies the following requirements
+(1) m ◦ R = m′
+(2) R ◦ (m × id) = (m × id) ◦ R23 ◦ R13
+(3) R ◦ (id ×m) = (id ×m) ◦ R12 ◦ R13
+
+12
+
+R. KASHAEV AND N. RESHETIKHIN
+
+Figure 11.
+
+Figure 12.
+where m is the multiplication and m′ is the opposite multiplication in G. In particular, R satisfies the
+set-theoretical Yang–Baxter equation
+R12 ◦ R13 ◦ R23 = R23 ◦ R13 ◦ R12 .
+An example of a braided group is the pair (G∗ , R) where G∗ is a factorized group G with multiplication
+m(x, y) = x ⋆ y and R is given by (3).
+For a set A we will say that category C is fibered over A if
+• There is a projection π : Ob(C) → A
+• HomC (X, Y ) = ∅, if π(X) = π(Y )
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+13
+
+Figure 13.
+
+Figure 14.
+
+Recall that a monoidal category is a category with a functor ⊗ : C × C → C. This functor is given together
+with the natural transformations a : otimes ◦ ⊗ × id ≃ ⊗ ◦ id × ⊗ which is called an associativity constraint.
+This natural transformation should satisfy the pentagon identity [ML]. In addition to this, a monoidal
+category has an identity object 11 given together with a system of functorial isomorphisms lX : 11 ⊗ X ≃ X
+and rX : 1!1 ⊗ X ≃ X which satsfy some natural conditions [ML].
+A monoidal category fibered over a group G is called a G-category if
+• π(X ⊗ Y ) = π(X)π(Y )
+• π(11) = e ∈ G
+
+14
+
+R. KASHAEV AND N. RESHETIKHIN
+
+e
+
+e
+
+(x e )−
+e
+
+−1
+
+(x e ) −
+
+e
+
+e
+
+(x e ) −
+
+(x e ) +
+
+(xe ) +
+
+e
+
+e
+
+e
+
+−1
+
+−1
+
+(x e ) −
+
+(x e )+
+
+−1
+
+(xe ) +
+
+Figure 15.
+
+Associativity constraint and functorial morphisms rX and lX should act fiber-wise. From now on we will
+work only with strict monoidal categories: we assume that the associativity constrain is trivial (see [ML] for
+details on what this exactly means).
+Recall that a monoidal category is called rigid if any object X has a left dual object X ∗ , the injection
+and evaluation mappings iX : 11 → X ⊗ X ∗ and eX : X ∗ ⊗ X → 11, and if the triple X ∗ , iX , eX is unique
+up to an isomorphism. In a rigid monoidal category double dual is not necessary isomorphic to the object
+itself, and, in particular, each object has left and right duals.
+A G-category C is called rigid if it is a rigid monoidal category and in addition to the properties listed
+above one has
+π(X ∗ ) = π(∗ X) = π(X)−1
+where ∗ X and X ∗ are left and right duals to X respectively. The evaluation and injection morphisms act
+fiber-wise.
+Now assume that the group G is a braided group. A category C is called braided rigid G-category if it is
+a rigid G-category and in addition to this it has the following properties:
+(1) There exists a functor B : C × C → C × C such that the following diagram is commutative
+B
+
+C × C −−−−→ C × C
+
+
+π×π
+
+π×π
+ˇ
+R
+
+G × G −−−−→ G × G
+
+ˇ = R ◦ P , and P (x, y) = (y, x). We will write B : (X, Y ) → (XL (X, Y ), XR (X, Y )) for the
+where R
+action of B. This property is the lifting of the property 1. of braided group G to the category C.
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+15
+
+(2) The functor B satisfies the following identities ( for functors C × C × C → C × C × C)
+B ◦ (⊗ × id) = (id × ⊗) ◦ (B × id) ◦ (id × B)
+and the same identity for B −1 . This properties of B are liftings of properties 2. and 3. of the braided
+group G to the category C.
+(3) There exists an isomorphism of functors c which makes the following diagram commutative
+C×C
+⊗ց
+
+B
+
+→
+c
+⇒
+C
+
+C×C
+ւ⊗
+
+In other words, there exists a system of functorial isomorphisms
+cX,Y : X ⊗ Y → XL (X, Y ) ⊗ XR (X, Y ).
+(4) The commutativity constraint should satisfy the hexagon axioms
+cX⊗Y,Z = (cX,XL (Y,Z) ⊗ id)(id ⊗cY,Z )
+cX,Y ⊗Z = (cX,Y ⊗ id)(cXR (X,Y ),Z ⊗ id)
+A braided G-category is called a ribbon category if it in addition to being a G-category has a system of
+functorial morphisms {µX : X → X ∗∗ }X∈Ob(C) such that
+• µX⊗Y = µX ⊗ µY
+• µX ∗ = (µ∗X )−1
+• µ11 = id
+When it will not be misleading we will shorten the name “ rigid braided ribbon G-category” to “ribbon
+G-category”. The theorem 1 provides an example of a G-category.
+When G+ = e are G− = G the notion of the G-category introduced above is equivalent to the one
+introduced in [T2].
+3.2. The category of G-colored diagrams is a ribbon G-category.
+Theorem 1. The category of G-colored framed diagrams is a ribbon G∗ -category where G∗ = G+ × G− .
+
+Proof. First, let us check that R satisfies the required properties. The first identity for R is equivalent to
+xL (x, y) · xR (x, y) = x · y
+The second identity for R is equivalent to
+xL (x, y · z) = xL (x, y) · xL (xR (x, y), z)
+and
+xR (x, y · z) = xR (xR (x, y), z)
+
+16
+
+R. KASHAEV AND N. RESHETIKHIN
+
+and similar identities assure the last property of R. Here the multiplication is taken in G∗ . All these
+identities are easy to check.
+Now let us describe the structure of a G∗ -category explicitly. Define the G∗ structure on D(G) as
+π((ε1 , x1 ), . . . , (εn , xn )) = ε1 (x1 ) · · · εn (xn )
+−1 −1
+Here the product is taken in G∗ , x · y = x+ y+ y−
+x− , and ε(x) is defined in (4).
+
+The monoidal structure is the same as for the category of diagrams. The tensor product of objects is
+{(ε1 , x1 ), . . . , (εn , xn )} ⊗ {(σ1 , y1 ), . . . , (σm , ym )} = {(ε1 , x1 ), . . . , (εn , xn ), (σ1 , y1 ), . . . , (σm , ym )}
+The tensor product of morphisms is shown on Fig. 16. The identity object is the empty set.
+
+D
+
+D1
+
+2
+
+Figure 16.
+The object dual to {(ε1 , x1 ), . . . , (εn , xn )} is {(−εn , i(xn )), . . . , (−ε1 , i(x1 ))} with the evaluation and the
+injection morphisms given by diagrams from Fig. 17 and Fig. 18 with the G-colorings induced by objects.
+
+...
+
+Figure 17.
+To describe the braiding, let us first define the functor B : D(G) × D(G) → D(G) × D(G) as follows. On
+objects it acts as
+B({(ε1 , x1 ), . . . , (εn , xn )}, {(σ1 , y1 ), . . . , (σm , ym )})
+L
+R
+= ({(σ1 , y1L ), . . . , (σm , ym
+)}, {(ε1 , xR
+1 ), . . . , (εn , xn )})
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+17
+
+...
+
+Figure 18.
+L
+R
+R
+where (xL
+1 , . . . , xm , y1 , . . . , yn ) is the image of (x1 , . . . , xn , y1 , . . . , ym ) with respect to the map
+
+(sn · · · sn+m−1 )(sn−1 · · · sn+m−2 ) · · · (s2 · · · sn+1 )(s1 · · · sn ) : G×(n+m) → G×(n+m)
+ˇ ii+1 .
+where si = R
+If [(Di , ci )] is a morphism (ε(i) , x(i) ) → (σ (i) , y (i) ),
+B((D1 , c1 ), (D2 , c2 )) = ((D2 , c′2 ), (D1 , c′1 )),
+Here colorings c′1 and c2′ are determined by c1 and c2 and by the corresponding objects.
+The commutativity morphism is represented by the diagram on Fig. 19 and it is a mapping
+{(ε1 , x1 ), . . . , (εn , xn )} ⊗ {(σ1 , y1 ), . . . , (σm , ym )}
+R
+L
+)} ⊗ {(ε1 , xR
+→ {(σ1 , y1L ), . . . , (σm , ym
+1 ), . . . , (εn , xn )}
+
+The coloring of the diagram on Fig. 19 is determined by the objects.
+
+...
+
+...
+
+Figure 19.
+
+3.3. Elementary diagrams. The following fact is a key for construction of invariants of tangles via braided
+monoidal categories.
+
+18
+
+R. KASHAEV AND N. RESHETIKHIN
+
+Proposition 2. All morphisms in the category D(G) are compositions of tensor products of elementary
+diagrams. Elementary diagrams are given on Fig. 20.
+
+V
+I
+
++
+
+V
+I
+
+V
+er
+
+V
+−1
+c
+
+−
+
+W
+
+W
+
+V
+c
+
+V
+e
+
+V
+r
+i
+
+l
+
+V
+l
+i
+
+Figure 20.
+The proof of this proposition and the definition of elementary diagrams are the same as for the category
+of framed tangles (see [T1]).
+3.4. The category of C-diagrams. Let C be a braided G-category.
+Definition 2. A pair (D, a) where D is a diagram and a : E(D) → Ob(C) is called a C-diagram if at
+each double point the values of the map a on adjacent edges satisfy the following conditions (the edges are
+enumerated as in Fig. 7):
+• If a double point is positive, Xa = XL (Xc , Xd ), Xb = XR (Xc , Xd ).
+• If the double point is negative, Xc = XL (Xa , Xb ), Xd = XR (Xa , Xb ).
+If G is factorizable and R is given by (3), then it is clear that each C-diagram defines a G-colored diagram
+defined by the composition map π ◦ a : E(D) → G.
+Now let us define the category D(C) of C-diagrams.
+Objects of D(C) are finite sequences {(ε1 , X1 ), . . . , (εn , Xn )}, where εi = ± and Xi ∈ Ob(C).
+Morphisms from {(ε1 , X1 ), . . . , (εn , Xn )} to {(σ1 , Y1 ), . . . , (σm , Ym )} are framed C-diagrams (D, a) with
+σi
+εi
++
+−
+a(e+
+i ) = Yi , a(ei ) = Xi . Here ei are edges of D adjacent to the upper boundary, enumerated from left
+
+to right i = 1, . . . , m, and e−
+i are edges adjacent to the lower boundary, with i = 1, . . . , n.
+The identity morphism of (ε1 , X1 ), . . . , (εn , Xn ) is the trivial braid with the orientation of components
+defined by εi and with Xi ∈ Ob(C) assigned to i-th strand.
+The following theorem is a generalization of Theorem 1 about G-colored diagrams.
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+19
+
+Theorem 2. The category D(C) is a ribbon G-category.
+The proof is parallel to the one of the theorem 1.
+4. Invariants of framed G-tangles
+4.1. The functor Φ : D(C) → C. As in the case of framed tangles and tangled framed graphs the first step
+in the construction of invariants of G-tangles will be the construction of a rigid G-braided monoidal functor
+from the category of C-diagrams to the category C.
+Let C be a ribbon G-category.
+Theorem 3. There exists a unique covariant functor Φ : D(C) → C such that
+• Φ({(ε1 , X1 ), . . . (εn , Xn )}) = X1ε1 ⊗ · · · ⊗ Xnεn , where X + = X, X − = X ∗ .
+• Φ is a monoidal functor, i.e.
+Φ((D1 , a1 ) ⊗ (D2 , a2 )) = Φ((D1 , a1 )) ⊗ Φ((D2 , a2 ))
+where (Di , ai ) are C-diagrams.
+• Values of Φ on elementary diagrams are:
+(1) If I ε : (ε, X) → (ε, X) is the identity morphism then
+Φ(I ε ) = idX ǫ .
+(2) For morphism er,l
+X : (±, X) ⊗ (∓, X) → 1 we have:
+Φ(erX ) = eX ∗ ◦ (µX ⊗ id) : X ⊗ X ∗ → X ∗∗ ⊗ X ∗ → 11 ,
+Φ(elX ) = eX : X ∗ ⊗ X → 11
+(3) For ir,l : 11 → (∓, X) ⊗ (±, X) we have
+∗
+Φ(irX ) = (µ−1
+X ⊗ id) ◦ iX ∗ : 11 → X ⊗ X
+
+Φ(ilX ) = iX : 11 → X ∗ ⊗ X,
+(4) If c : (+, X) ⊗ (+, Y ) → (+, XL (X, Y )) ⊗ (+, XR (X, Y )) is the braiding morphism,
+Φ(c) = cX,Y : X ⊗ Y → XL ⊗ XR .
+(5) For the inverse morphism c−1 : (+, XL ) ⊗ (+, XR ) → (+, X) ⊗ (+, Y ) we have:
+Φ(c−1 ) = (cX,Y )−1 : XL ⊗ XR → X ⊗ Y .
+• This functor Φ is rigid monoidal and G-braided.
+The proof of this theorem is completely parallel to the corresponding theorem describing invariants of
+framed tangles.
+
+20
+
+R. KASHAEV AND N. RESHETIKHIN
+
+4.2. Invariants of framed G-tangles. Let C be a ribbon G-category and A = {Ax }x∈G be a family of
+objects such that π(Ax ) = x. In other words A is a section of π : C → G. Assume that objects from this
+family have the following property:
+B : (Ax , Ay ) → (AxL (x,y) , AxR (x,y) )
+This implies that the braiding morphisms act as:
+cAx ,Ay : Ax ⊗ Ay → AxL (x,y) ⊗ AxR (x,y)
+It also implies that
+∗
+
+cAx ,Ay : A∗x ⊗ Ay → AxR (y,x1 ) ⊗ A∗x1
+where x1 ∈ G is such that x = xL (y, x1 ). This can be derived from the previous formula and from the axioms
+for the evaluation and injection morphisms. The action of the braiding on other duals can be computed
+similarly.
+Now, let us fix such family of objects in C to define a C-coloring of D for a given G-coloring c of the
+diagram D. We construct invariants of G-tangles as follows:
+• given a G-tangle (t, ρ) define the G-colored diagram [(D, c)] as in section 2 using the equivalence of
+categories of G-tangles and G-diagrams.
+• given a G-colored diagram [(D, c)] define a C-diagram [(D, a)] as above.
+• apply the functor Φ to the C-diagram [(D, a)].
+It is clear, from the definition of every step here, that the composition map is an invariant of (t, ρ) with
+values in morphisms of the category C.
+In the following section we will describe a GL2 (C)-category associated with the quantized universal enveloping algebra of gl2 (C).
+5. Quantized universal enveloping algebra of gl2
+5.1. The algebra Uh (gl2 ). The algebra Uh (gl2 ) over the ring C[[h]] is generated by elements H, G, X, and
+Y with defining relations
+[H, G] = 0, [H, X] = 2X, [H, Y ] = −2Y,
+[G, X] = 2X, [G, Y ] = −2Y,
+[X, Y ] =
+
+e
+
+hH
+2
+h
+
+− e−
+
+hG
+2
+h
+
+e 2 − e− 2
+The Hopf algebra structure on Uh (gl2 ) is defined by the action of the comultiplication on generators:
+(6)
+
+∆H
+
+=
+
+H ⊗ 1 + 1 ⊗ H, ∆G = G ⊗ 1 + 1 ⊗ G,
+
+(7)
+
+∆X
+
+=
+
+X ⊗e
+
+hH
+2
+
++ 1 ⊗ X, ∆Y = Y ⊗ 1 + e−
+
+hG
+2
+
+⊗Y
+
+Elements H, G, X and Y ”correspond to” elements 2e11 , 2e22 , e12 and e21 respectively.
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+21
+
+The algebra Uh (gl2 ) is the Drinfeld double of the quantized universal enveloping algebra Uh (b) ⊂ Uh (sl2 )
+where b is a Borel subalgebra in sl2 . As the double of a Hopf algebra it is quasitriangular with the universal
+R-matrix
+R = exp
+
+h
+H ⊗G
+4
+
+h
+
+h
+
+h
+
+(1 + e 2 (e 2 − e− 2 )2 X ⊗ Y e−nh )
+n≥0
+
+This is the element of Uh (gl2 )⊗2 which one should consider as a formal power series in h.
+Since R is the universal R-matrix it satisfies the following identities:
+R∆(a)R−1 = σ · ∆(a)
+
+(8)
+
+(∆ ⊗ id)(R) = R13 R23
+(id ⊗ ∆)(R) = R13 R12
+where σ is the permutation operator σ(a ⊗ b) = b ⊗ a. In particular, R satisfies the Yang-Baxter equation
+R12 R13 R23 = R23 R13 R12
+5.2. The inner automorphism R. Define the inner automorphism
+R : Uh (gl2 )⊗2 [[h]] → Uh (gl2 )⊗2 [[h]] as
+R(x ⊗ y) = R(x ⊗ y)R−1
+
+(9)
+
+It is easy to compute the action of R on generators.
+Theorem 4. The following identities hold.
+R(1 ⊗ e
+R(1 ⊗ e
+
+hH
+2
+hG
+2
+
+) = (1 ⊗ e
+) = (1 ⊗ e
+
+h
+
+h
+
+h
+
+hH
+2
+
+h
+
+h
+
+h
+
+hH
+2
+
+hH
+2
+
+)(1 + e 2 (e 2 − e− 2 )2 e−
+
+hG
+2
+
+)(1 + e 2 (e 2 − e− 2 )2 e−
+
+R(X ⊗ 1) = X ⊗ e
+R(1 ⊗ Y ) = e−
+
+hH
+2
+
+X ⊗Ye
+X ⊗Ye
+
+hG
+2
+
+)−1
+
+hG
+2
+
+)−1
+
+hG
+2
+
+⊗Y
+
+The theorem follows immediately from the commutation relations between generators and from the equation
+f (zq −1 ; q) = (1 + zq −1 )f (z; q)
+for the function
+
+∞
+
+(1 + zq n ).
+
+f (z; q) =
+n=0
+
+The action of R on elements 1 ⊗ X, Y ⊗ 1, e
+
+hH
+2
+
+⊗ 1, and e
+
+hG
+2
+
+⊗ 1 can be derived from the formulae above
+
+and from the identity (8).
+The Yang-Baxter equation for R implies the Yang–Baxter equation for R:
+R12 · R13 · R23 = R23 · R13 · R12
+
+22
+
+R. KASHAEV AND N. RESHETIKHIN
+
+6. The algebra U
+The algebra U is generated over C[t, t−1 ] by elements K, L, E and F with the following defining relations
+KL = LK, KE = t2 EK, KF = t−2 F K,
+LE = t2 EL, LF = t−2 F L,
+EF − F E = (t − t−1 )(K − L−1 )
+The center of U is generated freely by Laurent polynomials in KL−1 and
+c = EF + Kt−1 + L−1 t
+
+(10)
+This is a Hopf algebra with
+
+∆(K) = K ⊗ K, ∆(L) = L ⊗ L,
+∆(E) = E ⊗ K + 1 ⊗ E, ∆(F ) = F ⊗ 1 + L−1 ⊗ F .
+The map φ : U → Uh (gl2 ) acting on generators as
+φ(K) = exp(
+
+h
+hH
+hG
+), φ(L) = exp(
+), φ(t) = e 2
+2
+2
+
+h
+
+h
+
+h
+
+h
+
+φ(E) = (e 2 − e− 2 )X, φ(F ) = (e 2 − e− 2 )Y
+extends to a homomorphism of Hopf algebras.
+The algebra U is not quasitriangular. Instead, there is an outer automorphism of the division ring U¯⊗2
+of U ⊗2 which we denote by the same letter R as the automorphism (9) which acts on generators as
+R(1 ⊗ K) = (1 ⊗ K)(1 + tK −1 E ⊗ F L)−1
+R(1 ⊗ L) = (1 ⊗ L)(1 + tK −1 E ⊗ F L)−1
+R(E ⊗ 1) = E ⊗ L
+R(1 ⊗ F ) = K −1 ⊗ F
+Define its action on generators K ⊗ 1, L ⊗ 1, 1 ⊗ E, and F ⊗ 1 such that
+R(∆(a)) = σ ◦ ∆(a)
+where a is one of the generators of U.
+It is clear that the homomorphism φ brings the outer automorphism R to (9).
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+23
+
+7. The algebra Uε
+Let ε be a primitive root of 1 of an odd degree ℓ. Denote by Uε the specialization of U to t = ε. The
+following theorem is a version of the corresponding facts for simple Lie algebras proved in [DC-K].
+Theorem 5.
+
+• Elements E ℓ , F ℓ , K ±ℓ , and L±ℓ generate a central subalgebra Z0 ⊂ Uε .
+
+• Z0 is a Hopf subalgebra with
+∆(K ℓ ) = K ℓ ⊗ K ℓ , ∆(Lℓ ) = Lℓ ⊗ Lℓ ,
+∆(E ℓ ) = E ℓ ⊗ K ℓ + 1 ⊗ E ℓ , ∆(F ℓ ) = F ℓ ⊗ 1 + L−ℓ ⊗ F ℓ .
+• The algebra Uε is a free Z0 -module of dimension ℓ4 .
+• The center Z(Uε ) is generated by Z0 and by the element (10) modulo the relation
+ℓ−1
+
+(c − Kεj+1 − L−1 ε−j−1 ) = E ℓ F ℓ
+j=0
+
+• Let α, β, a and b be coordinates on the group B+ × B− such that for b± ∈ B± we have:
+b+ =
+
+1 β
+0 α
+
+, b− =
+
+a
+b
+
+0
+1
+
+Then the map F ℓ → ba−1 , E ℓ → β, K ℓ → α, Lℓ → a is a homomorphism of Hopf algebras
+Z0 → C(B+ × B− )
+• Uε is semisimple over a Zariski open subvariety of Spec(Z0 ) ≃ B+ × B− .
+Let x ∈ GL∗2 be an irreducible Z0 -character and Ix ⊂ Uε be the corresponding ideal. The quotient algebra
+Ax = Uε /Ix
+is finite-dimensional of dimension ℓ4 . There are three natural structures of a left module on Ax . For a ∈ Uε
+denote by [a] the class of a in Ax . Then these three actions are:
+• π(a)[b] = [ab],
+• φ(a)[b] = [bS(a)],
+• ψ(a)[b] = [bS −1 (a)].
+Assume that x ∈ GL∗2 is generic, i.e. that Ax is semisimple. Fix an isomorphism of algebras φx : Ax ≃
+⊕ni=1 M at(ki ). For the algebra Uε it is known [DC-K] that n = ℓ2 and ki = ℓ for all i = 1, . . . , n. Define
+n
+
+ti T r(φix (a))
+
+t : Ax → C, t(a) =
+i=1
+
+where T r is the matrix trace in M at(ki ) and
+
+φix
+
+: Ax → M at(ki ) is the i-th component of φx . It is clear
+
+that t(a) does not depend on a particular choice of φx . Indeed, any other such isomorphism differs from
+φx by an inner automorphism of ⊕ni=1 M at(ki ). Since trace is cyclically invariant, the value of t(a) for such
+isomorphism will be the same as for φx . Thus, for generic x, we have an invariant bilinear form on Ax :
+(a, b) = t(ab).
+
+24
+
+R. KASHAEV AND N. RESHETIKHIN
+
+It is a scalar product if ti = 0 for each i = 1, . . . , n.
+Fix a scalar product on Ax as above. This gives an isomorphism of vector spaces A∗x ≃ Ax . It is easy to
+verify that the pairing between Uε -modules (Ax , φ) and (Ax , π) given by the map
+ex : (Ax , φ) ⊗ (Ax , π) → C
+
+(11)
+
+acting as a ⊗ b → t(ab) is Uε -invariant with respect to the diagonal action. Indeed, using Sweedler’s notation
+∆(c) =
+
+c
+
+c(1) ⊗ c(2) for the comultiplication of element c, we have:
+aS(c(1) ) ⊗ c(2) b) =
+
+εx (
+c
+
+t(aS(c(1) )c(2) b) = ε(c)t(ab)
+c
+
+Similarly
+c(1) a ⊗ bS −1 (c(2) )) =
+
+ex (
+c
+
+t(c(1) abS −1 (c(2) )) = ε(c)t(ab)
+c
+
+Therefore the map ex : (Ax , π) ⊗ (Ax , ψ) → C defined as in (11) is also Uε -invariant.
+Let linear mapping ix : C → Ax ⊗ Ax be defined by the formula
+ei ⊗ ei ,
+
+ix (1) →
+i
+
+{ei } is a linear basis of Ax and {ei } the corresponding dual basis. It is easy to see that it is a morphism of
+Uε -modules C → (Ax , π) ⊗ (Ax , φ) and C → (Ax , ψ) ⊗ (Ax , π). Indeed, let aji = t(aei ej ) for any a ∈ Ax , then
+(a(1) )ji ej ⊗ ei (S(a(2) )) =
+
+a(1) ei ⊗ ei S(a(2) ) =
+a
+
+i
+
+a
+
+ej ⊗ ej a(1) S(a(2) ) = ε(a)
+a
+
+i,j
+
+j
+
+ei ⊗ ei
+i
+
+which implies the first statement and the second statement can be proved similarly.
+Thus, for the object (Ax , π) we have the left dual (Ax , φ) (and the right dual (Ax , ψ)).
+Theorem 6. The subspace Z0 ⊗ Z0 ⊂ Uε ⊗ Uε is invariant with respect to the action of the automorphism
+R.
+Proof. From the action of R on generators of Uε and from the relations between generators we have:
+R(1 ⊗ K ℓ ) = (1 ⊗ K ℓ )(1 + K −ℓ E ℓ ⊗ F ℓ Lℓ )−1
+R(1 ⊗ Lℓ ) = (1 ⊗ Lℓ )(1 + K −ℓ E ℓ ⊗ F ℓ Lℓ )−1
+R(E ℓ ⊗ 1) = E ℓ ⊗ Lℓ
+R(1 ⊗ F ℓ ) = K −ℓ ⊗ F ℓ .
+The comultiplication acts on ℓ-th powers of generators as:
+∆(K ℓ ) = K ℓ ⊗ K ℓ , ∆(Lℓ ) = Lℓ ⊗ Lℓ
+∆(E ℓ ) = E ℓ ⊗ K ℓ + 1 ⊗ E ℓ
+∆(F ℓ ) = F ℓ ⊗ 1 + L−ℓ ⊗ F ℓ .
+These formulae and the defining property R(∆(a)) = σ ◦ ∆(a) describe the action of R on generators of
+Z0 ⊗ Z0 . In particular, it is clear that the image is in Z0 ⊗ Z0 .
+
+INVARIANTS OF TANGLES WITH FLAT CONNECTIONS
+
+25
+
+Comparing the action of R on generators of Z0 ⊗ Z0 with the identification of Z0 and C(GL∗2 ) we have
+the following statement.
+Theorem 7. The automorphism R is the pull-back of the mapping b : GL∗2 × GL2∗ → GL∗2 × GL∗2 acting as
+follows. First, identify GL∗2 with the Zariski open subvariety in GL2 via the factorization mapping. Then
+the mapping b acts as
+(x, y) → (xL (x, y), xR (x, y))
+where xL (x, y) =
+
+x− yx−1
+−
+
+and xR (x, y) = (xL (x, y))−1
++ x(xL (x, y))+ .
+
+Let Ix be the ideal in Uε with the Z0 character x ∈ GL2∗ . From now on we will consider only generic
+points x and therefore we can identify GL2 with GL∗2 . The two theorems have an important corollary. The
+mapping R acts as:
+R(Ix ⊗ Iy ) ⊂ IxR (x,y) ⊗ IxL (x,y)
+This implies that the mapping R induces the isomorphism of algebras:
+R(x, y) : Ax ⊗ Ay → AxR (x,y) ⊗ AxL (x,y)
+This mapping is also an isomorphism of the tensor product of left Uε -modules (Ax , π).
+Finally, consider the category of Uε -modules generated by tensor products of (Ax , π) and their duals. It is
+clear that this category is a braided rigid monomial G-category with G = GL2∗ and with the braiding given
+by the composition σ ◦ R.
+8. Conclusion
+In this paper we have constructed invariants of tangles with flat connections in their complements. An
+example of such construction is described for GL2 (C). This is rather simple example related to quantum
+invariant constructed in [Ka]. More interesting examples related to irreducible representations of quantized
+universal enveloping algebras of simple Lie algebras will be analyzed in a separate paper.
+The complement of a tangle is a rather special 3-manifold. The construction of invariants of 3-manifolds
+with G-flat connections in them for any simple Lie group G is the next step. The case of G = P SL2 (C) was
+studied in [BB].
+An interesting, but somewhat speculative question: how to relate the constructed invariants to a topological quantum field theory defined “phenomenologically” in terms of functional integrals. We expect that
+this theory will be Chern–Simons theory with complex simple G. The corresponding boundary conformal
+field theory should be complex Wess–Zumino–Witten theory on a surface with boundary with boundary
+operators ”parametrized” by elements of G.
+References
+[BB] S. Baseilhac and R. Benedetti. Quantum Hyperbolic Invariants Of 3-Manifolds With PSL(2,C)-Characters,
+math.GT/0306280
+
+26
+
+R. KASHAEV AND N. RESHETIKHIN
+
+[DC-K] C. De Concini and V. Kac. Representations of quantum groups at roots of 1, in Progress in Math., 92, Birk¨
+auser, 1990,
+pp. 471-506.
+[DP] C. DeConcini,C.Procesi. Quantum Groups. In: D-Modules, representation theory, and quantum groups (Venice, 1992),
+31–140, Lecture Notes in Math., 1565, Springer, Berlin, 1993.
+[J] V.F.R. Jones. A polynomial invariant of knots via von Neumann algberas, Bull. Amer. Math. Soc., 12(1985), 103-111.
+[Ka] R. Kashaev. A link invariant from quantum dilogarithm, Modern Physics Letters, A 101995, no. 19, 1409–1418.
+[ML] S. MacLane. Categories for the Working Mathematician, Graduate Text in Mathematics, (1971), Springer, Berlin.
+[RT] N. Reshetikhin and V. Turaev. Ribbon graphs and their invariants derived from quantum groups. Comm. Math. Phys.
+127 (1990), no. 1, 1–26
+[Ro] M. Rosso. Quantum groups at a root of 1 and tangle invariants. Topological and geometrical methods in field theory (Turku,
+1991), 347–358, World Sci. Publishing, River Edge, NJ, 1992
+[T1] V. Turaev. Quantum invariants of knots and 3-manifolds. de Gruyter Studies in Mathematics, 18. Walter de Gruyter &
+Co., Berlin, 1994.
+[T2] V. Turaev. Homotopy field theory in dimension 3 and crossed group-categories, math.GT/0005291.
+[WX] A. Weinstein and P. Xu. Classical solutions of the quantum Yang-Baxter equation. Comm. Math. Phys. 148 (1992), no.
+2, 309–343.
+Section de math´
+ematiques, Universit´
+e de Gen`
+eve CP 240, 2-4 rue du Li`
+evre, CH 1211 Gen`
+eve 24, Suisse
+E-mail address: Rinat.Kashaev@math.unige.ch
+Department of mathematics, University of California, Berkeley, CA 94720, USA
+E-mail address: reshetik@math.berkeley.edu
+
+

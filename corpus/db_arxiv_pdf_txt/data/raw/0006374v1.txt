@@ -1,0 +1,523 @@
+Extremal Optimization: Heuristics via Co-Evolutionary Avalanches
+
+arXiv:cond-mat/0006374v1 [cond-mat.dis-nn] 23 Jun 2000
+
+Stefan Boettcher
+Dept. of Physics, Emory University, Atlanta, GA 30322, USA
+e-mail: stb@physics.emory.edu
+
+Imagine that you want to design some circuitry for a computer. The logical function you have to satisfy requires a
+known network of n interrelated logical gates. Unfortunately, n is too large to put all the gates on a single integrated
+circuit, so you have to partition the gates between separate circuits. Let’s assume that you are forced to place
+exactly n/2 gates each on two integrated circuits. The connections between gates across the partition are slow, energy
+consuming, and heat producing, while the cost associated with connections inside an integrated circuit are negligible.
+So, you have to divide the network of gates such that the cost function C, the number of connections cutting across
+the partition, is minimized (see Figure 1). Because a million computers will be running almost non-stop for 10 years,
+removing even one costly connection would be worthwhile.
+Fortunately, this (simplified) problem can be mapped onto the well-known graph bi-partitioning problem.[1] In
+this problem, the n gates are the vertices of a graph with edges between two connected gates. Each vertex is a
+Boolean variable, with state “0” if placed on the left integrated circuit and state “1” if placed on the right integrated
+circuit. Although the graph of connections is fixed, the vertices can change so that we may obtain a good partition.
+Unfortunately, optimizing the equal partition is NP-hard, that is, the computations needed to find the global optimum
+with certainty for even the cleverest algorithm grow faster than any power of n.[2] With even the fastest computers,
+this computation would be an unreasonable undertaking for about n 100.
+Instead, we can “search” the space of all feasible (equal) partitions Ω. Because the configurations S ∈ Ω so far are
+unrelated, we need to define a “neighborhood” N (S) ⊂ Ω for each S, a way to proceed from the current configuration
+S to some neighboring configuration S ′ ∈ N (S).[3][4][5] A simple neighborhood for partitioning is a “1-exchange:” for
+each S ∈ Ω, N (S) consists of all S ′ ∈ Ω obtained by changing a 0-vertex to 1 and a 1-vertex to 0 (to maintain an equal
+partition). The neighborhood N provides Ω with a metric such that the cost function C(S) exhibits local extrema,
+like a (high-dimensional) mountain landscape. Then, moving sequentially “down-hill” to better configurations, we
+should reach a local minimum very quickly. However, in NP-hard problems, the number of suboptimal minima of the
+n
+cost function grows nearly as fast as the number of configurations, |Ω|, which here grows like |Ω| = n/2
+∼ en . Thus,
+in this approach there is no way to move the system from the current minimum to a better one; it’s like finding the
+lowest point in a mountainous landscape at night.
+In this case, our “heuristic” (derived from the Greek word for “search”) merely produces approximate solutions:
+local minima of dubious quality. Can we do better? If we had more time, we could use an algorithm that makes
+a small random change of the current configuration. If the change is big enough, it might take the system over a
+“mountain range” such that a subsequent descent would provide a new local minimum. A sequence of these stochastic
+updates can only increase our chances to find a better minimum.[5]
+A good stochastic search, while inherently slow, succeeds by controlling the right mixture of descending moves with
+“hill-climbing” perturbations. A particularly elegant stochastic optimization heuristic is simulated annealing.[6] To
+implement simulated annealing for the graph bi-partitioning problem, we can adopt the 1-exchange neighborhood
+by choosing two vertices at random at each update. If we accept only 1-exchanges that lower the cost, the system
+
+FIG. 1: Schematic of two integrated circuits with an equal number of logical gates on each. The graph of connections between
+gates (represented by a box at each vertex of the graph) is fixed, but gates can be moved onto either integrated circuit. Find
+an equal partition of the gates such that there is a minimum of connections between the integrated circuits. How would you
+verify that a configuration is a global optimum?
+
+2
+converges to a (likely poor) local minimum and no further improvement is possible for any pair of vertices that are
+chosen. In contrast, simulated annealing allows moves that raise the cost according to the Metropolis algorithm.[7] In
+each update, a 1-exchange is accepted with probability p = min{1, e−∆/T }, where ∆ is the difference in cost between
+the new and the old configuration.
+Controlling the “temperature” T is crucial for simulated annealing to succeed: if T is too large, every uphill move is
+accepted and no minima are found at all, while for small T only downhill moves are accepted and the system quickly
+freezes into a local minimum. Instead, mimicking the annealing process designed to harden alloys, T is lowered slowly,
+allowing simulated annealing to explore the configuration space landscape widely at high T to reach the largest
+“valley.” In turn, this valley may harbor a correspondingly lower minimum for the system to freeze into at small
+T . If T is changed slowly, the Metropolis algorithm ensures detailed balance and thermodynamic equilibrium (which
+means that each move has the same probability as its reverse). Because equilibrium systems are well understood,
+we have an enormous amount of knowledge to guide simulated annealing. Theoretically, simulated annealing should
+always converge to the global optimum.[8] Unfortunately, this convergence requires vanishingly small decrements of
+T ; about as many updates are needed as in an exhaustive search of Ω. Short of that, it is a bit of an art to devise a
+temperature schedule that balances computational efficiency with the quality of the minima that are found.[4]
+Despite its shortcomings, simulated annealing is conceptually elegant and often highly successful for practical
+problems about which little else is known. It may even be useful for our graph bi-partitioning problem.[9] But could
+we improve our procedure by throwing the equilibrium requirement overboard? Simulated annealing soon collapses
+for lack of any theoretical guidance. Although most processes in nature are out-of-equilibrium, our understanding
+of these processes is incomplete. Thus, researchers typically bypass physical considerations entirely and move to a
+more abstract conception of a natural process for inspiration of an optimization procedure. This is clearly the case
+for genetic algorithms.[10] The way that a genetic code evolves and replicates is poorly understood in physical terms.
+But the basic ingredients by which such a code selectively optimizes itself is easily transcribed into an algorithm that
+operates on gene-like binary encodings of a generic optimization problem. Yet, without the theoretical guidance that
+simulated annealing possesses, the values of the parameters that control the working of genetic algorithms (mutation
+rates, cross-over operators, etc.) are chosen mostly by trial-and-error. However, with some empirical knowledge,
+genetic algorithms also prove to be a powerful optimization procedure with many successful applications.[11]
+Emergence and self-organized criticality
+What can we learn by focusing on the physics of non-equilibrium processes? During the past decade, some physicists
+have become interested in systems exhibiting self-organized criticality, in which complex patterns emerge without the
+need to control any parameters.[12] For instance, biological evolution has developed, apparently by chance, efficient
+networks in which resources rarely go to waste. But species are coupled in a global comparative process that persistently washes away the least fit. In this process, unlikely but highly adapted structures surface inadvertently. Optimal
+adaptation thus emerges naturally, without divine intervention, from the dynamics through a selection against the
+extremely “bad.” In fact, this process prevents the inflexibility inevitable in a controlled breeding of the “good.”
+This co-evolutionary process is the basis of the Bak-Sneppen model, where the high degree of adaptation of most
+species is obtained by the elimination of badly adapted ones instead of the engineering of better ones.[13] Species
+in the Bak-Sneppen model are sites of a lattice, and each is represented by a value between 0 and 1, indicating its
+fitness. At each update, the smallest value (representing the worst adapted species) is discarded and replaced with a
+new value drawn randomly from a flat distribution on [0, 1]. Because the change in fitness of one species impacts the
+fitness of interrelated species, at each update of the Bak-Sneppen model, the fitness values on the sites neighboring
+the smallest value are replaced with new random numbers as well. After a certain number of updates, the system
+organizes itself into a highly correlated state characteristic of self-organized criticality.[14] In this state, almost all
+species have reached a fitness above a certain threshold (see Figure 2). But chain reactions, called “avalanches,”
+produce large, non-equilibrium fluctuations in the configuration of fitness values. The result is that any possible
+configuration is accessible.
+Extremal optimization
+The extremal dynamics of the Bak-Sneppen model can be converted into an optimization algorithm that we call
+extremal optimization.[15] Attractive features of the model include the following:
+• It is straightforward to relate the sum of all fitnesses to the cost function of the system.
+• In the self-organized critical state to which the system inevitably evolves, almost all species have a much better
+than random fitness (see Figure 2).
+• Most species preserve a good fitness for long times unless they are connected to poorly adapted species, providing
+the system with a long memory.[16]
+
+3
+
+FIG. 2: Snapshot during the evolution of the Bak-Sneppen model, showing the fitnesses of a 200-species system. Almost all
+species have developed fitnesses above a self-organized threshold (horizontal line) while a small number of currently active
+species have fitnesses below.
+
+• The system retains a potential for large, hill-climbing fluctuations at any stage.
+• Aside from picking the worst species for an update, the model accomplishes these features without a single
+control parameter.
+To be precise, we define S = (x1 , . . . , xn ) ∈ Ω to be a configuration of the n variables xi in an optimization
+problem. For instance, in the graph bi-partitioning problem the variables xi are the vertices, which can take on the
+values 0 or 1; a configuration S is one possible arrangement of n/2 0’s and n/2 1’s. The cost function C(S) simply
+counts the number of bad edges that connect a 0 with a 1 in S. Finally, we define a neighborhood N (S) that maps
+S → S ′ ∈ N (S) ⊂ Ω to facilitate a local search, like the 1-exchange for the graph bi-partitioning problem.
+Extremal optimization performs a search through sequential changes on a single configuration S ∈ Ω. The cost
+C(S) is assumed to consist of the individual cost contributions λi for each variable xi , which correspond to the fitness
+values in the Bak-Sneppen model above. Typically, the fitness λi of variable xi depends on its state in relation to
+other variables to which xi is connected. Ideally, it is possible to write the cost function as
+n
+
+λi .
+
+C(S) =
+
+(1)
+
+i=1
+
+For example, in the graph bi-partitioning problem Eq. (1) is satisfied, if we attribute to each vertex xi a local cost
+λi = bi /2, where bi is the number of bad edges of xi , whose cost is equally shared with the vertices on the other end
+of those edges.
+For minimization problems, extremal optimization proceeds as follows:
+1. Initialize a configuration S at will and set Sbest = S.
+2. For the current configuration S,
+(a) evaluate λi for each variable xi ;
+(b) find j with λj ≥ λi for all i, that is, xj has the worst fitness;
+(c) choose a random S ′ ∈ N (S) such that xj must change;
+(d) if C(S ′ ) < C(Sbest ), store Sbest = S ′ ;
+(e) accept S ← S ′ always, independent of ∆ = C(S ′ ) − C(S).
+3. Repeat at step (2) as long as desired.
+4. Return Sbest and C(Sbest ).
+A typical run of this implementation of extremal optimization for the graph bi-partitioning problem on an n = 500
+random graph is shown in Figure 3a.
+The most apparent distinction between extremal optimization and other methods is the need to define local cost
+contributions for each variable, instead of merely a global cost. Extremal optimization’s capability appears to derive
+from its ability to access this local information directly. Extremal optimization’s ranking of fitnesses required for
+step (2b) above superficially appears like the rankings of possible moves in some versions of simulated annealing and
+
+Simulated Annealing
+
+500
+
+500
+
+400
+
+400
+
+CUTSIZE
+
+CUTSIZE
+
+Extremal Optimization
+
+300
+
+200
+
+0
+
+50
+
+300
+
+200
+
+100
+
+4
+
+0
+
+50
+
+(Number of Updates)/n
+
+100
+
+150
+
+200
+
+(Number of Updates)/n
+
+FIG. 3: Evolution of the cost function C(S) during a typical run of (a) extremal optimization and (b) simulated annealing
+for the n = 500 random graph G500 introduced in Ref. [9]. The lowest cost ever found for G500 is 206 (see Figure 4). In
+contrast to simulated annealing, which has large fluctuations in early stages of the run and then converges much later, extremal
+optimization quickly approaches a stage where broadly distributed fluctuations allow it to scale barriers and probe many local
+minima.
+(A) Simulated Annealing
+
+(C) Extremal Optimization at τ=1.5
+
+(B) Simple Extremal Optimization
+
+150
+200
+
+50
+
+Frequency
+
+100
+
+Frequency
+
+Frequency
+
+150
+
+100
+
+150
+
+100
+
+50
+50
+
+0
+200
+
+210
+
+220
+
+Cutsize
+
+230
+
+0
+200
+
+210
+
+220
+
+Cutsize
+
+230
+
+0
+200
+
+210
+
+220
+
+230
+
+Cutsize
+
+FIG. 4: Comparison of 1000-run trials using various optimization methods on G500 .[9] The histograms give the frequency with
+which a particular cost has been obtained during the trial runs for (a) simulated annealing, (b) basic extremal optimization,
+and (c) for τ -extremal optimization with τ = 1.5. The best cost ever found for this graph is 206. This result appeared only
+once over the 1000 simulated annealing runs, but 80 times for τ -extremal optimization.
+
+other heuristics.[4] There, moves are evaluated by their anticipated outcome, while extremal optimization’s fitnesses
+reflect the current configuration S without biasing the outcome. As a comparison of Figures 3a and 3b demonstrates,
+a sequence of these moves allows for much larger than equilibrium fluctuations in C(S).
+Although similarly motivated, genetic algorithms[10][11] and extremal optimization algorithms have hardly anything
+in common. Genetic algorithms mimic evolution on the level of genes, and keep track of entire gene pools of configurations from which to select and breed an improved generation of solutions. In comparison, extremal optimization,
+based on evolutionary competition at the phenomenological level of species, operates only on a single configuration,
+with improvements achieved merely by the elimination of bad fitness values. Extremal optimization and simulated
+annealing perform a local search but in genetic algorithms cross-over operators perform global exchanges.
+Simple extremal optimization application to graph partitioning
+Following the example of Ref. [9] (see Figure 9), we tested early implementations of extremal optimization[17] on their
+n = 500 random graph G500 . This version is based on a 1-exchange between the worst vertex [step (2b)] and one
+randomly chosen vertex of the opposite state [step (2c)]. In a 1000-run sample from different random initial conditions,
+we determined the frequency of solutions (see Figure 4). For comparison, we have also implemented the simulated
+annealing algorithm as given in Ref. [9] on the same data structure used by our extremal optimization program. We
+have used run times for extremal optimization that are about three times longer than the time it took for simulated
+annealing to freeze, because extremal optimization still yielded significant gains. We checked that neither the bestof-three runs of simulated annealing, or a three times longer temperature schedule, improved the simulated annealing
+results significantly. Although the basic, parameter-free version of extremal optimization considered so far is already
+competitive, the best results are obtained by τ -extremal optimization, which we now discuss.
+The τ -extremal optimization implementation
+The τ -extremal optimization implementation is a modification of extremal optimization that improves results and
+avoids dead ends that occur in some implementations at the expense of introducing a single parameter.[17] In general,
+the implementation of τ -extremal optimization proceeds as follows. Rank all the variables xi according to their fitness
+
+5
+λi , that is, find a permutation Π of the labels i such that
+λΠ(1) ≥ λΠ(2) ≥ . . . ≥ λΠ(n) .
+
+(2)
+
+The worst variable xj [see step (2b)] is of rank 1, j = Π(1), and the best variable is of rank n. Consider a probability
+distribution over the ranks k,
+Pk ∝ k −τ ,
+
+1 ≤ k ≤ n,
+
+(3)
+
+for a fixed value of the parameter τ . At each update, for each independent variable x to be moved, select distinct
+ranks k1 , k2 , . . . according to Pk . Then, execute step (2c) such that all xi1 , xi2 , . . . with i1 = Π(k1 ), i2 = Π(k2 ), . . .
+change. For example, in the bi-partitioning problem, we choose both variables in the 1-exchange according to Pk ,
+instead of the worst and a random one. Although the worst variable of rank i = 1 will be chosen most often, sometimes
+(much) higher ranks will be updated instead. In fact, the choice of a power-law distribution for Pk (instead of, say,
+an exponential distribution with a cut-off scale excluding high ranks) ensures that no rank gets excluded from further
+evolution while maintaining a bias against variables with bad fitness.
+Clearly, for τ = 0, τ -extremal optimization is exactly a random walk through Ω. Conversely, for τ → ∞, the process
+approaches a deterministic local search, only swapping the lowest-ranked variables, and is bound to reach a dead end.
+Indeed, tests of both τ = 0 and τ = ∞ yield terrible results. In the graph bi-partitioning problem, we obtained our
+best solutions for τ in the range 1.4–1.6. Clearly, we have “tuned” away from the philosophy of the Bak-Sneppen
+model by inserting a single parameter for the sake of better results. To be successful, every heuristic has to allow for
+some adjustments to a particular problem.
+Table I summarizes our τ -extremal optimization results on some well-studied instances of graphs with large n,
+using τ = 1.4 and best-of-10 runs. We obtained initial configurations from a simple clustering algorithm.[17] Then,
+we choose the number of updates t to obtain reliable results that do not change much with t. The choice of t varied
+with the particularities of each graph, from t = 2n to t = 200n, and the reported run times are of course influenced
+by the value of t. It is worth noting, though, that extremal optimization’s average performance has been varied. For
+instance, half of the runs on the graph known as Brack2 returned costs near 731, but the other half returned costs
+above 2000. This may be a product of an unusual structure in this particular graph. A systematic study of extremal
+optimization in comparison with simulated annealing by averaging over many graphs of increasing size is given in
+Ref. [21].
+Other extremal optimization implementations
+To demonstrate the generality of extremal optimization, we are currently studying its implementation for other NPhard optimization problems such as graph coloring (K-COL), satisfiability (K-SAT), and spin glass Hamiltonians.
+In K-COL, given K different colors to label the vertices of a graph, we need to find a coloring that minimizes the
+number of edges connecting vertices of identical color.[22] A definition of fitness is as obvious as it was for the graph
+bi-partitioning problem: for each vertex xi simply count the number bi of equally colored vertices connected to it;
+setting λi = bi /2 again satisfies Eq. (1). The lack of a global constraint as for the graph bi-partitioning problem allows
+us to define a neighborhood by changing the state of only one, the worst, variable. However, this definition results
+in a deterministic search that quickly reaches a dead end. But a τ -extremal optimization implementation picking a
+single variable with τ ≈ 2.7 seems to work best for the graphs we have studied.
+With this algorithm we have studied the “phase transition” of K-COL,[23] “where the really hard instances are.”[24]
+This transition arises as a function of the average vertex degree α for certain types of graphs. (The “degree” of a
+vertex is the number of edges emanating from it and may vary between vertices of a graph.) If α is small, almost all
+
+TABLE I: Best costs (and allowed run time (in seconds)) for a testbed of large graphs. The value of n is given for each graph.
+Genetic algorithms results are the best reported[18] (using a 300 MHz CPU). The τ -extremal optimization results are from our
+runs (200 MHz). Comparison data for three of the large graphs are due to results from heuristics in Ref. [19] (50 MHz). METIS
+is a partitioning program based on hierarchical reduction instead of local search,[20] and yields extremely fast, deterministic
+results (200 MHz).
+Large Graph
+Hammond
+Barth5
+Brack2
+Ocean
+
+GA
+τ -EO
+[19]
+METIS
+(n = 4720)
+90
+(1s)
+90 (42s) 97 (8s)
+92 (0s)
+(n = 15606) 139 (44s) 139 (64s) 146 (28s)
+151 (0.5s)
+758 (4s)
+(n = 62632) 731 (255s) 731 (12s) —
+(n = 143437) 464 (1200s) 464 (200s) 499 (38s)
+478 (6s)
+
+6
+7
+
+cost function
+
+6
+5
+
+N=32
+N=64
+N=128
+N=256
+N=512
+
+4
+3
+2
+1
+0
+
+4.5
+
+α
+
+5
+
+FIG. 5: Plot of the average cost as a function of the average vertex degree α for 3-COL of random graphs. We have generated
+2, 300, 500, and 280 instances for n = 32, 64, and 128, respectively, at each value of c. The prediction for the critical point
+(where the cost functions intersect) of αcrit (3) ≈ 4.73 is indicated by a vertical line.
+
+vertices have fewer than K neighbors, coloring becomes trivial and the optimal solution has zero cost for almost all
+graph instances. But around a critical value αcrit (K), the cost becomes positive, with an ever sharper transition for
+n → ∞. If we average the best solutions that extremal optimization finds over many instances of random graphs,[25]
+we can show, for example, that αcrit (3) ≈ 4.73 (see Figure 5). The relationship between phase transitions, which
+occur in many NP-hard problems, and computational complexity is evolving into one of the hot topics in computer
+science.[24] [26][27][23][28] In this interesting regime extremal optimization’s large fluctuations appear to have the
+edge over simulated annealing’s equilibrium requirements.[21]
+Because extremal optimization is fairly new, there are many questions yet to be answered. It will not be difficult
+for the interested reader to think of research projects that, for example, compare extremal optimization to other
+methods. Clearly, like any other optimization method, extremal optimization will not be competitive for some
+problems (unfortunately, the traveling salesman problem seems to be one example.[17]) But it can’t hurt to have more
+alternative methods to choose from for tackling hard optimization problems.
+Acknowledgements
+I would like to thank Allon Percus with whom I developed extremal optimization, and the Research Committee at
+Emory University for support.
+Suggestions for Further Study
+1. A simple model of a glass consists of a d-dimensional hypercubic lattice with a spin variable σi ∈ [−1, 1] placed
+on each site i, 1 ≤ i ≤ n = Ld .[29] Every spin is connected to each of its nearest neighbors j via a fixed bond
+variable Ji,j drawn randomly from [−1, 1]. Spins may be coupled to an arbitrary external field hi . The cost
+function to be minimized is the Hamiltonian
+C(S) = H(σ1 , . . . , σn ) = −
+
+1
+2
+
+σi hi .
+
+Ji,j σi σj −
+i
+
+j
+
+(4)
+
+i
+
+Arranging the spins into an optimal, lowest energy configuration is hard due to frustration.[29] In fact, for d > 2
+the problem is NP-hard.[30]
+(a) Find a definition of λi for each spin variable such that Eq. (1) is satisfied.
+(b) Define a simple neighborhood N for this problem using only single spin flips. In this case, the basic extremal
+optimization implementation is equivalent to τ -extremal optimization for a certain value of τ . (Why is this
+not the case for the basic partitioning implemetation?) Do you think that the basic implementation would
+be very successful?
+(c) Implement an algorithm for this spin glass in d = 3 for hi = 0, using the hash table from the Problem 2.
+A single run should have at least t > n updates (why?); to be save set t = 100n. Find a good value for
+τ . Does it depend on n or t? For comparison, the cost function has been found for genetic algorithms to
+scale as C(Sbest ) ∼ −1.786n for n = 33 . . . 143 .[31]
+2. The τ -extremal optimization algorithm described in the text requires a perfect ordering of the λi (1 ≤ i ≤ n),
+which would produce a factor of n ln n for the computational time. In practice, it is sufficient to order the λi
+somewhat. (Most likely many λi will be degenerate.)
+
+7
+(a) Devise a τ -extremal optimization implementation in which the λi are sorted on a binary tree only (time
+factor ln n), where the λi are picked such that Eq. (3) is roughly approximated? (For our humble attempt,
+see Ref. [17].)
+(b) For some problems even the use of a hash table[32] with a constant time factor may be useful. For the
+spin glass problem in Problem 1, exploit the degeneracies between individual fitnesses to give a sorting
+algorithm using a hash table that leaves the λi perfectly ordered.
+
+[1] C. J. Alpert and A. B. Kahng, “Recent Directions in Netlist Partitioning – a Survey,” Integration: the VLSI Journal 19,
+1–81 (1995).
+[2] M. R. Garey and D. S. Johnson, Computers and Intractability, A Guide to the Theory of NP-Completeness, W. H. Freeman,
+New York, 1979.
+[3] Local Search in Combinatorial Optimization, E. H. L. Aarts and J. K. Lenstra, eds., Wiley, New York, 1997.
+[4] Modern Heuristic Techniques for Combinatorial Problems, C. R. Reeves, ed., Wiley, New York, 1993.
+[5] Meta-Heuristics: Theory and Application, I. H. Osman and J. P. Kelly, eds., Kluwer, Boston, 1996.
+[6] S. Kirkpatrick, C. D. Gelatt, and M. P. Vecchi, “Optimization by simulated annealing,” Science 220, 671–680 (1983).
+[7] See, for example, I. Beichl and F. Sullivan, “The Metropolis algorithm,” Computing in Science and Engineering 2(#1),
+65–69 (2000).
+[8] S. Geman and D. Geman, “Stochastic relaxation, Gibbs distributions, and the Bayesian restoration of images,” IEEE
+Trans. Pattern Analysis and Machine Intelligence 6, 721–741 (1984).
+[9] D. S. Johnson, C. R. Aragon, L. A. McGeoch, and C. Schevon, “Optimization by simulated annealing – an experimental
+evaluation. 1. Graph partitioning,” Operations Research 37, 865–892 (1989).
+[10] J. Holland, Adaptation in Natural and Artificial Systems, University of Michigan Press, Ann Arbor, 1975.
+[11] D. E. Goldberg, Genetic Algorithms in Search, Optimization, and Machine Learning, Addison-Wesley, Reading, 1989.
+[12] P. Bak, How Nature Works, Springer, New York, 1996.
+[13] P. Bak and K. Sneppen, “Punctuated equilibrium and criticality in a simple model of evolution,” Phys. Rev. Lett. 71, 4083–
+4086 (1993); see also M. Newman, “Simple models of evolution and extinction,” Computing in Science and Engineering
+2(#1), 80–86 (2000).
+[14] P. Bak, C. Tang, and K. Wiesenfeld, “Self-organized criticality,” Phys. Rev. Lett. 59, 381–384 (1987).
+[15] S. Boettcher and A. G. Percus, “Extremal optimization: Methods derived from co-evolution,” in GECCO-99: Proceedings
+of the Genetic and Evolutionary Computation Conference, Morgan Kaufmann, San Francisco, 1999, pp. 825–832.
+[16] S. Boettcher and M. Paczuski, “Ultrametricity and memory in a solvable model of self-organized criticality,” Phys. Rev.
+E 54, 1082–1095 (1996).
+[17] S. Boettcher and A. G. Percus, “Nature’s way of optimizing,” Artificial Intelligence 119, 275–286 (2000).
+[18] P. Merz and B. Freisleben, “Memetic algorithms and the fitness landscape of the graph bi-partitioning problem,” Lect.
+Notes Comput. Sc. 1498, 765–774 (1998).
+[19] B. A. Hendrickson and R. Leland, “A multilevel algorithm for partitioning graphs,” Supercomputing ’95, San Diego, CA
+(1995).
+[20] G.
+Karypis
+and
+V.
+Kumar,
+“METIS,
+a
+software
+package
+for
+partitioning
+graphs,”
+http://www-users.cs.umn.edu/~karypis/metis/main. shtml.
+[21] S. Boettcher, “Extremal optimization and graph partitioning at the percolation threshold,” J. Math. Phys. A: Math. Gen.
+32, 5201–5211 (1999).
+[22] D. S. Johnson, C. R. Aragon, L. A. McGeoch, and C. Schevon, “Optimization by simulated annealing - an experimental
+evaluation. 1. Graph-coloring and number partitioning,” Operations Research 39, 378–406 (1991).
+[23] S. Boettcher, A. G. Percus, and G. Istrate, manuscript in preparation.
+[24] P. Cheeseman, B. Kanefsky, and W. M. Taylor, “Where the really hard problems are,” Proc. of IJCAI-91, J. Mylopoulos
+and R. Rediter, eds., Morgan Kaufmann, San Mateo, CA, 1991, pp. 331–337.
+[25] B. Bollobas, Random Graphs, Academic Press, London, 1985.
+[26] Frontiers in Problem Solving: Phase Transitions and Complexity, Special issue of Artificial Intelligence 81:1–2 (1996).
+[27] R. Monasson, R. Zecchina, S. Kirkpatrick, B. Selman, and L. Troyansky, “Determining computational complexity from
+characteristic ’phase transitions,” Nature 400, 133–137 (1999).
+[28] J. Machta and R. Greenlaw, “The computational complexity of generating random fractals,” J. Stat. Phys. 82, 1299–1326
+(1996).
+[29] M. Mezard, G. Parisi, and M. A. Virasoro, Spin Glass Theory and Beyond, World Scientific, Singapore, 1987.
+[30] F. Barahona, “On the computational complexity of Ising spin glass models,” J. Phys. A: Math. Gen. 15, 3241–3253 (1982).
+[31] K. F. Pal, “The ground state energy of the Edwards-Anderson Ising spin glass with a hybrid genetic algorithm,” Physica
+A 223, 283–292 (1996).
+[32] B. W. Kernighan and R. Pike, The Practice of Programming, Addison-Wesley, Reading, 1999.
+
+

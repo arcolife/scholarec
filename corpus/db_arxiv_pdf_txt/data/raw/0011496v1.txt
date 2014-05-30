@@ -1,0 +1,432 @@
+Cosmological Thermal Decoupling and
+Primordial Molecules†
+
+arXiv:astro-ph/0011496v1 27 Nov 2000
+
+By Denis Puy
+Institute of Theoretical Physics, University of Zurich, 8057 Zurich (Switzerland)
+and
+Paul Scherrer Institute, Laboratory for Astrophysics, 5232 Villigen (Switzerland)
+puy@physik.unizh.ch
+Primordial chemistry began, at the recombination epoch, when the adiabatic expansion caused the
+temperature of the radiation to fall below 4000K. The chemistry of the early Universe involves the
+elements hydrogen, its isotope deuterium, helium with its isotopic forms and lithium. In this contribution I will discuss the influence of the primordial molecules on the cosmological decoupling.
+In the framework of the gravitational instability theory, each protostructure started as a tiny local
+overdensity. As long as these inhomogeneities are small, their evolution can be studied by the classical
+linear perturbation theory. Once the deviations become large, the linear theory is no more valid. we
+present the role played by these molecules on the transition between the linear regime and the nonlinear regime, and show that the molecules can lead to a thermal change at the turn-around point
+between these two regimes.
+
+1. Introduction
+At early times the Universe was filled up with an extremely dense and hot gas. Due to
+the expansion it cooled below the binding energies of hydrogen, deuterium, helium, lithium
+which led to the formation of these nuclei (Sarkar 1996). After this nucleosynthesis period the
+recombination process is not instantaneous because the electrons, captured into different atomic
+energy levels, could not cascade instantaneously down to the ground state. Atoms reached the
+ground state either through the cosmological redshifting of the Lyman α line photons or by
+the 2s − 1s two photons process. Nevertheless the Universe expanded and cooled faster than
+recombination could completed, and small fraction of free electrons and protons remained.
+The principles of calculations of the primordial recombination have been mentionned initially
+by Shklovskii (1967), Novikov & Zel’dovich (1967). Peebles (1968) was the first to present a
+theory in which the very complicated recombination process is reduced to simpler terms (see
+Puy & Signore 2000 for the historical description and references therein).
+At the end of the recombination period, it is plausible to imagine that molecules could be
+formed. Temperature of matter and radiation as well as the density are not so high and we
+have possible collisional reactions between the species. However, in this cosmological context
+we have metal-free gas which does not allow the efficient reaction of adsorption on the surface
+of grains.
+The literature on the chemistry in the post-recombination epoch has grown considerably in
+the recent years. Many authors have developped studies of primordial chemistry in different
+contexts. For example Lepp & Shull (1984), Latter & Black (1991), Puy et al. (1993), Stancil
+et al. (1996), Galli & Palla (1998) for the chemical network; Palla, Galli & Silk (1995), Puy &
+Signore (1996, 1997, 1998a, 1998b), Abel et al. (1997) and Galli & Palla (1998) in the context
+of the formation of the first objects.
+Chemistry of the early Universe is the gaseous chemistry of the hydrogen, helium, lithium
+and electrons species. The efficiencies of the molecular formation processes is controlled by
+collisions, matter temperature and temperature of the cosmic microwave background radiation.
+† Talk given at the JENAM, May 29th-June 3rd 2000, Moscow (Russia)
+
+1
+
+2
+
+D. Puy: JENAM 2000 Proceedings
+
+The complete chemical network consists of 90 reactions (see Puy et al. 1993 and more recently
+Galli & Palla 1998 and references therein).
+Molecules could lead to radiative processes through the excitation of the rotational levels, and
+contribute to the thermal evolution of the medium. Puy et al. (1993) examined the thermal
+balance in the early Universe and showed that the molecular cooling and heating functions have
+a slight influence on the decrease of the temperature of the matter. Nevertheless molecules
+could play a more decisive role in the collapse of protoclouds, since molecular cooling can
+trigger thermal instability prior the gravitational instability, as mentionned Puy & Signore
+(1996, 1998a, 1998b). Protocloud evolute in three phases:
+• linear evolution which approximatively follows expansion.
+• turn-around epoch when the protocloud reaches its maximum value.
+• non-linear evolution of the collapse.
+At the turn-around point it is crucial to know the initial condition and particularly the temperature of the pre-collapse. In this contribution, I will recall the thermal function generated
+by the primordial molecules (Sect. 2), then I will show the influence on the thermal decoupling
+(Sect. 3). In Sect. 4, the role of the molecules on the turn-around point will be discussed and
+a brief outlook will be presented in Sect. 5.
+
+2. Molecular thermal function
+The disappearance of free charged particles reduces the scattering cross-section (Thomson
+scattering). The photons decouple from the rest of the matter; this happens at T = Tdec ∼ 0.26
+eV where Tdec is the temperature of the matter corresponding to the redshift zdec ∼ 1100. After
+the recombination, although the density-decrease acts against molecular formation, it turns out
+that the temperature is small enough for this formation occur.
+The chemical composition of the primordial gas consists of electrons, protons, hydrogen (H,
+H − , H3+ , H2+ , H2 ), deuterium (D, D+ , HD, HD+ , H2 D+ ), helium (He , He+ , He++ , HeH + )
+and lithium (Li, Li+ , Li− , LiH, LiH + ). Thus from the abundances of primordial atoms, given
+by the standard model of nucleosynthesis (see Table 1), we integrate the network of coupled
+chemical equations which is an initial value problem for stiff differential equations. Lepp &
+Shull (1984), Puy et al. (1993) and more recently Galli & Palla (1998) calculated, as function
+of redshift, the fractional abundances starting at the redshift z ∼ 104 where He, H, D and Li
+are fully ionized.
+Helium: He/H
+
+Deuterium: D/H
+
+Lithium Li/H
+
+∼ 8 × 10−2
+
+∼ 4.3 × 10−5
+
+∼ 2.4 × 10−10
+
+Table 1. Initial abundances given by the standard of the nucleosynthesis (see Sarkar 1996).
+
+The reaction rates depend on the temperature, thus the temperature and density evolution
+equation must be solved simultaneously, which needs in turn the simultaneous determination of
+molecular cooling and heating rates (see Puy et al. 1993, Galli & Palla 1998). The abundances
+of the main molecules are obtained in Table 2.
+The finite amount of primordial molecules, such as H2 , HD and LiH formed immediately
+after the recombination of cosmological hydrogen can induce a thermal response of molecules
+on the medium through the interaction with the radiation. The presence of non-zero permanent
+electric dipole moment makes HD and LiH a potentially more important coolant than H2 at
+modest temperatures, although HD and LiH are much less abundant than H2 . Below 3000
+
+D. Puy: JENAM 2000 Proceedings
+e− /H
+
+H2 /H
+
+HD/H
+
+LiH/H
+
+∼ 3 × 10−4
+
+∼ 10−6
+
+1.2 × 10−9
+
+∼ 7 × 10−20
+
+3
+
+Table 2. abundances of primordial molecules at z = 5.
+
+K, only the rotational levels of the molecules can be excited. The population of the rotational
+levels is mainly due to collisional excitation and de-excitation with H, H2 and He on one hand
+and to radiative processes (absorption from cosmic background radiation and spontaneous or
+induced emission) on the other hand. Molecular cooling corresponds to collisional excitation
+followed by radiative transition, provided that no further absorption occurs. Molecular heating
+is due to the radiative excitation from cosmic microwave background followed by collisional
+de-excitation. Notice that, although the radiative de-excitation is faster than collisional one
+(because the excitation have the opposite ordering), the full cooling and heating processes
+must be evaluated. Molecular thermal function Ψmolec , characterized by the two processes
+(molecular heating and cooling), is defined by:
+Ψmolec =
+
+Ψk
+
+(2.1)
+
+k
+
+where the index k is defined for each molecule (H2 , HD or LiH) and Ψk is the molecular
+thermal function for the molecule k defined by:
+x r
+ni Bij uij Pijc − nx Cij
+Pij ǫij in erg cm−3 s−1
+
+nj
+
+Ψk =
+j
+
+(2.2)
+
+i
+
+x
+where nj and ni is respectively the population of the rotational level j and i. Cij
+is the
+rate of collision with the species x (with the density nx ), Bij the second Einstein coefficient,
+uij the radiative density of cosmic microwave background radiation at the energy ǫij , which
+corresponds to the transition between the levels i and j; Pijc and Pijr define respectively the
+probability of collisional de-excitation and the probability of radiative de-excitation (here we
+consider 10 rotational levels for each molecule). The first term of Eq. (2.2) corresponds to
+molecular heating when the second term corresponds to molecular cooling.
+
+3. Cosmological thermal decoupling
+The evolution of the energy density ugas of a homogeneous gas is described by the equation:
+3
+(3.3)
+nkTm = Qdt
+2
+where k is the Boltzmann constant, n the matter density, Tm the temperature of matter and Q
+the external energy density which depends on the molecular thermal function Ψmolec , and on
+the net transfer of energy Γcompt from the cosmic background radiation to the gas via Compton
+scattering of cosmic background photons on electrons. Thus we have :
+dugas = d
+
+Q = Ψmolec + Γcompt ,
+
+(3.4)
+
+where (see Peebles 1968):
+Γcompt =
+
+4σT abb Tr4
+ne Tr − Tm ).
+me c
+
+(3.5)
+
+4
+
+D. Puy: JENAM 2000 Proceedings
+
+σT is the Thomson cross-section, abb is the black body constant, c the speed light, me the mass
+of electron and ne the electronic density. Tr is the temperature of the radiation. Thus Eq.
+(3.3) leads to the evolution of matter temperature Tm :
+
+where Λad
+
+3
+dTm
+nk
+= −Λad + Γcompt + Ψmolec ,
+2
+dt
+defines the adiabatic cooling due to the expansion of the Universe:
+Λad = 3nkTm Ho (1 + z)3/2 ,
+
+(3.6)
+
+(3.7)
+
+Ho is the Hubble constant (hereafter Ho = 67 Km s−1 Mpc−1 ) and z the redshift. We have
+neglected the chemical heating and cooling due to the enthalpy of reactions (see Puy et al.
+1993).
+We adopt the standard cosmological model with zero cosmological constant (Einstein-De Sitter Universe). Thus the matter temperature Tm and the radiation temperature Tr remained
+the same until a redshift of about 1100, the beginning of the recombination era, after which
+Compton scattering was no longer able to overcome the cooling by expansion and Tm fell below
+Tr . In this context the adiabatic cooling becomes dominant.
+In Fig 1 Compton heating and thermal molecular function (in unit of adiabatic cooling) are
+compared. The thermal molecular function, which is mainly a molecular heating, dominates
+the Compton heating when z < 180. This fact should be important for the evolution of the
+matter after this redshift, particularly for the collapse of the first objects.
+0.5
+
+in unit of adiabatic cooling
+
+0.4
+
+0.3
+
+Compton heating
+Molecular thermal function
+
+0.2
+
+0.1
+
+0
+1000
+
+100
+Redshift
+
+10
+
+Figure 1. Evolution of the thermal function, i.e. Compton heating Γcompt and molecular Ψmolec in
+unit of adiabatic cooling Λad .
+
+4. Turn-around period and proto-collapse
+We assume that, at some time in the past, there were small deviations from homogeneity
+in our Universe. These deviations can grow due to gravitational instability. As long as these
+inhomogeneities are small, their evolution can be studied by the classical linear perturbation
+theory. Once the deviations from the homogeneous Universe become large, the linear theory
+
+D. Puy: JENAM 2000 Proceedings
+
+5
+
+is no more valid. It is reasonable to expect that regions which are significantly overdense will
+collapse and eventually form gravitationally bound objects. In these overdense regions, the
+self-gravity of the local mass concentration will work against the expansion of the Universe;
+i.e. this region expands at a progressively slower rate compared to the background Universe.
+Such a slowing down will increase the density contrast between the overdense region and the
+background Universe and, consequently, make the gravitational potential of the local mass
+concentration more and more dominant. Eventually, such a region will collapse under its own
+self-gravity and will form a bound system. The details of the above process will depend on the
+initial density profile. The simplest model which one can study analytically is based on the
+assumption that the overdense region is spherically symmetric.
+Peebles (1980) described the transition between the linear regime (where the expansion of
+the perturbation is maximum) and the non-linear regime (where the perturbation begins to
+collapse) by introducing the turn-around point.
+In an Einstein-De Sitter Universe, the temperature at the turn-around point (hereafter turnaround temperature) is given by
+3π 4/3
+Tm (zta )
+(4.8)
+4
+where Tm (zta ) is the temperature of the matter at the redshift of the turn-around zta . Generally
+it is assumed an isothermal perturbation described by the initial mass spectrum:
+Tturn ∼
+
+δρ
+=
+ρ
+
+M
+M⋆
+
+α
+
+(1 + z)−1 ,
+
+(4.9)
+
+where M is the mass of an overdense region (i.e. the mass of a cloud) and M⋆ = 1015 M⊙ is
+a typical mass of a supercluster. Gott & Rees (1975) take α ∼ −1/3. Thus the redshift of the
+turn-around is given by:
+3π −2/3 M α
+.
+(4.10)
+zta =
+4
+M⋆
+It is crucial to know the temperature of the matter at the turn-around redshift in order to
+evaluate the thermal initial condition of the collapse. We consider the same order of magnitude
+for the mass of the fluctuations given by Lahav (1986) and Puy & Signore (1996) which
+correspond to turn-around redshift in the range: 10 < zta < 150, which is the typical period
+of the formation of the first objects.
+The evolution of turn-around temperature is shown in Fig. 2 without and with the molecular
+contributions, the evolution of radiation temperature is also plotted. We see two regimes
+for the two turn-around temperatures: one corresponds to a temperature higher than the
+radiation temperature Tr , the second is relative to temperature below Tr . It is important to
+estimate the redshift zi where the turn-around temperature is equal to Tr , this point govern the
+initial behaviour of the gas: if the turn-around temperature is below the radiation temperature
+the gas heats, when the gas cools when the radiative temperature is below the turn-around
+temperature. Thus this condition is located at the redshift zi ∼ 130 in the case without
+molecules and zi ∼ 105 in the case with molecules. Another interesting point is the point
+which corresponds to the turn-around redshift z = 55. This redshift corresponds to a typical
+value 109 M⊙ of a collapsing mass (see Puy & Signore 1997). We find (see Fig 2) that the turnaround temperature Tturn ∼ 70 K without molecules and Tturn ∼ 100 K for the turn-around
+temperature with molecules. The consequences could be important if we notice that the lower
+excitation temperature for HD (main thermal molecular function) is 112 K (close to 100 K) .
+
+6
+
+D. Puy: JENAM 2000 Proceedings
+600
+turn−around temperature (without molecules)
+turn−around temperature (with molecules)
+radiation temperature
+
+Temperature in Kelvins
+
+500
+
+400
+
+300
+
+200
+
+100
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+110
+
+120
+
+130
+
+140
+
+150
+
+Redshift
+
+Figure 2. Evolution of the turn-around temperature (with and without molecules) and of the
+radiation temperature.
+
+5. Outlook
+This work shows a possible thermal modification, due to the primordial molecules, at the
+beginning of the collapse. This thermal mechanism could modify the initial conditions of a
+gravitational collapse. The following analysis could reveal processes of fragmentation trigerred
+by the thermal molecular function (see Puy & Signore 1997, 1998b). This last point is crucial
+for the estimation of the amplitude of secondary cosmic microwave background anisotropies.
+Dubrovich (1977, 1993) showed that resonant elastic scattering must be considered as the most
+efficient process in coupling matter and radiation at high redshift. He noted that the cross
+section for resonant scattering between the cosmic microwave background and molecules is
+several orders of magnitude larger than Thomson scattering, even with a modest abundance
+of primordial molecules. Let us only emphasize that, again at present times, the primordial
+molecules abundance and the reaction rate of the chemical reaction are both quite uncertain.
+The author gratefully acknowledge the JENAM organizers for organizing such a pleasant
+conference. I would like to thank Andrei Doroshkevich and Victor Dubrovich for valuable and
+fruitful comments and discussions. Part of this work has been supported by the Dr Tomalla
+Foundation and by the Swiss National Science Foundation.
+REFERENCES
+Abel T., Anninos P., Zhang Y., Norman M., 1997 New Astr. 2, 181.
+Dubrovich V., 1977 Sov. Astr. Lett. 3, 128.
+Dubrovich V., 1993 Astron. Lett. 19, 53.
+Gott III R., Rees M., 1975 A& A 45, 265.
+Galli D., Palla F., 1998 A & A 335, 403
+Lahav O., 1986 MNRAS 220, 259.
+Latter W., Black J., 1991 ApJ 371, 161.
+Lepp S., Shull M., 1984 ApJ. 280, 465.
+
+D. Puy: JENAM 2000 Proceedings
+Novikov I., Zel’dovich Ya., 1967 Ann. Rev. Astr. Ap. 5, 627.
+Palla F., Galli D., Silk J., 1995 ApJ 451, 44.
+Peebles P.J.E., 1968 ApJ 153, 1.
+Peebles P.J.E., 1980 in: The large scale structure of the Universe (Princeton University Press)
+Puy D., Alecian G., Lebourlot J., Leorat J., Pineau des Forets, 1993 A& A 267, 337.
+Puy D., Signore M., 1996 A& A 305, 371.
+Puy D., Signore M., 1997 New Astr., 27, 622.
+Puy D., Signore M., 1998a New Astr., 3 , 27.
+Puy D., Signore M., 1998b New Astr., 3 , 247.
+Puy D., Signore M., 2000 New Astr. Rev., accepted
+Sarkar S., 1996 Rep. Prog. Phys- 59, 1493.
+Shklovskii I., 1967 in Proceedings 4th Texas Conf. on Relativistic Ap. 5, 627.
+Stancil P., Lepp S., Dalgarno A., 1996 ApJ 458, 401.
+
+7
+
+

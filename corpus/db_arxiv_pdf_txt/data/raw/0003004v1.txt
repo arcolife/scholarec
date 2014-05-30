@@ -1,0 +1,2123 @@
+Periodic and almost periodic potentials in the inverse
+problems
+arXiv:math-ph/0003004v1 6 Mar 2000
+
+I.Krichever
+
+∗
+
+S.P.Novikov†
+
+February, 1999
+
+∗
+
+Columbia University, 2990 Broadway, New York, NY 10027, USA and Landau Institute for Theoretical
+Physics, Kosygina str. 2, 117940 Moscow, Russia; e-mail: krichev@math.columbia.edu. Research supported
+in part by National Science Foundation under the grant DMS-98-02577
+†
+University of Maryland, Colledge Park and Landau Institute for Theoretical Physics, Kosygina str. 2,
+117940 Moscow, Russia; e-mail: novikov@ipst.umd.edu
+
+1
+
+1
+
+Introduction
+
+To begin with we are going to consider the inverse spectral problem for one-dimensional
+Schr¨odinger operator with periodic potential. In the late 60-s the famous discovery of the
+Inverse Scattering Transform for the KdV equation was done. A periodic analog of this
+transform was found in 1974. It is based on the solution of the following inverse spectral
+problem:
+to describe effectively the ”isospectral manifold” of all the potentials with a given spectrum
+on the line (i.e. the spectrum of Schr¨odinger operator acting in the Hilbert space of square
+integrable complex-valued functions on the line R).
+As everybody working in the quantum solid state physics knows, this spectrum generically is a union of infinite number of intervals (allowed bands) on the energy line ǫ. The
+complementary part on the energy line is also a union of infinite number of intervals (gaps
+or forbidden bands) whose lengths tend to zero for ǫ → +∞.
+
+The periodic problem was solved in 1974-75 for the so-called finite-gap potentials that
+have only a finite number of gaps. Any periodic potential can be approximated by the
+finite-gap ones. This solution involves combination of the theory of Riemann surfaces and
+their θ-functions, Hamiltonian dynamics of special completely integrable systems and the
+spectral theory of Schr¨odinger operator. The mathematical technique used was (and still is)
+unusual for the community of physicists. Later the necessity to use this kind of mathematics
+appeared also in other branches of mathematical and theoretical physics (for example, in the
+string theory, matrix models, and supersymmetric Yang-Mills theory [1, 2, 3, 4, 5, 6, 7, 8,
+9, 10, 11, 12, 13, 14, 15]). It seems to the authors this technique in future will be needed to
+the broad community of theoretical physicists.
+
+Integrability of the famous KdV equation ut = 6uux +uxxx was discovered in 1965-68 (see
+[16, 17, 18]) for the rapidly decreasing initial data on the line x. Exact solutions for the KdV
+equation expressing u(x, t) through the inverse scattering data of the Schr¨odinger operator
+L = −∂x2 + u(x, 0) were found. This procedure has been called the Inverse Scattering
+Transform (IST). It was extended later for some other highly nontrivial (1 + 1)-systems
+including such famous systems as Nonlinear Schr¨odinger NS± : iψt = −ψxx ± |ψ|2 ψ and
+Sine(Sinh)-Gordon equations SG : uxt = sin u or uxt = sinh u. Note, that for the SG equation
+a large family of exact solutions was already constructed in XIX century by Bianchi, Lie and
+B¨acklund (see in [19, 20, 21]). Beginning with 1974, several (2 + 1)-dimensional physically
+interesting systems have been discovered as integrable by the IST procedure. The most
+famous of them is the KP system (see [22, 23]).
+It is necessary to emphasize that the IST procedure in its original form can not be
+applied to the solution of the periodic problem (i.e. u(x, t) is periodic in the variable x).
+This problem was solved on the base of the new approach proposed in [24], in the works
+[25, 26, 27, 29, 28, 30, 31](see the surveys [32, 35, 37]). An extension of this method to
+(2 + 1)-systems was found in [33, 34, 35]. New development of this approach associated with
+two-dimensional Schr¨odinger operator was started in 1976 (see [36, 37, 39, 38, 41, 42, 43]).
+Complete detailed description of the solution of the periodic problem can be found in the
+2
+
+surveys, Encyclopedia articles [40], and in the book [44]. We are going to present here basic
+ideas of this theory in the simplest form possible. Let us point out that KdV as well as other
+nontrivial completely integrable by IST PDE systems are indeed completely integrable in any
+reasonable sense for rapidly decreasing or periodic (quasi-periodic) boundary conditions,
+only. In fact, even that is well established for few of them. For example, for the KdV any
+periodic solution can be approximated by the finite-gap solutions. This statement easily
+follows from the theory of finite-gap potentials if we do not try to preserve the period, i.e.
+in the class of all quasi-periodic finite-gap potentials. The approximation of any periodic
+potential by the finite-gap potentials with exactly the same period, was constructed on the
+base of other approach developed in [46]. The extension of the theory of Riemann surfaces
+and θ-functions to the specific class of surfaces of the infinite genus associated with periodic
+Schr¨odinger operator, was done in [47]. This theory is a beautiful description of the infinite
+limit. However, it seems that all fundamental properties of θ-functions associated with the
+complex continuation of variables, are lost in this limit. It is interesting to point out that
+analogous (but more complicated) theory of Riemann surfaces of the infinite genus was
+developed later in [41] for the periodic 2D Schr¨odinger operators.
+Outside these functional classes almost no effective information is known. Beautiful
+methods have been developed also for the studies of the special self-similar and ”stringtype” solutions, but in most cases they lead to the very hard analytical problems associated
+with the famous Painleve equations and their generalizations ([48, 49, 50, 51, 53, 52, 54, 55]).
+
+2
+
+Rapidly decreasing potentials and GGKM Procedure. B¨
+acklund Transformations
+
+Let us recall the basic information about the IST method for KdV. We start from the so-called
+Lax Representation for KdV (see [18]). The Heisenberg type equation for the Schr¨odinger
+operator L
+Lt = [L, A] = LA − AL,
+(2.1)
+L = −∂x2 + u, A = −4∂x3 + 3(u∂x + ∂x u),
+
+(2.2)
+
+is equivalent to the identity (KdV equation)
+ut = 6uux + uxxx .
+
+(2.3)
+
+For this reason, any KdV type equations admitting some analog of the Lax representation is
+called isospectral deformations. The existence of such deformations indicates the possibility
+of effective solution of the Inverse Scattering Problem for the operator L.
+For the rapidly enough decreasing functions u(x, t) → 0, x → ±∞ we define two bases of
+solutions (t is fixed):
+φ± (x, t; k) ∼ exp±ikx ,
+
+ψ± (x, t; k) ∼ exp±ikx ,
+
+x → −∞, Lφ± = λφ± ,
+
+x → +∞, Lψ± = λψ± , k 2 = λ.
+3
+
+(2.4)
+(2.5)
+
+By definition, monodromy matrix T connects these two bases, T φ = ψ for the column vectors
+φ = (φ+ , φ− ), ψ = (ψ+ , ψ− ):
+T =
+
+a b
+c d
+
+, ψ+ = aφ+ + bφ− , ψ− = cφ+ + dφ− .
+
+(2.6)
+
+A conservation of the Wronskian implies that det T = ad − bc = 1. For the real values of
+¯ c = ¯b. Therefore, |a|2 − |b|2 = 1. The whole set of the so-called
+k or λ > 0 we have a = d,
+inverse scattering data can be extracted from the monodromy matrix T if it is well-defined
+for all complex values of k. The so-called scattering matrix is constructed from T for the
+real k. Its entries are the transmission coefficient 1/a and the reflection coefficient ¯b/a. The
+property b = 0 for all real values of k characterizes reflexionless or multisoliton potentials.
+For all rapidly decreasing potentials the matrix element a(k) is well-defined for complex k
+such that Im k > 0 and a → 1 for k → ∞, Im k > 0. There is only a finite number of
+purely imaginary zeroes a(kn ) = 0 in this domain. They correspond to the discrete spectrum
+λn = kn2 < 0.
+The famous result of [17] (GGKM procedure) easily follows from the Lax representation,
+which implies the equation:
+−4ik 0
+0
+4ik
+
+Tt = [T, Λ], Λ =
+
+(2.7)
+
+This result was formulated as a set of the following GGKM formulas
+at = 0, bt = −8(ik)3 = −ct , dt = 0.
+
+(2.8)
+
+The latter equations give a full description of KdV dynamics in these variables because any
+rapidly decreasing potential can be reconstructed from the inverse scattering data. A special
+family of the reflexionless potentials where b = 0 for real values of k, leads to the so-called
+multisoliton solutions for KdV equation (see [44].)
+The multisoliton solutions can be also directly obtained with the help of the elementary
+substitutions (B¨aclund Transformations) transforming any solution of the KdV into another
+solution: let u be a solution of the KdV equation and v be a solution of the Ricatti equation
+α + u = vx + v 2 with the initial value independent of time. The new function u˜ = −vx + v 2
+satisfies the KdV equation. Starting from the trivial solution u = u0 = 0 we construct
+a sequence of potentials u˜n−1 = un , n > 0, given by the B¨acklund Transformation. We
+choose parameters αn , α1 > α2 > . . . > αn > . . ., and take the real nonzero functions
+fn → ∞, x → ±∞, −fnxx + un−1fn = αn fn , which define vn = (log fn )x . Every such
+sequence leads to the multisoliton reflexionless potential:
+u0 = 0, u1 = −
+
+ch2 (
+
+√
+
+2α
+, ...
+α(x − x0 ) + βt)
+
+(2.9)
+
+In terms of the Schr¨odinger operator this transformation (invented by L.Euler in 1742) is
+called Darboux Transformation. The operator L can be factorized
+L = −∂ 2 + u = −(∂ + v)(∂ − v).
+4
+
+Using the non-commutativity of these factors, we define the Darboux Transformation for the
+operator and its eigenfunction in the following way:
+˜ = −∂ 2 + u˜ = −(∂ − v)(∂ + v), ψ˜ = (∂ + v)ψ .
+L
+
+(2.10)
+
+These transformations can be considered as some kind of discrete spectral symmetries for
+Schr¨odinger operators. They preserve a spectrum of the operator L (maybe except for one
+eigenfunction).
+
+3
+
+KdV Hierarchy. Integrals of motion. Hamiltonian
+formalism.
+
+The local integrals for the KdV equation can be constructed with the help of the Schr¨odinger
+operator. Consider the associated Riccati equation vx + v 2 = u − k 2 and find the solution
+for it as a formal series in the variable k:
+∞
+
+vn (x)(ik)−n ,
+
+v(x, k) = ik +
+
+(3.1)
+
+n=1
+
+where all vn are polynomials in the variables u, ux , . . . The integral along the line x is a
+k-dependent constant of motion for the KdV equation
+∂t
+
+v(x, k)dx = 0, ut = 6uux + uxxx .
+
+(3.2)
+
+For the real potentials u(x, t) and real k we can see that the imaginary part of v(x, k) − ik
+is a total derivative. The remaining quantities in the expansion :
+vn (x)(ik)−n dx.,
+
+(3.3)
+
+v2n+3 (x)dx, n = −1, 0, 1, 2, . . . ,
+
+(3.4)
+
+(v(x, k) − ik)dx =
+
+n≥1
+
+define local integrals of motion
+In = cn
+
+where cn are constants. After the proper choice of the constants cn we have
+I−1 =
+
+udx, I0 =
+
+u2 dx, I1 =
+
+(u2x /2 + u3 )dx, . . . ,
+
+Int = 0, ut = 6uux + uxxx .
+
+(3.5)
+(3.6)
+
+Let us introduce a GZF Poisson bracket [56, 57] on the space of functions
+{u(x), u(y)} = δ ′ (x − y)).
+
+(3.7)
+
+Then any functional H (Hamiltonian) defines the corresponding Hamiltonian system
+δH
+.
+δu(x)
+
+ut = ∂x
+5
+
+(3.8)
+
+For the case H = I−1 we get a trivial flow (i.e. this integral is a Casimir for the GZF
+bracket). For H = I0 we are coming to the x-translations ut = ux . Let us call this equation
+KdV0 . For the case H = I1 we have the ordinary KdV = KdV1 . Higher integrals give us
+the equations KdVn of the order 2n + 1 admitting the Lax representations with the same
+Schr¨odinger operator L but with the differential operators An = (const)∂x2n+1 + . . . :
+utn = ∂x
+
+δIn
+δu(x)
+
+= [L, An ].
+
+(3.9)
+
+In particular, A0 = ∂x , A1 = A. Nice formula for all operators An can be extracted from
+[58].
+Let L = −L2 , where L = ∂x + k≥1 ak (u, ux , . . .)∂x−k . Here all ak are polynomials in the
+variables u, ux , . . . and ∂x−1 a = n≥0 (−1)n a(n) ∂x−n−1 for the composition of the operator ∂ −1
+and multiplication operator by a. By definition,
+An = (L2n+1 )+ = (L2n+1/2 )+ ,
+
+(3.10)
+
+where the sign + means omitting of all strictly negative powers of ∂x .
+All higher KdVn systems can be integrated by the same IST procedure for the class of
+rapidly decreasing functions. In particular, GGKM equations for the scattering data (or
+monodromy matrix) have the form
+Ttn = [T, Λn ], Λn = (const)
+
+(ik)2n+1
+0
+0
+(−ik)2n+1
+
+.
+
+(3.11)
+
+The latter result also implies that all these flows commute with each other. Hence, we get
+the following conclusion without any calculation:
+integrals In have zero Poisson brackets,
+{In , Im } =
+
+δIn
+δIm
+∂x
+dx = 0.
+δu(x) δu(x)
+
+(3.12)
+
+A generalization of the GZF Poisson bracket for the isospectral deformations of the higher
+order (scalar) Lax operators L was found in [59].
+It should be emphasized that there exists a family of local field-theoretical Poisson brackets (LM-brackets, [60]) describing the KdV theory:
+B = B(λ,µ) = λ∂x + µ(−∂x3 + 4u∂x + 2ux ) = λB0 + µB1 ,
+
+(3.13)
+
+{u(x), u(y)}λ,µ = Bδ(x − y),
+
+(3.14)
+
+{In , Im }λ,µ = 0.
+
+(3.15)
+
+These brackets were generalized for the higher order operators L in [61].
+The recurrence operator B1 B0−1 = C generates all the right-hand sides of all higher KdV
+systems:
+δIn−1
+.
+(3.16)
+C(0) = ux , C 2 (0) = 6uux − uxxx , . . . , C n (0) = ∂x
+δu(x)
+6
+
+It gives also a simple proof of a very useful identity ([62]):
+δIn
+dx = (const)In−1 .
+δu(x)
+
+(3.17)
+
+All these identities are local and can be used for the class of periodic functions as well.
+However, we shall see in the next section that the direct analog of GGKM procedure does
+not lead to the integration procedure. We are going to use a different approach.
+
+4
+
+Spectral theory of periodic Schr¨
+odinger operators.
+Finite-gap potentials
+
+The spectral theory for the periodic potentials on the whole line x is based on the monodromy
+matrix as in case of the scattering theory. However, in the periodic case with a period
+T < ∞, we have nothing like the selected point x = ∞ for the definition of the monodromy
+matrix (as it was for the rapidly decreasing case (T = ∞)–see Section 2 above). Any
+point x0 can be used. Let us fix initial point x0 and choose a special basis of the solutions
+C(x, x0 , ǫ), S(x, x0 , ǫ) for the spectral equation LC = ǫC, LS = ǫS such that for x = x0 we
+have:
+C S
+C x Sx
+
+=
+
+1 0
+0 1
+
+(4.1)
+
+The shift operator T : x → x + T in the basis C, S defines the monodromy matrix
+a b
+c d
+
+T (x0 , ǫ) =
+
+,
+
+C(x + T ) = a C(x) + b S(x), S(x + T ) = c C(x) + d S(x).
+
+(4.2)
+(4.3)
+
+The key element of the periodic spectral theory is a notion of the, so-called, Bloch waves or
+Bloch-Floquet eigenfunctions. We present here some essential properties of these functions
+without any proofs. An exposition of this theory may be found in the Encyclopedia article
+[40], where the main ideas of the proofs are clearly presented for the difference Schr¨odinger
+operator (it is much simplier).
+By definition, the Bloch-Floquet functions are solutions of the Schr¨odinger equation that
+are at the same time eigenfunctions of the shift operator, i.e.
+Lψ = ǫψ, T ψ(x) = ψ(x + T, ǫ) = exp(±ip(ǫ)T )ψ(x).
+
+(4.4)
+
+We uniquely normalize ψ by the condition ψ|x=x0 = 1.
+For any complex number ǫ the eigenvalues, w± (ǫ) = exp(±p(ǫ)T ), of the shift operator
+are defined by the characteristic equation for the monodromy matrix. ¿From the Wronskian
+property it follows that det T = 1. Therefore, the characteristic equation has the form
+w 2 − (tr T )w + 1 = 0.
+7
+
+(4.5)
+
+Figure 1:
+The multivalued function p(ε) is called quasi-momentum.
+The spectrum of the Schr¨odinger operator on the whole line is a union of spectral zones
+which are segments of the real line of the variable ǫ, where the quasi-momentum is real. The
+latter condition is equivalent to the inequality:
+|Tr T | = 2 cos(pT ) ≤ 2.
+
+(4.6)
+
+The typical graph of the function f (ǫ) = cos(pT ) is presented on the fig 1. In particular, its
+extreme points f ′ (ǫ) = 0 ”generically” are located inside of the gaps (i.e. for the open and
+everywhere dense set of periodic potentials we have |f | > 1 at the extreme points, and there
+is only one extremal point in each gap). For some special cases we may have f = ±1 at
+the extreme point. Such point lies inside the spectral zone. However, generic perturbations
+create new small gap nearby this point — see fig 2. This point is a double point of periodic
+or anti-periodic spectrum with the boundary conditions ψ(x) = ±ψ(x + T ).
+
+ǫ1
+ǫ0
+
+ǫ2
+
+ǫ3 ǫ4
+ǫ5
+
+Figure 2:
+
+8
+
+ǫ6
+
+The Riemann surface of the Bloch-Floquet functions is defined by the equation
+z 2 = cos(p(ǫ)T ),
+
+(4.7)
+
+but this surface is nonsingular only for the generic case (when there are no double points of
+the periodic or anti-periodic problem for the Schr¨odinger operator). For the large ǫ → +∞
+the following asymptotics is valid for the gaps (see fig. 3).
+1. The length of gaps tends to zero with its rate depending on the smoothness of the
+potential (this rate is exponential for the analytic potentials).
+2. All gaps are located nearby the points ǫm = 4π 2 m2 T −2 , and the distance of gap from
+this point tends to zero.
+A nonsingular Riemann surface of the Bloch-Floquet solutions is defined with the help
+of the equation
+z 2 = (ǫ − ǫ0 )(ǫ − ǫ1 ) . . . (ǫ − ǫn ) . . . ,
+(4.8)
+where ǫ0 < ǫ1 < . . . , are simple eigenvalues of the periodic and anti-periodic spectral problems.
+
+1
+cos(pT )
+ǫ0m+1
+ǫ→∞
+
+ǫ0m
+
+−1
+
+Figure 3: For the generic T -periodic potentials the gaps are located near the
+points ǫm = 4πm2 T −2 for ǫ → ∞. Here m are the integer numbers.
+As it follows from the Lax representation for all higher KdVn systems (3.9), these boundary spectral points for the periodic operator L in the Hilbert space L2 (R) of the square
+integrable complex-valued functions on x–line are integrals of motion for the KdV hierarchy.
+We can say that the Riemann surface of the Bloch-Floquet solutions as a whole is an
+integral of motion for the KdV hierarchy. How many potentials correspond to the same
+Riemann surface (i.e. have the same spectrum in L2 (R))?
+The original idea to introduce a special class of potentials for which this problem can
+be solved effectively was proposed in [24] and is based on the KdV hierarchy. This idea
+naturally combines two different ways to describe the corresponding isospectral manifold of
+potentials. Both are in fact closely related to each other.
+9
+
+The first approach – use of the KdV hierarchy and Hamiltonian dynamics:
+Let us consider a stationary equation for some linear combination of higher KdVn flows
+(3.9). It is an ordinary differential equation that can be written in the form:
+δ(In + c1 In−1 + . . . + cn I0 + cn+1 I−1 ) = 0.
+
+(4.9)
+
+This is a finite-dimensional Hamiltonian system with n degrees of freedom depending on
+n + 1 parameters c1 , . . . , cn+1 . It is a completely integrable Hamiltonian system because
+there is a pencil of the commuting flows. This pencil coincides with the restriction of all
+higher KdVm on this stationary subset of functions given by the equation (4.9). Therefore,
+its generic nonsingular solution is expected to be a periodic or quasiperiodic function of x.
+In the next section we shall construct for (4.9) some kind of the Lax representation
+n+1
+
+Λx = [Q(x, λ), Λ(x, λ)], Λ = Λn +
+
+ck Λ k ,
+
+(4.10)
+
+k=1
+
+using 2 × 2 traceless matrices depending on the parameter λ and (u, ux , . . .) polynomially. In
+the today terminology some people call them loop groups. Note that in all soliton systems this
+λ-loops have very specific λ-dependence (polynomial, rational and in some exotic examples
+– elliptic functions).
+Lax representation (4.10) implies that an algebraic Riemann surface defined by characteristic equation
+det(Λ(λ) − zI) = P (λ, z) = 0,
+(4.11)
+
+does not depend on x and therefore is an integral of (4.9). The same Riemann surface can be
+extracted from the commutativity equation [L, A] = 0, which according to (3.9) is equivalent
+to (4.9).
+It should be emphasized that the latter form of (4.9), i.e. the commutativity condition
+for two ordinary differential operators
+[L, An +
+
+ck An−k ] = [L, A] = 0, L = −∂x2 + u,
+
+(4.12)
+
+was considered formally (i.e. locally in the variable x without any periodicity assumptions)
+as a pure algebraic problem in 1920-s (see [63, 64]). Even the formal algebraic Riemann
+surface (4.11) appeared as a relation P (L, A) = 0.
+According to our logic however, the corresponding system of equations in the variable x is
+Hamiltonian and completely integrable. Therefore, its generic solution is quasiperiodic in x,
+containing a dense family of periodic solutions. We may ask about the spectrum of the corresponding operators L in L2 (R) and boundaries of gaps. Remarkably, they exactly coincide
+with the branching points of the Riemann surface defined by equation (4.11). Therefore, for
+the periodic potential which satisfy equation (4.9) the nonsingular spectral Riemann surface
+of the Bloch-Floquet solutions is an algebraic Riemann surface of genus g = n. The spectrum
+of such an operator contains only a finite number of gaps [ǫ2j−1 , ǫ2j ], j = 1, . . . , n.
+This key step unifies the first approach with the second one (below). So the solution of
+the inverse spectral problem can be identified with the process of solution of some special
+families of completely integrable systems using Riemann surfaces.
+10
+
+a1
+ǫ0
+
+ǫ1
+
+γ1
+
+a2
+ǫ2
+
+ǫ3
+
+γ2
+
+a3
+ǫ4
+
+ǫ5
+
+γ3
+
+ǫ6
+
+ε
+
+Figure 4: The endpoints of gaps ǫj are the branching points of the 2-sheeted
+Riemann surface. The poles γj are located in the gaps on one branch only. (Here
+n = 3)
+
+The second approach – periodic spectral theory in the Hilbert space L2 (R):
+For any periodic Schr¨odinger operator L = −∂ 2 + u(x = t0 , t1 , . . .) we have already
+defined the Riemann surface Γ of Bloch-Floquet solutions with the help of the monodromy
+matrix T . For the finite-gap potentials a graph of the function f = cos(p(ǫ)T = 1/2tr T is
+highly degenerate (see fig.2 and compare with fig.1). For all real and large enough ǫ we have
+|f | ≤ 1.
+Once again, we ask how to describe all the potentials with the same finite-gap spectrum
+and what are additional variables which uniquely define a finite-gap potential? It turns out
+that these additional spectral data are the poles of the Bloch-Floquet functions. It can by
+shown that the Bloch-Floquet solutions defined by (4.4) and normalized by the condition
+ψ|x=x0 = 1 have exactly one simple pole γj (x0 ) inside each gap or on its boundary. A
+point of the hyperelliptic surface Γ (4.8) can be represented as the complex number ǫ and
+a sign (or a branch) of the radical z = (ǫ − ǫ0 )(ǫ − ǫ1 ) · · ·. The branches of the radical
+coincide at the boundaries of gaps. Therefore, each gap should be considered as a closed
+cycle aj , j = 1, 2, . . . n (see fig. 4). Any pole of ψ should be considered as a point γj on the
+cycle aj . The above-mentioned statement that there is only one pole in a gap means, in
+particular, that ψ has no pole at the point (γj , +) if it already has pole at (γj , −) and vice
+versa. Geometrically, the total set of poles (γ1 , . . . , γn ) represents a point on the real torus
+T g = a1 × . . . × an . As we shall see later, this set of poles completely determines the original
+potential. Different points of the real torus lead to the different potentials (if normalization
+point x0 is fixed).
+
+5
+
+Periodic analog of GGKM. Zero Curvature representation for the KdV hierarchy and corollaries
+
+As it was emphasized above, the definition of the monodromy matrix in the periodic case
+depends on a choice of initial point x0 . For different choices of the initial point the corresponding monodromy matrices are conjugated (because they represent the same linear
+transformation in different bases). Therefore, a dependence of the monodromy matrix with
+respect to the choice of the initial point x0 can be described by the equation:
+Tx0 = [Q(ǫ, x0 ), T ], Q =
+
+11
+
+0
+1
+ǫ − u(x0 ) 0
+
+.
+
+(5.1)
+
+In the same way, for the isospectral deformations corresponding to the KdV hierarchy (i.e,
+all higher KdVn systems) we can establish the following equations (the periodic analogs of
+GGKM):
+Ttj = [Λj , T ], Λ0 = Q, t0 = x0 .
+(5.2)
+A compatibility condition of equations (5.2) for any pair of variables ti , tj implies the following
+zero curvature representation for the KdV hierarchy (where periodic boundary conditions are
+already inessential)
+[∂ti − Λi , ∂tj − Λj ] = 0.
+(5.3)
+
+Using the Lax representations (3.9) for all higher KdVn , we can express all the matrices Λj as
+polynomials in the variable ǫ and variables u(x0 ), ux0 (x0 ), . . .. For example, for the ordinary
+KdV we have (replacing x0 by x):
+Λ1 =
+
+−ux
+2u + 4ǫ
+2
+−4ǫ + 2ǫu + 2u − uxx
+ux
+2
+
+(5.4)
+
+The matrices Λk can be completely reconstructed from equations (5.3) and from the following
+properties of matrix elements:
+Λk = (const)
+
+ak bk
+ck d k
+
+,
+
+(5.5)
+
+dk + ak = TrΛk = 0, bk = ǫk + u/2ǫk−1 + . . . ,
+
+(5.6)
+
+det Λk = −(a2 + bc) = (const)R2k+1 (ǫ) = (const)(ǫ2k+1 + . . .),
+
+(5.7)
+
+2ak = −bkx , (R2k+1 )x = −bk .
+
+(5.8)
+
+For i = 0, equations (5.3), where t0 = x, give the zero-curvature representation for the KdVn
+system:
+(5.9)
+∂x Λn − ∂tn Q = [Q, Λn ].
+
+From this representation and from the periodic analog of GGKM we are coming to the
+following results for the stationary higher KdVn system (4.10):
+1. The monodromy matrix T commutes with Λ
+[T, Λ] = 0.
+
+(5.10)
+
+Therefore, they have common eigenvectors. It implies, in particular, that the Bloch-Floquet
+function ψ± is single-valued on the algebraic Riemann surface associated with the matrix Λ;
+2. The stationary higher KdV admits an ǫ-parametric Lax-type representation in the
+variable x (4.10):
+(Λ)x = [Q, Λ], Λ = Λn +
+
+ck Λ k .
+
+(5.11)
+
+Therefore, we have a full set of conservation laws organized in form of the Riemann surface
+(i.e. all coefficients of the polynomial P are x-independent):
+det(Λ(ǫ) − zI) = P (ǫ, z) = 0,
+12
+
+(5.12)
+
+P (ǫ, z) = z 2 − R2n+1 (ǫ) = (const)(ǫ − ǫ0 ) . . . (ǫ − ǫ2n ).
+
+(5.13)
+
+These points ǫj are exactly the boundaries of gaps for periodic potentials because the Riemann surfaces of the matrices T and Λ coincide. The matrix element b12 for the matrix Λ
+determines another set of points
+b12 (ǫ) = (const)(ǫ − γ1 ) . . . (ǫ − γn ).
+
+(5.14)
+
+These points coincide with projections of the zeroes of Bloch wave ψ± as the functions of
+the variable x or poles as the functions of x0 (see the next section).
+An original approach to the solution of the inverse spectral problem was based on the
+use of the following trace type formula for the potential:
+− u(x)/2 + const = γ1 (x) + . . . γn (x).
+
+(5.15)
+
+¿From (5.11) and (5.14), “Dubrovin equations” defining dynamics in x of the points γj can
+be derived. They have the form
+√
+R2n+1 (γj )
+(5.16)
+γjx =
+k=j (γj − γk )
+These equations (see [27, 32]) can be linearized by the, so-called, Abel transformation.
+Consider the first kind differentials on the Riemann surface (i.e. holomorphic 1-forms
+without poles anywhere - even at the infinity). The basic first kind forms are
+ωj =
+
+ǫj−1 dǫ
+R2n+1 (ǫ)
+
+, j = 1, . . . , n.
+
+It it is convenient to choose a normalized basis taking linear combinations Ωs =
+such that
+Ωs = δsj ,
+
+(5.17)
+
+j
+
+vsj ωj
+
+aj
+
+for all the gaps aj .
+Fix a set of paths κj from the point P0 = ∞ to the points Pj on the Riemann surface.
+Abel transformation is defined by the formula
+Ap (P1 , . . . , Pn ) =
+j
+
+κj
+
+Ωp .
+
+(5.18)
+
+Equations (5.16) after the Abel transform become linear:
+Apx = Uq =
+
+1
+2π
+
+bq
+
+dp .
+
+(5.19)
+
+Here the closed paths bq are ”canonically conjugated” to the paths aj (see fig. 5). It means
+that the intersection numbers are aj ◦ bq = δjq . The differential dp is equal to pǫ dǫ where p(ǫ)
+is a multi-valued quasimomentum. It is a second kind differential (i.e. meromorphic 1-form
+13
+
+b3
+
+b2
+b1
+ǫ0
+
+ǫ1
+
+a1
+
+ǫ2
+
+ǫ3
+
+a2
+
+ǫ4
+
+ǫ5
+
+a3
+
+ǫ6
+
+Figure 5: The canonical basis of cycles (ai , bj ) on the Riemann surface Γ with
+branching points ǫ0 , . . . , ǫ2n . (Here n = 3)
+
+on the surface Γ with a pole of order 2 at the point ∞ with negative part dk = −(dw)w −2
+in the local coordinate w = k −1 near ∞), and therefore has the form
+dp =
+
+(ǫn+1 +
+
+j>0
+
+vj ǫn−1−j )dǫ
+
+R2n+1 (ǫ)
+
+.
+
+(5.20)
+
+All the coefficients vj can be found from the normalization condition:
+aj
+
+dp = 0, j = 1, . . . , n .
+
+(5.21)
+
+Following the classical XIX century theory of Riemann surfaces, formulas (5.15-5.21) lead
+to some expression of the potential through the θ-functions avoiding the calculation of the
+eigenfunction ψ± (see [25, 27, 29, 31]). The most beautiful θ-functional formula for the
+potential was obtained in the work [29].
+However, in the next section we shall not follow this approach for solving the inverse
+problem which has been outlined above, but use another approach proposed for the first
+time in the article [32] (see appendix, based on the idea of A.Its): it is possible to calculate
+all the family of the Bloch-Floquet functions. The original approach has been used later in
+the problems, where the effective calculation of eigenfunction is impossible (like in the cases
+of higher rank commuting OD linear operators (see for example [37]).
+
+6
+
+Solution of the periodic and quasiperiodic inverse
+spectral problems. Baker-Akhiezer functions
+
+We are going to solve the inverse spectral problem for the finite-gap potentials following the
+scheme proposed in [33, 34, 35] and based on the concept of the Baker-Akhiezer functions.
+These functions are uniquely defined by their analytical properties on the spectral Riemann
+surface. As we shall see later this scheme is evenly applicable to the solution of inverse
+problems in two-dimensional case where the corresponding analytical properties naturely
+generalize the analytical properties of the Bloch-Floquet solutions for finite-gap Schr¨odinger
+operators.
+Let us start with the following real inverse spectral data:
+14
+
+1. Riemann surface Γ given in the form
+z 2 = (ǫ − ǫ0 ) . . . (ǫ − ǫ2n ),
+where all numbers ǫj are real;
+2. a set of n real points γj ∈ Γ such that there is exactly one point γj on the cycle aj .
+
+Below we shall for brevity identify the point γj as a point on Γ with its projection on
+complex ǫ–plane. The condition that there is only one point on each cycle means that
+projection of the points satisfy the restriction:
+ǫ2j−1 ≤ γj ≤ ǫ2j , j = 1, . . . n,
+
+(6.1)
+
+By definition, the complex inverse spectral data are the same data where the Riemann surface
+(i.e. its branching points ǫk ) and the points γj ∈ Γ are arbitrary complex points.
+
+As we shall see below a generic set of algebraic-geometric spectral data leads to the
+explicit solution of the inverse spectral problem in terms of the Riemann theta-function. The
+corresponding potentials are complex meromorphic quasi-periodic functions of the variable x.
+For the real data described above, we are coming to the smooth (even analytic) quasiperiodic
+potentials with their periods expressed through the hyperelliptic integrals (see below). It is
+necessary to mention that there is no way to find simple and effective criteria for the potential
+to be periodic in terms of these data. The periods depend on the Riemann surface, only.
+Of course, we may write the condition that all the corresponding hyperelliptic integrals are
+commensurable, however this condition in transcendental. Recently, based on the results of
+[7, 65], the effective numerical approach has been developed for the solution of this problem.
+It is based on the discovery of some specific dynamic systems on the set of potentials which
+preserve all the periods but change spectrum. Following [65], we start from one periodic
+potential and create all others using these dynamic systems.
+In the last section we shall present some examples of finite-gap potentials written in terms
+of elliptic functions. They are periodic in the variable x (even double-periodic as functions
+of the complex variable x). The first nontrivial examples different from the classical Lame
+potentials u(x) = n(n + 1)℘(x) were found in [25]. This subject was developed in the works
+[66, 67, 68, 69, 70].
+We define the Baker-Akhiezer function ψ = ψ(x, t1 , . . . tn ; P ) for the parameters x, tj and
+the point P = (ǫ, ±) ∈ Γ, by its analytical properties on Γ with respect to the variable P .
+For the case t1 = t2 = · · · = 0 these analytical properties are just the same as the analytical
+properties of the Bloch-Floquet solutions of the periodic finite-gap operator.
+¿From pure algebraic-geometric arguments it follows that there exists a unique function
+ψ such that
+1. it is meromorphic on Γ outside the infinity and has at most simple poles at the points
+γj , j = 1, . . . , n;
+2. in a neighborhood of the infinity the function ψ has the form
+ψ = exp[xk + t1 k 3 + . . . + k 2n+1 tn ](1 + ξ1 (x, t)k −1 + ...) ,
+15
+
+where k 2 = ǫ and therefore, k −1 is a local coordinate on the Riemann surface near infinity.
+A proof of this statement is identical to the proof of the existence and uniqueness of general Baker-Akhiezer functions that were introduced in [33] for construction of exact solutions
+of two-dimensional KP equation and all associated Zakharov-Shabat hierarchies.
+General Baker-Akhiezer function is defined with the help of an arbitrary Riemann surface
+of finite genus n instead of special hyperelliptic (i.e. two-sheeted) surfaces. We fix an
+arbitrary ”infinity” point P0 on it; local coordinate k −1 = w where w(P0 ) = 0 ; generic set of
+points (γ1 , . . . , γn ), and numbers (x = τ1 , τ2 , . . . , τk , . . .). The corresponding Baker-Akhiezer
+function has the same analytical properties as above but, (2) is replaced by the following:
+ψ = exp[xk + τ1 k 2 + τ2 k 3 + . . .](1 + ξ1 (x, τ )k −1 + . . .) .
+
+(6.2)
+
+For the KdV hierarchy we have a hyperelliptic Riemann surface, k 2 = ǫ, and τ2k = 0, τ2j+1 =
+tj .
+The use of such type of functions (dependent only on a single parameter x) has been
+proposed by Baker in his note [71], for the common eigenfunctions of two commuting OD
+linear operators. He expected that this construction will improve the results of [63, 64]. He
+made also very interesting conjecture that this approach may seriously improve the classical
+theory of θ-functions. Unfortunately, this program was not realized and was forgotten. The
+soliton theory appeared many decades later absolutely independently. In the 70-s it started
+to use such kind of functions on Riemann surfaces in the process of solution of a periodic
+problem for the KdV type systems and inverse spectral periodic problems. In the classical
+spectral theory Akhiezer ([72]) was the first to use some special cases of this function for the
+construction of some examples of operators on the half-line x ≥ 0 with interesting spectral
+properties. No one of the authors before the 70-s had associated anything like that with
+periodic problems. Indeed, this type of functional construction on the Riemann surface was
+extracted in 1974 from the work [72].
+We shall prove the existence and uniqueness of the Baker-Akhiezer function and present
+its exact expression through the θ-functions later. At this moment we would like to show
+how the uniqueness of this function leads to the proof that ψ is an eigenfunction for the
+Schr¨odinger operator for our special case. Apply twice the operator ∂ = ∂x to this function
+and use analytical properties. After elementary calculation, we are coming to the formulas:
+∂ψ = kψ + exp[kx + . . .](ξ1x k −1 + . . .),
+∂ 2 ψ = k 2 ψ + 2ξ1x ψ + O(k −1 ) exp[kx + . . .].
+
+(6.3)
+
+¿From the latter equations, we get the equality
+(∂ 2 − k 2 − 2ξ1x )ψ = O(k −1) exp[kx + . . .].
+The left-hand side is globally well-defined function on the same Riemann surface because
+k 2 = ǫ. It has the same poles independent of parameters. Up to the same exponential factor,
+it is of the order O(k −1 ) at the infinity. Therefore, it is equal to zero due to the uniqueness
+of the Baker-Akhiezer function.
+16
+
+So we are coming to the conclusion that
+Lψ = ǫψ, L = −∂ 2 + u, u = −2ξ1x .
+
+(6.4)
+
+We can apply the operators ∂j = ∂tj to the function ψ:
+∂j ψ = k 2j+1 ψ + exp[kx + . . .](ξ1j k −1 + ξ2j k −2 ).
+
+(6.5)
+
+As in the previous case, we can easily construct a linear operator Aj = ∂x2j+1 + . . . with the
+coefficients independent of k such that (∂j − An )ψ = O(k −1 ) exp(kx + . . .). Using global
+analytical properties on the Riemann surface, we deduce from this that the left-hand side is
+equal to zero as before. The compatibility condition of these pairs of equations is exactly a
+KdVn -system for the potential u(x, t1 , . . . , tm ).
+Following the works [33, 34, 35], we can prove in the same way that for the general
+Baker-Akhiezer function ψ(x, τ, P ) associated with arbitrary Riemann surface with fixed
+local coordinate near a puncture, the following equations are valid:
+(∂τk − Lk )ψ = 0, k = 2, 3, . . . .
+
+(6.6)
+
+Here Lk = ∂xk + . . . are linear OD operators acting on the variable x with coefficients depending on parameters τ . These coefficients are differential polynomials in the coefficients of
+the expansion of the regular factor of the Baker-Akhiezer function at the puncture (infinity).
+They are uniquely defined by the condition that the expansion of the left-hand side of (6.6)
+at the puncture has the form O(k −1 )ψ.
+The compatibility conditions
+[∂τj − Lj , ∂τk − Lk ] = 0.
+
+(6.7)
+
+are equivalent to non-linear partial differential equations for the coefficients of the operators
+Lk . For the case j = 2, k = 3, τ2 = y, τ3 = z, the operators L2 and L3 have the form
+3
+L2 = ∂x2 − u(x, y, t), L3 = ∂x3 − u∂x + w(x, y, t),
+2
+
+(6.8)
+
+where we consider the dependence of the coefficients with respect to the first three variables
+τ1 = x, τ2 = y, τ3 = t, only . The coefficient u(x, y, t) is equal to u = 2ξ1x (x, y, t), where ξ1 is
+the first coefficient of the expansion (6.2).
+¿From (6.7) we get a system of two equations for two coefficients u(x, y, t) and w(x, y, t)
+which can be reduced for an equation for u(x, y, t). The reduced equation is the famous KP
+equation
+3uyy = (4ut − 6uux + uxxx )x .
+(6.9)
+It appeared in physics literature for the investigation of the transversal stability of the KdV
+solitons (see [73]) and is one of the most natural physical two-dimensional analogs of KdV.
+Lax representation for it was found in [22, 23]. We call the whole set of higher systems (6.7)
+the KP hierarchy. We shall discuss the periodic problem for this equation at greater length
+in the next section.
+17
+
+√
+For the special choice of the hyperelliptic Riemann surface and k = ± ǫ we have k 2s = ǫs ,
+where the function ǫ is well-defined globally as a meromorphic function on the Riemann
+surface Γ. Therefore, we may represent globally the corresponding Baker-Akhiezer function
+in the form
+ψ = ψ˜ exp(τ2 k 2 + τ4 k 4 + . . .),
+
+(6.10)
+
+where ψ˜ does not depend on the parameters τ2j . So in this case all the KP hierarchy reduces
+to the KdV hierarchy.
+The relationship of this constructions with commuting OD linear operators is as follows.
+Let f (P ) be a meromorphic function on the Riemann surface Γ with one pole at the puncture
+P0 . Its negative part written in the parameter k is some polynomial q(k) = q1l + q2 k l−1 +
+. . . + ql k. Apply the operator Af = q1 Ll + q2 Ll−1 + . . . + q1 ∂x to the function ψ. By the
+definition of the operators Lk , we can see that
+(Af − f )ψ = O(k −1)ψ.
+
+(6.11)
+
+We conclude as before, that the difference Af ψ − f (P )ψ = 0.
+
+For any pair of functions f and g on the Riemann surface Γ with poles at the point ∞,
+we get a pair of the commuting OD scalar linear operators Af , Ag such that Af Ag = Ag Af .
+In a special case of the hyperelliptic Riemann surface z 2 = (ǫ − ǫ0 ) . . . (ǫ − ǫ2n ), we have pair
+of functions f = ǫ, g = z, leading to the Schr¨odinger operator L = −∂x2 + u commuting with
+the second operator of order 2n + 1, because z = k 2n+1 + . . .
+Now we return back to the problem of existence and uniqueness of the Baker-Akhiezer
+function. The simplest way to prove this existence is to define this function by exact formula in terms of the θ-function and meromorphic differentials. Let us recall first necessary
+information.
+As in the previously discussed case of hyperelliptic curves, we introduce a basis of cycles
+aj , bj , j = 1, . . . , g, on a Riemann surface Γ of genus g with canonical matrix of intersections:
+ai · bj = δij , and a basis ωi of holomorphic differentials normalized by the condition
+ai
+
+ωj = δij .
+
+(6.12)
+
+The matrix B = (Bij ) of b-periods of these differentials
+Bij =
+
+bi
+
+ωj ,
+
+(6.13)
+
+is symmetric and has positively defined imaginary part. The Riemann θ-function is a function
+defined with the help of this matrix by the formula:
+e2πi(z,m)+(Bm,m)
+
+θ(z|B) =
+
+(6.14)
+
+m∈Z g
+
+where z = (z1 , . . . , zg ) is a complex g-dimensional vector, (m, z) stands for a standard scalar
+product and summation is taken over all integer vectors m = (m1 , . . . , mg ). Theta-function
+18
+
+is an entire periodic function of g variables zj and has the following monodromy properties
+with respect to the shifts defined by vectors Bk which are columns of the matrix of b-periods:
+θ(z + Bk ) = e−2πizk −πiBkk θ(z).
+
+(6.15)
+
+The basic vectors ek and the vectors Bk define a lattice L in C g which determines gdimensional complex torus J(Γ) = C g /L called Jacobian of the curve. The Abel map
+A : Γ → J(Γ) is defined by the formula
+Ak (P ) =
+
+P
+P0
+
+ωk .
+
+(6.16)
+
+Note that the vector A(P ) with coordinates Ak (P ) depends on the choice of path of integration but its ambiguity just coincides with shifts by vectors of the lattice L.
+
+¿From the monodromy properties of θ-function it follows that zeros of the multivalued
+function θ(A(P ) + Z) considered as a function on Γ are well-defined. For a generic vector
+Z this function has exactly g zeros (γ1 , . . . , γg ). The vector Z can be expressed in terms of
+Abel transforms of these points by the formula
+g
+
+Z=−
+
+A(γj ) + K,
+
+(6.17)
+
+j=1
+
+where K is a vector of the Riemann constants.
+Let us introduce a set of meromorphic differentials dΩi that are holomorphic on Γ outside
+the puncture where they have poles of the form
+dΩi = dk i (1 + O(k −i−1 )),
+
+(6.18)
+
+and normalized in a usual way by the condition
+ai
+
+dΩj = 0.
+
+The Abelian integrals
+Ωi (P ) =
+
+P
+
+(6.19)
+
+dΩi
+
+(6.20)
+
+dΩj .
+
+(6.21)
+
+are multivalued functions on Γ.
+Let Uj be a vector with the coordinates
+Ujk =
+
+1
+2πi
+
+bk
+
+Then from the statements presented above, it follows directly that the formula
+τi Ωi (P ))
+
+ψ(τ, P ) = exp(
+i
+
+θ((A(P ) + i Ui τi + Z)θ(Z)
+,
+θ(A(P ) + Z)θ( i Ui τi + Z)
+
+(6.22)
+
+correctly defines a function on Γ which satisfies all the properties of the Baker-Akhiezer
+function.
+19
+
+Suppose now that there exists another Baker-Akhiezer function ψ1 . ¿From the definition
+the Baker-Akhiezer functions it follows that the ratio ψ1 /ψ is a meromorphic function on Γ
+which is equal to 1 at the puncture and with only possible poles at the zeros of the function
+ψ. According to (6.22) the zeros of ψ are zeros of the function θ(A(P ) + i Ui τi + Z).
+Therefore, ψ has g zeros. The simplest form of the Riemann-Roch theorem (which can be
+considered as generalization of the Liouville theorem for Riemann surfaces) implies that a
+function on Γ with at most g poles at a generic set of points is a constant. Therefore, ψ1 = ψ
+and the existence and uniqueness of the Baker-Akhiezer function is proved.
+Now according to the previously established formula u = 2∂x ξ1 , in order to get an exact
+formula for a solution of the KP hierarchy it is enough to take the first coefficient ξ1 (τ ) of
+the expansion of the pre-exponential factor in (6.2) at the puncture. Finally we obtain the
+expression
+(6.23)
+u(τ ) = 2∂x2 log θ( Ui τi + Z) + const
+i
+
+for the finite gap solutions of the whole KP hierarchy.
+If we consider only the KP equation, we get the formula
+u(x, y, t) = 2∂x2 log θ(Ux + V y + W t + Z) + const,
+
+(6.24)
+
+where we redenote x = τ1 , y = τ2 , t = τ3 and U = U1 , V = U2 , W = U3 .
+For the case of the hyperelliptic curve the vector V = 0 and we get the Its-Matveev
+formula for the finite-gap solutions of the KdV equation.
+The formula (6.24) derived in [34, 35] has led to one of the most important pure mathematical applications of the theory of non-linear integrable systems. This is the solution of
+the famous Riemann-Shottky problem.
+According to the Torrelli theorem, the matrix of b-periods of normalized holomorphic differentials uniquely defines the corresponding algebraic curve. The Riemann-Shottky problem
+is: to describe symmetric matrices with the positive imaginary part which are the matrices
+of b-periods of normalized holomorphic differentials on algebraic curves. One of the authors
+conjected that the function u(x, y, t) given by (6.24) is a solution of the KP-equation iff the
+matrix B that defines the theta-function is the matrix of b-periods of normalized holomorphic
+differentials on an algebraic curve and U, V, W are vectors of b-periods of corresponding normalized meromorphic differentials with the only pole at a point of this curve. This conjecture
+was proved in [74].
+
+7
+
+Spectral theory of two-dimensional periodic operators. KP hierarchy
+
+A general algebraic-geometric construction of the finite-gap potentials for the Schr¨odinger
+operators and for solutions of the KP hierarchy that was presented in the previous section
+has been developed extensively in years. It is applicable for all soliton systems which are
+
+20
+
+equivalent to various types of compatibility conditions for over-determined systems of auxiliary linear problems. In its algebraic form it is in some sense local and is a sort of inverse
+transform: from a set of algebraic-geometrical data to solutions of the integrable non-linear
+partial differential equations
+{algebraic − geometrical data} −→ {solutions of NLP DE}
+
+(7.1)
+
+In a generic case the space of algebraic-geometrical data is a union for all g of the spaces
+˜ g,N = {Γg , Pα , kα−1 (Q), γ1 , . . . , γg }, α = 1, . . . , N,
+M
+
+(7.2)
+
+where Γg is an algebraic curve of genus g with fixed local coordinates kα−1 (Q), kα−1 (Pα ) = 0,
+in neighborhoods of N punctures Pα , and γ1 , . . . , γg are points of Γg in a general position.
+˜ g,N are “universal” data. For the given non-linear integrable
+(It is to be mentioned that M
+equation the corresponding subset of data has to be specified.)
+A’posteriory it can be shown that these solutions can be expressed in terms of the corresponding Riemann theta-functions and are quasi-periodic functions of all variables. Whithin
+this approach it is absolutely impossible to give an answer to the basic question: ”How
+many algebraic-geometrical solutions are there? And what is their role in the solution of the
+periodic Cauchy problem for two-dimensional equations of the KP type?”
+The answer of the corresponding question in lower dimensions is as follows. For finite
+dimensional (0+1) systems a typical Lax representation has the form
+∂t U(t, λ) = [U(t, λ), V (t, λ)],
+
+(7.3)
+
+where U(t, λ) and V (t, λ) are matrix functions that are rational (or sometimes elliptic)
+functions of the spectral parameter λ. In that case all the general solutions are algebraicgeometrical and can be represented in terms of the Riemann theta-functions.
+For spatial one-dimensional evolution equations of the KdV type (1+1)-systems) the
+existence of direct and inverse spectral transform allows one to prove (though it is not
+always the rigorous mathematical statement) that algebraic-geometrical solutions are dense
+in the space of all periodic (in x) solutions.
+It turns out that the situation for two-dimensional integrable equations is much more
+complicated. For one of the real forms of the KP equation that is called the KP-2 equation
+and coincides within (6.9), the algebraic-geometrical solutions are dense in the space of all
+periodic (in x and y) solutions ([41]). It seems, that the same statement for the KP-1 equation
+which can be obtained from (6.9) be replacing y → iy is wrong. One of the most important
+problems in the theory of two-dimensional integrable systems which are still unsolved is: ”in
+what sense” the KP-1 equation ahich has the operator representation (6.7) and for which a
+wide class of periodic solution was constructed, is an ”non-integrable” system.
+The proof of the integrability of the periodic problem for the KP-2 equation is based on
+the spectral Floquet theory of the parabolic operator
+M = ∂y − ∂x2 + u(x, y),
+21
+
+(7.4)
+
+with periodic potential u(x + l1 , y) = u(x, y + l2 ) = u(x, y). We are going now to present
+the most essential points of this theory which was developed in [41]. It is the natural
+generalization of the spectral theory of the periodic Sturm-Liouville operator. We would
+like to mention that despite its application to the theory of non-linear equations and related
+topics, the structure of the Riemann surface of Bloch solutions of the corresponding linear
+equation that was found in [41] has been used as a starting point for an abstract definition
+of the Riemann surfaces of the infinite genus ([75]).
+Solutions ψ(x, y, w1, w2 ) of the non-stationary Shr¨odinger equation
+(σ∂y − ∂x2 + u(x, y))ψ(x, y, w1, w2) = 0
+
+(7.5)
+
+with a periodic potential u(x, y) = u(x + a1 , y) = u(x, y + a2 ) are called Bloch solutions, if
+they are eigenfunctions of the monodromy operators, i.e.
+ψ(x + a1 , y, w1, w2 ) = w1 ψ(x, y, w1, w2 ),
+
+(7.6)
+
+ψ(x, y + a2 , w1 , w2 ) = w2 ψ(x, y, w1, w2 ).
+
+(7.7)
+
+The Bloch functions will always be assumed to be normalized so that ψ(0, 0, w1, w2 ) = 1.
+The set of pairs Q = (w1 , w2 ), for which there exists such a solution is called the Floquet set
+and will be denoted by Γ. The multivalued functions p(Q) and E(Q) such that
+w1 = eipa1 , w2 = eiEa2
+are called quasi-momentum and quasi-energy, respectively.
+The gauge transformation ψ → eh(y) ψ, where ∂y h(y) is a periodic function, transfers the
+solutions of (7.5) into solutions of the same equation but with another potential u˜ = u−σ∂y h.
+Consequently, the spectral sets corresponding to the potentials u and u˜ are isomorphic.
+Therefore, in what follows we restrict ourselves to the case of periodic potentials such that
+a1
+0 u(x, y)dx = 0.
+To begin with let us consider as a basic example the “free” operator M0 = σ∂y − ∂x2 with
+zero potential u(x, y) = 0. The Floquet set of this operator is parameterized by the points
+−1 2
+of the complex plane of the variable k w10 = eika1 , w20 = e−σ k a2 , and the Bloch solutions
+−1 2
+−1 2
+have the form ψ(x, y, k) = eikx−σ k y . The functions ψ + (x, y, k) = e−ikx+σ k y are Bloch
+solutions of the formal adjoint operator (σ∂y + ∂x2 )ψ + = 0.
+An image of the map k ∈ C −→ (w10 , w20) is the Floquet set for the free operator M0 . It
+is the Riemann surface with self-intersections. The self-intersections correspond to the pairs
+k = k ′ such that wi0(k) = wi0(k ′ ), i = 1, 2. The latter conditions imply the equations
+k − k′ =
+
+2πN
+σ2πiM
+, k 2 − (k ′ )2 =
+,
+a1
+a2
+
+(7.8)
+
+where N and M are integers. Hence, all the resonant points have the form
+k = kN,M =
+
+πN
+σiMa1
+−
+, N = 0, k ′ = k−N,−M .
+a1
+Na2
+22
+
+(7.9)
+
+The basic idea of the construction of the Riemann surface of Bloch solutions of the equation
+(7.5) that was proposed in [41] is to consider (7.5) as a perturbation of the free operator,
+assuming that the potential u(x, y) is formally small.
+For any k0 = kN,M it is easy to construct a formal Bloch solution. It turns out that the
+corresponding formal series converges and defines a holomorphic function of k0 for |k0 | > M
+big enough and lies outside small neighborhoods of the resonant points. Moreover, it can be
+shown that this function can be extended on the Riemann surface that can be thought as a
+surface obtained from the complex plane by some kind of surgery that creates gaps in places
+of the resonant points.
+More precisely, if u(x, y) is a smooth real potential that has analytical continuation in
+some neighborhood of the real values of x and y, then the corresponding Riemann surface
+of Bloch-Floquet solutions can be described in the following way.
+Let us fix some finite or infinite subset S of integer pairs (N > 0, M) . The set of pairs
+of complex numbers π = {ps,1, ps,2 } where s ∈ S would be called “admissible”, if
+Re ps,i =
+
+πN
+, |ps,i − ks | = o(|ks |−1 ), i = 1, 2,
+a1
+
+(7.10)
+
+and the intervals [ps,1 , ps,2] do not intersect. (Here ks , s = (N, M) are resonant points.)
+Let us define the Riemann surface Γ(π) for any admissible set π. It is obtained from the
+complex plane of the variable k by cutting it along the intervals [ps,1 , ps,2] and [−¯
+ps,1 , −¯
+ps,2 ]
+and by sewing after that the left side of the first cut with the right side of the second cut
+and vice versa. ( After this surgery for each cut [ps,1, ps,2 ] corresponds to a nontrivial cycle
+as on Γ(π).)
+For any real periodic potential u(x, y) which can be analytically extended into some
+neighborhood of the real values x, y, the Bloch solutions of the equation (7.5) are parameterized by points Q of the Riemann surface Γ(π) corresponding to some admissible set π.
+The function ψ(x, y, Q) which is normalized by the condition ψ(0, 0, Q) = 1 is meromorphic
+on Γ and has a simple pole γs on each cycle as . If the admissible set π contains only a
+finite number of pairs, then Γ(π) has finite genus and is compactified by only one point P1
+(k = ∞), in the neighborhood of which the Bloch function ψ has the form (6.2).
+
+The potentials u for which Γ(π) has finite genus are called finite-gap. They coincide with
+the algebraic-geometrical potentials. The direct spectral transform for periodic operators
+(7.4) allows us to prove that like in the one-dimensional case the finite-gap potentials are
+dense in the space of all periodic smooth functions in two variables ([41]).
+
+8
+
+Spectral theory of two-dimensional Schr¨
+odinger operator for fixed energy level and two-dimensional
+Toda lattice
+
+In this section we discuss a spectral theory of two-dimensional periodic Sch¨odinger operator.
+Unlike the one-dimensional case, spectral data for 2D linear operator are over-determined
+23
+
+and therefore for generic operators there are no nontrivial isospectral flows. As it was noted
+in [77], deformations that preserve spectral data for one fixed energy level do exist. An
+analog of Lax representation for such system has the form
+Ht = [A, H] + BH,
+
+(8.1)
+
+where H, A, B are two dimensional operators with coefficients depending on x, y, t. Equation
+(8.1) is equivalent to the condition that operators H and (∂t − A) commute on the space of
+solutions of the equation Hψ = 0. Therefore, (8.1) describes deformations preserving all the
+spectral data associated with the zero energy level of the operator H.
+It should be mentioned that until the moment when equations (8.1) were proposed in
+the framework of the soliton theory the spectral problem associated with one energy level of
+two-dimensional periodic operators had never been considered.
+For the first time an inverse algebraic-geometric spectral problem for two-dimensional
+Schr¨odinger operator in magnetic field
+H = (i∂x − Ax (x, y))2 + (i∂y − Ay (x, y)2 + u(x, y)
+
+(8.2)
+
+was formulated and solved in [36].
+Consider the Bloch solutions of the equation Hψ = ǫψ, which by definition are solutions
+that at the same time are eigenfuctions for the shifts operators:
+ψ(x + T1 , y) = eipx T1 ψ(x, y), ψ(x, y + T2 ) = eipy T2 ψ(x, y).
+
+(8.3)
+
+Here T1 , T2 are periods of the operator H, i.e. periods of the potential u(x, y) and periods of
+the magnetic field B(x, y), which is defined by the vector potential (Ax , Ay ) by the formula
+B = ∂y Ax − ∂x Ay .
+
+Multivalued quantities px , py are components of the two-dimensional quasimomentum.
+For fixed values of px , py a spectrum of the operator H restricted on the space of functions
+satisfying (8.3) is discrete and defines different branches of dispersion relations ǫj (px , py ), j =
+1, . . . Level lines ǫj (px , py ) = ǫ0 in the space of variables px , py define the, so-called, Fermi
+curves. Of course, in the solid state physics all the considerations were restricted by real
+values of quasi-momentum.
+In [36] it was suggested to consider operators for which a complex Fermi curve does
+exist and is the Riemann surface of finite genus for some energy level ǫ0 . Moreover, it was
+assumed that this curve is compactified by two infinity points P± in neighborhoods of which
+the corresponding Bloch solutions have the form
+∞
+
+ψ = ek± (x±iy)
+
+−s
+ξs± (x, y)k±
+,
+
+(8.4)
+
+s=0
+−1
+where k±
+) are local coordinates in the neighborhoods of the punctures P± . It was also
+assumed that outside the punctures the functions ψ(x, y, P ) considered as a function of the
+variable P (which is a point of the complex Fermi curve Γ) is meromorphic function with g
+poles independent of the variables x and y.
+
+24
+
+We present here a solution to this inverse spectral problem in a more general form which
+is necessary for construction of exact solutions to the two-dimensional Toda lattice which
+has deep connections with the theory of 2D Schr¨odinger operators. After that we return
+back to the spectral problems.
+Let Γ be a smooth algebraic curve of genus g with fixed local coordinates w± (P ) in
+neighborhoods of the points P ± , w± (P ± ) = 0. Then for each set of g points γ1 , . . . , γg in
+general position there exists a unique function ψn (T, P ), T = {t±
+i , i = 1, . . . , ∞, } such that:
+
+10 . The function ψn of the variable P ∈ Γ is meromorphic outside the punctures and has
+at most simple poles at the points γs (if all of them are distinct);
+20 . In a neighborhood of the point P ± it has the form
+∞
+
+∞
+s
+ξs± (n, T )w±
+exp
+
+∓n
+ψn (T, P ) = w±
+s=0
+
+−i ±
+w±
+ti ,
+
+w± = w± (P ),
+
+(8.5)
+
+i=1
+
+ξ0+ (x, T ) ≡ δαj .
+
+(8.6)
+
+The proof of this statement, as well as the explicit formula for ψn in terms of Riemann
+theta-functions, is almost identical to the way of solution of the inverse problem for finitegap Schr¨odinger operators discussed in the previous sections.
+(±)
+
+Let dΩj be a unique meromorphic differential holomorphic on Γ outside the point P ± ,
+which has the form
+(±)
+−j
+dΩj = d(w±
++ O(w± )),
+(8.7)
+(±)
+
+near the point P ± , and normalized by the conditions ak dΩi
+with coordinates
+1
+(±)
+(±)
+Ujk =
+dΩj .
+2πi bk
+
+(±)
+
+= 0. It defines a vector Uj
+
+(8.8)
+
+Further, let us define the normalized differential dΩ(0) , which is holomorphic outside the
+points P ± where it has simple poles with residues ±1, respectively. From Riemann’s bilinear
+relations it follows that the vector of b-periods of this differential equals 2πiU (0) , where
+U (0) = A(P − ) − A(P + ) .
+
+(8.9)
+
+As in the previous case, one can directly check that the function ψn (T, P ) given by the
+formula:
+ψn (T, P ) =
+
+θ(A(P ) + U (0) n +
+θ(A(P ) +
+
+(±) ±
+ti
+
+Ui
+
+Z)θ(A(P + )
+
++
+
++ Z)θ(A(P + ) + Z))
+
+U (0) n
+
+(±)
+Ui ti±
+
++
+
+(±)
+
+Ωi (P ) =
+
+P
+
+(±)
+
+dΩi
+
++ Z)
+
+e(nΩ
+
+(0) (P )+
+
+,
+
+(±)
+
+t±
+i Ωi
+
+(P ))
+
+, (8.10)
+
+(8.11)
+
+is well-defined and has all the properties of the Baker-Akhiezer function.
+±
+Note, that for n = 0 and t±
+1 = x ± iy, ti = 0, i > 1, the analytical properties of this
+function coincide with the properties that were described above as analytical properties of
+the Bloch solutions for finite-gap two-dimensional Schr¨odinger operators.
+
+25
+
+¿From the uniqueness of the Baker-Akhiezer functions ψn (T, P ) it follows that they satisfy
+the linear equations
+∂
+,
+∂t±
+1
+
+(8.12)
+
+vn = ∂+ ϕn (T ), cn = eϕn (T )−ϕn−1 (T ) , eϕn = ξ0− (T ),
+
+(8.13)
+
+∂+ ψn = ψn+1 + vn ψn , ∂− ψn = cn ψn−1 , ∂± =
+where
+
+and ξ0− (T ) is a leading term of the expansion of ψn at the puncture P − . From (8.10) we get
+the formula
+ϕn = log
+
+θ(U (0) (n + 1) +
+θ(U (0) n
+
++
+
+(±) ±
+ti + Z0 )
+(±) ±
+Ui ti + Z0 )
+
+Ui
+
++ const, Z0 = Z + A(P + ).
+
+(8.14)
+
+for algebraic-geometric solutions of 2D Toda lattice which was obtained in [76].
+Note that (8.12) imply that ψ0 satisfies the equation
+∂+ ∂− ψ0 + v0 ∂− ψ0 + (c1 + ∂− v0 )ψ0 ,
+
+(8.15)
+
+which is gauge equivalent to (8.2) and therefore, we do get a solution of the inverse problem
+that was introduced above.
+The next important step was done in [38, 39] where algebraic-geometric spectral data
+corresponding to potential 2d Schr¨odinger operators (i.e. operators with zero magnetic field)
+were found.
+−1
+Let Γ be a smooth genus g algebraic curve with fixed local coordinates k±
+(Q),
+= 0, in neighborhoods of two punctures P± . Let us assume that there exists a
+holomorphic involution of the curve σ : Γ −→ Γ such that P± are its only fixed points,
+i.e. σ(P± ) = P± . The local parameters are to be ”odd”, i.e. k± (σ(Q)) = −k± (Q). The
+factor-curve will be denoted by Γ0 . The projection
+−1
+k±
+(P± )
+
+π : Γ −→ Γ0 = Γ/σ
+
+(8.16)
+
+represents Γ as a two-sheet covering of Γ0 with the two branch points P± . In this realization
+the involution σ is a permutation of the sheets. As there are only two branching points
+g = 2g0 , where g0 is genus of Γ0 . Let us consider a meromorphic differential dΩ(Q) of the
+third kind on Γ0 with residues ∓1 at the points P± . The differential dΩ has g zeros that will
+be denoted by γˆi , i = 1, . . . , 2g0 = g. Let us choose for each i a point γi on Γ such that
+π(γi) = γˆi , i = 1, . . . , g.
+
+(8.17)
+
+In [38, 39] it was shown that the Baker-Akhiezer function corresponding to algebraic-geometric data which have been just defined satisfies the equation
+(∂+ ∂− + u(x, y))ψ(x, y, Q) = 0,
+
+(8.18)
+
+u = −∂− ξ1+ = −∂+ ξ1− ,
+
+(8.19)
+
+where
+
+26
+
+and ξ1± = ξ1± (x+ , x− ) are the first coefficients in the expansion (8.4).
+It should emphasized that though general formula (8.10) in terms of the Riemann θfunctions is valid for the Baker-Akhiezer functions corresponding to the potential Shr¨odinger
+operator H, in [38, 39] it was found another more effective representation in terms of the,
+so-called, Prim theta-function.
+A space of holomorphic differentials on Γ splits into two g0 -dimensional subspaces of
+even and odd (with respect to the involution σ) differentials. A matrix of b-periods of odd
+differentials defines the function θP r (z) by the same formula (6.14). Then
+ψ=
+
+θP r (Aod (Q) + U + x+ + U − x− − Z)θP r (Aod (Z)) i(p+ (Q)x+ +p− (Q)x− )
+e
+.
+θP r (Aod (Q) − Z)θP r (U + x+ + U − x− − Z)
+
+(8.20)
+
+Here p± (Q) are Abelian integrals of the second kind normalized differential dp± on Γ that
+have poles of the second order at the points P± , respectively; vectors 2πU ± are the vectors
+of b-periods of these differentials.
+As it was mentioned above the inverse algebraic-geometric spectral problem on one energy
+level for 2D Schr¨odinger operator was posed and solved at the time when no direct spectral
+theory was known. This theory was developed much later in [41], where it was shown that
+the Bloch solutions for (8.18) with analytical periodic potential are parameterized by points
+of infinite genus Riemann surface. It was proved that if this surface has finite genus, then
+the Bloch functions have all the analytical properties suggested in the inverse problem and
+therefore are just the Baker-Akhiezer-functions. Moreover, it was proved that algebraicgeometric (finite-gap) potentials are dense in the space of all periodic potentials.
+
+9
+
+Spectral theory of operators with elliptic coefficients
+
+In this section we are going to discuss a specific spectral problem for operators with elliptic
+coefficients, i.e. with the coefficients that are meromorphic functions of a variable x and
+have two periods 2ω, 2ω ′, Im (ω ′ /ω) > 0.
+Since Hermit time, it has been known that one-dimensional Schr¨odinger operator with
+potential of the form n(n + 1)℘(x) (where ℘(x) = ℘(x|ω, ω ′) is Weierstrass ℘-function corresponding to elliptic curve with periods 2ω, 2ω ′, and n is an integer) has only n gaps in the
+spectrum. These Lame potentials had been the only known examples with the finite-gap
+property before the finite-gap theory was constructed in the framework of the soliton theory
+(see above). As we already have shown a generic algebraic-geometric potential can be expressed in terms of higher genus Riemann θ-function. Sometimes higher genus formula can
+be reduced to exact expression in terms of elliptic function.
+The first example of this type which is different from the Lame potentials was proposed
+in [25]. Later a theory of elliptic finite-gap potentials attracted the special interest due to
+remarkable observation made in [78] on their connection with the elliptic Calogero-Moser
+model. The most recent burst of interest is due to the unexpected connections of these
+systems to Seiberg-Witten solution of N = 2 supersymmetric gauge theories [14, 15]. It
+27
+
+turns out that the low energy effective theory for SU(N) model with matter in the adjoint
+representation (identified first in [1] with SU(N) Hitchin system) is isomorphic to the elliptic
+CM system. Using this connection quantum order parameters were found in [79].
+The elliptic Calogero-Moser (CM) system ([80, 81]) is a system of N identical particles
+on a line interacting with each other via the potential V (x) = ℘(x). Its equations of motion
+have the form
+x¨i = 4
+℘′ (xi − xj ).
+(9.1)
+j=i
+
+The CM system is a completely integrable Hamiltonian system, i.e. it has N independent
+integrals Hk in involution ([82], [83]). The second integral H2 is the Hamiltonian of (9.1).
+In [78] it was shown that the elliptic solutions of the KdV equations have the form
+N
+
+u(x, t) = 2
+i=1
+
+℘(x − xi (t))
+
+(9.2)
+
+and the poles xi (t) of the solutions satisfy the constraint j=i ℘′ (xi − xj ) = 0, which is the
+locus of the stationary points of the CM system. Moreover, it turns out that the dependence
+of the poles with respect to t coincides with the Hamiltonian flow corresponding to the
+third integral H3 of the system. In [84, 85] it was found that this connection becomes
+an isomorphism in the case of the elliptic solutions of the Kadomtsev-Petviashvilii equation.
+Moreover, in [66] it was revealed that the connection of the CM systems with the KP equation
+is in some sense secondary and is a corollary of more fundamental connections with spectral
+theory of linear operators with elliptic potentials. The corresponding approach has been
+developed extensively in [67, 68, 69].
+Let L be a linear differential or difference operator in two variables x, t with coefficients
+which are scalar or matrix elliptic functions of the variable x. We do not assume any special
+dependence of the coefficients with respect to the second variable. Then it is natural to
+introduce a notion of double-Bloch solutions of the equation
+Lψ = 0.
+
+(9.3)
+
+We call a meromorphic vector-function f (x), which satisfies the following monodromy properties:
+f (x + 2ωα ) = Bα f (x), α = 1, 2,
+(9.4)
+a double-Bloch function. The complex numbers Bα are called Bloch multipliers. (In other
+words, f is a meromorphic section of a vector bundle over the elliptic curve.)
+In the most general form a problem that we are going to address is to classify and to
+construct all the operators L such that equation (9.3) has sufficiently enough double-Bloch
+solutions.
+It turns out that existence of the double-Bloch solutions is so restrictive that only in
+exceptional cases such solutions do exist. A simple and general explanation of that is due to
+the Riemann-Roch theorem. Let D be a set of points xi , i = 1, . . . , m, on the elliptic curve
+Γ0 with multiplicities di and let V = V (D; B1 , B2 ) be a linear space of the double-Bloch
+28
+
+functions with the Bloch multipliers Bα that have poles at xi of order less or equal to di and
+holomorphic outside D. Then the dimension of D is equal to:
+dim D = deg D =
+
+di .
+i
+
+Now let xi depend on the variable t. Then for f ∈ D(t) the function Lf is a doubleBloch function with the same Bloch multipliers but in general with higher orders of poles
+because taking derivatives and multiplication by the elliptic coefficients increase these orders.
+Therefore, the operator L defines a linear operator
+L|D : V (D(t); B1 , B2 ) −→ V (D ′ (t); B1 , B2 ), N ′ = deg D ′ > N = deg D,
+and (9.3) is always equivalent to an over-determined linear system of N ′ equations for N
+unknown variables which are the coefficients ci = ci (t) of expansion of Ψ ∈ V (t) with respect
+to a basis of functions fi (t) ∈ V (t). With some exaggeration one may say that in the
+soliton theory the representation of a system in the form of the compatibility condition of
+an over-determined system of the linear problems is considered equivalent to integrability.
+In all of the basic examples N ′ = 2N and the over-determined system of equations has
+the form
+LC = kC, ∂t C = MC,
+(9.5)
+where L and M are N × N matrix functions depending on a point z of the elliptic curve as
+on a parameter. A compatibility condition of (9.5) has the standard Lax form ∂t L = [M, L],
+and is equivalent to a finite-dimensional integrable system.
+The basis in the space of the double-Bloch functions can be written in terms of the
+fundamental function Φ(x, z) defined by the formula
+Φ(x, z) =
+
+σ(z − x) ζ(z)x
+e
+.
+σ(z)σ(x)
+
+(9.6)
+
+Note, that Φ(x, z) is a solution of the Lame equation:
+d2
+− 2℘(x) Φ(x, z) = ℘(z)Φ(x, z).
+dx2
+
+(9.7)
+
+¿From the monodromy properties it follows that Φ considered as a function of z is doubleperiodic:
+Φ(x, z + 2ωα ) = Φ(x, z),
+though it is not elliptic in the classical sense due to an essential singularity at z = 0 for
+x = 0.
+As a function of x the function Φ(x, z) is double-Bloch function, i.e.
+Φ(x + 2ωα , z) = Tα (z)Φ(x, z), Tα (z) = exp (2ωα ζ(z) − 2ζ(ωα)z) .
+In the fundamental domain of the lattice defined by 2ωα the function Φ(x, z) has a unique
+pole at the point x = 0:
+Φ(x, z) = x−1 + O(x).
+(9.8)
+29
+
+The gauge transformation f (x) −→ f˜(x) = f (x)eax , where a is an arbitrary constant does
+not change poles of any function and transforms a double Bloch-function into another doubleBloch function. If Bα are Bloch multipliers for f then Bloch multipliers for f˜ are equal to
+˜1 = B1 e2aω1 , B
+˜2 = B2 e2aω2 .
+B
+
+(9.9)
+
+The two pairs of Bloch multipliers that are connected with each other through the relation
+(9.9) for some a are called equivalent. Note that for all equivalent pairs of Bloch multipliers
+the product B1ω2 B2−ω1 is a constant depending on the equivalence class, only.
+¿From (9.8) it follows that a double-Bloch function f (x) with simple poles xi in the
+fundamental domain and with Bloch multipliers Bα (such that at least one of them is not
+equal to 1) may be represented in the form:
+N
+
+f (x) =
+i=1
+
+ci Φ(x − xi , z)ekx ,
+
+(9.10)
+
+where ci is a residue of f at xi and z, k are parameters related by Bα = Tα (z)e2ωα k . (Any
+pair of Bloch multipliers may be represented in this form with an appropriate choice of the
+parameters z and k.)
+Let us consider as an example the equation
+Lψ = (∂t − ∂x2 + u(x, t))ψ = 0,
+
+(9.11)
+
+where u(x, t) is an elliptic function. Then as shown in [66] equation (9.11) has N linear
+independent double-Bloch solutions with equivalent Bloch multipliers and N simple poles at
+points xi (t) if and only if u(x, t) has the form
+N
+
+u(x, t) = 2
+i=1
+
+℘(x − xi (t))
+
+(9.12)
+
+and xi (t) satisfy the equations of motion of the elliptic CM system (9.1).
+The assumption that there exist N linear independent double-Bloch solutions with equivalent Bloch multipliers implies that they can be written in the form
+N
+
+ψ=
+i=1
+
+2
+
+ci (t, k, z)Φ(x − xi (t), z)ekx+k t ,
+
+(9.13)
+
+with the same z but different values of the parameter k.
+Let us substitute (9.13) into (9.11). Then (9.11) is satisfied if and only if we get a function
+holomorphic in the fundamental domain. First of all, we conclude that u has poles at xi ,
+only. The vanishing of the triple poles (x − xi )−3 implies that u(x, t) has the form (9.12).
+The vanishing of the double poles (x − xi )−2 gives the equalities that can be written as a
+matrix equation for the vector C = (ci ):
+(L(t, z) − kI)C = 0 ,
+30
+
+(9.14)
+
+where I is the unit matrix and the Lax matrix L(t, z) is defined as follows:
+1
+Lij (t, z) = − δij x˙ i − (1 − δij )Φ(xi − xj , z).
+2
+
+(9.15)
+
+Finally, the vanishing of the simple poles gives the equations
+(∂t − M(t, z))C = 0 ,
+where
+
+
+
+Mij = ℘(z) − 2
+
+j=i
+
+(9.16)
+
+
+
+℘(xi − xj ) δij − 2(1 − δij )Φ′ (xi − xj , z).
+
+(9.17)
+
+The existence of N linear independent solutions for (9.11) with equivalent Bloch multipliers
+implies that (9.14) and (9.16) have N independent solutions corresponding to different values
+of k. Hence, as a compatibility condition we get the Lax equation L˙ = [M, L] which is
+equivalent to (9.1). Note that the last system does not depend on z. Therefore, if (9.14)
+and (9.16) are compatible for some z, then they are compatible for all z. As a result we
+conclude that if (9.11) has N linear independent double-Bloch solutions with equivalent
+Bloch multipliers then it has infinitely many of them. All the double-Bloch solutions are
+parameterized by points of an algebraic curve Γ defined by the characteristic equation
+N
+
+R(k, z) ≡ det(kI − L(z)) = k N +
+
+ri (z)k N −i = 0.
+
+(9.18)
+
+i=1
+
+Equation (9.18) can be seen as a dispersion relation between two Bloch multipliers and
+defines Γ as N-sheet cover of Γ0 .
+As was shown in [66] expansion of the characteristic equation (9.14) at z = 0 has the
+form:
+N
+
+R(k, z) =
+
+(k + νi z −1 + hi + O(z)), ν1 = 1 − N, νi = 1, i > 1.
+
+(9.19)
+
+i=1
+
+We call the sheet of Γ at z = 0 corresponding to the branch k = z −1 (N − 1) + O(1), an
+upper sheet and mark the point P1 on this sheet among the preimages of z = 0. From (9.19)
+it follows that in general position when the curve Γ is smooth, its genus equals N.
+Further consideration of analytical properties of the function ψ given by (9.13) where
+ci are components of the eigenvector to the matrix L shows that this function is just the
+Baker-Akhiezer function introduced in Section 6. Combined with expression (6.22) for ψ in
+terms of θ-function this result directly leads to the main statement of [66]:
+the coordinates of the particles xi (t) are roots of the equation
+θ(Ux + V t + Z0 ) = 0,
+
+(9.20)
+
+where θ(ξ) = θ(ξ|B) is the Riemann theta-function corresponding to the matrix of b-periods
+of holomorphic differentials on Γ; the vectors U and V are the vectors of b-periods of normalized meromorphic differentials on Γ, with poles of order 2 and 3 at the point P1 .
+31
+
+Among other examples of integrable systems that can be generated in the similar way
+are Ruijesenaars-Schneider system [86]
+x¨i =
+s=i
+
+x˙ i x˙ s (V (xi − xs ) − V (xs − xi )), V (x) = ζ(x) − ζ(x + η),
+
+(9.21)
+
+and nested Bethe ansatz equations [87]
+σ(xni − xn+1
+)σ(xni − η − xnj )σ(xni − xjn−1 + η)
+j
+= −1
+n−1
+n
+)σ(xni + η − xnj )σ(xni − xjn+1 − η)
+j=i σ(xi − xj
+
+(9.22)
+
+As shown in [68, 69], they are generated by spectral problems for equations
+Lψ = ∂t ψ(x, t) − ψ(x + η, t) − v(x, t)ψ(x, t) = 0,
+
+(9.23)
+
+ψ(x, m + 1) = ψ(x + η) + v(x, m)ψ(x, m),
+
+(9.24)
+
+and
+respectively. (Here η is a complex number and v(x, t) is an elliptic function.)
+Strange as it is, the inverse spectral problem which is discussed here is simplier for twodimensional operators then for one-dimensional stationary operators. For example a family
+of spectral curves corresponding to operators (9.11) that have double-Bloch solutions can be
+described explicitly. A nice formula was found in [79]:
+R(k, z) = f (k − ζ(z), z), f (k, z) =
+
+∂
+1
+H(k),
+σ z+
+σ(z)
+∂k
+
+(9.25)
+
+where H(k) is a polynomial. Note that (9.25) may be written as:
+f (k, z) =
+
+1
+σ(z)
+
+N
+
+1 n
+∂
+∂z σ(z)
+∂k
+n=1 n!
+
+n
+
+H(k).
+
+The coefficients of the polynomial H(k) are free parameters of the spectral curve of the CM
+system.
+The spectral curves corresponding to the Schr¨odinger operator with the same property
+are special case of the curves (9.25) but their explicit description is unknown. In particular,
+exact formula for branching points for Lame potentials is unknown. As it was mentioned
+above the first example of elliptic finite-gap potentials different from the Lame potentials
+was found in [25]. A wide class of such potentials was found in [70].
+In [88] it was noted that the problem of classification of Schr¨odinger operators with elliptic
+potentials that have two double-Bloch solutions for almost all energy levels was posed by
+Picard though had not been solved until very recently. In [88] using Floquet spectral theory
+for the Schr¨odinger operator it was proved that all such potentials are finite-gap. This result
+is an essential step in the Picard problem though its complete and effective solution is still
+an open problem.
+
+32
+
+References
+[1] R.Donagi, E.Witten, Nucl. Phys. B 460 (1996) 299-334, hep-th/9610101.
+[2] M.Douglas, S.Shenker, Nucl. Phys. B 335 (1990) 635-654.
+[3] B.Dubrovin, Nucl. Phys. B 379 (1992) 627-689.
+[4] B.Dubrovin, B.A., Comm. Math. Phys. 145 (1992) 195-207.
+[5] A.Gorsky, I.Krichever, A.Marshakov, A.Mironov, A. Morozov, Phys. Lett. B 355 (1995)
+466-474.
+[6] A.Gorsky, N.Nekrasov, Elliptic Calogero-Moser system from two-dimensional current
+algebra, preprint ITEP-NG/1-94, hep-th/9401021.
+[7] I.Krichever, Comm. Pure Appl. Math. 47 (1994) 437-475.
+[8] I.Krichever, D.H.Phong, J. Differential Geometry 45 (1997) 349-389.
+[9] I.Krichever, D.H.Phong, Symplectic forms in the theory of solitons, preprint hepth/9708170
+[10] E.Martinec, Phys. Lett. B 367 (1996) 91-96, hep-th/9510204.
+[11] E.Martinec, N.Warner, Nucl. Phys. B 459 (1996) 97-112, hep-th/9609161.
+[12] A.Marshakov, Int. J. Mod. Phys. A 12 (1997) 1607-1650, hep-th/9610242.
+[13] A.Marshakov, A.Mironov, and A.Morozov, WDVV-like equations in N=2 SUSY YangMills theory, hep-th/9607109.
+[14] N.Seiberg, E.Witten, Nucl. Phys. B 426 (1994) 1952, hep-th/9407087.
+[15] N.Seiberg, E.Witten, Nucl. Phys. B 431 (1994) 484-550, hep-th/9410167.
+[16] M.Kruskal, N.Zabusky, Phys. Rev. Letters, 15 (1965), 240-243
+[17] C.Gardner, J.Green, M.Kruskal, J.Miura, Phys. Rev. Letters, 19 (1967), 1095-1098
+[18] P.Lax, Communicationa Pure and Appl. Math.,21 (1968) 467-490
+[19] V.Zakharov, A.Shabat, Sov. Phys-JETP 34 (1972), 62-69 (English translation from
+JETP, 61 (1971), 118-134)
+[20] G.Lamb, Rev. Modern Physics 43 (1971), 99-124
+[21] M.Ablowitz, D.Kaup, A.Newell, H.Segur,Phys Rev Letters 30 (1973) 1262-1264
+[22] V.Zakharov, A.Shabat, Functional Anal Appl, 8 (1974), n 3, 45-53
+[23] V.Driuma, JETP Letters, 19 (1974), 387-388
+33
+
+[24] S.Novikov, Functional Anal. Appl., 8 (1974) n 3, 54-66
+[25] B.Dubrovin, S.Novikov, Sov Physics-JETP 40 (1974), 1058-1063 (English Translation
+from JETP, 67 (1974), 2131-2144)
+[26] B.Dubrovin, S.Novikov, DAN (Soviet Math Doklady) 219 (1974) n 3 19-22
+[27] B.Dubrovin, Functional Anal Appl, 9 (1975) n 3, 41-51
+[28] A.Its, V.Matveev, Functional Anal Appl, 9 (1975) n 1, 69-70
+[29] A.Its, V.Matveev, Theor Math Phys, 23 (1975) n 1, 51-67
+[30] P.Lax, Commun Pure Appl Math, 28 (1975), 141-188
+[31] H.McKean, P.van Moerbeke, Inventiones Math, 30 (1975), 217-274
+[32] B.Dubrovin, V.Matveev, S.Novikov, Uspekhi Math Nauk (Russian Math Surveys) 31
+(1976) n 1, 55-136
+[33] I.Krichever, DAN (Soviet Math Doklady) 227 (1976), 291-294
+[34] I.Krichever, Functional Anal. Appl, (1977)
+[35] I.Krichever, Uspekhi Math Nauk (Russian Math Surveys) 32 (1977) n 6, 185-213
+[36] B.Dubrovin, I.Krichever, S.Novikov, DAN (Soviet Math Doklady) 229 (1976), 15-18
+[37] I.Krichever, S.Novikov, Uspekhi Math Nauk (Russian Math Surveys) 35 (1980) n 6,
+53-79
+[38] S.Novikov, A.Veselov, DAN (Soviet Math Doklady)279 (1984), 20-24
+[39] S.Novikov, A.Veselov, in the book– Solitons and Coherent Structures, edited by
+D.Campbell, A.Newell, R. Schrieffer, H.Segur, North-Holland (dedicated to the 60-th
+birthday of M.Kruskal), (1986), 267-273
+[40] B.Dubrovin, I.Krichever, S.Novikov, Encyclopedia Math Sciences, Springer, vol 4
+(edited by V.Arnold and S.Novikov), 173-280
+[41] I.Krichever, Uspekhi Mat. Nauk (Russian Math. Surveys) 44 (1989), n 2, 121-184.
+[42] I.Krichever, Functional Anal. Appl., v.28 (1994), n 1, 26-40.
+[43] I.Krichever, Functional Anal. Appl., 31(1997), n 1, 32-50.
+[44] S.Novikov, S.Manakov, L.Pitaevski, V.Zakharov, Theory of Solitons, Plenum Press
+(1984)
+[45] B.Dubrovin, Uspekhi Math Nauk (Russian Math Surveys) 36 (1981) n 2, 11-80
+
+34
+
+[46] V.Marchenko, I. Ostrovski – see in the book: V.Marchenko, Sturm-Liouville operator
+and applications, Nukova Dumka, 1977 (in Russian)
+[47] H.McKean, E.Trubovitz, Comm. Pure Appl.Math. 29(1976),143-226
+[48] B.McCoy, C.Tracy, T.Wu, Journ Math Phys, 18 (19770, 1058
+[49] H.Flashka, A.Newell, Commun Math Phys, 76 (1980) n 1, 65-116
+[50] M.Jimbo, T.Miwa, Physica 2D (1981), 407
+[51] M.Jimbo, Publ RIMS, Kyoto Univ, 18 (1982), 1137
+[52] A.Kapaev, Differential Equations (Russian), 24 (1988), 1984-1694
+[53] A.Its, V.Novokshenov, Lecture Notes in Math, 1191 (1986), 1-313
+[54] P.Grinevich, S.Novikov, St-Petersburg Math Journ, 6 (1995) n 3 553-574 (English Translation from Algebra and Analysis, 6 (1994) n 3)
+[55] B.Dubrovin, Y.Zhang, Compositio Math, 111 (1988), 167-219
+[56] C.Gardner, Journ Math Phys, 12 (1871), 1548-1551
+[57] V.Zakharov, L.Faddeev, Functional Anal Appl, 5 (1971) n 4, 18-27
+[58] I.Gelfand, L.Dikii, Functional Anal Appl, 10 (1976), n 1, 30
+[59] I.Gelfand, L.Dikii, Functional Anal Appl, 13 (1979), n 1, 8
+[60] F.Magri, Journ Math Phys, 19 (1978), 1156-1162
+[61] M.Adler, Inventiones Math, 50 (1979) 219-248
+[62] I.Gelfand, L.Dikii, Uspekhi Math Nauk (Russian Math Surveys) 30 (1975) n 5, 77-113
+[63] J.Burchnall, T.Chaundy, Proc London Math Soc, Ser II, 21 (1923), 420-440
+[64] J.Burchnall, T.Chaundy, Proc Royal Soc London, Ser A, 118 (1928), 557-583
+[65] P.Grinevich, M. Schmidt Period preserving nonisospectral flows and the moduli space of
+periodic solutions to soliton eqautions, preprint solv-int 9412005.
+[66] I.M.Krichever, Func. Anal. App 14 (1980), n 4, 282-290.
+[67] I.Krichever, O.Babelon, E.Billey and M.Talon, Amer.Math.Transl. 170 (1995), n 2,
+83-119
+[68] I.M.Krichever and A.V.Zabrodin, Uspekhi Mat. Nauk, 50 (1995), n6 , 3-56.
+[69] I.Krichever, O.Lipan, P.Wiegmann and A.Zabrodin, Commun. Math. Phys. 188 (1997),
+267-304
+35
+
+[70] A. Trebish, J.-L. Verdier, Soliton elliptiques, Grothendieck Festschrift, ed.: P.Cartier et
+al, Progress in Math. 88, Birkh¨auser, Boston 1990.
+[71] H.Baker, Proc Royal Soc London, Ser A 118 (1928), 584-593
+[72] N.Akhiezer, DAN (in Russian only) 141 (1961) n 2, 263-266
+[73] B.Kadomtsev, V.Petviashvili, DAN SSR-Physics (in Russian) 192 (1970) n 4, 753
+[74] T.Shiota, Invent. Math. 83 (1986) 333-382.
+[75] J.Felder, H.Kn¨orrer, E.Trubowitz, Riemann surfaces of the infinite genus, preprint ETH
+Zurich.
+[76] I.Krichever, Uspekhi Mat. Nauk 36 (1981), n 2, 72-77.
+[77] S.Manakov, Uspekhi Mat. Nauk (Russian Math. Surveys), 31 (1976), n 5, 245-246
+[78] H.Airault, H.McKean and J.Moser, Comm. Pure and Appl. Math. 30 (1977), 95-125.
+[79] E.D’Hoker, D.H.Phong, Calogero-Moser systems in SU(N) Seiberg-Witten theory,
+preprint hep-th 9709053.
+[80] F.Calogero, Lett.Nuovo Cimento 13 (1975), 411-415.
+[81] J.Moser , Adv.Math. 16 (1975), 441-416.
+[82] A.M.Perelomov, Lett.Math.Phys. 1 (1977), 531-540.
+[83] M.A.Olshanetsky and A.M.Perelomov, Phys. Rep. 71 (1981) 313-400.
+[84] I.M.Krichever, Funct. Anal. Appl, 12 (1978), n 1, 76-78.
+[85] D.V.Chudnovsky and G.V.Chudnovsky, Nuovo Cimento 40B (1977), 339-350.
+[86] S.N.M.Ruijsenaars and H.Schneider, Ann. Phys. (NY) 170 (1986), 370-405.
+[87] F.Nijhof, O.Ragnisco and V.Kuznetsov, Integrable time-discretization of the Ruijsenaars-Schneider model Univ. of Amsterdam preprint 94-27, hep-th/9412170 (1994).
+[88] F.Gestezy, R Weinkard, Acta Math., 176 (1996), 73-107
+
+36
+
+

@@ -1,0 +1,4547 @@
+arXiv:cs/0004001v1 [cs.AI] 3 Apr 2000
+
+Munich, 31.03.2000
+
+A Theory of Universal Artificial Intelligence
+based on Algorithmic Complexity
+
+Marcus Hutter1
+
+Bayerstr. 21, 80335 Munich, Germany
+
+Key Words
+Artificial intelligence, algorithmic complexity, sequential decision theory; induction;
+Solomonoff; Kolmogorov; Bayes; reinforcement learning; universal sequence prediction; strategic games; function minimization; supervised learning.
+Abstract
+Decision theory formally solves the problem of rational agents in uncertain worlds
+if the true environmental prior probability distribution is known. Solomonoff’s theory of universal induction formally solves the problem of sequence prediction for
+unknown prior distribution. We combine both ideas and get a parameterless theory
+of universal Artificial Intelligence. We give strong arguments that the resulting AIξ
+model is the most intelligent unbiased agent possible. We outline for a number of
+problem classes, including sequence prediction, strategic games, function minimization, reinforcement and supervised learning, how the AIξ model can formally solve
+them. The major drawback of the AIξ model is that it is uncomputable. To overcome this problem, we construct a modified algorithm AIξ tl , which is still effectively
+more intelligent than any other time t and space l bounded agent. The computation
+time of AIξ tl is of the order t·2l . Other discussed topics are formal definitions of
+intelligence order relations, the horizon problem and relations of the AIξ theory to
+other AI approaches.
+
+1
+
+Any response to marcus@hutter1.de is welcome.
+
+CONTENTS
+
+1
+
+Contents
+1 Introduction
+Artificial Intelligence: .
+Main idea: . . . . . . .
+Contents: . . . . . . .
+History & References: .
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+2 The AIµ Model in Functional Form
+The cybernetic or agent model: . . . . . . . . .
+Strings: . . . . . . . . . . . . . . . . . . . . . .
+AI model for known deterministic environment:
+AI model for known prior probability: . . . . . .
+
+.
+.
+.
+.
+.
+.
+.
+.
+
+3 The AIµ Model in Recursive and Iterative Form
+Probability distributions: . . . . . . . . . . . . . .
+Alternative Formulation of the AIµ Model: . . . .
+Equivalence of Functional and Iterative AI model:
+Factorizable µ: . . . . . . . . . . . . . . . . . . .
+Constants and Limits: . . . . . . . . . . . . . . .
+Sequential decision theory: . . . . . . . . . . . . .
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+4 The Universal AIξ Model
+Induction and Algorithmic Information theory: . . . . . . . . .
+Definition of the AIξ Model: . . . . . . . . . . . . . . . . . . .
+Universality of ξ AI : . . . . . . . . . . . . . . . . . . . . . . . .
+Converting general functions into chronological semi-measures:
+Convergence of ξ AI to µAI : . . . . . . . . . . . . . . . . . . . .
+Intelligence order relation: . . . . . . . . . . . . . . . . . . . .
+Credit bounds and separability concepts: . . . . . . . . . . . .
+The choice of the horizon: . . . . . . . . . . . . . . . . . . . .
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+3
+3
+3
+3
+6
+
+.
+.
+.
+.
+
+7
+7
+7
+8
+9
+
+.
+.
+.
+.
+.
+.
+
+11
+11
+11
+12
+13
+15
+16
+
+.
+.
+.
+.
+.
+.
+.
+.
+
+17
+17
+19
+20
+21
+22
+23
+24
+27
+
+30
+5 Sequence Prediction (SP)
+Using the AIµ Model for Sequence Prediction: . . . . . . . . . . . . 30
+Using the AIξ Model for Sequence Prediction: . . . . . . . . . . . . 32
+6 Strategic Games (SG)
+Introduction: . . . . . . . . . . . . . .
+Strictly competitive strategic games: .
+Using the AIµ model for game playing:
+Games of variable length: . . . . . . .
+Using the AIξ model for game playing:
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+34
+34
+34
+35
+36
+36
+
+7 Function Minimization (FM)
+39
+Applications/Examples: . . . . . . . . . . . . . . . . . . . . . . . . 39
+The Greedy Model FMGµ : . . . . . . . . . . . . . . . . . . . . . . 39
+
+CONTENTS
+
+2
+The general FMµ/ξ Model: . . . . . . . . . . . .
+Is the general model inventive? . . . . . . . . . .
+Using the AI models for Function Mininimization:
+Remark: . . . . . . . . . . . . . . . . . . . . . . .
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+41
+42
+43
+44
+
+8 Supervised Learning by Examples (EX)
+45
+Applications/Examples: . . . . . . . . . . . . . . . . . . . . . . . . 45
+Supervised learning with the AIµ/ξ model: . . . . . . . . . . . . . . 45
+9 Other AI Classes
+47
+Other aspects of intelligence: . . . . . . . . . . . . . . . . . . . . . . 47
+10 Time Bounds and Effectiveness
+Introduction: . . . . . . . . . . . . . . . .
+Time limited probability distributions: . .
+The idea of the best vote algorithm: . . . .
+Extended chronological programs: . . . . .
+Valid approximations: . . . . . . . . . . .
+Effective intelligence order relation: . . . .
+˜
+The universal time bounded AIξ t˜l system:
+Main theorem: . . . . . . . . . . . . . . .
+Limitations and open questions: . . . . . .
+Remarks: . . . . . . . . . . . . . . . . . .
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+49
+49
+49
+51
+52
+52
+53
+53
+53
+54
+54
+
+11 Outlook & Discussion
+Miscellaneous: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Outlook: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+The big questions: . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+56
+56
+56
+58
+
+12 Conclusions
+
+59
+
+Literature
+
+60
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+1 INTRODUCTION
+
+1
+
+3
+
+Introduction
+
+Artificial Intelligence: The science of Artificial Intelligence (AI) might be defined
+as the construction of intelligent systems and their analysis. A natural definition of
+systems is anything which has an input and an output stream. Intelligence is more
+complicated. It can have many faces like creativity, solving problems, pattern recognition,
+classification, learning, induction, deduction, building analogies, optimization, surviving
+in an environment, language processing, knowledge and many more. A formal definition
+incorporating every aspect of intelligence, however, seems difficult. Further, intelligence
+is graded, there is a smooth transition between systems, which everyone would agree
+to be not intelligent and truely intelligent systems. One simply has to look in nature,
+starting with, for instance, inanimate crystals, then come amino-acids, then some RNA
+fragments, then viruses, bacteria, plants, animals, apes, followed by the truly intelligent
+homo sapiens, and possibly continued by AI systems or ET’s. So the best we can expect
+to find is a partial or total order relation on the set of systems, which orders them w.r.t.
+their degree of intelligence (like intelligence tests do for human systems, but for a limited
+class of problems). Having this order we are, of course, are interested in large elements,
+i.e. highly intelligent systems. If a largest element exists, it would correspond to the most
+intelligent system which could exist.
+Most, if not all known facets of intelligence can be formulated as goal driven or, more
+precisely, as maximizing some utility function. It is, therefore, sufficient to study goal
+driven AI. E.g. the (biological) goal of animals and humans is to survive and spread.
+The goal of AI systems should be to be useful to humans. The problem is that, except
+for special cases, we know neither the utility function, nor the environment in which the
+system will operate, in advance.
+Main idea: We propose a theory which formally2 solves the problem of unknown goal
+and environment. It might be viewed as a unification of the ideas of universal induction,
+probabilistic planning and reinforcement learning or as a unification of sequential decision
+theory with algorithmic information theory. We apply this model to some of the facets
+of intelligence, including induction, game playing, optimization, reinforcement and supervised learning, and show how it solves these problem classes. This, together with general
+convergence theorems motivates us to believe that the constructed universal AI system
+is the best one in a sense to be clarified in the sequel, i.e. that it is the most intelligent
+environmental independent system possible. The intention of this work is to introduce
+the universal AI model and give an in breadth analysis. Most arguments and proofs are
+succinct and require slow reading or some additional pencil work.
+Contents: Section 2: The general framework for AI might be viewed as the design and
+study of intelligent agents [31]. An agent is a cybernetic system with some internal state,
+which acts with output yk to some environment in cycle k, perceives some input xk from
+2
+
+With a formal solution we mean a rigorous mathematically definition, uniquely specifying the solution.
+In the following, a solution is always meant in this formal sense.
+
+1 INTRODUCTION
+
+4
+
+the environment and updates its internal state. Then the next cycle follows. It operates
+according to some function p. We split the input xk into a regular part x′k and a credit
+ck , often called reinforcement feedback. From time to time the environment provides
+non-zero credit to the system. The task of the system is to maximize its utility, defined as
+the sum of future credits. A probabilistic environment is a probability distribution µ(q)
+over deterministic environments q. Most, if not all environments are of this type. We
+give a formal expression for the function p∗ , which maximizes in every cycle the total µ
+expected future credit. This model is called the AIµ model. As every AI problem can be
+brought into this form, the problem of maximizing utility is hence being formally solved,
+if µ is known. There is nothing remarkable or new here, it is the essence of sequential
+decision theory [6, 27, 40]. Notation and formulas needed in later sections are simply
+developed. There are two major remaining problems. The problem of the unknown true
+prior probability µ is solved in section 4. Computational aspects are addressed in section
+10.
+Section 3: Instead of talking about probability distributions µ(q) over functions, one could
+describe the environment by the conditional probability of providing inputs x1 ...xn to the
+system under the condition that the system outputs y1 ...yn . The definition of the optimal
+p∗ system in this iterative form is shown to be equivalent to the previous functional form.
+The functional form is more elegant and will be used to define an intelligence order relation
+and the time-bounded model in section 10. The iterative form is more index intensive but
+more suitable for explicit calculations and is used in most of the other sections. Further,
+we introduce factorizable probability distributions.
+Section 4: A special topic is the theory of induction. In which sense prediction of the
+future is possible at all, is best summarized by the theory of Solomonoff. Given the initial
+binary sequence x1 ...xk , what is the probability of the next bit being 1? It can be fairly well
+predicted by using a universal probability distribution ξ invented and shown to converge to
+the true prior probability µ by Solomonoff [35, 36] as long as µ (which needs not be known!)
+is computable. The problem of unknown µ is hence solved for induction problems. All AI
+problems where the systems’ output does not influence the environment, i.e. all passive
+systems are of this inductive form. Besides sequence prediction (SP), classification(CF)
+is also of this type. Active systems, like game playing (SG) and optimization (FM), can
+not be reduced to induction systems. The main idea of this work is to generalize
+universal induction to the general cybernetic model described in sections 2 and 3. For
+this, we generalize ξ to include conditions and replace µ by ξ in the rational agent model.
+In this way the problem that the true prior probability µ is usually unknown is solved.
+Universality of ξ and convergence of ξ → µ will be shown. These are strong arguments
+for the optimality of the resulting AIξ model. There are certain difficulties in proving
+rigorously that and in which sense it is optimal, i.e. the most intelligent system. Further,
+we introduce a universal order relation for intelligence.
+Sections 5–9 show how a number of AI problem classes fit into the general AIξ model. All
+these problems are formally solved by the AIξ model. The solution is, however, only formal
+because the AIξ model developed thus far is uncomputable or, at best, approximable.
+These sections should support the claim that every AI problem can be formulated (and
+hence solved) within the AIξ model. For some classes we give concrete examples to
+
+1 INTRODUCTION
+
+5
+
+illuminate the scope of the problem class. We first formulate each problem class in its
+natural way (when µproblem is known) and then construct a formulation within the AIµ
+model and prove its equivalence. We then consider the consequences of replacing µ by ξ.
+The main goal is to understand why and how the problems are solved by AIξ. We only
+highlight special aspects of each problem class. Sections 5–9 together should give a better
+picture of the AIξ model. We do not study every aspect for every problem class. The
+sections might be read selectively. They are not necessary to understand the remaining
+sections.
+Section 5: Using the AIµ model for sequence prediction (SP) is identical to Baysian
+sequence prediction SPΘµ . One might expect, when using the AIξ model for sequence
+prediction, one would recover exactly the universal sequence prediction scheme SPΘξ , as
+AIξ was a unification of the AIµ model and the idea of universal probability ξ. Unfortunately this is not the case. One reason is that ξ is only a probability distribution in
+the inputs x and not in the outputs y. This is also one of the origins of the difficulty
+of proving error/credit bounds for AIξ. Nevertheless, we argue that AIξ is equally well
+suited for sequence prediction as SPΘξ is. In a very limited setting we prove a (weak)
+error bound for AIξ which gives hope that a general proof is attainable.
+Section 6: A very important class of problems are strategic games (SG). We restrict ourselves to deterministic strictly competitive strategic games like chess. If the environment
+is a minimax player, the AIµ model itself reduces to a minimax strategy. Repeated games
+of fixed lengths are a special case for factorizable µ. The consequences of variable game
+length is sketched. The AIξ model has to learn the rules of the game under consideration,
+as it has no prior information about these rules. We describe how AIξ actually learns
+these rules.
+Section 7: There are many problems that fall into the category ’resource bounded function
+minimization’ (FM). They include the Traveling Salesman Problem, minimizing production costs, inventing new materials or even producing, e.g. nice paintings, which are
+(subjectively) judged by a human. The task is to (approximately) minimize some function f : Y → Z within minimal number of function calls. We will see that a greedy model
+trying to minimize f in every cycle fails. Although the greedy model has nothing to
+do with downhill or gradient techniques (there is nothing like a gradient or direction for
+functions over Y ) which are known to fail, we discover the same difficulties. FM has
+already nearly the full complexity of general AI. The reason being that FM can actively
+influence the information gathering process by its trials yk (whereas SP and CF cannot).
+We discuss in detail the optimal FMµ model and its inventiveness in choosing the y ∈ Y .
+A discussion of the subtleties when using AIξ for function minimization, follows.
+Section 8: Reinforcement learning, as the AIξ model does, is an important learning technique but not the only one. To improve the speed of learning, supervised learning, i.e.
+learning by acquiring knowledge, or learning from a constructive teacher is necessary. We
+show, how AIξ learns to learn supervised. It actually establishes supervised learning very
+quickly within O(1) cycles.
+Section 9 gives a brief survey of other general aspects, ideas and methods in AI, and their
+connection to the AIξ model. Some aspects are directly included, others are or should be
+emergent.
+
+1 INTRODUCTION
+
+6
+
+Section 10: Up to now we have shown the universal character of the AIξ model but have
+completely ignored computational aspects. Let us assume that there exists some algorithm
+p˜ of size ˜l with computation time per cycle t˜, which behaves in a sufficiently intelligent
+way (this assumption is the very basis of AI). The algorithm p∗ should run all algorithms
+of length ≤ ˜l for t˜ time steps in every cycle and select the best output among them. So we
+have an algorithm which runs in time ˜l·2t˜ and is at least as good as p˜, i.e. it also serves our
+needs apart from the (very large but) constant multiplicative factor in computation time.
+This idea of the ’typing monkeys’, one of them eventually producing ’Shakespeare’, is well
+known and widely used in theoretical computer science. The difficult part is the selection
+of the algorithm with the best output. A further complication is that the selection process
+itself must have only limited computation time. We present a suitable modification of
+the AIξ model which solves these difficult problems. The solution is somewhat involved
+from an implementational aspect. An implementation would include first order logic, the
+definition of a Universal Turing machine within it and proof theory. The assumptions
+behind this construction are discussed at the end.
+Section 11 contains some discussion of otherwise unmentioned topics and some (personal)
+remarks. It also serves as an outlook to further research.
+Section 12 contains the conclusions.
+History & References: Kolmogorov65 [17] suggested to define the information content
+of an object as the length of the shortest program computing a representation of it.
+Solomonoff64 [35] invented the closely related universal prior probability distribution and
+used it for binary sequence prediction [35, 36] and function inversion and minimization
+[37]. Together with Chaitin66&75 [3, 4] this was the invention of what is now called
+Algorithmic Information theory. For further literature and many applications see [24].
+Other interesting ’applications’ can be found in [5, 34, 43]. Related topics are the Weighted
+Majority Algorithm invented by Littlestone and Warmuth89 [20], universal forecasting by
+Vovk92 [42], Levin search73 [18], pac-learning introduced by Valiant84 [41] and Minimum
+Description Length [22, 30]. Resource bounded complexity is discussed in [8, 9, 16, 29],
+resource bounded universal probability in [21, 24]. Implementations are rare [7, 32, 33].
+Excellent reviews with a philosophical touch are [23, 38]. For an older, but general review
+of inductive inference see Angluin83 [1]. For an excellent introduction into algorithmic
+information theory, further literature and many applications one should consult the book
+of Li and Vit´anyi97 [24]. The survey [22] or the chapters 4 and 5 of [24] should be
+sufficient to follow the arguments and proofs in this paper. The other ingredient in our
+AIξ model is sequential decision theory. We do not need much more than the maximum
+expected utility principle and the expecimax algorithm [25, 31]. The book of von Neumann
+and Morgenstern44 [40] might be seen as the initiation of game theory, which already
+contains the expectimax algorithm as a special case. The literature on decision theory
+is vast and we only give two possibly interesting references with regard to this paper.
+Cheeseman85&88 [6] is a defense of the use of probability theory in AI. Pearl88 [27] is a
+good introduction and overview of probabilistic reasoning.
+
+2 THE AIµ MODEL IN FUNCTIONAL FORM
+
+2
+
+7
+
+The AIµ Model in Functional Form
+
+The cybernetic or agent model: A good way to start thinking about intelligent
+systems is to consider more generally cybernetic systems, in AI usually called agents.
+This avoids having to struggle with the meaning of intelligence from the very beginning.
+A cybernetic system is a control circuit with input y and output x and an internal state.
+From an external input and the internal state the system calculates deterministically or
+stochastically an output. This output (action) modifies the environment and leads to a
+new input (reception). This continues ad infinitum or for a finite number of cycles. As
+explained in the last section, we need some credit assignment to the cybernetic system.
+The input x is divided into two parts, the standard input x′ and some credit input c.
+If input and output are represented by strings, a deterministic cybernetic system can be
+modeled by a Turing machine p. p is called the policy of the agent, which determines
+the action to a receipt. If the environment is also computable it might be modeled by
+a Turing machine q as well. The interaction of the agent with the environment can be
+illustrated as follows:
+c1
+
+x′1
+
+x′2
+
+c2
+
+c3
+
+x′3
+
+x′4
+
+c4
+
+x′5
+
+c5
+
+c6
+
+x′6
+
+...
+
+✐P
+✏✏P
+PP
+✏✏
+PP
+✏
+✏
+PP
+✏✏
+✮
+✏
+P
+
+working
+
+System
+p
+
+tape ...
+
+working
+
+Environ−
+tape ...
+ment q
+
+PP
+✶
+✏
+✏✏
+PP
+✏✏
+PP
+✏
+✏
+PP
+q✏✏
+P
+
+y1
+
+y2
+
+y3
+
+y4
+
+y5
+
+y6
+
+...
+
+p as well as q have unidirectional input and output tapes and bidirectional working tapes.
+What entangles the agent with the environment, is the fact that the upper tape serves as
+input tape for p, as well as output tape for q, and that the lower tape serves as output
+tape for p as well as input tape for q. Further, the reading head must always be left of the
+writing head, i.e. the symbols must first be written, before they are read. p and q have
+their own mutually inaccessible working tapes containing their own ’secrets’. The heads
+move in the following way. In the kth cycle p writes yk , q reads yk , q writes xk ≡ ck x′k ,
+p reads xk ≡ ck x′k , followed by the (k + 1)th cycle and so on. The whole process starts
+with the first cycle, all heads on tape start and working tapes being empty. We want
+to call Turing machines behaving in this way, chronological Turing machines, for obvious
+reasons. Before continuing, some notations on strings are appropriate.
+Strings: We will denote strings over the alphabet X by s = x1 x2 ...xn , with xk ∈ X,
+where X is alternatively interpreted as a non-empty subset of IN or itself as a prefix free
+set of binary strings. l(s) = l(x1 )+ ... +l(xn ) is the length of s. Analogous definitions hold
+for yk ∈ Y . We call xk the k th input word and yk the k th output word (rather than letter).
+
+2 THE AIµ MODEL IN FUNCTIONAL FORM
+
+8
+
+The string s = y1 x1 ...yn xn represents the input/output in chronological order. Due to the
+prefix property of the xk and yk , s can be uniquely separated into its words. The words
+appearing in strings are always in chronological order. We further introduce the following
+abbreviations: ǫ is the empty string, xn:m := xn xn+1 ...xm−1 xm for n ≤ m and ǫ for n > m.
+x<n := x1 ...xn−1 . Analog for y. Further, yxn := yn xn , yxn:m := yn xn ...ym xm , and so on.
+AI model for known deterministic environment: Let us define for the chronological Turing machine p a partial function also named p : X ∗ → Y ∗ with y1:k = p(x<k ) where
+y1:k is the output of Turing machine p on input x<k in cycle k, i.e. where p has read up to
+xk−1 but no further. In an analogous way, we define q : Y ∗ → X ∗ with x1:k = q(y1:k ). Conversely, for every partial recursive chronological function we can define a corresponding
+chronological Turing machine. Each (system,environment) pair (p, q) produces a unique
+pq pq
+I/O sequence ω(p, q) := y1pq xpq
+1 y2 x2 .... When we look at the definition of p and q we see a
+nice symmetry between the cybernetic system and the environment. Until now, not much
+intelligence is in our system. Now the credit assignment comes into the game and removes
+the symmetry somewhat. We split the input xk ∈ X := C ×X ′ into a regular part x′k ∈ X ′
+and a credit ck ∈ C ⊂ IR. We define xk ≡ ck x′k and ck ≡ c(xk ). The goal of the system
+should be to maximize received credits. This is called reinforcement learning. The reason
+for the asymmetry is, that eventually we (humans) will be the environment with which
+the system will communicate and we want to dictate what is good and what is wrong,
+not the other way round. This one way learning, the system learns from the environment,
+and not conversely, neither prevents the system from becoming more intelligent than the
+environment, nor does it prevent the environment learning from the system because the
+environment can itself interpret the outputs yk as a regular and a credit part. The environment is just not forced to learn, whereas the system is. In cases where we restrict the
+credit to two values c ∈ C = IB := {0, 1}, c = 1 is interpreted as a positive feedback, called
+good or correct and c = 0 a negative feedback, called bad or error in the following. Further,
+let us restrict for a while the lifetime (number of cycles) T of the system to a large, but
+finite value. Let Ckm(p, q) := m
+i=k c(xi ) be the total credit, the system p receives from the
+environment q in the cycles k to m. It is now natural to call the system, which maximizes
+the total credit C1T , called utility, the best or most intelligent one3 .
+p∗,T,q = maxarg C1T (p, q)
+p
+
+⇒
+
+CkT (p∗,T,q , q) ≥ CkT (p, q) ∀p
+
+For k = 1 this is obvious and for k > 1 easy to see. If T , Y and X are finite, the number of
+different behaviours of the system, i.e. the search space is finite. Therefore, because we
+have assumed that q is known, p∗,T,q can effectively be determined (by pre-analyzing all
+behaviours). The main reason for restricting to finite T was not to ensure computability of
+p∗,T,q but that the limit T → ∞ might not exist. This is nothing special, the (unrealistic)
+assumption of a completely known deterministic environment q has simply trivialized
+everything.
+3
+
+maxargp C(p) is the p which maximizes C(·). If there is more than one maximum we might choose
+the lexicographically smallest one for definiteness.
+
+2 THE AIµ MODEL IN FUNCTIONAL FORM
+
+9
+
+AI model for known prior probability: Let us now weaken our assumptions by
+replacing the environment q with a probability distribution µ(q) over chronological functions. µ might be interpreted in two ways. Either the environment itself behaves in a
+probabilistic way defined by µ or the true environment is deterministic, but we only have
+probabilistic information, of which environment being the true environment. Combinations of both cases are also possible. The interpretation does not matter in the following.
+We just assume that we know µ but no more about the environment whatever the interpretation may be.
+Let us assume we are in cycle k with history y˙
+˙x1 ...y˙
+˙xk−1 and ask for the best output yk .
+˙
+Further, let Qk := {q : q(y˙ <k ) = x˙ <k } be the set of all environments producing the above
+history. The expected credit for the next m−k+1 cycles (given the above history) is given
+by a conditional probability:
+µ
+Ckm
+(p|y˙
+˙x<k ) :=
+
+q∈Q˙ k
+
+µ(q)Ckm(p, q)
+.
+q∈Q˙ k µ(q)
+
+(1)
+
+We cannot simply determine maxargp (C1T ) unlike the deterministic case because the
+history is no longer deterministically determined by p and q, but depends on p and µ
+and on the outcome of a stochastic process. Every new cycle adds new information (x˙ i )
+to the system. This is indicated by the dots over the symbols. In cycle k we have to
+maximize the expected future credit, taking into account the information in the history
+˙x<k . This information is not already present in p and q/µ at the system’s start unlike in
+y˙
+the deterministic case.
+Further, we want to generalize the finite lifetime T to a dynamical (computable) farsightedness hk ≡ mk −k+1 ≥ 1, called horizon in the following. For mk = T we have our original
+finite lifetime, for mk = k+m−1 the system maximizes in every cycle the next m expected
+credits. A discussion of the choices mk is delayed to section 4.
+The next hk credits are maximized by
+µ
+p∗k := maxarg Ckm
+(p|y˙
+˙x<k ),
+k
+p∈P˙ k
+
+where P˙k := {p : p(x˙ <k ) = y˙<k ∗} is the set of systems consistent with the current history.
+p∗k depends on k and is used only in step k to determine y˙ k by p∗k (x˙ <k ; y˙ <k ) = y˙ <k y˙ k . After
+writing y˙ k the environment replies with x˙ k with (conditional) probability µ(Q˙ k+1)/µ(Q˙ k ).
+This probabilistic outcome provides new information to the system. The cycle k+1 starts
+with determining y˙ k+1 from p∗k+1 (which differs from pk as x˙ k is now fixed) and so on.
+∗
+Note that p∗k depends also on y˙<k because P˙k and Q˙ k do so. But recursively inserting pk−1
+and so on, we can define
+p∗ (x˙ <k ) := p∗k (x˙ <k ; p∗k−1 (x˙ <k−1 ...p∗1 )))
+
+(2)
+
+It is a chronological function and computable if X, Y and mk are finite. The policy p∗
+defines our AIµ model. For deterministic4 µ this model reduces to the deterministic case.
+4
+
+We call a probability distribution deterministic if it is 1 for exactly one argument and 0 for all others.
+
+2 THE AIµ MODEL IN FUNCTIONAL FORM
+
+10
+
+It is important to maximize the sum of future credits and not, for instance, to be greedy
+and only maximize the next credit, as is done e.g. in sequence prediction. For example,
+let the environment be a sequence of chess games and each cycle corresponds to one move.
+Only at the end of each game a positive credit c = 1 is given to the system if it won the
+game (and made no illegal move). For the system, maximizing all future credits means
+trying to win as many games in as short as possible time (and avoiding illegal moves).
+The same performance is reached, if we choose mk = k +m with m much larger than the
+typical game lengths. Maximization of only the next credit would be a very bad chess
+playing system. Even if we would make our credit c finer, e.g. by evaluating the number
+of chessmen, the system would play very bad chess for m = 1, indeed.
+The AIµ model still depends on µ and mk . mk is addressed in section 4. To get our final
+universal AI model the idea is to replace µ by the universal probability ξ, defined later.
+This is motivated by the fact that ξ → µ in a certain sense for any µ. With ξ instead of
+µ our model no longer depends on any parameters, so it is truly universal. It remains to
+show that it produces intelligent outputs. But let us continue step by step. In the next
+section we develop an alternative but equivalent formulation of the AI model given above.
+Whereas the functional form is more suitable for theoretical considerations, especially for
+the development of a timebounded version in section 10, the iterative formulation of the
+next section will be more appropriate for the explicit calculations in most of the other
+sections.
+
+3 THE AIµ MODEL IN RECURSIVE AND ITERATIVE FORM
+
+3
+
+11
+
+The AIµ Model in Recursive and Iterative Form
+
+Probability distributions: Throughout the paper we deal with sequences/strings and
+conditional probability distributions on strings. Some notations are therefore appropriate.
+We use Greek letters for probability distributions and underline their arguments to indicate that they are probability arguments. Let ρn (x1 ...xn ) be the probability that a string
+starts with x1 ...xn . We only consider sufficiently long strings, so the ρn are normalized to
+1. Moreover, we drop the index on ρ if it is clear from its arguments:
+xn ∈X
+
+ρ(x1:n ) ≡
+
+xn
+
+ρn (x1:n ) = ρn−1 (x<n ) ≡ ρ(x<n ),
+
+ρ(ǫ) ≡ ρ0 (ǫ) = 1.
+
+(3)
+
+We also need conditional probabilities derived from Bayes’ rule. We prefer a notation
+which preserves the chronological order of the words, in contrast to the standard notation
+ρ(·|·) which flips it. We extend the definition of ρ to the conditional case with the following
+convention for its arguments: An underlined argument xk is a probability variable and
+other non-underlined arguments xk represent conditions. With this convention, Bayes’
+rule has the form ρ(x<n xn ) = ρ(x1:n )/ρ(x<n ). The equation states that the probability
+that a string x1 ...xn−1 is followed by xn is equal to the probability of x1 ...xn ∗ divided by
+the probability of x1 ...xn−1 ∗. We use x∗ as a shortcut for ’strings starting with x’.
+
+The introduced notation is also suitable for defining the conditional probability
+ρ(y1 x1 ...yn xn ) that the environment reacts with x1 ...xn under the condition that the output of the system is y1 ...yn . The environment is chronological, i.e. input xi depends
+on yx<i yi only. In the probabilistic case this means that ρ(yx<k yk ) := xk ρ(yx1:k ) is independent of yk , hence a tailing yk in the arguments of ρ can be dropped. Probability
+distributions with this property will be called chronological. The y are always conditions,
+i.e. never underlined, whereas additional conditioning for the x can be obtained with
+Bayes’ rule
+ρ(yx<n yxn ) = ρ(yx1:n )/ρ(yx<n ) and
+(4)
+ρ(yx1:n ) = ρ(yx1 )·ρ(yx1yx2 )· ... ·ρ(yx<n yxn )
+The second equation is the first equation applied n times.
+
+Alternative Formulation of the AIµ Model: Let us define the AIµ model p∗ in
+a different way. In the next subsection we will show that the p∗ model defined here is
+identical to the functional definition of p∗ given in the last section.
+Let µ(yx1:k ) be the true chronological prior probability that the environment reacts with
+x1:k if provided with actions y1:k from the system. We assume the cybernetic model
+∗
+depicted on page 7 to be valid. Next we define Ck+1,m
+(yx1:k ) to be the µ expected credit
+sum in cycles k +1 to m with outputs yi generated by system p∗ and past responses xi
+from the environment. Adding c(xk ) we get the credit including cycle k. The probability
+of xk , given yx<k yk , is given by the condition probability µ(yx<k yxk ). So the expected
+credit sum in cycles k to m given yx<k yk is
+∗
+[c(xk ) + Ck+1,m
+(yx1:k )]·µ(yx<k yxk )
+
+∗
+Ckm
+(yx<k yk ) :=
+xk
+
+(5)
+
+3 THE AIµ MODEL IN RECURSIVE AND ITERATIVE FORM
+
+12
+
+Now we ask about how p∗ chooses yk . It should choose yk as to maximize the future
+credit. So the expected number of errors in cycles k to m given yx<k and yk chosen by p∗
+∗
+∗
+is Ckm
+(yx<k ) := maxyk Ckm
+(yx<k yk ). Together with the induction start
+∗
+(yx1:m ) := 0
+Cm+1,m
+
+(6)
+
+Ckm is completely defined. We might summarize one cycle into the formula
+∗
+Ckm
+(yx<k ) = max
+y
+k
+
+∗
+[c(xk ) + Ck+1,m
+(yx1:k )]·µ(yx<k yxk )
+
+(7)
+
+xk
+
+If mk is our horizon function of p∗ and y˙
+˙x<k is the actual history in cycle k, the output
+y˙ k of the system is explicitly given by
+∗
+y˙ k = maxarg Ckm
+(y˙
+˙x<k yk ) =: p∗ (y˙
+˙x<k )
+k
+
+(8)
+
+yk
+
+Then the environment responds x˙ k with probability µ(y˙
+˙x<k y˙
+˙xk ). Then cycle k +1 starts.
+We might unfold the recursion (7) further and give y˙ k non-recursive as
+yk
+
+... max
+
+max
+
+y˙ k = maxarg
+
+yk+1
+
+xk
+
+xk+1
+
+ymk
+
+xmk
+
+(c(xk )+ ... +c(xmk ))·µ(y˙
+˙x<k yxk:mk )
+
+(9)
+
+This has a direct interpretation: the probability of inputs xk:mk in cycle k when the system
+outputs yk:mk and the actual history is y˙
+˙x<k is µ(y˙
+˙x<k yxk:mk ). The future credit in this
+case is c(xk ) + ... + c(xmk ). The best expected credit is obtained by averaging over the
+xi (sumxi ) and maximizing over the yi . This has to be done in chronological order to
+correctly incorporate the dependency of xi and yi on the history. This is essentially the
+expectimax algorithm/sequence [25, 31]. The AIµ model is optimal in the sense that no
+other policy leads to higher expected credit.
+These explicit as well as recursive definitions of the AIµ model are more index intensive
+as compared to the functional form but are more suitable for explicit calculations.
+Equivalence of Functional and Iterative AI model: The iterative environmental
+probability µ is given by the functional form in the following way,
+µ(yx1:k ) =
+
+µ(q)
+
+(10)
+
+q:q(y1:k )=x1:k
+
+as is easy to see. We will prove the equivalence of (2) and (8) only for k = 2 and m2 = 3.
+The proof of the general case is completely analog except that the notation becomes quite
+messy.
+Let us first evaluate (1) for fixed y˙ 1 x˙ 1 and some p ∈ P˙2 , i.e. p(x˙ 1 ) = y˙ 1 y2 for some y2 .
+If the next input to the system is x2 , p will respond with p(x˙ 1 x2 ) = y˙ 1 y2 y3 for some y3
+depending on x2 . We write y3 (x2 ) in the following5 . The numerator of (1) simplifies to
+µ(q)C23(p, q) =
+q∈Q˙ 2
+5
+
+µ(q)C23 (p, q) =
+
+q:q(y˙ 1 )=x˙ 1
+
+(c(x2 )+c(x3 ))
+x2 x3
+
+µ(q) =
+
+q:q(y˙ 1 y2 y3 (x2 ))=x˙ 1 x2 x3
+
+Dependency on dotted words like x˙ 1 is not shown as the dotted words are fixed.
+
+3 THE AIµ MODEL IN RECURSIVE AND ITERATIVE FORM
+
+13
+
+(c(x2 )+c(x3 ))·µ(y˙ 1x˙ 1 y2 x2 y3 (x2 )x3 )
+
+=
+x2 x3
+
+In the first equality we inserted the definition of Q˙ 2 . In the second equality we split the
+sum over q by first summing over q with fixed x2 x3 . This allows us to pull C23 = c(x2 )+c(x3 )
+out of the inner sum. Then we sum over x2 x3 . Further, we have inserted p, i.e. replaced
+p by y2 and y3 (·). In the last equality we used (10). The denominator reduces to
+µ(q) = µ(y˙ 1 x˙ 1 ).
+
+µ(q) =
+q∈Q˙ 2
+
+q:q(y˙ 1 )=x˙ 1
+
+For the quotient we get
+(c(x2 )+c(x3))·µ(y˙ 1x˙ 1 y2 x2 y3 (x2 )x3 )
+
+C23 (p|y˙ 1 x˙ 1 ) =
+x2 x3
+
+We have seen that the relevant behaviour of p ∈ P˙2 in cycle 2 and 3 is completely determined by y2 and the function y3 (·)
+max C23 (p|y˙ 1 x˙ 1 ) = max max
+y2
+
+p∈P˙ 2
+
+= max
+y2
+
+y3 (·) x x
+2 3
+
+(c(x2 )+c(x3))·µ(y˙ 1x˙ 1 y2 x2 y3 x3 )
+
+max
+x2
+
+y3
+
+(c(x2 )+c(x3 ))·µ(y˙ 1x˙ 1 y2 x2 y3 (x2 )c3 ) =
+
+x3
+
+In the last equality we have used the fact that the functional minimization over y3 (·)
+reduces to a simple minimization over the word y3 when interchanging with the sum
+over its arguments (maxy3 (·) x2 ≡ x2 maxy3 ). In the functional case y˙ 2 is therefore
+determined by
+y˙ 2 = maxarg
+y2
+
+max
+x2
+
+y3
+
+(c(x2 )+c(x3 ))·µ(y˙ 1x˙ 1 y2 x2 y3 x3 )
+x3
+
+This is identical to the iterative definition (9) with k = 2 and m2 = 3 ⊓
+⊔.
+Factorizable µ: Up to now we have made no restrictions on the form of the prior
+probability µ apart from being a chronological probability distribution. On the other
+hand, we will see that, in order to prove rigorous credit bounds, the prior probability
+must satisfy some separability condition to be defined later. Here we introduce some very
+strong form of separability, when µ factorizes into products. We start with a factorization
+into two factors. Let us assume that µ is of the form
+µ(yx1:n ) = µ1 (yx<l ) · µ2 (yxl:n )
+
+(11)
+
+for some fixed l and sufficiently large n ≥ mk . For this µ the output y˙ k in cycle k of the
+AIµ system (9) for k ≥ l depends on y˙
+˙xl:k−1 and µ2 only and is independent of y˙
+˙x<l and
+µ1 . This is easily seen when inserting
+˙x<l ) ·µ2 (y˙
+˙xl:k−1 yxk:mk )
+µ(y˙
+˙x<k yxk:mk ) = µ1 (y˙
+≡1
+
+(12)
+
+3 THE AIµ MODEL IN RECURSIVE AND ITERATIVE FORM
+
+14
+
+into (9). For k < l the output y˙ k depends on y˙
+˙x<k (this is trivial) and µ1 only (trivial if
+mk < l) and is independent of µ2 . The non-trivial case, where the horizon mk ≥ l reaches
+into the region µ2 , can be proved as follows (we abbreviate m := mk in the following).
+∗
+Inserting (11) into the definition of Clm
+(yx<l ) the factor µ1 is 1 as in (12). We abbreviate
+∗
+∗
+Clm
+:= Clm
+(yx<l ) as it is independent of its arguments. One can decompose
+∗
+∗
+∗
+Ckm
+(yx<k ) = Ck,l−1
+(yx<k ) + Clm
+
+(13)
+
+For k = l this is true because the first term on the r.h.s. is zero. For k < l we prove the
+decomposition by induction from k+1 to k.
+∗
+∗
+[c(xk ) + Ck+1,l−1
+(yx1:k ) + Clm
+]·µ1(yx<k yxk ) =
+
+∗
+Ckm
+(yx<k ) = max
+yk
+
+∗
+∗
+(c(xk ) + Ck+1,l−1
+(yx<k ))·µ1(yx<k yxk ) + Clm
+
+= max
+yk
+
+xk
+
+=
+
+xk
+∗
+∗
+= Ck,l−1
+(yx<k ) + Clm
+
+Inserting (13), valid for k by induction hypothesis, into (7) gives the first equality. In
+∗
+the second equality we have performed the xk sum for the Clm
+· µ1 term which is now
+independent of yk . It can therefore be pulled out of maxyk . In the last equality we used
+again the definition (7). This completes the induction step and proves (13) for k < l. y˙k
+can now be represented as
+∗
+∗
+y˙ k = maxarg Ckm
+(y˙
+˙x<k yk ) = maxarg Ck,l−1
+(y˙
+˙x<k yk )
+yk
+
+yk
+
+(14)
+
+∗
+where (8) and (13) and the fact that an additive constant Clm
+does not change maxargyk
+∗
+has been used. Ck,l−1
+(y˙
+˙x<k yk ) and hence y˙k is independent of µ2 for k < l. Note, that y˙k
+is also independent of the choice of m, as long as m ≥ l.
+
+In the general case the cycles are grouped into independent episodes r = 1, 2, 3, ..., where
+each episode r consists of the cycles k = nr+1, ..., nr+1 for some 0 = n0 < n1 < ... < ns = n:
+s−1
+
+µr (yxnr +1:nr+1 )
+
+µ(yx1:n ) =
+
+(15)
+
+r=0
+
+In the simplest case, when all episodes have the same length l then nr = r·l. y˙k depends
+on µr and x and y of episode r only, with r such that nr < k ≤ nr+1 .
+... max
+
+y˙ k = maxarg
+yk
+
+xk
+
+yt
+
+(c(xk )+ ... +c(xt ))·µr (y˙
+˙xnr +1:k−1yxk:nr+1 )
+
+(16)
+
+xt
+
+with t := min{mk , nr+1 }. The different episodes are completely independent in the following sense. The inputs xk of different episodes are statistically independent and depend
+only on yk of the same episode. The outputs yk depend on the x and y of the corresponding
+episode r only, and are independent of the actual I/O of the other episodes.
+If all episodes have a length of at most l, i.e. nr+1 −nr ≤ l and if we choose the horizon
+hk to be at least l, then mk ≥ k +l−1 ≥ nr +l ≥ nr+1 and hence t = nr+1 independent of
+
+3 THE AIµ MODEL IN RECURSIVE AND ITERATIVE FORM
+
+15
+
+mk . This means that for factorizable µ there is no problem in taking the limit mk → ∞.
+Maybe this limit can also be performed in the more general case of a separable µ. The
+(problem of the) choice of mk will be discussed in more detail later.
+Although factorizable µ are too restrictive to cover all AI problems, it often occurs in
+practice in the form of repeated problem solving, and hence, is worth being studied. For
+example, if the system has to play games like chess repeatedly, or has to minimize different functions, the different games/functions might be completely independent, i.e. the
+environmental probability factorizes, where each factor corresponds to a game/function
+minimization. For details, see the appropriate sections on strategic games and function
+minimization.
+Further, for factorizable µ it is probably easier to derive suitable credit bounds for the
+universal AIξ model defined in the next section, than for the general separable case which
+will be introduced later. This could be a first step toward a definition and proof for the
+general case of separable problems. One goal of this paragraph was to show, that the
+notion of a factorizable µ could be the first step toward a definition and analysis of the
+general case of separable µ.
+Constants and Limits: We have in mind a universal system with complex interactions
+that is as least as intelligent and complex as a human being. One might think of a system
+whose input yk comes from a digital video camera, the output xk is some image to a
+monitor6 , only for the valuation we might restrict to the most primitive binary one, i.e.
+ck ∈ IB. So we think of the following constant sizes:
+1 ≪
+1 ≪
+
+l(yk xk )
+216
+
+≪ k ≤ T ≪ |Y × X|
+≪ 224 ≤ 232 ≪ 265536
+
+The first two limits say that the actual number k of inputs/outputs should be reasonably
+large, compared to the typical size l of the input/output words, which itself should be
+rather sizeable. The last limit expresses the fact that the total lifetime T (number of I/O
+cycles) of the system is far too small to allow every possible input to occur, or to try
+every possible output, or to make use of identically repeated inputs or outputs. We do
+not expect any useful outputs for k ≤ l . More interesting than the lengths of the inputs
+is the complexity K(x1 ...xk ) of all inputs until now, to be defined later. The environment
+is usually not ”perfect”. The system could either interact with a non-perfect human or
+tackle a non-deterministic world (due to quantum mechanics or chaos) world7 . In either
+case, the sequence contains some noise, leading to K ∼ l · k. The complexity of the
+probability distribution of the input sequence is something different. We assume that
+this noisy world operates according to some simple computable, though not finite rules.
+K(µk ) ≪ l ·k, i.e. the rules of the world can be highly compressed. On the other hand,
+there may appear new aspects of the environment for k → ∞ causing a non-bounded
+K(µk ).
+6
+
+Humans can only simulate a screen as output device by drawing pictures.
+Whether there exist stochastic processes at all is a difficult question. At least the quantum indeterminacy comes very close to it.
+7
+
+3 THE AIµ MODEL IN RECURSIVE AND ITERATIVE FORM
+
+16
+
+In the following we never use these limits, except when explicitly stated. In some simpler
+models and examples the size of the constants will even violate these limits (e.g. l(xk ) =
+l(yk ) = 1), but it is the limits above that the reader should bear in mind. We are only
+interested in theorems which do not degenerate under the above limits.
+Sequential decision theory: In the following we clarify the connection of (7) and (8) to
+sequential decision theory and discuss similarities and differences. With probability Mija ,
+the system under consideration should reach (environmental) state i ∈ S when taking
+action a ∈ A depending on the current state j ∈ S. If the system receives reward R(i), the
+optimal policy p∗ , maximizing expected utility (defined as sum of future rewards), and
+the utility U(i) of policy p∗ are
+p∗ (i) = maxarg
+a
+
+Mija U(j) ,
+
+Mija U(j)
+
+U(i) = R(i) + max
+a
+
+j
+
+(17)
+
+j
+
+See [31] for details and further references. Let us identify
+
+i = yx<k ,
+
+S = (Y ×X)∗ ,
+
+j = yx1:k ,
+
+A = Y,
+
+R(i) = c(xk−1 ),
+R(j) = c(xk ),
+
+a = yk ,
+
+Mija = µ(yx<k yxk ),
+
+∗
+∗
+U(i) = Ck−1,m
+(yx<k ) = c(xk−1 ) + Ckm
+(yx<k ),
+∗
+∗
+U(j) = Ckm
+(yx1:k ) = c(xk ) + Ck+1,m
+(yx1:k ),
+
+where we further set Mija = 0 if i is not a starting substring of j or if a = yk . This
+ensures the sum over j in (17) to reduce to a sum over xk . If we set mk = m and use
+∗
+∗
+Ckm
+(yx<k yk ) = xk Ckm
+(yx1:k ) in (8), it is easy to see that (17) coincides with (7) and (8).
+Note that despite of this formal equivalence, we were forced to use the complete history
+yx<k as environmental state i. The AIµ model neither assumes stationarity, nor Markov
+property, nor complete accessibility of the environment, as any assumption would restrict
+the applicability of AIµ. The consequence is that every state occurs at most once in
+the lifetime of the system. Every moment in the universe is unique! Even if the state
+space could be identified with the input space X, inputs would usually not occur twice by
+assumption k ≪ |X|, made in the last subsection. Further, there is no (obvious) universal
+similarity relation on (X×Y )∗ allowing an effective reduction of the size of the state space.
+Although many algorithms (e.g. value and policy iteration) have problems in solving (17)
+for huge or infinite state spaces in practice, there is no principle problem in determining
+p∗ and U, as long as µ is known and |X|, |Y | and m are finite.
+Things dramatically change if µ is unknown. Reinforcement learning algorithms [15] are
+commonly used in this case to learn the unknown µ. They succeed if the state space
+is either small or has effectively been made small by so called generalization techniques.
+In any case, the solutions are either ad hoc, or work in restricted domains only, or have
+serious problems with state space exploration versus exploitation, or have non-optimal
+learning rate. There is no universal and optimal solution to this problem so far. In the
+next section we present a new model and argue that it formally solves all these problems
+in an optimal way. It will not concern with learning of µ directly. All we do is to replace
+the true prior probability µ by a universal probability ξ, which is shown to converge to µ
+in a sense.
+
+4 THE UNIVERSAL AIξ MODEL
+
+4
+
+17
+
+The Universal AIξ Model
+
+Induction and Algorithmic Information theory: One very important and highly
+non-trivial aspect of intelligence is inductive inference. Before formulating the AIξ model,
+a short introduction to the history of induction is given, culminating into the sequence
+prediction theory by Solomonoff. We emphasize only those aspects which will be of
+importance for the development of our universal AIξ model.
+Simply speaking, induction is the process of predicting the future from the past or, more
+precisely, it is the process of finding rules in (past) data and using these rules to guess
+future data. On the one hand, induction seems to happen in every day life by finding
+regularities in past observations and using them to predict the future. On the other hand,
+this procedure seems to add knowledge about the future from past observations. But how
+can we know something about the future? This dilemma and the induction principle in
+general have a long philosophical history
+•
+•
+•
+•
+
+Hume’s negation of Induction (1711-1776) [12],
+Epicurus’ principle of multiple explanations (342?-270? BC),
+Occams’ razor (simplicity) princple (1290?-1349?),
+Bayes’ rule for conditional probabilites [2]
+
+and a short but important mathematical history: a clever unification of all these aspects
+into one formal theory of inductive inference has been done by Solomonoff [35] based on
+Kolmogorov’s [17] definition of complexity. For an excellent introduction into Kolmogorov
+complexity and Solomonoff induction one should consult the book of Li and Vit´anyi [24].
+In the rest of this subsection we state all results which are needed or generalized later.
+Let us choose some universal prefix Turing machine U with unidirectional binary input
+and output tapes and a bidirectional working tape. We can then define the (prefix)
+Kolomogorov complexity [4, 11, 17, 19] as the shortest prefix program p, for which U
+outputs x = x1:n with xi ∈ IB:
+K(x) := min{l(p) : U(p) = x}
+p
+
+The universal semimeasure ξ(x) is defined as the probability that the output of the universal Turing machine U starts with x when provided with fair coin flips on the input
+tape [35, 36]. It is easy to see that this is equivalent to the formal definition
+ξ(x) :=
+
+2−l(p)
+
+(18)
+
+p : U (p)=x∗
+
+where the sum is over minimal programs p for which U outputs a string starting with x.
+U might be non-terminating. As the shortest programs dominate the sum, ξ is closely
+related to K(x) (ξ(x) = 2−K(x)+O(K(l(x)) ). ξ has the important universality property [35],
+that it majorizes every computable probability distribution ρ up to a multiplicative factor
+depending only on ρ but not on x:
+×
+
+ξ(x) ≥ 2−K(ρ) ·ρ(x).
+
+(19)
+
+4 THE UNIVERSAL AIξ MODEL
+
+18
+
+A ’×’ above an (in)equality denotes (in)equality within a universal multiplicative constant,
+a ’+’ above an (in)equality denotes (in)equality within a universal additive constant,
+both depending only on the choice of the universal reference machine U. ξ itself is not
+a probability distribution8 . We have ξ(x0) + ξ(x1) < ξ(x) because there are programs
+p, which output just x, neither followed by 0 nor 1. They just stop after printing x
+or continue forever without any further output. We will call a function ρ ≥ 0 with the
+properties ρ(ǫ) ≤ 1 and xn ρ(x1:n ) ≤ ρ(x<n ) a semimeasure. ξ is a semimeasure and (19)
+actually holds for all enumerable semimeasures ρ.
+(Binary) sequence prediction algorithms try to predict the continuation xn of a given
+sequence x1 ...xn−1 . In the following we will assume that the sequences are drawn according
+to a probability distribution and that the true prior probability of x1:n is µ(x1 ...xn ).
+The probability of xn given x<n hence is µ(x<n xn ). The best possible system predicts
+the xn with higher probability. Usually µ is unknown and the system can only have
+some belief ρ about the true prior probability µ. Let SPρ be a probabilistic sequence
+predictor, predicting xn with probability ρ(x<n xn ). Further we define a deterministic
+sequence predictor SPΘρ predicting the xn with higher ρ probability. Θρ (x<n xn ) := 1 if
+ρ(x<n xn ) > 21 and Θρ (x<n xn ) := 0 otherwise. If ρ is only a semimeasure the SPρ and
+SPΘρ systems might refuse any output in some cycles n. The SPΘµ is the best prediction
+scheme when µ is known.
+If ρ(x<n xn ) converges quickly to µ(x<n xn ) the number of additional prediction errors
+introduced by using Θρ instead of Θµ for prediction should be small in some sense. Now
+the universal probability ξ comes into play as it has been proved by Solomonoff [36] that
+the µ expected Euclidean distance betweewn ξ and µ is finite
+∞
+k=1 x1:k
+
++
+
+µ(x1:k )(ξ(x<k xk ) − µ(x<k xk ))2 <
+
+1
+2
+
+ln 2·K(µ)
+
+(20)
+
+The ’+’ atop ’<’ means up to additive terms of order 1. So indeed the difference does tend
+n→∞
+to zero, i.e. ξ(x<n xn ) −→ µ(x<n xn ) with µ probability 1 for any computable probability
+distribution µ. The reason for the astonishing property of a single (universal) function
+to converge to any computable probability distribution lies in the fact that the set of
+µ random sequences differ for different µ. The universality property (19) is the central
+ingredient for proving (20).
+Let us define the total number of expected erroneous predictions the SPρ system makes
+for the first n bits
+n
+µ(x1:k )(1−ρ(x<k xk ))
+
+Enρ :=
+
+(21)
+
+k=1 x1:k
+
+The SPΘµ system is best in the sense that EnΘµ ≤ Enρ for any ρ. In [13] it has been shown
+that SPΘξ is not much worse
+
+8
+
+EnΘξ −Enρ ≤ H +
+
+4Enρ H + H 2 = O( Enρ ) ,
+
++
+
+H < ln 2·K(µ)
+
+(22)
+
+It is possible to normalize ξ to a probability distribution as has been done in [44, 36, 13] by giving
+up the enumerability of ξ. Error bounds (20) and (22) hold for both definitions.
+
+4 THE UNIVERSAL AIξ MODEL
+
+19
+
+with the tightest bound for ρ = Θµ . For finite E∞Θµ , E∞Θξ is finite too. For infinite E∞Θµ ,
+n→∞
+EnΘξ /EnΘµ −→ 1 with rapid convergence. One can hardly imagine any better prediction
+algorithm without extra knowledge about the environment. In [14], (20) and (22) have
+been generalized from binary to arbitrary alphabet. Apart from computational aspects,
+which are of course very important, the problem of sequence prediction could be viewed
+as essentially solved.
+Definition of the AIξ Model: We have developed enough formalism to suggest our
+universal AIξ model9 . All we have to do is to suitably generalize the universal semimeasure
+ξ from the last subsection and replace the true but unknown prior probability µAI in the
+AIµ model by this generalized ξ AI . In what sense this AIξ model is universal will be
+discussed later.
+In the functional formulation we define the universal probability ξ AI of an environment q
+just as 2−l(q)
+ξ(q) := 2−l(q)
+The definition could not be easier10 !11 Collecting the formulas of section 2 and replacing
+µ(q) by ξ(q) we get the definition of the AIξ system in functional form. Given the history
+y˙
+˙x<k the functional AIξ system outputs
+y˙k := maxarg
+yk
+
+2−l(q) · Ckmk (p, q)
+
+max
+
+p:p(x˙ <k )=y˙ <k yk
+
+(23)
+
+q:q(y˙ <k )=x˙ <k
+
+in cycle k, where Ckmk (p, q) is the total credit of cycles k to mk when system p interacts with environment q. We have dropped the denominator q µ(q) from (1) as it is
+independent of the p ∈ P˙k and a constant multiplicative factor does not change maxarg.
+For the iterative formulation the universal probability ξ can be obtained by inserting the
+functional ξ(q) into (10)
+ξ(yx1:k ) =
+2−l(q)
+(24)
+q:q(y1:k )=x1:k
+
+Replacing µ by ξ in (9) the iterative AIξ system outputs
+yk
+
+... max
+
+max
+
+y˙ k = maxarg
+xk
+
+yk+1
+
+xk+1
+
+ymk
+
+xmk
+
+(c(xk )+ ... +c(xmk ))·ξ(y˙
+˙x<k yxk:mk )
+
+(25)
+
+in cycle k given the history y˙
+˙x<k .
+One subtlety has been passed over. Like in the SP case, ξ is not a probability distribution
+but satisfies only the weaker inequalities
+xn
+9
+
+ξ(yx1:n ) ≤ ξ(yx<n ) ,
+
+ξ(ǫ) ≤ 1
+
+(26)
+
+Speak ’aixi’ and write AIXI without Greek letters.
+It is not necessary to use 2−K(q) or something similar as some reader may expect at this point. The
+reason is that for every program q there exists a functionally equivalent program q ′ with K(q ′ ) = l(q ′ ).
+11
+Here and later we identify objects with their coding relative to some fixed Turing machine U . For
+example, if q is a function K(q) := K(⌈q⌉) with ⌈q⌉ being a binary coding of q such that U (⌈q⌉, y) := q(y).
+On the other hand, if q already is a binary string we define q(y) := U (q, y).
+10
+
+4 THE UNIVERSAL AIξ MODEL
+
+20
+
+Note, that the sum on the l.h.s. is not independent of yn unlike for chronological probability
+distributions. Nevertheless, it is bounded by something (the r.h.s) which is independent of
+yn . The reason is that the sum in (24) runs over (partial recursive) chronological functions
+only and the functions q which satisfy q(y1:n ) = x<n ∗ are a subset of the functions satisfying q(y<n ) = x<n . Therefore we will in general call functions satisfying (26) chronological
+semimeasures. The important point is that the conditional probabilities (4) are ≤ 1 like
+for true probability distributions.
+The equivalence of the functional and iterative AI model proven in section 3 is true for
+every chronological semimeasure ρ, esp. for ξ, hence we can talk about the AIξ model
+in this respect. It (slightly) depends on the choice of universal Turing machine. l(q) is
+defined only up to an additive constant. It also depends on the choice of X = C × X ′
+and Y , but we do not expect any bias when the spaces are chosen sufficiently simple, e.g.
+all strings of length 216 . Choosing IN as word space would be optimal, but whether the
+maxima (suprema) exist in this case, has to be shown beforehand. The only non-trivial
+dependence is on the horizon function mk which will be discussed later. So apart from mk
+and unimportant details the AIξ system is uniquely defined by (23) or (25). It doesn’t
+depend on assumptions about the environment apart from being generated from some
+computable (but unknown!) probability distribution.
+Universality of ξ AI : In which sense the AIξ model is optimal will be clarified later.
+In this and the next two subsections we show that ξ AI defined in (24) is universal and
+converges to µAI analog to the SP case (19) and (20). The proofs are generalizations from
+the SP case. The y are pure spectators and cause no difficulties in the generalization. The
+replacement of the binary alphabet IB used in SP by the (possibly infinite) alphabet X
+is possible, but needs to be done with care. In (19) U(p) = x∗ produces strings starting
+with x, whereas in (24) we can demand q to output exactly n words x1:n as q knows n
+from the number of input words y1 ...yn . For proofs of (19) and (20) see [36] and [22].
+There is an alternative definition of ξ which coincides with (24) within a multiplicative
+constant of O(1),
+×
+ξ(yx1:n ) =
+(27)
+2−K(ρ) ρ(yx1:n )
+ρ
+
+where the sum runs over all enumerable chronological semimeasures. The 2−K(ρ) weighted
+sum over probabilistic environments ρ, coincides with the sum over 2−l(q) weighted deterministic environments q, as will be proved below. In the next subsection we show
+that an enumeration of all enumerable functions can be converted into an enumeration of
+enumerable chronological semimeasures ρ. K(ρ) is co-enumerable, therefore ξ defined in
+(27) is itself enumerable. The representation (24) is also enumerable. As ρ 2−K(ρ) ≤ 1
+and the ρ′ s satisfy (26), ξ is a chronological semimeasure as well. If we pick one ρ in (27)
+we get the universality property ”for free”
+×
+
+ξ(yx1:n ) ≥ 2−K(ρ) ρ(yx1:n )
+
+(28)
+
+ξ is a universal element in the sense of (28) in the set of all enumerable chronological
+semimeasures.
+
+4 THE UNIVERSAL AIξ MODEL
+
+21
+
+To prove universality of ξ in the form (24) we have to show that for every enumerable
+chronological semimeasure ρ there exists a Turing machine T with
+ρ(yx1:n ) =
+
+2−l(q)
+
++
+
+and l(T ) = K(ρ).
+
+(29)
+
+q:T (qy1:n )=x1:n
+
+This will not be done here. Given T the universality of ξ follows from
+ξ(yx1:n ) =
+
+2−l(q) ≥
+
+q:U (qy1:n )=x1:n
+
+′
+
+2−l(T q ) = 2−l(T )
+q:U (T q ′ y1:n )=x1:n
+
+′
+
+×
+
+2−l(q ) = 2−K(ρ) ρ(yx1:n )
+
+q:T (q ′ y1:n )=x1:n
+
+The first equality and (24) are identical by definition. In the inequality we have restricted
+the sum over all q to q of the form q = T q ′ . The third relation is true as running U on T z
+is a simulation of T on z. The last equality follows from (29). All enumerable, universal,
+chronological semimeasures coincide up to a multiplicative constant, as they mutually
+dominate each other. Hence, definitions (24) and (27) are, indeed, equivalent.
+Converting general functions into chronological semi-measures: To complete
+the proof of the universality (28) of ξ we need to convert enumerable functions ψ : IB ∗ →
+IR+ into enumerable chronological semi-measures ρ : (Y ×X)∗ → IR+ with certain additional properties. Every enumerable function like ψ and ρ can be approximated from below
+by definition12 by primitive recursive functions ϕ : IB ∗×IN → IQ+ and φ : (Y ×X)∗×IN → IQ+
+with ψ(s) = supt ϕ(s, t) and ρ(s) = supt φ(s, t) and recursion parameter t. For arguments
+of the form s = yx1:n we recursively (in n) construct φ from ϕ as follows:
+ϕ′ (yx1:n , t) :=
+
+ϕ(yx1:n , t) for xn < t
+0
+for xn ≥ t
+
+,
+
+ϕ′ (ǫ, t) := ϕ(ǫ, t)
+
+φ(ǫ, t) := max ϕ′ (ǫ, i) : ϕ′ (ǫ, i) ≤ 1
+0≤i≤t
+
+φ(yx1:n , t) := max ϕ′ (yx1:n , i) :
+0≤i≤t
+
+xn ϕ
+
+′
+
+(yx1:n , i) ≤ φ(yx<n , t)
+
+(30)
+(31)
+(32)
+
+With xn < t we mean that the natural number associated with string xn is smaller than
+t. According to (30) with ϕ also ϕ′ as well as xn ϕ′ are primitive recursive functions.
+Further, if we allow t = 0 we have ϕ′ (s, 0) = 0. This ensures that φ is a total function.
+In the following we prove by induction over n that φ is a primitive recursive chronological semimeasure monotone increasing in t. All necessary properties hold for n = 0
+(yx1:0 = ǫ) according to (31). For general n assume that the induction hypothesis is true
+for φ(yx<n , t). We can see from (32) that φ(yx1:n , t) is monotone increasing in t. φ is
+total as ϕ′ (yx1:n , i = 0) = 0 satisfies the inequality. By assumption φ(yx<n , t) is primitive
+recursive, hence with xn ϕ′ also the order relation ϕ′ ≤ φ is primitive recursive. This
+ensures that the non-empty finite set {ϕ′ : ϕ′ ≤ φ}i and its maximum φ(yx1:n , t) are
+primitive recursive. Further, φ(yx1:n , t) = ϕ′ (yx1:n , i) for some i with i ≤ t independent of
+12
+
+Defining enumerability as the supremum of total primitive recursive functions is more suitable for our
+purpose than the equivalent definition as a limit of monotone increasing partial recursive functions. In
+terms of Turing machines, the recursion parameter is the time after which a computation is terminated.
+
+4 THE UNIVERSAL AIξ MODEL
+
+22
+
+xn . Thus, xn φ(yx1:n , t) = xn ϕ′ (yx1:n , i) ≤ φ(yx<n , t) which is the condition for φ being
+a chronological semimeasure. Inductively we have proved that φ is indeed a primitive
+recursive chronological semimeasure monotone increasing in t.
+In the following we show that every (total)13 enumerable chronological semimeasure ρ can
+be enumerated by some φ. By definition of enumerability there exist primitive recursive
+functions ϕ˜ with ρ(s) = supt ϕ(s,
+˜ t). The function ϕ(s, t) := (1 − 1/t ) · maxi<t ϕ(s,
+˜ i) also
+enumerates ρ but has the additional advantage of being strictly monotone increasing in t.
+ϕ′ (yx1:n , ∞) = ϕ(yx1:n , ∞) = ρ(yx1:n ) by definition (30). φ(ǫ, t) = ϕ′ (ǫ, t) by (31) and the fact
+that ϕ′ (ǫ, i−1) < ϕ′ (ǫ, i) ≤ ϕ(ǫ, i) ≤ ρ(ǫ) ≤ 1, hence φ(ǫ, ∞) = ρ(ǫ). φ(yx1:n , t) ≤ ϕ′ (yx1:n , t) by
+(32), hence φ(yx1:n , ∞) ≤ ρ(yx1:n ). We prove the opposite direction φ(yx1:n , ∞) ≥ ρ(yx1:n )
+by induction over n. We have
+xn
+
+ϕ′ (yx1:n , i) ≤
+
+ϕ(yx1:n , i) <
+xn
+
+xn
+
+ϕ(yx1:n , ∞) =
+
+xn
+
+ρ(yx1:n ) ≤ ρ(yx<n )
+
+(33)
+
+The strict monotony of ϕ and the semimeasure property of ρ have been used. By induction hypothesis limt→∞ φ(yx<n , t) ≥ ρ(yx<n ) and (33) for sufficiently large t we have
+φ(yx<n , t) > xn ϕ′ (yx1:n , i). The condition in (32) is, hence, satisfied and therefore
+φ(yx1:n , t) ≥ ϕ′ (yx1:n , i) for sufficiently large t, especially φ(yx1:n , ∞) ≥ ϕ′(yx1:n , i) for all i.
+Taking the limit i → ∞ we get φ(yx1:n , ∞) ≥ ϕ′ (yx1:n , ∞) = ρ(yx1:n ).
+Combining all results, we have shown that the constructed φ(·, t) are primitive recursive
+chronological semimeasures monotone increasing in t, which converge to the enumerable
+chronological semimeasure ρ. This finally proves the enumerability of the set of enumerable chronological semimeasures.
+Convergence of ξ AI to µAI : In [14] the following inequality is proved
+|X|
+
+|X|
+
+yi
+yi (yi −zi ) ≤ yi ln
+2
+zi
+i=1
+i=1
+2
+
+|X|
+
+with
+
+yi = 1,
+
+|X|
+i=1
+
+i=1
+
+zi ≤ 1
+
+(34)
+
+If we identify i = xk and yi = µ(yx<k yxk ) and zi = ξ(yx<k yxk ), multiply both sides
+with µ(yx<k ), take the sum over x<k , then the sum over k and use Bayes’ rule
+µ(yx<k )·µ(yx<k yxk ) = µ(yx1:k ) we get
+n
+
+2
+k=1 x1:k
+
+µ(yx1:k ) µ(yx<k xk ) − ξ(yx<k xk )
+
+2
+
+n
+
+≤
+
+µ(yx1:k ) ln
+k=1 x1:k
+
+µ(yx<k xk )
+= ...
+ξ(yx<k xk )
+
+(35)
+
+In the r.h.s. we can replace x1:k µ(yx1:k ) by x1:n µ(yx1:n ) as the argument of the logarithm
+is independent of xk+1:n . The k sum can now be brought into the logarithm and converts
+to a product. Using Bayes’ rule (4) for µ and ξ we get
+n
+
+... =
+
+µ(yx1:n ) ln
+x1:n
+
+13
+
+µ(yx<k xk )
+=
+k=1 ξ(yx<k xk )
+
+µ(yx1:n ) ln
+x1:n
+
+Semimeasures are, by definition, total functions.
+
+µ(yx1:n ) +
+< ln 2·K(µ)
+ξ(yx1:n )
+
+(36)
+
+4 THE UNIVERSAL AIξ MODEL
+
+23
+
+where we have used the universality property (28) of ξ in the last step. The main complication for generalizing (20) to (35,36) was the generalization of (34) from |X| = 2 to
+a general alphabet, the y are, again, pure spectators. This will change when we analyze
+error/credit bounds analog to (22).
+(35,36) shows that the µ expected squared difference of µ and ξ is finite for computable µ.
+This, in turn, shows that ξ(yx<k yxk ) converges to µ(yx<k yxk ) for k → ∞ with µ probability
+1. If we take a finite product of ξ ′ s and use Bayes’ rule, we see that also ξ(yx<k yxk:k+r )
+converges to µ(yx<k yxk:k+r ). More generally, in case of a bounded horizon hk , it follows
+that
+k→∞
+ξ(yx<k yxk:mk ) −→ µ(yx<k yxk:mk ) if hk ≡ mk −k+1 ≤ hmax < ∞
+(37)
+This gives makes us confident that the outputs y˙ k of the AIξ model (25) could converge
+to the outputs y˙k from the AIµ model (9), at least for bounded horizon.
+We want to call an AI model universal, if it is µ independent (unbiased, model-free) and
+is able to solve any solvable problem and learn any learnable task. Further, we call a
+universal model, universally optimal, if there is no program, which can solve or learn
+significantly faster (in terms of interaction cycles). As the AIξ model is parameterless,
+ξ converges to µ (37), the AIµ model is itself optimal, and we expect no other model to
+converge faster to AIµ by analogy to SP (22),
+we expect AIξ to be universally optimal.
+This is our main claim. In a sense, the intention of the remaining (sub)sections is to
+define this statement more rigorously and to give further support.
+Intelligence order relation: We define the ξ expected credit in cycles k to m of a
+policy p similar to (1) and (23). We extend the definition to programs p ∈ P˙k which are
+not consistent with the current history.
+ξ
+Ckm
+(p|y˙
+˙x<k ) :=
+
+1
+N
+
+2−l(q) · Ckm (˜
+p, q)
+
+(38)
+
+q:q(y˙ <k )=x˙ <k
+
+The normalization N is again only necessary for interpreting Ckm as the expected credit
+but otherwise unneeded. For consistent policies p ∈ P˙k we define p˜ := p. For p ∈ P˙k , p˜ is a
+modification of p in such a way that its output is consistent with the current history y˙
+˙x<k ,
+˙
+hence p˜ ∈ Pk , but unaltered for the current and future cycles ≥ k. Using this definition
+of Ckm we could take the maximium over all systems p in (23), rather than only the
+consistent ones.
+We call p more or equally intelligent than p′ if
+p
+
+ξ
+ξ
+p′ :⇔ ∀k∀y˙
+˙x<k : Ckm
+(p|y˙
+˙x<k ) ≥ Ckm
+(p′ |y˙
+˙x<k )
+k
+k
+
+(39)
+
+i.e. if p yields in any circumstance higher ξ expected credit than p′ . As the algorithm p∗
+ξ
+behind the AIξ system maximizes Ckm
+we have p∗ p for all p. The AIξ model is hence
+k
+the most intelligent system w.r.t. .
+is a universal order relation in the sense that it
+
+4 THE UNIVERSAL AIξ MODEL
+
+24
+
+is free of any parameters (except mk ) or specific assumptions about the environment. A
+proof, that is a reliable intelligence order (what we believe to be true), would prove that
+AIξ is universally optimal. We could further ask: how useful is
+for ordering policies
+of practical interest with intermediate intelligence, or how can
+help to guide toward
+constructing more intelligent systems with reasonable computation time. An effective
+intelligence order relation c will be defined in section 10, which is more useful from a
+practical point of view.
+Credit bounds and separability concepts: The credits Ckm associated with the AI
+systems correspond roughly to the negative error measure −Enρ of the SP systems. In SP,
+we were interested in small bounds for the error excess EnΘξ −Enρ . Unfortunately, simple
+credit bounds for AIξ in terms of Ckm analog to the error bound (22) do not hold. We
+even have difficulties in specifying what we can expect to hold for AIξ or any AI system
+which claims to be universally optimal. Consequently, we cannot have a proof if we don’t
+know what to prove. In SP, the only important property of µ for proving error bounds
+was its complexity K(µ). We will see that in the AI case, there are no useful bounds in
+terms of K(µ) only. We either have to study restricted problem classes or consider bounds
+depending on other properties of µ, rather than on its complexity only. In the following,
+we will exhibit the difficulties by two examples and introduce concepts which may be
+useful for proving credit bounds. Despite the difficulties in even claiming useful credit
+bounds, we nevertheless, firmly believe that the order relation (39) correctly formalizes the
+intuitive meaning of intelligence and, hence, that the AIξ system is universally optimal.
+In the following, we choose mk = T . We want to compare the true, i.e. µ expected credit
+µ
+C1T
+of a µ independent universal policy pbest with any other policy p. Naively, we might
+µ
+, apart from additive corrections
+expect the existence of a policy pbest which maximizes C1T
+of lower order for T → ∞
+µ
+µ
+C1T
+(pbest ) ≥ C1T
+(p) − o(...) ∀µ, p
+
+(40)
+
+ξ
+ξ
+Note, that the policy p∗ξ of the AIξ system maximizes C1T
+by definition (p∗ξ p). As C1T
+µ
+is thought to be a guess of C1T
+, we might expect pbest = p∗ξ to approximately maximize
+µ
+C1T , i.e. (40) to hold. Let us consider the problem class (set of environments) {µ0 , µ1 }
+with Y = C = {0, 1} and ck = δiy1 in environment µi . The first output y1 decides whether
+you go to heaven with all future credits ck being 1 (good) or to hell with all future credits
+being 0 (bad). It is clear, that if µi , i.e. i is known, the optimal policy p∗µi is to output
+µ
+y1 = i in the first cycle with C1T
+(p∗µi ) = T . On the other hand, any unbiased policy pbest
+independent of the actual µ either outputs y1 = 1 or y1 = 0. Independent of the actual
+choice y1 , there is always an environment (µ = µ1−y1 ) for which this choice is catastrophic
+µ
+(pbest ) = 0). No single system can perform well in both environments µ0 and µ1 . The
+(C1T
+r.h.s. of (40) equals T−o(T ) for p = p∗µ . For all pbest there is a µ for which the l.h.s. is zero.
+We have shown that no pbest can satisfy (40) for all µ and p, so we cannot expect p∗ξ to
+do so. Nevertheless, there are problem classes for which (40) holds, for instance SP and
+CF. For SP, (40) is just a reformulation of (22) with an appropriate choice for pbest (which
+differs from p∗ξ , see next section). We expect (40) to hold for all inductive problems in
+
+4 THE UNIVERSAL AIξ MODEL
+
+25
+
+which the environment is not influenced14 by the output of the system. We want to call
+these µ, passive or inductive environments. Further, we want to call µ satisfying (40) with
+pbest = p∗ξ pseudo passive. So we expect inductive µ to be pseudo passive.
+Let us give a further example to demonstrate the difficulties in establishing credit bounds.
+Let C = {0, 1} and |Y | be large. We consider all (deterministic) environments in which a
+single complex output y ∗ is correct (c = 1) and all others are wrong (c = 0). The problem
+class M is defined by
+M := {µ : µ(yx<k yk 1) = δyk y∗ , y ∗ ∈ Y, K(y ∗) = ⌊ log2 |Y |⌋ }
+×
+
+There are N = |Y | such y ∗. The only way a µ independent policy p can find the correct
+y ∗ , is by trying one y after the other in a certain order. In the first N − 1 cycles at
+most, N −1 different y are tested. As there are N different possible y ∗ , there is always
+a µ ∈ M for which p gives erroneous outputs in the first N − 1 cycles. The number of
+∗
+×
+×
+×
+errors are E∞p ≥ N −1 = |Y | = 2K(y ) = 2K(µ) for this µ. As this is true for any p, it is
+also true for the AIξ model, hence Ekξ ≤ 2K(µ) is the best possible error bound we can
+expect, which depends on K(µ) only. Actually, we will derive such a bound in section 5
+×
+for SP. Unfortunately, as we are mainly interested in the cycle region k ≪ |Y | = 2K(µ)
+(see section 3) this bound is trivial. There are no interesting bounds depending on K(µ)
+only, unlike the SP case for deterministic µ. Bounds must either depend on additional
+properties of µ or we have to consider specialized bounds for restricted problem classes.
+The case of probabilistic µ is similar. Whereas for SP there are useful bounds in terms of
+Ekµ and K(µ), there are no such bounds for AIξ. Again, this is not a drawback of AIξ
+since for no unbiased AI system the errors/credits could be bound in terms of K(µ) and
+the errors/credits of AIµ only.
+There is a way to make use of gross (e.g. 2K(µ) ) bounds. Assume that after a reasonable
+number of cycles k, the information x˙ <k perceived by the AIξ system contains a lot of
+information about the true environment µ. The information in x˙ <k might be coded in
+any form. Let us assume that the complexity K(µ|x˙ <k ) of µ under the condition that
+x˙ <k is known, is of order 1. Consider a theorem, bounding the sum of credits or of other
+quantities over cycles 1...∞ in terms of f (K(µ)) for a function f with f (O(1)) = O(1), like
+f (n) = 2n . Then, there will be a bound for cycles k...∞ in terms of f (K(µ|x˙ <k )) = O(1).
+Hence, a bound like 2K(µ) can be replaced by small bound 2K(µ|x˙ <k ) = O(1) after a reasonable number of cycles. All one has to show/ensure/assume is that enough information
+about µ is presented (in any form) in the first k cycles. In this way, even a gross bound
+could become useful. In section 8 we use a similar argument to prove that AIξ is able to
+learn supervised.
+In the following, we weaken (40) in the hope of getting a bound applicable to wider
+problem classes than the passive one. Consider the I/O sequence y˙ 1 x˙ 1 ...y˙n x˙ n caused by
+˙x<k , AIξ will output y˙ k ≡ y˙kξ in cycle k. Let us compare this to y˙ kµ what
+AIξ. On history y˙
+AIµ would output, still on the same history y˙
+˙x<k produced by AIξ. As AIµ maximizes
+14
+
+Of course, the credit feedback ck depends on the system’s output. What we have in mind is, like in
+sequence prediction, that the true sequence is not influenced by the system
+
+4 THE UNIVERSAL AIξ MODEL
+
+26
+
+µ
+the µ expected credit, AIξ causes lower (or at best equal) Ckm
+, if y˙ kξ differs from y˙ kµ. Let
+k
+n
+Dnµξ :=
+k=1 1 − δy˙ kµ ,y˙ kξ µ be the µ expected number of suboptimal choices of AIξ, i.e.
+outputs different from AIµ in the first n cycles. One might weigh the deviating cases by
+µ
+their severity. Especially when the µ expected credits Ckm
+for y˙ kξ and y˙ kµ are equal or
+k
+close to each other, this should be taken into account in the definition of Dnµξ . These
+details do not matter in the following qualitative discussion. The important difference
+to (40) is that here we stick on the history produced by AIξ and count a wrong decision
+as, at most, one error. The wrong decision in the Heaven&Hell example in the first cycle
+no longer counts as losing T credits, but counts as one wrong decision. In a sense, this
+is fairer. One shouldn’t blame somebody too much who makes a single wrong decision
+for which he just has too little information available, in order to make a correct decision.
+The AIξ model would deserve to be called asymptotically optimal, if the probability of
+making a wrong decision tends to zero, i.e. if
+
+Dnµξ /n → 0 for n → ∞,
+
+i.e. Dnµξ = o(n).
+
+(41)
+
+We say that µ can be asymptotically learned (by AIξ) if (41) is satisfied. We claim
+that AIξ (for mk → ∞) can asymptotically learn every problem µ of relevance, i.e. AIξ
+is asymptotically optimal. We included the qualifier of relevance, as we are not sure
+whether there could be strange µ spoiling (41) but we expect those µ to be irrelevant
+from the perspective of AI. In the field of Learning, there are many asymptotic learnability
+theorems, often not too difficult to prove. So a proof of (41) might also be accessible.
+Unfortunately, asymptotic learnability theorems are often too weak to be useful from a
+practical point. Nevertheless, they point in the right direction.
+ξ
+µ
+From the convergence (37) of µ → ξ we might expect Ckm
+→ Ckm
+and hence, y˙kξ defined in
+k
+k
+(25) to converge to y˙kµ defined in (9) with µ probability 1 for k → ∞. The first problem is,
+ξ
+µ
+that if the Ckmk for the different choices of yk are nearly equal, then even if Ckm
+≈ Ckm
+,
+k
+k
+ξ
+µ
+y˙ k = y˙k is possible due to the non-continuity of maxargyk . This can be cured by a weighted
+Dnµξ as described above. More serious is the second problem we explain for hk = 1 and
+X = C = {0, 1}. For y˙ kξ ≡ maxargyk ξ(y˙
+˙c<k yk 1) to converge to y˙kµ ≡ maxargyk µ(y˙
+˙c<k yk 1), it
+is not sufficient to know that ξ(y˙
+˙c<k y˙
+˙ck ) → µ(y˙
+˙c<k y˙
+˙ck ) as has been proved in (37). We need
+convergence not only for the true output y˙ k and credit c˙k , but also for alternate outputs
+yk and credit 1. y˙ kξ converges to y˙ kµ if ξ converges uniformly to µ, i.e. if in addition to (37)
+
+|µ(yx<k yk′ x′k ) − ξ(yx<k yk′ x′k )| < c·|µ(yx<k yxk ) − ξ(yx<k yxk )| ∀yk′ x′k
+
+(42)
+
+holds for some constant c (at least in some µ expected sense). We call µ satisfying (42)
+uniform. For uniform µ one can show (41) with appropriately weighted Dnµξ and bounded
+horizon hk < hmax . Unfortunately there are relevant µ which are not uniform. Details will
+be given elsewhere.
+In the following, we briefly mention some further concepts. A Markovian µ is defined
+as depending only on the last output, i.e. µ(yx<k yxk ) = µk (yxk ). We say µ is generalized
+Markovian, if µ(yx<k yxk ) = µk (yxk−l:k−1yxk ) for fixed l. This property has some similarities
+to factorizable µ defined in (15). If further µk ≡ µ1 ∀k, µ is called stationary. Further,
+for all enumerable µ, µ(yx<k yxk ) and ξ(yx<k yxk ) get independent of yx<l for fixed l and
+
+4 THE UNIVERSAL AIξ MODEL
+
+27
+
+k → ∞ with µ probability 1. This property, which we want to call forgetfulness, will be
+(m )
+proved elsewhere. Further, we say µ is farsighted, if limmk →∞ y˙k k exists. More details
+will be given in the next subsection, where we also give an example of a possibly relevant
+µ, which is not farsighted.
+We have introduced several concepts, which might be useful for proving credit bounds,
+including forgetful, relevant, asymptotically learnable, farsighted, uniform, (generalized)
+Markovian, factorizable and (pseudo) passive µ. We have sorted them here, approximately
+in the order of decreasing generality. We want to call them separability concepts. The more
+general (like relevant, asymptotically learnable and farsighted) µ will be called weakly
+separable, the more restrictive (like (pseudo) passive and factorizable) µ will be called
+strongly separable, but we will use these qualifiers in a more qualitative, rather than rigid
+sense. Other (non-separability) concepts are deterministic µ and, of course, the class of
+all chronological µ.
+The choice of the horizon: The only significant arbitrariness in the AIξ model lies
+in the choice of the horizon function hk ≡ mk −k+1. We discuss some choices which seem
+to be natural and give preliminary conclusions at the end. We will not discuss ad hoc
+choices of hk for specific problems (like the discussion in section 6 in the context of finite
+games). We are interested in universal choices of mk .
+If the lifetime of the system is known to be T , which is in practice always large but finite,
+then the choice mk = T maximizes correctly the expected future credit. T is usually not
+known in advance, as in many cases the time we are willing to run a system depends
+on the quality of its outputs. For this reason, it is often desirable that good outputs
+are not delayed too much, if this results in a marginal credit increase only. This can be
+incorporated by damping the future credits. If, for instance, we assume that the survival
+of the system in each cycle is proportional to the past credit an exponential damping
+ck := c′k ·e−λk is appropriate, where c′k are bounded, e.g. c′k ∈ [0, 1]. The expression (25)
+converges for mk → ∞ in this case. But this does not solve the problem, as we introduced
+a new arbitrary time-scale 1/λ . Every damping introduces a time-scale.
+Even the time-scale invariant damping factor k −α introduces a dynamic time-scale. In
+cycle k the contribution of cycle 21/α·k is damped by a factor 21 . The effective horizon hk in
+this case is ∼ k. The choice hk = β·k with β ∼ 21/α qualitatively models the same behaviour.
+We have not introduced an arbitrary time-scale T , but limited the farsightedness to some
+multiple (or fraction) of the length of the current history. This avoids the pre-selection
+of a global time-scale T or 1/λ . This choice has some appeal, as it seems that humans
+of age k years usually do not plan their lives for more than, perhaps, the next k years
+(βhuman = 1). From a practical point of view this model might serve all needs, but from
+a theoretical point we feel uncomfortable with such a limitation in the horizon from the
+very beginning. Note, that we have to choose β = O(1) because otherwise we would again
+introduce a number β, which has to be justified.
+The naive limit mk → ∞ in (25) may turn out to be well defined and the previous discussion
+superfluous. In the following, we define a limit which is always well defined (for finite |Y |).
+
+4 THE UNIVERSAL AIξ MODEL
+
+28
+
+(m)
+(m)
+(m)
+Let y˙ k be defined as in (25) with mk replaced by m. Further, let Y˙ k := { y˙ k : mk ≥ m}
+be the set of outputs in cycle k for the choices mk = m, m + 1, m + 2, .... Because
+(m)
+(m+1)
+(∞)
+˙ (m) = {}. We define the mk = ∞ model to
+Y˙ k ⊇ Y˙ k
+= {}, we have Y˙ k := ∞
+m=k Yk
+(∞)
+(∞)
+output any y˙ k ∈ Y˙ k . This is the best output consistent with any choice of mk , esp.
+(∞)
+(∞)
+mk → ∞. Choosing the lexicographically smallest y˙k ∈ Y˙ k
+would correspond to the
+(m)
+(∞)
+(∞)
+(m)
+˙
+limes inferior limm→∞ y˙k . y˙k is unique, i.e. |Yk | = 1 iff the naive limit limm→∞ y˙ k
+∗
+exists. Note, that the limit limm→∞ Ckm
+(yx<k ) needs not to exist for this construction.
+
+The construction above leads to a mathematically elegant, no-parameter AIξ model. Unfortunately this is not the end of the story. The limit mk → ∞ can cause undesirable
+results in the AIµ model for special µ which might also happen in the AIξ model whatever we define mk → ∞. Consider Y = C = {0, 1} and X ′ = {}. Output yk = 0 shall give
+credit ck = 0, output yk = 1 shall give ck = 1 iff y˙ k−l−√l ...y˙k−l = 0...0 for some l. I.e. the
+system can achieve l consecutive positive credits if there was a sequence of length at least
+√
+l with yk = ck = 0. If the lifetime of the AIµ system is T , it outputs y˙k = 0 in the first
+r cycles and then y˙ k = 1 for the remaining r 2 cycles with r such that r + r 2 = T . This
+will lead to the highest possible total credit C1T = T +1/4 −1/2 . Any fragmentation of
+the 0 and 1 sequences would reduce this. For T → ∞ the AIµ system can and will delay
+the point r of switching to y˙ k = 1 indefinitely and always output 0 with total credit 0,
+obviously the worst possible behaviour. The AIξ system will explore the above rule after
+a while of trying yk = 0/1 and then applies the same behaviour as the AIµ system, since
+the simplest rules covering past data dominate ξ. For finite T this is exactly what we
+want, but for infinite T the AIξ model fails just as the AIµ model does. The good point
+is, that this is not a weakness of the AIξ model, as AIµ fails too and no system can be
+better than AIµ. The bad point is that mk → ∞ has far reaching consequences, even when
+starting from an already very large mk = T . The reason being that the µ of this example
+is highly non-local in time, i.e. it may violate one of our weak separability conditions.
+In the last paragraph we have considered the consequences of mk → ∞ in the AIµ model.
+We now consider whether the AIξ model is a good approximation of the AIµ model for
+large mk . Another objection against too large choices of mk is that ξ(yx<k yxk:mk ) has
+been proved to be a good approximation of µ(yx<k yxk:mk ) only for k ≫ hk , which is never
+satisfied for mk = T or mk = ∞. We have seen that, for factorizable µ, the limit hk → ∞
+causes no problem, as from a certain hk on the output y˙ k is independent of hk . As ξ → µ
+for bounded hk , ξ will develop this separability property too. So, from a certain k0 on
+the limit hk → ∞ might also be safe for ξ. Therefore, taking the limit from the very
+beginning worsens the behaviour of AIξ maybe only for finitely many cycles k ≤ k0 , which
+would be acceptable. We suppose that the valuations ck′ for k ′ ≫ k, where ξ can no
+longer be trusted as a good approximation to µ, are in some sense randomly disturbed
+with decreasing influence on the choice of y˙ k . This claim is supported by the forgetfulness
+property of ξ.
+We are not sure whether the choice of mk is of marginal importance, as long as mk is
+16
+chosen sufficiently large and of low complexity, mk = 22 for instance, or whether the
+choice of mk will turn out to be a central topic for the AIξ model or for the planning
+aspect of any AI system in general. We suppose that the limit mk → ∞ for the AIξ model
+
+4 THE UNIVERSAL AIξ MODEL
+
+29
+
+results in correct behaviour for weakly separable µ, and that even the naive limit exists,
+but to prove this would probably give interesting insights.
+
+5 SEQUENCE PREDICTION (SP)
+
+5
+
+30
+
+Sequence Prediction (SP)
+
+We have introduced the AIξ model as a unification of the ideas of decision theory and
+universal probability distribution. We might expect AIξ to behave identically to SPΘξ ,
+when faced with a sequence prediction problem, but things are not that simple, as we will
+see.
+Using the AIµ Model for Sequence Prediction: We have seen in the last section
+how to predict sequences for known and unknown prior distribution µSP . Here we consider
+binary sequences15 z1 z2 z3 ... ∈ IB ∞ with known prior probability µSP (z1 z2 z3 ...).
+We want to show how the AIµ model can be used for sequence prediction. We will see
+that it gives the same prediction as the SPΘµ system. First, we have to specify how the
+AIµ model should be used for sequence prediction. The following choice is natural:
+The systems output yk is interpreted as a prediction for the k th bit zk of the string, which
+has to be predicted. This means that yk is binary (yk ∈ IB =: Y ). As a reaction of the
+environment, the system receives credit ck = 1 if the prediction was correct (yk = zk ), or
+ck = 0 if the prediction was erroneous (yk = zk ). The question is what the input x′k of the
+next cycle should be. One choice would be to inform the system about the correct k th bit
+of the last cycle of the string and set x′k = zk . But as from the credit ck in conjunction with
+the prediction yk , the true bit zk = δyk ck can be inferred, this information is redundant.
+δ is the Kronecker symbol, defined as δab = 1 for a = b and 0 otherwise. There is no
+need for this additional feedback. So we set x′k = ǫ ∈ X = {ǫ} thus having xk ≡ ck . The
+system’s performance does not change when we include this redundant information, it
+merely complicates the notation. The prior probability µAI of the AIµ model is
+µAI (y1 x1 ...yk xk ) = µAI (y1 c1 ...yk ck ) = µSP (δy1 c1 ...δyk ck ) = µSP (z1 ...zk )
+
+(43)
+
+In the following, we will drop the superscripts of µ because they are clear from the
+arguments of µ and the µ equal in any case.
+The formula (7) for the expected credit reduces to
+∗
+[ck + Ck+1,m
+(yx1:k )]·µ(δy1c1 ...δyk−1 ck−1 δyk ck )
+
+∗
+Ckm
+(yx<k ) = max
+yk
+
+(44)
+
+ck
+
+∗
+The first observation we can make, is that for this special µ, Ckm
+only depends on δyi ci , i.e.
+replacing yi and ci simultaneously with their complements does not change the value of
+∗
+∗
+Ckm
+. We have a symmetry in yi ci . For k = m+1 this is definitely true as Cm+1,m
+= 0 in this
+case (see (6)). For k ≤ m we prove it by induction. The r.h.s. of (44) is symmetric in yi ci for
+∗
+i < k because µ possesses this symmetry and Ck+1,m
+possesses it by induction hypothesis,
+so the symmetry holds for the l.h.s., which completes the proof. The prediction y˙ k is
+∗
+y˙k = maxarg Ckm
+(y˙
+˙x<k yk ) = maxarg
+k
+yk
+
+15
+
+yk
+
+ck
+
+∗
+[ck + Ck+1,m
+(yx1:k )]·µ(...δyk ck ) =
+k
+
+We use zk to avoid notational conflicts with the systems inputs xk .
+
+(45)
+
+5 SEQUENCE PREDICTION (SP)
+= maxarg
+yk
+
+ck
+
+31
+
+ck ·µ(δy˙1c˙1 ...δyk ck ) = maxarg µ(z˙1 ...z˙k−1 y k ) = maxarg µ(z˙1 ...z˙k−1 z k )
+yk
+
+zk
+
+The first equation is the definition of the system’s prediction (8). In the second equation,
+we have inserted (5) which gives the r.h.s. of (44) with maxyk replaced by maxargyk .
+c f (...δyc ...) is independent of y for any function, depending on the combination δyc only.
+∗
+as well as µ depend on
+Therefore, the c C ∗ µ term is independent of yk because Ck+1,m
+δyk ck only. In the third equation, we can therefore drop this term, as adding a constant to
+the argument of maxargyk does not change the location of the maximum. In the second
+last equation we evaluated the ck . Further, if the true credit to y˙i is c˙i the true ith bit
+of the string must be z˙i = δy˙i c˙i . The last equation is just a renaming.
+So, the AIµ model predicts that zk that has maximal µ probability, given z˙1 ...z˙k−1 . This
+prediction is independent of the choice of mk . It is exactly the prediction scheme of the
+deterministic sequence prediction with known prior SPΘµ described in the last section.
+As this model was optimal, AIµ is optimal, too, i.e. has minimal number of expected
+errors (maximal expected credit) as compared to any other sequence prediction scheme.
+From this, it is already clear that the total expected credit Ckm must be related to the
+expected sequence prediction error EmΘµ (21). Let us prove directly that C1m (ǫ)+EmΘµ =
+∗
+m. We rewrite Ckm
+in (44) as a function of zi instead of yi ci as it is symmetric in yici .
+∗
+Further, we can pull Ckm
+out of the maximization, as it is independent of yk similar to
+(45). Renaming the bounded variables yk and ck we get
+∗
+Ckm
+(z<k ) = max µ(z<k z k ) +
+zk
+
+zk
+
+∗
+Ck+1,m
+(z1:k )·µ(z<k z k )
+
+(46)
+
+Recursively inserting the l.h.s. into the r.h.s. we get
+m
+∗
+Ckm
+(z<k ) =
+
+max µ(z<k zk:i )
+
+(47)
+
+zi
+i=k zk:i−1
+
+∗
+This is most easily proven by induction. For k = m we have Cmm
+(z<m ) = maxzm µ(z<m z m )
+from (46) and (6), which equals (47). By induction hypothesis, we assume that (47) is
+true for k. Inserting this into (46) we get
+
+∗
+Ckm
+(z<k ) = max µ(z<k z k ) +
+zk
+
+zk
+
+
+
+
+i=k+1 zk+1:i−1
+
+= max
+µ(z<k z k ) +
+z
+k
+
+m
+
+m
+i=k+1 zk:i−1
+
+
+
+max µ(z1:k z k+1:i ) µ(z<k z k ) =
+zi
+
+max
+µ(z<k z k:i)
+z
+i
+
+which equals (47). This was the induction step and hence (47) is proven.
+By setting k = 0 and slightly reformulating (47), we get the total expected credit in the
+first m cycles
+m
+∗
+C1:m
+(ǫ) =
+
+i=1 z<i
+
+with EmΘµ defined in (21).
+
+µ(z <i ) max{µ(z<i0), µ(z<i 1)} = m − EmΘµ
+
+5 SEQUENCE PREDICTION (SP)
+
+32
+
+Using the AIξ Model for Sequence Prediction: Now we want to use the universal
+AIξ model instead of AIµ for sequence prediction and try to derive error bounds analog to
+(22). Like in the AIµ case, the systems output yk in cycle k is interpreted as a prediction
+for the kth bit zk of the string, which has to be predicted. The credit is ck = δyk zk and
+there are no other inputs xk = ǫ. What makes the analysis more difficult is that ξ is
+not symmetric in yi ci ↔ (1 − yi )(1 − ci ) and (43) does not hold for ξ. On the other
+hand, ξ AI converges to µAI in the limit (37), and (43) should hold asymptotically for ξ
+in some sense. So we expect that everything proven for AIµ holds approximately for AIξ.
+The AIξ model should behave similarly to SPΘξ , the deterministic variant of Solomonoff
+prediction. Especially we expect error bounds similar to (22). Making this rigorous seems
+difficult. Some general remarks have been made in the last section.
+Here we concentrate on the special case of a deterministic computable environment, i.e.
+the environment is a sequence z˙ = z˙1 z˙2 ..., K(z˙1 ...z˙n ∗) ≤ K(z)
+˙ < ∞. Furthermore, we only
+consider the simplest horizon model mk = k, i.e. maximize only the next credit. This is
+sufficient for sequence prediction, as the credit of cycle k only depends on output yk and
+not on earlier decisions. This choice is in no way sufficient and satisfactory for the full
+AIξ model, as one single choice of mk should serve for all AI problem classes. So AIξ
+should allow good sequence prediction for some universal choice of mk and not only for
+mk = k, which definitely does not suffice for more complicated AI problems. The analysis
+of this general case is a challenge for the future. For mk = k the AIξ model (25) with
+x′i = ǫ reduces to
+y˙ k = maxarg
+yk
+
+ck
+
+ck ·ξ(y˙
+˙c<k yck ) = maxarg ξ(y˙
+˙c<k yk 1)
+˙c<k yk 1) = maxarg ξ(y˙
+yk
+
+yk
+
+(48)
+
+The environmental response c˙k is given by δy˙k z˙k ; it is 1 for a correct prediction (y˙ k = z˙k )
+and 0 otherwise. In the following, we want to bound the number of errors this prediction
+scheme makes. We need the following inequality
+ξ(yc1 ...yck ) > 2−K(δy1c1 ...δyk ck ∗)−O(1)
+
+(49)
+
+We have to find a short program in the sum (24) calculating c1 ...ck from y1 ...yk . If we
+knew zi := δyi ci for 1 ≤ i ≤ k a program of size O(1) could calculate c1 ...ck = δy1 z1 ...δyk zk .
+So combining this program with a shortest coding of z1 ...zk leads to a program of size
+K(z1 ...zk ∗)+O(1), which proves (49).
+Let us now assume that we make a wrong prediction in cycle k, i.e. c˙k = 0, y˙k = z˙k . The
+goal is to show that ξ˙ defined by
+ξ˙k := ξ(y˙
+˙c1:k ) = ξ(y˙ c˙<k y˙k 0) ≤ ξ(y˙ c˙<k ) − ξ(y˙ c˙<k y˙ k 1) < ξ˙k−1 − α
+decreases for every wrong prediction, at least by some α. The ≤ arises from the fact that
+ξ is only a semimeasure.
+×
+
+˙ > ξ(y˙ 1c˙1 ...(1− y˙ k )1) > 2−K(δy˙ 1 c˙1 ...δ(1−y˙ k )1 ∗) =
+ξ(y˙
+˙c1 ...y1)
+˙
+= 2−K(z˙1...z˙k ∗) > 2−K(z)−O(1)
+=: α
+
+5 SEQUENCE PREDICTION (SP)
+
+33
+
+In the first inequality we have used the fact that y˙ k maximizes by definition (48) the
+argument, i.e. 1− y˙ k has lower probability than y˙ k . (49) has been applied in the second
+inequality. The equality holds, because z˙i = δy˙i c˙i and δ(1−y˙k )1 = δy˙k 0 = δy˙k c˙k = z˙k . The last
+inequality follows from the definition of z.
+˙
+We have shown that each erroneous prediction reduces ξ˙ by at least the α defined above.
+Together with ξ˙0 = 1 and ξ˙k > 0 for all k this shows that the system can make at most 1/α
+errors, since otherwise ξ˙k would become negative. So the number of wrong predictions
+AI
+Enξ
+of system (48) is bounded by
+AI
+Enξ
+<
+
+1
+α
+
+˙
+= 2K(z)+O(1)
+< ∞
+
+(50)
+
+for a computable deterministic environment string z˙1 z˙2 .... The intuitive interpretation is
++
+that each wrong prediction eliminates at least one program p of size l(p) < K(z).
+˙ The
+size is smaller than K(z),
+˙ as larger policies could not mislead the system to a wrong
+prediction, since there is a program of size K(z)
+˙ making a correct prediction. There are
+K(z)+O(1)
+˙
+such policies, which bounds the total number of errors.
+at most 2
+AI
+We have derived a finite bound for Enξ
+, but unfortunately, a rather weak one as compared
+to (22). The reason for the strong bound in the SP case was that every error at least
+halves ξ˙ because the sum of the maxargxk arguments was 1. Here we have
+
+ξ(y˙ 1c˙1 ...y˙ k−1c˙k−1 00) + ξ(y˙ 1c˙1 ...y˙ k−1c˙k−1 01) = 1
+ξ(y˙ 1c˙1 ...y˙ k−1c˙k−1 10) + ξ(y˙ 1c˙1 ...y˙ k−1c˙k−1 11) = 1
+but maxargyk runs over the right top and right bottom ξ, for which no sum criterion
+holds.
+The AIξ model would not be sufficient for realistic applications if the bound (50) were
+sharp, but we have the strong feeling (but only weak arguments) that better bounds proportional to K(z)
+˙ analog to (22) exist. The technique used above may not be appropriate
+for achieving this. One argument for a better bound is the formal similarity between
+maxargzk (z˙<k zk ) and (48), the other is that we were unable to construct an example
+sequence for which (48) makes more than O(K(z))
+˙ errors.
+
+6 STRATEGIC GAMES (SG)
+
+6
+
+34
+
+Strategic Games (SG)
+
+Introduction: A very important class of problems are strategic games, like chess. In
+fact, what is subsumed under game theory nowadays, is so general, that it includes not
+only a huge variety of games, from simple games of chance like roulette, combined with
+strategy like Backgammon, up to purely strategic games like chess or checkers or go.
+Game theory can also describe political and economic competitions and coalitions, even
+Darwinism and many more have been modeled within game theory. It seems that nearly
+every AI problem could be brought into the form of a game. Nevertheless, the intention of
+a game is that several players perform some actions with (partial) observable consequences.
+The goal of each player is to maximize some utility function (e.g. to win the game). The
+players are assumed to be rational, taking into account all information they posses. The
+different goals of the players are usually in conflict. For an introduction into game theory,
+see [10, 26, 31, 40].
+If we interpret the AI system as one player and the environment models the other rational player and the environment provides the reinforcement feedback ck , we see that the
+system-environment configuration satisfies all criteria of a game. On the other hand, we
+know that the AI system can handle more general situations, since it interacts optimally
+with an environment, even if the environment is not a rational player with conflicting
+goals.
+Strictly competitive strategic games: In the following, we restrict ourselves to deterministic, strictly competitive strategic16 games with alternating moves. Player 1 makes
+move yk′ in round k, followed by the move x′k of player 2. So a game with n rounds consists
+of a sequence of alternating moves y1′ x′1 y2′ x′2 ...yn′ x′n . At the end of the game in cycle n the
+game or final board state is evaluated with C(y1′ x′1 ...yn′ x′n ). Player 1 tries to maximize
+C, whereas player 2 tries to minimize C. In the simplest case, C is 1 if player 1 won the
+game, C = −1 if player 2 won and C = 0 for a draw. We assume a fixed game length n
+independent of the actual move sequence. For games with variable length but maximal
+possible number of moves n, we could add dummy moves and pad the length to n. The
+optimal strategy (Nash equilibrium) of both players is a minimax strategy
+... max
+min
+C(y˙1′ x˙ ′1 ...y˙k′ x′k ...yn′ x′n )
+min
+x˙ ′k = minarg max
+′
+′
+′
+′
+
+(51)
+
+′
+... max
+min
+C(y˙ 1′ x˙ ′1 ...y˙k−1
+x˙ ′k−1 yk′ x′k ...yn′ x′n )
+y˙ k′ = maxarg min
+′
+′
+′
+
+(52)
+
+x′k
+
+yk′
+
+yn
+
+yk+1 xk+1
+
+xk
+
+yn
+
+xn
+
+xn
+
+But note, that the minimax strategy is only optimal if both players behave rationally.
+If, for instance, player 2 has limited capabilites or makes errors and player 1 is able to
+discover these (through past moves) he could exploit these and improve his performance
+by deviating from the minimax strategy. At least, the classical game theory of Nash
+equilibria does not take into account limited rationality, whereas the AIξ system should.
+16
+
+In game theory, games like chess are often called ’extensive’, whereas ’strategic’ is reserved for a
+different kind of game.
+
+6 STRATEGIC GAMES (SG)
+
+35
+
+Using the AIµ model for game playing: In the following, we demonstrate the
+applicability of the AI model to games. The AI system takes the position of player 1.
+The environment provides the evaluation C. For a symmetric situation we could take a
+second AI system as player 2, but for simplicity we take the environment as the second
+player and assume that this environmental player behaves according to the minimax
+strategy (51). The environment serves as a perfect player and as a teacher, albeit a very
+crude one as it tells the system at the end of the game, only whether it won or lost.
+The minimax behaviour of player 2 can be expressed by a (deterministic) probability
+distribution µSG as the following
+µ
+
+SG
+
+(y1′ x′1 ...yn′ x′n )
+
+:=
+
+
+
+
+
+1 if x′k = minarg ... max
+min
+C(y1′ ...x′k−1 yk′′ ...xn′′ ) ∀ 1 ≤ k ≤ n
+′′
+′′
+yn
+
+x′′
+k
+
+xn
+
+0 otherwise
+
+The probability that player 2 makes move
+defined in (51) and 0 otherwise.
+
+xk′
+
+is µ
+
+SG
+
+(y˙ 1′x˙ 1′ ...y˙k′ x′k )
+
+which is 1 for
+
+(53)
+as
+
+x′k = x˙ ′k
+
+Clearly, the AI system receives no feedback, i.e. c1 = ... = cn−1 = 0, until the end of the
+game, where it should receive positive/negative/neutral feedback on a win/loss/draw, i.e.
+cn = C(...). The environmental prior probability is therefore
+µSG (y1′ x′1 ...yn′ x′n ) if c1 = ... = cn−1 = 0 and cn = C(y1′ x′1 ...yn′ xn′ )
+0
+otherwise
+(54)
+where yi = yi′ and xi = ci x′i . If the environment is a minimax player (51) plus a crude
+teacher C, i.e. if µAI is the true prior probability, the question now is, what is the
+behaviour y˙kAI of the AIµ system. It turns out that if we set mk = n the AIµ system is
+also a minimax player (52) and hence optimal
+µAI (y1 x1 ...yn xn ) =
+
+y˙kAI = maxarg
+yk
+
+= maxarg
+yk
+
+yn
+
+x′k
+
+... max
+x′k
+
+C(y˙
+˙x′<k yx′k:n )·µSG (y˙
+˙x′<k yx′k:n ) =
+
+... max
+
+yn−1
+
+x′n−1
+
+′
+xn
+
+C(y˙
+˙x′<k yx′k:n )·µSG(y˙
+˙x′<k yx′k:n−1) =
+max min
+′
+yn
+
+xn
+
+(55)
+
+C(y˙
+˙x′<k yx′k:n ) = y˙ kSG
+= ... = maxarg min
+... max min
+′
+′
+yk
+
+xk+1
+
+yn
+
+xn
+
+In the first line we inserted mk = n and (54) into the definition (9) of y˙ kAI . This removes all sums over the ck . Further, the sum over x′n gives only a contribution for
+x′n = minargx′n C(x˙ ′1 y˙ 1′ ...x′n yn′ ) by definition (53) of µSG . Inserting this x′n gives the second
+line. µSG is effectively reduced to a lower number of arguments and the sum over xn′ replaced by minx′n . Repeating this procedure for x′n−1 , ..., x′k+1 leads to the last line, which
+is just the minimax strategy of player 1 defined in (52).
+Let us now assume that the game under consideration is played s times. The prior
+probability then is
+µAI (yx1 ...yxsn ) =
+
+s−1
+r=0
+
+µAI
+1 (yxrn+1 ...yx(r+1)n )
+
+(56)
+
+6 STRATEGIC GAMES (SG)
+
+36
+
+where we have renamed the prior probability (54) for one game to µAI
+1 . (56) is a special
+case of a factorizable µ (15) with identical factors µr = µAI
+for
+all
+r
+and equal episode
+1
+lengths nr+1 −nr = n. The AIµ system (56) for repeated game playing also implements
+the minimax strategy,
+... max min
+y˙kAI = maxarg min
+C(y˙
+˙x′rn+1:k−1...yx′k:(r+1)n )
+′
+′
+yk
+
+xk
+
+y(r+1)n x
+(r+1)n
+
+(57)
+
+with r such that rn < k ≤ (r+1)n and for any choice of mk as long as the horizon hk ≥ n.
+This can be proved by using (16) and (55). See section (4) for a discussion on separable
+and factorizable µ.
+Games of variable length: In the unrepeated case we have argued that games of
+variable but bounded length can be padded to a fixed length without effect. We now
+analyze in a sequence of games the effect of replacing the games with fixed length by
+games of variable length. The sequence y1′ x′1 ...yn′ x′n can still be grouped into episodes
+corresponding to the moves of separated consecutive games, but now the length and
+total number of games that fit into the n moves depend on the actual moves taken17 .
+C(y1′ x′1 ...yn′ x′n ) equals the number of games where the system wins, minus the number of
+games where the environment wins. Whenever a loss, win or draw has been achieved by
+the system or the environment, a new game starts. The player whose turn it would next
+be, begins the next game. The games are still separated in the sense that the behaviour
+and credit of the current game does not influence the next game. On the other hand,
+they are slightly entangled, because the length of the current game determines the time
+of start of the next. As the rules of the game are time invariant, this does not influence
+the next game directly. If we play a fixed number of games, the games are completely
+independent, but if we play a fixed number of total moves n, the number of games depends
+on their lengths. This has the following consequences: the better player tries to keep the
+games short, to win more games in the given time n. The poorer player tries to draw
+the games out, in order loose less games. The better player might further prefer a quick
+draw, rather than to win a long game. Formally, this entanglement is represented by the
+fact that the prior probability µ does no longer factorize. The reduced form (57) of y˙ kAI
+to one episode is no longer valid. Also, the behaviour y˙kAI of the system depends on mk ,
+even if the horizon hk is chosen larger than the longest possible game (unless mk ≥ n).
+The important point is that the system realizes that keeping games short/long can lead to
+increased credit. In practice, a horizon much larger than the average game length should
+be sufficient to incorporate this effect. The details of games in the distant future do not
+affect the current game and can, therefore, be ignored. A more quantitative analysis could
+be interesting, but would lead us too far astray.
+Using the AIξ model for game playing: When going from the specific AIµ model,
+where the rules of the game have been explicitly modeled into the prior probability µAI ,
+to the universal model AIξ we have to ask whether these rules can be learned from the
+17
+
+If the sum of game lengths do not fit exactly into n moves, we pad the last game appropriately.
+
+6 STRATEGIC GAMES (SG)
+
+37
+
+assigned credits ck . Here, another (actually the main) reason for studying the case of
+repeated games, rather than just one game arises. For a single game there is only one
+cycle of non-trivial feedback namely the end of the game - too late to be useful except
+when there are further games following.
+Even in the case of repeated games, there is only very limited feedback, at most log2 3 bits
+of information per game if the 3 outcomes win/loss/draw have the same frequency. So
+there are at least O(K(game)) number of games necessary to learn a game of complexity
+K(game). Apart from extremely simple games, even this estimate is far too optimistic.
+As the AIξ system has no information about the game to begin with, its moves will be
+more or less random and it can win the first few games merely by pure luck. So the
+probability that the system looses is near to one and hence the information content I in
+the feedback ck at the end of the game is much less than log2 3. This situation remains
+for a very large number of games. On the other hand, in principle, every game should be
+learnable after a very long sequence of games even with this minimal feedback only, as
+long as I ≡ 0.
+The important point is that no other learning scheme with no extra information can learn
+the game more quickly. We expect this to be true as µAI factorizes in the case of games of
+fixed length, i.e. µAI satisfies a strong separability condition. In the case of variable game
+length the entanglement is also low. µAI should still be sufficiently separable allowing to
+formulate and prove good credit bounds for AIξ.
+To learn realistic games like tic-tac-toe (noughts and crosses) in realistic time one has to
+provide more feedback. This could be achieved by intermediate help during the game. The
+environment could give positive(negative) feedback for every good(bad) move the system
+makes. The demand on whether a move is to be valued as good should be adopted to the
+gained experience of the system in such a way that approximately half of the moves are
+valuated as good and the other half as bad, in order to maximize the information content
+of the feedback.
+For more complicated games like chess, even more feedback is necessary from a practical
+point of view. One way to increase the feedback far beyond a few bits per cycle is to train
+the system by teaching it good moves. This is called supervised learning. Despite the fact
+that the AI model has only a credit feedback ck , it is able to learn by teaching, as will be
+shown in section 8. Another way would be to start with more simple games containing
+certain aspects of the true game and to switch to the true game when the system has
+learned the simple game.
+No other difficulties are expected when going from µ to ξ. Eventually ξ AI will converge
+to the minimax strategy µAI . In the more realistic case, where the environment is not a
+perfect minimax player, AIξ can detect and exploit the weakness of the opponent.
+Finally, we want to comment on the input/output space X/Y of the AI system. In
+practical applications, Y will possibly include also illegal moves. If Y is the set of moves
+of e.g. a robotic arm, the system could move a wrong figure or even knock over the figures.
+A simple way to handle illegal moves yk is by interpreting them as losing moves, which
+terminate the game. Further, if e.g. the input xk is the image of a video camera which
+
+6 STRATEGIC GAMES (SG)
+
+38
+
+makes one shot per move, X is not the set of moves by the environment but includes the
+set of states of the game board. The discussion in this section handles this case as well.
+There is no need to explicitly design the systems I/O space X/Y for a specific game.
+The discussion above on the AIξ system was rather informal for the following reason:
+game playing (the SGξ system) has (nearly) the same complexity as fully general AI, and
+quantitative results for the AIξ system are difficult (but not impossible) to obtain.
+
+7 FUNCTION MINIMIZATION (FM)
+
+7
+
+39
+
+Function Minimization (FM)
+
+Applications/Examples: There are many problems that can be reduced to a minimization problem (FM). The minimum of a (real valued) function f : Y → IR over some
+domain Y or a good approximate of it has to be found, usually with some limited resources.
+One popular example is the traveling salesman problem (TSP). Y is the set of different
+routes between towns and f (y) the length of route y ∈ Y . The task is to find a route of
+minimal length visiting all cities. This problem is NP hard. Getting good approximations
+in limited time is of great importance in various applications. Another example is the
+minimization of production costs (MPC), e.g. of a car, under several constraints. Y
+is the set of all alternative car designs and production methods compatible with the
+specifications and f (y) the overall cost of alternative y ∈ Y . A related example is finding
+materials or (bio)molecules with certain properties (MAT). E.g. solids with minimal
+electrical resistance or maximally efficient chlorophyll modifications or aromatic molecules
+that taste as close as possible to strawberry.We can also ask for nice paintings (NPT). Y
+is the set of all existing or imaginable paintings and f (y) characterizes how much person
+A likes painting y. The system should present paintings, which A likes.
+For now, these are enough examples. The TSP is very rigorous from a mathematical
+point of view, as f , i.e. an algorithm of f , is usually known. In principle, the minimum
+could be found by extensive search, were it not for computational resource limitations.
+For MPC, f can often be modeled in a reliable and sufficiently accurate way. For MAT
+you need very accurate physical models, which might be unavailable or too difficult to
+solve or implement. For NPT the most we have is the judgement of person A on every
+presented painting. The evaluation function f cannot be implemented without scanning
+A′ s brain, which is not possible with todays technology.
+So there are different limitations, some depending on the application we have in mind.
+An implementation of f might not be available, f can only be tested at some arguments y
+and f (y) is determined by the environment. We want to (approximately) minimize f with
+as few function calls as possible or, conversely, find an as close as possible approximation
+for the minimum within a fixed number of function evaluations. If f is available or can
+quickly be inferred by the system and evaluation is quick, it is more important to minimize
+the total time needed to imagine new trial minimum candidates plus the evaluation time
+for f . As we do not consider computational aspects of AIξ till section 10 we concentrate
+on the first case, where f is not available or dominates the computational requirements.
+The Greedy Model FMGµ : The FM model consists of a sequence y˙1 z˙1 y˙2 z˙2 ... where
+y˙ k is a trial of the FM system for a minimum of f and z˙k = f (y˙ k ) is the true function
+value returned by the environment. We randomize the model by assuming a probability
+distribution µ(f ) over the functions. There are several reasons for doing this. We might
+really not know the exact function f , as in the NPT example, and model our uncertainty
+by the probability distribution µ. More importantly, we want to parallel the other AI
+classes, like in the SPµ model, where we always started with a probability distribution µ
+
+7 FUNCTION MINIMIZATION (FM)
+
+40
+
+that was finally replaced by ξ to get the universal Solomonoff prediction SPξ. We want to
+do the same thing here. Further, the probabilistic case includes the deterministic case by
+choosing µ(f ) = δf f0 , where f0 is the true function. A final reason is that the deterministic
+case is trivial when µ and hence f0 is known, as the system can internally (virtually) check
+all function arguments and output the correct minimum from the very beginning.
+We will assume that Y is countable or finite and that µ is a discrete measure, e.g. by
+taking only computable functions. The probability that the function values of y1 , ..., yn
+are z1 , ..., zn is then given by
+µF M (y1 z 1 ...yn z n ) :=
+
+µ(f )
+
+(58)
+
+f :f (yi )=zi ∀1≤i≤n
+
+We start with a model that minimizes the expectation zk of the function value f for the
+next output yk , taking into account previous information:
+y˙ k := minarg
+yk
+
+zk
+
+zk ·µ(y˙ 1z˙1 ...y˙k−1 z˙k−1 yk z k )
+
+This type of greedy algorithm, just minimizing the next feedback, was sufficient for sequence prediction (SP) and is also sufficient for classification (CF). It is, however, not
+sufficient for function minimization as the following example demonstrates.
+Take f : {0, 1} → {1, 2, 3, 4}. There are 16 different functions which shall be equiprobable,
+1
+µ(f ) = 16
+. The function expectation in the first cycle
+z1 :=
+z1
+
+z1 ·µ(y1z 1 ) =
+
+1
+4
+
+z1 =
+z1
+
+1
+(1+2+3+4)
+4
+
+= 2.5
+
+is just the arithmetic average of the possible function values and is independent of y1 .
+Therefore, y˙1 = 0, as minarg is defined to take the lexicographically first minimum in an
+ambiguous case. Let us assume that f0 (0) = 2, where f0 is the true environment function,
+i.e. z˙1 = 2. The expectation of z2 is then
+z2 :=
+z2
+
+z2 ·µ(02y2z 2 ) =
+
+2 for y2 = 0
+2.5 for y2 = 1
+
+For y2 = 0 the system already knows f (0) = 2, for y2 = 1 the expectation is, again, the
+arithmetic average. The system will again output y˙2 = 0 with feedback z˙2 = 2. This will
+continue forever. The system is not motivated to explore other y ′ s as f (0) is already
+smaller than the expectation of f (1). This is obviously not what we want. The greedy
+model fails. The system ought to be inventive and try other outputs when given enough
+time.
+The general reason for the failure of the greedy approach is that the information contained
+in the feedback zk depends on the output yk . A FM system can actively influence the
+knowledge it receives from the environment by the choice in yk . It may be more advantageous to first collect certain knowledge about f by an (in greedy sense) non-optimal choice
+for yk , rather than to minimize the zk expectation immediately. The non-minimality of
+zk might be over-compensated in the long run by exploiting this knowledge. In SP, the
+received information is always the current bit of the sequence, independent of what SP
+predicts for this bit. This is the reason why a greedy strategy in the SP case is already
+optimal.
+
+7 FUNCTION MINIMIZATION (FM)
+
+41
+
+The general FMµ/ξ Model: To get a useful model we have to think more carefully
+about what we really want. Should the FM system output a good minimum in the last
+output in a limited number of cycles T , or should the average of the z1 , ..., zT values be
+minimal, or does it suffice that just one of the z is as small as possible? Let us define the
+FMµ model as to minimize the µ averaged weighted sum α1 z1 + ... +αT zT for some given
+αk ≥ 0. Building the µ average by summation over the zi and minimizing w.r.t. the yi has
+to be performed in the correct chronological order. With a similar reasoning as in (5) to
+(9) we get
+y˙ kF M = minarg
+yk
+
+(α1 z1 + ... +αT zT )·µ(y˙ 1z˙1 ...y˙k−1 z˙k−1 yk z k ...yT z T )
+
+... min
+zk
+
+yT
+
+(59)
+
+zT
+
+If we want the final output y˙ T to be optimal we should choose αk = 0 for k < T and
+αT = 1 (final model FMFµ). If we want to already have a good approximation during
+intermediate cycles, we should demand that the output of all cycles together are optimal
+in some average sense, so we should choose αk = 1 for all k (sum model FMSµ). If
+we want to have something in between, for instance, increase the pressure to produce
+good outputs, we could choose the αk = eγ(k−T ) exponentially increasing for some γ > 0
+(exponential model FMEµ). For γ → ∞ we get the FMFµ, for γ → 0 the FMSµ model. If
+we want to demand that the best of the outputs y1 ...yk is optimal, we must replace the α
+weighted z-sum by min{z1 , ..., zT } (minimum Model FMMµ). We expect the behaviour
+to be very similar to the FMFµ model, and do not consider it further.
+By construction, the FMµ models guarantee optimal results in the usual sense that no
+other model knowing only µ can be expected to produce better results. The variety of
+FM variants is not a fault of the theory. They just reflect the fact that there is some
+interpretational freedom of what is meant by minimization within T function calls. In
+most applications, probably FMF is appropriate. In the NPT application one might prefer
+the FMS model.
+The interesting case (in AI) is when µ is unknown. We define for this case, the FMξ model
+by replacing µ(f ) with some ξ(f ), which should assign high probability to functions f of
+low complexity. So we might define18 ξ(f ) = q:∀x[U (qx)=f (x)] 2−l(q) . The problem with this
+definition is that it is, in general, undecidable whether a TM q is an implementation of
+a function f . ξ(f ) defined in this way is uncomputable, not even approximable. As we
+only need a ξ analog to the l.h.s. of (58), the following definition is natural
+ξ F M (y1 z 1 ...yn z n ) :=
+
+2−l(q)
+
+(60)
+
+q:q(yi )=zi ∀1≤i≤n
+
+ξ F M is actually equivalent to inserting the incomputable ξ(f ) into (58). ξ F M is an enumerable semi-measure and universal, relative to all probability distributions of the form
+(58). We will not prove this here.
+Alternatively, we could have constrained the sum in (60) by q(y1 ...yn ) = z1 ...zn analog to
+(24), but these two definitions are not equivalent. Definition (60) ensures the symmetry19
+18 F M
+
+ξ
+(f ) is a true probability distribution if we include partial functions in the domain. So normalization is not necessary.
+19
+See [39] for a discussion on symmetric universal distributions on unordered data.
+
+7 FUNCTION MINIMIZATION (FM)
+
+42
+
+in its arguments and ξ F M (...yz...yz ′ ...) = 0 for z = z ′ . It incorporates all general knowledge
+we have about function minimization, whereas (24) does not. But this extra knowledge
+has only low information content (complexity of O(1)), so we do not expect FMξ to
+perform much worse when using (24) instead of (60). But there is no reason to deviate
+from (60) at this point.
+We can now define an ”error” measure ETFµM as (59) with k = 1 and minargy1 replaced by
+miny1 and, additionally, µ replaced by ξ for ETFξM . We expect |ETFξM −ETFµM | to be bounded
+in a way that justifies the use of ξ instead of µ for computable µ, i.e. computable f0 in
+the deterministic case. The arguments are the same as for the AIξ model.
+Is the general model inventive? In the following we will show that FMξ will never
+cease searching for minima, but will test an infinite set of different y ′s for T → ∞.
+Let us assume that the system tests only a finite number of yi ∈ A ⊂ Y , |A| < ∞. Let t−1
+be the cycle in which the last new y ∈ A is selected (or some later cycle). Selecting y ′s in
+cycles k ≥ t a second time, the feedback z does not provide any new information, i.e. does
+not modify the probability ξ F M . The system can minimize ETFξM by outputting in cycles
+k ≥ t the best y ∈ A found so far (in the case αk = 0, the output does not matter). Let us
+fix f for a moment. Then we have
+t−1
+
+E a := α1 z1 + ... +αT zT =
+k=1
+
+T
+
+αk f (yk ) + f1 ·
+
+αk
+
+,
+
+f1 := min f (yk )
+1≤k<t
+
+k=t
+
+Let us now assume that the system tests one additional yt ∈ A in cycle t, but no other
+y ∈ A. Again, it will keep to the best output for k > t, which is either the one of the
+previous system or yt .
+t
+b
+
+E =
+
+T
+
+αk f (yk ) + min{f1 , f (yt )}·
+k=1
+
+αk
+
+k=t+1
+
+The difference can be represented in the form
+Ea − Eb =
+
+T
+k=t
+
+αk ·f + − αt ·f −
+
+,
+
+f ± := max{0, ±(f1 −f (yt ))} ≥ 0
+
+As the true FMξ strategy is the one which minimizes E, assumption a is ruled out if
+E a > E b . We will say that b is favored over a, which does not mean that b is the correct
+strategy, only that a is not the true one. For probability distributed f , b is favored over
+a when
+T
+a
+
+b
+
+E −E =
+
+k=t
+
+T
+
+αk · f
+
++
+
+− αt · f
+
+−
+
+> 0
+
+⇔
+
+αk > αt
+k=t
+
+f−
+f+
+
+where f ± is the ξ expectation of ±f1 ∓ f (yt ) under the condition that ±f1 ≥ ±f (yt ) and
+under the constrains imposed in cycles 1...t−1. As ξ assigns a strictly positive probability
+
+7 FUNCTION MINIMIZATION (FM)
+
+43
+
+to every non-empty event, f + = 0. Inserting αk = eγ(k−T ) , assumption a is ruled out in
+model FMEξ if
+T −t >
+
+1
+f−
+ln 1 + + (eγ − 1) −1 →
+γ
+f
+
+0
+for γ → ∞ (FMFξ model)
+f − / f + − 1 for γ → 0 (FMSξ model)
+
+We see that if the condition is not satisfied for some t, it will remain wrong for all t′ > t.
+So the FMFξ system will test each y only once up to a point from which on it always
+outputs the best found y. Further, for T → ∞ the condition always gets satisfied. As this
+is true for any finite A, the assumption of a finite A is wrong. For T → ∞ the system tests
+an increasing number of different y ′ s, provided Y is infinite. The FMFξ model will never
+repeat any y except in the last cycle T where it chooses the best found y. The FMSξ
+model will test a new yt for fixed T , only if the expected value of f (yt ) is not too large.
+The above does not necessarily hold for different choices of αk . The above also holds for
+the FMFµ system if f + = 0. f + = 0 if the system can already exclude that yt is a
+better guess, so there is no reason to test it explicitly.
+Nothing has been said about the quality of the guesses, but for the FMµ system they are
+optimal by definition. If K(µ) for the true distribution µ is finite, we expect the FMξ
+system to solve the ”exploration versus exploitation” problem in a universally optimal
+way, as ξ converges to µ.
+Using the AI models for Function Mininimization: The AI model can be used
+for function minimization in the following way. The output yk of cycle k is a guess for
+a minimum of f , like in the FM model. The credit ck should be high for small function
+values zk = f (yk ). The credit should also be weighted with αk to reflect the same strategy
+as in the FM case. The choice of ck = −αk zk is natural. Here, the feedback is not binary
+but ck ∈ C ⊂ IR, with C being a countable subset of IR, e.g. the computable reals or
+all rational numbers. The feedback x′k should be the function value f (yk ). So we set
+x′k = zk . Note, that there is a redundancy if α() is a computable function with no zeros,
+as ck = −αk x′k . So, for small K(α() ) like in the FMS model, one might set xk ≡ ǫ. If we
+keep x′k the AI prior probability is
+µAI (y1 x1 ...yn xn ) =
+
+µF M (y1 z 1 ...yn z n ) for ck = −αk zk , x′k = zk , xk = ck x′k
+0
+else.
+
+(61)
+
+Inserting this into (9) with mk = T we get
+y˙kAI = maxarg
+yk
+
+= minarg
+yk
+
+y˙kF M
+
+zk
+
+(ck + ... +cT )·µAI (y˙ 1x˙ 1 ...yk xk ...yT xT ) =
+
+... max
+yT
+
+xk
+
+... min
+y
+T
+
+xT
+
+(αk zk + ... +αT zT )·µF M (y˙ 1 z˙1 ...yk z k ...yT z T ) = y˙ kF M
+zT
+
+where
+has been defined in (59). The proof of equivalence was so simple because the
+FM model has already a rather general structure, which is similar to the full AI model.
+
+7 FUNCTION MINIMIZATION (FM)
+
+44
+
+One might expect no problems when going from the already very general FMξ model to
+the universal AIξ model (with mk = T ), but there is a pitfall in the case of the FMF
+model. All credits ck are zero in this case, except for the last one being cT . Although
+there is a feedback zk in every cycle, the AIξ system cannot learn from this feedback as
+it is not told that in the final cycle cT will equal to −zT . There is no problem in the FMξ
+model because in this case this knowledge is hardcoded into ξ F M . The AIξ model must
+first learn that it has to minimize a function but it can only learn if there is a non-trivial
+credit assignment ck . FMF works for repeated minimization of (different) functions, such
+as minimizing N functions in N ·T cycles. In this case there are N non-trivial feedbacks
+and AIξ has time to learn that there is a relation between ck·T and x′k·T every Tth cycle.
+This situation is similar to the case of strategic games discussed in section 6.
+There is no problem in applying AIξ to FMS because the c feedback provides enough
+information in this case. The only thing the AIξ model has to learn, is to ignore the x
+feedbacks as all information is already contained in c. Interestingly the same argument
+holds for the FME model if K(γ) and K(T ) are small20 . The AIξ model has additionally
+only to learn the relation ck = −e−γ(k−T ) x′k . This task is simple as every cycle provides
+one data point for a simple function to learn. This argument is no longer valid for γ → ∞
+as K(γ) → ∞ in this case.
+Remark: TSP seems to be trivial in the AIµ model but non-trivial in the AIξ model.
+The reason being that (59) just implements an internal complete search as µ(f ) = δf f T SP
+contains all necessary information. AIµ outputs from the very beginning, the exact minimum of f T SP . This ”solution” is, of course, unacceptable from performance perspective.
+As long as we give no efficient approximation ξ c of ξ, we have not contributed anything
+to a solution of the TSP by using AIξ c . The same is true for any other problem where f
+is computable and easily accessible. Therefore, TSP is not (yet) a good example because
+all we have done is to replace a NP complete problem with the uncomputable AIξ model
+or by a computable AIξ c model, for which we have said nothing about computation time
+yet. It is simply an overkill to reduce simple problems to AIξ. TSP is a simple problem in
+this respect, until we consider the AIξ c model seriously. For the other examples, where f
+is inaccessible or complicated, AIξ c provides a true solution to the minimization problem
+as an explicit definition of f is not needed for AIξ and AIξ c .
+
+20
+
+If we set αk = eγk the condition on K(T ) can be dropped.
+
+8 SUPERVISED LEARNING BY EXAMPLES (EX)
+
+8
+
+45
+
+Supervised Learning by Examples (EX)
+
+The AI models provide a frame for reinforcement learning. The environment provides a
+feedback c, informing the system about the quality of its last output y; it assigns credit
+c to output y. In this sense, reinforcement learning is explicitly integrated into the AIρ
+model. For ρ = µ it maximizes the true expected credit, whereas the AIξ model is a
+universal, environment independent, reinforcement learning algorithm.
+There is another type of learning method: Supervised learning by presentation of examples
+(EX). Many problems learned by this method are association problems of the following
+type. Given some examples x ∈ R ⊂ X, the system should reconstruct, from a partially
+given x′ , the missing or corrupted parts, i.e. complete x′ to x such that relation R contains
+x. In many cases, X consists of pairs (z, v), where v is the possibly missing part.
+Applications/Examples: Learning functions by presenting (z, f (z)) pairs and asking
+for the function value of z by presenting (z, ?) also falls into this category.
+A basic example is learning properties of geometrical objects coded in some way. E.g. if
+there are 18 different objects characterized by their size (small or big), their colors (red,
+green or blue) and their shapes (square, triange, circle), then (object, property) ∈R if the
+object possesses the property. Here, R is a relation which is not the graph of a single
+valued function.
+When teaching a child, by pointing to objects and saying ”this is a tree” or ”look how
+green” or ”how beautiful”, one establishes a relation of (object, property) pairs in R.
+Pointing to a (possibly different) tree later and asking ”what is this ?” corresponds to a
+partially given pair (object, ?), where the missing part ”?” should be completed by the
+child saying ”tree”.
+A final example we want to give is chess. We have seen that, in principle, chess can be
+learned by reinforcement learning. In the extreme case the environment only provides
+credit c = 1 when the system wins. The learning rate is completely inacceptable from
+a practical point of view. The reason is the very low amount of information feedback.
+A more practical method of teaching chess is to present example games in the form of
+sensible (board-state, move) sequences. They contain information about legal and good
+moves (but without any explanation). After several games have been presented, the
+teacher could ask the system to make its own move by presenting (board-state, ?) and
+then evaluate the answer of the system.
+Supervised learning with the AIµ/ξ model: Let us define the EX model as follows:
+The environment presents inputs x′k = zk vk ≡ (zk , vk ) ∈ R∪(Z×{?}) ⊂ Z×(Y ∪{?}) = X ′
+to the system in cycle k. The system is expected to output yk+1 in the next cycle, which
+is evaluated with ck+1 = 1 if (zk , yk+1) ∈ R and 0 otherwise. To simplify the discussion,
+an output yk is expected and evaluated even when vk (=?) is given. To complete the
+description of the environment, the probability distribution µR (x′1 ...x′n ) of the examples
+
+8 SUPERVISED LEARNING BY EXAMPLES (EX)
+
+46
+
+x′i (depending on R) has to be given. Wrong examples should not occur, i.e. µR should
+be 0 if x′i ∈ R for some 1 ≤ i ≤ n. The relations R might also be probability distributed
+with σ(R). The example prior probability in this case is
+µ(x1′ ...x′n ) =
+
+µR (x′1 ...x′n )·σ(R)
+
+(62)
+
+R
+
+The knowledge of the valuation ck on output yk restricts the possible relations R, consistent with R(zk , yk+1) = ck+1 , where R(z, y) := 1 if (z, y) ∈ R and 0 otherwise. The prior
+probability for the input sequence x1 ...xn if the output sequence is y1 ...yn , is therefore
+µAI (y1 x1 ...yn xn ) =
+
+µR (x′1 ...x′n )·σ(R)
+R:∀1≤i<n[R(zi ,yi+1 )=ci+1 ]
+
+where xi = ci x′i and x′i−1 = zi vi with vi ∈ Y ∪ {?}. In the I/O sequence y1 x1 y2 x2 ... =
+y1 c1 z2 v2 y2 c2 z3 v3 ... the c1 y1 are dummies, after which regular behaviour starts.
+The AIµ model is optimal by construction of µAI . For computable prior µR and σ, we
+expect a near optimal behavior of the universal AIξ model if µR additionally satisfies
+some separability property. In the following, we give some motivation why the AIξ model
+takes into account the supervisor information contained in the examples and why it learns
+faster than by reinforcement.
+We keep R fixed and assume µR (x′1 ...x′n ) = µR (x′1 )· ... ·µR (x′n ) = 0 ⇔ x′i ∈ R∪(Z×{?}) ∀i to
+simplify the discussion. Short codes q contribute mostly to ξ AI (y1 x1 ...yn xn ). As x′1 ...x′n
+is distributed according to the computable probability distribution µR , a short code of
+x′1 ...x′n for large enough n is a Huffman coding w.r.t. the distribution µR . So we expect µR
+and hence R coded in the dominant contributions to ξ AI in some way, where the plausible
+assumption was made that the y on the input tape do not matter. Much more than one
+bit per cycle will usually be learned, hence, relation R can be learned in n ≪ K(R) cycles
+by appropriate examples. This coding of R in q evolves independently of the feedbacks c.
+To maximize the feedback ck , the system has to learn to output a yk+1 with (zk , yk+1) ∈ R.
+The system has to invent a program extension q ′ to q, which extracts zk from xk = zk vk
+and searches for and outputs a yk+1 with (zk , yk+1) ∈ R. As R is already coded in q, q ′ can
+re-use this coding of R in q. The size of the extension q ′ is, therefore, of O(1). To learn
+this q ′ , the system requires feedback c with information content of O(1) = K(q ′) only.
+Let us compare this with reinforcement learning, where only x′k = (zk , ?) pairs are presented. A coding of R in a short code q for x1′ ...x′n is of no use and will therefore be absent.
+Only the credits c force the system to learn R. q ′ is therefore expected to be of size K(R).
+The information content in the c′ s must be of the order K(R). In practice, there are
+often only very few ck = 1 at the beginning of the learning phase and the information
+content in c1 ...cn is much less than n bits. The required number of cycles to learn R by
+reinforcement is, therefore, at least but in many cases much larger than K(R).
+Although AIξ was never designed or told to learn supervised, it learns how to take advantage of the examples from the supervisor. µR and R are learned from the examples, the
+credits c are not necessary for this process. The remaining task of learning how to learn
+supervised is then a simple task of complexity O(1), for which the credits c are necessary.
+
+9 OTHER AI CLASSES
+
+9
+
+47
+
+Other AI Classes
+
+Other aspects of intelligence: In AI, a variety of general ideas and methods have
+been developed. In the last sections, we have seen how several problem classes can be
+formulated within AIξ. As we claim universality of the AIξ model, we want to enlight
+which of, and how the other AI methods are incorporated in the AIξ model, by looking
+its structure. Some methods are directly included, others are or should be emergent. We
+do not claim the following list to be complete.
+Probability theory and utility theory are the heart of the AIµ/ξ models. The probabilities
+are the true/universal behaviours of the environment. The utility function is what we
+called total credit, which should be maximized. Maximization of an expected utility
+function in a probabilistic environment is usually called sequential decision theory, and
+is explicitly integrated in full generality in our model. This includes probabilistic (a
+generalization of deterministic) reasoning, where the object of reasoning are not true
+or false statements, but the prediction of the environmental behaviour. Reinforcement
+Learning is explicitly built in, due to the credits. Supervised learning is an emergent
+phenomenon (section 8). Algorithmic information theory leads us to use ξ as a universal
+estimate for the prior probability µ.
+For horizon > 1, the alternative series of expectimax series in (16) and the process of
+selecting maximal values can be interpreted as abstract planning. This expectimax series
+also includes informed search, in the case of AIµ, and heuristic search, for AIξ, where
+ξ could be interpreted as a heuristic for µ. The minimax strategy of game playing in
+case of AIµ is also subsumed. The AIξ model converges to the minimax strategy if the
+environment is a minimax player but it can also take advantage of environmental players
+with limited rationality. Problem solving occurs (only) in the form of how to maximize
+the expected future credit.
+Knowledge is accumulated by AIξ and is stored in some form not specified further on the
+working tape. Any kind of information in any representation on the inputs y is exploited.
+The problem of knowledge engineering and representation appears in the form of how to
+train the AIξ model. More practical aspects, like language or image processing have to
+be learned by AIξ from scratch.
+Other theories, like fuzzy logic, possibility theory, Dempster-Shafer theory, ... are partly
+outdated and partly reducible to Bayesian probability theory [6]. The interpretation and
+effects of the evidence gap g := 1 − xk ξ(yx<k yxk ) > 0 in ξ may be similar to those in
+Dempster-Shafer theory. Boolean logical reasoning about the external world plays, at
+best, an emergent role in the AIξ model.
+Other methods, which don’t seem to be contained in the AIξ model might also be emergent
+phenomena. The AIξ model has to construct short codes of the environmental behaviour,
+˜
+the AIξ t˜l (see next section) has to construct short action programs. If we would analyze
+and interpret these programs for realistic environments, we might find some of the unmentioned or unused or new AI methods at work in these algorithms. This is, however,
+pure speculation at this point. More important: when trying to make AIξ practically
+usable, some other AI methods, like genetic algorithms or neural nets, may be useful.
+
+9 OTHER AI CLASSES
+
+48
+
+The main thing we wanted to point out is that the AIξ model does not lack any important
+known property of intelligence or known AI methodology. What is missing, however, are
+computational aspects, which are addressed, in the next section.
+
+10 TIME BOUNDS AND EFFECTIVENESS
+
+10
+
+49
+
+Time Bounds and Effectiveness
+
+Introduction: Until now, we have not bothered with the non-computability of the
+universal probability distribution ξ. As all universal models in this paper are based on
+ξ, they are not effective in this form. In this section, We will outline how the previous
+models and results can be modified/generalized to the time-bounded case. Indeed, the
+situation is not as bad as it could be. ξ and C are enumerable and y˙ k is still approximable
+or computable in the limit. There exists an algorithm, that will produce a sequence of
+outputs eventually converging to the exact output y˙ k , but we can never be sure whether
+we have already reached it. Besides this, the convergence is extremely slow, so this
+type of asymptotic computability is of no direct (practical) use, but will nevertheless, be
+important later.
+Let p˜ be a program which calculates within a reasonable time t˜ per cycle, a reasonable
+intelligent output, i.e. p˜(x˙ <k ) = y˙ 1:k . This sort of computability assumption, that a general
+purpose computer of sufficient power is able to behave in an intelligent way, is the very
+basis of AI, justifying the hope to be able to construct systems which eventually reach
+and outperform human intelligence. For a contrary viewpoint see [28]. It is not necessary
+to discuss here, what is meant by ’reasonable time/intelligence’ and ’sufficient power’.
+What we are interested in, in this section, is whether there is a computable version AIξ t˜
+of the AIξ system which is superior or equal to any p with computation time per cycle
+of at most t˜. With ’superior’, we mean ’more intelligent’, so what we need is an order
+relation (like) (39) for intelligence.
+The best result we could think of would be an AIξ t˜ with computation time ≤ t˜ at least
+as intelligent as any p with computation time ≤ t˜. If AI is possible at all, we would have
+reached the final goal, the construction of the most intelligent algorithm with computation
+≤ t˜. Just as there is no universal measure in the set of computable measures (within time
+t˜), such an AIξ t may neither exist.
+What we can realistically hope to construct, is an AIξ t˜ system of computation time c·t˜ per
+cycle for some constant c. The idea is to run all programs p of length ≤ ˜l := l(˜
+p) and time
+˜
+˜
+l ˜
+˜
+≤ t per cycle and pick the best output. The total computation time is 2 · t, hence c = 2l .
+This sort of idea of ’typing monkeys’ with one of them eventually writing Shakespeare,
+has been applied in various forms and contexts in theoretical computer science. The
+realization of this best vote idea, in our case, is not straightforward and will be outlined
+in this section. An idea related to this, is that of basing the decision on the majority of
+algorithms. This ’democratic vote’ idea has been used in [20, 42] for sequence prediction,
+and is referred to as ’weighted majority’ there.
+Time limited probability distributions: In the literature one can find time limited
+versions of Kolmogorov complexity [8, 16] and the time limited universal semimeasure
+[21, 24]. In the following, we utilize and adapt the latter and see how far we get. One
+way to define a time-limited universal chronological semimeasure is as a sum over all
+
+10 TIME BOUNDS AND EFFECTIVENESS
+
+50
+
+enumerable chronological semimeasures computable within time t˜ and of size at most ˜l
+similar to the unbounded case (27).
+˜˜
+
+ξ tl (yx1:n ) :=
+
+2−l(ρ) ρ(yx1:n )
+
+(63)
+
+ρ : l(ρ)≤˜
+l ∧ t(ρ)≤t˜
+
+Let us assume that the true environmental prior probability µAI is equal to or sufficiently
+accurately approximated by a ρ with l(ρ) ≤ ˜l and t(ρ) ≤ t˜ with t˜ and ˜l of reasonable size.
+There are several AI problems that fall into this class. In function minimization of section
+7, the computation of f and µF M are usually feasible. In many cases, the sequences of
+section 5 which should be predicted, can be easily calculated when µSP is known. In
+a classifier problem, the probability distribution µCF , according to which examples are
+presented, is, in many cases, also elementary. But not all AI problems are of this ’easy’
+type. For the strategic games of section 6, the environment is usually, itself, a highly
+complex strategic player with a difficult to calculate µSG that is difficult to calculate,
+although one might argue that the environmental player may have limited capabilities
+too. But it is easy to think of a difficult to calculate physical (probabilistic) environment
+like the chemistry of biomolecules.
+The number of interesting applications makes this restricted class of AI problems, with
+˜
+time and space bounded environment µt˜l , worth being studied. Superscripts to a prob˜
+ability distribution except for ξ t˜l indicate their length and maximal computation time.
+˜
+˜
+ξ tl defined in (63), with a yet to be determined computation time, multiplicatively domi˜
+˜
+˜
+nates all µt˜l of this type. Hence, an AIξ t˜l model, where we use ξ t˜l as prior probability, is
+˜
+universal, relative to all AIµt˜l models in the same way as AIξ is universal to AIµ for all
+enumerable chronological semimeasures µ. The maxargyk in (25) selects a yk for which
+˜
+˜
+˜
+ξ t˜l has the highest expected utility Ckmk , where ξ t˜l is the weighted average over the ρt˜l .
+t˜˜
+l
+
+˜
+
+y˙ kAIξ is determined by a weighted majority. We expect AIξ t˜l to outperform all (bounded)
+˜
+AIρt˜l , analog to the unrestricted case.
+˜
+
+˜
+
+t˜˜
+l
+
+In the following we analyze the computability properties of ξ t˜l and AIξ t˜l , i.e. of y˙ kAIξ .
+˜
+To compute ξ t˜l according to the definition (63) we have to enumerate all chronological
+˜
+enumerable semimeasures ρt˜l of length ≤ ˜l and computation time ≤ t˜. This can be done
+˜
+similarly to the unbounded case (30-32). All 2l enumerable functions of length ≤ ˜l,
+computable within time t˜ have to be converted to chronological probability distributions.
+˜
+For this, one has to evaluate each function for |X|·k different arguments. Hence, ξ t˜l is
+t˜˜
+l
+˜
+˜
+computable within time21 t(ξ t˜l (yx1:k )) = O(|X| · k · 2l · t˜). The computation time of y˙kAIξ
+˜
+
+depends on the size of X, Y and mk . ξ t˜l has to be evaluated |Y |hk |X|hk times in (25). It
+is possible to optimize the algorithm and perform the computation within time
+t˜˜
+l
+
+˜
+t(y˙kAIξ ) = O(|Y |hk |X|hk ·2l · t˜)
+
+(64)
+
+˜
+per cycle. If we assume that the computation time of µt˜l is exactly t˜ for all arguments,
+t˜˜
+l
+the brute force time t¯ for calculating the sums and maxs in (9) is t¯(y˙ kAIµ ) ≥ |Y |hk |X|hk ·t˜.
+21
+
+We assume that a TM can be simulated by another in linear time.
+
+10 TIME BOUNDS AND EFFECTIVENESS
+
+51
+
+Combining this with (64), we get
+t˜˜
+l
+
+˜
+
+t˜˜
+l
+
+t(y˙kAIξ ) = O(2l · t¯(y˙kAIµ ))
+˜
+
+This result has the proposed structure, that there is a universal AIξ t˜l system with com˜
+˜
+putation time 2l times the computation time of a special AIµt˜l system.
+˜
+
+Unfortunately, the class of AIµt˜l systems with brute force evaluation of y˙k , according to
+(9) is completely uninteresting from a practical point of view. E.g. in the context of
+˜
+˜
+chess, the above result says that the AIξ t˜l is superior within time 2l · t˜ to any brute force
+˜
+minimax strategy of computation time t˜. Even if the factor of 2l in computation time
+˜
+would not matter, the AIξ t˜l system is, nevertheless practically useless, as a brute force
+minimax chess player with reasonable time t˜ is a very poor player.
+Note, that in the case of sequence prediction (hk = 1, |Y | = |X| = 2) the computation time
+˜
+of ρ coincides with that of y˙ kAIρ within a factor of 2. The class AIρt˜l includes all nonincremental sequence prediction algorithms of size ≤ ˜l and computation time ≤ t˜/2. With
+non-incremental, we mean that no information of previous cycles is taken into account
+for the computation of y˙k of the current cycle.
+The shortcomings (mentioned and unmentioned ones) of this approach are cured in the
+next subsection, by deviating from the standard way of defining a timebounded ξ as a
+sum over functions or programs.
+The idea of the best vote algorithm: A general cybernetic or AI system is a chronological program p(x<k ) = y1:k . This form, introduced in section 2, is general enough to
+include any AI system (and also less intelligent systems). In the following, we are interested in programs p of length ≤ ˜l and computation time ≤ t˜ per cycle. One important
+point in the time-limited setting is that p should be incremental, i.e. when computing
+yk in cycle k, the information of the previous cycles stored on the working tape can be
+re-used. Indeed, there is probably no practically interesting, non-incremental AI system
+at all.
+In the following, we construct a policy p∗ , or more precisely, policies p∗k for every cycle
+˜
+k that outperform all time and length limited AI systems p. In cycle k, p∗k runs all 2l
+programs p and selects the one with the best output yk . This is a ’best vote’ type of
+algorithm, as compared to the ’weighted majority’ like algorithm of the last subsection.
+The ideal measure for the quality of the output would be the ξ expected credit
+2−l(q) Ckm (p, q) ,
+
+Ckm (p|y˙
+˙x<k ) :=
+
+pq
+Ckm (p, q) := c(xpq
+k ) + ... + c(xm )
+
+(65)
+
+q∈Q˙ k
+
+The program p which maximizes Ckmk should be selected. We have dropped the normalization N unlike in (38), as it is independent of p and does not change the order
+relation which we are solely interested in here. Furthermore, without normalization, Ckm
+is enumerable, which will be important later.
+
+10 TIME BOUNDS AND EFFECTIVENESS
+
+52
+
+Extended chronological programs: In the (functional form of the) AIξ model it was
+convenient to maximize Ckmk over all p ∈ P˙k , i.e. all p consistent with the current history
+y˙
+˙x<k . This was no restriction, because for every possibly inconsistent program p there
+exists a program p′ ∈ P˙k consistent with the current history and identical to p for all
+future cycles ≥ k. For the time limited best vote algorithm p∗ it would be too restrictive
+˜
+to demand p ∈ P˙k . To prove universality, one has to compare all 2l algorithms in every
+cycle, not just the consistent ones. An inconsistent algorithm may become the best one
+in later cycles. For inconsistent programs we have to include the y˙ k into the input, i.e.
+p
+p(y˙
+˙x<k ) = y1:k
+with y˙i = yip possible. For p ∈ P˙ k this was not necessary, as p knows the
+output y˙ k ≡ ykp in this case. The cpq
+i in the definition of Ckm are the valuations emerging in
+the I/O sequence, starting with y˙
+˙x<k (emerging from p∗ ) and then continued by applying
+p
+p and q with y˙ i := yi for i ≥ k.
+Another problem is that we need Ckmk to select the best policy, but unfortunately Ckmk
+is uncomputable. Indeed, the structure of the definition of Ckmk is very similar to that
+of y˙k , hence a brute force approach to approximate Ckmk requires too much computation
+time as for y˙ k . We solve this problem in a similar way, by supplementing each p with a
+program that estimates Ckmk by wkp within time t˜. We combine the calculation of ykp and
+wkp and extend the notion of a chronological program once again to
+p(y˙
+˙x<k ) = w1p y1p...wkp ykp
+
+(66)
+
+with chronological order w1p y1p y˙ 1 x˙ 1 w2p y2p y˙ 2 x˙ 2 ....
+Valid approximations: p might suggest any output ykp but it is not allowed to rate it
+with an arbitrarily high wkp if we want wkp to be a reliable criterion for selecting the best
+p. We demand that no policy is allowed to claim that it is better than it actually is. We
+define a (logical) predicate VA(p) called valid approximation, which is true if, and only if,
+p always satisfies wkp ≤ Ckmk (p), i.e. never overrates itself.
+VA(p) ≡ ∀k∀w1p y1p y˙ 1 x˙ 1 ...wkp ykp : p(y˙
+˙x<k ) = w1p y1p ...wkp ykp ⇒ wkp ≤ Ckmk (p|y˙
+˙x<k )
+
+(67)
+
+In the following, we restrict our attention to programs p, for which VA(p) can be proved
+in some formal axiomatic system. A very important point is that Ckmk is enumerable.
+This ensures the existence of sequences of program p1 , p2 , p3 , ... for which VA(pi ) can be
+proved and limi→∞ wkpi = Ckmk (p) for all k and all I/O sequences. The approximation is
+not uniform in k, but this does not matter as the selected p is allowed to change from
+cycle to cycle.
+Another possibility would be to consider only those p which check wkp ≤ Ckmk (p) online
+in every cycle, instead of the pre-check VA(p), either by constructing a proof (on the
+working tape) for this special case, or it is already evident by the construction of wkp . In
+cases where p cannot guarantee wkp ≤ Ckmk (p) it sets wk = 0 and, hence, trivially satisfies
+wkp ≤ Ckmk (p). On the other hand, for these p it is also no problem to prove VA(p) as one
+has simply to analyze the internal structure of p and recognize that p shows the validity
+internally itself, cycle by cycle, which is easy by assumption on p. The cycle by cycle
+check is, therefore, a special case of the pre-proof of VA(p).
+
+10 TIME BOUNDS AND EFFECTIVENESS
+
+53
+
+Effective intelligence order relation: In section 4 we have introduced an intelligence
+order relation
+on AI systems, based on the expected credit Ckmk (p). In the following
+we need an order relation c based on the claimed credit wkp which might be interpreted
+as an approximation to . We call p effectively more or equally intelligent than p′ if
+′
+p c p′ :⇔ ∀k∀y˙
+˙x<k ∃w1:n w1:n
+:
+′
+′
+p(y˙
+˙x<k ) = w1 ∗ ...wk ∗ ∧ p (y˙
+˙x<k ) = w1 ∗ ...wk′ ∗ ∧ wk ≥ wk′
+
+(68)
+
+i.e. if p always claims higher credit estimate w than p′ . c is a co-enumerable partial
+order relation on extended chronological programs. Restricted to valid approximations
+it orders the policies w.r.t. the quality of their outputs and their ability to justify their
+outputs with high wk .
+˜
+
+The universal time bounded AIξ t˜l system: In the following we, describe the algo˜
+rithm p∗ underlying the universal time bounded AIξ t˜l system. It is essentially based on
+the selection of the best algorithms p∗k out of the time t˜ and length ˜l bounded p, for which
+there exists a proof of VA(p) with length ≤ lP .
+1. Create all binary strings of length lP and interpret each as a coding of a mathematical proof in the same formal logic system in which VA(·) has been formulated.
+Take those strings which are proofs of VA(p) for some p and keep the corresponding
+programs p.
+2. Eliminate all p of length > ˜l.
+3. Modify all p in the following way: all output wkp ykp is temporarily written on an
+auxiliary tape. If p stops in t˜ steps the internal ’output’ is copied to the output
+tape. If p does not stop after t˜ steps a stop is forced and wk = 0 and some arbitrary
+yk is written on the output tape. Let P be the set of all those modified programs.
+4. Start first cycle: k := 1.
+5. Run every p ∈ P on extended input y˙
+˙x<k , where all outputs are redirected to some
+p p
+p p
+auxiliary tape: p(y˙
+˙x<k ) = w1 y1 ...wk yk .
+6. Select the program p with highest claimed credit wkp : p∗k := maxargp wkp .
+p∗
+
+7. Write y˙ k := yk k to the output tape.
+8. Receive input x˙ k from the environment.
+9. Begin next cycle: k := k+1, goto step 5.
+It is easy to see that the following theorem holds.
+Main theorem: Let p be any extended chronological (incremental) program like (66)
+of length l(p) ≤ ˜l and computation time per cycle t(p) ≤ t˜, for which there exists a proof of
+VA(p) defined in (67) of length ≤ lP . The algorithm p∗ constructed in the last subsection,
+depending on ˜l, t˜ and lP but not on p, is effectively more or equally intelligent, according
+to c defined in (68) than any such p. The size of p∗ is l(p∗ ) = O(ln(˜l·t˜·lP )), the setup-time
+˜
+is tsetup (p∗ ) = O(lP ·2lP ), the computation time per cycle is tcycle (p∗ ) = O(2l · t˜).
+
+10 TIME BOUNDS AND EFFECTIVENESS
+
+54
+
+Roughly speaking, the theorem says, that if there exists a computable solution to some
+AI problem at all, the explicitly constructed algorithm p∗ is such a solution. Although
+this theorem is quite general, there are some limitations and open questions which we
+discuss in the following.
+Limitations and open questions:
+• Formally, the total computation time of p∗ for cycles 1...k increases linearly with
+˜
+˜
+k, i.e. is of order O(k) with a coefficient 2l · t˜. The unreasonably large factor 2l is
+a well known drawback in best/democratic vote models and will be taken without
+further comments, whereas the factor t˜ can be assumed to be of reasonable size. If
+we don’t take the limit k → ∞ but consider reasonable k, the practical usefulness of
+the timebound on p∗ is somewhat limited, due to the additional additive constant
+˜
+O(lP ·2lP ). It is much larger than k·2l · t˜ as typically lP ≫ l(VA(p)) ≥ l(p) ≡ ˜l.
+• p∗ is superior only to those p which justify their outputs (by large wkp ). It might be
+possible that there are p which produce good outputs ykp within reasonable time, but
+it takes an unreasonably long time to justify their outputs by sufficiently high wkp .
+We do not think that (from a certain complexity level onwards) there are policies
+where the process of constructing a good output is completely separated from some
+sort of justification process. But this justification might not be translatable (at least
+within reasonable time) into a reasonable estimate of Ckmk (p).
+
+• The (inconsistent) programs p must be able to continue strategies started by other
+policies. It might happen that a policy p steers the environment to a direction for
+which it is specialized. A ’foreign’ policy might be able to displace p only between
+loosely bounded episodes. There is probably no problem for factorizable µ. Think
+of a chess game, where it is usually very difficult to continue the game/strategy of
+a different player. When the game is over, it is usually advantageous to replace
+a player by a better one for the next game. There might also be no problem for
+sufficiently separable µ.
+• There might be (efficient) valid approximations p for which VA(p) is true but not
+provable, or for which only a very long (> lP ) proof exists.
+Remarks:
+• The idea of suggesting outputs and justifying them by proving credit bounds implements one aspect of human thinking. There are several possible reactions to an
+input. Each reaction possibly has far reaching consequences. Within a limited time
+one tries to estimate the consequences as well as possible. Finally, each reaction is
+valued and the best one is selected. What is inferior to human thinking is, that the
+estimates wkp must be rigorously proved and the proofs are constructed by blind extensive search, further, that all behaviours p of length ≤ ˜l are checked. It is inferior
+’only’ in the sense of necessary computation time but not in the sense of the quality
+of the outputs.
+
+10 TIME BOUNDS AND EFFECTIVENESS
+
+55
+
+• In practical applications there are often cases with short and slow programs ps
+performing some task T , e.g. the computation of the digits of π, for which there
+also exist long and quick programs pl too. If it is not too difficult to prove that this
+long program is equivalent to the short one, then it is possible to prove K(T ) ≤ l(ps )
+within time t(pl ). Similarly, the method of proving bounds wk for Ckmk can give
+high lower bounds without explicitly executing these short and slow programs, which
+mainly contribute to Ckmk .
+• Dovetailing all length and time-limited programs is a well known elementary idea
+(typing monkeys). The crucial part which has been developed here, is the selection
+criterion for the most intelligent system.
+˜
+
+• By construction of AIξ t˜l and due to the enumerability of Ckmk , ensuring arbitrary
+˜
+close approximations of Ckmk we expect that the behaviour of AIξ t˜l converges to the
+behaviour of AIξ in the limit t˜, ˜l → ∞ in a sense.
+• Depending on what you know/assume that a program p of size ˜l and computation
+˜
+time per cycle t˜ is able to achieve, the computable AIξ t˜l model will have the same
+capabilities. For the strongest assumption of the existence of a Turing machine,
+˜
+which outperforms human intelligence, the AIξ t˜l will do too, within the same time
+frame up to a (unfortunately very large) constant factor.
+
+11 OUTLOOK & DISCUSSION
+
+11
+
+56
+
+Outlook & Discussion
+
+This section contains some discussion of otherwise unmentioned topics and some (more
+personal) remarks. It also serves as an outlook to further research.
+Miscellaneous:
+• In game theory [26] one often wants to model the situation of simultaneous actions,
+whereas the AIξ models has serial I/O. Simultaneity can be simulated by withholding the environment from the current system’s output yk , until xk has been received
+by the system. Formally, this means that ξ(yx<k yxk ) is independent of yk . The AIξ
+system is already of simultaneous type in an abstract view if the behaviour p is
+interpreted as the action. In this sense, AIξ is the action p∗ which maximizes the
+utility function (credit), under the assumption that the environment acts according
+to ξ. The situation is different from game theory as the environment is not modeled to be a second ’player’ that tries to optimize his own utility although it might
+actually be a rational player (see section 6).
+• In various examples we have chosen differently specialized input and output spaces
+X and Y . It should be clear that, in principle, this is unnecessary, as large enough
+spaces X and Y , e.g. 232 bit, serve every need and can always be Turing reduced to
+the specific presentation needed internally by the AIξ system itself. But it is clear
+that using a generic interface, such as camera and monitor for, learning tic-tac-toe
+for example, adds the task of learning vision and drawing.
+Outlook:
+• Rigorous proofs for credit bounds are the major theoretical challenge are – general
+ones as well as tighter bounds for special environments µ. Of special importance are
+suitable (and acceptable) conditions to µ, under which y˙k and finite credit bounds
+exist for infinite Y , X and mk .
+˜
+
+• A direct implementation of the AIξ t˜l model is ,at best, possible for toy environments
+˜
+due to the large factor 2l in computation time. But there are other applications
+of the AIξ theory. We have seen in several examples how to integrate problem
+classes into the AIξ model. Conversely, one can downscale the AIξ model by using
+more restricted forms of ξ. This could be done in the same way as the theory
+of universal induction has been downscaled with many insights to the Minimum
+Description Length principle [22, 30] or to the domain of finite automata [9]. The AIξ
+model might similarly serve as a super model or as the very definition of (universal
+unbiased) intelligence, from which specialized models could be derived.
+
+11 OUTLOOK & DISCUSSION
+
+57
+
+• With a reasonable computation time, the AIξ model would be a solution of AI (see
+˜
+next point if you disagree). The AIξ t˜l model was the first step, but the elimination of
+˜
+the factor 2l without giving up universality will (almost certainly) be a very difficult
+task. One could try to select programs p and prove VA(p) in a more clever way than
+by mere enumeration, to improve performance without destroying universality. All
+kinds of ideas like, genetic algorithms, advanced theorem provers and many more
+could be incorporated. But now we are in trouble. We seem to have transferred
+the AI problem just to a different level. This shift has some advantages (and also
+some disadvantages) but presents, in no way, a solution. Nevertheless, we want
+to stress that we have reduced the AI problem to (mere) computational questions.
+Even the most general other systems the author is aware of, depend on some (more
+than computational) assumptions about the environment or it is far from clear
+whether they are, indeed, universal and optimal. Although computational questions
+are themselves highly complicated, this reduction is a non-trivial result. A formal
+theory of something, even if not computable, is often a great step toward solving a
+problem and has also merits of its own, and AI should not be different (see previous
+item).
+• Many researchers in AI believe that intelligence is something complicated and cannot
+be condensed into a few formulas. It is more a combining of enough methods and
+much explicit knowledge in the right way. From a theoretical point of view, we
+disagree as the AIξ model is simple and seems to serve all needs. From a practical
+point of view we agree to the following extent. To reduce the computational burden
+one should provide special purpose algorithms (methods) from the very beginning,
+probably many of them related to reduce the complexity of the input and output
+spaces X and Y by appropriate preprocessing methods.
+• There is no need to incorporate extra knowledge from the very beginning. It can be
+presented in the first few cycles in any format. As long as the algorithm to interpret
+the data is of size O(1), the AIξ system will ’understand’ the data after a few cycles
+(see section 8). If the environment µ is complicated but extra knowledge z makes
+K(µ|z) small, one can show that the bound (20) reduces to 21 ln 2 · K(µ|z) when
+x1 ≡ z, i.e. when z is presented in the first cycle. The special purpose algorithms
+could be presented in x1 , too, but it would be cheating to say that no special purpose
+algorithms had been implemented in AIξ. The boundary between implementation
+and training is unsharp in the AIξ model.
+• We have not said much about the training process itself, as it is not specific to the
+AIξ model and has been discussed in literature in various forms and disciplines.
+A serious discussion would be out of place. To repeat a truism, it is, of course,
+important to present enough knowledge x′k and evaluate the system output yk with
+ck in a reasonable way. To maximize the information content in the credit, one
+should start with simple tasks and give positive reward ck = 1 to approximately half
+of the outputs yk .
+
+11 OUTLOOK & DISCUSSION
+
+58
+
+The big questions: This subsection is devoted to the big questions of AI in general
+and the AIξ model in particular with a personal touch.
+• There are two possible objections to AI in general and, therefore, also against AIξ
+in particular we want to comment on briefly. Non-computable physics (which is
+not too weird) could make Turing computable AI impossible. As at least the world
+that is relevant for humans seems mainly to be computable we do not believe that
+it is necessary to integrate non-computable devices into an AI system. The (clever
+and nearly convincing) ’G¨odel’ argument by Penrose [28] that non-computational
+physics must exist and is relevant to the brain, has (in our opinion convincing)
+loopholes.
+• A more serious problem is the evolutionary information gathering process. It has
+been shown that the ’number of wisdom’ Ω contains a very compact tabulation of
+2n undecidable problems in its very first n binary digits [5]. Ω is only enumerable
+with computation time increasing more rapidly with n, than any recursive function.
+The enormous computational power of evolution could have developed and coded
+something like Ω into our genes, which significantly guides human reasoning. In
+short: Intelligence could be something complicated and evolution toward it from an
+even cleverly designed algorithm of size O(1) could be too slow. As evolution has
+already taken place, we could add the information from our genes or brain structure
+to any/our AI system, but this means that the important part is still missing and
+a simple formal definition of AI is principally impossible.
+• For the probably biggest question about consciousness we want to give a physical
+analogy. Quantum (field) theory is the most accurate and universal physical theory
+ever invented. Although already developed in the 1930ies the big question regarding
+the interpretation of the wave function collapse is still open. Although extremely
+interesting from a philosophical point of view, it is completely irrelevant from a
+practical point of view22 . We believe the same to be true for consciousness in
+the field of Artificial Intelligence. Philosophically highly interesting but practically
+unimportant. Whether consciousness will be explained some day is another question.
+
+22
+
+In the theory of everything, the collapse might become of ’practical’ importance and must or will be
+solved.
+
+12 CONCLUSIONS
+
+12
+
+59
+
+Conclusions
+
+All tasks which require intelligence to be solved can naturally be formulated as a maximization of some expected utility in the framework of agents. We gave a functional (2) and
+an iterative (9) formulation of such a decision theoretic agent, which is general enough to
+cover all AI problem classes, as has been demonstrated by several examples. The main remaining problem is the unknown prior probability distribution µAI of the environment(s).
+Conventional learning algorithms are unsuitable, because they can neither handle large
+(unstructured) state spaces, nor do they converge in the theoretically minimal number
+of cycles, nor can they handle non-stationary environments appropriately. On the other
+hand, the universal semimeasure ξ (18), based on ideas from algorithmic information theory, solves the problem of the unknown prior distribution for induction problems. No
+explicit learning procedure is necessary, as ξ automatically converges to µ. We unified the
+theory of universal sequence prediction with the decision theoretic agent by replacing the
+unknown true prior µAI by an appropriately generalized universal semimeasure ξ AI . We
+gave strong arguments that the resulting AIξ model is the most intelligent, parameterless
+and environmental/application independent model possible. We defined an intelligence
+order relation (39) to give a rigorous meaning to this claim. Furthermore, possible solutions to the horizon problem have been discussed. We outlined for a number of problem
+classes in sections 5–8, how the AIξ model can solve them. They include sequence prediction, strategic games, function minimization and, especially, how AIξ learns to learn
+supervised. The list could easily be extended to other problem classes like classification,
+function inversion and many others. The major drawback of the AIξ model is that it is
+uncomputable, or more precisely, only asymptotically computable, which makes an implementation impossible. To overcome this problem, we constructed a modified model
+˜
+AIξ t˜l , which is still effectively more intelligent than any other time t˜ and space ˜l bounded
+˜
+˜
+algorithm. The computation time of AIξ t˜l is of the order t˜·2l . Possible further research has
+been discussed. The main directions could be to prove general and special credit bounds,
+use AIξ as a super model and explore its relation to other specialized models and finally
+improve performance with or without giving up universality.
+
+REFERENCES
+
+60
+
+References
+[1] D. Angluin, C. H. Smith: Inductive inference: Theory and methods; Comput.
+Surveys, 15:3, (1983) 237–269 .
+[2] T. Bayes: An essay towards solving a problem in the doctrine of chances; Philos.
+Trans. Royal Soc., 53 (1763) 376–398.
+[3] G.J. Chaitin: On the length of programs for computing finite binary sequences; Journal A.C.M. 13:4 (1966) 547–569 and J. Assoc. Comput. Mach., 16 (1969) 145–159.
+[4] G.J. Chaitin: A theory of program size formally identical to information theory; J.
+Assoc. Comput. Mach. 22 (1975) 329–340.
+[5] G.J. Chaitin: Algorithmic information and evolution; in O.T. Solbrig and G. Nicolis,
+Perspectives on Biological Complexity, IUBS Press (1991) 51-60.
+[6] P. Cheeseman: In defense of probability theory; Proc. 9th int. joint conference on
+AI, IJCAI-85 (1985) 1002–1009. An inquiry into computer understanding; Comp. intelligence 4:1 (1988) 58–66.
+[7] M.Conte et. al.: Genetic programming estimates of Kolmogorov complexity; Proc.
+7th Int. Conf. on GA (1997) 743–750.
+[8] R.P. Daley: Minimal-program complexity of sequences with restricted resources; Inform. Contr. 23 (1973) 301–312 . On the inference of optimal descritions; Theoret.
+Comput. Sci. 4 (1977) 301–319.
+[9] M. Feder, N. Merhav, M. Gutman: Universal prediction of individual sequences;
+IEEE Trans. Inform. Theory, 38;4, (1992), 1258–1270.
+[10] D. Fudenberg, J. Tirole: Game Theory; The MIT Press (1991).
+[11] P. G´
+acs: On the symmetry of algorithmic information: Soviet Math. Dokl. 15 (1974)
+1477-1480.
+[12] D. Hume,: Treatise of Human Nature; Book I (1739).
+[13] M. Hutter: New Error Bounds for Solomonoff Sequence Prediction; Submitted to
+J. Comput. System Sci. (2000), http://xxx.lanl.gov/abs/cs.AI/9912008.
+[14] M. Hutter: Optimality of non-binary universal Solomonoff sequence prediction; In
+progress.
+[15] L.P. Kaebling, M.L. Littman, A.W. Moore: Reinforcement learning: a survey;
+Journal of AI research 4 (1996) 237–285.
+[16] K. Ko: On the definition of infinite pseudo-random sequences; Theoret. Comput.
+Sci 48 (1986) 9–34.
+[17] A.N. Kolmogorov: Three approaches to the quantitative definition of information;
+Problems Inform. Transmission, 1:1 (1965) 1–7.
+[18] L.A. Levin: Universal sequential search problems; Problems of Inform. Transmission, 9:3 (1973) 265–266.
+[19] L.A. Levin: Laws of information conservation (non-growth) and aspects of the foundation of probability theory; Problems Inform. Transmission, 10 (1974), 206–210.
+[20] N. Littlestone, M.K. Warmuth: The weighted majority algorithm; Proc. 30th
+IEEE Symp. on Found. of Comp. Science (1989) 256–261.
+[21] M. Li and P.M.B. Vit´
+anyi: Learning simple concepts under simple distributions;
+SIAM J. Comput., 20:5 (1995), 915–935.
+[22] M. Li and P.M.B. Vit´
+anyi: Inductive reasoning and Kolmogorov complexity; J.
+
+REFERENCES
+
+61
+
+Comput. System Sci., 44:2 (1992), 343–384.
+[23] M. Li and P.M.B. Vit´
+anyi: Philosophical issues in Kolmogorov complexity; Lecture Notes Comput. Sci. 623 (1992), 1–15.
+[24] M. Li and P.M.B. Vit´
+anyi: An Introduction to Kolmogorov Complexity and its
+Applications; Springer-Verlag, New York, 2nd Edition, 1997.
+[25] D. Michie: Game Playing and game-learning automata; In Fox, L., editor, Adv. in
+Prog. and Non-Numerical Comp., 183–200 (1966) Pergamon, NY.
+[26] M.J. Osborne, A. Rubinstein: A course in game theory; MIT Press (1994).
+[27] J. Pearl: Probabilistic reasoning in intelligent systems: Networks of plausible inference; Morgan Kaufmann, San Mateo, Califormia (1988).
+[28] R. Penrose: The empiror’s new mind; Oxford Univ. Press (1989). Shadows of the
+mind; Oxford Univ. Press (1994).
+[29] X. Pintaro, E. Fuentes: A forecasting algorithm based on information theory;
+Technical report, Centre Univ. d’Informatique, University of Geneva (1997).
+[30] J.J. Rissanen: Stochastic Complexity and Statistical Inquiry; World Scientific Publishers (1989).
+[31] S. Russell, P. Norvig: Artificial Intelligence: A modern approach; Prentice Hall
+(1995).
+[32] J. Schmidhuber: Discovering solutions with low Kolmogorov complexity and high
+generalization capability; Proc. 12th Int. Conf. on Machine Learning (1995) 488–496.
+[33] J. Schmidhuber, M. Wiering: Solving POMDP’s with Levin search and EIRA;
+Proc. 13th Int. Conf. on Machine Learning (1996) 534–542.
+[34] M. Schmidt: Time-Bounded Kolmogorov Complexity May Help in Search for Extra Terrestrial Intelligence (SETI) ; Bulletin of the European Association for Theor.
+Comp. Sci. 67 (1999) 176–180.
+[35] R.J. Solomonoff: A formal theory of inductive inference, Part 1 and 2; Inform.
+Contr., 7 (1964), 1–22, 224–254.
+[36] R.J. Solomonoff: Complexity-based induction systems: comparisons and convergence theorems; IEEE Trans. Inform. Theory, IT-24:4, (1978), 422–432.
+[37] R.J. Solomonoff: An application of algorithmic probability to problems in artificial intelligence; In L.N. Kanal and J.F.Lemmer, editors, Uncertainty in Artificial
+Intelligence, North-Holland, (1986), 473–491.
+[38] R.J. Solomonoff: The discovery of algorithmic probability; J. Comput. System Sci.
+55 (1997), 73–88.
+[39] R.J. Solomonoff: Two kinds of probabilistic induction; Comput. Journal 42:4
+(1999), 256–259.
+[40] von Neumann, J.O. Morgenstern: The theory of games and economic behaviour;
+Princeton Univ. Press (1944).
+[41] L.G. Valiant: A theory of the learnable; Comm. Assoc. Comput. Mach., 27 (1984)
+1134–1142.
+[42] V. G. Vovk: Universal forecasting algorithms; Inform. and Comput., 96, (1992),
+245–277.
+[43] V. Vovk, C. Watkins: Universal portfolio selection; Proceedings 11th Ann. Conf.
+on Comp. Learning Theory (1998) 12–23.
+[44] D.G. Willis: Computational complexity and probability constructions; J. Ass. Com-
+
+REFERENCES
+put. Mach., 4 (1970), 241–259.
+
+62
+
+

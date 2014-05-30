@@ -1,0 +1,949 @@
+arXiv:physics/0003072v1 [physics.chem-ph] 24 Mar 2000
+
+Phase changes in 38-atom Lennard-Jones clusters. II: A parallel
+tempering study of equilibrium and dynamic properties in the
+molecular dynamics and microcanonical ensembles
+F. Calvo
+D´epartement de Recherche sur la Mati`ere Condens´ee,
+Service des Ions, Atomes et Agr´egats, CEA Grenoble
+F38054 Grenoble Cedex, France
+
+J. P. Neirotti and David L. Freeman
+Department of Chemistry, University of Rhode Island
+51 Lower College Road, Kingston, RI 02881-0809
+and
+J. D. Doll
+Department of Chemistry, Brown University
+Providence, RI 02912
+(January 11, 2014)
+
+Abstract
+We study the 38-atom Lennard-Jones cluster with parallel tempering Monte
+Carlo methods in the microcanonical and molecular dynamics ensembles. A
+new Monte Carlo algorithm is presented that samples rigorously the molecular
+dynamics ensemble for a system at constant total energy, linear and angular
+momenta. By combining the parallel tempering technique with molecular dynamics methods, we develop a hybrid method to overcome quasi-ergodicity
+and to extract both equilibrium and dynamical properties from Monte Carlo
+and molecular dynamics simulations. Several thermodynamic, structural and
+
+dynamical properties are investigated for LJ38 , including the caloric curve,
+the diffusion constant and the largest Lyapunov exponent. The importance
+of insuring ergodicity in molecular dynamics simulations is illustrated by comparing the results of ergodic simulations with earlier molecular dynamics simulations.
+
+Typeset using REVTEX
+
+I. INTRODUCTION
+
+The simulation of systems having complex potential energy surfaces (PES) is often difficult owing to the problem of quasi-ergodicity. Quasi-ergodicity can arise in systems having
+several energy minima separated by high energy barriers. When such situations occur, as
+for example in proteins, glasses or clusters, the system can become trapped in local basins
+of the energy landscape, and the ergodic hypothesis fails on the time scale of the simulation.
+In the canonical ensemble, the high energy regions of the PES are exponentially suppressed
+and barrier crossings become rare events. Calculations of equilibrium properties when phase
+space is thus partitioned require methods that overcome quasi-ergodicity by enhanced barrier crossing. Many techniques have been proposed to address this problem, including the
+use of generalized ensembles such as multicanonical1 or Tsallisian,2,3 simulated tempering,4
+configurational5 or force bias6 Monte Carlo, or various versions of the jump-walking7–11 algorithm. Most of these techniques have been introduced for Monte Carlo (MC) simulations
+rather than molecular dynamics (MD) simulations. These techniques have been applied to
+a variety of sampling and optimization problems, and phase changes in clusters have often
+been considered as a benchmark to test these methods.2,10,11
+The double-funnel energy landscape of the 38-atom Lennard-Jones (LJ) cluster has been
+investigated in detail by Doye, Miller and Wales,12–15 who recently also estimated the interfunnel rate constants using master equation dynamics.13 This landscape is challenging for
+simulation because of the high free-energy barrier separating the two funnels.14 In the preceding paper (hereafter referred to as I),16 we have shown how the parallel tempering algorithm
+can be used to deal with this particularly complex system for Monte Carlo simulations in
+the canonical ensemble. Achieving ergodicity in microcanonical simulations is much harder
+than in the canonical ensemble, because the system is unable to cross any energy barrier
+higher than the total energy available. The 38-atom Lennard-Jones cluster is fundamentally
+non-ergodic in a range of energies. This non-ergodicity may not be a serious problem when
+considering one particular cluster on a short time scale. However, in a statistical sample of
+
+such systems it is important to have ergodic results.
+To allow MD simulations to cross the high energy barriers, one may think of heating the
+system (by increasing its kinetic energy), followed by a cooling back to its initial thermodynamic state. Although this process is straightforward, the dynamics becomes biased and
+non physical during the heating and cooling processes. Moreover, it is difficult to control
+accurately the heating and cooling rates that should be chosen for any system. This latter
+aspect is particularly critical for the 38-atom Lennard-Jones cluster where the narrow and
+deepest funnel is hard to reach even at high temperatures.
+Because of the inherent difficulties of molecular dynamics, MC approaches can be especially useful for dealing with the problem of crossing high energy barriers. Monte Carlo
+methods have been developed in previous work10,17 in the microcanonical ensemble. In
+these approaches the microcanonical sampling is at fixed energy without any additional
+constraints. Such methods can be contrasted with isoenergetic molecular dynamics where
+the total, linear and angular momenta are also conserved. These additional constraints must
+be considered even at zero angular momentum.18–20 To differentiate microcanonical simulations, where only the energy is fixed, from molecular dynamics simulations, where additional
+constraints are imposed, we identify the former to be simulations in the microcanonical ensemble and identify the latter simulations to be in the molecular dynamics ensemble. The
+differences in the two ensembles can be particularly important when the angular momentum
+is large enough to induce structural (centrifugal) distortions.20 Because dynamical properties
+are calculated using molecular dynamics methods, in this work we find that a combination
+of Monte Carlo and molecular dynamics methods are most convenient for developing ergodic
+approaches to dynamics.
+In this paper, we adapt the parallel tempering method to both the microcanonical and
+molecular dynamics ensembles. The application of parallel tempering in the molecular dynamics ensemble requires the incorporation of the conservation of the total linear and angular
+momenta into the probabilities. In order to extract ergodic dynamical properties, we combine Monte Carlo methods with molecular dynamics to develop a hybrid ergodic MC/MD
+
+algorithm. The efficiency of the simulation tools developed in this work is demonstrated by
+applications to the 38-atom Lennard-Jones cluster, which exhibits a solid-solid transition
+prior to melting.13,16 This transition to an equilibrium phase between truncated octahedral
+and icosahedral geometries makes this cluster an ideal candidate for investigating how the
+ergodic hypothesis can influence the dynamical behavior of a complex system.
+The contents of the remainder of this paper are as follows. In the next section, we recall the basic principle of Monte Carlo sampling in the microcanonical ensemble, and we
+present the simple modifications needed to include parallel tempering. We test microcanonical parallel tempering methods on the 38-atom Lennard-Jones cluster, and compare the
+microcanonical results with those found in I using the canonical ensemble. We focus on
+equilibrium properties, including the caloric curve and the isomers distributions. In section
+III we review the characteristics of the molecular dynamics ensemble at fixed total linear
+and angular momenta and fixed total energy. We extend the parallel tempering Monte
+Carlo method to the MD ensemble, and we combine microcanonical parallel tempering with
+molecular dynamics to produce an ergodic MD method. We also apply these methods to
+several dynamical properties of LJ38 ; in particular the diffusion constant and the largest
+Lyapunov exponent. We summarize our findings and discuss our results in section IV.
+
+II. PARALLEL TEMPERING MONTE CARLO IN THE MICROCANONICAL
+ENSEMBLE
+
+The fundamental quantity in the microcanonical ensemble is the density of states Ω. For
+a system having N identical particles, volume V and total energy E, Ω is defined by
+Ω(N, V, E) =
+
+1
+N!h3N
+
+δ[H(r, p) − E]d3N r d3N p
+
+(1)
+
+where h is Planck’s constant and where H(r, p) denotes the classical Hamiltonian function of
+the coordinates r and momenta p of the N particles. Knowing the microcanonical density
+of states Ω, one can calculate the canonical partition function Q(N, V, T ) by a Laplace
+
+transformation.10 The kinetic part of the Hamiltonian H is quadratic in the momenta, and
+Eq. (1) can be partly integrated to give10,21
+Ω(N, V, E) =
+
+2πm
+h2
+
+3N/2
+
+1
+N!Γ(3N/2)
+
+Θ[E − U(r)][E − U(r)]3N/2−1 d3N r.
+
+(2)
+
+In Eq.(2), Γ is the Gamma function, m is the mass of each particle, U(r) = H − K is the
+potential energy and Θ is the Heaviside step function: Θ(x) = 1 if x ≥ 0, 0 otherwise.
+Microcanonical averages of a coordinate-dependent variable A(r) can be expressed
+A (N, V, E) =
+
+Θ[E − U(r)][E − U(r)]3N/2−1 A(r)d3N r
+Θ[E − U(r)][E − U(r)]3N/2−1 d3N r
+
+.
+
+(3)
+
+The microcanonical entropy S can be defined by S(N, V, E) = kB ln Ω(N, V, E) with kB the
+Boltzmann constant. The thermodynamic temperature T (N, V, E) is given by the thermodynamic relation (∂S/∂E)N,V = 1/T , and can be obtained from a microcanonical average21
+T (N, V, E) =
+
+2
+1
+.
+3N − 2 K −1
+
+(4)
+
+This expression is slightly different from the kinetic temperature 2 K /3N, which is a consequence of our choice in the definition of the entropy. As discussed by Pearson and coworkers,21 it is also possible to define the entropy using the phase space volume
+Φ(N, V, E) =
+
+E
+0
+
+Ω(N, V, E ′ )dE ′ .
+
+(5)
+
+Definitions of the temperature based on Ω differ from the temperature based on Φ to order
+1/N, and the two definitions agree only in the thermodynamic limit.
+Monte Carlo simulations can be used to explore the microcanonical ensemble by performing a random walk in configuration space. In the standard Metropolis scheme, a trial
+move from configuration ro to configuration rn is accepted with the probability22
+acc(ro → rn ) = min 1,
+
+ρE (rn )T (rn → ro )
+,
+ρE (ro )T (ro → rn )
+
+(6)
+
+where T (ro → rn ) is a trial probability. The acceptance probability expressed in Eq.(6)
+insures detailed balance so that the random walk visits points in configuration space proportional to the equilibrium distribution ρE (r) defined by
+
+ρE (r) = ζ −1Θ[E − U(r)][E − U(r)]3N/2−1
+
+(7)
+
+where ζ is the normalization. In practice, T (ro → rn ) is a uniform distribution of points of
+width ∆ centered about ro , and ∆ is adjusted as a function of the energy so that not too
+many trial moves are either accepted or rejected.
+Implementation of microcanonical Monte Carlo is as easy as its canonical version. Because Monte Carlo methods are based on random walks in configuration space, in principle
+the system can cross energy barriers higher than the available energy. However, in difficult
+cases like LJ38 , large atomic displacements having poor acceptance ratios are needed to reach
+ergodicity.
+Parallel tempering23–26 has proved to be an important approach to insure ergodicity
+in canonical Monte Carlo simulations, and parallel tempering can be easily adapted to the
+microcanonical ensemble by replacing the Boltzmann factors in the acceptance probability by
+the microcanonical weight ρE (r). In the parallel tempering scheme, several microcanonical
+MC simulations are performed simultaneously at different total energies {Ei }. With some
+predetermined probability, two simulations at energies Ei and Ej attempt to exchange their
+current configurations, respectively ri and rj , and this exchange is accepted with probability
+min 1,
+
+ρEi (rj )ρEj (ri )
+.
+ρEi (ri )ρEj (rj )
+
+The acceptance ratio is analogous to the canonical expression given in I. In microcanonical
+simulations the potential energies must be smaller than min(Ei , Ej ); otherwise the move
+is rejected. Parallel tempering microcanonical MC works in the same way as in standard
+canonical MC. As with canonical parallel tempering MC, the gaps between adjacent total
+energies must be chosen to be small enough so that exchanges between the corresponding
+trajectories are accepted with a reasonable probability.
+By using a histogram reweighting technique,27 it is possible to extract from the MC
+simulations the density of states Ω, and then all the thermodynamic quantities in both the
+microcanonical and the canonical ensembles. The procedure is similar to that described
+in Ref. 28, and relies on the calculation of the distribution P (U, E) of potential energy
+
+U at the total energy E. P is fitted to the microcanonical form P (U, E) = ΩC (U)(E −
+U)3N/2−1 /Ω(E), where ΩC stands for the configurational density of states, and Ω(E) is
+extracted by convolution of ΩC (U) and (E − U)3N/2−1 .
+We have tested the parallel tempering Monte Carlo algorithm in the microcanonical
+ensemble on the 38-atom Lennard-Jones cluster previously investigated. Forty different total energies ranging from −172.4737ε to −124ε have been used, and the same simulation
+conditions have been chosen as in I. In addition to a constraining sphere of radius 2.25σ to
+prevent evaporation, exchanges have been attempted every 10 passes, with the same method
+for choosing exchanging trajectories as described in the previous article. The simulations are
+begun with random configurations of the cluster geometry, and consist of 1.3 × 1010 points
+accumulated following equilibration moves consisting of 95 × 106 Metropolis points(no exchanges) followed by 190 × 106 points using parallel tempering. The microcanonical heat
+capacity calculated in this fashion and shown in Fig. 1, is qualitatively the same as the
+canonical heat capacity [see I]. The melting peak in the microcanonical heat capacity occurs
+at the same calcuated temperature as the temperature of the melting peak in the canonical heat capacity, and there are slope change regions at temperatures that correspond to
+equilibrium between the icosahedral basin and the truncated octahedral global minimum
+structure. The present simulations are also used to obtain structural insight about the cluster as a function of total energy. We have calculated the order parameter Q4 as defined
+in I as a function of temperature, and compared the classification into the three categories
+of isomers (truncated octahedral, icosahedral or liquid-like) using the energy criterion also
+outlined in I.
+In Fig. 2 we show the caloric curve T (E) determined from our parallel tempering microcanonical MC simulations. We also present the canonical curve for comparison. The
+melting transition near T ∼ 0.166ε/kB is reflected in the change in slope of the temperature
+as a function of the energy. The microcanonical curve does not display a van der Waals
+loop, and remains very close to the canonical curve. The average value of the order parameter Q4 is displayed in the lower panel of Fig. 2 as a function of the total energy. As
+
+has been discussed in I for the canonical simulation, the order parameter begins to drop at
+energies where there is the onset of isomerization transitions to the icosahedral basin (near
+E = −160ε), and the order parameter reaches its lowest value at the melting transition.
+The isomer distributions have been evaluated either using the parameter Q4 or using the
+energy criterion (see the discussion in paper I). The results have been plotted in Fig. 3
+as a function of the total energy. The behavior of the isomer distributions as a function
+of energy is similar to the canonical distributions as a function of temperature, and the
+cluster exhibits equilibrium between truncated octahedral and icosahedral geometries in the
+< E < −150ε, prior to the solid-like to liquid-like phase change. As in
+energy range −160ε ∼
+∼
+the canonical case, the icosahedral distribution is a symmetric function of the energy when
+the energy criterion is used rather than the definition based on Q4 . This difference reflects
+the differences between the two definitions of icosahedral and liquid basins. The oscillatory
+structure observed at the peak of PQ4 for the icosahedral distribution in the upper panel of
+Fig. 3 is smaller than the calculated errors (two standard deviations of the mean are shown).
+Whether the observed structure would persist for a longer simulation is not known to us.
+Because the definition that assigns configurations to the icosahedral basin is arbitrary, we
+have chosen not to investigate this structure further.
+It is useful to contrast the current results with previous constant energy studies of LJ38 .
+Previous simulations have used molecular dynamics methods where no attempt has been
+made to insure ergodicity. To contrast these past studies with the molecular dynamics technique discussed in the next section of this paper, we define standard molecular dynamics to
+represent the usual molecular dynamics method where no special procedure is introduced
+to insure ergodicity. Simulations of LJ38 using standard molecular dynamics invariably lead
+to a caloric curve with a clear van der Waals loop and a melting temperature higher than
+that inferred from Fig. 2.29 From the results of Ref. 29, the cluster is trapped in the octahedral basin, and the system does reflect the true dynamical coexistence state between the
+truncated octahedron and the icosahedral basin. This is the common situation encountered
+in MD simulations of the LJ38 system; the cluster chooses either to remain trapped in the
+
+octahedral basin, or to escape and coexist between the icosahedral solid-like and liquid-like
+forms. Because the system is unable to return from the octahedral basin, the microcanonical
+temperature decreases. In the usual case, van der Waals loops arise when there are large
+energy gaps between the lowest-energy isomers.30 In the specific case of LJ38 , it appears that
+the presence of extra (icosahedral) isomers only slightly higher in energy than the octahedral
+structure eliminates this loop in the ergodic microcanonical caloric curve.
+In order to extract dynamical quantities, the Monte Carlo method we have presented
+must be modified to sample the MD ensemble. The modification is the subject of the next
+section.
+
+III. ERGODIC MOLECULAR DYNAMICS
+
+The molecular dynamics ensemble differs from the microcanonical ensemble in that two
+quantities are conserved in addition to the total energy E, volume V and number of particles
+N. These two quantities are the total linear momentum P and total angular momentum
+L. If their values are prescribed, the density of states remains the fundamental quantity of
+interest, and is now defined by
+Ω(N, V, E, P, L) =
+1
+N!h3N
+
+N
+
+N
+
+δ[H(r, p) − E]δ P −
+
+i=1
+
+pi δ L −
+
+i=1
+
+ri × pi d3N rd3N p.
+
+(8)
+
+As is the case in the microcanonical ensemble [see Eq.(2)], for atomic systems the momentum
+integrations in Eq.(8) can be evaluated explicitly.18–20 Because the thermodynamic properties are not affected by the translational motion of the center of mass, we can assume that
+P = 0. We then obtain20
+Ω(N, V, E, P = 0, L) =
+2πm
+h2
+
+3N/2−3
+
+1
+N!Γ(3N/2 − 3)
+
+d3N r
+,
+Θ[E − UL (r)][E − UL (r)]3N/2−4 √
+det I
+
+(9)
+
+where I is the inertia matrix and UL (r) = U(r) + L† I−1 L/2 is the effective rovibrational
+energy. This effective potential energy includes the kinetic energy contribution of the ro-
+
+tating cluster considered as a rigid body.31,32 The landscape of rotating clusters has been
+investigated by Miller and Wales in order to study cluster evaporation.33 Averages in the
+MD ensemble are now expressed as
+
+A =
+
+d3N r
+Θ[E − UL (r)][E − UL (r)]3N/2−4 A(r) √
+det I .
+3N
+d
+r
+Θ[E − UL (r)][E − UL (r)]3N/2−4 √
+det I
+
+(10)
+
+As in the microcanonical ensemble, we define the entropy in the molecular dynamics ensemble by S = kB ln Ω. The differences between the microcanonical and molecular dynamics
+ensembles are the exponent 3N/2 which is reduced by 3 owing to the geometrical constraints, the potential energy which now includes the contribution of the centrifugal energy,
+√
+and the weight 1/ det I which is a consequence of the conservation of the angular momentum. Monte Carlo simulations can sample the MD ensemble by performing a random walk
+in configuration space. The acceptance probability from configuration ro to configuration
+rn is
+acc(ro → rn ) = min 1,
+
+ρE,L (rn )T (rn → ro )
+ρE,L (ro )T (ro → rn )
+
+(11)
+
+in the Metropolis scheme. The microcanonical weight ρE (r) is now replaced by the MD
+weight ρE,L given by
+ρE,L (r) = ζ −1 √
+
+1
+Θ[E − UL (r)][E − UL (r)]3N/2−4 ,
+det I
+
+(12)
+
+where ζ is a normalization. The expression for the acceptance probability is similar to Eq.
+(6), and a practical implementation of Monte Carlo in the MD ensemble is made in the same
+way as in the true microcanonical ensemble, given the vector L. Parallel tempering can be
+also easily combined with the MC simulations. The acceptance probability of exchanging
+the configurations ri and rj initially at the total energies Ei and Ej respectively is then
+
+
+[Ei − UL (rj )][Ej − UL (ri )]
+min 1,
+[Ei − UL (ri)][Ej − UL (rj )]
+
+3N/2−4
+
+
+
+
+provided that all quantities inside brackets are positive (otherwise the move is rejected). It
+is remarkable that the geometrical weights have canceled in this expression.
+
+The Monte Carlo method we have just described allows sampling of configuration space
+rigorously equivalent to the sampling we would obtain using molecular dynamics, but with
+the additional possibility of crossing the energy barriers higher than the available energy.
+The method can be used in its present form to extract equilibrium properties only dependent
+on the energy or geometry, as has been illustrated in the previous section. To compute dynamical quantities, the method can also provide a database of configurations representative
+of a given total energy. Instead of performing a few very long MD simulations that are in
+principle unable to reach other parts of the energy surface separated by barriers higher than
+the available energy, we choose to perform a statistical number of short simulations starting
+from configurations obtained by parallel tempering Monte Carlo in the MD ensemble with
+same total energy and angular momentum. By construction, if the MC method is correctly
+ergodic, then the hybrid MD method we have suggested can be expected to yield ergodic
+dynamical observables.
+We now illustrate this ergodic molecular dynamics method on the LJ38 problem. Two
+essentially dynamical parameters have been calculated. The first is the self diffusion constant
+D, obtained from the derivative of the average mean square atomic displacement
+D=
+
+1d
+[r(t) − r(0)]2 ,
+6 dt
+
+(13)
+
+where the average is taken over all particles of the system and over all short MD simulations.
+The other parameter is the largest Lyapunov exponent λ, that measures the exponential rate
+of divergence of the distance between two initially close trajectories in the phase space. If
+˙
+we write the equation describing the Hamiltonian dynamics in condensed form as ψ(t)
+=
+F (ψ) where F is a nonlinear function and ψ = {r, p} the phase space point, then a small
+perturbation δψ evolves according to the simple equation dδψ/dt = (∂F/∂ψ)δψ. The largest
+Lyapunov exponent λ is obtained from the time evolution of the vector δψ:
+δψ(t)
+1
+ln
+.
+t→∞ δψ(0)→0 t
+δψ(0)
+
+λ = lim
+
+lim
+
+(14)
+
+In Eq.(14), · is a metric on the phase space. In principle, any metric can be used, and we
+choose the Euclidian metric including both the momenta and the coordinates. The numerical
+
+procedure34 involves a periodic renormalization of the vector δψ to prevent its exponential
+divergence. The successive lengths are accumulated and contribute to the average value of
+λ.
+In I, the clusters have been defined using a hard sphere constraining potential. Because
+the angular momentum is not conserved after reflection from such hard wall boundaries, in
+the molecular dynamics simulations we have chosen a soft repulsive spherical wall Uc defined
+with respect to the center of mass of the cluster for each particle by
+Uc (r) =
+
+
+ 0,
+
+
+r < Rc
+
+κ(r − Rc )4 /4, r ≥ Rc .
+
+(15)
+
+In this equation, the atomic distances r are measured with respect to the cluster center
+of mass. The simulations have been performed setting the angular momentum to zero for
+√
+simplicity. We stress that even in this case (with L = 0), the weight 1/ det I must be
+included in the Monte Carlo probabilities so that we effectively sample the MD ensemble.
+The actual thermodynamic behavior in the MD ensemble at zero angular momentum is
+nevertheless nearly identical to the microcanonical behavior.
+The application to the LJ38 cluster has been made by performing 1010 MC steps following
+107 equilibration steps in a parallel tempering simulation in the MD ensemble. The same
+40 total energies have been chosen as in the previous section, and 105 configurations have
+been stored every 105 steps for each simulation. Short molecular dynamics runs of 104 time
+steps following 103 equilibration steps have been performed for each of these configurations,
+with the same total energy as the corresponding MC trajectory of origin, and with zero
+total linear and angular momenta as well. The parameters used for the constraining wall
+are respectively Rc = 2.25σ and κ = 100ε, for both the MC and MD runs. A simple Verlet
+algorithm has been used to propagate the MD trajectory with the time step δt = 0.01
+reduced LJ units. The propagation of the tangent trajectory to calculate the Lyapunov
+exponent has been determined with a fourth order Runge-Kutta scheme. The final values of
+D and λ are an average over the 105 MD simulations. The variations of D and λ with total
+energy are depicted in Fig. 4. In both cases, two curves have been plotted, calculated either
+
+from standard molecular dynamics (with 108 time steps following 107 equilibration steps,
+and starting initially from the lowest-energy structure), or from our hybrid ergodic molecular
+dynamics method. For both quantities, the two MD schemes clearly yield distinct values in
+the energy range where equilibrium between truncated octahedral and icosahedral geometries
+occurs. The thermodynamic temperature, not plotted here, has the same variations as the
+caloric curve of Fig. 2 when calculated with ergodic MD. Standard molecular dynamics
+predicts a van der Waals loop centered at T ∼ 0.18ε/kB . For standard MD, the cluster is
+trapped in the icosahedral basin and is, in practice, unable to reach the octahedral basin.
+Only the equilibrium between the icosahedral basin and liquid-like structures occurs. As
+can be seen from the upper panel of Fig. 4, this change in curvature of the temperature is
+also present for the diffusion constant, which exhibits strong variations at the energy where
+the octahedral structure vanishes when standard MD is used. In contrast, the variations in
+ergodic MD are smooth.
+The melting temperature implied by the largest Lyapunov exponent is also higher in
+standard MD than in ergodic MD, even though the variations of the Lyapunov exponent are
+continuous in both MD schemes.29 Indeed, using ergodic molecular dynamics we observe a
+shift of the curve obtained by standard MD toward the lower energies. As shown by Hinde,
+Berry, and Wales,35–37 the Lyapunov exponent and the Kolmogorov entropy are quantities
+essentially dependent on the local properties of the energy landscapes. One contribution
+comes from the negative curvature of the landscape, and another contribution is the fluctuation of positive curvature.38 Both contributions are affected by the cluster being trapped
+either inside the truncated octahedral basin or inside the icosahedral basin. In this latter
+case in particular, the different isomers belonging to the icosahedral basin are connected
+through regions of negative curvature, while only one isomer defines the octahedral funnel.
+Because ergodic molecular dynamics allows the cluster to be found in both basins prior
+to melting, the dynamical behavior is likely to be very different (and more chaotic) with
+respect to the dynamical behavior of the cluster confined to the octahedral funnel. This
+difference is precisely what we observe on the lower panel of Fig. 4.
+
+IV. CONCLUSION
+
+In this paper, we have explored the parallel tempering method in simulations in the
+microcanonical ensemble. The implementation of the parallel tempering algorithm in this
+ensemble is straightforward, the Boltzmann factor exp(−βU) being replaced by the microcanonical weight (E − U)3N/2−1 . Application to the LJ38 cluster has shown the thermodynamic behavior in the microcanonical ensemble to be similar to the behavior in the canonical
+ensemble. The solid-liquid phase change is preceded by a solid-solid phase change where the
+cluster is in equilibrium between truncated octahedral and icosahedral geometries. This
+phase equilibrium is well reproduced in the simulations owing to the power of parallel tempering. The calculated microcanonical caloric curve, which does not display a van der Waals
+loop, is consistent with the single peaked heat capacity observed in I.16
+We have extended the parallel tempering microcanonical Monte Carlo algorithm to sample the molecular dynamics ensemble at constant total energy, linear momentum and angular
+momentum. Combined with standard molecular dynamics, this method circumvents the lack
+of connectivity between regions of the potential energy surface. The method can ensure ergodicity in microcanonical simulations, which is much more difficult to achieve than in the
+canonical ensemble. Ironically, this ergodic MD method can be viewed as the counterpart
+of the techniques developed by Chekmarev and Krivov to study the dynamics of systems
+confined to only one catchment basin in the energy surface.39
+We have performed a statistical number of short molecular dynamics runs starting from
+configurations stored periodically in parallel tempering Monte Carlo simulations. These simulations sample the MD ensemble at the same total energies, linear and angular momenta
+as the standard molecular dynamics runs. In fact, the length of the MD runs is mainly
+dictated by the large number of starting configurations. One may think of reducing drastically this number, to allow for the calculation of parameters varying on longer time scales.
+Unfortunately, if the energy landscape is not known in advance, then it is hard to guess how
+important are the contributions of the basins not selected as starting configurations. In the
+
+case of LJ38 having only 3 main regions on the energy surface, one possibility is to compute
+a dynamical property as the average value over 3 different simulations starting either from
+the truncated octahedral geometry, one icosahedral geometry or a low-lying liquid geometry,
+all carried out at the same total energy. However, as we have seen in Fig. 3, it is not obvious
+how to choose properly the weights of each basin in this average because of the difficulty
+in distinguishing between icosahedral and liquid structures in many cases. For this reason,
+we believe that the first parallel tempering MC step of the hybrid ergodic method is essential in the vicinity of phase changes to capture many starting configurations that are used
+subsequently in standard molecular dynamics. The enhanced sampling offered by parallel
+tempering can also act as a statistical representation of the energy surface at a given total
+energy, and the long time dynamics may be further investigated by using master equations
+after searching the saddle points.15,40
+We have calculated two dynamical quantities with the present hybrid MD/MC method,
+the diffusion constant and the largest Lyapunov exponent in the 38-atom Lennard-Jones
+cluster. The variations of both quantities with the total energy are significantly different
+when evaluated with standard (non-ergodic) molecular dynamics or with our hybrid ergodic
+MD method. These results emphasize the different contributions of the two funnels of the
+energy landscape to the average value of the parameters estimated.
+The algorithms developed in this investigation allow the calculation of thermodynamic,
+structural, or dynamical properties of systems such as LJ38 that can be expressed as phase
+space or time averages. Parallel tempering works using a criterion based on the potential
+energy but not on the geometry. Consequently permutational isomers can be introduced
+in the course of the simulation. Quantities such as fluctuations of configuration-dependent
+properties are much more difficult to extract than actual averages. For instance, the Lindemann index δ, which measures the root mean square bond length fluctuation, is often
+considered to be a reliable parameter for detecting melting in atomic and molecular systems. This quantity cannot be properly estimated with the ergodic MD scheme, and the
+same difficulty persists for other methods based on the use of different trajectories.
+
+Although the idea of combining Monte Carlo sampling with standard molecular dynamics
+can be applied to other techniques such as jump-walking, we believe that parallel tempering
+is the key to the success in the case of LJ38 . As in the canonical version, the equilibrium
+phase between truncated octahedral and icosahedral structures is correctly reproduced in
+an energy range preceding the melting region, because in this range configurations may be
+accessed either from higher energy trajectories containing mainly icosahedral geometries,
+or from lower energy trajectories acting as a reservoir for the octahedral geometry. As
+noticed by Falcioni and Deem,25 the parallel tempering algorithm is especially useful at low
+temperatures, or in our case, at low energy. The long relaxation times inherent in systems
+like clusters, proteins, critical or glassy liquids, are a serious difficulty for standard simulation
+methods. We expect the present ergodic method to be particularly useful to deal with the
+dynamics of such systems.
+The method we have presented works at constant total energy. It is possible to improve
+ergodicity in constant-temperature MD either by using canonical parallel tempering as in
+the work of Sugita and Okamoto41 , or by coupling parallel tempering canonical Monte Carlo
+to short Nos´e-Hoover trajectories. In the Nos´e-Hoover approach such molecular dynamics
+simulations do conserve a zero angular momentum, so a rigorous MC sampling should in√
+clude the geometrical weight 1/ det I in the probabilities also in this case. The present
+microcanonical scheme can be easily used for rotating bodies, which makes the method suitable for investigating the strong influence of centrifugal effects on phase changes in atomic
+clusters.
+
+ACKNOWLEDGMENTS
+
+Some of this work has been motivated by the attendance of two of us (DLF and FC)
+at a recent CECAM meeting on ‘Overcoming broken ergodicity in simulations of condensed
+matter systems.’ We would like to thank CECAM, J.E. Straub and B. Smit who organized the meeting, and those who attended the workshop for stimulating discussions. This
+
+work has been supported in part by the National Science Foundation under grant numbers
+CHE-9714970 and CDA-9724347. This research has been supported in part by the Phillips
+Laboratory, Air Force Material Command, USAF, through the use of the MHPCC under
+cooperative agreement number F29601-93-0001. The views and conclusions contained in this
+document are those of the authors and should not be interpreted as necessarily representing
+the official policies or endorsements, either expressed or implied, of Phillips Laboratory or
+the US Government.
+
+REFERENCES
+1
+
+B. A. Berg and T. Neuhaus, Phys. Rev. Lett. 68, 9 (1991).
+
+2
+
+I. Andricioaei and J. E. Straub, J. Chem. Phys. 107, 9117 (1997).
+
+3
+
+U. E. Hansmann and Y. Okamoto, Phys. Rev. E 56, 2228 (1997).
+
+4
+
+E. Marinari and G. Parisi, Europhys. Lett. 19, 451 (1992).
+
+5
+
+J. I. Siepmann and D. Frenkel, Mol. Phys. 75, 59 (1992).
+
+6
+
+C. Pangali, M. Rao, and B. J. Berne, Chem. Phys. Lett. 55, 413 (1978).
+
+7
+
+D. D. Frantz, D. L. Freeman, and J. D. Doll, J. Chem. Phys 93, 2769 (1990).
+
+8
+
+D. D. Frantz, D. L. Freeman, and J. D. Doll, J. Chem. Phys 97, 5713 (1992).
+
+9
+
+A. Matro, D. L. Freeman, and R. Q. Topper, J. Chem. Phys. 104, 8690 (1996).
+
+10
+
+E. Curotto, D. L. Freeman, and J. D. Doll, J. Chem. Phys. 109, 1643 (1998).
+
+11
+
+H. Xu and B. J. Berne, J. Chem. Phys. 110, 10 299 (1999).
+
+12
+
+J. P. K. Doye and D. J. Wales, Phys. Rev. 80, 1357 (1998).
+
+13
+
+J. P. K. Doye, D. J. Wales, and M. A. Miller, J. Chem. Phys. 109, 8143 (1998).
+
+14
+
+J. P. K. Doye, M. A. Miller, and D. J. Wales, J. Chem. Phys. 110, 6896 (1999).
+
+15
+
+M. A. Miller, J. P. K. Doye, and D. J. Wales, Phys. Rev. E 60, 3701 (1999).
+
+16
+
+J. P. Neirotti, F. Calvo, D. L. Freeman, and J. D. Doll (previous article).
+
+17
+
+M. A. Miller and D. J. Wales, J. Chem. Phys. 107, 8568 (1997).
+
+18
+
+R. S. Dumont, J. Chem. Phys. 95, 9172 (1991).
+
+19
+
+S. C. Smith, J. Chem. Phys. 97, 2406 (1992).
+
+20
+
+F. Calvo and P. Labastie, Eur. Phys. J D 3, 229 (1998).
+
+21
+
+E. M. Pearson, T. Halicioglu, and W. A. Tiller, Phys. Rev. A 32, 3030 (1985).
+
+22
+
+N. Metropolis, A. Rosenbluth, M. N. Rosenbluth, A. Teller, and E. Teller, J. Chem. Phys.
+21, 1087 (1953).
+
+23
+
+C. J. Geyer and E. A. Thompson, J. Am. Stat. Assoc. 90, 909 (1995).
+
+24
+
+M. C. Tesi, E. J. Janse van Rensburg, E. Orlandini, and S. G. Whittington, J. Stat. Phys.
+82, 155 (1996).
+
+25
+
+M. Falcioni and M. W. Deem, J. Chem. Phys. 110, 1754 (1999).
+
+26
+
+Q. Yan and J. J. de Pablo, J. Chem. Phys. 111, 9509 (1999).
+
+27
+
+P. Labastie and R. L. Whetten, Phys. Rev. Lett. 65, 1567 (1990).
+
+28
+
+F. Calvo and P. Labastie, Chem. Phys. Lett. 247, 395 (1995).
+
+29
+
+F. Calvo, J. Chem. Phys. 108, 6861 (1998).
+
+30
+
+D. J. Wales, Mol. Phys. 78, 151 (1993).
+
+31
+
+J. Jellinek and D. H. Li, Phys. Rev. Lett. 62, 241 (1989).
+
+32
+
+D. H. Li and J. Jellinek, Z. Phys. D 12, 177 (1989).
+
+33
+
+M. A. Miller and D. J. Wales, Mol. Phys. 89, 533 (1996).
+
+34
+
+G. Benettin, L. Galgani, and J.-M. Strelcyn, Phys. Rev. A 14, 2338 (1974).
+
+35
+
+R. J. Hinde, R. S. Berry, and D. J. Wales, J. Chem. Phys. 96, 1376 (1992).
+
+36
+
+R. J. Hinde and R. S. Berry, J. Chem. Phys. 99, 2942 (1993).
+
+37
+
+D. J. Wales and R. S. Berry, J. Phys. B 23, L351 (1991).
+
+38
+
+V. Mehra and R. Ramaswamy, Phys. Rev. E 56, 2508 (1997).
+
+39
+
+S. F. Chekmarev and S. V. Krivov, Phys. Rev. E 57, 2445 (1998).
+
+40
+
+K. D. Ball and R. S. Berry, J. Chem. Phys. 111, 2060 (1999).
+
+41
+
+Y. Sugita and Y. Okamoto, Chem. Phys. Lett. 314, 141 (1999).
+
+FIGURES
+FIG. 1. The heat capacity as a function of energy calculated in the microcanonical ensemble.
+The melting peak occurs at the same calculated temperature in the microcanonical ensemble as
+found in the canonical ensemble, but the height of the microcanonical peak is significantly higher
+than the canonical peak [compare with Fig. 1 in I]. Both the microcanonical and canonical heat
+capacities display a region of change in slope at the transition between the truncated octahedron
+and the icosahedral basin. The error bars represent two standard deviations of the mean.
+FIG. 2. Upper panel: the microcanonical caloric curve for LJ38 obtained from parallel tempering Monte Carlo simulations. The temperature is plotted as a function of the total energy, both
+expressed in reduced LJ units. The circles are the direct results of microcanonical simulations. The
+solid line is a fit obtained by the histogram reweighting technique. Also plotted as a dotted line is
+the caloric curve in the canonical ensemble. Lower panel: average value of the order parameter Q4
+as a funciton of the total energy. For both panels, the error bars are smaller than the size of the
+symbols.
+FIG. 3. Upper panel: the probability distribution of the order parameter Q4 as a function of
+the total energy. Lower panel: the probability distribution of the energy of the quenched structure
+as a function of the total energy. For both quantities, FCC labels the truncated octahedron, IC
+labels structures from the icosahedral basin and LIQ labels structures from the liquid region. In
+the lower panel, the error bars are smaller than the size of the symbols. In the upper panel, the
+error bars represent two standard deviations of the mean.
+FIG. 4. Two dynamical parameters calculated for LJ38 using either standard molecular dynamics starting from the lowest-energy structure (empty symbols) or the hybrid ergodic MD/MC
+method (full symbols), as a function of the total energy. The results are expressed in Lennard-Jones
+time units t0 . Upper panel: diffusion constant D; lower panel: largest Lyapunov exponent λ. For
+both panels, the error bars are smaller than the size of the symbols.
+
+8
+
+7
+
+〈CV〉/NkB
+
+6
+
+5
+
+4
+
+3
+
+−180
+
+−170
+
+−160
+
+−150
+
+E/ε
+
+−140
+
+−130
+
+−120
+
+0.4
+
+εT/kB
+
+0.3
+
+0.2
+
+0.1
+
+0
+0.2
+
+〈Q4〉
+
+0.15
+
+0.1
+
+0.05
+
+0
+−180
+
+−170
+
+−160
+
+−150
+
+E/ε
+
+−140
+
+−130
+
+−120
+
+1
+FCC
+IC
+LIQ
+
+0.8
+
+PQ
+
+4
+
+0.6
+
+0.4
+
+0.2
+
+0
+1
+
+P (Uquench)
+
+0.8
+
+0.6
+
+FCC
+IC
+LIQ
+
+0.4
+
+0.2
+
+0
+−180
+
+−170
+
+−160
+
+−150
+
+E/ε
+
+−140
+
+−130
+
+−120
+
+0
+
+10
+
+Standard
+Ergodic
+
+−2
+
+D/t0
+
+10
+
+−4
+
+10
+
+−6
+
+10
+
+−8
+
+10
+2.5
+Standard
+Ergodic
+
+2
+
+λt0
+
+1.5
+
+1
+
+0.5
+
+0
+−180
+
+−170
+
+−160
+
+−150
+
+E/ε
+
+−140
+
+−130
+
+−120
+
+
