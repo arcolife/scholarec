@@ -24,14 +24,18 @@ passed to the object of Document Class."""
 import os
 import feedparser
 
+import urllib
+import json
+import pprint
+
 ## import dependencies
 from pyes import *
 #import requests
 
 class DocumentUpload(object):
     """
-    upload data to ElasticSearch instance."""
-
+    upload data to ElasticSearch instance.
+    """
     def __init__(self, query_dsl, host, port):
         self.query_dsl = query_dsl
         self.host = host
@@ -46,25 +50,64 @@ class DocumentUpload(object):
     def foo(self):
         pass
 
-
 class DocumentQuery(object):
     """
     Run different queries on the data 
-    already present on ElasticSearch instance."""
-
+    already present on ElasticSearch instance.
+    """
     def __init__(self, query_dsl, host, port):
         self.query_dsl = query_dsl
         self.host = host
         self.port = port
 
-    def query_delete(self):
+    def delete(self):
         pass
 
-    def query_modify(self):
+    def modify(self):
         pass
 
-    def query_search(self):
-        pass
+    def build(self, search_term):
+        q = { "query":{
+            "bool":{
+                "must":[{
+                    "query_string":{
+                        "default_field":"_all",
+                        "query":search_term
+                    }
+                }],
+                "must_not":[],
+                "should":[]
+            }},
+              "from":0,
+              "size":10,
+              "sort":[],
+              "facets":{}
+          }
+        return q
 
-    def foo(self):
-        pass
+    def search(self, query, **kwargs):
+        #query = build_query(str(query))
+        #query = json.dumps(query)
+        kwargs['q'] = query
+        args = kwargs.keys()
+        if 'search_size' in args:
+            kwargs['size'] = kwargs.pop('search_size')
+        else:
+            kwargs['size'] = 10
+        if 'search_from' in args:
+            kwargs['from'] = kwargs.pop('search_from')
+        else:
+            kwargs['from'] = 0
+        #query = '?q='+query+'&'
+        query = urllib.urlencode(kwargs)
+        #for key, value in kwargs.items():
+        #    query+=key+'='+str(value)+'&'
+        response = urllib.urlopen(
+            'http://127.0.0.1:9200/arxiv/docs/_search?' + query
+        )
+        result = json.loads( response.read() )
+        #pprint.pprint(result['hits']['hits'])
+        #JE = json.encoder.JSONEncoder()
+        #return JE.encode(result)
+        return result
+
