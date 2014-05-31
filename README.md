@@ -20,7 +20,7 @@ suggest/recommend similar ones, possibly of interest to the user.
 ```
     $ git clone https://github.com/arcolife/scholarec.git
     $ cd scholarec/
-    $ sudo python setup.py install
+    $ sh setup.sh
 ```
 
 * See INSTALL for detailed instructions.
