@@ -1,60 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <link href="http://arxiv.org/api/query?search_query%3Dall%3A%22cosmos%22%26id_list%3D%26start%3D0%26max_results%3D2" rel="self" type="application/atom+xml"/>
-  <title type="html">ArXiv Query: search_query=all:"cosmos"&amp;id_list=&amp;start=0&amp;max_results=2</title>
-  <id>http://arxiv.org/api/QWHdWk4krEzzEX/Z/L5V8U6t+Ig</id>
-  <updated>2014-03-23T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1375</opensearch:totalResults>
+  <link href="http://arxiv.org/api/query?search_query%3Dall%3A%22higgs%22%26id_list%3D%26start%3D0%26max_results%3D3" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=all:"higgs"&amp;id_list=&amp;start=0&amp;max_results=3</title>
+  <id>http://arxiv.org/api/clOOtMKJcliQl2qWFmhdqXrjdZI</id>
+  <updated>2014-05-31T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">16483</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
-  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">2</opensearch:itemsPerPage>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">3</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/1001.2865v1</id>
-    <updated>2010-01-17T02:30:10Z</updated>
-    <published>2010-01-17T02:30:10Z</published>
-    <title>An Infinite Fractal Cosmos</title>
-    <summary>  The paradigmatic transition from a small finite universe to an infinite
-unbounded fractal cosmos is briefly put into historical context and discussed.
+    <id>http://arxiv.org/abs/1108.0157v1</id>
+    <updated>2011-07-31T08:20:46Z</updated>
+    <published>2011-07-31T08:20:46Z</published>
+    <title>Higgs Bosons in the Next-to-Minimal Supersymmetric Standard Model at the
+  LHC</title>
+    <summary>  We review possible properties of Higgs bosons in the NMSSM, which allow to
+discriminate this model from the MSSM: masses of mostly Standard-Model-like
+Higgs bosons at or above 140 GeV, or enhanced branching fractions into two
+photons, or Higgs-to-Higgs decays. In the case of a Standard-Model-like Higgs
+boson above 140 GeV, it is necessarily accompagnied by a lighter state with a
+large gauge singlet component. Examples for such scenarios are presented.
+Available studies on Higgs-to-Higgs decays are discussed according to the
+various Higgs production modes, light Higgs masses and decay channels.
 </summary>
     <author>
-      <name>Robert L. Oldershaw</name>
+      <name>Ulrich Ellwanger</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">7 pages, published in Journal of Cosmology, Vol. 4, 674-677</arxiv:comment>
-    <link href="http://arxiv.org/abs/1001.2865v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/1001.2865v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.gen-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 1 Figure, 2 Tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/1108.0157v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1108.0157v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/astro-ph/9606061v1</id>
-    <updated>1996-06-10T15:59:30Z</updated>
-    <published>1996-06-10T15:59:30Z</published>
-    <title>Reduction of the COSMOS Southern Sky galaxy survey data to the RC3
-  standard system</title>
-    <summary>  After having cross-identified a subsample of LEDA galaxies in the COSMOS
-database, we defined the best relations to convert COSMOS parameters
-(coordinates, position angle, diameter, axis ratio and apparent magnitude) into
-RC3 system used in the LEDA database. Tiny secondary effects can be tested:
-distance to plate cenetrs effect and air-mass effect. The converted COSMOS
-parameters are used to add missing parameters on LEDA galaxies.
-  Key words: galaxies - catalogue - photometry
+    <id>http://arxiv.org/abs/hep-ph/9502380v3</id>
+    <updated>1995-07-04T04:53:12Z</updated>
+    <published>1995-02-24T04:30:45Z</published>
+    <title>The Minimal Supersymmetric Model of Higgs-Higgs Condensation</title>
+    <summary>  This paper is motivated by three issues associated with the supersymmetric
+extension of the standard model: the $\mu$ problem, the possibility of raising
+the upper bound on the lightest-Higgs mass, and the triviality problem
+associated with the Higgs sector. A new scheme based on the Higgs-Higgs
+condensation is proposed, and it is shown that these three issues are well
+solved by this scheme. As the first realization of this new scheme, the Minimal
+Supersymmetric Model of Higgs-Higgs Condensation (MSMHHC) is constructed and
+studied in detail. The MSMHHC is identical with the MSSM (Minimal
+Supersymmetric Standard Model) in the fundamental particle content, and their
+lagrangians differ only in the Higgs sector. The Higgs sector of the MSMHHC is
+based on the softly-broken supersymmetric Nambu$-$Jona-Lasinio model with the
+four-field interaction of the Higgs doublets. At low energy, these two Higgs
+doublets condense into two neutral Higgs gauge singlets, and the low-energy
+effective lagrangian of the MSMHHC has the form of the non-minimal
+supersymmetric standard model which contains two more Higgs singlets than the
+MSSM. Another unique feature of the MSMHHC is that heavy top quark always
+implies strongly-interacting low-energy Higgs sector, i.e., a large mass for
+the lightest Higgs boson. A systematic study of the parameter space is also
+made in order to reveal the qualitative features of the MSMHHC. Finally, we
+comment on the question "How large can the lightest-Higgs mass be?" with the
+conclusion that the supersymmetric model of Higgs-Higgs condensation will be
+the most promising candidate if the lightest-Higgs mass of the MSSM is excluded
+by the future experiments.
 </summary>
     <author>
-      <name>J. Rousseau</name>
+      <name>Yi-Yen Wu</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Lawrence Berkeley Laboratory</arxiv:affiliation>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1103/PhysRevD.52.6562</arxiv:doi>
+    <link title="doi" href="http://dx.doi.org/10.1103/PhysRevD.52.6562" rel="related"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">The discussion of the following two topics are included, (1). How
+  large can the lightest-Higgs mass be in the supersymmetric standard models?
+  (2). The triviality bound of the Higgs mass, with the conclusion that the
+  SUSY model of Higgs-Higgs condensation will be the most promising candidate
+  if the lightest-Higgs mass of the MSSM is excluded by the future experiments</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Phys.Rev. D52 (1995) 6562-6576</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/hep-ph/9502380v3" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/hep-ph/9502380v3" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0810.4447v1</id>
+    <updated>2008-10-24T13:50:41Z</updated>
+    <published>2008-10-24T13:50:41Z</published>
+    <title>Higgs mass bounds from a chirally invariant lattice Higgs-Yukawa model
+  with overlap fermions</title>
+    <summary>  We study the parameter dependence of the Higgs mass in a chirally invariant
+lattice Higgs-Yukawa model emulating the same Higgs-fermion coupling structure
+as in the Higgs sector of the electroweak Standard Model. Eventually, the aim
+is to establish upper and lower Higgs mass bounds. Here we present our
+preliminary results on the lower Higgs mass bound at several selected values
+for the cutoff and give a brief outlook towards the upper Higgs mass bound.
+</summary>
+    <author>
+      <name>Philipp Gerhold</name>
     </author>
     <author>
-      <name>H. Di Nella</name>
+      <name>Karl Jansen</name>
     </author>
     <author>
-      <name>G. Paturel</name>
+      <name>Jim Kallarackal</name>
     </author>
-    <author>
-      <name>C. Petit</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">5 pages, postcript including figures, to appear in MNRAS, reprint
-  requests: dinella@mpia-hd.mpg.de</arxiv:comment>
-    <link href="http://arxiv.org/abs/astro-ph/9606061v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/astro-ph/9606061v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Presented at the 26th International Symposium on Lattice Field
+  Theory, Williamsburg, Virginia, USA, 2008 July 14-19</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">PoS LATTICE2008:067,2008</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/0810.4447v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/0810.4447v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-lat" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-lat" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>

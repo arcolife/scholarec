@@ -1,12 +1,17 @@
 from setuptools import find_packages, tests, setup
 #from distutils.core import setup
 from pip.req import parse_requirements
-
-install_reqs = parse_requirements('requirements.txt')
-reqs = [str(ir.req) for ir in install_reqs]
-
 import os
 
+#install_reqs = parse_requirements('requirements.txt')
+#reqs = [str(ir.req) for ir in install_reqs]
+install_reqs = [
+    line.strip()
+    for line in open(os.path.join(os.path.dirname(__file__), 'requirements.txt')).readlines()
+    if line.strip() != ''
+]
+
+print install_reqs
 # Use the VERSION file to get ScholaRec version
 # version_file = os.path.join(os.path.dirname(__file__), 'scholarec', 'VERSION')
 version_file = os.path.abspath(os.path.join(os.path.split(__file__)[0], 'scholarec', 'VERSION'))
@@ -23,6 +28,6 @@ setup(name='scholarec',
       author_email='archit.py@gmail.com',
       #test_suite="tests",
       license='GPL v3',
-      install_requires=reqs,
+      install_requires=install_reqs,
       #packages=['scholarec'],
       zip_safe=False)

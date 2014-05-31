@@ -1,51 +1,42 @@
 --------------------------------------------------------------------
-Scholarec v0.5 is released
-March 11, 2014
+Scholarec v0.9 is released
+May 31, 2014
 http://arcolife.github.io/scholarec
 --------------------------------------------------------------------
 
-Scholarec v0.5 was released on March 11, 2014.
+Scholarec v0.9 was released on May 31, 2014.
 
-This initial release contains a basic skeleton of the package. 
+This release contains a major overhauling of package names and imports.
 It is recommended that all previous downloads be uninstalled 
-and this one to be installed from scratch.
+and this one to be installed from scratch. Refer to the documentation.
 
 What's new:
 -----------
-~~Initial Release~~
 
-*) New scripts: support Python 2.6 and 2.7
+*) Query Support for ElasticSearch.
 
-*) Python external libraries: xmltodict, BeautifulSoup, feedparser, wikipedia
+*) Updated Corpus: data upload/modification scripts and sample datasets.
 
-*) Data sources: arXiv
+*) FrontEnd + recommender: github.com/arcolife/django-scholarec/
 
-*) Corpus: stopwords and a script to add them
-
-*) Continuous Integration testing with Travis CI Webhooks
-
-*) Supporting OS platforms: GNU/Linux / Debian flavors (Preferred: Ubuntu)
-
-*) Data Representations: XML/JSON
-
-*) Testing scripts and Commandline Interface
+*) Improved Packaging: New imports. Better structure.
 
 Future Plans:
 -------------
 *) To integrate:
-  -> ElasticSearch
-    OR
   -> MongoDB
 
 *) Add DB source:
-   - CERN
-   - Google Scholar  
-   - DBLP   
+   - Google Scholar
+
+*) Shift entire recommender to scholarec: keep django interface separated.
+
+*) New Algorithms: Integrate Collaborative Filtering / Matrix-Factorization / K-means.
 
 Download:
 ---------
-tarball <https://github.com/arcolife/scholarec/archive/v0.5-alpha.tar.gz>
-zipball <https://github.com/arcolife/scholarec/archive/v0.5-alpha.zip>
+tarball <https://github.com/arcolife/scholarec/archive/v0.9-alpha.tar.gz>
+zipball <https://github.com/arcolife/scholarec/archive/v0.9-alpha.zip>
 
 Installation notes:
 -------------------
