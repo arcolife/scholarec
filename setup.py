@@ -1,5 +1,5 @@
-from setuptools import find_packages, tests
-from distutils.core import setup
+from setuptools import find_packages, tests, setup
+#from distutils.core import setup
 from pip.req import parse_requirements
 
 install_reqs = parse_requirements('requirements.txt')
