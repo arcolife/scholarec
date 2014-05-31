@@ -11,11 +11,9 @@ install_reqs = [
     if line.strip() != ''
 ]
 
-print install_reqs
 # Use the VERSION file to get ScholaRec version
-# version_file = os.path.join(os.path.dirname(__file__), 'scholarec', 'VERSION')
-version_file = os.path.abspath(os.path.join(os.path.split(__file__)[0], 'scholarec', 'VERSION'))
-
+version_file = os.path.join(os.path.dirname(__file__), 'scholarec', 'VERSION')
+# version_file = os.path.abspath(os.path.join(os.path.split(__file__)[0], 'scholarec', 'VERSION'))
 with open(version_file) as fh:
     scholarec_version = fh.read().strip()
 
@@ -24,6 +22,7 @@ setup(name='scholarec',
       description='Recommendation engine for scholarly works',
       url='https://github.com/arcolife/scholarec.git',
       packages = find_packages(),
+      package_data = {'scholarec': [ 'VERSION']},
       author='Archit Sharma',
       author_email='archit.py@gmail.com',
       #test_suite="tests",

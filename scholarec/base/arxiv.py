@@ -34,7 +34,7 @@ import feedparser
 
 ## import dependencies
 import xmltodict
-from BeautifulSoup import \
+from bs4 import \
     BeautifulStoneSoup as Soup
 #import requests
 
