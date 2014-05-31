@@ -2,6 +2,6 @@
 Package import structure
 '''
 
-import DocumentOperations
+from scholarec.handlers.datahandler import DocumentUpload, DocumentQuery
 
 #__all__ = ['DocumentUpload', 'DocumentQuery',]

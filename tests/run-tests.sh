@@ -1,7 +1,7 @@
 #!/bin/sh
 
-python ./scholarec/Base/DocumentClass.py
-python ./scholarec/Base/DocumentData.py
-python ./scholarec/QueryES/DocumentOperations.py
+python ./scholarec/base/arxiv.py
+python ./scholarec/base/operations.py
+python ./scholarec/handlers/datahandler.py
 python ./scholarec/__init__.py
 python ./tests/test.py

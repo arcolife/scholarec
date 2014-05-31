@@ -25,7 +25,7 @@ by executing statements on sample XML set"""
 import sys
 
 ## Import dependencies specific to scholarec
-from scholarec.Base.DocumentClass import DocumentArXiv
+from scholarec.base.arxiv import DocumentArXiv
 
 class QueryParse:
     ''' mathods to parse query '''    
