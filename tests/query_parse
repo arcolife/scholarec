@@ -162,7 +162,7 @@ if __name__ == '__main__':
         print "\nWikipedia says:"
         print "---------------\n"
         try:
-            print wikipedia.summary(KEYWORDS)
+            print wikipedia.summary(KEYWORDS, auto_suggest=False)
         except:
             topics = wikipedia.search(KEYWORDS)
             print "{} may refer to: ".format(KEYWORDS)
@@ -170,7 +170,7 @@ if __name__ == '__main__':
                 print i+1, topic
             CHOICE = int(raw_input("Enter a choice: "))
             assert CHOICE in xrange(1,len(topics))
-            print wikipedia.summary(topics[CHOICE])
+            print wikipedia.summary(topics[CHOICE], auto_suggest=False)
         print "\nYou've searched for : %s \n" % (KEYWORDS)
         print "\nEnter this URL in browser, for GUI mode: \n %s \n" % (SEARCH) 
         print "\n\t\tThanks for using ScholaRec!\n"
