@@ -5,6 +5,7 @@ Recommendation of Scholarly Works
 
 [![Build Status](https://travis-ci.org/arcolife/scholarec.png?branch=master)](https://travis-ci.org/arcolife/scholarec)
 [![Dependency Status](https://gemnasium.com/arcolife/scholarec.png)](https://gemnasium.com/arcolife/scholarec)
+[![Zenodo DOI for github](https://zenodo.org/badge/4244/arcolife/scholarec.png)](http://dx.doi.org/10.5281/zenodo.10265)
 
 This software has been built due to a need felt for a proper 
 recommendation system for publicly available scholarly/research works. 
