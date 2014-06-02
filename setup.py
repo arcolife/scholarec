@@ -20,16 +20,19 @@ version_file = os.path.join(os.path.dirname(__file__), 'scholarec', 'VERSION')
 with open(version_file) as fh:
     scholarec_version = fh.read().strip()
 
-setup(name='scholarec',
-      version=scholarec_version,
-      description='Recommendation engine for scholarly works',
-      url='https://github.com/arcolife/scholarec.git',
-      packages = find_packages(),
-      package_data = {'scholarec': [ 'VERSION']},
-      author='Archit Sharma',
-      author_email='archit.py@gmail.com',
-      #test_suite="tests",
-      license='GPL v3',
-      install_requires=install_reqs,
-      #packages=['scholarec'],
-      zip_safe=False)
+setup(
+  name="scholarec",
+  version=scholarec_version,
+  author="Archit Sharma",
+  author_email="archit.py@gmail.com",
+  description="Recommendation engine for scholarly works",
+  license = "GPL v3",
+  keywords = "python ArXiv API recommendation",
+  url="https://github.com/arcolife/scholarec",
+  install_requires=install_reqs,
+  packages = find_packages(),
+  package_data = {'scholarec': ['VERSION']},
+  zip_safe=False,
+  long_description = local_file('README.md').read()
+  #test_suite="tests",
+)
