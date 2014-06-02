@@ -1,1 +1,1 @@
-include requirements.txt README.md LICENSE.txt
+include requirements.txt README.md LICENSE.txt INSTALL references.json RELEASE-NOTES THANKS

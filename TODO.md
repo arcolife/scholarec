@@ -10,6 +10,8 @@
    - Refactor public/index.html #done
    - Add public/mockups #done
    - Connect Web Interface #done
+   - Include tests/ into main package
+   - Change TODO done/partial method to new [ ] and [x] format
    
 *) ISSUES
 			~~ In addition to github issue list ~~
