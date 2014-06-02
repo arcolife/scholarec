@@ -33,6 +33,14 @@ setup(
   packages = find_packages(),
   package_data = {'scholarec': ['VERSION']},
   zip_safe=False,
-  long_description = local_file('README.md').read()
+  long_description = local_file('README.md').read(),
   #test_suite="tests",
+  classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Topic :: Software Development :: Libraries',
+    'License :: OSI Approved :: GPL v3 License',
+    'Programming Language :: Python',
+    'Intended Audience :: End Users/Desktop',
+    'Intended Audience :: Developers'
+    ]
 )

@@ -1,10 +1,8 @@
 --------------------------------------------------------------------
-Scholarec v1.0 is released
-June 2, 2014
+ScholaRec v1.0.1
+released on June 2, 2014
 http://arcolife.github.io/scholarec
 --------------------------------------------------------------------
-
-Scholarec v1.0 was released on June 2, 2014
 
 This release contains a major overhauling of package names and imports.
 It is recommended that all previous downloads be uninstalled 
