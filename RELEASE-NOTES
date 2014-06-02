@@ -1,10 +1,10 @@
 --------------------------------------------------------------------
-Scholarec v0.9 is released
-May 31, 2014
+Scholarec v1.0 is released
+June 2, 2014
 http://arcolife.github.io/scholarec
 --------------------------------------------------------------------
 
-Scholarec v0.9 was released on May 31, 2014.
+Scholarec v1.0 was released on June 2, 2014
 
 This release contains a major overhauling of package names and imports.
 It is recommended that all previous downloads be uninstalled 
@@ -35,8 +35,8 @@ Future Plans:
 
 Download:
 ---------
-tarball <https://github.com/arcolife/scholarec/archive/v0.9-alpha.tar.gz>
-zipball <https://github.com/arcolife/scholarec/archive/v0.9-alpha.zip>
+tarball <https://github.com/arcolife/scholarec/archive/v1.0.tar.gz>
+zipball <https://github.com/arcolife/scholarec/archive/v1.0.zip>
 
 Installation notes:
 -------------------

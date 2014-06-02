@@ -4,4 +4,4 @@
 #pip install wikipedia
 #pip install -e .
 
-sudo python setup.py install
+python setup.py install
