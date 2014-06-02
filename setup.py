@@ -38,7 +38,7 @@ setup(
   classifiers = [
     'Development Status :: 3 - Alpha',
     'Topic :: Software Development :: Libraries',
-    'License :: OSI Approved :: GPL v3 License',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
     'Programming Language :: Python',
     'Intended Audience :: End Users/Desktop',
     'Intended Audience :: Developers'
