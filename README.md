@@ -23,25 +23,35 @@ _Note:_ Currently, full-functionality is offered by combining this package and a
 
 **Installation**
 
+* Option 1: Install package only..
+```
+    $ pip install scholarec
+``` 
+- Test through:
+```
+    $ python -m scholarec
+```
+
+* Option 2: clone this repository..
+
 ```
     $ git clone https://github.com/arcolife/scholarec.git
     $ cd scholarec/
     $ sh setup.sh
 ```
-
-* See INSTALL for detailed instructions.
+- See INSTALL for detailed instructions.
 
 **Test**
-
-* Optionally, to test if installed, look for a description on executing:
-```
-    $ python -m scholarec
-```
 
 * To see if the scripts runs without error:
 ```
     $ ./tests/run-tests.sh
     $ ./tests/test.py
+```
+
+* Optionally, to test if installed, look for a description on executing:
+```
+    $ python -m scholarec
 ```
 
 **Usage**
