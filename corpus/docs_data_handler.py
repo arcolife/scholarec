@@ -1,17 +1,19 @@
 #!/usr/bin/python
 
-import os 
-import sys
-import json
-from subprocess import call
-import grequests 
+import sys, json, grequests 
 from json import dumps, loads
 
 # path of directory containing all .json files
 PATH_SOURCE = './data_arxiv_json/'
 URL = 'http://localhost:9200/arxiv/docs'
 
-def upload_doc(path_source, keyword):
+def batch(iterable, n=1):
+    """ Batch function from StackOverflow answers."""
+    l = len(iterable)
+    for ndx in range(0,l,n):
+        yield iterable[ndx:min(ndx+n,l)]
+
+def convert_and_post_request(path_source, keyword):
     data = json.loads(open(path_source+'query_results'
                            +keyword+'.json','rb').read())
     reqs = []
@@ -19,27 +21,34 @@ def upload_doc(path_source, keyword):
         temp = data[key]
         temp['ID'] = key.split('/')[-1]
         temp['keyword'] = keyword
-        reqs.append(grequests.post(URL, data=dumps(temp)))
-        if len(reqs) % 100 == 0:
-            grequests.map(reqs)
-            reqs = []
-        else:
-            continue
+        reqs.append(grequests.post(URL, data=dumps(temp), stream=True))
     grequests.map(reqs)
+    #print "built"
+    #return reqs
 
-try:
-    file_ = open('searchWords.lst', 'rb')
-    import ast
-    keywords = ast.literal_eval(file_.read())
-    file_.close()
+def main1(keywords):
     for word in keywords:
-        upload_doc(PATH_SOURCE, word)
-except OSError:
-    print "Error: ", sys.exc_info()[1][1]
+        convert_and_post_request(PATH_SOURCE, word)
 
-# def batch(iterable, n=1):
-#     l = len(iterable)
-#     for ndx in range(0,l,n):
-#         yield iterable[ndx:min(ndx+n,l)]
-# for x in batch(range(10),3):
-#     print x
+def main2(keywords):
+    reqs = []
+    for word in keywords:
+        reqs.extend(convert_and_post_request(PATH_SOURCE, word))
+    print len(reqs)
+    for x in batch(reqs,50):
+        print "called"
+        grequests.map(x, size=50)
+        print "done"
+        
+
+if __name__=='__main__':
+    try:
+        f = open('searchWords.lst', 'rb')
+        import ast
+        keywords = ast.literal_eval(f.read())
+        f.close()
+    except OSError:
+        print "Error: ", sys.exc_info()[1][1]
+
+    main1(keywords)
+    #main2(keywords)
