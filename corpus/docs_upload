@@ -1,0 +1,4 @@
+#!/bin/sh
+curl -XDELETE 'http://localhost:9200/arxiv/docs'
+curl -XPUT 'http://localhost:9200/arxiv/docs/_mapping' -d @docs_mapping.json 
+python docs_data_handler.py

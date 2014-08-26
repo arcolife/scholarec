@@ -1,0 +1,54 @@
+{
+    "docs" : {
+	"properties" : {
+            "size" : {
+		"type" : "long"
+            },
+            "keyword" : {
+		"type" : "string", 
+		"index": "not_analyzed"
+            },
+            "links" : {
+		"properties" : {
+                    "type" : {
+			"type" : "string"
+                    },
+                    "rel" : {
+			"type" : "string"
+                    },
+                    "href" : {
+			"type" : "string"
+                    },
+                    "title" : {
+			"type" : "string"
+                    }
+		}
+            },
+            "title" : {
+		"type" : "string"
+            },
+            "published" : {
+		"type" : "date",
+		"format" : "dateOptionalTime"
+            },
+            "ID" : {
+		"type" : "string"
+            },
+            "authors" : {
+		"properties" : {
+                    "name" : {
+			"type" : "string",
+			"index": "not_analyzed"
+                    }
+		}
+            },
+            "author" : {
+		"type" : "string", 
+		"index": "not_analyzed"
+            },
+            "summary" : {
+		"type" : "string"
+            }
+	}
+    }
+}
