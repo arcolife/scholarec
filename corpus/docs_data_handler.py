@@ -1,7 +1,10 @@
 #!/usr/bin/python
 
-import sys, json, grequests 
+import sys, grequests 
 from json import dumps, loads
+import requests_cache
+
+session = requests_cache.CachedSession('bla')
 
 # path of directory containing all .json files
 PATH_SOURCE = './data_arxiv_json/'
@@ -14,17 +17,17 @@ def batch(iterable, n=1):
         yield iterable[ndx:min(ndx+n,l)]
 
 def convert_and_post_request(path_source, keyword):
-    data = json.loads(open(path_source+'query_results'
+    data = loads(open(path_source+'query_results'
                            +keyword+'.json','rb').read())
     reqs = []
     for key in data.keys():
         temp = data[key]
         temp['ID'] = key.split('/')[-1]
         temp['keyword'] = keyword
-        reqs.append(grequests.post(URL, data=dumps(temp), stream=True))
-    grequests.map(reqs)
+        reqs.append(grequests.post(URL, data=dumps(temp), session=session))
+    #grequests.map(reqs)
     #print "built"
-    #return reqs
+    return reqs
 
 def main1(keywords):
     for word in keywords:
@@ -34,11 +37,11 @@ def main2(keywords):
     reqs = []
     for word in keywords:
         reqs.extend(convert_and_post_request(PATH_SOURCE, word))
-    print len(reqs)
-    for x in batch(reqs,50):
-        print "called"
-        grequests.map(x, size=50)
-        print "done"
+    #print len(reqs)
+    for x in batch(reqs,100):
+        #print "called"
+        grequests.map(x)
+        #print "done"
         
 
 if __name__=='__main__':
@@ -50,5 +53,5 @@ if __name__=='__main__':
     except OSError:
         print "Error: ", sys.exc_info()[1][1]
 
-    main1(keywords)
-    #main2(keywords)
+    #main1(keywords)
+    main2(keywords)
